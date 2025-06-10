@@ -1,6 +1,6 @@
 # Metadata atoms and types
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Store metadata in QuickTime Movie files.
 

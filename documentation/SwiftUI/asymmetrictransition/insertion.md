@@ -17,8 +17,7 @@ The `Transition` defining the insertion phase of `self`.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency var insertion: Insertion
+var insertion: Insertion
 ```
 
 ## See Also

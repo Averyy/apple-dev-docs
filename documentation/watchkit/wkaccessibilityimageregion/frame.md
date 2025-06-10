@@ -1,6 +1,6 @@
 # frame
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A portion of the parent image, in the image’s coordinate system.

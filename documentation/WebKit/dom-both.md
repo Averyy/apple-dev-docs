@@ -1,6 +1,6 @@
 # DOM_BOTH
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

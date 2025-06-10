@@ -7,8 +7,6 @@ The command to get a list of active extensions for a user on a device.
 
 **Availability**:
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,14 +16,14 @@ object ActiveNSExtensionsCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object ActiveNSExtensionsCommand.Command](activensextensionscommand/command-data.dictionary.md)
-  The request dictionary to get a list of active extensions for a user on a device.
+  The command to get a list of active extensions for a user on a device.
 
 ## See Also
 
 - [object ActiveNSExtensionsResponse](activensextensionsresponse.md)
-  A response from the device after it processes the command to get a list of active extensions for a user.
+  A response from the device after it processes the command to get a list of active extensions for a user on a device.
 
 
 ---

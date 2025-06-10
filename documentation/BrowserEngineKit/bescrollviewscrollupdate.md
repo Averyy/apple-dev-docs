@@ -26,8 +26,6 @@ Your app can continue to receive `BEScrollViewScrollUpdate` objects after the pe
 
 > ❗ **Important**:  `BEScrollViewScrollUpdate` isn’t thread-safe, and the system uses the same object for multiple scroll updates. When you receive a scroll update, immediately get the information you need on the main queue before any other processing.
 
- `BEScrollViewScrollUpdate` isn’t thread-safe, and the system uses the same object for multiple scroll updates. When you receive a scroll update, immediately get the information you need on the main queue before any other processing.
-
 ## Topics
 
 ### Retrieving scroll state information

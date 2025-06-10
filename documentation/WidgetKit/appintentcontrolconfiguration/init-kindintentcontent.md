@@ -1,6 +1,6 @@
 # init(kind:intent:content:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: init
 
 Creates a configuration for a control widget by using a custom intent to provide user-configurable options.
@@ -8,7 +8,9 @@ Creates a configuration for a control widget by using a custom intent to provide
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 

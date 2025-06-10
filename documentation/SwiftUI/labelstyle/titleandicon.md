@@ -21,6 +21,10 @@ A label style that shows both the title and icon of the label using a system-sta
 @preconcurrency static var titleAndIcon: TitleAndIconLabelStyle { get }
 ```
 
+## Mentions
+
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+
 #### Discussion
 
 In most cases, labels show both their title and icon by default. However, some containers might apply a different default label style to their content, such as only showing icons within toolbars on macOS and iOS. To opt in to showing both the title and the icon, you can apply the title and icon label style:

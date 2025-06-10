@@ -6,6 +6,9 @@
 A builder object that constructs a workout incrementally based on live data from an active workout session.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS ?+
 - watchOS 5.0+
 
@@ -55,6 +58,7 @@ Use a live workout builder to create an [`HKWorkout`](hkworkout.md) sample durin
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -64,6 +68,8 @@ Use a live workout builder to create an [`HKWorkout`](hkworkout.md) sample durin
   Create your own workout app, quickly and easily, with HealthKit and SwiftUI.
 - [Building a multidevice workout app](building-a-multidevice-workout-app.md)
   Mirror a workout from a watchOS app to its companion iOS app, and perform bidirectional communication between them.
+- [Building a workout app for iPhone and iPad](building-a-workout-app-for-iphone-and-ipad.md)
+  Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
 - [class HKWorkoutSession](hkworkoutsession.md)
   A session that tracks the user’s workout on Apple Watch.
 - [class HKWorkoutConfiguration](hkworkoutconfiguration.md)

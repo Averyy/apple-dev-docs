@@ -28,6 +28,7 @@ struct StoreKitVerificationAPI
 ### Conforms To
 - [FailableStoreKitAPI](failablestorekitapi.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

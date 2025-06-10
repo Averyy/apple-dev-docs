@@ -32,10 +32,14 @@ When the endpoint extends an eligible purchased subscription that supports Famil
   An error that indicates the app wasn’t found.
 - [object AppTransactionIdNotSupportedError](apptransactionidnotsupportederror.md)
   An error that indicates the endpoint doesn’t support an app transaction ID.
+- [object FamilyTransactionNotSupportedError](familytransactionnotsupportederror.md)
+  An error that indicates the transaction is for a product the customer obtains through Family Sharing, which the endpoint doesn’t support.
 - [object GeneralInternalError](generalinternalerror.md)
   An error that indicates a general internal error.
 - [object GeneralBadRequestError](generalbadrequesterror.md)
   An error that indicates an invalid request.
+- [object InvalidAppAccountTokenUUIDError](invalidappaccounttokenuuiderror.md)
+  An error that indicates the app account token value is not a valid UUID.
 - [object InvalidAppIdentifierError](invalidappidentifiererror.md)
   An error that indicates an invalid app identifier.
 - [object InvalidEmptyStorefrontCountryCodeListError](invalidemptystorefrontcountrycodelisterror.md)
@@ -52,10 +56,6 @@ When the endpoint extends an eligible purchased subscription that supports Famil
   An error that indicates an invalid request identifier.
 - [object InvalidRequestRevisionError](invalidrequestrevisionerror.md)
   An error that indicates an invalid request revision.
-- [object InvalidRevokedError](invalidrevokederror.md)
-  An error that indicates the revoked parameter contains an invalid value.
-- [object InvalidStatusError](invalidstatuserror.md)
-  An error that indicates the status parameter is invalid.
 
 
 ---

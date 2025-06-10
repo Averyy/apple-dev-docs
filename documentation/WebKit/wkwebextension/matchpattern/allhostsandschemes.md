@@ -1,6 +1,6 @@
 # allHostsAndSchemes()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a pattern object that has `*` for scheme, host, and path.

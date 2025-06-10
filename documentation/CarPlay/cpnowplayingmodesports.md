@@ -13,6 +13,7 @@ The sports mode represents a layout for now playing suited to live-streaming or 
 ## Declaration
 
 ```swift
+@MainActor
 class CPNowPlayingModeSports
 ```
 
@@ -44,6 +45,8 @@ class CPNowPlayingModeSports
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

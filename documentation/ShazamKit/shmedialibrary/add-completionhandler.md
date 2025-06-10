@@ -1,6 +1,6 @@
 # add(_:completionHandler:)
 
-**Framework**: Shazamkit  
+**Framework**: ShazamKit  
 **Kind**: method
 
 Adds an array of songs to the user’s Shazam library.

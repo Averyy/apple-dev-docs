@@ -1,6 +1,6 @@
 # UNIFORM_BUFFER_OFFSET_ALIGNMENT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

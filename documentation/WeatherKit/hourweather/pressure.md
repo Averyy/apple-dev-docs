@@ -1,6 +1,6 @@
 # pressure
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The atmospheric pressure at sea level at a given location.

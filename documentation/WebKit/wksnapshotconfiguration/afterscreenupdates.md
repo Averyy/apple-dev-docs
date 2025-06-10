@@ -1,6 +1,6 @@
 # afterScreenUpdates
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether to take the snapshot after incorporating any pending screen updates.

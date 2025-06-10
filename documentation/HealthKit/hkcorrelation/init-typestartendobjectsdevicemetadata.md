@@ -31,7 +31,7 @@ Use this method when recording data using external hardware. If you do not need 
 
 ## Parameters
 
-- `correlationType`: The type for this correlation. For a complete list of correlation type identifiers, see  .
+- `correlationType`: The type for this correlation. For a complete list of correlation types, see Correlation Identifiers in  .
 - `startDate`: The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ( ).
 - `endDate`: The end date for the sample. This date must be equal to or later than the start date; otherwise, this method throws an exception ( ).
 - `objects`: A set of   objects. Specifically, this set contains the quantity and category samples to be grouped into this correlation.

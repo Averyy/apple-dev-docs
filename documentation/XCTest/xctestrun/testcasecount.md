@@ -1,6 +1,6 @@
 # testCaseCount
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The number of tests in the run.

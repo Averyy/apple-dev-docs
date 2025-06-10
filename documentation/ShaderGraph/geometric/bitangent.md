@@ -5,16 +5,24 @@
 
 The geometric bitangent vector of the currently-processed data in a given coordinate space.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-Valid values for the `Space` parameter include the following:
+Valid values for the `Space` parameter include:
 
 - `model`: The local coordinate space before the shader applies any local deformations or global transforms to the geometry.
-- `object`: The local coordinate space after the shader applies local deformations but before it applies global transforms to the geometry.
+- `object`: The local coordinate space after the shader applies local deformations, but before it applies global transforms to the geometry.
 - `world`: The global coordinate space after the shader applies both local deformations and global transforms to the geometry.
 
 ## See Also

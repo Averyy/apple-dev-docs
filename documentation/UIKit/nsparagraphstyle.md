@@ -21,7 +21,7 @@ class NSParagraphStyle
 
 #### Overview
 
-An [`NSParagraphStyle`](nsparagraphstyle.md) object stores formatting information for a paragraph of text. The formatting information includes the amount of space between lines, indentations for lines of text, line heights, tab-stop positions, and more. Apply paragraph styles to the text of an attributed string by adding the [`paragraphStyle`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1527910-paragraphstyle) attribute in Swift or the [`NSParagraphStyleAttributeName`](nsparagraphstyleattributename.md) attribute in Objective-C and setting its value to an instance of this class. The text-rendering system uses the paragraph style information in an attributed string to lay out and render the text.
+An [`NSParagraphStyle`](nsparagraphstyle.md) object stores formatting information for a paragraph of text. The formatting information includes the amount of space between lines, indentations for lines of text, line heights, tab-stop positions, and more. Apply paragraph styles to the text of an attributed string by adding the [`paragraphStyle`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/paragraphStyle) attribute in Swift or the [`NSParagraphStyleAttributeName`](nsparagraphstyleattributename.md) attribute in Objective-C and setting its value to an instance of this class. The text-rendering system uses the paragraph style information in an attributed string to lay out and render the text.
 
 The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of style information, but you can create an [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) when you want to modify the style information before applying it to your text.
 

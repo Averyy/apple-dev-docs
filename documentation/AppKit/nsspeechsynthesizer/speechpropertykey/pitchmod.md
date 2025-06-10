@@ -1,6 +1,6 @@
 # pitchMod
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 Get or set a synthesizer’s pitch modulation.
@@ -60,4 +60,4 @@ This property is used with [`setObject(_:forProperty:)`](nsspeechsynthesizer/set
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsspeechsynthesizer/speechpropertykey/pitchmod)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsspeechsynthesizer/speechpropertykey/pitchmod)*

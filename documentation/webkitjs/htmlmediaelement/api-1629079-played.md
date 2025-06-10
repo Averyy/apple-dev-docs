@@ -1,6 +1,6 @@
 # played
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The ranges of the media resource that was played. (read-only)

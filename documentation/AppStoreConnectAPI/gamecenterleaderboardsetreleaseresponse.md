@@ -22,6 +22,7 @@ object GameCenterLeaderboardSetReleaseResponse
   The request body you use to create a leaderboard set release.
 - [object GameCenterLeaderboardSetReleasesResponse](gamecenterleaderboardsetreleasesresponse.md)
   A response that contains multiple leaderboard set release resource.
+- [object GameCenterLeaderboardSetReleasesLinkagesResponse](gamecenterleaderboardsetreleaseslinkagesresponse.md)
 
 
 ---

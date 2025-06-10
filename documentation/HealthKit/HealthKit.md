@@ -1,6 +1,6 @@
 # HealthKit
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: module
 
 Access and share health and fitness data while maintaining the user’s privacy and control.
@@ -17,7 +17,7 @@ Access and share health and fitness data while maintaining the user’s privacy 
 
 HealthKit provides a central repository for health and fitness data on iPhone and Apple Watch. With the user’s permission, apps communicate with the HealthKit store to access and share this data.
 
-![An image showing the Health app summary screen.](https://docs-assets.developer.apple.com/published/5dc94eee75b3c9209adc58b2bb39f5ef/health-summary%402x.png)
+![An image showing Health on iPhone and Activity on Apple Watch.](https://docs-assets.developer.apple.com/published/b81321b91287e91567ab0308257fb273/media-3979193%402x.png)
 
 Creating a complete, personalized health and fitness experience includes a variety of tasks:
 
@@ -65,6 +65,8 @@ HealthKit is also designed to manage and merge data from multiple sources. For e
   Query health and fitness data.
 - [Visualizing HealthKit State of Mind in visionOS](visualizing-healthkit-state-of-mind-in-visionos.md)
   Incorporate HealthKit State of Mind into your app and visualize the data in visionOS.
+- [Logging symptoms associated with a medication](logging-symptoms-associated-with-a-medication.md)
+  Fetch medications and dose events from the HealthKit store, and create symptom samples to associate with them.
 ### Workout data
 - [Workouts and activity rings](workouts-and-activity-rings.md)
   Manage workouts, workout sessions, and activity summaries.

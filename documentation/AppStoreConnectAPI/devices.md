@@ -1,6 +1,6 @@
 # Devices
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Register devices for development and testing.
 
@@ -48,8 +48,10 @@ A `devices` resource represents the iOS, Apple TV, Apple Watch, and Mac devices 
   Create, delete, and download provisioning profiles that enable app installations for development and distribution.
 - [Merchant ID](merchantids.md)
   Manage your merchant ID for Apple Pay.
+- [Pass type Ids](pass-type-id.md)
+  Create, download, and revoke pass type ids for app development and distribution.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/devices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/devices)*

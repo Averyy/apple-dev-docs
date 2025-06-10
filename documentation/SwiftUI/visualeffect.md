@@ -54,11 +54,11 @@ You don’t conform to this protocol yourself. Instead, visual effects are creat
   Sets the transparency of the view.
 ### Scaling
 - [func scaleEffect(_:anchor:)](visualeffect/scaleeffect(_:anchor:).md)
-  Scales this view uniformly by the specified factor.
+  Scales this view uniformly by the specified factor, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some VisualEffect](visualeffect/scaleeffect(x:y:anchor:).md)
   Scales the view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some VisualEffect](visualeffect/scaleeffect(x:y:z:anchor:).md)
-  Scales this view by the specified horizontal, vertical, and depth factors.
+  Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
 ### Rotating
 - [func rotationEffect(Angle, anchor: UnitPoint) -> some VisualEffect](visualeffect/rotationeffect(_:anchor:).md)
   Rotates content in two dimensions around the specified point.
@@ -79,7 +79,7 @@ You don’t conform to this protocol yourself. Instead, visual effects are creat
   Brings a view forward in Z by the provided distance in points.
 ### Applying a transform
 - [func transform3DEffect(AffineTransform3D) -> some VisualEffect](visualeffect/transform3deffect(_:).md)
-  Applies a 3D transformation to the receiver.
+  Applies a 3D transformation to this view’s rendered output.
 - [func transformEffect(_:)](visualeffect/transformeffect(_:).md)
   Applies an affine transformation to the view’s rendered output.
 ### Applying other effects
@@ -98,8 +98,10 @@ You don’t conform to this protocol yourself. Instead, visual effects are creat
 ### Inherits From
 - [Animatable](animatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [EmptyVisualEffect](emptyvisualeffect.md)
+- [ModifiedContent](modifiedcontent.md)
 
 ## See Also
 

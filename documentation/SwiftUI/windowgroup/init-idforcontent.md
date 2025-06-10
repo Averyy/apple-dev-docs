@@ -27,8 +27,6 @@ The system uses the title to distinguish the window group in the user interface,
 
 > ❗ **Important**: The system ignores any text styling that you apply to the [`Text`](text.md) view title, like bold or italics. However, you can use the formatting controls that the view offers, like for localization, dates, and numerical representations.
 
-The system ignores any text styling that you apply to the [`Text`](text.md) view title, like bold or italics. However, you can use the formatting controls that the view offers, like for localization, dates, and numerical representations.
-
 SwiftUI creates a window from the group when you present a value of the specified type using the [`openWindow`](environmentvalues/openwindow.md) action.
 
 ## Parameters

@@ -20,8 +20,6 @@ After power management instructs a driver to change its state by calling [`setPo
 
 > ⚠️ **Warning**: Local storage drivers receive their calls to [`setPowerState`](ioservice/1532866-setpowerstate.md) in a non-deterministic order from any other drivers. As a result, disk I/O and pageable memory may be unavailable to you once you receive the [`setPowerState`](ioservice/1532866-setpowerstate.md) callback, and remain unavailable until and after you call [`acknowledgeSetPowerState`](ioservice/1532596-acknowledgesetpowerstate.md). Any attempt to access pageable memory, which may require I/O, can result in a stall, and eventually panic.
 
-Local storage drivers receive their calls to [`setPowerState`](ioservice/1532866-setpowerstate.md) in a non-deterministic order from any other drivers. As a result, disk I/O and pageable memory may be unavailable to you once you receive the [`setPowerState`](ioservice/1532866-setpowerstate.md) callback, and remain unavailable until and after you call [`acknowledgeSetPowerState`](ioservice/1532596-acknowledgesetpowerstate.md). Any attempt to access pageable memory, which may require I/O, can result in a stall, and eventually panic.
-
 ## See Also
 
 - [acknowledgePowerChange](ioservice/1809710-acknowledgepowerchange.md)

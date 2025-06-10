@@ -1,6 +1,6 @@
 # XPCDictionary
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: struct
 
 A type that contains key-value pairs, notably used as the container of messages between a client and listener.
@@ -89,6 +89,11 @@ struct XPCDictionary
 ### Transforming a dictionary
 - [func map<ReturnType>((XPCDictionary.KeyValuePair) throws -> ReturnType) rethrows -> [ReturnType]](xpcdictionary/map(_:).md)
   Returns an array containing the results of mapping the given closure over the sequence’s elements.
+### Subscripts
+- [subscript(String) -> XPCListener.Endpoint?](xpcdictionary/subscript(_:)-5qq2v.md)
+  Get or set an `XPCEndpoint` value in this dictionary.
+- [subscript(String, as _: XPCListener.Endpoint.Type) -> XPCListener.Endpoint?](xpcdictionary/subscript(_:as:)-1c5kw.md)
+  Get an `XPCEndpoint` value in this dictionary.
 
 ## Relationships
 

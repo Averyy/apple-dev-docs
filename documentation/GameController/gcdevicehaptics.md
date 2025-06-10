@@ -25,8 +25,6 @@ Use this class to create a haptic engine with a specified locality. Any patterns
 
 > ❗ **Important**:  The [`supportsHaptics`](https://developer.apple.com/documentation/CoreHaptics/CHHapticDeviceCapability/supportsHaptics) property of the engine that returns from the [`createEngine(withLocality:)`](gcdevicehaptics/createengine(withlocality:).md) method applies to the device, not the game controller. Use the [`supportedLocalities`](gcdevicehaptics/supportedlocalities.md) method in this class to determine whether a game controller supports haptics.
 
- The [`supportsHaptics`](https://developer.apple.com/documentation/CoreHaptics/CHHapticDeviceCapability/supportsHaptics) property of the engine that returns from the [`createEngine(withLocality:)`](gcdevicehaptics/createengine(withlocality:).md) method applies to the device, not the game controller. Use the [`supportedLocalities`](gcdevicehaptics/supportedlocalities.md) method in this class to determine whether a game controller supports haptics.
-
 ## Topics
 
 ### Creating a haptics engine

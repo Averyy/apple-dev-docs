@@ -36,6 +36,7 @@ struct DictionaryKeyDefaultValueSubscript<Wrapped, Key, Default> where Wrapped :
 - [Encodable](../Swift/Encodable.md)
 - [PredicateExpression](predicateexpression.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StandardPredicateExpression](standardpredicateexpression.md)
 
 

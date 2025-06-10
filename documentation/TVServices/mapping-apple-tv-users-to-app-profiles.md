@@ -1,6 +1,6 @@
 # Mapping Apple TV users to app profiles
 
-**Framework**: Tvservices
+**Framework**: TV Services
 
 Adapt the content of your app for the current viewer by using an entitlement and simplifying sign-in flows.
 
@@ -179,4 +179,4 @@ func removeCredentials() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVServices/mapping-apple-tv-users-to-app-profiles)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvservices/mapping-apple-tv-users-to-app-profiles)*

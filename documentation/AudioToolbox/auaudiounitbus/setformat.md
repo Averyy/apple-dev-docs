@@ -1,6 +1,6 @@
 # setFormat(_:)
 
-**Framework**: Audiotoolbox  
+**Framework**: Audio Toolbox  
 **Kind**: method
 
 Sets the bus’s audio format.

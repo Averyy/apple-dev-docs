@@ -24,10 +24,10 @@ struct Image
 ## Mentions
 
 - [Building layouts with stack views](building-layouts-with-stack-views.md)
-- [Fitting images into available space](fitting-images-into-available-space.md)
-- [Displaying data in lists](displaying-data-in-lists.md)
-- [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
 - [Configuring views](configuring-views.md)
+- [Displaying data in lists](displaying-data-in-lists.md)
+- [Fitting images into available space](fitting-images-into-available-space.md)
+- [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
 
 #### Overview
 
@@ -116,6 +116,10 @@ To use an image as a control, use one of the initializers that takes a `label` p
   The allowed dynamic range for the view, or nil.
 - [struct DynamicRange](image/dynamicrange.md)
 ### Instance Methods
+- [func symbolColorRenderingMode(SymbolColorRenderingMode?) -> Image](image/symbolcolorrenderingmode(_:).md)
+  Sets the color rendering mode of the image.
+- [func symbolVariableValueMode(SymbolVariableValueMode?) -> Image](image/symbolvariablevaluemode(_:).md)
+  Sets the variable value mode mode for symbol images within this view.
 - [func widgetAccentedRenderingMode(WidgetAccentedRenderingMode?) -> some View](image/widgetaccentedrenderingmode(_:).md)
   Specifies the how to render an `Image` when using the `WidgetKit/WidgetRenderingMode/accented` mode.
 ### Enumerations
@@ -127,7 +131,6 @@ To use an image as a control, use one of the initializers that takes a `label` p
   A scale to apply to vector images relative to text.
 ### Default Implementations
 - [Equatable Implementations](image/equatable-implementations.md)
-- [JournalingSuggestionAsset Implementations](image/journalingsuggestionasset-implementations.md)
 
 ## Relationships
 
@@ -136,6 +139,7 @@ To use an image as a control, use one of the initializers that takes a `label` p
 - [Equatable](../Swift/Equatable.md)
 - [JournalingSuggestionAsset](../JournalingSuggestions/JournalingSuggestionAsset.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transferable](../CoreTransferable/Transferable.md)
 - [View](view.md)
 

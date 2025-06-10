@@ -20,8 +20,6 @@ Your application configures the connection types it allows before showing the pe
 
 > ❗ **Important**:  In iOS 3.0, [`GKPeerPickerConnectionType.nearby`](gkpeerpickerconnectiontype/nearby.md) is required to be one of the allowed connection types. An exception is thrown if your application does not include it.
 
- In iOS 3.0, [`GKPeerPickerConnectionType.nearby`](gkpeerpickerconnectiontype/nearby.md) is required to be one of the allowed connection types. An exception is thrown if your application does not include it.
-
 
 ---
 

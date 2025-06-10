@@ -13,6 +13,7 @@ Tells the delegate that the user is panning in a certain direction on the map.
 ## Declaration
 
 ```swift
+@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, panWith direction: CPMapTemplate.PanDirection)
 ```
 

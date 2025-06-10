@@ -1,6 +1,6 @@
 # Using contextual menu and toolbar item keys
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Learn about adding contextual menu items and toolbar items to a Safari app extension with information property list keys.
 
@@ -89,4 +89,4 @@ Use the `Image` key to provide an image for the toolbar button. Safari may resiz
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/using-contextual-menu-and-toolbar-item-keys)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/using-contextual-menu-and-toolbar-item-keys)*

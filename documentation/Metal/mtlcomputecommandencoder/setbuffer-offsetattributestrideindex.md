@@ -24,8 +24,6 @@ func setBuffer(_ buffer: any MTLBuffer, offset: Int, attributeStride stride: Int
 
 > ❗ **Important**:  Only call this method when the buffer is part of [`stageInputDescriptor`](mtlcomputepipelinedescriptor/stageinputdescriptor.md) and has its stride set to [`MTLBufferLayoutStrideDynamic`](mtlbufferlayoutstridedynamic.md).
 
- Only call this method when the buffer is part of [`stageInputDescriptor`](mtlcomputepipelinedescriptor/stageinputdescriptor.md) and has its stride set to [`MTLBufferLayoutStrideDynamic`](mtlbufferlayoutstridedynamic.md).
-
 For buffers binding to an argument using the `device` address space, align the offset to the data type’s size. The maximum size for an offset is `16` bytes.
 
 For buffers in the `constant` address space, the minimum alignment depends on the hardware running your app. See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for information on each Apple GPU family.

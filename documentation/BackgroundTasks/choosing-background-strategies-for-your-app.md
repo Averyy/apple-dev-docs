@@ -22,7 +22,7 @@ The system grants your app a limited amount of time to perform its work once it 
 
 Once your work completes, call [`endBackgroundTask(_:)`](https://developer.apple.com/documentation/UIKit/UIApplication/endBackgroundTask(_:)) before the time limit expires so that your app suspends properly. The system terminates your app if you fail to call this method.
 
-If the task is one that takes some time, such as downloading or uploading files, use [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) (Swift) or [`NSURLSession`](https://developer.apple.com/documentation/foundation/nsurlsession) (Objective-C) . See [`Downloading files in the background`](https://developer.apple.com/documentation/Foundation/downloading-files-in-the-background) for more information.
+If the task is one that takes some time, such as downloading or uploading files, use [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) (Swift) or [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) (Objective-C) . See [`Downloading files in the background`](https://developer.apple.com/documentation/Foundation/downloading-files-in-the-background) for more information.
 
 ##### Defer Intensive Work
 
@@ -56,12 +56,16 @@ When your extension completes its work, it must call the content handler with th
 
 ## See Also
 
-- [class BGTaskScheduler](bgtaskscheduler.md)
-  A class for scheduling task requests that launch your app in the background.
-- [Starting and Terminating Tasks During Development](starting-and-terminating-tasks-during-development.md)
-  Use the debugger during development to start tasks and to terminate them before completion.
+- [Using background tasks to update your app](../UIKit/using-background-tasks-to-update-your-app.md)
+  Configure your app to perform tasks in the background to make efficient use of processing time and power.
 - [Refreshing and Maintaining Your App Using Background Tasks](refreshing-and-maintaining-your-app-using-background-tasks.md)
   Use scheduled background tasks for refreshing your app content and for performing maintenance.
+- [class BGProcessingTask](bgprocessingtask.md)
+  A time-consuming processing task that runs while the app is in the background.
+- [class BGAppRefreshTask](bgapprefreshtask.md)
+  An object representing a short task typically used to refresh content that’s run while the app is in the background.
+- [class BGHealthResearchTask](bghealthresearchtask.md)
+  A time-consuming, necessary processing task that runs while the app is in the background to prepare data essential to a health research study.
 
 
 ---

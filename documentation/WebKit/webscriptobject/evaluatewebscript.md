@@ -1,6 +1,6 @@
 # evaluateWebScript(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the result of evaluating a script in the scripting environment.

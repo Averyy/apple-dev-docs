@@ -1,6 +1,6 @@
 # scrollDraggingMetric
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A metric that records scroll-dragging animations.

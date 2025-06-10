@@ -17,7 +17,7 @@ typedef struct SCSICmd_INQUIRY_PageB0_Data { ... } SCSICmd_INQUIRY_PageB0_Data;
 
 #### Overview
 
-Specification. This section contains all structures and definitions used by the INQUIRY command in response to a request for page B0h - Block Limits VPD Page.
+INQUIRY Page B0h data as defined in the SBC specification. This section contains all structures and definitions used by the INQUIRY command in response to a request for page B0h - Block Limits VPD Page.
 
 ## Topics
 

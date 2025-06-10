@@ -1,6 +1,6 @@
 # applying(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Applies the given difference to this collection.

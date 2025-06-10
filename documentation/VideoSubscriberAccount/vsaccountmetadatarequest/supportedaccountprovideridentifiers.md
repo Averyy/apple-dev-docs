@@ -1,6 +1,6 @@
 # supportedAccountProviderIdentifiers
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A list of identifiers for TV providers that your app supports.

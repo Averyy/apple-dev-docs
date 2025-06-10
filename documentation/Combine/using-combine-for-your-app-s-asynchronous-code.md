@@ -15,8 +15,6 @@ Combine provides compelling equivalents to these patterns, which allow you to el
 
 > 💡 **Tip**: You don’t need closure-based asychronicity patterns if you’re using the `async`-`await` features in Swift 5.5 and later. Instead, your code can `await` an asynchronous call, and then execute the code that would have been in the closure. This eliminates the need for both conventional completion handlers and Combine futures. For more information, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in .
 
-You don’t need closure-based asychronicity patterns if you’re using the `async`-`await` features in Swift 5.5 and later. Instead, your code can `await` an asynchronous call, and then execute the code that would have been in the closure. This eliminates the need for both conventional completion handlers and Combine futures. For more information, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in .
-
 ##### Replace Completion Handler Closures with Futures
 
 A completion handler is a closure accepted by a function that executes after the function completes its work. You typically implement this by invoking the completion handler directly when the function finishes its work, storing the closure outside the function if necessary. For example, the following function accepts a closure and then executes it after a two-second delay:
@@ -95,8 +93,6 @@ cancellable = vc.doSomethingSubject
 One advantage to using Combine is that the subject can call [`send(completion:)`](subject/send(completion:).md) to tell the subscriber that no further events are forthcoming, or that an error occurred.
 
 > 💡 **Tip**: If you are using `async`-`await` concurrency in Swift 5.5 or later, you can use a [`AsyncStream`](https://developer.apple.com/documentation/Swift/AsyncStream), instead of a Combine [`Subject`](subject.md), to asynchronously produce new elements. With this arrangement, the call point performs a `for`-`await`-`in` loop to iterate over the stream rather than subscribing to the subject. The code that would go in the subscriber’s `receiveValue` closure instead becomes the contents of the `for`-`await`-`in` loop.
-
-If you are using `async`-`await` concurrency in Swift 5.5 or later, you can use a [`AsyncStream`](https://developer.apple.com/documentation/Swift/AsyncStream), instead of a Combine [`Subject`](subject.md), to asynchronously produce new elements. With this arrangement, the call point performs a `for`-`await`-`in` loop to iterate over the stream rather than subscribing to the subject. The code that would go in the subscriber’s `receiveValue` closure instead becomes the contents of the `for`-`await`-`in` loop.
 
 ## See Also
 

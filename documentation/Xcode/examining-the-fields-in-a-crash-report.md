@@ -244,4 +244,4 @@ This list contains the components from the preceding example:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/examining-the-fields-in-a-crash-report)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/examining-the-fields-in-a-crash-report)*

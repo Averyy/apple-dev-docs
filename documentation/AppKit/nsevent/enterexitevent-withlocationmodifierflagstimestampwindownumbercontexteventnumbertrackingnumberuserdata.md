@@ -36,7 +36,7 @@ The created `NSEvent` object or `nil` if the object could not be created.
   The counter value of the latest mouse or tracking-rectangle event object.
 - [var trackingNumber: Int](nsevent/trackingnumber.md)
   The identifier of a mouse-tracking event.
-- [var systemUptime: TimeInterval](../foundation/processinfo/1414553-systemuptime.md)
+- [var systemUptime: TimeInterval { get }](../Foundation/ProcessInfo/systemUptime.md)
   The amount of time the system has been awake since the last time it was restarted.
 - [var userData: UnsafeMutableRawPointer?](nsevent/userdata.md)
   The data associated with a mouse-tracking event.

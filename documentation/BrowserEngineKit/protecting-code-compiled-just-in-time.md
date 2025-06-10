@@ -1,6 +1,6 @@
 # Protecting code compiled just in time
 
-**Framework**: Browserenginekit
+**Framework**: BrowserEngineKit
 
 Toggle memory between being writable and executable.
 
@@ -31,7 +31,7 @@ Pointer authentication is only available with the `arm64e` instruction set. You 
 
 Additionally, your JIT compiler needs to emit `arm64e` code that uses PAC-protected pointers. Your browser engine needs to adopt PAC for any pointer that influences control flow in your interpreter code.
 
-For more information on pointer authentication, see [`Improving control flow integrity with pointer authentication`](improving-control-flow-integrity-with-pointer-authentication.md).
+For more information on pointer authentication, see doc:improving-control-flow-integrity-with-pointer-authentication.
 
 #### Inline Your Memory Protection Toggles
 
@@ -53,7 +53,7 @@ If necessary, disassemble your extension’s binary to inspect the JIT critical 
 
 ## See Also
 
-- [Improving control flow integrity with pointer authentication](improving-control-flow-integrity-with-pointer-authentication.md)
+- [Improving control flow integrity with pointer authentication](../Apple-Silicon/improving-control-flow-integrity-with-pointer-authentication.md)
   Increase confidence that your code uses pointers correctly.
 - [var BE_JIT_WRITE_PROTECT_TAG: Int { get }](../BrowserEngineCore/BE_JIT_WRITE_PROTECT_TAG.md)
   A discriminator value the system uses to generate pointer authentication codes for just-in-time compilation.
@@ -61,4 +61,4 @@ If necessary, disassemble your extension’s binary to inspect the JIT critical 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/protecting-code-compiled-just-in-time)*
+*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/protecting-code-compiled-just-in-time)*

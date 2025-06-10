@@ -1,6 +1,6 @@
 # expect(throws:_:sourceLocation:performing:)
 
-**Framework**: Testing  
+**Framework**: Swift Testing  
 **Kind**: macro
 
 Check that an expression always throws a specific error.

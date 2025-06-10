@@ -1,6 +1,6 @@
 # kVTPixelTransferPropertyKey_DestinationICCProfile
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The International Color Consortium (ICC) profile for destination image buffers.

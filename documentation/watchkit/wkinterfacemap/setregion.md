@@ -1,6 +1,6 @@
 # setRegion(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Changes the map’s visible region to the specified coordinate region.

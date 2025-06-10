@@ -9,8 +9,6 @@ The payload you use to configure AirPlay settings.
 - iOS 7.0+
 - iPadOS 7.0+
 - macOS 10.10+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,17 +24,17 @@ Specify `com.apple.airplay` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad |
-| User Channel | macOS |
-| Allow Manual Install | iOS, macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Allow Multiple Payloads | iOS, macOS |
+| Device channel | iOS, macOS, Shared iPad |
+| User channel | macOS |
+| Allow manual install | iOS, macOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, macOS |
+| Allow multiple payloads | iOS, macOS, Shared iPad |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -86,7 +84,7 @@ Specify `com.apple.airplay` as the payload type.
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object AirPlay.AllowListItem](airplay/allowlistitem.md)
   The dictionary that defines allowed destinations.
 - [object AirPlay.PasswordsItem](airplay/passwordsitem.md)

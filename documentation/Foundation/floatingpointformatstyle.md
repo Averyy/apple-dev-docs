@@ -177,9 +177,12 @@ print("\(localizedPercentage!)") // 0.551
 - [ParseableFormatStyle](parseableformatstyle.md)
 - [RegexComponent](../Swift/RegexComponent.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [Language Introspector](language-introspector.md)
+  Converts data into human-readable text using formatters and locales.
 - [protocol FormatStyle](formatstyle.md)
   A type that converts a given data type into a representation in another type, such as a string.
 - [struct IntegerFormatStyle](integerformatstyle.md)
@@ -199,4 +202,4 @@ print("\(localizedPercentage!)") // 0.551
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/floatingpointformatstyle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/floatingpointformatstyle)*

@@ -103,6 +103,58 @@ struct ContentView: View {
 
 If the user moves focus to either field, the `focusedField` binding updates to `name`. However, if the app programmatically sets the value to `name`, SwiftUI chooses the first candidate, which in this case is the “Name” field. SwiftUI also emits a runtime warning in this case, since the repeated binding is likely a programmer error.
 
+##### Nest Focusable Views
+
+It is important to consider the difference between [`focused(_:equals:)`](view/focused(_:equals:).md) and [`focused(_:)`](view/focused(_:).md) with nested focusable views.
+
+For example, consider the following code:
+
+```swift
+struct ContentView: View {
+    @FocusState private var fieldIsFocused: Bool
+    @FocusState private var containerIsFocused: Bool
+
+    var body: some View {
+        VStack {
+            TextField("Name", ...)
+                .focused($fieldIsFocused)
+        }
+        .focusable()
+        .focused($containerIsFocused)
+    }
+}
+```
+
+The code above uses [`focused(_:)`](view/focused(_:).md), which binds focus state to the given Boolean state value. [`focused(_:)`](view/focused(_:).md) sets `containerIsFocused` to `true` both when the `VStack` itself receives focus and  the `TextField` that it contains receives focus. This behavior occurs because two independent instances of `@FocusState` are used to observe the focus state of the focusable `VStack` and the `TextField`. When the `VStack` does not have focus, SwiftUI checks the view hierarchy to find the closest view with focus to set the value for `containerIsFocused`. If the `TextField` contained within this `VStack` happens to be focused, [`focused(_:)`](view/focused(_:).md) will set `containerIsFocused` to `true`.
+
+If there is need to observe whether only the `VStack` has focus, but not the inner TextField, consider using [`focused(_:equals:)`](view/focused(_:equals:).md) instead, for more granular control.
+
+With [`focused(_:equals:)`](view/focused(_:equals:).md), the above code can be rewritten as follows:
+
+```swift
+struct ContentView: View {
+    enum Focus {
+        case container
+        case field
+    }
+
+    @FocusState private var focused: Focus?
+
+    var body: some View {
+        VStack {
+            TextField("Name", ...)
+                .focused($focused, equals: .field)
+        }
+        .focusable()
+        .focused($focused, equals: .container)
+    }
+}
+```
+
+With [`focused(_:equals:)`](view/focused(_:equals:).md), it is possible to define a custom data structure to represent focus state. In this case, a `Focus` enumeration is used. It has two cases, one for the focusable `VStack` and another for the `TextField` it contains. [`focused(_:equals:)`](view/focused(_:equals:).md) binds focused to `.container` only when the `VStack` itself has focus, and to `.field` when the `TextField` has focus. Because now there is only one `@FocusState` property, SwiftUI is able to disambiguate between cases when `VStack`  focus and  focus itself.
+
+Note that both of the above approaches are acceptable. [`focused(_:equals:)`](view/focused(_:equals:).md) can be used to observe whether the given view currently receives focus. While [`focused(_:)`](view/focused(_:).md) can be used for the same purpose, additionally it can observe whether the given view contains focus.
+
 ## Topics
 
 ### Creating a focus state

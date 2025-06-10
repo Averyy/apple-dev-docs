@@ -1,6 +1,6 @@
 # XcodeKit Version Constants
 
-**Framework**: Xcodekit
+**Framework**: XcodeKit
 
 Determine the version of XcodeKit available in an instance of Xcode.
 

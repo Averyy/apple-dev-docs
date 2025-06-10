@@ -1,6 +1,6 @@
 # vmnet_interface_get_port_forwarding_rules(_:_:)
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: func
 
 **Availability**:

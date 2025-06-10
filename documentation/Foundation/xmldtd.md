@@ -80,6 +80,8 @@ Once an [`XMLDTD`](xmldtd.md) instance is in place, you can add, remove, and cha
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # VSAccountAccessStatus
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: enum
 
 Constants that represent your app’s access status to the user’s subscription information.
@@ -40,6 +40,7 @@ enum VSAccountAccessStatus
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

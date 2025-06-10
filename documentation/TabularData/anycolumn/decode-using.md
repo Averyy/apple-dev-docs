@@ -1,6 +1,6 @@
 # decode(_:using:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Decodes the data in each element of the column.

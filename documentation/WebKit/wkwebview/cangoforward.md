@@ -1,6 +1,6 @@
 # canGoForward
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether there is a valid forward item in the back-forward list.

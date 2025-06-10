@@ -1,6 +1,6 @@
 # Offering Apple Pay in Your App
 
-**Framework**: Passkit
+**Framework**: PassKit (Apple Pay and Wallet)
 
 Collect payments with iPhone and Apple Watch using Apple Pay.
 
@@ -258,4 +258,4 @@ Once the sample app calls the completion handler in the [`paymentAuthorizationCo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/offering-apple-pay-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/passkit/offering-apple-pay-in-your-app)*

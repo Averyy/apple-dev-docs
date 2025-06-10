@@ -1,6 +1,6 @@
 # cancel(reason:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Cancels a session, discarding any unsent messages.

@@ -1,6 +1,6 @@
 # testSuiteWillStart(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Notifies the observer immediately before a test suite begins executing.

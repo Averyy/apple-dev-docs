@@ -1,6 +1,6 @@
 # WebMenuItemTagDownloadLinkToDisk
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Download the link to a disk.

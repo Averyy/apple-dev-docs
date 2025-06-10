@@ -44,6 +44,8 @@ ProgressView()
   A view that shows the progress toward completion of a task.
 - [struct DefaultDateProgressLabel](defaultdateprogresslabel.md)
   The default type of the current value label when used by a date-relative progress view.
+- [struct DefaultButtonLabel](defaultbuttonlabel.md)
+  The default label to use for a button.
 
 
 ---

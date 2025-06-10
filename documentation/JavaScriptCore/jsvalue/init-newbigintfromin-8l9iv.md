@@ -17,6 +17,15 @@
 init?(newBigIntFrom int64: Int64, in context: JSContext)
 ```
 
+#### Return Value
+
+The JSValue representing a JavaScript value with type BigInt.
+
+## Parameters
+
+- `int64`: The signed 64-bit integer of the BigInt JavaScript value being created.
+- `context`: The JSContext to which the resulting JSValue belongs.
+
 
 ---
 

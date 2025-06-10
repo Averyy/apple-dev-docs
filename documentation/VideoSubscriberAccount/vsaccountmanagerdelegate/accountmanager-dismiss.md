@@ -1,6 +1,6 @@
 # accountManager(_:dismiss:)
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: method  
 **Required**: Yes
 

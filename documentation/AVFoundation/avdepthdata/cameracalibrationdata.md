@@ -1,6 +1,6 @@
 # cameraCalibrationData
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The imaging parameters with which this depth data was captured.

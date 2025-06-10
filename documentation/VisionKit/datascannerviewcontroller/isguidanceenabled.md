@@ -1,6 +1,6 @@
 # isGuidanceEnabled
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A Boolean value that indicates whether the scanner provides help to a person when selecting items.

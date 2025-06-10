@@ -41,12 +41,14 @@ struct AnimatablePair<First, Second> where First : VectorArithmetic, Second : Ve
 - [AdditiveArithmetic](../Swift/AdditiveArithmetic.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VectorArithmetic](vectorarithmetic.md)
 
 ## See Also
 
 - [protocol Animatable](animatable.md)
   A type that describes how to animate a property of a view.
+- [struct AnimatableValues](animatablevalues.md)
 - [protocol VectorArithmetic](vectorarithmetic.md)
   A type that can serve as the animatable data of an animatable type.
 - [struct EmptyAnimatableData](emptyanimatabledata.md)

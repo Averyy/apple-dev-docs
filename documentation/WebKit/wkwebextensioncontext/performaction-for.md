@@ -1,6 +1,6 @@
 # performAction(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Performs the extension action associated with the specified tab or performs the default action if `nil` is passed.

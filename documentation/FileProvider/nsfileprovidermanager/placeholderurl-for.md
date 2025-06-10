@@ -1,6 +1,6 @@
 # placeholderURL(for:)
 
-**Framework**: Fileprovider  
+**Framework**: File Provider  
 **Kind**: method
 
 Returns a placeholder URL for a given document URL.

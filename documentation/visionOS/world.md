@@ -1,6 +1,6 @@
 # Hello World
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Use windows, volumes, and immersive spaces to teach people about the Earth.
 
@@ -286,4 +286,4 @@ ZStack {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/world)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/world)*

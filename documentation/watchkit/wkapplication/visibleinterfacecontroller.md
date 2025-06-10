@@ -1,6 +1,6 @@
 # visibleInterfaceController
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 Returns the last visible interface controller.

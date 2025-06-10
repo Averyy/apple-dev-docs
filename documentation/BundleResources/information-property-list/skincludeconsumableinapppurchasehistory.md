@@ -26,8 +26,6 @@ When you set this value to `true`, StoreKit includes all In-App Purchase transac
 
 > ⚠️ **Warning**:  Before you set [`SKIncludeConsumableInAppPurchaseHistory`](information-property-list/skincludeconsumableinapppurchasehistory.md) to `true`, be sure you have a way to reconcile a customer’s consumable transactions on your server, not only on the device. For example, store a transaction’s unique transaction identifier, [`id`](https://developer.apple.com/documentation/StoreKit/Transaction/id), along with its finish state to avoid unintentionally delivering content multiple times if the customer reinstalls the app. Use [`unfinished`](https://developer.apple.com/documentation/StoreKit/Transaction/unfinished) to get and process unfinished transactions.
 
- Before you set [`SKIncludeConsumableInAppPurchaseHistory`](information-property-list/skincludeconsumableinapppurchasehistory.md) to `true`, be sure you have a way to reconcile a customer’s consumable transactions on your server, not only on the device. For example, store a transaction’s unique transaction identifier, [`id`](https://developer.apple.com/documentation/StoreKit/Transaction/id), along with its finish state to avoid unintentionally delivering content multiple times if the customer reinstalls the app. Use [`unfinished`](https://developer.apple.com/documentation/StoreKit/Transaction/unfinished) to get and process unfinished transactions.
-
 ## See Also
 
 - [SKAdNetworkItems](information-property-list/skadnetworkitems.md)

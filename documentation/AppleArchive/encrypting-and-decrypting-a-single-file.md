@@ -14,7 +14,7 @@ This sample code project implements the Apple Encrypted Archive library to compr
 
 ##### Configure the Sample Code Project
 
-Before running the sample code project in Xcode, ensure you have a file in your temporary directory (see: [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/foundation/1409211-nstemporarydirectory)) named `file.txt`.
+Before running the sample code project in Xcode, ensure you have a file in your temporary directory (see: [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/Foundation/NSTemporaryDirectory())) named `file.txt`.
 
 ##### Define File Paths
 
@@ -157,7 +157,7 @@ _ = try ArchiveByteStream.process(readingFrom: decryptionStream,
                                   writingTo: decryptedFileStream)
 ```
 
-On return, `file.decrypted.txt` exists in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/foundation/1409211-nstemporarydirectory) and contains the decrypted contents of `file.encrypted`.
+On return, `file.decrypted.txt` exists in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/Foundation/NSTemporaryDirectory()) and contains the decrypted contents of `file.encrypted`.
 
 ## See Also
 

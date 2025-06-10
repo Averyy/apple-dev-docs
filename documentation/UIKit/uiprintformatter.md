@@ -14,7 +14,6 @@ An abstract base class for print formatters, which are objects that lay out cust
 ## Declaration
 
 ```swift
-@MainActor
 class UIPrintFormatter
 ```
 
@@ -76,7 +75,6 @@ Third-party subclasses of [`UIPrintFormatter`](uiprintformatter.md) aren’t rec
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

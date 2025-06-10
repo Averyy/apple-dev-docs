@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_ExpectedDuration
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The expected total duration of the compression session, if known.

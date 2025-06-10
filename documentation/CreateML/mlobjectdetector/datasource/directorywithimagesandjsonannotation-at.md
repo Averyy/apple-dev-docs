@@ -14,9 +14,9 @@ An object-detector data source you create by selecting a directory that contains
 case directoryWithImagesAndJsonAnnotation(at: URL)
 ```
 
-#### Discussion
+## Parameters
 
-- directoryWithImagesAndJsonAnnotation: The location of a directory that contains exactly one JSON annotation file and all the image files the JSON file’s annotations refer to.
+- `directoryWithImagesAndJsonAnnotation`: The location of a directory that contains exactly one JSON   annotation file and all the image files the JSON file’s annotations refer to.
 
 ## See Also
 

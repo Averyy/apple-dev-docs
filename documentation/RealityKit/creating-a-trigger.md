@@ -1,6 +1,6 @@
 # Creating a Trigger
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Define when and how a behavior fires.
 
@@ -54,4 +54,4 @@ myScene.notifications.spinBox.post()
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/creating-a-trigger)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/creating-a-trigger)*

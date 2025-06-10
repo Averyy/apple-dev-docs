@@ -1,6 +1,6 @@
 # body
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The body of the message.

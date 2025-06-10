@@ -1,6 +1,6 @@
 # LogEntries
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 An array of log messages.

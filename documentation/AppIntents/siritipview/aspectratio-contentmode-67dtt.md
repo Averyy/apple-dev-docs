@@ -10,7 +10,7 @@ Constrains this view’s dimensions to the aspect ratio of the given size.
 - iPadOS 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 6.0+
 
 ## Declaration

@@ -47,6 +47,7 @@ struct NumericImputer<Element> where Element : BinaryFloatingPoint, Element : De
 - [Copyable](../Swift/Copyable.md)
 - [Estimator](estimator.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UpdatableEstimator](updatableestimator.md)
 
 ## See Also

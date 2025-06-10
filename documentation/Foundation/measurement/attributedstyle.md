@@ -50,6 +50,7 @@ The [`formatted()`](measurement/formatted().md) method generates a string using 
 - [FormatStyle](formatstyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

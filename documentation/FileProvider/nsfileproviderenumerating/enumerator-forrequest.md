@@ -38,7 +38,7 @@ Your implementation should create and return an [`NSFileProviderEnumerator`](nsf
 
 If you can’t return the requested enumerator, you must throw an error in Swift, or if you return nil in Objective-C, you must set the `error` out parameter.
 
-If the `containerItemIdentifier` parameter is [`trashContainer`](nsfileprovideritemidentifier/trashcontainer.md) and your extension doesn’t support trashing items, then it should fail with the [`NSFeatureUnsupportedError`](https://developer.apple.com/documentation/foundation/nsfeatureunsupportederror) error code from the [`NSCocoaErrorDomain`](https://developer.apple.com/documentation/Foundation/NSCocoaErrorDomain) domain. Additionally, make sure the items managed by your File Provider extension don’t have the [`allowsTrashing`](nsfileprovideritemcapabilities/allowstrashing.md) capability enabled.
+If the `containerItemIdentifier` parameter is [`trashContainer`](nsfileprovideritemidentifier/trashcontainer.md) and your extension doesn’t support trashing items, then it should fail with the [`NSFeatureUnsupportedError`](https://developer.apple.com/documentation/Foundation/NSFeatureUnsupportedError-swift.var) error code from the [`NSCocoaErrorDomain`](https://developer.apple.com/documentation/Foundation/NSCocoaErrorDomain) domain. Additionally, make sure the items managed by your File Provider extension don’t have the [`allowsTrashing`](nsfileprovideritemcapabilities/allowstrashing.md) capability enabled.
 
 If the `containerItemIdentifier` parameter doesn’t exist in your remote storage, you should fail with an [`NSFileProviderError.Code.noSuchItem`](nsfileprovidererror/code/nosuchitem.md) error. The system then attempts to delete the item from disk.
 

@@ -24,8 +24,6 @@ The progress of the method.
 
 > ❗ **Important**:  This method is available in iOS 12.5, and in iOS 13.5 to 13.6.
 
- This method is available in iOS 12.5, and in iOS 13.5 to 13.6.
-
 Calls to this method generate a user notification that presents the `userExplanation`.
 
 ## Parameters
@@ -50,7 +48,7 @@ Calls to this method generate a user notification that presents the `userExplana
   Obtains information from the provided summary about the user’s exposure within a window of time.
 - [typealias ENGetExposureWindowsHandler](engetexposurewindowshandler.md)
   The handler the system invokes when the acquisition of windows completes.
-- [func getUserTraveled(completionHandler: ENGetUserTraveledHandler)](enmanager/getusertraveled(completionhandler:).md)
+- [func getUserTraveled(completionHandler: (Bool, (any Error)?) -> Void)](enmanager/getusertraveled(completionhandler:).md)
   Obtains information about the user’s travel within an exposure period.
 - [typealias ENGetUserTraveledHandler](engetusertraveledhandler.md)
   The handler the system invokes when acquistiion of the user’s travel status completes.

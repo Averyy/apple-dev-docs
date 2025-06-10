@@ -1,6 +1,6 @@
 # Migrate a Subscription to Advanced Commerce API
 
-**Framework**: Advancedcommerceapi  
+**Framework**: Advanced Commerce API  
 **Kind**: httpRequest
 
 Migrate a subscription that a customer purchased through In-App Purchase to a subscription you manage using the Advanced Commerce API.
@@ -10,9 +10,9 @@ Migrate a subscription that a customer purchased through In-App Purchase to a su
 
 ## Mentions
 
-- [Authorizing API requests from your server](authorizing-server-calls.md)
 - [Advanced Commerce API changelog](changelog.md)
 - [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
+- [Authorizing API requests from your server](authorizing-server-calls.md)
 
 #### Discussion
 
@@ -38,4 +38,4 @@ The request body that contains the details for the migration.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AdvancedCommerceAPI/migrate-subscription-to-advanced-commerce-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/advancedcommerceapi/migrate-subscription-to-advanced-commerce-api)*

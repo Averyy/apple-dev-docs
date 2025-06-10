@@ -17,7 +17,7 @@ func loadWindow()
 
 #### Discussion
 
-You should never directly invoke this method. Instead, access the [`window`](nswindowcontroller/window.md) property so the [`windowDidLoad()`](nswindowcontroller/windowdidload().md) and [`windowWillLoad()`](nswindowcontroller/windowwillload().md) methods are invoked. Subclasses can override this method if the way it finds and loads the window is not adequate. It uses the [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class’s [`init(for:)`](https://developer.apple.com/documentation/foundation/bundle/1417717-init) method to get the bundle, using the class of the nib file owner as argument. It then locates the nib file within the bundle and, if successful, loads it; if unsuccessful, it tries to find the nib file in the main bundle.
+You should never directly invoke this method. Instead, access the [`window`](nswindowcontroller/window.md) property so the [`windowDidLoad()`](nswindowcontroller/windowdidload().md) and [`windowWillLoad()`](nswindowcontroller/windowwillload().md) methods are invoked. Subclasses can override this method if the way it finds and loads the window is not adequate. It uses the [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class’s [`init(for:)`](https://developer.apple.com/documentation/Foundation/Bundle/init(for:)) method to get the bundle, using the class of the nib file owner as argument. It then locates the nib file within the bundle and, if successful, loads it; if unsuccessful, it tries to find the nib file in the main bundle.
 
 ## See Also
 

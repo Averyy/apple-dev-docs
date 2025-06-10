@@ -1,6 +1,6 @@
 # PATHSEG_CURVETO_QUADRATIC_SMOOTH_REL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

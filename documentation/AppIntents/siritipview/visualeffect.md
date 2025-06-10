@@ -10,7 +10,7 @@ Applies effects to this view, while providing access to layout information throu
 - iPadOS 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

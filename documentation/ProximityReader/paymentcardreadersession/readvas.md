@@ -1,6 +1,6 @@
 # readVAS(_:)
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Presents a sheet to read a loyalty card for Value Added Services (VAS), and returns the loyalty card data.

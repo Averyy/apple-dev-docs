@@ -1,6 +1,6 @@
 # partition(by:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Reorders the elements of the collection such that all the elements that match the given predicate are after all the elements that don’t match.

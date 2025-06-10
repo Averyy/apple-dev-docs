@@ -1,6 +1,6 @@
 # trigger
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The conditions that trigger the delivery of the notification.

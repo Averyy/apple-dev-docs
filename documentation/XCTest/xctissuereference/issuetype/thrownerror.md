@@ -1,6 +1,6 @@
 # XCTIssueReference.IssueType.thrownError
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 A test failure when the test throws an error in Swift.

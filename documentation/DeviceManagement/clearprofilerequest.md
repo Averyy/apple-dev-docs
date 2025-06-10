@@ -18,9 +18,7 @@ object ClearProfileRequest
 ## See Also
 
 - [object ClearProfileResponse](clearprofileresponse.md)
-  The response after removing a profile from devices.
 - [object ClearProfileResponse.Devices](clearprofileresponse/devices-data.dictionary.md)
-  A dictionary of devices with the status of their profile removal request.
 
 
 ---

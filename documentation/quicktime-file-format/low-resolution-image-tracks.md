@@ -10,8 +10,6 @@ It’s possible to store one or more low-resolution versions of a panoramic imag
 
 > ❗ **Important**: The panoramic images in the lower resolution image tracks and the hot spot image tracks, if present, must have the same orientation (horizontal or vertical) as the panorama image track.
 
-The panoramic images in the lower resolution image tracks and the hot spot image tracks, if present, must have the same orientation (horizontal or vertical) as the panorama image track.
-
 ## See Also
 
 - [Track reference entry structure](track_reference_entry_structure.md)

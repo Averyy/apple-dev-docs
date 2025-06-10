@@ -14,11 +14,11 @@ A validation dataset you provide as a data table.
 case table(MLDataTable, imageColumn: String, annotationColumn: String)
 ```
 
-#### Discussion
+## Parameters
 
-- table : An [`MLDataTable`](mldatatable.md) instance the enumeration case uses as its associated value.
-- imageColumn: The name of the column in the data table that contains the image file URLs.
-- annotationColumn : The name of the column in the data table that contains the image annotations.
+- `table`: An   instance the enumeration case uses as its associated value.
+- `imageColumn`: The name of the column in the data table that contains the image file URLs.
+- `annotationColumn `: The name of the column in the data table that contains the image annotations.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Pass.Locations
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that represents a location that the system uses to show a relevant pass.
@@ -8,7 +8,7 @@ An object that represents a location that the system uses to show a relevant pas
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
-- watchOS 2.0+
+- watchOS 1.0+
 
 ## Declaration
 

@@ -21,7 +21,7 @@ The actual tooltip to display, or `nil` to suppress display of the tooltip.
 
 #### Discussion
 
-The tooltip string is the value of the [`toolTip`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1532319-tooltip) attribute at `characterIndex`.
+The tooltip string is the value of the [`toolTip`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/toolTip) attribute at `characterIndex`.
 
 ## Parameters
 

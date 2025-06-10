@@ -5,6 +5,13 @@
 
 Creates a new set from a finite sequence of items.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift
@@ -15,7 +22,7 @@ init<S>(_ sequence: S) where S : Sequence, Self.Element == S.Element
 
 Use this initializer to create a new set from an existing sequence, like an array or a range:
 
-```swift
+```None
 let validIndices = Set(0..<7).subtracting([2, 4, 5])
 print(validIndices)
 // Prints "[6, 0, 1, 3]"

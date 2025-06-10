@@ -42,8 +42,6 @@ It is safe to call this function concurrently on two or more threads as long as 
 
 > ❗ **Important**:  Calling this function without also calling [`SecTrustSetAnchorCertificatesOnly(_:_:)`](sectrustsetanchorcertificatesonly(_:_:).md) disables the trusting of any anchors other than the ones specified by this function call.
 
- Calling this function without also calling [`SecTrustSetAnchorCertificatesOnly(_:_:)`](sectrustsetanchorcertificatesonly(_:_:).md) disables the trusting of any anchors other than the ones specified by this function call.
-
 ## Parameters
 
 - `trust`: The trust management object containing the certificate you want to evaluate. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. It can optionally also include other certificates to be used in verifying the first certificate. Use the   function to create a trust management object.

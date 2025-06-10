@@ -10,18 +10,10 @@ Get a list of subscription groups for a specific app.
 
 ## See Also
 
-- [Create a Subscription Group](post-v1-subscriptiongroups.md)
-  Create a subscription group for an app.
-- [Read Subscription Group Information](get-v1-subscriptiongroups-_id_.md)
-  Get the details of a specific subscription group.
-- [Modify a Subscription Group](patch-v1-subscriptiongroups-_id_.md)
-  Update the reference name for a specific subscription group.
-- [Delete a Subscription Group](delete-v1-subscriptiongroups-_id_.md)
-  Delete a specific empty subscription group.
-- [List All Subscription Group Localizations](get-v1-subscriptiongroups-_id_-subscriptiongrouplocalizations.md)
-  Get a list of all localized metadata for a specific subscription group.
-- [List All Subscriptions for a Subscription Group](get-v1-subscriptiongroups-_id_-subscriptions.md)
-  Get a list of all auto-renewable subscriptions in a subscription group.
+- [Read the Billing Grace Period Value for an App](get-v1-apps-_id_-subscriptiongraceperiod.md)
+  Get the Boolean value that represents the grace period opt-in state for your app.
+- [GET /v1/apps/{id}/relationships/subscriptionGracePeriod](get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
+- [GET /v1/apps/{id}/relationships/subscriptionGroups](get-v1-apps-_id_-relationships-subscriptiongroups.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # Supporting win-back offers in your app
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Re-engage previous subscribers with a free or discounted offer for an auto-renewable subscription, for a specific duration.
 
@@ -118,4 +118,4 @@ You can test win-back offers early in your development using StoreKit Testing in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/supporting-win-back-offers-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/supporting-win-back-offers-in-your-app)*

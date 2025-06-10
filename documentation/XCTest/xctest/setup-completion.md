@@ -1,6 +1,6 @@
 # setUp(completion:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Provides an opportunity to reset state asynchronously and handle errors before calling each test method in a test case.
@@ -20,14 +20,6 @@ func setUp() async throws
 > **Note**:  In Swift, `XCTest` does not support overriding this method with a completion handler. Override this method for asynchronous test setup with the following declaration: ```swift
 func setUp() async throws
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
- In Swift, `XCTest` does not support overriding this method with a completion handler. Override this method for asynchronous test setup with the following declaration:
-
-```swift
-func setUp() async throws
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
 In Swift, override `setUp() async throws` for asynchronous state preparation with error handling before each test. Do not override `setUp(completion:)` for synchronous state preparation. In Objective-C, override this method for asynchronous state preparation with error handling before each test. Call the completion handler after you have set up your state to notify the test system it can proceed with the next task.
 

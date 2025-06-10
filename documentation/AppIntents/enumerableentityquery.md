@@ -8,10 +8,10 @@ An interface you use to provide a short list of entities that are relatively sma
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -44,6 +44,7 @@ By implementing an `EnumerableEntityQuery`, you enable the Shortcuts app to gene
 - [EntityQuery](entityquery.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Inherited By
 - [UniqueAppEntityQuery](uniqueappentityquery.md)
 ### Conforming Types

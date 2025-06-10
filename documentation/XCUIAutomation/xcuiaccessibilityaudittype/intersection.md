@@ -1,6 +1,6 @@
 # intersection(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Returns a new option set with only the elements contained in both this set and the given set.

@@ -13,6 +13,7 @@ Begins navigational guidance for a trip.
 ## Declaration
 
 ```swift
+@MainActor
 func startNavigationSession(for trip: CPTrip) -> CPNavigationSession
 ```
 

@@ -1,6 +1,6 @@
 # Creating App Clip Codes
 
-**Framework**: Appclip
+**Framework**: App Clips
 
 Help users discover your App Clip by using an NFC-integrated or scan-only App Clip Code.
 
@@ -20,7 +20,7 @@ In addition to providing a great launch experience for your App Clip, you can al
 
 Creating an App Clip Code requires the following tasks:
 
-1. Choosing an invocation URL and configuring an  in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/login). To learn more, see [`Configuring the launch experience of your App Clip`](configuring-the-launch-experience-of-your-app-clip.md).
+1. Choosing an invocation URL and configuring an  in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/login). To learn more, see [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md).
 2. Choosing the type (scan-only or NFC-integrated), colors, and design of your App Clip Code. For design guidance, see [`Human Interface Guidelines > App Clips > App Clip Codes`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/app-clip-codes/).
 3. Generating App Clip Codes with App Store Connect or with the App Clip Code Generator command-line tool. For more information, see [`Pick a tool to create App Clip Codes`](creating-app-clip-codes#Pick-a-tool-to-create-App-Clip-Codes.md) below.
 4. Printing App Clip Codes yourself or with the help of a professional printing service — for example, [`RR Donnelley`](https://developer.apple.comhttps://touchless.acc.rrd.com/). For printing guidance, see [`Human Interface Guidelines > App Clips > Printing Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/printing-guidelines/) and [`Preparing multiple App Clip Codes for production`](preparing-multiple-app-clip-codes-for-production.md).
@@ -47,8 +47,18 @@ For more information, see [`Creating App Clip Codes with App Store Connect`](cre
 
 > **Note**:  You must be enrolled in the Apple Developer Program before you can download the App Clip Code Generator. For information about the Apple Developer Program, see [`How the Program Works`](https://developer.apple.comhttps://developer.apple.com/programs/how-it-works/).
 
+## Topics
+
+### App Clip Code creation
+- [Creating App Clip Codes with App Store Connect](creating-app-clip-codes-with-app-store-connect.md)
+  Select one or more advanced App Clip experiences in App Store Connect and create App Clip Codes for users to scan to launch your App Clip.
+- [Creating App Clip Codes with the App Clip Code Generator](creating-app-clip-codes-with-the-app-clip-code-generator.md)
+  Use the App Clip Code Generator command-line tool to verify your code’s colors, get color suggestions, and create App Clip Codes.
+
 ## See Also
 
+- [Encoding a URL in an App Clip Code](encoding-a-url-in-an-app-clip-code.md)
+  Choose an invocation URL for your App Clip Code that you can encode efficiently.
 - [Preparing multiple App Clip Codes for production](preparing-multiple-app-clip-codes-for-production.md)
   Prepare your App Clip Codes to send to a professional printing service.
 - [Interacting with App Clip Codes in AR](interacting-with-app-clip-codes-in-ar.md)
@@ -57,4 +67,4 @@ For more information, see [`Creating App Clip Codes with App Store Connect`](cre
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/creating-app-clip-codes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appclip/creating-app-clip-codes)*

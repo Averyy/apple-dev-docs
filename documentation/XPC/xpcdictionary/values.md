@@ -1,6 +1,6 @@
 # values
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: property
 
 A collection containing just the values of the dictionary.
@@ -61,4 +61,4 @@ A collection containing just the values of the dictionary. When iterated over, v
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/XPC/xpcdictionary/values)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xpc/xpcdictionary/values)*

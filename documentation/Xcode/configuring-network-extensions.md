@@ -56,4 +56,4 @@ The following table lists the app capabilities that Network Extensions support:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-network-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-network-extensions)*

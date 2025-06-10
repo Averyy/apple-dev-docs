@@ -1,6 +1,6 @@
 # WeatherCondition.smoky
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Smoky.

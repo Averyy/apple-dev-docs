@@ -1,6 +1,6 @@
 # table(_:didSelectRowAt:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Called to let you know that the user selected a row in the table.

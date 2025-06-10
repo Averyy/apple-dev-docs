@@ -138,6 +138,9 @@ class AVMutableMovieTrack
 ### Determining Sample Cursor Support
 - [var canProvideSampleCursors: Bool](avmutablemovietrack/canprovidesamplecursors.md)
   A Boolean value that indicates whether the track can provide instances of sample cursors to traverse its media samples and discover information.
+### Instance Methods
+- [func append(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) throws -> (decodeTime: CMTime, presentationTime: CMTime)](avmutablemovietrack/append(_:).md)
+  Appends sample data to a media file and adds sample references for the added data to a track’s media sample tables.
 
 ## Relationships
 

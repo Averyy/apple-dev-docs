@@ -1,6 +1,6 @@
 # xpc_string_get_string_ptr(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns a pointer to the internal storage of a string object.

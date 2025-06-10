@@ -1,6 +1,6 @@
 # Defining test functions
 
-**Framework**: Testing
+**Framework**: Swift Testing
 
 Define a test function to validate that code is working correctly.
 
@@ -76,4 +76,4 @@ If a test function can only run on newer versions of an operating system or of t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Testing/definingtests)*
+*[View on Apple Developer](https://developer.apple.com/documentation/testing/definingtests)*

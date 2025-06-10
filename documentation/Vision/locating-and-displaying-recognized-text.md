@@ -55,7 +55,7 @@ The Vision framework provides the ability to customize the way it handles text r
 
 The two text-recognition paths are: fast and accurate. The fast path is similar to a traditional OCR approach, and the accurate path uses a neural network that’s similar to how humans read text. By default, the request uses the accurate path, so the system sets the [`recognitionLevel`](RecognizeTextRequest/recognitionLevel-swift.property.md) property to `accurate`.
 
-Depending on the recognition level and language correction settings, the available recognition languages change. To dynamically generate a list of available languages to choose from, the app uses the [`supportedRecognitionLanguages`](RecognizeTextRequest/supportedRecognitionLanguages.md) method. The app sets the recognition languages with an array of [`Locale.Language`](https://developer.apple.com/documentation/foundation/locale/language) objects, and prioritizes the first element.
+Depending on the recognition level and language correction settings, the available recognition languages change. To dynamically generate a list of available languages to choose from, the app uses the [`supportedRecognitionLanguages`](RecognizeTextRequest/supportedRecognitionLanguages.md) method. The app sets the recognition languages with an array of [`Locale.Language`](https://developer.apple.com/documentation/Foundation/Locale/Language-swift.struct) objects, and prioritizes the first element.
 
 ```swift
 func updateRequestSettings() {
@@ -157,6 +157,12 @@ ForEach(imageOCR.observations, id: \.self) { observation in
 
 ## See Also
 
+- [Recognizing tables within a document](recognize-tables-within-a-document.md)
+  Scan a document containing a contact table and extract the content within the table in a formatted way.
+- [struct RecognizeDocumentsRequest](recognizedocumentsrequest.md)
+  An image-analysis request to scan an image of a document and provide information about its structure.
+- [struct DocumentObservation](documentobservation.md)
+  Information about the sections of content that an image-analysis request detects in a document.
 - [struct DetectTextRectanglesRequest](detecttextrectanglesrequest.md)
   An image-analysis request that finds regions of visible text in an image.
 - [struct RecognizeTextRequest](recognizetextrequest.md)

@@ -1,6 +1,6 @@
 # unitSymbol
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A string that represents the unit of measurement.

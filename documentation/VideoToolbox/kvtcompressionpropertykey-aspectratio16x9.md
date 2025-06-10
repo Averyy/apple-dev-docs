@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_AspectRatio16x9
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A Boolean value indicating whether the DV video stream should have the 16x9 flag set.

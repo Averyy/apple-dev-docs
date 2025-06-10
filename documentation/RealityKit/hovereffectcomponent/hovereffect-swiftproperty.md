@@ -15,7 +15,7 @@ The current hover effect of the hover effect component.
 ## Declaration
 
 ```swift
-var hoverEffect: HoverEffectComponent.HoverEffect
+var hoverEffect: HoverEffectComponent.HoverEffect { get set }
 ```
 
 

@@ -1,6 +1,6 @@
 # VTRegisterSupplementalVideoDecoderIfAvailable(_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Registers a video decoder for the specified codec type, if one exists on the current system.

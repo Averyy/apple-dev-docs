@@ -1,6 +1,6 @@
 # Adding 3D content to your app
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Add depth and dimension to your visionOS app and discover how to incorporate your app’s content into a person’s surroundings.
 
@@ -154,8 +154,6 @@ struct MyImmersiveApp: App {
 If you don’t add a style modifier to your [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace) declaration, the system creates that space using the [`mixed`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/mixed) style. This style displays your content together with the passthrough content that shows the person’s surroundings. Other styles let you hide passthrough to varying degrees. Use the [`immersionStyle(selection:in:)`](https://developer.apple.com/documentation/SwiftUI/Scene/immersionStyle(selection:in:)) modifier to specify which styles your space supports. If you specify more than one style, you can toggle between the styles using the `selection` parameter of the modifier.
 
 > ⚠️ **Warning**: Be mindful of how much content you include in immersive scenes that use the [`mixed`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/mixed) style. Content that fills a significant portion of the screen, even if that content is partially transparent, can prevent the person from seeing potential hazards in their surroundings. If you want to immerse the person in your content, configure your space with the [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) style. For more information, see, [`Creating fully immersive experiences in your app`](creating-fully-immersive-experiences.md).
-
-Be mindful of how much content you include in immersive scenes that use the [`mixed`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/mixed) style. Content that fills a significant portion of the screen, even if that content is partially transparent, can prevent the person from seeing potential hazards in their surroundings. If you want to immerse the person in your content, configure your space with the [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) style. For more information, see, [`Creating fully immersive experiences in your app`](creating-fully-immersive-experiences.md).
 
 Remember to set the position of items you place in an [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace). Position SwiftUI views using modifiers, and position a RealityKit entity using its transform component. SwiftUI places the origin of a space at a person’s feet initially, but can change this origin in response to other events. For example, the system might shift the origin to accommodate a SharePlay activity that displays your content with Spatial Personas. If you need to position SwiftUI views and RealityKit entities relative to one another, perform any needed coordinate conversions using the methods in the `content` parameter of [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView).
 

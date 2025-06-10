@@ -1,6 +1,6 @@
 # setURLSchemeHandler(_:forURLScheme:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Registers an object to load resources associated with the specified URL scheme.
@@ -26,8 +26,6 @@ Use this method to register any custom resource types that your web content uses
 It is a programmer error to call this method than one once for the same scheme.
 
 > 💡 **Tip**:  To prevent future conflicts with WebKit, include the name of your app or company in any custom scheme names.
-
- To prevent future conflicts with WebKit, include the name of your app or company in any custom scheme names.
 
 ## Parameters
 

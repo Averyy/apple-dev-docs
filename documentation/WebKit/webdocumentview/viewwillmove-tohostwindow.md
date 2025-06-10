@@ -1,6 +1,6 @@
 # viewWillMove(toHostWindow:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method  
 **Required**: Yes
 
@@ -21,7 +21,7 @@ func viewWillMove(toHostWindow hostWindow: NSWindow!)
 
 ## See Also
 
-- [var hostWindow: NSWindow!](webview/hostwindow.md)
+- [var hostWindow: NSWindow!](webview-swift.class/hostwindow.md)
   The receiver’s host window.
 - [func viewDidMoveToHostWindow()](webdocumentview/viewdidmovetohostwindow.md)
   Invoked when a web view’s host window is set.

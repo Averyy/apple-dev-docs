@@ -1,6 +1,6 @@
 # expectationDescription
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A human readable string used to describe the expectation in log output and test reports.

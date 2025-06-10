@@ -36,6 +36,18 @@ struct PaymentCardReaderStore
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [struct StoreAndForwardBatch](storeandforwardbatch.md)
+  A structure that stores the data to send to the payment service provider to process.
+- [struct StoreAndForwardBatchDeletionToken](storeandforwardbatchdeletiontoken.md)
+  A secure token that you use to delete a Store and Forward batch.
+- [class StoreAndForwardPaymentCardReaderSession](storeandforwardpaymentcardreadersession.md)
+  The object you use to start reading a contactless payment or loyalty card in Store and Forward mode.
+- [struct StoreAndForwardStatus](storeandforwardstatus.md)
+  A structure that describes the Store and Forward session status.
 
 
 ---

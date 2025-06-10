@@ -24,8 +24,6 @@ mutating func appendInterpolation(_ argumentObject: @autoclosure @escaping () ->
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated object description to a log message.
 
- You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated object description to a log message.
-
 ## Parameters
 
 - `argumentObject`: The interpolated object, which the system automatically wraps in a closure. The object itself doesn’t appear in the log message. Instead, the system calls the object’s   method and incorporates the value it returns.

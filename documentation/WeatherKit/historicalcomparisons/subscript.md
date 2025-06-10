@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: subscript
 
 The historical comparison at the provided index.

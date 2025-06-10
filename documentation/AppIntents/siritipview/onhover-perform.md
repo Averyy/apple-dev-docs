@@ -9,7 +9,7 @@ Adds an action to perform when the user moves the pointer over or away from the 
 - iOS 13.4+
 - iPadOS 13.4+
 - macOS 10.15+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

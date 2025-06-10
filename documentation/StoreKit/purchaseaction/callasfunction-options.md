@@ -17,7 +17,8 @@ Starts an in-app purchase for the indicated product and purchase options.
 ## Declaration
 
 ```swift
-func callAsFunction(_ product: Product, options: Set<Product.PurchaseOption> = []) async throws -> Product.PurchaseResult
+@MainActor
+@preconcurrency func callAsFunction(_ product: Product, options: Set<Product.PurchaseOption> = []) async throws -> Product.PurchaseResult
 ```
 
 #### Return Value

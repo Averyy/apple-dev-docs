@@ -1,6 +1,6 @@
 # ReturnInfo
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 The information related to a partial or full return.

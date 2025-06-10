@@ -49,15 +49,11 @@ For relocalization to succeed, the device must be returned to a position and ori
 
 > ❗ **Important**:  When your app is in the [`ARCamera.TrackingState.Reason.relocalizing`](arcamera/trackingstate-swift.enum/reason/relocalizing.md) state, offer the user a way to reset the session (with [`run(_:options:)`](arsession/run(_:options:).md) and [`resetTracking`](arsession/runoptions/resettracking.md)) in case relocalization never succeeds.
 
- When your app is in the [`ARCamera.TrackingState.Reason.relocalizing`](arcamera/trackingstate-swift.enum/reason/relocalizing.md) state, offer the user a way to reset the session (with [`run(_:options:)`](arsession/run(_:options:).md) and [`resetTracking`](arsession/runoptions/resettracking.md)) in case relocalization never succeeds.
-
 ##### Create a Persistent Ar Experience
 
 In iOS 12.0 and later, the [`ARWorldMap`](arworldmap.md) class stores the information that ARKit uses to resume a session. By saving a world map to a file, you can use the same relocalization process either to recover from a brief interruption or to resume from an earlier session, even if your app has relaunched. World maps include anchors, so you can also replace virtual content to match an earlier session.
 
 > ❗ **Important**:  The reliability of using [`ARWorldMap`](arworldmap.md) to resume a session strongly depends on the real-world environment. For example, it’s easy to successfully relocalize to a map recorded indoors under consistent artificial lighting, or to a map captured only moments beforehand. Success is less likely when lighting conditions or features of the local environment have changed over time.
-
- The reliability of using [`ARWorldMap`](arworldmap.md) to resume a session strongly depends on the real-world environment. For example, it’s easy to successfully relocalize to a map recorded indoors under consistent artificial lighting, or to a map captured only moments beforehand. Success is less likely when lighting conditions or features of the local environment have changed over time.
 
 ![Sequence diagram with normal tracking state, saving a world map before the app closes. Upon relaunching the app and loading the saved map, tracking state proceeds from notAvailable to limited (initializing) to limited (relocalizing).](https://docs-assets.developer.apple.com/published/d8356d1f883f97d38a6730faad22413b/media-3000195%402x.png)
 
@@ -66,8 +62,6 @@ To allow the user to come back to the same AR session after leaving your app, yo
 To relocalize to a saved world map, use the [`initialWorldMap`](arworldtrackingconfiguration/initialworldmap.md) property when running a session. Like when resuming from an interruption, the session starts in the [`ARCamera.TrackingState.limited(_:)`](arcamera/trackingstate-swift.enum/limited(_:).md) ([`ARCamera.TrackingState.Reason.relocalizing`](arcamera/trackingstate-swift.enum/reason/relocalizing.md)) tracking state. If ARKit can reconcile the world map with the current environment, the tracking state becomes [`ARCamera.TrackingState.normal`](arcamera/trackingstate-swift.enum/normal.md) after a short time, indicating that the session matches the recorded world map.
 
 > 💡 **Tip**:  For relocalization to succeed, the device needs to visit areas of the local environment that it passed through before creating the map—you might assist the user with this task by saving a screenshot with the world map and displaying it as a placement guide when attempting to relocalize.
-
- For relocalization to succeed, the device needs to visit areas of the local environment that it passed through before creating the map—you might assist the user with this task by saving a screenshot with the world map and displaying it as a placement guide when attempting to relocalize.
 
 A session resumed from a world map includes all anchors saved in that world map. If you use the [`name`](aranchor/name.md) property to identify virtual objects you’ve placed anchors for, you can refer to the anchors in the resumed session to recreate that virtual content. To ensure that such content is placed correctly, display it only after the session’s tracking state changes to [`ARCamera.TrackingState.normal`](arcamera/trackingstate-swift.enum/normal.md).
 

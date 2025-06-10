@@ -29,8 +29,6 @@ Instead, use [`OSAllocatedUnfairLock`](osallocatedunfairlock.md), which avoids t
 
 > ❗ **Important**:  If you’ve existing Swift code that uses [`os_unfair_lock`](os_unfair_lock.md), change it to use [`OSAllocatedUnfairLock`](osallocatedunfairlock.md) to ensure correct locking behavior.
 
- If you’ve existing Swift code that uses [`os_unfair_lock`](os_unfair_lock.md), change it to use [`OSAllocatedUnfairLock`](osallocatedunfairlock.md) to ensure correct locking behavior.
-
 To create a lock that protects operation state, create an enumeration that contains the possible states, then create a lock object, passing the initial state. Here’s an example of what that looks like for an asset load operation:
 
 ```swift
@@ -84,8 +82,6 @@ When using this approach, you must call [`unlock()`](osallocatedunfairlock/unloc
 
 > ⚠️ **Warning**:  [`OSAllocatedUnfairLock`](osallocatedunfairlock.md) isn’t a recursive lock. Attempting to lock an object more than once from the same thread without unlocking in between triggers a runtime exception.
 
- [`OSAllocatedUnfairLock`](osallocatedunfairlock.md) isn’t a recursive lock. Attempting to lock an object more than once from the same thread without unlocking in between triggers a runtime exception.
-
 ## Topics
 
 ### Creating a lock object
@@ -126,6 +122,7 @@ When using this approach, you must call [`unlock()`](osallocatedunfairlock/unloc
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

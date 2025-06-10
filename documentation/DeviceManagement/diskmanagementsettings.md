@@ -7,8 +7,6 @@ The declaration to configure disk management settings on the device.
 
 **Availability**:
 - macOS 15.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -16,9 +14,24 @@ The declaration to configure disk management settings on the device.
 object DiskManagementSettings
 ```
 
+#### Discussion
+
+Specify `com.apple.configuration.diskmanagement.settings` as the declaration type.
+
+##### Configuration Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | macOS |
+| Allowed in device enrollment | NA |
+| Allowed in user enrollment | NA |
+| Allowed in local enrollment | macOS |
+| Allowed in system scope | macOS |
+| Allowed in user scope | NA |
+
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object DiskManagementSettingsRestrictionsObject](diskmanagementsettingsrestrictionsobject.md)
   The restrictions for the disk.
 
@@ -40,6 +53,8 @@ object DiskManagementSettings
   The declaration to configure a Calendar subscription.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AudioAccessorySettings](audioaccessorysettings.md)
+  The declaration to configure audio accessory settings.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
   The declaration to configure an interactive, legacy profile.
 - [object LegacyProfile](legacyprofile.md)
@@ -50,10 +65,8 @@ object DiskManagementSettings
   The declaration to test the MDM system.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
-- [object PasscodeSettings](passcodesettings.md)
-  The declaration to configure passcode policy settings.
-- [object SafariExtensionSettings](safariextensionsettings.md)
-  The declaration to configure Safari Extensions.
+- [object Package](package.md)
+  The declaration to install a package.
 
 
 ---

@@ -27,6 +27,7 @@ object BetaAppReviewSubmissionResponse
   A response that contains a list of Beta App Review Submission resources.
 - [type BetaReviewState](betareviewstate.md)
   String that indicates the review state of a beta app.
+- [object BetaAppReviewSubmissionBuildLinkageResponse](betaappreviewsubmissionbuildlinkageresponse.md)
 
 
 ---

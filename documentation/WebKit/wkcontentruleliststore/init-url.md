@@ -1,6 +1,6 @@
 # init(url:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Creates a new content rule list store in the specified directory.

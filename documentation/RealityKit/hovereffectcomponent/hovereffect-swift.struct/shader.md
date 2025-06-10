@@ -24,8 +24,6 @@ The custom shader can be either MaterialX or [`CustomMaterial`](custommaterial.m
 
 > ⚠️ **Warning**: This style doesn’t display anything without an appropriate custom shader.
 
-This style doesn’t display anything without an appropriate custom shader.
-
 ## Parameters
 
 - `inputs`: A   instance that allows you to customize various aspects of this hover effect.

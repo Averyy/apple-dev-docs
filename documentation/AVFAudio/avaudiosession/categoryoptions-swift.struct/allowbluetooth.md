@@ -6,11 +6,11 @@
 An option that determines whether Bluetooth hands-free devices appear as available input routes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS 1.0+
+- iPadOS 1.0+
+- Mac Catalyst 13.1+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS 1.0+
 - watchOS 11.0+
 
 ## Declaration

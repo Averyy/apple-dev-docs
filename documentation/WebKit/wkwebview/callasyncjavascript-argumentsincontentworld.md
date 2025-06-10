@@ -1,6 +1,6 @@
 # callAsyncJavaScript(_:arguments:in:contentWorld:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Executes the specified string as an asynchronous JavaScript function.

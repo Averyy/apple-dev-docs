@@ -12,7 +12,6 @@ The text marker range of the current selection.
 - macOS ?+
 - tvOS 18.2+
 - visionOS 2.2+
-- watchOS 11.2+
 
 ## Declaration
 

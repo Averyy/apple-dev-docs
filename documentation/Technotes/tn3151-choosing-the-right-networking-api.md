@@ -183,7 +183,7 @@ In some circumstances that may not be possible.  Perhaps you’re working with a
 Apple platforms support a variety of alternative TCP APIs:
 
 - `CFSocketStream` was marked as to-be-deprecated in 2021 (see [`Versions`](tn3151-choosing-the-right-networking-api#Versions.md)).  Apple will not enhance it to support new features.  For example, Apple added TLS 1.3 support to Network framework in 2019 (see [`Versions`](tn3151-choosing-the-right-networking-api#Versions.md)), but has not added it to `CFSocketStream`.
-- The TCP networking support in `NSStream`, most notably [`getStreamsToHost(withName:port:inputStream:outputStream:)`](https://developer.apple.com/documentation/foundation/stream/1414311-getstreamstohost), is layered on top of `CFSocketStream` and is on the same deprecation path.
+- The TCP networking support in `NSStream`, most notably [`getStreamsToHost(withName:port:inputStream:outputStream:)`](https://developer.apple.com/documentation/Foundation/Stream/getStreamsToHost(withName:port:inputStream:outputStream:)), is layered on top of `CFSocketStream` and is on the same deprecation path.
 - It’s possible to use [`FileHandle`](https://developer.apple.com/documentation/Foundation/FileHandle) for networking in conjunction with BSD Sockets.  While this is still supported, it’s not recommended for all the same reasons that BSD Sockets is not recommended.  See [`BSD Sockets best practices`](tn3151-choosing-the-right-networking-api#BSD-Sockets-best-practices.md).
 - [`CFSocket`](https://developer.apple.com/documentation/CoreFoundation/CFSocket) is much like `FileHandle`: It’s possible to use it to run a TCP connection, but it has all the same limitations as BSD Sockets.
 - [`URLSessionStreamTask`](https://developer.apple.com/documentation/Foundation/URLSessionStreamTask) is much like `URLSessionWebSocketTask`: Unless you have a specific reason to use `URLSession`, use Network framework instead.
@@ -216,10 +216,10 @@ Use it when your requirements are aligned with those features.  Don’t use it i
 
 Foundation also has peer-to-peer Wi-Fi support:
 
-- When advertising a service using `NSNetService`, set the `includesPeerToPeer` property.
-- To accept connections, set the [`listenForConnections`](https://developer.apple.com/documentation/foundation/netservice/options/1414270-listenforconnections) flag and implement the [`netService(_:didAcceptConnectionWith:outputStream:)`](https://developer.apple.com/documentation/foundation/netservicedelegate/1407489-netservice) delegate callback.
-- When browsing for services using `NSNetServiceBrowser`, set the `includesPeerToPeer` property.
-- After discovering a service with a peer-to-peer enabled browser, connect to that service using [`getInputStream(_:outputStream:)`](https://developer.apple.com/documentation/foundation/netservice/1418325-getinputstream).
+- When advertising a service using `NSNetService`, set the [`includesPeerToPeer`](https://developer.apple.com/documentation/Foundation/NetService/includesPeerToPeer) property.
+- To accept connections, set the [`listenForConnections`](https://developer.apple.com/documentation/Foundation/NetService/Options/listenForConnections) flag and implement the [`netService(_:didAcceptConnectionWith:outputStream:)`](https://developer.apple.com/documentation/Foundation/NetServiceDelegate/netService(_:didAcceptConnectionWith:outputStream:)) delegate callback.
+- When browsing for services using `NSNetServiceBrowser`, set the [`includesPeerToPeer`](https://developer.apple.com/documentation/Foundation/NetServiceBrowser/includesPeerToPeer) property.
+- After discovering a service with a peer-to-peer enabled browser, connect to that service using [`getInputStream(_:outputStream:)`](https://developer.apple.com/documentation/Foundation/NetService/getInputStream(_:outputStream:)).
 
 These APIs were marked as to-be-deprecated in 2021 (see [`Versions`](tn3151-choosing-the-right-networking-api#Versions.md)).  If you have existing code that uses them, make a plan to migrate to [`Network`](https://developer.apple.com/documentation/Network) framework.
 
@@ -349,4 +349,4 @@ Networking is fundamental to all Apple platforms.  When Apple introduces a new n
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3151-choosing-the-right-networking-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3151-choosing-the-right-networking-api)*

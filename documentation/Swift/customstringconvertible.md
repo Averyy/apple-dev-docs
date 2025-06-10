@@ -131,6 +131,8 @@ print(p)
 - [UInt64](uint64.md)
 - [UInt8](uint8.md)
 - [Unicode.Scalar](unicode/scalar.md)
+- [Unicode.UTF8.ValidationError](unicode/utf8/validationerror.md)
+- [Unicode.UTF8.ValidationError.Kind](unicode/utf8/validationerror/kind-swift.struct.md)
 - [UnownedJob](unownedjob.md)
 - [WordPair](../synchronization/wordpair.md)
 

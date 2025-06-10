@@ -24,13 +24,9 @@ class ENExposureConfiguration
 
 > ❗ **Important**:  This class is available in iOS 12.5, and in iOS 13.5 and later.
 
- This class is available in iOS 12.5, and in iOS 13.5 and later.
-
 The ExposureNotification framework defines an Exposure Risk Value (ERV) to allow Health Authorities to define when to alert a user that they may have been exposed to someone diagnosed with COVID-19. The app uses the ERV to calculate the user’s Meaningful Exposure Minutes (MEMs) value. Health Authorities have flexibility in calculating this value by setting weights and values related to Bluetooth attenuations, infectiousness of the affected individual, and diagnosis report type. They can also determine what threshold will result in a notification.
 
 > ❗ **Important**:  While the ERV is measured in MEMs, the system actually calculates and returns a number of seconds, rounded to the nearest minute. For example, if a person has an ERV of 2 MEMs, the app returns a value of 120 (seconds). Convert ERVs to minutes before displaying it to the user by dividing the returned value by 60.
-
- While the ERV is measured in MEMs, the system actually calculates and returns a number of seconds, rounded to the nearest minute. For example, if a person has an ERV of 2 MEMs, the app returns a value of 120 (seconds). Convert ERVs to minutes before displaying it to the user by dividing the returned value by 60.
 
 The calculation method described in this document is available starting with iOS 14. To adopt this method of risk assessment, set the `ENAPIVersion` key to the integer value 2 in the app’s `Info.plist` file. For more information on the V1 calculation used in earlier versions of iOS, see [`Exposure Risk Value Calculation in ExposureNotification Version 1`](exposure-risk-value-calculation-in-exposurenotification-version-1.md).
 
@@ -75,8 +71,6 @@ The result of the calculation shows an ERV of 45 minutes:
 ![A diagram showing an example of calculating the ERV.](https://docs-assets.developer.apple.com/published/2aa6cf44c52a213313a371f390c80b59/media-3670911%402x.png)
 
 > ❗ **Important**:  To prevent an ERV of 0, set any unused weight to 100 percent.
-
- To prevent an ERV of 0, set any unused weight to 100 percent.
 
 ## Topics
 

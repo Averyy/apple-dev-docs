@@ -1,6 +1,6 @@
 # WCError.Code.notReachable
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 An error indicating that the counterpart app isn’t reachable.

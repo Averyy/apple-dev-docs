@@ -1,6 +1,6 @@
 # Methods for Skipping Tests
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Skip tests when meeting specified conditions.
 

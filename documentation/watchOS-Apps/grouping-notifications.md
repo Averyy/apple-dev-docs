@@ -1,6 +1,6 @@
 # Grouping notifications
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Organize notifications into threads.
 

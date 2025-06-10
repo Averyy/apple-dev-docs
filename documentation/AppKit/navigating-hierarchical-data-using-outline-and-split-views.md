@@ -1,6 +1,6 @@
 # Navigating Hierarchical Data Using Outline and Split Views
 
-**Framework**: Appkit
+**Framework**: AppKit
 
 Build a structured user interface that simplifies navigation in your app.
 
@@ -153,4 +153,4 @@ func outlineView(_ outlineView: NSOutlineView, itemForPersistentObject object: A
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/navigating-hierarchical-data-using-outline-and-split-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/navigating-hierarchical-data-using-outline-and-split-views)*

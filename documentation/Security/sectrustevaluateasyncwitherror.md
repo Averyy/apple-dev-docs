@@ -34,8 +34,6 @@ This method behaves like [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewit
 
 > ❗ **Important**:  You must call this method from the same dispatch queue that you specify as the `queue` parameter.
 
- You must call this method from the same dispatch queue that you specify as the `queue` parameter.
-
 ## Parameters
 
 - `trust`: The trust management object to evaluate. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. It can optionally also include other certificates to be used in verifying the first certificate. Use the   function to create a trust management object.

@@ -1,0 +1,24 @@
+# recoverySuggestion
+
+**Framework**: Foundation Models  
+**Kind**: property
+
+A string representation of the recovery suggestion.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+var recoverySuggestion: String? { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/recoverysuggestion)*

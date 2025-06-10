@@ -20,7 +20,7 @@ var time: CMTime { get }
 
 #### Discussion
 
-For captured media, this property represents the time when the metadata was captured. For metadata originating from a sample buffer ([`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer)), the time is the sample buffer’s presentation time. If there is no valid time value associated with the metadata, this property should contain [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid).
+For captured media, this property represents the time when the metadata was captured. For metadata originating from a sample buffer ([`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer)), the time is the sample buffer’s presentation time. If there is no valid time value associated with the metadata, this property should contain [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid).
 
 ## See Also
 

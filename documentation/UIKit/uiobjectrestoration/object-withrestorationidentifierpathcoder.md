@@ -1,6 +1,6 @@
 # object(withRestorationIdentifierPath:coder:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method  
 **Required**: Yes
 

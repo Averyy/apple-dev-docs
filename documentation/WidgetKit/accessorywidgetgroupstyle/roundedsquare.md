@@ -1,6 +1,6 @@
 # roundedSquare
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 Masks each content view with a rounded square.

@@ -15,7 +15,7 @@ The image returned by the snapshot request.
 ## Declaration
 
 ```swift
-var image: UIImage { get }
+var image: NSImage { get }
 ```
 
 

@@ -1,6 +1,6 @@
 # Reverting data changes using the undo manager
 
-**Framework**: Swiftdata
+**Framework**: SwiftData
 
 Automatically record data change operations that people perform in your SwiftUI app, and let them undo and redo those changes.
 
@@ -50,4 +50,4 @@ Other than enabling undo in SwiftData, you don’t need to write any additional 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftData/reverting-data-changes-using-the-undo-manager)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/reverting-data-changes-using-the-undo-manager)*

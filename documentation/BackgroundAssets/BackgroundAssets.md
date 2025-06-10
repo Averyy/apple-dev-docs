@@ -1,6 +1,6 @@
 # Background Assets
 
-**Framework**: Backgroundassets  
+**Framework**: Background Assets  
 **Kind**: module
 
 Schedule background downloads of large assets during or after app installation, when the app updates, and periodically while the app remains on-device.
@@ -70,6 +70,22 @@ The flow for periodic content requests is identical to the app install and updat
 ### Errors
 - [let BAErrorDomain: String](baerrordomain.md)
 - [enum BAErrorCode](baerrorcode.md)
+### Classes
+- [actor AssetPackManager](assetpackmanager.md)
+  An actor that manages asset packs.
+### Protocols
+- [protocol ManagedDownloaderExtension](manageddownloaderextension.md)
+  A protocol to which a managed downloader extension must conform.
+- [protocol ManagedDownloaderExtensionConfiguration](manageddownloaderextensionconfiguration.md)
+### Structures
+- [struct AssetPack](assetpack.md)
+  An archive of assets that the system downloads together.
+- [struct AssetPackManifest](assetpackmanifest.md)
+  A representation of a manifest that lists asset packs that are available to download.
+- [struct BAAssetPackStatus](baassetpackstatus.md)
+  The status of an asset pack.
+### Enumerations
+- [enum ManagedBackgroundAssetsError](managedbackgroundassetserror.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # Providers
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Read information about source code management providers you connected to Xcode Cloud.
 
@@ -23,6 +23,7 @@ The `scmProviders` resource represents the source code management (SCM) provider
   Get information about a specific source code management provider you connected to Xcode Cloud.
 - [List all Repositories for a Source Code Management Provider](get-v1-scmproviders-_id_-repositories.md)
   List all Git repositories for a specific source code management provider you connected to Xcode Cloud.
+- [GET /v1/scmProviders/{id}/relationships/repositories](get-v1-scmproviders-_id_-relationships-repositories.md)
 ### Objects
 - [object ScmProvider](scmprovider.md)
   The data structure that represents a Providers resource.
@@ -30,6 +31,7 @@ The `scmProviders` resource represents the source code management (SCM) provider
   A response that contains a single Providers resource.
 - [object ScmProvidersResponse](scmprovidersresponse.md)
   A response that contains a list of Providers resources.
+- [object ScmProviderRepositoriesLinkagesResponse](scmproviderrepositorieslinkagesresponse.md)
 
 ## See Also
 
@@ -43,4 +45,4 @@ The `scmProviders` resource represents the source code management (SCM) provider
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/providers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/providers)*

@@ -1,6 +1,6 @@
 # Building a desktop-class iPad app
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Optimize your iPad app’s user experience by adopting desktop-class enhancements for multitasking with Stage Manager, document interactions, text editing, search, and more.
 
@@ -93,4 +93,4 @@ For more information about building an app with Mac Catalyst, see [`Bring an iPa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/building-a-desktop-class-ipad-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/building-a-desktop-class-ipad-app)*

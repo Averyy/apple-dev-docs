@@ -1,6 +1,6 @@
 # WKWebExtensionControllerDelegate
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 A group of methods you use to customize web extension interactions.

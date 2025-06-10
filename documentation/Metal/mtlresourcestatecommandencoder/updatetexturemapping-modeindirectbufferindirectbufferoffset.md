@@ -1,8 +1,7 @@
 # updateTextureMapping(_:mode:indirectBuffer:indirectBufferOffset:)
 
 **Framework**: Metal  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Encodes a command to update a texture’s memory mappings, specifying the parameters indirectly.
 
@@ -17,7 +16,7 @@ Encodes a command to update a texture’s memory mappings, specifying the parame
 ## Declaration
 
 ```swift
-optional func updateTextureMapping(_ texture: any MTLTexture, mode: MTLSparseTextureMappingMode, indirectBuffer: any MTLBuffer, indirectBufferOffset: Int)
+func updateTextureMapping(_ texture: any MTLTexture, mode: MTLSparseTextureMappingMode, indirectBuffer: any MTLBuffer, indirectBufferOffset: Int)
 ```
 
 #### Discussion

@@ -7,8 +7,6 @@ A response from the device after it processes the command to enable Remote Deskt
 
 **Availability**:
 - macOS 10.14.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,7 +16,7 @@ object EnableRemoteDesktopResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object EnableRemoteDesktopResponse.ErrorChainItem](enableremotedesktopresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 

@@ -17,6 +17,7 @@ Searches the children of the receiving node for a node with a specific name.
 ## Declaration
 
 ```swift
+@MainActor
 func childNode(withName name: String) -> SKNode?
 ```
 

@@ -42,10 +42,6 @@ Don’t create window scene objects directly. Instead, specify that you want a [
 ### Getting the interface attributes
 - [var traitCollection: UITraitCollection](uiwindowscene/traitcollection.md)
   The traits that describe the current environment of the scene.
-- [var coordinateSpace: any UICoordinateSpace](uiwindowscene/coordinatespace.md)
-  The coordinate space occupied by the scene.
-- [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/interfaceorientation.md)
-  The orientation to use when displaying content in your windows.
 - [var sizeRestrictions: UISceneSizeRestrictions?](uiwindowscene/sizerestrictions.md)
   The minimum and maximum size of the app’s windows.
 - [class UISceneSizeRestrictions](uiscenesizerestrictions.md)
@@ -101,6 +97,9 @@ Don’t create window scene objects directly. Instead, specify that you want a [
   The title bar displayed in a window of a Mac app.
 - [class UITitlebar](uititlebar.md)
   An object that you use to configure the title bar of a window in a Mac app built with Mac Catalyst.
+### Configuring the windowing control style
+- [UIWindowScene.WindowingControlStyle](uiwindowscene/windowingcontrolstyle.md)
+  Describes the placement and style of the system windowing controls for a scene
 ### Supporting types
 - [UIWindowScene.ActivationAction](uiwindowscene/activationaction.md)
   A menu element that requests a window scene.
@@ -120,6 +119,11 @@ Don’t create window scene objects directly. Instead, specify that you want a [
 - [enum UIWindowSceneResizingRestrictions](uiwindowsceneresizingrestrictions.md)
 - [UIWindowScene.PresentationStyle](uiwindowscene/presentationstyle.md)
   The placement of a window scene relative to other scenes in the workspace.
+### Deprecated symbols
+- [var coordinateSpace: any UICoordinateSpace](uiwindowscene/coordinatespace.md)
+  The coordinate space occupied by the scene.
+- [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/interfaceorientation.md)
+  The orientation to use when displaying content in your windows.
 
 ## Relationships
 
@@ -135,6 +139,7 @@ Don’t create window scene objects directly. Instead, specify that you want a [
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
 - [UIResponderStandardEditActions](uiresponderstandardeditactions.md)

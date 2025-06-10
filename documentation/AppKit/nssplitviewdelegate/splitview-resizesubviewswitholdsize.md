@@ -19,8 +19,6 @@ optional func splitView(_ splitView: NSSplitView, resizeSubviewsWithOldSize oldS
 
 > ❗ **Important**:  If your split view uses Auto Layout to size its subviews, don’t implement this method.
 
- If your split view uses Auto Layout to size its subviews, don’t implement this method.
-
 If the delegate implements this method, it receives this message after the split view resizes.
 
 Resize the subviews so that the sum of the sizes of the subviews plus the sum of the thickness of the dividers equals the size of the new frame of the [`NSSplitView`](nssplitview.md). You can get the thickness of a divider through the [`dividerThickness`](nssplitview/dividerthickness.md) method.

@@ -20,8 +20,6 @@ Only free messages you explicitly copied with [`es_copy_message(_:)`](es_copy_me
 
 > ⚠️ **Warning**:  Freeing a message from inside a handler block will cause your app to crash.
 
- Freeing a message from inside a handler block will cause your app to crash.
-
 ## Parameters
 
 - `msg`: The message to free.

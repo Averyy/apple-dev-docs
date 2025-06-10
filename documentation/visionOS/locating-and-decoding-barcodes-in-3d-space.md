@@ -1,6 +1,6 @@
 # Locating and decoding barcodes in 3D space
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
 
@@ -174,4 +174,4 @@ The sample code project can’t read barcodes that are too small to appear clear
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/locating-and-decoding-barcodes-in-3d-space)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/locating-and-decoding-barcodes-in-3d-space)*

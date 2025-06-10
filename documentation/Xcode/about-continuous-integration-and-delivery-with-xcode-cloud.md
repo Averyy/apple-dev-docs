@@ -83,4 +83,4 @@ You can also configure Xcode Cloud to detect new PRs, or changes to an existing 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/about-continuous-integration-and-delivery-with-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/about-continuous-integration-and-delivery-with-xcode-cloud)*

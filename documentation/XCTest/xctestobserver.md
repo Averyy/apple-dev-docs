@@ -1,6 +1,6 @@
 # XCTestObserver
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An object that observes test activity and events.

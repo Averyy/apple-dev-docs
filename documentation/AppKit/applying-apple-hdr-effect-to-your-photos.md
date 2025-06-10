@@ -1,6 +1,6 @@
 # Applying Apple HDR effect to your photos
 
-**Framework**: Appkit
+**Framework**: AppKit
 
 You can decode and apply Apple’s HDR gain map to your own images.
 
@@ -89,4 +89,4 @@ The result of applying the gain map is a linear HDR image with a scale where `1.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/applying-apple-hdr-effect-to-your-photos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/applying-apple-hdr-effect-to-your-photos)*

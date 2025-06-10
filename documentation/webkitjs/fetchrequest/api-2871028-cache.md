@@ -1,6 +1,6 @@
 # cache
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 **Availability**:

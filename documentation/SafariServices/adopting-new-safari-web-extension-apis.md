@@ -1,6 +1,6 @@
 # Adopting New Safari Web Extension APIs
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Improve your web extension in Safari with a non-persistent background page and new tab-override customization.
 
@@ -47,4 +47,4 @@ On iOS, to run on a device:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/adopting-new-safari-web-extension-apis)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/adopting-new-safari-web-extension-apis)*

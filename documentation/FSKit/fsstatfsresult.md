@@ -1,6 +1,6 @@
 # FSStatFSResult
 
-**Framework**: Fskit  
+**Framework**: FSKit  
 **Kind**: class
 
 A type used to report a volume’s statistics.
@@ -83,4 +83,4 @@ For the read-only [`fileSystemTypeName`](fsstatfsresult/filesystemtypename.md), 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/FSKit/fsstatfsresult)*
+*[View on Apple Developer](https://developer.apple.com/documentation/fskit/fsstatfsresult)*

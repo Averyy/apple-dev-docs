@@ -1,14 +1,14 @@
 # SemanticTagType.Seat
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that represents the identification of a seat for a transit journey or an event.
 
 **Availability**:
 - iOS 12.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 12.0+
+- watchOS 5.0+
 
 ## Declaration
 

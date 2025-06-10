@@ -62,6 +62,9 @@ string AppStoreVersionState
   A response that contains the ID of a single related Default App Clip Experiences resource.
 - [type AppVersionState](appversionstate.md)
   String that represents the state of an app version.
+- [object AppStoreVersionAgeRatingDeclarationLinkageResponse](appstoreversionageratingdeclarationlinkageresponse.md)
+- [object AppStoreVersionAlternativeDistributionPackageLinkageResponse](appstoreversionalternativedistributionpackagelinkageresponse.md)
+- [object AppStoreVersionAppStoreReviewDetailLinkageResponse](appstoreversionappstorereviewdetaillinkageresponse.md)
 
 
 ---

@@ -44,6 +44,7 @@ This class doesn’t add any additional API over its parent class.
   A specification of how to create an intersection function table.
 - [struct MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature.md)
   Constants for specifying different types of custom intersection functions.
+- [struct MTLIntersectionFunctionBufferArguments](mtlintersectionfunctionbufferarguments.md)
 
 
 ---

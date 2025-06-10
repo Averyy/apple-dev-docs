@@ -8,6 +8,10 @@ Learn about new features and updates in the App Store Server API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the App Store Server API.
 
+##### 116 20250609
+
+- Added the [`Set App Account Token`](set-app-account-token.md) endpoint and [`UpdateAppAccountTokenRequest`](updateappaccounttokenrequest.md) request object, and related error codes:  [`TransactionIdIsNotOriginalTransactionIdError`](transactionidisnotoriginaltransactioniderror.md), [`FamilyTransactionNotSupportedError`](familytransactionnotsupportederror.md), and [`InvalidAppAccountTokenUUIDError`](invalidappaccounttokenuuiderror.md).
+
 ##### 115 20250221
 
 - Updated the [`JWSRenewalInfoDecodedPayload`](jwsrenewalinfodecodedpayload.md) and [`JWSTransactionDecodedPayload`](jwstransactiondecodedpayload.md) to include the new [`appTransactionId`](apptransactionid.md) and [`offerPeriod`](offerperiod.md) fields.
@@ -16,7 +20,7 @@ Use this changelog to learn about feature updates, deprecations, and removals fo
 
 ##### 114 20250117
 
-- Added support for Advanced Commerce API.
+- Added support for [`Advanced Commerce API`](https://developer.apple.com/documentation/AdvancedCommerceAPI).
 
 ##### 113 20240708
 

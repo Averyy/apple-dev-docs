@@ -18,8 +18,6 @@ Only ads from ad networks that have an entry in the app’s Info.plist file are 
 
 > ❗ **Important**: Lowercase the ad network ID string; otherwise, the system doesn’t recognize it as a valid network.
 
-Lowercase the ad network ID string; otherwise, the system doesn’t recognize it as a valid network.
-
 The following example shows an array with two strings that represent the example ad network IDs `"f2d92a.adattributionkit"` and `"2jida.adattributionkit"`:
 
 ```None
@@ -37,6 +35,8 @@ For more information about property lists, see [Edit property lists](https://hel
   Use the AdAttributionKit APIs for your ad campaigns after registering your ad network with Apple.
 - [Configuring an advertised app](configuring-an-advertised-app.md)
   Prepare an advertised app to participate in ad campaigns.
+- [Configuring attribution rules for your app](configuring-attribution-rules-for-your-app.md)
+  Tune aspects of attribution flow, including the time available to register impressions and the minimum time your app is willing to accept conversions.
 
 
 ---

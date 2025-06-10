@@ -1,6 +1,6 @@
 # Combining user face-tracking and world tracking
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Track the user’s face in an app that displays an AR experience with the rear camera.
 
@@ -193,4 +193,4 @@ When the app sets `headPreview` to `nil`, it creates another robot head preview,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/combining-user-face-tracking-and-world-tracking)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/combining-user-face-tracking-and-world-tracking)*

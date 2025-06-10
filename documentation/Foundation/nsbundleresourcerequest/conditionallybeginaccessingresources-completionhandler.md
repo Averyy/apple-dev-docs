@@ -25,8 +25,6 @@ If the resources marked with the tags managed by the request are already on the 
 
 > ❗ **Important**:  If `resourcesAvailable` is [`true`](https://developer.apple.com/documentation/swift/true), do not call [`beginAccessingResources(completionHandler:)`](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md). You must call this method or [`beginAccessingResources(completionHandler:)`](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md) before accessing any resources marked with the tags managed by the request.
 
- If `resourcesAvailable` is [`true`](https://developer.apple.com/documentation/swift/true), do not call [`beginAccessingResources(completionHandler:)`](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md). You must call this method or [`beginAccessingResources(completionHandler:)`](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md) before accessing any resources marked with the tags managed by the request.
-
 ## Parameters
 
 - `completionHandler`: The block takes the following parameter:

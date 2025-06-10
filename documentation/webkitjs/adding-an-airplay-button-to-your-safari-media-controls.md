@@ -1,6 +1,6 @@
 # Adding an AirPlay button to your Safari media controls
 
-**Framework**: Webkitjs
+**Framework**: WebKit JS
 
 Create a custom control that adds AirPlay to your Safari media player. 
 

@@ -1,6 +1,6 @@
 # shouldHandleStateChange
 
-**Framework**: Tvmljs  
+**Framework**: TVMLKit JS  
 **Kind**: instp
 
 An event that indicates a state change request has occurred.

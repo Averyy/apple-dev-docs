@@ -15,7 +15,7 @@ Returns a Boolean value that indicates whether the preview controller can displa
 
 ```swift
 @MainActor
-class func canPreviewItem(_ item: any QLPreviewItem) -> Bool
+class func canPreview(_ item: any QLPreviewItem) -> Bool
 ```
 
 #### Return Value

@@ -17,6 +17,7 @@ A setting that defines how the scene is mapped to the view that presents it.
 ## Declaration
 
 ```swift
+@MainActor
 var scaleMode: SKSceneScaleMode { get set }
 ```
 

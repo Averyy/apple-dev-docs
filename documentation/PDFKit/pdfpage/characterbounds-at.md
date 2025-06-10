@@ -16,7 +16,7 @@ Returns the bounds, in page space, of the character at the specified index.
 ## Declaration
 
 ```swift
-func characterBounds(at index: Int) -> CGRect
+func characterBounds(at index: Int) -> NSRect
 ```
 
 #### Discussion

@@ -1,6 +1,6 @@
 # start()
 
-**Framework**: Corespotlight  
+**Framework**: Core Spotlight  
 **Kind**: method
 
 Starts searching the index for items that match the current query string and parameters.

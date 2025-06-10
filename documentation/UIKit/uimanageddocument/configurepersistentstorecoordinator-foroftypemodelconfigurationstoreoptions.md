@@ -1,6 +1,6 @@
 # configurePersistentStoreCoordinator(for:ofType:modelConfiguration:storeOptions:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Creates or loads the document’s persistent store.

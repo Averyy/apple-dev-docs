@@ -27,7 +27,7 @@ The modified view.
 
 #### Discussion
 
-Use this modifier to cause the view to receive focus whenever the the `binding` equals the `value`. Typically, you create an enumeration of fields that may receive focus, bind an instance of this enumeration, and assign its cases to focusable views.
+Use this modifier to cause the view to receive focus whenever the `binding` equals the `value`. Typically, you create an enumeration of fields that may receive focus, bind an instance of this enumeration, and assign its cases to focusable views.
 
 The following example uses the cases of a `LoginForm` enumeration to bind the focus state of two `TextField` views. A sign-in button validates the fields and sets the bound `focusedField` value to any field that requires the user to correct a problem.
 

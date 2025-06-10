@@ -15,7 +15,7 @@ Creates a tip view with an optional arrow edge and action handler.
 
 ```swift
 @MainActor
-@preconcurrency init(_ tip: any Tip, arrowEdge: Edge? = nil, actionHandler: @escaping (Tips.Action) -> Void = { _ in })
+@preconcurrency init(_ tip: any Tip, arrowEdge: Edge? = nil, actionHandler: @escaping @MainActor (Tips.Action) -> Void = { _ in })
 ```
 
 #### Discussion

@@ -16,7 +16,7 @@ An upscaling effect that generates a higher resolution texture in a render pass 
 ## Declaration
 
 ```swift
-protocol MTLFXSpatialScaler : NSObjectProtocol
+protocol MTLFXSpatialScaler : MTLFXSpatialScalerBase
 ```
 
 #### Overview
@@ -30,52 +30,21 @@ Create an [`MTLFXSpatialScaler`](mtlfxspatialscaler.md) instance following these
 
 Upscale a rendering by following these steps for every render pass:
 
-1. Set the spatial scaler’s [`colorTexture`](mtlfxspatialscaler/colortexture.md) property to the input texture.
-2. Set the scaler’s [`inputContentWidth`](mtlfxspatialscaler/inputcontentwidth.md) and [`inputContentHeight`](mtlfxspatialscaler/inputcontentheight.md) properties.
-3. Set the scaler’s [`outputTexture`](mtlfxspatialscaler/outputtexture.md) property to your destination texture.
+1. Set the spatial scaler’s `MTLFXSpatialScaler/colorTexture` property to the input texture.
+2. Set the scaler’s `MTLFXSpatialScaler/inputContentWidth` and `MTLFXSpatialScaler/inputContentHeight` properties.
+3. Set the scaler’s `MTLFXSpatialScaler/outputTexture` property to your destination texture.
 4. Encode the upscale commands to an [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) by calling the spatial scaler’s [`encode(commandBuffer:)`](mtlfxspatialscaler/encode(commandbuffer:).md) method.
 
 ## Topics
 
-### Configuring the image input
-- [var colorTextureUsage: MTLTextureUsage](mtlfxspatialscaler/colortextureusage.md)
-  The minimal texture usage options that your app’s input color texture must set to apply the spatial scaler.
-- [var colorTexture: (any MTLTexture)?](mtlfxspatialscaler/colortexture.md)
-  An input color texture you set for the spatial scaler that supports the correct color texture usage options.
-- [var inputContentWidth: Int](mtlfxspatialscaler/inputcontentwidth.md)
-  The width, in pixels, of the region within the color texture the spatial scaler uses as its input.
-- [var inputContentHeight: Int](mtlfxspatialscaler/inputcontentheight.md)
-  The height, in pixels, of the region within the color texture the spatial scaler uses as its input.
-### Configuring the image output
-- [var outputTextureUsage: MTLTextureUsage](mtlfxspatialscaler/outputtextureusage.md)
-  The minimal texture usage options that your app’s output texture must set to apply the spatial scaler.
-- [var outputTexture: (any MTLTexture)?](mtlfxspatialscaler/outputtexture.md)
-  An output texture that supports the correct depth texture usage options.
-### Synchronizing untracked resources
-- [var fence: (any MTLFence)?](mtlfxspatialscaler/fence.md)
-  An optional fence instance that you provide to synchronize your app’s untracked resources.
 ### Encoding a spatial scaler
 - [func encode(commandBuffer: any MTLCommandBuffer)](mtlfxspatialscaler/encode(commandbuffer:).md)
   Adds the spatial scaler to a render pass’s command buffer.
-### Inspecting the fixed settings
-- [var inputWidth: Int](mtlfxspatialscaler/inputwidth.md)
-  The width, in pixels, of the input color texture for the spatial scaler.
-- [var inputHeight: Int](mtlfxspatialscaler/inputheight.md)
-  The height, in pixels, of the input color texture for the spatial scaler.
-- [var colorTextureFormat: MTLPixelFormat](mtlfxspatialscaler/colortextureformat.md)
-  The pixel format of the input color texture for the spatial scaler.
-- [var colorProcessingMode: MTLFXSpatialScalerColorProcessingMode](mtlfxspatialscaler/colorprocessingmode.md)
-  Reflects the color processing mode you set in this spatial scaler’s descriptor.
-- [var outputWidth: Int](mtlfxspatialscaler/outputwidth.md)
-  The width, in pixels, of the output color texture for the spatial scaler.
-- [var outputHeight: Int](mtlfxspatialscaler/outputheight.md)
-  The height, in pixels, of the output color texture for the spatial scaler.
-- [var outputTextureFormat: MTLPixelFormat](mtlfxspatialscaler/outputtextureformat.md)
-  The pixel format of the output color texture for the spatial scaler.
 
 ## Relationships
 
 ### Inherits From
+- [MTLFXSpatialScalerBase](mtlfxspatialscalerbase.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also

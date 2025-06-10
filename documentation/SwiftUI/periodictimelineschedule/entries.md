@@ -29,6 +29,7 @@ The [`entries(from:mode:)`](periodictimelineschedule/entries(from:mode:).md) met
 ### Conforms To
 - [IteratorProtocol](../Swift/IteratorProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

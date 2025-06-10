@@ -1,6 +1,6 @@
 # ARMatteGenerator
 
-**Framework**: Arkit  
+**Framework**: ARKit  
 **Kind**: class
 
 An object that creates matte textures you use to occlude your app’s virtual content with people, that ARKit recognizes in the camera feed.
@@ -63,4 +63,4 @@ To assist your custom renderer with people occlusion, matte generator processes 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/armattegenerator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/armattegenerator)*

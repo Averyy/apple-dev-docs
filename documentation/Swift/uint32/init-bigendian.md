@@ -1,0 +1,30 @@
+# init(bigEndian:)
+
+**Framework**: Swift  
+**Kind**: init
+
+Creates an integer from its big-endian representation, changing the byte order if necessary.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.0+
+- macOS 10.10+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+init(bigEndian value: Self)
+```
+
+## Parameters
+
+- `value`: A value to use as the big-endian representation of the   new integer.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/uint32/init(bigendian:))*

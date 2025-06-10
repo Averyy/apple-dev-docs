@@ -1,6 +1,6 @@
 # removeFirst(_:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Removes the specified number of elements from the beginning of the collection.

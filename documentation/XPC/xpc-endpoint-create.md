@@ -1,6 +1,6 @@
 # xpc_endpoint_create(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates a new endpoint from a connection that is suitable for embedding into messages.

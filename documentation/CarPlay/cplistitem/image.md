@@ -13,6 +13,7 @@ The image that the list item displays in its leading region.
 ## Declaration
 
 ```swift
+@MainActor
 var image: UIImage? { get }
 ```
 

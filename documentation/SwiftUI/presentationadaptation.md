@@ -42,6 +42,7 @@ Use values of this type with the [`presentationCompactAdaptation(_:)`](view/pres
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

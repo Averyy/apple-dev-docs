@@ -1,6 +1,6 @@
 # setString(_:stringValue:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

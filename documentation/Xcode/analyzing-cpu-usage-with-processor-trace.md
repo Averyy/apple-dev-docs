@@ -101,4 +101,4 @@ Long-running operations on the main thread can cause freezes and hitches in your
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/analyzing-cpu-usage-with-processor-trace)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/analyzing-cpu-usage-with-processor-trace)*

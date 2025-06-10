@@ -17,6 +17,7 @@ A node that applies physics effects to nearby nodes.
 ## Declaration
 
 ```swift
+@MainActor
 class SKFieldNode
 ```
 
@@ -39,8 +40,6 @@ When the scene simulates physics effects, a field node applies its effect to a p
 - A logical AND operation between the field node’s [`categoryBitMask`](skfieldnode/categorybitmask.md) property and the physics body’s [`fieldBitMask`](skphysicsbody/fieldbitmask.md) property results in a nonzero value.
 
 > 💡 **Tip**:  While it is useful to know that SpriteKit measures items in the International System of Units, the precise numbers are not that important. It doesn’t matter much whether your rocket ship weights 1 kilogram or 1,000,000 kilograms, as long as the mass is consistent with other physics values used in the game. Often, proportions are more important than the actual values being used.
-
- While it is useful to know that SpriteKit measures items in the International System of Units, the precise numbers are not that important. It doesn’t matter much whether your rocket ship weights 1 kilogram or 1,000,000 kilograms, as long as the mass is consistent with other physics values used in the game. Often, proportions are more important than the actual values being used.
 
 ## Topics
 
@@ -118,6 +117,7 @@ When the scene simulates physics effects, a field node applies its effect to a p
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)

@@ -28,6 +28,7 @@ struct ASAuthorizationProviderExtensionRequestOptions
 - [static var registrationDeviceKeyMigration: ASAuthorizationProviderExtensionRequestOptions](asauthorizationproviderextensionrequestoptions/registrationdevicekeymigration.md)
 - [static var registrationSharedDeviceKeys: ASAuthorizationProviderExtensionRequestOptions](asauthorizationproviderextensionrequestoptions/registrationshareddevicekeys.md)
 - [static var userKeyInvalid: ASAuthorizationProviderExtensionRequestOptions](asauthorizationproviderextensionrequestoptions/userkeyinvalid.md)
+- [static var setupAssistant: ASAuthorizationProviderExtensionRequestOptions](asauthorizationproviderextensionrequestoptions/setupassistant.md)
 - [static var strongerKeyAvailable: ASAuthorizationProviderExtensionRequestOptions](asauthorizationproviderextensionrequestoptions/strongerkeyavailable.md)
 
 ## Relationships
@@ -39,6 +40,7 @@ struct ASAuthorizationProviderExtensionRequestOptions
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

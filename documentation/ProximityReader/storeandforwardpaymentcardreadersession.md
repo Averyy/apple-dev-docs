@@ -37,6 +37,18 @@ Maintain a strong reference to a session object for the duration of the card-rea
 - [PaymentCardReaderSession](paymentcardreadersession.md)
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [struct StoreAndForwardBatch](storeandforwardbatch.md)
+  A structure that stores the data to send to the payment service provider to process.
+- [struct StoreAndForwardBatchDeletionToken](storeandforwardbatchdeletiontoken.md)
+  A secure token that you use to delete a Store and Forward batch.
+- [struct StoreAndForwardStatus](storeandforwardstatus.md)
+  A structure that describes the Store and Forward session status.
+- [struct PaymentCardReaderStore](paymentcardreaderstore.md)
+  A structure that manages the store that contains all the Store and Forward reads.
 
 
 ---

@@ -89,6 +89,9 @@ Most of the basic behavior is controlled by the properties of the [`UIViewAnimat
   A Boolean value indicating whether a paused animation scrubs linearly or uses its specified timing information.
 - [var pausesOnCompletion: Bool](uiviewpropertyanimator/pausesoncompletion.md)
   A Boolean value that indicates whether a completed animation remains in the active state.
+### Instance Properties
+- [var flushUpdates: Bool](uiviewpropertyanimator/flushupdates.md)
+  Flush all pending updates (including traits, properties, and layout) whenever the animation context changes. This includes flushing updates:
 
 ## Relationships
 

@@ -26,9 +26,9 @@ class MTRClusterWaterHeaterManagement
 - [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterwaterheatermanagement/init(device:endpointid:queue:).md)
   For all instance methods that take a completion (i.e. command invocations), the completion will be called on the provided queue.
 ### Instance Methods
-- [func boost(with: MTRWaterHeaterManagementClusterBoostParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterwaterheatermanagement/boost(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func cancelBoost(with: MTRWaterHeaterManagementClusterCancelBoostParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterwaterheatermanagement/cancelboost(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func cancelBoost(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterwaterheatermanagement/cancelboost(withexpectedvalues:expectedvalueinterval:completion:).md)
+- [func boost(with: MTRWaterHeaterManagementClusterBoostParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterwaterheatermanagement/boost(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func cancelBoost(with: MTRWaterHeaterManagementClusterCancelBoostParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterwaterheatermanagement/cancelboost(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func cancelBoost(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterwaterheatermanagement/cancelboost(withexpectedvalues:expectedvalueinterval:completion:).md)
 - [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermanagement/readattributeacceptedcommandlist(with:).md)
 - [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermanagement/readattributeattributelist(with:).md)
 - [func readAttributeBoostState(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermanagement/readattributebooststate(with:).md)

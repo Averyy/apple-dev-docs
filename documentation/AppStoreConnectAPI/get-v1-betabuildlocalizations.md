@@ -14,6 +14,7 @@ Find and list beta build localizations currently associated with apps.
   Get a specific beta build localization resource.
 - [Read the Build Information of a Beta Build Localization](get-v1-betabuildlocalizations-_id_-build.md)
   Get the build information for a specific beta build localization.
+- [GET /v1/betaBuildLocalizations/{id}/relationships/build](get-v1-betabuildlocalizations-_id_-relationships-build.md)
 
 
 ---

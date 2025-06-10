@@ -87,6 +87,10 @@ To get started with a basic layout, see [`Layout fundamentals`](layout-fundament
   A type that you use to create custom alignment guides.
 - [struct ViewDimensions](viewdimensions.md)
   A view’s size and alignment guides in its own coordinate space.
+- [struct ViewDimensions3D](viewdimensions3d.md)
+  A view’s 3D size and alignment guides in its own coordinate space.
+- [struct SpatialContainer](spatialcontainer.md)
+  A layout container that aligns overlapping content in 3D space.
 ### Setting margins
 - [func contentMargins(CGFloat, for: ContentMarginPlacement) -> some View](view/contentmargins(_:for:).md)
   Configures the content margin for a provided placement.
@@ -114,6 +118,7 @@ To get started with a basic layout, see [`Layout fundamentals`](layout-fundament
   The layout direction associated with the current environment.
 - [enum LayoutDirection](layoutdirection.md)
   A direction in which SwiftUI can lay out content.
+- [struct LayoutRotationUnaryLayout](layoutrotationunarylayout.md)
 ### Reacting to interface characteristics
 - [var isLuminanceReduced: Bool](environmentvalues/isluminancereduced.md)
   A Boolean value that indicates whether the display or environment currently requires reduced luminance.
@@ -127,7 +132,7 @@ To get started with a basic layout, see [`Layout fundamentals`](layout-fundament
   The vertical size class of this environment.
 - [enum UserInterfaceSizeClass](userinterfacesizeclass.md)
   A set of values that indicate the visual size available to the view.
-### Accessing edges and regions
+### Accessing edges, regions, and layouts
 - [enum Edge](edge.md)
   An enumeration to indicate one edge of a rectangle.
 - [enum Edge3D](edge3d.md)

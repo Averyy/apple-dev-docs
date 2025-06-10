@@ -32,8 +32,6 @@ mutating func flip(along axis: Axis3D)
   Constants that describe the axis of a shear transform.
 - [func changeBasis(from: AffineTransform3D, to: AffineTransform3D) -> AffineTransform3D?](affinetransform3d/changebasis(from:to:).md)
   Returns a new affine transform structure by applying a change-of-basis.
-- [func concatenating(AffineTransform3D) -> AffineTransform3D](affinetransform3d/concatenating(_:).md)
-  Returns an affine transformation matrix that results from concatenating two existing affine transforms.
 - [func flipped(along: Axis3D) -> AffineTransform3D](affinetransform3d/flipped(along:).md)
   Returns an affine transform that results from flipping it along the specified axis.
 - [var inverse: AffineTransform3D?](affinetransform3d/inverse.md)

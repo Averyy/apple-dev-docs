@@ -13,6 +13,7 @@ A selectable row in a list template.
 ## Declaration
 
 ```swift
+@MainActor
 class CPListItem
 ```
 
@@ -97,6 +98,7 @@ CarPlay doesn’t support custom list item types. Instead, use the [`userInfo`](
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

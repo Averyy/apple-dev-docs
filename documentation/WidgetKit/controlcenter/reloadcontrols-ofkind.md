@@ -1,6 +1,6 @@
 # reloadControls(ofKind:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method
 
 Reloads the templates for all controls of a particular kind.
@@ -8,7 +8,9 @@ Reloads the templates for all controls of a particular kind.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 

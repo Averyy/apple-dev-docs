@@ -1,6 +1,6 @@
 # NSToolbarItemValidation
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: protocol
 
 Validation of a toolbar item.
@@ -41,4 +41,4 @@ A toolbar item with a valid target and action is enabled by default. To allow a 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstoolbaritemvalidation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstoolbaritemvalidation)*

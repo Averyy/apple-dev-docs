@@ -25,14 +25,6 @@ optional func download(_ download: BADownload, didReceive challenge: URLAuthenti
 optional func download(_ download: BADownload, didReceive challenge: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as this page explains, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-optional func download(_ download: BADownload, didReceive challenge: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 The completion handler takes the following parameters:
 
 - An [`URLSession.AuthChallengeDisposition`](https://developer.apple.com/documentation/Foundation/URLSession/AuthChallengeDisposition) that indicates whether the system processes, cancels, or rejects the challenge.

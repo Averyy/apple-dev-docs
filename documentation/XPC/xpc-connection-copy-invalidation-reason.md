@@ -1,6 +1,6 @@
 # xpc_connection_copy_invalidation_reason(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 **Availability**:

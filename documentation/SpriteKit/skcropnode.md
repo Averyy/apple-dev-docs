@@ -17,7 +17,6 @@ A node that masks pixels drawn by its children so that only some pixels are seen
 ## Declaration
 
 ```swift
-@MainActor
 class SKCropNode
 ```
 
@@ -36,8 +35,6 @@ class SKCropNode
 You can animate the shape or contents of the mask to implement interesting effects such as hiding or revealing.
 
 > 💡 **Tip**:  Use crop nodes sparingly. Because they require an additional offscreen memory buffer to perform the crop and add a rendering operation into the offscreen buffer, they add notably more overhead to the app.
-
- Use crop nodes sparingly. Because they require an additional offscreen memory buffer to perform the crop and add a rendering operation into the offscreen buffer, they add notably more overhead to the app.
 
 ## Topics
 
@@ -66,6 +63,7 @@ You can animate the shape or contents of the mask to implement interesting effec
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)

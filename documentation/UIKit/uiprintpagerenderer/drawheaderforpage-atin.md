@@ -14,7 +14,6 @@ Draws the header of a page.
 ## Declaration
 
 ```swift
-@MainActor
 func drawHeaderForPage(at pageIndex: Int, in headerRect: CGRect)
 ```
 

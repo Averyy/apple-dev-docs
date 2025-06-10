@@ -1,6 +1,6 @@
 # xpc_null_create()
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates an XPC object that represents the null object.

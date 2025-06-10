@@ -51,6 +51,11 @@ When it’s time to present an interstitial event, the system suspends playback 
   An object that plays primary content.
 - [var interstitialPlayer: AVQueuePlayer](avplayerinterstitialeventmonitor/interstitialplayer.md)
   An object that plays interstitial content.
+### Instance Properties
+- [var currentEventSkipControlLabel: String?](avplayerinterstitialeventmonitor/currenteventskipcontrollabel.md)
+  The skip control label for the currentEvent.
+- [var currentEventSkippableState: AVPlayerInterstitialEvent.SkippableEventState](avplayerinterstitialeventmonitor/currenteventskippablestate.md)
+  The skippable event state for the currentEvent.
 
 ## Relationships
 
@@ -66,6 +71,7 @@ When it’s time to present an interstitial event, the system suspends playback 
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

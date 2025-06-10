@@ -1,6 +1,6 @@
 # usesTabsForIndentation
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 A Boolean value that indicates whether tabs are used for indentation.

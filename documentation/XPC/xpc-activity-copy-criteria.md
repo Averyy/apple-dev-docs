@@ -1,6 +1,6 @@
 # xpc_activity_copy_criteria(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns an XPC dictionary that describes the execution criteria of an activity.

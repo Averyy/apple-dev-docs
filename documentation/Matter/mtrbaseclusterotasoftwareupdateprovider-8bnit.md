@@ -24,7 +24,7 @@ class MTRBaseClusterOTASoftwareUpdateProvider
 - [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclusterotasoftwareupdateprovider-8bnit/init(device:endpointid:queue:).md)
 ### Instance Methods
 - [func applyUpdateRequest(with: MTROTASoftwareUpdateProviderClusterApplyUpdateRequestParams, completion: (MTROTASoftwareUpdateProviderClusterApplyUpdateResponseParams?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdateprovider-8bnit/applyupdaterequest(with:completion:).md)
-- [func notifyUpdateApplied(with: MTROTASoftwareUpdateProviderClusterNotifyUpdateAppliedParams, completion: MTRStatusCompletion)](mtrbaseclusterotasoftwareupdateprovider-8bnit/notifyupdateapplied(with:completion:).md)
+- [func notifyUpdateApplied(with: MTROTASoftwareUpdateProviderClusterNotifyUpdateAppliedParams, completion: ((any Error)?) -> Void)](mtrbaseclusterotasoftwareupdateprovider-8bnit/notifyupdateapplied(with:completion:).md)
 - [func queryImage(with: MTROTASoftwareUpdateProviderClusterQueryImageParams, completion: (MTROTASoftwareUpdateProviderClusterQueryImageResponseParams?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdateprovider-8bnit/queryimage(with:completion:).md)
 - [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdateprovider-8bnit/readattributeacceptedcommandlist(completion:).md)
 - [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdateprovider-8bnit/readattributeattributelist(completion:).md)

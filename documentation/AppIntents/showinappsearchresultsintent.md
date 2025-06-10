@@ -8,10 +8,10 @@ An app intent that takes a person to search results for a specified search term.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst 17.2+
+- Mac Catalyst ?+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.2+
 
 ## Declaration
@@ -48,6 +48,7 @@ Provide a [`SearchCriteria`](searchcriteria.md) to specify a search term for thi
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SystemIntent](systemintent.md)
 
 ## See Also

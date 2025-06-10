@@ -1,6 +1,6 @@
 # DOM_CSS_KHZ
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

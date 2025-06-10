@@ -10,8 +10,6 @@ You can preview contents of textures and buffers while debugging your app in Xco
 
 > ❗ **Important**: If you disable GPU Frame Capture, you can’t inspect resource content while your app is running. See [`Capturing a Metal workload in Xcode`](capturing-a-metal-workload-in-xcode.md) to learn how to reenable it.
 
-If you disable GPU Frame Capture, you can’t inspect resource content while your app is running. See [`Capturing a Metal workload in Xcode`](capturing-a-metal-workload-in-xcode.md) to learn how to reenable it.
-
 ##### Inspect Your Textures and Buffers
 
 First, pause the app inside a scope that contains a variable referencing the resource. You can achieve this by setting a breakpoint on a line that references the resource. To set a breakpoint, click the line number to the left of the source editor. The example below shows a breakpoint for the line where `_skyMap` is bound to the render encoder:

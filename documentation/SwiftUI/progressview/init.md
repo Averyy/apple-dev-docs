@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: init
 
 Creates a progress view based on a style configuration.

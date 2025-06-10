@@ -1,6 +1,6 @@
 # launchImageName
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The name of the image or storyboard to use when your app launches because of the notification.

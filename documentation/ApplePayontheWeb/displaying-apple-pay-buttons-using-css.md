@@ -6,7 +6,7 @@ Use CSS templates to display Apple Pay buttons in Safari.
 
 #### Overview
 
-Apple Pay provides a variety of Apple Pay buttons that you can use on your website to initiate a transaction. You can specify which button type to display and edit its appearance and size to fit your webpage. Before using a button, check if it’s available in the version of Safari the device is running. To draw Apple Pay buttons on devices with earlier iOS or macOS versions where Safari doesn’t support all button types, see [`Displaying Apple Pay Buttons Using CSS`](https://developer.apple.com/documentation/apple_pay_on_the_web/displaying_apple_pay_buttons_using_css).
+Apple Pay provides a variety of Apple Pay buttons that you can use on your website to initiate a transaction. You can specify which button type to display and edit its appearance and size to fit your webpage. Before using a button, check if it’s available in the version of Safari the device is running. To draw Apple Pay buttons on devices with earlier iOS or macOS versions where Safari doesn’t support all button types, see [`Displaying Apple Pay Buttons Using CSS`](displaying-apple-pay-buttons-using-css.md).
 
 ##### Choose a Button Type
 
@@ -24,7 +24,7 @@ For more version information, see doc://com.apple.documentation/documentation/ap
 
 ##### Display an Apple Pay Button Using Css
 
-The code example below uses CSS properties to display Apple Pay buttons. The code supports devices running macOS 10.12 and later, and iOS 10 and later, by using the CSS `@supports` feature to determine if the `-webkit-appearance: -apple-pay-button` property is available. For devices with earlier iOS or macOS versions where Safari doesn’t support these button types, use the plain Apple Pay button instead (see [`Displaying Apple Pay Buttons Using CSS`](https://developer.apple.com/documentation/apple_pay_on_the_web/displaying_apple_pay_buttons_using_css)).
+The code example below uses CSS properties to display Apple Pay buttons. The code supports devices running macOS 10.12 and later, and iOS 10 and later, by using the CSS `@supports` feature to determine if the `-webkit-appearance: -apple-pay-button` property is available. For devices with earlier iOS or macOS versions where Safari doesn’t support these button types, use the plain Apple Pay button instead (see [`Displaying Apple Pay Buttons Using CSS`](displaying-apple-pay-buttons-using-css.md)).
 
 ```other
 /* HTML */

@@ -37,6 +37,7 @@ struct AsyncPrefixWhileSequence<Base> where Base : AsyncSequence
 - [AsyncSequence](asyncsequence.md)
 - [Copyable](copyable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

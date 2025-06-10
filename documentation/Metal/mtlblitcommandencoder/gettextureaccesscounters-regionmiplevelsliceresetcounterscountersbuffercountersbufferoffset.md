@@ -1,8 +1,7 @@
 # getTextureAccessCounters(_:region:mipLevel:slice:resetCounters:countersBuffer:countersBufferOffset:)
 
 **Framework**: Metal  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Encodes a command that retrieves a sparse texture’s access data for a specific region, mipmap level, and slice.
 
@@ -17,7 +16,7 @@ Encodes a command that retrieves a sparse texture’s access data for a specific
 ## Declaration
 
 ```swift
-func getTextureAccessCounters(_ texture: any MTLTexture, region: MTLRegion, mipLevel: Int, slice: Int, resetCounters: Bool, countersBuffer: any MTLBuffer, countersBufferOffset: Int)
+optional func getTextureAccessCounters(_ texture: any MTLTexture, region: MTLRegion, mipLevel: Int, slice: Int, resetCounters: Bool, countersBuffer: any MTLBuffer, countersBufferOffset: Int)
 ```
 
 #### Discussion

@@ -1,6 +1,6 @@
 # preferredSurroundingsEffect(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Applies an effect to passthrough video.
@@ -44,6 +44,7 @@ Use a value of `nil` to indicate that you have no preference. You typically do t
 
 - [struct SurroundingsEffect](surroundingseffect.md)
   Effects that the system can apply to passthrough video.
+- [struct BreakthroughEffect](breakthrougheffect.md)
 
 
 ---

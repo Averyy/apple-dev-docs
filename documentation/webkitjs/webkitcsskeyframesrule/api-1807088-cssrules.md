@@ -1,6 +1,6 @@
 # cssRules
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The set of style rules that define the keyframes following the animation name.

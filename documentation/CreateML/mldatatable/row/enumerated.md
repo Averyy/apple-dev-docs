@@ -1,6 +1,6 @@
 # enumerated()
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.

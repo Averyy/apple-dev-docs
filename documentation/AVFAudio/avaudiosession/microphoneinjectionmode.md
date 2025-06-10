@@ -1,6 +1,6 @@
 # AVAudioSession.MicrophoneInjectionMode
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: enum
 
 The modes of injecting audio into another app’s input stream.
@@ -43,6 +43,7 @@ Apps can state their intent to mix synthesized speech into another app’s input
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

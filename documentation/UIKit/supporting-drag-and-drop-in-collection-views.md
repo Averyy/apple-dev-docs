@@ -1,6 +1,6 @@
 # Supporting Drag and Drop in Collection Views
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Initiate drags and handle drops from a collection view.
 
@@ -85,4 +85,4 @@ Insert placeholders at the location specified by the `destinationIndexPath` prop
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/supporting-drag-and-drop-in-collection-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/supporting-drag-and-drop-in-collection-views)*

@@ -72,11 +72,6 @@ The [`App Intents`](https://developer.apple.com/documentation/AppIntents) framew
 
 ## Topics
 
-### Creating a localized string resource
-- [init(String.LocalizationValue, table: String?, locale: Locale, bundle: LocalizedStringResource.BundleDescription, comment: StaticString?)](localizedstringresource/init(_:table:locale:bundle:comment:).md)
-  Creates a localized string resource from a localization key and its bundle properties.
-- [init(StaticString, defaultValue: String.LocalizationValue, table: String?, locale: Locale, bundle: LocalizedStringResource.BundleDescription, comment: StaticString?)](localizedstringresource/init(_:defaultvalue:table:locale:bundle:comment:).md)
-  Creates a localized string resource from a static string and its bundle properties.
 ### Accessing resource properties
 - [let key: String](localizedstringresource/key.md)
   The key to use to look up a localized string.
@@ -90,6 +85,11 @@ The [`App Intents`](https://developer.apple.com/documentation/AppIntents) framew
   The location of a bundle to use for looking up localized strings, such as the main bundle, or a bundle at a specific file URL.
 - [var locale: Locale](localizedstringresource/locale.md)
   The locale to use to look up the localized string from the string resource.
+### Initializers
+- [init(StaticString, defaultValue: String.LocalizationValue, table: String?, locale: Locale, bundle: LocalizedStringResource.BundleDescription, comment: StaticString?)](localizedstringresource/init(_:defaultvalue:table:locale:bundle:comment:)-1apqa.md)
+- [init(StaticString, defaultValue: String.LocalizationValue, table: String?, locale: Locale, bundle: Bundle, comment: StaticString?)](localizedstringresource/init(_:defaultvalue:table:locale:bundle:comment:)-8jyvr.md)
+- [init(String.LocalizationValue, table: String?, locale: Locale, bundle: LocalizedStringResource.BundleDescription, comment: StaticString?)](localizedstringresource/init(_:table:locale:bundle:comment:)-69k32.md)
+- [init(String.LocalizationValue, table: String?, locale: Locale, bundle: Bundle, comment: StaticString?)](localizedstringresource/init(_:table:locale:bundle:comment:)-8o153.md)
 
 ## Relationships
 
@@ -103,6 +103,7 @@ The [`App Intents`](https://developer.apple.com/documentation/AppIntents) framew
 - [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
 - [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

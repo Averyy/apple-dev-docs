@@ -33,13 +33,13 @@ The default value of this property is [`false`](https://developer.apple.com/docu
 
 - [enum NSTextScalingType](nstextscalingtype.md)
   Constants that specify the text scaling.
-- [static let textScaling: NSAttributedString.DocumentAttributeKey](../foundation/nsattributedstring/documentattributekey/3294215-textscaling.md)
+- [static let textScaling: NSAttributedString.DocumentAttributeKey](../Foundation/NSAttributedString/DocumentAttributeKey/textScaling.md)
   The text-scaling mode to use when displaying the text.
-- [static let sourceTextScaling: NSAttributedString.DocumentAttributeKey](../foundation/nsattributedstring/documentattributekey/3294212-sourcetextscaling.md)
+- [static let sourceTextScaling: NSAttributedString.DocumentAttributeKey](../Foundation/NSAttributedString/DocumentAttributeKey/sourceTextScaling.md)
   The text-scaling mode you used when creating the text.
-- [static let targetTextScaling: NSAttributedString.DocumentReadingOptionKey](../foundation/nsattributedstring/documentreadingoptionkey/3294214-targettextscaling.md)
+- [static let targetTextScaling: NSAttributedString.DocumentReadingOptionKey](../Foundation/NSAttributedString/DocumentReadingOptionKey/targetTextScaling.md)
   The text scaling mode to use after reading the text from disk.
-- [static let sourceTextScaling: NSAttributedString.DocumentReadingOptionKey](../foundation/nsattributedstring/documentreadingoptionkey/3294213-sourcetextscaling.md)
+- [static let sourceTextScaling: NSAttributedString.DocumentReadingOptionKey](../Foundation/NSAttributedString/DocumentReadingOptionKey/sourceTextScaling.md)
   The text-scaling mode to associate with the document’s content.
 - [var textContainerInset: UIEdgeInsets](uitextview/textcontainerinset.md)
   The inset of the text container’s layout area within the text view’s content area.

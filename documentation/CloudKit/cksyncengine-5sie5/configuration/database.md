@@ -26,8 +26,6 @@ Multiple sync engines can run in the same process, each targeting a different da
 
 > ❗ **Important**:  When using CloudKit’s production environment, don’t create multiple sync engines that target the same database. You can, however, do this in the development environment to help testing — for example, to simulate multiple devices syncing back and forth.
 
- When using CloudKit’s production environment, don’t create multiple sync engines that target the same database. You can, however, do this in the development environment to help testing — for example, to simulate multiple devices syncing back and forth.
-
 ## See Also
 
 - [var automaticallySync: Bool](cksyncengine-5sie5/configuration/automaticallysync.md)

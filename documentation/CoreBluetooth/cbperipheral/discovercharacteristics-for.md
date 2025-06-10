@@ -1,6 +1,6 @@
 # discoverCharacteristics(_:for:)
 
-**Framework**: Corebluetooth  
+**Framework**: Core Bluetooth  
 **Kind**: method
 
 Discovers the specified characteristics of a service.

@@ -10,6 +10,7 @@ A source that blends between two pregenerated probes based on the provided blend
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

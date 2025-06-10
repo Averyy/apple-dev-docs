@@ -1,6 +1,6 @@
 # userContentController
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The object that coordinates interactions between your app’s native code and the webpage’s scripts and other content.

@@ -24,8 +24,8 @@ class MTRClusterModeSelect
 - [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrclustermodeselect/init(device:endpoint:queue:).md)
 - [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclustermodeselect/init(device:endpointid:queue:).md)
 ### Instance Methods
-- [func changeToMode(with: MTRModeSelectClusterChangeToModeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustermodeselect/changetomode(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func changeToMode(with: MTRModeSelectClusterChangeToModeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclustermodeselect/changetomode(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func changeToMode(with: MTRModeSelectClusterChangeToModeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustermodeselect/changetomode(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func changeToMode(with: MTRModeSelectClusterChangeToModeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclustermodeselect/changetomode(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
 - [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclustermodeselect/readattributeacceptedcommandlist(with:).md)
 - [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclustermodeselect/readattributeattributelist(with:).md)
 - [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclustermodeselect/readattributeclusterrevision(with:).md)

@@ -42,7 +42,7 @@ If your app writes health data to the HealthKit store, repeat the steps above an
 
 Remember that the user can revoke their permission at any time in the Settings app or the Health app. If your app requires access to certain health data, you must clearly display information about why your app requires access to the user’s health data and request that the user reauthorize to grant your app access to the HealthKit data.
 
-You can check your app’s current authorization status using the [`authorizationStatus(for:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/1614154-authorizationstatus) method. HealthKit also returns a [`HKError.Code.errorAuthorizationDenied`](https://developer.apple.com/documentation/HealthKit/HKError/Code/errorAuthorizationDenied) error if your app attempts unauthorized access to the user’s health data.
+You can check your app’s current authorization status using the [`authorizationStatus(for:)`](https://developer.apple.com/documentation/HealthKit/HKHealthStore/authorizationStatus(for:)) method. HealthKit also returns a [`HKError.Code.errorAuthorizationDenied`](https://developer.apple.com/documentation/HealthKit/HKError/Code/errorAuthorizationDenied) error if your app attempts unauthorized access to the user’s health data.
 
 ##### Request Access to a Users Health Records
 
@@ -66,7 +66,7 @@ After you enable the capability, there are additional configuration steps you mu
 
 HealthKit observer queries are long-running ones that watch the HealthKit store for changes to specific sample types and deliver those changes to your app on a background thread. Typically, observer queries only provide those changes when your app is running in the foreground.
 
-However, by enabling Background Delivery, your app can continue to receive and process changes while it’s in the background. You pair each executed observer query with a call to [`enableBackgroundDelivery(for:frequency:withCompletion:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/1614175-enablebackgrounddelivery) and specify the same sample type. The system then wakes your app when changes occur in the HealthKit store — at most, once per the update frequency you specify — and delivers those changes to the corresponding observer queries. For more information, see [`Executing Observer Queries`](https://developer.apple.com/documentation/HealthKit/executing-observer-queries).
+However, by enabling Background Delivery, your app can continue to receive and process changes while it’s in the background. You pair each executed observer query with a call to [`enableBackgroundDelivery(for:frequency:withCompletion:)`](https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery(for:frequency:withCompletion:)) and specify the same sample type. The system then wakes your app when changes occur in the HealthKit store — at most, once per the update frequency you specify — and delivers those changes to the corresponding observer queries. For more information, see [`Executing Observer Queries`](https://developer.apple.com/documentation/HealthKit/executing-observer-queries).
 
 To enable HealthKit to continue updating your app’s observer queries while its in the background, perform the following:
 
@@ -88,4 +88,4 @@ Xcode adds the [`com.apple.developer.healthkit.background-delivery`](https://dev
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-healthkit-access)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-healthkit-access)*

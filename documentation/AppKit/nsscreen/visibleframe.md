@@ -1,6 +1,6 @@
 # visibleFrame
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The current location and dimensions of the visible screen.
@@ -36,4 +36,4 @@ The returned rectangle is always based on the current user-interface settings an
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsscreen/visibleframe)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsscreen/visibleframe)*

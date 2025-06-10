@@ -8,6 +8,7 @@ Checks to see if a specific language pairing is installed and ready for translat
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.0+
 
 ## Declaration

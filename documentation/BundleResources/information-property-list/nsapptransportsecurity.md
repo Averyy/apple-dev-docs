@@ -23,8 +23,6 @@ You can circumvent or augment these protections by adding the [`NSAppTransportSe
 
 > ❗ **Important**:  Always look for ways to improve server security before adding ATS exceptions. Loosening ATS restrictions reduces the security of your app.
 
- Always look for ways to improve server security before adding ATS exceptions. Loosening ATS restrictions reduces the security of your app.
-
 All keys in the ATS configuration dictionary are optional, with default values that are suitable for most apps. Keys that define global exceptions apply to all network connections made by your app, except connections to domains specified in the [`NSExceptionDomains`](information-property-list/nsapptransportsecurity/nsexceptiondomains.md) sub-dictionary. That sub-dictionary allows you to separately manage settings for individual domains.
 
 ##### Versioning

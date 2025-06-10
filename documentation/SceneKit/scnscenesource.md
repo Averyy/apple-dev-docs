@@ -1,18 +1,18 @@
 # SCNSceneSource
 
-**Framework**: Scenekit  
+**Framework**: SceneKit  
 **Kind**: class
 
 An object that manages the data-reading tasks associated with loading scene contents from a file or data.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.1+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -103,4 +103,4 @@ The [`SCNSceneSource`](scnscenesource.md) class can also load SceneKit archive f
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SceneKit/scnscenesource)*
+*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnscenesource)*

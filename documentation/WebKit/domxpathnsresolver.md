@@ -1,6 +1,6 @@
 # DOMXPathNSResolver
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 **Availability**:

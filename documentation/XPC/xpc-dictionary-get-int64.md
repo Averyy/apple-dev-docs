@@ -1,6 +1,6 @@
 # xpc_dictionary_get_int64(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Gets a 64-bit integer primitive value from a dictionary directly.

@@ -31,8 +31,6 @@ If you’re using your own keywords and bid strategy, disable Search Match using
 
 > ❗ **Important**:  If you don’t provide a `bidAmount`, the `bidAmount` uses the `defaultBidamount` of the corresponding ad group.
 
- If you don’t provide a `bidAmount`, the `bidAmount` uses the `defaultBidamount` of the corresponding ad group.
-
 ## Topics
 
 ### Ad Group Endpoints

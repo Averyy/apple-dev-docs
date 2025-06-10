@@ -37,8 +37,6 @@ The following code example shows a component layout object called `heading1Layou
 
 > 💡 **Tip**:  For best results, the sum of the `columnStart` value and the `columnSpan` value shouldn’t exceed the number of columns available for the component. Otherwise, your article may not render as expected.
 
- For best results, the sum of the `columnStart` value and the `columnSpan` value shouldn’t exceed the number of columns available for the component. Otherwise, your article may not render as expected.
-
 ##### Fine Tune the Position of Components
 
 You can use the `margin` property of a [`ComponentLayout`](https://developer.apple.com/documentation/applenewsformat/componentlayout) object to specify the top and bottom margins (in points) for a component and to create space above and below the component.  Specify a single number to use for both measurements, or — to specify different settings for the top and bottom margins — use the [`Margin`](https://developer.apple.com/documentation/applenewsformat/margin) object.
@@ -50,8 +48,6 @@ An [`Anchor`](https://developer.apple.com/documentation/applenewsformat/anchor) 
 Horizontally align the contents of a component within the component. (This property applies only to [`Image`](https://developer.apple.com/documentation/applenewsformat/image), [`Logo`](https://developer.apple.com/documentation/applenewsformat/logo), and [`Divider`](https://developer.apple.com/documentation/applenewsformat/divider) components.)
 
 > 💡 **Tip**:  To position text  a component, such as for centered text or for a drop cap, use the [`ComponentTextStyle`](https://developer.apple.com/documentation/applenewsformat/componenttextstyle) object for the individual component.
-
- To position text  a component, such as for centered text or for a drop cap, use the [`ComponentTextStyle`](https://developer.apple.com/documentation/applenewsformat/componenttextstyle) object for the individual component.
 
 ##### Align and Position Content
 

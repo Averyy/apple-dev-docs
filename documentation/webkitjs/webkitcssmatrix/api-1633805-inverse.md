@@ -1,6 +1,6 @@
 # inverse
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Returns the inverse of this matrix.

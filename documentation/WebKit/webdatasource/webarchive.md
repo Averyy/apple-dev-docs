@@ -1,6 +1,6 @@
 # webArchive
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A web archive representing the data source, its subresources, and subframes.

@@ -18,7 +18,7 @@ let NFCTagResponseUnexpectedLengthErrorKey: String
 
 #### Discussion
 
-If an error object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary contains this key, the received response packet length is invalid.
+If an error object’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary contains this key, the received response packet length is invalid.
 
 ## See Also
 

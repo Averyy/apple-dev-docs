@@ -28,19 +28,29 @@ To get all the people who join the session, not just the players, use the [`peer
 
 ### Joining multiplayer games
 - [func start()](tabletopnetworksession/start.md)
+  Start a new multiplayer game, promoting the local state of the table to all connected peers
 - [func join()](tabletopnetworksession/join.md)
+  Join an existing game started between the connected peers
 - [func leave()](tabletopnetworksession/leave.md)
+  Leave the current multiplayer game
 - [func terminate()](tabletopnetworksession/terminate.md)
 ### Changing the arbiter role between players
 - [func becomeArbiter()](tabletopnetworksession/becomearbiter.md)
 - [func followArbiter(TabletopNetworkSession<Coordinator>.Peer)](tabletopnetworksession/followarbiter(_:).md)
 ### Managing network session peers
 - [var peers: Set<TabletopNetworkSession<Coordinator>.Peer>](tabletopnetworksession/peers.md)
+  The set of peers known by the game
 - [func addPeer(TabletopNetworkSession<Coordinator>.Peer)](tabletopnetworksession/addpeer(_:).md)
+  Notify the game that a new peer has connected
 - [func removePeer(TabletopNetworkSession<Coordinator>.Peer)](tabletopnetworksession/removepeer(_:).md)
+  Notify the game that an existing peer disconnected
 - [TabletopNetworkSession.Peer](tabletopnetworksession/peer.md)
 ### Receiving messages from peers
 - [func processIncomingMessage(Data, from: TabletopNetworkSession<Coordinator>.Peer)](tabletopnetworksession/processincomingmessage(_:from:).md)
+  Pass incoming messages from the reliable channel to the game.
+### Instance Methods
+- [func processIncomingUnreliableMessage(Data, from: TabletopNetworkSession<Coordinator>.Peer)](tabletopnetworksession/processincomingunreliablemessage(_:from:).md)
+  Pass incoming messages from the unreliable channel to the game.
 
 ## See Also
 

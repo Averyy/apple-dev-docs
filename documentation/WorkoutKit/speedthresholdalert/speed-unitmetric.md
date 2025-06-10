@@ -1,6 +1,6 @@
 # speed(_:unit:metric:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 Returns a new speed threshold alert.

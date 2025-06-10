@@ -30,8 +30,6 @@ If your app uses an audio session category that supports input and output, such 
 
 > ❗ **Important**:  Attempting to use this option with a session category that doesn’t support audio input results in an error.
 
- Attempting to use this option with a session category that doesn’t support audio input results in an error.
-
 ## See Also
 
 - [static var mixWithOthers: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/mixwithothers.md)

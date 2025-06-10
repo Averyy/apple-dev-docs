@@ -1,6 +1,6 @@
 # WCError.Code.sessionNotSupported
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 An error indicating that the current device doesn’t support the use of session objects.

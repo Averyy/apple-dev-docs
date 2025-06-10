@@ -89,4 +89,4 @@ Launch and test your app’s SharePlay experiences in the simulator using FaceTi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/interacting-with-your-app-in-the-visionos-simulator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/interacting-with-your-app-in-the-visionos-simulator)*

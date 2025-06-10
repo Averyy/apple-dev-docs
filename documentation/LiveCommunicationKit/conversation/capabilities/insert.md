@@ -5,6 +5,13 @@
 
 Adds the given element to the option set if it is not already a member.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift
@@ -20,7 +27,7 @@ mutating func insert(_ newMember: Self.Element) -> (inserted: Bool, memberAfterI
 
 In the following example, the `.secondDay` shipping option is added to the `freeOptions` option set if `purchasePrice` is greater than 50.0. For the `ShippingOptions` declaration, see the `OptionSet` protocol discussion.
 
-```swift
+```None
 let purchasePrice = 87.55
 
 var freeOptions: ShippingOptions = [.standard, .priority]

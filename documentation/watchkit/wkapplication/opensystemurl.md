@@ -1,6 +1,6 @@
 # openSystemURL(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Opens the specified system URL.

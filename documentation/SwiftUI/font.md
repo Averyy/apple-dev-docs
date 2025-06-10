@@ -77,7 +77,7 @@ The system resolves a font’s value at the time it uses the font in a given env
   Creates a custom font from a platform font instance.
 ### Styling a font
 - [func bold() -> Font](font/bold.md)
-  Adds bold styling to the font.
+  Adds bold or emphasized styling to the font.
 - [func italic() -> Font](font/italic.md)
   Adds italics to the font.
 - [func monospaced() -> Font](font/monospaced.md)
@@ -105,6 +105,33 @@ The system resolves a font’s value at the time it uses the font in a given env
   Gets a system font with the given text style and design.
 - [static func system(size: CGFloat, weight: Font.Weight, design: Font.Design) -> Font](font/system(size:weight:design:)-73a88.md)
   Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
+### Structures
+- [struct Context](font/context.md)
+  Information used to resolve a font.
+- [struct Resolved](font/resolved.md)
+  A concrete font value.
+### Instance Methods
+- [func bold(Bool) -> Font](font/bold(_:).md)
+  Adds or removes bold or emphasized styling on the font.
+- [func italic(Bool) -> Font](font/italic(_:).md)
+  Adds/removes italics on the font.
+- [func lowercaseSmallCaps(Bool) -> Font](font/lowercasesmallcaps(_:).md)
+  Adjusts the font to enable/disable lowercase small capitals.
+- [func monospaced(Bool) -> Font](font/monospaced(_:).md)
+  Returns a font adding or removing fixed-width design from the same family as the base font.
+- [func pointSize(CGFloat) -> Font](font/pointsize(_:).md)
+  Sets the point size of the font explicitly.
+- [func resolve(in: Font.Context) -> Font.Resolved](font/resolve(in:).md)
+  Evaluates this font to a resolved font given the current context.
+- [func scaled(by: CGFloat) -> Font](font/scaled(by:).md)
+  Scales the point size of the font.
+- [func smallCaps(Bool) -> Font](font/smallcaps(_:).md)
+  Adjusts the font to enable/disable all small capitals.
+- [func uppercaseSmallCaps(Bool) -> Font](font/uppercasesmallcaps(_:).md)
+  Adjusts the font to enable/disable uppercase small capitals.
+### Type Properties
+- [static var `default`: Font](font/default.md)
+  The effective SwiftUI font used in any given environment.
 ### Type Methods
 - [static system(size:weight:design:)](font/system(size:weight:design:).md)
   Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
@@ -115,6 +142,7 @@ The system resolves a font’s value at the time it uses the font in a given env
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

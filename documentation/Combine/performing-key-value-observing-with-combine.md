@@ -10,7 +10,7 @@ Several frameworks use key-value observing to notify your app of asynchronous ch
 
 ##### Monitoring Changes with Kvo
 
-In the following example, the type `UserInfo` supports KVO for its `lastLogin` property, as described in [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/Swift/using-key-value-observing-in-swift). The [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()) method uses the `observe(_:options:changeHandler:)` method to set up a closure that handles any change to the property. The closure receives an [`NSKeyValueObservedChange`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservedChange) object that describes the change event, retrieves the [`newValue`](https://developer.apple.com/documentation/foundation/nskeyvalueobservedchange/2908876-newvalue) property, and prints it. The [`viewDidAppear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidAppear(_:)) method changes the value, which calls the closure and prints the message.
+In the following example, the type `UserInfo` supports KVO for its `lastLogin` property, as described in [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/Swift/using-key-value-observing-in-swift). The [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()) method uses the `observe(_:options:changeHandler:)` method to set up a closure that handles any change to the property. The closure receives an [`NSKeyValueObservedChange`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservedChange) object that describes the change event, retrieves the [`newValue`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservedChange/newValue) property, and prints it. The [`viewDidAppear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidAppear(_:)) method changes the value, which calls the closure and prints the message.
 
 ```swift
 class UserInfo: NSObject {
@@ -34,7 +34,7 @@ override func viewDidAppear(_ animated: Bool) {
 
 ##### Converting Kvo Code to Use Combine
 
-To convert KVO code to Combine, replace the `observe(_:options:changeHandler:)` method with an [`NSObject.KeyValueObservingPublisher`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/KeyValueObservingPublisher). You get an instance of this publisher by calling `publisher(for:)` on the parent object, as shown in the following example’s [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()) method:
+To convert KVO code to Combine, replace the `observe(_:options:changeHandler:)` method with an doc://com.apple.documentation/documentation/objectivec/NSObject/KeyValueObservingPublisher. You get an instance of this publisher by calling `publisher(for:)` on the parent object, as shown in the following example’s [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()) method:
 
 ```swift
 class UserInfo: NSObject {
@@ -55,7 +55,7 @@ override func viewDidAppear(_ animated: Bool) {
 }
 ```
 
-The KVO publisher produces elements of the observed type — in this case, [`Date`](https://developer.apple.com/documentation/Foundation/Date) — rather than [`NSKeyValueObservedChange`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservedChange). This saves you a step, because you don’t have to unpack the [`newValue`](https://developer.apple.com/documentation/foundation/nskeyvalueobservedchange/2908876-newvalue) from the change object, as in the first example.
+The KVO publisher produces elements of the observed type — in this case, [`Date`](https://developer.apple.com/documentation/Foundation/Date) — rather than [`NSKeyValueObservedChange`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservedChange). This saves you a step, because you don’t have to unpack the [`newValue`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservedChange/newValue) from the change object, as in the first example.
 
 ## See Also
 

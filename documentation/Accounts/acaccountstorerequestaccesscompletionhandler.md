@@ -23,7 +23,7 @@ The completion handler parameters are:
 
 ## See Also
 
-- [func requestAccessToAccounts(with: ACAccountType!, options: [AnyHashable : Any]!, completion: ACAccountStoreRequestAccessCompletionHandler!)](acaccountstore/requestaccesstoaccounts(with:options:completion:).md)
+- [func requestAccessToAccounts(with: ACAccountType!, options: [AnyHashable : Any]!, completion: ((Bool, (any Error)?) -> Void)!)](acaccountstore/requestaccesstoaccounts(with:options:completion:).md)
   Obtains permission to access protected user properties.
 
 

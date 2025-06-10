@@ -1,6 +1,6 @@
 # fetchContents(for:version:request:completionHandler:)
 
-**Framework**: Fileprovider  
+**Framework**: File Provider  
 **Kind**: method  
 **Required**: Yes
 
@@ -24,7 +24,7 @@ func fetchContents(for itemIdentifier: NSFileProviderItemIdentifier, version req
 
 #### Return Value
 
-An item that tracks your extension’s progress. The system automatically calls [`cancel()`](https://developer.apple.com/documentation/foundation/progress/1413832-cancel)  on the progress object when an error occurs, or when the system or user cancels the download.
+An item that tracks your extension’s progress. The system automatically calls [`cancel()`](https://developer.apple.com/documentation/Foundation/Progress/cancel())  on the progress object when an error occurs, or when the system or user cancels the download.
 
 #### Discussion
 
@@ -38,7 +38,7 @@ If your extension doesn’t recognize the item, pass [`NSFileProviderError.Code.
 
 If you pass [`NSFileProviderError.Code.notAuthenticated`](nsfileprovidererror/code/notauthenticated.md) or [`NSFileProviderError.Code.serverUnreachable`](nsfileprovidererror/code/serverunreachable.md) to the handler, the system presents an appropriate alert to the user, but doesn’t try to access the metadata until triggered again by the user.
 
-If the user deletes the item before the download completes, the system calls the progress object’s [`cancel()`](https://developer.apple.com/documentation/foundation/progress/1413832-cancel) method. Your file provider should stop fetching the item, and pass [`NSUserCancelledError`](https://developer.apple.com/documentation/foundation/nsusercancellederror) to the handler.
+If the user deletes the item before the download completes, the system calls the progress object’s [`cancel()`](https://developer.apple.com/documentation/Foundation/Progress/cancel()) method. Your file provider should stop fetching the item, and pass [`NSUserCancelledError`](https://developer.apple.com/documentation/Foundation/NSUserCancelledError-swift.var) to the handler.
 
 The system considers any other errors to be transient, and automatically retries the method call.
 

@@ -43,6 +43,7 @@ protocol IPAddress : Sendable
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [IPv4Address](ipv4address.md)
 - [IPv6Address](ipv6address.md)

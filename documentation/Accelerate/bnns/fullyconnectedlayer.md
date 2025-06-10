@@ -11,9 +11,9 @@ A layer object that wraps a fully connected filter and manages its deinitializat
 - Mac Catalyst ?+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
+- visionOS ?+
 
 ## Declaration
 

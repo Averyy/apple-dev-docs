@@ -27,8 +27,6 @@ For use with the [`playback`](avaudiosession/category-swift.struct/playback.md),
 
 > ❗ **Important**:  This mode disables some dynamics processing on input and output signals, resulting in a lower-output playback level.
 
- This mode disables some dynamics processing on input and output signals, resulting in a lower-output playback level.
-
 ## See Also
 
 - [static let `default`: AVAudioSession.Mode](avaudiosession/mode-swift.struct/default.md)

@@ -139,8 +139,6 @@ Note that although `NSControl` defines delegate methods, it doesn’t itself hav
 - [var refusesFirstResponder: Bool](nscontrol/refusesfirstresponder.md)
   A Boolean value indicating whether the receiver refuses the first responder role.
 ### Tracking the Mouse
-- [func mouseDown(with: NSEvent)](nscontrol/mousedown(with:).md)
-  Informs the receiver that the user has pressed the left mouse button.
 - [var ignoresMultiClick: Bool](nscontrol/ignoresmulticlick.md)
   A Boolean value indicating whether the receiver ignores multiple clicks made in rapid succession.
 ### Supporting Constraint-Based Layout
@@ -190,6 +188,7 @@ Note that although `NSControl` defines delegate methods, it doesn’t itself hav
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

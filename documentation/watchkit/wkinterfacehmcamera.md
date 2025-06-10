@@ -1,6 +1,6 @@
 # WKInterfaceHMCamera
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that displays either a video stream or a single snapshot from an IP camera connected to HomeKit.

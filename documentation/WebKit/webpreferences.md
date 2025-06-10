@@ -1,9 +1,9 @@
 # WebPreferences
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
-WebPreferences encapsulates the preferences you can change per WebView object. These preferences include font, text encoding, and image settings. Normally a WebView object uses the standard preferences returned by the [`standard()`](webpreferences/standard().md) class method. However, you can modify the preferences for individual WebView instances too. Use the [`preferencesIdentifier`](webview/preferencesidentifier.md) WebView method to change a WebView object’s preferences, or to share preferences between WebView objects. Use the [`autosaves`](webpreferences/autosaves.md) method to specify if the preferences object should be automatically saved to the user defaults database.
+WebPreferences encapsulates the preferences you can change per WebView object. These preferences include font, text encoding, and image settings. Normally a WebView object uses the standard preferences returned by the [`standard()`](webpreferences/standard().md) class method. However, you can modify the preferences for individual WebView instances too. Use the [`preferencesIdentifier`](webview-swift.class/preferencesidentifier.md) WebView method to change a WebView object’s preferences, or to share preferences between WebView objects. Use the [`autosaves`](webpreferences/autosaves.md) method to specify if the preferences object should be automatically saved to the user defaults database.
 
 **Availability**:
 - macOS 10.3+
@@ -101,8 +101,8 @@ The font size for a web view is different than its logical font size. The minimu
 - [enum WebCacheModel](webcachemodel.md)
   Specifies the caching model for a web view.
 ### Notifications
-- [static let WebPreferencesChanged: NSNotification.Name](../foundation/nsnotification/name/1536311-webpreferenceschanged.md)
-  Posted when the web preference settings are changed. 
+- [static let WebPreferencesChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebPreferencesChanged.md)
+  Posted when the web preference settings are changed.
 ### Instance Properties
 - [var allowsAirPlayForMediaPlayback: Bool](webpreferences/allowsairplayformediaplayback.md)
 - [var userStyleSheetLocation: URL!](webpreferences/userstylesheetlocation.md)
@@ -122,8 +122,6 @@ The font size for a web view is different than its logical font size. The minimu
 
 ## See Also
 
-- [class WebView](webview.md)
-  `WebView` is the core view class in the WebKit framework that manages interactions between the `WebFrame` and `WebFrameView` classes. To embed web content in your application, you just create a `WebView` object, attach it to a window, and send a [`load(_:)`](webframe/load(_:)-47p2s.md) message to its main frame.
 - [protocol WebEditingDelegate](webeditingdelegate.md)
 - [protocol WebUIDelegate](webuidelegate.md)
   Web view user interface delegates implement this protocol to control the opening of new windows, augment the behavior of default menu items displayed when the user clicks elements, and perform other user interface–related tasks. These methods can be invoked as a result of handling JavaScript or other plug-in content. Delegates that display more than one web view per window, for example, need to implement some of these methods to handle that case. The default implementation assumes one window per web view, so non-conventional user interfaces might implement a user interface delegate.

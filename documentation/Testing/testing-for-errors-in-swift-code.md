@@ -25,6 +25,19 @@ To check that the code under test throws a specific error, or to continue a long
 
 If the closure completes without throwing an error, the testing library records an issue. Other overloads of [`expect(_:_:sourceLocation:)`](expect(_:_:sourcelocation:).md) let you test that the code throws an error of a given type, or matches an arbitrary Boolean test. Similar overloads of [`require(_:_:sourceLocation:)`](require(_:_:sourcelocation:)-5l63q.md) stop running your test if the code doesn’t throw the expected error.
 
+##### Validate That Your Code Throws Any Error
+
+To check that the code under test throws an error of any type, pass `(any Error).self` as the first argument to either [`expect(throws:_:sourceLocation:performing:)`](expect(throws:_:sourcelocation:performing:)-1hfms.md) or [`require(throws:_:sourceLocation:performing:)`](require(throws:_:sourcelocation:performing:)-7n34r.md):
+
+```swift
+@Test func cannotAddToppingToPizzaBeforeStartOfList() {
+  var order = PizzaToppings(bases: [.calzone, .deepCrust])
+  #expect(throws: (any Error).self) {
+    try order.add(topping: .mozarella, toPizzasIn: -1..<0)
+  }
+}
+```
+
 ##### Validate That Your Code Doesnt Throw an Error
 
 A test function that throws an error fails, which is usually sufficient for testing that the code under test doesn’t throw. If you need to record a thrown error as an issue without stopping the test function, compare the error to `Never`:

@@ -49,6 +49,7 @@ Provide the items to share using the associated [`delegate`](nssharingservicepic
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSValidatedUserInterfaceItem](nsvalidateduserinterfaceitem.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

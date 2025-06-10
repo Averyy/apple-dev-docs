@@ -1,6 +1,6 @@
 # notificationName
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The name of the notification that the expectation is waiting for.

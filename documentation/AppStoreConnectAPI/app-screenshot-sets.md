@@ -10,8 +10,6 @@ An `appScreenshotSets` resource represents a set of screenshots that you intend 
 
 > ❗ **Important**:  Some screenshot sizes are required to submit your app for review. For more information, see [`Screenshot specifications`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/screenshot-specifications).
 
- Some screenshot sizes are required to submit your app for review. For more information, see [`Screenshot specifications`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/screenshot-specifications).
-
 ## Topics
 
 ### Getting Screenshot Sets and Reading Information

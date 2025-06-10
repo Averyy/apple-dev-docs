@@ -1,6 +1,6 @@
 # discoverServices(_:)
 
-**Framework**: Corebluetooth  
+**Framework**: Core Bluetooth  
 **Kind**: method
 
 Discovers the specified services of the peripheral.

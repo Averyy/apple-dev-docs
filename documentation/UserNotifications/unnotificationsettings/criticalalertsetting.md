@@ -1,6 +1,6 @@
 # criticalAlertSetting
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The authorization status for playing sounds for critical alerts.

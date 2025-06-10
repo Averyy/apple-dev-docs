@@ -23,8 +23,8 @@ new mapkit.BoundingRegion(
 
 The example below creates a new bounding region by passing the required longitude and latitude coordinates to the constructor:
 
-```swift
-var region = new mapkit.BoundingRegion(northLatitude, eastLongitude, southLatitude, westLongitude);
+```javascript
+const region = new mapkit.BoundingRegion(northLatitude, eastLongitude, southLatitude, westLongitude);
 ```
 
 ## Parameters

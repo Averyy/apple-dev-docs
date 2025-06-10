@@ -45,6 +45,12 @@ If a child view’s base font doesn’t support fixed-width, the font remains un
   A stylistic override to transform the case of `Text` when displayed, using the environment’s locale.
 - [func monospacedDigit() -> some View](view/monospaceddigit.md)
   Modifies the fonts of all child views to use fixed-width digits, if possible, while leaving other characters proportionally spaced.
+- [protocol AttributedTextFormattingDefinition](attributedtextformattingdefinition.md)
+  A protocol for defining how text can be styled in a certain context, e.g. a `TextEditor`.
+- [protocol AttributedTextValueConstraint](attributedtextvalueconstraint.md)
+  A protocol for defining a constraint on the value of a certain attribute.
+- [enum AttributedTextFormatting](attributedtextformatting.md)
+  A namespace for types related to attributed text formatting definitions.
 
 
 ---

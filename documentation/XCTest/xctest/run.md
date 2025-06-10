@@ -1,6 +1,6 @@
 # run()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Creates a test run instance and starts the test.

@@ -1,6 +1,6 @@
 # preparedCell(atColumn:row:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Returns the fully prepared cell that the table view will use for drawing or processing of the specified row and column.

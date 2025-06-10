@@ -1,6 +1,6 @@
 # any
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Allows any defined action to occur.

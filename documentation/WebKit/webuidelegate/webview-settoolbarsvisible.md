@@ -1,6 +1,6 @@
 # webView(_:setToolbarsVisible:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sets whether a web view’s toolbars should be visible.

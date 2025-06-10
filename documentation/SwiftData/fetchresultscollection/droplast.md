@@ -1,6 +1,6 @@
 # dropLast(_:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns a subsequence containing all but the specified number of final elements.

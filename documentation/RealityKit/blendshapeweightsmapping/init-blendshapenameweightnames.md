@@ -10,6 +10,7 @@ Creates a mapping that applies the weight names to mesh parts in a model compone
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

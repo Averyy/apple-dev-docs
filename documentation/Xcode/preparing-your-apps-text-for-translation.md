@@ -146,7 +146,7 @@ let actionWithComment = UserAction(title: LocalizedStringResource("Order items",
 If you define the strings that you want to localize in another module, framework, or Swift Package, use the `bundle` argument in their definition. For example, say you want to modularize your project and you create a framework called `BirdFinderUtilities`. To look up a localizable string from within that framework:
 
 1. Identify the name of a class within the framework (in this case, `BirdSongs`).
-2. Pass that class into an instance of [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) using the [`init(for:)`](https://developer.apple.com/documentation/foundation/bundle/1417717-init) initializer.
+2. Pass that class into an instance of [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) using the [`init(for:)`](https://developer.apple.com/documentation/Foundation/Bundle/init(for:)) initializer.
 3. Use that `Bundle` to look up the localizable string.
 
 ```swift
@@ -161,8 +161,6 @@ LocalizedStringResource("Songs", bundle: .forClass(BirdSongs.self), comment: "He
 ```
 
 > ❗ **Important**: Avoid looking up strings from bundles you don’t own. Doing so may prevent automatic string extraction from properly working in the string catalog.
-
-Avoid looking up strings from bundles you don’t own. Doing so may prevent automatic string extraction from properly working in the string catalog.
 
 ## See Also
 

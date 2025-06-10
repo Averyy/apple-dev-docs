@@ -1,6 +1,6 @@
 # options
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A combination of values that specify what to include in observation notifications.

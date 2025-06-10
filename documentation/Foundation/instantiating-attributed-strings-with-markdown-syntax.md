@@ -31,8 +31,6 @@ When using attributes beyond those provided by the system, be sure to use initia
 
 > 💡 **Tip**:  The [`AttributedString`](attributedstring.md) initializers that take a `localized` parameter can also use Markdown syntax. These initializers allow you to use Markdown in your app’s strings files.
 
- The [`AttributedString`](attributedstring.md) initializers that take a `localized` parameter can also use Markdown syntax. These initializers allow you to use Markdown in your app’s strings files.
-
 ## Topics
 
 ### Initializing from Markdown Strings

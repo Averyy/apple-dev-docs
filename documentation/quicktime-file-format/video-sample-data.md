@@ -1,6 +1,6 @@
 # Video sample data
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Store video sample data in different formats, depending on the type of compression you use.
 

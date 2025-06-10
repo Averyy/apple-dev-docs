@@ -6,10 +6,13 @@
 Returns a three-element SceneKit vector structure corresponding to a GLKit vector structure.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
-- tvOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.1+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 

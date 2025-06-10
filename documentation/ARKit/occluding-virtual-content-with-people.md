@@ -1,6 +1,6 @@
 # Occluding virtual content with people
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Cover your app’s virtual content with people that ARKit perceives in the camera feed.
 
@@ -59,7 +59,7 @@ Alternatively, the [`personSegmentation`](arconfiguration/framesemantics-swift.s
 
 #### Disable People Occlusion
 
-You might choose to disable people occlusion for performance reasons if, for example, no virtual content is present in the scene, or if the device has reached a serious or critical [`thermalState`](https://developer.apple.com/documentation/foundation/processinfo/1417480-thermalstate) (see [`ProcessInfo.ThermalState`](https://developer.apple.com/documentation/foundation/processinfo/thermalstate)). To temporarily disable people occlusion, remove that option from your app’s [`frameSemantics`](arconfiguration/framesemantics-swift.property.md).
+You might choose to disable people occlusion for performance reasons if, for example, no virtual content is present in the scene, or if the device has reached a serious or critical [`thermalState`](https://developer.apple.com/documentation/Foundation/ProcessInfo/thermalState-swift.property) (see [`ProcessInfo.ThermalState`](https://developer.apple.com/documentation/Foundation/ProcessInfo/ThermalState-swift.enum)). To temporarily disable people occlusion, remove that option from your app’s [`frameSemantics`](arconfiguration/framesemantics-swift.property.md).
 
 ```swift
 config.frameSemantics.remove(.personSegmentationWithDepth)
@@ -83,4 +83,4 @@ arView.session.run(config)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/occluding-virtual-content-with-people)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/occluding-virtual-content-with-people)*

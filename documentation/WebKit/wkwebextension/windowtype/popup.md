@@ -1,6 +1,6 @@
 # WKWebExtension.WindowType.popup
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates a pop-up window.

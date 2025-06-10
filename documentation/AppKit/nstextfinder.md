@@ -1,6 +1,6 @@
 # NSTextFinder
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An optional search-and-replace find interface inside a view, usually a scroll view.
@@ -191,4 +191,4 @@ In OS X v10.7, the [`NSTextView`](nstextview.md) class also provides incremental
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstextfinder)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstextfinder)*

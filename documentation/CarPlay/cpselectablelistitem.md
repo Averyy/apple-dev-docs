@@ -20,8 +20,6 @@ protocol CPSelectableListItem : CPListTemplateItem
 
 > ❗ **Important**:  You don’t create custom classes that conform to `CPSelectableListItem`. Instead, you use one of the prebuilt list item types that adopt this protocol, such as [`CPListItem`](cplistitem.md) or [`CPListImageRowItem`](cplistimagerowitem.md).
 
- You don’t create custom classes that conform to `CPSelectableListItem`. Instead, you use one of the prebuilt list item types that adopt this protocol, such as [`CPListItem`](cplistitem.md) or [`CPListImageRowItem`](cplistimagerowitem.md).
-
 ## Topics
 
 ### Managing Selection

@@ -1,6 +1,6 @@
 # map(_:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns an array containing the results of mapping the given closure over the sequence’s elements.

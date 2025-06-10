@@ -1,4 +1,4 @@
-# Tips.DonationTimeRange
+# DonationTimeRange
 
 **Framework**: TipKit  
 **Kind**: struct
@@ -41,9 +41,14 @@ struct DonationTimeRange
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [struct Event](tips/event.md)
+  A repeatable user-defined action.
+- [struct DonationLimit](tips/donationlimit.md)
+  Specify the maximum number of donations for an event.
 - [struct EmptyDonation](tips/emptydonation.md)
   An empty event donation.
 

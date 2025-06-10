@@ -24,8 +24,6 @@ Each image in an image asset must have a unique set of traits. If the asset alre
 
 > ❗ **Important**:  The trait collection must always contain an explicit value in its [`displayScale`](uitraitcollection/displayscale.md) property. You may experience unexpected results from [`image(with:)`](uiimageasset/image(with:)-3dsgf.md) if the trait collection doesn’t explicitly define the desired scale.
 
- The trait collection must always contain an explicit value in its [`displayScale`](uitraitcollection/displayscale.md) property. You may experience unexpected results from [`image(with:)`](uiimageasset/image(with:)-3dsgf.md) if the trait collection doesn’t explicitly define the desired scale.
-
 ## Parameters
 
 - `image`: The image you want to register with the image asset.

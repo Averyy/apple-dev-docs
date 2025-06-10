@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: init
 
 Creates a new set from a finite sequence of items.

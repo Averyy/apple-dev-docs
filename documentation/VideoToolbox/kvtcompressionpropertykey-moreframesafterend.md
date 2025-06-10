@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_MoreFramesAfterEnd
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A Boolean value indicating whether and how a compression session concatenates frames with other compressed frames to form a longer series.

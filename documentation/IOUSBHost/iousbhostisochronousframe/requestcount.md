@@ -19,8 +19,6 @@ var requestCount: UInt32
 
 > ❗ **Important**:  Initialize this field before submitting the structure.
 
- Initialize this field before submitting the structure.
-
 ## See Also
 
 - [var status: IOReturn](iousbhostisochronousframe/status.md)

@@ -1,6 +1,6 @@
 # Apple Pay Web Merchant Registration API
 
-**Framework**: Applepaywebmerchantregistrationapi  
+**Framework**: Apple Pay Web Merchant Registration API  
 **Kind**: module
 
 Manage merchant registration through your web platform.
@@ -22,7 +22,7 @@ To use the Apple Pay Web Merchant Registration API,  you must meet the following
 
 - Your organization must be enrolled in the Apple Developer program. For more information about enrollment, see the “Enrolling as an Organization” section in [`What You Need To Enroll`](https://developer.apple.comhttps://developer.apple.com/programs/enroll/).
 - You must apply for access to the API. For more information about applying, see [`Registering with Apple Pay and Applying to Use the API`](registering-with-apple-pay-and-applying-to-use-the-api.md).
-- Your server must call the API using mutual authentication with Transport Layer Security (TLS) 1.2 or later, and one of the supported cipher suites. For a list of supported cipher suites, see [`Setting Up Your Server`](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server).
+- Your server must call the API using mutual authentication with Transport Layer Security (TLS) 1.2 or later, and one of the supported cipher suites. For a list of supported cipher suites, see [`Setting Up Your Server`](https://developer.apple.com/documentation/ApplePayontheWeb/setting-up-your-server).
 
 ## Topics
 

@@ -1,6 +1,6 @@
 # kVTPixelTransferPropertyKey_DestinationCleanAperture
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The clean aperture for destination image buffers.

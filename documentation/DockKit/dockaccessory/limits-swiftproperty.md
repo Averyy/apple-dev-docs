@@ -1,6 +1,6 @@
 # limits
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: property
 
 Current limits for the axes of rotation and maximum angular velocity.

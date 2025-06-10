@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-A structure that the defines the content and modifier needed to produce a new view or view modifier.
+A structure that defines the content and modifier needed to produce a new view or view modifier.
 
 **Availability**:
 - iOS 13.0+

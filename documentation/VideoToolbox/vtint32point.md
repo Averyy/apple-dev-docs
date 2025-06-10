@@ -1,6 +1,6 @@
 # VTInt32Point
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: struct
 
 A structure that represents a 32-bit integer point value.

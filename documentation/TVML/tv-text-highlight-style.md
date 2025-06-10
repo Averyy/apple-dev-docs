@@ -1,6 +1,6 @@
 # tv-text-highlight-style
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Specifies how an element looks when it comes into focus.
 
@@ -40,4 +40,4 @@ Use the `tv-text-highlight-style` style to specify how a label reacts when it co
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/tv-text-highlight-style)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/tv-text-highlight-style)*

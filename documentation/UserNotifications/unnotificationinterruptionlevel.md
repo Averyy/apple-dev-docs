@@ -1,6 +1,6 @@
 # UNNotificationInterruptionLevel
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: enum
 
 Constants that indicate the importance and delivery timing of a notification.
@@ -46,6 +46,7 @@ enum UNNotificationInterruptionLevel
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

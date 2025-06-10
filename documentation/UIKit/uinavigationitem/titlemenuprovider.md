@@ -46,8 +46,6 @@ Before displaying the title menu, UIKit validates each element in the menu you r
 
 > 💡 **Tip**:  You don’t need to assign a [`titleMenuProvider`](uinavigationitem/titlemenuprovider.md) if you only want to show Rename in your title menu. If you assign a `renameDelegate` without setting a [`titleMenuProvider`](uinavigationitem/titlemenuprovider.md), UIKit automatically generates a title menu containing the Rename menu element only.
 
- You don’t need to assign a [`titleMenuProvider`](uinavigationitem/titlemenuprovider.md) if you only want to show Rename in your title menu. If you assign a `renameDelegate` without setting a [`titleMenuProvider`](uinavigationitem/titlemenuprovider.md), UIKit automatically generates a title menu containing the Rename menu element only.
-
 ## See Also
 
 - [var documentProperties: UIDocumentProperties?](uinavigationitem/documentproperties.md)

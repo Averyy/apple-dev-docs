@@ -25,12 +25,18 @@ struct ScrollInputKind
 ### Type Properties
 - [static let handGestureShortcut: ScrollInputKind](scrollinputkind/handgestureshortcut.md)
   A finger or wrist movement that the user can perform in order to scroll a view.
+- [static let look: ScrollInputKind](scrollinputkind/look.md)
+  On visionOS, by looking at the edge of a scroll view the content can automatically scroll. The axes will be determined automatically.
+### Type Methods
+- [static func look(axes: Axis.Set) -> ScrollInputKind](scrollinputkind/look(axes:).md)
+  On visionOS, by looking at the edge of a scroll view the content can automatically scroll. This contructor method takes a set of the scrollable axes.
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

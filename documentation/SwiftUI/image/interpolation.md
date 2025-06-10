@@ -43,6 +43,7 @@ The [`interpolation(_:)`](image/interpolation(_:).md) modifier specifies the int
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -69,6 +69,8 @@ struct MTLIndirectAccelerationStructureMotionInstanceDescriptor
   A description of an instance in an instanced geometry acceleration structure, with the instance including a user identifier and motion data for the instance.
 - [struct MTLAccelerationStructureInstanceOptions](mtlaccelerationstructureinstanceoptions.md)
   Options for adjusting the behavior of an instanced acceleration structure.
+- [class MTL4IndirectInstanceAccelerationStructureDescriptor](mtl4indirectinstanceaccelerationstructuredescriptor.md)
+  Descriptor for an “indirect” instance acceleration structure that allows providing the instance count and motion transform count indirectly, through buffer references.
 - [class MTLIndirectInstanceAccelerationStructureDescriptor](mtlindirectinstanceaccelerationstructuredescriptor.md)
   A description of an acceleration structure that Metal derives from instances of primitive acceleration structures that the GPU can populate.
 - [struct MTLIndirectAccelerationStructureInstanceDescriptor](mtlindirectaccelerationstructureinstancedescriptor.md)

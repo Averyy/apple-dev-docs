@@ -1,6 +1,6 @@
 # ondeviceorientation
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The event listener that is called while the device orientation changes around the x, y, and z axes. 

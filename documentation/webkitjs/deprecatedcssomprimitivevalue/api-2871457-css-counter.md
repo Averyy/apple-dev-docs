@@ -1,6 +1,6 @@
 # CSS_COUNTER
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

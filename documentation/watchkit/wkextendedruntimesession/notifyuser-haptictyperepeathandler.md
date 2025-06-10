@@ -1,6 +1,6 @@
 # notifyUser(hapticType:repeatHandler:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Play a repeating haptic alert.

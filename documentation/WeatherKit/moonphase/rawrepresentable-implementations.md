@@ -1,6 +1,6 @@
 # RawRepresentable Implementations
 
-**Framework**: Weatherkit
+**Framework**: WeatherKit
 
 ## Topics
 

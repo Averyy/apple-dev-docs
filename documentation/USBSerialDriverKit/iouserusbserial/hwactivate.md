@@ -1,6 +1,6 @@
 # HwActivate
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: method
 
 Opens the communication channel to the device.

@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: method
 
-Scales this view uniformly by the specified factor.
+Scales this view uniformly by the specified factor, relative to an anchor point.
 
 **Availability**:
 - visionOS 1.0+

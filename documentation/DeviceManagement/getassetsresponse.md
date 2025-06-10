@@ -17,8 +17,8 @@ object GetAssetsResponse
 
 ## Mentions
 
-- [Managing Assets](managing-assets.md)
 - [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
+- [Managing Assets](managing-assets.md)
 
 ## Topics
 

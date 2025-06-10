@@ -32,6 +32,9 @@ For more information, see [`Elevating your iPad app with a tab bar and sidebar`]
 ### Creating a search tab
 - [init(viewControllerProvider: ((UITab) -> UIViewController)?)](uisearchtab/init(viewcontrollerprovider:).md)
   Creates a search tab with a system localized title and image.
+### Instance Properties
+- [var automaticallyActivatesSearch: Bool](uisearchtab/automaticallyactivatessearch.md)
+  Determines if the search tab should automatically activate the embedded search field when the tab becomes visible.
 
 ## Relationships
 
@@ -44,6 +47,8 @@ For more information, see [`Elevating your iPad app with a tab bar and sidebar`]
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIPopoverPresentationControllerSourceItem](uipopoverpresentationcontrollersourceitem.md)
 - [UISpringLoadedInteractionSupporting](uispringloadedinteractionsupporting.md)
@@ -68,6 +73,7 @@ For more information, see [`Elevating your iPad app with a tab bar and sidebar`]
   An object that describes an item in a tab bar.
 - [class UITab](uitab.md)
   An object that manages a tab in a tab bar.
+- [class UITabAccessory](uitabaccessory.md)
 - [class UITabGroup](uitabgroup.md)
   An object that manages a collection of tab objects.
 - [class UIPageViewController](uipageviewcontroller.md)

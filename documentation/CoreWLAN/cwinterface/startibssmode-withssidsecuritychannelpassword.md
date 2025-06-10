@@ -1,6 +1,6 @@
 # startIBSSMode(withSSID:security:channel:password:)
 
-**Framework**: Corewlan  
+**Framework**: Core WLAN  
 **Kind**: method
 
 Creates a computer-to-computer (ad-hoc) network with the given network name, security type, and password on the specified channel.

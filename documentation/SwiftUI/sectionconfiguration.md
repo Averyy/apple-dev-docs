@@ -45,9 +45,13 @@ Here, we want to create one view for `PinboardSectionsLayout` to place per secti
 ## Topics
 
 ### Structures
+- [SectionConfiguration.Actions](sectionconfiguration/actions-swift.struct.md)
+  The type-erased actions of a section.
 - [SectionConfiguration.ID](sectionconfiguration/id-swift.struct.md)
   A unique identifier for a section.
 ### Instance Properties
+- [var actions: SectionConfiguration.Actions](sectionconfiguration/actions-swift.property.md)
+  Custom actions associated with a section.
 - [var containerValues: ContainerValues](sectionconfiguration/containervalues.md)
   The container values associated with the given section.
 - [var content: SubviewsCollection](sectionconfiguration/content.md)

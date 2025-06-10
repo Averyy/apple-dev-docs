@@ -1,6 +1,6 @@
 # XCTestError.Code.failureWhileWaiting
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 A code that represents a test failure the test encountered while waiting to fulfill expectations.

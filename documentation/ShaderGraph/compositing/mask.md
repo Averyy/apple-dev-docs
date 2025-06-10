@@ -5,17 +5,25 @@
 
 Outputs areas of background that overlap with the alpha of foreground.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-The Mask node determines its output using the alpha channels of the foreground and background inputs. The RGB componentt of the output is `B*f` and the alpha component of the output is `b*f`. Below is a simple node graph that uses the Mask node to blend a wood and rock texture.
+The Mask node determines its output using the alpha channels of the foreground and background inputs. The RGB componentt of the output is `B*f` and the alpha component of the output is `b*f`. Below is a simple node graph that uses the Mask node to blend a wood and rock texture:
 
 ![None](https://docs-assets.developer.apple.com/published/f6af153ade32c2f2a77ced0dfcd39ca2/MaskGraph.png)
 
-Below are the two original images, the image representation of the alpha of the foreground, and the resulting blended texture applied to a cube.
+Below are the two original images, the image representation of the alpha of the foreground, and the resulting blended texture applied to a cube:
 
 ![None](https://docs-assets.developer.apple.com/published/631d442b75841a9df3778a63597acecf/MaskMaterial2.png)
 

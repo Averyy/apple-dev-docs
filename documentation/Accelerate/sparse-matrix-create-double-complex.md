@@ -18,6 +18,10 @@
 func sparse_matrix_create_double_complex(_ M: sparse_dimension, _ N: sparse_dimension) -> sparse_matrix_double_complex!
 ```
 
+## See Also
+
+- [func sparse_matrix_create_float_complex(sparse_dimension, sparse_dimension) -> sparse_matrix_float_complex!](sparse_matrix_create_float_complex(_:_:).md)
+
 
 ---
 

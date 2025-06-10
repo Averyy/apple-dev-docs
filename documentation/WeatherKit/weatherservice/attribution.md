@@ -1,6 +1,6 @@
 # attribution
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The required attribution which includes a legal attribution page and Apple Weather mark.

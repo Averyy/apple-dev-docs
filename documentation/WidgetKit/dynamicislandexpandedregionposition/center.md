@@ -1,6 +1,6 @@
 # center
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 The center position in the Dynamic Island for views of an expanded Live Activity.
@@ -8,7 +8,6 @@ The center position in the Dynamic Island for views of an expanded Live Activity
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

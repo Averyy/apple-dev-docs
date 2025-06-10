@@ -1,6 +1,6 @@
 # HTMLCanvasElement
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 A canvas is an HTML element that defines a runtime drawing region within your web content. You can access the canvas as a JavaScript object and obtain a drawing context from it, in the form of a `CanvasRenderingContext2D` object. You draw on the canvas by using the JavaScript methods of the [`CanvasRenderingContext2D`](canvasrenderingcontext2d.md) class.

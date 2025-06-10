@@ -1,6 +1,6 @@
 # WKError.Code.unknown
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 An error that indicates an unknown issue occurred.

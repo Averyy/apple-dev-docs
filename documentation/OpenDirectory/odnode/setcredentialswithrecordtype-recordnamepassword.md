@@ -1,6 +1,6 @@
 # setCredentialsWithRecordType(_:recordName:password:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Sets credentials for interacting with the node.
@@ -31,8 +31,6 @@ If this function fails, the previous credentials for the node are used.
 
 - [func setCredentialsWithRecordType(String!, authenticationType: String!, authenticationItems: [Any]!, continueItems: AutoreleasingUnsafeMutablePointer<NSArray?>!, context: AutoreleasingUnsafeMutablePointer<AnyObject?>!) throws](odnode/setcredentialswithrecordtype(_:authenticationtype:authenticationitems:continueitems:context:).md)
   Sets the credentials for interaction with the node using other types of authentication available to Open Directory.
-- [func setCredentialsUsingKerberosCache(String!) throws](odnode/setcredentialsusingkerberoscache(_:).md)
-  Sets the credentials for interaction with the node using a Kerberos cache.
 
 
 ---

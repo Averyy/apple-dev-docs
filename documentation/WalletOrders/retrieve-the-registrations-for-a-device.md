@@ -1,6 +1,6 @@
 # Retrieve the registrations for a device
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: httpRequest
 
 Retrieves the identifiers of the orders that the device registered for.

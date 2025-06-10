@@ -50,6 +50,7 @@ This sequence allows iterating through the camera frames. Only one iterator can 
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TemporalSequence](temporalsequence.md)
 
 ## See Also

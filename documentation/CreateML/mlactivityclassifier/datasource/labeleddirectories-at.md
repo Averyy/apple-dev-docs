@@ -1,6 +1,6 @@
 # MLActivityClassifier.DataSource.labeledDirectories(at:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: case
 
 An activity classifier data source that uses a directory of directories that contain sensor data files.

@@ -10,6 +10,7 @@ The clearcoat intensity specified using a UV-mapped image.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -21,8 +22,6 @@ var texture: CustomMaterial.Texture?
 
 - [var scale: Float](custommaterial/clearcoat-swift.struct/scale.md)
   The intensity of the clearcoat.
-- [CustomMaterial.Clearcoat.FloatLiteralType](custommaterial/clearcoat-swift.struct/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 
 ---

@@ -17,7 +17,6 @@ A Boolean value that indicates whether the node is casting light.
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

@@ -21,6 +21,7 @@ protocol MTLBlitCommandEncoder : MTLCommandEncoder
 
 ## Mentions
 
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 - [Copying Data into or out of Mipmaps](copying-data-into-or-out-of-mipmaps.md)
 - [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
 - [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
@@ -108,6 +109,9 @@ You can create an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md) instance b
   Encodes a command that retrieves a sparse texture’s access data for a specific region, mipmap level, and slice.
 - [func resetTextureAccessCounters(any MTLTexture, region: MTLRegion, mipLevel: Int, slice: Int)](mtlblitcommandencoder/resettextureaccesscounters(_:region:miplevel:slice:).md)
   Encodes a command that resets a sparse texture’s access data for a specific region, mipmap level, and slice.
+### Instance Methods
+- [func copy(from: any MTLTensor, sourceOrigin: MTLTensorExtents, sourceDimensions: MTLTensorExtents, to: any MTLTensor, destinationOrigin: MTLTensorExtents, destinationDimensions: MTLTensorExtents)](mtlblitcommandencoder/copy(from:sourceorigin:sourcedimensions:to:destinationorigin:destinationdimensions:).md)
+  Encodes a command to copy data from a slice of one tensor into a slice of another tensor.
 
 ## Relationships
 

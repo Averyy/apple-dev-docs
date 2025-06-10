@@ -1,6 +1,6 @@
 # WKOpenPanelParameters
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 The configuration details of a file upload control in your web content.
@@ -10,6 +10,7 @@ The configuration details of a file upload control in your web content.
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
 - macOS 10.12+
+- visionOS 2.4+
 
 ## Declaration
 

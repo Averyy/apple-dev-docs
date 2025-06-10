@@ -1,6 +1,6 @@
 # Tracking Your File Provider’s Changes
 
-**Framework**: Fileprovider
+**Framework**: File Provider
 
 Create an enumerator to track changes to your file provider’s content.
 
@@ -38,4 +38,4 @@ After the system is alerted to the change, it calls [`enumerateChanges(for:from:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/tracking-your-file-provider-s-changes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/tracking-your-file-provider-s-changes)*

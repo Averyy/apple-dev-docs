@@ -88,4 +88,4 @@ Each index in an index path represents the index into an array of children from 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsindexpath)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsindexpath)*

@@ -42,7 +42,12 @@ To learn more about using ActivityKit push notifications to update your Live Act
 ## See Also
 
 - [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:).md)
+  Requests and starts a standard Live Activity.
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:).md)
   Requests and starts a Live Activity.
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle, alertConfiguration: AlertConfiguration, start: Date) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:alertconfiguration:start:).md)
+  Requests and schedules a Live Activity for a specific date.
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle, alertConfiguration: AlertConfiguration, startDate: Date) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:alertconfiguration:startdate:).md)
 - [let attributes: Attributes](activity/attributes.md)
   A set of attributes that describe a Live Activity and its content.
 - [protocol ActivityAttributes](activityattributes.md)
@@ -56,7 +61,6 @@ To learn more about using ActivityKit push notifications to update your Live Act
   The type alias for the structure that describes the dynamic content of a Live Activity.
 - [enum ActivityAuthorizationError](activityauthorizationerror.md)
   An error that indicates why the request to start a Live Activity failed.
-- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:).md)
 
 
 ---

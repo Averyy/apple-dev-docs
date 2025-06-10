@@ -60,6 +60,7 @@ struct BasicTemplate: SpatialTemplate {
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SpatialTemplateElement](spatialtemplateelement.md)
 
 ## See Also
@@ -68,6 +69,8 @@ struct BasicTemplate: SpatialTemplate {
   Create a team-based guessing game for visionOS using Group Activities.
 - [protocol SpatialTemplate](spatialtemplate.md)
   An interface you use to create custom arrangements of spatial Personas in a scene.
+- [struct SpatialTemplatePreference](spatialtemplatepreference.md)
+  A structure that specifies the preferred arrangement of participant spatial Personas in a shared simulation space.
 - [protocol SpatialTemplateElement](spatialtemplateelement.md)
   An interface that defines an element in your spatial template.
 - [struct SpatialTemplateElementPosition](spatialtemplateelementposition.md)

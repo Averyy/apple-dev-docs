@@ -1,6 +1,6 @@
 # WKWindowFeatures
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 Display-related attributes that a webpage requests for its window.

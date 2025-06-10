@@ -1,6 +1,6 @@
 # months
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 An ordered collection of month weather statistics data of type `T`, for each requested month.

@@ -42,6 +42,7 @@ When used as a [`ShapeStyle`](shapestyle.md), this type draws a linear gradient 
 - [Hashable](../Swift/Hashable.md)
 - [ScaleRange](../Charts/ScaleRange.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 
 ## See Also
@@ -68,6 +69,8 @@ When used as a [`ShapeStyle`](shapestyle.md), this type draws a linear gradient 
   A two-dimensional gradient defined by a 2D grid of positioned colors.
 - [struct ShadowStyle](shadowstyle.md)
   A style to use when rendering shadows.
+- [struct Glass](glass.md)
+  A structure that defines the configuration of the Liquid Glass material.
 
 
 ---

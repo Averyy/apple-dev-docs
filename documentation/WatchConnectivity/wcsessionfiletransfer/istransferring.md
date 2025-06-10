@@ -1,6 +1,6 @@
 # isTransferring
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 A Boolean value indicating whether the file is still being transferred.

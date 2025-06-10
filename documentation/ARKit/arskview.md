@@ -65,6 +65,7 @@ Use the [`ARSKView`](arskview.md) class to create augmented reality experiences 
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)
@@ -84,6 +85,8 @@ Use the [`ARSKView`](arskview.md) class to create augmented reality experiences 
 
 ## See Also
 
+- [@MainActor @preconcurrency struct RealityView<Content> where Content : View](../RealityKit/RealityView.md)
+  A view that contains RealityKit content.
 - [@MainActor @objc @preconcurrency class ARView](../RealityKit/ARView.md)
   A view that enables you to display an AR experience with RealityKit.
 - [class ARSCNView](arscnview.md)

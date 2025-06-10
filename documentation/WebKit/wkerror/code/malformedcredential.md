@@ -1,6 +1,6 @@
 # WKError.Code.malformedCredential
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 An error that indicates the system could not parse passkey data during an import.

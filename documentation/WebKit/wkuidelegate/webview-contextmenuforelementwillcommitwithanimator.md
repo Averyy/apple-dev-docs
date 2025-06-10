@@ -1,6 +1,6 @@
 # webView(_:contextMenuForElement:willCommitWithAnimator:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Provides the delegate with the animator object that the web view uses to display the contextual menu.

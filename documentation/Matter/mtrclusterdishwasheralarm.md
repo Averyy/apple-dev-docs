@@ -26,7 +26,7 @@ class MTRClusterDishwasherAlarm
 - [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterdishwasheralarm/init(device:endpointid:queue:).md)
   For all instance methods that take a completion (i.e. command invocations), the completion will be called on the provided queue.
 ### Instance Methods
-- [func modifyEnabledAlarms(with: MTRDishwasherAlarmClusterModifyEnabledAlarmsParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterdishwasheralarm/modifyenabledalarms(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func modifyEnabledAlarms(with: MTRDishwasherAlarmClusterModifyEnabledAlarmsParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterdishwasheralarm/modifyenabledalarms(with:expectedvalues:expectedvalueinterval:completion:).md)
 - [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterdishwasheralarm/readattributeacceptedcommandlist(with:).md)
 - [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterdishwasheralarm/readattributeattributelist(with:).md)
 - [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterdishwasheralarm/readattributeclusterrevision(with:).md)
@@ -36,7 +36,7 @@ class MTRClusterDishwasherAlarm
 - [func readAttributeMask(with: MTRReadParams?) -> [String : Any]?](mtrclusterdishwasheralarm/readattributemask(with:).md)
 - [func readAttributeState(with: MTRReadParams?) -> [String : Any]?](mtrclusterdishwasheralarm/readattributestate(with:).md)
 - [func readAttributeSupported(with: MTRReadParams?) -> [String : Any]?](mtrclusterdishwasheralarm/readattributesupported(with:).md)
-- [func reset(with: MTRDishwasherAlarmClusterResetParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterdishwasheralarm/reset(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func reset(with: MTRDishwasherAlarmClusterResetParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterdishwasheralarm/reset(with:expectedvalues:expectedvalueinterval:completion:).md)
 
 ## Relationships
 

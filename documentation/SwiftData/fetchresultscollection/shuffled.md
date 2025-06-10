@@ -1,6 +1,6 @@
 # shuffled()
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns the elements of the sequence, shuffled.

@@ -1,6 +1,6 @@
 # WeatherAlert
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 An official message indicating severe weather from a reporting agency.

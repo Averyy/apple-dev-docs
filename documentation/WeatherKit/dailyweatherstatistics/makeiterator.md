@@ -1,6 +1,6 @@
 # makeIterator()
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns an iterator over the elements of the collection.

@@ -31,6 +31,7 @@ struct CKShareTransferRepresentation<Item> where Item : Transferable
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TransferRepresentation](../CoreTransferable/TransferRepresentation.md)
 
 ## See Also

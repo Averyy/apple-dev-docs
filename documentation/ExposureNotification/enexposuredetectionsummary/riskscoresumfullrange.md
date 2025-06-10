@@ -1,6 +1,6 @@
 # riskScoreSumFullRange
 
-**Framework**: Exposurenotification  
+**Framework**: Exposure Notification  
 **Kind**: property
 
 The sum of the full-range risk scores for all exposures for the user.
@@ -44,4 +44,4 @@ The values used in the sum are not limited by [`ENRiskScoreMax`](enriskscoremax.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposuredetectionsummary/riskscoresumfullrange)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposuredetectionsummary/riskscoresumfullrange)*

@@ -58,6 +58,11 @@ These results are part of the [`SFTranscriptionSegment`](sftranscriptionsegment.
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
+## See Also
+
+- [class SFAcousticFeature](sfacousticfeature.md)
+  The value of a voice analysis metric.
+
 
 ---
 

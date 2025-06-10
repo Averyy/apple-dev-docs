@@ -19,7 +19,7 @@ var region: Locale.Region { get set }
 
 #### Discussion
 
-Set this property to the [`Locale.Region`](https://developer.apple.com/documentation/foundation/locale/region) for the country or region of the merchant’s principal place of business. Consult with your payment service provider (PSP) to determine the appropriate country or region code.
+Set this property to the [`Locale.Region`](https://developer.apple.com/documentation/Foundation/Locale/Region-swift.struct) for the country or region of the merchant’s principal place of business. Consult with your payment service provider (PSP) to determine the appropriate country or region code.
 
 Apple Pay may use the `region` to generate payment and disbursement data that complies with local regulations. For more information on regional compliance, see [`Complying with regional regulations`](complying-with-regional-regulations.md).
 

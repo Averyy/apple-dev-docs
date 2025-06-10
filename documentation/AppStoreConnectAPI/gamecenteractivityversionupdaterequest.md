@@ -1,0 +1,42 @@
+# GameCenterActivityVersionUpdateRequest
+
+**Framework**: App Store Connect API  
+**Kind**: dictionary
+
+The request body you use to update an activity version version.
+
+**Availability**:
+- App Store Connect API 4.0+
+
+## Declaration
+
+```swift
+object GameCenterActivityVersionUpdateRequest
+```
+
+## Topics
+
+### Dictionaries
+- [object GameCenterActivityVersionUpdateRequest.Data](gamecenteractivityversionupdaterequest/data-data.dictionary.md)
+
+## See Also
+
+- [object GameCenterActivityVersion](gamecenteractivityversion.md)
+  The data structure that represents an activity version resource.
+- [object GameCenterActivityVersionCreateRequest](gamecenteractivityversioncreaterequest.md)
+  The request body you use to create an activity version resource.
+- [object GameCenterActivityVersionResponse](gamecenteractivityversionresponse.md)
+  A response that contains a single activity version resource.
+- [object GameCenterActivityVersionsResponse](gamecenteractivityversionsresponse.md)
+  A response that contains a list of activity version resources.
+- [object GameCenterActivityVersionDefaultImageLinkageResponse](gamecenteractivityversiondefaultimagelinkageresponse.md)
+- [object GameCenterActivityVersionLocalizationsLinkagesResponse](gamecenteractivityversionlocalizationslinkagesresponse.md)
+- [object GameCenterActivityVersionsLinkagesResponse](gamecenteractivityversionslinkagesresponse.md)
+  A response that contains a list of Ids of related resources.
+- [object GameCenterActivityVersionsResponse](gamecenteractivityversionsresponse.md)
+  A response that contains a list of activity version resources.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/gamecenteractivityversionupdaterequest)*

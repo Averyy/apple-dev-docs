@@ -1,6 +1,6 @@
 # reloadFromOrigin()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Performs an end-to-end revalidation using cache-validating conditionals if possible.

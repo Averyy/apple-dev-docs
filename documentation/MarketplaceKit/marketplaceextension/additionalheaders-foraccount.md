@@ -23,7 +23,7 @@ func additionalHeaders(for request: URLRequest, account: String) -> [String : St
 
 #### Discussion
 
-The operating system invokes your implementation of this callback before sending a request to your marketplace endpoints. In this method, use [`addValue(_:forHTTPHeaderField:)`](https://developer.apple.com/documentation/foundation/urlrequest/2011522-addvalue) to add to the header. The additions detail information that your marketplace server needs to authorize the request.
+The operating system invokes your implementation of this callback before sending a request to your marketplace endpoints. In this method, use [`addValue(_:forHTTPHeaderField:)`](https://developer.apple.com/documentation/Foundation/URLRequest/addValue(_:forHTTPHeaderField:)) to add to the header. The additions detail information that your marketplace server needs to authorize the request.
 
 For more information, see [`Installing apps from an alternative marketplace`](installing-apps-from-an-alternative-marketplace.md).
 

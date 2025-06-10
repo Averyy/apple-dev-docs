@@ -35,8 +35,6 @@ In manual rendering mode, the format of the output scope is initially the same a
 
 > ❗ **Important**:  This class has no methods of its own. It implements the methods that the [`AVAudioMixing`](avaudiomixing.md) protocol defines, as well as those of the [`AVAudio3DMixing`](avaudio3dmixing.md) protocol, which the [`AVAudioMixing`](avaudiomixing.md) protocol adopts. For more information, see [`AVAudioMixing`](avaudiomixing.md) and [`AVAudio3DMixing`](avaudio3dmixing.md).
 
- This class has no methods of its own. It implements the methods that the [`AVAudioMixing`](avaudiomixing.md) protocol defines, as well as those of the [`AVAudio3DMixing`](avaudio3dmixing.md) protocol, which the [`AVAudioMixing`](avaudiomixing.md) protocol adopts. For more information, see [`AVAudioMixing`](avaudiomixing.md) and [`AVAudio3DMixing`](avaudio3dmixing.md).
-
 ## Topics
 
 ### Manually Giving Data to an Audio Engine

@@ -1,6 +1,6 @@
 # com.apple.developer.driverkit.transport.pci
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: dictionary
 
 An array of PCI device descriptors that your custom driver supports.

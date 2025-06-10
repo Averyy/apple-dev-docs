@@ -13,6 +13,7 @@ The currently selected template in the tab bar.
 ## Declaration
 
 ```swift
+@MainActor
 var selectedTemplate: CPTemplate? { get }
 ```
 

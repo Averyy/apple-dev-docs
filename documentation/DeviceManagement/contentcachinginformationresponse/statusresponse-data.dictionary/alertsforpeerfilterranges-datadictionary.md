@@ -7,8 +7,6 @@ A dictionary that contains alerts for peer filter ranges.
 
 **Availability**:
 - macOS 10.15.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,8 +16,9 @@ object ContentCachingInformationResponse.StatusResponse.AlertsForPeerFilterRange
 
 ## Topics
 
-### Commands
+### Objects
 - [object ContentCachingInformationResponse.StatusResponse.AlertsForPeerFilterRanges.ANY index](contentcachinginformationresponse/statusresponse-data.dictionary/alertsforpeerfilterranges-data.dictionary/any-index-data.dictionary.md)
+  A dictionary that describes the alerts for the peer filter ranges. The key name is the index into the `PeerFilterRanges` array in the installed `com.apple.AssetCache.managed` payload.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # filter(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Returns a new collection of the same type containing, in order, the elements of the original collection that satisfy the given predicate.

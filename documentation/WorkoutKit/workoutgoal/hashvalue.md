@@ -1,6 +1,6 @@
 # hashValue
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 The hashed value of the workout goal.

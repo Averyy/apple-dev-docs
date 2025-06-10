@@ -1,6 +1,6 @@
 # SHOW_TEXT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

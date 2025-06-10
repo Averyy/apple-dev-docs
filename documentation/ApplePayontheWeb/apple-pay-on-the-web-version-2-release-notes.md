@@ -9,8 +9,8 @@ The version of Apple Pay available in macOS 10.12.1 and iOS 10.1.
 New features include:
 
 - Added new method [`openPaymentSetup`](applepaysession/openpaymentsetup.md), which displays the Set up Apple Pay button if the user has not completed setup, or the Apple Pay button otherwise.
-- Added CSS support for rendering Apple Pay buttons using the properties `-webkit-appearance: -apple-pay-button`, `-apple-pay-button-type`, and `-apple-pay-button-style`. See [`Displaying Apple Pay Buttons Using CSS`](https://developer.apple.com/documentation/apple_pay_on_the_web/displaying_apple_pay_buttons_using_css) for more information.
-- Localized Apple Pay buttons. See [`Localizing Apple Pay Buttons Using CSS`](https://developer.apple.com/documentation/apple_pay_on_the_web/displaying_apple_pay_buttons_using_css/localizing_apple_pay_buttons_using_css) for more information.
+- Added CSS support for rendering Apple Pay buttons using the properties `-webkit-appearance: -apple-pay-button`, `-apple-pay-button-type`, and `-apple-pay-button-style`. See [`Displaying Apple Pay Buttons Using CSS`](displaying-apple-pay-buttons-using-css.md) for more information.
+- Localized Apple Pay buttons. See [`Localizing Apple Pay Buttons Using CSS`](localizing-apple-pay-buttons-using-css.md) for more information.
 - Added `jcb` to supported networks. See [`supportedNetworks`](applepayrequest/supportednetworks.md) for more information.
 
 ## See Also

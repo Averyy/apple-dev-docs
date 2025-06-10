@@ -1,6 +1,6 @@
 # Rendering a windowed game in stereo
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Bring an iOS or iPadOS game to visionOS and enhance it.
 
@@ -36,4 +36,4 @@ This project requires an Apple Vision Pro, and cannot be run in the simulator.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/rendering-a-windowed-game-in-stereo)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/rendering-a-windowed-game-in-stereo)*

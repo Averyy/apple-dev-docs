@@ -1,6 +1,6 @@
 # webView(_:shouldPerformAction:fromSender:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a Boolean value that indicates whether the action sent by the specified object should be performed.

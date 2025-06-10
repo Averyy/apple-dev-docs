@@ -1,6 +1,6 @@
 # PIXEL_UNPACK_BUFFER
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

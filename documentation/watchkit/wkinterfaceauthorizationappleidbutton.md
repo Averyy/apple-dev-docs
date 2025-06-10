@@ -1,6 +1,6 @@
 # WKInterfaceAuthorizationAppleIDButton
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A button that you can use to trigger a Sign in with Apple request.
@@ -76,4 +76,4 @@ In the action method, create a sign-in request using the authorization provider,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkinterfaceauthorizationappleidbutton)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton)*

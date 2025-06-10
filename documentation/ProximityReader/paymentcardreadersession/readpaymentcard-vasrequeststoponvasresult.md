@@ -1,6 +1,6 @@
 # readPaymentCard(_:vasRequest:stopOnVASResult:)
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Presents a sheet to read both contactless payments and loyalty cards for a purchase or refund, and returns the relevant card data.

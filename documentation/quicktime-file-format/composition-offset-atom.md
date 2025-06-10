@@ -1,6 +1,6 @@
 # Composition offset atom ('ctts')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom you use to specify out-of-order video samples.

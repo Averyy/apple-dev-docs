@@ -1,6 +1,6 @@
 # Sending channel management requests to APNs
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Manage channels that your application uses for broadcast push notifications.
 
@@ -238,4 +238,4 @@ The key below describes the HTTP/2 response body for a successful request:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/sending-channel-management-requests-to-apns)*
+*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/sending-channel-management-requests-to-apns)*

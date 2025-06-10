@@ -217,4 +217,4 @@ The sample continues to execute `_indirectCommandBuffer` each frame.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/encoding-indirect-command-buffers-on-the-cpu)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/encoding-indirect-command-buffers-on-the-cpu)*

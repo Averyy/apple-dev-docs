@@ -32,6 +32,11 @@ object AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse
   The request body you use to update a default App Clip experience.
 - [object AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageRequest](appclipdefaultexperiencereleasewithappstoreversionlinkagerequest.md)
   The request body you use to relate a released App Store version with a default App Clip experience.
+- [object AppClipAppClipDefaultExperiencesLinkagesResponse](appclipappclipdefaultexperienceslinkagesresponse.md)
+- [object AppClipDefaultExperienceAppClipDefaultExperienceLocalizationsLinkagesResponse](appclipdefaultexperienceappclipdefaultexperiencelocalizationslinkagesresponse.md)
+- [object AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponse](appclipdefaultexperiencelocalizationappclipheaderimagelinkageresponse.md)
+- [object AppClipDefaultExperienceAppClipAppStoreReviewDetailLinkageResponse](appclipdefaultexperienceappclipappstorereviewdetaillinkageresponse.md)
+  A response body that contains the ID of a single related resource.
 - [type AppClipAction](appclipaction.md)
   A string that represents the call- termto- termaction verb on the App Clip card.
 

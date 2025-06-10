@@ -6,11 +6,11 @@
 Creates a URL-opening options key with the specified raw value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS 9.0+
+- iPadOS 9.0+
+- Mac Catalyst 13.1+
+- tvOS 9.0+
+- visionOS 1.0+
 
 ## Declaration
 

@@ -6,6 +6,7 @@
 Notifies Compositor Services that you finished updating the app-specific content you need to render the frame.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

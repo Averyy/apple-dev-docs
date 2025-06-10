@@ -1,6 +1,6 @@
 # webView(_:showLockdownModeFirstUseMessage:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Displays a custom Lockdown Mode first use message.

@@ -1,6 +1,6 @@
 # vm_pkt_iov
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: property
 
 An array of packet buffers.

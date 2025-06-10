@@ -11,7 +11,8 @@ Creates a die state with the given die value, parent, controlling seats, pose, a
 ## Declaration
 
 ```swift
-init(value: Int, parentID: EquipmentIdentifier, seatControl: ControllingSeats = .any, pose: TableVisualState.Pose2D = .identity, entity: Entity)
+@MainActor
+@preconcurrency init(value: Int, parentID: EquipmentIdentifier, seatControl: ControllingSeats = .any, pose: TableVisualState.Pose2D = .identity, entity: Entity)
 ```
 
 ## See Also

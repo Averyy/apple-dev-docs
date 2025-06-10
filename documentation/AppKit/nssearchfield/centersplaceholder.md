@@ -1,6 +1,6 @@
 # centersPlaceholder
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 A Boolean value that determines whether the search field’s components are centered within the control.
@@ -33,4 +33,4 @@ When this property is set to [`true`](https://developer.apple.com/documentation/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nssearchfield/centersplaceholder)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nssearchfield/centersplaceholder)*

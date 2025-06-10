@@ -15,7 +15,9 @@ mutating func add(equipment: some EntityEquipment)
 ## See Also
 
 - [func add(equipment: some Equipment)](tablesetup/add(equipment:)-29pef.md)
+  Add the given equipment to the table setup.
 - [func add(equipment: some Sequence)](tablesetup/add(equipment:)-4k6m6.md)
+  Add the given equipment to the table setup.
 - [func add(equipment: some Sequence)](tablesetup/add(equipment:)-9syh2.md)
 
 

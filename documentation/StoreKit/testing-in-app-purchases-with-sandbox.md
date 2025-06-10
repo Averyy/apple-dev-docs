@@ -1,6 +1,6 @@
 # Testing In-App Purchases with sandbox
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Test your implementation of In-App Purchases using real product information and server-to-server transactions in the sandbox environment.
 
@@ -180,4 +180,4 @@ Clearing the purchase history for Sandbox Apple Accounts with a high number of p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/testing-in-app-purchases-with-sandbox)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/testing-in-app-purchases-with-sandbox)*

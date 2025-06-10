@@ -1,6 +1,6 @@
 # distance(from:to:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns the distance between two indices.

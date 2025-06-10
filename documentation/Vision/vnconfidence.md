@@ -47,4 +47,4 @@ The Vision framework normalizes this value to `[0.0, 1.0]` under most circumstan
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/vnconfidence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/vnconfidence)*

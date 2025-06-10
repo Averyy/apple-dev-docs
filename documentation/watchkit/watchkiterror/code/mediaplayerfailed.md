@@ -1,6 +1,6 @@
 # WatchKitError.Code.mediaPlayerFailed
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 A media player error.

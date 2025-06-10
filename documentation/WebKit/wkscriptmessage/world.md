@@ -1,6 +1,6 @@
 # world
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The namespace in which the JavaScript code executes.

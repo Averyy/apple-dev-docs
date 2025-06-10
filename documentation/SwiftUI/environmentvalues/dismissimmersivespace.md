@@ -6,6 +6,7 @@
 An immersive space dismissal action stored in a view’s environment.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -17,6 +18,8 @@ var dismissImmersiveSpace: DismissImmersiveSpaceAction { get }
 #### Discussion
 
 Use this environment value to get a [`DismissImmersiveSpaceAction`](dismissimmersivespaceaction.md) instance for a given [`Environment`](environment.md). Then call the instance to dismiss a space. You call the instance directly because it defines a [`callAsFunction()`](dismissimmersivespaceaction/callasfunction().md) method that Swift calls when you call the instance.
+
+On macOS, this may be used to dismiss a remote immersive space declared with [`RemoteImmersiveSpace`](remoteimmersivespace.md).
 
 For example, you can define a button that dismisses an immersive space:
 

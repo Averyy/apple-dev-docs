@@ -1,6 +1,6 @@
 # WKAlertControllerStyle
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Constants indicating the styles for standard system alerts.
@@ -34,6 +34,7 @@ enum WKAlertControllerStyle
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

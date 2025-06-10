@@ -1,6 +1,6 @@
 # willDisappear()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Tells the interface controller that its view is now offscreen.

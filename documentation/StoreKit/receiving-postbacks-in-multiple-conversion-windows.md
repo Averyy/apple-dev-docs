@@ -1,6 +1,6 @@
 # Receiving postbacks in multiple conversion windows
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Learn about the data that postbacks may contain in each conversion window.
 
@@ -46,7 +46,7 @@ To maintain users’ privacy and ensure crowd anonymity, the device may limit th
 
 ![A diagram of four six-by-eight grids labeled Tier 0, Tier 1, Tier 2, and Tier 3. Each grid has one star on it that represents the app, and blue circles that represent the crowd. Tier 0 has six circles.Tier 1 has 16 circles, representing a larger crowd. Tier 2 has more circles than Tier 1. Tier 3 has circles that fill the entire grid, representing the largest crowd.](https://docs-assets.developer.apple.com/published/250c512a7dfa6fa2c59c382689fac550/media-4103234%402x.png)
 
-The postback data tier takes into account the crowd size associated with the app or domain displaying the ad, the advertised app, and the hierarchical source identifier the ad network provides. The system computes the postback data tier for the two-, three-, and four-digit hierarchical source identifiers. It selects the source identifier with the highest postback data tier. If multiple source identifiers share the highest postback data tier, the system selects the source identifier with the most digits. If the highest postback data tier is Tier 1 or Tier 0, the system always selects the two-digit source identifier.
+The postback data tier takes into account the crowd size associated with the app or domain displaying the ad, the advertised app, the country the advertised app was installed in, and the hierarchical source identifier that the ad network provides. The system computes the postback data tier for the two-, three-, and four-digit hierarchical source identifiers. It selects the source identifier with the highest postback data tier. If multiple source identifiers share the highest postback data tier, the system selects the source identifier with the most digits. If the highest postback data tier is Tier 1 or Tier 0, the system selects the two-digit source identifier.
 
 The postback data tier affects the following fields in the postback, which may be present or absent, or may contain a limited number of digits:
 
@@ -54,6 +54,7 @@ The postback data tier affects the following fields in the postback, which may b
 - `conversion-value`, a fine-grained conversion value available only in the first postback
 - `coarse-conversion-value`, a coarse conversion value, which the system sends instead of the `conversion-value` in lower postback data tiers, and in the second and third postbacks
 - `source-app-id` for ads that display in apps, or `source-domain` for attributable web ads
+- `country-code`, an optional field representing the country the app was installed in. The system adds this field if the crowd size for a particular country is Tier 3.
 
 The remaining postback data fields aren’t dependent on the postback date tier and appear in all postbacks, based on the SKAdNetwork version of the postback.``
 
@@ -65,21 +66,22 @@ The postback data tier determines the data you receive in the first postback, as
 
 For ads in Tier 3, the first postback contains:
 
-- `source-identifier`, the hierarchical source identifer with two, three, or four digits
+- `source-identifier`, the hierarchical source identifier with two, three, or four digits
 - `conversion-value`, the fine-grained conversion value, if the app provides one
 - `source-app-id` for ads that display in apps, or `source-domain` for attributable web ads
+- `country-code`, an optional field representing the country the app was installed in. The system adds this field if the crowd size for a particular country is Tier 3.
 
 For ads in Tier 2, the first postback contains:
 
-- `source-identifier`, the hierarchical source identifer with two, three, or four digits
+- `source-identifier`, the hierarchical source identifier with two, three, or four digits
 - `conversion-value`, the fine-grained conversion value, if the app provides one
 
 For ads in Tier 1, the first postback contains:
 
-- `source-identifier`, the hierarchical source identifer with two digits
+- `source-identifier`, the hierarchical source identifier with two digits
 - `coarse-conversion-value`, a coarse value, if the app provides one
 
-For ads in Tier 0, the first postback contains the `source-identifier`, the hierarchical source identifer, with two digits.
+For ads in Tier 0, the first postback contains the `source-identifier`, the hierarchical source identifier, with two digits.
 
 ##### Receive the Second and Third Postbacks
 
@@ -91,7 +93,7 @@ The postback data tier determines the data you receive in the postbacks, as foll
 
 For ads in Tier 1, Tier 2, and Tier 3, the second and third postbacks contain:
 
-- `source-identifier`, the hierarchical source identifer with two digits
+- `source-identifier`, the hierarchical source identifier with two digits
 - `coarse-conversion-value`, the coarse conversion value, if the app provides one
 
 For ads in Tier 0, the system doesn’t send a second or third postback.
@@ -110,4 +112,4 @@ Ads signed with version 4 and later are eligible for second and third postbacks 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/receiving-postbacks-in-multiple-conversion-windows)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/receiving-postbacks-in-multiple-conversion-windows)*

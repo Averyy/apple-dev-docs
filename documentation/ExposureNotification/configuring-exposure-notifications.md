@@ -1,6 +1,6 @@
 # Configuring Exposure Notifications
 
-**Framework**: Exposurenotification
+**Framework**: Exposure Notification
 
 Define how Exposure Notifications work for a region by assigning server-based key-value pairs.
 
@@ -188,4 +188,4 @@ An API key, required to talk to the Test Verification server. .
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/configuring-exposure-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/configuring-exposure-notifications)*

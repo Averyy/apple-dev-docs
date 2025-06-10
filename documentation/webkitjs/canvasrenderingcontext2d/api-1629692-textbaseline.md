@@ -1,6 +1,6 @@
 # textBaseline
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A string that specifies how the bounding box aligns vertically relative to the y-coordinate.

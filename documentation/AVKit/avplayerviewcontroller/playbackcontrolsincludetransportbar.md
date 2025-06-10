@@ -17,9 +17,9 @@ var playbackControlsIncludeTransportBar: Bool { get set }
 
 #### Discussion
 
-Set this property to [`false`](https://developer.apple.com/documentation/swift/false), and set [`showsPlaybackControls`](avplayerviewcontroller/showsplaybackcontrols.md) to [`true`](https://developer.apple.com/documentation/swift/true), to selectively prevent the player from presenting the transport bar during user interaction. Changing the value of this property doesn’t immediately change the visibility of the transport bar.
+Set this property to `false`, and set [`showsPlaybackControls`](avplayerviewcontroller/showsplaybackcontrols.md) to `true`, to selectively prevent the player from presenting the transport bar during user interaction. Changing the value of this property doesn’t immediately change the visibility of the transport bar.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is `true`.
 
 ## See Also
 

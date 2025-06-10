@@ -3,7 +3,7 @@
 **Framework**: GameKit  
 **Kind**: property
 
-The system can’t complete the requested operation because the system hasn’t authenticated the local player.
+The system can’t complete the requested operation because the system hasn’t initialized the local player.
 
 **Availability**:
 - iOS 4.0+

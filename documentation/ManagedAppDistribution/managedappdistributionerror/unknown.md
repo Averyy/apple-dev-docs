@@ -8,6 +8,8 @@ Returns a Boolean value indicating whether two values are not equal.
 **Availability**:
 - iOS ?+
 - iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
 - visionOS ?+
 
 ## Declaration

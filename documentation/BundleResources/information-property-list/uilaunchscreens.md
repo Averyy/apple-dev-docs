@@ -1,6 +1,6 @@
 # UILaunchScreens
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: dictionary
 
 The user interfaces to show while an app launches in response to different URL schemes.

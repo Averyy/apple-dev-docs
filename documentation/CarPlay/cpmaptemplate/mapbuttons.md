@@ -13,6 +13,7 @@ An array of map buttons on the trailing bottom corner of the map template.
 ## Declaration
 
 ```swift
+@MainActor
 var mapButtons: [CPMapButton] { get set }
 ```
 

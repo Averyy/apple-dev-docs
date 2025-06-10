@@ -1,6 +1,6 @@
 # hasBeenSkipped
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A Boolean value that indicates a skipped test.

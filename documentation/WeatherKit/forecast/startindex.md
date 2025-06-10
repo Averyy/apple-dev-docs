@@ -1,6 +1,6 @@
 # startIndex
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The forecast start index.

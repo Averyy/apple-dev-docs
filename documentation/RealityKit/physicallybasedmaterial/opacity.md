@@ -10,6 +10,7 @@ An object that defines the opacity of an entity.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -35,8 +36,6 @@ struct Opacity
 - [var scale: Float](physicallybasedmaterial/opacity/scale.md)
 - [var opacityThreshold: Float?](physicallybasedmaterial/opacitythreshold.md)
   A threshold below which RealityKit ignores opacity.
-- [PhysicallyBasedMaterial.Opacity.FloatLiteralType](physicallybasedmaterial/opacity/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 ## Relationships
 

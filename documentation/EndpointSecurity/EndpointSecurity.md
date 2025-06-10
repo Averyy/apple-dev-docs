@@ -36,6 +36,8 @@ Develop your system extension with Endpoint Security and package it in an app th
 - [EndpointSecurity Structures](endpointsecurity-structures.md)
 - [EndpointSecurity Enumerations](endpointsecurity-enumerations.md)
 ### Structures
+- [struct es_cs_validation_category_t](es_cs_validation_category_t.md)
+  es_cs_validation_category
 - [struct es_event_tcc_modify_t](es_event_tcc_modify_t.md)
 - [struct es_tcc_authorization_reason_t](es_tcc_authorization_reason_t.md)
   ess_tcc_authorization_reason_t
@@ -45,6 +47,17 @@ Develop your system extension with Endpoint Security and package it in an app th
 - [struct es_tcc_identity_type_t](es_tcc_identity_type_t.md)
   es_tcc_identity_type_t
 ### Variables
+- [var ES_CS_VALIDATION_CATEGORY_APP_STORE: es_cs_validation_category_t](es_cs_validation_category_app_store.md)
+- [var ES_CS_VALIDATION_CATEGORY_DEVELOPER_ID: es_cs_validation_category_t](es_cs_validation_category_developer_id.md)
+- [var ES_CS_VALIDATION_CATEGORY_DEVELOPMENT: es_cs_validation_category_t](es_cs_validation_category_development.md)
+- [var ES_CS_VALIDATION_CATEGORY_ENTERPRISE: es_cs_validation_category_t](es_cs_validation_category_enterprise.md)
+- [var ES_CS_VALIDATION_CATEGORY_INVALID: es_cs_validation_category_t](es_cs_validation_category_invalid.md)
+- [var ES_CS_VALIDATION_CATEGORY_LOCAL_SIGNING: es_cs_validation_category_t](es_cs_validation_category_local_signing.md)
+- [var ES_CS_VALIDATION_CATEGORY_NONE: es_cs_validation_category_t](es_cs_validation_category_none.md)
+- [var ES_CS_VALIDATION_CATEGORY_OOPJIT: es_cs_validation_category_t](es_cs_validation_category_oopjit.md)
+- [var ES_CS_VALIDATION_CATEGORY_PLATFORM: es_cs_validation_category_t](es_cs_validation_category_platform.md)
+- [var ES_CS_VALIDATION_CATEGORY_ROSETTA: es_cs_validation_category_t](es_cs_validation_category_rosetta.md)
+- [var ES_CS_VALIDATION_CATEGORY_TESTFLIGHT: es_cs_validation_category_t](es_cs_validation_category_testflight.md)
 - [var ES_EVENT_TYPE_NOTIFY_TCC_MODIFY: es_event_type_t](es_event_type_notify_tcc_modify.md)
 - [var ES_TCC_AUTHORIZATION_REASON_APP_TYPE_POLICY: es_tcc_authorization_reason_t](es_tcc_authorization_reason_app_type_policy.md)
   A system process changed the authorization right

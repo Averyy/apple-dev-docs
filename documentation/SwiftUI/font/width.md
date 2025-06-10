@@ -38,11 +38,12 @@ struct Width
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [func bold() -> Font](font/bold.md)
-  Adds bold styling to the font.
+  Adds bold or emphasized styling to the font.
 - [func italic() -> Font](font/italic.md)
   Adds italics to the font.
 - [func monospaced() -> Font](font/monospaced.md)

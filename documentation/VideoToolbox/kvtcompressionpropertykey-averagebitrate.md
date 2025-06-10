@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_AverageBitRate
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The long-term desired average bit rate in bits per second.

@@ -3,13 +3,13 @@
 **Framework**: RoomPlan  
 **Kind**: property
 
-A localized message describing what error occurred.
+A human-readable explanation for the error.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

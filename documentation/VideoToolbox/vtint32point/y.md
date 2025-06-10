@@ -1,6 +1,6 @@
 # y
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 The y-coordinate of the point.

@@ -63,6 +63,8 @@ struct ARError
   An error that indicates a problem in the system’s capture pipeline.
 - [static var highResolutionFrameCaptureInProgress: ARError.Code](arerror/highresolutionframecaptureinprogress.md)
   An error that indicates the system needs to finish a high-resolution frame request before accepting another request.
+### Type Properties
+- [static var networkConnectionFailure: ARError.Code](arerror/networkconnectionfailure.md)
 
 ## Relationships
 
@@ -72,6 +74,7 @@ struct ARError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

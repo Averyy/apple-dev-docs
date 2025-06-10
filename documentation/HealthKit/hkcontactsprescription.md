@@ -117,8 +117,6 @@ do {
 
 > ❗ **Important**:  Some regions may require an image of the original prescription to validate the prescription record. You can add an image or PDF of the prescription as an attachment. For more information about how to add an attachment, see [`HKAttachmentStore`](hkattachmentstore.md).
 
- Some regions may require an image of the original prescription to validate the prescription record. You can add an image or PDF of the prescription as an attachment. For more information about how to add an attachment, see [`HKAttachmentStore`](hkattachmentstore.md).
-
 ## Topics
 
 ### Creating contacts prescription samples
@@ -147,6 +145,7 @@ do {
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

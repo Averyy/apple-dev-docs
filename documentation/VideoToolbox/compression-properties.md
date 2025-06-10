@@ -1,6 +1,6 @@
 # Compression Properties
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 Properties that you use to configure a compression session.
 
@@ -188,4 +188,4 @@ Properties that you use to configure a compression session.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/VideoToolbox/compression-properties)*
+*[View on Apple Developer](https://developer.apple.com/documentation/videotoolbox/compression-properties)*

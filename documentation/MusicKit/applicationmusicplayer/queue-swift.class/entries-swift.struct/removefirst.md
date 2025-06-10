@@ -1,6 +1,6 @@
 # removeFirst(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Removes the specified number of elements from the beginning of the collection.

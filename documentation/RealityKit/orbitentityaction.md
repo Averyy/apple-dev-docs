@@ -1,6 +1,6 @@
 # OrbitEntityAction
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 An action which animates the transform of an entity to revolve around a specified pivot entity.
@@ -10,6 +10,7 @@ An action which animates the transform of an entity to revolve around a specifie
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -57,8 +58,6 @@ entity.playAnimation(orbitAnimation)
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](orbitentityaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(pivotEntity: ActionEntityResolution, revolutions: Float, orbitalAxis: SIMD3<Float>, isOrientedToPath: Bool, isAdditive: Bool)](orbitentityaction/init(pivotentity:revolutions:orbitalaxis:isorientedtopath:isadditive:).md)
   Creates a new orbit entity action.
 ### Instance Properties
@@ -74,14 +73,6 @@ entity.playAnimation(orbitAnimation)
   The entity that the target entity orbits around.
 - [var revolutions: Float](orbitentityaction/revolutions.md)
   The number of rotations to complete before stopping.
-### Instance Methods
-- [func encode(to: any Encoder) throws](orbitentityaction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [OrbitEntityAction.EventParameterType](orbitentityaction/eventparametertype.md)
-  The associated event parameter type.
-### Default Implementations
-- [EntityAction Implementations](orbitentityaction/entityaction-implementations.md)
 
 ## Relationships
 
@@ -112,4 +103,4 @@ entity.playAnimation(orbitAnimation)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/orbitentityaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/orbitentityaction)*

@@ -1,6 +1,6 @@
 # invokeTest()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Invokes the test.

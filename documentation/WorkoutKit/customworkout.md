@@ -1,6 +1,6 @@
 # CustomWorkout
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: struct
 
 A workout that includes a repeating series of work and recovery steps.
@@ -10,6 +10,7 @@ A workout that includes a repeating series of work and recovery steps.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -25,7 +26,7 @@ struct CustomWorkout
   Create a new custom workout.
 - [static func supportsActivity(HKWorkoutActivityType) -> Bool](customworkout/supportsactivity(_:).md)
   Returns a Boolean value that indicates whether the system supports the specified workout activity .
-- [static func supportsAlert(WorkoutAlert, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](customworkout/supportsalert(_:activity:location:).md)
+- [static func supportsAlert(any WorkoutAlert, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](customworkout/supportsalert(_:activity:location:).md)
   Returns a Boolean value that indicates whether the system supports the specified alert for the given activity type and location.
 - [static func supportsGoal(WorkoutGoal, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](customworkout/supportsgoal(_:activity:location:).md)
   Returns a Boolean value that indicates whether the system supports the specified goal for the given activity type and location.
@@ -60,6 +61,7 @@ struct CustomWorkout
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

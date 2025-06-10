@@ -1,6 +1,6 @@
 # Generating Developer Tokens
 
-**Framework**: Applemusicapi
+**Framework**: Apple Music API
 
 Generate a developer token needed to make requests to Apple Music API.
 
@@ -87,4 +87,4 @@ Apple Music API limits the number of requests your app can make using a develope
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleMusicAPI/generating-developer-tokens)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applemusicapi/generating-developer-tokens)*

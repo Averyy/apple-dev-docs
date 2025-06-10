@@ -1,6 +1,6 @@
 # persistentSystemOverlays(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Sets the preferred visibility of the non-transient system views overlaying the app.

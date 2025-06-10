@@ -1,6 +1,6 @@
 # xpc_array_set_bool(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Inserts a Boolean primitive value into an array.

@@ -17,7 +17,7 @@ Sets the color used for the drawing of a selection in both active and inactive s
 
 ```swift
 @NSCopying
-var color: UIColor? { get set }
+var color: NSColor? { get set }
 ```
 
 #### Discussion

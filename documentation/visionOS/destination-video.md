@@ -1,6 +1,6 @@
 # Destination Video
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 
@@ -274,4 +274,4 @@ With the player configured to use the group session, when the app loads new vide
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/destination-video)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/destination-video)*

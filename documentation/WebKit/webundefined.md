@@ -1,6 +1,6 @@
 # WebUndefined
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 `WebUndefined` objects are simply used to represent the JavaScript “undefined” value in methods when bridging between JavaScript and Objective-C. For example, if you invoke a JavaScript function that returns the JavaScript “undefined” value, then a `WebUndefined` object is returned to the Objective-C calling context.

@@ -14,7 +14,7 @@ The cursor’s image.
 ## Declaration
 
 ```swift
-var image: NSImage { get }
+var image: UIImage { get }
 ```
 
 #### Discussion

@@ -1,6 +1,6 @@
 # isRouteDetectionEnabled
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that indicates whether route detection is in an enabled state.
@@ -31,7 +31,7 @@ The default value is [`false`](https://developer.apple.com/documentation/swift/f
   A Boolean value that indicates whether route detection includes custom routes.
 - [var multipleRoutesDetected: Bool](avroutedetector/multipleroutesdetected.md)
   A Boolean value that indicates whether the object detects more than one playback route.
-- [static let AVRouteDetectorMultipleRoutesDetectedDidChange: NSNotification.Name](../foundation/nsnotification/name/2915761-avroutedetectormultipleroutesdet.md)
+- [static let AVRouteDetectorMultipleRoutesDetectedDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/AVRouteDetectorMultipleRoutesDetectedDidChange.md)
   A notification the system posts when changes occur to its detected routes.
 
 

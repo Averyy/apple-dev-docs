@@ -1,6 +1,6 @@
 # allElementsBoundByAccessibilityElement
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 Immediately evaluates the query and returns an array of elements bound to the resulting accessibility elements.

@@ -1,6 +1,6 @@
 # sourceAppUniqueIdentifier
 
-**Framework**: Networkextension  
+**Framework**: Network Extension  
 **Kind**: property
 
 A data instance that contains a unique hash value for the source application.

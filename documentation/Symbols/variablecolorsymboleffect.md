@@ -89,6 +89,7 @@ imageView2.addSymbolEffect(.variableColor.hideInactiveLayers.cumulative, options
 - [Hashable](../Swift/Hashable.md)
 - [IndefiniteSymbolEffect](indefinitesymboleffect.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SymbolEffect](symboleffect.md)
 
 ## See Also
@@ -114,4 +115,4 @@ imageView2.addSymbolEffect(.variableColor.hideInactiveLayers.cumulative, options
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Symbols/variablecolorsymboleffect)*
+*[View on Apple Developer](https://developer.apple.com/documentation/symbols/variablecolorsymboleffect)*

@@ -12,8 +12,6 @@ A dictionary that describes the results of configuring settings on a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,7 +21,7 @@ object SettingsResponse.Settings
 
 ## Topics
 
-### Commands
+### Objects
 - [object SettingsResponse.Settings.ErrorChainItem](settingsresponse/settings-data.dictionary/errorchainitem.md)
   A dictionary that describes an error chain item.
 

@@ -1,6 +1,6 @@
 # Supporting passkeys
 
-**Framework**: Authenticationservices
+**Framework**: Authentication Services
 
 Eliminate passwords for your users when they sign in to apps and websites.
 
@@ -112,4 +112,4 @@ In iOS 16.4 and later, and macOS 13.3 and later, use Javascript APIs in [`WKWebV
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/supporting-passkeys)*
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/supporting-passkeys)*

@@ -1,6 +1,6 @@
 # Configuring the PencilKit tool picker
 
-**Framework**: Pencilkit
+**Framework**: PencilKit
 
 Incorporate a custom PencilKit tool picker with a variety of system and custom tools into a drawing app.
 
@@ -127,4 +127,4 @@ default:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PencilKit/configuring-the-pencilkit-tool-picker)*
+*[View on Apple Developer](https://developer.apple.com/documentation/pencilkit/configuring-the-pencilkit-tool-picker)*

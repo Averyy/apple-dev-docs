@@ -11,8 +11,6 @@ The payload you use to configure relay settings.
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,9 +18,25 @@ The payload you use to configure relay settings.
 object Relay
 ```
 
+#### Discussion
+
+Specify `com.apple.relay.managed` as the payload type.
+
+##### Profile Availability
+
+|  |  |
+| --- | --- |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS |
+| User channel | macOS |
+| Allow manual install | iOS, macOS, tvOS, visionOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, visionOS |
+| Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS |
+
 ## Topics
 
-### Relay servers
+### Objects
 - [object Relay.Relay](relay/relay.md)
   A dictionary that describes a relay server.
 

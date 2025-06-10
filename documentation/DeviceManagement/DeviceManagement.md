@@ -35,8 +35,8 @@ MDM works with Managed App Distribution to provide a great download and launch e
   Manage the configuration and behavior of your devices.
 - [Check-in](check-in.md)
   Authenticate devices and maintain push tokens with these commands.
-- [User Enrollment](user-enrollment.md)
-  Authenticate devices using an user identity focused workflow.
+- [Account-driven enrollment](account-driven-enrollment.md)
+  Authenticate devices using a user identity-focused workflow.
 ### Declarative Management
 - [Leveraging the declarative management data model to scale devices](leveraging-the-declarative-management-data-model-to-scale-devices.md)
   Use declarative management to make devices more autonomous and proactive.
@@ -64,11 +64,15 @@ MDM works with Managed App Distribution to provide a great download and launch e
 - [object ErrorUnrecognizedDevice](errorunrecognizeddevice.md)
 - [object ErrorWellKnownFailed](errorwellknownfailed.md)
 ### Dictionaries
+- [object ErrorCodePlatformSSORequired](errorcodeplatformssorequired.md)
+  An error response that indicates Platform SSO is required.
 - [object ManifestURL](manifesturl.md)
   The URL to the app manifest.
 - [object PasswordHash](passwordhash.md)
   A dictionary that contains the password hash for the account.
 - [object RelationshipResponse](relationshipresponse.md)
+- [object ResponseErrorCode](responseerrorcode.md)
+  An error code.
 
 
 ---

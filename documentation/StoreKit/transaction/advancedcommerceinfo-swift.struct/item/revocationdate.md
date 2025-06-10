@@ -19,6 +19,13 @@ The date access to this item was revoked.
 let revocationDate: Date?
 ```
 
+## See Also
+
+- [let details: Transaction.AdvancedCommerceInfo.Item.Details](transaction/advancedcommerceinfo-swift.struct/item/details-swift.property.md)
+  The item’s details.
+- [let refunds: [Transaction.AdvancedCommerceInfo.Refund]?](transaction/advancedcommerceinfo-swift.struct/item/refunds.md)
+  The list of refunds that were issued as part of this transaction.
+
 
 ---
 

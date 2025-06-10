@@ -29,19 +29,19 @@ All [`style`](stylesoverlayoptions/style.md) properties apply to polyline overla
 The following example shows a polyline object for a map.
 
 ```javascript
-var points = [ [10, 1], [5, 6], [1, 1] ];
-var coords = points.map(function(point) {
+const points = [ [10, 1], [5, 6], [1, 1] ];
+const coords = points.map(function(point) {
     return new mapkit.Coordinate(point[0], point[1]);
 });
 
-var style = new mapkit.Style({
+const style = new mapkit.Style({
     lineWidth: 2,
     lineJoin: "round",
     lineDash: [8, 4],
     strokeColor: "#F0F"
 });
 
-var polyline = new mapkit.PolylineOverlay(coords, { style: style });
+const polyline = new mapkit.PolylineOverlay(coords, { style: style });
 map.addOverlay(polyline);
 ```
 

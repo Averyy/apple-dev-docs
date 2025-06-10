@@ -20,8 +20,6 @@ struct ENError
 
 > ❗ **Important**:  This structure is available in iOS 12.5, and in iOS 13.5 and later.
 
- This structure is available in iOS 12.5, and in iOS 13.5 and later.
-
 ## Topics
 
 ### Error Codes
@@ -72,6 +70,7 @@ struct ENError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

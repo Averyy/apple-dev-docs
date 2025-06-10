@@ -46,6 +46,7 @@ To add this trait to a test, use [`timeLimit(_:)`](trait/timelimit(_:).md).
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SuiteTrait](suitetrait.md)
 - [TestTrait](testtrait.md)
 - [Trait](trait.md)

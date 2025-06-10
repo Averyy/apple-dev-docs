@@ -10,6 +10,7 @@ A collection of animations on the same property that the framework blends to a s
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -72,8 +73,6 @@ let blendTree = BlendTreeAnimation<JointTransforms>(
 
 > 💡 **Tip**: To modify the weights for each frame, create a source node with a dynamic [`BlendWeight`](blendweight.md), such as with the [`BlendWeight.bindTarget(_:defaultWeight:)`](blendweight/bindtarget(_:defaultweight:).md) or [`BlendWeight.parameter(_:defaultWeight:)`](blendweight/parameter(_:defaultweight:).md) enumeration cases.
 
-To modify the weights for each frame, create a source node with a dynamic [`BlendWeight`](blendweight.md), such as with the [`BlendWeight.bindTarget(_:defaultWeight:)`](blendweight/bindtarget(_:defaultweight:).md) or [`BlendWeight.parameter(_:defaultWeight:)`](blendweight/parameter(_:defaultweight:).md) enumeration cases.
-
 ## Topics
 
 ### Creating an animation
@@ -105,21 +104,11 @@ To modify the weights for each frame, create a source node with a dynamic [`Blen
   The optional time, in seconds, at which the source animation plays.
 - [var trimEnd: TimeInterval?](blendtreeanimation/trimend.md)
   The optional time, in seconds, at which the source animation stops.
-- [func trimmed(start: TimeInterval?, end: TimeInterval?, duration: TimeInterval?) -> Self](blendtreeanimation/trimmed(start:end:duration:).md)
-  Edits the animation duration according to the specified time.
 ### Repeating animation playback
 - [var repeatMode: AnimationRepeatMode](blendtreeanimation/repeatmode.md)
   An option that determines how the animation repeats.
 - [var fillMode: AnimationFillMode](blendtreeanimation/fillmode.md)
   An option that determines which data displays outside of the normal duration.
-- [func repeated(count: TimeInterval) -> Self](blendtreeanimation/repeated(count:)-3qmxo.md)
-  Repeats an animation the number of times specified by an irrational number.
-- [func repeated(count: Int) -> Self](blendtreeanimation/repeated(count:)-8dwbj.md)
-  Repeats an animation the number of times specified by a whole number.
-- [func repeatingForever() -> Self](blendtreeanimation/repeatingforever.md)
-  Repeats the animation infinitely.
-### Default Implementations
-- [AnimationDefinition Implementations](blendtreeanimation/animationdefinition-implementations.md)
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # CSS_DIMENSION
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

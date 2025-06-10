@@ -33,8 +33,6 @@ For example, if you have a type that represents a local database connection, the
 
 > ❗ **Important**: Treat identity with care. Sharing class instances pervasively throughout an app makes logic errors more likely. You might not anticipate the consequences of changing a heavily shared instance, so it’s more work to write such code correctly.
 
-Treat identity with care. Sharing class instances pervasively throughout an app makes logic errors more likely. You might not anticipate the consequences of changing a heavily shared instance, so it’s more work to write such code correctly.
-
 ##### Use Structures When You Dont Control Identity
 
 Use structures when you’re modeling data that contains information about an entity with an identity that you don’t control.

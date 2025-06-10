@@ -26,8 +26,6 @@ The Foundation framework provides several concrete subclasses of [`Formatter`](f
 
 > 💡 **Tip**:  In Swift, you can use implementations of [`FormatStyle`](formatstyle.md) rather than [`Formatter`](formatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 
- In Swift, you can use implementations of [`FormatStyle`](formatstyle.md) rather than [`Formatter`](formatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
-
 ##### Subclassing Notes
 
 [`Formatter`](formatter.md) is intended for subclassing. A custom formatter can restrict the input and enhance the display of data in novel ways. For example, you could have a custom formatter that ensures that serial numbers entered by a user conform to predefined formats. Before you decide to create a custom formatter, make sure that you cannot configure the public subclasses to satisfy your requirements.

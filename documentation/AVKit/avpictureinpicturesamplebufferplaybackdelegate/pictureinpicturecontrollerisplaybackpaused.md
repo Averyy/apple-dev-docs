@@ -22,7 +22,7 @@ func pictureInPictureControllerIsPlaybackPaused(_ pictureInPictureController: AV
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to indicate a paused state, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+`true` to indicate a paused state, otherwise `false`.
 
 #### Discussion
 

@@ -81,6 +81,8 @@ struct Ray3D
 - [static func * (Pose3D, Ray3D) -> Ray3D](ray3d/*(_:_:).md)
   Returns the ray that results from applying the pose to the ray.
 ### Initializers
+- [init(Ray3DFloat)](ray3d/init(_:).md)
+  Returns a double-precision ray from a single-precision ray.
 - [init(origin: Point3D, direction: Vector3D)](ray3d/init(origin:direction:)-63yk4.md)
   Creates a ray from Spatial primitives that describe the origin and direction.
 ### Default Implementations
@@ -89,8 +91,9 @@ struct Ray3D
 - [Encodable Implementations](ray3d/encodable-implementations.md)
 - [Equatable Implementations](ray3d/equatable-implementations.md)
 - [Hashable Implementations](ray3d/hashable-implementations.md)
-- [Primitive3D Implementations](ray3d/primitive3d-implementations.md)
-- [Rotatable3D Implementations](ray3d/rotatable3d-implementations.md)
+- [Primitive3DProtocol Implementations](ray3d/primitive3dprotocol-implementations.md)
+- [ProjectiveTransformable3D Implementations](ray3d/projectivetransformable3d-implementations.md)
+- [Rotatable3DProtocol Implementations](ray3d/rotatable3dprotocol-implementations.md)
 
 ## Relationships
 
@@ -103,25 +106,45 @@ struct Ray3D
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Primitive3D](primitive3d.md)
+- [Primitive3DProtocol](primitive3dprotocol.md)
+- [ProjectiveTransformable3D](projectivetransformable3d.md)
 - [Rotatable3D](rotatable3d.md)
+- [Rotatable3DProtocol](rotatable3dprotocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SpatialTypeProtocol](spatialtypeprotocol.md)
 - [Translatable3D](translatable3d.md)
+- [Translatable3DProtocol](translatable3dprotocol.md)
 
 ## See Also
 
 - [struct Point3D](point3d.md)
   A point in a 3D coordinate system.
+- [struct Point3DFloat](point3dfloat.md)
+  A single-precision structure that contains a point in a three-dimensional coordinate system.
 - [struct Size3D](size3d.md)
   A size that describes width, height, and depth in a 3D coordinate system.
+- [struct Size3DFloat](size3dfloat.md)
+  A single-precision structure that contains width, height, and depth values.
 - [struct Rect3D](rect3d.md)
   A rectangle in a 3D coordinate system.
+- [struct Rect3DFloat](rect3dfloat.md)
+  A single-precision structure that contains the location and dimensions of a 3D rectangle.
 - [struct Rotation3D](rotation3d.md)
   A rotation in three dimensions.
+- [struct Rotation3DFloat](rotation3dfloat.md)
+  A single-precision structure that represents a rotation in three dimensions.
 - [struct RotationAxis3D](rotationaxis3d.md)
   A 3D rotation axis.
+- [struct RotationAxis3DFloat](rotationaxis3dfloat.md)
+  A 3D axis.
 - [struct Pose3D](pose3d.md)
   A structure that contains a 3D position and a 3D rotation.
+- [struct Pose3DFloat](pose3dfloat.md)
+  A single-precision structure that contains a position and rotation.
 - [struct ScaledPose3D](scaledpose3d.md)
+  A structure that contains a position, rotation, and scale.
+- [struct ScaledPose3DFloat](scaledpose3dfloat.md)
   A structure that contains a position, rotation, and scale.
 - [struct SphericalCoordinates3D](sphericalcoordinates3d.md)
   A structure that defines spherical coordinates in radial, inclination, azimuthal order.

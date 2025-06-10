@@ -1,6 +1,6 @@
 # Customizing the Appearance of Notifications
 
-**Framework**: Usernotificationsui
+**Framework**: User Notifications UI
 
 Customize the appearance of your iOS app’s notification alerts with a notification content app extension.
 
@@ -91,7 +91,7 @@ To support the playback of audio or video from your custom notifications interfa
 
 The system draws a media button for you, handling all user interactions. When the buttons are pressed, it calls the [`mediaPlay()`](unnotificationcontentextension/mediaplay().md) and [`mediaPause()`](unnotificationcontentextension/mediapause().md) methods so that you can start and stop playback.
 
-To programmatically start or stop playback of your media file, call the current [`NSExtensionContext`](https://developer.apple.com/documentation/Foundation/NSExtensionContext) object’s [`mediaPlayingStarted()`](https://developer.apple.com/documentation/foundation/nsextensioncontext/1648523-mediaplayingstarted) and [`mediaPlayingPaused()`](https://developer.apple.com/documentation/foundation/nsextensioncontext/1648527-mediaplayingpaused) methods. Use your view controller’s [`extensionContext`](https://developer.apple.com/documentation/UIKit/UIViewController/extensionContext) property to access the extension context.
+To programmatically start or stop playback of your media file, call the current [`NSExtensionContext`](https://developer.apple.com/documentation/Foundation/NSExtensionContext) object’s [`mediaPlayingStarted()`](https://developer.apple.com/documentation/Foundation/NSExtensionContext/mediaPlayingStarted()) and [`mediaPlayingPaused()`](https://developer.apple.com/documentation/Foundation/NSExtensionContext/mediaPlayingPaused()) methods. Use your view controller’s [`extensionContext`](https://developer.apple.com/documentation/UIKit/UIViewController/extensionContext) property to access the extension context.
 
 ##### Support Interactive Controls
 

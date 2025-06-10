@@ -6,6 +6,7 @@
 A drawable that’s not in use and ready for assignment to a frame.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # CMClosedCaptionFormatDescriptionCopyAsBigEndianClosedCaptionDescriptionBlockBuffer(allocator:closedCaptionFormatDescription:flavor:blockBufferOut:)
 
-**Framework**: Coremedia  
+**Framework**: Core Media  
 **Kind**: func
 
 Copies the contents of a closed caption format description to a buffer in big-endian byte order.

@@ -25,7 +25,7 @@ Call this method to communicate to Game Center about the local player’s progre
 
 Game Center only updates the achievement’s [`percentComplete`](gkachievement/percentcomplete.md) and [`lastReportedDate`](gkachievement/lastreporteddate.md) properties if the [`percentComplete`](gkachievement/percentcomplete.md) property of an achievement that you pass to this method is greater than the current value. If the achievement is hidden, Game Center also makes it visible. If the [`percentComplete`](gkachievement/percentcomplete.md) property is `100.0`, Game Center sets its [`isCompleted`](gkachievement/iscompleted.md) property to [`true`](https://developer.apple.com/documentation/swift/true) and may show a banner to the player.
 
-For efficiency, include multiple achievements rather than invoking this method separately for each achievement. Since Game Center associates an achievement with the local player at the time you create the achievement, only invoke this method after you authenticate the same player on the device.
+For efficiency, include multiple achievements rather than invoking this method separately for each achievement. Since Game Center associates an achievement with the local player at the time you create the achievement, only invoke this method after you initialize the same player on the device.
 
 ## Parameters
 

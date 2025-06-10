@@ -1,6 +1,6 @@
 # FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

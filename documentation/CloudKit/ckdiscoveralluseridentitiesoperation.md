@@ -1,6 +1,6 @@
 # CKDiscoverAllUserIdentitiesOperation
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 An operation that uses the device’s contacts to search for discoverable iCloud users.
@@ -33,9 +33,9 @@ The operation executes the handlers you provide on an internal queue it manages.
 
 The operation calls [`discoverAllUserIdentitiesCompletionBlock`](ckdiscoveralluseridentitiesoperation/discoveralluseridentitiescompletionblock.md) after it executes and returns results. Use the completion handler to perform housekeeping tasks for the operation. It should also manage any failures, whether due to an error or an explicit cancellation.
 
-> **Note**:  Because this class inherits from [`Operation`](https://developer.apple.com/documentation/Foundation/Operation), you can also set the [`completionBlock`](https://developer.apple.com/documentation/foundation/operation/1408085-completionblock) property. The operation calls both completion handlers if they’re both set.
+> **Note**:  Because this class inherits from [`Operation`](https://developer.apple.com/documentation/Foundation/Operation), you can also set the [`completionBlock`](https://developer.apple.com/documentation/Foundation/Operation/completionBlock) property. The operation calls both completion handlers if they’re both set.
 
-CloudKit operations have a default QoS of [`QualityOfService.default`](https://developer.apple.com/documentation/Foundation/QualityOfService/default). Operations with this service level are discretionary. The system schedules their execution at an optimal time according to battery level and network conditions, among other factors. Use the [`qualityOfService`](https://developer.apple.com/documentation/foundation/operation/1413553-qualityofservice) property to set a more appropriate QoS for the operation.
+CloudKit operations have a default QoS of [`QualityOfService.default`](https://developer.apple.com/documentation/Foundation/QualityOfService/default). Operations with this service level are discretionary. The system schedules their execution at an optimal time according to battery level and network conditions, among other factors. Use the [`qualityOfService`](https://developer.apple.com/documentation/Foundation/Operation/qualityOfService) property to set a more appropriate QoS for the operation.
 
 The following example shows how to create the operation, configure its callbacks, and execute it using the default container’s queue:
 
@@ -97,6 +97,7 @@ func fetchUserIdentities(
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -108,4 +109,4 @@ func fetchUserIdentities(
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckdiscoveralluseridentitiesoperation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckdiscoveralluseridentitiesoperation)*

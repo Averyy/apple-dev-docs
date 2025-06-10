@@ -1,6 +1,6 @@
 # first(where:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns the first element of the sequence that satisfies the given predicate.

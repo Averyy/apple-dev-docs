@@ -46,6 +46,8 @@ To add this trait to a test, use one of the following functions:
 - [var sourceLocation: SourceLocation](conditiontrait/sourcelocation.md)
   The source location where this trait is specified.
 ### Instance Methods
+- [func evaluate() async throws -> Bool](conditiontrait/evaluate.md)
+  Evaluate this instance’s underlying condition.
 - [func prepare(for: Test) async throws](conditiontrait/prepare(for:).md)
   Prepare to run the test that has this trait.
 ### Type Aliases
@@ -58,6 +60,7 @@ To add this trait to a test, use one of the following functions:
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SuiteTrait](suitetrait.md)
 - [TestTrait](testtrait.md)
 - [Trait](trait.md)

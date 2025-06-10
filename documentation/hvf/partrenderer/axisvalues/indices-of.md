@@ -1,6 +1,6 @@
 # indices(of:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns the indices of all the elements that are equal to the given element.

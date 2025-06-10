@@ -5,6 +5,14 @@
 
 A constant string (text) value.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 ## See Also
@@ -26,9 +34,9 @@ A constant string (text) value.
 - [Integer](procedural/integer.md)
   A constant integer numeric value.
 - [Matrix3x3 (Float)](procedural/matrix3x3-(float).md)
-  A constant Matrix3x3 (Float) value. (Row-major order.)
+  A constant Matrix3x3 (Float) value.
 - [Matrix4x4 (Float)](procedural/matrix4x4-(float).md)
-  A constant Matrix4x4 (Float) value. (Row-major order.)
+  A constant Matrix4x4 (Float) value.
 - [Image File](procedural/image-file.md)
   A constant path refering to an arbitrary image file on disk.
 - [Half](procedural/half.md)

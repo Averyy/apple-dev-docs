@@ -14,6 +14,15 @@ BNNSGraph allows the BNNS library to execute entire networks rather than individ
 
 ## Topics
 
+### Building graphs in Swift
+- [static func makeContext(options: BNNSGraph.CompileOptions, (inout BNNSGraph.Builder) -> [any BNNSGraph.TensorDescriptor]) throws -> BNNSGraph.Context](bnnsgraph/makecontext(options:_:).md)
+  Returns a new context that wraps a graph object that the given closure defines.
+- [BNNSGraph.Builder](bnnsgraph/builder.md)
+  A structure thats provides a closure you can use to define the arguments and operations of a BNNS Graph.
+- [BNNSGraph.Builder.Tensor](bnnsgraph/builder/tensor.md)
+  A structure that represents an abstract handle to a tensor that you use within a `BNNSGraph.makeContext` closure.
+- [Supporting real-time ML inference on the CPU](supporting-real-time-ml-inference-on-the-cpu.md)
+  Add real-time digital signal processing to apps like Logic Pro X and GarageBand with the BNNS Graph API.
 ### Creating and executing graphs in Swift
 - [BNNSGraph.Context](bnnsgraph/context.md)
   A wrapper around a compiled graph object that adds a required modifiable context to support dynamically sized models and set execute-time options.
@@ -100,6 +109,8 @@ BNNSGraph allows the BNNS library to execute entire networks rather than individ
 - [func BNNSGraphContextDestroy(bnns_graph_context_t)](bnnsgraphcontextdestroy(_:).md)
   Destroys the specified graph context.
 ### Specifying and querying a context’s properties
+- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](bnnsgraphcontextsetstreamingadvancecount(_:_:).md)
+  Sets the streaming advancement amount for cases with dynamically shaped inputs.
 - [func BNNSGraphContextSetArgumentType(bnns_graph_context_t, BNNSGraphArgumentType) -> Int32](bnnsgraphcontextsetargumenttype(_:_:).md)
   Specifies the argument type for a graph context.
 - [struct BNNSGraphArgumentType](bnnsgraphargumenttype.md)
@@ -114,6 +125,8 @@ BNNSGraph allows the BNNS library to execute entire networks rather than individ
   Specifies that the context checks intermediate tensors for NaNs and infinities.
 - [func BNNSGraphContextGetWorkspaceSize(bnns_graph_context_t, UnsafePointer<CChar>?) -> Int](bnnsgraphcontextgetworkspacesize(_:_:).md)
   Returns the minimum size, in bytes, of the workspace that graph context execution requires.
+- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](bnnsgraphcontextsetstreamingadvancecount(_:_:).md)
+  Sets the streaming advancement amount for cases with dynamically shaped inputs.
 ### Specifying a context’s execute-time message callback
 - [func BNNSGraphContextSetMessageLogCallback(bnns_graph_context_t, bnns_graph_execute_message_fn_t, UnsafeMutablePointer<bnns_user_message_data_t>?) -> Int32](bnnsgraphcontextsetmessagelogcallback(_:_:_:).md)
   Specifies a customized callback function that reports execution-time messages.

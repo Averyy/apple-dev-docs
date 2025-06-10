@@ -37,7 +37,9 @@ def main():
         ("tests/test_chromadb_edge_cases.py", "ChromaDB Edge Cases"),
         ("tests/test_new_features.py", "New Checkpointing & Verification Features"),
         ("tests/test_production_readiness.py", "Production Readiness & Resilience"),
-        ("scripts/test_hash_integration.py", "Hash Integration System"),
+        ("tests/test_hash_integration.py", "Hash Integration System"),
+        ("tests/test_orphan_detection.py", "Orphan Detection & Cleanup"),
+        ("tests/test_concurrent_scraping.py", "Concurrent Scraping with Semaphore"),
     ]
     
     results = []
@@ -102,6 +104,8 @@ def main():
     print("   ✅ Production resilience (error handling, file system)")
     print("   ✅ Security validation (API keys, path traversal)")
     print("   ✅ Health check and monitoring tools")
+    print("   ✅ Orphan detection and cleanup (session tracking)")
+    print("   ✅ Concurrent scraping (rolling concurrency, error handling)")
     
     # Production readiness assessment
     print(f"\n🚀 Production Readiness Assessment:")

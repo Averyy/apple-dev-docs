@@ -1,6 +1,6 @@
 # deviceOrientationDidChange()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Tells the delegate that the device’s orientation has changed.

@@ -13,6 +13,7 @@ Tells the navigation session to pause the trip for the specified reason.
 ## Declaration
 
 ```swift
+@MainActor
 func pauseTrip(for reason: CPNavigationSession.PauseReason, description: String?)
 ```
 

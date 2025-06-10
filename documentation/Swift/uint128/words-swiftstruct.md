@@ -42,6 +42,7 @@ The `Words` type must conform to the `RandomAccessCollection` protocol with an `
 - [Copyable](copyable.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 

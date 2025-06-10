@@ -1,6 +1,6 @@
 # VSAccountApplicationProvider
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: class
 
 An object to display app-specific providers in your app.
@@ -47,8 +47,8 @@ The `VSAccountApplicationProvider` object represents an app account provider to 
 
 ## See Also
 
-- [class VSSubscription](vssubscription.md)
-  An object that describes a subscriber’s access to content.
+- [struct VSAppleSubscription](vsapplesubscription-swift.struct.md)
+  An Apple streaming service customer and their subscriptions.
 - [class VSSubscriptionRegistrationCenter](vssubscriptionregistrationcenter.md)
   An object that stores subscription information that the system provides to the Apple TV app.
 

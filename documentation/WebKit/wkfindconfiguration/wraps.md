@@ -1,6 +1,6 @@
 # wraps
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether the search wraps around to the other side of the page.

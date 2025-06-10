@@ -1,6 +1,6 @@
 # Creating an immersive space in visionOS
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Enhance your visionOS app by adding an immersive space using RealityKit.
 

@@ -1,6 +1,6 @@
 # RecognizedItem
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: enum
 
 An item that the data scanner recognizes in the camera’s live video.

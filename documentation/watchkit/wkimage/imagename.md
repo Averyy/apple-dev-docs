@@ -1,6 +1,6 @@
 # imageName
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The name of the image to load from the Watch app’s bundle.

@@ -29,8 +29,6 @@ Some keys expect a complex type. For example, the [`color`](pdfannotationkey/col
 
 > 💡 **Tip**:  Set the `PDFKIT_LOG_ANNOTATIONS` environment variable to log key-value assignment failure details.
 
- Set the `PDFKIT_LOG_ANNOTATIONS` environment variable to log key-value assignment failure details.
-
 ## Parameters
 
 - `value`: The value to set in the attribute’s dictionary.

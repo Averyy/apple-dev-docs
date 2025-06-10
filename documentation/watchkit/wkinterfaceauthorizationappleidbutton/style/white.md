@@ -1,6 +1,6 @@
 # WKInterfaceAuthorizationAppleIDButton.Style.white
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 A white button with black lettering.

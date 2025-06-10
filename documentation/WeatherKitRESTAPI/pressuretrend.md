@@ -1,6 +1,6 @@
 # PressureTrend
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: typealias
 
 The direction of change of the sea level air pressure.

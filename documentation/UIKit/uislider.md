@@ -1,6 +1,6 @@
 # UISlider
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A control for selecting a single value from a continuous range of values.
@@ -90,17 +90,17 @@ The most common way to customize the slider’s appearance is to provide custom 
 
 ![Image of a slider with minimum and maximum images.](https://docs-assets.developer.apple.com/published/9c342329a09b857d4e45ec2cabee3951/media-2555496%402x.png)
 
-You can also specify the images used to draw the thumb and the track. Provide images for each of the control states (normal, highlighted, and so on) with the [`setMinimumTrackImage(_:for:)`](uislider/setminimumtrackimage(_:for:).md), [`setMaximumTrackImage(_:for:)`](uislider/setmaximumtrackimage(_:for:).md), and [`setThumbImage(_:for:)`](uislider/setthumbimage(_:for:).md) methods. Set the [`capInsets`](uiimage/capinsets.md) property for the track images to facilitate horizontal stretching. To access the images used in the current control state, use the [`currentMinimumTrackImage`](uislider/currentminimumtrackimage.md), [`currentMaximumTrackImage`](uislider/currentmaximumtrackimage.md), and [`currentThumbImage`](uislider/currentthumbimage.md) properties, as shown in the following image.
+> **Note**: Sliders respond to user interaction with dynamic effects and appearance. If you set custom tint colors for the track or thumb, the slider maintains this behavior. If you use images to customize the appearance of the track, then the slider doesn’t apply the dynamic effects or alter the appearance.
 
-![Image of a slider with custom track and thumb images.](https://docs-assets.developer.apple.com/published/63d9b43d57b05ccbcff8d4b365668b63/media-2555497%402x.png)
-
-> **Note**:  The slider control provides a set of default images for both the track and the thumb. If you don’t specify any custom images, those images are used automatically.
-
-If you want to change only the colors of the track and thumb, you don’t need to resort to custom images. You can set custom tint colors for both the track and the thumb of a slider, using the [`minimumTrackTintColor`](uislider/minimumtracktintcolor.md), [`maximumTrackTintColor`](uislider/maximumtracktintcolor.md), and [`thumbTintColor`](uislider/thumbtintcolor.md) properties, as shown in the following image.
+To set custom tint colors for both the track and the thumb of a slider, use the [`minimumTrackTintColor`](uislider/minimumtracktintcolor.md), [`maximumTrackTintColor`](uislider/maximumtracktintcolor.md), and [`thumbTintColor`](uislider/thumbtintcolor.md) properties, as shown in the following image.
 
 ![Image of a slider with custom tint colors.](https://docs-assets.developer.apple.com/published/2a9e07e4096750c145d5673c3c1840a1/media-2555498%402x.png)
 
 By default, the minimum track tint color defers to the tint color of the slider control.
+
+To completely change the appearance of the slider, you can specify images for the thumb and the track. Provide images for each of the control states (normal, highlighted, and so on) with the [`setMinimumTrackImage(_:for:)`](uislider/setminimumtrackimage(_:for:).md), [`setMaximumTrackImage(_:for:)`](uislider/setmaximumtrackimage(_:for:).md), and [`setThumbImage(_:for:)`](uislider/setthumbimage(_:for:).md) methods. Set the [`capInsets`](uiimage/capinsets.md) property for the track images to facilitate horizontal stretching. To access the images used in the current control state, use the [`currentMinimumTrackImage`](uislider/currentminimumtrackimage.md), [`currentMaximumTrackImage`](uislider/currentmaximumtrackimage.md), and [`currentThumbImage`](uislider/currentthumbimage.md) properties, as shown in the following image.
+
+![Image of a slider with custom track and thumb images.](https://docs-assets.developer.apple.com/published/63d9b43d57b05ccbcff8d4b365668b63/media-2555497%402x.png)
 
 ##### Provide Localized Strings
 
@@ -143,6 +143,9 @@ For more information about making iOS controls accessible, see the accessibility
   The preferred behavioral style.
 - [enum UIBehavioralStyle](uibehavioralstyle.md)
   Constants that indicate how a control behaves in apps built with Mac Catalyst.
+### Changing the slider’s style
+- [var sliderStyle: UISlider.Style](uislider/sliderstyle.md)
+- [UISlider.Style](uislider/style.md)
 ### Changing the slider’s appearance
 - [var minimumValueImage: UIImage?](uislider/minimumvalueimage.md)
   The image that represents the slider’s minimum value.
@@ -172,6 +175,9 @@ For more information about making iOS controls accessible, see the accessibility
   Returns the thumb image associated with the specified control state.
 - [func setThumbImage(UIImage?, for: UIControl.State)](uislider/setthumbimage(_:for:).md)
   Assigns a thumb image to the specified control states.
+### Configuring the track
+- [var trackConfiguration: UISlider.TrackConfiguration?](uislider/trackconfiguration-6m55i.md)
+- [UISlider.TrackConfiguration](uislider/trackconfiguration-swift.struct.md)
 ### Overrides for subclasses
 - [func maximumValueImageRect(forBounds: CGRect) -> CGRect](uislider/maximumvalueimagerect(forbounds:).md)
   Returns the drawing rectangle for the maximum value image.
@@ -197,6 +203,7 @@ For more information about making iOS controls accessible, see the accessibility
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)
@@ -239,4 +246,4 @@ For more information about making iOS controls accessible, see the accessibility
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uislider)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uislider)*

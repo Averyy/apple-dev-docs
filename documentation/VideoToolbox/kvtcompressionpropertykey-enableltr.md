@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_EnableLTR
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Enables Long Term Reference (LTR) frames during encoding.

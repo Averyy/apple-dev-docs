@@ -1,6 +1,6 @@
 # macOS(_:)
 
-**Framework**: Packagedescription  
+**Framework**: PackageDescription  
 **Kind**: method
 
 Configures the minimum deployment target version for the macOS platform.

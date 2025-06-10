@@ -1,6 +1,6 @@
 # hasUnreadBadgeText
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating whether the badge text is unread.

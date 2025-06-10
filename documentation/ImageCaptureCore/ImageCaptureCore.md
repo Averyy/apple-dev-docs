@@ -31,8 +31,6 @@ Before you can tether from an iOS app, you need to tell the user why the app is 
 
 > ❗ **Important**:  In macOS 14 and later, use the [`com.apple.security.device.usb`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.device.usb) entitlement key to allow your sandboxed app to interact with USB devices.
 
- In macOS 14 and later, use the [`com.apple.security.device.usb`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.device.usb) entitlement key to allow your sandboxed app to interact with USB devices.
-
 ## Topics
 
 ### Essentials

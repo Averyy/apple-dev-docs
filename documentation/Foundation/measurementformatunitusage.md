@@ -64,6 +64,7 @@ struct MeasurementFormatUnitUsage<UnitType> where UnitType : Dimension
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

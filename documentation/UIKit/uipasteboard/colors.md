@@ -1,6 +1,6 @@
 # colors
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 An array of color objects in all pasteboard items.

@@ -1,6 +1,6 @@
 # animationController(forDismissed:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Asks your delegate for the transition animator object to use when dismissing a view controller.

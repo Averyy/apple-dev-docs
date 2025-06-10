@@ -26,8 +26,6 @@ All `ReferenceConvertible` types are hashable, equatable, and provide descriptio
 
 > ⚠️ **Warning**:  Don’t create new conformances to this protocol. `ReferenceConvertible` only supports types provided by the SDK.
 
- Don’t create new conformances to this protocol. `ReferenceConvertible` only supports types provided by the SDK.
-
 ## Topics
 
 ### Supporting types

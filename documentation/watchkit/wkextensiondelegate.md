@@ -1,6 +1,6 @@
 # WKExtensionDelegate
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: protocol
 
 A collection of methods that manages the app-level behavior of a WatchKit extension.

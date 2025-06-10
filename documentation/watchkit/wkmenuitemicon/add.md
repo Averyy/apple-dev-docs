@@ -1,6 +1,6 @@
 # WKMenuItemIcon.add
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The icon indicating an action for adding an item.

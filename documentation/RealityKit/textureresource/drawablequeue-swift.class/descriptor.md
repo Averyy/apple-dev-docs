@@ -10,6 +10,7 @@ Describes the texture managed by the drawable queue
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -22,7 +23,7 @@ struct Descriptor
 
 ### Initializers
 - [init(pixelFormat: MTLPixelFormat, width: Int, height: Int, usage: MTLTextureUsage, mipmapsMode: TextureResource.MipmapsMode)](textureresource/drawablequeue-swift.class/descriptor/init(pixelformat:width:height:usage:mipmapsmode:).md)
-- [init(pixelFormat: MTLPixelFormat, width: Int, height: Int, usage: MTLTextureUsage, mipmapsMode: TextureResource.MipmapsMode, timeout: Duration)](textureresource/drawablequeue-swift.class/descriptor/init(pixelformat:width:height:usage:mipmapsmode:timeout:).md)
+- [init(pixelFormat:width:height:usage:mipmapsMode:timeout:)](textureresource/drawablequeue-swift.class/descriptor/init(pixelformat:width:height:usage:mipmapsmode:timeout:).md)
 ### Instance Properties
 - [var height: Int](textureresource/drawablequeue-swift.class/descriptor/height.md)
   The height of each drawable’s texture in pixels.
@@ -30,7 +31,9 @@ struct Descriptor
   A Boolean value that determines whether the resource should generate mipmaps for each drawable’s texture after it was updated.
 - [var pixelFormat: MTLPixelFormat](textureresource/drawablequeue-swift.class/descriptor/pixelformat.md)
   The size and bit layout of all pixels in each drawable’s texture.
-- [var timeout: Duration](textureresource/drawablequeue-swift.class/descriptor/timeout.md)
+- [var timeout: Duration](textureresource/drawablequeue-swift.class/descriptor/timeout-1hh22.md)
+  Specifies a timeout value in seconds when querying nextDrawable(). nextDrawable() will be blocked for up to the specified timeout period for a drawable to become available else throws `NextDrawableError.timeoutReached`. By default this is set to 1 second. Note that if `allowsNextDrawableTimeout` is false, then the timeout parameter will be ignored.
+- [var timeout: Duration](textureresource/drawablequeue-swift.class/descriptor/timeout-8xq88.md)
   Specifies a timeout value in seconds when querying nextDrawable(). nextDrawable() will be blocked for up to the specified timeout period for a drawable to become available else throws `NextDrawableError.timeoutReached`. By default this is set to 1 second. Note that if `allowsNextDrawableTimeout` is false, then the timeout parameter will be ignored.
 - [var usage: MTLTextureUsage](textureresource/drawablequeue-swift.class/descriptor/usage.md)
   Options that determine how you can use each drawable’s textures.

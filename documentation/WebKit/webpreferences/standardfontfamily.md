@@ -1,6 +1,6 @@
 # standardFontFamily
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The standard font family of the web view.

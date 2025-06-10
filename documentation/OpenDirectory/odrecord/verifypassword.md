@@ -1,6 +1,6 @@
 # verifyPassword(_:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Verifies the password for interaction with the record.

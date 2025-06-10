@@ -20,6 +20,14 @@ A Boolean value that indicates whether an app can use the Apple Neural Engine to
   A Boolean value that allows an app to use ARKit to track more objects with a higher frequency.
 - [Spatial barcode and QR code scanning](entitlements/com.apple.developer.arkit.barcode-detection.allow.md)
   A Boolean value that indicates whether an app can use ARKit to detect, position, and decode barcode and QR codes.
+- [Camera Region access](entitlements/com.apple.developer.arkit.camera-region.allow.md)
+  A Boolean value indicating whether your app may access the camera region.
+- [Shared Coordinate Space access](entitlements/com.apple.developer.arkit.shared-coordinate-space.allow.md)
+  A Boolean value indicating whether your app may use a shared coordinate space.
+- [App-Protected Content](entitlements/com.apple.developer.protected-content.md)
+  A Boolean value indicating whether the system prohibits capturing your app’s content.
+- [Follow Mode for Windows](entitlements/com.apple.developer.window-body-follow.md)
+  A Boolean value indicating whether your app’s windows will follow the user.
 - [UVC Device Access on visionOS](entitlements/com.apple.developer.avfoundation.uvc-device-access.md)
   A Boolean value that indicates whether the app can stream USB UVC devices connected to the Developer strap.
 

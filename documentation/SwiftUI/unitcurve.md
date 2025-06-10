@@ -66,6 +66,7 @@ The vertical (y) axis maps to the output progress: when a curve is evaluated, th
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

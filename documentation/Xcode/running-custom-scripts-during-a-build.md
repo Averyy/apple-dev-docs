@@ -103,4 +103,4 @@ exit 1
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/running-custom-scripts-during-a-build)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/running-custom-scripts-during-a-build)*

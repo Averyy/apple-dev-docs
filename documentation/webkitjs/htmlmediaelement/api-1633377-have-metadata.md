@@ -1,6 +1,6 @@
 # HAVE_METADATA
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 Enough of the media resource has been loaded to know the duration, and in the case of a `video` element, the dimensions.

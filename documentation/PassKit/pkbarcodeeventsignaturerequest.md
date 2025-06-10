@@ -46,7 +46,7 @@ class PKBarcodeEventSignatureRequest
 
 ## See Also
 
-- [func handle(PKBarcodeEventSignatureRequest, completion: PKSignatureRequestCompletionBlock)](pkpaymentinformationrequesthandling/handle(_:completion:)-18x2y.md)
+- [func handle(PKBarcodeEventSignatureRequest, completion: (PKBarcodeEventSignatureResponse) -> Void)](pkpaymentinformationrequesthandling/handle(_:completion:)-18x2y.md)
 - [class PKBarcodeEventSignatureResponse](pkbarcodeeventsignatureresponse.md)
 - [typealias PKSignatureRequestCompletionBlock](pksignaturerequestcompletionblock.md)
 

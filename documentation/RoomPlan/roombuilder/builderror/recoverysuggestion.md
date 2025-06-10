@@ -22,7 +22,7 @@ var recoverySuggestion: String? { get }
 ## See Also
 
 - [var errorDescription: String?](roombuilder/builderror/errordescription.md)
-  A localized message describing what error occurred.
+  A human-readable explanation of the error.
 - [var localizedDescription: String](roombuilder/builderror/localizeddescription.md)
   Retrieve the localized description for this error.
 - [var helpAnchor: String?](roombuilder/builderror/helpanchor.md)

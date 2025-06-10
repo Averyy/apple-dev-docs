@@ -63,6 +63,7 @@ enum UTF32
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [UnicodeCodec](unicodecodec.md)
 
 ## See Also

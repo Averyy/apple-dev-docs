@@ -8,7 +8,7 @@ Indicates if the tip view should display a dismissal button
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

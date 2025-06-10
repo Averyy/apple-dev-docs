@@ -1,6 +1,6 @@
 # EventKit UI
 
-**Framework**: Eventkitui  
+**Framework**: EventKit UI  
 **Kind**: module
 
 Display an interface for viewing, selecting, and editing calendar events and reminders.

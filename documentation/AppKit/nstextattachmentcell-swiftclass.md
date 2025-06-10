@@ -37,6 +37,7 @@ This specification describes only those methods whose implementations have featu
 - [NSTextAttachmentCellProtocol](nstextattachmentcellprotocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

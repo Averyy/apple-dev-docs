@@ -1,6 +1,6 @@
 # WKMediaCaptureState.muted
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 The media device is muted, and not actively capturing audio or video.

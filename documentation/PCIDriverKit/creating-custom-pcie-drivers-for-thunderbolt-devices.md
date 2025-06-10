@@ -1,6 +1,6 @@
 # Creating Custom PCIe Drivers for Thunderbolt Devices
 
-**Framework**: Pcidriverkit
+**Framework**: PCIDriverKit
 
 Create a DriverKit extension to support your Thunderbolt device’s custom features.
 
@@ -59,7 +59,7 @@ To indicate that your PCIe driver supports Thunderbolt, include the `IOPCITunnel
 
 ##### Notify the System of External Storage Devices
 
-Users can disconnect most Thunderbolt devices at any time, but macOS doesn’t allow them to disconnect external storage devices without properly ejecting them. If your PCI driver presents the device as storage to the system, notify the system early in your driver’s [`Start`](https://developer.apple.com/documentation/kernel/ioservice/3180710-start) method by setting the `Physical Interconnect Location` property to `External`, as in the following example:
+Users can disconnect most Thunderbolt devices at any time, but macOS doesn’t allow them to disconnect external storage devices without properly ejecting them. If your PCI driver presents the device as storage to the system, notify the system early in your driver’s [`Start`](https://developer.apple.com/documentation/DriverKit/IOService/Start) method by setting the `Physical Interconnect Location` property to `External`, as in the following example:
 
 ```objc
 // Add the Physical Interconnect Location property to the driver.
@@ -71,13 +71,13 @@ OSSafeReleaseNULL(externalStr);
 OSSafeReleaseNULL(dict);
 ```
 
-> ❗ **Important**:  Always set the `Physical Interconnect Location` property early in your driver’s [`Start`](https://developer.apple.com/documentation/kernel/ioservice/3180710-start) method. Don’t set it after you access the device.
+> ❗ **Important**:  Always set the `Physical Interconnect Location` property early in your driver’s [`Start`](https://developer.apple.com/documentation/DriverKit/IOService/Start) method. Don’t set it after you access the device.
 
 ##### Support Message Signaled Interrupts in Your Device
 
 Always use Message Signaled Interrupts (MSI) to generate hardware interrupts from your Thunderbolt devices. You can implement a DriverKit extension with legacy interrupts, but doing so adds latency to any device that shares the interrupt. If you need to support legacy interrupts, the better alternative is to implement your driver as a kernel extension.
 
-For MSI-enabled Thunderbolt devices, the system routes interrupts to the appropriate [`IOInterruptDispatchSource`](https://developer.apple.com/documentation/DriverKit/IOInterruptDispatchSource) object in your driver. Create and configure interrupt dispatch sources in the [`Start`](https://developer.apple.com/documentation/kernel/ioservice/3180710-start) method of your custom [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService) subclass. For more information, see [`IOInterruptDispatchSource`](https://developer.apple.com/documentation/kernel/iointerruptdispatchsource).
+For MSI-enabled Thunderbolt devices, the system routes interrupts to the appropriate [`IOInterruptDispatchSource`](https://developer.apple.com/documentation/DriverKit/IOInterruptDispatchSource) object in your driver. Create and configure interrupt dispatch sources in the [`Start`](https://developer.apple.com/documentation/DriverKit/IOService/Start) method of your custom [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService) subclass. For more information, see [`IOInterruptDispatchSource`](https://developer.apple.com/documentation/kernel/iointerruptdispatchsource).
 
 ##### Read and Write From the Configuration and Mmio Spaces
 
@@ -98,4 +98,4 @@ For more information about the memory spaces to use in your drivers, see the PCI
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PCIDriverKit/creating-custom-pcie-drivers-for-thunderbolt-devices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/pcidriverkit/creating-custom-pcie-drivers-for-thunderbolt-devices)*

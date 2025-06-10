@@ -25,8 +25,6 @@ When you change a value for a metaparameter in this dictionary, every sound even
 
 > 💡 **Tip**:  To adjust a value for a single sound event, access the metaparameter through the [`metaParameters`](phasesoundevent/metaparameters.md) property instead.
 
- To adjust a value for a single sound event, access the metaparameter through the [`metaParameters`](phasesoundevent/metaparameters.md) property instead.
-
 ## See Also
 
 - [func registerGlobalMetaParameter(metaParameterDefinition: PHASEMetaParameterDefinition) throws -> PHASEGlobalMetaParameterAsset](phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition:).md)

@@ -49,6 +49,7 @@ enum CurrentBalance
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -57,7 +58,7 @@ enum CurrentBalance
 - [func accountBalanceHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<AccountBalance>](financestore/accountbalancehistory(foraccountid:since:ismonitoring:).md)
   Returns the account balance history since a time specified by the provided financial history token.
 - [struct AccountBalance](accountbalance.md)
-  A structure that describes the financial balance of an account at a specific point in time.
+  A structure that describes the financial balance of an account at a specific point in time. The financial balance of an account at a specific point in time.
 - [struct AccountBalanceQuery](accountbalancequery.md)
   A structure that defines an account balance query.
 - [struct Balance](balance.md)

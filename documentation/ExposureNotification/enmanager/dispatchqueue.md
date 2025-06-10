@@ -20,8 +20,6 @@ var dispatchQueue: dispatch_queue_t { get set }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 The default is the main queue.
 
 ## See Also

@@ -22,8 +22,6 @@ func hv_vcpu_set_sme_p_reg(_ vcpu: hv_vcpu_t, _ reg: hv_sme_p_reg_t, _ value: Un
 
 > ❗ **Important**:  You need to call this on the owning thread
 
- You need to call this on the owning thread
-
 This method returns an error if `PSTATE.ZA` is `0` (For example, if.[`za_storage_enabled`](hv_vcpu_sme_state_t/za_storage_enabled.md) is `false`), or if the provided value storage isn’t [maximum SVL bytes x maximum SVL bytes].
 
 This method doesn’t require streaming SVE mode to be in an enabled state.

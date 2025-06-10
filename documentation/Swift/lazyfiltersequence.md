@@ -73,4 +73,4 @@ struct LazyFilterSequence<Base> where Base : Sequence
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/lazyfiltersequence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/lazyfiltersequence)*

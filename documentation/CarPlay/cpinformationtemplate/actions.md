@@ -13,6 +13,7 @@ The actions that the template displays.
 ## Declaration
 
 ```swift
+@MainActor
 var actions: [CPTextButton] { get set }
 ```
 

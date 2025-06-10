@@ -57,6 +57,8 @@ You define the user interface that your app presents during normal operation wit
 - [UIPreferredDefaultInterfaceOrientation](information-property-list/uipreferreddefaultinterfaceorientation.md)
   A string that indicates the preferred initial interface orientation for iPad and iPhone apps running on visionOS.
 ### Styling
+- [UIDesignRequiresCompatibility](information-property-list/uidesignrequirescompatibility.md)
+  A Boolean value that indicates whether the system runs the app using a compatibility mode for UI.
 - [UIUserInterfaceStyle](information-property-list/uiuserinterfacestyle.md)
   The user interface style for the app.
 - [UIViewEdgeAntialiasing](information-property-list/uiviewedgeantialiasing.md)

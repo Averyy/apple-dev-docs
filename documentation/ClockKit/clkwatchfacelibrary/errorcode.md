@@ -36,6 +36,8 @@ enum ErrorCode
   The app does not have permission to read the specified file.
 - [CLKWatchFaceLibrary.ErrorCode.faceNotAvailable](clkwatchfacelibrary/errorcode/facenotavailable.md)
   The watch face is not available on this device.
+### Enumeration Cases
+- [CLKWatchFaceLibrary.ErrorCode.noURL](clkwatchfacelibrary/errorcode/nourl.md)
 ### Initializers
 - [init?(rawValue: Int)](clkwatchfacelibrary/errorcode/init(rawvalue:).md)
 
@@ -47,6 +49,7 @@ enum ErrorCode
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

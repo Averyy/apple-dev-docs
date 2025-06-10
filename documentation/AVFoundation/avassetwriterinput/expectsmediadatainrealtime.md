@@ -27,8 +27,6 @@ You can’t set this value after writing starts.
 
 > ❗ **Important**:  To ensure optimal behavior, don’t set the value of this property and [`performsMultiPassEncodingIfSupported`](avassetwriterinput/performsmultipassencodingifsupported.md) to [`true`](https://developer.apple.com/documentation/swift/true) at the same time.
 
- To ensure optimal behavior, don’t set the value of this property and [`performsMultiPassEncodingIfSupported`](avassetwriterinput/performsmultipassencodingifsupported.md) to [`true`](https://developer.apple.com/documentation/swift/true) at the same time.
-
 ## See Also
 
 - [var isReadyForMoreMediaData: Bool](avassetwriterinput/isreadyformoremediadata.md)

@@ -36,6 +36,7 @@ protocol DurationProtocol : AdditiveArithmetic, Comparable, Sendable
 - [Comparable](comparable.md)
 - [Equatable](equatable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 ### Conforming Types
 - [Duration](duration.md)
 

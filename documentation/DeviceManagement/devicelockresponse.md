@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to lock.
+A response from the device after it processes the command to remotely and immediately lock a device.
 
 **Availability**:
 - iOS 4.0+
@@ -11,8 +11,6 @@ A response from the device after it processes the command to lock.
 - macOS 10.7+
 - visionOS 2.0+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,14 +20,14 @@ object DeviceLockResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object DeviceLockResponse.ErrorChainItem](devicelockresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object DeviceLockCommand](devicelockcommand.md)
-  The command to lock a device.
+  The command to remotely and immediately lock a device.
 
 
 ---

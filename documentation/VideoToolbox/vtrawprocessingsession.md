@@ -1,6 +1,6 @@
 # VTRAWProcessingSession
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: class
 
 An object that processes frames in camera native formats such as RAW or Bayer.
@@ -37,6 +37,10 @@ The session reference is a reference-counted CF object.
 ### Configuring the Metal device
 - [var metalDevice: (any MTLDevice)?](vtrawprocessingsession/metaldevice.md)
   The preferred device to use for any Metal-based processing performed by the RAW Processing Extension.
+### Initializers
+- [init(referencing: VTRAWProcessingSession)](vtrawprocessingsession/init(referencing:).md)
+### Type Aliases
+- [VTRAWProcessingSession.T](vtrawprocessingsession/t.md)
 
 ## Relationships
 
@@ -45,6 +49,7 @@ The session reference is a reference-counted CF object.
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

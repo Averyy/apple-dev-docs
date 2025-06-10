@@ -1,6 +1,6 @@
 # WeatherSeverity.extreme
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Extraordinary threat.

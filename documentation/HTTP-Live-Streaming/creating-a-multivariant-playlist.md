@@ -1,6 +1,6 @@
 # Creating a Multivariant Playlist
 
-**Framework**: Http Live Streaming
+**Framework**: HTTP Live Streaming
 
 Offer multiple playlist files to provide different encodings of the same content.
 
@@ -48,4 +48,4 @@ The `EXT-X-STREAM-INF` tag has the following parameters:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HTTP-Live-Streaming/creating-a-multivariant-playlist)*
+*[View on Apple Developer](https://developer.apple.com/documentation/http-live-streaming/creating-a-multivariant-playlist)*

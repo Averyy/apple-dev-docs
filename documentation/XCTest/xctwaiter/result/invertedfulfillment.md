@@ -1,6 +1,6 @@
 # XCTWaiter.Result.invertedFulfillment
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 An inverted expectation was fulfilled.

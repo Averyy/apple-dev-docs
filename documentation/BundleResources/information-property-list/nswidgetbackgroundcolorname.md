@@ -18,6 +18,8 @@ While you can set this directly in your Info.plist, the recommended approach is 
 
 ## See Also
 
+- [UIDesignRequiresCompatibility](information-property-list/uidesignrequirescompatibility.md)
+  A Boolean value that indicates whether the system runs the app using a compatibility mode for UI.
 - [UIUserInterfaceStyle](information-property-list/uiuserinterfacestyle.md)
   The user interface style for the app.
 - [UIViewEdgeAntialiasing](information-property-list/uiviewedgeantialiasing.md)

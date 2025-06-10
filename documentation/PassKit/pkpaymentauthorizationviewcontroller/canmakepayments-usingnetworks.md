@@ -15,7 +15,7 @@ Returns whether the user can make payments through the specified network.
 ## Declaration
 
 ```swift
-@MainActor
+nonisolated
 class func canMakePayments(usingNetworks supportedNetworks: [PKPaymentNetwork]) -> Bool
 ```
 

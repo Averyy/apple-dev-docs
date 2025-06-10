@@ -41,6 +41,7 @@ Inspect the [`errorCode`](executedistributedtargeterror/errorcode-swift.property
 - [DistributedActorSystemError](distributedactorsystemerror.md)
 - [Error](../swift/error.md)
 - [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

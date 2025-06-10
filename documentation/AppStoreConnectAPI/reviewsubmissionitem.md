@@ -25,6 +25,8 @@ object ReviewSubmissionItem
 - [object ReviewSubmissionCreateRequest](reviewsubmissioncreaterequest.md)
 - [object ReviewSubmissionResponse](reviewsubmissionresponse.md)
 - [object ReviewSubmissionsResponse](reviewsubmissionsresponse.md)
+- [object AppReviewSubmissionsLinkagesResponse](appreviewsubmissionslinkagesresponse.md)
+- [object ReviewSubmissionItemsLinkagesResponse](reviewsubmissionitemslinkagesresponse.md)
 
 
 ---

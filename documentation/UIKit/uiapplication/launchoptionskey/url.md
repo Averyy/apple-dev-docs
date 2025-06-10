@@ -9,7 +9,7 @@ A key indicating that the app was launched so that it could open the specified U
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration

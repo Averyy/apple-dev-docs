@@ -44,6 +44,7 @@ This layout container behaves like a [`VStack`](vstack.md), but conforms to the 
 - [Copyable](../Swift/Copyable.md)
 - [Layout](layout.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

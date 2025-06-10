@@ -1,6 +1,6 @@
 # Severity
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: typealias
 
 The level of danger to life and property.

@@ -25,8 +25,6 @@ If this method returns [`true`](https://developer.apple.com/documentation/swift/
 
 > ❗ **Important**:  Using the [`requestAuthorization(toShare:read:)`](hkhealthstore/requestauthorization(toshare:read:).md) method to request read access to any data types that require per-object authorization fails with an [`HKError.Code.errorInvalidArgument`](hkerror/code/errorinvalidargument.md) error.
 
- Using the [`requestAuthorization(toShare:read:)`](hkhealthstore/requestauthorization(toshare:read:).md) method to request read access to any data types that require per-object authorization fails with an [`HKError.Code.errorInvalidArgument`](hkerror/code/errorinvalidargument.md) error.
-
 ## See Also
 
 - [class HKPrescriptionType](hkprescriptiontype.md)

@@ -1,6 +1,6 @@
 # TRIANGLE_FAN
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

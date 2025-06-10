@@ -14,6 +14,10 @@ An annotation for a place.
 interface mapkit.PlaceAnnotation
 ```
 
+## Mentions
+
+- [MapKit JS 5](mapkit-js-5.md)
+
 #### Overview
 
 For information on creating annotations and adding them to a map, see [`Annotations`](annotations.md).
@@ -26,6 +30,8 @@ For information on creating annotations and adding them to a map, see [`Annotati
 
 ## Relationships
 
+### Inherits From
+- [mapkit.MapFeatureAnnotation](mapkit.mapfeatureannotation.md)
 ### Inherited By
 - [mapkit.MarkerAnnotation](mapkit.markerannotation/mapkit.markerannotation.md)
 

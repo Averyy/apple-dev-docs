@@ -34,8 +34,6 @@ The default value of this property is [`false`](https://developer.apple.com/docu
 
 > ❗ **Important**:  Setting the value to [`true`](https://developer.apple.com/documentation/swift/true) but omitting the `UIBackgroundModes` key and `location` value in your app’s `Info.plist` file is a fatal error that terminates the app.
 
- Setting the value to [`true`](https://developer.apple.com/documentation/swift/true) but omitting the `UIBackgroundModes` key and `location` value in your app’s `Info.plist` file is a fatal error that terminates the app.
-
 ## See Also
 
 - [func startUpdatingLocation()](cllocationmanager/startupdatinglocation.md)

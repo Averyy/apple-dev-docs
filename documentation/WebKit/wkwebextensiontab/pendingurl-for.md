@@ -1,6 +1,6 @@
 # pendingURL(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the pending URL of the tab is needed.

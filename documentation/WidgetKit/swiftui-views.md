@@ -1,6 +1,6 @@
 # SwiftUI views for widgets
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Present your app’s content in widgets with SwiftUI views.
 
@@ -30,7 +30,7 @@ Widgets can use many, but not all, SwiftUI views to present content. Use the vie
 ### Adding labels and links
 - [struct Label<Title, Icon> where Title : View, Icon : View](../SwiftUI/Label.md)
   A standard label for user interface items, consisting of an icon with a title.
-- [struct Link<Label> where Label : View](../SwiftUI/Link.md)
+- [@MainActor @preconcurrency struct Link<Label> where Label : View](../SwiftUI/Link.md)
   A control for navigating to a URL.
 ### Stacking views
 - [@frozen struct HStack<Content> where Content : View](../SwiftUI/HStack.md)
@@ -64,7 +64,7 @@ Widgets can use many, but not all, SwiftUI views to present content. Use the vie
 - [struct OutlineGroup<Data, ID, Parent, Leaf, Subgroup> where Data : RandomAccessCollection, ID : Hashable](../SwiftUI/OutlineGroup.md)
   A structure that computes views and disclosure groups on demand from an underlying collection of tree-structured, identified data.
 ### Adding spacers and dividers
-- [@MainActor @frozen @preconcurrency struct Spacer](../SwiftUI/Spacer.md)
+- [@frozen struct Spacer](../SwiftUI/Spacer.md)
   A flexible space that expands along the major axis of its containing stack layout, or on both axes if not contained in a stack.
 - [struct Divider](../SwiftUI/Divider.md)
   A visual element that can be used to separate other content.
@@ -139,12 +139,22 @@ Widgets can use many, but not all, SwiftUI views to present content. Use the vie
 
 ## See Also
 
-- [Creating views for widgets, Live Activities, and watch complications](creating-views-for-widgets-live-activities-and-watch-complications.md)
-  Implement glanceable views with WidgetKit and SwiftUI.
 - [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
   Create widgets that support additional platforms and adapt to their context.
+- [Displaying the right widget background](displaying-the-right-widget-background.md)
+  Group your widget’s background views and mark them as removable to ensure your widget appears correctly for each context and platform.
+- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
+  Make your widget feel at home on Apple platforms and Liquid Glass by using accented rendering mode.
+- [Adding StandBy and CarPlay support to your widget](adding-standby-and-carplay-support-to-your-widget.md)
+  Ensure that your small system family widget works well in StandBy and CarPlay.
+- [Creating views for widgets, Live Activities, and watch complications](creating-views-for-widgets-live-activities-and-watch-complications.md)
+  Implement glanceable views with WidgetKit and SwiftUI.
 - [Introducing SwiftUI](https://developer.apple.com/tutorials/SwiftUI)
   SwiftUI is a modern way to declare user interfaces for any Apple platform. Create beautiful, dynamic apps faster than ever before.
+- [struct WidgetRenderingMode](widgetrenderingmode.md)
+  Constants that indicate the rendering mode for a widget.
+- [struct WidgetAccentedRenderingMode](widgetaccentedrenderingmode.md)
+  Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](widgetrenderingmode/accented.md) mode.
 - [struct AccessoryWidgetBackground](accessorywidgetbackground.md)
   An adaptive background view that provides a standard appearance based on the the widget’s environment.
 - [struct WidgetLocation](widgetlocation.md)
@@ -153,4 +163,4 @@ Widgets can use many, but not all, SwiftUI views to present content. Use the vie
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/swiftui-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/swiftui-views)*

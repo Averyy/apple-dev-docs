@@ -1,6 +1,6 @@
 # Customizing and resizing sheets in UIKit
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Discover how to create a layered and customized sheet experience in UIKit.
 
@@ -35,4 +35,4 @@ Discover how to create a layered and customized sheet experience in UIKit.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/customizing-and-resizing-sheets-in-uikit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/customizing-and-resizing-sheets-in-uikit)*

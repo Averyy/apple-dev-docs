@@ -1,6 +1,6 @@
 # session(_:didReceive:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Tells the delegate that the session successfully received a file from its counterpart.
@@ -25,8 +25,6 @@ The session object calls this method when it successfully receives a file from i
 Remember to move the file referenced by the `file` parameter if you intend to keep it. If you don’t move the file synchronously during your implementation of this method, the system deletes the file when the method returns.
 
 > ⚠️ **Warning**:  Always test Watch Connectivity file transfers on paired devices. The system doesn’t call the [`session(_:didReceive:)`](wcsessiondelegate/session(_:didreceive:).md) method in Simulator.
-
- Always test Watch Connectivity file transfers on paired devices. The system doesn’t call the [`session(_:didReceive:)`](wcsessiondelegate/session(_:didreceive:).md) method in Simulator.
 
 ## Parameters
 

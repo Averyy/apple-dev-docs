@@ -1,6 +1,6 @@
 # obtain(withRights:flags:environment:authorizedRights:)
 
-**Framework**: Securityfoundation  
+**Framework**: Security Foundation  
 **Kind**: method
 
 Authorizes and preauthorizes rights to access a privileged operation and returns the granted rights.

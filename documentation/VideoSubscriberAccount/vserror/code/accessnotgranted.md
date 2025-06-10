@@ -1,6 +1,6 @@
 # VSError.Code.accessNotGranted
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 The user hasn’t granted access to their subscription information.

@@ -24,8 +24,6 @@ This notification tells your app that an [`MTLDevice`](mtldevice.md) instance an
 
 > ❗ **Important**:  If a person removes a GPU without warning, this notification may be posted without a prior [`removalRequested`](mtldevicenotificationname/removalrequested.md) notification.
 
- If a person removes a GPU without warning, this notification may be posted without a prior [`removalRequested`](mtldevicenotificationname/removalrequested.md) notification.
-
 ## See Also
 
 - [static let wasAdded: MTLDeviceNotificationName](mtldevicenotificationname/wasadded.md)

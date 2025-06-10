@@ -92,9 +92,9 @@ Note that the default font for `NSAttributedString` objects is Helvetica 12-poin
 - [func fixParagraphStyleAttribute(in: NSRange)](nsmutableattributedstring/fixparagraphstyleattribute(in:).md)
   Fixes the paragraph style attributes in the specified range and assigns a paragraph style to all characters in the paragraph.
 ### Reading Content
-- [func read(from: Data, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) throws](nsmutableattributedstring/read(from:options:documentattributes:)-5mbcx.md)
+- [func read(from: Data, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) throws](nsmutableattributedstring/read(from:options:documentattributes:error:)-5mbcx.md)
   Sets the contents of the attributed string using the specified data object`.`
-- [func read(from: URL, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) throws](nsmutableattributedstring/read(from:options:documentattributes:)-54wth.md)
+- [func read(from: URL, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) throws](nsmutableattributedstring/read(from:options:documentattributes:error:)-54wth.md)
   Sets the contents of attributed string using the contents of the specified file.
 ### Deprecated
 - [func read(from: Data, options: [AnyHashable : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) -> Bool](nsmutableattributedstring/read(from:options:documentattributes:)-967j7.md)
@@ -119,6 +119,8 @@ Note that the default font for `NSAttributedString` objects is Helvetica 12-poin
 - [NSMutableCopying](nsmutablecopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -134,4 +136,4 @@ Note that the default font for `NSAttributedString` objects is Helvetica 12-poin
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsmutableattributedstring)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsmutableattributedstring)*

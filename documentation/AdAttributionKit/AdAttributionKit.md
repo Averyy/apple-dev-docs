@@ -83,6 +83,8 @@ Apple designs ad attribution APIs to help maintain user privacy. Apps don’t ne
   Set up a publisher app to participate in ad campaigns.
 - [Configuring an advertised app](configuring-an-advertised-app.md)
   Prepare an advertised app to participate in ad campaigns.
+- [Configuring attribution rules for your app](configuring-attribution-rules-for-your-app.md)
+  Tune aspects of attribution flow, including the time available to register impressions and the minimum time your app is willing to accept conversions.
 ### Ad attribution testing
 - [Testing ad attributions with Developer Mode](testing-adattributionkit-with-developer-mode.md)
   Reduce the time-window for ad attributions and inspect postbacks using a proxy during testing.

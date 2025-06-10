@@ -8,10 +8,10 @@ A result builder that allows you to declaratively describe the properties to inc
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -29,6 +29,10 @@ enum EntityQueryPropertiesBuilder<Entity, ComparatorMappingType> where Entity : 
   An object that identifies a specific entity property and the query comparators it supports.
 ### Type Methods
 - [static func buildExpression(EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>) -> EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>](entityquerypropertiesbuilder/buildexpression(_:).md)
+
+## See Also
+
+- [init(properties: () -> [EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>])](entityqueryproperties/init(properties:).md)
 
 
 ---

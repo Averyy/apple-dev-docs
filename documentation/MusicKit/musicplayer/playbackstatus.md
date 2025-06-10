@@ -56,6 +56,7 @@ You determine a music player’s state by checking the [`playbackStatus`](musicp
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

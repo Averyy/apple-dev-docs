@@ -20,8 +20,8 @@ static func presentOfferCodeRedeemSheet(in scene: UIWindowScene) async throws
 
 ## Mentions
 
-- [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
+- [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
 - [Testing purchases made outside your app](testing-purchases-made-outside-your-app.md)
 
 #### Discussion
@@ -29,8 +29,6 @@ static func presentOfferCodeRedeemSheet(in scene: UIWindowScene) async throws
 The [`presentOfferCodeRedeemSheet(in:)`](appstore/presentoffercoderedeemsheet(in:).md) method displays a system sheet in the window scene, where customers can enter and redeem subscription offer codes. If you generate subscription offer codes in App Store Connect, call this function to enable users to redeem the offer. To display the sheet using SwiftUI, see [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:)).
 
 > ❗ **Important**:  Set up subscription offer codes in App Store Connect before calling this API. Customers can only redeem these offers in your app through the redemption sheet; don’t use a custom UI.
-
- Set up subscription offer codes in App Store Connect before calling this API. Customers can only redeem these offers in your app through the redemption sheet; don’t use a custom UI.
 
 For more information on offer codes, see [`Supporting subscription offer codes in your app`](supporting-subscription-offer-codes-in-your-app.md).
 

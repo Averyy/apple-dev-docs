@@ -1,6 +1,6 @@
 # MPSImageHistogramSpecification
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: cl
 
 A filter that performs a histogram specification operation on an image. 

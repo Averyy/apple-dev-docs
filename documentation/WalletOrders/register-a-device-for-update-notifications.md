@@ -1,6 +1,6 @@
 # Register a device for update notifications
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: httpRequest
 
 Registers a device to receive update notifications for an order.

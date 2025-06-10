@@ -1,6 +1,6 @@
 # allowsContentJavaScript
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether JavaScript from web content is allowed to run.

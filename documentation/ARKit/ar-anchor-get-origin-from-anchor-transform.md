@@ -6,6 +6,7 @@
 Gets the transform from the anchor to the origin coordinate system.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

@@ -58,6 +58,7 @@ The [`UnitDispersion`](unitdispersion.md) class defines its [`baseUnit()`](dimen
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

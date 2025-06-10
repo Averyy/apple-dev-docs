@@ -30,8 +30,6 @@ Performing any of the standard actions may result in your application being move
 
 > ❗ **Important**:  Unknown-person view controllers must be used with a navigation controller in order to function properly.
 
- Unknown-person view controllers must be used with a navigation controller in order to function properly.
-
 ##### Subclassing
 
 The `ABUnknownPersonViewController` class does not support subclassing.
@@ -73,6 +71,7 @@ The `ABUnknownPersonViewController` class does not support subclassing.
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

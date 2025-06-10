@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The extension controller delegate.

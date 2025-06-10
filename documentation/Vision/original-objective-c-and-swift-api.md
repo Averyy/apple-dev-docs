@@ -319,6 +319,17 @@
   A constant for specifying an unspecified request revision.
 ### Macros
 - [Macros](vision-macros.md)
+### Structures
+- [struct ImageCoordinateConversionHelpers](imagecoordinateconversionhelpers.md)
+- [struct ImagePixelDimensions](imagepixeldimensions.md)
+- [struct ResourceVersion](resourceversion.md)
+- [struct VNVideoProcessingOption](vnvideoprocessingoption.md)
+  Options to pass to the video processor when adding requests.
+### Type aliases
+- [typealias DetectorKey](detectorkey.md)
+- [typealias NamedMultipleObjectDataAccessBlock](namedmultipleobjectdataaccessblock.md)
+- [typealias NamedObjectDataAccessBlock](namedobjectdataaccessblock.md)
+- [typealias NamedObjectsDictionary](namedobjectsdictionary.md)
 
 
 ---

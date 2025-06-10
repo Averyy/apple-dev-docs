@@ -47,6 +47,7 @@ For design guidance, see [`Layout`](https://developer.apple.com/design/Human-Int
 - [struct SubviewsCollection](subviewscollection.md)
   An opaque collection representing the subviews of view.
 - [struct SubviewsCollectionSlice](subviewscollectionslice.md)
+  A slice of a SubviewsCollection.
 - [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](view/containervalue(_:_:).md)
   Sets a particular container value of a view.
 - [struct ContainerValues](containervalues.md)

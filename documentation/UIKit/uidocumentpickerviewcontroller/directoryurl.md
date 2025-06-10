@@ -1,6 +1,6 @@
 # directoryURL
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The initial directory that the document picker displays.

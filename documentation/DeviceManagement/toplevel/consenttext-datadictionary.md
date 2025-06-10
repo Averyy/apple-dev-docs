@@ -12,8 +12,6 @@ The dictionary of consent agreements per language.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,14 +21,12 @@ object TopLevel.ConsentText
 
 ## Topics
 
-### Profiles
+### Objects
 - [object TopLevel.ConsentText.ConsentTextItem](toplevel/consenttext-data.dictionary/consenttextitem-data.dictionary.md)
   A specific pairing of language code and consent text.
 
 ## See Also
 
-- [object TopLevel.ConsentText.ConsentTextItem](toplevel/consenttext-data.dictionary/consenttextitem-data.dictionary.md)
-  A specific pairing of language code and consent text.
 - [object TopLevel.PayloadContentItem](toplevel/payloadcontentitem.md)
   The payload-specific content for this profile.
 

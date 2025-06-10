@@ -1,6 +1,6 @@
 # MultivariateLinearRegressor.Model
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: struct
 
 A trained multivariate linear regressor model.
@@ -53,6 +53,7 @@ struct Model
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transformer](transformer.md)
 
 ## See Also
@@ -81,4 +82,4 @@ struct Model
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/multivariatelinearregressor/model)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/multivariatelinearregressor/model)*

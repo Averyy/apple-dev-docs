@@ -22,8 +22,6 @@ The delegate is sent messages when content is loading. See [`UIWebViewDelegate`]
 
 > ❗ **Important**:  Before releasing an instance of `UIWebView` for which you have set a delegate, you must first set its delegate property to `nil`. This can be done, for example, in your dealloc method.
 
- Before releasing an instance of `UIWebView` for which you have set a delegate, you must first set its delegate property to `nil`. This can be done, for example, in your dealloc method.
-
 ## See Also
 
 - [protocol UIWebViewDelegate](uiwebviewdelegate.md)

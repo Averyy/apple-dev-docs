@@ -6,8 +6,6 @@
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR media and should not be used for new development.
 
-VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR media and should not be used for new development.
-
 This section includes information that pertains to [`VR world atom container`](vr_world_atom_container.md) and [`Node information atom container`](node_information_atom_container.md).
 
 ## Topics

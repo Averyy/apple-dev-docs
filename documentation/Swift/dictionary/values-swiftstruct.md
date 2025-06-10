@@ -67,6 +67,7 @@ struct Values
 - [CustomStringConvertible](customstringconvertible.md)
 - [MutableCollection](mutablecollection.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

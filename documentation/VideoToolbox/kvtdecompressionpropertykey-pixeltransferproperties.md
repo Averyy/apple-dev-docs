@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_PixelTransferProperties
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Specific pixel transfer features to be used during decompression.

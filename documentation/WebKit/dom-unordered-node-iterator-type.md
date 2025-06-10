@@ -1,6 +1,6 @@
 # DOM_UNORDERED_NODE_ITERATOR_TYPE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

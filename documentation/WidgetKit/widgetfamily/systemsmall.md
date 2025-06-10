@@ -1,6 +1,6 @@
 # WidgetFamily.systemSmall
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: case
 
 A small widget.
@@ -8,8 +8,9 @@ A small widget.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -22,6 +23,7 @@ case systemSmall
 - [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
 - [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
 - [Adding interactivity to widgets and Live Activities](adding-interactivity-to-widgets-and-live-activities.md)
+- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
 
 #### Discussion
 

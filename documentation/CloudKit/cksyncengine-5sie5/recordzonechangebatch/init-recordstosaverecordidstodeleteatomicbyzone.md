@@ -24,8 +24,6 @@ init(recordsToSave: [CKRecord] = [], recordIDsToDelete: [CKRecord.ID] = [], atom
 
 > ❗ **Important**:  When using this initializer to create batches, consider the number of records you specify and their combined size. If you specify too many records, or their combined size is too large, the send operation may fail with an error of type [`CKError.Code.limitExceeded`](ckerror/code/limitexceeded.md).
 
- When using this initializer to create batches, consider the number of records you specify and their combined size. If you specify too many records, or their combined size is too large, the send operation may fail with an error of type [`CKError.Code.limitExceeded`](ckerror/code/limitexceeded.md).
-
 ## Parameters
 
 - `recordsToSave`: The records to save.

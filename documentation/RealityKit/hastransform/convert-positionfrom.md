@@ -10,6 +10,7 @@ Converts a position from the local space of a reference entity to the local spac
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

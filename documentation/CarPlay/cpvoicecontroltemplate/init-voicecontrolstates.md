@@ -13,6 +13,7 @@ Creates a voice control template with a list of voice control states.
 ## Declaration
 
 ```swift
+@MainActor
 init(voiceControlStates: [CPVoiceControlState])
 ```
 

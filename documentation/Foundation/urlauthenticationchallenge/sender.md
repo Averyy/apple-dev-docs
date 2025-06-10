@@ -28,8 +28,6 @@ However, if you are using the legacy `NSURLConnection` or `NSURLDownload` API, y
 
 > ⚠️ **Warning**:  Do not call methods directly on this object if you are using the [`URLSession`](urlsession.md) API.
 
- Do not call methods directly on this object if you are using the [`URLSession`](urlsession.md) API.
-
 
 ---
 

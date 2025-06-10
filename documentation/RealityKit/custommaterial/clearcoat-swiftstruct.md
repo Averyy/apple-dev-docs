@@ -10,6 +10,7 @@ An object that defines the intensity of an entity’s clear, shiny coating.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -31,8 +32,6 @@ struct Clearcoat
   The intensity of the clearcoat.
 - [var texture: CustomMaterial.Texture?](custommaterial/clearcoat-swift.struct/texture.md)
   The clearcoat intensity specified using a UV-mapped image.
-- [CustomMaterial.Clearcoat.FloatLiteralType](custommaterial/clearcoat-swift.struct/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # FRAMEBUFFER_UNSUPPORTED
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

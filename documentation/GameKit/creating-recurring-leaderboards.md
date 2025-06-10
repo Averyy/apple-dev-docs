@@ -1,6 +1,6 @@
 # Creating recurring leaderboards
 
-**Framework**: Gamekit
+**Framework**: GameKit
 
 Create a leaderboard for your game that ranks player scores based on a schedule.
 
@@ -98,4 +98,4 @@ if let current = leaderboards.first {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/creating-recurring-leaderboards)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/creating-recurring-leaderboards)*

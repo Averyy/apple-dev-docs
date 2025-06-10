@@ -28,6 +28,7 @@ A NEHotspostHelperResponse object.
 ## See Also
 
 - [enum NEHotspotHelperResult](nehotspothelperresult.md)
+  The result of handling a hotspot command.
 
 
 ---

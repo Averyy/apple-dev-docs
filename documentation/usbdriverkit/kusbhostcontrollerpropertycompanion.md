@@ -14,8 +14,6 @@
 
 ## See Also
 
-- [kUSBHostControllerPropertyRevision](kusbhostcontrollerpropertyrevision.md)
-- [kUSBHostControllerPropertyMuxEnabled](kusbhostcontrollerpropertymuxenabled.md)
 - [kUSBHostControllerPropertyRTD3Supported](kusbhostcontrollerpropertyrtd3supported.md)
 - [kUSBHostControllerPropertySleepSupported](kusbhostcontrollerpropertysleepsupported.md)
 - [kUSBHostControllerPropertyLowSpeedCompanion](kusbhostcontrollerpropertylowspeedcompanion.md)

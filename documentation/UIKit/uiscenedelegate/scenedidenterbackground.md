@@ -1,6 +1,6 @@
 # sceneDidEnterBackground(_:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Tells the delegate that the scene is running in the background and is no longer onscreen.

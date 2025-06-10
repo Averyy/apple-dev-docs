@@ -1,6 +1,6 @@
 # Media playback
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Manage the playback of media assets and interstitial content, independent of how you present that content in your interface.
 
@@ -20,8 +20,12 @@ You create an instance of [`AVPlayerItem`](avplayeritem.md) to play a media asse
 - [Configuring your app for media playback](configuring-your-app-for-media-playback.md)
   Configure apps to enable standard media playback behavior.
 ### Playback control
+- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
+  Keep your user interface in sync with state changes from playback objects.
 - [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
   Play, pause, and seek through a media presentation.
+- [Creating a seamless multiview playback experience](creating-a-seamless-multiview-playback-experience.md)
+  Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
 - [class AVPlayer](avplayer.md)
   An object that provides the interface to control the player’s transport behavior.
 - [class AVPlayerItem](avplayeritem.md)
@@ -147,4 +151,4 @@ You create an instance of [`AVPlayerItem`](avplayeritem.md) to play a media asse
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/media-playback)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/media-playback)*

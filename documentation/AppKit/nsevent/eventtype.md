@@ -93,6 +93,8 @@ These constants appear in the event’s [`type`](nsevent/type.md) property. You 
   An event that initiates a Quick Look request.
 - [NSEvent.EventType.systemDefined](nsevent/eventtype/systemdefined.md)
   A system-related event occurred.
+### Enumeration Cases
+- [NSEvent.EventType.mouseCancelled](nsevent/eventtype/mousecancelled.md)
 ### Initializers
 - [init?(rawValue: UInt)](nsevent/eventtype/init(rawvalue:).md)
 
@@ -104,6 +106,7 @@ These constants appear in the event’s [`type`](nsevent/type.md) property. You 
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

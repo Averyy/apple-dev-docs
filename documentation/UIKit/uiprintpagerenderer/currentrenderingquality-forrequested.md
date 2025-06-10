@@ -14,7 +14,6 @@ Determines the actual print-rendering quality according to the requested renderi
 ## Declaration
 
 ```swift
-@MainActor
 func currentRenderingQuality(forRequested requestedRenderingQuality: UIPrintRenderingQuality) -> UIPrintRenderingQuality
 ```
 

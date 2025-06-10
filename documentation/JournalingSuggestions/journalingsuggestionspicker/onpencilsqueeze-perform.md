@@ -1,6 +1,6 @@
 # onPencilSqueeze(perform:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Adds an action to perform when the user squeezes their Apple Pencil.

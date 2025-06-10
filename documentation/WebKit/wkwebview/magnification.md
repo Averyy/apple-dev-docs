@@ -1,6 +1,6 @@
 # magnification
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The factor by which the page content is currently scaled.

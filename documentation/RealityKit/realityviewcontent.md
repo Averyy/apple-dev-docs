@@ -25,18 +25,10 @@ You can use `RealityViewContent` to add and remove entities, subscribe to Realit
 ### Structures
 - [RealityViewContent.Body](realityviewcontent/body.md)
   The default view contents of a reality view, using reality view content.
-### Instance Properties
-- [var entities: RealityViewEntityCollection](realityviewcontent/entities-swift.property.md)
-  A collection of RealityKit entities that this view content renders within the scene.
 ### Instance Methods
+- [func animate(body: () -> Void, completion: (() -> Void)?)](realityviewcontent/animate(body:completion:).md)
 - [func subscribe<E>(to: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?, (E) -> Void) -> EventSubscription](realityviewcontent/subscribe(to:on:componenttype:_:).md)
   Subscribes to an event type, optionally limited to events affecting a source entity or scene, or a specific component type for component events.
-### Type Aliases
-- [RealityViewContent.Entities](realityviewcontent/entities-swift.typealias.md)
-  The type of collection used for `entities`.
-### Default Implementations
-- [RealityCoordinateSpaceConverting Implementations](realityviewcontent/realitycoordinatespaceconverting-implementations.md)
-- [RealityViewContentProtocol Implementations](realityviewcontent/realityviewcontentprotocol-implementations.md)
 
 ## Relationships
 
@@ -58,6 +50,8 @@ You can use `RealityViewContent` to add and remove entities, subscribe to Realit
   A view that represents the default placeholder for a RealityView.
 - [struct RealityViewEntityCollection](realityviewentitycollection.md)
   A collection of entities in a RealityView.
+- [struct RealityViewLayoutOption](realityviewlayoutoption.md)
+  Specifies the frame sizing and content alignment option for`RealityView`.
 - [protocol EntityCollection](entitycollection.md)
   An ordered, mutable collection of entities.
 

@@ -30,7 +30,7 @@ Generating sample buffers in batches optimizes performance by allowing the syste
 
 ## See Also
 
-- [func makeSampleBuffer(for: AVSampleBufferRequest) throws -> CMSampleBuffer](avsamplebuffergenerator/makesamplebuffer(for:).md)
+- [func makeSampleBuffer(for: AVSampleBufferRequest) throws -> sending CMSampleBuffer](avsamplebuffergenerator/makesamplebuffer(for:).md)
   Creates a sample buffer, and attempts to load its data asynchronously if requested.
 - [func makeSampleBuffer(for: AVSampleBufferRequest, addTo: AVSampleBufferGeneratorBatch) throws -> CMSampleBuffer](avsamplebuffergenerator/makesamplebuffer(for:addto:).md)
   Creates a sample buffer and attempts to defer I/O for its data.

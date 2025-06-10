@@ -1,6 +1,6 @@
 # READ_FRAMEBUFFER_BINDING
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

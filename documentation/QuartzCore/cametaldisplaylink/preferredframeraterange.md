@@ -1,6 +1,6 @@
 # preferredFrameRateRange
 
-**Framework**: Quartzcore  
+**Framework**: Core Animation  
 **Kind**: property
 
 A range of frequencies your app allows for frame updates, affecting how often the system invokes your delegate’s callback.
@@ -43,4 +43,4 @@ See [`Optimizing ProMotion refresh rates for iPhone 13 Pro and iPad Pro`](optimi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/cametaldisplaylink/preferredframeraterange)*
+*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/cametaldisplaylink/preferredframeraterange)*

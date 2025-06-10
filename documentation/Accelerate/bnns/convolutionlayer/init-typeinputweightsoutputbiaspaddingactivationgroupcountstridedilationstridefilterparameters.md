@@ -11,9 +11,9 @@ Returns a new convolution layer.
 - Mac Catalyst ?+
 - macOS 11.0+
 - tvOS 14.0+
+- visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
-- visionOS ?+
 
 ## Declaration
 
@@ -24,8 +24,6 @@ convenience init?(type convolutionType: BNNS.ConvolutionType, input: BNNSNDArray
 #### Discussion
 
 > ❗ **Important**:  Convolution layers only support arrays with a data type of `float`, `float16`, `int8`, or `uint8`.
-
- Convolution layers only support arrays with a data type of `float`, `float16`, `int8`, or `uint8`.
 
 ## Parameters
 

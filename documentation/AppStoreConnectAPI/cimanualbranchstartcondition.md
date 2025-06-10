@@ -30,6 +30,8 @@ object CiManualBranchStartCondition
   A response that contains a list of Build Runs resources.
 - [object CiManualPullRequestStartCondition](cimanualpullrequeststartcondition.md)
 - [object CiManualTagStartCondition](cimanualtagstartcondition.md)
+- [object CiWorkflowBuildRunsLinkagesResponse](ciworkflowbuildrunslinkagesresponse.md)
+- [object CiWorkflowRepositoryLinkageResponse](ciworkflowrepositorylinkageresponse.md)
 
 
 ---

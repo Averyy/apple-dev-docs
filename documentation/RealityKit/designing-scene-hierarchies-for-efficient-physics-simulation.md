@@ -18,8 +18,6 @@ For scenes created in Reality Composer, minimize the use of groups for objects t
 
 > ❗ **Important**: Although RealityKit performs better with shallow scene hierarchies, don’t flatten or otherwise modify the hierarchy of Reality Composer scenes. Reality Composer stores references to entities based on their location in the scene hierarchy. Flattening the hierarchy at runtime breaks those references.
 
-Although RealityKit performs better with shallow scene hierarchies, don’t flatten or otherwise modify the hierarchy of Reality Composer scenes. Reality Composer stores references to entities based on their location in the scene hierarchy. Flattening the hierarchy at runtime breaks those references.
-
 ##### Assign a Physics Origin
 
 By default, RealityKit uses the scene’s root entity as the origin of the physics simulation and simulates objects at their actual size. You can alternatively designate a different entity in your scene to be the  by using the [`physicsOrigin`](arview/physicsorigin.md) property of your [`ARView`](arview.md). Designating an entity as the physics origin means that all physics calculations are relative to the specified entity rather than the scene’s root entity. For more information about when to specify a separate physics origin, see [`Handling different-sized objects in physics simulations`](handling-different-sized-objects-in-physics-simulations.md).
@@ -31,8 +29,6 @@ arView.physicsOrigin = entity
 When you set the physics origin, you can modify the scale, position, and orientation of the scene in the view without affecting the physics simulation. You can also use transform values that are different from the values used in the visible scene. For example, you can create a tabletop AR experience with characters that are a few inches tall but behave as if they’re much larger.
 
 > ❗ **Important**: Set the [`physicsOrigin`](arview/physicsorigin.md) before you add entities to your scene. Unpredictable behavior can occur if you change the physics origin in a scene after the simulation begins.
-
-Set the [`physicsOrigin`](arview/physicsorigin.md) before you add entities to your scene. Unpredictable behavior can occur if you change the physics origin in a scene after the simulation begins.
 
 You can’t specify a different physics origin using Reality Composer. Instead, designate an entity in a loaded Reality Composer scene as the physics entity or add a new entity to the loaded scene to act as the physics origin.
 

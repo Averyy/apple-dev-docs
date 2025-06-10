@@ -1,6 +1,6 @@
 # supportedNetworks
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
 The payment methods that you support.

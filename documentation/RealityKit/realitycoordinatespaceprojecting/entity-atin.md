@@ -11,6 +11,7 @@ Finds the first entity hit when projecting a ray from a starting point.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -25,8 +26,6 @@ The entity at `point`. Returns `nil` if no entity was found.
 #### Discussion
 
 > ❗ **Important**: RealityKit performs hit tests (ray-casts) against collision shapes. Entities without a valid [`CollisionComponent`](collisioncomponent.md) are ignored by hit tests.
-
-RealityKit performs hit tests (ray-casts) against collision shapes. Entities without a valid [`CollisionComponent`](collisioncomponent.md) are ignored by hit tests.
 
 ## Parameters
 

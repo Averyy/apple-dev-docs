@@ -26,6 +26,11 @@ func SparseMultiply(_ A: SparseMatrix_Complex_Float, _ X: DenseMatrix_Complex_Fl
 - `X`: (Input) dense matrix. Inner dimensions of   and   must match.
 - `Y`: (Output) dense matrix. Dimensions must match the outer dimensions   of   and  . Overwritten with their product.
 
+## See Also
+
+- [func SparseMultiply(SparseMatrix_Complex_Double, DenseMatrix_Complex_Double, DenseMatrix_Complex_Double)](sparsemultiply(_:_:_:)-1sjuk.md)
+  Performs the multiplication `Y = AX` for complex double values.
+
 
 ---
 

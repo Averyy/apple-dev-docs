@@ -1,6 +1,6 @@
 # scrollToRow(at:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Scrolls the row at the specified index into view.

@@ -1,6 +1,6 @@
 # Making your app’s functionality available to Siri
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Add assistant schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
 
@@ -23,7 +23,7 @@ Using this sample app, people can keep track of photos and videos they capture w
 This sample uses [`App intent domains`](app-intent-domains.md) to make the [`AppEnum`](appenum.md), [`AppEntity`](appentity.md), and [`AppIntent`](appintent.md) implementations available to Siri as shown in the following example:
 
 ```swift
-@AssistantEnum(schema: .photos.assetType)
+@AppEnum(schema: .photos.assetType)
 enum AssetType: String, AppEnum {
     case photo
     case video
@@ -40,7 +40,7 @@ enum AssetType: String, AppEnum {
 People can use Spotlight to search for data the sample contains. To enable this functionality, the sample defines an app entity that conforms to [`IndexedEntity`](IndexedEntity.md):
 
 ```swift
-@AssistantEntity(schema: .photos.asset)
+@AppEntity(schema: .photos.asset)
 struct AssetEntity: IndexedEntity {
 
     // MARK: Static
@@ -125,7 +125,7 @@ var body: some View {
     // ...
 ```
 
-For more information about making onscreen content available to Siri and Apple Intelligence, refer to [`Making onscreen content available to Siri and Apple Intelligence`](Making-onscreen-content-available-to-siri-and-apple-intelligence.md).
+Using app entities to make onscreen content available to Siri and Apple Intelligence need to conform to an assistant schema only if you support iOS 18. For more information, refer to [`Making onscreen content available to Siri and Apple Intelligence`](Making-onscreen-content-available-to-siri-and-apple-intelligence.md).
 
 ## See Also
 
@@ -139,4 +139,4 @@ For more information about making onscreen content available to Siri and Apple I
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-your-app-s-functionality-available-to-siri)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-your-app-s-functionality-available-to-siri)*

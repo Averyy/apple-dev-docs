@@ -44,7 +44,7 @@ Provide feedback to users using view-based animations and haptics.
 - [View layout](view-layout.md)
   Use stack views to lay out the views of your interface automatically. Use Auto Layout when you require precise placement of your views.
 - [Appearance customization](appearance-customization.md)
-  Add Dark Mode support to your app, customize the appearance of bars, and use appearance proxies to modify your UI.
+  Apply Liquid Glass to views, support Dark Mode in your app, customize the appearance of bars, and use appearance proxies to modify your UI.
 - [Windows and screens](windows-and-screens.md)
   Provide a container for your view hierarchies and other content.
 

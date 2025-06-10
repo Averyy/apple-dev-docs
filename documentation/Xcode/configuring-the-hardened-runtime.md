@@ -14,8 +14,6 @@ Before you select the required runtime exceptions and access to restricted resou
 
 > ❗ **Important**: Apple only notarizes macOS apps that enable the Hardened Runtime capability. For more information, see [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/Security/notarizing-macos-software-before-distribution).
 
-Apple only notarizes macOS apps that enable the Hardened Runtime capability. For more information, see [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/Security/notarizing-macos-software-before-distribution).
-
 ##### Specify Your Apps Runtime Exceptions
 
 Before your app can perform functionality that depends upon one or more runtime exceptions, you must add the entitlements for those exceptions by performing the following:
@@ -43,8 +41,6 @@ The following table describes the runtime exceptions the Hardened Runtime suppor
 
 > ⚠️ **Warning**: Specific runtime exceptions, such as Disable Executable Memory Protection, remove core security barriers from your app. Always apply caution when using runtime exceptions and opt for the narrowest set of entitlements that enable the required functionality.
 
-Specific runtime exceptions, such as Disable Executable Memory Protection, remove core security barriers from your app. Always apply caution when using runtime exceptions and opt for the narrowest set of entitlements that enable the required functionality.
-
 ##### Specify the Resource Access Your App Requires
 
 If your app accesses restricted or sensitive resources, such as the user’s photo library or address book, you must include the entitlements that provide access to those resources by following these steps:
@@ -60,8 +56,6 @@ If your app accesses restricted or sensitive resources, such as the user’s pho
 After you select the required resource access, Xcode updates the entitlements file of your app to include the corresponding entitlements and sets the value of those entitlements to `true`.
 
 > ❗ **Important**: Apps that contain the necessary entitlements must still seek the user’s explicit permission before they can access restricted resources such as the camera. See each resource’s corresponding framework documentation for specific requirements.
-
-Apps that contain the necessary entitlements must still seek the user’s explicit permission before they can access restricted resources such as the camera. See each resource’s corresponding framework documentation for specific requirements.
 
 The following table describes the resource access entitlements the Hardened Runtime supports:
 

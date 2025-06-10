@@ -29,8 +29,6 @@ To provide the decoded message content to MailKit, create an instance of [`MEDec
 
 > ❗ **Important**:  If decrypting the message fails, or the digital signature isn’t valid, include an error object with a localized description of the failure in the [`MEMessageSecurityInformation`](memessagesecurityinformation.md). Mail uses this description to inform the user of the issue.
 
- If decrypting the message fails, or the digital signature isn’t valid, include an error object with a localized description of the failure in the [`MEMessageSecurityInformation`](memessagesecurityinformation.md). Mail uses this description to inform the user of the issue.
-
 ## Parameters
 
 - `data`: The raw MIME message data, which may be encrypted or signed.

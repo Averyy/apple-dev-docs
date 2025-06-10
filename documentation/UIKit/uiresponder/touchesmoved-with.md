@@ -1,6 +1,6 @@
 # touchesMoved(_:with:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Tells the responder when one or more touches associated with an event changed.

@@ -41,6 +41,7 @@ Use the value of a route’s [`networkEndpoint`](avcustomdeviceroute/networkendp
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

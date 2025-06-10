@@ -1,6 +1,6 @@
 # Replacing UIWebView in your app
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Find a suitable alternative to handle your app’s web content.
 
@@ -34,7 +34,7 @@ If you need a high degree of configurability or are using web content in ways un
 | [`webViewDidFinishLoad(_:)`](https://developer.apple.com/documentation/uikit/uiwebviewdelegate/1617969-webviewdidfinishload) | [`webView(_:didFinish:)`](wknavigationdelegate/webview(_:didfinish:).md) |
 | [`webView(_:didFailLoadWithError:)`](https://developer.apple.com/documentation/uikit/uiwebviewdelegate/1617970-webview) | [`webView(_:didFailProvisionalNavigation:withError:)`](wknavigationdelegate/webview(_:didfailprovisionalnavigation:witherror:).md) or [`webView(_:didFail:withError:)`](wknavigationdelegate/webview(_:didfail:witherror:).md) |
 | [`webView(_:shouldStartLoadWith:navigationType:)`](https://developer.apple.com/documentation/uikit/uiwebviewdelegate/1617945-webview) | [`webView(_:decidePolicyFor:decisionHandler:)`](wknavigationdelegate/webview(_:decidepolicyfor:decisionhandler:)-2ni62.md) or [`webView(_:decidePolicyFor:decisionHandler:)`](wknavigationdelegate/webview(_:decidepolicyfor:decisionhandler:)-19mn2.md) |
-| [`connection(_:didReceive:)`](https://developer.apple.com/documentation/foundation/nsurlconnectiondelegate/1417135-connection) | [`webView(_:didReceive:completionHandler:)`](wknavigationdelegate/webview(_:didreceive:completionhandler:).md) |
+| [`connection(_:didReceive:)`](https://developer.apple.com/documentation/Foundation/NSURLConnectionDelegate/connection(_:didReceive:)) | [`webView(_:didReceive:completionHandler:)`](wknavigationdelegate/webview(_:didreceive:completionhandler:).md) |
 
 > **Note**:  The [`webView(_:decidePolicyFor:decisionHandler:)`](wknavigationdelegate/webview(_:decidepolicyfor:decisionhandler:)-2ni62.md) function doesn’t return a Boolean as its [`UIWebView`](https://developer.apple.com/documentation/UIKit/UIWebView) counterpart did; it uses the `decisionHandler` to return an [`WKNavigationActionPolicy.allow`](wknavigationactionpolicy/allow.md) or [`WKNavigationActionPolicy.cancel`](wknavigationactionpolicy/cancel.md) value.
 
@@ -56,4 +56,4 @@ This difference requires code and architecture changes in your app. Another majo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/replacing-uiwebview-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/replacing-uiwebview-in-your-app)*

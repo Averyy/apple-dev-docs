@@ -5,6 +5,18 @@
 
 Outputs a 1 or a 0 depending on whether the input is greater than or less than the edge value.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
+#### Overview
+
+0 if X < Edge, otherwise it returns 1.0
+
 #### Parameter Types
 
 #### Parameter Descriptions

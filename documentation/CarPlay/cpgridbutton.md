@@ -19,7 +19,7 @@ class CPGridButton
 ## Topics
 
 ### Creating a Grid Button
-- [init(titleVariants: [String], image: UIImage, handler: ((CPGridButton) -> Void)?)](cpgridbutton/init(titlevariants:image:handler:).md)
+- [convenience init(titleVariants: [String], image: UIImage, handler: ((CPGridButton) -> Void)?)](cpgridbutton/init(titlevariants:image:handler:).md)
   Creates a grid button with the specified title variants, image, and action handler.
 ### Controlling the Grid Button
 - [var isEnabled: Bool](cpgridbutton/isenabled.md)
@@ -29,6 +29,14 @@ class CPGridButton
   An array of title variants for the button.
 - [var image: UIImage](cpgridbutton/image.md)
   The image displayed on the button.
+### Initializers
+- [init(titleVariants: [String], image: UIImage, messageConfiguration: CPMessageGridItemConfiguration?, handler: ((CPGridButton) -> Void)?)](cpgridbutton/init(titlevariants:image:messageconfiguration:handler:).md)
+  Initialize a button with a title, image, and message configuration.
+### Instance Properties
+- [var messageConfiguration: CPMessageGridItemConfiguration?](cpgridbutton/messageconfiguration.md)
+### Instance Methods
+- [func updateImage(UIImage)](cpgridbutton/updateimage(_:).md)
+- [func updateTitleVariants([String])](cpgridbutton/updatetitlevariants(_:).md)
 
 ## Relationships
 

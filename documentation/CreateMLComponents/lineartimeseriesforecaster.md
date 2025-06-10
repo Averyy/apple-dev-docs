@@ -1,6 +1,6 @@
 # LinearTimeSeriesForecaster
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: struct
 
 A time-series forecasting estimator.
@@ -67,6 +67,7 @@ struct LinearTimeSeriesForecaster<Scalar> where Scalar : MLShapedArrayScalar, Sc
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SupervisedEstimator](supervisedestimator.md)
 - [UpdatableSupervisedEstimator](updatablesupervisedestimator.md)
 
@@ -106,4 +107,4 @@ struct LinearTimeSeriesForecaster<Scalar> where Scalar : MLShapedArrayScalar, Sc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/lineartimeseriesforecaster)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/lineartimeseriesforecaster)*

@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: init
 
 Creates a size with coordinates equal to zero.

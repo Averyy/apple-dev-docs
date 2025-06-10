@@ -1,6 +1,6 @@
 # Providing User Access to CloudKit Data
 
-**Framework**: Cloudkit
+**Framework**: CloudKit
 
 Provide users access to the data your app stores on their behalf.
 
@@ -100,4 +100,4 @@ Use each field’s keys and values to give users an accessible report of the dat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/providing-user-access-to-cloudkit-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/providing-user-access-to-cloudkit-data)*

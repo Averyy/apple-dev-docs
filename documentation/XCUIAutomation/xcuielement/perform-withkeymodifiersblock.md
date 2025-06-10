@@ -1,6 +1,6 @@
 # perform(withKeyModifiers:block:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Executes a block of code while holding a combination keystroke.

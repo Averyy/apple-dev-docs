@@ -30,6 +30,8 @@ var state: VZVirtualMachine.State { get }
   A Boolean value that indicates whether you can stop the VM.
 - [var canRequestStop: Bool](vzvirtualmachine/canrequeststop.md)
   A Boolean value that indicates whether you can ask the guest operating system to stop running.
+- [var queue: dispatch_queue_t](vzvirtualmachine/queue.md)
+  The queue associated with this virtual machine.
 
 
 ---

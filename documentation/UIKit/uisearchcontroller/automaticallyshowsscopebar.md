@@ -1,6 +1,6 @@
 # automaticallyShowsScopeBar
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A Boolean indicating whether the search controller manages the visibility of the search bar’s scope bar.

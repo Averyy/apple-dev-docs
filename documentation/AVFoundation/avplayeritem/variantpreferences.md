@@ -1,6 +1,6 @@
 # variantPreferences
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The preferences the player item uses when selecting variant playlists.

@@ -1,6 +1,6 @@
 # WKMediaCaptureState.none
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 The media device is off.

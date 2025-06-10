@@ -1,6 +1,6 @@
 # verticalMotionCanBeginDrag
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 A Boolean value indicating whether vertical motion is treated as a drag or selection change.
@@ -37,4 +37,4 @@ The default value of this property is [`true`](https://developer.apple.com/docum
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstableview/verticalmotioncanbegindrag)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstableview/verticalmotioncanbegindrag)*

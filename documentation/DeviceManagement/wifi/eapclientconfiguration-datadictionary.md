@@ -12,16 +12,12 @@ A dictionary that configures an enterprise network.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object WiFi.EAPClientConfiguration
 ```
-
-#### Overview
 
 ## See Also
 

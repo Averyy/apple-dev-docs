@@ -1,6 +1,6 @@
 # Integrating actions with Siri and Apple Intelligence
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Create app intents, entities, and enumerations that conform to assistant schemas to tap into the enhanced action capabilities of Siri and Apple Intelligence.
 
@@ -38,7 +38,7 @@ Each macro requires you to provide a `schema` value to generate app intent, app 
 - The  that describes a collection of APIs for specific functionality; for example, the `.photos` domain if an app has photos or video functionality.
 - The , an action or a content type within the domain, the specific API for the app intent, app entity, or app enum you create.
 
-For example, an app intent that opens a photo from a photo library uses `@AssistantIntent(schema: .photos.openAsset)` to make sure the intent provides necessary metadata that allows Apple Intelligence to understand it well.
+For example, an app intent that opens a photo from a photo library uses `@AppIntent(schema: .photos.openAsset)` to make sure the intent provides necessary metadata that allows Apple Intelligence to understand it well.
 
 > ❗ **Important**: Only use the provided app intents domains and schemas for app actions and content that match the specific domain and schema.
 
@@ -59,7 +59,7 @@ To create an app intent that integrates your app functionality with Apple Intell
 
 1. Identify an action or existing app intent implementation in your app that matches a domain listed in [`App intent domains`](app-intent-domains.md).
 2. Create a new Swift file for your app intent code.
-3. Use Xcode code completion to generate code that conforms to an assistant schema: Type the name of the domain, followed by an underscore (`<domain>_`) and choose the schema that fits your action. For example, type `photos_` to see a list of available schemas for the `.photos` domain and choose the action to open an asset (`photos_openAsset` ). To ensure assistant schema conformance for an existing app intent, add the macro — for example, `@AssistantIntent(schema: .photos.openAsset)` — to your existing app intent implementation.
+3. Use Xcode code completion to generate code that conforms to an assistant schema: Type the name of the domain, followed by an underscore (`<domain>_`) and choose the schema that fits your action. For example, type `photos_` to see a list of available schemas for the `.photos` domain and choose the action to open an asset (`photos_openAsset` ). To ensure assistant schema conformance for an existing app intent, add the macro — for example, `@AppIntent(schema: .photos.openAsset)` — to your existing app intent implementation.
 4. Build your app to check for errors that indicate that your app intent implementation doesn’t match the chosen assistant schema.
 5. Make changes to meet the schema requirements and rebuild your app.
 
@@ -68,7 +68,7 @@ To create an app intent that integrates your app functionality with Apple Intell
 The following code snippet shows how the [`Making your app’s functionality available to Siri`](making-your-app-s-functionality-available-to-siri.md) sample declares an app intent that opens a video from a device’s media library:
 
 ```swift
-@AssistantIntent(schema: .photos.openAsset)
+@AppIntent(schema: .photos.openAsset)
 struct OpenAssetIntent: OpenIntent {
     var target: AssetEntity
 
@@ -104,7 +104,7 @@ Many actions you describe as an [`AppIntent`](appintent.md) require parameters o
 For example, the  `AssetEntity` implementation from the [`Making your app’s functionality available to Siri`](making-your-app-s-functionality-available-to-siri.md) sample looks like this:
 
 ```swift
-@AssistantEntity(schema: .photos.asset)
+@AppEntity(schema: .photos.asset)
 struct AssetEntity: IndexedEntity {
 
     static let defaultQuery = AssetQuery()
@@ -138,7 +138,7 @@ Your existing app intents might overlap with functionality that assistant schema
 To not break people’s existing workflows, create a new app intent in addition to an existing app intent. As a result, both intents appear in the Shortcuts app as actions. To avoid them appearing as duplicates, mark your new app intent as available to Apple Intelligence only by setting [`isAssistantOnly`](assistantschemaintent/isassistantonly-p4hd.md) to `true`. For example, an app intent implementation could look like this:
 
 ```swift
-@AssistantIntent(schema: .photos.createAssets)
+@AppIntent(schema: .photos.createAssets)
 struct CreateAssetsIntent: AppIntent {
     
     // ...
@@ -170,4 +170,4 @@ After some time, you can remove the  `isAssistantOnly` code and remove your old 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/integrating-actions-with-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/integrating-actions-with-siri-and-apple-intelligence)*

@@ -1,6 +1,6 @@
 # status
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The status code for the response.

@@ -10,6 +10,7 @@ Creates an object to specify the amount of roughness, using a single value that 
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

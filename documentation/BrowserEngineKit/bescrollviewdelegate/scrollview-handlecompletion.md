@@ -26,8 +26,6 @@ The system calls this delegate method on the main queue. Retrieve information fr
 
 > ❗ **Important**:  Schedule completion blocks on the main queue in the same order in which you receive scroll updates.
 
- Schedule completion blocks on the main queue in the same order in which you receive scroll updates.
-
 ## Parameters
 
 - `scrollView`: The   object that receives the scroll update.

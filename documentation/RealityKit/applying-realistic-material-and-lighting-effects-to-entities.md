@@ -1,6 +1,6 @@
 # Applying realistic material and lighting effects to entities
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Enhance the appearance of objects in a RealityKit scene with Physically Based Rendering (PBR).
 
@@ -237,4 +237,4 @@ if let anisoAngleResource = try? TextureResource.load(named: "entity_aniso_angle
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/applying-realistic-material-and-lighting-effects-to-entities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/applying-realistic-material-and-lighting-effects-to-entities)*

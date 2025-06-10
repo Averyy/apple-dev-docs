@@ -24,6 +24,7 @@ object UserInvitationsResponse
   The request body you use to create a User Invitation.
 - [object UserInvitationResponse](userinvitationresponse.md)
   A response that contains a single User Invitations resource.
+- [object UserInvitationVisibleAppsLinkagesResponse](userinvitationvisibleappslinkagesresponse.md)
 
 
 ---

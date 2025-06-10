@@ -2,7 +2,7 @@
 
 **Framework**: App Store Connect API
 
-Mangage image assets for your Game Center leaderboard sets.
+Manage image assets for your Game Center leaderboard sets.
 
 ## Topics
 
@@ -34,7 +34,7 @@ Mangage image assets for your Game Center leaderboard sets.
 - [Game Center leaderboard set releases](game-center-leaderboard-set-releases.md)
   Manage a leaderboard set releases.
 - [Game Center leaderboard set member localizations](game-center-leaderboard-set-member-localizations.md)
-  Mangage Game Center leaderboard set member localizations.
+  Manage Game Center leaderboard set member localizations.
 
 
 ---

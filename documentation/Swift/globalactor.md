@@ -67,6 +67,8 @@ You can find out more about custom executors, by referring to the [`SerialExecut
   Common marker protocol providing a shared “base” for both (local) `Actor` and (potentially remote) `DistributedActor` types.
 - [actor MainActor](mainactor.md)
   A singleton actor whose executor is equivalent to the main dispatch queue.
+- [protocol SendableMetatype](sendablemetatype.md)
+  A type `T` whose metatype `T.Type` is `Sendable`.
 - [typealias ConcurrentValue](concurrentvalue.md)
 - [protocol UnsafeSendable](unsafesendable.md)
   A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.
@@ -78,4 +80,4 @@ You can find out more about custom executors, by referring to the [`SerialExecut
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/globalactor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/globalactor)*

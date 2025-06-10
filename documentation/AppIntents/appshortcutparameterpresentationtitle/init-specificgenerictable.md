@@ -8,12 +8,12 @@ Initializes an `AppShortcutParameterPresentationTitle` with the specified parame
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 - Unknown ?+ - Deprecated
-- visionOS 1.0+
 
 ## Declaration
 

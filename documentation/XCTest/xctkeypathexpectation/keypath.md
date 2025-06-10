@@ -1,6 +1,6 @@
 # keyPath
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The key path for the observed property, relative to the observed object.

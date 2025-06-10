@@ -1,6 +1,6 @@
 # MoonPhase
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: enum
 
 An enumeration that specifies the moon phase kind.
@@ -82,6 +82,7 @@ Waxing and waning provide information about direction. Crescent and gibbous desc
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

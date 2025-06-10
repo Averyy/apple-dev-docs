@@ -1,6 +1,6 @@
 # expectation(for:evaluatedWith:handler:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Creates an expectation that the test fulfills by evaluating the predicate with the specified object.

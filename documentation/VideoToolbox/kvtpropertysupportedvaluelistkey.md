@@ -1,6 +1,6 @@
 # kVTPropertySupportedValueListKey
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Dictionary key to access the array of of supported values.

@@ -21,7 +21,7 @@ The object must implement the appropriate methods of [`NSOutlineViewDataSource`]
 
 Setting the data source invokes [`tile()`](nstableview/tile().md).
 
-If the data source doesn’t respond to all of the [`outlineView(_:child:ofItem:)`](nsoutlineviewdatasource/outlineview(_:child:ofitem:).md), [`outlineView(_:isItemExpandable:)`](nsoutlineviewdatasource/outlineview(_:isitemexpandable:).md), [`outlineView(_:numberOfChildrenOfItem:)`](nsoutlineviewdatasource/outlineview(_:numberofchildrenofitem:).md), and [`outlineView(_:objectValueFor:byItem:)`](nsoutlineviewdatasource/outlineview(_:objectvaluefor:byitem:).md) methods, an [`internalInconsistencyException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1416220-internalinconsistencyexception) may be raised.
+If the data source doesn’t respond to all of the [`outlineView(_:child:ofItem:)`](nsoutlineviewdatasource/outlineview(_:child:ofitem:).md), [`outlineView(_:isItemExpandable:)`](nsoutlineviewdatasource/outlineview(_:isitemexpandable:).md), [`outlineView(_:numberOfChildrenOfItem:)`](nsoutlineviewdatasource/outlineview(_:numberofchildrenofitem:).md), and [`outlineView(_:objectValueFor:byItem:)`](nsoutlineviewdatasource/outlineview(_:objectvaluefor:byitem:).md) methods, an [`internalInconsistencyException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/internalInconsistencyException) may be raised.
 
 ## See Also
 

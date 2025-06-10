@@ -1,6 +1,6 @@
 # webView(_:makeFirstResponder:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sets the first responder of a web view’s window to the specified view.

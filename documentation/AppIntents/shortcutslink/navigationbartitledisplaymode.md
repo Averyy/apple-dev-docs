@@ -8,8 +8,8 @@ Configures the title display mode for this view.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
-- visionOS 1.0+
+- Mac Catalyst ?+
+- visionOS ?+
 - watchOS 8.0+
 
 ## Declaration

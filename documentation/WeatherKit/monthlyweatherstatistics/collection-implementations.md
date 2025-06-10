@@ -1,6 +1,6 @@
 # Collection Implementations
 
-**Framework**: Weatherkit
+**Framework**: WeatherKit
 
 ## Topics
 

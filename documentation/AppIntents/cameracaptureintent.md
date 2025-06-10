@@ -8,7 +8,7 @@ Designates intent that will launch an activity that uses device’s camera to ca
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -34,6 +34,7 @@ protocol CameraCaptureIntent : SystemIntent
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SystemIntent](systemintent.md)
 
 ## See Also

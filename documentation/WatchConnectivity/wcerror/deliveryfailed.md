@@ -1,6 +1,6 @@
 # deliveryFailed
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An error that occurs when the system can’t deliver the payload.

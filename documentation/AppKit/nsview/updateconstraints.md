@@ -1,6 +1,6 @@
 # updateConstraints()
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Update constraints for the view.

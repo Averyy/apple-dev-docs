@@ -6,6 +6,7 @@
 Adds an action to perform when this view recognizes a long press gesture.
 
 **Availability**:
+- Mac Catalyst ?+
 - tvOS 14.0+
 
 ## Declaration

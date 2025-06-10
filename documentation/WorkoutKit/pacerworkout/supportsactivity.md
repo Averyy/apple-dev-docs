@@ -1,6 +1,6 @@
 # supportsActivity(_:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 Returns a Boolean value that indicates whether the system supports pacer workouts for the given workout activity type.
@@ -10,6 +10,7 @@ Returns a Boolean value that indicates whether the system supports pacer workout
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

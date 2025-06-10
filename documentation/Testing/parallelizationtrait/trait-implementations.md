@@ -10,8 +10,6 @@
 ### Instance Methods
 - [func prepare(for: Test) async throws](parallelizationtrait/prepare(for:).md)
   Prepare to run the test that has this trait.
-- [func scopeProvider(for: Test, testCase: Test.Case?) -> Never?](parallelizationtrait/scopeprovider(for:testcase:).md)
-  Get this trait’s scope provider for the specified test or test case.
 ### Type Properties
 - [static var serialized: ParallelizationTrait](parallelizationtrait/serialized.md)
   A trait that serializes the test to which it is applied.

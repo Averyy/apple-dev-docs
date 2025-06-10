@@ -1,6 +1,6 @@
 # predictions(from:perWindowPrediction:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Predict activities from new observations.

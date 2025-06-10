@@ -22,7 +22,7 @@ var mostRecentQuantity: HKQuantity { get }
 
 #### Discussion
 
-The sample sorts its contained quantities based on the [`startDate`](https://developer.apple.com/documentation/foundation/nsdateinterval/1641656-startdate) property for the quantity’s date interval.
+The sample sorts its contained quantities based on the [`startDate`](https://developer.apple.com/documentation/Foundation/NSDateInterval/startDate) property for the quantity’s date interval.
 
 ## See Also
 

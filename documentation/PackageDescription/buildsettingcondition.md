@@ -42,18 +42,18 @@ The following example shows how to use build setting conditions with various API
   Creates a build setting condition.
 - [static func when(configuration: BuildConfiguration) -> BuildSettingCondition](buildsettingcondition/when(configuration:).md)
   Creates a build setting condition.
-- [static func when(platforms: [Platform]?, configuration: BuildConfiguration?) -> BuildSettingCondition](buildsettingcondition/when(platforms:configuration:)-2991l.md)
-  Creates a build setting condition.
 - [static func when(platforms: [Platform], configuration: BuildConfiguration) -> BuildSettingCondition](buildsettingcondition/when(platforms:configuration:)-475co.md)
   Creates a build setting condition.
-### Type Methods
 - [static func when(platforms: [Platform]?, configuration: BuildConfiguration?, traits: Set<String>?) -> BuildSettingCondition](buildsettingcondition/when(platforms:configuration:traits:).md)
+  Creates a build setting condition.
+- [static func when(platforms: [Platform]?, configuration: BuildConfiguration?) -> BuildSettingCondition](buildsettingcondition/when(platforms:configuration:)-2991l.md)
   Creates a build setting condition.
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -79,6 +79,8 @@ The following example shows how to use build setting conditions with various API
   A linker build setting.
 - [Target.PluginUsage](target/pluginusage.md)
   A plug-in used in a target.
+- [let packageAccess: Bool](target/packageaccess.md)
+  If true, access to package declarations from other targets in the package is allowed.
 
 
 ---

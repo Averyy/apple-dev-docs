@@ -1,6 +1,6 @@
 # Discovering a third-party media-streaming device
 
-**Framework**: Devicediscoveryextension
+**Framework**: DeviceDiscoveryExtension
 
 Build an extension that streams media to a server app in iOS or macOS.
 
@@ -27,4 +27,4 @@ Run either the macOS or iOS server target to emulate a third-party media-streami
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceDiscoveryExtension/discovering-a-third-party-media-streaming-device)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicediscoveryextension/discovering-a-third-party-media-streaming-device)*

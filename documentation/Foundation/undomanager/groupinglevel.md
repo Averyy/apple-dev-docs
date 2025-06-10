@@ -17,6 +17,7 @@ The number of nested undo groups (or redo groups, if redo is the most recent ope
 ## Declaration
 
 ```swift
+@MainActor
 var groupingLevel: Int { get }
 ```
 

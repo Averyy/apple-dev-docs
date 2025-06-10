@@ -1,6 +1,6 @@
 # DOM_ALLOW_KEYBOARD_INPUT
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

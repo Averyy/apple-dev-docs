@@ -8,6 +8,7 @@
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -29,8 +30,6 @@ struct Texture
 - [var swizzle: MTLTextureSwizzleChannels](materialparameters/texture/swizzle.md)
   Channel swizzle to use when RealityKit reads or samples from the texture.
 - [var uvIndex: Int](materialparameters/texture/uvindex.md)
-### Default Implementations
-- [Equatable Implementations](materialparameters/texture/equatable-implementations.md)
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # WebKit JS Functions
 
-**Framework**: Webkitjs
+**Framework**: WebKit JS
 
 ## Topics
 

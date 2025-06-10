@@ -13,6 +13,7 @@ The trip associated with the navigation session.
 ## Declaration
 
 ```swift
+@MainActor
 var trip: CPTrip { get }
 ```
 

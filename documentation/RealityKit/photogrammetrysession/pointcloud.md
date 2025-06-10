@@ -25,6 +25,12 @@ struct PointCloud
 - [let points: [PhotogrammetrySession.PointCloud.Point]](photogrammetrysession/pointcloud/points.md)
   The fixed array of points describing the point cloud.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [PhotogrammetrySession.Result](photogrammetrysession/result.md)

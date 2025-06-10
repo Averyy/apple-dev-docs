@@ -1,6 +1,6 @@
 # Editing and Playing HDR Video
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Support high-dynamic-range (HDR) video content in your app by using the HDR editing and playback capabilities of AVFoundation.
 
@@ -34,4 +34,4 @@ Support high-dynamic-range (HDR) video content in your app by using the HDR edit
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/editing-and-playing-hdr-video)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/editing-and-playing-hdr-video)*

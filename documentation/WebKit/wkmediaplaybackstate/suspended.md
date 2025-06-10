@@ -1,6 +1,6 @@
 # WKMediaPlaybackState.suspended
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 The media is not playing, and cannot be resumed until the user revokes the suspension.

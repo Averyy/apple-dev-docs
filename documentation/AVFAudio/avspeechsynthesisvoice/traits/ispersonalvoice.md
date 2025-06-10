@@ -1,6 +1,6 @@
 # isPersonalVoice
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: property
 
 The trait that indicates a voice is a personal voice.

@@ -1,6 +1,6 @@
 # MEDIA_KEYERR_CLIENT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,4 +1,4 @@
-# Tips.ConfigurationOption.CloudKitContainer
+# CloudKitContainer
 
 **Framework**: TipKit  
 **Kind**: struct
@@ -38,6 +38,7 @@ For more information on CloudKit syncing, see [`cloudKitContainer(_:)`](tips/con
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

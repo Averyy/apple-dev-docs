@@ -10,6 +10,7 @@ An option that determines which data displays outside of the normal duration.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -28,12 +29,6 @@ This property determines what to display when the framework samples the animatio
 
 - [var repeatMode: AnimationRepeatMode](animationgroup/repeatmode.md)
   An option that determines how the animations repeat.
-- [func repeated(count: TimeInterval) -> Self](animationgroup/repeated(count:)-80x0g.md)
-  Repeats an animation the number of times specified by an irrational number.
-- [func repeated(count: Int) -> Self](animationgroup/repeated(count:)-3445q.md)
-  Repeats an animation the number of times specified by a whole number.
-- [func repeatingForever() -> Self](animationgroup/repeatingforever.md)
-  Repeats the animation infinitely.
 
 
 ---

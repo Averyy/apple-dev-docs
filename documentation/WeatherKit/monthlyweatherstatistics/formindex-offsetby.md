@@ -1,6 +1,6 @@
 # formIndex(_:offsetBy:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Offsets the given index by the specified distance.

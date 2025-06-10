@@ -1,6 +1,6 @@
 # xpc_dictionary_get_bool(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Gets a Boolean primitive value from a dictionary directly.

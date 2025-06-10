@@ -1,6 +1,6 @@
 # dailyStatistics(for:startDay:endDay:including:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns daily weather statistics for the requested location, for each day from the start day to the end day, inclusively.

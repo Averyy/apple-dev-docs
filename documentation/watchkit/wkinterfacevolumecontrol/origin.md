@@ -1,6 +1,6 @@
 # WKInterfaceVolumeControl.Origin
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 The source of the audio managed by the volume control.
@@ -36,6 +36,7 @@ enum Origin
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

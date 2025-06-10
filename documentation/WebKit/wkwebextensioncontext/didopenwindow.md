@@ -1,6 +1,6 @@
 # didOpenWindow(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called by the app when a new window is opened to fire appropriate events with only this extension.

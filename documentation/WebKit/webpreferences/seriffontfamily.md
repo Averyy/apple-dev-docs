@@ -1,6 +1,6 @@
 # serifFontFamily
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The serif font family of the web view.

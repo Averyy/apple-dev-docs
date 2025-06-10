@@ -1,6 +1,6 @@
 # WKContentRuleListStore
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that contains the rules for how to load and filter content in the web view.

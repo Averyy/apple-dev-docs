@@ -1,6 +1,6 @@
 # WKInterfaceObjectVerticalAlignment.center
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Center alignment. The object’s content is centered vertically in the container and extends equally up and down.

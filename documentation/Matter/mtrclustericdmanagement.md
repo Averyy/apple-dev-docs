@@ -43,7 +43,7 @@ class MTRClusterICDManagement
 - [func readAttributeUserActiveModeTriggerInstruction(with: MTRReadParams?) -> [String : Any]?](mtrclustericdmanagement/readattributeuseractivemodetriggerinstruction(with:).md)
 - [func registerClient(with: MTRICDManagementClusterRegisterClientParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRICDManagementClusterRegisterClientResponseParams?, (any Error)?) -> Void)](mtrclustericdmanagement/registerclient(with:expectedvalues:expectedvalueinterval:completion:).md)
 - [func stayActiveRequest(with: MTRICDManagementClusterStayActiveRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRICDManagementClusterStayActiveResponseParams?, (any Error)?) -> Void)](mtrclustericdmanagement/stayactiverequest(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func unregisterClient(with: MTRICDManagementClusterUnregisterClientParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustericdmanagement/unregisterclient(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func unregisterClient(with: MTRICDManagementClusterUnregisterClientParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustericdmanagement/unregisterclient(with:expectedvalues:expectedvalueinterval:completion:).md)
 
 ## Relationships
 

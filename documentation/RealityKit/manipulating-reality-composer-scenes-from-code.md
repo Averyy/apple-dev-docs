@@ -1,6 +1,6 @@
 # Manipulating Reality Composer scenes from code
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Make programmatic changes to your scenes at runtime.
 
@@ -39,7 +39,7 @@ In addition to hiding and showing objects in your scene using behaviors, as desc
 
 ##### Transform a Scene Object
 
-You can transform (move, rotate, or scale) objects in a scene by using the [`transform`](entity/transform.md) property of the [`Entity`](entity.md).
+You can transform (move, rotate, or scale) objects in a scene by using the `RealityKit/Entity/transform` property of the [`Entity`](entity.md).
 
 To move an object, change the [`translation`](transform/translation.md) value of the transform. For example, to move a scene object 10 cm along the x-axis, use this:
 
@@ -47,13 +47,13 @@ To move an object, change the [`translation`](transform/translation.md) value of
 myEntity.transform.translation += SIMD3<Float>(10, 0, 0)
 ```
 
-Similarly, to scale an object, modify the [`scale`](transform/scale.md) of the entity’s [`transform`](entity/transform.md) property. For example, you can double the size of an object in your scene like this:
+Similarly, to scale an object, modify the [`scale`](transform/scale.md) of the entity’s `RealityKit/Entity/transform` property. For example, you can double the size of an object in your scene like this:
 
 ```swift
 myEntity.transform.scale *= 2
 ```
 
-To rotate an object, make changes to the [`rotation`](transform/rotation.md) property of its [`transform`](entity/transform.md). This code shows you how to rotate an object in your scene by 90° on the z-axis:
+To rotate an object, make changes to the [`rotation`](transform/rotation.md) property of its `RealityKit/Entity/transform`. This code shows you how to rotate an object in your scene by 90° on the z-axis:
 
 ```swift
 // Calculate 90° as radians.
@@ -61,7 +61,7 @@ let radians = 90.0 * Float.pi / 180.0
 
 // Create a quaternion that represents a 90° rotation on the z-axis
 // and add it to the existing rotation value.
-anchorEntity.transform.rotation += simd_quatf(angle: radians, 
+anchorEntity.transform.rotation *= simd_quatf(angle: radians, 
                                               axis: SIMD3<Float>(0,0,1))
 ```
 
@@ -77,7 +77,7 @@ let copy = myEntity.clone(recursive: true)
 
 ##### Add Force to an Object
 
-If an object in a scene participates in the physics simulation, you can add force to that object from code by using the [`addForce(_:relativeTo:)`](modelentity/addforce(_:relativeto:).md) method. Provide a vector representing the amount and direction of force to add to the object as the first parameter. Here’s an example of applying force to an object to make it fly away from the camera:
+If an object in a scene participates in the physics simulation, you can add force to that object from code by using the `RealityKit/ModelEntity/addForce(_:relativeTo:)` method. Provide a vector representing the amount and direction of force to add to the object as the first parameter. Here’s an example of applying force to an object to make it fly away from the camera:
 
 ```swift
 // Adjusting the forceMultiplier value changes the amount of force applied.
@@ -110,4 +110,4 @@ ball.addForce(simd_float3(x: cameraForwardVector.x,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/manipulating-reality-composer-scenes-from-code)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/manipulating-reality-composer-scenes-from-code)*

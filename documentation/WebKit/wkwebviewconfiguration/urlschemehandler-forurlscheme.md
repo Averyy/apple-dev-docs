@@ -1,6 +1,6 @@
 # urlSchemeHandler(forURLScheme:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the currently registered handler object for the specified URL scheme.

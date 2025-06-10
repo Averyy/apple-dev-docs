@@ -8,7 +8,7 @@ A request to recognize speech in a recorded audio file.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 10.0+
 - macOS 10.15+
 - visionOS 1.0+
 
@@ -58,10 +58,10 @@ func recognizeFile(url: URL) {
 
 ## Topics
 
-### Creating a Speech Recognition Request
+### Creating a speech recognition request
 - [init(url: URL)](sfspeechurlrecognitionrequest/init(url:).md)
   Creates a speech recognition request, initialized with the specified URL.
-### Accessing the URL of the Audio File
+### Accessing the audio file URL
 - [var url: URL](sfspeechurlrecognitionrequest/url.md)
   The URL of the audio file.
 

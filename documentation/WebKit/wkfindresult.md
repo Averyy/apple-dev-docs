@@ -1,6 +1,6 @@
 # WKFindResult
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that contains the results of searching the web view’s contents.

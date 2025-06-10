@@ -1,6 +1,6 @@
 # priceFormatStyle
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: property
 
 The format style for the numbers in the price of the product.

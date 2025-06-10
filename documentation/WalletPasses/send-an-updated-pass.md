@@ -1,14 +1,14 @@
 # Send an Updated Pass
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: httpRequest
 
 Create and sign an updated pass, and send it to the device.
 
 **Availability**:
 - iOS 10.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 10.0+
+- watchOS 3.0+
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # identifier
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The unique identifier for this touch object.

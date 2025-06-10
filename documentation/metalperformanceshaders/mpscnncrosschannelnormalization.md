@@ -1,6 +1,6 @@
 # MPSCNNCrossChannelNormalization
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: cl
 
 A normalization kernel applied across feature channels.

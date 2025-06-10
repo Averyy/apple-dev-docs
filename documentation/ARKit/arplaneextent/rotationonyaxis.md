@@ -22,8 +22,6 @@ As the session runs, the framework may update the plane’s y-rotation to better
 
 > ❗ **Important**:  Apps that run on iOS 16 with a deployment target less than iOS 16 preserve the prior y-axis rotation behavior.
 
- Apps that run on iOS 16 with a deployment target less than iOS 16 preserve the prior y-axis rotation behavior.
-
 
 ---
 

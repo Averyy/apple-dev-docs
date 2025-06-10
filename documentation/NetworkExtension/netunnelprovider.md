@@ -29,8 +29,6 @@ Each [`NETunnelProvider`](netunnelprovider.md) instance corresponds to a single 
 
 > ❗ **Important**:  The `com.apple.developer.networking.networkextension` entitlement is required in order to use the [`NETunnelProvider`](netunnelprovider.md) class. Enable this entitlement when creating an App ID in your developer account.
 
- The `com.apple.developer.networking.networkextension` entitlement is required in order to use the [`NETunnelProvider`](netunnelprovider.md) class. Enable this entitlement when creating an App ID in your developer account.
-
 ##### Subclassing Notes
 
 The `NETunnelProvider` class should not be subclassed directly. Instead, you should create subclasses of `NETunnelProvider` subclasses.

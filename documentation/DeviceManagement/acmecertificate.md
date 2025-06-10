@@ -12,8 +12,6 @@ The payload you use to configure Automated Certificate Management Environment (A
 - tvOS 16.0+
 - visionOS 1.0+
 - watchOS 9.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,21 +27,31 @@ Use this payload to specify settings that allow the device to request a client c
 
 The device issues a new order request using the `ClientIdentifier` as the `permanent-identifier`. For compatibility, the ACME server needs to respond with a challenge type of `device-attest-01`. Then the client replies with a WebAuthn attestation statement.
 
+##### Acme Attestation Hardware Support
+
+The following table indicates which System on Chips (SoCs) support ACME attestation. If the Attest key is false or ignored, the ACME server does not receive an attestation.
+
+| Attest key support | iPhone, iPad | Mac | Apple TV | Apple Watch | Vision Pro |
+| --- | --- | --- | --- | --- | --- |
+| Must be false | none | T1 and earlier | none | none | none |
+| Ignored | A10x Fusion and earlier | T2 | A10x Fusion and earlier | S3 and earlier | none |
+| Supported | A11 Bionic and laterAll M series | Apple Silicon | A12 Bionic and later | S4 and later | All |
+
 ##### Profile Availability
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | macOS |
-| Allow Manual Install | iOS, macOS, tvOS, watchOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Allow Multiple Payloads | iOS, macOS, Shared iPad, tvOS |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| User channel | macOS |
+| Allow manual install | iOS, macOS, tvOS, visionOS, watchOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 
 ##### Example Profile
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -119,7 +127,7 @@ The device issues a new order request using the `ClientIdentifier` as the `perma
 
 ## Topics
 
-### Profiles
+### Objects
 - [object ACMECertificate.SubjectAltName](acmecertificate/subjectaltname-data.dictionary.md)
   The subject’s alternative name details.
 

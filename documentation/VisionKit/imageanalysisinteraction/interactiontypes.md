@@ -1,6 +1,6 @@
 # ImageAnalysisInteraction.InteractionTypes
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: struct
 
 The types of interactions that people can perform with an image.

@@ -1,6 +1,6 @@
 # VTDecompressionSessionFinishDelayedFrames(_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Directs the decompression session to emit all delayed frames.
@@ -28,8 +28,6 @@ An `OSStatus` value that indicates the result of the operation.
 By default, the decompression session may not delay frames indefinitely;  frames may only be indefinitely delayed if the client opts in via [`kVTDecodeFrame_EnableTemporalProcessing`](vtdecodeframeflags/kvtdecodeframe_enabletemporalprocessing.md).
 
 > ❗ **Important**:  This function may return before all delayed frames are emitted.  To wait for them, call [`VTDecompressionSessionWaitForAsynchronousFrames(_:)`](vtdecompressionsessionwaitforasynchronousframes(_:).md) instead.
-
- This function may return before all delayed frames are emitted.  To wait for them, call [`VTDecompressionSessionWaitForAsynchronousFrames(_:)`](vtdecompressionsessionwaitforasynchronousframes(_:).md) instead.
 
 ## Parameters
 

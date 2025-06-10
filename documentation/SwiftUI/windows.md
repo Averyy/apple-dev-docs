@@ -166,6 +166,8 @@ For design guidance, see [`Windows`](https://developer.apple.com/design/Human-In
   The current limitations of the device tracking the user’s surroundings.
 - [struct WorldTrackingLimitation](worldtrackinglimitation.md)
   A structure to represent limitations of tracking the user’s surroundings.
+- [struct SurfaceSnappingInfo](surfacesnappinginfo.md)
+  A type representing information about the window scenes snap state.
 ### Deprecated Types
 - [enum ControlActiveState](controlactivestate.md)
   The active appearance expected of controls in a window.

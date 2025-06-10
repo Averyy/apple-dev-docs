@@ -1,6 +1,6 @@
 # Improving the player experience for games with large downloads
 
-**Framework**: Gamekit
+**Framework**: GameKit
 
 Provide ample content in your base installation and then use on-demand resources and the Background Assets API to handle additional content.
 
@@ -34,9 +34,9 @@ After you assign tags to your asset packs, use the Prefetch view to identify whi
 
 Your game can programmatically download asset packs using the [`NSBundleResourceRequest`](https://developer.apple.com/documentation/Foundation/NSBundleResourceRequest) API. This allows you to save disk space by only downloading content after the player unlocks it through progression or In-App Purchases. Because asset packs can have multiple tags, splitting your content into smaller asset packs can further reduce your game’s disk space usage. Use the [`NSBundleResourceRequest`](https://developer.apple.com/documentation/Foundation/NSBundleResourceRequest) API to request tags, which prompt the system to download any matching asset packs as necessary.
 
-For content unlocked by progress, requesting tags before they’re needed can make the content available to the player without waiting. In case the download doesn’t complete before the player needs the content, use the [`progress`](https://developer.apple.com/documentation/foundation/nsbundleresourcerequest/1614838-progress) property to keep the user informed.
+For content unlocked by progress, requesting tags before they’re needed can make the content available to the player without waiting. In case the download doesn’t complete before the player needs the content, use the [`progress`](https://developer.apple.com/documentation/Foundation/NSBundleResourceRequest/progress) property to keep the user informed.
 
-When the player completes part of your game’s content, use the [`setPreservationPriority(_:forTags:)`](https://developer.apple.com/documentation/foundation/bundle/1614845-setpreservationpriority) method of the [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class to inform the system that the asset packs containing that content are no longer necessary.
+When the player completes part of your game’s content, use the [`setPreservationPriority(_:forTags:)`](https://developer.apple.com/documentation/Foundation/Bundle/setPreservationPriority(_:forTags:)) method of the [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class to inform the system that the asset packs containing that content are no longer necessary.
 
 ##### Stay Within the on Demand Resources Limits
 
@@ -122,7 +122,7 @@ If an essential download fails, the system skips it, and installation of your ap
 
 ## See Also
 
-- [Enabling and configuring Game Center](enabling-and-configuring-game-center.md)
+- [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
   Enable Game Center in your Xcode project and configure features in App Store Connect.
 - [Authenticating a player](authenticating-a-player.md)
   Confirm player credentials and device capabilities and check for account restrictions.

@@ -57,6 +57,9 @@ After configuring a group, assign it to the [`UITextInputAssistantItem`](uitexti
 ### Representing the group in a menu
 - [var menuRepresentation: UIMenuElement?](uibarbuttonitemgroup/menurepresentation.md)
   A menu element that represents the group when it appears in a menu.
+### Type Methods
+- [class func fixedSpace() -> UIBarButtonItemGroup](uibarbuttonitemgroup/fixedspace.md)
+  Returns a new group that contains a single zero-width fixed space item inside it.
 
 ## Relationships
 

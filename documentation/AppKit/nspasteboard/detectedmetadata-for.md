@@ -28,7 +28,7 @@ The following example shows how to use this method to find the content type of a
 
 ```swift
 do {
-    let metadataResults = try await NSPasteboard.general.detectedMetadata(for: [\.contentType])
+    let metadataResults = try await NSPasteboard.general.detectedMetadata(for:     /// [\.contentType])
     if let contentType = metadataResults.contentType {
         print("Content type is: \(contentType.identifier).")
     } else {
@@ -49,10 +49,10 @@ do {
   Determines whether the first pasteboard item matches the specified patterns, without notifying the person using the app.
 - [func detectedValues(for: Set<PartialKeyPath<NSPasteboard.DetectedValues>>) async throws -> NSPasteboard.DetectedValues](nspasteboard/detectedvalues(for:).md)
   Determines whether the first pasteboard item matches the specified patterns, reading the contents if it finds a match.
-- [NSPasteboard.DetectedValues](nspasteboard/detectedvalues.md)
-  A type that contains common types of data that the data detection system matches for a pasteboard.
-- [NSPasteboard.DetectedMetadata](nspasteboard/detectedmetadata.md)
-  An object that contains common types of metadata that the data detection system matches for a pasteboard.
+- [Pasteboard detection patterns](nspasteboard-detection-patterns.md)
+  Common types of data that the data detection system matches for a pasteboard.
+- [Pasteboard detection metadata types](nspasteboard-detection-metadata-types.md)
+  Common types of metadata that the data detection system matches for a pasteboard.
 
 
 ---

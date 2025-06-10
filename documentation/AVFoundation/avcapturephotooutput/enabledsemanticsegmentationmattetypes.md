@@ -25,8 +25,6 @@ The default value of this property is an empty array.
 
 > ❗ **Important**:  Enabling semantic segmentation matte delivery requires a lengthy reconfiguration of the capture render pipeline. If you intend to capture semantic segmentation mattes, set this property to your desired types before calling the capture session’s [`startRunning()`](avcapturesession/startrunning().md) method.
 
- Enabling semantic segmentation matte delivery requires a lengthy reconfiguration of the capture render pipeline. If you intend to capture semantic segmentation mattes, set this property to your desired types before calling the capture session’s [`startRunning()`](avcapturesession/startrunning().md) method.
-
 ## See Also
 
 - [var availableSemanticSegmentationMatteTypes: [AVSemanticSegmentationMatte.MatteType]](avcapturephotooutput/availablesemanticsegmentationmattetypes.md)

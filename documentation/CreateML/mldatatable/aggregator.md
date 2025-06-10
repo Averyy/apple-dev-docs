@@ -40,6 +40,7 @@ Use one or more [`MLDataTable.Aggregator`](mldatatable/aggregator.md) instances 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

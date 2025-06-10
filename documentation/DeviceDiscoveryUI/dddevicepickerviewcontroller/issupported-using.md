@@ -6,6 +6,9 @@
 Returns a Boolean value that indicates whether the current device supports device discovery.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - tvOS 16.0+
 
 ## Declaration

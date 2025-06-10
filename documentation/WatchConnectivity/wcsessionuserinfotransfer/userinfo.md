@@ -1,6 +1,6 @@
 # userInfo
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 The data being transferred.

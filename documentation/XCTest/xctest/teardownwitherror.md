@@ -1,6 +1,6 @@
 # tearDownWithError()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Provides an opportunity to perform cleanup and to throw errors after each test method in a test case ends.

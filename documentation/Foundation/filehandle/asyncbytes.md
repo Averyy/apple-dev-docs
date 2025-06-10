@@ -41,6 +41,7 @@ Use the `for`-`await`-`in` syntax to iterate over the bytes in this sequence. Fo
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -6,9 +6,7 @@
 
 ### Variables
 - [static let bleedingAfterPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingafterpregnancy.md)
-  A category type that records bleeding after pregnancy as a symptom.
 - [static let bleedingDuringPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingduringpregnancy.md)
-  A category type that records bleeding during pregnancy as a symptom.
 - [static let sleepApneaEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/sleepapneaevent.md)
 - [let HKDevicePropertyKeyFirmwareVersion: String](hkdevicepropertykeyfirmwareversion.md)
   The device’s firmware version.
@@ -43,9 +41,7 @@
 - [static let paddleSportsSpeed: HKQuantityTypeIdentifier](hkquantitytypeidentifier/paddlesportsspeed.md)
 - [static let physicalEffort: HKQuantityTypeIdentifier](hkquantitytypeidentifier/physicaleffort.md)
 - [static let rowingSpeed: HKQuantityTypeIdentifier](hkquantitytypeidentifier/rowingspeed.md)
-  A quantity sample type that measures how fast the rower is moving.
 - [static let timeInDaylight: HKQuantityTypeIdentifier](hkquantitytypeidentifier/timeindaylight.md)
-  A quantity sample type that measures amount of time the user spent in daylight.
 - [static let workoutEffortScore: HKQuantityTypeIdentifier](hkquantitytypeidentifier/workouteffortscore.md)
 - [static let GAD7: HKScoredAssessmentTypeIdentifier](hkscoredassessmenttypeidentifier/gad7.md)
 - [static let PHQ9: HKScoredAssessmentTypeIdentifier](hkscoredassessmenttypeidentifier/phq9.md)
@@ -55,6 +51,14 @@
   A constant that matches any product type.
 - [let HKSourceRevisionAnyVersion: String](hksourcerevisionanyversion.md)
   A constant that matches any version.
+- [let HKDataTypeIdentifierUserAnnotatedMedicationConcept: String](hkdatatypeidentifieruserannotatedmedicationconcept.md)
+- [let HKMedicationDoseEventTypeIdentifierMedicationDoseEvent: String](hkmedicationdoseeventtypeidentifiermedicationdoseevent.md)
+- [let HKPredicateKeyPathLogOrigin: String](hkpredicatekeypathlogorigin.md)
+- [let HKPredicateKeyPathMedicationConceptIdentifier: String](hkpredicatekeypathmedicationconceptidentifier.md)
+- [let HKPredicateKeyPathScheduledDate: String](hkpredicatekeypathscheduleddate.md)
+- [let HKPredicateKeyPathStatus: String](hkpredicatekeypathstatus.md)
+- [let HKUserAnnotatedMedicationPredicateKeyPathHasSchedule: String](hkuserannotatedmedicationpredicatekeypathhasschedule.md)
+- [let HKUserAnnotatedMedicationPredicateKeyPathIsArchived: String](hkuserannotatedmedicationpredicatekeypathisarchived.md)
 
 ## See Also
 

@@ -17,8 +17,7 @@ The `Transition` defining the removal phase of `self`.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency var removal: Removal
+var removal: Removal
 ```
 
 ## See Also

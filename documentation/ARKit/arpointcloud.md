@@ -42,6 +42,7 @@ Use the [`ARFrame`](arframe.md) [`rawFeaturePoints`](arframe/rawfeaturepoints.md
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

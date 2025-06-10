@@ -1,6 +1,6 @@
 # CURRENT_PROGRAM
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

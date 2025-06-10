@@ -1,6 +1,6 @@
 # xpc_release(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 **Availability**:

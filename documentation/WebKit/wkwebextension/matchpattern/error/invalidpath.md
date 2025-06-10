@@ -1,6 +1,6 @@
 # invalidPath
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that the path component was invalid.

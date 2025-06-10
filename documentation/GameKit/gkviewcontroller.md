@@ -33,12 +33,8 @@ protocol GKViewController
   Provide an interface for players to navigate to their Game Center data from your game.
 - [class GKAccessPoint](gkaccesspoint.md)
   An object that allows players to view and manage their Game Center information from within your game.
-- [class GKGameCenterViewController](gkgamecenterviewcontroller.md)
-  The dashboard that allows players to access their Game Center data in your game.
 - [class GKDialogController](gkdialogcontroller.md)
   An object that provides the ability to present the dashboard in macOS games.
-- [class GKNotificationBanner](gknotificationbanner.md)
-  A Game Center-style banner that displays a message to the local player.
 
 
 ---

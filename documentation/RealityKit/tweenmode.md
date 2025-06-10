@@ -10,6 +10,7 @@ Options that determine whether an animation switches between frames gradually or
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -29,17 +30,6 @@ This enumeration declares the options for a sampled animation’s [`tweenMode`](
   An option that indicates a keyframe changes to the next abruptly.
 - [TweenMode.linear](tweenmode/linear.md)
   An option that indicates that a keyframe changes to the next gradually.
-### Comparing tween modes
-- [static func == (TweenMode, TweenMode) -> Bool](tweenmode/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](tweenmode/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](tweenmode/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](tweenmode/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](tweenmode/equatable-implementations.md)
 
 ## Relationships
 

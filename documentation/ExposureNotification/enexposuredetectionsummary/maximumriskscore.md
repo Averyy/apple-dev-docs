@@ -1,6 +1,6 @@
 # maximumRiskScore
 
-**Framework**: Exposurenotification  
+**Framework**: Exposure Notification  
 **Kind**: property
 
 The vaue that represents the highest risk score of all exposure incidents.
@@ -44,4 +44,4 @@ This property has a maximum value of 255.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposuredetectionsummary/maximumriskscore)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposuredetectionsummary/maximumriskscore)*

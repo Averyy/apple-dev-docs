@@ -1,6 +1,6 @@
 # moveRow(at:to:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Moves the specified row to the new row location using animation.

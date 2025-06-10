@@ -1,6 +1,6 @@
 # prepare
 
-**Framework**: Mediatoolbox  
+**Framework**: Media Toolbox  
 **Kind**: property
 
 A callback to prepare the tap processor.

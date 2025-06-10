@@ -26,8 +26,6 @@ Present an [`SFSafariViewController`](sfsafariviewcontroller.md) when you don’
 
 > ❗ **Important**:  In accordance with [`App Store Review Guidelines`](https://developer.apple.comhttps://developer.apple.com/app-store/review/guidelines/), when you present this view controller, it must visibly present information to users. You may not hide or obscure the view controller behind other views or layers. Additionally, you may not use [`SFSafariViewController`](sfsafariviewcontroller.md) to track users without their knowledge and consent.
 
- In accordance with [`App Store Review Guidelines`](https://developer.apple.comhttps://developer.apple.com/app-store/review/guidelines/), when you present this view controller, it must visibly present information to users. You may not hide or obscure the view controller behind other views or layers. Additionally, you may not use [`SFSafariViewController`](sfsafariviewcontroller.md) to track users without their knowledge and consent.
-
 UI features include the following:
 
 - A read-only address field with a security indicator and a Reader button
@@ -44,8 +42,6 @@ Present a [`SFSafariViewController`](sfsafariviewcontroller.md) modally using th
 To create a more lightweight browsing experience, change the presentation style to [`UIModalPresentationStyle.formSheet`](https://developer.apple.com/documentation/UIKit/UIModalPresentationStyle/formSheet) or [`UIModalPresentationStyle.pageSheet`](https://developer.apple.com/documentation/UIKit/UIModalPresentationStyle/pageSheet). You might use this approach to display terms of service or support documentation. Don’t use these presentation styles to display content from websites.
 
 > ❗ **Important**:  Don’t embed an [`SFSafariViewController`](sfsafariviewcontroller.md) as a child view controller in your app, or include it in your view controller hierarchy. Always present it modally using the [`present(_:animated:completion:)`](https://developer.apple.com/documentation/UIKit/UIViewController/present(_:animated:completion:)) method.
-
- Don’t embed an [`SFSafariViewController`](sfsafariviewcontroller.md) as a child view controller in your app, or include it in your view controller hierarchy. Always present it modally using the [`present(_:animated:completion:)`](https://developer.apple.com/documentation/UIKit/UIViewController/present(_:animated:completion:)) method.
 
 [`SFSafariViewController`](sfsafariviewcontroller.md) supplies a custom transitioning delegate to manage its presentation and transition animations. The custom delegate is recommended, but you can remove it if you prefer the default modal transition behavior. To remove the delegate, assign a new value to the view controller’s [`transitioningDelegate`](https://developer.apple.com/documentation/UIKit/UIViewController/transitioningDelegate) property. The object you assign to this property must adopt the [`UIViewControllerTransitioningDelegate`](https://developer.apple.com/documentation/UIKit/UIViewControllerTransitioningDelegate) protocol but doesn’t need to implement any methods of that protocol.
 
@@ -85,6 +81,7 @@ For more information on the proposed PCM web standard, see [`Introducing Private
 - [var configuration: SFSafariViewController.Configuration](sfsafariviewcontroller/configuration-swift.property.md)
   A copy of the Safari view controller’s initialized configuration.
 - [var dismissButtonStyle: SFSafariViewController.DismissButtonStyle](sfsafariviewcontroller/dismissbuttonstyle-swift.property.md)
+  The style of dismiss button to use in the navigation bar to close the Safari view controller.
 - [SFSafariViewController.DismissButtonStyle](sfsafariviewcontroller/dismissbuttonstyle-swift.enum.md)
 - [var preferredBarTintColor: UIColor?](sfsafariviewcontroller/preferredbartintcolor.md)
   The color to tint the background of the navigation bar and the toolbar.

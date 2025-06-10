@@ -90,12 +90,8 @@ To customize the mirror representation of a custom type, add conformance to the 
 
 - [struct ObjectIdentifier](objectidentifier.md)
   A unique identifier for a class instance or metatype.
-- [func type<T, Metatype>(of: T) -> Metatype](type(of:).md)
+- [func type<T, Metatype>(of: borrowing T) -> Metatype](type(of:).md)
   Returns the dynamic type of a value.
-- [func == ((any Any.Type)?, (any Any.Type)?) -> Bool](==(_:_:)-w1qf.md)
-  Returns a Boolean value indicating whether two types are identical.
-- [func != ((any Any.Type)?, (any Any.Type)?) -> Bool](!=(_:_:)-6s4z0.md)
-  Returns a Boolean value indicating whether two types are not identical.
 
 
 ---

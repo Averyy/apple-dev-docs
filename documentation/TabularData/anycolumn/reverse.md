@@ -1,6 +1,6 @@
 # reverse()
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Reverses the elements of the collection in place.

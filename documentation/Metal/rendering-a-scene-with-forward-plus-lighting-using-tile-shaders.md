@@ -35,4 +35,4 @@ To run the app:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/rendering-a-scene-with-forward-plus-lighting-using-tile-shaders)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/rendering-a-scene-with-forward-plus-lighting-using-tile-shaders)*

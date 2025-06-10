@@ -1,6 +1,6 @@
 # localizedModel
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The localized version of the model information.

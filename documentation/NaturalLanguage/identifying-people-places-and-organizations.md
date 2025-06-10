@@ -13,7 +13,7 @@ The example and accompanying steps below show how to use [`NLTagger`](nltagger.m
 1. Create an instance of [`NLTagger`](nltagger.md), specifying [`nameType`](nltagscheme/nametype.md) as the tag scheme to be used.
 2. Set the string property of the linguistic tagger to the natural language text.
 3. Create the options to omit punctuation, omit whitespace, and join names.
-4. Enumerate over the entire range of the string, specifying [`word`](https://developer.apple.com/documentation/foundation/nslinguistictag/1418153-word) as the tag unit and [`nameType`](nltagscheme/nametype.md) as the tag scheme, and specifying the tagger options.
+4. Enumerate over the entire range of the string, specifying [`word`](https://developer.apple.com/documentation/Foundation/NSLinguisticTag/word) as the tag unit and [`nameType`](nltagscheme/nametype.md) as the tag scheme, and specifying the tagger options.
 5. In the enumeration block, if the tag is one of the types in `tags`, take a substring of the original text at `tokenRange` to obtain the named entity.
 6. To return multiple possible tags and their associated confidence scores, in the enumeration block, call the [`tagHypothesesAtIndex:unit:scheme:maximumCount:tokenRange:`](nltagger/taghypothesesatindex:unit:scheme:maximumcount:tokenrange:.md) method.
 7. Run the following code to print out each name and its type, as well as other possible tags and their probabilities, on a new line.

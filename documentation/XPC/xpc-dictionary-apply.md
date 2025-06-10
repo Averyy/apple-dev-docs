@@ -1,6 +1,6 @@
 # xpc_dictionary_apply(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Invokes the specified block for every key-value pair in the dictionary.

@@ -1,6 +1,6 @@
 # backingStoreIdentity
 
-**Framework**: Fileprovider  
+**Framework**: File Provider  
 **Kind**: property
 
 A unique identifier for the backing store used by the system.
@@ -47,4 +47,4 @@ While rebuilding the backing store, the system invalidates any extension instanc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/nsfileproviderdomain/backingstoreidentity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/nsfileproviderdomain/backingstoreidentity)*

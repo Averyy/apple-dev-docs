@@ -1,6 +1,6 @@
 # rotation
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The delta rotation since the start of an event, in degrees, where clockwise is positive and counter-clockwise is negative. 

@@ -1,6 +1,6 @@
 # WebAuthenticationSession
 
-**Framework**: Authenticationservices  
+**Framework**: Authentication Services  
 **Kind**: struct
 
 A SwiftUI environment value that views use to authenticate someone using a web service.
@@ -79,6 +79,7 @@ let token = queryItems?.filter({ $0.name == "token" }).first?.value
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -98,4 +99,4 @@ let token = queryItems?.filter({ $0.name == "token" }).first?.value
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/webauthenticationsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/webauthenticationsession)*

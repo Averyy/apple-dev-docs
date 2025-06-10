@@ -99,9 +99,12 @@ stride(from: 89.0, through: 95.0, by: 2.0).formatted(percentStyle)
 - [FormatStyle](formatstyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [Language Introspector](language-introspector.md)
+  Converts data into human-readable text using formatters and locales.
 - [protocol FormatStyle](formatstyle.md)
   A type that converts a given data type into a representation in another type, such as a string.
 - [struct IntegerFormatStyle](integerformatstyle.md)
@@ -121,4 +124,4 @@ stride(from: 89.0, through: 95.0, by: 2.0).formatted(percentStyle)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/listformatstyle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/listformatstyle)*

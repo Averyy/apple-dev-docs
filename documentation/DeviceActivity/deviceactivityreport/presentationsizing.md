@@ -1,6 +1,6 @@
 # presentationSizing(_:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Sets the sizing of the containing presentation.

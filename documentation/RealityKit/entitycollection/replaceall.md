@@ -1,6 +1,6 @@
 # replaceAll(_:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: method  
 **Required**: Yes
 
@@ -11,6 +11,7 @@ Replaces all entities in this collection with those from the given sequence.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

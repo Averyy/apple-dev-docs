@@ -1,18 +1,18 @@
 # Building spatial experiences for business apps with enterprise APIs for visionOS
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Grant enhanced sensor access and increased platform control to your visionOS app by using entitlements.
 
 #### Overview
 
-> **Note**: This article is associated with WWDC24 session 10139: [`Introducing enterprise APIs for visionOS`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10139/).
+> **Note**: This article is associated with WWDC25 session 223: [`Explore enhancements to your spatial business app`](https://developer.apple.comhttps://developer.apple.com/wwdc25/223/) and WWDC24 session 10139: [`Introducing enterprise APIs for visionOS`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10139/).
 
 You can use the entitlements that enterprise APIs for visionOS offer to create even more powerful enterprise solutions and spatial experiences for your visionOS app. The enterprise APIs for visionOS consist of two distinct categories.
 
-The first category of APIs provides enhanced sensor access and improves the visual capabilities of Apple Vision Pro, including access to the main camera, improved capture and streaming, and enhanced functionality through the camera that allows you to see what the wearer sees.
+The first category of APIs provides enhanced sensor access and improves the visual capabilities of Apple Vision Pro.
 
-The second category focuses on platform control to help you get the most out of visionOS. These entitlements provide advanced machine learning (ML) capabilities using the Apple Neural Engine for your custom ML model, enhanced object-tracking capabilities for faster object detection, and the ability to tune the performance of your apps to achieve even more compute functionality for intensive workloads.
+The second category focuses on platform control to help you get the most out of visionOS.
 
 > **Note**: Each of these entitlements allows a device to operate outside the default configuration. When using these features, be aware that they may impact the performance of other apps.
 
@@ -58,4 +58,4 @@ After you add the `.license` and `.entitlements` files, you can implement and te
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/building-spatial-experiences-for-business-apps-with-enterprise-apis)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/building-spatial-experiences-for-business-apps-with-enterprise-apis)*

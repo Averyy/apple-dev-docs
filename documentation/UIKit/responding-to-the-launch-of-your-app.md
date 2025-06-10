@@ -24,8 +24,6 @@ Add views to your launch storyboard and use Auto Layout constraints to size and 
 
 > ❗ **Important**:  Don’t use a static image for your launch screen. In iOS 14 and later, the launch screen is limited to 25 MB.
 
- Don’t use a static image for your launch screen. In iOS 14 and later, the launch screen is limited to 25 MB.
-
 ##### Initialize Your Apps Data Structures
 
 Put your app’s launch-time initialization code in one or both of the following methods:
@@ -85,8 +83,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 When UIKit launches your app, it calls the  [`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) and [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) methods to indicate when it’s reached these points in your app’s launch process. If your app hasn’t implemented the scene life cycle, UIKit passes along a launch options dictionary to these methods with information about why your app launched. The keys in that dictionary indicate important tasks to perform immediately. For example, they might reflect actions that the user started elsewhere and wants to continue in your app. Always check the contents of the launch options dictionary for keys that you expect, and respond appropriately to their presence.
 
 > ❗ **Important**: When you adopt the scene life cycle, UIKit calls the [`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) and [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) methods, but no longer provides the launch options dictionary to those methods. Implement the scene connection methods instead to receive details about your app launch and scene connection. For more information, see [`Scenes`](scenes.md).
-
-When you adopt the scene life cycle, UIKit calls the [`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) and [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) methods, but no longer provides the launch options dictionary to those methods. Implement the scene connection methods instead to receive details about your app launch and scene connection. For more information, see [`Scenes`](scenes.md).
 
 The following code shows the app delegate method for an app that handles receiving a `URL`. The code checks the launch options for an incoming URL, and whether that `URL` contains query items that you can use to configure your app. If not, the code returns `false` to indicate that your app can’t handle the launch options.
 

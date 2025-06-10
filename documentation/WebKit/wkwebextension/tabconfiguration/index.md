@@ -1,6 +1,6 @@
 # index
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the position where the tab should be opened within the window.

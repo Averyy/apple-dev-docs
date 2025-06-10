@@ -1,6 +1,6 @@
 # LowLevelTexture
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: class
 
 A container for texture data allowing you to create and update textures using your own format.
@@ -10,6 +10,7 @@ A container for texture data allowing you to create and update textures using yo
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -178,6 +179,7 @@ The [`TextureResource`](textureresource.md) retains a reference to the `LowLevel
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -197,4 +199,4 @@ The [`TextureResource`](textureresource.md) retains a reference to the `LowLevel
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/lowleveltexture)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/lowleveltexture)*

@@ -18,8 +18,6 @@ class var isNestedVirtualizationSupported: Bool { get }
 
 > ❗ **Important**:  Nested virtualization is available for Mac with the M3 chip, and later.
 
- Nested virtualization is available for Mac with the M3 chip, and later.
-
 Use this property to check whether support is available for the platform. As the following example shows, if the framework supports nested virtualization on the host, use [`isNestedVirtualizationEnabled`](vzgenericplatformconfiguration/isnestedvirtualizationenabled.md) to enable the feature:
 
 ## See Also

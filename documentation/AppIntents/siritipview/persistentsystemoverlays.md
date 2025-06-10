@@ -1,6 +1,6 @@
 # persistentSystemOverlays(_:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Sets the preferred visibility of the non-transient system views overlaying the app.
@@ -10,7 +10,7 @@ Sets the preferred visibility of the non-transient system views overlaying the a
 - iPadOS 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration

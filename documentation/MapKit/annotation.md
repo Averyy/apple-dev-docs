@@ -45,12 +45,18 @@ Use this view to annotations in the closure you provide to the `content` paramet
 ### Displaying place information
 - [func mapItemDetailSelectionAccessory(MapItemDetailSelectionAccessoryStyle?) -> some MapContent](mapcontent/mapitemdetailselectionaccessory(_:).md)
   Specifies the selection accessory to display for the selected map item content.
+### Initializers
+- [init(LocalizedStringResource, coordinate: CLLocationCoordinate2D, anchor: UnitPoint, accessoryAnchor: UnitPoint, content: () -> Content)](annotation/init(_:coordinate:anchor:accessoryanchor:content:)-8wi4r.md)
+  Creates an annotation that displays a view at a coordinate on the map.
+- [init(LocalizedStringResource, coordinate: CLLocationCoordinate2D, anchor: UnitPoint, content: () -> Content)](annotation/init(_:coordinate:anchor:content:)-8k419.md)
+  Creates an annotation that displays a view at a coordinate on the map.
 
 ## Relationships
 
 ### Conforms To
 - [MapContent](mapcontent.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

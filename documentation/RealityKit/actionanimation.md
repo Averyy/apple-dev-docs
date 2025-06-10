@@ -10,6 +10,7 @@ Defines an an action animation.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -67,8 +68,6 @@ Stand alone action animations can animate target values using RealityKit’s ani
 ### Type Aliases
 - [ActionAnimation.EventDefinitionType](actionanimation/eventdefinitiontype.md)
 - [ActionAnimation.EventParameterType](actionanimation/eventparametertype.md)
-### Default Implementations
-- [AnimationDefinition Implementations](actionanimation/animationdefinition-implementations.md)
 
 ## Relationships
 

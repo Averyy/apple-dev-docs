@@ -54,8 +54,6 @@ func refreshForNewContacts() async {
 
 > ❗ **Important**: You can only use `ContactProviderManager` in an app, not in an app extension.
 
-You can only use `ContactProviderManager` in an app, not in an app extension.
-
 ## Topics
 
 ### Creating a contact provider manager

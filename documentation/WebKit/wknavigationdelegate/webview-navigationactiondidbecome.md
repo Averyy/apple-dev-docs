@@ -1,6 +1,6 @@
 # webView(_:navigationAction:didBecome:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that a navigation action became a download.

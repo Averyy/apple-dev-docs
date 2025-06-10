@@ -1,6 +1,6 @@
 # viewDidAppear(_:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Notifies the view controller that its view was added to a view hierarchy.
@@ -21,8 +21,8 @@ func viewDidAppear(_ animated: Bool)
 
 ## Mentions
 
-- [Positioning content relative to the safe area](positioning-content-relative-to-the-safe-area.md)
 - [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
+- [Positioning content relative to the safe area](positioning-content-relative-to-the-safe-area.md)
 
 #### Discussion
 

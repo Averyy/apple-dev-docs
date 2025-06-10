@@ -1,6 +1,6 @@
 # split(separator:maxSplits:omittingEmptySubsequences:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns the longest possible subsequences of the collection, in order, around elements equal to the given element.

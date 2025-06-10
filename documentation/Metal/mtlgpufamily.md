@@ -68,6 +68,8 @@ Check whether a GPU supports the features of a specific family by calling the [`
   Represents a family 2 Mac GPU when running an app you built with Mac Catalyst.
 - [MTLGPUFamily.macCatalyst1](mtlgpufamily/maccatalyst1.md)
   Represents a family 1 Mac GPU when running an app you built with Mac Catalyst.
+### Enumeration Cases
+- [MTLGPUFamily.metal4](mtlgpufamily/metal4.md)
 ### Initializers
 - [init?(rawValue: Int)](mtlgpufamily/init(rawvalue:).md)
 
@@ -79,6 +81,7 @@ Check whether a GPU supports the features of a specific family by calling the [`
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

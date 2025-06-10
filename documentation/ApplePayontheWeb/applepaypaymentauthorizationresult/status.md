@@ -17,7 +17,7 @@ required short status;
 
 #### Discussion
 
-For status values, see [`Apple Pay Status Codes`](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/apple_pay_status_codes).
+For status values, see [`Apple Pay Status Codes`](apple-pay-status-codes.md).
 
 ## See Also
 

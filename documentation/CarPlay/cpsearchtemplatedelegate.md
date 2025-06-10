@@ -13,6 +13,7 @@ The interface for an object that serves as the search template’s delegate.
 ## Declaration
 
 ```swift
+@MainActor
 protocol CPSearchTemplateDelegate : NSObjectProtocol
 ```
 

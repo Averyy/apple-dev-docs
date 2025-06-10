@@ -27,8 +27,6 @@ Regions of the layer may be invalidated using the [`setNeedsDisplay(_:)`](calaye
 
 > ❗ **Important**:  Do not attempt to directly modify the [`contents`](calayer/contents.md) property of a [`CATiledLayer`](catiledlayer.md) object. Doing so disables the ability of a tiled layer to asynchronously provide tiled content, effectively turning the layer into a regular [`CALayer`](calayer.md) object.
 
- Do not attempt to directly modify the [`contents`](calayer/contents.md) property of a [`CATiledLayer`](catiledlayer.md) object. Doing so disables the ability of a tiled layer to asynchronously provide tiled content, effectively turning the layer into a regular [`CALayer`](calayer.md) object.
-
 ## Topics
 
 ### Visual Fade
@@ -57,6 +55,8 @@ Regions of the layer may be invalidated using the [`setNeedsDisplay(_:)`](calaye
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -22,7 +22,7 @@ The following example sets the adaptive visibility for the compass and scale, an
 
 ```javascript
 // Create a map.
-var map = new mapkit.Map("my-map-element-id");
+const map = new mapkit.Map("my-map-element-id");
 
 // Show the compass only when the rotation is actively changing.
 map.showsCompass = mapkit.FeatureVisibility.Adaptive;

@@ -1,6 +1,6 @@
 # downloadFailed
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A download error.

@@ -1,6 +1,6 @@
 # summaryArgumentCount
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The number the system adds to the notification summary when the notification represents multiple items.

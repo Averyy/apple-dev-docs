@@ -174,4 +174,4 @@ func userActivityWasContinued(_ userActivity: NSUserActivity) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/continuing-user-activities-with-handoff)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/continuing-user-activities-with-handoff)*

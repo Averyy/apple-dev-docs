@@ -1,6 +1,6 @@
 # activities
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 An ordered list of activities for the multisport workout.
@@ -10,6 +10,7 @@ An ordered list of activities for the multisport workout.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

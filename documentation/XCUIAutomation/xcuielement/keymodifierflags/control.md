@@ -1,6 +1,6 @@
 # control
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The Control key in a combination keystroke.

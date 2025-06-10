@@ -1,6 +1,6 @@
 # UserNotifications Constants
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 ## Topics
 

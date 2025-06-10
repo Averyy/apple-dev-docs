@@ -1,6 +1,6 @@
 # setActive(_:options:)
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: method
 
 Activates or deactivates your app’s audio session using the specified options.
@@ -27,7 +27,7 @@ Your app may activate a session with category [`playback`](avaudiosession/catego
 
 The session fails to activate if another audio session has higher priority than yours (such as a phone call) and neither audio session allows mixing. Deactivating an audio session with running audio objects stops the objects, makes the session inactive, and returns an [`AVAudioSessionErrorCodeIsBusy`](https://developer.apple.com/documentation/coreaudiotypes/avaudiosessionerrorcode/avaudiosessionerrorcodeisbusy) error.
 
-When your app deactivates a session, the return value is [`false`](https://developer.apple.com/documentation/foundation/nsexpression/1416488-false) but the active state changes to deactivate.
+When your app deactivates a session, the return value is [`false`](https://developer.apple.com/documentation/Foundation/NSExpression/false) but the active state changes to deactivate.
 
 ## Parameters
 

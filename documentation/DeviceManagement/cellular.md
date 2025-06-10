@@ -9,8 +9,6 @@ The payload you use to configure cellular settings.
 - iOS 7.0+
 - iPadOS 7.0+
 - watchOS 3.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,17 +24,17 @@ Specify `com.apple.cellular` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, Shared iPad, watchOS |
-| User Channel | - |
-| Allow Manual Install | iOS, watchOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, Shared iPad, watchOS |
+| User channel | NA |
+| Allow manual install | iOS, watchOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

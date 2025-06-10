@@ -20,8 +20,6 @@ The framework calls this method when the user initiates, but hasn’t yet commit
 
 > ❗ **Important**:  Only live video streams support channel skipping. This feature isn’t supported for VOD streams or local media.
 
- Only live video streams support channel skipping. This feature isn’t supported for VOD streams or local media.
-
 ## Parameters
 
 - `playerViewController`: The player view controller.

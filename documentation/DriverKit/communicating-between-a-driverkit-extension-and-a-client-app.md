@@ -1,6 +1,6 @@
 # Communicating between a DriverKit extension and a client app
 
-**Framework**: Driverkit
+**Framework**: DriverKit
 
 Send and receive different kinds of data securely by validating inputs and asynchronously by storing and using a callback.
 
@@ -73,7 +73,7 @@ In iPadOS, the `DriverKitSampleApp` app doesn’t show the Driver Manager sectio
 
 After installing the driver and granting it permission to run in the Settings app, you can use DriverKitSampleApp to communicate with the driver. Click the “Communicate with Dext” button to connect to the driver.
 
-To find the driver, the host app uses the `dextIdentifier` to create a matching dictionary and registers this with [`IOServiceAddMatchingNotification(_:_:_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514362-ioserviceaddmatchingnotification). When the system finds a running driver with the matching identifier, it calls the app’s `DeviceAdded` method.
+To find the driver, the host app uses the `dextIdentifier` to create a matching dictionary and registers this with `IOServiceAddMatchingNotification`. When the system finds a running driver with the matching identifier, it calls the app’s `DeviceAdded` method.
 
 ```objective-c
 CFMutableDictionaryRef matchingDictionary = IOServiceNameMatching(dextIdentifier);
@@ -96,7 +96,7 @@ if (ret != kIOReturnSuccess)
 DeviceAdded(refcon, globalDeviceAddedIter);
 ```
 
-When `DeviceAdded` runs, it iterates over matching services until it finds one that it can connect to with [`IOServiceOpen(_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514515-ioserviceopen). If the `IOServiceOpen` call succeeds, the app calls an internal `SwiftDeviceAdded` method to update the SwiftUI data model with a connection to the driver.
+When `DeviceAdded` runs, it iterates over matching services until it finds one that it can connect to with `IOServiceOpen`. If the `IOServiceOpen` call succeeds, the app calls an internal `SwiftDeviceAdded` method to update the SwiftUI data model with a connection to the driver.
 
 ```objective-c
 void DeviceAdded(void* refcon, io_iterator_t iterator)
@@ -141,7 +141,7 @@ When you click or tap one of these buttons, the “Waiting for action” label c
 
 The buttons in the Unchecked and Checked sections exercise different code paths that send scalar values and structures to the dext. Note that these are synchronous calls that block until the driver returns a result. The buttons in the Async section perform asynchronous operations that allow the driver to call back to the client after a delay.
 
-Each of these options uses the connection in calls to [`IOConnectCallScalarMethod(_:_:_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514793-ioconnectcallscalarmethod), [`IOConnectCallStructMethod(_:_:_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514274-ioconnectcallstructmethod), and [`IOConnectCallAsyncStructMethod(_:_:_:_:_:_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514403-ioconnectcallasyncstructmethod) (or [`IOConnectCallMethod(_:_:_:_:_:_:_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514240-ioconnectcallmethod) and [`IOConnectCallAsyncMethod(_:_:_:_:_:_:_:_:_:_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514418-ioconnectcallasyncmethod), which this sample doesn’t use). For example, the following listing shows the Scalar call from the Unchecked button group, which sends an array of 16 `uint64_t` values, and receives a different array back.
+Each of these options uses the connection in calls to `IOConnectCallScalarMethod`, `IOConnectCallStructMethod`, and `IOConnectCallAsyncStructMethod` (or `IOConnectCallMethod` and `IOConnectCallAsyncMethod`, which this sample doesn’t use). For example, the following listing shows the Scalar call from the Unchecked button group, which sends an array of 16 `uint64_t` values, and receives a different array back.
 
 ```objective-c
 kern_return_t ret = kIOReturnSuccess;
@@ -165,7 +165,7 @@ The other options are all similar, differing only in which `IOConnect...` functi
 
 ##### Validate Arguments to Driver Function Calls
 
-The `NullDriver` receives calls from the client in its overridden [`ExternalMethod`](iouserclient/3325619-externalmethod.md) method. The Unchecked options in the SwiftUI view perform calls that the driver passes unchecked to its [`ExternalMethod`](iouserclient/3325619-externalmethod.md) implementation. In practice, it’s important that a driver validates its inputs before passing them along, to make sure the data is the expected size and contains reasonable values. `NullDriver` has functions that check scalar and structure calls, which are exercised by the Checked buttons in the SwiftUI app.
+The `NullDriver` receives calls from the client in its overridden [`ExternalMethod`](IOUserClient/ExternalMethod.md) method. The Unchecked options in the SwiftUI view perform calls that the driver passes unchecked to its [`ExternalMethod`](IOUserClient/ExternalMethod.md) implementation. In practice, it’s important that a driver validates its inputs before passing them along, to make sure the data is the expected size and contains reasonable values. `NullDriver` has functions that check scalar and structure calls, which are exercised by the Checked buttons in the SwiftUI app.
 
 The “checked” methods in `NullDriver` — `CheckedScalar` and `CheckedStruct` —  use an [`IOUserClientMethodDispatch`](IOUserClientMethodDispatch.md) instance to describe the expected fields of the [`IOUserClientMethodArguments`](IOUserClientMethodArguments.md). The sample stores these dispatch instances in an array called `externalMethodChecks`. For example, the dispatch instance for the checked scalar call expects to receive and return 16 scalar values, as seen below:
 
@@ -181,7 +181,7 @@ The “checked” methods in `NullDriver` — `CheckedScalar` and `CheckedStruct
 },
 ```
 
-After fetching the appropriate  [`IOUserClientMethodDispatch`](IOUserClientMethodDispatch.md) instance from the array, the driver passes it in its call to the superclass’s [`ExternalMethod`](iouserclient/3325619-externalmethod.md) along with the method selector and its arguments. If the number of arguments or return values don’t match what’s in the dispatch instance, the call fails and returns [`kIOReturnBadArgument`](kIOReturnBadArgument.md). Checking client calls like this prevents a malicious call to the driver from using attack vectors like buffer overruns.
+After fetching the appropriate  [`IOUserClientMethodDispatch`](IOUserClientMethodDispatch.md) instance from the array, the driver passes it in its call to the superclass’s [`ExternalMethod`](IOUserClient/ExternalMethod.md) along with the method selector and its arguments. If the number of arguments or return values don’t match what’s in the dispatch instance, the call fails and returns [`kIOReturnBadArgument`](kIOReturnBadArgument.md). Checking client calls like this prevents a malicious call to the driver from using attack vectors like buffer overruns.
 
 ##### Prepare for Driver to Client Callbacks
 
@@ -206,7 +206,7 @@ The driver’s implementation of `Start` also sets up the `ivars` member `simula
 virtual void SimulatedAsyncEvent(OSAction* action, uint64_t time) TYPE(IOTimerDispatchSource::TimerOccurred);
 ```
 
-This declaration takes the same arguments as the [`TimerOccurred`](iotimerdispatchsource/3180736-timeroccurred.md) method that that the [`TYPE`](TYPE.md)  macro wraps. By declaring the callback’s name as `SimulatedAsyncEvent`, the [`TYPE`](TYPE.md) macro synthesizes `CreateActionSimulatedAsyncEvent`, the function that creates the  [`OSAction`](OSAction.md). The driver’s `Start` implementation then calls this synthesized method to initialize the `simulatedAsyncDeviceResponseAction` member of the `ivars` structure:
+This declaration takes the same arguments as the [`TimerOccurred`](IOTimerDispatchSource/TimerOccurred.md) method that that the [`TYPE`](TYPE.md)  macro wraps. By declaring the callback’s name as `SimulatedAsyncEvent`, the [`TYPE`](TYPE.md) macro synthesizes `CreateActionSimulatedAsyncEvent`, the function that creates the  [`OSAction`](OSAction.md). The driver’s `Start` implementation then calls this synthesized method to initialize the `simulatedAsyncDeviceResponseAction` member of the `ivars` structure:
 
 ```c
 ret = CreateActionSimulatedAsyncEvent(sizeof(DataStruct), &ivars->simulatedAsyncDeviceResponseAction);
@@ -269,4 +269,4 @@ After the driver stores the callback, the client app can perform multiple simula
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DriverKit/communicating-between-a-driverkit-extension-and-a-client-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/driverkit/communicating-between-a-driverkit-extension-and-a-client-app)*

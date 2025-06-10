@@ -1,6 +1,6 @@
 # Document Object Models API (Legacy)
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 ## Topics
 

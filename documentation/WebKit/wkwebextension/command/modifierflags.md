@@ -1,6 +1,6 @@
 # modifierFlags
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The modifier flags used with the activation key to trigger the command.
@@ -16,7 +16,7 @@ The modifier flags used with the activation key to trigger the command.
 
 ```swift
 @MainActor
-var modifierFlags: UIKeyModifierFlags { get set }
+var modifierFlags: NSEvent.ModifierFlags { get set }
 ```
 
 #### Discussion

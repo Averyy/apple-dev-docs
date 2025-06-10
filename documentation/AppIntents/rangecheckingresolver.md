@@ -8,10 +8,10 @@ An interface for validating that a value is within a parameter’s defined inclu
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -32,6 +32,7 @@ protocol RangeCheckingResolver : Resolver
 - [Hashable](../Swift/Hashable.md)
 - [Resolver](resolver.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [DoubleFromIntResolver](doublefromintresolver.md)
 - [DoubleFromStringResolver](doublefromstringresolver.md)

@@ -1,6 +1,6 @@
 # function
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The Function key in a combination keystroke.

@@ -109,6 +109,9 @@ The expansion process reverses the collapsing process by asking the delegate to 
   Tells the delegate that the specified view controller is about to be shown again.
 - [func splitViewController(UISplitViewController, popoverController: UIPopoverController, willPresent: UIViewController)](uisplitviewcontrollerdelegate/splitviewcontroller(_:popovercontroller:willpresent:).md)
   Tells the delegate that the hidden view controller is about to be displayed in a popover.
+### Instance Methods
+- [func splitViewController(UISplitViewController, didHide: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:didhide:).md)
+- [func splitViewController(UISplitViewController, didShow: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:didshow:).md)
 
 ## See Also
 

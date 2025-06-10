@@ -1,6 +1,6 @@
 # WKInterfaceAuthorizationAppleIDButton.Style
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Values that define an authorization button’s style.
@@ -36,6 +36,7 @@ enum Style
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

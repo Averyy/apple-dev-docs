@@ -6,6 +6,7 @@
 An immersion style that displays unbounded content that partially replaces passthrough video.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -27,6 +28,8 @@ Use [`progressive`](immersionstyle/progressive.md) with the [`immersionStyle(sel
 - [init(immersion:initialAmount:)](progressiveimmersionstyle/init(immersion:initialamount:).md)
   An immersion style that displays unbounded content that partially replaces passthrough video.
 ### Instance Properties
+- [let aspectRatio: ProgressiveImmersionAspectRatio](progressiveimmersionstyle/aspectratio.md)
+  The aspect ratio used for this instance of the style.
 - [let initialImmersionAmount: Double?](progressiveimmersionstyle/initialimmersionamount.md)
   The initial amount of immersion used for this instance of the style.
 - [let maximumImmersionAmount: Double?](progressiveimmersionstyle/maximumimmersionamount.md)

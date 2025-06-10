@@ -36,8 +36,6 @@ The sync engine uses an opaque type to track its internal state, and it’s your
 
 > ❗ **Important**:  Don’t use [`CKSyncEngine`](cksyncengine-5sie5.md) to sync your app’s public database.
 
- Don’t use [`CKSyncEngine`](cksyncengine-5sie5.md) to sync your app’s public database.
-
 ##### Send Changes to Icloud
 
 A sync engine requires you to tell it about any changes to send, which you do by invoking the [`add(pendingDatabaseChanges:)`](cksyncengine-5sie5/state-swift.class/add(pendingdatabasechanges:).md) and [`add(pendingRecordZoneChanges:)`](cksyncengine-5sie5/state-swift.class/add(pendingrecordzonechanges:).md) methods on the engine’s [`state`](cksyncengine-5sie5/state-swift.property.md) property. If there are no scheduled sync operations when you invoke these methods, the engine automatically schedules one. Database changes don’t require any additional input, but the sync engine does expect you to provide the individual record zone changes — in batches — and return them from your delegate’s implementation of [`nextRecordZoneChangeBatch(_:syncEngine:)`](cksyncenginedelegate-1q7g8/nextrecordzonechangebatch(_:syncengine:).md). After the engine sends the changes, it notifies your delegate about their success (or failure) by dispatching [`CKSyncEngine.Event.sentDatabaseChanges(_:)`](cksyncengine-5sie5/event/sentdatabasechanges(_:).md) and [`CKSyncEngine.Event.sentRecordZoneChanges(_:)`](cksyncengine-5sie5/event/sentrecordzonechanges(_:).md) events.
@@ -47,8 +45,6 @@ A sync engine requires you to tell it about any changes to send, which you do by
 By default, a sync engine attempts to discover an existing [`CKDatabaseSubscription`](ckdatabasesubscription.md) for the associated database and uses that to receive silent notifications about remote record changes. If the engine doesn’t find a subscription, it automatically creates one to use. On receipt of a notification, the engine schedules a sync operation to fetch the related changes. When that operation runs, the engine dispatches a [`CKSyncEngine.Event.willFetchChanges(_:)`](cksyncengine-5sie5/event/willfetchchanges(_:).md) event to your delegate. As it receives fetched changes, the engine dispatches [`CKSyncEngine.Event.fetchedDatabaseChanges(_:)`](cksyncengine-5sie5/event/fetcheddatabasechanges(_:).md) and [`CKSyncEngine.Event.fetchedRecordZoneChanges(_:)`](cksyncengine-5sie5/event/fetchedrecordzonechanges(_:).md), accordingly. After the operation finishes, the sync engine notifies your delegate by dispatching a [`CKSyncEngine.Event.didFetchChanges(_:)`](cksyncengine-5sie5/event/didfetchchanges(_:).md) event. You handle all dispatched events in your delegate’s implementation of [`handleEvent(_:syncEngine:)`](cksyncenginedelegate-1q7g8/handleevent(_:syncengine:).md).
 
 > 💡 **Tip**:  A sample code project for [`CKSyncEngine`](cksyncengine-5sie5.md) is available on GitHub here: [`CloudKit Samples: CKSyncEngine`](https://developer.apple.comhttps://github.com/apple/sample-cloudkit-sync-engine).
-
- A sample code project for [`CKSyncEngine`](cksyncengine-5sie5.md) is available on GitHub here: [`CloudKit Samples: CKSyncEngine`](https://developer.apple.comhttps://github.com/apple/sample-cloudkit-sync-engine).
 
 ## Topics
 
@@ -101,6 +97,7 @@ By default, a sync engine attempts to discover an existing [`CKDatabaseSubscript
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

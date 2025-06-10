@@ -26,25 +26,28 @@ You cannot combine a discrete option with a cumulative option. You can, however,
 #### Swift
 
 ```swift
-let cumulativeActiveEnergyBurned = HKQuantityType(.activeEnergyBurned)
+let cumulativeActiveEnergyBurned =
+    HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierActiveEnergyBurned)
  
-let discreteHeartRate = HKQuantityType(.heartRate)
+let discreteHeartRate =
+    HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)
  
 // Cannot combine cumulative options with discrete options.
-// However, you can combine a cumulative option and separated by source
+// However, you can combine a cumulative option and seperated by source
 let cumulativeQuery = HKStatisticsQuery(quantityType:cumulativeActiveEnergyBurned,
                                         quantitySamplePredicate:nil,
-                                        options: [.cumulativeSum, .separateBySource]) {
+                                        options: .CumulativeSum | .SeparateBySource) {
                                             query, statistics, error in
                                             
                                             // ... process the results here
 }
  
 // You can also combine any number of discrete options
-// and the separated by source option.
+// and the seperated by source option.
 let discreteQuery = HKStatisticsQuery(quantityType: discreteHeartRate,
                                       quantitySamplePredicate: nil,
-                                      options: [.discreteAverage, .discreteMin, .discreteMax, .separateBySource]) {
+                                      options: .DiscreteAverage | .DiscreteMin |
+                                        .DiscreteMax | .SeparateBySource) {
                                             query, statistics, error in
                                             
                                             // ... process the results here
@@ -119,6 +122,7 @@ HKStatisticsQuery *discreteQuery =
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

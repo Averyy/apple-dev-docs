@@ -1,6 +1,6 @@
 # enableWaterLock()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Disables the Apple Watch touch screen to prevent accidental taps while submerged.

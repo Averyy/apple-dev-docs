@@ -58,4 +58,4 @@ At runtime, you can access a library by creating an [`MTLLibrary`](mtllibrary.md
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/building-a-shader-library-by-precompiling-source-files)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/building-a-shader-library-by-precompiling-source-files)*

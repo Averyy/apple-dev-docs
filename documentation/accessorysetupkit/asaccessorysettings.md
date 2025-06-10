@@ -38,6 +38,7 @@ class ASAccessorySettings
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -45,6 +46,8 @@ class ASAccessorySettings
   Finish authorization of a partially-setup accessory.
 - [func failAuthorization(for: ASAccessory, completionHandler: ((any Error)?) -> Void)](asaccessorysession/failauthorization(for:completionhandler:).md)
   End authorization of a partially-configured accessory as a failure.
+- [func updateAuthorization(for: ASAccessory, descriptor: ASDiscoveryDescriptor, completionHandler: ((any Error)?) -> Void)](asaccessorysession/updateauthorization(for:descriptor:completionhandler:).md)
+  Displays a view to upgrade an accessory with additional technology permissions.
 
 
 ---

@@ -1,136 +1,185 @@
 {
   "metadata": {
-    "last_updated": "2025-06-08T17:22:23.430957",
-    "total_pages": 23
+    "last_updated": "2025-06-10T21:44:11.016774",
+    "total_pages": 22,
+    "session_id": "2025-06-10T21:44:09.030814"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/BrowserKit.json": {
-      "hash": "cb3bec53e2756a07e48d65fd216f1330f0771c44d49e1d1e6025eedfa59a548c",
-      "last_checked": "2025-06-08T17:22:23.254295",
-      "status": "unchanged",
-      "etag": "W/\"9a16edb2a9377fd77c1b2f7cac7031f0\""
+      "hash": "6d6fd46e3c0a62239e8c8e324f51b4b029adec5fbd60eda202cc077bbb64c5cc",
+      "last_checked": "2025-06-10T21:44:09.480385",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"2be1cb6545e67cfd1e82bb39c536bf16\"",
+      "file_path": "documentation/BrowserKit/BrowserKit.md"
     },
     "https://developer.apple.com/documentation/BrowserKit": {
-      "hash": "cb3bec53e2756a07e48d65fd216f1330f0771c44d49e1d1e6025eedfa59a548c",
-      "last_checked": "2025-06-08T17:22:23.254334",
-      "status": "unchanged",
-      "etag": "W/\"9a16edb2a9377fd77c1b2f7cac7031f0\""
-    },
-    "https://developer.apple.com/tutorials/data/documentation/browserkit.json": {
-      "hash": "f53a81681e027e158cfbdfa407a05bcf85769d5ea062fd98c9ddfe07c2371f57",
-      "last_checked": "2025-06-05T17:27:26.774122",
-      "status": "unchanged",
-      "etag": "W/\"9a16edb2a9377fd77c1b2f7cac7031f0\""
+      "hash": "6d6fd46e3c0a62239e8c8e324f51b4b029adec5fbd60eda202cc077bbb64c5cc",
+      "last_checked": "2025-06-10T21:44:09.309465",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"2be1cb6545e67cfd1e82bb39c536bf16\"",
+      "file_path": "documentation/BrowserKit/BrowserKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability.json": {
-      "hash": "62064eff6cfab258ada296e14b2f1dfbf5b5fe2ffe0d34cf0c2eab2e5d7a44b1",
-      "last_checked": "2025-06-05T17:27:27.635494",
-      "status": "unchanged",
-      "etag": "W/\"b604c05a635d07a4a5f9f9d8aa360099\""
+      "hash": "a674042922b84c9d5883469a48c577bcaa9f67ee4be0b1049a7bbf0c437de326",
+      "last_checked": "2025-06-10T21:44:09.868769",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"9d3adedc966ed1bc58a18212cdfacaf8\"",
+      "file_path": "documentation/BrowserKit/beavailability.md"
     },
     "https://developer.apple.com/documentation/browserkit/beavailability": {
-      "hash": "62064eff6cfab258ada296e14b2f1dfbf5b5fe2ffe0d34cf0c2eab2e5d7a44b1",
-      "last_checked": "2025-06-05T17:27:27.635494",
-      "status": "unchanged"
+      "hash": "a674042922b84c9d5883469a48c577bcaa9f67ee4be0b1049a7bbf0c437de326",
+      "last_checked": "2025-06-10T21:44:09.868814",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"9d3adedc966ed1bc58a18212cdfacaf8\"",
+      "file_path": "documentation/BrowserKit/beavailability.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/context.json": {
-      "hash": "b95a4645bd4f355205f8d45974fcdcc3b6a4d62751c9607c214daf59de106cd3",
-      "last_checked": "2025-06-05T17:27:28.072014",
-      "status": "unchanged",
-      "etag": "W/\"59728e3bc1faf4299df6350e19f1393a\""
+      "hash": "1afc6db260f705f1e2c9085e0a08c77484f5b3bd986911f99e0c18b2c02b84e0",
+      "last_checked": "2025-06-10T21:44:10.033289",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"f599eb3a33497291fc3fb8a22bd6536e\"",
+      "file_path": "documentation/BrowserKit/beavailability/context.md"
     },
     "https://developer.apple.com/documentation/browserkit/beavailability/context": {
-      "hash": "b95a4645bd4f355205f8d45974fcdcc3b6a4d62751c9607c214daf59de106cd3",
-      "last_checked": "2025-06-05T17:27:28.072014",
-      "status": "unchanged"
+      "hash": "1afc6db260f705f1e2c9085e0a08c77484f5b3bd986911f99e0c18b2c02b84e0",
+      "last_checked": "2025-06-10T21:44:10.033347",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"f599eb3a33497291fc3fb8a22bd6536e\"",
+      "file_path": "documentation/BrowserKit/beavailability/context.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/iseligible(for:completionhandler:).json": {
-      "hash": "50a5ed24f22a69319fff53e3a27532fc2301a1b2c2ed83141bfdb08996bbc63b",
-      "last_checked": "2025-06-05T17:27:28.506244",
-      "status": "unchanged",
-      "etag": "W/\"fa526475d180d15e62805660b861bf07\""
+      "hash": "38d486b454cc332876b1512fa30823b1a3f44b2239e9b1803cd3d4d4091eddb8",
+      "last_checked": "2025-06-10T21:44:10.171533",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"b8e8790aed2d454a311d4b29dce48f9b\"",
+      "file_path": "documentation/BrowserKit/beavailability/iseligible-forcompletionhandler.md"
     },
     "https://developer.apple.com/documentation/browserkit/beavailability/iseligible(for:completionhandler:)": {
-      "hash": "50a5ed24f22a69319fff53e3a27532fc2301a1b2c2ed83141bfdb08996bbc63b",
-      "last_checked": "2025-06-05T17:27:28.506244",
-      "status": "unchanged"
+      "hash": "38d486b454cc332876b1512fa30823b1a3f44b2239e9b1803cd3d4d4091eddb8",
+      "last_checked": "2025-06-10T21:44:10.171586",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"b8e8790aed2d454a311d4b29dce48f9b\"",
+      "file_path": "documentation/BrowserKit/beavailability/iseligible-forcompletionhandler.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/context/webbrowser.json": {
-      "hash": "2f37866dce4761a4cb58b12a66726911d276ee3ef8121213f6cb6a9c80c608ee",
-      "last_checked": "2025-06-05T17:27:28.928178",
-      "status": "unchanged",
-      "etag": "W/\"ba7c521900ae6a884e4d7c36d8d9f74d\""
+      "hash": "be59e600b4ed8c7be2aae261afe1341cec185a8ec60099c2c786b14acc1c3c38",
+      "last_checked": "2025-06-10T21:44:10.309976",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"dee698b3ef21ee8dbd9f77c8e684d92e\"",
+      "file_path": "documentation/BrowserKit/beavailability/context/webbrowser.md"
     },
     "https://developer.apple.com/documentation/browserkit/beavailability/context/webbrowser": {
-      "hash": "2f37866dce4761a4cb58b12a66726911d276ee3ef8121213f6cb6a9c80c608ee",
-      "last_checked": "2025-06-05T17:27:28.928178",
-      "status": "unchanged"
+      "hash": "be59e600b4ed8c7be2aae261afe1341cec185a8ec60099c2c786b14acc1c3c38",
+      "last_checked": "2025-06-10T21:44:10.310018",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"dee698b3ef21ee8dbd9f77c8e684d92e\"",
+      "file_path": "documentation/BrowserKit/beavailability/context/webbrowser.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/context/init(rawvalue:).json": {
-      "hash": "8f82db4dfff317de7b0767f38d662ef81aa66b3ec45658a230bbfb570ca7add0",
-      "last_checked": "2025-06-05T17:27:29.301867",
-      "status": "unchanged",
-      "etag": "W/\"713d03bb39ceef224c2e28c0aca91470\""
+      "hash": "8925276afd093b3a8bb0d61663c24be20a88efe95ca6ee333c78336ad9c31ffa",
+      "last_checked": "2025-06-10T21:44:10.428516",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"e08c5c6763eaa115ea18a9e2356c39b1\"",
+      "file_path": "documentation/BrowserKit/beavailability/context/init-rawvalue.md"
     },
     "https://developer.apple.com/documentation/browserkit/beavailability/context/init(rawvalue:)": {
-      "hash": "8f82db4dfff317de7b0767f38d662ef81aa66b3ec45658a230bbfb570ca7add0",
-      "last_checked": "2025-06-05T17:27:29.301867",
-      "status": "unchanged"
+      "hash": "8925276afd093b3a8bb0d61663c24be20a88efe95ca6ee333c78336ad9c31ffa",
+      "last_checked": "2025-06-10T21:44:10.428559",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"e08c5c6763eaa115ea18a9e2356c39b1\"",
+      "file_path": "documentation/BrowserKit/beavailability/context/init-rawvalue.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/context/equatable-implementations.json": {
-      "hash": "d7e775024a9828327f2473e131b62b55230664d0ab60f9d79c03b8dda02acc78",
-      "last_checked": "2025-06-05T17:27:29.670328",
-      "status": "unchanged",
-      "etag": "W/\"87a665338305938b839801bc4aae1ea0\""
+      "hash": "a63a194aeac4fd866494303ed4d79aa4cb51c9c08505a24c44975f33cdebb941",
+      "last_checked": "2025-06-10T21:44:10.509028",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"6a699c1f324c1a4de4f11ee2a8a5198a\"",
+      "file_path": "documentation/BrowserKit/beavailability/context/equatable-implementations.md"
     },
     "https://developer.apple.com/documentation/browserkit/beavailability/context/equatable-implementations": {
-      "hash": "d7e775024a9828327f2473e131b62b55230664d0ab60f9d79c03b8dda02acc78",
-      "last_checked": "2025-06-05T17:27:29.670328",
-      "status": "unchanged"
+      "hash": "a63a194aeac4fd866494303ed4d79aa4cb51c9c08505a24c44975f33cdebb941",
+      "last_checked": "2025-06-10T21:44:10.509068",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"6a699c1f324c1a4de4f11ee2a8a5198a\"",
+      "file_path": "documentation/BrowserKit/beavailability/context/equatable-implementations.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/context/rawrepresentable-implementations.json": {
-      "hash": "5601432d96b690ffe3c9938519cc9562fe9d5df0ed25f60081c1df41ef2c1530",
-      "last_checked": "2025-06-05T17:27:30.036569",
-      "status": "unchanged",
-      "etag": "W/\"0a04149a65fc44e3f620da7e2675daef\""
+      "hash": "0418cff15d7d8bcbbc4bd6e2f8ee59d4122f39e939acd4efdbc75dfceb4a2007",
+      "last_checked": "2025-06-10T21:44:10.639764",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"4a999e05b9144e741f853e0fb421e6c8\"",
+      "file_path": "documentation/BrowserKit/beavailability/context/rawrepresentable-implementations.md"
     },
     "https://developer.apple.com/documentation/browserkit/beavailability/context/rawrepresentable-implementations": {
-      "hash": "5601432d96b690ffe3c9938519cc9562fe9d5df0ed25f60081c1df41ef2c1530",
-      "last_checked": "2025-06-05T17:27:30.036569",
-      "status": "unchanged"
+      "hash": "0418cff15d7d8bcbbc4bd6e2f8ee59d4122f39e939acd4efdbc75dfceb4a2007",
+      "last_checked": "2025-06-10T21:44:10.639799",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"4a999e05b9144e741f853e0fb421e6c8\"",
+      "file_path": "documentation/BrowserKit/beavailability/context/rawrepresentable-implementations.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/context/!=(_:_:).json": {
-      "hash": "397eb2df95aef4d0c203dbcecb77069592e0f290d83c38e90c4e9d3dd6b03c90",
-      "last_checked": "2025-06-05T17:27:30.455541",
-      "status": "unchanged",
-      "etag": "W/\"ecc8dcd2c7a7987257f75ee62e153c07\""
+      "hash": "eac82c61a1b4f1735d14e5699b26319519cf043d4a8870fb75c79dac89ede406",
+      "last_checked": "2025-06-10T21:44:10.747025",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"e58e3c26ab73e7a32df7a0476f08bc2c\"",
+      "file_path": "documentation/BrowserKit/beavailability/context/unknown.md"
     },
     "https://developer.apple.com/documentation/browserkit/beavailability/context/!=(_:_:)": {
-      "hash": "397eb2df95aef4d0c203dbcecb77069592e0f290d83c38e90c4e9d3dd6b03c90",
-      "last_checked": "2025-06-05T17:27:30.455541",
-      "status": "unchanged"
+      "hash": "eac82c61a1b4f1735d14e5699b26319519cf043d4a8870fb75c79dac89ede406",
+      "last_checked": "2025-06-10T21:44:10.747068",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"e58e3c26ab73e7a32df7a0476f08bc2c\"",
+      "file_path": "documentation/BrowserKit/beavailability/context/unknown.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/context/hashvalue.json": {
-      "hash": "4f0400428090dc270388d44cdd9c9a594662ad28ff4a9667a480e01177cc1209",
-      "last_checked": "2025-06-05T17:27:30.797606",
-      "status": "unchanged",
-      "etag": "W/\"57650d81a74935dfd966ecd836ef7409\""
+      "hash": "7a2820c0462914381f649e30304da113929cd7b378212c02b955fc35c5d62fb1",
+      "last_checked": "2025-06-10T21:44:10.888274",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"15a854858717e9de456ff9d4c644cb7c\"",
+      "file_path": "documentation/BrowserKit/beavailability/context/hashvalue.md"
     },
     "https://developer.apple.com/documentation/browserkit/beavailability/context/hashvalue": {
-      "hash": "4f0400428090dc270388d44cdd9c9a594662ad28ff4a9667a480e01177cc1209",
-      "last_checked": "2025-06-05T17:27:30.797606",
-      "status": "unchanged"
+      "hash": "7a2820c0462914381f649e30304da113929cd7b378212c02b955fc35c5d62fb1",
+      "last_checked": "2025-06-10T21:44:10.888316",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"15a854858717e9de456ff9d4c644cb7c\"",
+      "file_path": "documentation/BrowserKit/beavailability/context/hashvalue.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/context/hash(into:).json": {
-      "hash": "959e43019dab8f31e49a434cc0daeb0f35e8d4f8cbc656e9bb3c1b4b88aaea3e",
-      "last_checked": "2025-06-05T17:27:31.198959",
-      "status": "unchanged",
-      "etag": "W/\"7be4847e15e9394976dd5fe8d2e82a43\""
+      "hash": "914824f147b69ae55d96a5c7a17a0ca8e8c3b945b64bb549910fa3d96b01562c",
+      "last_checked": "2025-06-10T21:44:11.015792",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"da6bac1b2f4db32e9744e0b840d3177e\"",
+      "file_path": "documentation/BrowserKit/beavailability/context/hash-into.md"
     },
     "https://developer.apple.com/documentation/browserkit/beavailability/context/hash(into:)": {
-      "hash": "959e43019dab8f31e49a434cc0daeb0f35e8d4f8cbc656e9bb3c1b4b88aaea3e",
-      "last_checked": "2025-06-05T17:27:31.198959",
-      "status": "unchanged"
+      "hash": "914824f147b69ae55d96a5c7a17a0ca8e8c3b945b64bb549910fa3d96b01562c",
+      "last_checked": "2025-06-10T21:44:11.015842",
+      "status": "new",
+      "session_id": "2025-06-10T21:44:09.030814",
+      "etag": "W/\"da6bac1b2f4db32e9744e0b840d3177e\"",
+      "file_path": "documentation/BrowserKit/beavailability/context/hash-into.md"
     }
   }
 }

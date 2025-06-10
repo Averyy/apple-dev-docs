@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: init
 
 Creates a new array that contains the given XPC object.

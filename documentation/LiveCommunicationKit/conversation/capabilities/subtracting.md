@@ -5,6 +5,13 @@
 
 Returns a new set containing the elements of this set that do not occur in the given set.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift
@@ -19,7 +26,7 @@ A new set.
 
 In the following example, the `nonNeighbors` set is made up of the elements of the `employees` set that are not elements of `neighbors`:
 
-```swift
+```None
 let employees: Set = ["Alicia", "Bethany", "Chris", "Diana", "Eric"]
 let neighbors: Set = ["Bethany", "Eric", "Forlani", "Greta"]
 let nonNeighbors = employees.subtracting(neighbors)

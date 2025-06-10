@@ -13,6 +13,7 @@ A Boolean value that enables and disables the map button.
 ## Declaration
 
 ```swift
+@MainActor
 var isEnabled: Bool { get set }
 ```
 

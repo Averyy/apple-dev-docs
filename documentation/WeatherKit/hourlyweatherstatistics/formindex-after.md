@@ -1,6 +1,6 @@
 # formIndex(after:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Replaces the given index with its successor.

@@ -1,6 +1,6 @@
 # addTestRun(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Adds a test run to the test suite.

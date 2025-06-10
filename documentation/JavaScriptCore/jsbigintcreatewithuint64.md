@@ -17,16 +17,15 @@
 func JSBigIntCreateWithUInt64(_ ctx: JSContextRef, _ integer: UInt64, _ exception: UnsafeMutablePointer<JSValueRef?>?) -> JSValueRef
 ```
 
-#### Discussion
+#### Return Value
 
-```None
-@function
-@abstract         Creates a JavaScript BigInt with a 64-bit unsigned integer.
-@param ctx        The execution context to use.
-@param integer    The 64-bit unsigned integer to copy into the new BigInt JSValue.
-@param exception  A pointer to a JSValueRef in which to store an exception, if any. To reliable detect exception, initialize this to null before the call. Pass NULL if you do not care to store an exception.
-@result           A BigInt JSValue of the integer, or NULL if an exception is thrown.
-```
+A BigInt JSValue of the integer, or NULL if an exception is thrown.
+
+## Parameters
+
+- `ctx`: The execution context to use.
+- `integer`: The 64-bit unsigned integer to copy into the new BigInt JSValue.
+- `exception`: A pointer to a JSValueRef in which to store an exception, if any. To reliable detect exception, initialize this to null before the call. Pass NULL if you do not care to store an exception.
 
 
 ---

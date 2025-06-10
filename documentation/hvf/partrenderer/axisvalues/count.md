@@ -1,6 +1,6 @@
 # count
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: property
 
 The number of elements in the collection.

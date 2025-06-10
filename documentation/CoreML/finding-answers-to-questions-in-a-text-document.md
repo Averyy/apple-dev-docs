@@ -1,6 +1,6 @@
 # Finding answers to questions in a text document
 
-**Framework**: Coreml
+**Framework**: Core ML
 
 Locate relevant passages in a document by asking the Bidirectional Encoder Representations from Transformers (BERT) model a question.
 
@@ -67,7 +67,7 @@ tagger.enumerateTags(in: rawString.startIndex..<rawString.endIndex,
 return wordTokens
 ```
 
-The sample app leverages the tagger to split each string into tokens by using its [`enumerateTags(in:unit:scheme:options:using:)`](https://developer.apple.com/documentation/NaturalLanguage/NLTagger/enumerateTags(in:unit:scheme:options:using:)) method with the [`tokenType`](https://developer.apple.com/documentation/NaturalLanguage/NLTagScheme/tokenType) tagging scheme and the [`NLTokenUnit.word`](https://developer.apple.com/documentation/NaturalLanguage/NLTokenUnit/word) token unit.
+The sample app leverages the tagger to split each string into tokens by using its enumerateTags(in:unit:scheme:options:using:) method with the .tokenType tagging scheme and the [`NLTokenUnit.word`](https://developer.apple.com/documentation/NaturalLanguage/NLTokenUnit/word) token unit.
 
 ##### Convert Word or Wordpiece Tokens Into Their Ids
 
@@ -214,4 +214,4 @@ The BERT model included in this sample can process up to 384 tokens, including t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/finding-answers-to-questions-in-a-text-document)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coreml/finding-answers-to-questions-in-a-text-document)*

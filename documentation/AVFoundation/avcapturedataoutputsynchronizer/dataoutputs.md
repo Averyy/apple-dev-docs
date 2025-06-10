@@ -1,6 +1,6 @@
 # dataOutputs
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The list of data outputs governed by this data output synchronizer.

@@ -14,13 +14,14 @@ Note: The signature doesn’t include the `conversion-value`. Postbacks may cont
 
 Note: The signature doesn’t include the `coarse-conversion-value`. Postbacks may contain either `conversion-value` or `coarse-conversion-value`, not both.
 
-To ensure crowd anonymity, Apple assigns a postback data tier to app downloads. The postback data tier determines whether certain parameters appear in the postback, as well as the number of digits in the hierarchical source identifer. The following postback parameters are subject to the postback data tier:
+To ensure crowd anonymity, Apple assigns a postback data tier to app downloads. The postback data tier determines whether certain parameters appear in the postback, as well as the number of digits in the hierarchical source identifier. The following postback parameters are subject to the postback data tier:
 
 - `source-identifier` (affects the number of digits the postback returns)
 - `coarse-conversion-value`
 - `conversion-value`
 - `source-app-id`
 - `source-domain`
+- `country-code`
 
 For more information about receiving postbacks, see [`Receiving postbacks in multiple conversion windows`](receiving-postbacks-in-multiple-conversion-windows.md).
 

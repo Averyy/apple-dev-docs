@@ -1,6 +1,6 @@
 # QTVR string atom
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that contains a string for QuickTime VR.

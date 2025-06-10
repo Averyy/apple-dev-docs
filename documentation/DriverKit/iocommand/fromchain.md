@@ -15,6 +15,10 @@
 static IOCommand * FromChain(queue_chain_t * link);
 ```
 
+#### Return Value
+
+Queue used to queue commands.
+
 
 ---
 

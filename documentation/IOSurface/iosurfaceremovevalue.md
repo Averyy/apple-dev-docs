@@ -1,6 +1,6 @@
 # IOSurfaceRemoveValue(_:_:)
 
-**Framework**: Iosurface  
+**Framework**: IOSurface  
 **Kind**: func
 
 Deletes a value in the dictionary associated with the buffer.

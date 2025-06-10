@@ -1,6 +1,6 @@
 # setReaderModeActive(_:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to set the reader mode for the tab.

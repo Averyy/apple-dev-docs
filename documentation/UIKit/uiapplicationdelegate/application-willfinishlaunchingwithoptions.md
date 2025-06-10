@@ -21,8 +21,8 @@ optional func application(_ application: UIApplication, willFinishLaunchingWithO
 
 ## Mentions
 
-- [About the app launch sequence](about-the-app-launch-sequence.md)
 - [Performing one-time setup for your app](performing-one-time-setup-for-your-app.md)
+- [About the app launch sequence](about-the-app-launch-sequence.md)
 
 #### Return Value
 
@@ -39,8 +39,6 @@ When the system asks to open a URL, the system combines the return result from t
 In some cases, a person launches your app with a Home Screen quick action. To ensure you handle this launch case correctly, read the discussion in the [`application(_:performActionFor:completionHandler:)`](uiapplicationdelegate/application(_:performactionfor:completionhandler:).md) method.
 
 > ❗ **Important**:  If your app relies on the state restoration machinery to restore its view controllers, always show your app’s window from this method. Do not show the window in your app’s [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) method. Calling the window’s [`makeKeyAndVisible()`](uiwindow/makekeyandvisible().md) method does not make the window visible right away anyway. UIKit waits until your app’s [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) method finishes before making the window visible on the screen.
-
- If your app relies on the state restoration machinery to restore its view controllers, always show your app’s window from this method. Do not show the window in your app’s [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) method. Calling the window’s [`makeKeyAndVisible()`](uiwindow/makekeyandvisible().md) method does not make the window visible right away anyway. UIKit waits until your app’s [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) method finishes before making the window visible on the screen.
 
 ## Parameters
 

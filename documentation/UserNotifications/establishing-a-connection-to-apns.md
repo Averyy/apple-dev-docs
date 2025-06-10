@@ -1,6 +1,6 @@
 # Establishing a connection to Apple Push Notification service (APNs)
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Secure your communications with APNs to send API requests.
 
@@ -60,4 +60,4 @@ $ openssl s_client -connect api.development.push.apple.com:443 -cert YourSSLCert
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/establishing-a-connection-to-apns)*
+*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/establishing-a-connection-to-apns)*

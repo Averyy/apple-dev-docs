@@ -36,6 +36,12 @@ The default value is `true`.
   Sets the default hover effect to use for views within this view.
 - [enum HoverPhase](hoverphase.md)
   The current hovering state and value of the pointer.
+- [struct HoverEffectPhaseOverride](hovereffectphaseoverride.md)
+  Options for overriding a hover effect’s current phase.
+- [struct OrnamentHoverContentEffect](ornamenthovercontenteffect.md)
+  Presents an ornament on hover using a custom effect.
+- [struct OrnamentHoverEffect](ornamenthovereffect.md)
+  Presents an ornament on hover.
 
 
 ---

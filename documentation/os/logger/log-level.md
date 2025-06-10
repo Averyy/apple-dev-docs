@@ -24,8 +24,6 @@ func log(level: OSLogType, _ message: OSLogMessage)
 
 > ❗ **Important**:  Don’t create an instance of [`OSLogMessage`](oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 
- Don’t create an instance of [`OSLogMessage`](oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
-
 ## Parameters
 
 - `level`: The message’s log level, which determines the severity of the message and whether the system persists it to disk. For possible values, see  .

@@ -1,6 +1,6 @@
 # MAX_ELEMENTS_INDICES
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

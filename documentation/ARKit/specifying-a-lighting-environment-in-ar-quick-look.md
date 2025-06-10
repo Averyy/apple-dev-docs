@@ -55,8 +55,6 @@ To design your content in a third-party digital content creation tool (DCC) unde
 
 > 💡 **Tip**:  For apps that render virtual content using RealityKit, set up a skybox with the AR mode IBL to use the new lighting environment. Although AR Quick Look observes the `preferrediblversion` metadata, RealityKit doesn’t. See [`EnvironmentResource`](https://developer.apple.com/documentation/RealityKit/EnvironmentResource) for more information about defining image-based lighting in RealityKit.
 
- For apps that render virtual content using RealityKit, set up a skybox with the AR mode IBL to use the new lighting environment. Although AR Quick Look observes the `preferrediblversion` metadata, RealityKit doesn’t. See [`EnvironmentResource`](https://developer.apple.com/documentation/RealityKit/EnvironmentResource) for more information about defining image-based lighting in RealityKit.
-
 ## See Also
 
 - [Previewing a Model with AR Quick Look](previewing-a-model-with-ar-quick-look.md)
@@ -65,8 +63,6 @@ To design your content in a third-party digital content creation tool (DCC) unde
   Balance the appearance and performance of your AR experiences with modeling strategies.
 - [Adding an Apple Pay Button or a Custom Action in AR Quick Look](adding-an-apple-pay-button-or-a-custom-action-in-ar-quick-look.md)
   Provide a banner that users can tap to make a purchase or perform a custom action in an AR experience.
-- [class ARQuickLookPreviewItem](arquicklookpreviewitem.md)
-  An object for customizing the AR Quick Look experience.
 - [USDZ schemas for AR](../RealityKit/usdz-schemas-for-ar.md)
   Add augmented reality functionality to your 3D content using USDZ schemas.
 

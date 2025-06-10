@@ -1,6 +1,6 @@
 # hasAttributeNS(_:localName:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

@@ -1,6 +1,6 @@
 # WorkoutScheduler.AuthorizationState.denied
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: case
 
 The user denied authorization for scheduling workouts.
@@ -10,6 +10,7 @@ The user denied authorization for scheduling workouts.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

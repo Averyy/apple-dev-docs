@@ -1,6 +1,6 @@
 # List
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A container that presents rows of data arranged in a single column, optionally providing the ability to select one or more members.
@@ -27,8 +27,8 @@ A container that presents rows of data arranged in a single column, optionally p
 - [Displaying data in lists](displaying-data-in-lists.md)
 - [Making a view into a drag source](making-a-view-into-a-drag-source.md)
 - [Performing a search operation](performing-a-search-operation.md)
-- [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
 - [Migrating to new navigation types](migrating-to-new-navigation-types.md)
+- [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
 
 #### Overview
 
@@ -309,4 +309,4 @@ SwiftUI chooses a display style for a list based on the platform and the view ty
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/list)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/list)*

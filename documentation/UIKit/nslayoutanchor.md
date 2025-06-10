@@ -1,6 +1,6 @@
 # NSLayoutAnchor
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A factory class for creating layout constraint objects using a fluent API.
@@ -93,4 +93,4 @@ For more information on the anchor properties, see [`bottomAnchor`](https://deve
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/nslayoutanchor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/nslayoutanchor)*

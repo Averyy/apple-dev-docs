@@ -1,6 +1,6 @@
 # MAX_FRAGMENT_INPUT_COMPONENTS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

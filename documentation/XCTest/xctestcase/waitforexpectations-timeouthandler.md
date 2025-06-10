@@ -1,6 +1,6 @@
 # waitForExpectations(timeout:handler:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Waits until the test fulfills all expectations or until it times out.

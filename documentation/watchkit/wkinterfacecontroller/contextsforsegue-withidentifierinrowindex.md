@@ -1,6 +1,6 @@
 # contextsForSegue(withIdentifier:in:rowIndex:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Returns the context objects to pass to a page-based set of interface controllers when a row in a table is tapped.

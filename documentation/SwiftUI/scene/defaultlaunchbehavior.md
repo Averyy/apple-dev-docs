@@ -7,6 +7,7 @@ Sets the default launch behavior for this scene.
 
 **Availability**:
 - macOS 15.0+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -24,6 +25,8 @@ On platforms that do not support multiple windows, this value is ignored.
 On platforms other than macOS, there must be at least one scene that presents itself. If no scenes are defined to present, the first scene will be presented, regardless of the value provided to this modifier.
 
 On macOS, this behavior will also be used to determine which scene is presented when clicking on the icon of a running application with no visible windows.
+
+On visionOS, the system may background the last dismissed scene instead of closing it. Thus, the suppressed behavior additionally specifies that the scene should not be presented when tapping on the application icon with no visible windows.
 
 For example, you may wish to present a welcome window on launch of your app when there are no previous document windows being restored:
 

@@ -1,6 +1,6 @@
 # replaceContents(in:with:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method  
 **Required**: Yes
 

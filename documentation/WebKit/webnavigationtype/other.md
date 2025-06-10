@@ -1,6 +1,6 @@
 # WebNavigationType.other
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Navigation is taking place for some other reason.

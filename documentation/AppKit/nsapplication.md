@@ -17,8 +17,8 @@ class NSApplication
 
 ## Mentions
 
-- [Choosing a Specific Appearance for Your macOS App](choosing-a-specific-appearance-for-your-macos-app.md)
 - [Passing control from one app to another with cooperative activation](passing-control-from-one-app-to-another-with-cooperative-activation.md)
+- [Choosing a Specific Appearance for Your macOS App](choosing-a-specific-appearance-for-your-macos-app.md)
 
 #### Overview
 
@@ -44,7 +44,7 @@ The [`NSApplication`](nsapplication.md) class sets up `@autorelease` block durin
 
 You can assign a delegate to your [`NSApplication`](nsapplication.md) object. The delegate responds to certain messages on behalf of the object. Some of these messages, such as [`application(_:openFile:)`](nsapplicationdelegate/application(_:openfile:).md), ask the delegate to perform an action. Another message, [`applicationShouldTerminate(_:)`](nsapplicationdelegate/applicationshouldterminate(_:).md), lets the delegate determine whether the app should be allowed to quit. The [`NSApplication`](nsapplication.md) class sends these messages directly to its delegate.
 
-[`NSApplication`](nsapplication.md) also posts notifications to the app’s default notification center. Any object may register to receive one or more of the notifications posted by [`NSApplication`](nsapplication.md) by sending the message [`addObserver(_:selector:name:object:)`](https://developer.apple.com/documentation/foundation/notificationcenter/1415360-addobserver) to the default notification center (an instance of the `NSNotificationCenter` class). The delegate of [`NSApplication`](nsapplication.md) is automatically registered to receive these notifications if it implements certain delegate methods. For example, [`NSApplication`](nsapplication.md) posts notifications when it’s about to be done launching the app and when it’s done launching the app ([`willFinishLaunchingNotification`](nsapplication/willfinishlaunchingnotification.md) and [`didFinishLaunchingNotification`](nsapplication/didfinishlaunchingnotification.md)). The delegate has an opportunity to respond to these notifications by implementing the methods [`applicationWillFinishLaunching(_:)`](nsapplicationdelegate/applicationwillfinishlaunching(_:).md) and [`applicationDidFinishLaunching(_:)`](nsapplicationdelegate/applicationdidfinishlaunching(_:).md). If the delegate wants to be informed of both events, it implements both methods. If it needs to know only when the app is finished launching, it implements only [`applicationDidFinishLaunching(_:)`](nsapplicationdelegate/applicationdidfinishlaunching(_:).md).
+[`NSApplication`](nsapplication.md) also posts notifications to the app’s default notification center. Any object may register to receive one or more of the notifications posted by [`NSApplication`](nsapplication.md) by sending the message [`addObserver(_:selector:name:object:)`](https://developer.apple.com/documentation/Foundation/NotificationCenter/addObserver(_:selector:name:object:)) to the default notification center (an instance of the `NSNotificationCenter` class). The delegate of [`NSApplication`](nsapplication.md) is automatically registered to receive these notifications if it implements certain delegate methods. For example, [`NSApplication`](nsapplication.md) posts notifications when it’s about to be done launching the app and when it’s done launching the app ([`willFinishLaunchingNotification`](nsapplication/willfinishlaunchingnotification.md) and [`didFinishLaunchingNotification`](nsapplication/didfinishlaunchingnotification.md)). The delegate has an opportunity to respond to these notifications by implementing the methods [`applicationWillFinishLaunching(_:)`](nsapplicationdelegate/applicationwillfinishlaunching(_:).md) and [`applicationDidFinishLaunching(_:)`](nsapplicationdelegate/applicationdidfinishlaunching(_:).md). If the delegate wants to be informed of both events, it implements both methods. If it needs to know only when the app is finished launching, it implements only [`applicationDidFinishLaunching(_:)`](nsapplicationdelegate/applicationdidfinishlaunching(_:).md).
 
 ##### System Services
 
@@ -57,8 +57,6 @@ You rarely should find a real need to create a custom `NSApplication` subclass. 
 To use a custom subclass of `NSApplication`, send [`shared`](nsapplication/shared.md) to your subclass rather than directly to `NSApplication`. If you create your app in Xcode, you can accomplish this by setting your custom app class to be the principal class. In Xcode, double-click the app target in the Groups and Files list to open the Info window for the target. Then display the Properties pane of the window and replace “NSApplication” in the Principal Class field with the name of your custom class. The `NSApplicationMain` function sends [`shared`](nsapplication/shared.md) to the principal class to obtain the global app instance (`NSApp`)—which in this case will be an instance of your custom subclass of `NSApplication`.
 
 > ❗ **Important**:  Many AppKit classes rely on the `NSApplication` class and may not work properly until this class is fully initialized. As a result, you should not, for example, attempt to invoke methods of other AppKit classes from an initialization method of an `NSApplication` subclass.
-
- Many AppKit classes rely on the `NSApplication` class and may not work properly until this class is fully initialized. As a result, you should not, for example, attempt to invoke methods of other AppKit classes from an initialization method of an `NSApplication` subclass.
 
 ###### Methods to Override
 
@@ -81,17 +79,17 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
 
 ## Topics
 
-### Getting the Shared App Object
+### Getting the shared app object
 - [class var shared: NSApplication](nsapplication/shared.md)
   Returns the application instance, creating it if it doesn’t exist yet.
 - [var NSApp: NSApplication!](nsapp.md)
   The global variable for the shared app instance.
-### Managing the App’s Behavior
+### Managing the app’s behavior
 - [var delegate: (any NSApplicationDelegate)?](nsapplication/delegate.md)
   The app delegate object.
 - [protocol NSApplicationDelegate](nsapplicationdelegate.md)
   A set of methods that manage your app’s life cycle and its interaction with common system services.
-### Managing the Event Loop
+### Managing the event loop
 - [func nextEvent(matching: NSEvent.EventTypeMask, until: Date?, inMode: RunLoop.Mode, dequeue: Bool) -> NSEvent?](nsapplication/nextevent(matching:until:inmode:dequeue:).md)
   Returns the next event matching a given mask, or `nil` if no such event is found before a specified expiration date.
 - [func discardEvents(matching: NSEvent.EventTypeMask, before: NSEvent?)](nsapplication/discardevents(matching:before:).md)
@@ -110,7 +108,7 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
   Dispatches an event to other objects.
 - [func postEvent(NSEvent, atStart: Bool)](nsapplication/postevent(_:atstart:).md)
   Adds a given event to the receiver’s event queue.
-### Posting Actions
+### Posting actions
 - [func tryToPerform(Selector, with: Any?) -> Bool](nsapplication/trytoperform(_:with:).md)
   Dispatches an action message to the specified target.
 - [func sendAction(Selector, to: Any?, from: Any?) -> Bool](nsapplication/sendaction(_:to:from:).md)
@@ -119,12 +117,12 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
   Returns the object that receives the action message specified by the given selector.
 - [func target(forAction: Selector, to: Any?, from: Any?) -> Any?](nsapplication/target(foraction:to:from:).md)
   Searches for an object that can receive the message specified by the given selector.
-### Terminating the App
+### Terminating the app
 - [func terminate(Any?)](nsapplication/terminate(_:).md)
   Terminates the receiver.
 - [func reply(toApplicationShouldTerminate: Bool)](nsapplication/reply(toapplicationshouldterminate:).md)
   Responds to `NSTerminateLater` once the app knows whether it can terminate.
-### Activating and Deactivating the App
+### Activating and deactivating the app
 - [Passing control from one app to another with cooperative activation](passing-control-from-one-app-to-another-with-cooperative-activation.md)
   Request focus for your app, and coordinate passing control from one app to another.
 - [func activate()](nsapplication/activate.md)
@@ -139,12 +137,12 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
   Explicitly allows another app to make itself active.
 - [NSApplication.ActivationOptions](nsapplication/activationoptions.md)
   The following flags are for [`activate(options:)`](nsrunningapplication/activate(options:).md).
-### Managing Relaunch on Login
+### Managing relaunch on login
 - [func disableRelaunchOnLogin()](nsapplication/disablerelaunchonlogin.md)
   Disables relaunching the app on login.
 - [func enableRelaunchOnLogin()](nsapplication/enablerelaunchonlogin.md)
   Enables relaunching the app on login.
-### Managing Remote Notifications
+### Managing remote notifications
 - [func registerForRemoteNotifications()](nsapplication/registerforremotenotifications.md)
   Register for notifications sent by Apple Push Notification service (APNs).
 - [func unregisterForRemoteNotifications()](nsapplication/unregisterforremotenotifications.md)
@@ -157,7 +155,7 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
   A Boolean value indicating whether the app is registered with Apple Push Notification service (APNs).
 - [NSApplication.RemoteNotificationType](nsapplication/remotenotificationtype.md)
   These constants determine whether apps launched by remote notifications display a badge.
-### Managing the App’s Appearance
+### Managing the app’s appearance
 - [var appearance: NSAppearance?](nsapplication/appearance.md)
   The appearance associated with the app’s windows.
 - [var effectiveAppearance: NSAppearance](nsapplication/effectiveappearance.md)
@@ -168,19 +166,21 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
   The presentation options that should be in effect for the system when this app is active.
 - [NSApplication.PresentationOptions](nsapplication/presentationoptions-swift.struct.md)
   Constants that control the presentation of the app, typically for fullscreen apps such as games or kiosks.
-### Managing Windows, Panels, and Menus
+- [var applicationShouldSuppressHighDynamicRangeContent: Bool](nsapplication/applicationshouldsuppresshighdynamicrangecontent.md)
+  A boolean value indicating whether your application should suppress HDR content based on established policy. Built-in AppKit components such as NSImageView will automatically behave correctly with HDR content. You should use this value in conjunction with notifications (`NSApplicationShouldBeginSuppressingHighDynamicRangeContentNotification` and `NSApplicationShouldEndSuppressingHighDynamicRangeContentNotification`) to suppress HDR content in your application when signaled to do so.
+### Managing windows, panels, and menus
 - [App Windows](app-windows.md)
   Show, hide, minimize, arrange, and update your app’s windows.
 - [Modal Windows and Panels](modal-windows-and-panels.md)
   Display a modal window or show one of the standard app panels, such as the app’s About panel.
 - [Menus](menus.md)
   Access the app’s main menu items and update the window and services menus.
-### User Interface Layout Direction
+### User interface layout direction
 - [var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection](nsapplication/userinterfacelayoutdirection.md)
   The layout direction of the user interface.
 - [enum NSUserInterfaceLayoutDirection](nsuserinterfacelayoutdirection.md)
   Specifies the directional flow of the user interface.
-### Accessing the Dock Tile
+### Accessing the dock tile
 - [var dockTile: NSDockTile](nsapplication/docktile.md)
   The app’s Dock tile.
 - [var applicationIconImage: NSImage!](nsapplication/applicationiconimage.md)
@@ -188,7 +188,7 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
 ### Customizing the Touch Bar
 - [func toggleTouchBarCustomizationPalette(Any?)](nsapplication/toggletouchbarcustomizationpalette(_:).md)
   Show or hides the interface for customizing the Touch Bar.
-### Managing User Attention Requests
+### Managing user attention requests
 - [func requestUserAttention(NSApplication.RequestUserAttentionType) -> Int](nsapplication/requestuserattention(_:).md)
   Starts a user attention request.
 - [NSApplication.RequestUserAttentionType](nsapplication/requestuserattentiontype.md)
@@ -199,7 +199,7 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
   Handles errors that might occur when the user attempts to open or print files.
 - [NSApplication.DelegateReply](nsapplication/delegatereply.md)
   Constants that indicate whether a copy or print operation was successful, was canceled, or failed.
-### Providing Help Information
+### Providing help information
 - [func registerUserInterfaceItemSearchHandler(any NSUserInterfaceItemSearching)](nsapplication/registeruserinterfaceitemsearchhandler(_:).md)
   Register an object that provides help data to your app.
 - [func searchString(String, inUserInterfaceItemString: String, range: NSRange, found: UnsafeMutablePointer<NSRange>?) -> Bool](nsapplication/searchstring(_:inuserinterfaceitemstring:range:found:).md)
@@ -212,33 +212,33 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
   Places the receiver in context-sensitive help mode.
 - [var helpMenu: NSMenu?](nsapplication/helpmenu.md)
   The help menu used by the app.
-### Providing Services
+### Providing services
 - [func validRequestor(forSendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any?](nsapplication/validrequestor(forsendtype:returntype:).md)
   Indicates whether the receiver can send and receive the specified pasteboard types.
 - [var servicesProvider: Any?](nsapplication/servicesprovider.md)
   The object that provides the services the current app advertises in the Services menu of other apps.
-### Determining Access to the Keyboard
+### Determining access to the keyboard
 - [var isFullKeyboardAccessEnabled: Bool](nsapplication/isfullkeyboardaccessenabled.md)
   A Boolean value indicating whether Full Keyboard Access is enabled in the Keyboard preference pane.
-### Hiding Apps
+### Hiding apps
 - [func hideOtherApplications(Any?)](nsapplication/hideotherapplications(_:).md)
   Hides all apps, except the receiver.
 - [func unhideAllApplications(Any?)](nsapplication/unhideallapplications(_:).md)
   Unhides all apps, including the receiver.
-### Managing Threads
+### Managing threads
 - [class func detachDrawingThread(Selector, toTarget: Any, with: Any?)](nsapplication/detachdrawingthread(_:totarget:with:).md)
   Creates and executes a new thread based on the specified target and selector.
-### Logging Exceptions
+### Logging exceptions
 - [func reportException(NSException)](nsapplication/reportexception(_:).md)
   Logs a given exception by calling `NSLog()`.
-### Configuring the Activation Policy
+### Configuring the activation policy
 - [func activationPolicy() -> NSApplication.ActivationPolicy](nsapplication/activationpolicy.md)
   Returns the app’s activation policy.
 - [func setActivationPolicy(NSApplication.ActivationPolicy) -> Bool](nsapplication/setactivationpolicy(_:).md)
   Attempts to modify the app’s activation policy.
 - [NSApplication.ActivationPolicy](nsapplication/activationpolicy-swift.enum.md)
   Activation policies (used by [`activationPolicy`](nsrunningapplication/activationpolicy.md)) that control whether and how an app may be activated.
-### Scripting Your App
+### Scripting your app
 - [var orderedDocuments: [NSDocument]](nsapplication/ordereddocuments.md)
   An array of document objects arranged according to the front-to-back ordering of their associated windows.
 - [var orderedWindows: [NSWindow]](nsapplication/orderedwindows.md)
@@ -276,11 +276,19 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
   Posted when the app has finished restoring windows.
 - [class let didChangeOcclusionStateNotification: NSNotification.Name](nsapplication/didchangeocclusionstatenotification.md)
   Posted when the app’s occlusion state changes.
-### Loading Cocoa Bundles
+### Loading Cocoa bundles
 - [static func loadApplication()](nsapplication/loadapplication.md)
+### Displaying high dynamic resolution (HDR) content
+- [var applicationShouldSuppressHighDynamicRangeContent: Bool](nsapplication/applicationshouldsuppresshighdynamicrangecontent.md)
+  A boolean value indicating whether your application should suppress HDR content based on established policy. Built-in AppKit components such as NSImageView will automatically behave correctly with HDR content. You should use this value in conjunction with notifications (`NSApplicationShouldBeginSuppressingHighDynamicRangeContentNotification` and `NSApplicationShouldEndSuppressingHighDynamicRangeContentNotification`) to suppress HDR content in your application when signaled to do so.
+- [NSApplication.ShouldBeginSuppressingHighDynamicRangeContent](nsapplication/shouldbeginsuppressinghighdynamicrangecontent.md)
+- [NSApplication.ShouldEndSuppressingHighDynamicRangeContent](nsapplication/shouldendsuppressinghighdynamicrangecontent.md)
 ### Deprecated
 - [Deprecated Symbols](nsapplication-deprecated-symbols.md)
   Review symbols that are no longer supported, and find the replacements to use instead.
+### Instance Methods
+- [func addSceneRepresentation<C>(NSHostingSceneRepresentation<C>)](nsapplication/addscenerepresentation(_:).md)
+  Adds the specified SwiftUI scene representation to the current application.
 
 ## Relationships
 
@@ -303,6 +311,8 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

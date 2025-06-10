@@ -1,14 +1,16 @@
 # Starting and updating Live Activities with ActivityKit push notifications
 
-**Framework**: Activitykit
+**Framework**: ActivityKit
 
 Use ActivityKit to receive push tokens and to remotely start, update, and end your Live Activity with ActivityKit notifications.
 
 #### Overview
 
-ActivityKit offers functionality to start, update, and end Live Activities from your app. Additionally, it offers functionality to receive push tokens. You can use push tokens to update and end Live Activities with ActivityKit push notifications that you send from your server to Apple Push Notification service (APNs). Starting with iOS 17.2 and iPadOS 17.2, you can also start Live Activities by sending ActivityKit push notifications to push tokens.
+ActivityKit offers functionality to start, update, and end Live Activities from your app. Additionally, it offers functionality to receive push tokens. Use push tokens to send ActivityKit notifications from your server to Apple Push Notification service (APNs). With notifications, you can:
 
-Starting with iOS 18 and iPadOS 18, you can use broadcast push notifications to update Live Activities for a large audience. You can subscribe to updates on a channel using ActivityKit, and update or end Live Activities for everyone subscribed by sending an ActivityKit push notification on a channel to APNs from your remote server.
+- Update and end Live Activities
+- Start Live Activities
+- Update or end Live Activities for a large audience with channels and broadcast push notifications
 
 > **Note**: [`Session 10185: Update Live Activities with push notifications`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10185)
 
@@ -88,11 +90,11 @@ Task {
 }
 ```
 
-The push token for a Live Activity may change throughout its duration. When your app receives a new token, it receives foreground runtime to process the updated token. Keep track of the push token for each Live Activity. Additionally, invalidate the previous, now-outdated token on your server when you receive an updated token to successfully send subsequent updates.
+The push token for a Live Activity may change throughout its duration. When your app receives a new token, it receives background runtime to process the updated token. Keep track of the push token for each Live Activity. Additionally, invalidate the previous, now-outdated token on your server when you receive an updated token to successfully send subsequent updates.
 
 ##### Start a Live Activity That Supports Push Updates on a Channel
 
-Starting with iOS 18 and iPadOS 18 or later, you can update or end Live Activities by an ActivityKit push notification sent on a channel. To create a channel for your Live Activity event, refer to [`Sending channel management requests to APNs`](https://developer.apple.com/documentation/UserNotifications/sending-channel-management-requests-to-apns). The channel you create has a unique identifier, called a channel ID, that devices use to subscribe to Live Activity updates. Your remote server provides the Channel ID to your app before the Live Activity starts.  In your app, start a Live Activity with the `request(attributes:content:pushType:)` function and pass channel to its `pushType` parameter with the channel ID. If the channel ID isn’t a valid channel, the Live Activity fails to start.
+You can update or end Live Activities by an ActivityKit push notification sent on a channel. To create a channel for your Live Activity event, refer to [`Sending channel management requests to APNs`](https://developer.apple.com/documentation/UserNotifications/sending-channel-management-requests-to-apns). The channel you create has a unique identifier, called a channel ID, that devices use to subscribe to Live Activity updates. Your remote server provides the Channel ID to your app before the Live Activity starts.  In your app, start a Live Activity with the `request(attributes:content:pushType:)` function and pass channel to its `pushType` parameter with the channel ID. If the channel ID isn’t a valid channel, the Live Activity fails to start.
 
 The following code snippet starts a Live Activity and subscribes to receive push notifications on channel ID:
 
@@ -108,7 +110,7 @@ func startLiveActivityWithChannel(string channelId, initialState) {
 
 ##### Start New Live Activities with Activitykit Push Notifications
 
-Starting with iOS 17.2 and iPadOS 17.2, you can start new Live Activities with ActivityKit push notifications. This option is especially useful for tracking events with Live Activities that occur more than once. For example, if someone starts a Live Activity to track their favorite sports team, the sports app might offer to automatically start a Live Activity for each of the team’s games. In the future, the person doesn’t have to remember to start the Live Activity from the app. Instead, a Live Activity for tracking the game might automatically start from an ActivityKit push notification you sent with your remote notification server and APNs.
+You can start new Live Activities with ActivityKit push notifications. This option is especially useful for tracking events with Live Activities that occur more than once. For example, if someone starts a Live Activity to track their favorite sports team, the sports app might offer to automatically start a Live Activity for each of the team’s games. In the future, the person doesn’t have to remember to start the Live Activity from the app. Instead, a Live Activity for tracking the game might automatically start from an ActivityKit push notification you sent with your remote notification server and APNs.
 
 To start Live Activities from ActivityKit push notifications, configure your app to support push notifications. Then obtain the token to for starting a Live Activity:
 
@@ -203,17 +205,31 @@ By including an alert in your JSON payload, you make sure a person gets alerted 
         },
         "attributes-type": "AdventureAttributes",
         "attributes": {
-            "currentHealthLevel": 100,
-            "eventDescription": "Adventure has begun!"
+            "hero": {
+                "name": "Power Panda",
+                "avatar": "U+1F43C",
+                "healthLevel": 100,
+                "heroType": "Forest Dweller",
+                "healthRecoveryRatePerHour": 0.25,
+                "url": "game:///panda",
+                "battleCode": "game:///panda/battle",
+                "level": 3,
+                "exp": 600,
+                "bio": "Power Panda loves eating bamboo shoots and leaves."
+            }
         },
-         "alert": {
+        "alert": {
             "title": {
                 "loc-key": "%@ is on an adventure!",
-                "loc-args": ["Power Panda"]
+                "loc-args": [
+                    "Power Panda"
+                ]
             },
             "body": {
                 "loc-key": "%@ found a sword!",
-                "loc-args": ["Power Panda"]
+                "loc-args": [
+                    "Power Panda"
+                ]
             },
             "sound": "chime.aiff"
         }
@@ -355,9 +371,7 @@ The following example payload provides a relevance score of `100` to make sure t
 ## See Also
 
 - [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
-  Display your app’s data in the Dynamic Island and on the Lock Screen and offer quick interactions.
-- [Adding accessible descriptions to widgets and Live Activities](adding-accessible-descriptions-to-widgets-and-live-activities.md)
-  Describe the interface elements of your widgets and Live Activities to help people understand what they represent.
+  Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
 - [class Activity](activity.md)
   The object you use to start, update, and end a Live Activity.
 - [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
@@ -370,4 +384,4 @@ The following example payload provides a relevance score of `100` to make sure t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ActivityKit/starting-and-updating-live-activities-with-activitykit-push-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/activitykit/starting-and-updating-live-activities-with-activitykit-push-notifications)*

@@ -28,6 +28,12 @@ It’s valid to transition to this experience even when the original container i
   A fallback placement to use when the original container isn’t in the view controller hierarchy.
 - [AVExperienceController.ExpandedConfiguration.Placement](avexperiencecontroller/expandedconfiguration/placement.md)
   A structure that represents where the video will be experienced.
+### Instance Properties
+- [var automaticTransitionToImmersive: AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive](avexperiencecontroller/expandedconfiguration/automatictransitiontoimmersive-swift.property.md)
+  The expanded experience automatic transition behavior for the immersive experience.
+### Enumerations
+- [AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive](avexperiencecontroller/expandedconfiguration/automatictransitiontoimmersive-swift.enum.md)
+  The expanded experience automatic transition behavior into the immersive experience.
 
 ## See Also
 

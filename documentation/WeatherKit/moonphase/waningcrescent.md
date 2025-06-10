@@ -1,6 +1,6 @@
 # MoonPhase.waningCrescent
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 The disk is partially lit as the moon is waning.

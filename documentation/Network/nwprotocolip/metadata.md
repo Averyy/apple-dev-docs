@@ -34,6 +34,9 @@ class Metadata
 ### Receiving IP Packets
 - [var receiveTime: UInt64](nwprotocolip/metadata/receivetime.md)
   The time at which a packet was received, in nanoseconds, based on `CLOCK_MONOTONIC_RAW`.
+### Instance Methods
+- [func ecn(NWProtocolIP.ECN) -> Self](nwprotocolip/metadata/ecn(_:).md)
+- [func serviceClass(NWParameters.ServiceClass) -> Self](nwprotocolip/metadata/serviceclass(_:).md)
 
 ## Relationships
 
@@ -41,6 +44,7 @@ class Metadata
 - [NWProtocolMetadata](nwprotocolmetadata.md)
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

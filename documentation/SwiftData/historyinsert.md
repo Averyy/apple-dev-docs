@@ -34,6 +34,7 @@ protocol HistoryInsert<Model> : Sendable
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [DefaultHistoryInsert](defaulthistoryinsert.md)
 

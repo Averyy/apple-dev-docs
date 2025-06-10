@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_INTERVAL_15_MIN
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A constant that represents a 15-minute time interval.

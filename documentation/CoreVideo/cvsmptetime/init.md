@@ -18,10 +18,6 @@
 init()
 ```
 
-## See Also
-
-- [init(subframes: Int16, subframeDivisor: Int16, counter: UInt32, type: UInt32, flags: UInt32, hours: Int16, minutes: Int16, seconds: Int16, frames: Int16)](cvsmptetime/init(subframes:subframedivisor:counter:type:flags:hours:minutes:seconds:frames:).md)
-
 
 ---
 

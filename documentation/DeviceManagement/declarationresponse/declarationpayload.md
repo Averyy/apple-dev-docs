@@ -3,8 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The dictionary that contains the keys and values for a declaration payload.
-
 **Availability**:
 - Device Assignment Services ?+
 - VPP License Management ?+

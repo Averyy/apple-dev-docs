@@ -24,8 +24,6 @@ init(i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, padding_size:
 
 > ❗ **Important**:  Padding isn’t supported beyond 4D tensors.
 
- Padding isn’t supported beyond 4D tensors.
-
 ## Parameters
 
 - `i_desc`: The descriptor of the input.

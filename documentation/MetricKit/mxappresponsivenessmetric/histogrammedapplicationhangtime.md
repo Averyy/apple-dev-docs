@@ -9,6 +9,7 @@ A histogram of the different durations of time in which the app is too busy to h
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
+- macOS 10.15+
 - visionOS 1.0+
 
 ## Declaration

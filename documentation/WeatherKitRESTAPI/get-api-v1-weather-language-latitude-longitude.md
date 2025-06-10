@@ -1,6 +1,6 @@
 # GET /api/v1/weather/{language}/{latitude}/{longitude}
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: httpRequest
 
 Obtain weather data for the specified location.

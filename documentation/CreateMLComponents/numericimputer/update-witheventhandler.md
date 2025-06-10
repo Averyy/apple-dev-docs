@@ -1,6 +1,6 @@
 # update(_:with:eventHandler:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Updates an impute transformer with a new sequence of examples.

@@ -54,6 +54,8 @@ The [`UnitEnergy`](unitenergy.md) class defines its [`baseUnit()`](dimension/bas
   The calories unit of energy.
 - [class var kilowattHours: UnitEnergy](unitenergy/kilowatthours.md)
   The kilowatt hours unit of energy.
+### Classes
+- [UnitEnergy.EnergyKit](unitenergy/energykit.md)
 ### Initializers
 - [convenience init(forLocale: Locale, usage: MeasurementFormatUnitUsage<UnitEnergy>)](unitenergy/init(forlocale:usage:).md)
 
@@ -72,6 +74,7 @@ The [`UnitEnergy`](unitenergy.md) class defines its [`baseUnit()`](dimension/bas
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,0 +1,18 @@
+# iFunction
+
+**Framework**: Kernel  
+**Kind**: structp
+
+**Availability**:
+- macOS 12.0+
+
+## Declaration
+
+```swift
+uint8_t iFunction;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/standardusb_interfaceassociationdescriptor/3794110-ifunction)*

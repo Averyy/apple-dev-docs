@@ -1,6 +1,6 @@
 # allowsMagnification
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether magnify gestures change the web view’s magnification.

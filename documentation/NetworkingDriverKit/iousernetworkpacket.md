@@ -67,6 +67,7 @@ An [`IOUserNetworkPacket`](iousernetworkpacket.md) contains meta information abo
 - [getTraceID](iousernetworkpacket/gettraceid.md)
 - [getTxChecksumInfo](iousernetworkpacket/gettxchecksuminfo.md)
 - [getTxCsumFlags](iousernetworkpacket/gettxcsumflags.md)
+- [getVlanTag](iousernetworkpacket/getvlantag.md)
 - [initWithPool](iousernetworkpacket/initwithpool.md)
 - [isLinkBroadcast](iousernetworkpacket/islinkbroadcast.md)
 - [isLinkMulticast](iousernetworkpacket/islinkmulticast.md)
@@ -85,6 +86,7 @@ An [`IOUserNetworkPacket`](iousernetworkpacket.md) contains meta information abo
 - [setLinkHeaderLength](iousernetworkpacket/setlinkheaderlength-23dbd.md)
 - [setRxChecksumInfo](iousernetworkpacket/setrxchecksuminfo.md)
 - [setTimestamp](iousernetworkpacket/settimestamp.md)
+- [setVlanTag](iousernetworkpacket/setvlantag.md)
 - [setWakeFlag](iousernetworkpacket/setwakeflag.md)
 - [traceEvent](iousernetworkpacket/traceevent.md)
 ### Type Methods

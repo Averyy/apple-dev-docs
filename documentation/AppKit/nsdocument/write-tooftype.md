@@ -1,6 +1,6 @@
 # write(to:ofType:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Writes the contents of the document to a file or file package located by a URL, that is formatted to a specified type.

@@ -30,8 +30,10 @@ The content of a Live Activity may become out of date before you can update it. 
   The Live Activity is active, visible, and can receive content updates.
 - [ActivityState.dismissed](activitystate/dismissed.md)
   The Live Activity ended and is no longer visible because a person or the system removed it.
+- [ActivityState.pending](activitystate/pending.md)
+  The Live Activity is scheduled to start at a specified date but hasn’t started yet.
 - [ActivityState.ended](activitystate/ended.md)
-  The Live Activity is visible, but a person, app, or system ended it, and it won’t update its content anymore.
+  The Live Activity is visible, but a person, the app, or the system ended it, and it won’t update its content anymore.
 
 
 ---

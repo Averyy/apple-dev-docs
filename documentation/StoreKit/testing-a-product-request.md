@@ -1,6 +1,6 @@
 # Testing a product request
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Verify that requests for products function properly in the sandbox environment by inspecting the App Store response.
 
@@ -22,4 +22,4 @@ See [`Testing invalid product identifier handling`](testing-invalid-product-iden
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/testing-a-product-request)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/testing-a-product-request)*

@@ -1,6 +1,6 @@
 # title
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The localized text that provides the notification’s primary description.

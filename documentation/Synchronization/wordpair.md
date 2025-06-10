@@ -77,6 +77,7 @@ extension GridPoint: AtomicRepresentable {
 - [Equatable](../swift/equatable.md)
 - [Hashable](../swift/hashable.md)
 - [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -92,4 +93,4 @@ extension GridPoint: AtomicRepresentable {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Synchronization/wordpair)*
+*[View on Apple Developer](https://developer.apple.com/documentation/synchronization/wordpair)*

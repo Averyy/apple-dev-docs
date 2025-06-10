@@ -1,6 +1,6 @@
 # Supporting Coordinated Media Playback
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Create synchronized media experiences that enable users to watch and listen across devices.
 
@@ -201,4 +201,4 @@ After the local device catches up with group playback, the sample ends the suspe
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/supporting-coordinated-media-playback)*

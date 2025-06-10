@@ -101,7 +101,7 @@ A sample buffer is a Core Foundation object that contains zero or more media sam
 ### Managing Attachments
 - [CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey.md)
   Keys that identify sample buffer attachments.
-- [var sampleAttachments: CMSampleBuffer.SampleAttachmentsArray](cmsamplebuffer/sampleattachments.md)
+- [var sampleAttachments: CMSampleBuffer.SampleAttachmentsArray](cmsamplebuffer/sampleattachments-swift.property.md)
   An array of sample attachments.
 - [CMSampleBuffer.SampleAttachmentsArray](cmsamplebuffer/sampleattachmentsarray.md)
   A structure that defines an array of sample attachments.
@@ -125,6 +125,40 @@ A sample buffer is a Core Foundation object that contains zero or more media sam
   A notification the system posts when a sample buffer’s data becomes ready.
 - [static let dataFailed: NSNotification.Name](cmsamplebuffer/datafailed.md)
   A notification the system posts when a sample buffer fails to load its data.
+### Protocols
+- [CMSampleBuffer.Content](cmsamplebuffer/content.md)
+  All buffer types that can be carried by sample buffer are marked by this protocol.
+- [CMSampleBuffer.ContentWithFormatDescription](cmsamplebuffer/contentwithformatdescription.md)
+  This is a marker protocol to indicate content that always has a format description.
+- [CMSampleBuffer.MultiSampleContent](cmsamplebuffer/multisamplecontent.md)
+  This is a marker protocol to indicate content that supports multiple samples.
+### Structures
+- [CMSampleBuffer.HEVCTemporalInfo](cmsamplebuffer/hevctemporalinfo.md)
+  The temporal layer information for all samples in a temporal layer.
+- [CMSampleBuffer.SampleAttachments](cmsamplebuffer/sampleattachments-swift.struct.md)
+  Attachments applicable to each sample within a sample buffer.
+- [CMSampleBuffer.SampleProperties](cmsamplebuffer/sampleproperties.md)
+  Information about a sample in the sample buffer.
+- [CMSampleBuffer.SamplePropertiesCollection](cmsamplebuffer/samplepropertiescollection.md)
+  Fixed size collection of sample information.
+### Initializers
+- [init(referencing: CMSampleBuffer)](cmsamplebuffer/init(referencing:).md)
+### Instance Properties
+- [var contentType: CMSampleBuffer.ContentType](cmsamplebuffer/contenttype-swift.property.md)
+  Type of the content carried by this sample buffer.
+### Type Aliases
+- [CMSampleBuffer.PayloadType](cmsamplebuffer/payloadtype.md)
+- [CMSampleBuffer.T](cmsamplebuffer/t.md)
+### Enumerations
+- [CMSampleBuffer.ContentType](cmsamplebuffer/contenttype-swift.enum.md)
+  Describes the type of content carried by a sample buffer instance.
+- [CMSampleBuffer.DynamicContent](cmsamplebuffer/dynamiccontent.md)
+  Sample buffer content not known at compile time.
+- [CMSampleBuffer.Payload](cmsamplebuffer/payload.md)
+- [CMSampleBuffer.SizePerSample](cmsamplebuffer/sizepersample.md)
+  Specifies size of each sample in a sample buffer.
+- [CMSampleBuffer.TimingPerSample](cmsamplebuffer/timingpersample.md)
+  Specifies timing of each sample in a sample buffer.
 
 ## Relationships
 

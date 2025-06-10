@@ -46,6 +46,14 @@ struct NormalizedCircle
   A point in a 2D coordinate system.
 - [struct NormalizedRect](normalizedrect.md)
   The location and dimensions of a rectangle.
+- [typealias NormalizedRegion](normalizedregion.md)
+  A polygon composed of normalized points.
+- [protocol BoundingBoxProviding](boundingboxproviding.md)
+  A protocol for objects that have a bounding box.
+- [protocol BoundingRegionProviding](boundingregionproviding.md)
+  A protocol for objects that have a defined boundary in an image.
+- [protocol QuadrilateralProviding](quadrilateralproviding.md)
+  A protocol for objects that have a bounding quadrilateral.
 - [enum CoordinateOrigin](coordinateorigin.md)
   The origin of a coordinate system relative to an image.
 

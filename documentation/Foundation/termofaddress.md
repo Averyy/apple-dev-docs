@@ -126,6 +126,7 @@ For examples of how to use terms of address, see:
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -141,4 +142,4 @@ For examples of how to use terms of address, see:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/termofaddress)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/termofaddress)*

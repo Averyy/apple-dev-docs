@@ -44,6 +44,7 @@ Use the provided unit widths with the `width` parameter of the [`Duration.UnitsF
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

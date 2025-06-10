@@ -1,6 +1,6 @@
 # Exploring object tracking with ARKit
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Find and track real-world objects in visionOS using reference objects trained with Create ML.
 

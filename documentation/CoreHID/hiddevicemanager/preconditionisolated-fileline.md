@@ -1,6 +1,6 @@
 # preconditionIsolated(_:file:line:)
 
-**Framework**: Corehid  
+**Framework**: Core HID  
 **Kind**: method
 
 Stops program execution if the current task is not executing on this actor’s serial executor.

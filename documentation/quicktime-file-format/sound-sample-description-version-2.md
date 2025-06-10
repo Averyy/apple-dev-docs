@@ -19,8 +19,6 @@ The sound sample description v2 structure adds the following new fields, appendi
 
 > ❗ **Important**: The values contained in these fields have different meanings for compressed and uncompressed audio. The meaning may not be easily deducible from the field name and require reference to the appropriate sound sample description extensions to understand fully.
 
-The values contained in these fields have different meanings for compressed and uncompressed audio. The meaning may not be easily deducible from the field name and require reference to the appropriate sound sample description extensions to understand fully.
-
 Some definitions for sound sample description version 2:
 
 - LPCM Frame: one uncompressed sample in each of the channels (for instance, 44100Hz audio has 44100 LPCM frames per second, whether it is mono, stereo, 5.1, or other possible values). In other words, LPCM Frames divided by the `audioSampleRate` value is duration in seconds.

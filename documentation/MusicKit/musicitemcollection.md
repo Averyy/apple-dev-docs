@@ -65,6 +65,7 @@ struct MusicItemCollection<MusicItemType> where MusicItemType : MusicItem
 - [Hashable](../Swift/Hashable.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

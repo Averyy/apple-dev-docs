@@ -30,7 +30,7 @@ The `CNContactStore` object represents the user’s contacts store database, and
 - Fetch only the properties that you need for contacts.
 - When fetching all contacts and caching the results, first fetch all contacts identifiers, then fetch batches of detailed contacts by identifiers as required.
 - To aggregate several contacts fetches, first collect a set of unique identifiers from the fetches. Then fetch batches of detailed contacts by those unique identifiers.
-- If you cache the fetched contacts, groups, or containers, you need to refetch these objects (and release the old cached objects) when [`CNContactStoreDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name/1403253-cncontactstoredidchange) is posted.
+- If you cache the fetched contacts, groups, or containers, you need to refetch these objects (and release the old cached objects) when [`CNContactStoreDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/CNContactStoreDidChange) is posted.
 
 Because `CNContactStore` fetch methods perform I/O, it’s recommended that you avoid using the main thread to execute fetches.
 
@@ -68,7 +68,7 @@ Because `CNContactStore` fetch methods perform I/O, it’s recommended that you 
 - [func execute(CNSaveRequest) throws](cncontactstore/execute(_:).md)
   Executes a save request and returns success or failure.
 ### Responding to contact store changes
-- [static let CNContactStoreDidChange: NSNotification.Name](../foundation/nsnotification/name/1403253-cncontactstoredidchange.md)
+- [static let CNContactStoreDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/CNContactStoreDidChange.md)
   Posted when changes occur to the contact store.
 
 ## Relationships

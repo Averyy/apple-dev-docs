@@ -27,10 +27,6 @@ When the value of this property is not `nil`, use it to change the default minim
 
 - [var traitCollection: UITraitCollection](uiwindowscene/traitcollection.md)
   The traits that describe the current environment of the scene.
-- [var coordinateSpace: any UICoordinateSpace](uiwindowscene/coordinatespace.md)
-  The coordinate space occupied by the scene.
-- [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/interfaceorientation.md)
-  The orientation to use when displaying content in your windows.
 - [class UISceneSizeRestrictions](uiscenesizerestrictions.md)
   An object that specifies the minimum and maximum sizes for resizable windows.
 

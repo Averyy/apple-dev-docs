@@ -1,6 +1,6 @@
 # VTCompressionSession
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: class
 
 A reference to a VideoToolbox compression session.

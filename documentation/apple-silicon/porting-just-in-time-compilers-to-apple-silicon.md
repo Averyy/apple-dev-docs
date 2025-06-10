@@ -1,6 +1,6 @@
 # Porting just-in-time compilers to Apple silicon
 
-**Framework**: Apple Silicon
+**Framework**: Apple silicon
 
 Update your just-in-time (JIT) compiler to work with the Hardened Runtime capability, and with Apple silicon.
 

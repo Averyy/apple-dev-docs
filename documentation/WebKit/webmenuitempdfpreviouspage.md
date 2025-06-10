@@ -1,6 +1,6 @@
 # WebMenuItemPDFPreviousPage
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Display the previous page of a PDF document.

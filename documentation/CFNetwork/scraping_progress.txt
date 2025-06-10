@@ -1,4 +1,4 @@
 Completed scraping CFNetwork!
-Total pages scraped: 1
+Total pages scraped: 416
 Pages skipped (unchanged): 1
 Pages failed: 0

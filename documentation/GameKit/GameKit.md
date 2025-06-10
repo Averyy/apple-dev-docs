@@ -20,7 +20,7 @@ Use the GameKit framework to implement Game Center social-gaming network feature
 
 ![Multiple iPhone screens showing these Game Center features: an access point, achievement dashboard, leaderboard dashboard, and inviting friends.](https://docs-assets.developer.apple.com/published/febd437ebe02ea5bbae565532b9fc83c/media-4091475%402x.png)
 
-Before you can use GameKit classes, you must enable Game Center in your project and authenticate the local player in your code; otherwise, your game receives a [`GKError.Code.notAuthenticated`](gkerror/code/notauthenticated.md) error.
+Before you can use GameKit classes, you must enable Game Center in your project and initialize the local player in your code; otherwise, your game receives a [`GKError.Code.notAuthenticated`](gkerror/code/notauthenticated.md) error.
 
 If you have an existing Unity project, you can access the GameKit framework using the [`Apple Unity Plug-ins`](https://developer.apple.comhttps://github.com/Apple/UnityPlugins).
 
@@ -39,7 +39,7 @@ For designing Game Center features in your app, see [`Human Interface Guidelines
 ## Topics
 
 ### Essentials
-- [Enabling and configuring Game Center](enabling-and-configuring-game-center.md)
+- [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
   Enable Game Center in your Xcode project and configure features in App Store Connect.
 - [Authenticating a player](authenticating-a-player.md)
   Confirm player credentials and device capabilities and check for account restrictions.
@@ -62,9 +62,9 @@ For designing Game Center features in your app, see [`Human Interface Guidelines
   A class that provides common data and methods for the different player objects.
 - [protocol GKLocalPlayerListener](gklocalplayerlistener.md)
   A protocol that handles events for Game Center players.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1515396-gkplayerauthenticationdidchangen.md)
-  A notification that posts after GameKit authenticates the local player. 
-- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1520710-gkplayerdidchangenotificationnam.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+  A notification that posts after GameKit authenticates the local player.
+- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerDidChangeNotificationName.md)
   A notification that posts when a player object’s data changes.
 ### Game Center interfaces
 - [Adding an access point to your game](adding-an-access-point-to-your-game.md)
@@ -73,14 +73,10 @@ For designing Game Center features in your app, see [`Human Interface Guidelines
   Provide an interface for players to navigate to their Game Center data from your game.
 - [class GKAccessPoint](gkaccesspoint.md)
   An object that allows players to view and manage their Game Center information from within your game.
-- [class GKGameCenterViewController](gkgamecenterviewcontroller.md)
-  The dashboard that allows players to access their Game Center data in your game.
 - [class GKDialogController](gkdialogcontroller.md)
   An object that provides the ability to present the dashboard in macOS games.
 - [protocol GKViewController](gkviewcontroller.md)
   The abstract base protocol adopted by GameKit view controller classes.
-- [class GKNotificationBanner](gknotificationbanner.md)
-  A Game Center-style banner that displays a message to the local player.
 ### Leaderboards
 - [Encourage progress and competition with leaderboards](encourage-progress-and-competition-with-leaderboards.md)
   Let players measure their own progress and compare their skills with friends and others.
@@ -102,16 +98,23 @@ For designing Game Center features in your app, see [`Human Interface Guidelines
 - [class GKAchievementDescription](gkachievementdescription.md)
   An object containing the text and artwork used to present an achievement to a player.
 ### Challenges
-- [class GKChallenge](gkchallenge.md)
-  A challenge issued by the local player to another player.
-- [class GKScoreChallenge](gkscorechallenge.md)
-  A type of challenge where a player must beat the leaderboard score of another player.
-- [class GKAchievementChallenge](gkachievementchallenge.md)
-  A type of challenge where a player must earn another player’s achievement.
-- [protocol GKChallengeListener](gkchallengelistener.md)
-  An object that responds to challenge events.
+- [Creating engaging challenges from leaderboards](creating-engaging-challenges-from-leaderboards.md)
+  Encourage friendly competition by adding challenges to your game.
+- [Choosing a leaderboard for your challenges](choosing-a-leaderboard-for-your-challenges.md)
+  Understand what gameplay works well when configuring challenges in your game.
+- [class GKChallengeDefinition](gkchallengedefinition.md)
+  An object that represents the static metadata you define for the challenge.
 - [GKShowChallengeBanners](../BundleResources/Information-Property-List/GKShowChallengeBanners.md)
   A Boolean value that indicates whether GameKit can display challenge banners in a game.
+### Activities
+- [Creating activities for your game](creating-activities-for-your-game.md)
+  Use activities to surface game content to players and encourage them to connect with each other.
+- [class GKGameActivity](gkgameactivity.md)
+  An object that represents a single instance of a game activity for the current game.
+- [class GKGameActivityDefinition](gkgameactivitydefinition.md)
+  An object that represents the static metadata you define for the activity.
+- [protocol GKGameActivityListener](gkgameactivitylistener.md)
+  An object that responds to activity events.
 ### Real-time games
 - [Creating real-time games](creating-real-time-games.md)
   Develop games where multiple players interact in real time.
@@ -168,9 +171,6 @@ For designing Game Center features in your app, see [`Human Interface Guidelines
 ### Deprecated
 - [Deprecated symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.
-### Structures
-- [struct GKReleaseState](gkreleasestate.md)
-  Describes the release state of an App Store Connect resource, such as an Achievement or Leaderboard.
 
 
 ---

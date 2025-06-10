@@ -1,6 +1,6 @@
 # mediaType
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The media type for the contents of the web view.

@@ -6,11 +6,7 @@
 The array of valid devices that Apple TV can connect to.
 
 **Availability**:
-- iOS 11.3+
-- iPadOS 11.3+
 - tvOS 11.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

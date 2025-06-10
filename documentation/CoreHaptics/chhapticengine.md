@@ -52,9 +52,9 @@ Although it’s possible to create content—[`CHHapticPattern`](chhapticpattern
 ### Starting and Stopping the Haptic Engine
 - [func start() throws](chhapticengine/start.md)
   Synchronously starts the haptic engine.
-- [func start(completionHandler: CHHapticEngine.CompletionHandler?)](chhapticengine/start(completionhandler:).md)
+- [func start(completionHandler: (((any Error)?) -> Void)?)](chhapticengine/start(completionhandler:).md)
   Asynchronously starts the haptic engine.
-- [func stop(completionHandler: CHHapticEngine.CompletionHandler?)](chhapticengine/stop(completionhandler:).md)
+- [func stop(completionHandler: (((any Error)?) -> Void)?)](chhapticengine/stop(completionhandler:).md)
   Asynchronously stops the haptic engine and executes the completion handler once the engine has stopped.
 - [CHHapticEngine.CompletionHandler](chhapticengine/completionhandler.md)
   A typealias for a completion handler that the engine calls after starting or stopping.
@@ -120,6 +120,9 @@ Although it’s possible to create content—[`CHHapticPattern`](chhapticpattern
 ### Managing Power
 - [var isAutoShutdownEnabled: Bool](chhapticengine/isautoshutdownenabled.md)
   A Boolean value that indicates whether the haptic engine starts and stops automatically on request from one of its pattern players, or when idle.
+### Instance Properties
+- [var intendedSpatialExperience: any SpatialAudioExperience](chhapticengine/intendedspatialexperience-55ca0.md)
+  The CHHapticEngine’s intended spatial experience.
 
 ## Relationships
 

@@ -22,8 +22,8 @@ class func loadLeaderboards(IDs leaderboardIDs: [String]?) async throws -> [GKLe
 
 ## Mentions
 
-- [Creating recurring leaderboards](creating-recurring-leaderboards.md)
 - [Encourage progress and competition with leaderboards](encourage-progress-and-competition-with-leaderboards.md)
+- [Creating recurring leaderboards](creating-recurring-leaderboards.md)
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # autosaves
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean that indicates whether or not the receiver’s attributes are automatically stored in the user defaults database.

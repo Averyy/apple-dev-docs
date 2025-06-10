@@ -1,6 +1,6 @@
 # Analyzing the performance of your visionOS app
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Use the RealityKit Trace template in Instruments to evaluate and improve the performance of your visionOS app.
 
@@ -141,4 +141,4 @@ A person’s eye position, the distance from the person to the content, and the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/analyzing-the-performance-of-your-visionos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/analyzing-the-performance-of-your-visionos-app)*

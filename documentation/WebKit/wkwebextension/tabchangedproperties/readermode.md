@@ -1,6 +1,6 @@
 # readerMode
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the reader mode state changed.

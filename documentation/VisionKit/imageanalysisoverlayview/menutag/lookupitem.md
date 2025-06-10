@@ -1,6 +1,6 @@
 # lookupItem
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An index for the Visual Look Up menu item.

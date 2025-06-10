@@ -1,6 +1,6 @@
 # init(type:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: init
 
 Initializes a document of a specified type.

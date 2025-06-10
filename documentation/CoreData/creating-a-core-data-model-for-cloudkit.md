@@ -67,8 +67,6 @@ When you’re happy with your data model, have a fully tested app, and are ready
 
 > ❗ **Important**:  After you promote your schema to production, the record types and their fields are immutable and exist for all time. You can add new record types, and additional fields to existing record types, but you can’t modify or delete existing record types.
 
- After you promote your schema to production, the record types and their fields are immutable and exist for all time. You can add new record types, and additional fields to existing record types, but you can’t modify or delete existing record types.
-
 Initialize your schema one last time, then promote it from the CloudKit dashboard. For more information about promoting a schema from development to production, see [`Deploying the Schema`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/DeployingYourCloudKitApp/DeployingYourCloudKitApp.html#//apple_ref/doc/uid/TP40014987-CH10).
 
 ##### Update the Production Schema

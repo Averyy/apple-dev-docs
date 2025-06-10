@@ -1,6 +1,6 @@
 # completeBuffer
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The complete buffer’s string representation.

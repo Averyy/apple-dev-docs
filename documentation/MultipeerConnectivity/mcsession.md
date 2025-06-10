@@ -1,6 +1,6 @@
 # MCSession
 
-**Framework**: Multipeerconnectivity  
+**Framework**: Multipeer Connectivity  
 **Kind**: class
 
 An `MCSession` object enables and manages communication among all peers in a Multipeer Connectivity session.
@@ -144,4 +144,4 @@ To leave a session, your app must call [`disconnect()`](mcsession/disconnect().m
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MultipeerConnectivity/mcsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/multipeerconnectivity/mcsession)*

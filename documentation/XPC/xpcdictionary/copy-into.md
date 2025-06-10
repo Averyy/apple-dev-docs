@@ -1,6 +1,6 @@
 # copy(into:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Copies the keys and values of the dictionary to a different dictionary.

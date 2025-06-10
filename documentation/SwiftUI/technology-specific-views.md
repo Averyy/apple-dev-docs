@@ -253,7 +253,7 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
 ### Providing tips
 - [func popoverTip((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View](view/popovertip(_:arrowedge:action:).md)
   Presents a popover tip on the modified view.
-- [func tipBackground(some ShapeStyle) -> some View](view/tipbackground(_:).md)
+- [func tipBackground<S>(S) -> some View](view/tipbackground(_:).md)
   Sets the tip’s view background to a style. Currently this only applies to inline tips, not popover tips.
 - [func tipCornerRadius(CGFloat, antialiased: Bool) -> some View](view/tipcornerradius(_:antialiased:).md)
   Sets the corner radius for an inline tip view.

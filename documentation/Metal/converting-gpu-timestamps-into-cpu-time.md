@@ -53,4 +53,4 @@ This method is useful to show the duration between the beginning and end of an e
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/converting-gpu-timestamps-into-cpu-time)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/converting-gpu-timestamps-into-cpu-time)*

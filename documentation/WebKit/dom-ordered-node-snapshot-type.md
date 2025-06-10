@@ -1,6 +1,6 @@
 # DOM_ORDERED_NODE_SNAPSHOT_TYPE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

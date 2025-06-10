@@ -17,21 +17,23 @@ If a check-in server URL is provided in the MDM payload, the check-in protocol c
 ### Commands
 - [Authenticate](authenticate.md)
   Authenticates a user during MDM payload installation.
-- [UserAuthenticate](userauthenticate.md)
+- [User Authenticate](user-authenticate.md)
   Authenticates a user with a two-step authentication protocol.
 - [Check Out](check-out.md)
   Responds to the removal of the MDM enrollment profile from a device.
 - [Get Token](get-token.md)
-  Check-in protocol get-token data.
+  Gets a token from the server.
 - [Token Update](token-update.md)
   Updates the token for a device on the server.
 - [Get Bootstrap Token](get-bootstrap-token.md)
-  Gets the bootstrap token.
+  Gets the bootstrap token from the server.
 - [Set Bootstrap Token](set-bootstrap-token.md)
-  Sets the bootstrap token.
+  Sends the bootstrap token to the server.
+- [Return To Service](return-to-service.md)
+  Gets the return-to-service configuration from the server.
 ### Declarative Management
-- [Declarative Management Checkin](declarative-management.md)
-  The checkin protocol for declarative management.
+- [Declarative Management](declarative-management.md)
+  Sends declarative management requests to the server.
 - [Get Server Supported Declarations](declaration-items.md)
   Get a list of the declarations available on the server.
 - [Get the Device Status](status.md)
@@ -45,8 +47,8 @@ If a check-in server URL is provided in the MDM payload, the check-in protocol c
   Set up an MDM server and send commands to managed devices.
 - [Commands and Queries](commands-and-queries.md)
   Manage the configuration and behavior of your devices.
-- [User Enrollment](user-enrollment.md)
-  Authenticate devices using an user identity focused workflow.
+- [Account-driven enrollment](account-driven-enrollment.md)
+  Authenticate devices using a user identity-focused workflow.
 
 
 ---

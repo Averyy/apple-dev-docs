@@ -16,7 +16,7 @@ var options: Int { get }
 
 #### Return Value
 
-The comparison predicate options for the receiver. See [`NSComparisonPredicate.Options`](https://developer.apple.com/documentation/foundation/nscomparisonpredicate/options) for possible values. Returns `0` if this does not apply (for example, for a compound template initialized with [`init(compoundTypes:)`](nspredicateeditorrowtemplate/init(compoundtypes:).md)).
+The comparison predicate options for the receiver. See [`NSComparisonPredicate.Options`](https://developer.apple.com/documentation/Foundation/NSComparisonPredicate/Options-swift.struct) for possible values. Returns `0` if this does not apply (for example, for a compound template initialized with [`init(compoundTypes:)`](nspredicateeditorrowtemplate/init(compoundtypes:).md)).
 
 ## See Also
 

@@ -26,14 +26,6 @@ Clients with the appropriate entitlements can use this method to fetch data from
 func fetchData(forBundleIdentifier bundleIdentifier: String, itemIdentifier: String, contentType: UTType) async throws -> Data
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func fetchData(forBundleIdentifier bundleIdentifier: String, itemIdentifier: String, contentType: UTType) async throws -> Data
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 ## Parameters
 
 - `bundleIdentifier`: The bundle identifier of the app to search.

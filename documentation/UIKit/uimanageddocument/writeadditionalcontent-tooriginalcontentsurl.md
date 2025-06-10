@@ -1,6 +1,6 @@
 # writeAdditionalContent(_:to:originalContentsURL:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Handles writing non-Core Data content to the document’s file package.

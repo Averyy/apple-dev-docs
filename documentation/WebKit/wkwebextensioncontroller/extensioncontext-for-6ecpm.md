@@ -1,6 +1,6 @@
 # extensionContext(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a loaded extension context for the specified extension.

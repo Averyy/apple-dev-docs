@@ -3,6 +3,8 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
+An array of dictionaries that describe an item to install.
+
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
@@ -10,8 +12,6 @@
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,6 +22,7 @@ object ManifestURL.ItemsItem.AssetsItem
 ## See Also
 
 - [object ManifestURL.ItemsItem.Metadata](manifesturl/itemsitem/metadata-data.dictionary.md)
+  The metadata for an application or package manifest item.
 
 
 ---

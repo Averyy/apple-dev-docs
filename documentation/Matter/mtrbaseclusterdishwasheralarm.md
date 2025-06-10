@@ -30,7 +30,7 @@ Attributes and commands for configuring the Dishwasher alarm.
 - [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclusterdishwasheralarm/init(device:endpointid:queue:).md)
   For all instance methods (reads, writes, commands) that take a completion, the completion will be called on the provided queue.
 ### Instance Methods
-- [func modifyEnabledAlarms(with: MTRDishwasherAlarmClusterModifyEnabledAlarmsParams, completion: MTRStatusCompletion)](mtrbaseclusterdishwasheralarm/modifyenabledalarms(with:completion:).md)
+- [func modifyEnabledAlarms(with: MTRDishwasherAlarmClusterModifyEnabledAlarmsParams, completion: ((any Error)?) -> Void)](mtrbaseclusterdishwasheralarm/modifyenabledalarms(with:completion:).md)
   Command ModifyEnabledAlarms
 - [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterdishwasheralarm/readattributeacceptedcommandlist(completion:).md)
 - [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterdishwasheralarm/readattributeattributelist(completion:).md)
@@ -41,7 +41,7 @@ Attributes and commands for configuring the Dishwasher alarm.
 - [func readAttributeMask(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterdishwasheralarm/readattributemask(completion:).md)
 - [func readAttributeState(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterdishwasheralarm/readattributestate(completion:).md)
 - [func readAttributeSupported(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterdishwasheralarm/readattributesupported(completion:).md)
-- [func reset(with: MTRDishwasherAlarmClusterResetParams, completion: MTRStatusCompletion)](mtrbaseclusterdishwasheralarm/reset(with:completion:).md)
+- [func reset(with: MTRDishwasherAlarmClusterResetParams, completion: ((any Error)?) -> Void)](mtrbaseclusterdishwasheralarm/reset(with:completion:).md)
   Command Reset
 - [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterdishwasheralarm/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterdishwasheralarm/subscribeattributeattributelist(with:subscriptionestablished:reporthandler:).md)

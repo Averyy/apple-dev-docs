@@ -5,9 +5,6 @@
 
 The main entry point for receiving data from ARKit.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift

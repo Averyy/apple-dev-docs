@@ -1,6 +1,6 @@
 # VSSubscription
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: class
 
 An object that describes a subscriber’s access to content.
@@ -47,13 +47,6 @@ Use a `VSSubscription` object to set user subscription information, such as acco
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-
-## See Also
-
-- [class VSSubscriptionRegistrationCenter](vssubscriptionregistrationcenter.md)
-  An object that stores subscription information that the system provides to the Apple TV app.
-- [class VSAccountApplicationProvider](vsaccountapplicationprovider.md)
-  An object to display app-specific providers in your app.
 
 
 ---

@@ -24,8 +24,6 @@ case purged
 
 > ❗ **Important**:  Upon receipt of deletions with this reason, you must delete any locally cached data and not resend it to iCloud.
 
- Upon receipt of deletions with this reason, you must delete any locally cached data and not resend it to iCloud.
-
 ## See Also
 
 - [CKSyncEngineZoneDeletionReason.deleted](cksyncenginezonedeletionreason/deleted.md)

@@ -11,8 +11,7 @@ A view that asynchronously loads and displays a 3D model.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct Model3D<Content> where Content : View
+struct Model3D<Content> where Content : View
 ```
 
 #### Overview
@@ -56,8 +55,6 @@ For this example, [`Model3D`](model3d.md) shows a  [`ProgressView`](https://deve
 
 > ❗ **Important**: You can’t apply [`ResolvedModel3D`](resolvedmodel3d.md)-specific modifiers, like [`resizable(_:)`](resolvedmodel3d/resizable(_:).md), directly to a `Model3D`. Instead, apply them to the `ResolvedModel3D` instance that your `content` closure gets when defining the view’s appearance.
 
-You can’t apply [`ResolvedModel3D`](resolvedmodel3d.md)-specific modifiers, like [`resizable(_:)`](resolvedmodel3d/resizable(_:).md), directly to a `Model3D`. Instead, apply them to the `ResolvedModel3D` instance that your `content` closure gets when defining the view’s appearance.
-
 To gain more control over the loading process, use the [`init(url:transaction:content:)`](model3d/init(url:transaction:content:).md) initializer, which takes a `content` closure that receives a [`Model3DPhase`](model3dphase.md) to indicate the state of the loading operation. Return a view that’s appropriate for the current phase:
 
 ```swift
@@ -88,18 +85,19 @@ To gain more control over the loading process, use the [`init(url:transaction:co
   Loads and displays a modifiable model from the specified URL using a custom placeholder until the model loads.
 - [init(url: URL, transaction: Transaction, content: (Model3DPhase) -> Content)](model3d/init(url:transaction:content:).md)
   Loads and displays a modifiable model from the specified URL in phases.
-### Accessing content
-- [var body: some View](model3d/body-swift.property.md)
-  The content and behavior of the view.
-- [typealias Body](model3d/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](model3d/view-implementations.md)
+### Initializers
+- [init(asset: Model3DAsset)](model3d/init(asset:).md)
+- [init<Model>(asset: Model3DAsset, content: (ResolvedModel3D) -> Model)](model3d/init(asset:content:).md)
+- [init(from: Entity.ConfigurationCatalog, configurations: [String : String]?)](model3d/init(from:configurations:).md)
+  Loads and displays a model using the provided `ConfigurationCatalog` and configuration choices.
+- [init<Model, Placeholder>(from: Entity.ConfigurationCatalog, configurations: [String : String]?, content: (ResolvedModel3D) -> Model, placeholder: () -> Placeholder)](model3d/init(from:configurations:content:placeholder:).md)
+  Loads and displays a modifiable model using the provided `ConfigurationCatalog` and configuration choices using a custom placeholder until the model loads.
+- [init(from: Entity.ConfigurationCatalog, configurations: [String : String]?, transaction: Transaction, content: (Model3DPhase) -> Content)](model3d/init(from:configurations:transaction:content:).md)
+  Loads and displays a modifiable model using the provided `ConfigurationCatalog` and configuration choices in phases.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also
@@ -110,6 +108,8 @@ To gain more control over the loading process, use the [`init(url:transaction:co
   A view for displaying static three-dimensional models.
 - [struct Model3DPlaceholderContent](model3dplaceholdercontent.md)
   A container view that presents either a 3D model or a placeholder for one.
+- [class Model3DAsset](model3dasset.md)
+  A container used to represent the asset loaded into the Model3D View.
 
 
 ---

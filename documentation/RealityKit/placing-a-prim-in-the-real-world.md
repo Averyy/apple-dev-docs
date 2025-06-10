@@ -1,6 +1,6 @@
 # Placing a prim in the real world
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Anchor a prim to a real-world object that the runtime recognizes in the physical environment.
 
@@ -70,4 +70,4 @@ def Cube "FaceAnchoredCube" (
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/placing-a-prim-in-the-real-world)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/placing-a-prim-in-the-real-world)*

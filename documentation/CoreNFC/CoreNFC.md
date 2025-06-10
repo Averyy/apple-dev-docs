@@ -88,6 +88,7 @@ Core NFC isn’t available for use in app extensions, and it requires a device t
 ### Classes
 - [class NFCISO15693CustomCommandConfiguration](nfciso15693customcommandconfiguration.md)
 - [class NFCISO15693ReadMultipleBlocksConfiguration](nfciso15693readmultipleblocksconfiguration.md)
+- [class NFCPaymentTagReaderSession](nfcpaymenttagreadersession.md)
 ### Structures
 - [struct NFCFeliCaPollingResponse](nfcfelicapollingresponse.md)
 - [struct NFCFeliCaRequestSpecificationVersionResponse](nfcfelicarequestspecificationversionresponse.md)

@@ -1,6 +1,6 @@
 # shouldDeleteInaccessibleFaults
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: property
 
 A Boolean value that determines whether the context turns inaccessible faults into deleted objects.

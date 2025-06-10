@@ -37,6 +37,7 @@ You can also use [`animation(minimumInterval:paused:)`](timelineschedule/animati
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TimelineSchedule](timelineschedule.md)
 
 ## See Also

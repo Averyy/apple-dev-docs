@@ -1,6 +1,6 @@
 # Modify an In-App Purchase Localization
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Update the display name and description for a specific locale of an in-app purchase.

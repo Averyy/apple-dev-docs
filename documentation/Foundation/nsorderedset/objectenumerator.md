@@ -46,6 +46,8 @@ It is more efficient to use the fast enumeration protocol (see [`NSFastEnumerati
   The last object in the ordered set.
 - [func object(at: Int) -> Any](nsorderedset/object(at:).md)
   Returns the object at the specified index of the set.
+- [subscript(Int) -> Any](nsorderedset/subscript(_:).md)
+  Returns the object at the specified index of the set.
 - [func objects(at: IndexSet) -> [Any]](nsorderedset/objects(at:).md)
   Returns the objects in the ordered set at the specified indexes.
 - [func index(of: Any) -> Int](nsorderedset/index(of:).md)
@@ -60,8 +62,6 @@ It is more efficient to use the fast enumeration protocol (see [`NSFastEnumerati
   Returns the index of an object in the ordered set that passes a test in a given block for a given set of enumeration options.
 - [func indexes(ofObjectsAt: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](nsorderedset/indexes(ofobjectsat:options:passingtest:).md)
   Returns the index, from a given set of indexes, of the object in the ordered set that passes a test in a given block for a given set of enumeration options.
-- [func indexes(ofObjectsPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](nsorderedset/indexes(ofobjectspassingtest:).md)
-  Returns the index of the object in the ordered set that passes a test in a given block.
 
 
 ---

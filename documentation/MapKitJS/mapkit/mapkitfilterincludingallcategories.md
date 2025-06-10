@@ -1,7 +1,7 @@
 # mapkit.filterIncludingAllCategories
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: var
 
 A value that includes all point-of-interest categories.
 
@@ -11,7 +11,7 @@ A value that includes all point-of-interest categories.
 ## Declaration
 
 ```swift
-attribute mapkit.PointOfInterestFilter mapkit.filterIncludingAllCategories;
+const mapkit.PointOfInterestFilter mapkit.filterIncludingAllCategories;
 ```
 
 ## See Also

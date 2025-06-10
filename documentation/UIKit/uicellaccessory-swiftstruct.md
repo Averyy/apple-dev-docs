@@ -37,8 +37,6 @@ cell.accessories = [
 
 > ❗ **Important**:  The system throws an exception if you include more than one instance of any system accessory. You can include multiple custom accessories.
 
- The system throws an exception if you include more than one instance of any system accessory. You can include multiple custom accessories.
-
 ## Topics
 
 ### Creating a disclosure indicator

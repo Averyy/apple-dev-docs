@@ -1,6 +1,6 @@
 # Scaling Mode Constants
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 Supported constant values for the [`kVTPixelTransferPropertyKey_ScalingMode`](kvtpixeltransferpropertykey_scalingmode.md) key.
 

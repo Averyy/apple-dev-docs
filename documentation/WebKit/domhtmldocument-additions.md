@@ -1,6 +1,6 @@
 # DOMHTMLDocument Additions
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Additions to the `DOMHTMLDocument` class to create document fragments.
 

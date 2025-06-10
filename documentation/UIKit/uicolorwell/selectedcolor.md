@@ -28,8 +28,12 @@ This property is KVO-compliant.
 
 - [var title: String?](uicolorwell/title.md)
   The title for the color picker.
+- [var maximumLinearExposure: CGFloat](uicolorwell/maximumlinearexposure.md)
+  The maximum exposure to apply to a color when returned by the color well.
 - [var supportsAlpha: Bool](uicolorwell/supportsalpha.md)
   A Boolean value that determines whether the color picker supports alpha values.
+- [var supportsEyedropper: Bool](uicolorwell/supportseyedropper.md)
+  If set to `NO` the eyedropper functionality is not supported for this color well.
 
 
 ---

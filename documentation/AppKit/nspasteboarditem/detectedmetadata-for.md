@@ -53,9 +53,7 @@ for (index, item) in pasteboardItems.enumerated() {
 - [func detectedValues(for: Set<PartialKeyPath<NSPasteboardItem.DetectedValues>>) async throws -> NSPasteboardItem.DetectedValues](nspasteboarditem/detectedvalues(for:).md)
   Determines whether this pasteboard item matches the specified patterns, reading the contents if it finds a match.
 - [NSPasteboardItem.DetectedValues](nspasteboarditem/detectedvalues.md)
-  A type that contains common types of data that the data detection system matches for a pasteboard.
 - [NSPasteboardItem.DetectedMetadata](nspasteboarditem/detectedmetadata.md)
-  An object that contains common types of metadata that the data detection system matches for a pasteboard.
 
 
 ---

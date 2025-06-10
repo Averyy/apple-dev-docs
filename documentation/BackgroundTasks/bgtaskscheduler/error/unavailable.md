@@ -3,7 +3,7 @@
 **Framework**: Background Tasks  
 **Kind**: property
 
-A task scheduling error indicating that the app or extension can’t schedule background work.
+A task scheduling error that indicates the app or extension can’t schedule background work.
 
 **Availability**:
 - iOS 13.0+
@@ -11,6 +11,7 @@ A task scheduling error indicating that the app or extension can’t schedule ba
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 
@@ -22,18 +23,18 @@ static var unavailable: BGTaskScheduler.Error.Code { get }
 
 This error usually occurs for one of three reasons:
 
-- The user has disabled background refresh in settings.
-- The app is running on Simulator which doesn’t support background processing.
-- The extension either hasn’t set [`RequestsOpenAccess`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/RequestsOpenAccess) to `YES` in [`The Info.plist File`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/ProvidingUserAssitAppleHelp/authoring_help/authoring_help_book.html#//apple_ref/doc/uid/TP30000903-CH206-SW22), or the user hasn’t granted open access.
+- A person disabled background refresh in settings.
+- The app runs on Simulator which doesn’t support background processing.
+- The extension either didn’t set [`RequestsOpenAccess`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/RequestsOpenAccess) to `YES` in [`The Info.plist File`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/ProvidingUserAssitAppleHelp/authoring_help/authoring_help_book.html#//apple_ref/doc/uid/TP30000903-CH206-SW22), or a person didn’t grant open access.
 
 ## See Also
 
 - [BGTaskScheduler.Error.Code](bgtaskscheduler/error/code.md)
   An enumeration of the task scheduling errors.
 - [static var notPermitted: BGTaskScheduler.Error.Code](bgtaskscheduler/error/notpermitted.md)
-  A task scheduling error indicating the app isn’t permitted to launch the task.
+  A task scheduling error that indicates the app isn’t permitted to launch the task.
 - [static var tooManyPendingTaskRequests: BGTaskScheduler.Error.Code](bgtaskscheduler/error/toomanypendingtaskrequests.md)
-  A task scheduling error indicating that there are too many pending tasks of the type requested.
+  A task scheduling error that indicates there are too many pending tasks of the type requested.
 
 
 ---

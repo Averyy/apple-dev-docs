@@ -1,6 +1,6 @@
 # uvIndex
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The expected intensity of ultraviolet radiation from the sun.

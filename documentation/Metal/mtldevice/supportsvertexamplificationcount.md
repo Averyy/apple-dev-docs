@@ -30,8 +30,6 @@ A vertex amplification factor of `1` has no effect because it effectively disabl
 
 > ❗ **Important**:  Passing a vertex amplification factor of `1` or less to this method triggers an API validation error.
 
- Passing a vertex amplification factor of `1` or less to this method triggers an API validation error.
-
 For more information about vertex amplification, see [`Improving Rendering Performance with Vertex Amplification`](improving-rendering-performance-with-vertex-amplification.md).
 
 ## Parameters

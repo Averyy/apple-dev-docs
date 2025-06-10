@@ -1,6 +1,6 @@
 # INT_SAMPLER_CUBE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

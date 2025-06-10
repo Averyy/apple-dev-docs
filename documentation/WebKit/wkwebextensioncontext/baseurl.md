@@ -1,6 +1,6 @@
 # baseURL
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The base URL the context uses for loading extension resources or injecting content into webpages.

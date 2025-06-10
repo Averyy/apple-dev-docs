@@ -32,7 +32,7 @@ Create a [`CKRecord`](ckrecord.md) object with a string representing the type of
 let record = CKRecord(recordType: "ToDoItem")
 ```
 
-Then set the record’s fields. Because [`CKRecord`](ckrecord.md) is key-value coding compliant, you can use [`setValuesForKeys(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValuesForKeys(_:)). The values you set could be from a details sheet that the user fills out.
+Then set the record’s fields. Because [`CKRecord`](ckrecord.md) is key-value coding compliant, you can use doc://com.apple.documentation/documentation/objectivec/nsobject/1417515-setvaluesforkeys. The values you set could be from a details sheet that the user fills out.
 
 ```swift
 record.setValuesForKeys([
@@ -76,8 +76,6 @@ When you run your app, it adds that record type to the schema and saves the reco
 If saving the record to iCloud succeeds, `error` is `nil`. (If `error` is non-`nil`, see [`CKError`](ckerror.md) for possible values of `error.)`
 
 > ❗ **Important**:  During development, you can change your schema as much as you want, but once it’s deployed to production, you can’t delete any part of it. You can only make additive changes, such as adding a new field to a record type, or adding new record types.
-
- During development, you can change your schema as much as you want, but once it’s deployed to production, you can’t delete any part of it. You can only make additive changes, such as adding a new field to a record type, or adding new record types.
 
 ##### Handle or Prevent Errors Gracefully
 

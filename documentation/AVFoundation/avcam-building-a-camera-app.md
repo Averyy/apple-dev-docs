@@ -1,13 +1,13 @@
 # AVCam: Building a camera app
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Capture photos and record video using the front and rear iPhone and iPad cameras.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Xcode 16.0+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Xcode 26.0+ (Beta)
 
 #### Overview
 
@@ -25,7 +25,7 @@ The key type the app defines is `CaptureService`, an actor that manages the inte
 
 Because Simulator doesn’t have access to device cameras, it isn’t suitable for running the app—you’ll need to run it on a device. To run this sample, you’ll need the following:
 
-- An iOS device with iOS 18 or later
+- An iOS device with iOS 26 or later
 
 AVCam adopts the [`LockedCameraCapture`](https://developer.apple.com/documentation/LockedCameraCapture) framework, which makes the app eligible to launch from the Lock Screen, Control Center, Action Button, and the Camera Control. To support this framework, the sample adds a capture extension target and a Control Center extension target to the main app target. Set your signing credentials on each target to build and run the sample.
 
@@ -316,6 +316,8 @@ func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileUR
   Configure input devices, output media, preview views, and basic settings before capturing photos or video.
 - [Accessing the camera while multitasking on iPad](../AVKit/accessing-the-camera-while-multitasking-on-ipad.md)
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
+- [Capturing cinematic video](capturing-cinematic-video.md)
+  Capture video with an adjustable depth of field and focus points.
 - [AVMultiCamPiP: Capturing from Multiple Cameras](avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
 - [AVCamBarcode: Detecting Barcodes and Faces](avcambarcode-detecting-barcodes-and-faces.md)
@@ -334,4 +336,4 @@ func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileUR
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avcam-building-a-camera-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avcam-building-a-camera-app)*

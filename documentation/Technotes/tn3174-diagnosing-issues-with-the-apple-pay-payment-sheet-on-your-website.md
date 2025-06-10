@@ -219,4 +219,4 @@ You may experience situations where the payment sheet does not display a success
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3174-diagnosing-issues-with-the-apple-pay-payment-sheet-on-your-website)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3174-diagnosing-issues-with-the-apple-pay-payment-sheet-on-your-website)*

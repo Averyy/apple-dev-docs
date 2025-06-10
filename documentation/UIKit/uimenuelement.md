@@ -40,6 +40,8 @@ class UIMenuElement
   Attributes that determine the style of the menu element.
 - [UIMenuElement.State](uimenuelement/state.md)
   Constants that indicate the state of an action- or command-based menu element.
+- [UIMenuElement.RepeatBehavior](uimenuelement/repeatbehavior.md)
+  Possible repeat behaviors for a menu element.
 
 ## Relationships
 
@@ -78,6 +80,7 @@ class UIMenuElement
   An object that specifies a key press perform on a hardware keyboard and the resulting action.
 - [class UIDeferredMenuElement](uideferredmenuelement.md)
   A placeholder menu element that the system replaces with the result of the block’s completion handler.
+- [UIDeferredMenuElement.Provider](uideferredmenuelement/provider.md)
 - [UIMenuElement.Attributes](uimenuelement/attributes.md)
   Attributes that determine the style of the menu element.
 - [UIMenuElement.State](uimenuelement/state.md)

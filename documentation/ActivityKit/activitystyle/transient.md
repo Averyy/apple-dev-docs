@@ -13,6 +13,10 @@
 case transient
 ```
 
+## Mentions
+
+- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
+
 ## See Also
 
 - [ActivityStyle.standard](activitystyle/standard.md)

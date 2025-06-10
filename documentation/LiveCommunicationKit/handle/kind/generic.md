@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: case
 
-An unspecified type of handle.
+An unspecified handle type.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,13 @@ An unspecified type of handle.
 ```swift
 case generic
 ```
+
+## See Also
+
+- [Handle.Kind.emailAddress](handle/kind/emailaddress.md)
+  An email address.
+- [Handle.Kind.phoneNumber](handle/kind/phonenumber.md)
+  A phone number.
 
 
 ---

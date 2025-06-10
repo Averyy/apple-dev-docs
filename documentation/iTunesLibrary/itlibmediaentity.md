@@ -1,6 +1,6 @@
 # ITLibMediaEntity
 
-**Framework**: Ituneslibrary  
+**Framework**: iTunes Library  
 **Kind**: class
 
 This class describes a media entity, which can be a media item, such as an audio track.
@@ -65,4 +65,4 @@ The `ITLibMediaEntity` class serves as the abstract superclass for [`ITLibMediaI
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/iTunesLibrary/itlibmediaentity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ituneslibrary/itlibmediaentity)*

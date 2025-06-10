@@ -1,6 +1,6 @@
 # pressure
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The sea level air pressure in millibars.

@@ -1,6 +1,6 @@
 # STENCIL_BACK_PASS_DEPTH_FAIL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

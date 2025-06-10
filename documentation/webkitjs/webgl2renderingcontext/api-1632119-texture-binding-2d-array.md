@@ -1,6 +1,6 @@
 # TEXTURE_BINDING_2D_ARRAY
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

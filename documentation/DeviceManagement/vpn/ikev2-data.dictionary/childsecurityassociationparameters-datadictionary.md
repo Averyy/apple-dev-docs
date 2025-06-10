@@ -11,8 +11,7 @@ The dictionary that contains child security association parameters.
 - macOS 10.7+
 - tvOS 17.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- watchOS 10.0+
 
 ## Declaration
 

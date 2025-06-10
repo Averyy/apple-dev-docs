@@ -1,6 +1,6 @@
 # Color.Resolved
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A concrete color value.
@@ -23,9 +23,9 @@ struct Resolved
 
 #### Overview
 
-`Color.Resolved` is a set of RGBA values that represent a color that can be shown. The values are in Linear sRGB color space, extended range. This is a low-level type, most colors are represented by the `Color` type.
+`Color.Resolved` is a set of RGBA values that represent a color that can be shown. The values are stored in the Linear sRGB color space, using extended range. This is a low-level type, most colors are represented by the `Color` type.
 
-> **Note**: `Color`
+> **Note**: `Color.ResolvedHDR`, `Color`.
 
 ## Topics
 
@@ -62,9 +62,10 @@ struct Resolved
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/color/resolved)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/color/resolved)*

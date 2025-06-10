@@ -23,8 +23,6 @@ The exact order of these items depends on the locale setting. An example of this
 
 > ❗ **Important**:  You can only use this mode with the date picker style [`UIDatePickerStyle.wheels`](uidatepickerstyle/wheels.md), and can’t use it on Mac Catalyst with the [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) user interface idiom; otherwise, [`UIDatePicker`](uidatepicker.md) throws an exception.
 
- You can only use this mode with the date picker style [`UIDatePickerStyle.wheels`](uidatepickerstyle/wheels.md), and can’t use it on Mac Catalyst with the [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) user interface idiom; otherwise, [`UIDatePicker`](uidatepicker.md) throws an exception.
-
 ## See Also
 
 - [UIDatePicker.Mode.time](uidatepicker/mode/time.md)

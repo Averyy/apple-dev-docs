@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-kern_return_t StateNotificationItemCreate(OSString * itemName, OSDictionary * schema);
+kern_return_t StateNotificationItemCreate(OSString * itemName, OSDictionary * value);
 ```
 
 ## See Also

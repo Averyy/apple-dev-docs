@@ -6,6 +6,7 @@
 A type that describes the organization of the layer renderer’s textures and the relationships between those textures and the views you use for drawing.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -37,6 +38,8 @@ You can obtain layer properties directly from your layer. If you don’t yet hav
   The texture topologies available for the layer.
 - [struct TextureTopology](texturetopology.md)
   A type that specifies the organization of one of the drawable’s textures.
+### Instance Properties
+- [var trackingAreasMaxValue: LayerRenderer.Drawable.TrackingArea.RenderValue](layerrenderer/properties-swift.struct/trackingareasmaxvalue.md)
 
 ## Relationships
 

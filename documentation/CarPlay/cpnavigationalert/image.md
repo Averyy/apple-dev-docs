@@ -14,7 +14,7 @@ An image displayed in the navigation alert.
 
 ```swift
 @NSCopying
-var image: UIImage? { get }
+@MainActor var image: UIImage? { get }
 ```
 
 #### Discussion

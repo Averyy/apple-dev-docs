@@ -1,0 +1,24 @@
+# children
+
+**Framework**: RealityKit  
+**Kind**: property
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- tvOS ?+
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+@MainActor
+var children: Entity.ChildCollection { get set }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/entity/observable-7ksgz/children)*

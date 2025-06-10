@@ -1,6 +1,6 @@
 # XCUIRemoteButton.playPause
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents the play-and-pause button on a remote.

@@ -1,6 +1,6 @@
 # WatchKitError.Code.unknown
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 An unknown error.

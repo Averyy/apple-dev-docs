@@ -1,6 +1,6 @@
 # kVTDecompressionResolutionKey_Width
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A key to specify the resolution width.

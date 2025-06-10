@@ -17,6 +17,7 @@ The direction of a velocity field node.
 ## Declaration
 
 ```swift
+@MainActor
 var direction: vector_float3 { get set }
 ```
 

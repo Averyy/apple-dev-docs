@@ -1,4 +1,4 @@
-# Tips.ConfigurationOption.DisplayFrequency
+# DisplayFrequency
 
 **Framework**: TipKit  
 **Kind**: struct
@@ -43,6 +43,7 @@ For more information on display frequency, see [`displayFrequency(_:)`](tips/con
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

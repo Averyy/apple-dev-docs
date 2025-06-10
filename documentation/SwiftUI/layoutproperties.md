@@ -51,6 +51,7 @@ If you don’t implement the property in your custom layout, the protocol provid
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

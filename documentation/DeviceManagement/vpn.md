@@ -11,8 +11,6 @@ The payload you use to configure a VPN.
 - macOS 10.7+
 - tvOS 17.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -28,17 +26,17 @@ Specify `com.apple.vpn.managed` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS |
-| User Channel | macOS |
-| Allow Manual Install | iOS, macOS, tvOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | iOS, macOS, Shared iPad, tvOS |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS |
+| User channel | macOS |
+| Allow manual install | iOS, macOS, tvOS, visionOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -108,7 +106,7 @@ Specify `com.apple.vpn.managed` as the payload type.
 
 ## Topics
 
-### Profiles
+### Objects
 - [object VPN.AlwaysOn](vpn/alwayson-data.dictionary.md)
   The dictionary that contains IPSec settings.
 - [object VPN.DNS](vpn/dns-data.dictionary.md)
@@ -123,10 +121,10 @@ Specify `com.apple.vpn.managed` as the payload type.
   The dictionary that contains PPP settings.
 - [object VPN.Proxies](vpn/proxies-data.dictionary.md)
   The dictionary that contains the Proxies settings.
-- [object VPN.VPN](vpn/vpn-data.dictionary.md)
-  The dictionary that contains VPN, IPSec, and IKEv2 settings.
 - [object VPN.TransparentProxy](vpn/transparentproxy-data.dictionary.md)
   The dictionary to use for a transparent proxy VPN type.
+- [object VPN.VPN](vpn/vpn-data.dictionary.md)
+  The dictionary that contains VPN, IPSec, and IKEv2 settings.
 - [object VPN.VendorConfig](vpn/vendorconfig-data.dictionary.md)
   The vendor-specific configuration dictionary.
 

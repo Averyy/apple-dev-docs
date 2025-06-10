@@ -1,6 +1,6 @@
 # accessoryStateChanges
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: property
 
 Obtain a reference to a dock accessory and receive notifications about its state.

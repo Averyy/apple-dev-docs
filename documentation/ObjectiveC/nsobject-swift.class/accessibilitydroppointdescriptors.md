@@ -1,6 +1,6 @@
 # accessibilityDropPointDescriptors
 
-**Framework**: Objectivec  
+**Framework**: Objective-C Runtime  
 **Kind**: property
 
 An array of location descriptor objects that you use to define where drops are possible on this element.
@@ -32,4 +32,4 @@ To restore the default automatic behavior for this property, assign or return th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ObjectiveC/nsobject-swift.class/accessibilitydroppointdescriptors)*
+*[View on Apple Developer](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilitydroppointdescriptors)*

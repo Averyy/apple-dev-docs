@@ -68,6 +68,7 @@ See [`Predefined CFCharacterSet Selector Values`](predefined_cfcharacterset_sele
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -27,12 +27,14 @@ func MTLPackedFloat3Make(_ x: Float, _ y: Float, _ z: Float) -> MTLPackedFloat3
 
 ## See Also
 
-- [typealias MTLAxisAlignedBoundingBox](mtlaxisalignedboundingbox.md)
+- [typealias MTLAxisAlignedBoundingBox](mtlaxisalignedboundingbox-swift.typealias.md)
   The bounds for an axis-aligned bounding box.
-- [typealias MTLPackedFloat3](mtlpackedfloat3.md)
-  A structure that contains three 32-bit floating-point values with no additional padding.
-- [typealias MTLPackedFloat4x3](mtlpackedfloat4x3.md)
+- [typealias MTLPackedFloat3](mtlpackedfloat3-swift.typealias.md)
+  }
+- [typealias MTLPackedFloat4x3](mtlpackedfloat4x3-swift.typealias.md)
   A structure that contains the top three rows of a 4x4 matrix of 32-bit floating-point values, in column-major order.
+- [struct MTL4BufferRange](mtl4bufferrange.md)
+- [func MTL4BufferRangeMake(UInt64, UInt64) -> MTL4BufferRange](mtl4bufferrangemake(_:_:).md)
 
 
 ---

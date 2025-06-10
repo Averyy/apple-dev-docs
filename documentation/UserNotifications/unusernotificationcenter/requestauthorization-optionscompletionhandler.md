@@ -1,6 +1,6 @@
 # requestAuthorization(options:completionHandler:)
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: method
 
 Requests a person’s authorization to allow local and remote notifications for your app.

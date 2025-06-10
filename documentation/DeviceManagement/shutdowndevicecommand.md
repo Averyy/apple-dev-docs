@@ -3,14 +3,12 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to shut down a device.
+The command to remotely and immediately shut down a device.
 
 **Availability**:
 - iOS 10.3+
 - iPadOS 10.3+
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,14 +22,14 @@ object ShutDownDeviceCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object ShutDownDeviceCommand.Command](shutdowndevicecommand/command-data.dictionary.md)
-  The request dictionary to shut down a device.
+  The command to remotely and immediately shut down a device.
 
 ## See Also
 
 - [object ShutDownDeviceResponse](shutdowndeviceresponse.md)
-  A response from the device after it processes the command to shut down.
+  A response from the device after it processes the command to remotely and immediately shut down a device.
 
 
 ---

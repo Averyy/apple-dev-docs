@@ -1,6 +1,6 @@
 # verificationToken
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A token that your app sends to an account provider to identify itself.

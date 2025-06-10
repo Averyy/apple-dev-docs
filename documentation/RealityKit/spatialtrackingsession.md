@@ -1,6 +1,6 @@
 # SpatialTrackingSession
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: class
 
 An object that incorporates spatial tracking capabilities into your RealityKit apps.
@@ -119,6 +119,7 @@ You can set up an ARKit session manually and receive an anchor transform directl
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -127,7 +128,7 @@ You can set up an ARKit session manually and receive an anchor transform directl
 - [SpatialTrackingSession.Configuration.AnchorCapability](spatialtrackingsession/configuration/anchorcapability.md)
   A type that defines various anchor tracking capabilities.
 - [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](spatialtrackingsession/configuration/sceneunderstandingcapability.md)
-  Defines how system behaviors can use scene unerstanding data for.
+  Defines how system behaviors use scene understanding.
 - [SpatialTrackingSession.Configuration.Camera](spatialtrackingsession/configuration/camera.md)
   Defines the camera feed the RealityView renders.
 - [SpatialTrackingSession.UnavailableCapabilities](spatialtrackingsession/unavailablecapabilities.md)
@@ -136,4 +137,4 @@ You can set up an ARKit session manually and receive an anchor transform directl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/spatialtrackingsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/spatialtrackingsession)*

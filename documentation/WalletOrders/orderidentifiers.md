@@ -1,6 +1,6 @@
 # OrderIdentifiers
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 The unique identifiers associated with orders.

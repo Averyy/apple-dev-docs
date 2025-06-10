@@ -1,6 +1,6 @@
 # controlTint
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The scroller’s control tint.
@@ -24,4 +24,4 @@ The valid values for `controlTint` are described in [`NSControlTint`](nscontrolt
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsscroller/controltint)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsscroller/controltint)*

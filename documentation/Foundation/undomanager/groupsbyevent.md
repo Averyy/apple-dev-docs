@@ -17,6 +17,7 @@ A Boolean value that indicates whether the manager automatically creates undo gr
 ## Declaration
 
 ```swift
+@MainActor
 var groupsByEvent: Bool { get set }
 ```
 

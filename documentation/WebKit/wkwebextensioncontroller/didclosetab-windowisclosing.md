@@ -1,6 +1,6 @@
 # didCloseTab(_:windowIsClosing:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Should be called by the app when a tab is closed to fire appropriate events with all loaded web extensions.

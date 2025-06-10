@@ -31,8 +31,6 @@ case waterFitness
   The constant for a variety of surf sports, including surfing, kite surfing, and wind surfing.
 - [HKWorkoutActivityType.swimming](hkworkoutactivitytype/swimming.md)
   The constant for swimming.
-- [HKWorkoutActivityType.underwaterDiving](hkworkoutactivitytype/underwaterdiving.md)
-  The constant for underwater diving.
 - [HKWorkoutActivityType.waterPolo](hkworkoutactivitytype/waterpolo.md)
   The constant for playing water polo.
 - [HKWorkoutActivityType.waterSports](hkworkoutactivitytype/watersports.md)

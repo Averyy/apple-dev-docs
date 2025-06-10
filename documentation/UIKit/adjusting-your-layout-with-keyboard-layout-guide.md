@@ -1,6 +1,6 @@
 # Adjusting your layout with keyboard layout guide
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Respond dynamically to keyboard movement by using the tracking features of the keyboard layout guide.
 
@@ -112,4 +112,4 @@ view.keyboardLayoutGuide.setConstraints([editCenterXToKeyboard], activeWhenAwayF
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/adjusting-your-layout-with-keyboard-layout-guide)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/adjusting-your-layout-with-keyboard-layout-guide)*

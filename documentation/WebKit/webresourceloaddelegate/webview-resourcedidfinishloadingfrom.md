@@ -1,6 +1,6 @@
 # webView(_:resource:didFinishLoadingFrom:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Invoked when all of the data for a given resource is loaded.

@@ -64,6 +64,7 @@ The [`NSBrowserCell`](nsbrowsercell.md) class is the subclass of [`NSCell`](nsce
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

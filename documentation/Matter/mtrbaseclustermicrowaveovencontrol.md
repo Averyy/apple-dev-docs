@@ -30,7 +30,7 @@ Attributes and commands for configuring the microwave oven control, and reportin
 - [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclustermicrowaveovencontrol/init(device:endpointid:queue:).md)
   For all instance methods (reads, writes, commands) that take a completion, the completion will be called on the provided queue.
 ### Instance Methods
-- [func addMoreTime(with: MTRMicrowaveOvenControlClusterAddMoreTimeParams, completion: MTRStatusCompletion)](mtrbaseclustermicrowaveovencontrol/addmoretime(with:completion:).md)
+- [func addMoreTime(with: MTRMicrowaveOvenControlClusterAddMoreTimeParams, completion: ((any Error)?) -> Void)](mtrbaseclustermicrowaveovencontrol/addmoretime(with:completion:).md)
   Command AddMoreTime
 - [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustermicrowaveovencontrol/readattributeacceptedcommandlist(completion:).md)
 - [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustermicrowaveovencontrol/readattributeattributelist(completion:).md)
@@ -44,9 +44,9 @@ Attributes and commands for configuring the microwave oven control, and reportin
 - [func readAttributePowerSetting(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustermicrowaveovencontrol/readattributepowersetting(completion:).md)
 - [func readAttributePowerStep(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustermicrowaveovencontrol/readattributepowerstep(completion:).md)
 - [func readAttributeWattRating(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustermicrowaveovencontrol/readattributewattrating(completion:).md)
-- [func setCookingParametersWith(MTRMicrowaveOvenControlClusterSetCookingParametersParams?, completion: MTRStatusCompletion)](mtrbaseclustermicrowaveovencontrol/setcookingparameterswith(_:completion:).md)
+- [func setCookingParametersWith(MTRMicrowaveOvenControlClusterSetCookingParametersParams?, completion: ((any Error)?) -> Void)](mtrbaseclustermicrowaveovencontrol/setcookingparameterswith(_:completion:).md)
   Command SetCookingParameters
-- [func setCookingParametersWithCompletion(MTRStatusCompletion)](mtrbaseclustermicrowaveovencontrol/setcookingparameterswithcompletion(_:).md)
+- [func setCookingParametersWithCompletion(((any Error)?) -> Void)](mtrbaseclustermicrowaveovencontrol/setcookingparameterswithcompletion(_:).md)
 - [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustermicrowaveovencontrol/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustermicrowaveovencontrol/subscribeattributeattributelist(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeClusterRevision(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustermicrowaveovencontrol/subscribeattributeclusterrevision(with:subscriptionestablished:reporthandler:).md)

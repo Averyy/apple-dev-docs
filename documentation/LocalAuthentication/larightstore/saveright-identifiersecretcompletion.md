@@ -24,14 +24,6 @@ func saveRight(_ right: LARight, identifier: String, secret: Data) async throws 
 func saveRight(_ right: LARight, identifier: String, secret: Data) async throws -> LAPersistedRight
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func saveRight(_ right: LARight, identifier: String, secret: Data) async throws -> LAPersistedRight
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 ## Parameters
 
 - `right`: The right to store.

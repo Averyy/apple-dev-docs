@@ -17,6 +17,7 @@
 ## Declaration
 
 ```swift
+@MainActor
 class SK3DNode
 ```
 
@@ -79,6 +80,8 @@ Use [`SK3DNode`](sk3dnode.md) objects to incorporate 3D SceneKit content into a 
 - [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)

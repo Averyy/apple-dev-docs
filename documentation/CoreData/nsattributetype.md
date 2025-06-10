@@ -1,6 +1,6 @@
 # NSAttributeType
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: enum
 
 The types of attribute that Core Data supports.
@@ -94,6 +94,7 @@ Core Data supports the following attribute types, which differentiate between bi
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -107,4 +108,4 @@ Core Data supports the following attribute types, which differentiate between bi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nsattributetype)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nsattributetype)*

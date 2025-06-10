@@ -23,13 +23,14 @@ class GKLocalPlayer
 ## Mentions
 
 - [Authenticating a player](authenticating-a-player.md)
+- [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
 - [Protecting the player’s privacy using scoped identifiers](protecting-the-player-s-privacy-using-scoped-identifiers.md)
 
 #### Overview
 
 Only one player can sign in to Game Center on a device at a time and that player is the . Before you can start a game that uses GameKit features, verify that the local player signs in to their Game Center account.
 
-You set the authentication handler of the local player shared instance using the [`authenticateHandler`](gklocalplayer/authenticatehandler.md) property. Then implement this method to handle the multiple times GameKit invokes it during the sign-in process. If the local player needs to create an account or sign in, GameKit provides a view controller that you present to the local player. If the local player successfully signs in, determine whether they have any account restrictions and adjust your game accordingly. For more information about the authentication of the local player, see [`Authenticating a player`](authenticating-a-player.md).
+You set the handler of the local player shared instance using the [`authenticateHandler`](gklocalplayer/authenticatehandler.md) property. Then implement this method to handle the multiple times GameKit invokes it during the sign-in process. If the local player needs to create an account or sign in, GameKit provides a view controller that you present to the local player. If the local player successfully signs in, determine whether they have any account restrictions and adjust your game accordingly. For more information about the initialization of the local player, see [`Authenticating a player`](authenticating-a-player.md).
 
 After the local player signs in, their account data and GameKit features are available. You can display the local player’s nickname and avatar, access their recent players and friends, and load their leaderboards and achievements. You can also register a listener object that GameKit calls when the local player sends or accepts invitations to play with others.
 
@@ -40,13 +41,13 @@ After the local player signs in, their account data and GameKit features are ava
   The shared instance of the local player.
 ### Authenticating the Local Player
 - [var authenticateHandler: ((UIViewController?, (any Error)?) -> Void)?](gklocalplayer/authenticatehandler.md)
-  A handler that GameKit calls while authenticating the local player.
+  A handler that GameKit calls while initializing the local player.
 - [var isAuthenticated: Bool](gklocalplayer/isauthenticated.md)
   A Boolean value that indicates whether a local player has signed in to Game Center.
 - [func fetchItems(forIdentityVerificationSignature: ((URL?, Data?, Data?, UInt64, (any Error)?) -> Void)?)](gklocalplayer/fetchitems(foridentityverificationsignature:).md)
   Generates a signature that you can use to authenticate the local player on your own server.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1515396-gkplayerauthenticationdidchangen.md)
-  A notification that posts after GameKit authenticates the local player. 
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+  A notification that posts after GameKit authenticates the local player.
 ### Determining Whether the Player Is Underage or Restricted
 - [var isUnderage: Bool](gklocalplayer/isunderage.md)
   A Boolean value that indicates whether the local player is underage.
@@ -135,9 +136,9 @@ After the local player signs in, their account data and GameKit features are ava
   A class that provides common data and methods for the different player objects.
 - [protocol GKLocalPlayerListener](gklocalplayerlistener.md)
   A protocol that handles events for Game Center players.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1515396-gkplayerauthenticationdidchangen.md)
-  A notification that posts after GameKit authenticates the local player. 
-- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1520710-gkplayerdidchangenotificationnam.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+  A notification that posts after GameKit authenticates the local player.
+- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerDidChangeNotificationName.md)
   A notification that posts when a player object’s data changes.
 
 

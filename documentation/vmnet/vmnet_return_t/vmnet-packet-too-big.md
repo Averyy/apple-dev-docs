@@ -1,6 +1,6 @@
 # vmnet_return_t.VMNET_PACKET_TOO_BIG
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: case
 
 **Availability**:

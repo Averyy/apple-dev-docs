@@ -22,11 +22,11 @@ func mutableCopy() -> Any
 
 #### Return Value
 
-The object returned by the [`NSMutableCopying`](https://developer.apple.com/documentation/Foundation/NSMutableCopying) protocol method [`mutableCopy(with:)`](https://developer.apple.com/documentation/foundation/nsmutablecopying/1414175-mutablecopy), where the zone is `nil`.
+The object returned by the [`NSMutableCopying`](https://developer.apple.com/documentation/Foundation/NSMutableCopying) protocol method [`mutableCopy(with:)`](https://developer.apple.com/documentation/Foundation/NSMutableCopying/mutableCopy(with:)), where the zone is `nil`.
 
 #### Discussion
 
-This is a convenience method for classes that adopt the [`NSMutableCopying`](https://developer.apple.com/documentation/Foundation/NSMutableCopying) protocol. An exception is raised if there is no implementation for [`mutableCopy(with:)`](https://developer.apple.com/documentation/foundation/nsmutablecopying/1414175-mutablecopy).
+This is a convenience method for classes that adopt the [`NSMutableCopying`](https://developer.apple.com/documentation/Foundation/NSMutableCopying) protocol. An exception is raised if there is no implementation for [`mutableCopy(with:)`](https://developer.apple.com/documentation/Foundation/NSMutableCopying/mutableCopy(with:)).
 
 ## See Also
 

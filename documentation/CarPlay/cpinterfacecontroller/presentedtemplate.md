@@ -13,6 +13,7 @@ The interface controller’s current modal template.
 ## Declaration
 
 ```swift
+@MainActor
 var presentedTemplate: CPTemplate? { get }
 ```
 

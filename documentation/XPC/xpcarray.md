@@ -1,6 +1,6 @@
 # XPCArray
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: struct
 
 An ordered random-access collection of XPC objects.

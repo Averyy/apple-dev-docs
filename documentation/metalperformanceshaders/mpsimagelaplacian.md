@@ -1,6 +1,6 @@
 # MPSImageLaplacian
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: cl
 
 An optimized Laplacian filter, provided for ease of use.

@@ -41,8 +41,6 @@ If your app downloads and compiles a model on the user’s device, you must use 
 
 > ❗ **Important**:  Use an [`MLModel`](mlmodel.md) instance on one thread or one dispatch queue at a time. Do this by either serializing method calls to the model, or by creating a separate model instance for each thread and dispatch queue.
 
- Use an [`MLModel`](mlmodel.md) instance on one thread or one dispatch queue at a time. Do this by either serializing method calls to the model, or by creating a separate model instance for each thread and dispatch queue.
-
 ## Topics
 
 ### Loading a Model

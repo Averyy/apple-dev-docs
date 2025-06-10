@@ -1,6 +1,6 @@
 # isSiteSpecificQuirksModeEnabled
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean that indicates whether to apply site-specific compatibility workarounds.

@@ -1,6 +1,6 @@
 # writingToolsBehavior
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 **Availability**:
@@ -8,7 +8,6 @@
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- visionOS 2.4+
 
 ## Declaration
 

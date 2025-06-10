@@ -1,6 +1,6 @@
 # contentMode
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A flag used to determine how a view lays out its content when its bounds change.

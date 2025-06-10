@@ -1,6 +1,6 @@
 # matchMedium
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Evaluates the given string as a media query and returns the result.

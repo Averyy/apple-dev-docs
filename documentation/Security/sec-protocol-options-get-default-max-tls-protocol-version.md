@@ -25,7 +25,7 @@ The default maximum TLS version.
 #### Discussion
 
 ```None
-  Get the system default maximum TLS protocol version.
+ Get the system default maximum TLS protocol version.
 ```
 
 

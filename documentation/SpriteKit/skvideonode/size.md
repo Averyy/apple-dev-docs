@@ -17,6 +17,7 @@ The dimensions of the video node, in points.
 ## Declaration
 
 ```swift
+@MainActor
 var size: CGSize { get set }
 ```
 

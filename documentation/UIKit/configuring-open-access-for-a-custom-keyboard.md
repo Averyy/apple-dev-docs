@@ -12,8 +12,6 @@ By setting the [`RequestsOpenAccess`](https://developer.apple.comhttps://develop
 
 > ❗ **Important**:  Enabling open access shouldn’t be done lightly. Keyboards handle some of the most sensitive user data. See [`Gain user trust`](configuring-open-access-for-a-custom-keyboard#Gain-user-trust.md) below.
 
- Enabling open access shouldn’t be done lightly. Keyboards handle some of the most sensitive user data. See [`Gain user trust`](configuring-open-access-for-a-custom-keyboard#Gain-user-trust.md) below.
-
 ##### Determine Whether You Need Open Access
 
 Give careful consideration to whether you truly need open access or not. Although open access makes many things possible for a custom keyboard, it also increases your responsibilities. Consider the following lists describing the capabilities and privacy considerations with open access enabled or disabled.
@@ -38,8 +36,6 @@ However, with [`RequestsOpenAccess`](https://developer.apple.comhttps://develope
 - If the keyboard supports mobile device management (MDM), it can work with managed apps.
 
 > ❗ **Important**:  Open access keyboards must adhere to networked keyboard guidelines in App Store Review Guidelines and iOS Developer Program License Agreement. See the [`App Review Support`](https://developer.apple.comhttps://developer.apple.com/support/app-store/) page for more information.
-
- Open access keyboards must adhere to networked keyboard guidelines in App Store Review Guidelines and iOS Developer Program License Agreement. See the [`App Review Support`](https://developer.apple.comhttps://developer.apple.com/support/app-store/) page for more information.
 
 You can determine whether your keyboard has open access by using the [`hasFullAccess`](uiinputviewcontroller/hasfullaccess.md) property on [`UIInputViewController`](uiinputviewcontroller.md).
 

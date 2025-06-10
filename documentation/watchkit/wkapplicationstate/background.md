@@ -1,6 +1,6 @@
 # WKApplicationState.background
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The Watch app is running in the background.
@@ -16,8 +16,8 @@ case background
 
 ## Mentions
 
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
 - [Handling Common State Transitions](handling-common-state-transitions.md)
+- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
 
 #### Discussion
 

@@ -1,6 +1,6 @@
 # xpc_type_get_name(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns a string that describes an XPC object type.

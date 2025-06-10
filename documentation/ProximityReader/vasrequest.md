@@ -44,6 +44,7 @@ Create a `VASRequest` object to obtain details from someone’s loyalty card so 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

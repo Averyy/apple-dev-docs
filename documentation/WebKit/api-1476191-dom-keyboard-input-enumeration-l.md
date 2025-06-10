@@ -1,6 +1,6 @@
 # DOM Keyboard Input Enumeration (Legacy)
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 ## Topics
 

@@ -1,6 +1,6 @@
 # Drawing fully immersive content using Metal
 
-**Framework**: Compositorservices
+**Framework**: Compositor Services
 
 Create a fully immersive experience in visionOS using a custom Metal-based rendering engine.
 
@@ -352,6 +352,8 @@ For information about ARKit hand tracking, see [`ARKit`](https://developer.apple
 
 - [Interacting with virtual content blended with passthrough](interacting-with-virtual-content-blended-with-passthrough.md)
   Present a mixed immersion style space to draw content in a person’s surroundings, and choose how upper limbs appear with respect to rendered content.
+- [Rendering hover effects in Metal immersive apps](rendering_hover_effects_in_metal_immersive_apps.md)
+  Change the appearance of a rendered onscreen element when a player gazes at it.
 - [struct CompositorLayer](compositorlayer.md)
   A type that you use with an immersive space to display fully immersive content using Metal.
 - [protocol CompositorLayerConfiguration](compositorlayerconfiguration.md)
@@ -362,4 +364,4 @@ For information about ARKit hand tracking, see [`ARKit`](https://developer.apple
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CompositorServices/drawing-fully-immersive-content-using-metal)*
+*[View on Apple Developer](https://developer.apple.com/documentation/compositorservices/drawing-fully-immersive-content-using-metal)*

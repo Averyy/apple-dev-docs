@@ -1,6 +1,6 @@
 # NSPreviewRepresentingActivityItem
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 A type that adds metadata to an item you share using the macOS share sheet.
@@ -51,4 +51,4 @@ An [`NSPreviewRepresentingActivityItem`](nspreviewrepresentingactivityitem.md) o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nspreviewrepresentingactivityitem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nspreviewrepresentingactivityitem)*

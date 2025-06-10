@@ -100,12 +100,8 @@ Swift is developed in the open. To learn more about the open source Swift projec
   Use C++ APIs in Swift – and Swift APIs in C++ – in a single framework target, and consume the framework’s APIs in a separate app target.
 - [Calling APIs Across Language Boundaries](callingapisacrosslanguageboundaries.md)
   Use a variety of C++ APIs in Swift – and vice-versa – across multiple targets and frameworks in an Xcode project.
-### Functions
-- [func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel: () -> Void, isolation: isolated (any Actor)?) async rethrows -> T](withtaskcancellationhandler(operation:oncancel:isolation:).md)
-  Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
-### Type Aliases
-- [typealias CChar8](cchar8.md)
-  The C++20 ‘char8_t’ type, which has UTF-8 encoding.
+### Structures
+- [struct SwiftSetting](swiftsetting.md)
 
 
 ---

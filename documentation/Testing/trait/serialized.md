@@ -24,8 +24,8 @@ static var serialized: ParallelizationTrait { get }
 
 ## Mentions
 
-- [Migrating a test from XCTest](migratingfromxctest.md)
 - [Running tests serially or in parallel](parallelization.md)
+- [Migrating a test from XCTest](migratingfromxctest.md)
 
 ## See Also
 

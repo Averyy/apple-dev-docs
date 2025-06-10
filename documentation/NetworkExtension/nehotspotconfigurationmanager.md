@@ -30,8 +30,6 @@ Hotspot Configuration Manager errors are listed in [`NEHotspotConfigurationError
 
 > ❗ **Important**:  To use the [`NEHotspotConfigurationManager`](nehotspotconfigurationmanager.md) class, you must enable the Hotspot Configuration capability in Xcode. For more information, see [`Hotspot Configuration Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.HotspotConfiguration).
 
- To use the [`NEHotspotConfigurationManager`](nehotspotconfigurationmanager.md) class, you must enable the Hotspot Configuration capability in Xcode. For more information, see [`Hotspot Configuration Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.HotspotConfiguration).
-
 ## Topics
 
 ### Creating configurations

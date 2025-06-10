@@ -1,6 +1,6 @@
 # tableView(_:willBeginEditingRowAt:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Tells the delegate that the table view is about to go into editing mode.

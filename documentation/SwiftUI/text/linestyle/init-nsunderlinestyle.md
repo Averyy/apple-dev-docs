@@ -1,6 +1,6 @@
 # init(nsUnderlineStyle:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: init
 
 Creates a `Text.LineStyle` from `NSUnderlineStyle`.

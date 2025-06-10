@@ -1,6 +1,6 @@
 # Attribution
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 A list of image asset URLs for attribution.

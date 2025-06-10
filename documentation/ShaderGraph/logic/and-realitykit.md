@@ -5,11 +5,19 @@
 
 Boolean operation in1 && in2.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Discussion
 
-This node mimics the logical `And` operator. The table below shows the node’s output.
+This node mimics the logical `And` operator. The table below shows the node’s output:
 
 | In1 | In2 | Out |
 | --- | --- | --- |
@@ -34,6 +42,12 @@ This node mimics the logical `And` operator. The table below shows the node’s 
   Returns true if only one of the inputs is true.
 - [Not (RealityKit)](logic/not-(realitykit).md)
   Returns !input.
+- [Select (RealityKit)](logic/select-(realitykit).md)
+  Selects B if conditional is true, A if false.
+- [Multiply Add 24 (RealityKit)](realitykit/multiply-add-24-(realitykit).md)
+  Multiplies two 24-bit integer values X and Y and returns the 32-bit integer result with 32-bit Z value added.
+- [Multiply 24 (RealityKit)](realitykit/multiply-24-(realitykit).md)
+  Multiplies two 24-bit integer values X and Y and returns the 32-bit integer result.
 
 
 ---

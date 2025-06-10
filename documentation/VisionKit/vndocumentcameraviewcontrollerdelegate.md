@@ -1,6 +1,6 @@
 # VNDocumentCameraViewControllerDelegate
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: protocol
 
 A delegate protocol through which the document camera returns its scanned results.

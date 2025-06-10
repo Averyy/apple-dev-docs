@@ -1,6 +1,6 @@
 # viewDidDisappear(_:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Performs some action after the view disappears.

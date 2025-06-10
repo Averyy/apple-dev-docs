@@ -1,6 +1,6 @@
 # subtitle
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The localized text that provides the notification’s secondary description.

@@ -32,13 +32,12 @@ A map content element that doesn’t contain any content.
 ### Conforms To
 - [MapContent](mapcontent.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [struct DefaultUserAnnotationContent](defaultuserannotationcontent.md)
   A structure that represents the view to show at the user’s location on the map.
-- [struct AnyMapContent](anymapcontent.md)
-  A structure you use to change the type of content MapKit uses in a map view.
 - [struct MapProxy](mapproxy.md)
   A proxy for accessing sizing information about a given map view.
 - [struct MapReader](mapreader.md)

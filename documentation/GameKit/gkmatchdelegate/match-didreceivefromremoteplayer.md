@@ -29,8 +29,6 @@ Your game defines its own format for data packets it transmits and receives over
 
 > ❗ **Important**:  You need to treat data you receive from other players as  data. Be sure to validate the data you receive from the match and write your code carefully to avoid security vulnerabilities.
 
- You need to treat data you receive from other players as  data. Be sure to validate the data you receive from the match and write your code carefully to avoid security vulnerabilities.
-
 ## Parameters
 
 - `match`: The match associated with the data.

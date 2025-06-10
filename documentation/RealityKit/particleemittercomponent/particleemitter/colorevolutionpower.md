@@ -10,6 +10,7 @@ How quickly the color evolves from its start to its end color — a value of 1 i
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

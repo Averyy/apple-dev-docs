@@ -57,6 +57,7 @@ To obtain measurements that are accurate to the user’s surroundings, use the [
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

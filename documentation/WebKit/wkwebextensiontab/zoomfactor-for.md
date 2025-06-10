@@ -1,6 +1,6 @@
 # zoomFactor(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the zoom factor of the tab is needed.

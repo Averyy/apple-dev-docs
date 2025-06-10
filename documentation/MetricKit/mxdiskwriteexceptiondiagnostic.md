@@ -49,6 +49,8 @@ A disk write exception occurs when the app writes an excessive amount of data to
 
 - [class MXDiskIOMetric](mxdiskiometric.md)
   An object representing metrics about disk usage.
+- [class MXDiskSpaceUsageMetric](mxdiskspaceusagemetric.md)
+  An object representing metrics about your app’s disk space usage.
 
 
 ---

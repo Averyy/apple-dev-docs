@@ -42,4 +42,4 @@ Create a virtual drawing app by using Vision’s capability to detect hand poses
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/detecting-hand-poses-with-vision)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/detecting-hand-poses-with-vision)*

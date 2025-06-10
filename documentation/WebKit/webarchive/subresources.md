@@ -1,6 +1,6 @@
 # subresources
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The receiver’s subresources, or `nil` if there are none.

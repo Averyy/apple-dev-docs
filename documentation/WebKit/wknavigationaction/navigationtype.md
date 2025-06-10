@@ -1,6 +1,6 @@
 # navigationType
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The type of action that triggered the navigation.

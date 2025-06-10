@@ -1,6 +1,6 @@
 # displayName
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The display name for the web extension to which this data record belongs.

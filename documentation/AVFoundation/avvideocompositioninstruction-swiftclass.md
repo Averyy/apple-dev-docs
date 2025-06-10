@@ -41,6 +41,12 @@ An [`AVVideoComposition`](avvideocomposition.md) object maintains an array of [`
   The identifiers of source sample data tracks that the compositor requires to compose frames for the instruction.
 - [var passthroughTrackID: CMPersistentTrackID](avvideocompositioninstruction-swift.class/passthroughtrackid.md)
   The track identifier from an instruction source frame.
+### Structures
+- [AVVideoCompositionInstruction.Configuration](avvideocompositioninstruction-swift.class/configuration.md)
+  Configurable properties for initializing a new AVVideoCompositionInstruction instance.
+### Initializers
+- [convenience init(configuration: AVVideoCompositionInstruction.Configuration)](avvideocompositioninstruction-swift.class/init(configuration:).md)
+  Initialize an AVVideoCompositionInstruction with a configuration.
 
 ## Relationships
 
@@ -60,6 +66,8 @@ An [`AVVideoComposition`](avvideocomposition.md) object maintains an array of [`
 - [NSMutableCopying](../Foundation/NSMutableCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

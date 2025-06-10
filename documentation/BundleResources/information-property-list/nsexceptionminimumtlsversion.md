@@ -17,8 +17,6 @@ This key is optional. The value is a string, with a default value of `TLSv1.2`.
 
 > ❗ **Important**:  You must supply a justification during App Store review if you use this key to set a protocol version lower than 1.2, as described in `Provide Justification for Exceptions`.
 
- You must supply a justification during App Store review if you use this key to set a protocol version lower than 1.2, as described in `Provide Justification for Exceptions`.
-
 ## See Also
 
 - [NSExceptionAllowsInsecureHTTPLoads](information-property-list/nsexceptionallowsinsecurehttploads.md)

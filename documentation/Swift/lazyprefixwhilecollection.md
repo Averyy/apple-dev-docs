@@ -48,4 +48,4 @@ typealias LazyPrefixWhileCollection<T> = LazyPrefixWhileSequence<T> where T : Co
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/lazyprefixwhilecollection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/lazyprefixwhilecollection)*

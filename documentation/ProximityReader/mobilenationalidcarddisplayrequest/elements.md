@@ -1,6 +1,6 @@
 # elements
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: property
 
 The document elements you’re requesting.
@@ -35,4 +35,4 @@ var elements: [MobileNationalIDCardDisplayRequest.Element]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ProximityReader/mobilenationalidcarddisplayrequest/elements)*
+*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/mobilenationalidcarddisplayrequest/elements)*

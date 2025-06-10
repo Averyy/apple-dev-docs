@@ -16,7 +16,7 @@ struct MixedImmersionStyle
 
 #### Overview
 
-When this immersion style is selected, the immersion amount reported by the closure of `View/onImmersionChange(_:)` is `0.0`.
+When this immersion style is selected, the immersion amount reported by the closure of [`onImmersionChange(initial:_:)`](view/onimmersionchange(initial:_:).md) is `0.0`.
 
 Use [`mixed`](immersionstyle/mixed.md) with the [`immersionStyle(selection:in:)`](scene/immersionstyle(selection:in:).md)modifier to specify this style.
 

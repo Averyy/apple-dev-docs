@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to query managed app attributes on a device.
+The command to query attributes in managed apps on a device.
 
 **Availability**:
 - iOS 7.0+
@@ -11,8 +11,6 @@ The command to query managed app attributes on a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,14 +20,14 @@ object ManagedApplicationAttributesCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object ManagedApplicationAttributesCommand.Command](managedapplicationattributescommand/command-data.dictionary.md)
-  The request dictionary to query managed app attributes.
+  The command to query attributes in managed apps on a device.
 
 ## See Also
 
 - [object ManagedApplicationAttributesResponse](managedapplicationattributesresponse.md)
-  A response from the device after it processes the command to query attributes in managed apps.
+  A response from the device after it processes the command to query attributes in managed apps on a device.
 
 
 ---

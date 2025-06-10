@@ -1,6 +1,6 @@
 # WeatherCondition.hot
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 High temperatures.

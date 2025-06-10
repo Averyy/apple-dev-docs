@@ -1,6 +1,6 @@
 # activationState
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 The current activation state of the session.

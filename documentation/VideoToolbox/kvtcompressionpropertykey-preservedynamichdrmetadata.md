@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_PreserveDynamicHDRMetadata
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Specifies whether to preserve dynamic HDR metadata on the input pixel buffer.

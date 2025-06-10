@@ -17,7 +17,7 @@ class func detachDrawingThread(_ selector: Selector, toTarget target: Any, with 
 
 #### Discussion
 
-This method is a convenience wrapper for the [`detachNewThreadSelector(_:toTarget:with:)`](https://developer.apple.com/documentation/foundation/thread/1415633-detachnewthreadselector) method of [`Thread`](https://developer.apple.com/documentation/Foundation/Thread). This method automatically creates an `@autoreleasepool` block for the new thread before invoking `selector`.
+This method is a convenience wrapper for the [`detachNewThreadSelector(_:toTarget:with:)`](https://developer.apple.com/documentation/Foundation/Thread/detachNewThreadSelector(_:toTarget:with:)) method of [`Thread`](https://developer.apple.com/documentation/Foundation/Thread). This method automatically creates an `@autoreleasepool` block for the new thread before invoking `selector`.
 
 ## Parameters
 

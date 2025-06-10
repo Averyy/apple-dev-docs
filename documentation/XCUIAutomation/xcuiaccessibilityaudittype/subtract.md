@@ -1,6 +1,6 @@
 # subtract(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Removes the elements of the given set from this set.

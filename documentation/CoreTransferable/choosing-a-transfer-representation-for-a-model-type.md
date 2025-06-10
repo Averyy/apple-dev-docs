@@ -18,8 +18,6 @@ You use [`CodableRepresentation`](codablerepresentation.md) as convenient way to
 
 > ❗ **Important**: If you use a `CodableRepresentation`, you’re often defining a new data type as well. As a result, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/UniformTypeIdentifiers/defining-file-and-data-types-for-your-app).
 
-If you use a `CodableRepresentation`, you’re often defining a new data type as well. As a result, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/UniformTypeIdentifiers/defining-file-and-data-types-for-your-app).
-
 Use the [`ProxyRepresentation`](proxyrepresentation.md) type to let another type that conforms to `Transferable` take on the responsibility of representing your type. Common types like strings, data, and images are already `Transferable`, and you can use them as proxy representations in some common contexts.
 
 You can combine multiple transfer representations together to support different clients or scenarios. For example, you can combine a [`CodableRepresentation`](codablerepresentation.md) with a [`ProxyRepresentation`](proxyrepresentation.md) to let your app transfer its `Note` type to different parts of the app, but still maintain compatibility with other text editors:

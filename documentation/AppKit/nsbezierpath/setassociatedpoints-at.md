@@ -1,6 +1,6 @@
 # setAssociatedPoints(_:at:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Changes the points associated with the specified path element.

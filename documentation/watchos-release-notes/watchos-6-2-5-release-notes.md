@@ -1,6 +1,6 @@
 # watchOS 6.2.5 Release Notes
 
-**Framework**: Watchos Release Notes
+**Framework**: watchOS Release Notes
 
 Update your apps to use new features, and test your apps against API changes.
 

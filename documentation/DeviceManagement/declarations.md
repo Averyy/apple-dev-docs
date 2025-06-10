@@ -1,6 +1,6 @@
 # Declarations
 
-**Framework**: Devicemanagement  
+**Framework**: Device Management  
 **Kind**: dictionary
 
 The payload to apply a set of declaration to the device through the Settings app.
@@ -12,8 +12,6 @@ The payload to apply a set of declaration to the device through the Settings app
 - tvOS 17.0+
 - visionOS 1.0+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,17 +29,17 @@ Specify `com.apple.declarations` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, tvOS, watchOS |
-| User Channel | - |
-| Allow Manual Install | iOS, macOS, tvOS, watchOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | iOS, macOS, tvOS, watchOS |
+| Device channel | iOS, macOS, tvOS, visionOS, watchOS |
+| User channel | macOS |
+| Allow manual install | iOS, macOS, tvOS, visionOS, watchOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | iOS, macOS, tvOS, visionOS, watchOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -124,4 +122,4 @@ Specify `com.apple.declarations` as the payload type.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/declarations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/declarations)*

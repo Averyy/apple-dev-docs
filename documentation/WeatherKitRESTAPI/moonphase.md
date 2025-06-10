@@ -1,6 +1,6 @@
 # MoonPhase
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: typealias
 
 The shape of the moon as seen by an observer on the ground at a given time.

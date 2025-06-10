@@ -10,6 +10,7 @@ The intended use of the object’s texture property.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -24,8 +25,6 @@ static let textureSemantic: TextureResource.Semantic
   The anisotropy angle values specified using a UV-mapped image.
 - [var scale: Float](physicallybasedmaterial/anisotropyangle-swift.struct/scale.md)
   The anistropy angle specified as a single value.
-- [PhysicallyBasedMaterial.AnisotropyAngle.FloatLiteralType](physicallybasedmaterial/anisotropyangle-swift.struct/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 
 ---

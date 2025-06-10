@@ -1,6 +1,6 @@
 # assertForOverFulfill
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 Indicates that an assertion should be triggered during testing if the expectation is over-fulfilled.

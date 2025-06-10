@@ -8,6 +8,7 @@
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,6 @@ struct ImageBasedLightComponent
 
 ## Topics
 
-### Operators
-- [static func == (ImageBasedLightComponent, ImageBasedLightComponent) -> Bool](imagebasedlightcomponent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(source: ImageBasedLightComponent.Source, intensityExponent: Float)](imagebasedlightcomponent/init(source:intensityexponent:).md)
 ### Instance Properties
@@ -32,9 +30,6 @@ struct ImageBasedLightComponent
   Image(s) of the lighting environment
 ### Enumerations
 - [ImageBasedLightComponent.Source](imagebasedlightcomponent/source-swift.enum.md)
-### Default Implementations
-- [Component Implementations](imagebasedlightcomponent/component-implementations.md)
-- [Equatable Implementations](imagebasedlightcomponent/equatable-implementations.md)
 
 ## Relationships
 

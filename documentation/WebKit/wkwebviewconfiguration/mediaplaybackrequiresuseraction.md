@@ -1,6 +1,6 @@
 # mediaPlaybackRequiresUserAction
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Deprecated property.

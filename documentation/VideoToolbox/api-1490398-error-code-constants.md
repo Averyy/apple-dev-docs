@@ -1,6 +1,6 @@
 # Error Code Constants
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 Constants for Video Toolbox operation error codes.
 

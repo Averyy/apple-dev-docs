@@ -17,16 +17,15 @@ A node that renders its children into a separate buffer, optionally applying an 
 ## Declaration
 
 ```swift
-@MainActor
 class SKEffectNode
 ```
 
 ## Mentions
 
-- [About Node Drawing Order](about-node-drawing-order.md)
+- [Creating a New Node By Rendering To a Texture](creating-a-new-node-by-rendering-to-a-texture.md)
 - [Adding a Video to a Scene](adding-a-video-to-a-scene.md)
 - [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
-- [Creating a New Node By Rendering To a Texture](creating-a-new-node-by-rendering-to-a-texture.md)
+- [About Node Drawing Order](about-node-drawing-order.md)
 - [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
 
 #### Overview
@@ -93,6 +92,7 @@ Each time a new frame is rendered using the effect node, the effect node follows
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [SKWarpable](skwarpable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)

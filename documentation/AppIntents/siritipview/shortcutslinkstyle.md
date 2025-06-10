@@ -8,7 +8,7 @@ Sets the given style for ShortcutsLinks within the view hierarchy
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

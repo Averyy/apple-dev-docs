@@ -1,6 +1,6 @@
 # VSUserAccount.AccountType.paid
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 A constant that indicate a user has access to paid content.

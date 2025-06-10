@@ -25,6 +25,7 @@ For more information about versions, see [`Create a new version`](https://develo
 ### Getting App Store Version Experiments
 - [List All Experiments for an App Store Version](get-v1-appstoreversions-_id_-appstoreversionexperimentsv2.md)
   Get a list of all experiments for an App Store version of an app across all platforms.
+- [GET /v1/appStoreVersions/{id}/relationships/appStoreVersionExperimentsV2](get-v1-appstoreversions-_id_-relationships-appstoreversionexperimentsv2.md)
 - [List All Experiments for an App Store Version v1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)
   Get a list of all experiments for an App Store version of an app across all platforms.
 ### Creating and Modifying App Store Versions
@@ -51,26 +52,35 @@ For more information about versions, see [`Create a new version`](https://develo
 ### Reading Localization Information
 - [List All App Store Version Localizations for an App Store Version](get-v1-appstoreversions-_id_-appstoreversionlocalizations.md)
   Get a list of localized, version-level information about an app, for all locales.
+- [GET /v1/appStoreVersions/{id}/relationships/appStoreVersionLocalizations](get-v1-appstoreversions-_id_-relationships-appstoreversionlocalizations.md)
 ### Reading Release and Review Information
 - [Read the App Store Version Submission Information of an App Store Version](get-v1-appstoreversions-_id_-appstoreversionsubmission.md)
+- [GET /v1/appStoreVersions/{id}/relationships/appStoreVersionSubmission](get-v1-appstoreversions-_id_-relationships-appstoreversionsubmission.md)
 - [Read the App Store Review Details Resource Information of an App Store Version](get-v1-appstoreversions-_id_-appstorereviewdetail.md)
   Get the details you provide to App Review so they can test your app.
+- [GET /v1/appStoreVersions/{id}/relationships/appStoreReviewDetail](get-v1-appstoreversions-_id_-relationships-appstorereviewdetail.md)
 - [Read the App Store Version Phased Release Information of an App Store Version](get-v1-appstoreversions-_id_-appstoreversionphasedrelease.md)
   Read the phased release status and configuration for a version with phased release enabled.
+- [GET /v1/appStoreVersions/{id}/relationships/appStoreVersionPhasedRelease](get-v1-appstoreversions-_id_-relationships-appstoreversionphasedrelease.md)
 ### Reading Declarations
 - [Read the Age Rating Declaration Information of an App Store Version](get-v1-appstoreversions-_id_-ageratingdeclaration.md)
   Get the age-related information declared for your app.
+- [GET /v1/appStoreVersions/{id}/relationships/ageRatingDeclaration](get-v1-appstoreversions-_id_-relationships-ageratingdeclaration.md)
 - [Read the Routing App Coverage Information of an App Store Version](get-v1-appstoreversions-_id_-routingappcoverage.md)
   Get the routing app coverage file that is associated with a specific App Store version
+- [GET /v1/appStoreVersions/{id}/relationships/routingAppCoverage](get-v1-appstoreversions-_id_-relationships-routingappcoverage.md)
 ### Getting Customer Reviews
 - [List All Customer Reviews for an App Store Version](get-v1-appstoreversions-_id_-customerreviews.md)
   Get a list of customer reviews for a specific version of your app.
+- [GET /v1/appStoreVersions/{id}/relationships/customerReviews](get-v1-appstoreversions-_id_-relationships-customerreviews.md)
 ### Getting Game Center app versions
 - [Read Game Center app version information of an App Store version](get-v1-appstoreversions-_id_-gamecenterappversion.md)
   Get the status of Game Center enablement for an App Store version.
+- [GET /v1/appStoreVersions/{id}/relationships/gameCenterAppVersion](get-v1-appstoreversions-_id_-relationships-gamecenterappversion.md)
 ### Reading Distribution Package Information
 - [Read an App Store version’s alternative distribution package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
   Read the alternative distribution package for a specific App Store version.
+- [GET /v1/appStoreVersions/{id}/relationships/alternativeDistributionPackage](get-v1-appstoreversions-_id_-relationships-alternativedistributionpackage.md)
 ### Objects and Data Types
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)
   The request body you use to update an App Store Version.
@@ -97,6 +107,19 @@ For more information about versions, see [`Create a new version`](https://develo
   String that represents the state of an app version in the App Store.
 - [type AppVersionState](appversionstate.md)
   String that represents the state of an app version.
+- [object AppStoreVersionAgeRatingDeclarationLinkageResponse](appstoreversionageratingdeclarationlinkageresponse.md)
+- [object AppStoreVersionAlternativeDistributionPackageLinkageResponse](appstoreversionalternativedistributionpackagelinkageresponse.md)
+- [object AppStoreVersionAppStoreReviewDetailLinkageResponse](appstoreversionappstorereviewdetaillinkageresponse.md)
+- [object AppStoreVersionAppStoreVersionExperimentsLinkagesResponse](appstoreversionappstoreversionexperimentslinkagesresponse.md)
+- [object AppStoreVersionAppStoreVersionExperimentsV2LinkagesResponse](appstoreversionappstoreversionexperimentsv2linkagesresponse.md)
+- [object AppStoreVersionAppStoreVersionLocalizationsLinkagesResponse](appstoreversionappstoreversionlocalizationslinkagesresponse.md)
+- [object AppStoreVersionAppStoreVersionPhasedReleaseLinkageResponse](appstoreversionappstoreversionphasedreleaselinkageresponse.md)
+- [object AppStoreVersionAppStoreVersionSubmissionLinkageResponse](appstoreversionappstoreversionsubmissionlinkageresponse.md)
+- [object AppStoreVersionCustomerReviewsLinkagesResponse](appstoreversioncustomerreviewslinkagesresponse.md)
+- [object AppStoreVersionGameCenterAppVersionLinkageResponse](appstoreversiongamecenterappversionlinkageresponse.md)
+- [object AppStoreVersionLocalizationAppPreviewSetsLinkagesResponse](appstoreversionlocalizationapppreviewsetslinkagesresponse.md)
+- [object AppStoreVersionLocalizationAppScreenshotSetsLinkagesResponse](appstoreversionlocalizationappscreenshotsetslinkagesresponse.md)
+- [object AppStoreVersionRoutingAppCoverageLinkageResponse](appstoreversionroutingappcoveragelinkageresponse.md)
 
 ## See Also
 
@@ -108,6 +131,8 @@ For more information about versions, see [`Create a new version`](https://develo
   Create and maintain version-specific App Store metadata that’s localized.
 - [Routing App Coverages](routing-app-coverages.md)
   Manage geographic coverage files for apps that use location to provide routing information.
+- [Accessibility declarations](accessibility-declarations.md)
+  Manage accessibility metadata for your apps per device family.
 
 
 ---

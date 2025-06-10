@@ -31,6 +31,7 @@ A style for a product view that’s suitable for layouts with less available spa
 ### Conforms To
 - [ProductViewStyle](productviewstyle.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

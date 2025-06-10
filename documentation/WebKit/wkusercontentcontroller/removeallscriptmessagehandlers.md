@@ -1,6 +1,6 @@
 # removeAllScriptMessageHandlers()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Uninstalls all custom message handlers associated with the user content controller.

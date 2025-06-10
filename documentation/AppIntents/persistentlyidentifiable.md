@@ -8,10 +8,10 @@ Defines a string that uniquely identifies a type. This is useful for maintaining
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -54,6 +54,7 @@ protocol PersistentlyIdentifiable
 - [FileEntity](fileentity.md)
 - [ForegroundContinuableIntent](foregroundcontinuableintent.md)
 - [IndexedEntity](indexedentity.md)
+- [IntentValueQuery](intentvaluequery.md)
 - [LiveActivityIntent](liveactivityintent.md)
 - [LiveActivityStartingIntent](liveactivitystartingintent.md)
 - [OpenIntent](openintent.md)
@@ -66,17 +67,22 @@ protocol PersistentlyIdentifiable
 - [SetFocusFilterIntent](setfocusfilterintent.md)
 - [SetValueIntent](setvalueintent.md)
 - [ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
+- [SnippetIntent](snippetintent.md)
 - [StartDiveIntent](startdiveintent.md)
 - [StartWorkoutIntent](startworkoutintent.md)
 - [SystemIntent](systemintent.md)
+- [TargetContentProvidingIntent](targetcontentprovidingintent.md)
 - [TransientAppEntity](transientappentity.md)
+- [UISceneAppIntent](uisceneappintent.md)
 - [URLRepresentableEntity](urlrepresentableentity.md)
 - [URLRepresentableEnum](urlrepresentableenum.md)
 - [URLRepresentableIntent](urlrepresentableintent.md)
+- [UndoableIntent](undoableintent.md)
 - [UniqueAppEntity](uniqueappentity.md)
 - [UniqueAppEntityQuery](uniqueappentityquery.md)
 - [WidgetConfigurationIntent](widgetconfigurationintent.md)
 ### Conforming Types
+- [EmptySnippetIntent](emptysnippetintent.md)
 - [OpenURLIntent](openurlintent.md)
 - [StringSearchScope](stringsearchscope.md)
 - [UniqueAppEntityProvider](uniqueappentityprovider.md)

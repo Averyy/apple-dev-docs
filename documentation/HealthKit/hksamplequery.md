@@ -1,6 +1,6 @@
 # HKSampleQuery
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: class
 
 A general query that returns a snapshot of all the matching samples currently saved in the HealthKit store.
@@ -69,6 +69,7 @@ Sample queries are immutable: The query’s properties are set when the query is
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -84,4 +85,4 @@ Sample queries are immutable: The query’s properties are set when the query is
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hksamplequery)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hksamplequery)*

@@ -24,8 +24,6 @@ var BNNSActivationFunctionPReLUPerChannel: BNNSActivationFunction { get }
 
 > ❗ **Important**:  This activation is only valid for use with layouts of type [`BNNSDataLayoutImageCHW`](bnnsdatalayoutimagechw.md).
 
- This activation is only valid for use with layouts of type [`BNNSDataLayoutImageCHW`](bnnsdatalayoutimagechw.md).
-
 ## See Also
 
 - [init(UInt32)](bnnsactivationfunction/init(_:).md)

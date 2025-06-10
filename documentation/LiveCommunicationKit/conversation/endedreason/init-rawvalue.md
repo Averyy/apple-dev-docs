@@ -22,7 +22,7 @@ init?(rawValue: Int)
 
 If there is no value of the type that corresponds with the specified raw value, this initializer returns `nil`. For example:
 
-```swift
+```None
 enum PaperSize: String {
     case A4, A5, Letter, Legal
 }

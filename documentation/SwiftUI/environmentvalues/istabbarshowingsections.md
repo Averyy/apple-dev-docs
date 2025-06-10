@@ -34,6 +34,9 @@ var isTabBarShowingSections: Bool { get }
   The current placement of the tab bar.
 - [struct TabBarPlacement](tabbarplacement.md)
   A placement for tabs in a tab view.
+- [struct TabBarMinimizeBehavior](tabbarminimizebehavior.md)
+- [enum TabViewBottomAccessoryPlacement](tabviewbottomaccessoryplacement.md)
+  A placement of the bottom accessory in a tab view. You can use this to adjust the content of the accessory view based on the placement.
 
 
 ---

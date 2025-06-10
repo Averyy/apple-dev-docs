@@ -33,6 +33,7 @@ struct PredicateRegex
 - [Encodable](../Swift/Encodable.md)
 - [RegexComponent](../Swift/RegexComponent.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

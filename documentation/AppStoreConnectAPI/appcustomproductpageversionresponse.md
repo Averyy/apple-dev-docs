@@ -26,6 +26,7 @@ object AppCustomProductPageVersionResponse
   The request body you use to update an app custom product page version.
 - [object AppCustomProductPageVersionsResponse](appcustomproductpageversionsresponse.md)
   A response that contains a list of app customer product page version resources.
+- [object AppCustomProductPageVersionAppCustomProductPageLocalizationsLinkagesResponse](appcustomproductpageversionappcustomproductpagelocalizationslinkagesresponse.md)
 
 
 ---

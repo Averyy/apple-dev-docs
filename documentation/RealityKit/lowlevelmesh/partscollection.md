@@ -10,6 +10,7 @@ An object that holds a mutable collection low-level mesh parts.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -29,12 +30,6 @@ struct PartsCollection
   Replaces all mesh parts in this collection with those from the new sequence.
 - [func removeAll()](lowlevelmesh/partscollection/removeall.md)
   Removes all mesh parts from this collection.
-### Default Implementations
-- [BidirectionalCollection Implementations](lowlevelmesh/partscollection/bidirectionalcollection-implementations.md)
-- [Collection Implementations](lowlevelmesh/partscollection/collection-implementations.md)
-- [MutableCollection Implementations](lowlevelmesh/partscollection/mutablecollection-implementations.md)
-- [RandomAccessCollection Implementations](lowlevelmesh/partscollection/randomaccesscollection-implementations.md)
-- [Sequence Implementations](lowlevelmesh/partscollection/sequence-implementations.md)
 
 ## Relationships
 
@@ -64,6 +59,8 @@ struct PartsCollection
   An object that determines how to store vertex attribute data in memory and map it to RealityKit shader attributes.
 - [LowLevelMesh.VertexSemantic](lowlevelmesh/vertexsemantic.md)
   Designates the intended usage of a vertex attribute.
+- [class LowLevelBuffer](lowlevelbuffer.md)
+- [class LowLevelInstanceData](lowlevelinstancedata.md)
 
 
 ---

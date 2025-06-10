@@ -1,6 +1,6 @@
 # allowPrivate
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The option that restricts access to people who have been invited.

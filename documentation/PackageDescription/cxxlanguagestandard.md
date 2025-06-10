@@ -61,9 +61,10 @@ Aliases are available for some C++ language standards. For example, use `cxx98` 
 ### Creating a Value
 - [init?(rawValue: String)](cxxlanguagestandard/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
-### Accessing the Raw Value
+### Instance Properties
 - [var rawValue: String](cxxlanguagestandard/rawvalue-swift.property.md)
   The corresponding value of the raw type.
+### Type Aliases
 - [CXXLanguageStandard.RawValue](cxxlanguagestandard/rawvalue-swift.typealias.md)
   The raw type that can be used to represent all values of the conforming type.
 ### Default Implementations
@@ -80,16 +81,20 @@ Aliases are available for some C++ language standards. For example, use `cxx98` 
 
 ## See Also
 
-- [typealias SwiftVersion](swiftversion.md)
-  Type alias to previous name for backward source compatibility
+- [enum SwiftLanguageMode](swiftlanguagemode.md)
+  The Swift language mode used to compile Swift sources in the package
 - [enum CLanguageStandard](clanguagestandard.md)
   The supported C language standard you use to compile C sources in the package.
-- [var swiftLanguageVersions: [SwiftVersion]?](package/swiftlanguageversions.md)
-  Legacy property name, accesses value of `swiftLanguageModes`
+- [var swiftLanguageModes: [SwiftLanguageMode]?](package/swiftlanguagemodes.md)
+  The list of Swift language modes with which this package is compatible.
 - [var cLanguageStandard: CLanguageStandard?](package/clanguagestandard.md)
   The C language standard to use for all C targets in this package.
 - [var cxxLanguageStandard: CXXLanguageStandard?](package/cxxlanguagestandard.md)
   The C++ language standard to use for all C++ targets in this package.
+- [typealias SwiftVersion](swiftversion.md)
+  Type alias to previous name for backward source compatibility
+- [var swiftLanguageVersions: [SwiftVersion]?](package/swiftlanguageversions.md)
+  Legacy property name, accesses value of `swiftLanguageModes`
 
 
 ---

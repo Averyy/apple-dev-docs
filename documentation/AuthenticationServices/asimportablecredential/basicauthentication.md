@@ -6,11 +6,11 @@
 A type to represent a basic authentication password.
 
 **Availability**:
-- iOS 18.2+
-- iPadOS 18.2+
-- Mac Catalyst 18.2+
-- macOS 15.2+
-- visionOS 2.2+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -24,18 +24,16 @@ This type is a representation of `BasicAuth` as defined in the Credential Exchan
 
 ## Topics
 
-### Creating a basic authentication instance
-- [init(urls: [String], username: ASImportableEditableField?, password: ASImportableEditableField?)](asimportablecredential/basicauthentication/init(urls:username:password:).md)
-  Creates a basic authentication password instance.
 ### Accessing authentication properties
-- [var urls: [String]](asimportablecredential/basicauthentication/urls.md)
-  The list of URLs for which to fill the password.
-- [var username: ASImportableEditableField?](asimportablecredential/basicauthentication/username.md)
-  The username associated with the credential.
 - [var password: ASImportableEditableField?](asimportablecredential/basicauthentication/password.md)
   The password associated with the credential.
 - [struct ASImportableEditableField](asimportableeditablefield.md)
   A field that someone can edit within a credential.
+### Initializers
+- [init(userName: ASImportableEditableField?, password: ASImportableEditableField?)](asimportablecredential/basicauthentication/init(username:password:).md)
+### Instance Properties
+- [var userName: ASImportableEditableField?](asimportablecredential/basicauthentication/username.md)
+  The user name associated with this credential.
 
 ## Relationships
 
@@ -45,6 +43,7 @@ This type is a representation of `BasicAuth` as defined in the Credential Exchan
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

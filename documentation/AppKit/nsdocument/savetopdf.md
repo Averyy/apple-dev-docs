@@ -25,8 +25,6 @@ If your document subclass supports creating PDF representations, you can overrid
 
 > ❗ **Important**:  This method does not copy the document’s [`printInfo`](nsdocument/printinfo.md) to the operation object when creating a PDF printing operation. Your app should maintain a separate [`NSPrintInfo`](nsprintinfo.md) instance specifically for creating PDFs and pass it to the print operation’s [`printInfo`](nsprintoperation/printinfo.md) method.
 
- This method does not copy the document’s [`printInfo`](nsdocument/printinfo.md) to the operation object when creating a PDF printing operation. Your app should maintain a separate [`NSPrintInfo`](nsprintinfo.md) instance specifically for creating PDFs and pass it to the print operation’s [`printInfo`](nsprintoperation/printinfo.md) method.
-
 ## Parameters
 
 - `sender`: The control sending the message.

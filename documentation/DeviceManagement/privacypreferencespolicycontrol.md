@@ -7,8 +7,6 @@ The payload you use to configure privacy preferences.
 
 **Availability**:
 - macOS 10.14+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,17 +22,17 @@ Specify `com.apple.TCC.configuration-profile-policy` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | - |
-| Allow Manual Install | - |
-| Requires Supervision | - |
-| Requires User Approved MDM | macOS |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | macOS |
+| Device channel | macOS |
+| User channel | NA |
+| Allow manual install | NA |
+| Requires supervision | NA |
+| Requires user-approved MDM | macOS |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | macOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -86,7 +84,7 @@ Specify `com.apple.TCC.configuration-profile-policy` as the payload type.
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object PrivacyPreferencesPolicyControl.Services](privacypreferencespolicycontrol/services-data.dictionary.md)
   The privacy policy control services dictionary that controls access on a per app basis.
 

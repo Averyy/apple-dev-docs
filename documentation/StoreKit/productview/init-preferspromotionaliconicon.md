@@ -35,8 +35,6 @@ ProductView(product) {
 
 > 💡 **Tip**:  To gain more control over the image that decorates this view, use the [`init(_:icon:)`](productview/init(_:icon:).md) initializer. It receives a [`ProductIconPhase`](producticonphase.md), which enables you to supply an image for each phase of the image-loading process.
 
- To gain more control over the image that decorates this view, use the [`init(_:icon:)`](productview/init(_:icon:).md) initializer. It receives a [`ProductIconPhase`](producticonphase.md), which enables you to supply an image for each phase of the image-loading process.
-
 ## Parameters
 
 - `product`: The product to merchandise.

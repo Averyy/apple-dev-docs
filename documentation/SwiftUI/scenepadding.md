@@ -37,6 +37,7 @@ Add scene padding to a view using the [`scenePadding(_:edges:)`](view/scenepaddi
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

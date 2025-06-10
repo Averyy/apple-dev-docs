@@ -115,7 +115,7 @@ var trail: TrailEntity
 
 The system supports parameters using common Foundation types, such as [`String`](https://developer.apple.com/documentation/Swift/String), and those for custom data types in an app. The app makes its trail data available in an app intent through the `TrailEntity` type, which is a structure conforming to the [`AppEntity`](AppEntity.md) protocol.
 
-To allow the system to query the app for `TrailEntity` data, the entity implements the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol with values that are stable and persistent. `TrailEntity` declares `defaultQuery`, which the system uses to perform queries to receive `TrailEntity` structures.
+To allow the system to query the app for `TrailEntity` data, the entity implements the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol with values that are stable and persistent. `TrailEntity` declares [`defaultQuery`](AppEntity/defaultQuery-4khg7.md), which the system uses to perform queries to receive `TrailEntity` structures.
 
 ```swift
 static let defaultQuery = TrailEntityQuery()
@@ -157,7 +157,7 @@ func entities(for identifiers: [TrailEntity.ID]) async throws -> [TrailEntity] {
 }
 ```
 
-The app also provides a list of common trail suggestions by implementing the optional `suggestedEntities` function.
+The app also provides a list of common trail suggestions by implementing the optional [`suggestedEntities()`](EntityQuery/suggestedEntities().md) function.
 
 ```swift
 func suggestedEntities() async throws -> [TrailEntity] {
@@ -280,6 +280,8 @@ To leverage the app’s existing code for handling a universal link, the app con
   Adopt App Intents to make your app discoverable with Spotlight, controls, widgets, and the Action button.
 - [Creating your first app intent](creating-your-first-app-intent.md)
   Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
+- [Adopting App Intents to support system experiences](adopting-app-intents-to-support-system-experiences.md)
+  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
 
 
 ---

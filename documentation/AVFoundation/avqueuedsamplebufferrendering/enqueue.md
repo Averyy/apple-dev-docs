@@ -29,8 +29,6 @@ To schedule the removal of previous images at a specific timestamp, enqueue a ma
 
 > ❗ **Important**:  Attachments with the `kCMSampleAttachmentKey_` prefix must be set using [`CMSampleBufferGetSampleAttachmentsArray(_:createIfNecessary:)`](https://developer.apple.com/documentation/CoreMedia/CMSampleBufferGetSampleAttachmentsArray(_:createIfNecessary:)) and [`CFDictionarySetValue(_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFDictionarySetValue(_:_:_:)).  Attachments with the `kCMSampleBufferAttachmentKey_` prefix must be set via [`CMSetAttachment(_:key:value:attachmentMode:)`](https://developer.apple.com/documentation/CoreMedia/CMSetAttachment(_:key:value:attachmentMode:)).
 
- Attachments with the `kCMSampleAttachmentKey_` prefix must be set using [`CMSampleBufferGetSampleAttachmentsArray(_:createIfNecessary:)`](https://developer.apple.com/documentation/CoreMedia/CMSampleBufferGetSampleAttachmentsArray(_:createIfNecessary:)) and [`CFDictionarySetValue(_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFDictionarySetValue(_:_:_:)).  Attachments with the `kCMSampleBufferAttachmentKey_` prefix must be set via [`CMSetAttachment(_:key:value:attachmentMode:)`](https://developer.apple.com/documentation/CoreMedia/CMSetAttachment(_:key:value:attachmentMode:)).
-
 ## Parameters
 
 - `sampleBuffer`: The sample buffer to be enqueued.

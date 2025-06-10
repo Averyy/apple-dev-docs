@@ -13,6 +13,7 @@ The protocol an object implements to handle events from a map template.
 ## Declaration
 
 ```swift
+@MainActor
 protocol CPMapTemplateDelegate : NSObjectProtocol
 ```
 
@@ -71,6 +72,25 @@ protocol CPMapTemplateDelegate : NSObjectProtocol
   Tells the delegate that the pan gesture ended with the specified velocity.
 - [func mapTemplate(CPMapTemplate, didUpdatePanGestureWithTranslation: CGPoint, velocity: CGPoint)](cpmaptemplatedelegate/maptemplate(_:didupdatepangesturewithtranslation:velocity:).md)
   Tells the delegate that the pan gesture changed.
+### Instance Methods
+- [func mapTemplate(CPMapTemplate, didEndZoomGestureWithVelocity: CGFloat)](cpmaptemplatedelegate/maptemplate(_:didendzoomgesturewithvelocity:).md)
+  Tells the delegate that a person stopped zooming the map.
+- [func mapTemplate(CPMapTemplate, didRotateWithCenter: CGPoint, rotation: CGFloat, velocity: CGFloat)](cpmaptemplatedelegate/maptemplate(_:didrotatewithcenter:rotation:velocity:).md)
+  Tells the delegate that a person is rotating the map.
+- [func mapTemplate(CPMapTemplate, didUpdateZoomGestureWithCenter: CGPoint, scale: CGFloat, velocity: CGFloat)](cpmaptemplatedelegate/maptemplate(_:didupdatezoomgesturewithcenter:scale:velocity:).md)
+  Tells the delegate that a person is zooming on the map.
+- [func mapTemplate(CPMapTemplate, pitchEndedWithCenter: CGPoint)](cpmaptemplatedelegate/maptemplate(_:pitchendedwithcenter:).md)
+  Tells the delegate that a person stopped pitching the map.
+- [func mapTemplate(CPMapTemplate, pitchWithCenter: CGPoint)](cpmaptemplatedelegate/maptemplate(_:pitchwithcenter:).md)
+  Called when a pitch gesture changes. May not be called when connected to some CarPlay systems
+- [func mapTemplate(CPMapTemplate, rotationDidEndWithVelocity: CGFloat)](cpmaptemplatedelegate/maptemplate(_:rotationdidendwithvelocity:).md)
+  Tells the delegate that a person stopped rotating the map.
+- [func mapTemplateDidBeginPitchGesture(CPMapTemplate)](cpmaptemplatedelegate/maptemplatedidbeginpitchgesture(_:).md)
+  Tells the delegate that the pitch gesture started.
+- [func mapTemplateDidBeginRotationGesture(CPMapTemplate)](cpmaptemplatedelegate/maptemplatedidbeginrotationgesture(_:).md)
+  Tells the delegate that the rotation gesture started.
+- [func mapTemplateDidBeginZoomGesture(CPMapTemplate)](cpmaptemplatedelegate/maptemplatedidbeginzoomgesture(_:).md)
+  Tells the delegate that the zoom gesture started.
 
 ## Relationships
 

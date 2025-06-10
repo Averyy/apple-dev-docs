@@ -20,7 +20,7 @@ string reservationId
 
 #### Discussion
 
-Use a consistent, unique identifier for each reservation. If you also provide reservation information with doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions in your app, use a single, consistent value for that doc://com.apple.documentation/documentation/sirikit/inreservation/3113835-reservationnumber and this `reservationId`.
+Use a consistent, unique identifier for each reservation. If you also provide reservation information with doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions in your app, use a single, consistent value for that [`reservationNumber`](https://developer.apple.com/documentation/Intents/INReservation/reservationNumber) and this `reservationId`.
 
 ## See Also
 

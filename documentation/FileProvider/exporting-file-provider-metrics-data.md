@@ -1,6 +1,6 @@
 # Exporting file provider metrics data
 
-**Framework**: Fileprovider
+**Framework**: File Provider
 
 Download and analyze usage, consistency, and error data.
 
@@ -130,4 +130,4 @@ The `reason` field in usage reports is a bitfield that enumerates the reasons th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/exporting-file-provider-metrics-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/exporting-file-provider-metrics-data)*

@@ -29,6 +29,8 @@ This structure is designed to be very similar to the audio timestamp defined in 
 ### Initializers
 - [init()](cvtimestamp/init.md)
 - [init(version: UInt32, videoTimeScale: Int32, videoTime: Int64, hostTime: UInt64, rateScalar: Double, videoRefreshPeriod: Int64, smpteTime: CVSMPTETime, flags: UInt64, reserved: UInt64)](cvtimestamp/init(version:videotimescale:videotime:hosttime:ratescalar:videorefreshperiod:smptetime:flags:reserved:).md)
+- [init(videoTime: CVTime?, hostTime: UInt64?, rateScaler: Double?, videoRefreshPeriod: Int64?, smpteTime: CVSMPTETime?, topField: Bool, bottomField: Bool)](cvtimestamp/init(videotime:hosttime:ratescaler:videorefreshperiod:smptetime:topfield:bottomfield:).md)
+  Initialize a CVTimeStamp containing specified fields. The bits corrsrponding to non-nil arguments are set in `CVTimeStamp.flags`.
 ### Properties
 - [var flags: UInt64](cvtimestamp/flags.md)
   A bit field containing additional information about the timestamp.
@@ -47,12 +49,16 @@ This structure is designed to be very similar to the audio timestamp defined in 
   The start of a frame (or field for interlaced video).
 - [var videoTimeScale: Int32](cvtimestamp/videotimescale.md)
   The scale (in units per second) of the `videoTimeScale` and `videoRefreshPeriod` fields.
+### Instance Properties
+- [var flagOptions: CVTimeStampFlags](cvtimestamp/flagoptions.md)
+  `CVTimeStampFlags` representation of `CVTimeStamp.flags`
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

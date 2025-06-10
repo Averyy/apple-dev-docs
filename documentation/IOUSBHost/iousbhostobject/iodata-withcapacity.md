@@ -25,8 +25,6 @@ This method allocates and maps a kernel buffer that the underlying controller ha
 
 > ❗ **Important**:  Because the kernel backs the [`NSMutableData`](https://developer.apple.com/documentation/Foundation/NSMutableData) object, the length and capacity aren’t mutable. Any changes to the length or capacity throws an exception.
 
- Because the kernel backs the [`NSMutableData`](https://developer.apple.com/documentation/Foundation/NSMutableData) object, the length and capacity aren’t mutable. Any changes to the length or capacity throws an exception.
-
 ## Parameters
 
 - `capacity`: The size, in bytes, of the buffer to allocate.

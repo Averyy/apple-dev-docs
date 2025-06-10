@@ -1,6 +1,6 @@
 # category
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The UV Index exposure category.

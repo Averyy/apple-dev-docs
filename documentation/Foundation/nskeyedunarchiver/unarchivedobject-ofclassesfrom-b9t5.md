@@ -30,8 +30,6 @@ This method produces an error if data does not contain valid keyed data.
 
 > ❗ **Important**:  Make sure you have adopted [`NSSecureCoding`](nssecurecoding.md) in the types you decode. If any call to a `decode`-prefixed method fails, the default [`decodingFailurePolicy`](nskeyedunarchiver/decodingfailurepolicy.md) sets the error rather than throwing an exception. In this case, the current and all subsequent decode calls return `0` or `nil`.
 
- Make sure you have adopted [`NSSecureCoding`](nssecurecoding.md) in the types you decode. If any call to a `decode`-prefixed method fails, the default [`decodingFailurePolicy`](nskeyedunarchiver/decodingfailurepolicy.md) sets the error rather than throwing an exception. In this case, the current and all subsequent decode calls return `0` or `nil`.
-
 ## Parameters
 
 - `classes`: A set of classes, at least one of which the root object should conform to.

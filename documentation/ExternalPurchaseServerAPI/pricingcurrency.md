@@ -24,8 +24,6 @@ The currencies Apple supports are listed as allowed values on the [`reportingCur
 
 > ❗ **Important**: If your `pricingCurrency` isn’t a currency that Apple supports, you must use EUR or USD as the [`reportingCurrency`](reportingcurrency.md).
 
-If your `pricingCurrency` isn’t a currency that Apple supports, you must use EUR or USD as the [`reportingCurrency`](reportingcurrency.md).
-
 ## See Also
 
 - [type amountTaxExclusive](amounttaxexclusive.md)

@@ -1,6 +1,6 @@
 # Precipitation.RawValue
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: typealias
 
 The raw type that can be used to represent all values of the conforming type.

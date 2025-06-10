@@ -1,6 +1,6 @@
 # content
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The content associated with the notification.

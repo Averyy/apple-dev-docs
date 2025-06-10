@@ -1,6 +1,6 @@
 # NSAccessibilityOutline
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: protocol
 
 A role-based protocol that declares the minimum interface necessary for an accessibility element to act as an outline view.
@@ -46,4 +46,4 @@ Although the [`NSAccessibilityOutline`](nsaccessibilityoutline.md) protocol does
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsaccessibilityoutline)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsaccessibilityoutline)*

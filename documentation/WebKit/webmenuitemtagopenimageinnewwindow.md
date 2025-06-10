@@ -1,6 +1,6 @@
 # WebMenuItemTagOpenImageInNewWindow
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Open the image in a new window.

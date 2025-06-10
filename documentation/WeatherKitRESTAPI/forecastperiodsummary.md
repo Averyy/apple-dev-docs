@@ -1,6 +1,6 @@
 # ForecastPeriodSummary
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 The summary for a specified period in the minute forecast.

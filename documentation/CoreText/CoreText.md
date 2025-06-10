@@ -1,6 +1,6 @@
 # Core Text
 
-**Framework**: Coretext  
+**Framework**: Core Text  
 **Kind**: module
 
 Create text layouts, optimize font handling, and access font metrics and glyph data.

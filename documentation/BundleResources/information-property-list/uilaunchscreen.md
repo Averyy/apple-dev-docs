@@ -1,6 +1,6 @@
 # UILaunchScreen
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: dictionary
 
 The user interface to show while an app launches.

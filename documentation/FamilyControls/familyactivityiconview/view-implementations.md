@@ -37,6 +37,8 @@
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction<S>(named: S, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityaction(named:_:)-7qhqr.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
+- [func accessibilityAction(named: LocalizedStringResource, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityaction(named:_:)-99irh.md)
+  Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction(named: Text, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityaction(named:_:)-9ch8b.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction(named: LocalizedStringKey, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityaction(named:_:)-zhbn.md)
@@ -69,6 +71,14 @@
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent<L, V>(L, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitycustomcontent(_:_:importance:)-1yzc7.md)
   Add additional accessibility information to the view.
+- [func accessibilityCustomContent<V>(LocalizedStringResource, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitycustomcontent(_:_:importance:)-298kk.md)
+  Add additional accessibility information to the view.
+- [func accessibilityCustomContent(AccessibilityCustomContentKey, LocalizedStringResource, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitycustomcontent(_:_:importance:)-2jxlb.md)
+  Add additional accessibility information to the view.
+- [func accessibilityCustomContent(LocalizedStringResource, LocalizedStringResource, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitycustomcontent(_:_:importance:)-4xs0d.md)
+  Add additional accessibility information to the view.
+- [func accessibilityCustomContent(LocalizedStringResource, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitycustomcontent(_:_:importance:)-5ojvh.md)
+  Add additional accessibility information to the view.
 - [func accessibilityCustomContent(AccessibilityCustomContentKey, LocalizedStringKey, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitycustomcontent(_:_:importance:)-724rf.md)
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent<V>(AccessibilityCustomContentKey, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitycustomcontent(_:_:importance:)-7ygy8.md)
@@ -77,8 +87,12 @@
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent(LocalizedStringKey, LocalizedStringKey, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitycustomcontent(_:_:importance:)-t8yq.md)
   Add additional accessibility information to the view.
+- [func accessibilityDefaultFocus<Value>(AccessibilityFocusState<Value>.Binding, Value) -> some View](familyactivityiconview/accessibilitydefaultfocus(_:_:).md)
+  Defines a region in which default accessibility focus is evaluated by assigning a value to a given accessibility focus state binding.
 - [func accessibilityDirectTouch(Bool, options: AccessibilityDirectTouchOptions) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydirecttouch(_:options:).md)
   Explicitly set whether this accessibility element is a direct touch area. Direct touch areas passthrough touch events to the app rather than being handled through an assistive technology, such as VoiceOver. The modifier accepts an optional `AccessibilityDirectTouchOptions` option set to customize the functionality of the direct touch area.
+- [func accessibilityDragPoint(UnitPoint, description: LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydragpoint(_:description:)-1fd50.md)
+  The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint<S>(UnitPoint, description: S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydragpoint(_:description:)-53hq1.md)
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint(UnitPoint, description: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydragpoint(_:description:)-5i388.md)
@@ -86,6 +100,8 @@
 - [func accessibilityDragPoint(UnitPoint, description: LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydragpoint(_:description:)-930t4.md)
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint<S>(UnitPoint, description: S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydragpoint(_:description:isenabled:)-53kc1.md)
+  The point an assistive technology should use to begin a drag interaction.
+- [func accessibilityDragPoint(UnitPoint, description: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydragpoint(_:description:isenabled:)-5gsro.md)
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint(UnitPoint, description: LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydragpoint(_:description:isenabled:)-7omwm.md)
   The point an assistive technology should use to begin a drag interaction.
@@ -95,11 +111,15 @@
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydroppoint(_:description:)-4azyq.md)
   The point an assistive technology should use to end a drag interaction.
+- [func accessibilityDropPoint(UnitPoint, description: LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydroppoint(_:description:)-85qwh.md)
+  The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydroppoint(_:description:)-9o2t2.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydroppoint(_:description:isenabled:)-2kgbu.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydroppoint(_:description:isenabled:)-2sqb4.md)
+  The point an assistive technology should use to end a drag interaction.
+- [func accessibilityDropPoint(UnitPoint, description: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydroppoint(_:description:isenabled:)-6g3nc.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint<S>(UnitPoint, description: S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitydroppoint(_:description:isenabled:)-rcqb.md)
   The point an assistive technology should use to end a drag interaction.
@@ -119,11 +139,15 @@
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityhint(_:)-6rne6.md)
   Communicates to the user what happens after performing the view’s action.
+- [func accessibilityHint(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityhint(_:)-8ha5k.md)
+  Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityhint(_:)-hqfv.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityhint(_:isenabled:)-1k8bq.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityhint(_:isenabled:)-3j1u0.md)
+  Communicates to the user what happens after performing the view’s action.
+- [func accessibilityHint(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityhint(_:isenabled:)-4ce0y.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint<S>(S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityhint(_:isenabled:)-7pbxo.md)
   Communicates to the user what happens after performing the view’s action.
@@ -145,11 +169,15 @@
   Sets alternate input labels with which users identify a view.
 - [func accessibilityInputLabels<S>([S], isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityinputlabels(_:isenabled:)-9smen.md)
   Sets alternate input labels with which users identify a view.
+- [func accessibilityLabel(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitylabel(_:)-47opb.md)
+  Adds a label to the view that describes its contents.
 - [func accessibilityLabel(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitylabel(_:)-4x5z.md)
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitylabel(_:)-6i7yk.md)
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitylabel(_:)-8qu36.md)
+  Adds a label to the view that describes its contents.
+- [func accessibilityLabel(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitylabel(_:isenabled:)-1m35v.md)
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilitylabel(_:isenabled:)-4emcn.md)
   Adds a label to the view that describes its contents.
@@ -171,6 +199,8 @@
   Explicitly set whether this Accessibility element responds to user interaction and would thus be interacted with by technologies such as Switch Control, Voice Control or Full Keyboard Access.
 - [func accessibilityRespondsToUserInteraction(Bool, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityrespondstouserinteraction(_:isenabled:).md)
   Explicitly set whether this Accessibility element responds to user interaction and would thus be interacted with by technologies such as Switch Control, Voice Control or Full Keyboard Access.
+- [func accessibilityRotor<Content>(LocalizedStringResource, entries: () -> Content) -> some View](familyactivityiconview/accessibilityrotor(_:entries:)-1upzt.md)
+  Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
 - [func accessibilityRotor<Content>(Text, entries: () -> Content) -> some View](familyactivityiconview/accessibilityrotor(_:entries:)-2vt7t.md)
   Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
 - [func accessibilityRotor<Content>(AccessibilitySystemRotor, entries: () -> Content) -> some View](familyactivityiconview/accessibilityrotor(_:entries:)-73a40.md)
@@ -183,11 +213,15 @@
   Create an Accessibility Rotor replacing the specified system-provided Rotor.
 - [func accessibilityRotor<L, EntryModel, ID>(L, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](familyactivityiconview/accessibilityrotor(_:entries:entryid:entrylabel:)-3v87o.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
+- [func accessibilityRotor<EntryModel, ID>(LocalizedStringResource, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](familyactivityiconview/accessibilityrotor(_:entries:entryid:entrylabel:)-55vey.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel, ID>(LocalizedStringKey, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](familyactivityiconview/accessibilityrotor(_:entries:entryid:entrylabel:)-77yka.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel, ID>(Text, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](familyactivityiconview/accessibilityrotor(_:entries:entryid:entrylabel:)-9jjon.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel>(LocalizedStringKey, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](familyactivityiconview/accessibilityrotor(_:entries:entrylabel:)-17pwi.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries.
+- [func accessibilityRotor<EntryModel>(LocalizedStringResource, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](familyactivityiconview/accessibilityrotor(_:entries:entrylabel:)-4m4g3.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel>(AccessibilitySystemRotor, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](familyactivityiconview/accessibilityrotor(_:entries:entrylabel:)-5fpd3.md)
   Create an Accessibility Rotor replacing the specified system-provided Rotor.
@@ -195,6 +229,8 @@
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel>(Text, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](familyactivityiconview/accessibilityrotor(_:entries:entrylabel:)-91uyp.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
+- [func accessibilityRotor(LocalizedStringResource, textRanges: [Range<String.Index>]) -> some View](familyactivityiconview/accessibilityrotor(_:textranges:)-4mesf.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotor<L>(L, textRanges: [Range<String.Index>]) -> some View](familyactivityiconview/accessibilityrotor(_:textranges:)-9eae7.md)
   Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotor(LocalizedStringKey, textRanges: [Range<String.Index>]) -> some View](familyactivityiconview/accessibilityrotor(_:textranges:)-aybh.md)
@@ -207,6 +243,14 @@
   Defines an explicit identifier tying an Accessibility element for this view to an entry in an Accessibility Rotor.
 - [func accessibilityScrollAction((Edge) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityscrollaction(_:).md)
   Adds an accessibility scroll action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
+- [func accessibilityScrollStatus(some StringProtocol, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityscrollstatus(_:isenabled:)-1x9j5.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityscrollstatus(_:isenabled:)-6uiqy.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityscrollstatus(_:isenabled:)-7wwdx.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityscrollstatus(_:isenabled:)-8t2p0.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
 - [func accessibilityShowsLargeContentViewer() -> some View](familyactivityiconview/accessibilityshowslargecontentviewer.md)
   Adds a default large content view to be shown by the large content viewer.
 - [func accessibilityShowsLargeContentViewer<V>(() -> V) -> some View](familyactivityiconview/accessibilityshowslargecontentviewer(_:).md)
@@ -217,6 +261,8 @@
   Sets an accessibility text content type.
 - [func accessibilityValue(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityvalue(_:)-36yxs.md)
   Adds a textual description of the value that the view contains.
+- [func accessibilityValue(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityvalue(_:)-41j8h.md)
+  Adds a textual description of the value that the view contains.
 - [func accessibilityValue<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityvalue(_:)-54104.md)
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityvalue(_:)-97ipn.md)
@@ -224,6 +270,8 @@
 - [func accessibilityValue(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityvalue(_:isenabled:)-1plqx.md)
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue<S>(S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityvalue(_:isenabled:)-2498w.md)
+  Adds a textual description of the value that the view contains.
+- [func accessibilityValue(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityvalue(_:isenabled:)-3k6ov.md)
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](familyactivityiconview/accessibilityvalue(_:isenabled:)-7dvup.md)
   Adds a textual description of the value that the view contains.
@@ -237,6 +285,8 @@
   Presents an alert when a given condition is true, using a localized string key for the title.
 - [func alert<A>(Text, isPresented: Binding<Bool>, actions: () -> A) -> some View](familyactivityiconview/alert(_:ispresented:actions:)-4p0yj.md)
   Presents an alert when a given condition is true, using a text view for the title.
+- [func alert<A>(LocalizedStringResource, isPresented: Binding<Bool>, actions: () -> A) -> some View](familyactivityiconview/alert(_:ispresented:actions:)-9j79w.md)
+  Presents an alert when a given condition is true, using a localized string resource for the title.
 - [func alert<S, A>(S, isPresented: Binding<Bool>, actions: () -> A) -> some View](familyactivityiconview/alert(_:ispresented:actions:)-g8gc.md)
   Presents an alert when a given condition is true, using a string variable as a title.
 - [func alert<A, M>(Text, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](familyactivityiconview/alert(_:ispresented:actions:message:)-17yp7.md)
@@ -245,18 +295,24 @@
   Presents an alert with a message when a given condition is true using a string variable as a title.
 - [func alert<A, M>(LocalizedStringKey, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](familyactivityiconview/alert(_:ispresented:actions:message:)-468w4.md)
   Presents an alert with a message when a given condition is true, using a localized string key for a title.
+- [func alert<A, M>(LocalizedStringResource, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](familyactivityiconview/alert(_:ispresented:actions:message:)-9kory.md)
+  Presents an alert with a message when a given condition is true, using a localized string resource for a title.
 - [func alert<S, A, T>(S, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](familyactivityiconview/alert(_:ispresented:presenting:actions:)-2mf35.md)
   Presents an alert using the given data to produce the alert’s content and a string variable as a title.
 - [func alert<A, T>(Text, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](familyactivityiconview/alert(_:ispresented:presenting:actions:)-5bk79.md)
   Presents an alert using the given data to produce the alert’s content and a text view as a title.
 - [func alert<A, T>(LocalizedStringKey, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](familyactivityiconview/alert(_:ispresented:presenting:actions:)-5pp7q.md)
   Presents an alert using the given data to produce the alert’s content and a localized string key for a title.
+- [func alert<A, T>(LocalizedStringResource, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](familyactivityiconview/alert(_:ispresented:presenting:actions:)-9z9oa.md)
+  Presents an alert using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert<A, M, T>(LocalizedStringKey, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](familyactivityiconview/alert(_:ispresented:presenting:actions:message:)-4h2r3.md)
   Presents an alert with a message using the given data to produce the alert’s content and a localized string key for a title.
 - [func alert<A, M, T>(Text, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](familyactivityiconview/alert(_:ispresented:presenting:actions:message:)-6dikx.md)
   Presents an alert with a message using the given data to produce the alert’s content and a text view for a title.
 - [func alert<S, A, M, T>(S, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](familyactivityiconview/alert(_:ispresented:presenting:actions:message:)-9iifv.md)
   Presents an alert with a message using the given data to produce the alert’s content and a string variable as a title.
+- [func alert<A, M, T>(LocalizedStringResource, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](familyactivityiconview/alert(_:ispresented:presenting:actions:message:)-9ktwm.md)
+  Presents an alert with a message using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert(isPresented: Binding<Bool>, content: () -> Alert) -> some View](familyactivityiconview/alert(ispresented:content:).md)
   Presents an alert to the user.
 - [func alert<E, A>(isPresented: Binding<Bool>, error: E?, actions: () -> A) -> some View](familyactivityiconview/alert(ispresented:error:actions:).md)
@@ -275,6 +331,8 @@
   Configures whether this view participates in hit test operations.
 - [func allowsTightening(Bool) -> some View](familyactivityiconview/allowstightening(_:).md)
   Sets whether text in this view can compress the space between characters when necessary to fit text in a line.
+- [func allowsWindowActivationEvents() -> some View](familyactivityiconview/allowswindowactivationevents.md)
+  Configures gestures in this view hierarchy to handle events that activate the containing window.
 - [func allowsWindowActivationEvents(Bool?) -> some View](familyactivityiconview/allowswindowactivationevents(_:).md)
   Configures whether gestures in this view hierarchy can handle events that activate the containing window.
 - [func anchorPreference<A, K>(key: K.Type, value: Anchor<A>.Source, transform: (Anchor<A>) -> K.Value) -> some View](familyactivityiconview/anchorpreference(key:value:transform:).md)
@@ -289,6 +347,16 @@
   Constrains this view’s dimensions to the specified aspect ratio.
 - [func aspectRatio(CGSize, contentMode: ContentMode) -> some View](familyactivityiconview/aspectratio(_:contentmode:)-901xr.md)
   Constrains this view’s dimensions to the aspect ratio of the given size.
+- [func assistiveAccessNavigationIcon(Image) -> some View](familyactivityiconview/assistiveaccessnavigationicon(_:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func assistiveAccessNavigationIcon(systemImage: String) -> some View](familyactivityiconview/assistiveaccessnavigationicon(systemimage:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func attributedTextFormattingDefinition<D>(D) -> some View](familyactivityiconview/attributedtextformattingdefinition(_:)-2j5wc.md)
+  Apply a text formatting definition to all nested editor views.
+- [func attributedTextFormattingDefinition<S>(S.Type) -> some View](familyactivityiconview/attributedtextformattingdefinition(_:)-4habj.md)
+  Apply an attribute-only text formatting definition to all nested editor views.
+- [func attributedTextFormattingDefinition<S>(KeyPath<AttributeScopes, S.Type>) -> some View](familyactivityiconview/attributedtextformattingdefinition(_:)-86lqb.md)
+  Apply an attribute-only text formatting definition to all nested editor views.
 - [func autocapitalization(UITextAutocapitalizationType) -> some View](familyactivityiconview/autocapitalization(_:).md)
   Sets whether to apply auto-capitalization to this view.
 - [func autocorrectionDisabled(Bool) -> some View](familyactivityiconview/autocorrectiondisabled(_:).md)
@@ -309,6 +377,8 @@
   Sets the view’s background to an insettable shape filled with the default background style.
 - [func background<S>(in: S, fillStyle: FillStyle) -> some View](familyactivityiconview/background(in:fillstyle:)-8y1bn.md)
   Sets the view’s background to a shape filled with the default background style.
+- [func backgroundExtensionEffect() -> some View](familyactivityiconview/backgroundextensioneffect.md)
+  Adds the background extension effect to the view. The view will be duplicated into mirrored copies which will be placed around the view on any edge with available safe area. Additionally, a blur effect will be applied on top to blur out the copies.
 - [func backgroundPreferenceValue<Key, T>(Key.Type, (Key.Value) -> T) -> some View](familyactivityiconview/backgroundpreferencevalue(_:_:).md)
   Reads the specified preference value from the view, using it to produce a second view that is applied as the background of the original view.
 - [func backgroundPreferenceValue<K, V>(K.Type, alignment: Alignment, (K.Value) -> V) -> some View](familyactivityiconview/backgroundpreferencevalue(_:alignment:_:).md)
@@ -323,6 +393,8 @@
   Generates a badge for the view from a text view.
 - [func badge(LocalizedStringKey?) -> some View](familyactivityiconview/badge(_:)-3hx0b.md)
   Generates a badge for the view from a localized string key.
+- [func badge(LocalizedStringResource?) -> some View](familyactivityiconview/badge(_:)-8d8fj.md)
+  Generates a badge for the view from a localized string resource.
 - [func badgeProminence(BadgeProminence) -> some View](familyactivityiconview/badgeprominence(_:).md)
   Specifies the prominence of badges created by this view.
 - [func baselineOffset(CGFloat) -> some View](familyactivityiconview/baselineoffset(_:).md)
@@ -341,6 +413,7 @@
   Sets the border shape for buttons in this view.
 - [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](familyactivityiconview/buttonrepeatbehavior(_:).md)
   Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
+- [func buttonSizing(ButtonSizing) -> some View](familyactivityiconview/buttonsizing(_:).md)
 - [func buttonStyle<S>(S) -> some View](familyactivityiconview/buttonstyle(_:)-7j13s.md)
   Sets the style for buttons within this view to a button style with a custom appearance and custom interaction behavior.
 - [func buttonStyle<S>(S) -> some View](familyactivityiconview/buttonstyle(_:)-8xd3v.md)
@@ -359,6 +432,8 @@
   Sets this view’s color scheme.
 - [func compositingGroup() -> some View](familyactivityiconview/compositinggroup.md)
   Wraps this view in a compositing group.
+- [func confirmationDialog<A>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](familyactivityiconview/confirmationdialog(_:ispresented:titlevisibility:actions:)-30uao.md)
+  Presents a confirmation dialog when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog<A>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](familyactivityiconview/confirmationdialog(_:ispresented:titlevisibility:actions:)-442pm.md)
   Presents a confirmation dialog when a given condition is true, using a text view for the title.
 - [func confirmationDialog<S, A>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](familyactivityiconview/confirmationdialog(_:ispresented:titlevisibility:actions:)-4j9up.md)
@@ -371,14 +446,20 @@
   Presents a confirmation dialog with a message when a given condition is true, using a localized string key for the title.
 - [func confirmationDialog<S, A, M>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](familyactivityiconview/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-3kpmg.md)
   Presents a confirmation dialog with a message when a given condition is true, using a string variable for the title.
+- [func confirmationDialog<A, M>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](familyactivityiconview/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-5768u.md)
+  Presents a confirmation dialog with a message when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog<A, T>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](familyactivityiconview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-1ko5t.md)
   Presents a confirmation dialog using data to produce the dialog’s content and a localized string key for the title.
 - [func confirmationDialog<S, A, T>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](familyactivityiconview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-3cdlg.md)
   Presents a confirmation dialog using data to produce the dialog’s content and a string variable for the title.
 - [func confirmationDialog<A, T>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](familyactivityiconview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-6wvag.md)
   Presents a confirmation dialog using data to produce the dialog’s content and a text view for the title.
+- [func confirmationDialog<A, T>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](familyactivityiconview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-7rl90.md)
+  Presents a confirmation dialog using data to produce the dialog’s content and a localized string resource for the title.
 - [func confirmationDialog<S, A, M, T>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](familyactivityiconview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-10hyw.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a string variable for the title.
+- [func confirmationDialog<A, M, T>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](familyactivityiconview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-1rjgj.md)
+  Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string resource for the title.
 - [func confirmationDialog<A, M, T>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](familyactivityiconview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-2g3it.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string key for the title.
 - [func confirmationDialog<A, M, T>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](familyactivityiconview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-46vgc.md)
@@ -425,8 +506,10 @@
   Sets the contrast and separation between similar colors in this view.
 - [func controlGroupStyle<S>(S) -> some View](familyactivityiconview/controlgroupstyle(_:).md)
   Sets the style for control groups within this view.
-- [func controlSize(ControlSize) -> some View](familyactivityiconview/controlsize(_:).md)
+- [func controlSize(ControlSize) -> some View](familyactivityiconview/controlsize(_:)-1s426.md)
   Sets the size for controls within this view.
+- [func controlSize<T>(T) -> some View](familyactivityiconview/controlsize(_:)-5oetm.md)
+  Limits the control size within the view to the given range.
 - [func coordinateSpace(NamedCoordinateSpace) -> some View](familyactivityiconview/coordinatespace(_:).md)
   Assigns a name to the view’s coordinate space, so other code can operate on dimensions like points and sizes relative to the named space.
 - [func coordinateSpace<T>(name: T) -> some View](familyactivityiconview/coordinatespace(name:).md)
@@ -461,6 +544,8 @@
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle<S>(S, isSuppressed: Binding<Bool>) -> some View](familyactivityiconview/dialogsuppressiontoggle(_:issuppressed:)-4ihvz.md)
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
+- [func dialogSuppressionToggle(LocalizedStringResource, isSuppressed: Binding<Bool>) -> some View](familyactivityiconview/dialogsuppressiontoggle(_:issuppressed:)-5vqnb.md)
+  Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle(isSuppressed: Binding<Bool>) -> some View](familyactivityiconview/dialogsuppressiontoggle(issuppressed:).md)
   Enables user suppression of dialogs and alerts presented within `self`, with a default suppression message on macOS. Unused on other platforms.
 - [func disableAutocorrection(Bool?) -> some View](familyactivityiconview/disableautocorrection(_:).md)
@@ -473,14 +558,34 @@
   Returns a new view that applies `shader` to `self` as a geometric distortion effect on the location of each pixel.
 - [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](familyactivityiconview/documentbrowsercontextmenu(_:).md)
   Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
+- [func dragConfiguration(DragConfiguration) -> some View](familyactivityiconview/dragconfiguration(_:).md)
+  Configures a drag session.
+- [func dragContainer<ItemID, Item, Data>(for: Item.Type, id: (Item) -> ItemID, in: Namespace.ID?, (ItemID) -> Data) -> some View](familyactivityiconview/dragcontainer(for:id:in:_:).md)
+  A container with draggable views. The drag payload is based on the current selection.
+- [func dragContainer<Item, ItemID>(for: Item.Type, id: (Item) -> ItemID, in: Namespace.ID?, selection: @autoclosure () -> ItemID?, (ItemID) -> Item?) -> some View](familyactivityiconview/dragcontainer(for:id:in:selection:_:)-11qja.md)
+  A container with single item selection and draggable views. The drag payload is based on the current selection and provided identifiers.
+- [func dragContainer<ItemID, Item, Data>(for: Item.Type, id: (consuming Item) -> ItemID, in: Namespace.ID?, selection: @autoclosure () -> Array<ItemID>, (Array<ItemID>) -> Data) -> some View](familyactivityiconview/dragcontainer(for:id:in:selection:_:)-hp05.md)
+  A container with multiple selection and draggable views. The drag payload is based on the current selection and provided identifiers.
+- [func dragContainer<Item, Data>(for: Item.Type, in: Namespace.ID?, (Item.ID) -> Data) -> some View](familyactivityiconview/dragcontainer(for:in:_:).md)
+  A container with draggable views. The drag payload is identifiable. To form the payload, use the identifier of the dragged view inside the container.
+- [func dragContainer<Item, Data>(for: Item.Type, in: Namespace.ID?, selection: @autoclosure () -> Array<Item.ID>, (Array<Item.ID>) -> Data) -> some View](familyactivityiconview/dragcontainer(for:in:selection:_:)-1e0yx.md)
+  A container with multiple selection and draggable views. The drag payload is identifiable and is based on the current selection.
+- [func dragContainer<Item>(for: Item.Type, in: Namespace.ID?, selection: @autoclosure () -> Item.ID?, (Item.ID) -> Item?) -> some View](familyactivityiconview/dragcontainer(for:in:selection:_:)-4n3ta.md)
+  A container with single item selection and draggable views. The drag payload is identifiable and is based on the current selection.
 - [func draggable<T>(@autoclosure () -> T) -> some View](familyactivityiconview/draggable(_:).md)
   Activates this view as the source of a drag and drop operation.
 - [func draggable<V, T>(@autoclosure () -> T, preview: () -> V) -> some View](familyactivityiconview/draggable(_:preview:).md)
   Activates this view as the source of a drag and drop operation.
+- [func draggable<T, ID>(for: T.Type, id: ID, (ID) -> T?) -> some View](familyactivityiconview/draggable(for:id:_:).md)
+  Activates this view as the source of a drag-and-drop operation.
 - [func drawingGroup(opaque: Bool, colorMode: ColorRenderingMode) -> some View](familyactivityiconview/drawinggroup(opaque:colormode:).md)
   Composites this view’s contents into an offscreen image before final display.
+- [func dropConfiguration((DropSession) -> DropConfiguration) -> some View](familyactivityiconview/dropconfiguration(_:).md)
+  Configures a drop session.
 - [func dropDestination<T>(for: T.Type, action: ([T], CGPoint) -> Bool, isTargeted: (Bool) -> Void) -> some View](familyactivityiconview/dropdestination(for:action:istargeted:).md)
   Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
+- [func dropDestination<T>(for: T.Type, isEnabled: Bool, action: ([T], DropSession) -> Void) -> some View](familyactivityiconview/dropdestination(for:isenabled:action:).md)
+  Defines the destination of a drag and drop operation that provides a drop operation proposal and handles the dropped content with a closure that you specify.
 - [func dynamicTypeSize(DynamicTypeSize) -> some View](familyactivityiconview/dynamictypesize(_:)-2rb54.md)
   Sets the Dynamic Type size within the view to the given value.
 - [func dynamicTypeSize<T>(T) -> some View](familyactivityiconview/dynamictypesize(_:)-4kqui.md)
@@ -499,6 +604,8 @@
   Presents an activity picker view as a sheet.
 - [func fileDialogBrowserOptions(FileDialogBrowserOptions) -> some View](familyactivityiconview/filedialogbrowseroptions(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to provide a refined URL search experience: include or exclude hidden files, allow searching by tag, etc.
+- [func fileDialogConfirmationLabel(LocalizedStringResource) -> some View](familyactivityiconview/filedialogconfirmationlabel(_:)-5oa96.md)
+  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 - [func fileDialogConfirmationLabel(Text?) -> some View](familyactivityiconview/filedialogconfirmationlabel(_:)-7828k.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with custom text as a confirmation button label.
 - [func fileDialogConfirmationLabel<S>(S) -> some View](familyactivityiconview/filedialogconfirmationlabel(_:)-7rc5c.md)
@@ -514,6 +621,8 @@
 - [func fileDialogMessage(Text?) -> some View](familyactivityiconview/filedialogmessage(_:)-1a43f.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
 - [func fileDialogMessage(LocalizedStringKey) -> some View](familyactivityiconview/filedialogmessage(_:)-547ln.md)
+  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
+- [func fileDialogMessage(LocalizedStringResource) -> some View](familyactivityiconview/filedialogmessage(_:)-8vowo.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogMessage<S>(S) -> some View](familyactivityiconview/filedialogmessage(_:)-9utn3.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
@@ -541,6 +650,8 @@
   Presents a system interface allowing the user to export a collection of items to files on disk.
 - [func fileExporterFilenameLabel(Text?) -> some View](familyactivityiconview/fileexporterfilenamelabel(_:)-5sbwq.md)
   On macOS, configures the `fileExporter` with a text to use as a label for the file name field.
+- [func fileExporterFilenameLabel(LocalizedStringResource) -> some View](familyactivityiconview/fileexporterfilenamelabel(_:)-6l8np.md)
+  On macOS, configures the `fileExporter` with a label for the file name field.
 - [func fileExporterFilenameLabel<S>(S) -> some View](familyactivityiconview/fileexporterfilenamelabel(_:)-88o03.md)
   On macOS, configures the `fileExporter` with a label for the file name field.
 - [func fileExporterFilenameLabel(LocalizedStringKey) -> some View](familyactivityiconview/fileexporterfilenamelabel(_:)-m3g3.md)
@@ -639,6 +750,14 @@
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
 - [func gesture<T>(T, name: String, isEnabled: Bool) -> some View](familyactivityiconview/gesture(_:name:isenabled:).md)
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
+- [func glassEffect(Glass, in: some Shape, isEnabled: Bool) -> some View](familyactivityiconview/glasseffect(_:in:isenabled:).md)
+  Applies a glass effect to this view.
+- [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](familyactivityiconview/glasseffectid(_:in:).md)
+  Associates an identity value to glass effects defined within this view.
+- [func glassEffectTransition(GlassEffectTransition, isEnabled: Bool) -> some View](familyactivityiconview/glasseffecttransition(_:isenabled:).md)
+  Associates a glass effect transition with any glass effects defined within this view.
+- [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](familyactivityiconview/glasseffectunion(id:namespace:).md)
+  Associates any glass effects defined within this view to a union with the provided id.
 - [func grayscale(Double) -> some View](familyactivityiconview/grayscale(_:).md)
   Adds a grayscale effect to this view.
 - [func gridCellAnchor(UnitPoint) -> some View](familyactivityiconview/gridcellanchor(_:).md)
@@ -661,6 +780,8 @@
   Adds help text to a view using a string that you provide.
 - [func help(Text) -> some View](familyactivityiconview/help(_:)-7f0fc.md)
   Adds help text to a view using a text view that you provide.
+- [func help(LocalizedStringResource) -> some View](familyactivityiconview/help(_:)-8b1yz.md)
+  Adds help text to a view using a localized string resource that you provide.
 - [func help(LocalizedStringKey) -> some View](familyactivityiconview/help(_:)-9g1k0.md)
   Adds help text to a view using a localized string that you provide.
 - [func hidden() -> some View](familyactivityiconview/hidden.md)
@@ -721,6 +842,10 @@
   Loops the given keyframes continuously, updating the view using the modifiers you apply in `body`.
 - [func keyframeAnimator<Value>(initialValue: Value, trigger: some Equatable, content: (PlaceholderContentView<Self>, Value) -> some View, keyframes: (Value) -> some Keyframes) -> some View](familyactivityiconview/keyframeanimator(initialvalue:trigger:content:keyframes:).md)
   Plays the given keyframes when the given trigger value changes, updating the view using the modifiers you apply in `body`.
+- [func labelIconToTitleSpacing(CGFloat) -> some View](familyactivityiconview/labelicontotitlespacing(_:).md)
+  Set the spacing between the icon and title in labels.
+- [func labelReservedIconWidth(CGFloat) -> some View](familyactivityiconview/labelreservediconwidth(_:).md)
+  Set the width reserved for icons in labels.
 - [func labelStyle<S>(S) -> some View](familyactivityiconview/labelstyle(_:).md)
   Sets the style for labels within this view.
 - [func labeledContentStyle<S>(S) -> some View](familyactivityiconview/labeledcontentstyle(_:).md)
@@ -737,6 +862,8 @@
   Sets the priority by which a parent layout should apportion space to this child.
 - [func layoutValue<K>(key: K.Type, value: K.Value) -> some View](familyactivityiconview/layoutvalue(key:value:).md)
   Associates a value with a custom layout property.
+- [func lineHeight(AttributedString.LineHeight?) -> some View](familyactivityiconview/lineheight(_:).md)
+  A modifier for the default line height in the view hierarchy.
 - [func lineLimit(Int?) -> some View](familyactivityiconview/linelimit(_:)-66hb0.md)
   Sets the maximum number of lines that text can occupy in this view.
 - [func lineLimit(PartialRangeThrough<Int>) -> some View](familyactivityiconview/linelimit(_:)-6if0q.md)
@@ -757,12 +884,18 @@
   Places a custom background view behind a list row item.
 - [func listRowInsets(EdgeInsets?) -> some View](familyactivityiconview/listrowinsets(_:).md)
   Applies an inset to the rows in a list.
+- [func listRowInsets(Edge.Set, CGFloat?) -> some View](familyactivityiconview/listrowinsets(_:_:).md)
+  Sets the insets of rows in a list on the specified edges.
 - [func listRowSeparator(Visibility, edges: VerticalEdge.Set) -> some View](familyactivityiconview/listrowseparator(_:edges:).md)
   Sets the display mode for the separator associated with this specific row.
 - [func listRowSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](familyactivityiconview/listrowseparatortint(_:edges:).md)
   Sets the tint color associated with a row.
 - [func listRowSpacing(CGFloat?) -> some View](familyactivityiconview/listrowspacing(_:).md)
   Sets the vertical spacing between two adjacent rows in a List.
+- [func listSectionIndexVisibility(Visibility) -> some View](familyactivityiconview/listsectionindexvisibility(_:).md)
+  Changes the visibility of the list section index.
+- [func listSectionMargins(Edge.Set, CGFloat?) -> some View](familyactivityiconview/listsectionmargins(_:_:).md)
+  Set the section margins for the specific edges.
 - [func listSectionSeparator(Visibility, edges: VerticalEdge.Set) -> some View](familyactivityiconview/listsectionseparator(_:edges:).md)
   Sets whether to hide the separator associated with a list section.
 - [func listSectionSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](familyactivityiconview/listsectionseparatortint(_:edges:).md)
@@ -807,6 +940,8 @@
   Adds a condition for whether the view’s view hierarchy is movable.
 - [func multilineTextAlignment(TextAlignment) -> some View](familyactivityiconview/multilinetextalignment(_:).md)
   Sets the alignment of a text view that contains multiple lines of text.
+- [func multilineTextAlignment(strategy: Text.AlignmentStrategy) -> some View](familyactivityiconview/multilinetextalignment(strategy:).md)
+  A modifier for the default text alignment strategy in the view hierarchy.
 - [func navigationBarBackButtonHidden(Bool) -> some View](familyactivityiconview/navigationbarbackbuttonhidden(_:).md)
   Hides the navigation bar back button for the view.
 - [func navigationBarHidden(Bool) -> some View](familyactivityiconview/navigationbarhidden(_:).md)
@@ -846,12 +981,16 @@
   Configures the view’s document for purposes of navigation.
 - [func navigationDocument<D, I>(D, preview: SharePreview<Never, I>) -> some View](familyactivityiconview/navigationdocument(_:preview:)-8g6ga.md)
   Configures the view’s document for purposes of navigation.
+- [func navigationLinkIndicatorVisibility(Visibility) -> some View](familyactivityiconview/navigationlinkindicatorvisibility(_:).md)
+  Configures whether navigation links show a disclosure indicator.
 - [func navigationSplitViewColumnWidth(CGFloat) -> some View](familyactivityiconview/navigationsplitviewcolumnwidth(_:).md)
   Sets a fixed, preferred width for the column containing this view.
 - [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](familyactivityiconview/navigationsplitviewcolumnwidth(min:ideal:max:).md)
   Sets a flexible, preferred width for the column containing this view.
 - [func navigationSplitViewStyle<S>(S) -> some View](familyactivityiconview/navigationsplitviewstyle(_:).md)
   Sets the style for navigation split views within this view.
+- [func navigationSubtitle(LocalizedStringResource) -> some View](familyactivityiconview/navigationsubtitle(_:)-1jbl9.md)
+  Configures the view’s subtitle for purposes of navigation, using a localized string resource.
 - [func navigationSubtitle(Text) -> some View](familyactivityiconview/navigationsubtitle(_:)-6bk6f.md)
   Configures the view’s subtitle for purposes of navigation.
 - [func navigationSubtitle(LocalizedStringKey) -> some View](familyactivityiconview/navigationsubtitle(_:)-6cjah.md)
@@ -864,6 +1003,8 @@
   Configures the view’s title for purposes of navigation, using a string.
 - [func navigationTitle<V>(() -> V) -> some View](familyactivityiconview/navigationtitle(_:)-6q8xx.md)
   Configures the view’s title for purposes of navigation, using a custom view.
+- [func navigationTitle(LocalizedStringResource) -> some View](familyactivityiconview/navigationtitle(_:)-7gn4n.md)
+  Configures the view’s title for purposes of navigation, using a localized string resource.
 - [func navigationTitle(LocalizedStringKey) -> some View](familyactivityiconview/navigationtitle(_:)-7u9ja.md)
   Configures the view’s title for purposes of navigation, using a localized string.
 - [func navigationTitle(Binding<String>) -> some View](familyactivityiconview/navigationtitle(_:)-8mepr.md)
@@ -896,6 +1037,8 @@
   Activates this view as the source of a drag and drop operation.
 - [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](familyactivityiconview/ondrag(_:preview:).md)
   Activates this view as the source of a drag and drop operation.
+- [func onDragSessionUpdated((DragSession) -> Void) -> some View](familyactivityiconview/ondragsessionupdated(_:).md)
+  Specifies an action to perform on each update of an ongoing dragging operation activated by `draggable(_:)` or other drag modifiers.
 - [func onDrop(of: [UTType], delegate: any DropDelegate) -> some View](familyactivityiconview/ondrop(of:delegate:)-9yocr.md)
   Defines the destination of a drag and drop operation using behavior controlled by the delegate that you provide.
 - [func onDrop(of: [String], delegate: any DropDelegate) -> some View](familyactivityiconview/ondrop(of:delegate:)-eeyn.md)
@@ -908,6 +1051,8 @@
   Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
 - [func onDrop(of: [String], isTargeted: Binding<Bool>?, perform: ([NSItemProvider]) -> Bool) -> some View](familyactivityiconview/ondrop(of:istargeted:perform:)-qv5l.md)
   Defines the destination for a drag and drop operation, using the same size and position as this view, handling dropped content with the given closure.
+- [func onDropSessionUpdated((DropSession) -> Void) -> some View](familyactivityiconview/ondropsessionupdated(_:).md)
+  Specifies an action to perform on each update of an ongoing drop operation activated by `dropDestination(_:)` or other drop modifiers.
 - [func onGeometryChange<T>(for: T.Type, of: (GeometryProxy) -> T, action: (T, T) -> Void) -> some View](familyactivityiconview/ongeometrychange(for:of:action:)-323sr.md)
   Adds an action to be performed when a value, created from a geometry proxy, changes.
 - [func onGeometryChange<T>(for: T.Type, of: (GeometryProxy) -> T, action: (T) -> Void) -> some View](familyactivityiconview/ongeometrychange(for:of:action:)-6694j.md)
@@ -934,6 +1079,8 @@
   Adds an action to perform when this view recognizes a long press gesture.
 - [func onOpenURL(perform: (URL) -> ()) -> some View](familyactivityiconview/onopenurl(perform:).md)
   Registers a handler to invoke in response to a URL that your app receives.
+- [func onOpenURL(prefersInApp: Bool) -> some View](familyactivityiconview/onopenurl(prefersinapp:).md)
+  Sets an `OpenURLAction` that prefers opening URL with an in-app browser. It’s equivalent to calling `.onOpenURL(_:)`
 - [func onPencilDoubleTap(perform: (PencilDoubleTapGestureValue) -> Void) -> some View](familyactivityiconview/onpencildoubletap(perform:).md)
   Adds an action to perform after the user double-taps their Apple Pencil.
 - [func onPencilSqueeze(perform: (PencilSqueezeGesturePhase) -> Void) -> some View](familyactivityiconview/onpencilsqueeze(perform:).md)
@@ -1054,6 +1201,10 @@
   Renders a view’s content as if it’s rotated in three dimensions around the specified axis.
 - [func rotationEffect(Angle, anchor: UnitPoint) -> some View](familyactivityiconview/rotationeffect(_:anchor:).md)
   Rotates a view’s rendered output in two dimensions around the specified point.
+- [func safeAreaBar(edge: VerticalEdge, alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> some View) -> some View](familyactivityiconview/safeareabar(edge:alignment:spacing:content:)-6sqx9.md)
+  Renders the provided content appropriate to be displayed as a custom bar.
+- [func safeAreaBar(edge: HorizontalEdge, alignment: VerticalAlignment, spacing: CGFloat?, content: () -> some View) -> some View](familyactivityiconview/safeareabar(edge:alignment:spacing:content:)-9nqhi.md)
+  Renders the provided content appropriately to be displayed as a custom bar.
 - [func safeAreaInset<V>(edge: VerticalEdge, alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> V) -> some View](familyactivityiconview/safeareainset(edge:alignment:spacing:content:)-1ee0d.md)
   Shows the specified content above or below the modified view.
 - [func safeAreaInset<V>(edge: HorizontalEdge, alignment: VerticalAlignment, spacing: CGFloat?, content: () -> V) -> some View](familyactivityiconview/safeareainset(edge:alignment:spacing:content:)-956cg.md)
@@ -1090,6 +1241,10 @@
   Disables or enables scrolling in scrollable views.
 - [func scrollDismissesKeyboard(ScrollDismissesKeyboardMode) -> some View](familyactivityiconview/scrolldismisseskeyboard(_:).md)
   Configures the behavior in which scrollable content interacts with the software keyboard.
+- [func scrollEdgeEffectDisabled(Bool, for: Edge.Set) -> some View](familyactivityiconview/scrolledgeeffectdisabled(_:for:).md)
+  Disables any scroll edge effects for scroll views within this hierarchy.
+- [func scrollEdgeEffectStyle(ScrollEdgeEffectStyle?, for: Edge.Set) -> some View](familyactivityiconview/scrolledgeeffectstyle(_:for:).md)
+  Configures the scroll edge effect style for scroll views within this hierarchy.
 - [func scrollIndicators(ScrollIndicatorVisibility, axes: Axis.Set) -> some View](familyactivityiconview/scrollindicators(_:axes:).md)
   Sets the visibility of scroll indicators within this view.
 - [func scrollIndicatorsFlash(onAppear: Bool) -> some View](familyactivityiconview/scrollindicatorsflash(onappear:).md)
@@ -1107,9 +1262,9 @@
 - [func scrollTargetLayout(isEnabled: Bool) -> some View](familyactivityiconview/scrolltargetlayout(isenabled:).md)
   Configures the outermost layout as a scroll target layout.
 - [func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](familyactivityiconview/scrolltransition(_:axis:transition:).md)
-  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing: ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](familyactivityiconview/scrolltransition(topleading:bottomtrailing:axis:transition:).md)
-  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [func searchCompletion<T>(T) -> some View](familyactivityiconview/searchcompletion(_:)-4uzk5.md)
   Associates a search token with the value of this view when used as a search suggestion.
 - [func searchCompletion(String) -> some View](familyactivityiconview/searchcompletion(_:)-5dkwo.md)
@@ -1130,13 +1285,19 @@
   Configures the search suggestions for this view.
 - [func searchSuggestions(Visibility, for: SearchSuggestionsPlacement.Set) -> some View](familyactivityiconview/searchsuggestions(_:for:).md)
   Configures how to display search suggestions within this view.
+- [func searchToolbarBehavior(SearchToolbarBehavior) -> some View](familyactivityiconview/searchtoolbarbehavior(_:).md)
+  Configures the behavior for search in the toolbar.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (Binding<C.Element>) -> some View) -> some View](familyactivityiconview/searchable(text:editabletokens:ispresented:placement:prompt:token:)-1cga1.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?, token: (Binding<C.Element>) -> some View) -> some View](familyactivityiconview/searchable(text:editabletokens:ispresented:placement:prompt:token:)-3ylnh.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: some StringProtocol, token: (Binding<C.Element>) -> some View) -> some View](familyactivityiconview/searchable(text:editabletokens:ispresented:placement:prompt:token:)-87666.md)
   Marks this view as searchable, which configures the display of a search field.
+- [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (Binding<C.Element>) -> some View) -> some View](familyactivityiconview/searchable(text:editabletokens:ispresented:placement:prompt:token:)-zwwg.md)
+  Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: Text?, token: (Binding<C.Element>) -> some View) -> some View](familyactivityiconview/searchable(text:editabletokens:placement:prompt:token:)-1qhl4.md)
+  Marks this view as searchable, which configures the display of a search field.
+- [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (Binding<C.Element>) -> some View) -> some View](familyactivityiconview/searchable(text:editabletokens:placement:prompt:token:)-1wrv0.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (Binding<C.Element>) -> some View) -> some View](familyactivityiconview/searchable(text:editabletokens:placement:prompt:token:)-4lrdp.md)
   Marks this view as searchable, which configures the display of a search field.
@@ -1146,6 +1307,8 @@
   Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey) -> some View](familyactivityiconview/searchable(text:ispresented:placement:prompt:)-4xgxz.md)
   Marks this view as searchable with programmatic presentation of the search field.
+- [func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource) -> some View](familyactivityiconview/searchable(text:ispresented:placement:prompt:)-828z5.md)
+  Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable<S>(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: S) -> some View](familyactivityiconview/searchable(text:ispresented:placement:prompt:)-9ad7j.md)
   Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement, prompt: S) -> some View](familyactivityiconview/searchable(text:placement:prompt:)-2viip.md)
@@ -1153,6 +1316,8 @@
 - [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringKey) -> some View](familyactivityiconview/searchable(text:placement:prompt:)-614dd.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: Text?) -> some View](familyactivityiconview/searchable(text:placement:prompt:)-65xwx.md)
+  Marks this view as searchable, which configures the display of a search field.
+- [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringResource) -> some View](familyactivityiconview/searchable(text:placement:prompt:)-7sb4c.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, suggestions: () -> S) -> some View](familyactivityiconview/searchable(text:placement:prompt:suggestions:)-18u6y.md)
   Marks this view as searchable, which configures the display of a search field.
@@ -1162,11 +1327,15 @@
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](familyactivityiconview/searchable(text:tokens:ispresented:placement:prompt:token:)-2co5f.md)
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](familyactivityiconview/searchable(text:tokens:ispresented:placement:prompt:token:)-2esyl.md)
+  Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](familyactivityiconview/searchable(text:tokens:ispresented:placement:prompt:token:)-7a17j.md)
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](familyactivityiconview/searchable(text:tokens:ispresented:placement:prompt:token:)-o8ca.md)
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](familyactivityiconview/searchable(text:tokens:placement:prompt:token:)-1ey4l.md)
+  Marks this view as searchable with text and tokens.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](familyactivityiconview/searchable(text:tokens:placement:prompt:token:)-3rf85.md)
   Marks this view as searchable with text and tokens.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](familyactivityiconview/searchable(text:tokens:placement:prompt:token:)-4yqo7.md)
   Marks this view as searchable with text and tokens.
@@ -1178,21 +1347,31 @@
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](familyactivityiconview/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-9opz0.md)
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](familyactivityiconview/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-9ouji.md)
+  Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](familyactivityiconview/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-2t417.md)
   Marks this view as searchable with text, tokens, and suggestions.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](familyactivityiconview/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-351uq.md)
   Marks this view as searchable with text, tokens, and suggestions.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](familyactivityiconview/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-48uab.md)
   Marks this view as searchable with text, tokens, and suggestions.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](familyactivityiconview/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-6d72e.md)
+  Marks this view as searchable with text, tokens, and suggestions.
 - [func sectionActions<Content>(content: () -> Content) -> some View](familyactivityiconview/sectionactions(content:).md)
   Adds custom actions to a section.
+- [func sectionIndexLabel(Text?) -> some View](familyactivityiconview/sectionindexlabel(_:)-6teud.md)
+  Sets the label that is used in a section index to point to this section, typically only a single character long.
+- [func sectionIndexLabel<S>(S?) -> some View](familyactivityiconview/sectionindexlabel(_:)-71x2t.md)
+  Sets the title that is used for the section index label pointing to this section, typically only a single character long.
 - [func selectionDisabled(Bool) -> some View](familyactivityiconview/selectiondisabled(_:).md)
   Adds a condition that controls whether users can select this view.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View](familyactivityiconview/sensoryfeedback(_:trigger:).md)
   Plays the specified `feedback` when the provided `trigger` value changes.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T, condition: (T, T) -> Bool) -> some View](familyactivityiconview/sensoryfeedback(_:trigger:condition:).md)
   Plays the specified `feedback` when the provided `trigger` value changes and the `condition` closure returns `true`.
-- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](familyactivityiconview/sensoryfeedback(trigger:_:).md)
+- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](familyactivityiconview/sensoryfeedback(trigger:_:)-88nmj.md)
+  Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
+- [func sensoryFeedback<T>(trigger: T, () -> SensoryFeedback?) -> some View](familyactivityiconview/sensoryfeedback(trigger:_:)-92ysq.md)
   Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
 - [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some View](familyactivityiconview/shadow(color:radius:x:y:).md)
   Adds a shadow to this view.
@@ -1228,6 +1407,8 @@
   Prevents submission triggers originating from this view to invoke a submission action configured by a submission modifier higher up in the view hierarchy.
 - [func swipeActions<T>(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> T) -> some View](familyactivityiconview/swipeactions(edge:allowsfullswipe:content:).md)
   Adds custom swipe actions to a row in a list.
+- [func symbolColorRenderingMode(SymbolColorRenderingMode?) -> some View](familyactivityiconview/symbolcolorrenderingmode(_:).md)
+  Sets the color rendering mode for symbol images.
 - [func symbolEffect<T>(T, options: SymbolEffectOptions, isActive: Bool) -> some View](familyactivityiconview/symboleffect(_:options:isactive:).md)
   Returns a new view with a symbol effect added to it.
 - [func symbolEffect<T, U>(T, options: SymbolEffectOptions, value: U) -> some View](familyactivityiconview/symboleffect(_:options:value:).md)
@@ -1236,10 +1417,15 @@
   Returns a new view with its inherited symbol image effects either removed or left unchanged.
 - [func symbolRenderingMode(SymbolRenderingMode?) -> some View](familyactivityiconview/symbolrenderingmode(_:).md)
   Sets the rendering mode for symbol images within this view.
+- [func symbolVariableValueMode(SymbolVariableValueMode?) -> some View](familyactivityiconview/symbolvariablevaluemode(_:).md)
+  Sets the variable value mode mode for symbol images within this view.
 - [func symbolVariant(SymbolVariants) -> some View](familyactivityiconview/symbolvariant(_:).md)
   Makes symbols within the view show a particular variant.
+- [func tabBarMinimizeBehavior(TabBarMinimizeBehavior) -> some View](familyactivityiconview/tabbarminimizebehavior(_:).md)
+  Sets the behavior for tab bar minimization.
 - [func tabItem<V>(() -> V) -> some View](familyactivityiconview/tabitem(_:).md)
   Sets the tab bar item associated with this view.
+- [func tabViewBottomAccessory<Content>(content: () -> Content) -> some View](familyactivityiconview/tabviewbottomaccessory(content:).md)
 - [func tabViewCustomization(Binding<TabViewCustomization>?) -> some View](familyactivityiconview/tabviewcustomization(_:).md)
   Specifies the customizations to apply to the sidebar representation of the tab view.
 - [func tabViewSidebarBottomBar<Content>(content: () -> Content) -> some View](familyactivityiconview/tabviewsidebarbottombar(content:).md)
@@ -1270,6 +1456,8 @@
   Sets the style for text fields within this view.
 - [func textInputAutocapitalization(TextInputAutocapitalization?) -> some View](familyactivityiconview/textinputautocapitalization(_:).md)
   Sets how often the shift key in the keyboard is automatically enabled.
+- [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](familyactivityiconview/textinputformattingcontrolvisibility(_:for:).md)
+  Define which system text formatting controls are available.
 - [func textRenderer<T>(T) -> some View](familyactivityiconview/textrenderer(_:).md)
   Returns a new view such that any text views within it will use `renderer` to draw themselves.
 - [func textScale(Text.Scale, isEnabled: Bool) -> some View](familyactivityiconview/textscale(_:isenabled:).md)
@@ -1332,6 +1520,8 @@
   Associates a transition with the view.
 - [func truncationMode(Text.TruncationMode) -> some View](familyactivityiconview/truncationmode(_:).md)
   Sets the truncation mode for lines of text that are too long to fit in the available space.
+- [func typeSelectEquivalent(LocalizedStringResource) -> some View](familyactivityiconview/typeselectequivalent(_:)-1qklt.md)
+  Sets an explicit type select equivalent text in a collection, such as a list or table.
 - [func typeSelectEquivalent<S>(S) -> some View](familyactivityiconview/typeselectequivalent(_:)-6qtlj.md)
   Sets an explicit type select equivalent text in a collection, such as a list or table.
 - [func typeSelectEquivalent(LocalizedStringKey) -> some View](familyactivityiconview/typeselectequivalent(_:)-9stxl.md)
@@ -1354,6 +1544,8 @@
   Applies effects to this view, while providing access to layout information through a geometry proxy.
 - [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](familyactivityiconview/windowtoolbarfullscreenvisibility(_:).md)
   Configures the visibility of the window toolbar when the window enters full screen mode.
+- [func writingDirection(strategy: Text.WritingDirectionStrategy) -> some View](familyactivityiconview/writingdirection(strategy:).md)
+  A modifier for the default text writing direction strategy in the view hierarchy.
 - [func writingToolsAffordanceVisibility(Visibility) -> some View](familyactivityiconview/writingtoolsaffordancevisibility(_:).md)
   Specifies whether the system should show the Writing Tools affordance for text input views affected by the environment.
 - [func writingToolsBehavior(WritingToolsBehavior) -> some View](familyactivityiconview/writingtoolsbehavior(_:).md)

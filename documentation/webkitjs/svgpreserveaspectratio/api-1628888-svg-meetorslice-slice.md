@@ -1,6 +1,6 @@
 # SVG_MEETORSLICE_SLICE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

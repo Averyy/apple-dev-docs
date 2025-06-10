@@ -1,6 +1,6 @@
 # SVG_TRANSFORM_SCALE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

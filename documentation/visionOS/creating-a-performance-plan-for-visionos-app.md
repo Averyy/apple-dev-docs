@@ -1,6 +1,6 @@
 # Creating a performance plan for your visionOS app
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Identify your app’s performance and power goals and create a plan to measure and assess them.
 
@@ -76,4 +76,4 @@ For information about how to write test cases for your app, see [`Testing`](http
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/creating-a-performance-plan-for-visionos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/creating-a-performance-plan-for-visionos-app)*

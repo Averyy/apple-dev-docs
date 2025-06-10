@@ -21,8 +21,6 @@ The system presents the overlay view when the user swipes up on the Siri Remote 
 
 > ❗ **Important**:  Set a custom overlay view controller instead of installing a custom swipe gesture recognizer.
 
- Set a custom overlay view controller instead of installing a custom swipe gesture recognizer.
-
 ## See Also
 
 - [var playbackControlsIncludeTransportBar: Bool](avplayerviewcontroller/playbackcontrolsincludetransportbar.md)

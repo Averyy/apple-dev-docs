@@ -13,6 +13,7 @@ Pushes a template onto the navigation stack and updates the CarPlay display.
 ## Declaration
 
 ```swift
+@MainActor
 func pushTemplate(_ templateToPush: CPTemplate, animated: Bool)
 ```
 

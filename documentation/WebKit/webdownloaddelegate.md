@@ -1,6 +1,6 @@
 # WebDownloadDelegate
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 The `WebDownloadDelegate` protocol declares one additional method for delegates of [`WebDownload`](webdownload.md).

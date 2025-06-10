@@ -16,7 +16,7 @@ Returns the annotation, if there is one, at the specified point.
 ## Declaration
 
 ```swift
-func annotation(at point: CGPoint) -> PDFAnnotation?
+func annotation(at point: NSPoint) -> PDFAnnotation?
 ```
 
 #### Discussion

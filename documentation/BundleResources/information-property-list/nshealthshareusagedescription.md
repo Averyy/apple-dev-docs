@@ -14,8 +14,6 @@ A message to the user that explains why the app requested permission to read sam
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the user’s heath data.
 
- This key is required if your app uses APIs that access the user’s heath data.
-
 ## See Also
 
 - [Setting up HealthKit](../HealthKit/setting-up-healthkit.md)

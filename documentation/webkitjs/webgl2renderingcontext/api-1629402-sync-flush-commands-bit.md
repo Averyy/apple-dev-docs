@@ -1,6 +1,6 @@
 # SYNC_FLUSH_COMMANDS_BIT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

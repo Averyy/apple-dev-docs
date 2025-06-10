@@ -10,10 +10,10 @@ An activation function that returns its input multiplied by a specified value.
 - iPadOS 11.0+
 - Mac Catalyst ?+
 - macOS 10.13+
+- tvOS 11.0+
 - visionOS ?+
 - watchOS 4.0+
 - Unknown ?+ - Deprecated
-- tvOS 11.0+
 
 ## Declaration
 

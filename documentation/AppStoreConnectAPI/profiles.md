@@ -25,10 +25,13 @@ Provisioning profiles include signing certificates, device identifiers, and a bu
 ### Getting Related Data
 - [Read the Bundle ID in a Profile](get-v1-profiles-_id_-bundleid.md)
   Get the bundle ID information for a specific provisioning profile.
+- [GET /v1/profiles/{id}/relationships/bundleId](get-v1-profiles-_id_-relationships-bundleid.md)
 - [List All Certificates in a Profile](get-v1-profiles-_id_-certificates.md)
   Get a list of all certificates and their data for a specific provisioning profile.
+- [GET /v1/profiles/{id}/relationships/certificates](get-v1-profiles-_id_-relationships-certificates.md)
 - [List All Devices in a Profile](get-v1-profiles-_id_-devices.md)
   Get a list of all devices for a specific provisioning profile.
+- [GET /v1/profiles/{id}/relationships/devices](get-v1-profiles-_id_-relationships-devices.md)
 ### Objects
 - [object Profile](profile.md)
   The data structure that represents a Profiles  resource.
@@ -39,6 +42,9 @@ Provisioning profiles include signing certificates, device identifiers, and a bu
 - [object ProfilesResponse](profilesresponse.md)
   A response that contains a list of Profiles resources.
 - [object ProfilesWithoutIncludesResponse](profileswithoutincludesresponse.md)
+- [object ProfileBundleIdLinkageResponse](profilebundleidlinkageresponse.md)
+- [object ProfileCertificatesLinkagesResponse](profilecertificateslinkagesresponse.md)
+- [object ProfileDevicesLinkagesResponse](profiledeviceslinkagesresponse.md)
 
 ## See Also
 
@@ -52,6 +58,8 @@ Provisioning profiles include signing certificates, device identifiers, and a bu
   Register devices for development and testing.
 - [Merchant ID](merchantids.md)
   Manage your merchant ID for Apple Pay.
+- [Pass type Ids](pass-type-id.md)
+  Create, download, and revoke pass type ids for app development and distribution.
 
 
 ---

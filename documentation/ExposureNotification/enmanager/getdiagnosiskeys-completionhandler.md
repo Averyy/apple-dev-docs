@@ -22,17 +22,7 @@ func diagnosisKeys() async throws -> [ENTemporaryExposureKey]
 func diagnosisKeys() async throws -> [ENTemporaryExposureKey]
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func diagnosisKeys() async throws -> [ENTemporaryExposureKey]
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 > ❗ **Important**:  This method is available in iOS 12.5, and in iOS 13.5 and later.
-
- This method is available in iOS 12.5, and in iOS 13.5 and later.
 
 The app must be in the foreground when it calls this method. Each time the app calls this method, the system presents an interface that requests authorization.
 
@@ -52,7 +42,7 @@ When [`ENAPIVersion`](https://developer.apple.com/documentation/BundleResources/
 
 ## See Also
 
-- [func getTestDiagnosisKeys(completionHandler: ENGetDiagnosisKeysHandler)](enmanager/gettestdiagnosiskeys(completionhandler:).md)
+- [func getTestDiagnosisKeys(completionHandler: ([ENTemporaryExposureKey]?, (any Error)?) -> Void)](enmanager/gettestdiagnosiskeys(completionhandler:).md)
   Requests the temporary exposure keys, including the current key, used by this device for testing.
 - [class ENTemporaryExposureKey](entemporaryexposurekey.md)
   The key used to generate rolling proximity identifiers.

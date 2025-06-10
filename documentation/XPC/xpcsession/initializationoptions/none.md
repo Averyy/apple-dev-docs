@@ -1,6 +1,6 @@
 # none
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: property
 
 Indicates that the listener uses a default configuration during creation.
@@ -16,14 +16,14 @@ Indicates that the listener uses a default configuration during creation.
 ## Declaration
 
 ```swift
-static var none: XPCSession.InitializationOptions
+static let none: XPCSession.InitializationOptions
 ```
 
 ## See Also
 
-- [static var inactive: XPCSession.InitializationOptions](xpcsession/initializationoptions/inactive.md)
+- [static let inactive: XPCSession.InitializationOptions](xpcsession/initializationoptions/inactive.md)
   Indicates that the session isn’t activated during its creation.
-- [static var privileged: XPCSession.InitializationOptions](xpcsession/initializationoptions/privileged.md)
+- [static let privileged: XPCSession.InitializationOptions](xpcsession/initializationoptions/privileged.md)
   Indicates that the Mach service is in the priviledged Mach bootstrap.
 
 

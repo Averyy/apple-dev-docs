@@ -22,7 +22,7 @@ class let assetListResponseStatusDidChangeNotification: NSNotification.Name
 
 #### Discussion
 
-Notifications of this type provide a [`userInfo`](https://developer.apple.com/documentation/foundation/notification/1779652-userinfo) dictionary that can contain values for the keys listed below.
+Notifications of this type provide a [`userInfo`](https://developer.apple.com/documentation/Foundation/Notification/userInfo) dictionary that can contain values for the keys listed below.
 
 ## Topics
 

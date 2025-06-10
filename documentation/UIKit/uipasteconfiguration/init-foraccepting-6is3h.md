@@ -24,7 +24,7 @@ A paste configuration initialized with acceptable uniform type identifiers (UTIs
 
 #### Discussion
 
-When you use this initializer, the property [`readableTypeIdentifiersForItemProvider`](https://developer.apple.com/documentation/foundation/nsitemproviderreading/2888305-readabletypeidentifiersforitempr), implemented on `aClass`, is used to determine the acceptable UTIs.
+When you use this initializer, the property [`readableTypeIdentifiersForItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading/readableTypeIdentifiersForItemProvider), implemented on `aClass`, is used to determine the acceptable UTIs.
 
 ## Parameters
 

@@ -62,6 +62,8 @@ For example, the Universal Electronic remote that works with Apple TV is a direc
 
 - [Supporting Game Controllers](supporting-game-controllers.md)
   Support a physical controller or add a virtual controller to enhance how people interact with your game through haptics, lighting, and motion sensing.
+- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
+  Receive controller and stylus input to interact with content in your augmented reality app.
 - [protocol GCDevice](gcdevice.md)
   A protocol that defines a common interface for game input devices.
 - [class GCController](gccontroller.md)
@@ -72,6 +74,8 @@ For example, the Universal Electronic remote that works with Apple TV is a direc
   An object that represents a physical keyboard connected to a device.
 - [class GCMouse](gcmouse.md)
   An object that represents a physical mouse connected to a device.
+- [class GCStylus](gcstylus.md)
+  An object that represents a physical stylus connected to the device.
 
 
 ---

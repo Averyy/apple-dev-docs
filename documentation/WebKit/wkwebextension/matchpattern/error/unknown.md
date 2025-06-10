@@ -1,6 +1,6 @@
 # unknown
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that an unknown error occurred.

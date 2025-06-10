@@ -54,8 +54,6 @@ If you follow this pattern, then in the table view data source and delegate meth
 
 > ❗ **Important**:  A view controller or search bar can be associated with only a single search display controller at a time. If a search display controller is destroyed (for example, in response to a memory warning), then you can create a new one and associate it with the original view controller or search bar.
 
- A view controller or search bar can be associated with only a single search display controller at a time. If a search display controller is destroyed (for example, in response to a memory warning), then you can create a new one and associate it with the original view controller or search bar.
-
 Starting in iOS 7.0, you can use a search display controller with a navigation bar (an instance of the [`UINavigationBar`](uinavigationbar.md) class) by configuring the search display controller’s [`displaysSearchBarInNavigationBar`](uisearchdisplaycontroller/displayssearchbarinnavigationbar.md) and [`navigationItem`](uisearchdisplaycontroller/navigationitem.md) properties.
 
 ## Topics

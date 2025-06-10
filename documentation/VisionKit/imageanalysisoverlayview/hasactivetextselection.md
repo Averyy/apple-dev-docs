@@ -1,6 +1,6 @@
 # hasActiveTextSelection
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A Boolean value that indicates whether a person or the app has text selected within the image.

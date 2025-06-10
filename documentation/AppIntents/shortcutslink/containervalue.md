@@ -8,7 +8,7 @@ Sets a particular container value of a view.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -71,6 +71,41 @@ However in the next example, the wrapping `VStack` means the `Text` view is not 
 
 ForEach(subviews: containedContent) { subviews in
     Text("value = \(subview.containerValues.myCustomValue)") // shows the default value
+}
+```
+
+The container values modifier can also be used to modify mutable subfields of container values.
+
+```swift
+struct PinPosition {
+    var rotation: Double = 0
+    var xOffset: Int = 0
+}
+
+extension ContainerValues {
+    @Entry var pinPosition: PinPosition = .init()
+}
+
+// pinPosition.rotation = 0, pinPosition.xOffset = 3
+Text("A").containerValue(\.pinPosition.xOffset, 3)
+
+// pinPosition.rotation = 10, pinPosition.xOffset = 5
+Text("B")
+    .containerValue(\.pinPosition.rotation, 10)
+    .containerValue(\.pinPosition.xOffset, 5)
+```
+
+This allows you to group multiple related container values into structs while maintaining separate modifiers to write each value.
+
+```swift
+extension View {
+    func pinRotation(_ rotation: Double) -> some View {
+        containerValue(\.pinPosition.rotation, rotation)
+    }
+
+    func pinXOffset(_ xOffset: Int) -> some View {
+        containerValue(\.pinPosition.xOffset, xOffset)
+    }
 }
 ```
 

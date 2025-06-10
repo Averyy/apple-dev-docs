@@ -29,8 +29,6 @@ let inLastWeek = HKQuery.predicateForSamples(withStart: oneWeekAgo,
 
 > ❗ **Important**:  People may have a large quantity of data saved to the HealthKit store. Querying for all samples of a given data type can become very expensive, both in terms of memory usage and processing time. To avoid performance issues, limit the number of results your queries may return. For example, explicitly set a limit for the query, or specify a restricted date range for matching samples. If you need to read all samples for a data type, use [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md) queries to read the data in batches.
 
- People may have a large quantity of data saved to the HealthKit store. Querying for all samples of a given data type can become very expensive, both in terms of memory usage and processing time. To avoid performance issues, limit the number of results your queries may return. For example, explicitly set a limit for the query, or specify a restricted date range for matching samples. If you need to read all samples for a data type, use [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md) queries to read the data in batches.
-
 Next, create a descriptor that represents the query itself. The following descriptor uses the previous type and predicate to search for all workouts added to the HealthKit store after the provided anchor that are less than one week old.
 
 ```swift
@@ -102,8 +100,6 @@ func stopUpdates() {
 To see the list of descriptors for one-shot queries, see the Conforming Types section of the [`HKAsyncQuery`](hkasyncquery.md) protocol. For the list of long-running descriptors, see [`HKAsyncSequenceQuery`](hkasyncsequencequery.md).
 
 > 💡 **Tip**:  Most descriptors only adopt one of the two protocols; however, [`HKActivitySummaryQueryDescriptor`](hkactivitysummaryquerydescriptor.md), [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md), and [`HKStatisticsCollectionQueryDescriptor`](hkstatisticscollectionquerydescriptor.md) adopt both. Be sure to select [`result(for:)`](hkasyncquery/result(for:).md) or [`results(for:)`](hkasyncsequencequery/results(for:).md) based on your app’s needs.
-
- Most descriptors only adopt one of the two protocols; however, [`HKActivitySummaryQueryDescriptor`](hkactivitysummaryquerydescriptor.md), [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md), and [`HKStatisticsCollectionQueryDescriptor`](hkstatisticscollectionquerydescriptor.md) adopt both. Be sure to select [`result(for:)`](hkasyncquery/result(for:).md) or [`results(for:)`](hkasyncsequencequery/results(for:).md) based on your app’s needs.
 
 ```swift
 // Returns all matching samples currently in the HealthKit Store.

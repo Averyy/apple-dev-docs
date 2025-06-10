@@ -24,8 +24,6 @@ Setting this property resets the maximum track images back to the slider’s def
 
 > ❗ **Important**:  This property isn’t available when the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) and [`behavioralStyle`](uislider/behavioralstyle.md) is [`UIBehavioralStyle.mac`](uibehavioralstyle/mac.md) — setting it while in this state throws an exception.
 
- This property isn’t available when the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) and [`behavioralStyle`](uislider/behavioralstyle.md) is [`UIBehavioralStyle.mac`](uibehavioralstyle/mac.md) — setting it while in this state throws an exception.
-
 ## See Also
 
 - [var minimumValueImage: UIImage?](uislider/minimumvalueimage.md)

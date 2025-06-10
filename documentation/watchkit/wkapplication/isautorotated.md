@@ -1,6 +1,6 @@
 # isAutorotated
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A Boolean value that indicates whether the system has automatically rotated the user interface, orienting it properly for another viewer.

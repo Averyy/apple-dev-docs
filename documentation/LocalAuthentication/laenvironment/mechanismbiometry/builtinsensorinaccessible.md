@@ -19,10 +19,7 @@ var builtInSensorInaccessible: Bool { get }
 
 #### Discussion
 
-```None
-        if the MacBook lid is closed while connected to external monitor and keyboard, unless the external keyboard
-        has Touch ID.
-```
+Currently, the only example of this is a Clamshell Mode on macOS. The user will be not able to use Touch ID if the MacBook lid is closed while connected to external monitor and keyboard, unless the external keyboard has Touch ID.
 
 
 ---

@@ -1,6 +1,6 @@
 # init(xpcService:targetQueue:options:incomingMessageHandler:cancellationHandler:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: init
 
 Establishes a connection to an XPC service with the name and decodable message handler you specify.
@@ -14,6 +14,7 @@ Establishes a connection to an XPC service with the name and decodable message h
 ## Declaration
 
 ```swift
+@preconcurrency
 convenience init<Message>(xpcService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, incomingMessageHandler: ((Message) -> (any Encodable)?)? = nil, cancellationHandler: ((XPCRichError) -> Void)? = nil) throws where Message : Decodable
 ```
 

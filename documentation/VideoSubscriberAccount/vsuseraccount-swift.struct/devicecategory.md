@@ -1,6 +1,6 @@
 # deviceCategory
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A constant that indicates whether the device from which the user registered is mobile.

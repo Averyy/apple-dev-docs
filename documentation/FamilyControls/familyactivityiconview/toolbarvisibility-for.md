@@ -1,6 +1,6 @@
 # toolbarVisibility(_:for:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Specifies the visibility of a bar managed by SwiftUI.

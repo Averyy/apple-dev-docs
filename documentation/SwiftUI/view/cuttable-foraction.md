@@ -1,6 +1,6 @@
 # cuttable(for:action:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Specifies an action that moves items to the Clipboard in response to the system’s Cut command.

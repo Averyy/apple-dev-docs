@@ -1,6 +1,6 @@
 # WKWebpagePreferences.ContentMode.desktop
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 The content mode that represents a desktop experience.

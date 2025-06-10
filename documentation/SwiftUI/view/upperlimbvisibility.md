@@ -21,6 +21,10 @@ The system can show the user’s upper limbs during fully immersive experiences,
 
 Note that this modifier only sets a preference and ultimately the system will decide if it will honor it or not. The system may by unable to honor the preference if the immersive space is currently not visible.
 
+## Parameters
+
+- `preferredVisibility`: A value indicating if the upper limbs should be   visible. Use   for a system-defined standard behavior,    to keep the upper limbs visible, and   to hide   the upper limbs.
+
 ## See Also
 
 - [func upperLimbVisibility(Visibility) -> some Scene](scene/upperlimbvisibility(_:).md)

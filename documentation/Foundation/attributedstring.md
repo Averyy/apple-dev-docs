@@ -229,11 +229,16 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
 ### Structures
 - [AttributedString.AdaptiveImageGlyph](attributedstring/adaptiveimageglyph.md)
 - [AttributedString.AttributeInvalidationCondition](attributedstring/attributeinvalidationcondition.md)
+- [AttributedString.LineHeight](attributedstring/lineheight.md)
+  The line height definition of a paragraph.
 - [AttributedString.LocalizationOptions](attributedstring/localizationoptions.md)
   Configuration options for the localization of text.
 - [AttributedString.MarkdownSourcePosition](attributedstring/markdownsourceposition.md)
   The position of attributed string text in its original Markdown source string.
+- [AttributedString.UTF16View](attributedstring/utf16view.md)
+- [AttributedString.UTF8View](attributedstring/utf8view.md)
 ### Initializers
+- [init(DiscontiguousAttributedSubstring)](attributedstring/init(_:)-83wi.md)
 - [init(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](attributedstring/init(localized:defaultvalue:options:table:bundle:locale:comment:)-2nmk8.md)
 - [init<S>(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](attributedstring/init(localized:defaultvalue:options:table:bundle:locale:comment:including:)-6qaoe.md)
 - [init<S>(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:defaultvalue:options:table:bundle:locale:comment:including:)-iisj.md)
@@ -243,8 +248,33 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
 - [init(localized: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](attributedstring/init(localized:options:table:bundle:locale:comment:)-1w4s.md)
 - [init<S>(localized: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:options:table:bundle:locale:comment:including:)-3zy6h.md)
 - [init<S>(localized: String.LocalizationValue, options: AttributedString.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](attributedstring/init(localized:options:table:bundle:locale:comment:including:)-8ao6x.md)
+- [init(transferable: AttributedTextFormatting.Transferable, in: EnvironmentValues) throws](attributedstring/init(transferable:in:).md)
+  Extract an attributed string from SwiftUI’s transferable representation in a certain environment.
 ### Instance Methods
 - [func inflected(locale: Locale, userTermOfAddress: TermOfAddress?, inflectionConcepts: [InflectionConcept]) -> AttributedString](attributedstring/inflected(locale:usertermofaddress:inflectionconcepts:).md)
+- [func rangeOfAudioTimeRangeAttributes(intersecting: CMTimeRange) -> Range<AttributedString.Index>?](attributedstring/rangeofaudiotimerangeattributes(intersecting:).md)
+  Returns the range of indices of the receiver that are part of given time range.
+- [func removeSubranges(RangeSet<AttributedString.Index>)](attributedstring/removesubranges(_:).md)
+- [func replaceSelection(inout AttributedTextSelection, with: some AttributedStringProtocol)](attributedstring/replaceselection(_:with:).md)
+  Replace the selection with new attributed content.
+- [func replaceSelection(inout AttributedTextSelection, withCharacters: some Collection<Character>)](attributedstring/replaceselection(_:withcharacters:).md)
+  Replace the selection with new content, attributed with the typing attributes.
+- [func transform<E>(updating: inout Range<AttributedString.Index>, body: (inout AttributedString) throws(E) -> Void) throws(E)](attributedstring/transform(updating:body:)-1b6eb.md)
+  Tracks the location of the provided range throughout the mutation closure, updating the provided range to one that represents the same effective locations after the mutation. If updating the provided range is not possible (tracking failed) then this function will fatal error. Use the Optional-returning variants to provide custom fallback behavior.
+- [func transform<E>(updating: inout [Range<AttributedString.Index>], body: (inout AttributedString) throws(E) -> Void) throws(E)](attributedstring/transform(updating:body:)-3j625.md)
+  Tracks the location of the provided ranges throughout the mutation closure, updating them to new ranges that represent the same effective locations after the mutation. If updating the provided ranges is not possible (tracking failed) then this function will fatal error. Use the Optional-returning variants to provide custom fallback behavior.
+- [func transform<E>(updating: Range<AttributedString.Index>, body: (inout AttributedString) throws(E) -> Void) throws(E) -> Range<AttributedString.Index>?](attributedstring/transform(updating:body:)-79te9.md)
+  Tracks the location of the provided range throughout the mutation closure, returning a new, updated range that represents the same effective locations after the mutation
+- [func transform<E>(updating: [Range<AttributedString.Index>], body: (inout AttributedString) throws(E) -> Void) throws(E) -> [Range<AttributedString.Index>]?](attributedstring/transform(updating:body:)-89r96.md)
+  Tracks the location of the provided ranges throughout the mutation closure, returning a new, updated range that represents the same effective locations after the mutation
+- [func transform<E>(updating: inout AttributedTextSelection, body: (inout AttributedString) throws(E) -> Void) throws(E)](attributedstring/transform(updating:body:)-9wpg2.md)
+  Tracks the location of the selection throughout the mutation closure, updating the selection so it represents the same effective locations after the mutation.
+- [func transformAttributes<E>(in: inout AttributedTextSelection, body: (inout AttributeContainer) throws(E) -> Void) throws(E)](attributedstring/transformattributes(in:body:).md)
+  Apply a change to the attributes in the entire selection.
+### Subscripts
+- [subscript(AttributedTextSelection) -> DiscontiguousAttributedSubstring](attributedstring/subscript(_:)-2yypq.md)
+  Obtain the discontiguous substring of a selection.
+- [subscript(RangeSet<AttributedString.Index>) -> DiscontiguousAttributedSubstring](attributedstring/subscript(_:)-ftoi.md)
 ### Type Aliases
 - [AttributedString.Specification](attributedstring/specification.md)
 - [AttributedString.UnwrappedType](attributedstring/unwrappedtype.md)
@@ -253,6 +283,10 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
 - [static var defaultResolverSpecification: some ResolverSpecification](attributedstring/defaultresolverspecification.md)
 ### Enumerations
 - [AttributedString.AttributeRunBoundaries](attributedstring/attributerunboundaries.md)
+- [AttributedString.TextAlignment](attributedstring/textalignment.md)
+  The explicit alignment of text within its container.
+- [AttributedString.WritingDirection](attributedstring/writingdirection.md)
+  The writing direction of a piece of text.
 ### Default Implementations
 - [Transferable Implementations](attributedstring/transferable-implementations.md)
 
@@ -273,6 +307,7 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
 - [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transferable](../CoreTransferable/Transferable.md)
 
 ## See Also

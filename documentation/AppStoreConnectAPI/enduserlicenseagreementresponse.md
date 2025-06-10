@@ -23,6 +23,8 @@ object EndUserLicenseAgreementResponse
 - [object EndUserLicenseAgreementUpdateRequest](enduserlicenseagreementupdaterequest.md)
   The request body you use to update an End User License Agreement.
 - [object EndUserLicenseAgreementWithoutIncludesResponse](enduserlicenseagreementwithoutincludesresponse.md)
+- [object AppEndUserLicenseAgreementLinkageResponse](appenduserlicenseagreementlinkageresponse.md)
+- [object EndUserLicenseAgreementTerritoriesLinkagesResponse](enduserlicenseagreementterritorieslinkagesresponse.md)
 
 
 ---

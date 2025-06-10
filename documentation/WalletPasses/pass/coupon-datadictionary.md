@@ -1,6 +1,6 @@
 # Pass.Coupon
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that represents the groups of fields that display the information for a coupon.

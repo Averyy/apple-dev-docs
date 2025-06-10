@@ -1,6 +1,6 @@
 # WKWebsiteDataTypeSessionStorage
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 HTML session storage.

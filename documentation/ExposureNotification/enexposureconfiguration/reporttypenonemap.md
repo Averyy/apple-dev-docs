@@ -20,8 +20,6 @@ var reportTypeNoneMap: ENDiagnosisReportType { get set }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.7 and later.
 
- This property is available in iOS 12.5, and in iOS 13.7 and later.
-
 ## See Also
 
 - [var reportTypeConfirmedClinicalDiagnosisWeight: Double](enexposureconfiguration/reporttypeconfirmedclinicaldiagnosisweight.md)

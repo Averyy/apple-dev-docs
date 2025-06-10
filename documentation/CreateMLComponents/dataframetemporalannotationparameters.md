@@ -44,6 +44,7 @@ struct DataFrameTemporalAnnotationParameters<Annotation> where Annotation : Equa
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

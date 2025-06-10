@@ -3,7 +3,7 @@
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: class
 
-A set of configured metadata defining the required information to add the corresponding pass to Wallet.
+A set of configured metadata that defines the required information to add the corresponding pass to Wallet.
 
 **Availability**:
 - iOS 18.0+
@@ -20,22 +20,40 @@ class PKIdentityDocumentMetadata
 
 #### Overview
 
-Contains the required and optional metadata you need to configure a pass. Similar to [`PKShareablePassMetadata`](pkshareablepassmetadata.md).
+This class contains the required and optional metadata you need to configure a pass. It’s similar to [`PKShareablePassMetadata`](PKShareablePassMetadata.md).
 
 ## Topics
 
 ### Instance Properties
+- [var cardConfigurationIdentifier: String { get }](PKIdentityDocumentMetadata/cardConfigurationIdentifier.md)
+- [var cardTemplateIdentifier: String { get }](PKIdentityDocumentMetadata/cardTemplateIdentifier.md)
+- [var credentialIdentifier: String { get }](PKIdentityDocumentMetadata/credentialIdentifier.md)
+- [var serverEnvironmentIdentifier: String { get set }](PKIdentityDocumentMetadata/serverEnvironmentIdentifier.md)
+  An identifier that references the target server environment Apple Pay servers need to connect with to provision the pass.
+- [var sharingInstanceIdentifier: String { get }](PKIdentityDocumentMetadata/sharingInstanceIdentifier.md)
+  A unique identifier that refers to an instance of sharing credentials to a person’s device that another user, device, or the web initiates.
+- [var documentType: PKAddIdentityDocumentType { get }](PKIdentityDocumentMetadata/documentType.md)
+  Identifies the type of the identity document.
+- [var issuingCountryCode: String { get }](PKIdentityDocumentMetadata/issuingCountryCode.md)
+  Identifies the issuing country of the identity document.
 - [var cardConfigurationIdentifier: String](pkidentitydocumentmetadata/cardconfigurationidentifier.md)
 - [var cardTemplateIdentifier: String](pkidentitydocumentmetadata/cardtemplateidentifier.md)
 - [var credentialIdentifier: String](pkidentitydocumentmetadata/credentialidentifier.md)
+- [var documentType: PKAddIdentityDocumentType](pkidentitydocumentmetadata/documenttype.md)
+  Identifies the type of the identity document.
+- [var issuingCountryCode: String](pkidentitydocumentmetadata/issuingcountrycode.md)
+  Identifies the issuing country of the identity document.
 - [var serverEnvironmentIdentifier: String](pkidentitydocumentmetadata/serverenvironmentidentifier.md)
+  An identifier that references the target server environment Apple Pay servers need to connect with to provision the pass.
 - [var sharingInstanceIdentifier: String](pkidentitydocumentmetadata/sharinginstanceidentifier.md)
+  A unique identifier that refers to an instance of sharing credentials to a person’s device that another user, device, or the web initiates.
 
 ## Relationships
 
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
+- [PKAddIdentityDocumentMetadata](pkaddidentitydocumentmetadata.md)
 - [PKJapanIndividualNumberCardMetadata](pkjapanindividualnumbercardmetadata.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
@@ -47,6 +65,18 @@ Contains the required and optional metadata you need to configure a pass. Simila
 
 ## See Also
 
+- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
+  Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
+- [class PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
+  An object you use to request information from a user’s photo ID or equivalent document.
+- [class PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)
+  An object you use to request information from multiple identity documents.
+- [class PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)
+  An object for requesting information from a user’s driver’s license or equivalent document.
+- [class PKAddIdentityDocumentMetadata](pkaddidentitydocumentmetadata.md)
+  The object for specifying the metadata necessary to provision identity documents.
+- [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
+  Configuration to define the identity document.
 - [struct JPKIPassContents](jpkipasscontents.md)
   A set of actions for viewing and updating PINs, passwords, and signing abilities associated with digital identities on the JPKI applet.
 - [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)

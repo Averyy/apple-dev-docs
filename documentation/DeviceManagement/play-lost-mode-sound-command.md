@@ -1,4 +1,4 @@
-# Play the Lost Mode Sound
+# Play Lost Mode Sound
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -8,8 +8,6 @@ Play the Lost Mode sound on a device that’s in Lost Mode.
 **Availability**:
 - iOS 10.3+
 - iPadOS 10.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -23,31 +21,31 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, Shared iPad |
-| User Channel | - |
-| Requires Supervision | iOS |
-| Allowed in User Enrollment | - |
-| Required Access Right | - |
+| Device channel | iOS, Shared iPad |
+| User channel | NA |
+| Requires supervision | iOS |
+| Allowed in user enrollment | NA |
+| Required access right | NA |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object PlayLostModeSoundCommand](playlostmodesoundcommand.md)
-  The command to play the Lost Mode sound.
+  The command to play the Lost Mode sound on a device that’s in Lost Mode.
 - [object PlayLostModeSoundResponse](playlostmodesoundresponse.md)
-  A response from the device in Lost Mode after it processes the command to play the Lost Mode sound.
+  A response from the device after it processes the command to play the Lost Mode sound on a device that’s in Lost Mode.
 
 ## Request Body
 
-The command to play the Lost Mode sound.
+The request object the server returns for the Play Lost Mode Sound Command.
 
 ## See Also
 
 - [Enable Lost Mode](enable-lost-mode-command.md)
-  Enable Lost Mode on a device, which provides a message and phone number on the Lock screen.
-- [Get the Location of a Device](device-location-command.md)
+  Enable Lost Mode on a device, which provides a message and phone number on the Lock Screen.
+- [Device Location](device-location-command.md)
   Request the location of a device when in Lost Mode.
 - [Disable Lost Mode](disable-lost-mode-command.md)
   Take the device out of Lost Mode.

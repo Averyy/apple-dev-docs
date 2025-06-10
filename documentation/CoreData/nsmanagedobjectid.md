@@ -57,6 +57,7 @@ Object IDs can be transformed into a URI representation which can be archived an
 - [NSFetchRequestResult](nsfetchrequestresult.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

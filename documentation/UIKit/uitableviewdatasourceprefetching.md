@@ -1,6 +1,6 @@
 # UITableViewDataSourcePrefetching
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: protocol
 
 A protocol that provides advance warning of the data requirements for a table view, allowing you to start potentially long-running data operations early.
@@ -82,4 +82,4 @@ One approach that handles all of these situations is to use [`Operation`](https:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uitableviewdatasourceprefetching)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uitableviewdatasourceprefetching)*

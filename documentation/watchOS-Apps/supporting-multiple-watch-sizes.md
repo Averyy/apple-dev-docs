@@ -1,6 +1,6 @@
 # Supporting multiple watch sizes
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Customize the layout of your user interface to support all Apple Watch sizes.
 
@@ -137,4 +137,4 @@ For more information, see [`Previewing your app’s interface in Xcode`](https:/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/supporting-multiple-watch-sizes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/supporting-multiple-watch-sizes)*

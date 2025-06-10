@@ -1,6 +1,6 @@
 # TouchEvent
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 The `TouchEvent` class encapsulates information about a touch event.

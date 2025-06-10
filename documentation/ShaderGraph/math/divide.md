@@ -5,6 +5,18 @@
 
 Divides two values.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
+#### Overview
+
+Division of two matrices is the product of  and the inverse of 
+
 #### Parameter Types
 
 ## See Also

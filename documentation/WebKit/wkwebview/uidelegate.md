@@ -1,6 +1,6 @@
 # uiDelegate
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The object you use to integrate custom user interface elements, such as contextual menus or panels, into web view interactions.

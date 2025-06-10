@@ -1,6 +1,6 @@
 # toggleStyle(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Sets the style for toggles in a view hierarchy.

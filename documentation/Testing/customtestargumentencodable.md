@@ -42,6 +42,7 @@ See [`Implementing parameterized tests`](parameterizedtesting.md) for a list of 
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # generateSphere(radius:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: method
 
 Creates a sphere shape with the specified radius.
@@ -10,6 +10,7 @@ Creates a sphere shape with the specified radius.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # instantiate(with:options:completionHandler:)
 
-**Framework**: Audiotoolbox  
+**Framework**: Audio Toolbox  
 **Kind**: method
 
 Asynchronously creates an audio unit instance.

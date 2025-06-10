@@ -25,8 +25,6 @@ While categories set the base behaviors for your app, you use modes to assign sp
 
 > ❗ **Important**:  Specifying a mode that the audio session category doesn’t support, such as setting the [`gameChat`](avaudiosession/mode-swift.struct/gamechat.md) mode for the [`multiRoute`](avaudiosession/category-swift.struct/multiroute.md) category, results in the audio session using the [`default`](avaudiosession/mode-swift.struct/default.md) mode behavior.
 
- Specifying a mode that the audio session category doesn’t support, such as setting the [`gameChat`](avaudiosession/mode-swift.struct/gamechat.md) mode for the [`multiRoute`](avaudiosession/category-swift.struct/multiroute.md) category, results in the audio session using the [`default`](avaudiosession/mode-swift.struct/default.md) mode behavior.
-
 ## Topics
 
 ### Creating a Mode
@@ -51,6 +49,9 @@ While categories set the base behaviors for your app, you use modes to assign sp
   A mode that indicates that your app is performing two-way voice communication, such as using Voice over Internet Protocol (VoIP).
 - [static let voicePrompt: AVAudioSession.Mode](avaudiosession/mode-swift.struct/voiceprompt.md)
   A mode that indicates that your app plays audio using text-to-speech.
+### Type Properties
+- [static let shortFormVideo: AVAudioSession.Mode](avaudiosession/mode-swift.struct/shortformvideo.md)
+  Appropriate for applications playing short-form video content.
 
 ## Relationships
 
@@ -59,6 +60,7 @@ While categories set the base behaviors for your app, you use modes to assign sp
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # highlightedSubjects
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 All highlighted subjects in the interaction image.

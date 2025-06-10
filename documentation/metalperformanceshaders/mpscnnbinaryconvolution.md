@@ -1,6 +1,6 @@
 # MPSCNNBinaryConvolution
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: cl
 
 A convolution kernel with binary weights and an input image using binary approximations.

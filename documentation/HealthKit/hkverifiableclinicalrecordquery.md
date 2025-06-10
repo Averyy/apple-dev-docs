@@ -1,6 +1,6 @@
 # HKVerifiableClinicalRecordQuery
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: class
 
 A query for one-time access to a SMART Health Card or EU Digital COVID Certificate.
@@ -95,6 +95,7 @@ Unlike other HealthKit queries, you don’t need to request permission to read v
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -110,4 +111,4 @@ Unlike other HealthKit queries, you don’t need to request permission to read v
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkverifiableclinicalrecordquery)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkverifiableclinicalrecordquery)*

@@ -1,6 +1,6 @@
 # startHardware()
 
-**Framework**: Audiotoolbox  
+**Framework**: Audio Toolbox  
 **Kind**: method
 
 Starts the audio hardware.

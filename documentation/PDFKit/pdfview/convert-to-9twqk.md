@@ -17,7 +17,7 @@ Converts a point from view space to page space.
 
 ```swift
 @MainActor
-func convert(_ point: NSPoint, to page: PDFPage) -> NSPoint
+func convert(_ point: CGPoint, to page: PDFPage) -> CGPoint
 ```
 
 #### Discussion

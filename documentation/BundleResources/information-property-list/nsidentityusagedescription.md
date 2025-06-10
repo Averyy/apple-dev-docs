@@ -14,8 +14,6 @@ A message that tells the user why the app is requesting identity information.
 
 > ❗ **Important**:  This key is required if your app uses APIs that access identity information from Wallet.
 
- This key is required if your app uses APIs that access identity information from Wallet.
-
 For more information about requesting identity information, see [`Requesting identity data from a Wallet pass`](https://developer.apple.com/documentation/PassKit/requesting-identity-data-from-a-wallet-pass). For design guidance, see [`Human Interface Guidelines > Technologies > Wallet`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/technologies/wallet#identity-verification).
 
 ## See Also

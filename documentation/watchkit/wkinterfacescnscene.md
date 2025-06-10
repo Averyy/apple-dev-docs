@@ -1,6 +1,6 @@
 # WKInterfaceSCNScene
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that lets you manage SceneKit content for display in your app.

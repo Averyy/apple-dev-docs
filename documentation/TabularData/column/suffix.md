@@ -1,6 +1,6 @@
 # suffix(_:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns a subsequence, up to the given maximum length, containing the final elements of the collection.

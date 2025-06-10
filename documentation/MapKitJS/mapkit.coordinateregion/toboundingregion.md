@@ -26,14 +26,14 @@ The following example shows how to convert a coordinate region to a bounding reg
 
 ```javascript
 // Create a coordinate region named myRegion.
-var coordinate = new mapkit.Coordinate(37.415, -122.048333); 
+const coordinate = new mapkit.Coordinate(37.415, -122.048333); 
 // The initializer requires parameters in the order of latitude, longitude.
-var span = new mapkit.CoordinateSpan(.016, .016); 
+const span = new mapkit.CoordinateSpan(.016, .016); 
 // The initializer requires parameters in the order of latitude delta, longitude delta.
-var myRegion = new mapkit.CoordinateRegion(coordinate, span);
+const myRegion = new mapkit.CoordinateRegion(coordinate, span);
 
 // Convert this coordinate region to a bounding region.
-var myBoundingRegion = myRegion.toBoundingRegion();
+const myBoundingRegion = myRegion.toBoundingRegion();
 ```
 
 ## See Also

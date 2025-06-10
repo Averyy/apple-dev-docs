@@ -1,6 +1,6 @@
 # kVTDecompressionProperty_DeinterlaceMode_VerticalFilter
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A vertical filter deinterlace mode.

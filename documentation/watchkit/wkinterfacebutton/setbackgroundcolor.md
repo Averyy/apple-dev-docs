@@ -1,6 +1,6 @@
 # setBackgroundColor(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the background color of the button.

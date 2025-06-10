@@ -1,6 +1,6 @@
 # DOMRange Additions
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Additions to the `DOMRange` class facilitate communication between the DOM API and WebKit and help convert web content into standard markup form.
 

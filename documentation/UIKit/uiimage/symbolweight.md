@@ -60,6 +60,7 @@ The definition of a symbol image includes multiple scale and weight variants. Th
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -83,6 +84,8 @@ The definition of a symbol image includes multiple scale and weight variants. Th
   Creates a configuration object with the specified font and scale information.
 - [UIImage.SymbolScale](uiimage/symbolscale.md)
   Constants that indicate which scale variant of a symbol image to use.
+- [UIImage.SymbolColorRenderingMode](uiimage/symbolcolorrenderingmode.md)
+- [UIImage.SymbolVariableValueMode](uiimage/symbolvariablevaluemode.md)
 
 
 ---

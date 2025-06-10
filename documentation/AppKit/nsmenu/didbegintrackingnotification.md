@@ -22,12 +22,6 @@ The notification object is the main menu bar (`[NSApp mainMenu]`) or the root me
 extern NSString *NSMenuDidBeginTrackingNotification;
 ```
 
- This notification is available in versions 10.3 and 10.4 of macOS, however it is not publicly declared so you must declare the name constant as an `extern`, for example:
-
-```objc
-extern NSString *NSMenuDidBeginTrackingNotification;
-```
-
 ## See Also
 
 - [class let didAddItemNotification: NSNotification.Name](nsmenu/didadditemnotification.md)

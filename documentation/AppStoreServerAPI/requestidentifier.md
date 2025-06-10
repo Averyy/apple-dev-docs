@@ -24,8 +24,6 @@ To resend the same request due to a timeout or other error, use the same request
 
 > ❗ **Important**:  Provide a `UUID` value for the [`requestIdentifier`](requestidentifier.md) when calling the [`Extend Subscription Renewal Dates for All Active Subscribers`](extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint.
 
- Provide a `UUID` value for the [`requestIdentifier`](requestidentifier.md) when calling the [`Extend Subscription Renewal Dates for All Active Subscribers`](extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint.
-
 The maximum string length is 128 characters.
 
 ## See Also

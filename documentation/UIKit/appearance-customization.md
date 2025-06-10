@@ -2,10 +2,20 @@
 
 **Framework**: UIKit
 
-Add Dark Mode support to your app, customize the appearance of bars, and use appearance proxies to modify your UI.
+Apply Liquid Glass to views, support Dark Mode in your app, customize the appearance of bars, and use appearance proxies to modify your UI.
 
 ## Topics
 
+### Liquid Glass effects
+- [class UIGlassEffect](uiglasseffect.md)
+  A visual effect that renders a glass material.
+- [class UIGlassContainerEffect](uiglasscontainereffect.md)
+  A `UIGlassContainerEffect` renders multiple glass elements into a combined effect.
+### Interacting with adjacent views
+- [class UIBackgroundExtensionView](uibackgroundextensionview.md)
+  A view that extends content to fill its own bounds.
+- [class UIScrollEdgeElementContainerInteraction](uiscrolledgeelementcontainerinteraction.md)
+  Add this interaction to a container view of views that overlay the edge of a scroll view. Any descendants of this view that should affect the shape of the edge effect, such as labels, images, glass views, and controls, will automatically do so.
 ### Dark Mode
 - [Supporting Dark Mode in your interface](supporting-dark-mode-in-your-interface.md)
   Update colors, images, and behaviors so that your app adapts automatically when Dark Mode is active.

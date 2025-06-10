@@ -1,6 +1,6 @@
 # loadSimulatedRequest(_:withResponseHTML:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

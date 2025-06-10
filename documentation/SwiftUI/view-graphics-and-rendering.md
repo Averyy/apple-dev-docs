@@ -33,7 +33,7 @@ For more information about using these effects in your app, see [`Drawing and gr
 - [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](view/scaleeffect(x:y:anchor:).md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](view/scaleeffect(x:y:z:anchor:).md)
-  Scales this view by the specified horizontal, vertical, and depth factors.
+  Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
 - [func imageScale(Image.Scale) -> some View](view/imagescale(_:).md)
   Scales images within the view according to one of the relative sizes available including small, medium, and large images sizes.
 - [func aspectRatio(_:contentMode:)](view/aspectratio(_:contentmode:).md)
@@ -54,7 +54,7 @@ For more information about using these effects in your app, see [`Drawing and gr
 - [func transformEffect(CGAffineTransform) -> some View](view/transformeffect(_:).md)
   Applies an affine transformation to this view’s rendered output.
 - [func transform3DEffect(AffineTransform3D) -> some View](view/transform3deffect(_:).md)
-  Applies a 3D transformation to the receiver.
+  Applies a 3D transformation to this view’s rendered output.
 ### Graphical effects
 - [func blur(radius: CGFloat, opaque: Bool) -> some View](view/blur(radius:opaque:).md)
   Applies a Gaussian blur to this view.

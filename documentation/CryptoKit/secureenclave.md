@@ -28,11 +28,19 @@ enum SecureEnclave
 ### Using the secure enclave
 - [SecureEnclave.P256](secureenclave/p256.md)
   An elliptic curve that enables NIST P-256 signatures and key agreement within the Secure Enclave.
+- [SecureEnclave.MLKEM1024](secureenclave/mlkem1024.md)
+  An implementation of the MLKEM1024 key encapsulation mechanism that operates within the Secure Enclave.
+- [SecureEnclave.MLKEM768](secureenclave/mlkem768.md)
+  An implementation of the MLKEM768 key encapsulation mechanism that operates within the Secure Enclave.
+### Enumerations
+- [SecureEnclave.MLDSA65](secureenclave/mldsa65.md)
+- [SecureEnclave.MLDSA87](secureenclave/mldsa87.md)
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

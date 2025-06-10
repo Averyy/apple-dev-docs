@@ -22,8 +22,8 @@ protocol SNResultsObserving : NSObjectProtocol
 
 ## Mentions
 
-- [Classifying Sounds in an Audio File](classifying-sounds-in-an-audio-file.md)
 - [Classifying Sounds in an Audio Stream](classifying-sounds-in-an-audio-stream.md)
+- [Classifying Sounds in an Audio File](classifying-sounds-in-an-audio-file.md)
 
 ## Topics
 

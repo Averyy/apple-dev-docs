@@ -35,8 +35,6 @@ This method overloads  [`transformMatrix(relativeTo:)`](hastransform/transformma
   A component that defines the scale, rotation, and translation of an entity.
 - [Entity.CoordinateSpaceReference](entity/coordinatespacereference.md)
   Defines the coordinate space reference for transform conversion.
-- [Entity.ForwardDirection](entity/forwarddirection.md)
-  Defines the forward direction for an entity.
 
 
 ---

@@ -1,6 +1,6 @@
 # imageSubject
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An option that enables people to use a long-press gesture on a subject in an image to separate it from the background.

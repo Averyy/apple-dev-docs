@@ -24,9 +24,9 @@ static func bug(_ url: String? = nil, id: some Numeric, _ title: Comment? = nil)
 
 ## Mentions
 
-- [Interpreting bug identifiers](bugidentifiers.md)
 - [Associating bugs with tests](associatingbugs.md)
 - [Enabling and disabling tests](enablinganddisabling.md)
+- [Interpreting bug identifiers](bugidentifiers.md)
 
 #### Return Value
 

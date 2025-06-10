@@ -14,8 +14,6 @@ The macOS 11 SDK provides support to develop apps for Macs running macOS Big Sur
 
 > ❗ **Important**: Updating to macOS Big Sur 11.0.1 from previous versions of macOS might take significantly longer than expected. Data loss could occur if the update is interrupted. (59101197)
 
-Updating to macOS Big Sur 11.0.1 from previous versions of macOS might take significantly longer than expected. Data loss could occur if the update is interrupted. (59101197)
-
 ##### Accessibility
 
 ###### Known Issues
@@ -69,7 +67,7 @@ Updating to macOS Big Sur 11.0.1 from previous versions of macOS might take sign
 
 ###### New Features
 
-- Key-Value Observation removal facilities now employ deterministic bookkeeping methods. Cases that would have produced hard-to-diagnose crashes, especially those where KVO signals problems accessing deallocated observer pointers or observers associated with incorrect objects, now produce an exception pinpointing which observed object needs a missed [`removeObserver(_:)`](https://developer.apple.com/documentation/foundation/notificationcenter/1413994-removeobserver) call, and by which observers. This exception was previously thrown as ‘best effort’ when KVO could detect the problem; the new deterministic bookkeeping allows it to be thrown for all cases where `removeObserver(_:)` is needed. The improved determinism also allows improved Swift API handling. Instances of [`NSKeyValueObservation`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservation), produced by the Swift `NSObject.observe(_:changeHandler:)` method, take advantage of integration with this bookkeeping so they now invalidate automatically when the observed object is released,  regardless of how the object implements its KVO behavior. This applies to all usage of this API in macOS 11 Big Sur beta, including on processes built with previous versions of the SDK, and eliminates certain classes of crashes that sometimes required using the legacy API instead. (65051563)
+- Key-Value Observation removal facilities now employ deterministic bookkeeping methods. Cases that would have produced hard-to-diagnose crashes, especially those where KVO signals problems accessing deallocated observer pointers or observers associated with incorrect objects, now produce an exception pinpointing which observed object needs a missed doc://com.apple.documentation/documentation/foundation/notificationcenter/1413994-removeobserver call, and by which observers. This exception was previously thrown as ‘best effort’ when KVO could detect the problem; the new deterministic bookkeeping allows it to be thrown for all cases where `removeObserver(_:)` is needed. The improved determinism also allows improved Swift API handling. Instances of [`NSKeyValueObservation`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservation), produced by the Swift `NSObject.observe(_:changeHandler:)` method, take advantage of integration with this bookkeeping so they now invalidate automatically when the observed object is released,  regardless of how the object implements its KVO behavior. This applies to all usage of this API in macOS 11 Big Sur beta, including on processes built with previous versions of the SDK, and eliminates certain classes of crashes that sometimes required using the legacy API instead. (65051563)
 
 ##### Logging
 
@@ -330,7 +328,7 @@ NavigationView {
 
 ###### Deprecations
 
-- The function [`hv_vcpu_run(_:)`](https://developer.apple.com/documentation/hypervisor/1441231-hv_vcpu_run) is deprecated.
+- The function [`hv_vcpu_run(_:)`](https://developer.apple.com/documentation/Hypervisor/hv_vcpu_run(_:)) is deprecated.
 - The `VNIdentifiedPointsObservation` class is deprecated. Use [`VNRecognizedPointsObservation`](https://developer.apple.com/documentation/Vision/VNRecognizedPointsObservation) instances instead. (63690311)
 
 ##### Wallet
@@ -364,8 +362,8 @@ API_AVAILABLE(macos(10.16), ios(14.0), watchos(7.0))
 
 ###### New Features
 
-- [`hv_vcpu_run_until(_:_:)`](https://developer.apple.com/documentation/hypervisor/3181548-hv_vcpu_run_until) now supports the deadline [`HV_DEADLINE_FOREVER`](https://developer.apple.com/documentation/Hypervisor/HV_DEADLINE_FOREVER). (57025216)
-- The new [`hv_vcpu_enable_managed_msr(_:_:_:)`](https://developer.apple.com/documentation/hypervisor/3567096-hv_vcpu_enable_managed_msr) and [`hv_vcpu_set_msr_access(_:_:_:)`](https://developer.apple.com/documentation/hypervisor/3567097-hv_vcpu_set_msr_access) enable direct MSR access from a guest. (50291076)
+- [`hv_vcpu_run_until(_:_:)`](https://developer.apple.com/documentation/Hypervisor/hv_vcpu_run_until(_:_:)) now supports the deadline [`HV_DEADLINE_FOREVER`](https://developer.apple.com/documentation/Hypervisor/HV_DEADLINE_FOREVER). (57025216)
+- The new [`hv_vcpu_enable_managed_msr(_:_:_:)`](https://developer.apple.com/documentation/Hypervisor/hv_vcpu_enable_managed_msr(_:_:_:)) and [`hv_vcpu_set_msr_access(_:_:_:)`](https://developer.apple.com/documentation/Hypervisor/hv_vcpu_set_msr_access(_:_:_:)) enable direct MSR access from a guest. (50291076)
 
 ## Topics
 

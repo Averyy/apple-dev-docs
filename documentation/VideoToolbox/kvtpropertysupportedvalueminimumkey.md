@@ -1,6 +1,6 @@
 # kVTPropertySupportedValueMinimumKey
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Dictionary key to access the minimum value of a property.

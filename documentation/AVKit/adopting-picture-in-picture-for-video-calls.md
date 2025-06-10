@@ -1,6 +1,6 @@
 # Adopting Picture in Picture for video calls
 
-**Framework**: Avkit
+**Framework**: AVKit
 
 Add multitasking capability to your video-call apps by using Picture in Picture (PiP).
 
@@ -86,4 +86,4 @@ When your app is in PiP mode, it can’t assume control of the camera. For examp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/adopting-picture-in-picture-for-video-calls)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/adopting-picture-in-picture-for-video-calls)*

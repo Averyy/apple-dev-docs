@@ -1,6 +1,6 @@
 # WKInterfaceDevice
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that provides information about the user’s Apple Watch.

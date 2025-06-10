@@ -5,13 +5,25 @@
 
 Outputs the distance between foreground and background values.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
+#### Overview
+
+abs(B - F)
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-The Difference node subtracts two inputs and takes the absolute value of the result, represented by the equation `abs(B - F)`. It uses the `Mix` input to determine the weight of the foreground in the blend. Higher values closer to `1` output a more intense difference, while lower values closer to `0` dim the effect. Below is an example of a simple node graph that uses the difference node to blend two images together into a single material.
+The `Difference` node subtracts two inputs and takes the absolute value of the result, represented by the equation `abs(B - F)`. It uses the `Mix` input to determine the weight of the foreground in the blend. Higher values closer to `1` output a more intense difference, while lower values closer to `0` dim the effect. Below is an example of a node graph that uses the difference node to blend two images together into a single material:
 
 ![None](https://docs-assets.developer.apple.com/published/df0b2a945ff0248fd2850cac564a8a26/DifferenceGraph.png)
 

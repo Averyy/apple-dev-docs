@@ -1,6 +1,6 @@
 # NSOutlineViewDataSource
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: protocol
 
 A set of methods that an outline view calls to retrieve data and information about it from the data source delegate, and—optionally—to update data values.
@@ -77,4 +77,4 @@ Similarly, when using conventional data sources , if you want to allow the user 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsoutlineviewdatasource)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsoutlineviewdatasource)*

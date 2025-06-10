@@ -1,6 +1,6 @@
 # play()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Plays the movie.

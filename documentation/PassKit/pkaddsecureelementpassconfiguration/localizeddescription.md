@@ -22,8 +22,6 @@ var localizedDescription: String? { get set }
 
 > ❗ **Important**:  Apple reserves this property for future use, and hasn’t defined its value.
 
- Apple reserves this property for future use, and hasn’t defined its value.
-
 ## See Also
 
 - [var issuerIdentifier: String?](pkaddsecureelementpassconfiguration/issueridentifier.md)

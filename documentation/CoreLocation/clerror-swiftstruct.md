@@ -22,7 +22,7 @@ struct CLError
 
 #### Overview
 
-Instances of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object delivered to the delegate use these error codes for the [`code`](https://developer.apple.com/documentation/foundation/nserror/1409165-code) property of the error object.
+Instances of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object delivered to the delegate use these error codes for the [`code`](https://developer.apple.com/documentation/Foundation/NSError/code) property of the error object.
 
 ## Topics
 
@@ -85,6 +85,7 @@ Instances of [`NSError`](https://developer.apple.com/documentation/Foundation/NS
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

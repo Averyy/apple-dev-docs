@@ -23,8 +23,8 @@ func searchSuggestions<S>(@ViewBuilder _ suggestions: () -> S) -> some View wher
 
 ## Mentions
 
-- [Suggesting search terms](suggesting-search-terms.md)
 - [Scoping a search operation](scoping-a-search-operation.md)
+- [Suggesting search terms](suggesting-search-terms.md)
 
 #### Discussion
 
@@ -43,8 +43,6 @@ ProductList()
 When someone chooses a suggestion, SwiftUI replaces the text in the search field with the search completion string. If you omit the search completion modifier for a particular suggestion view, SwiftUI displays the suggestion, but the suggestion view doesn’t react to taps or clicks.
 
 > ❗ **Important**: In tvOS, searchable modifiers only support suggestion views of type [`Text`](text.md), like in the above example. Other platforms can use any view for the suggestions, including custom views.
-
-In tvOS, searchable modifiers only support suggestion views of type [`Text`](text.md), like in the above example. Other platforms can use any view for the suggestions, including custom views.
 
 You can update the suggestions that you provide as conditions change.
 

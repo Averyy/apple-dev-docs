@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 
 Set the value of this property to `true` to enable the search bar or `false` to disable it. An enabled search bar responds to user interactions; a disabled search bar ignores touch events and takes on a disabled appearance.
 
-If the search bar is associated with a [`UINavigationItem`](uinavigationitem.md) with [`UINavigationItem.SearchBarPlacement.inline`](uinavigationitem/searchbarplacement-swift.enum/inline.md), then the minimized (icon-only) [`UISearchBar`](uisearchbar.md) won’t grow to the text field while [`isEnabled`](uisearchbar/isenabled.md) is `false`.
+If the search bar is associated with a [`UINavigationItem`](uinavigationitem.md) with [`inline`](uinavigationitem/searchbarplacement-swift.enum/inline.md), then the minimized (icon-only) [`UISearchBar`](uisearchbar.md) won’t grow to the text field while [`isEnabled`](uisearchbar/isenabled.md) is `false`.
 
 The default value of this property is `true` for a newly created search bar. You can set the search bar’s initial enabled state in your storyboard file.
 

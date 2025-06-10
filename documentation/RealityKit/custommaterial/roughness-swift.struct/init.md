@@ -10,6 +10,7 @@ Creates a roughness object from a physically based material’s roughness proper
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

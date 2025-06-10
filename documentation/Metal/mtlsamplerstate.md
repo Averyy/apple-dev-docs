@@ -16,7 +16,7 @@ An object that defines how a texture should be sampled.
 ## Declaration
 
 ```swift
-protocol MTLSamplerState : NSObjectProtocol
+protocol MTLSamplerState : NSObjectProtocol, Sendable
 ```
 
 ## Mentions
@@ -50,6 +50,8 @@ You can either release the [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) obj
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

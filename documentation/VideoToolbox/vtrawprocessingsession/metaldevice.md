@@ -1,6 +1,6 @@
 # metalDevice
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 The preferred device to use for any Metal-based processing performed by the RAW Processing Extension.

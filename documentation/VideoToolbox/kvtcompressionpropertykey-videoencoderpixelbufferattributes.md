@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_VideoEncoderPixelBufferAttributes
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The video encoder’s pixel buffer attributes for the compression session.

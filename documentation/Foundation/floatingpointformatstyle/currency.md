@@ -76,6 +76,7 @@ struct Currency
 - [ParseableFormatStyle](parseableformatstyle.md)
 - [RegexComponent](../Swift/RegexComponent.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

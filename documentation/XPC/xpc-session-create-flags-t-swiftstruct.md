@@ -1,6 +1,6 @@
 # xpc_session_create_flags_t
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: struct
 
 **Availability**:
@@ -28,6 +28,7 @@ struct xpc_session_create_flags_t
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

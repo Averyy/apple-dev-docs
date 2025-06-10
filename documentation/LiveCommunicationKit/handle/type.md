@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-The type of handle (e.g. a phone number or email address)
+The type of the handle; for example a phone number or email address.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,11 @@ The type of handle (e.g. a phone number or email address)
 ```swift
 var type: Handle.Kind
 ```
+
+## See Also
+
+- [Handle.Kind](handle/kind.md)
+  Values that define the handle that identifies a participant in a conversation.
 
 
 ---

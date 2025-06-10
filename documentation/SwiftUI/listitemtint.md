@@ -38,6 +38,7 @@ Use one of these tint values with the [`listItemTint(_:)`](view/listitemtint(_:)
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -50,7 +51,7 @@ Use one of these tint values with the [`listItemTint(_:)`](view/listitemtint(_:)
 - [func listItemTint(_:)](view/listitemtint(_:).md)
   Sets a fixed tint color for content in a list.
 - [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
-  The default minimum height of a row in a `List`. The default minimum height of a row in a list.
+  The default minimum height of a row in a list.
 
 
 ---

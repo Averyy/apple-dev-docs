@@ -12,8 +12,6 @@ A dictionary that contains settings about the organization operating the MDM ser
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,13 +19,9 @@ A dictionary that contains settings about the organization operating the MDM ser
 object SettingsCommand.Command.Settings.OrganizationInfo
 ```
 
-#### Discussion
-
-This setting supports User Enrollment.
-
 ## Topics
 
-### Commands
+### Objects
 - [object SettingsCommand.Command.Settings.OrganizationInfo.OrganizationInfo](settingscommand/command-data.dictionary/settings-data.dictionary/organizationinfo-data.dictionary/organizationinfo-data.dictionary.md)
   A dictionary that contains information about the organization operating the MDM server.
 
@@ -45,6 +39,8 @@ This setting supports User Enrollment.
   A dictionary that contains Bluetooth settings.
 - [object SettingsCommand.Command.Settings.DataRoaming](settingscommand/command-data.dictionary/settings-data.dictionary/dataroaming-data.dictionary.md)
   A dictionary that contains data roaming settings.
+- [object SettingsCommand.Command.Settings.DefaultApplications](settingscommand/command-data.dictionary/settings-data.dictionary/defaultapplications-data.dictionary.md)
+  A dictionary that contains default application bundle identifiers for each default application type that can be set.
 - [object SettingsCommand.Command.Settings.DeviceName](settingscommand/command-data.dictionary/settings-data.dictionary/devicename-data.dictionary.md)
   A dictionary that contains device name settings.
 - [object SettingsCommand.Command.Settings.DiagnosticSubmission](settingscommand/command-data.dictionary/settings-data.dictionary/diagnosticsubmission-data.dictionary.md)
@@ -53,16 +49,14 @@ This setting supports User Enrollment.
   A dictionary that contains hostname settings.
 - [object SettingsCommand.Command.Settings.MDMOptions](settingscommand/command-data.dictionary/settings-data.dictionary/mdmoptions-data.dictionary.md)
   A dictionary that contains settings about the organization operating the MDM server.
+- [object SettingsCommand.Command.Settings.MaximumResidentUsers](settingscommand/command-data.dictionary/settings-data.dictionary/maximumresidentusers-data.dictionary.md)
+  A dictionary that contains settings for maximum resident users.
+- [object SettingsCommand.Command.Settings.PasscodeLockGracePeriod](settingscommand/command-data.dictionary/settings-data.dictionary/passcodelockgraceperiod-data.dictionary.md)
+  A dictionary that contains settings for the password lock grace period.
 - [object SettingsCommand.Command.Settings.PersonalHotspot](settingscommand/command-data.dictionary/settings-data.dictionary/personalhotspot-data.dictionary.md)
   A dictionary that contains Personal Hotspot settings.
 - [object SettingsCommand.Command.Settings.SharedDeviceConfiguration](settingscommand/command-data.dictionary/settings-data.dictionary/shareddeviceconfiguration-data.dictionary.md)
   A dictionary that contains shared device configuration settings.
-- [object SettingsCommand.Command.Settings.SoftwareUpdateSettings](settingscommand/command-data.dictionary/settings-data.dictionary/softwareupdatesettings-data.dictionary.md)
-  A dictionary that contains software update settings.
-- [object SettingsCommand.Command.Settings.TimeZone](settingscommand/command-data.dictionary/settings-data.dictionary/timezone-data.dictionary.md)
-  A dictionary that contains time zone settings.
-- [object SettingsCommand.Command.Settings.Wallpaper](settingscommand/command-data.dictionary/settings-data.dictionary/wallpaper-data.dictionary.md)
-  A dictionary that contains wallpaper settings.
 
 
 ---

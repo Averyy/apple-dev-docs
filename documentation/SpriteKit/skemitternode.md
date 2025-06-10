@@ -25,8 +25,8 @@ class SKEmitterNode
 
 - [Using Keyframe Sequence to effect Custom Interpolation](using-keyframe-sequence-to-effect-custom-interpolation.md)
 - [Creating Particle Effects](creating-particle-effects.md)
-- [Animating Particle Properties Across Disparate Values](animating-particle-properties-across-disparate-values.md)
 - [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
+- [Animating Particle Properties Across Disparate Values](animating-particle-properties-across-disparate-values.md)
 
 #### Overview
 
@@ -197,6 +197,7 @@ Particles are purely visual objects, and their behavior is entirely defined by t
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)

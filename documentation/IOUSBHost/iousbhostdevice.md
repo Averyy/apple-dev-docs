@@ -1,6 +1,6 @@
 # IOUSBHostDevice
 
-**Framework**: Iousbhost  
+**Framework**: IOUSBHost  
 **Kind**: class
 
 The class that claims and configures devices, retrieves descriptors, and sends device requests.
@@ -45,4 +45,4 @@ This class enables management of the device state, including sending control req
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/IOUSBHost/iousbhostdevice)*
+*[View on Apple Developer](https://developer.apple.com/documentation/iousbhost/iousbhostdevice)*

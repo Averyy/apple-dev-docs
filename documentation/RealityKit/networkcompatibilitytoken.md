@@ -1,6 +1,6 @@
 # NetworkCompatibilityToken
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: class
 
 An opaque token used to check the networking compatibility between two peers in a multipeer connection.
@@ -10,6 +10,7 @@ An opaque token used to check the networking compatibility between two peers in 
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -65,4 +66,4 @@ A client running a [`MCNearbyServiceAdvertiser`](https://developer.apple.com/doc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/networkcompatibilitytoken)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/networkcompatibilitytoken)*

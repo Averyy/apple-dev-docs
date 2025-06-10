@@ -127,6 +127,7 @@ Use these constants with the [`contentType`](nstextcontent/contenttype.md) prope
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

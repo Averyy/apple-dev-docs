@@ -17,6 +17,7 @@ Marks the end of an undo group.
 ## Declaration
 
 ```swift
+@MainActor
 func endUndoGrouping()
 ```
 

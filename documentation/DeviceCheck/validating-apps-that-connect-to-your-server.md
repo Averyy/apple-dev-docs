@@ -1,6 +1,6 @@
 # Validating apps that connect to your server
 
-**Framework**: Devicecheck
+**Framework**: DeviceCheck
 
 Verify that connections to your server come from legitimate instances of your app.
 
@@ -127,4 +127,4 @@ When the assertion meets all of these conditions, you can trust it. Store `count
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceCheck/validating-apps-that-connect-to-your-server)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicecheck/validating-apps-that-connect-to-your-server)*

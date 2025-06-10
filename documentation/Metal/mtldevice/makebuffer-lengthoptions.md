@@ -22,8 +22,8 @@ func makeBuffer(length: Int, options: MTLResourceOptions = []) -> (any MTLBuffer
 
 ## Mentions
 
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
 - [Copying Data to a Private Resource](copying-data-to-a-private-resource.md)
+- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
 
 #### Return Value
 

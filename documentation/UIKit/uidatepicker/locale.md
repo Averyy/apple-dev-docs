@@ -20,7 +20,7 @@ var locale: Locale? { get set }
 
 #### Discussion
 
-The default value is the current locale as returned by the [`current`](https://developer.apple.com/documentation/foundation/nslocale/1409990-current) property of [`NSLocale`](https://developer.apple.com/documentation/Foundation/NSLocale), or the locale used by the date picker’s calendar. Locales encapsulate information about facets of a language or culture, such as the way dates are formatted.
+The default value is the current locale as returned by the [`current`](https://developer.apple.com/documentation/Foundation/NSLocale/current) property of [`NSLocale`](https://developer.apple.com/documentation/Foundation/NSLocale), or the locale used by the date picker’s calendar. Locales encapsulate information about facets of a language or culture, such as the way dates are formatted.
 
 ## See Also
 

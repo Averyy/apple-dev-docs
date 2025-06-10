@@ -29,9 +29,7 @@ There’s no delegate method associated with this notification. The text-handlin
 
 ## See Also
 
-- [func removeObserver(Any)](../foundation/notificationcenter/1413994-removeobserver.md)
-  Removes all entries specifying an observer from the notification center's dispatch table.
-- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: Any?)](../foundation/notificationcenter/1415360-addobserver.md)
+- [func addObserver(_ observer: Any, selector aSelector: Selector, name aName: NSNotification.Name?, object anObject: Any?)](../Foundation/NotificationCenter/addObserver(_:selector:name:object:).md)
   Adds an entry to the notification center to call the provided selector with the notification.
 - [class let didChangeSelectionNotification: NSNotification.Name](nstextview/didchangeselectionnotification.md)
   Posted when the selected range of characters changes.

@@ -1,6 +1,6 @@
 # launchArguments
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The arguments that pass to the application on launch.

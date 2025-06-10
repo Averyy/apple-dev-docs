@@ -1,6 +1,6 @@
 # addScriptMessageHandler(_:contentWorld:name:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Installs a message handler that returns a reply to your JavaScript code.

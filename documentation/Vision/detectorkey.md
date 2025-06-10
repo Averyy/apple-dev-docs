@@ -17,6 +17,12 @@
 typealias DetectorKey = String
 ```
 
+## See Also
+
+- [typealias NamedMultipleObjectDataAccessBlock](namedmultipleobjectdataaccessblock.md)
+- [typealias NamedObjectDataAccessBlock](namedobjectdataaccessblock.md)
+- [typealias NamedObjectsDictionary](namedobjectsdictionary.md)
+
 
 ---
 

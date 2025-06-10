@@ -1,6 +1,6 @@
 # Supporting drag and drop in table views
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Initiate drags and handle drops from a table view.
 
@@ -77,4 +77,4 @@ When the [`NSItemProvider`](https://developer.apple.com/documentation/Foundation
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/supporting-drag-and-drop-in-table-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/supporting-drag-and-drop-in-table-views)*

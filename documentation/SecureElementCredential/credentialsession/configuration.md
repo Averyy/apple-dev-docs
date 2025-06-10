@@ -24,8 +24,6 @@ Clients should call [`invalidate()`](credentialtransaction/configuration/invalid
 
 > ⚠️ **Warning**: Don’t import UIKit in any file that imports this type. This causes ambiguity resolving the [`SecureElementCredential`](SecureElementCredential.md) framework’s SwiftUI and UIKit symbols.
 
-Don’t import UIKit in any file that imports this type. This causes ambiguity resolving the [`SecureElementCredential`](SecureElementCredential.md) framework’s SwiftUI and UIKit symbols.
-
 ## See Also
 
 - [CredentialTransaction.Configuration](credentialtransaction/configuration.md)

@@ -1,6 +1,6 @@
 # CKFetchRecordZoneChangesOperation
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 An operation that fetches record zone changes.
@@ -137,6 +137,7 @@ operation.qualityOfService = NSQualityOfServiceUtility;
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -148,4 +149,4 @@ operation.qualityOfService = NSQualityOfServiceUtility;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckfetchrecordzonechangesoperation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesoperation)*

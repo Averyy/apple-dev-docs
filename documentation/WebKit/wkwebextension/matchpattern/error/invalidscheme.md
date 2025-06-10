@@ -1,6 +1,6 @@
 # invalidScheme
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that the scheme component was invalid.

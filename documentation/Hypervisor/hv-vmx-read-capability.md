@@ -22,8 +22,6 @@ func hv_vmx_read_capability(_ field: hv_vmx_capability_t, _ value: UnsafeMutable
 
 > ❗ **Important**:  This function must be called by the owning thread.
 
- This function must be called by the owning thread.
-
 ## Parameters
 
 - `field`: The capability of the host processor to return. For a list of field IDs, see  .

@@ -1,6 +1,6 @@
 # distance(to:along:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Gets the preferred spacing distance along the specified axis to the view that returns a specified spacing preference.

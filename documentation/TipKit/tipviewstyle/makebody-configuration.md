@@ -18,8 +18,8 @@ A builder that makes the body of the tip view based on a style configuration.
 ## Declaration
 
 ```swift
-@MainActor
-@ViewBuilder @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
+@ViewBuilder
+@MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 
 

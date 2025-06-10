@@ -36,8 +36,6 @@ func endCall() {
 
 > ❗ **Important**:  Only certain Apple and Beats wireless headsets support this feature.
 
- Only certain Apple and Beats wireless headsets support this feature.
-
 ## Topics
 
 ### Creating a Routing Arbiter
@@ -63,6 +61,7 @@ func endCall() {
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # MonthTemperatureStatistics
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that describes temperature statistics for a specific month.
@@ -48,6 +48,7 @@ struct MonthTemperatureStatistics
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

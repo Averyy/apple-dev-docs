@@ -1,6 +1,6 @@
 # overlaysAtPoint
 
-**Framework**: Mapkitjs  
+**Framework**: MapKit JS  
 **Kind**: method
 
 Returns an array of overlays at a given point on the webpage.
@@ -60,4 +60,4 @@ Opacity isn’t a factor and can have any value. For example, if the point is on
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit.map/overlaysatpoint)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit.map/overlaysatpoint)*

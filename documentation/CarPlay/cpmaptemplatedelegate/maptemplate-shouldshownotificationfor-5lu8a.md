@@ -13,6 +13,7 @@ Asks the delegate whether the system should display the navigation alert as a no
 ## Declaration
 
 ```swift
+@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, shouldShowNotificationFor navigationAlert: CPNavigationAlert) -> Bool
 ```
 

@@ -42,6 +42,7 @@ struct ApplyRandomly<RandomTransformer> where RandomTransformer : RandomTransfor
 ### Conforms To
 - [RandomTransformer](randomtransformer.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

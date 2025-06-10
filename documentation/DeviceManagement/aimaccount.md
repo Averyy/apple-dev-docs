@@ -7,8 +7,6 @@ The payload you use to configure an AIM account on the device.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,13 +22,13 @@ Specify `com.apple.AIM.account` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | - |
-| User Channel | macOS |
-| Allow Manual Install | macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | macOS |
+| Device channel | NA |
+| User channel | macOS |
+| Allow manual install | macOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | macOS |
 
 ## See Also
 

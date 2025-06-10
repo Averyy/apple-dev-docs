@@ -168,4 +168,4 @@ The app sets the display to automatically resize when the window size changes.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Virtualization/running-gui-linux-in-a-virtual-machine-on-a-mac)*
+*[View on Apple Developer](https://developer.apple.com/documentation/virtualization/running-gui-linux-in-a-virtual-machine-on-a-mac)*

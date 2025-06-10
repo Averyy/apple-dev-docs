@@ -1,6 +1,6 @@
 # overnightForecast
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The weather forecast for 7PM on this day until 7AM the following day.

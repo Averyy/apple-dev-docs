@@ -1,6 +1,6 @@
 # Making your existing app compatible with visionOS
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Modify your iPadOS or iOS app to run successfully in visionOS as a compatible app.
 
@@ -113,4 +113,4 @@ When you use app thinning to optimize your app for different devices and operati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/making-your-app-compatible-with-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/making-your-app-compatible-with-visionos)*

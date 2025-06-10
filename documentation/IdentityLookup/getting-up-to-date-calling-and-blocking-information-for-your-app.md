@@ -1,6 +1,6 @@
 # Getting up-to-date calling and blocking information for your app
 
-**Framework**: Identitylookup
+**Framework**: SMS and Call Reporting
 
 Implement the Live Caller ID Lookup app extension to provide call-blocking and identity services.
 
@@ -93,4 +93,4 @@ If you communicate to your app through push notifications, or other means, about
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/IdentityLookup/getting-up-to-date-calling-and-blocking-information-for-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/identitylookup/getting-up-to-date-calling-and-blocking-information-for-your-app)*

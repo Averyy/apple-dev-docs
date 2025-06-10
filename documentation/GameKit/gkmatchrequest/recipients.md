@@ -22,9 +22,9 @@ var recipients: [GKPlayer]? { get set }
 
 ## Mentions
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
-- [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
 - [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
+- [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
+- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
 
 #### Discussion
 

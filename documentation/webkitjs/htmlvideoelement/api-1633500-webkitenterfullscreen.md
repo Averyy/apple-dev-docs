@@ -1,6 +1,6 @@
 # webkitEnterFullscreen
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Enters fullscreen mode.

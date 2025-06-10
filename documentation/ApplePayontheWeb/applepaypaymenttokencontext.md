@@ -25,8 +25,6 @@ dictionary ApplePayPaymentTokenContext {
 
 > ❗ **Important**:  You must include the [`multiTokenContexts`](applepaymodifier/multitokencontexts.md) array in the [`ApplePayPaymentRequest`](applepaypaymentrequest.md) object to request multimerchant payments.
 
- You must include the [`multiTokenContexts`](applepaymodifier/multitokencontexts.md) array in the [`ApplePayPaymentRequest`](applepaypaymentrequest.md) object to request multimerchant payments.
-
 Use [`ApplePayPaymentTokenContext`](applepaypaymenttokencontext.md) to authorize a payment amount for each payment token in a multimerchant payment request. To enable multiple merchants for a transaction, use one [`ApplePayPaymentTokenContext`](applepaypaymenttokencontext.md) object for each merchant.
 
 You can optionally associate each payment token with the merchant’s top-level domain.

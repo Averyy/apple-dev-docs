@@ -25,8 +25,6 @@ Don’t check this property again in response to user input; instead, call [`ope
 
 > ❗ **Important**:  Only show user-interface controls that call the [`open()`](externallinkaccount/open().md) method if this property is `true`. The [`open()`](externallinkaccount/open().md) method always throws an error when [`canOpen`](externallinkaccount/canopen.md) is `false`.
 
- Only show user-interface controls that call the [`open()`](externallinkaccount/open().md) method if this property is `true`. The [`open()`](externallinkaccount/open().md) method always throws an error when [`canOpen`](externallinkaccount/canopen.md) is `false`.
-
 ## See Also
 
 - [static func open() async throws](externallinkaccount/open.md)

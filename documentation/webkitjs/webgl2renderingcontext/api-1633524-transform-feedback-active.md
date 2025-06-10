@@ -1,6 +1,6 @@
 # TRANSFORM_FEEDBACK_ACTIVE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

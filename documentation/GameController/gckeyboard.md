@@ -21,16 +21,16 @@ class GCKeyboard
 
 #### Overview
 
-To get the keyboard object and its input values, register for the [`GCKeyboardDidConnect`](https://developer.apple.com/documentation/foundation/nsnotification/name/3626175-gckeyboarddidconnect) (Swift) or [`GCKeyboardDidConnectNotification`](gckeyboarddidconnectnotification.md) (Objective-C) notification for when a keyboard connects to the device, or use the [`coalesced`](gckeyboard/coalesced.md) class property. Then get the input values from the keyboard object’s [`keyboardInput`](gckeyboard/keyboardinput.md) controller profile.
+To get the keyboard object and its input values, register for the [`GCKeyboardDidConnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCKeyboardDidConnect) (Swift) or [`GCKeyboardDidConnectNotification`](gckeyboarddidconnectnotification.md) (Objective-C) notification for when a keyboard connects to the device, or use the [`coalesced`](gckeyboard/coalesced.md) class property. Then get the input values from the keyboard object’s [`keyboardInput`](gckeyboard/keyboardinput.md) controller profile.
 
 ## Topics
 
 ### Discovering keyboards
 - [class var coalesced: GCKeyboard?](gckeyboard/coalesced.md)
   The keyboard currently connected to the device.
-- [static let GCKeyboardDidConnect: NSNotification.Name](../foundation/nsnotification/name/3626175-gckeyboarddidconnect.md)
+- [static let GCKeyboardDidConnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCKeyboardDidConnect.md)
   A notification that posts after a keyboard connects to the device.
-- [static let GCKeyboardDidDisconnect: NSNotification.Name](../foundation/nsnotification/name/3626176-gckeyboarddiddisconnect.md)
+- [static let GCKeyboardDidDisconnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCKeyboardDidDisconnect.md)
   A notification that posts after a single keyboard, or the last of multiple keyboards, disconnects from the device.
 ### Getting input values
 - [var keyboardInput: GCKeyboardInput?](gckeyboard/keyboardinput.md)
@@ -55,6 +55,8 @@ To get the keyboard object and its input values, register for the [`GCKeyboardDi
   Support a physical controller or add a virtual controller to enhance how people interact with your game through haptics, lighting, and motion sensing.
 - [Letting players use their second-generation Siri Remote as a game controller](letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
   Support the second-generation Siri Remote as a game controller in your Apple TV game.
+- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
+  Receive controller and stylus input to interact with content in your augmented reality app.
 - [protocol GCDevice](gcdevice.md)
   A protocol that defines a common interface for game input devices.
 - [class GCController](gccontroller.md)
@@ -63,6 +65,8 @@ To get the keyboard object and its input values, register for the [`GCKeyboardDi
   An object that represents a physical racing wheel controller connected to a device.
 - [class GCMouse](gcmouse.md)
   An object that represents a physical mouse connected to a device.
+- [class GCStylus](gcstylus.md)
+  An object that represents a physical stylus connected to the device.
 
 
 ---

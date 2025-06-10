@@ -8,7 +8,7 @@ Build, test, and submit your app with Apple’s integrated development environme
 
 Xcode is a suite of tools developers use to build apps for Apple platforms. Use Xcode to manage your entire development workflow — from creating your app to testing, optimizing, and submitting it to the App Store.
 
-![Screenshot of MacBook Pro running Xcode that shows SwiftUI with a preview and running the app on an iPhone device.](https://docs-assets.developer.apple.com/published/d151e94151622c167970f69ce8e60021/xcode-1%402x.png)
+![Screenshot of MacBook Pro running Xcode that shows SwiftUI with a preview and running the app on an iPhone device.](https://docs-assets.developer.apple.com/published/e1b60f9edde6ed1d1f80b5578dba24c0/xcode-overview-landmarks-hero%402x.png)
 
 Xcode includes a world-class code editor, built in SwiftUI preview tools that show the UI of your app as you modify code, and a powerful debugger with conditional breakpoints.
 
@@ -47,7 +47,7 @@ Xcode also includes several development tools to help you rapidly prototype and 
   Create reusable code, organize it in a lightweight way, and share it across Xcode projects and with other developers.
 ### Interface
 - [Asset management](asset-management.md)
-  Add images, strings, data files, and other resources to your projects, and manage how you load them at runtime.
+  Add app icons, images, strings, data files, machine learning models, and other resources to your projects, and manage how you load them at runtime.
 - [Localization](localization.md)
   Expand the market for your app by supporting multiple languages and regions.
 - [Accessibility Inspector](../Accessibility/accessibility-inspector.md)

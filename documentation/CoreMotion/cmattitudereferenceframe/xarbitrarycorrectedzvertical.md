@@ -33,8 +33,6 @@ This option requires more CPU usage than the [`xArbitraryZVertical`](cmattituder
 
 > 💡 **Tip**:  Save the first reported attitude value, and compare it to new values to determine changes since the start of the service.
 
- Save the first reported attitude value, and compare it to new values to determine changes since the start of the service.
-
 ## See Also
 
 - [static var xArbitraryZVertical: CMAttitudeReferenceFrame](cmattitudereferenceframe/xarbitraryzvertical.md)

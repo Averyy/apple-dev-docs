@@ -1,6 +1,6 @@
 # vmnet_return_t.VMNET_NOT_AUTHORIZED
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: case
 
 **Availability**:

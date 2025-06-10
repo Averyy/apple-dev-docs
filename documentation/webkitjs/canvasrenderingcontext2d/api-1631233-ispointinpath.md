@@ -1,6 +1,6 @@
 # isPointInPath
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Determines whether a specified point is within the area defined by the current path.

@@ -139,6 +139,15 @@ You can find more information about a capture format using its associated Core M
 ### Deprecated
 - [Deprecated Symbols](avcapturedevice-format-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Instance Properties
+- [var defaultSimulatedAperture: Float](avcapturedevice/format/defaultsimulatedaperture.md)
+- [var isCameraLensSmudgeDetectionSupported: Bool](avcapturedevice/format/iscameralenssmudgedetectionsupported.md)
+- [var isCinematicVideoCaptureSupported: Bool](avcapturedevice/format/iscinematicvideocapturesupported.md)
+- [var maxSimulatedAperture: Float](avcapturedevice/format/maxsimulatedaperture.md)
+- [var minSimulatedAperture: Float](avcapturedevice/format/minsimulatedaperture.md)
+- [var videoFrameRateRangeForCinematicVideo: AVFrameRateRange?](avcapturedevice/format/videoframeraterangeforcinematicvideo.md)
+- [var videoMaxZoomFactorForCinematicVideo: CGFloat](avcapturedevice/format/videomaxzoomfactorforcinematicvideo.md)
+- [var videoMinZoomFactorForCinematicVideo: CGFloat](avcapturedevice/format/videominzoomfactorforcinematicvideo.md)
 
 ## Relationships
 

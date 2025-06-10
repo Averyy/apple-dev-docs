@@ -1,6 +1,6 @@
 # Generating Log Messages from Your Code
 
-**Framework**: Os
+**Framework**: os
 
 Record useful debugging and analysis information, and include dynamic content in your messages.
 

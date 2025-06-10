@@ -33,6 +33,7 @@ class MTLType
 - [MTLArrayType](mtlarraytype.md)
 - [MTLPointerType](mtlpointertype.md)
 - [MTLStructType](mtlstructtype.md)
+- [MTLTensorReferenceType](mtltensorreferencetype.md)
 - [MTLTextureReferenceType](mtltexturereferencetype.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)

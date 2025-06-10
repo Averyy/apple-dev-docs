@@ -42,6 +42,7 @@ The encoded array has an element count equal to the number of categories to enco
 - [Copyable](../Swift/Copyable.md)
 - [Estimator](estimator.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UpdatableEstimator](updatableestimator.md)
 
 ## See Also

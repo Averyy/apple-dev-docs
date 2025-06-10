@@ -22,8 +22,6 @@ See the class description for details on the `UsesFeedbackWindow` attribute.
 
 > ❗ **Important**:  The delegate only receives the [`speechSynthesizer(_:didFinishSpeaking:)`](nsspeechsynthesizerdelegate/speechsynthesizer(_:didfinishspeaking:).md) message when speaking occurs through the feedback window.
 
- The delegate only receives the [`speechSynthesizer(_:didFinishSpeaking:)`](nsspeechsynthesizerdelegate/speechsynthesizer(_:didfinishspeaking:).md) message when speaking occurs through the feedback window.
-
 ## See Also
 
 - [func voice() -> NSSpeechSynthesizer.VoiceName?](nsspeechsynthesizer/voice.md)

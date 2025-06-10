@@ -1,6 +1,6 @@
 # Video Toolbox
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: module
 
 Work directly with hardware-accelerated video encoding and decoding capabilities.
@@ -21,7 +21,7 @@ VideoToolbox is a low-level framework that provides direct access to hardware en
 
 ### Frame Processing
 - [Frame processing](frame-processing.md)
-  An interface used to access a range of different video processing features.
+  An interface for accessing a range of different video-processing features.
 ### Compression
 - [Encoding video for low-latency conferencing](encoding-video-for-low-latency-conferencing.md)
   Configure a compression session to optimize encoding for video-conferencing apps.
@@ -82,6 +82,62 @@ VideoToolbox is a low-level framework that provides direct access to hardware en
   Constants for Video Toolbox operation error codes.
 ### Reference
 - [VideoToolbox Reference](videotoolbox-reference.md)
+### Classes
+- [class VTLowLatencyFrameInterpolationConfiguration](vtlowlatencyframeinterpolationconfiguration.md)
+- [class VTLowLatencyFrameInterpolationParameters](vtlowlatencyframeinterpolationparameters.md)
+- [class VTLowLatencySuperResolutionScalerConfiguration](vtlowlatencysuperresolutionscalerconfiguration.md)
+- [class VTLowLatencySuperResolutionScalerParameters](vtlowlatencysuperresolutionscalerparameters.md)
+- [class VTMotionEstimationSession](vtmotionestimationsession.md)
+- [class VTSuperResolutionScalerConfiguration](vtsuperresolutionscalerconfiguration.md)
+- [class VTSuperResolutionScalerParameters](vtsuperresolutionscalerparameters.md)
+- [class VTTemporalNoiseFilterConfiguration](vttemporalnoisefilterconfiguration.md)
+- [class VTTemporalNoiseFilterParameters](vttemporalnoisefilterparameters.md)
+### Variables
+- [let kVTCameraCalibrationExtrinsicOriginSource_StereoCameraSystemBaseline: CFString](kvtcameracalibrationextrinsicoriginsource_stereocamerasystembaseline.md)
+- [let kVTCameraCalibrationLensAlgorithmKind_ParametricLens: CFString](kvtcameracalibrationlensalgorithmkind_parametriclens.md)
+- [let kVTCameraCalibrationLensDomain_Color: CFString](kvtcameracalibrationlensdomain_color.md)
+- [let kVTCameraCalibrationLensRole_Left: CFString](kvtcameracalibrationlensrole_left.md)
+- [let kVTCameraCalibrationLensRole_Mono: CFString](kvtcameracalibrationlensrole_mono.md)
+- [let kVTCameraCalibrationLensRole_Right: CFString](kvtcameracalibrationlensrole_right.md)
+- [let kVTCompressionPreset_Balanced: CFString](kvtcompressionpreset_balanced.md)
+- [let kVTCompressionPreset_HighQuality: CFString](kvtcompressionpreset_highquality.md)
+- [let kVTCompressionPreset_HighSpeed: CFString](kvtcompressionpreset_highspeed.md)
+- [let kVTCompressionPreset_VideoConferencing: CFString](kvtcompressionpreset_videoconferencing.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_ExtrinsicOrientationQuaternion: CFString](kvtcompressionpropertycameracalibrationkey_extrinsicorientationquaternion.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_ExtrinsicOriginSource: CFString](kvtcompressionpropertycameracalibrationkey_extrinsicoriginsource.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_IntrinsicMatrix: CFString](kvtcompressionpropertycameracalibrationkey_intrinsicmatrix.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_IntrinsicMatrixProjectionOffset: CFString](kvtcompressionpropertycameracalibrationkey_intrinsicmatrixprojectionoffset.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_IntrinsicMatrixReferenceDimensions: CFString](kvtcompressionpropertycameracalibrationkey_intrinsicmatrixreferencedimensions.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_LensAlgorithmKind: CFString](kvtcompressionpropertycameracalibrationkey_lensalgorithmkind.md)
+  The following keys are required in each kVTCompressionPropertyKey_CameraCalibrationDataLensCollection dictionary.
+- [let kVTCompressionPropertyCameraCalibrationKey_LensDistortions: CFString](kvtcompressionpropertycameracalibrationkey_lensdistortions.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_LensDomain: CFString](kvtcompressionpropertycameracalibrationkey_lensdomain.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_LensFrameAdjustmentsPolynomialX: CFString](kvtcompressionpropertycameracalibrationkey_lensframeadjustmentspolynomialx.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_LensFrameAdjustmentsPolynomialY: CFString](kvtcompressionpropertycameracalibrationkey_lensframeadjustmentspolynomialy.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_LensIdentifier: CFString](kvtcompressionpropertycameracalibrationkey_lensidentifier.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_LensRole: CFString](kvtcompressionpropertycameracalibrationkey_lensrole.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_RadialAngleLimit: CFString](kvtcompressionpropertycameracalibrationkey_radialanglelimit.md)
+- [let kVTCompressionPropertyKey_CameraCalibrationDataLensCollection: CFString](kvtcompressionpropertykey_cameracalibrationdatalenscollection.md)
+- [let kVTCompressionPropertyKey_SupportedPresetDictionaries: CFString](kvtcompressionpropertykey_supportedpresetdictionaries.md)
+- [let kVTCompressionPropertyKey_VBVBufferDuration: CFString](kvtcompressionpropertykey_vbvbufferduration.md)
+- [let kVTCompressionPropertyKey_VBVInitialDelayPercentage: CFString](kvtcompressionpropertykey_vbvinitialdelaypercentage.md)
+- [let kVTCompressionPropertyKey_VBVMaxBitRate: CFString](kvtcompressionpropertykey_vbvmaxbitrate.md)
+- [let kVTCompressionPropertyKey_VariableBitRate: CFString](kvtcompressionpropertykey_variablebitrate.md)
+- [let kVTHDRMetadataInsertionMode_RequestSDRRangePreservation: CFString](kvthdrmetadatainsertionmode_requestsdrrangepreservation.md)
+- [let kVTHeroEye_Left: CFString](kvtheroeye_left.md)
+- [let kVTHeroEye_Right: CFString](kvtheroeye_right.md)
+- [let kVTMotionEstimationSessionCreationOption_Label: CFString!](kvtmotionestimationsessioncreationoption_label.md)
+- [let kVTMotionEstimationSessionCreationOption_MotionVectorSize: CFString!](kvtmotionestimationsessioncreationoption_motionvectorsize.md)
+- [let kVTMotionEstimationSessionCreationOption_UseMultiPassSearch: CFString!](kvtmotionestimationsessioncreationoption_usemultipasssearch.md)
+- [let kVTProjectionKind_Equirectangular: CFString](kvtprojectionkind_equirectangular.md)
+- [let kVTProjectionKind_HalfEquirectangular: CFString](kvtprojectionkind_halfequirectangular.md)
+- [let kVTProjectionKind_ParametricImmersive: CFString](kvtprojectionkind_parametricimmersive.md)
+- [let kVTProjectionKind_Rectilinear: CFString](kvtprojectionkind_rectilinear.md)
+- [let kVTRAWProcessingPropertyKey_MetadataForSidecarFile: CFString!](kvtrawprocessingpropertykey_metadataforsidecarfile.md)
+- [let kVTViewPackingKind_OverUnder: CFString](kvtviewpackingkind_overunder.md)
+- [let kVTViewPackingKind_SideBySide: CFString](kvtviewpackingkind_sidebyside.md)
+### Type Aliases
+- [typealias VTMotionEstimationOutputHandler](vtmotionestimationoutputhandler.md)
 
 
 ---

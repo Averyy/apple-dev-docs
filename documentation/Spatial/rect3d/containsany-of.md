@@ -11,9 +11,9 @@ Returns a Boolean value that indicates whether the rectangle contains any of the
 - Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
+- visionOS ?+
 - watchOS 9.0+
 - Unknown ?+ - Deprecated
-- visionOS ?+
 
 ## Declaration
 

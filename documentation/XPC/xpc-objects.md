@@ -1,6 +1,6 @@
 # XPC objects
 
-**Framework**: Xpc
+**Framework**: XPC
 
 Encapsulate data in objects that represent primitive types, collections, and more.
 

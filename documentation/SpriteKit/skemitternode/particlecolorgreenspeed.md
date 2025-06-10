@@ -17,7 +17,6 @@ The rate at which the green component of a particle’s color changes per second
 ## Declaration
 
 ```swift
-@MainActor
 var particleColorGreenSpeed: CGFloat { get set }
 ```
 

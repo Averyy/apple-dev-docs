@@ -1,6 +1,6 @@
 # ARFaceGeometry
 
-**Framework**: Arkit  
+**Framework**: ARKit  
 **Kind**: class
 
 A 3D mesh describing face topology for use in face-tracking AR sessions.
@@ -56,6 +56,7 @@ In an AR session, you can use this model as the basis for overlaying content tha
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

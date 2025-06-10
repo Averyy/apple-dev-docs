@@ -1,6 +1,6 @@
 # status
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The current status of the application cache. One of the values described in "Constants.”

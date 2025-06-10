@@ -121,8 +121,6 @@ For more information and to apply for these entitlements, visit [`HCE-based cont
 
 > ❗ **Important**:  Use of this entitlement is managed by Apple. It is subject to the terms and conditions agreed to as part of the application process.
 
- Use of this entitlement is managed by Apple. It is subject to the terms and conditions agreed to as part of the application process.
-
 ##### Testing Requirements
 
 To test HCE-based contactless transactions, you’ll need to test with an iPhone and NFC hardware. [`CardSession`](cardsession.md) requires the presence of an NFC reader, which isn’t supported in Simulator, to perform an ISO 7816 card emulation session.

@@ -1,6 +1,6 @@
 # videoHeight
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The native height of the video in CSS pixels. (read-only)

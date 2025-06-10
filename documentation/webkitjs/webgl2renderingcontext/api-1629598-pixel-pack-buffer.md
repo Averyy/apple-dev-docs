@@ -1,6 +1,6 @@
 # PIXEL_PACK_BUFFER
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

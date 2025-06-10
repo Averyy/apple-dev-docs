@@ -1,6 +1,6 @@
 # SwiftData
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: module
 
 Write your model code declaratively to add managed persistence and automatic iCloud sync.
@@ -37,8 +37,6 @@ To display models in a SwiftUI view, use the [`Query()`](query().md) macro and s
   Add the required capabilities and define a compatible schema to enable SwiftData to automatically sync your app’s model data using iCloud.
 - [Building a document-based app using SwiftData](../SwiftUI/Building-a-document-based-app-using-SwiftData.md)
   Code along with the WWDC presenter to transform an app with SwiftData.
-- [Adopting SwiftData for a Core Data app](../CoreData/adopting-swiftdata-for-a-core-data-app.md)
-  Persist data in your app intuitively with the Swift native persistence framework.
 ### Model definition
 - [Adding and editing persistent data in your app](adding-and-editing-persistent-data-in-your-app.md)
   Create a data entry form for collecting and changing data managed by SwiftData.

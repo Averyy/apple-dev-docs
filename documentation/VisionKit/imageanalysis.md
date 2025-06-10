@@ -1,6 +1,6 @@
 # ImageAnalysis
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: class
 
 An object that represents the results of analyzing an image, and provides the input for the Live Text interface object.

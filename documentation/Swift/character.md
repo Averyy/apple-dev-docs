@@ -173,6 +173,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [LosslessStringConvertible](losslessstringconvertible.md)
 - [RegexComponent](regexcomponent.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [TextOutputStreamable](textoutputstreamable.md)
 
 ## See Also

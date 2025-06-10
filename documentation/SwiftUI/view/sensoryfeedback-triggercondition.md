@@ -11,6 +11,7 @@ Plays the specified `feedback` when the provided `trigger` value changes and the
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS 26.0+ (Beta)
 - watchOS 10.0+
 
 ## Declaration
@@ -44,6 +45,8 @@ struct MyView: View {
 }
 ```
 
+When the value changes, the new version of the closure will be called, so any captured values will have their values from the time that the observed value has its new value.
+
 ## Parameters
 
 - `feedback`: Which type of feedback to play.
@@ -54,7 +57,7 @@ struct MyView: View {
 
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View](view/sensoryfeedback(_:trigger:).md)
   Plays the specified `feedback` when the provided `trigger` value changes.
-- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](view/sensoryfeedback(trigger:_:).md)
+- [func sensoryFeedback(trigger:_:)](view/sensoryfeedback(trigger:_:).md)
   Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
 - [struct SensoryFeedback](sensoryfeedback.md)
   Represents a type of haptic and/or audio feedback that can be played.

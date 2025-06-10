@@ -26,8 +26,6 @@ This initializer uses a combination of locale rules and heuristics to determine 
 
 > ❗ **Important**:  Only names using Latin or CJK scripts are supported.
 
- Only names using Latin or CJK scripts are supported.
-
 Here are some general rules that describe the name component parsing behavior:
 
 - Names in Latin script have components delimited by whitespace.

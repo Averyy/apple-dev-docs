@@ -26,7 +26,7 @@ A new semantic segmentation matte instance.
 
 #### Discussion
 
-This method throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) if you pass an unrecognized `exifOrientation`.
+This method throws an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if you pass an unrecognized `exifOrientation`.
 
 ## Parameters
 

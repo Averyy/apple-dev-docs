@@ -21,7 +21,7 @@ case unknown
 
 #### Discussion
 
-For more information about the underlying cause of the error, see the [`localizedDescription`](https://developer.apple.com/documentation/foundation/nserror/1414418-localizeddescription) property of the error object.
+For more information about the underlying cause of the error, see the [`localizedDescription`](https://developer.apple.com/documentation/Foundation/NSError/localizedDescription) property of the error object.
 
 Retrying may resolve this error in some instances.
 

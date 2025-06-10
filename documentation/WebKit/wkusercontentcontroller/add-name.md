@@ -1,6 +1,6 @@
 # add(_:name:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Installs a message handler that you can call from your JavaScript code.

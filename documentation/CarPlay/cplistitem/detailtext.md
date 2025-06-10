@@ -13,6 +13,7 @@ The list item’s secondary text.
 ## Declaration
 
 ```swift
+@MainActor
 var detailText: String? { get }
 ```
 

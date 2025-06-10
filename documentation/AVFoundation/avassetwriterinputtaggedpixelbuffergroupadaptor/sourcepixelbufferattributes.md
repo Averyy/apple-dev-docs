@@ -15,7 +15,7 @@ The attributes of buffers that the adaptor’s pixel buffer pool vends.
 ## Declaration
 
 ```swift
-var sourcePixelBufferAttributes: [String : Any]? { get }
+var sourcePixelBufferAttributes: [String : any Sendable]? { get }
 ```
 
 #### Discussion

@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to disable Remote Desktop.
+A response from the device after it processes the command to disable Remote Desktop on a device.
 
 **Availability**:
 - macOS 10.14.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,7 +16,7 @@ object DisableRemoteDesktopResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object DisableRemoteDesktopResponse.ErrorChainItem](disableremotedesktopresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 

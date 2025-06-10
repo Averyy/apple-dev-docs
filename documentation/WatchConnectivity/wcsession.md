@@ -1,6 +1,6 @@
 # WCSession
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: class
 
 The object that initiates communication between a WatchKit extension and its companion iOS app.
@@ -161,4 +161,4 @@ Be prepared to handle errors and provide a graceful fallback when data cannot be
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchConnectivity/wcsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchconnectivity/wcsession)*

@@ -1,6 +1,6 @@
 # update(with:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Inserts the given element into the set.

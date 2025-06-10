@@ -1,6 +1,6 @@
 # Donating Shortcuts
 
-**Framework**: Sirikit
+**Framework**: SiriKit
 
 Tell Siri about shortcuts to actions that the user performed in your app.
 
@@ -29,9 +29,9 @@ Your app can make donations using one of the following objects:
 
 To make a donation using [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity), define the activity as a type in the `NSUserActivityTypes` array in your . The activity type should be a reverse domain name that’s unique within the list.
 
-In your app, create an instance of [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) and set its [`title`](https://developer.apple.com/documentation/foundation/nsuseractivity/1413375-title), [`userInfo`](https://developer.apple.com/documentation/foundation/nsuseractivity/1411706-userinfo), and [`requiredUserInfoKeys`](https://developer.apple.com/documentation/foundation/nsuseractivity/1417256-requireduserinfokeys) with information that your app needs to resume the activity at a later time. Also set the [`isEligibleForPrediction`](https://developer.apple.com/documentation/foundation/nsuseractivity/2980674-iseligibleforprediction) property to [`true`](https://developer.apple.com/documentation/swift/true) and the [`persistentIdentifier`](https://developer.apple.com/documentation/foundation/nsuseractivity/2980675-persistentidentifier) to a unique string value, which you need in order to delete the donation (see [`Deleting Donated Shortcuts`](deleting-donated-shortcuts.md)). You can also suggest the voice phrase that a user may want to use when adding a phrase to Siri by setting the [`suggestedInvocationPhrase`](https://developer.apple.com/documentation/foundation/nsuseractivity/2976237-suggestedinvocationphrase) property on the user activity.
+In your app, create an instance of [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) and set its [`title`](https://developer.apple.com/documentation/Foundation/NSUserActivity/title), [`userInfo`](https://developer.apple.com/documentation/Foundation/NSUserActivity/userInfo), and [`requiredUserInfoKeys`](https://developer.apple.com/documentation/Foundation/NSUserActivity/requiredUserInfoKeys) with information that your app needs to resume the activity at a later time. Also set the [`isEligibleForPrediction`](https://developer.apple.com/documentation/Foundation/NSUserActivity/isEligibleForPrediction) property to [`true`](https://developer.apple.com/documentation/swift/true) and the [`persistentIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/persistentIdentifier) to a unique string value, which you need in order to delete the donation (see [`Deleting Donated Shortcuts`](deleting-donated-shortcuts.md)). You can also suggest the voice phrase that a user may want to use when adding a phrase to Siri by setting the [`suggestedInvocationPhrase`](https://developer.apple.com/documentation/Foundation/NSUserActivity/suggestedInvocationPhrase) property on the user activity.
 
-Next, call the [`becomeCurrent()`](https://developer.apple.com/documentation/foundation/nsuseractivity/1413665-becomecurrent) method on the user activity object to mark it as current, which donates the activity to Siri. Alternatively, you can attach the object to a [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) or [`UIResponder`](https://developer.apple.com/documentation/UIKit/UIResponder) object, which also marks the activity as current.
+Next, call the [`becomeCurrent()`](https://developer.apple.com/documentation/Foundation/NSUserActivity/becomeCurrent()) method on the user activity object to mark it as current, which donates the activity to Siri. Alternatively, you can attach the object to a [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) or [`UIResponder`](https://developer.apple.com/documentation/UIKit/UIResponder) object, which also marks the activity as current.
 
 To handle the action at a later time, implement the [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:continue:restorationHandler:)) method in your app delegate.
 
@@ -87,4 +87,4 @@ Even if you provide an Intents App Extension, you should always implement the [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/donating-shortcuts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/donating-shortcuts)*

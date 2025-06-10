@@ -1,6 +1,6 @@
 # TRANSFORM_FEEDBACK_PAUSED
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

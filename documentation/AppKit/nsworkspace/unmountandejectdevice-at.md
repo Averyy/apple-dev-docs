@@ -1,6 +1,6 @@
 # unmountAndEjectDevice(at:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Attempts to eject the volume mounted at the given path.

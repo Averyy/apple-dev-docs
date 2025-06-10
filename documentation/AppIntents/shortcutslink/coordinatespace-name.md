@@ -8,7 +8,7 @@ Assigns a name to the view’s coordinate space, so other code can operate on di
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst ?+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+

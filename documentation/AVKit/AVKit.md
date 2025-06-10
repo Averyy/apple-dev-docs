@@ -20,7 +20,7 @@ Create user interfaces for media playback, complete with transport controls, cha
 
 ## Topics
 
-### iOS Playback and Capture
+### iOS playback and capture
 - [Playing video content in a standard user interface](playing-video-content-in-a-standard-user-interface.md)
   Play media full screen, embedded inline, or in a floating Picture in Picture (PiP) window using a player view controller.
 - [class AVPlayerViewController](avplayerviewcontroller.md)
@@ -31,7 +31,11 @@ Create user interfaces for media playback, complete with transport controls, cha
   An object that registers handlers to respond to capture events from system hardware buttons.
 - [class AVCaptureEvent](avcaptureevent.md)
   An object that describes a user interaction with a system hardware button.
-### tvOS Playback and Capture
+- [class AVCaptureEventSound](avcaptureeventsound.md)
+  A sound object for a capture event.
+- [class AVInputPickerInteraction](avinputpickerinteraction.md)
+  Use `AVInputPickerInteraction` to present an input picker.
+### tvOS playback and capture
 - [Customizing the tvOS Playback Experience](customizing-the-tvos-playback-experience.md)
   Adopt the latest features of the redesigned tvOS player user interface to provide a more streamlined way to watch your content.
 - [Presenting Navigation Markers](presenting-navigation-markers.md)
@@ -60,7 +64,9 @@ Create user interfaces for media playback, complete with transport controls, cha
   A view controller that provides an interface to a person so they can select and connect a continuity device to the system.
 - [protocol AVContinuityDevicePickerViewControllerDelegate](avcontinuitydevicepickerviewcontrollerdelegate.md)
   An interface that responds to events from a continuity device picker view controller.
-### visionOS Playback
+### visionOS playback
+- [Playing immersive media with AVKit](playing-immersive-media-with-avkit.md)
+  Adopt the system playback interface to provide an immersive video watching experience.
 - [Creating a multiview video playback experience in visionOS](creating-a-multiview-video-playback-experience-in-visionos.md)
   Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
 - [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
@@ -77,14 +83,14 @@ Create user interfaces for media playback, complete with transport controls, cha
   An object that manages viewing multiple videos at once.
 - [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
   An object that synchronizes viewing environment state across participants in a SharePlay session.
-### macOS Playback and Capture
+### macOS playback and capture
 - [Implementing Trimming in a macOS Player](implementing-trimming-in-a-macos-player.md)
   Provide a QuickTime media-trimming experience in your macOS app.
 - [class AVPlayerView](avplayerview.md)
   A view that displays content from a player and presents a native user interface to control playback.
 - [class AVCaptureView](avcaptureview.md)
   A view that displays standard user interface controls for capturing media data.
-### Multiplatform Playback and Capture
+### Multiplatform playback and capture
 - [struct VideoPlayer](videoplayer.md)
   A view that displays content from a player and a native user interface to control playback.
 ### Picture in Picture
@@ -100,7 +106,7 @@ Create user interfaces for media playback, complete with transport controls, cha
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
 - [class AVPictureInPictureController](avpictureinpicturecontroller.md)
   A controller that responds to user-initiated Picture in Picture playback of video in a floating, resizable window.
-### Playback Route Selection
+### Playback route selection
 - [class AVRoutePickerView](avroutepickerview.md)
   A view that presents a list of nearby media receivers.
 ### Metadata

@@ -66,4 +66,4 @@ If you don’t have the required role or permission, work with a team member who
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/setting-up-your-project-to-use-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/setting-up-your-project-to-use-xcode-cloud)*

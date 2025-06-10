@@ -1,6 +1,6 @@
 # WeatherCondition.sunFlurries
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Snow flurries with visible sun.

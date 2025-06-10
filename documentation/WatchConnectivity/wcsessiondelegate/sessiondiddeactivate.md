@@ -1,6 +1,6 @@
 # sessionDidDeactivate(_:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method  
 **Required**: Yes
 

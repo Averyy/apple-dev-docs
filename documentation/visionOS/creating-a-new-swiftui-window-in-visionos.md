@@ -1,6 +1,6 @@
 # Creating SwiftUI windows in visionOS
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Display and manage multiple SwiftUI windows in your visionOS app.
 

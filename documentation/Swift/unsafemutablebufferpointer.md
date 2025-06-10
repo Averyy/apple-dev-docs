@@ -46,6 +46,7 @@ An `UnsafeMutableBufferPointer` instance is a view into memory and does not own 
   A pointer to the first element of the buffer.
 - [let count: Int](unsafemutablebufferpointer/count.md)
   The number of elements in the buffer.
+- [var span: Span<Element>](unsafemutablebufferpointer/span.md)
 ### Instance Methods
 - [func assign(repeating: Element)](unsafemutablebufferpointer/assign(repeating:).md)
 - [func deallocate()](unsafemutablebufferpointer/deallocate.md)
@@ -98,6 +99,7 @@ An `UnsafeMutableBufferPointer` instance is a view into memory and does not own 
 - [Collection Implementations](unsafemutablebufferpointer/collection-implementations.md)
 - [CustomDebugStringConvertible Implementations](unsafemutablebufferpointer/customdebugstringconvertible-implementations.md)
 - [MutableCollection Implementations](unsafemutablebufferpointer/mutablecollection-implementations.md)
+- [OperationParameter Implementations](unsafemutablebufferpointer/operationparameter-implementations.md)
 - [Sequence Implementations](unsafemutablebufferpointer/sequence-implementations.md)
 
 ## Relationships
@@ -106,6 +108,7 @@ An `UnsafeMutableBufferPointer` instance is a view into memory and does not own 
 - [AccelerateBuffer](../Accelerate/AccelerateBuffer.md)
 - [AccelerateMutableBuffer](../Accelerate/AccelerateMutableBuffer.md)
 - [AtomicRepresentable](../synchronization/atomicrepresentable.md)
+- [BNNSGraph.Builder.OperationParameter](../Accelerate/BNNSGraph/Builder/OperationParameter.md)
 - [BNNSGraph.PointerArgument](../Accelerate/BNNSGraph/PointerArgument.md)
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [BitwiseCopyable](bitwisecopyable.md)

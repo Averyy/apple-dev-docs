@@ -61,12 +61,15 @@ The AVFoundation object retains the custom video compositor instances for as lon
   An object that contains information a video compositor needs to render an output pixel buffer.
 - [func cancelAllPendingVideoCompositionRequests()](avvideocompositing/cancelallpendingvideocompositionrequests.md)
   Directs a custom video compositor object to cancel or finish all pending video composition requests.
+### Instance Properties
+- [var supportsSourceTaggedBuffers: Bool](avvideocompositing/supportssourcetaggedbuffers.md)
 
 ## Relationships
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

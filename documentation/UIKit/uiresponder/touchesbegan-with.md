@@ -1,6 +1,6 @@
 # touchesBegan(_:with:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Tells this object that one or more new touches occurred in a view or window.
@@ -23,8 +23,8 @@ func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
 
 - [Implementing a Multi-Touch app](implementing-a-multi-touch-app.md)
 - [Implementing a Continuous Gesture Recognizer](implementing-a-continuous-gesture-recognizer.md)
-- [Implementing coalesced touch support in an app](implementing-coalesced-touch-support-in-an-app.md)
 - [Implementing a Discrete Gesture Recognizer](implementing-a-discrete-gesture-recognizer.md)
+- [Implementing coalesced touch support in an app](implementing-coalesced-touch-support-in-an-app.md)
 
 #### Discussion
 

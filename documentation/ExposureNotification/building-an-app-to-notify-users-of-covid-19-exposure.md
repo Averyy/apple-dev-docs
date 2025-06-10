@@ -222,8 +222,6 @@ manager.requestPreAuthorizedDiagnosisKeys { (error) in
 
 > ❗ **Important**: PHAs must notify users that they’ve tested positive  the app calls `requestPreAuthorizedDiagnosisKeys(completionHandler:)`. They must also notify users that their keys are being submitted to the PHA’s key server.
 
-PHAs must notify users that they’ve tested positive  the app calls `requestPreAuthorizedDiagnosisKeys(completionHandler:)`. They must also notify users that their keys are being submitted to the PHA’s key server.
-
 ##### Detect Exposure Notifications Api Version at Runtime
 
 The Exposure Notifications APIs are available in the following distinct versions that implement slightly different versions of the detection algorithm:

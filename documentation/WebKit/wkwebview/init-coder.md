@@ -1,6 +1,6 @@
 # init(coder:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Returns an object initialized from data in the specified coder object.

@@ -1,6 +1,6 @@
 # color
 
-**Framework**: Mapkitjs  
+**Framework**: MapKit JS  
 **Kind**: property
 
 The color of the map feature.
@@ -36,4 +36,4 @@ attribute string color;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit.mapfeatureannotation/color)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit.mapfeatureannotation/color)*

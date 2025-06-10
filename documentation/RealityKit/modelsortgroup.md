@@ -10,6 +10,7 @@ A group that you assign to multiple entities to tell the renderer what order and
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -75,14 +76,13 @@ In this example, `entityC` and `entityD` are in the same group as each other, bu
   Options that indicate when the renderer draws a model’s depth relative to its color.
 - [ModelSortGroup.PlanarUIPlacement](modelsortgroup/planaruiplacement-swift.enum.md)
   A set of predefined groups that indicate how the renderer draws a model relative to a planar mesh or a SwiftUI view that’s coplanar and overlapping.
-### Default Implementations
-- [Equatable Implementations](modelsortgroup/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -94,6 +94,8 @@ In this example, `entityC` and `entityD` are in the same group as each other, bu
   A component that provides the suggested pixels per meter necessary to render an object.
 - [struct ModelDebugOptionsComponent](modeldebugoptionscomponent.md)
   A component that changes how RealityKit renders its entity to help with debugging.
+- [struct MeshInstancesComponent](meshinstancescomponent.md)
+  A component that performs GPU instancing on the ModelComponent on the same Entity.
 
 
 ---

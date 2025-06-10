@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: init
 
 Creates an image analyzer that identifies subjects, text, and machine-readable codes in images.

@@ -1,6 +1,6 @@
 # xpc_date_get_value(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the underlying date interval from an object.

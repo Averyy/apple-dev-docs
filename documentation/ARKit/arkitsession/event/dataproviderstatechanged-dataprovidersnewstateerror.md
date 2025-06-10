@@ -6,6 +6,7 @@
 An event that represents a change in state of one of the data providers associated with a session.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

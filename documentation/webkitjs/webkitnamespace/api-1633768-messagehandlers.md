@@ -1,6 +1,6 @@
 # messageHandlers
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 **Availability**:

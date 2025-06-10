@@ -1,6 +1,6 @@
 # doubleTap()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a double-tap event to a hittable point the system computes for the element.

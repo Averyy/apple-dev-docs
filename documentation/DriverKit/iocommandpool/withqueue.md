@@ -17,9 +17,7 @@ static IOCommandPoolPtr withQueue(IODispatchQueue * queue);
 
 #### Discussion
 
-```None
-         a new instance of an IOCommandPool and returns a pointer to that object.
-```
+The withQueue method is what is known as a factory method. It creates a new instance of an IOCommandPool and returns a pointer to that object.
 
 ## Parameters
 

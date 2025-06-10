@@ -1,6 +1,6 @@
 # SHOW_ENTITY
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

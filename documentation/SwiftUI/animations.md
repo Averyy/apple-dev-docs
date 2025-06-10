@@ -92,6 +92,7 @@ For design guidance, see [`Motion`](https://developer.apple.com/design/Human-Int
 ### Making data animatable
 - [protocol Animatable](animatable.md)
   A type that describes how to animate a property of a view.
+- [struct AnimatableValues](animatablevalues.md)
 - [struct AnimatablePair](animatablepair.md)
   A pair of animatable values, which is itself animatable.
 - [protocol VectorArithmetic](vectorarithmetic.md)

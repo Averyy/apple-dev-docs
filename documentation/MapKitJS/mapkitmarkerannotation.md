@@ -24,9 +24,9 @@ A  is a balloon-shaped annotation that contains a glyph or text. On the map, the
 
 The following example shows a customized marker that specifies a color for the balloon background and the glyph, and provides custom glyph images. Color properties accept either a color name, here “brown” and “green”, or the equivalent hexadecimal color value such as “`#A52A2A`” and “`#008000`”, respectively. Or, you can use a specific color that matches your apps specific design. For more information on standardized colors, see the CSS working group’s list of [`common color names and values`](https://developer.apple.comhttps://drafts.csswg.org/css-color/#named-colors).
 
-```swift
-var portland = new mapkit.Coordinate(45.5231, -122.6765);
-var customMarker = new MarkerAnnotation(portland, {
+```javascript
+const portland = new mapkit.Coordinate(45.5231, -122.6765);
+const customMarker = new MarkerAnnotation(portland, {
     color: "green",
     glyphColor: "brown",
     glyphImage: { 1: "glyphImage.png" },
@@ -36,10 +36,10 @@ var customMarker = new MarkerAnnotation(portland, {
 
 The following example shows a marker annotation with a custom callout implemented by the callout delegate. In this example, the annotation is a dot when selected because [`selectedGlyphImage`](mapkit.markerannotation/selectedglyphimage.md) isn’t used.
 
-```swift
-var calloutDelegate = {
+```javascript
+const calloutDelegate = {
     calloutRightAccessoryForAnnotation: function() {
-        var accessoryViewRight = document.createElement("a");
+        const accessoryViewRight = document.createElement("a");
         accessoryViewRight.className = "right-accessory-view";
         accessoryViewRight.href = "https://www.nps.gov/stli/index.htm";
         accessoryViewRight.target = "_blank";
@@ -49,7 +49,7 @@ var calloutDelegate = {
     }
 };
 
-var annotation = new mapkit.MarkerAnnotation(new mapkit.Coordinate(40.6892, -74.0445), {
+const annotation = new mapkit.MarkerAnnotation(new mapkit.Coordinate(40.6892, -74.0445), {
     title: "Title",
     subtitle: "Subtitle",
     callout: calloutDelegate
@@ -86,7 +86,7 @@ var annotation = new mapkit.MarkerAnnotation(new mapkit.Coordinate(40.6892, -74.
 ## Relationships
 
 ### Inherited By
-- [mapkit.Annotation](mapkit.annotation/mapkit.annotation.md)
+- [mapkit.Annotation](mapkit.annotation.md)
 
 
 ---

@@ -8,6 +8,7 @@ Controls the focus distance and aperture of the rendering for the frames.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 

@@ -123,6 +123,8 @@ Create a `UIHostingController` object when you want to integrate SwiftUI views i
   Options for how a hosting controller tracks its content’s size.
 - [struct UIHostingConfiguration](uihostingconfiguration.md)
   A content configuration suitable for hosting a hierarchy of SwiftUI views.
+- [protocol UIHostingSceneDelegate](uihostingscenedelegate.md)
+  Extends `UIKit/UISceneDelegate` to bridge SwiftUI scenes.
 
 
 ---

@@ -20,7 +20,7 @@ func createItem(basedOn itemTemplate: NSFileProviderItem, fields: NSFileProvider
 
 #### Return Value
 
-A progress that tracks creating the item in your remote storage and uploading its content. The system automatically calls [`cancel()`](https://developer.apple.com/documentation/foundation/progress/1413832-cancel)  on the progress object when an error occurs.
+A progress that tracks creating the item in your remote storage and uploading its content. The system automatically calls [`cancel()`](https://developer.apple.com/documentation/Foundation/Progress/cancel())  on the progress object when an error occurs.
 
 #### Discussion
 

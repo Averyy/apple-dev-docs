@@ -45,8 +45,6 @@ The [`setDynamicShapes(_:forFunction:)`](bnnsgraph/context/setdynamicshapes(_:fo
 
 ## See Also
 
-- [func setBatchSize(Int, forFunction: String?) async](bnnsgraph/context/setbatchsize(_:forfunction:).md)
-  Sets the batch size for a graph.
 - [func setDynamicShapes([BNNSGraph.Shape], forFunction: String?) async throws -> [BNNSGraph.Shape]](bnnsgraph/context/setdynamicshapes(_:forfunction:).md)
   Specifies the dynamic shapes for a graph and, if possible, infers the output shapes.
 - [func argumentCount(forFunction: String?) -> Int](bnnsgraph/context/argumentcount(forfunction:).md)

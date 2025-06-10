@@ -25,6 +25,12 @@ struct Limits
 - [var maximumNumberOfInputImages: Int](photogrammetrysession/limits-swift.struct/maximumnumberofinputimages.md)
   Returns the maximum number of input images or samples that the session can use for reconstruction. If more than this number are provided, any in excess of the limit will be ignored and an `.invalidSample` message for the sample will be output.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 
 ---
 

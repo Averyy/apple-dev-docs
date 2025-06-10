@@ -1,6 +1,6 @@
 # kVTEncodeFrameOptionKey_ForceLTRRefresh
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A Boolean value that indicates whether to force Long Term Reference (LTR).

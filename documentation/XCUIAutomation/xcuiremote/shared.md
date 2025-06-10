@@ -1,6 +1,6 @@
 # shared
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The simulated physical remote control.

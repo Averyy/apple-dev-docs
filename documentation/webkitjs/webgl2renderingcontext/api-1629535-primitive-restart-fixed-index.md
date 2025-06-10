@@ -1,6 +1,6 @@
 # PRIMITIVE_RESTART_FIXED_INDEX
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

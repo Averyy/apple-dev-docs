@@ -23,8 +23,6 @@ static let subheadline: UIFont.TextStyle
 
 > ❗ **Important**:  On tvOS, text used for subheadings should be in an all-caps format.
 
- On tvOS, text used for subheadings should be in an all-caps format.
-
 ## See Also
 
 - [static let body: UIFont.TextStyle](uifont/textstyle/body.md)

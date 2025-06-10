@@ -1,6 +1,6 @@
 # UNIFORM_BLOCK_BINDING
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # Fetching weather forecasts with WeatherKit
 
-**Framework**: Weatherkit
+**Framework**: WeatherKit
 
 Request and display weather data for destination airports in a flight-planning app.
 

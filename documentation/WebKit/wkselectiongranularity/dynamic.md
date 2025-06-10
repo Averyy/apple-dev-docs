@@ -1,6 +1,6 @@
 # WKSelectionGranularity.dynamic
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Granularity that varies automatically depending on the selection.

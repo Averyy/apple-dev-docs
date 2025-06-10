@@ -1,6 +1,6 @@
 # SVG_MORPHOLOGY_OPERATOR_DILATE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

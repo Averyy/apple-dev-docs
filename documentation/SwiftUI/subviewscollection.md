@@ -43,6 +43,7 @@ The collection’s elements are the pieces that make up the given view, and the 
 - [struct Subview](subview.md)
   An opaque value representing a subview of another view.
 - [struct SubviewsCollectionSlice](subviewscollectionslice.md)
+  A slice of a SubviewsCollection.
 - [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](view/containervalue(_:_:).md)
   Sets a particular container value of a view.
 - [struct ContainerValues](containervalues.md)

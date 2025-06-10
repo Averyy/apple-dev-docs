@@ -1,6 +1,6 @@
 # UIViewControllerPreviewing
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: protocol
 
 A set of methods that define the interface for configuring a previewing view controller on devices that support 3D Touch.
@@ -65,4 +65,4 @@ To learn about 3D Touch, read [`Adopting 3D Touch on iPhone`](https://developer.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiviewcontrollerpreviewing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiviewcontrollerpreviewing)*

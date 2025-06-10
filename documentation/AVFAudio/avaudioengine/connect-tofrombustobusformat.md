@@ -1,6 +1,6 @@
 # connect(_:to:fromBus:toBus:format:)
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: method
 
 Establishes a connection between two nodes, specifying the input and output busses.

@@ -20,6 +20,7 @@ var commandType: NEHotspotHelperCommandType { get }
 ## See Also
 
 - [enum NEHotspotHelperCommandType](nehotspothelpercommandtype.md)
+  An enumeration of hotspot command types.
 - [var network: NEHotspotNetwork?](nehotspothelpercommand/network.md)
   The network associated with the command.
 - [var networkList: [NEHotspotNetwork]?](nehotspothelpercommand/networklist.md)

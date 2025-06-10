@@ -92,9 +92,6 @@ class NSMutableOrderedSet
   Adds each object in another given set to the receiving mutable ordered set, if not present.
 ### Initializers
 - [init?(coder: NSCoder)](nsmutableorderedset/init(coder:).md)
-### Subscripts
-- [subscript(Int) -> Any](nsmutableorderedset/subscript(_:).md)
-  Returns the object at the specified index of the set.
 
 ## Relationships
 
@@ -113,6 +110,8 @@ class NSMutableOrderedSet
 - [NSMutableCopying](nsmutablecopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

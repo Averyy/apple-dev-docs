@@ -31,8 +31,6 @@ The audio session category [`playAndRecord`](avaudiosession/category-swift.struc
 
 > ❗ **Important**:  SharePlay and the Group Activities API only support audio sessions using the [`playback`](avaudiosession/category-swift.struct/playback.md) category. Attempting to activate a session that uses an unsupported category results in an error.
 
- SharePlay and the Group Activities API only support audio sessions using the [`playback`](avaudiosession/category-swift.struct/playback.md) category. Attempting to activate a session that uses an unsupported category results in an error.
-
 ## Topics
 
 ### Creating a Category
@@ -61,6 +59,7 @@ The audio session category [`playAndRecord`](avaudiosession/category-swift.struc
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

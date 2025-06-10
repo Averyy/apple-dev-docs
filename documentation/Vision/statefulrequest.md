@@ -43,6 +43,7 @@ protocol StatefulRequest : VisionRequest
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionRequest](visionrequest.md)
 ### Conforming Types
 - [DetectHumanBodyPose3DRequest](detecthumanbodypose3drequest.md)

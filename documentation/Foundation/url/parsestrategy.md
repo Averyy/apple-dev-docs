@@ -92,6 +92,7 @@ let url = try? URL(urlString, strategy: .url
 - [ParseStrategy](parsestrategy.md)
 - [RegexComponent](../Swift/RegexComponent.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # displayAsPalette
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 An option indicating the menu displays as a row of menu elements for choosing from a collection of items.

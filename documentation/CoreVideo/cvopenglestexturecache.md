@@ -17,11 +17,6 @@ class CVOpenGLESTextureCache
 
 #### Overview
 
-```None
-@typedef	CVOpenGLESTextureCacheRef
-@abstract   CoreVideo OpenGLES Texture Cache
-```
-
 A reference to a Core Video OpenGLES texture cache.
 
 ## Relationships

@@ -55,6 +55,7 @@ A credential is an abstraction of the cryptographic elements of your applet bund
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

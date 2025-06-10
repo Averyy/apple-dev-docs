@@ -107,8 +107,6 @@ When a user requests for Apple to permanently delete their Apple ID, Apple sends
 
 > ❗ **Important**:  When a user permanently deletes their Apple ID, Sign in with Apple invalidates all user tokens and disables email forwarding for all associated apps. For native apps, the system doesn’t send a [`credentialRevokedNotification`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/credentialRevokedNotification). Use [`getCredentialState(forUserID:completion:)`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/getCredentialState(forUserID:completion:)) to respond to account deletion events.
 
- When a user permanently deletes their Apple ID, Sign in with Apple invalidates all user tokens and disables email forwarding for all associated apps. For native apps, the system doesn’t send a [`credentialRevokedNotification`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/credentialRevokedNotification). Use [`getCredentialState(forUserID:completion:)`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/getCredentialState(forUserID:completion:)) to respond to account deletion events.
-
 To indicate when the user disables or permanently deletes their Apple ID, be sure to update your server’s records according to your process.
 
 ## See Also

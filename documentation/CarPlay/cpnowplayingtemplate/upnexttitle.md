@@ -13,6 +13,7 @@ The title for the Up Next button.
 ## Declaration
 
 ```swift
+@MainActor
 var upNextTitle: String { get set }
 ```
 

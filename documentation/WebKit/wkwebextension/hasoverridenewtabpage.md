@@ -1,6 +1,6 @@
 # hasOverrideNewTabPage
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating whether the extension provides an alternative to the default new tab page.

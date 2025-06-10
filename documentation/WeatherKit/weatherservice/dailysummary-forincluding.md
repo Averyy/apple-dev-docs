@@ -1,6 +1,6 @@
 # dailySummary(for:including:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns day weather summaries for the requested location, for the past 30 days, including the present day.

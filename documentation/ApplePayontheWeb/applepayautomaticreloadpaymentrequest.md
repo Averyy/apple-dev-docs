@@ -25,8 +25,6 @@ dictionary ApplePayAutomaticReloadPaymentRequest {
 
 > ❗ **Important**:  You must include the [`automaticReloadPaymentRequest`](applepaymodifier/automaticreloadpaymentrequest.md) property in the [`ApplePayPaymentRequest`](applepaypaymentrequest.md) object to set up an automatic reload payment.
 
- You must include the [`automaticReloadPaymentRequest`](applepaymodifier/automaticreloadpaymentrequest.md) property in the [`ApplePayPaymentRequest`](applepaypaymentrequest.md) object to set up an automatic reload payment.
-
 Use an [`ApplePayAutomaticReloadPaymentRequest`](applepayautomaticreloadpaymentrequest.md) object to provide the user with payment details and a way to manage payment methods for an automatic reload payment. You can optionally display a billing agreement and set up merchant token life-cycle notifications for the request. For more information about the merchant token life-cycle notifications, see [`Apple Pay Merchant Token Management API`](https://developer.apple.com/documentation/MerchantTokenNotificationServices).
 
 Apple Pay issues an Apple Pay Merchant Token if the user’s payment network supports merchant-specific payment tokens. Otherwise, Apple Pay issues a device token for the payment request.

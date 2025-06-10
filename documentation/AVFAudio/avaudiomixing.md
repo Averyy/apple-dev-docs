@@ -32,8 +32,6 @@ Source nodes maintain mixing settings when switching between different mixers. F
 
 > ❗ **Important**:  Several classes adopt the `AVAudioMixing` protocol. The protocol itself conforms to [`AVAudio3DMixing`](avaudio3dmixing.md) and [`AVAudioStereoMixing`](avaudiostereomixing.md). Classes that conform to `AVAudioMixing` also conform to those protocols.
 
- Several classes adopt the `AVAudioMixing` protocol. The protocol itself conforms to [`AVAudio3DMixing`](avaudio3dmixing.md) and [`AVAudioStereoMixing`](avaudiostereomixing.md). Classes that conform to `AVAudioMixing` also conform to those protocols.
-
 ## Topics
 
 ### Defining Mixing Properties

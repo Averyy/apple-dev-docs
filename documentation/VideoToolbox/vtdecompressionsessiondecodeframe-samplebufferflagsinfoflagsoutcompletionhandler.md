@@ -1,6 +1,6 @@
 # VTDecompressionSessionDecodeFrame(_:sampleBuffer:flags:infoFlagsOut:completionHandler:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Decompresses a video frame and calls the provided output closure when decompression completes.

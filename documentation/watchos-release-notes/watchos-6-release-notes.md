@@ -1,6 +1,6 @@
 # watchOS 6 Release Notes
 
-**Framework**: Watchos Release Notes
+**Framework**: watchOS Release Notes
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -10,19 +10,17 @@ The watchOS 6 SDK provides support for developing watchOS apps for Apple Watch d
 
 > ⚠️ **Warning**: You must update your watch to watchOS 6 beta 2 or later before updating to iOS 13 beta 7 or later, otherwise your watch will no longer be able to connect to your phone. (52854192)
 
-You must update your watch to watchOS 6 beta 2 or later before updating to iOS 13 beta 7 or later, otherwise your watch will no longer be able to connect to your phone. (52854192)
-
 ##### Networking
 
 ###### New Features
 
 - To enhance security, [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) no longer sniffs the MIME type when the server sends `Content-Type: application/octet-stream`. (7820658)
-- [`NSURLRequest.CachePolicy.reloadRevalidatingCacheData`](https://developer.apple.com/documentation/foundation/nsurlrequest/cachepolicy/reloadrevalidatingcachedata) and [`NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData`](https://developer.apple.com/documentation/foundation/nsurlrequest/cachepolicy/reloadignoringlocalandremotecachedata) APIs are now available. (49660334)
+- [`NSURLRequest.CachePolicy.reloadRevalidatingCacheData`](https://developer.apple.com/documentation/Foundation/NSURLRequest/CachePolicy-swift.enum/reloadRevalidatingCacheData) and [`NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData`](https://developer.apple.com/documentation/Foundation/NSURLRequest/CachePolicy-swift.enum/reloadIgnoringLocalAndRemoteCacheData) APIs are now available. (49660334)
 - [`URLSessionWebSocketTask`](https://developer.apple.com/documentation/Foundation/URLSessionWebSocketTask) and [`URLSessionStreamTask`](https://developer.apple.com/documentation/Foundation/URLSessionStreamTask) are now available for use in watchOS apps. (49779789)
 
 ###### Known Issues
 
-- The [`urlSession(_:taskIsWaitingForConnectivity:)`](https://developer.apple.com/documentation/foundation/urlsessiontaskdelegate/2908819-urlsession) delegate callback might not function as expected. (54309264)
+- The [`urlSession(_:taskIsWaitingForConnectivity:)`](https://developer.apple.com/documentation/Foundation/URLSessionTaskDelegate/urlSession(_:taskIsWaitingForConnectivity:)) delegate callback might not function as expected. (54309264)
 
 ###### Deprecations
 

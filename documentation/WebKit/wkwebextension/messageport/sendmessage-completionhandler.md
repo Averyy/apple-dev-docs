@@ -1,6 +1,6 @@
 # sendMessage(_:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sends a message to the connected web extension.

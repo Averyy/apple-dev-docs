@@ -32,8 +32,6 @@ Use this function instead of `unsafeBitcast(_:to:)` because this function is mor
 
 > ⚠️ **Warning**: This function trades safety for performance. Use `unsafeDowncast(_:to:)` only when you are confident that `x is T` always evaluates to `true`, and only after `x as! T` has proven to be a performance problem.
 
-This function trades safety for performance. Use `unsafeDowncast(_:to:)` only when you are confident that `x is T` always evaluates to `true`, and only after `x as! T` has proven to be a performance problem.
-
 ## Parameters
 
 - `x`: An instance to cast to type  .

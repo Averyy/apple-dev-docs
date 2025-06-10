@@ -1,6 +1,6 @@
 # additionalLeadingNavigationBarButtonItems
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 Additional bar button items that the document browser displays on the leading side of its navigation bar.

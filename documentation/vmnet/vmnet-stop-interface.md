@@ -1,6 +1,6 @@
 # vmnet_stop_interface(_:_:_:)
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: func
 
 Stops the interface.

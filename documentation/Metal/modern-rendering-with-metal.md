@@ -31,4 +31,4 @@ Because this sample app uses indirect command buffers, you can’t run this samp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/modern-rendering-with-metal)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/modern-rendering-with-metal)*

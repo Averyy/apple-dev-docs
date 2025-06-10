@@ -16,7 +16,7 @@ var matchLocalPrefix: Int { get }
 
 #### Discussion
 
-This property is [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound) for rules whose [`matchLocalNetwork`](nenetworkrule/matchlocalnetwork.md) property is `nil.`
+This property is [`NSNotFound`](https://developer.apple.com/documentation/Foundation/NSNotFound-4qp9h) for rules whose [`matchLocalNetwork`](nenetworkrule/matchlocalnetwork.md) property is `nil.`
 
 ## See Also
 

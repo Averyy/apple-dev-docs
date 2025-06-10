@@ -50,6 +50,21 @@ The video compositor must adopt the [`AVVideoCompositing`](avvideocompositing.md
   Finishes the request with an error.
 - [func finishCancelledRequest()](avasynchronousvideocompositionrequest/finishcancelledrequest.md)
   Cancels the request to compose a video frame.
+### Instance Methods
+- [func finish(withComposedPixelBuffer: CVReadOnlyPixelBuffer)](avasynchronousvideocompositionrequest/finish(withcomposedpixelbuffer:).md)
+  The method that the custom compositor calls when composition succeeds.
+- [func finish(withComposedTaggedBuffers: [CMTaggedDynamicBuffer])](avasynchronousvideocompositionrequest/finish(withcomposedtaggedbuffers:).md)
+  The method that the custom compositor calls when composition succeeds.  - Parameter taggedBuffers: The tagged buffers containing the composed tagged buffers. The tagged buffers must be compatible with the outputBufferDescription specified in the video composition. The outputBufferDescription must not be nil when calling this function.
+- [func finish(withTaggedBuffers: [CMTaggedBuffer])](avasynchronousvideocompositionrequest/finish(withtaggedbuffers:).md)
+  The method that the custom compositor calls when composition succeeds.
+- [func sourceReadOnlyPixelBuffer(byTrackID: CMPersistentTrackID) -> CVReadOnlyPixelBuffer?](avasynchronousvideocompositionrequest/sourcereadonlypixelbuffer(bytrackid:).md)
+  Returns the source CVReadOnlyPixelBuffer for the given track ID. If the track contains tagged buffers, a pixel buffer from one of the tagged buffers will be returned.
+- [func sourceReadySampleBuffer(byTrackID: CMPersistentTrackID) -> CMReadySampleBuffer<CMSampleBuffer.DynamicContent>?](avasynchronousvideocompositionrequest/sourcereadysamplebuffer(bytrackid:).md)
+  Returns the source CMReadySampleBuffer for the given track ID.
+- [func sourceTaggedBuffers(byTrackID: CMPersistentTrackID) -> [CMTaggedBuffer]?](avasynchronousvideocompositionrequest/sourcetaggedbuffers(bytrackid:).md)
+  Returns the source tagged buffers for the given track ID. Returns nil if the video track does not contain tagged buffers, or if the track does not contain video. This function should only be called when supportsSourceTaggedBuffers is YES.
+- [func sourceTaggedDynamicBuffers(byTrackID: CMPersistentTrackID) -> [CMTaggedDynamicBuffer]?](avasynchronousvideocompositionrequest/sourcetaggeddynamicbuffers(bytrackid:).md)
+  Returns the source tagged dynamic buffers for the given track ID. Returns nil if the video track does not contain tagged buffers, or if the track does not contain video. This function should only be called when supportsSourceTaggedBuffers is YES.
 
 ## Relationships
 
@@ -63,6 +78,8 @@ The video compositor must adopt the [`AVVideoCompositing`](avvideocompositing.md
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # MDM
 
-**Framework**: Devicemanagement  
+**Framework**: Device Management  
 **Kind**: dictionary
 
 The payload you use to configure mobile device management (MDM) settings.
@@ -12,8 +12,6 @@ The payload you use to configure mobile device management (MDM) settings.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,11 +21,13 @@ object MDM
 
 ## Mentions
 
+- [Implementing the simple authentication account-driven enrollment flow](implementing-the-simple-authentication-user-enrollment-flow.md)
+- [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
 - [Managing MDM Devices and Users in macOS](managing-mdm-devices-and-users-in-macos.md)
 
-#### Overview
-
 #### Discussion
+
+Specify `com.apple.mdm` as the payload type.
 
 Also define the following four standard payload values in your MDM payload:
 
@@ -37,17 +37,17 @@ Also define the following four standard payload values in your MDM payload:
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | - |
-| Allow Manual Install | iOS, macOS, tvOS |
-| Requires Supervision | watchOS |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| User channel | NA |
+| Allow manual install | iOS, macOS, tvOS, visionOS |
+| Requires supervision | watchOS |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -146,7 +146,7 @@ Also define the following four standard payload values in your MDM payload:
                 </array>
                 <key>Challenge</key>
                 <string>MDMEnrollment</string>
-            </dict>         
+            </dict>
             <key>PayloadIdentifier</key>
             <string>com.example.mysceppayload</string>
             <key>PayloadType</key>
@@ -214,4 +214,4 @@ Also define the following four standard payload values in your MDM payload:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/mdm)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/mdm)*

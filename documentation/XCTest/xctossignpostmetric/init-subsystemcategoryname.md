@@ -1,6 +1,6 @@
 # init(subsystem:category:name:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates a metric to record a specific signpost.

@@ -8,7 +8,7 @@ Applies a hover effect to this view.
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
+- Mac Catalyst ?+
 - tvOS 16.0+
 - visionOS 1.0+
 

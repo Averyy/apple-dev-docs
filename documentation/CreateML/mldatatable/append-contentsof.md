@@ -23,8 +23,6 @@ mutating func append(contentsOf newTable: MLDataTable)
 
 > ❗ **Important**: The columns of both data tables must have the same names and types. Otherwise, the data table will be invalidated.
 
-The columns of both data tables must have the same names and types. Otherwise, the data table will be invalidated.
-
 ## Parameters
 
 - `newTable`: Another data table to append to the data table.

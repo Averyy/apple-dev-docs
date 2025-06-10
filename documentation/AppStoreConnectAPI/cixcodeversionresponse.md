@@ -20,6 +20,7 @@ object CiXcodeVersionResponse
   The data structure that represents an Xcode Versions resource.
 - [object CiXcodeVersionsResponse](cixcodeversionsresponse.md)
   A response that contains a list of Xcode Versions resources.
+- [object CiXcodeVersionMacOsVersionsLinkagesResponse](cixcodeversionmacosversionslinkagesresponse.md)
 
 
 ---

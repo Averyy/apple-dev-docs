@@ -1,6 +1,6 @@
 # Supporting semantic tags in Wallet passes
 
-**Framework**: Walletpasses
+**Framework**: Wallet Passes
 
 Enable the system to offer suggestions for actions related to passes by adding machine-readable metadata.
 

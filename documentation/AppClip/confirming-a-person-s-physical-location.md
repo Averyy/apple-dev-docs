@@ -1,6 +1,6 @@
 # Confirming a person’s physical location
 
-**Framework**: Appclip
+**Framework**: App Clips
 
 Add code to quickly confirm a person’s physical location while respecting their privacy.
 
@@ -21,7 +21,7 @@ To enable your App Clip to verify the person’s location, modify your App Clip�
 
 Alternatively, open the `Info.plist` file in the property list editor and add the entry by selecting App Clip from the list of keys. This adds the [`NSAppClip`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppClip) key and the following entries of type `Boolean` to its dictionary: “Requests ephemeral user notifications” and “Requests location confirmation.” Per default, the value for both entries is `NO`. Change the value for “Requests location confirmation” to `YES`.
 
-> **Note**:  Don’t add an entry for the [`NSAppClipRequestLocationConfirmation`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppClip/NSAppClipRequestLocationConfirmation) key to your full app’s `Info.plist` — functionality to confirm a person’s location is only available to App Clips. Instead, modify your full app’s code to request permission to access the location of a device and make use of the [`Core Location`](https://developer.apple.com/documentation/CoreLocation) framework. For more information, see [`Getting the current location of a device`](https://developer.apple.com/documentation/CoreLocation/getting-the-current-location-of-a-device).
+> **Note**:  Don’t add an entry for the [`NSAppClipRequestLocationConfirmation`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppClip/NSAppClipRequestLocationConfirmation) key to your full app’s `Info.plist` — functionality to confirm a person’s location is only available to App Clips. Instead, modify your full app’s code to request permission to access the location of a device and make use of the [`Core Location`](https://developer.apple.com/documentation/CoreLocation) framework. For more information, refer to [`Getting the current location of a device`](https://developer.apple.com/documentation/CoreLocation/getting-the-current-location-of-a-device).
 
 ##### Add Code That Verifies the Physical Location
 
@@ -87,18 +87,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 ```
 
-For more information on how you can access the App Clip’s invocation URL, see [`Responding to invocations`](responding-to-invocations.md).
+For more information on how you can access the App Clip’s invocation URL, refer to [`Responding to invocations`](responding-to-invocations.md).
 
 ## See Also
 
-- [Configuring the launch experience of your App Clip](configuring-the-launch-experience-of-your-app-clip.md)
-  Review how people launch your App Clip, identify invocation URLs, make use of default App Clip links, and configure experiences in App Store Connect.
-- [Associating your App Clip with your website](associating-your-app-clip-with-your-website.md)
-  Enable the system to verify your App Clip to support invocations in iOS 16.3 or earlier and from your website.
-- [Supporting invocations from your website and the Messages app](supporting-invocations-from-your-website-and-the-messages-app.md)
-  Display a Smart App Banner and the App Clip card on your website that people tap to launch your App Clip, and add support for invocations from the Messages app.
 - [Responding to invocations](responding-to-invocations.md)
   Add code to respond to invocations and offer a focused launch experience.
+- [Associating your App Clip with your website](associating-your-app-clip-with-your-website.md)
+  Enable the system to verify your App Clip to support invocations from your website and devices running iOS 16.3 or earlier.
+- [Supporting invocations from your website and the Messages app](supporting-invocations-from-your-website-and-the-messages-app.md)
+  Display a Smart App Banner and the App Clip card on your website that people tap to launch your App Clip, and add support for invocations from the Messages app.
 - [Launching another app’s App Clip from your app](launching-another-app-s-app-clip-from-your-app.md)
   Enable people to launch another app’s App Clip from your app with App Clip links and offer a rich preview of it with the Link Presentation framework.
 - [class APActivationPayload](apactivationpayload.md)
@@ -109,4 +107,4 @@ For more information on how you can access the App Clip’s invocation URL, see 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/confirming-a-person-s-physical-location)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appclip/confirming-a-person-s-physical-location)*

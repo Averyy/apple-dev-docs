@@ -31,6 +31,8 @@ protocol GKAchievementViewControllerDelegate : NSObjectProtocol
 - [protocol GKChallengeEventHandlerDelegate](gkchallengeeventhandlerdelegate.md)
   You implement the [`GKChallengeEventHandlerDelegate`](gkchallengeeventhandlerdelegate.md) delegate to control how challenges are displayed in your game.
 - [protocol GKChallengesViewControllerDelegate](gkchallengesviewcontrollerdelegate.md)
+- [protocol GKChallengeListener](gkchallengelistener.md)
+  An object that responds to challenge events.
 - [protocol GKFriendRequestComposeViewControllerDelegate](gkfriendrequestcomposeviewcontrollerdelegate.md)
   The [`GKFriendRequestComposeViewControllerDelegate`](gkfriendrequestcomposeviewcontrollerdelegate.md) protocol is implemented by delegates of the [`GKFriendRequestComposeViewController`](gkfriendrequestcomposeviewcontroller.md) class. The delegate is called when the player dismisses the friend request.
 - [protocol GKGameSessionEventListener](gkgamesessioneventlistener.md)

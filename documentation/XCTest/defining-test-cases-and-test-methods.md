@@ -1,6 +1,6 @@
 # Defining Test Cases and Test Methods
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Add test cases and test methods to a test target to confirm that your code performs as expected.
 
@@ -21,12 +21,6 @@ Listing 1. Example test case and test method
 This example defines an [`XCTestCase`](xctestcase.md) subclass, `TableValidationTests`, with a single test method, `testEmptyTableRowAndColumnCount()`. This test method creates a new instance of a class called `Table`, and checks that its `rowCount` and `columnCount` properties are both equal to 0 after initialization.
 
 > 💡 **Tip**:  Test case and test method names are used in Xcode’s test navigator and integration reports to group and identify tests. To help clarify the organization of your tests, give each test case a name that summarizes the tests within it, such as `TableValidationTests`, `NetworkReachabilityTests`, or `JSONParsingTests`. To help identify failing tests, give each test method a name that makes it clear what is tested by that method, such as `testEmptyTableRowAndColumnCount()`, `testUnreachableURLAccessThrowsAnError()`, or `testUserJSONFeedParsing()`.
-
- Test case and test method names are used in Xcode’s test navigator and integration reports to group and identify tests.
-
-To help clarify the organization of your tests, give each test case a name that summarizes the tests within it, such as `TableValidationTests`, `NetworkReachabilityTests`, or `JSONParsingTests`.
-
-To help identify failing tests, give each test method a name that makes it clear what is tested by that method, such as `testEmptyTableRowAndColumnCount()`, `testUnreachableURLAccessThrowsAnError()`, or `testUserJSONFeedParsing()`.
 
 ##### Asserting Test Conditions
 

@@ -143,6 +143,7 @@ The example above uses widths and heights that generate two mismatched sets of f
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -162,6 +163,10 @@ The example above uses widths and heights that generate two mismatched sets of f
   A type that you use to create custom alignment guides.
 - [struct ViewDimensions](viewdimensions.md)
   A view’s size and alignment guides in its own coordinate space.
+- [struct ViewDimensions3D](viewdimensions3d.md)
+  A view’s 3D size and alignment guides in its own coordinate space.
+- [struct SpatialContainer](spatialcontainer.md)
+  A layout container that aligns overlapping content in 3D space.
 
 
 ---

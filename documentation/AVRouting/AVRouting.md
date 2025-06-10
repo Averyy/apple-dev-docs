@@ -10,7 +10,7 @@ Display custom destinations to stream media in the system route picker.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS 1.0+
+- tvOS 26.0+ (Beta)
 
 #### Overview
 
@@ -57,6 +57,11 @@ If the extension finds the device at runtime, it passes the device to the system
   An object that represents an event that occurs on a route.
 - [class AVCustomRoutingActionItem](avcustomroutingactionitem.md)
   An object that represents a custom action item to display in a device route picker.
+### Playback arbitration
+- [class AVRoutingPlaybackArbiter](avroutingplaybackarbiter.md)
+  An object that manages playback routing preferences.
+- [protocol AVRoutingPlaybackParticipant](avroutingplaybackparticipant.md)
+  A protocol for objects that participate in playback routing arbitration.
 
 
 ---

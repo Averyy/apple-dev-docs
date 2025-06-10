@@ -9,7 +9,6 @@ Converts a point from the coordinate space of the current object to the specifie
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst 13.1+
 - tvOS ?+
 - visionOS 1.0+
 

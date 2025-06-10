@@ -3,7 +3,7 @@
 **Framework**: Media Library  
 **Kind**: var
 
-Specifies the media object’s resolution. The value for this key is a string ([`NSString`](https://developer.apple.com/documentation/Foundation/NSString)) intended to be converted to a size ([`NSSize`](https://developer.apple.com/documentation/Foundation/NSSize)) using the [`NSSizeFromString(_:)`](https://developer.apple.com/documentation/foundation/1391112-nssizefromstring) method.
+Specifies the media object’s resolution. The value for this key is a string ([`NSString`](https://developer.apple.com/documentation/Foundation/NSString)) intended to be converted to a size ([`NSSize`](https://developer.apple.com/documentation/Foundation/NSSize)) using the [`NSSizeFromString(_:)`](https://developer.apple.com/documentation/Foundation/NSSizeFromString(_:)) method.
 
 **Availability**:
 - Mac Catalyst 13.0+

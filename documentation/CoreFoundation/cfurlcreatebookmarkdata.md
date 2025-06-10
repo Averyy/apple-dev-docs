@@ -1,6 +1,6 @@
 # CFURLCreateBookmarkData(_:_:_:_:_:_:)
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: func
 
 Returns bookmark data for a URL, created with specified options and resource values.

@@ -38,7 +38,7 @@ Before running the sample on a device, configure the device as follows:
 Publishing an iCloud container to iCloud Drive makes the container’s `Documents` folder appear in iCloud Drive so the user can access the folder from other apps. Follow these steps to publish a container:
 
 1. Provide the container’s metadata by adding an `NSUbiquitousContainers` entry to the `Info.plist` file like the example code below demonstrates.
-2. Increase the bundle version by changing the Build field in the General pane of the Xcode target, or the  [`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion) entry in the `Info.plist` file. The new value must be larger than the previous value when using the `compare(_:options:range:)` method with the [`numeric`](https://developer.apple.com/documentation/foundation/nsstring/compareoptions/1415530-numeric) option to compare, and must only contain numeric (0 – 9) and period (.) characters. The system only updates an app’s iCloud container metadata when detecting a new version, so perform this step every time the metadata changes.
+2. Increase the bundle version by changing the Build field in the General pane of the Xcode target, or the  [`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion) entry in the `Info.plist` file. The new value must be larger than the previous value when using the [`compare(_:options:range:)`](https://developer.apple.com/documentation/Foundation/NSString/compare(_:options:range:)) method with the [`numeric`](https://developer.apple.com/documentation/Foundation/NSString/CompareOptions/numeric) option to compare, and must only contain numeric (0 – 9) and period (.) characters. The system only updates an app’s iCloud container metadata when detecting a new version, so perform this step every time the metadata changes.
 3. Make sure the `Documents` folder exists in the iCloud container and has at least one document.
 
 The `NSUbiquitousContainers` entry of the sample is as follows:
@@ -66,7 +66,7 @@ The Open-in-Place feature allows the user to launch an app by tapping a document
 2. Add the `LSSupportsOpeningDocumentsInPlace` key to the `Info.plist` file, and set the value to `YES`.
 3. Implement the [`scene(_:openURLContexts:)`](uiscenedelegate/scene(_:openurlcontexts:).md) method of the  `UISceneDelegate` protocol to accept the document.
 
-Apps need to wrap the code that accesses the passed-in URL with the [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/1417051-startaccessingsecurityscopedreso) and [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/1413736-stopaccessingsecurityscopedresou) methods if the URL is outside of their sandbox. This sample doesn’t explicitly do that because it accesses the URL via [`UIDocument`](uidocument.md), which handles [`security-scoped bookmarks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AppSandboxInDepth/AppSandboxInDepth.html#//apple_ref/doc/uid/TP40011183-CH3-SW16) automatically.
+Apps need to wrap the code that accesses the passed-in URL with the [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/startAccessingSecurityScopedResource()) and [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/stopAccessingSecurityScopedResource()) methods if the URL is outside of their sandbox. This sample doesn’t explicitly do that because it accesses the URL via [`UIDocument`](uidocument.md), which handles [`security-scoped bookmarks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AppSandboxInDepth/AppSandboxInDepth.html#//apple_ref/doc/uid/TP40011183-CH3-SW16) automatically.
 
 ##### Discover Documents in an Icloud Container
 
@@ -82,7 +82,7 @@ metadataQuery.sortDescriptors = [NSSortDescriptor(key: NSMetadataItemFSNameKey, 
 metadataQuery.start()
 ```
 
-A query has two phases when gathering the metadata: the initial phase that collects all currently matching results, and a second phase that gathers live updates. It posts an [`NSMetadataQueryDidFinishGathering`](https://developer.apple.com/documentation/foundation/nsnotification/name/1414740-nsmetadataquerydidfinishgatherin) notification when it finishes the first phase, and an [`NSMetadataQueryDidUpdate`](https://developer.apple.com/documentation/foundation/nsnotification/name/1413406-nsmetadataquerydidupdate) notification each time an update occurs. To avoid potential conflicts with the system, disable the query update when accessing the results, and enable it after finishing the access, as the following example shows:
+A query has two phases when gathering the metadata: the initial phase that collects all currently matching results, and a second phase that gathers live updates. It posts an [`NSMetadataQueryDidFinishGathering`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSMetadataQueryDidFinishGathering) notification when it finishes the first phase, and an [`NSMetadataQueryDidUpdate`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSMetadataQueryDidUpdate) notification each time an update occurs. To avoid potential conflicts with the system, disable the query update when accessing the results, and enable it after finishing the access, as the following example shows:
 
 ```swift
 func metadataItemList() -> [MetadataItem] {
@@ -156,7 +156,7 @@ To create a document conflict with the sample:
 
 Handling version conflicts in document-based apps is straightforward because `UIDocument` does most of the heavy lifting. When a conflict occurs, `UIDocument` detects it and posts a [`stateChangedNotification`](uidocument/statechangednotification.md) notification, which apps can observe and then implement their conflict resolution strategy.
 
-The sample resolves a conflict by selecting the version that has the most recent [`modificationDate`](https://developer.apple.com/documentation/foundation/nsfileversion/1411506-modificationdate) and removing all others. It uses file coordination to assess the version information of an iCloud document to avoid potential conflicts with the system.
+The sample resolves a conflict by selecting the version that has the most recent [`modificationDate`](https://developer.apple.com/documentation/Foundation/NSFileVersion/modificationDate) and removing all others. It uses file coordination to assess the version information of an iCloud document to avoid potential conflicts with the system.
 
 ```swift
 private func resolveConflictsAsynchronously(document: Document, completionHandler: ((Bool) -> Void)?) {

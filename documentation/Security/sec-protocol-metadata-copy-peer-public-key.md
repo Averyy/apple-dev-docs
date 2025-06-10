@@ -25,7 +25,7 @@ A `dispatch_data_t` containing the peer’s raw public key.
 #### Discussion
 
 ```None
-  Get the protocol instance peer's public key.
+ Get the protocol instance peer's public key.
 ```
 
 ## Parameters

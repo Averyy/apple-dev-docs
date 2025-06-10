@@ -1,6 +1,6 @@
 # iterationCount
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The number of times the performance test measures its block.

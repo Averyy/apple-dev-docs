@@ -20,8 +20,6 @@ Classes that conform to this protocol represent hot-pluggable USB device configu
 
 > ❗ **Important**:  Don’t use the `VZUSBDeviceConfiguration` protocol with objects outside the Virtualization framework. This protocol only describes capabilities of Virtualization framework objects.
 
- Don’t use the `VZUSBDeviceConfiguration` protocol with objects outside the Virtualization framework. This protocol only describes capabilities of Virtualization framework objects.
-
 ## Topics
 
 ### Properties

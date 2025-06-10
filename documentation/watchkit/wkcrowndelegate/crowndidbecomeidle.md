@@ -1,6 +1,6 @@
 # crownDidBecomeIdle(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Called when the user stops rotating the crown.

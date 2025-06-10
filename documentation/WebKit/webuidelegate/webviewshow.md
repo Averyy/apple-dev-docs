@@ -1,6 +1,6 @@
 # webViewShow(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Displays a web view’s window and moves it to the front.

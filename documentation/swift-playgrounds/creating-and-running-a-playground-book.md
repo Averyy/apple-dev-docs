@@ -10,8 +10,6 @@ You use both a Mac running Xcode and an iPad to create a playground book. You do
 
 > ❗ **Important**: The Swift Playgrounds Author Template is deprecated and may not be compatible with future versions of Xcode. You can continue working with Playground Books by editing their contents directly in Xcode and other tools. In Finder, select and control-click on your Playground Book, and choose “Show Package Contents”. For details on working with the structure and format, see [`Playground Books`](playground-books.md). For information on working with the Swift Playgrounds App and Swift Package formats, see [`Swift Playgrounds`](swift-playgrounds.md) and [`Swift.org`](https://developer.apple.comhttps://www.swift.org/package-manager/).”
 
-The Swift Playgrounds Author Template is deprecated and may not be compatible with future versions of Xcode. You can continue working with Playground Books by editing their contents directly in Xcode and other tools. In Finder, select and control-click on your Playground Book, and choose “Show Package Contents”. For details on working with the structure and format, see [`Playground Books`](playground-books.md). For information on working with the Swift Playgrounds App and Swift Package formats, see [`Swift Playgrounds`](swift-playgrounds.md) and [`Swift.org`](https://developer.apple.comhttps://www.swift.org/package-manager/).”
-
 ##### Extract and Open the Template
 
 The Swift Playgrounds Author Template is packaged as a `.xip` archive. To open the template, navigate to it in Finder and double-click it to extract it into a folder called Swift_Playgrounds_Author_Template_for_Xcode. Navigate within that folder to the Template subfolder and open the Xcode project named PlaygroundBook.

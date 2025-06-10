@@ -26,8 +26,6 @@ After you request a photo capture with the [`capturePhoto(with:delegate:)`](avca
 
 > ❗ **Important**:  The `jpegSampleBuffer` parameter must reference a sample buffer from a JPEG capture. See the [`format`](avcapturephotosettings/format.md) property for photo capture settings.
 
- The `jpegSampleBuffer` parameter must reference a sample buffer from a JPEG capture. See the [`format`](avcapturephotosettings/format.md) property for photo capture settings.
-
 ## Parameters
 
 - `JPEGSampleBuffer`: A sample buffer containing the JPEG photo capture result to be formatted for output.

@@ -19,7 +19,7 @@ var departureDate: Date { get }
 
 #### Discussion
 
-When the visit object does not include departure information, this property is set to the date returned by the [`distantFuture`](https://developer.apple.com/documentation/foundation/nsdate/1415385-distantfuture) method of [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate).
+When the visit object does not include departure information, this property is set to the date returned by the [`distantFuture`](https://developer.apple.com/documentation/Foundation/NSDate/distantFuture) method of [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate).
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Displaying a point cloud using scene depth
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Present a visualization of the physical environment by placing points based a scene’s depth data.
 
@@ -433,4 +433,4 @@ fragment half4 planeFragmentShaderConfidence(ColorInOut in [[stage_in]], texture
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/displaying-a-point-cloud-using-scene-depth)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/displaying-a-point-cloud-using-scene-depth)*

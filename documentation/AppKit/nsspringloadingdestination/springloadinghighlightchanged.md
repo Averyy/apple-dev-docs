@@ -22,8 +22,6 @@ During a spring-loaded operation, a destination may initiate animated highlighti
 
 > ❗ **Important**:  Do not use highlighting as a means to determine whether spring-loading has actually been activated or deactivated. The [`springLoadingActivated(_:draggingInfo:)`](nsspringloadingdestination/springloadingactivated(_:dragginginfo:).md) method alerts your app when spring-loading activation occurs.
 
- Do not use highlighting as a means to determine whether spring-loading has actually been activated or deactivated. The [`springLoadingActivated(_:draggingInfo:)`](nsspringloadingdestination/springloadingactivated(_:dragginginfo:).md) method alerts your app when spring-loading activation occurs.
-
 ## Parameters
 
 - `draggingInfo`: An object of type  , which provides information about the drag event, including a highlighting style to apply.

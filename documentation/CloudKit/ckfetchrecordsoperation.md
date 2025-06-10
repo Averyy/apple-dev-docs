@@ -34,7 +34,7 @@ The handlers you assign to process the fetched records execute serially on an in
 
 In addition to data records, a fetch records operation can fetch the current user record. The [`fetchCurrentUserRecordOperation()`](ckfetchrecordsoperation/fetchcurrentuserrecordoperation().md) method returns a specially configured operation object that retrieves the current user record. That record is a standard [`CKRecord`](ckrecord.md) object that has no content initially. You can add data to the user record and save it as necessary. Don’t store sensitive personal information, such as passwords, in the user record because other users of your app can access the discoverable user record in a public database. If you must store sensitive information about a user, do so in a separate record that is accessible only to that user.
 
-If you assign a closure to the [`completionBlock`](https://developer.apple.com/documentation/foundation/operation/1408085-completionblock) property of the operation object, CloudKit calls it after the operation executes and returns its results. Use a closure to perform any housekeeping tasks for the operation, but don’t use it to process the results of the operation. The closure you specify should handle the failure of the operation to complete its task, whether due to an error or an explicit cancellation.
+If you assign a closure to the [`completionBlock`](https://developer.apple.com/documentation/Foundation/Operation/completionBlock) property of the operation object, CloudKit calls it after the operation executes and returns its results. Use a closure to perform any housekeeping tasks for the operation, but don’t use it to process the results of the operation. The closure you specify should handle the failure of the operation to complete its task, whether due to an error or an explicit cancellation.
 
 ## Topics
 
@@ -74,6 +74,7 @@ If you assign a closure to the [`completionBlock`](https://developer.apple.com/d
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

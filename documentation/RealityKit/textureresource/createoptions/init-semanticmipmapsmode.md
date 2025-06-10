@@ -1,6 +1,6 @@
 # init(semantic:mipmapsMode:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: init
 
 Creates a texture creation options structure.
@@ -10,6 +10,7 @@ Creates a texture creation options structure.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

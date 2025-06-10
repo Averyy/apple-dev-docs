@@ -1,6 +1,6 @@
 # CKAsset
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 An external file that belongs to a record.
@@ -61,6 +61,7 @@ If you no longer require an asset that’s on the server, you don’t delete it.
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -80,4 +81,4 @@ If you no longer require an asset that’s on the server, you don’t delete it.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckasset)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckasset)*

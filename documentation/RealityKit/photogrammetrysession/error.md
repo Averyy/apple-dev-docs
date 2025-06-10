@@ -33,8 +33,6 @@ Localize these errors in your app.
 ### Instance Properties
 - [var localizedDescription: String](photogrammetrysession/error/localizeddescription.md)
   Retrieve the localized description for this error.
-### Default Implementations
-- [LocalizedError Implementations](photogrammetrysession/error/localizederror-implementations.md)
 
 ## Relationships
 
@@ -42,6 +40,7 @@ Localize these errors in your app.
 - [Error](../Swift/Error.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

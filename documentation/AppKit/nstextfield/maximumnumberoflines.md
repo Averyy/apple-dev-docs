@@ -23,8 +23,6 @@ If the text field reaches the maximum number of lines, or if the height of the c
 
 > ❗ **Important**:  This value also affects [`sizeThatFits(_:)`](nscontrol/sizethatfits(_:).md), [`fittingSize`](nsview/fittingsize.md), and [`intrinsicContentSize`](nsview/intrinsiccontentsize.md). If the value of this property isn’t `1`, the text field may use multiple lines to determine its intrinsic content size.
 
- This value also affects [`sizeThatFits(_:)`](nscontrol/sizethatfits(_:).md), [`fittingSize`](nsview/fittingsize.md), and [`intrinsicContentSize`](nsview/intrinsiccontentsize.md). If the value of this property isn’t `1`, the text field may use multiple lines to determine its intrinsic content size.
-
 ## See Also
 
 - [var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy](nstextfield/linebreakstrategy.md)

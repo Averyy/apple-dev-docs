@@ -10,6 +10,7 @@ The name of the animation resource.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -25,8 +26,6 @@ You can get an [`AnimationPlaybackController`](animationplaybackcontroller.md) i
 
 ## See Also
 
-- [var definition: any AnimationDefinition](animationresource/definition.md)
-  The timeframe, target object, and visual semantics of the animation.
 - [struct AnimationFillMode](animationfillmode.md)
   Options that determine which animation frames display outside of the normal duration.
 

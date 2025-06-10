@@ -18,6 +18,13 @@ A phone number.
 case phoneNumber
 ```
 
+## See Also
+
+- [Handle.Kind.emailAddress](handle/kind/emailaddress.md)
+  An email address.
+- [Handle.Kind.generic](handle/kind/generic.md)
+  An unspecified handle type.
+
 
 ---
 

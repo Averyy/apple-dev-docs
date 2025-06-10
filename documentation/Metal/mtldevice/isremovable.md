@@ -26,8 +26,6 @@ You can respond to GPU removal notifications by registering with the [`MTLCopyAl
 
 > ❗ **Important**:  If a person removes a GPU without warning, [`MTLDevice`](mtldevice.md) APIs may fail even before your app receives a [`wasRemoved`](mtldevicenotificationname/wasremoved.md) notification.
 
- If a person removes a GPU without warning, [`MTLDevice`](mtldevice.md) APIs may fail even before your app receives a [`wasRemoved`](mtldevicenotificationname/wasremoved.md) notification.
-
 ## See Also
 
 - [var name: String](mtldevice/name.md)

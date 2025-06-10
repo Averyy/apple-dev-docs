@@ -40,6 +40,7 @@ Create a `PaymentCardVerificationRequest` object to verify details of a personâ€
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

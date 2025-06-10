@@ -1,6 +1,6 @@
 # MKDirections.Request
 
-**Framework**: Mapkit  
+**Framework**: MapKit  
 **Kind**: class
 
 The start and end points of a route, along with the planned mode of transportation.
@@ -12,6 +12,7 @@ The start and end points of a route, along with the planned mode of transportati
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 
@@ -60,6 +61,8 @@ Prior to iOS 14, for apps that provide directions, you receive direction-related
 ### Launch options
 - [let MKLaunchOptionsCameraKey: String](mklaunchoptionscamerakey.md)
   The virtual camera to use for viewing the map.
+- [let MKLaunchOptionsDirectionsModeCycling: String](mklaunchoptionsdirectionsmodecycling.md)
+  Cycling directions between the specified start and end points.
 - [let MKLaunchOptionsDirectionsModeDefault: String](mklaunchoptionsdirectionsmodedefault.md)
   Directions that match the user’s preferred transportation type.
 - [let MKLaunchOptionsDirectionsModeDriving: String](mklaunchoptionsdirectionsmodedriving.md)

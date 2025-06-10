@@ -17,17 +17,16 @@
 func CVMetalBufferCacheCreate(_ allocator: CFAllocator?, _ cacheAttributes: CFDictionary?, _ metalDevice: any MTLDevice, _ cacheOut: UnsafeMutablePointer<CVMetalBufferCache?>) -> CVReturn
 ```
 
-#### Discussion
+#### Return Value
 
-```None
-@function   CVMetalBufferCacheCreate
-@abstract   Creates a new Buffer Cache.
-@param      allocator The CFAllocatorRef to use for allocating the cache.  May be NULL.
-@param      cacheAttributes A CFDictionaryRef containing the attributes of the cache itself. May be NULL.
-@param      metalDevice The Metal device for which the buffer objects will be created.
-@param      cacheOut   The newly created buffer cache will be placed here
-@result     Returns kCVReturnSuccess on success
-```
+Returns kCVReturnSuccess on success
+
+## Parameters
+
+- `allocator`: The CFAllocatorRef to use for allocating the cache.  May be NULL.
+- `cacheAttributes`: A CFDictionaryRef containing the attributes of the cache itself. May be NULL.
+- `metalDevice`: The Metal device for which the buffer objects will be created.
+- `cacheOut`: The newly created buffer cache will be placed here
 
 
 ---

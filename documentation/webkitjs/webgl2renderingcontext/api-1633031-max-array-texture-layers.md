@@ -1,6 +1,6 @@
 # MAX_ARRAY_TEXTURE_LAYERS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

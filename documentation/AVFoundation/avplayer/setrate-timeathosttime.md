@@ -29,8 +29,6 @@ This method does not ensure that media data is loaded before the timebase starts
 
 > ❗ **Important**:  This method is not currently supported for HTTP Live Streaming or when [`automaticallyWaitsToMinimizeStalling`](avplayer/automaticallywaitstominimizestalling.md) is [`true`](https://developer.apple.com/documentation/swift/true). For clients linked against iOS 10.0 and later or macOS 10.12 and later, invoking this method when [`automaticallyWaitsToMinimizeStalling`](avplayer/automaticallywaitstominimizestalling.md) is [`true`](https://developer.apple.com/documentation/swift/true) will raise an `NSInvalidArgument` exception.
 
- This method is not currently supported for HTTP Live Streaming or when [`automaticallyWaitsToMinimizeStalling`](avplayer/automaticallywaitstominimizestalling.md) is [`true`](https://developer.apple.com/documentation/swift/true). For clients linked against iOS 10.0 and later or macOS 10.12 and later, invoking this method when [`automaticallyWaitsToMinimizeStalling`](avplayer/automaticallywaitstominimizestalling.md) is [`true`](https://developer.apple.com/documentation/swift/true) will raise an `NSInvalidArgument` exception.
-
 ## Parameters
 
 - `rate`: The playback rate for the item.

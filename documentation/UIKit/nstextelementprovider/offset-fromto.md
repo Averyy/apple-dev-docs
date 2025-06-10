@@ -24,7 +24,7 @@ An `Integer` that represents the offset between the starting and ending location
 
 #### Discussion
 
-The return value could be positive or negative. This method can return [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound) when the method can’t represent an offset as an integer value. This can occur, for example, if the locations aren’t in the same document).
+The return value could be positive or negative. This method can return [`NSNotFound`](https://developer.apple.com/documentation/Foundation/NSNotFound-4qp9h) when the method can’t represent an offset as an integer value. This can occur, for example, if the locations aren’t in the same document).
 
 ## Parameters
 

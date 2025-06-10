@@ -1,6 +1,6 @@
 # webExtensionController(_:presentActionPopup:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when a popup is requested to be displayed for a specific action.

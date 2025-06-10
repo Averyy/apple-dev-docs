@@ -1,6 +1,6 @@
 # WorkoutScheduler.AuthorizationState.notDetermined
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: case
 
 Your app hasn’t yet requested authorization to schedule workouts.
@@ -10,6 +10,7 @@ Your app hasn’t yet requested authorization to schedule workouts.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

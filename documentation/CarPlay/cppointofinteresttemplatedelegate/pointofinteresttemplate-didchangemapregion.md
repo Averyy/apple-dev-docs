@@ -14,6 +14,7 @@ Tells the delegate about changes to the visible region of the template’s map.
 ## Declaration
 
 ```swift
+@MainActor
 func pointOfInterestTemplate(_ pointOfInterestTemplate: CPPointOfInterestTemplate, didChangeMapRegion region: MKCoordinateRegion)
 ```
 

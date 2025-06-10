@@ -1,6 +1,6 @@
 # MAX_TEXTURE_LOD_BIAS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

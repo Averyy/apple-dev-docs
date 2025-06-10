@@ -1,6 +1,6 @@
 # Using MusicKit to Integrate with Apple Music
 
-**Framework**: Musickit
+**Framework**: MusicKit
 
 Find an album in Apple Music that corresponds to a CD in a user’s collection, and present the information for the album.
 

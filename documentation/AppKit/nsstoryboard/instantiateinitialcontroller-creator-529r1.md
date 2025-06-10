@@ -18,7 +18,7 @@ func instantiateInitialController<Controller>(creator: ((NSCoder) -> Controller?
 
 Every storyboard file has an initial controller object that represents the default interface to create. Use this method to construct that object using a custom code that you provide. Use this method when the constructor for your object takes parameters in addition to the specified `coder` object.
 
-In your `creator` block, create the window controller using your custom constructor method. Your custom constructor method must accept an [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder) parameter and must call the inherited [`init(coder:)`](https://developer.apple.com/documentation/OSLog/OSLogEntry/init(coder:)) method at some point during its execution. Not doing so is a programmer error.
+In your `creator` block, create the window controller using your custom constructor method. Your custom constructor method must accept an [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder) parameter and must call the inherited doc://com.apple.documentation/documentation/foundation/nscoder/init(coder:) method at some point during its execution. Not doing so is a programmer error.
 
 ## Parameters
 

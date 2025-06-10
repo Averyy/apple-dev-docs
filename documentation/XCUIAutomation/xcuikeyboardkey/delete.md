@@ -1,6 +1,6 @@
 # delete
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A constant that represents the Delete key.

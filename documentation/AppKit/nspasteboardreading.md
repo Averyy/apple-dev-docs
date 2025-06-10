@@ -21,7 +21,7 @@ The Cocoa framework classes [`NSString`](https://developer.apple.com/documentati
 ## Topics
 
 ### Initializing the Pasteboard
-- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nspasteboardreading/init(pasteboardpropertylist:oftype:).md)
+- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsimage/init(pasteboardpropertylist:oftype:).md)
   Initializes an instance with a property list object and a type string.
 ### Reading From the Pasteboard
 - [static func readableTypes(for: NSPasteboard) -> [NSPasteboard.PasteboardType]](nspasteboardreading/readabletypes(for:).md)

@@ -129,6 +129,7 @@ Operation queues use the [`Dispatch`](https://developer.apple.com/documentation/
 - [ProgressReporting](progressreporting.md)
 - [Scheduler](../Combine/Scheduler.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -140,4 +141,4 @@ Operation queues use the [`Dispatch`](https://developer.apple.com/documentation/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/operationqueue)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/operationqueue)*

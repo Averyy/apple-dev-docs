@@ -23,8 +23,8 @@ class ModelContainer
 
 ## Mentions
 
-- [Syncing model data across a person’s devices](syncing-model-data-across-a-persons-devices.md)
 - [Reverting data changes using the undo manager](reverting-data-changes-using-the-undo-manager.md)
+- [Syncing model data across a person’s devices](syncing-model-data-across-a-persons-devices.md)
 
 #### Overview
 
@@ -101,6 +101,7 @@ struct RecipesList: View {
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

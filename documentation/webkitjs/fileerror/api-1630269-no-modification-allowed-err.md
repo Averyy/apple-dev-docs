@@ -1,6 +1,6 @@
 # NO_MODIFICATION_ALLOWED_ERR
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

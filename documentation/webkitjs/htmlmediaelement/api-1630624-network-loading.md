@@ -1,6 +1,6 @@
 # NETWORK_LOADING
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 The media resource is loading.

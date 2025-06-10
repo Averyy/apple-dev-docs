@@ -1,6 +1,6 @@
 # lowTemperature
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The overnight low temperature for the day part.

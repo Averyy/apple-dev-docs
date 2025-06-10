@@ -1,6 +1,6 @@
 # WebNavigationType.reload
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 The user hit the reload button.

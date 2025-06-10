@@ -52,10 +52,13 @@ Don’t create [`UIScene.ConnectionOptions`](uiscene/connectionoptions.md) objec
 - [var sourceApplication: String?](uiscene/connectionoptions/sourceapplication.md)
   The bundle ID of the app that originated the request.
 ### Instance Properties
+- [var appIntent: (any UISceneAppIntent)?](uiscene/connectionoptions/appintent.md)
+  The `AppIntent` that triggered scene creation `AppIntentSceneDelegate.scene(_:willPerform:)` will always be called after scene connection
 - [var credentialSessionEvent: CredentialSessionWindowSceneEvent?](uiscene/connectionoptions/credentialsessionevent.md)
   A CredentialSession event has triggered a UIKit scene creation.
 - [var gameControllerActivationContext: GCGameControllerActivationContext?](uiscene/connectionoptions/gamecontrolleractivationcontext.md)
 - [var marketplaceDisplayOption: MarketplaceDisplayOption?](uiscene/connectionoptions/marketplacedisplayoption.md)
+- [var shouldHandleActiveWorkoutRecovery: Bool](uiscene/connectionoptions/shouldhandleactiveworkoutrecovery.md)
 
 ## Relationships
 

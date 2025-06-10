@@ -1,6 +1,6 @@
 # TEXTURE_SWIZZLE_G
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

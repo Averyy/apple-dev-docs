@@ -1,6 +1,6 @@
 # invalidManifestEntry
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that an invalid manifest entry was encountered.

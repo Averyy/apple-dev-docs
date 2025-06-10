@@ -1,6 +1,6 @@
 # press(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Simulates the user pressing a physical button.

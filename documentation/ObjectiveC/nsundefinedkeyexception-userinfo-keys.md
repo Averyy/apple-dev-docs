@@ -20,7 +20,7 @@ For additional information see [`Key Value Coding Exception Names`](key-value-co
 
 - [Key Value Coding Exception Names](key-value-coding-exception-names.md)
   This constant defines the name of an exception raised when a key value coding operation fails.
-- [var NSKeyValueValidationError: Int](../foundation/nskeyvaluevalidationerror.md)
+- [var NSKeyValueValidationError: Int { get }](../Foundation/NSKeyValueValidationError-swift.var.md)
   A key-value coding validation error.
 
 

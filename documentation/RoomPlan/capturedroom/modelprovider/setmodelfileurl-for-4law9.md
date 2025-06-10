@@ -23,6 +23,7 @@ This function throws [`CapturedRoom.ModelProvider.Error.nonExistingFile(url:)`](
 ## Parameters
 
 - `url`: A URL to a 3D model.
+- `category`: The object type associated with the model URL.
 
 ## See Also
 

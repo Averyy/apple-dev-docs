@@ -1,6 +1,6 @@
 # webExtensionController(_:promptForPermissions:in:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when an extension context requests permissions.

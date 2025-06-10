@@ -1,6 +1,6 @@
 # Pass.EventTicket
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that represents the groups of fields that display the information for an event ticket.

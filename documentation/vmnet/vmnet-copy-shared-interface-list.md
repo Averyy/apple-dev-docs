@@ -1,6 +1,6 @@
 # vmnet_copy_shared_interface_list()
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: func
 
 **Availability**:

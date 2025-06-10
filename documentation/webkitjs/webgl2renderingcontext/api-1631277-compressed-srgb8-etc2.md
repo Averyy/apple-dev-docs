@@ -1,6 +1,6 @@
 # COMPRESSED_SRGB8_ETC2
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

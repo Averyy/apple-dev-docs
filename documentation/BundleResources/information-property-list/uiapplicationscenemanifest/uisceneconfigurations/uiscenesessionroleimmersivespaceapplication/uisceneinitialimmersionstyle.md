@@ -1,6 +1,6 @@
 # UISceneInitialImmersionStyle
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 Provide a preferred initial scene style for an immersive space scene.

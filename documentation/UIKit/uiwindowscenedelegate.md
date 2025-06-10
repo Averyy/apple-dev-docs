@@ -37,13 +37,19 @@ For an example on using `UIWindowSceneDelegate` in your app, see [`Supporting mu
 - [var window: UIWindow?](uiwindowscenedelegate/window.md)
   The main window associated with the scene.
 ### Responding to scene changes
-- [func windowScene(UIWindowScene, didUpdate: any UICoordinateSpace, interfaceOrientation: UIInterfaceOrientation, traitCollection: UITraitCollection)](uiwindowscenedelegate/windowscene(_:didupdate:interfaceorientation:traitcollection:).md)
-  Notifies you when the size, orientation, or traits of a scene change.
+- [func windowScene(UIWindowScene, didUpdateEffectiveGeometry: UIWindowScene.Geometry)](uiwindowscenedelegate/windowscene(_:didupdateeffectivegeometry:).md)
+  Called when the window scene’s effective geometry has changed.
 ### Performing tasks
 - [func windowScene(UIWindowScene, performActionFor: UIApplicationShortcutItem, completionHandler: (Bool) -> Void)](uiwindowscenedelegate/windowscene(_:performactionfor:completionhandler:).md)
   Asks the delegate to perform the user-selected action.
 - [func windowScene(UIWindowScene, userDidAcceptCloudKitShareWith: CKShareMetadata)](uiwindowscenedelegate/windowscene(_:userdidacceptcloudkitsharewith:).md)
   Tells the delegate that the window scene now has access to shared information in CloudKit.
+### Deprecated methods
+- [func windowScene(UIWindowScene, didUpdate: any UICoordinateSpace, interfaceOrientation: UIInterfaceOrientation, traitCollection: UITraitCollection)](uiwindowscenedelegate/windowscene(_:didupdate:interfaceorientation:traitcollection:).md)
+  Notifies you when the size, orientation, or traits of a scene change.
+### Instance Methods
+- [func preferredWindowingControlStyle(for: UIWindowScene) -> UIWindowScene.WindowingControlStyle](uiwindowscenedelegate/preferredwindowingcontrolstyle(for:).md)
+  Called by the system to determine the windowing control style for the provided scene. `automaticStyle` will be used if this method is not implemented.
 
 ## Relationships
 

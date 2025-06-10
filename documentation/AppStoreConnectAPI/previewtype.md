@@ -16,9 +16,9 @@ string PreviewType
 
 ## Mentions
 
-- [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
 - [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
 - [App Store Connect API 2.1 release notes](app-store-connect-api-2-1-release-notes.md)
+- [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
 
 #### Discussion
 

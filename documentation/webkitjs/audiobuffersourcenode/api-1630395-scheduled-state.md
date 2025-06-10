@@ -1,6 +1,6 @@
 # SCHEDULED_STATE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

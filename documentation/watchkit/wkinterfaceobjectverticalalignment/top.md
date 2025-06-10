@@ -1,6 +1,6 @@
 # WKInterfaceObjectVerticalAlignment.top
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Top alignment. The object’s content aligns with the top edge of the container and extends downward.

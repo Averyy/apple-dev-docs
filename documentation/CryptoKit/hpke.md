@@ -39,7 +39,7 @@ HPKE is described in the Internet Research Task Force (IRTF) document [`RFC 9180
   A type that represents the receiving side of an HPKE message exchange.
 ### Choosing cryptographic algorithms
 - [struct Ciphersuite](hpke/ciphersuite.md)
-  Cipher suites to use in hybrid public key encryption.
+  Cipher suites to use in hybrid public key encryption (HPKE).
 - [HPKE.AEAD](hpke/aead.md)
   The authenticated encryption with associated data (AEAD) algorithms to use in HPKE.
 - [HPKE.KDF](hpke/kdf.md)
@@ -56,6 +56,7 @@ HPKE is described in the Internet Research Task Force (IRTF) document [`RFC 9180
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

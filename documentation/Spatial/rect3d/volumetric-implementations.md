@@ -5,12 +5,8 @@
 ## Topics
 
 ### Instance Methods
-- [func contains(anyOf: [Point3D]) -> Bool](rect3d/contains(anyof:).md)
-  Returns a Boolean value that indicates whether the rectangle contains any of the specified points.
 - [func containsAny(of: [Point3D]) -> Bool](rect3d/containsany(of:).md)
   Returns a Boolean value that indicates whether the rectangle contains any of the specified points.
-- [func intersection(Rect3D) -> Rect3D?](rect3d/intersection(_:).md)
-  Returns the intersection of two rectangles.
 
 
 ---

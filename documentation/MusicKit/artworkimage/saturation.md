@@ -1,6 +1,6 @@
 # saturation(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Adjusts the color saturation of this view.

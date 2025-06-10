@@ -1,9 +1,9 @@
-# ==(_:_:)
+# -(_:)
 
 **Framework**: Swift  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are equal.
+Returns the additive inverse of the specified value.
 
 **Availability**:
 - iOS 8.0+
@@ -17,19 +17,31 @@ Returns a Boolean value indicating whether two values are equal.
 ## Declaration
 
 ```swift
-static func == (lhs: Int32, rhs: Int32) -> Bool
+static func - (operand: Self) -> Self
 ```
+
+#### Return Value
+
+The additive inverse of this value.
 
 #### Discussion
 
-Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
+The negation operator (prefix `-`) returns the additive inverse of its argument.
 
-## Parameters
+```swift
+let x = 21
+let y = -x
+// y == -21
+```
 
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+The resulting value must be representable in the same type as the argument. In particular, negating a signed, fixed-width integer type’s minimum results in a value that cannot be represented.
+
+```swift
+let z = -Int8.min
+// Overflow error
+```
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/int32/==(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/int32/-(_:))*

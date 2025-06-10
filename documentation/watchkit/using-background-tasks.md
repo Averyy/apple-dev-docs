@@ -1,6 +1,6 @@
 # Using background tasks
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Handle scheduled update tasks in the background, and respond to background system interactions including Siri intents and incoming Bluetooth messages.
 
@@ -176,10 +176,10 @@ When you schedule a background [`URLSession`](https://developer.apple.com/docume
 When using a [`WKURLSessionRefreshBackgroundTask`](wkurlsessionrefreshbackgroundtask.md) task, you need to defer calling [`setTaskCompletedWithSnapshot(_:)`](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md) until after you finish handling the call to the session delegate. For example, to handle a basic download task, use the following steps:
 
 1. The system calls your delegate’s [`handle(_:)`](wkextensiondelegate/handle(_:)-92ulv.md) method, passing a [`WKURLSessionRefreshBackgroundTask`](wkurlsessionrefreshbackgroundtask.md) task. In this method, your app needs to save the task so you can access it later.
-2. The system then calls your session delegate’s [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](https://developer.apple.com/documentation/foundation/urlsessiondownloaddelegate/1411575-urlsession) method. In this method, your app needs to move the downloaded data to a permanent location.
-3. Finally, the system calls your session delegate’s [`urlSession(_:task:didCompleteWithError:)`](https://developer.apple.com/documentation/foundation/urlsessiontaskdelegate/1411610-urlsession) method. In this method, your app needs to mark the task as complete by calling the [`setTaskCompletedWithSnapshot(_:)`](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md) method on the background task that you saved in step 1.
+2. The system then calls your session delegate’s [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](https://developer.apple.com/documentation/Foundation/URLSessionDownloadDelegate/urlSession(_:downloadTask:didFinishDownloadingTo:)) method. In this method, your app needs to move the downloaded data to a permanent location.
+3. Finally, the system calls your session delegate’s [`urlSession(_:task:didCompleteWithError:)`](https://developer.apple.com/documentation/Foundation/URLSessionTaskDelegate/urlSession(_:task:didCompleteWithError:)) method. In this method, your app needs to mark the task as complete by calling the [`setTaskCompletedWithSnapshot(_:)`](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md) method on the background task that you saved in step 1.
 
-For more complex interactions, the system may call other session delegate methods, such as [`urlSession(_:task:didReceive:completionHandler:)`](https://developer.apple.com/documentation/foundation/urlsessiontaskdelegate/1411595-urlsession), to handle authentication. These follow the same basic pattern: You handle the delegate call, and then call [`setTaskCompletedWithSnapshot(_:)`](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md) to end the background task.
+For more complex interactions, the system may call other session delegate methods, such as [`urlSession(_:task:didReceive:completionHandler:)`](https://developer.apple.com/documentation/Foundation/URLSessionTaskDelegate/urlSession(_:task:didReceive:completionHandler:)), to handle authentication. These follow the same basic pattern: You handle the delegate call, and then call [`setTaskCompletedWithSnapshot(_:)`](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md) to end the background task.
 
 ##### Communicate Using Watch Connectivity
 
@@ -232,4 +232,4 @@ When your app receives a timely alert and your budget has only one Bluetooth ale
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/using-background-tasks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/using-background-tasks)*

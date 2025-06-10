@@ -19,8 +19,8 @@ class func updatePostbackConversionValue(_ fineValue: Int, coarseValue: SKAdNetw
 ## Mentions
 
 - [SKAdNetwork 4 release notes](skadnetwork-4-release-notes.md)
-- [Receiving postbacks in multiple conversion windows](receiving-postbacks-in-multiple-conversion-windows.md)
 - [Configuring an advertised app](configuring-an-advertised-app.md)
+- [Receiving postbacks in multiple conversion windows](receiving-postbacks-in-multiple-conversion-windows.md)
 
 #### Discussion
 
@@ -31,8 +31,6 @@ This method is identical to calling [`updatePostbackConversionValue(_:coarseValu
 This method returns [`SKANError.Code.invalidConversionValue`](skanerror-swift.struct/code/invalidconversionvalue.md) if the `fineValue` is outside of the allowed range.
 
 > ❗ **Important**:  The system ignores calls to this method if the `fineValue` is outside of the valid range. Valid conversion updates your app sends before or after an invalid conversion remain available.
-
- The system ignores calls to this method if the `fineValue` is outside of the valid range. Valid conversion updates your app sends before or after an invalid conversion remain available.
 
 ## Parameters
 

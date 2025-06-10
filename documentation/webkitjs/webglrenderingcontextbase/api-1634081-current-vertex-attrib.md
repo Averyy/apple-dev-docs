@@ -1,6 +1,6 @@
 # CURRENT_VERTEX_ATTRIB
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

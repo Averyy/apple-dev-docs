@@ -44,7 +44,7 @@ For design guidance, see [`Lists and tables`](https://developer.apple.com/design
 - [struct ListItemTint](listitemtint.md)
   A tint effect configuration that you can apply to content in a list.
 - [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
-  The default minimum height of a row in a `List`. The default minimum height of a row in a list.
+  The default minimum height of a row in a list.
 ### Configuring separators
 - [func listRowSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](view/listrowseparatortint(_:edges:).md)
   Sets the tint color associated with a row.

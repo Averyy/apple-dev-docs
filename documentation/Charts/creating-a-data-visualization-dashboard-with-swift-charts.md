@@ -1,6 +1,6 @@
 # Creating a data visualization dashboard with Swift Charts
 
-**Framework**: Charts
+**Framework**: Swift Charts
 
 Visualize an entire data collection efficiently by instantiating a single vectorized plot in Swift Charts.
 
@@ -106,4 +106,4 @@ PointPlot(
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Charts/creating-a-data-visualization-dashboard-with-swift-charts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/charts/creating-a-data-visualization-dashboard-with-swift-charts)*

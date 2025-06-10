@@ -1,6 +1,6 @@
 # Detecting Images in an AR Experience
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 React to known 2D images in the user’s environment, and use their positions to place AR content.
 
@@ -116,4 +116,4 @@ For example, in the case described above, where spaceships appear to fly out of 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/detecting-images-in-an-ar-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/detecting-images-in-an-ar-experience)*

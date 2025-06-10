@@ -39,8 +39,6 @@ The following `.usda` definition chooses the new lighting environment:
 
 > 💡 **Tip**: RealityKit doesn’t observe the [`preferredIblVersion`](preferrediblversion.md) metadata, but you configure the same lighting environment manually. See [`Specifying a lighting environment in AR Quick Look`](https://developer.apple.com/documentation/ARKit/specifying-a-lighting-environment-in-ar-quick-look) for more information about matching AR Quick Look’s lighting environment in RealityKit apps.
 
-RealityKit doesn’t observe the [`preferredIblVersion`](preferrediblversion.md) metadata, but you configure the same lighting environment manually. See [`Specifying a lighting environment in AR Quick Look`](https://developer.apple.com/documentation/ARKit/specifying-a-lighting-environment-in-ar-quick-look) for more information about matching AR Quick Look’s lighting environment in RealityKit apps.
-
 ## See Also
 
 - [Specifying a lighting environment in AR Quick Look](../ARKit/specifying-a-lighting-environment-in-ar-quick-look.md)

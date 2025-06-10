@@ -41,7 +41,7 @@ The examples below create a custom annotation using a person’s initials to sho
 The following code creates the annotation:
 
 ```javascript
-var people = [
+const people = [
     { title: "Juan Chavez",
       coordinate: new mapkit.Coordinate(37.3349, -122.0090201),
       role: "developer",
@@ -52,8 +52,8 @@ var people = [
       building: "HQ" }
 ];
 
-var factory = function(coordinate, options) {
-    var div = document.createElement("div"),
+const factory = function(coordinate, options) {
+    const div = document.createElement("div"),
         name = options.title,           // "Juan Chavez"
         parts = name.split(' ');        // ["Chavez", "Juan"]
     div.textContent = parts[0].charAt(0) + parts[1].charAt(0);    // "JA"
@@ -62,11 +62,11 @@ var factory = function(coordinate, options) {
 };
 
 people.forEach(function(person) {
-    var options = {
+    const options = {
         title: person.title,
         data: { role: person.role, building: person.building }
     };
-    var annotation = new mapkit.Annotation(person.coordinate, factory, options);
+    const annotation = new mapkit.Annotation(person.coordinate, factory, options);
     map.addAnnotation(annotation);
 });
 ```
@@ -147,6 +147,12 @@ people.forEach(function(person) {
   An accessory that displays place information when a person selects a place.
 - [selectionAccessoryOffset](mapkit.annotation/selectionaccessoryoffset.md)
   An offset that changes the selection accessory’s default anchor point.
+
+## Relationships
+
+### Inherits From
+- [mapkit.ImageAnnotation](mapkit.imageannotation.md)
+- [mapkit.MarkerAnnotation](mapkit.markerannotation.md)
 
 ## See Also
 

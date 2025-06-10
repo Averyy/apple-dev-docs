@@ -25,7 +25,7 @@ new mapkit.Geocoder(
 To use geocoding, create an instance of [`mapkit.Geocoder`](mapkit.geocoder/mapkit.geocoder.md). Optionally, you can set the [`language`](mapkit.geocoder/language.md) and [`getsUserLocation`](mapkit.geocoder/getsuserlocation.md) properties of a [`mapkit.Geocoder`](mapkit.geocoder/mapkit.geocoder.md) object on initialization, as the following examples shows:
 
 ```javascript
-var geocoder = new mapkit.Geocoder({
+const geocoder = new mapkit.Geocoder({
     language: "en-GB",
     getsUserLocation: true
 });

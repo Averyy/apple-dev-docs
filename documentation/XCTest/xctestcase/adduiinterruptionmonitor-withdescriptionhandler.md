@@ -1,6 +1,6 @@
 # addUIInterruptionMonitor(withDescription:handler:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Adds a handler to the current context.

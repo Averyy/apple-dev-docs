@@ -1,6 +1,6 @@
 # Background execution
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Manage background sessions and tasks.
 

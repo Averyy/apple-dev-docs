@@ -1,6 +1,6 @@
 # textDraggableView(_:dragPreviewForLiftingItem:session:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Asks the delegate for the preview to show during the lift animation that happens when a user begins to drag an item from a text view.

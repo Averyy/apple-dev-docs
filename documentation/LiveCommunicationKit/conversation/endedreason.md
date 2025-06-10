@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: enum
 
-The reason that a `Conversation` ended.
+Values that describe why a conversation ended.
 
 **Availability**:
 - iOS 17.4+
@@ -20,17 +20,17 @@ enum EndedReason
 
 ## Topics
 
-### Enumeration Cases
+### Reasons
 - [Conversation.EndedReason.declinedElsewhere](conversation/endedreason/declinedelsewhere.md)
-  Another device declined the `Conversation`.
+  Another device declined the conversation.
 - [Conversation.EndedReason.failed](conversation/endedreason/failed.md)
-  An error occurred while attempting to service the `Conversation`.
+  An error occurred while attempting to service the conversation.
 - [Conversation.EndedReason.joinedElsewhere](conversation/endedreason/joinedelsewhere.md)
-  Another device joined the `Conversation`.
+  Another device joined the conversation.
 - [Conversation.EndedReason.remoteEnded](conversation/endedreason/remoteended.md)
-  The remote party explicitly ended the `Conversation`.
+  The remote party explicitly ended the conversation.
 - [Conversation.EndedReason.unanswered](conversation/endedreason/unanswered.md)
-  The `Conversation` never started connecting and was never explicitly ended, such as when an outgoing or incoming `Conversation` times out.
+  The conversation didn’t complete the connection process and was never explicitly ended.
 ### Initializers
 - [init?(rawValue: Int)](conversation/endedreason/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
@@ -54,6 +54,12 @@ enum EndedReason
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [Conversation.Event](conversation/event.md)
+  Values that tell the system what happened during a conversation.
 
 
 ---

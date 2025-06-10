@@ -17,6 +17,19 @@
 init?(newBigIntFrom string: String, in context: JSContext)
 ```
 
+#### Return Value
+
+The JSValue representing a JavaScript value with type BigInt.
+
+#### Discussion
+
+This is equivalent to calling the BigInt constructor from JavaScript with a string argument.
+
+## Parameters
+
+- `string`: The string representation of the BigInt JavaScript value being created.
+- `context`: The JSContext to which the resulting JSValue belongs.
+
 
 ---
 

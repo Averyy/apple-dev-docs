@@ -1,6 +1,6 @@
 # invalidateDetents()
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Notifies the sheet to re-evaluate its detent value in the next layout pass.

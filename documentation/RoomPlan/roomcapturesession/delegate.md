@@ -9,7 +9,7 @@ An object that observes important events in the room-scanning process.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,7 +20,7 @@ weak var delegate: (any RoomCaptureSessionDelegate)?
 ## See Also
 
 - [RoomCaptureSession.CaptureError](roomcapturesession/captureerror.md)
-  Capture error types
+  Errors that can occur during a room-capture session.
 
 
 ---

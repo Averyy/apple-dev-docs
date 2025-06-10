@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_REQUIRE_SCREEN_SLEEP
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A Boolean value that indicates whether the activity performs only while the primary screen is in sleep mode.

@@ -1,6 +1,6 @@
 # maximumIterations
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: property
 
 The maximum number of allowed passes through the data.
@@ -46,4 +46,4 @@ More passes over the data can result in a more accurately trained model. Conside
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/linearregressor/configuration-swift.struct/maximumiterations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/linearregressor/configuration-swift.struct/maximumiterations)*

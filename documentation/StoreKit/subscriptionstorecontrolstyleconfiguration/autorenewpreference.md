@@ -34,8 +34,6 @@ ForEach(configuration.options) { option in
 
 > ❗ **Important**:  Don’t use the [`autoRenewPreference`](subscriptionstorecontrolstyleconfiguration/autorenewpreference.md) property to determine whether to grant access to a service. Always check the full transaction information before granting access to a paid service.
 
- Don’t use the [`autoRenewPreference`](subscriptionstorecontrolstyleconfiguration/autorenewpreference.md) property to determine whether to grant access to a service. Always check the full transaction information before granting access to a paid service.
-
 ## See Also
 
 - [var groupDisplayName: String](subscriptionstorecontrolstyleconfiguration/groupdisplayname.md)

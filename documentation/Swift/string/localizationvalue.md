@@ -53,6 +53,7 @@ If you need to provide localized strings to another process that might be using 
 - [ExpressibleByStringLiteral](expressiblebystringliteral.md)
 - [ExpressibleByUnicodeScalarLiteral](expressiblebyunicodescalarliteral.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

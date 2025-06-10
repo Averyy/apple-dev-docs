@@ -13,6 +13,7 @@ A template that displays a map with selectable points of interest.
 ## Declaration
 
 ```swift
+@MainActor
 class CPPointOfInterestTemplate
 ```
 
@@ -61,6 +62,8 @@ You must create an object that implements the [`CPPointOfInterestTemplateDelegat
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

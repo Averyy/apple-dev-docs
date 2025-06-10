@@ -1,6 +1,6 @@
 # DataScannerViewController.RecognizedDataType
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: struct
 
 A type of data that the scanner recognizes.

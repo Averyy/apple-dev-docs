@@ -121,4 +121,4 @@ For more information about the Metal profiling tools for M3 and A17 Pro, see [`D
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/analyzing-apple-gpu-performance-using-performance-heatmaps-a17-m3)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/analyzing-apple-gpu-performance-using-performance-heatmaps-a17-m3)*

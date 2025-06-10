@@ -1,6 +1,6 @@
 # Sharing an Apple Watch face
 
-**Framework**: Clockkit
+**Framework**: ClockKit
 
 Distribute a customized watch face to Apple Watch users.
 
@@ -88,4 +88,4 @@ When adding a watch face in your app, all of the complications on the watch face
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/sharing-an-apple-watch-face)*
+*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/sharing-an-apple-watch-face)*

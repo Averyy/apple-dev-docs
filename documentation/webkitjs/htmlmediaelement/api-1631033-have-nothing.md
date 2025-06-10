@@ -1,6 +1,6 @@
 # HAVE_NOTHING
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 No media data is available for playback at the current time.

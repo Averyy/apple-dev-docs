@@ -1,6 +1,6 @@
 # webViewFocus(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Brings a web view’s window to the front and makes it the active window.

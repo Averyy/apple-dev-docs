@@ -21,10 +21,10 @@ func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, c
 
 ## Mentions
 
-- [Presenting selected documents](presenting-selected-documents.md)
+- [Getting the user’s attention with alerts and action sheets](getting-the-user-s-attention-with-alerts-and-action-sheets.md)
 - [Displaying transient content in a popover](displaying-transient-content-in-a-popover.md)
 - [Providing access to directories](providing-access-to-directories.md)
-- [Getting the user’s attention with alerts and action sheets](getting-the-user-s-attention-with-alerts-and-action-sheets.md)
+- [Presenting selected documents](presenting-selected-documents.md)
 
 #### Discussion
 

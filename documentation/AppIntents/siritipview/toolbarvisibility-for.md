@@ -1,6 +1,6 @@
 # toolbarVisibility(_:for:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Specifies the visibility of a bar managed by SwiftUI.

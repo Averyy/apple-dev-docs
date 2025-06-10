@@ -1,6 +1,6 @@
 # HKWorkout
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: class
 
 A workout sample that stores information about a single physical activity.
@@ -142,6 +142,7 @@ For more information, see the methods [`init(activityType:start:end:duration:tot
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -169,4 +170,4 @@ For more information, see the methods [`init(activityType:start:end:duration:tot
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkworkout)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkworkout)*

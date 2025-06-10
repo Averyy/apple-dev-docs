@@ -24,8 +24,6 @@ The data’s format varies based on its [`sourceType`](hkverifiableclinicalrecor
 
 > ❗ **Important**:  To ensure that the data is authentic and that no one has tampered with it, decompress the data and then use a public key from the issuer to verify their signature.
 
- To ensure that the data is authentic and that no one has tampered with it, decompress the data and then use a public key from the issuer to verify their signature.
-
 ## See Also
 
 - [var jwsRepresentation: Data](hkverifiableclinicalrecord/jwsrepresentation.md)

@@ -8,8 +8,6 @@ The collection of functions you use to create a tile map node programmatically.
 
 > 💡 **Tip**:  You can create a tile map node much quicker by using Xcode’s SpriteKit Scene Editor.
 
- You can create a tile map node much quicker by using Xcode’s SpriteKit Scene Editor.
-
 ## Topics
 
 ### Creating a Tile Map

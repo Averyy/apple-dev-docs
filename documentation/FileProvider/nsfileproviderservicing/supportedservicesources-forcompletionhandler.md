@@ -24,7 +24,7 @@ An item that tracks the progress of the
 
 #### Discussion
 
-The system calls this method when an app requests a list of supported services. Return an array of services for the specified file. An application with access to the file can request the supported services by calling the [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) class’s [`getFileProviderServicesForItem(at:completionHandler:)`](https://developer.apple.com/documentation/foundation/filemanager/2915262-getfileproviderservicesforitem) method. For more information, see [`NSFileProviderService`](https://developer.apple.com/documentation/Foundation/NSFileProviderService).
+The system calls this method when an app requests a list of supported services. Return an array of services for the specified file. An application with access to the file can request the supported services by calling the [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) class’s [`getFileProviderServicesForItem(at:completionHandler:)`](https://developer.apple.com/documentation/Foundation/FileManager/getFileProviderServicesForItem(at:completionHandler:)) method. For more information, see [`NSFileProviderService`](https://developer.apple.com/documentation/Foundation/NSFileProviderService).
 
 ## Parameters
 

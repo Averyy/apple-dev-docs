@@ -8,10 +8,10 @@ An internal type that a resolver uses to convert data values.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -35,6 +35,7 @@ Don’t use a [`ResolverSpecification`](resolverspecification.md) type directly 
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 ### Conforming Types
 - [EmptyResolverSpecification](emptyresolverspecification.md)

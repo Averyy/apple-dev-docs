@@ -17,7 +17,6 @@ Initializes a new label object with a specified font.
 ## Declaration
 
 ```swift
-@MainActor
 init(fontNamed fontName: String?)
 ```
 

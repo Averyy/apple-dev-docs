@@ -25,7 +25,7 @@ Empty by default in macOS.
 ## See Also
 
 - [static let newItem: CommandGroupPlacement](commandgroupplacement/newitem.md)
-  Placement for commands that create and open different kinds of documents.
+  Placement for commands that create different kinds of documents.
 - [static let printItem: CommandGroupPlacement](commandgroupplacement/printitem.md)
   Placement for commands related to printing app content.
 - [static let saveItem: CommandGroupPlacement](commandgroupplacement/saveitem.md)

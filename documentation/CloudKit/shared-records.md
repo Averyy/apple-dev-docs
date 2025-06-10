@@ -32,8 +32,6 @@ When an invited user taps or clicks the share URL, CloudKit verifies they have a
 
 > ❗ **Important**:  To enable the system to launch your app when the user taps or clicks the share URL, add the `CKSharingSupported` key to the app’s `Info.plist` file. For more information, see [`CKSharingSupported`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CKSharingSupported).
 
- To enable the system to launch your app when the user taps or clicks the share URL, add the `CKSharingSupported` key to the app’s `Info.plist` file. For more information, see [`CKSharingSupported`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CKSharingSupported).
-
 ##### Manage Share Participation
 
 After receiving the share metadata from CloudKit, use [`CKAcceptSharesOperation`](ckacceptsharesoperation.md) to confirm the user’s participation. CloudKit then creates a record zone in the participant’s shared database that provides a view into the owner’s private database. The record zone contains only the records in the share; no other data is accessible. A participant with write permissions can change or delete records in this new record zone. Any changes they make are visible to all participants.

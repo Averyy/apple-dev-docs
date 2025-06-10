@@ -1,6 +1,6 @@
 # all
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 All media types require a user gesture to begin playing.

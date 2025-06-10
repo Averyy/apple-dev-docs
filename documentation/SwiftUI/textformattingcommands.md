@@ -18,6 +18,10 @@ A built-in set of commands for transforming the styles applied to selections of 
 struct TextFormattingCommands
 ```
 
+## Mentions
+
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+
 #### Overview
 
 These commands are optional and can be explicitly requested by passing a value of this type to the `Scene.commands(_:)` modifier.

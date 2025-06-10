@@ -1,6 +1,6 @@
 # ondevicemotion
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The event listener that is called when the device motion changes. 

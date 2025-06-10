@@ -1,6 +1,6 @@
 # Connecting to a service with passkeys
 
-**Framework**: Authenticationservices
+**Framework**: Authentication Services
 
 Allow users to sign in to a service without typing a password.
 
@@ -31,8 +31,10 @@ To build and run this sample:
   Register and authenticate users with passkeys and security keys, without using passwords.
 - [Passkey use in web browsers](passkey-use-in-web-browsers.md)
   Register and authenticate website users by using passkeys.
+- [Performing fast account creation with passkeys](performing-fast-account-creation-with-passkeys.md)
+  Allow people to quickly create an account with passkeys and associated domains.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/connecting-to-a-service-with-passkeys)*
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/connecting-to-a-service-with-passkeys)*

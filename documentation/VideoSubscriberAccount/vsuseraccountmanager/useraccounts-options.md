@@ -1,6 +1,6 @@
 # userAccounts(options:)
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: method
 
 Returns a list of registered user accounts for your app.
@@ -24,7 +24,7 @@ A list of registered user accounts for your app.
 
 #### Discussion
 
-By default, this fetches and returns the list of registered user accounts on the current device. Provide the query option [`allDevices`](vsuseraccountmanager/queryoptions/alldevices.md) to fetch the list of registered user accounts on all the devices the user has in their iCloud account.
+By default, this fetches and returns the list of registered user accounts on the current device. Provide the query option [`allDevices`](vsuseraccountmanager/queryoptions/alldevices.md) to fetch the list of registered user accounts on all the devices the person has in their iCloud account.
 
 ## Parameters
 

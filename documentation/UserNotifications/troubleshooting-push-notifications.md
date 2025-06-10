@@ -1,6 +1,6 @@
 # Troubleshooting push notifications
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Debug your server to send push notifications with device and broadcast push notifications.
 

@@ -17,7 +17,6 @@ The range of allowed random values for the green component of a particle’s ini
 ## Declaration
 
 ```swift
-@MainActor
 var particleColorGreenRange: CGFloat { get set }
 ```
 

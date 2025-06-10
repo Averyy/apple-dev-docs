@@ -1,6 +1,6 @@
 # WeatherError.permissionDenied
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 An error indicating permission denied.

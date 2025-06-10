@@ -1,27 +1,27 @@
-# init(_:)
+# init()
 
 **Framework**: Spatial  
 **Kind**: init
 
-Creates an angle from a SwiftUI angle.
+Creates an angle.
 
 **Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-init(_ angle: Angle)
+init()
 ```
-
-#### Discussion
-
-This function creates a new `Angle2D` object from an existing [`Angle`](https://developer.apple.com/documentation/SwiftUI/Angle) instance.
 
 ## See Also
 
-- [init()](angle2d/init.md)
-  Creates an angle.
 - [init(radians: Double)](angle2d/init(radians:)-3zcwo.md)
   Creates an angle with the specified double-precision radians.
 - [init(radians: Double)](angle2d/init(radians:)-6s7o6.md)
@@ -40,4 +40,4 @@ This function creates a new `Angle2D` object from an existing [`Angle`](https://
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spatial/angle2d/init(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/angle2d/init())*

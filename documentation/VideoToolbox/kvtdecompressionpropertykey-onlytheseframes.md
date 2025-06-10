@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_OnlyTheseFrames
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Requests that frames be filtered by type.

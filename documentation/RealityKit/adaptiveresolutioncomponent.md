@@ -1,6 +1,6 @@
 # AdaptiveResolutionComponent
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 A component that provides the suggested pixels per meter necessary to render an object.
@@ -10,6 +10,7 @@ A component that provides the suggested pixels per meter necessary to render an 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -32,8 +33,6 @@ Use the [`pixelsPerMeter`](adaptiveresolutioncomponent/pixelspermeter.md) proper
 ### Instance Properties
 - [var pixelsPerMeter: Float](adaptiveresolutioncomponent/pixelspermeter.md)
   A read-only value representing the suggested pixels per meter necessary to render an object.
-### Default Implementations
-- [Component Implementations](adaptiveresolutioncomponent/component-implementations.md)
 
 ## Relationships
 
@@ -50,8 +49,10 @@ Use the [`pixelsPerMeter`](adaptiveresolutioncomponent/pixelspermeter.md) proper
   A component that controls the opacity of an entity and its descendants.
 - [struct ModelDebugOptionsComponent](modeldebugoptionscomponent.md)
   A component that changes how RealityKit renders its entity to help with debugging.
+- [struct MeshInstancesComponent](meshinstancescomponent.md)
+  A component that performs GPU instancing on the ModelComponent on the same Entity.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/adaptiveresolutioncomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/adaptiveresolutioncomponent)*

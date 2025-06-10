@@ -1,6 +1,6 @@
 # supportedNetworks
 
-**Framework**: Applepayontheweb  
+**Framework**: Apple Pay on the Web  
 **Kind**: property
 
 The payment networks the merchant supports.
@@ -78,4 +78,4 @@ In macOS 12.3, iOS 15.4, watchOS 8.5, and Mac Catalyst 15.4 or later, specify pa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaypaymentrequest/supportednetworks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentrequest/supportednetworks)*

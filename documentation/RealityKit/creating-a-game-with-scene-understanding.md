@@ -1,6 +1,6 @@
 # Creating a game with scene understanding
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.
 

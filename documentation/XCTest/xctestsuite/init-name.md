@@ -1,6 +1,6 @@
 # init(name:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates a test suite with the specified name.

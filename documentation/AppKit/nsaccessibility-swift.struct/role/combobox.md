@@ -32,6 +32,7 @@ static let comboBox: NSAccessibility.Role
   The color well role.
 - [static let column: NSAccessibility.Role](nsaccessibility-swift.struct/role/column.md)
   The column role.
+- [static let dateTimeAreaRole: NSAccessibility.Role](nsaccessibility-swift.struct/role/datetimearearole.md)
 - [static let disclosureTriangle: NSAccessibility.Role](nsaccessibility-swift.struct/role/disclosuretriangle.md)
   The disclosure triangle role.
 - [static let drawer: NSAccessibility.Role](nsaccessibility-swift.struct/role/drawer.md)
@@ -44,8 +45,6 @@ static let comboBox: NSAccessibility.Role
   The grow (resize) area role in a window.
 - [static let handle: NSAccessibility.Role](nsaccessibility-swift.struct/role/handle.md)
   The drag handle role.
-- [static let helpTag: NSAccessibility.Role](nsaccessibility-swift.struct/role/helptag.md)
-  The help tag role.
 
 
 ---

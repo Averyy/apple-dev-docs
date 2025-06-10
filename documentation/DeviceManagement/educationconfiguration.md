@@ -9,8 +9,6 @@ The payload you use to configure the users, groups, and departments within an ed
 - iOS 9.3+
 - iPadOS 9.3+
 - macOS 10.14+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,25 +29,25 @@ Additionally, configure:
 - All identities as both SSL clients and servers
 - All certificates with a key size of at least 2048 bits
 - All certificates to use a hashing algorithm of SHA256 or stronger
-- Leader certificates to have the common name prefix leader, which is case insensitive
-- Member certificates to have the common name prefix member, which is case insensitive
+- Leader certificates to have the common name prefix leader, which is case-insensitive
+- Member certificates to have the common name prefix member, which is case-insensitive
 - TLS server certificates issued on or after September 1, 2020 00:00 GMT/UTC to have a validity period greater than 398 days; see [`About Upcoming Limits on Trusted Certificates`](https://developer.apple.comhttps://support.apple.com/en-us/HT211025) for more information.
 
 ##### Profile Availability
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, Shared iPad |
-| User Channel | macOS |
-| Allow Manual Install | iOS, macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, Shared iPad |
+| User channel | macOS |
+| Allow manual install | iOS, macOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, macOS |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

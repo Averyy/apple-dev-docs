@@ -1,6 +1,6 @@
 # Providing access to directories
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Use a document picker to access the content of a directory outside your app’s container.
 
@@ -43,9 +43,9 @@ When the user selects a directory in the document picker, the system gives your 
 
 To access the content of a security-scoped URL, you must do the following:
 
-1. Before accessing the URL, call [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/1417051-startaccessingsecurityscopedreso).
+1. Before accessing the URL, call [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/startAccessingSecurityScopedResource()).
 2. Use a file coordinator to perform read or write operations on the URL’s contents.
-3. After you access the URL, call [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/1413736-stopaccessingsecurityscopedresou).
+3. After you access the URL, call [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/stopAccessingSecurityScopedResource()).
 
 ```swift
 func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentAt url: URL) {
@@ -90,7 +90,7 @@ func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumen
 
 ##### Save the Url As a Bookmark
 
-To access the URL in the future, save the URL as a [`minimalBookmark`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkcreationoptions/1409050-minimalbookmark) using its [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/foundation/nsurl/1417795-bookmarkdata) method.
+To access the URL in the future, save the URL as a [`minimalBookmark`](https://developer.apple.com/documentation/Foundation/NSURL/BookmarkCreationOptions/minimalBookmark) using its [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/Foundation/NSURL/bookmarkData(options:includingResourceValuesForKeys:relativeTo:)) method.
 
 ```swift
 do {
@@ -136,7 +136,7 @@ catch let error {
 
 Users always have complete control over the apps that can access directories. After selecting a directory from the document picker, your app appears in Settings > Privacy > Files and Folders. This page lists all the apps that have permission to access shared directories, and users can revoke or restore permission for each app at any time.
 
-This means your app must be ready to handle failures when accessing a directory’s content. Calls to the [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/url/1779698-startaccessingsecurityscopedreso) method can fail, as well as any attempts to read or write to the URL. This is especially true when saving and resolving bookmarks to security-scoped URLs because using saved bookmarks can greatly increase the amount of time users have to possibly change your app’s permissions.
+This means your app must be ready to handle failures when accessing a directory’s content. Calls to the [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/URL/startAccessingSecurityScopedResource()) method can fail, as well as any attempts to read or write to the URL. This is especially true when saving and resolving bookmarks to security-scoped URLs because using saved bookmarks can greatly increase the amount of time users have to possibly change your app’s permissions.
 
 ## See Also
 
@@ -160,4 +160,4 @@ This means your app must be ready to handle failures when accessing a directory�
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/providing-access-to-directories)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/providing-access-to-directories)*

@@ -1,6 +1,6 @@
 # onPencilSqueeze(perform:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Adds an action to perform when the user squeezes their Apple Pencil.

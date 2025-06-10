@@ -47,6 +47,9 @@ Use the Core Audio framework to interact with device’s audio hardware.
 ### Structures
 - [struct AudioHardwareError](audiohardwareerror.md)
 - [struct ManagedAudioChannelLayout](managedaudiochannellayout.md)
+### Variables
+- [var kAudioDevicePropertyWantsControlsRestored: AudioObjectPropertySelector](kaudiodevicepropertywantscontrolsrestored.md)
+- [var kAudioDevicePropertyWantsStreamFormatsRestored: AudioObjectPropertySelector](kaudiodevicepropertywantsstreamformatsrestored.md)
 
 
 ---

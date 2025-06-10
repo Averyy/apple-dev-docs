@@ -1,6 +1,6 @@
 # frame(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the frame of the window is needed.

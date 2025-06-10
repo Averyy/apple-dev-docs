@@ -1,6 +1,6 @@
 # XPC_TYPE_DOUBLE
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents an IEEE-compliant, double-precision floating point value.

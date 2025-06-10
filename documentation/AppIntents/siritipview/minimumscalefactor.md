@@ -10,7 +10,7 @@ Sets the minimum amount that text in this view scales down to fit in the availab
 - iPadOS 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 6.0+
 
 ## Declaration

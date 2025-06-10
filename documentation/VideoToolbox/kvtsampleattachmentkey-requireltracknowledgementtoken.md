@@ -1,6 +1,6 @@
 # kVTSampleAttachmentKey_RequireLTRAcknowledgementToken
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A number value that contains a unique token for this Long Term Reference (LTR).

@@ -31,8 +31,6 @@ This value represents the default playback rate the player uses when you call it
 
 > ❗ **Important**:  Begin playback by calling the [`play()`](avplayer/play().md) method. Don’t start playback by setting the [`rate`](avplayer/rate.md) property value to `1.0`. Instead, use [`rate`](avplayer/rate.md) to make immediate, temporary changes to the playback rate. The next time you call the [`play()`](avplayer/play().md) method, the player restores the rate to the value of [`defaultRate`](avplayer/defaultrate.md).
 
- Begin playback by calling the [`play()`](avplayer/play().md) method. Don’t start playback by setting the [`rate`](avplayer/rate.md) property value to `1.0`. Instead, use [`rate`](avplayer/rate.md) to make immediate, temporary changes to the playback rate. The next time you call the [`play()`](avplayer/play().md) method, the player restores the rate to the value of [`defaultRate`](avplayer/defaultrate.md).
-
 ## See Also
 
 - [func play()](avplayer/play.md)

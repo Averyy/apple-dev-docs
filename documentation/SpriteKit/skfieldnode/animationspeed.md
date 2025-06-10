@@ -17,6 +17,7 @@ The rate at which a noise or turbulence field node changes.
 ## Declaration
 
 ```swift
+@MainActor
 var animationSpeed: Float { get set }
 ```
 

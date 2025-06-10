@@ -8,7 +8,7 @@ Invokes a given block passing as a parameter an asset identified by a specified 
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

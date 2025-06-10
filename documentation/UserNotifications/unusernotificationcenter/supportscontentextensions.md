@@ -1,6 +1,6 @@
 # supportsContentExtensions
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 A Boolean value that indicates whether the device supports notification content extensions.

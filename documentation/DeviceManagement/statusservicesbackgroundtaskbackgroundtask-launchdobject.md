@@ -7,8 +7,6 @@ A status report of a background task that’s based on a launch daemon.
 
 **Availability**:
 - macOS 14.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -16,11 +14,11 @@ A status report of a background task that’s based on a launch daemon.
 object StatusServicesBackgroundTaskBackgroundTask_LaunchdObject
 ```
 
-## See Also
+## Topics
 
-- [object StatusServicesBackgroundTaskBackgroundTaskObject](statusservicesbackgroundtaskbackgroundtaskobject.md)
-  A status report of a background task.
+### Objects
 - [object StatusServicesBackgroundTaskBackgroundTask_Launchd_DeviceManagementObject](statusservicesbackgroundtaskbackgroundtask_launchd_devicemanagementobject.md)
+  A dictionary that indicates a [`ServicesBackgroundTasks`](servicesbackgroundtasks.md) configuration created this background task. The dictionary contains properties that identify the configuration and the declaration asset that provided the launchd plist for the task.
 
 
 ---

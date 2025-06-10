@@ -143,4 +143,4 @@ Once you’re done, run `dwarfdump` to confirm that you’ve achieved your ultim
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3178-checking-for-and-resolving-build-uuid-problems)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3178-checking-for-and-resolving-build-uuid-problems)*

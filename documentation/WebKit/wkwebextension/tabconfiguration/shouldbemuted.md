@@ -1,6 +1,6 @@
 # shouldBeMuted
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates whether the tab should be muted.

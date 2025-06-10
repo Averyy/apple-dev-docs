@@ -8,12 +8,12 @@ Returns a new loss layer.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
-- Mac Catalyst ?+
 
 ## Declaration
 
@@ -24,8 +24,6 @@ convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, l
 #### Discussion
 
 > ❗ **Important**:  The input data type and output data type must be `float`. The output size must be `1`, unless the reduction is [`BNNS.LossReduction.none`](bnns/lossreduction/none.md).
-
- The input data type and output data type must be `float`. The output size must be `1`, unless the reduction is [`BNNS.LossReduction.none`](bnns/lossreduction/none.md).
 
 ## Parameters
 

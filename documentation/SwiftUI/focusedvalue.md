@@ -21,6 +21,10 @@ A property wrapper for observing values from the focused view or one of its ance
 struct FocusedValue<Value>
 ```
 
+## Mentions
+
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+
 #### Overview
 
 If multiple views publish values using the same key, the wrapped property will reflect the value from the view closest to focus.

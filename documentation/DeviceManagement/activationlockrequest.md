@@ -18,7 +18,6 @@ object ActivationLockRequest
 ## See Also
 
 - [object ActivationLockStatusResponse](activationlockstatusresponse.md)
-  The response to a request for activation lock.
 
 
 ---

@@ -1,6 +1,6 @@
 # WKError.Code.javaScriptInvalidFrameTarget
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 An error that indicates your content referenced an invalid web frame.

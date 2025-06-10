@@ -1,6 +1,6 @@
 # temperature
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The daily temperature summary query.

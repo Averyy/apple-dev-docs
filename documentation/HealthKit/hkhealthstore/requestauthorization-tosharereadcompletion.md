@@ -25,8 +25,6 @@ HealthKit performs these requests asynchronously. If you call this method with a
 
 > ❗ **Important**:  In watchOS 6 and later, this method displays the permission form on Apple Watch, enabling independent HealthKit apps. In watchOS 5 and earlier, this method prompts the user to authorize the app on their paired iPhone. For more information, see `Creating Independent watchOS Apps`.
 
- In watchOS 6 and later, this method displays the permission form on Apple Watch, enabling independent HealthKit apps. In watchOS 5 and earlier, this method prompts the user to authorize the app on their paired iPhone. For more information, see `Creating Independent watchOS Apps`.
-
 Each data type has two separate permissions, one to read it and one to share it. You can make a single request, and include all the data types your app needs.
 
 Customize the messages displayed on the permissions sheet by setting the following keys:
@@ -35,8 +33,6 @@ Customize the messages displayed on the permissions sheet by setting the followi
 - [`NSHealthUpdateUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthUpdateUsageDescription) customizes the message for writing data.
 
 > ⚠️ **Warning**:  You must set the usage keys, or your app will crash when you request authorization.
-
- You must set the usage keys, or your app will crash when you request authorization.
 
 For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the apps `Info.plist` file. For more information, see [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
 

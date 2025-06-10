@@ -32,4 +32,4 @@ The following screenshot shows the usage dashboard for the Food Truck sample cod
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/reviewing-xcode-cloud-usage-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/reviewing-xcode-cloud-usage-data)*

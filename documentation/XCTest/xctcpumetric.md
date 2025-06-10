@@ -1,6 +1,6 @@
 # XCTCPUMetric
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 A metric to record information about CPU activity during a performance test.

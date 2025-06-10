@@ -1,6 +1,6 @@
 # UIPopoverBackgroundView
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 The background appearance for a popover.
@@ -61,6 +61,7 @@ To create a stretchable image, use the [`resizableImage(withCapInsets:)`](uiimag
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)
@@ -91,4 +92,4 @@ To create a stretchable image, use the [`resizableImage(withCapInsets:)`](uiimag
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uipopoverbackgroundview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uipopoverbackgroundview)*

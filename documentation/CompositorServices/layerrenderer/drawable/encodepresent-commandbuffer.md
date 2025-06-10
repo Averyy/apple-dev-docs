@@ -6,6 +6,7 @@
 Encodes a notification event to the specified command buffer to present the drawable’s content onscreen.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

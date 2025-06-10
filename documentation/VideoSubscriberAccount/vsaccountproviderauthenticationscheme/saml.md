@@ -1,6 +1,6 @@
 # saml
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 Represents a SAML authentication scheme.

@@ -28,6 +28,7 @@ class DefaultSerialModelExecutor
 ### Accessing the context
 - [let modelContext: ModelContext](defaultserialmodelexecutor/modelcontext.md)
 ### Default Implementations
+- [Executor Implementations](defaultserialmodelexecutor/executor-implementations.md)
 - [SerialExecutor Implementations](defaultserialmodelexecutor/serialexecutor-implementations.md)
 
 ## Relationships
@@ -37,6 +38,7 @@ class DefaultSerialModelExecutor
 - [Executor](../Swift/Executor.md)
 - [ModelExecutor](modelexecutor.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SerialExecutor](../Swift/SerialExecutor.md)
 - [SerialModelExecutor](serialmodelexecutor.md)
 

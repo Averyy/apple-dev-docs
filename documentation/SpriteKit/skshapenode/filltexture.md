@@ -17,6 +17,7 @@ The texture used to fill the shape.
 ## Declaration
 
 ```swift
+@MainActor
 var fillTexture: SKTexture? { get set }
 ```
 
@@ -29,8 +30,6 @@ var fillTexture: SKTexture? { get set }
 The default value is `nil`. If a fill texture is specified, the shape node is rendered using that texture blended with the [`fillColor`](skshapenode/fillcolor.md).
 
 > ❗ **Important**:  The default fill color of a [`SKShapeNode`](skshapenode.md) is `SKColor.clear`. Since the fill texture is blended with the fill color, [`fillColor`](skshapenode/fillcolor.md) needs to be set to a non-clear color for it to display. For example, to display the texture without any color blend effects, set [`fillColor`](skshapenode/fillcolor.md) to `SKColor.white`.
-
- The default fill color of a [`SKShapeNode`](skshapenode.md) is `SKColor.clear`. Since the fill texture is blended with the fill color, [`fillColor`](skshapenode/fillcolor.md) needs to be set to a non-clear color for it to display. For example, to display the texture without any color blend effects, set [`fillColor`](skshapenode/fillcolor.md) to `SKColor.white`.
 
 ## See Also
 

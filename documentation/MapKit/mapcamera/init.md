@@ -12,6 +12,7 @@ Creates a map camera from the given MapKit camera object.
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS ?+
+- watchOS 10.0+
 
 ## Declaration
 

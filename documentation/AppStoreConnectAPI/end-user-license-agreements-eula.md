@@ -26,6 +26,7 @@ For more information, see App Store Connect Help: [`Create a new version`](https
   Get the custom end user license agreement (EULA) for a specific app and the territories where the agreement applies.
 - [List All Territories for an End User License Agreement](get-v1-enduserlicenseagreements-_id_-territories.md)
   List all the App Store territories to which a specific custom app license agreement applies.
+- [GET /v1/endUserLicenseAgreements/{id}/relationships/territories](get-v1-enduserlicenseagreements-_id_-relationships-territories.md)
 ### Objects
 - [object EndUserLicenseAgreement](enduserlicenseagreement.md)
   The data structure that represents the End User License Agreement resource.
@@ -36,6 +37,8 @@ For more information, see App Store Connect Help: [`Create a new version`](https
 - [object EndUserLicenseAgreementResponse](enduserlicenseagreementresponse.md)
   A response that contains a single End User License Agreements resource.
 - [object EndUserLicenseAgreementWithoutIncludesResponse](enduserlicenseagreementwithoutincludesresponse.md)
+- [object AppEndUserLicenseAgreementLinkageResponse](appenduserlicenseagreementlinkageresponse.md)
+- [object EndUserLicenseAgreementTerritoriesLinkagesResponse](enduserlicenseagreementterritorieslinkagesresponse.md)
 
 
 ---

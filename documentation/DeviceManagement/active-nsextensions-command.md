@@ -1,4 +1,4 @@
-# List Active NSExtensions
+# Active NSExtensions
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -7,8 +7,6 @@ Get a list of active extensions for a user on a device.
 
 **Availability**:
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -18,33 +16,33 @@ Extensions restricted from executing by Application Launch Restrictions or the [
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Query Availability
+##### Command Availability
 
 |  |  |
 | --- | --- |
-| Device Channel | - |
-| User Channel | macOS |
-| Requires Supervision | - |
-| Allowed in User Enrollment | - |
-| Required Access Right | QueryInstalledApps |
+| Device channel | NA |
+| User channel | macOS |
+| Requires supervision | macOS |
+| Allowed in user enrollment | NA |
+| Required access right | QueryInstalledApps |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object ActiveNSExtensionsCommand](activensextensionscommand.md)
   The command to get a list of active extensions for a user on a device.
 - [object ActiveNSExtensionsResponse](activensextensionsresponse.md)
-  A response from the device after it processes the command to get a list of active extensions for a user.
+  A response from the device after it processes the command to get a list of active extensions for a user on a device.
 
 ## Request Body
 
-The command to get a list of active extensions for a user on a device.
+The request object the server returns for the Active NSExtensions Command.
 
 ## See Also
 
-- [List the NSExtensions](nsextension-mappings-command.md)
+- [NSExtension Mappings](nsextension-mappings-command.md)
   Get a list of the installed extensions for a user on a device.
 
 

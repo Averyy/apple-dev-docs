@@ -6,7 +6,13 @@
 An object that represents a running app extension process.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 13.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.1+
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -32,6 +38,9 @@ The system guarantees that the extension process has launched by the time any in
   Creates a new XPC connection to the extension process.
 - [func invalidate()](appextensionprocess/invalidate.md)
   Stop the extension process.
+### Instance Methods
+- [func makeXPCSession() throws -> XPCSession](appextensionprocess/makexpcsession.md)
+  Creates a new XPC session to the extension process.
 
 
 ---

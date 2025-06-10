@@ -34,8 +34,6 @@ Use this constant to indicate that any change to the heading, regardless of how 
   Dismisses the heading calibration view from the screen immediately.
 - [var headingFilter: CLLocationDegrees](cllocationmanager/headingfilter.md)
   The minimum angular change in degrees required to generate new heading events.
-- [typealias CLLocationDegrees](cllocationdegrees.md)
-  A latitude or longitude value specified in degrees.
 - [var headingOrientation: CLDeviceOrientation](cllocationmanager/headingorientation.md)
   The device orientation to use when computing heading values.
 - [enum CLDeviceOrientation](cldeviceorientation.md)

@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_NumberOfFramesBeingDecoded
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Returns the number of frames currently being decoded.

@@ -17,8 +17,7 @@ Creates a composite `Transition` that uses a different transition for insertion 
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init(insertion: Insertion, removal: Removal)
+init(insertion: Insertion, removal: Removal)
 ```
 
 

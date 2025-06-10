@@ -21,6 +21,8 @@ func failAuthorization(for accessory: ASAccessory) async throws
   Finish authorization of a partially-setup accessory.
 - [class ASAccessorySettings](asaccessorysettings.md)
   Properties of an accessory.
+- [func updateAuthorization(for: ASAccessory, descriptor: ASDiscoveryDescriptor, completionHandler: ((any Error)?) -> Void)](asaccessorysession/updateauthorization(for:descriptor:completionhandler:).md)
+  Displays a view to upgrade an accessory with additional technology permissions.
 
 
 ---

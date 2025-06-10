@@ -1,6 +1,6 @@
 # CFXMLCreateStringByEscapingEntities(_:_:_:)
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: func
 
 Given a CFString object containing XML source with unescaped entities, returns a string with specified XML entities escaped.

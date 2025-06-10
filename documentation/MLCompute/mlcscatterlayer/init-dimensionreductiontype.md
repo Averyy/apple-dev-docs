@@ -22,8 +22,6 @@ convenience init?(dimension: Int, reductionType: MLCReductionType)
 
 > ❗ **Important**:  The reduction type can be either [`MLCReductionType.none`](mlcreductiontype/none.md) or [`MLCReductionType.sum`](mlcreductiontype/sum.md).
 
- The reduction type can be either [`MLCReductionType.none`](mlcreductiontype/none.md) or [`MLCReductionType.sum`](mlcreductiontype/sum.md).
-
 ## Parameters
 
 - `dimension`: The dimension to index.

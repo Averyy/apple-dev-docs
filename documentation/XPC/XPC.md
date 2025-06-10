@@ -1,6 +1,6 @@
 # XPC
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: module
 
 Access a low-level interprocess communication mechanism.
@@ -66,6 +66,10 @@ You can build an XPC service using C, Swift, or Objective-C. There are both high
   Create and manage connections to services using connection-based APIs.
 ### Classes
 - [class OS_xpc_session](os_xpc_session-swift.class.md)
+### Structures
+- [struct XPCPeerRequirement](xpcpeerrequirement.md)
+### Type Aliases
+- [typealias xpc_peer_requirement_t](xpc_peer_requirement_t.md)
 
 
 ---

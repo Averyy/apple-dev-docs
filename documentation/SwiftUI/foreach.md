@@ -23,8 +23,8 @@ struct ForEach<Data, ID, Content> where Data : RandomAccessCollection, ID : Hash
 ## Mentions
 
 - [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
-- [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
 - [Displaying data in lists](displaying-data-in-lists.md)
+- [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
 - [Picking container views for your content](picking-container-views-for-your-content.md)
 
 #### Overview
@@ -112,14 +112,13 @@ When enabling the following launch argument, SwiftUI will log when it encounters
   Creates an instance that uniquely identifies and creates views across updates based on the sections of a given view.
 - [init<V>(subviews: V, content: (Subview) -> Content)](foreach/init(subviews:content:).md)
   Creates an instance that uniquely identifies and creates views across updates based on the subviews of a given view.
-### Default Implementations
-- [AttachmentContent Implementations](foreach/attachmentcontent-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [AccessibilityRotorContent](accessibilityrotorcontent.md)
 - [AttachmentContent](../RealityKit/AttachmentContent.md)
+- [Chart3DContent](../Charts/Chart3DContent.md)
 - [ChartContent](../Charts/ChartContent.md)
 - [Copyable](../Swift/Copyable.md)
 - [DynamicMapContent](../MapKit/DynamicMapContent.md)

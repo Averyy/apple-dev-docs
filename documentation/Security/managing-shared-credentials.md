@@ -121,4 +121,4 @@ The system prompts the user for permission before deleting their user name and p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/managing-shared-credentials)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/managing-shared-credentials)*

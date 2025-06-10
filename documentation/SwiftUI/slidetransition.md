@@ -1,6 +1,6 @@
 # SlideTransition
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A transition that inserts by moving in from the leading edge, and removes by moving out towards the trailing edge.
@@ -17,8 +17,7 @@ A transition that inserts by moving in from the leading edge, and removes by mov
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct SlideTransition
+struct SlideTransition
 ```
 
 #### Overview
@@ -55,4 +54,4 @@ A transition that inserts by moving in from the leading edge, and removes by mov
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/slidetransition)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/slidetransition)*

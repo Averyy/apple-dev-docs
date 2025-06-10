@@ -16,11 +16,11 @@ string UserRole
 
 ## Mentions
 
-- [Creating auto-renewable subscription groups](creating-auto-renewable-subscription-groups.md)
-- [Managing in-app purchases](managing-in-app-purchases.md)
-- [App Store Connect API 3.5 release notes](app-store-connect-api-3-5-release-notes.md)
 - [Creating and configuring win-back offers](creating-and-configuring-win-back-offers.md)
+- [App Store Connect API 3.5 release notes](app-store-connect-api-3-5-release-notes.md)
+- [Creating auto-renewable subscription groups](creating-auto-renewable-subscription-groups.md)
 - [App Store Connect API 1.4 release notes](app-store-connect-api-1-4-release-notes.md)
+- [Managing in-app purchases](managing-in-app-purchases.md)
 
 #### Possible Values
 

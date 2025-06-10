@@ -22,9 +22,9 @@ Set this property before calling  [`requestPreAuthorizedDiagnosisKeys(completion
 
 ## See Also
 
-- [func requestPreAuthorizedDiagnosisKeys(completionHandler: ENErrorHandler)](enmanager/requestpreauthorizeddiagnosiskeys(completionhandler:).md)
+- [func requestPreAuthorizedDiagnosisKeys(completionHandler: ((any Error)?) -> Void)](enmanager/requestpreauthorizeddiagnosiskeys(completionhandler:).md)
   Requests diagnosis keys after the user authorizes sharing them.
-- [func preAuthorizeDiagnosisKeys(completionHandler: ENErrorHandler)](enmanager/preauthorizediagnosiskeys(completionhandler:).md)
+- [func preAuthorizeDiagnosisKeys(completionHandler: ((any Error)?) -> Void)](enmanager/preauthorizediagnosiskeys(completionhandler:).md)
   Allows users to authorize a one-time release of diagnosis keys within five days of the authorization.
 - [typealias ENDiagnosisKeysAvailableHandler](endiagnosiskeysavailablehandler.md)
   The handler the system invokes after requesting diagnosis keys.

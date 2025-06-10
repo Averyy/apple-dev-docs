@@ -1,6 +1,6 @@
 # kVTMultiPassStorageCreationOption_DoNotDelete
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Indicates that the multipass storage object’s backing store should not be deleted when finalized.

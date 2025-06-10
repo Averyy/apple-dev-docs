@@ -1,6 +1,6 @@
 # XPCDictionary.KeyValuePair
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 A type that contains a dictionary’s key-value pair.

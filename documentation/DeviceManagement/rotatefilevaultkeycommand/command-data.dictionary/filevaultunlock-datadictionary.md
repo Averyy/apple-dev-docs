@@ -7,8 +7,6 @@ A dictionary that contains FileVault unlock options.
 
 **Availability**:
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

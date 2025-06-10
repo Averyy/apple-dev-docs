@@ -44,11 +44,24 @@ Use the static members of this structure to specify your preferred arrangement o
 ### Conforms To
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [var spatialTemplatePreference: SpatialTemplatePreference](systemcoordinator/configuration-swift.struct/spatialtemplatepreference.md)
-  The preferred arrangement of spatial Personas in your app’s immersive space.
+- [Building a guessing game for visionOS](building-a-guessing-game-for-visionos.md)
+  Create a team-based guessing game for visionOS using Group Activities.
+- [protocol SpatialTemplate](spatialtemplate.md)
+  An interface you use to create custom arrangements of spatial Personas in a scene.
+- [struct SpatialTemplateSeatElement](spatialtemplateseatelement.md)
+  A spatial template element that represents a seat for a participant in the activity.
+- [protocol SpatialTemplateElement](spatialtemplateelement.md)
+  An interface that defines an element in your spatial template.
+- [struct SpatialTemplateElementPosition](spatialtemplateelementposition.md)
+  A type that defines the position of an element in a spatial template.
+- [struct SpatialTemplateElementDirection](spatialtemplateelementdirection.md)
+  The initial direction a participant faces when an activity starts.
+- [protocol SpatialTemplateRole](spatialtemplaterole.md)
+  An interface for defining roles that you assign to the participants of a group activity.
 
 
 ---

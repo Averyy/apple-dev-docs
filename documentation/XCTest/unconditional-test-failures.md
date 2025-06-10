@@ -1,6 +1,6 @@
 # Unconditional Test Failures
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Generate a failure immediately and unconditionally.
 

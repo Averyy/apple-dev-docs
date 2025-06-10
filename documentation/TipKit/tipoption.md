@@ -1,4 +1,4 @@
-# TipOption
+# Option
 
 **Framework**: TipKit  
 **Kind**: protocol
@@ -34,15 +34,18 @@ protocol TipOption : Sendable
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
-- [Tips.IgnoresDisplayFrequency](tips/ignoresdisplayfrequency.md)
-- [Tips.MaxDisplayCount](tips/maxdisplaycount.md)
-- [Tips.MaxDisplayDuration](tips/maxdisplayduration.md)
+- [IgnoresDisplayFrequency](tips/ignoresdisplayfrequency.md)
+- [MaxDisplayCount](tips/maxdisplaycount.md)
+- [MaxDisplayDuration](tips/maxdisplayduration.md)
 
 ## See Also
 
 - [struct AnyTip](anytip.md)
   A type-erased tip value.
+- [struct TipKitError](tipkiterror.md)
+  A localized tip kit error.
 
 
 ---

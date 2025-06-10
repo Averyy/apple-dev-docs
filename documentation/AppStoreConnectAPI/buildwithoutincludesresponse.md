@@ -37,6 +37,9 @@ object BuildWithoutIncludesResponse
   An image asset, including its height, width, and template URL.
 - [object BetaBuildUsagesV1MetricResponse](betabuildusagesv1metricresponse.md)
   A response that contains one or more beta build metric resources.
+- [object BuildAppLinkageResponse](buildapplinkageresponse.md)
+- [object BuildAppStoreVersionLinkageResponse](buildappstoreversionlinkageresponse.md)
+- [object BuildBetaAppReviewSubmissionLinkageResponse](buildbetaappreviewsubmissionlinkageresponse.md)
 
 
 ---

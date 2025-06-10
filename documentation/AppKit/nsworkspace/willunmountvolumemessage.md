@@ -1,0 +1,34 @@
+# NSWorkspace.WillUnmountVolumeMessage
+
+**Framework**: AppKit  
+**Kind**: struct
+
+**Availability**:
+- macOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+struct WillUnmountVolumeMessage
+```
+
+## Topics
+
+### Initializers
+- [init(localizedVolumeName: String, volumeURL: URL)](nsworkspace/willunmountvolumemessage/init(localizedvolumename:volumeurl:).md)
+### Instance Properties
+- [var localizedVolumeName: String](nsworkspace/willunmountvolumemessage/localizedvolumename.md)
+- [var volumeURL: URL](nsworkspace/willunmountvolumemessage/volumeurl.md)
+### Type Methods
+- [static func makeNotification(NSWorkspace.WillUnmountVolumeMessage) -> Notification](nsworkspace/willunmountvolumemessage/makenotification(_:).md)
+
+## Relationships
+
+### Conforms To
+- [NotificationCenter.MainActorMessage](../Foundation/NotificationCenter/MainActorMessage.md)
+- [NotificationCenter.Message](../Foundation/NotificationCenter/Message.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsworkspace/willunmountvolumemessage)*

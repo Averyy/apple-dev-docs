@@ -14,7 +14,6 @@ The number of pages to render.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfPages: Int { get }
 ```
 

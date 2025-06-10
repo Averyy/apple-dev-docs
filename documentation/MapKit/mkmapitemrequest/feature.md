@@ -27,6 +27,8 @@ var feature: MapFeature { get }
   The map item identifer.
 - [var featureAnnotation: MKMapFeatureAnnotation](mkmapitemrequest/featureannotation.md)
   The feature annotation.
+- [var placeDescriptor: PlaceDescriptor?](mkmapitemrequest/placedescriptor.md)
+  The place descriptor that contains information that’s helpful in uniquely identifying this place.
 
 
 ---

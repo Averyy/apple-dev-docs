@@ -8,7 +8,7 @@ Indicates that the picture has been flipped horizontally with respect to the up 
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

@@ -102,4 +102,4 @@ If you discover an error in your shader, consider taking a capture (see [`Captur
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/validating-your-apps-metal-shader-usage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage)*

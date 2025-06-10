@@ -1,6 +1,6 @@
 # CLHeading
 
-**Framework**: Corelocation  
+**Framework**: Core Location  
 **Kind**: class
 
 The orientation of the user’s device, relative to true or magnetic north.
@@ -71,4 +71,4 @@ Typically, you don’t create instances of this class yourself, nor do you subcl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/clheading)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/clheading)*

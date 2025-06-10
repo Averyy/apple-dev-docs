@@ -13,6 +13,7 @@ Asks the delegate whether the system should display the maneuver as a notificati
 ## Declaration
 
 ```swift
+@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, shouldShowNotificationFor maneuver: CPManeuver) -> Bool
 ```
 

@@ -1,6 +1,6 @@
 # CurrentWeather.CurrentWeatherData
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 The current weather object.

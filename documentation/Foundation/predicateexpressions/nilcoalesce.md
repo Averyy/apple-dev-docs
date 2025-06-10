@@ -35,6 +35,7 @@ struct NilCoalesce<LHS, RHS> where LHS : PredicateExpression, RHS : PredicateExp
 - [Encodable](../Swift/Encodable.md)
 - [PredicateExpression](predicateexpression.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StandardPredicateExpression](standardpredicateexpression.md)
 
 

@@ -41,9 +41,9 @@ The following is a list of predefined substitution variables and examples of eac
 
 `$(xdigit)` — All hexadecimal digits: `0`, …, `F`, `f`.
 
-`$(region)` — All ISO regions in [`isoRegionCodes`](https://developer.apple.com/documentation/foundation/locale/2293271-isoregioncodes), such as `CA`, `UK`, and `US`.
+`$(region)` — All ISO regions in [`isoRegionCodes`](https://developer.apple.com/documentation/Foundation/Locale/isoRegionCodes), such as `CA`, `UK`, and `US`.
 
-`$(lang)` — All ISO languages in [`isoLanguageCodes`](https://developer.apple.com/documentation/foundation/locale/2293744-isolanguagecodes), such as `ar`, `en`, and `zh`.
+`$(lang)` — All ISO languages in [`isoLanguageCodes`](https://developer.apple.com/documentation/Foundation/Locale/isoLanguageCodes), such as `ar`, `en`, and `zh`.
 
 This example code shows how to use universal links substitution variables in an association file:
 

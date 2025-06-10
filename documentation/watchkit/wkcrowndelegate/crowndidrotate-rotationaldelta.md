@@ -1,6 +1,6 @@
 # crownDidRotate(_:rotationalDelta:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Called when the user rotates the crown.

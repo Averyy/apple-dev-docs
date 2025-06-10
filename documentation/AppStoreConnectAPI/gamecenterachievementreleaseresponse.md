@@ -22,6 +22,7 @@ object GameCenterAchievementReleaseResponse
   The request body you use to create an achievement release.
 - [object GameCenterAchievementReleasesResponse](gamecenterachievementreleasesresponse.md)
   A response that contains a list of achievement release resources.
+- [object GameCenterAchievementReleasesLinkagesResponse](gamecenterachievementreleaseslinkagesresponse.md)
 
 
 ---

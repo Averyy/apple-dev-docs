@@ -50,6 +50,14 @@ The Xcode build system manages the tools that transform your code and resource f
 ### Security and privacy
 - [Verifying the origin of your XCFrameworks](verifying-the-origin-of-your-xcframeworks.md)
   Discover who signed a framework, and take action when that changes.
+- [Enabling enhanced security for your app](enabling-enhanced-security-for-your-app.md)
+  Detect out-of-bounds memory access, use of freed memory, and other potential vulnerabilities.
+- [Creating extensions with enhanced security](creating-extensions-with-enhanced-security.md)
+  Reduce opportunities for an attacker to target your app through its extensions.
+- [Adopting type-aware memory allocation](adopting-type-aware-memory-allocation.md)
+  Reduce the opportunities to treat pointers as data in your code.
+- [Conforming to Mach IPC security restrictions](conforming-to-mach-ipc-security-restrictions.md)
+  Avoid crashes and potentially insecure situations associated with Mach messages.
 
 ## See Also
 

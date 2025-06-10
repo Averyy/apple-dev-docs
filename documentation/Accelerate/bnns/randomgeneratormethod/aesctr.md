@@ -24,8 +24,6 @@ case aesCtr
 
 > ❗ **Important**:  Don’t use this method for cryptographic applications.
 
- Don’t use this method for cryptographic applications.
-
 
 ---
 

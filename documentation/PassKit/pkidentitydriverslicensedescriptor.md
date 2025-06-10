@@ -27,8 +27,6 @@ For the elements you request, the response contains the corresponding elements p
 
 > ❗ **Important**:  When you verify a person’s driving privileges from a U.S. driver’s license, use `domestic_driving_privileges` from the `org.iso.18013.5.1.aamva` namespace instead of `driving_privileges` from the `org.iso.18013.5.1` namespace because the former maps more directly to state laws. For more information about implementation, see [`AAMVA Mobile Driver’s License (mDL) Implementation Guidelines`](https://developer.apple.comhttps://www.aamva.org/topics/mobile-driver-license#?wst=4a3b89462cc2cff2cbe0c7accde57421).
 
- When you verify a person’s driving privileges from a U.S. driver’s license, use `domestic_driving_privileges` from the `org.iso.18013.5.1.aamva` namespace instead of `driving_privileges` from the `org.iso.18013.5.1` namespace because the former maps more directly to state laws. For more information about implementation, see [`AAMVA Mobile Driver’s License (mDL) Implementation Guidelines`](https://developer.apple.comhttps://www.aamva.org/topics/mobile-driver-license#?wst=4a3b89462cc2cff2cbe0c7accde57421).
-
 The framework allows for requesting the Boolean [`age(atLeast:)`](pkidentityelement/age(atleast:).md) element for any age between `1` and `125` only if the issuer includes it. If an app requests [`age(atLeast:)`](pkidentityelement/age(atleast:).md) and the `age_over_XX` element isn’t present in the mobile driver’s license, the framework falls back to a request for the [`age`](pkidentityelement/age.md) element.
 
 An app can’t include both an [`age(atLeast:)`](pkidentityelement/age(atleast:).md) element and an [`age`](pkidentityelement/age.md) element in the same request.
@@ -63,10 +61,28 @@ An app can’t include both an [`age(atLeast:)`](pkidentityelement/age(atleast:)
 
 ## See Also
 
-- [class PKIdentityIntentToStore](pkidentityintenttostore.md)
-  An object that represents your intention to store an identity element or values derived from an identity element.
-- [protocol PKIdentityDocumentDescriptor](pkidentitydocumentdescriptor.md)
-  A type that describes the structure and behavior of an identity document.
+- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
+  Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
+- [class PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
+  An object you use to request information from a user’s photo ID or equivalent document.
+- [class PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)
+  An object you use to request information from multiple identity documents.
+- [class PKAddIdentityDocumentMetadata](pkaddidentitydocumentmetadata.md)
+  The object for specifying the metadata necessary to provision identity documents.
+- [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
+  Configuration to define the identity document.
+- [struct JPKIPassContents](jpkipasscontents.md)
+  A set of actions for viewing and updating PINs, passwords, and signing abilities associated with digital identities on the JPKI applet.
+- [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
+  Configuration to define the identity document.
+- [class PKAddPassMetadataPreview](pkaddpassmetadatapreview.md)
+  A preview object that contains information representing the pass you add to Wallet.
+- [class PKIdentityDocumentMetadata](pkidentitydocumentmetadata.md)
+  A set of configured metadata that defines the required information to add the corresponding pass to Wallet.
+- [class PKIdentityNationalIDCardDescriptor](pkidentitynationalidcarddescriptor.md)
+  An object for requesting information from a user’s national ID card.
+- [class PKJapanIndividualNumberCardMetadata](pkjapanindividualnumbercardmetadata.md)
+  A class that contains metadata indicating the specific product instance to provision.
 
 
 ---

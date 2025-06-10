@@ -1,6 +1,6 @@
 # xpc_session_send_message_with_reply_async(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 **Availability**:

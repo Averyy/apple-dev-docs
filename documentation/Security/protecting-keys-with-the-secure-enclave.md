@@ -60,4 +60,4 @@ When you want to retrieve the key, you do it in the usual way, as described in [
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/protecting-keys-with-the-secure-enclave)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/protecting-keys-with-the-secure-enclave)*

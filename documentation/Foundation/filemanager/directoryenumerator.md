@@ -55,6 +55,8 @@ An enumeration is recursive, including the files of all subdirectories, and cros
 - [Hashable](../Swift/Hashable.md)
 - [NSFastEnumeration](nsfastenumeration.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

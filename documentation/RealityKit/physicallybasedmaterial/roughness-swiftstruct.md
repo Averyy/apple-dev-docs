@@ -10,6 +10,7 @@ An object that defines the roughness of an entity’s surface.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -40,8 +41,6 @@ For more information, see [`roughness`](physicallybasedmaterial/roughness-swift.
   The intended use of the object’s texture property.
 - [var scale: Float](physicallybasedmaterial/roughness-swift.struct/scale.md)
   The roughness value for the entire entity.
-- [PhysicallyBasedMaterial.Roughness.FloatLiteralType](physicallybasedmaterial/roughness-swift.struct/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 ## Relationships
 

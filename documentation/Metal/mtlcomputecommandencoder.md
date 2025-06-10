@@ -21,11 +21,12 @@ protocol MTLComputeCommandEncoder : MTLCommandEncoder
 
 ## Mentions
 
-- [Tracking the Resource Residency of Argument Buffers](tracking-the-resource-residency-of-argument-buffers.md)
-- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 - [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
 - [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Tracking the Resource Residency of Argument Buffers](tracking-the-resource-residency-of-argument-buffers.md)
 
 #### Overview
 
@@ -40,8 +41,6 @@ To encode kernel function calls:
 5. Call [`endEncoding()`](mtlcommandencoder/endencoding().md) to finish encoding the kernel call of the compute pass.
 
 > ❗ **Important**:  Call [`endEncoding()`](mtlcommandencoder/endencoding().md) on any existing compute command encoder before releasing it or creating one.
-
- Call [`endEncoding()`](mtlcommandencoder/endencoding().md) on any existing compute command encoder before releasing it or creating one.
 
 After adding all commands to your compute command encoder, use the [`commit()`](mtlcommandbuffer/commit().md) method to submit work to the GPU.
 
@@ -156,6 +155,8 @@ After adding all commands to your compute command encoder, use the [`commit()`](
   Learn how Metal organizes compute-processing workloads.
 - [Calculating Threadgroup and Grid Sizes](calculating-threadgroup-and-grid-sizes.md)
   Calculate the optimum sizes for threadgroups and grids when dispatching compute-processing workloads.
+- [protocol MTL4ComputeCommandEncoder](mtl4computecommandencoder.md)
+  Encodes a compute pass and other memory operations into a command buffer.
 
 
 ---

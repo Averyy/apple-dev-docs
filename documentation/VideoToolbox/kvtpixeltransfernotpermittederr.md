@@ -1,6 +1,6 @@
 # kVTPixelTransferNotPermittedErr
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

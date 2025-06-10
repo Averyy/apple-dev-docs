@@ -1,6 +1,6 @@
 # spotlightSuggestion
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Spotlight suggestions are detected and turned into links.

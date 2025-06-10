@@ -12,8 +12,6 @@ The payload you use to configure a PKCS #12-formatted certificate.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,8 +25,6 @@ Specify `com.apple.security.pkcs12` as the payload type.
 
 > ⚠️ **Warning**:  The system obfuscates the profile but doesn’t encrypt it, so it’s possible to intercept the profile and extract the password and identity.
 
- The system obfuscates the profile but doesn’t encrypt it, so it’s possible to intercept the profile and extract the password and identity.
-
 It’s recommended to omit the password in the profile, or do one of the following instead:
 
 - Securely deliver the profile to authorized users only, such as through MDM.
@@ -39,17 +35,17 @@ It’s recommended to omit the password in the profile, or do one of the followi
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | macOS |
-| Allow Manual Install | iOS, macOS, Shared iPad, tvOS, watchOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Allow Multiple Payloads | iOS, macOS, Shared iPad, tvOS, watchOS |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| User channel | macOS |
+| Allow manual install | iOS, macOS, tvOS, visionOS, watchOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 
 ##### Example Profile
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

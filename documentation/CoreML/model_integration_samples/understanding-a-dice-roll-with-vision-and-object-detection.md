@@ -1,6 +1,6 @@
 # Understanding a Dice Roll with Vision and Object Detection
 
-**Framework**: Coreml
+**Framework**: Core ML
 
 Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
 

@@ -25,8 +25,6 @@ The [`offerCodeRedemption(isPresented:onCompletion:)`](view/offercoderedemption(
 
 > ❗ **Important**: Set up subscription offer codes in App Store Connect before calling this API. Customers can only redeem these offers in your app through the redemption sheet; don’t use a custom UI. For more information, see [`Supporting subscription offer codes in your app`](https://developer.apple.com/documentation/StoreKit/supporting-subscription-offer-codes-in-your-app).
 
-Set up subscription offer codes in App Store Connect before calling this API. Customers can only redeem these offers in your app through the redemption sheet; don’t use a custom UI. For more information, see [`Supporting subscription offer codes in your app`](https://developer.apple.com/documentation/StoreKit/supporting-subscription-offer-codes-in-your-app).
-
 The following code example shows a view that displays the offer code redemption sheet upon a button press:
 
 ```swift

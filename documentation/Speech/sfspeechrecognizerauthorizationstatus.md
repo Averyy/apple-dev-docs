@@ -8,7 +8,7 @@ The app’s authorization to perform speech recognition.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 10.0+
 - macOS 10.15+
 - visionOS 1.0+
 
@@ -20,7 +20,7 @@ enum SFSpeechRecognizerAuthorizationStatus
 
 ## Topics
 
-### Authorization Statuses
+### Authorization statuses
 - [SFSpeechRecognizerAuthorizationStatus.notDetermined](sfspeechrecognizerauthorizationstatus/notdetermined.md)
   The app’s authorization status has not yet been determined.
 - [SFSpeechRecognizerAuthorizationStatus.denied](sfspeechrecognizerauthorizationstatus/denied.md)
@@ -40,13 +40,18 @@ enum SFSpeechRecognizerAuthorizationStatus
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [class func requestAuthorization((SFSpeechRecognizerAuthorizationStatus) -> Void)](sfspeechrecognizer/requestauthorization(_:).md)
-  Asks the user to allow your app to perform speech recognition.
-- [class func authorizationStatus() -> SFSpeechRecognizerAuthorizationStatus](sfspeechrecognizer/authorizationstatus.md)
-  Returns your app’s current authorization to perform speech recognition.
+- [Asking Permission to Use Speech Recognition](asking-permission-to-use-speech-recognition.md)
+  Ask the user’s permission to perform speech recognition using Apple’s servers.
+- [class SFSpeechRecognizer](sfspeechrecognizer.md)
+  An object you use to check for the availability of the speech recognition service, and to initiate the speech recognition process.
+- [protocol SFSpeechRecognizerDelegate](sfspeechrecognizerdelegate.md)
+  A protocol that you adopt in your objects to track the availability of a speech recognizer.
+- [enum SFSpeechRecognitionTaskHint](sfspeechrecognitiontaskhint.md)
+  The type of task for which you are using speech recognition.
 
 
 ---

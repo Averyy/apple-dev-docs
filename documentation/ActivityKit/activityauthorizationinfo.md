@@ -1,6 +1,6 @@
 # ActivityAuthorizationInfo
 
-**Framework**: Activitykit  
+**Framework**: ActivityKit  
 **Kind**: class
 
 An object with information about whether a person allowed your app to start Live Activities and permitted content updates with frequent ActivityKit push notifications.
@@ -45,4 +45,4 @@ Similarly, `ActivityAuthorizationInfo` provides functionality to check whether a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ActivityKit/activityauthorizationinfo)*
+*[View on Apple Developer](https://developer.apple.com/documentation/activitykit/activityauthorizationinfo)*

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to remove an installed managed app from a device.
+The command to remove an installed managed app.
 
 **Availability**:
 - iOS 5.0+
@@ -12,8 +12,6 @@ The command to remove an installed managed app from a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,14 +21,14 @@ object RemoveApplicationCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object RemoveApplicationCommand.Command](removeapplicationcommand/command-data.dictionary.md)
-  The request dictionary to remove an installed managed app.
+  The command to remove an installed managed app.
 
 ## See Also
 
 - [object RemoveApplicationResponse](removeapplicationresponse.md)
-  A response from the device after it processes the command to remove a managed app.
+  A response from the device after it processes the command to remove an installed managed app.
 
 
 ---

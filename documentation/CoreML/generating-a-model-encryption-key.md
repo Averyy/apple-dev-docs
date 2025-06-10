@@ -10,8 +10,6 @@ Use a model’s encryption key to encrypt a model archive for deployment or to e
 
 > ❗ **Important**:  You must have signed in with your Apple ID in the Apple ID pane in System Preferences to generate a model encryption key in Xcode.
 
- You must have signed in with your Apple ID in the Apple ID pane in System Preferences to generate a model encryption key in Xcode.
-
 ##### Create the Model Encryption Key
 
 Open a model in Xcode, click the Utilities tab, and click Create Encryption Key.

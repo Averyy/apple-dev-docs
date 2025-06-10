@@ -1,6 +1,6 @@
 # SKProductsRequest
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: class
 
 An object that can retrieve localized information from the App Store about a specified list of products.
@@ -22,9 +22,9 @@ class SKProductsRequest
 
 ## Mentions
 
-- [Implementing introductory offers in your app](implementing-introductory-offers-in-your-app.md)
 - [Fetching product information from the App Store](fetching-product-information-from-the-app-store.md)
 - [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
+- [Implementing introductory offers in your app](implementing-introductory-offers-in-your-app.md)
 - [Testing a product request](testing-a-product-request.md)
 
 #### Overview
@@ -57,6 +57,8 @@ To use an [`SKProductsRequest`](skproductsrequest.md) object, you initialize it 
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -72,4 +74,4 @@ To use an [`SKProductsRequest`](skproductsrequest.md) object, you initialize it 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/skproductsrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/skproductsrequest)*

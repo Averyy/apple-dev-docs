@@ -1,6 +1,6 @@
 # allRequestedMatchPatterns
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The set of websites that the extension requires access to for injected content and for receiving messages from websites.

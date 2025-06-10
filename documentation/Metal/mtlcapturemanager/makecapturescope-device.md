@@ -29,7 +29,7 @@ The capture scope captures commands in command buffers created on any command qu
 
 ## See Also
 
-- [func makeCaptureScope(commandQueue: any MTLCommandQueue) -> any MTLCaptureScope](mtlcapturemanager/makecapturescope(commandqueue:).md)
+- [func makeCaptureScope(commandQueue: any MTLCommandQueue) -> any MTLCaptureScope](mtlcapturemanager/makecapturescope(commandqueue:)-1rozd.md)
   Creates a capture scope for commands submitted to a specific command queue.
 - [var defaultCaptureScope: (any MTLCaptureScope)?](mtlcapturemanager/defaultcapturescope.md)
   The capture scope to use when a capture is initiated in Xcode.

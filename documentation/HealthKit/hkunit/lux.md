@@ -3,8 +3,6 @@
 **Framework**: HealthKit  
 **Kind**: method
 
-Returns a HealthKit unit for measuring illuminance in lux.
-
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -18,10 +16,6 @@ Returns a HealthKit unit for measuring illuminance in lux.
 ```swift
 class func lux() -> Self
 ```
-
-#### Return Value
-
-A HealthKit unit for measuring illuminance in lux.
 
 
 ---

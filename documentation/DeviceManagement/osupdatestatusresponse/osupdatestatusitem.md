@@ -10,8 +10,6 @@ A dictionary that describes the status of a software update.
 - iPadOS 9.0+
 - macOS 10.11.5+
 - tvOS 12.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

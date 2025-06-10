@@ -17,7 +17,7 @@ A pointer to a trace payload object.
 ## Declaration
 
 ```swift
-typealias os_trace_payload_object_t = xpc_object_t
+typealias os_trace_payload_object_t = UnsafeMutableRawPointer
 ```
 
 

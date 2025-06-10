@@ -1,6 +1,6 @@
 # clearShadow
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Turns shadows off.

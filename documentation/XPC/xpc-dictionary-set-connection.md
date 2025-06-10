@@ -1,6 +1,6 @@
 # xpc_dictionary_set_connection(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Inserts a connection into a dictionary.

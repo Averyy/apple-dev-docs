@@ -33,8 +33,6 @@ To verify the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.m
 
 > ❗ **Important**:  The decoded payloads of the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) and [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSTransaction) strings contain [`price`](https://developer.apple.com/documentation/AppStoreServerAPI/price) fields that are specified in  of the currency;  StoreKit represents the `price`  in  of currency. Take care not to confuse these two representations when working with both APIs.
 
- The decoded payloads of the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) and [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSTransaction) strings contain [`price`](https://developer.apple.com/documentation/AppStoreServerAPI/price) fields that are specified in  of the currency;  StoreKit represents the `price`  in  of currency. Take care not to confuse these two representations when working with both APIs.
-
 ## See Also
 
 - [var deviceVerification: Data](verificationresult/deviceverification-69lvx.md)

@@ -6,6 +6,7 @@
 Presents the immersive space that handles the type of the presented value.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

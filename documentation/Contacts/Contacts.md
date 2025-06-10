@@ -231,7 +231,7 @@ do {
 
 ###### Contacts Changed Notifications
 
-After successfully executing a save, the contact store posts a [`CNContactStoreDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name/1403253-cncontactstoredidchange) notification to the default notification center. If you cache any Contacts framework objects, you need to refetch those objects, either by their identifiers, or with the predicates that you used to originally fetch them, and then release the cached objects. Note that cached objects are stale, but not invalid.
+After successfully executing a save, the contact store posts a [`CNContactStoreDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/CNContactStoreDidChange) notification to the default notification center. If you cache any Contacts framework objects, you need to refetch those objects, either by their identifiers, or with the predicates that you used to originally fetch them, and then release the cached objects. Note that cached objects are stale, but not invalid.
 
 ###### Containers and Groups
 

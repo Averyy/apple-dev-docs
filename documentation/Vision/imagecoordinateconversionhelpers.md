@@ -27,6 +27,13 @@ struct ImageCoordinateConversionHelpers
 - [static func verticallyFlippedNormalizedPoint(normalizedPoint: CGPoint) -> CGPoint](imagecoordinateconversionhelpers/verticallyflippednormalizedpoint(normalizedpoint:).md)
 - [static func verticallyFlippedNormalizedRect(normalizedRect: CGRect, imageHeight: UInt32) -> CGRect](imagecoordinateconversionhelpers/verticallyflippednormalizedrect(normalizedrect:imageheight:).md)
 
+## See Also
+
+- [struct ImagePixelDimensions](imagepixeldimensions.md)
+- [struct ResourceVersion](resourceversion.md)
+- [struct VNVideoProcessingOption](vnvideoprocessingoption.md)
+  Options to pass to the video processor when adding requests.
+
 
 ---
 

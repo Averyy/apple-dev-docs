@@ -29,6 +29,8 @@ object GameCenterLeaderboardLocalizationUpdateRequest
   A response that contains a single leaderboard localization resource.
 - [object GameCenterLeaderboardLocalizationsResponse](gamecenterleaderboardlocalizationsresponse.md)
   A response that contains multiple leaderboard localizations resources.
+- [object GameCenterLeaderboardLocalizationGameCenterLeaderboardImageLinkageResponse](gamecenterleaderboardlocalizationgamecenterleaderboardimagelinkageresponse.md)
+- [object GameCenterLeaderboardLocalizationsLinkagesResponse](gamecenterleaderboardlocalizationslinkagesresponse.md)
 
 
 ---

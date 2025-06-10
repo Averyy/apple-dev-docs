@@ -10,6 +10,7 @@ Enables or disables an image noise effect for virtual content.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -30,8 +31,6 @@ Applying this effect involves a low, constant GPU cost. To enable or disable cam
 When deciding whether to use any effect, be sure to consider your app’s CPU and GPU utilization, as described in [`Improving the Performance of a RealityKit App`](improving-the-performance-of-a-realitykit-app.md).
 
 > ❗ **Important**: This rendering effect is unavailable on macOS.
-
-This rendering effect is unavailable on macOS.
 
 
 ---

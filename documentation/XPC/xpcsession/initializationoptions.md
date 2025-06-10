@@ -1,6 +1,6 @@
 # XPCSession.InitializationOptions
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: struct
 
 Options that control the session’s configuration.
@@ -22,11 +22,11 @@ struct InitializationOptions
 ## Topics
 
 ### Session creation options
-- [static var inactive: XPCSession.InitializationOptions](xpcsession/initializationoptions/inactive.md)
+- [static let inactive: XPCSession.InitializationOptions](xpcsession/initializationoptions/inactive.md)
   Indicates that the session isn’t activated during its creation.
-- [static var privileged: XPCSession.InitializationOptions](xpcsession/initializationoptions/privileged.md)
+- [static let privileged: XPCSession.InitializationOptions](xpcsession/initializationoptions/privileged.md)
   Indicates that the Mach service is in the priviledged Mach bootstrap.
-- [static var none: XPCSession.InitializationOptions](xpcsession/initializationoptions/none.md)
+- [static let none: XPCSession.InitializationOptions](xpcsession/initializationoptions/none.md)
   Indicates that the listener uses a default configuration during creation.
 
 ## Relationships
@@ -36,6 +36,8 @@ struct InitializationOptions
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

@@ -1,6 +1,6 @@
 # watchOS(_:)
 
-**Framework**: Packagedescription  
+**Framework**: PackageDescription  
 **Kind**: method
 
 Configure the minimum deployment target version for the watchOS platform.

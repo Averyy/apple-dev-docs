@@ -1,6 +1,6 @@
 # deniedPermissionMatchPatterns
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The currently denied permission match patterns and their expiration dates.

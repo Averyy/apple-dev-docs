@@ -1,6 +1,6 @@
 # count
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: property
 
 The number of elements in the collection.
@@ -29,4 +29,4 @@ To check whether a collection is empty, use its `isEmpty` property instead of co
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/slidingwindows/count)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/slidingwindows/count)*

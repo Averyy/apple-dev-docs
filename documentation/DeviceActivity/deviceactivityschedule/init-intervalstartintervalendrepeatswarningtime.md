@@ -20,8 +20,6 @@ init(intervalStart: DateComponents, intervalEnd: DateComponents, repeats: Bool, 
 
 > ❗ **Important**: If the current date falls in between [`intervalStart`](deviceactivityschedule/intervalstart.md) and [`intervalEnd`](deviceactivityschedule/intervalend.md), the system calls the [`intervalDidStart(for:)`](deviceactivitymonitor/intervaldidstart(for:).md) method immediately upon starting to monitor the activity. If the current date doesn’t fall in between `intervalStart` and `intervalEnd`, then `intervalDidStart(for:)` calls at the next date matching `intervalStart`.
 
-If the current date falls in between [`intervalStart`](deviceactivityschedule/intervalstart.md) and [`intervalEnd`](deviceactivityschedule/intervalend.md), the system calls the [`intervalDidStart(for:)`](deviceactivitymonitor/intervaldidstart(for:).md) method immediately upon starting to monitor the activity. If the current date doesn’t fall in between `intervalStart` and `intervalEnd`, then `intervalDidStart(for:)` calls at the next date matching `intervalStart`.
-
 ## Parameters
 
 - `intervalStart`: The date components that represent the start time for a schedule’s interval.

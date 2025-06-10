@@ -1,6 +1,6 @@
 # expirationDate
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The time the weather data expires.

@@ -10,6 +10,7 @@ A component that configures the ambient rendering of sounds from an entity.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -47,12 +48,6 @@ Ambient audio sources are well suited to play back multichannel content which ca
 ### Instance Properties
 - [var gain: Audio.Decibel](ambientaudiocomponent/gain.md)
   The overall level for all sounds emitted from an entity.
-### Default Implementations
-- [Component Implementations](ambientaudiocomponent/component-implementations.md)
-- [Decodable Implementations](ambientaudiocomponent/decodable-implementations.md)
-- [Encodable Implementations](ambientaudiocomponent/encodable-implementations.md)
-- [Equatable Implementations](ambientaudiocomponent/equatable-implementations.md)
-- [Hashable Implementations](ambientaudiocomponent/hashable-implementations.md)
 
 ## Relationships
 

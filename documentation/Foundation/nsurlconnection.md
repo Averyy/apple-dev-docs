@@ -105,4 +105,4 @@ Finally, if you’re using Newsstand Kit, your delegate can conform to the [`NSU
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsurlconnection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsurlconnection)*

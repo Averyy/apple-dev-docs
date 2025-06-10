@@ -1,6 +1,6 @@
 # XCUIIdentifierCloseWindow
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: var
 
 The identifier for a window’s close button.

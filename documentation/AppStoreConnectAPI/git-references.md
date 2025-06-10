@@ -1,6 +1,6 @@
 # Git References
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Read information about the canonical reference for a Git branch or tag.
 
@@ -41,4 +41,4 @@ For example, if Xcode Cloud uses the `bug-fix` branch for a build, the canonical
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/git-references)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/git-references)*

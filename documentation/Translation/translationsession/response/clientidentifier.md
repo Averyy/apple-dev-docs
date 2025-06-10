@@ -8,6 +8,7 @@ The unique identifier matching the client identifier set in the translation requ
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.0+
 
 ## Declaration

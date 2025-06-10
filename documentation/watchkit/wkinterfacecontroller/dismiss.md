@@ -1,6 +1,6 @@
 # dismiss()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Dismisses the current interface controller from the screen.

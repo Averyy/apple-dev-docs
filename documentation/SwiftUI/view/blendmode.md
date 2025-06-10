@@ -58,6 +58,9 @@ HStack {
   Modes for compositing a view with overlapping content.
 - [enum ColorRenderingMode](colorrenderingmode.md)
   The set of possible working color spaces for color-compositing operations.
+- [protocol CompositorContent](compositorcontent.md)
+- [struct CompositorContentBuilder](compositorcontentbuilder.md)
+  A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
 
 
 ---

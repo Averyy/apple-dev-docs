@@ -12,6 +12,10 @@
 func completeKeyRotation(_ keyType: ASAuthorizationProviderExtensionKeyType)
 ```
 
+## Parameters
+
+- `keyType`: The key type to retrieve.
+
 
 ---
 

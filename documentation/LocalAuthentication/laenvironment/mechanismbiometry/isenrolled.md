@@ -19,9 +19,7 @@ var isEnrolled: Bool { get }
 
 #### Discussion
 
-```None
-        property to see if it is available for use.
-```
+Even if biometry is enrolled, it does not necessarily mean that it can be used. You should check @c isUsable property to see if it is available for use.
 
 
 ---

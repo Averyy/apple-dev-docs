@@ -45,6 +45,23 @@ Define app entities for core types and concepts that you want to make available 
   An interface to express that a custom type has a predefined, static set of valid values to display.
 - [protocol URLRepresentableEnum](urlrepresentableenum.md)
   An app enum with a URL representation.
+### Entity property macros
+- [macro ComputedProperty()](computedproperty().md)
+  A macro that creates a computed property for an AppEntity that allows for providing a get and/or set accessor
+- [macro ComputedProperty(title: LocalizedStringResource)](computedproperty(title:).md)
+  A macro that creates a computed property for an AppEntity that allows for providing a get and/or set accessor
+- [macro ComputedProperty(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](computedproperty(indexingkey:).md)
+  A macro that creates a computed property for an AppEntity that allows for providing a get and/or set accessor
+- [macro ComputedProperty(customIndexingKey: CSCustomAttributeKey)](computedproperty(customindexingkey:).md)
+  A macro that creates a computed property for an AppEntity that allows for providing a get and/or set accessor
+- [macro ComputedProperty(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](computedproperty(title:customindexingkey:).md)
+  A macro that creates a computed property for an AppEntity that allows for providing a get and/or set accessor
+- [macro ComputedProperty(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](computedproperty(title:indexingkey:).md)
+  A macro that creates a computed property for an AppEntity that allows for providing a get and/or set accessor
+- [macro DeferredProperty()](deferredproperty().md)
+  A macro that creates an async property for an AppEntity that allows for providing an async get accessor
+- [macro DeferredProperty(title: LocalizedStringResource)](deferredproperty(title:).md)
+  A macro that creates an async property for an AppEntity that allows for providing an async get accessor.
 ### Entity presentation
 - [struct DisplayRepresentation](displayrepresentation.md)
   A type that describes the user interface presentation of a custom type.

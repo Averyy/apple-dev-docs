@@ -12,8 +12,6 @@ A message that tells the user why the app is requesting access to the user’s T
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the user’s TV provider account.
 
- This key is required if your app uses APIs that access the user’s TV provider account.
-
 
 ---
 

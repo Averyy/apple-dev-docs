@@ -23,6 +23,8 @@ class MEFileInfo
   Indicates if the media asset contains fragments or is extendable by fragments.
 - [MEFileInfo.FragmentsStatus](mefileinfo/fragmentsstatus-swift.enum.md)
   An enumeration that describes if a media asset contains or supports fragments.
+### Instance Properties
+- [var sidecarFileName: String?](mefileinfo/sidecarfilename.md)
 
 ## Relationships
 
@@ -37,6 +39,7 @@ class MEFileInfo
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

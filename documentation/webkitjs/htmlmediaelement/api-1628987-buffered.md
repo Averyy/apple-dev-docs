@@ -1,6 +1,6 @@
 # buffered
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The time ranges of the media resource that have been downloaded. (read-only)

@@ -1,8 +1,7 @@
 # wait(for:)
 
 **Framework**: Metal  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Encodes a command that instructs the GPU to pause before starting the resource state commands until another pass updates a fence.
 
@@ -17,7 +16,7 @@ Encodes a command that instructs the GPU to pause before starting the resource s
 ## Declaration
 
 ```swift
-func wait(for fence: any MTLFence)
+optional func wait(for fence: any MTLFence)
 ```
 
 #### Discussion

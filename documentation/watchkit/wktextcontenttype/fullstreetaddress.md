@@ -1,6 +1,6 @@
 # fullStreetAddress
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The full street address for a location, including the unit or suite number.

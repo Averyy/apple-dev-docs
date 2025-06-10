@@ -12,6 +12,7 @@ Get information about a specific response you wrote to a customer review, includ
 
 - [Get a Customer Review Response](get-v1-customerreviews-_id_-response.md)
   Get the response to a specific customer review.
+- [GET /v1/customerReviews/{id}/relationships/response](get-v1-customerreviews-_id_-relationships-response.md)
 
 
 ---

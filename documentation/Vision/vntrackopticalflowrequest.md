@@ -27,8 +27,6 @@ Setting a region of interest isolates where to perform the change determination.
 
 > ❗ **Important**:  Optical flow requests are very resource intensive, so perform only one request at a time. Release memory immediately after generating an optical flow.
 
- Optical flow requests are very resource intensive, so perform only one request at a time. Release memory immediately after generating an optical flow.
-
 ## Topics
 
 ### Creating an Optical Flow

@@ -1,6 +1,6 @@
 # WCError.Code.deviceNotPaired
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 An error indicating that the current device doesn’t have a paired counterpart.

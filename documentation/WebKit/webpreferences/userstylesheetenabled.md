@@ -1,6 +1,6 @@
 # userStyleSheetEnabled
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean that indicates whether or not user style sheets are enabled in the web view.

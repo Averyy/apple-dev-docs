@@ -22,8 +22,6 @@ This configuration creates location anchors ([`ARGeoAnchor`](argeoanchor.md)) th
 
 > ❗ **Important**:  The [`isSupported`](arconfiguration/issupported.md) property returns [`true`](https://developer.apple.com/documentation/swift/true) for this class on iOS 14 & iPadOS 14 devices that have an A12 chip or later and cellular (GPS) capability. Geotracking is available in specific geographic locations. To determine availability at the user’s location at runtime, call [`checkAvailability(completionHandler:)`](argeotrackingconfiguration/checkavailability(completionhandler:).md).
 
- The [`isSupported`](arconfiguration/issupported.md) property returns [`true`](https://developer.apple.com/documentation/swift/true) for this class on iOS 14 & iPadOS 14 devices that have an A12 chip or later and cellular (GPS) capability. Geotracking is available in specific geographic locations. To determine availability at the user’s location at runtime, call [`checkAvailability(completionHandler:)`](argeotrackingconfiguration/checkavailability(completionhandler:).md).
-
 Geotracking occurs exclusively outdoors. If a geotracking app navigates users between waypoints, your app needs to handle any events along a route. The user must have an internet connection, and you can provide them information about data usage, as described in [`ARGeoAnchor`](argeoanchor.md).
 
 ##### Encourage User Safety
@@ -43,8 +41,6 @@ Geotracking sessions use localization imagery in the [`ARGeoTrackingStatus.State
 Localization imagery is available for specific areas in over 20 countries, including many metropolitan areas in Australia, Europe, Japan, and North America. To check availability in a particular location, see the [`checkAvailability(completionHandler:)`](argeotrackingconfiguration/checkavailability(completionhandler:).md) function.
 
 > 💡 **Tip**:  You can share an experience of geotracking with developers who live outside an area that supports it. Record a session in your app in an area that supports localization imagery for developers to create and test their geotracking app. For more information, see [`Recording and Replaying AR Session Data`](recording-and-replaying-ar-session-data.md).
-
- You can share an experience of geotracking with developers who live outside an area that supports it. Record a session in your app in an area that supports localization imagery for developers to create and test their geotracking app. For more information, see [`Recording and Replaying AR Session Data`](recording-and-replaying-ar-session-data.md).
 
 ## Topics
 

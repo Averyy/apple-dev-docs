@@ -1,6 +1,6 @@
 # CPMessageComposeBarButton
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: class
 
 A button that activates Siri and initiates the compose message flow.
@@ -56,4 +56,4 @@ class CPMessageComposeBarButton
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cpmessagecomposebarbutton)*
+*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cpmessagecomposebarbutton)*

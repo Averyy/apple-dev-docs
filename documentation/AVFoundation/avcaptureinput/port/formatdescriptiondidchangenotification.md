@@ -20,7 +20,7 @@ class let formatDescriptionDidChangeNotification: NSNotification.Name
 
 #### Discussion
 
-The notification’s [`object`](https://developer.apple.com/documentation/foundation/notification/1779839-object) property contains the [`AVCaptureInput.Port`](avcaptureinput/port.md) object whose format changed.
+The notification’s [`object`](https://developer.apple.com/documentation/Foundation/Notification/object) property contains the [`AVCaptureInput.Port`](avcaptureinput/port.md) object whose format changed.
 
 
 ---

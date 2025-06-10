@@ -14,7 +14,6 @@ The distances the edges of content are inset from the printing rectangle.
 ## Declaration
 
 ```swift
-@MainActor
 var contentInsets: UIEdgeInsets { get set }
 ```
 

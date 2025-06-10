@@ -1,6 +1,6 @@
 # underestimatedCount
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: property
 
 A value less than or equal to the number of elements in the collection.
@@ -27,4 +27,4 @@ var underestimatedCount: Int { get }
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/annotatedfiles/underestimatedcount)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/annotatedfiles/underestimatedcount)*

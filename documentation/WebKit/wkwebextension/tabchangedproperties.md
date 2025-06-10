@@ -1,6 +1,6 @@
 # WKWebExtension.TabChangedProperties
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: struct
 
 Constants the web extension controller and web extension context use to indicate tab changes.
@@ -51,6 +51,7 @@ struct TabChangedProperties
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

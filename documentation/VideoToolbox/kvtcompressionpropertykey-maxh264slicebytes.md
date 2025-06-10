@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_MaxH264SliceBytes
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The maximum slice size for H.264 encoding.

@@ -1,6 +1,6 @@
 # webView(_:setResizable:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sets whether a web view’s window can be resized.

@@ -1,6 +1,6 @@
 # NSException Assertions
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Check whether a function call throws, or doesn’t throw, an exception.
 

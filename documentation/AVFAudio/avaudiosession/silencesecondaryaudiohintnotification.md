@@ -23,7 +23,7 @@ class let silenceSecondaryAudioHintNotification: NSNotification.Name
 
 Subscribe to this notification to ensure that the system notifies your app when optional secondary audio muting should begin or end. The system sends this notification only to registered listeners who are currently in the foreground and have an active audio session.
 
-This notification’s [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/1409222-userinfo) dictionary contains a [`AVAudioSession.SilenceSecondaryAudioHintType`](avaudiosession/silencesecondaryaudiohinttype.md) value for the [`AVAudioSessionSilenceSecondaryAudioHintTypeKey`](avaudiosessionsilencesecondaryaudiohinttypekey.md). Use the audio hint type to determine if your secondary audio muting should begin or end.
+This notification’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) dictionary contains a [`AVAudioSession.SilenceSecondaryAudioHintType`](avaudiosession/silencesecondaryaudiohinttype.md) value for the [`AVAudioSessionSilenceSecondaryAudioHintTypeKey`](avaudiosessionsilencesecondaryaudiohinttypekey.md). Use the audio hint type to determine if your secondary audio muting should begin or end.
 
 ```swift
 func handleSecondaryAudio(notification: Notification) {

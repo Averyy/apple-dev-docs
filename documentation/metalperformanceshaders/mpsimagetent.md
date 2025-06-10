@@ -1,6 +1,6 @@
 # MPSImageTent
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: cl
 
 A filter that convolves an image with a tent filter.

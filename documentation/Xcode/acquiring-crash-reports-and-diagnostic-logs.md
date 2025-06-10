@@ -83,4 +83,4 @@ To access a device’s console logs:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/acquiring-crash-reports-and-diagnostic-logs)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/acquiring-crash-reports-and-diagnostic-logs)*

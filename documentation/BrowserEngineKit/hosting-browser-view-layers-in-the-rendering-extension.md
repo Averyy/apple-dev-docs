@@ -1,6 +1,6 @@
 # Hosting browser view layers in the rendering extension
 
-**Framework**: Browserenginekit
+**Framework**: BrowserEngineKit
 
 Coordinate view-hierarchy and layer-hierarchy changes between processes.
 
@@ -94,4 +94,4 @@ When the layer that’s rendered in a `LayerHierarchyHostingView` is no longer n
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/hosting-browser-view-layers-in-the-rendering-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/hosting-browser-view-layers-in-the-rendering-extension)*

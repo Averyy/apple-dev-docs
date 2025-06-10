@@ -38,6 +38,8 @@ Observe the participant’s spatial state from the [`localParticipantState`](sys
 - [static func == (SystemCoordinator.ParticipantState, SystemCoordinator.ParticipantState) -> Bool](systemcoordinator/participantstate/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
+- [let pose: Pose3D?](systemcoordinator/participantstate/pose.md)
+  The position and rotation of the participant – at the time the system coordinator state last changed.
 - [let role: (any SpatialTemplateRole)?](systemcoordinator/participantstate/role.md)
   The role assigned to this participant, if any.
 - [let seat: SystemCoordinator.ParticipantState.Seat?](systemcoordinator/participantstate/seat-swift.property.md)
@@ -50,13 +52,23 @@ Observe the participant’s spatial state from the [`localParticipantState`](sys
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [Configure your visionOS app for sharing with people nearby](configure-your-app-for-sharing-with-people-nearby.md)
+  Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
 - [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
 - [class SystemCoordinator](systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
+- [nonisolated func groupActivityAssociation(_ kind: GroupActivityAssociationKind?) -> some View
+](../SwiftUI/View/groupActivityAssociation(_:).md)
+  Specifies how a view should be associated with the current SharePlay group activity.
+- [class GroupActivityAssociationInteraction](groupactivityassociationinteraction.md)
+  An interaction configures a view’s association with the current SharePlay group activity.
+- [struct GroupActivityAssociationKind](groupactivityassociationkind.md)
+  An association a user-interface element can have with a SharePlay group activity.
 
 
 ---

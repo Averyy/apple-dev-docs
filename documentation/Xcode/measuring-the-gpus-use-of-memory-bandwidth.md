@@ -23,8 +23,6 @@ Buffer and texture operations can also increase your app’s memory bandwidth. T
 
 > 💡 **Tip**: The Dependencies viewer in the Metal debugger can help you find opportunities to reduce memory bandwidth in your render and compute passes. See [`Analyzing resource dependencies`](analyzing-resource-dependencies.md).
 
-The Dependencies viewer in the Metal debugger can help you find opportunities to reduce memory bandwidth in your render and compute passes. See [`Analyzing resource dependencies`](analyzing-resource-dependencies.md).
-
 ## See Also
 
 - [Finding your Metal app’s GPU occupancy](finding-your-metal-apps-gpu-occupancy.md)

@@ -1,6 +1,6 @@
 # Navigating an app’s user interface using a keyboard
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Navigate between user interface elements using a keyboard and focusable UI elements in iPad apps and apps built with Mac Catalyst.
 
@@ -40,4 +40,4 @@ Navigate between user interface elements using a keyboard and focusable UI eleme
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/navigating-an-app-s-user-interface-using-a-keyboard)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/navigating-an-app-s-user-interface-using-a-keyboard)*

@@ -1,6 +1,6 @@
 # processorSupported
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 A boolean value that indicates whether the processor supported on the current configuration.

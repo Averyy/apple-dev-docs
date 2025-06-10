@@ -1,6 +1,6 @@
 # overlayView(_:updatedMenuFor:for:at:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method  
 **Required**: Yes
 

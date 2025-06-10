@@ -1,6 +1,6 @@
 # WKWebExtensionTab
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 A protocol with methods that represent a tab to web extensions.

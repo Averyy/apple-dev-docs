@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: method
 
-Invalidates the manager, ends all `Conversation`s, and fails all pending `ConversationAction`s.
+Invalidates the conversation manager, ends all conversations, and fails all pending concersation actions.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,11 @@ Invalidates the manager, ends all `Conversation`s, and fails all pending `Conver
 ```swift
 final func invalidate()
 ```
+
+## See Also
+
+- [func perform([ConversationAction]) async throws](conversationmanager/perform(_:).md)
+  Tells the conversation manager to asynchronously perform actions for a conversation.
 
 
 ---

@@ -1,6 +1,6 @@
 # configuration
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A change that invalidates a view’s configuration.

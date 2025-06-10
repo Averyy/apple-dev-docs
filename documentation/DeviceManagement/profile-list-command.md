@@ -1,4 +1,4 @@
-# List the Installed Profiles
+# Profile List
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -12,48 +12,46 @@ Get a list of installed profiles on a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Query Availability
+##### Command Availability
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | macOS, Shared iPad |
-| Requires Supervision | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Required Access Right | AllowInspection |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| User channel | macOS, Shared iPad |
+| Requires supervision | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Required access right | AllowInspection |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object ProfileListCommand](profilelistcommand.md)
   The command to get a list of installed profiles on a device.
 - [object ProfileListResponse](profilelistresponse.md)
-  A response from the device after it processes the command to get a list of installed profiles.
+  A response from the device after it processes the command to get a list of installed profiles on a device.
 
 ## Request Body
 
-The command to get a list of installed profiles on a device.
+The request object the server returns for the Profile List Command.
 
 ## See Also
 
-- [Install a Profile](install-profile-command.md)
+- [Install Profile](install-profile-command.md)
   Install a configuration profile on a device.
-- [Remove a Profile](remove-profile-command.md)
+- [Remove Profile](remove-profile-command.md)
   Remove a previously installed profile from the device.
-- [Install a Provisioning Profile](install-provisioning-profile-command.md)
+- [Install Provisioning Profile](install-provisioning-profile-command.md)
   Install a provisioning profile on a device.
-- [List the Installed Provisioning Profiles](provisioning-profile-list-command.md)
+- [Provisioning Profile List](provisioning-profile-list-command.md)
   Get a list of installed provisioning profiles on a device.
-- [Remove a Provisioning Profile](remove-provisioning-profile-command.md)
+- [Remove Provisioning Profile](remove-provisioning-profile-command.md)
   Remove a previously installed provisioning profile from a device.
 
 

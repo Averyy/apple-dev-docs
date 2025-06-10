@@ -76,6 +76,7 @@ The results array of a [`Core ML`](https://developer.apple.com/documentation/Cor
 - [Hashable](../Swift/Hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionRequest](visionrequest.md)
 
 ## See Also
@@ -90,4 +91,4 @@ The results array of a [`Core ML`](https://developer.apple.com/documentation/Cor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/coremlrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/coremlrequest)*

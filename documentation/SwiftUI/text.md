@@ -24,15 +24,16 @@ struct Text
 ## Mentions
 
 - [Configuring views](configuring-views.md)
-- [Building layouts with stack views](building-layouts-with-stack-views.md)
-- [Declaring a custom view](declaring-a-custom-view.md)
 - [Laying out a simple view](laying-out-a-simple-view.md)
-- [Preparing views for localization](preparing-views-for-localization.md)
+- [Declaring a custom view](declaring-a-custom-view.md)
+- [Building layouts with stack views](building-layouts-with-stack-views.md)
 - [Displaying data in lists](displaying-data-in-lists.md)
+- [Preparing views for localization](preparing-views-for-localization.md)
 - [Performing a search operation](performing-a-search-operation.md)
 - [Reducing view modifier maintenance](reducing-view-modifier-maintenance.md)
-- [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
 - [Adding a search interface to your app](adding-a-search-interface-to-your-app.md)
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
 - [Suggesting search terms](suggesting-search-terms.md)
 
 #### Overview
@@ -105,7 +106,7 @@ To explicitly bypass localization for a string literal, use the [`init(verbatim:
 Text(verbatim: "pencil") // Displays the string "pencil" in any locale.
 ```
 
-If you intialize a text view with a variable value, the view uses the [`init(_:)`](text/init(_:)-9d1g4.md) initializer, which doesn’t localize the string. However, you can request localization by creating a [`LocalizedStringKey`](localizedstringkey.md) instance first, which triggers the [`init(_:tableName:bundle:comment:)`](text/init(_:tablename:bundle:comment:).md) initializer instead:
+If you initialize a text view with a variable value, the view uses the [`init(_:)`](text/init(_:)-9d1g4.md) initializer, which doesn’t localize the string. However, you can request localization by creating a [`LocalizedStringKey`](localizedstringkey.md) instance first, which triggers the [`init(_:tableName:bundle:comment:)`](text/init(_:tablename:bundle:comment:).md) initializer instead:
 
 ```swift
 // Don't localize a string variable...
@@ -116,6 +117,28 @@ Text(LocalizedStringKey(writingImplement))
 ```
 
 When localizing a string variable, you can use the default table by omitting the optional initialization parameters — as in the above example — just like you might for a string literal.
+
+When composing a complex string, where there is a need to assemble multiple pieces of text, use string interpolation:
+
+```swift
+let name: String = //…
+Text("Hello, \(name)")
+```
+
+This would look up the `"Hello, %@"` localization key in the localized string file and replace the format specifier `%@` with the value of `name` before rendering the text on screen.
+
+Using string interpolation ensures that the text in your app can be localized correctly in all locales, especially in right-to-left languages.
+
+If you desire to style only parts of interpolated text while ensuring that the content can still be localized correctly, interpolate `Text` or [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString):
+
+```swift
+let name = Text(person.name).bold()
+Text("Hello, \(name)")
+```
+
+The example above uses [`appendInterpolation(_:)`](localizedstringkey/stringinterpolation/appendinterpolation(_:)-4qyfo.md) and will look up the `"Hello, %@"` in the localized string file and interpolate a bold text rendering the value of  `name`.
+
+Using [`appendInterpolation(_:)`](localizedstringkey/stringinterpolation/appendinterpolation(_:)-5m52e.md) you can interpolate [`Image`](image.md) in text.
 
 ## Topics
 
@@ -147,7 +170,7 @@ When localizing a string variable, you can use the default table by omitting the
 - [func foregroundStyle<S>(S) -> Text](text/foregroundstyle(_:).md)
   Sets the style of the text displayed by this view.
 - [func bold() -> Text](text/bold.md)
-  Applies a bold font weight to the text.
+  Applies a bold or emphasized treatment to the fonts of the text.
 - [func bold(Bool) -> Text](text/bold(_:).md)
   Applies a bold font weight to the text.
 - [func italic() -> Text](text/italic.md)
@@ -211,10 +234,14 @@ When localizing a string variable, you can use the default table by omitting the
 - [func foregroundColor(Color?) -> Text](text/foregroundcolor(_:).md)
   Sets the color of the text displayed by this view.
 ### Structures
+- [struct AlignmentStrategy](text/alignmentstrategy.md)
+  The way SwiftUI infers the appropriate text alignment if no value is explicitly provided.
 - [struct Layout](text/layout.md)
   A value describing the layout and custom attributes of a tree of `Text` views.
 - [struct LayoutKey](text/layoutkey.md)
   A preference key that provides the `Text.Layout` values for all text views in the queried subtree.
+- [struct WritingDirectionStrategy](text/writingdirectionstrategy.md)
+  The way SwiftUI infers the appropriate writing direction if no value is explicitly provided.
 ### Instance Methods
 - [func customAttribute<T>(T) -> Text](text/customattribute(_:).md)
   Adds a custom attribute to the text view.
@@ -227,6 +254,7 @@ When localizing a string variable, you can use the default table by omitting the
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](view.md)
 
 ## See Also

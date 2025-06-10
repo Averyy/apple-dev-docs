@@ -44,8 +44,6 @@ These are the tags used in the ads playlist example:
 
 > ❗ **Important**: The `EXT-X-MEDIA-SEQUENCE` tag value must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
 
-The `EXT-X-MEDIA-SEQUENCE` tag value must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
-
  Indicates an encoding discontinuity between the media file that follows it and the one that preceded it.
 
  Provides synchronization between different variant streams or different renditions of the same variant stream. You must use this tag for live events that have discontinuities.

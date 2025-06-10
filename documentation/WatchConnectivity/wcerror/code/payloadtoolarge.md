@@ -1,6 +1,6 @@
 # WCError.Code.payloadTooLarge
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 An error indicating an attempt to send an item that exceeds the maximum size limit.

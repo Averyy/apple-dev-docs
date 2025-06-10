@@ -1,6 +1,6 @@
 # hasRequestedOptionalAccessToAllHosts
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating if the extension has requested optional access to all hosts.

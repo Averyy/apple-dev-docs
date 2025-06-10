@@ -1,6 +1,6 @@
 # allURLs()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a pattern object for `<all_urls>`.

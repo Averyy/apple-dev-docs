@@ -26,13 +26,9 @@ If your app also provides Now Playing information containing information about t
 
 > ❗ **Important**:  Siri can provide suggestions in search, News, Safari, and other apps using on-device information that you contribute through the Now Playing APIs. Users can control Siri on-device learning through Siri and Search settings for your app.
 
- Siri can provide suggestions in search, News, Safari, and other apps using on-device information that you contribute through the Now Playing APIs. Users can control Siri on-device learning through Siri and Search settings for your app.
-
 The system displays Now Playing information on the device’s Lock Screen and in the media controls in Control Center. If the user directs playback of your media to Apple TV using AirPlay, the Now Playing information appears on the television screen. If the user connects a device to an iPod accessory, such as in a car, the accessory may display Now Playing information.
 
 > ❗ **Important**:  To ensure that your app interacts successfully with the widest possible range of accessories, provide values for as many information properties as you can in the [`nowPlayingInfo`](mpnowplayinginfocenter/nowplayinginfo.md) dictionary.
-
- To ensure that your app interacts successfully with the widest possible range of accessories, provide values for as many information properties as you can in the [`nowPlayingInfo`](mpnowplayinginfocenter/nowplayinginfo.md) dictionary.
 
 The information you can specify includes all of the Now Playing metadata properties (see the Accessing Now Playing metadata properties topic group below), and the following subset of [`MPMediaItem`](mpmediaitem.md) properties:
 
@@ -56,8 +52,6 @@ You can ensure that your app interacts well with other apps providing Now Playin
 
 > ❗ **Important**:  In iOS 17.2 and later, the Journal app encourages people to reflect and write about their day-to-day experiences, including media they listened to or watched. If your app donates media information to [`MPNowPlayingInfoCenter`](mpnowplayinginfocenter.md), and you choose not to opt-out, the media played may appear as a suggestion in the Journal app, or other apps that use the Journaling Suggestions framework.
 
- In iOS 17.2 and later, the Journal app encourages people to reflect and write about their day-to-day experiences, including media they listened to or watched. If your app donates media information to [`MPNowPlayingInfoCenter`](mpnowplayinginfocenter.md), and you choose not to opt-out, the media played may appear as a suggestion in the Journal app, or other apps that use the Journaling Suggestions framework.
-
 ## Topics
 
 ### Working with the default Now Playing info center
@@ -67,6 +61,8 @@ You can ensure that your app interacts well with other apps providing Now Playin
   The current Now Playing information for the default Now Playing info center.
 - [enum MPNowPlayingInfoMediaType](mpnowplayinginfomediatype.md)
   The type of media currently playing.
+- [class var supportedAnimatedArtworkKeys: [String]](mpnowplayinginfocenter/supportedanimatedartworkkeys.md)
+  Keys related to animated artwork that are supported by the current platform.
 ### Setting the playback state in macOS
 - [var playbackState: MPNowPlayingPlaybackState](mpnowplayinginfocenter/playbackstate.md)
   The current playback state of the app.
@@ -117,6 +113,10 @@ You can ensure that your app interacts well with other apps providing Now Playin
   The index of the Now Playing item in the app’s playback queue.
 - [let MPNowPlayingInfoPropertyServiceIdentifier: String](mpnowplayinginfopropertyserviceidentifier.md)
   The service provider associated with the Now Playing item.
+- [let MPNowPlayingInfoProperty1x1AnimatedArtwork: String](mpnowplayinginfoproperty1x1animatedartwork.md)
+  1:1 (square) animated artwork for the current media item.
+- [let MPNowPlayingInfoProperty3x4AnimatedArtwork: String](mpnowplayinginfoproperty3x4animatedartwork.md)
+  3:4 (tall) animated artwork for the current media item.
 
 ## Relationships
 

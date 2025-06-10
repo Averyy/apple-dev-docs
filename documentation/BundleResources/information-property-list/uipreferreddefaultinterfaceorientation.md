@@ -1,6 +1,6 @@
 # UIPreferredDefaultInterfaceOrientation
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 A string that indicates the preferred initial interface orientation for iPad and iPhone apps running on visionOS.

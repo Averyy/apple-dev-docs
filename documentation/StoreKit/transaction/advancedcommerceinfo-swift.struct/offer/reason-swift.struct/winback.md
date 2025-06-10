@@ -17,6 +17,11 @@
 static let winBack: Transaction.AdvancedCommerceInfo.Offer.Reason
 ```
 
+## See Also
+
+- [static let acquisition: Transaction.AdvancedCommerceInfo.Offer.Reason](transaction/advancedcommerceinfo-swift.struct/offer/reason-swift.struct/acquisition.md)
+- [static let retention: Transaction.AdvancedCommerceInfo.Offer.Reason](transaction/advancedcommerceinfo-swift.struct/offer/reason-swift.struct/retention.md)
+
 
 ---
 

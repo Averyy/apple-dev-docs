@@ -5,6 +5,9 @@
 
 An anchor that represents horizontal and vertical planes.
 
+**Availability**:
+- visionOS 1.0+
+
 ## Declaration
 
 ```swift

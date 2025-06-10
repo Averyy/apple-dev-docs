@@ -1,6 +1,6 @@
 # customizableViewControllers
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The subset of view controllers managed by this tab bar controller that can be customized.

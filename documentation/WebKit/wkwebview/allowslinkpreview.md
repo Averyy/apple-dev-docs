@@ -1,6 +1,6 @@
 # allowsLinkPreview
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that determines whether pressing a link displays a preview of the destination for the link.

@@ -1,6 +1,6 @@
 # PHASEAmbientMixerDefinition
 
-**Framework**: Phase  
+**Framework**: PHASE  
 **Kind**: class
 
 An audio-layering object that outputs sound in a particular direction in 3D space.
@@ -76,4 +76,4 @@ PHASE changes the channel output of ambient-mixer sound dynamically, depending o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PHASE/phaseambientmixerdefinition)*
+*[View on Apple Developer](https://developer.apple.com/documentation/phase/phaseambientmixerdefinition)*

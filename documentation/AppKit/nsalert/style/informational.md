@@ -1,6 +1,6 @@
 # NSAlert.Style.informational
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: case
 
 An alert style to inform someone about a current or impending event.
@@ -30,4 +30,4 @@ Use this style of alert when the alert’s content is less severe than [`NSAlert
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsalert/style/informational)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsalert/style/informational)*

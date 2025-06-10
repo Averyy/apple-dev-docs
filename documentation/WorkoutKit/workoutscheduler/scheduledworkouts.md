@@ -1,6 +1,6 @@
 # scheduledWorkouts
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 An array of all the workouts scheduled by your app.
@@ -10,6 +10,7 @@ An array of all the workouts scheduled by your app.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

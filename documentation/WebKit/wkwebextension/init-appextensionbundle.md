@@ -1,6 +1,6 @@
 # init(appExtensionBundle:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 **Availability**:

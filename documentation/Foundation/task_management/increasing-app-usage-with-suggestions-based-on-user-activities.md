@@ -38,8 +38,6 @@ In the sample app, `LocationViewController` manages a single `NSUserActivity` ob
 
 > ❗ **Important**: When the user activity object is not contained within the responder chain, you must call the [`becomeCurrent()`](nsuseractivity/becomecurrent().md) method to mark the object as current, which also registers the object with the system.
 
-When the user activity object is not contained within the responder chain, you must call the [`becomeCurrent()`](nsuseractivity/becomecurrent().md) method to mark the object as current, which also registers the object with the system.
-
 The view controller also sets [`needsSave`](nsuseractivity/needssave.md) to `true`, indicating that the activity will be updated with new data in the future, which eventually results in a callback to the [`updateUserActivityState(_:)`](https://developer.apple.com/documentation/uikit/uiresponder/updateuseractivitystate(_:)) method. This is the app’s opportunity to refresh the activity object’s [`userInfo`](nsuseractivity/userinfo.md) property, with the minimal amount of information needed to restore the state of the app, before Siri or the system receives the activity.
 
 ```swift

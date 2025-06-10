@@ -1,6 +1,6 @@
 # appliesMediaSelectionCriteriaAutomatically
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the receiver should apply the current selection criteria automatically to player items.

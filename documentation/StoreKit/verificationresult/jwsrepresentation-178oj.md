@@ -29,8 +29,6 @@ To verify the [`jwsRepresentation`](verificationresult/jwsrepresentation-178oj.m
 
 > ❗ **Important**:  The decoded payloads of the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) and [`JWSRenewalInfo`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSRenewalInfo) strings contain [`renewalPrice`](https://developer.apple.com/documentation/AppStoreServerAPI/renewalPrice) fields that are specified in  of the currency; StoreKit represents the [`renewalPrice`](product/subscriptioninfo/renewalinfo/renewalprice.md) in  of currency. Take care not to confuse these two representations when working with both APIs.
 
- The decoded payloads of the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) and [`JWSRenewalInfo`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSRenewalInfo) strings contain [`renewalPrice`](https://developer.apple.com/documentation/AppStoreServerAPI/renewalPrice) fields that are specified in  of the currency; StoreKit represents the [`renewalPrice`](product/subscriptioninfo/renewalinfo/renewalprice.md) in  of currency. Take care not to confuse these two representations when working with both APIs.
-
 ## See Also
 
 - [var deviceVerification: Data](verificationresult/deviceverification-5hvi9.md)

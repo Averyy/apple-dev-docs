@@ -1,6 +1,6 @@
 # minimumGrade(forFacts:)
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: method
 
 Returns the lowest membership grade among the specified facts.

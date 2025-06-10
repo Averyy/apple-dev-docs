@@ -185,4 +185,4 @@ The link register contains `0x00000001021063c4`, which is an instruction address
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/investigating-memory-access-crashes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/investigating-memory-access-crashes)*

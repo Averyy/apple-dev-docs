@@ -10,6 +10,7 @@ A mode that displays the entity’s base color with no lighting or material prop
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # texture(from:crop:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Renders a portion of a node’s contents and returns the rendered image as a SpriteKit texture.

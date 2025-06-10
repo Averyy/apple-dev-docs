@@ -8,10 +8,10 @@ An interface for providing an app entity that represents an on-disk file or file
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -82,6 +82,7 @@ Provide an intent file entity implementation to describe data you store in a fil
 - [Hashable](../Swift/Hashable.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 
 

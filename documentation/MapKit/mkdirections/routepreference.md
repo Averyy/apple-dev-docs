@@ -12,6 +12,7 @@ Options that modify how the framework selects routes when calculating directions
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS 1.0+
+- watchOS 9.0+
 
 ## Declaration
 
@@ -22,6 +23,10 @@ enum RoutePreference
 ## Topics
 
 ### Route selection options
+- [MKDirections.RoutePreference.any](mkdirections/routepreference/any.md)
+  The option that specifies any available route.
+- [MKDirections.RoutePreference.avoid](mkdirections/routepreference/avoid.md)
+  The option that requests the framework avoid certain routes.
 - [MKDirections.RoutePreference.any](mkdirections/routepreference/any.md)
   The option that specifies any available route.
 - [MKDirections.RoutePreference.avoid](mkdirections/routepreference/avoid.md)
@@ -37,6 +42,7 @@ enum RoutePreference
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

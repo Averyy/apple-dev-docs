@@ -1,6 +1,6 @@
 # chartBackground(alignment:content:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Adds a background to a view that contains a chart.

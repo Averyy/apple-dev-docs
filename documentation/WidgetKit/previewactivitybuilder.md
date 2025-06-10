@@ -1,6 +1,6 @@
 # PreviewActivityBuilder
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 **Availability**:
@@ -24,6 +24,8 @@ struct PreviewActivityBuilder<A> where A : ActivityAttributes
 
 ## See Also
 
+- [struct PreviewRelevanceEntryBuilder](previewrelevanceentrybuilder.md)
+  A builder that allows you to construct a list of relevance entries to preview your widget.
 - [struct PreviewTimelineBuilder](previewtimelinebuilder.md)
 
 

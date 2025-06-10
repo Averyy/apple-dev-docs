@@ -8,11 +8,14 @@ Create a content view with the layout of a managed app view and customized label
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
-nonisolated
+@MainActor
 init(primaryLabel: any StringProtocol, secondaryLabel: any StringProtocol = "", tertiaryLabel: any StringProtocol = "", quaternaryLabel: any StringProtocol = "", offerState: ManagedContentOfferState, offerAction: @escaping (ManagedContentOfferState) -> Void, @ViewBuilder icon: () -> Icon)
 ```
 

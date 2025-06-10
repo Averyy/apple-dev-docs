@@ -34,11 +34,11 @@ The example above shares a copy of your app’s data. You can also enable collab
 
 To enable collaboration, you need shareable content, such as:
 
-- A URL to an iCloud document (see [`url(forUbiquityContainerIdentifier:)`](https://developer.apple.com/documentation/foundation/filemanager/1411653-url))
+- A URL to an iCloud document (see [`url(forUbiquityContainerIdentifier:)`](https://developer.apple.com/documentation/Foundation/FileManager/url(forUbiquityContainerIdentifier:)))
 - Data stored in [`CloudKit`](https://developer.apple.com/documentation/CloudKit)
 - A custom collaboration architecture that supports universal links (see [`Integrate your custom collaboration app in Messages`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10093))
 
-For example, to enable collaboration for an iCloud document, you need a URL to a file in your app’s iCloud container. Create an [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) object, and call its [`registerFileRepresentation(for:visibility:openInPlace:loadHandler:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/4011315-registerfilerepresentation) method, passing the URL as the `for:` parameter and [`true`](https://developer.apple.com/documentation/swift/true) as the `openInPlace:` parameter.
+For example, to enable collaboration for an iCloud document, you need a URL to a file in your app’s iCloud container. Create an [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) object, and call its [`registerFileRepresentation(for:visibility:openInPlace:loadHandler:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/registerFileRepresentation(for:visibility:openInPlace:loadHandler:)) method, passing the URL as the `for:` parameter and [`true`](https://developer.apple.com/documentation/swift/true) as the `openInPlace:` parameter.
 
 ```swift
 // Create an empty item provider.
@@ -154,7 +154,7 @@ In this case, the share sheet shows the pop-up menu with the allowed sharing mod
 
 ##### Specify the People to Share with
 
-In iOS 18 and later, you can also specify recipients for the shared data. Create an doc://com.apple.documentation/documentation/sirikit/inperson instance for each recipient and add them to your activity configuration’s metadata.
+In iOS 18 and later, you can also specify recipients for the shared data. Create an [`INPerson`](https://developer.apple.com/documentation/Intents/INPerson) instance for each recipient and add them to your activity configuration’s metadata.
 
 ```swift
 // Gather data about the recipient.

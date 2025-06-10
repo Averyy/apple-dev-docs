@@ -9,7 +9,6 @@ Converts a point from the specified coordinate space to the coordinate space of 
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst 13.1+
 - tvOS ?+
 - visionOS 1.0+
 

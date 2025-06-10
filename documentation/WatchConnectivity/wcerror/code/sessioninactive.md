@@ -1,6 +1,6 @@
 # WCError.Code.sessionInactive
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 An error indicating that the session is inactive.

@@ -18,7 +18,7 @@ The memory layout of a type, describing its size, stride, and alignment.
 
 ```swift
 @frozen
-enum MemoryLayout<T> where T : ~Copyable
+enum MemoryLayout<T> where T : ~Copyable, T : ~Escapable
 ```
 
 #### Overview
@@ -74,6 +74,7 @@ let pointPointer = UnsafeMutableRawPointer.allocate(
 
 ### Conforms To
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 
 ---

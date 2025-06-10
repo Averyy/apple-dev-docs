@@ -32,8 +32,6 @@ Assign a [`SKPhysicsBody`](skphysicsbody.md) object to the [`physicsBody`](sk
 
 > ❗ **Important**:  A physics body must be associated with a node before you apply forces or impulses to it.
 
- A physics body must be associated with a node before you apply forces or impulses to it.
-
 SpriteKit supports two kinds of physics bodies,  and . When you create a physics body, its kind, size, and shape are determined by the constructor method you call. An edge-based body does not have mass or volume and is unaffected by forces or impulses in the system. Edge-based bodies are used to represent volumeless boundaries or hollow spaces in your physics simulation. In contrast, volume-based bodies are used to represent objects with mass and volume. The [`isDynamic`](skphysicsbody/isdynamic.md) property controls whether a volume-based body is affected by gravity, friction, collisions with other objects, and forces or impulses you directly apply to it.
 
 The [`SKPhysicsBody`](skphysicsbody.md) class defines the physical characteristics for the body when it is simulated by the scene. For volume-based bodies, the most important property is the [`mass`](skphysicsbody/mass.md) property. A volume-based body is assumed to have a uniform density. You can either set the [`mass`](skphysicsbody/mass.md) property directly, or you can set the body’s [`density`](skphysicsbody/density.md) property and let the physics body calculate its own mass. All values in Sprite Kit are specified using the International System of Units (SI units). The actual forces and mass values are not important so long as your game uses consistent values.

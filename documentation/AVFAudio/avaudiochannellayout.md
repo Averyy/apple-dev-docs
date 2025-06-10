@@ -57,6 +57,7 @@ The `AVAudioChannelLayout` class is a thin wrapper for Core Audio’s [`AudioCha
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

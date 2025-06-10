@@ -12,8 +12,6 @@ For all apps except existing macOS apps, use the default value of `1` for Xcode 
 
 > ❗ **Important**: Xcode Cloud build numbers are always integers; for example, `42`, `420`, or `420000` and so on. You can’t use build numbers that are hash values, timestamps, or other strings.
 
-Xcode Cloud build numbers are always integers; for example, `42`, `420`, or `420000` and so on. You can’t use build numbers that are hash values, timestamps, or other strings.
-
 When you distribute an Xcode Cloud build with [`TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/) or release it on the App Store, [`App Store Connect`](https://developer.apple.comhttp://appstoreconnect.apple.com) uses the build number of the Xcode Cloud build. This makes it easy to identify the Xcode Cloud build that correlates with an app’s version in TestFlight or the App Store. For example, say you use Xcode Cloud to create a workflow called `Weekly Build` that makes a new version available to external testers in TestFlight once per week. For your latest weekly build, it distributes version `1.2.1 (42)` where `42` is the build number that Xcode Cloud set. If you need to look at detailed build information for the version, look at the version’s build number — `42` — and navigate to the corresponding Xcode Cloud build in Xcode or App Store Connect.
 
 ##### Review Build Number Requirements
@@ -31,8 +29,6 @@ To help cases where incrementing the Xcode Cloud build number starting with `1` 
 Setting the next build number to a custom integer value solves cases where incrementing Xcode Cloud build numbers starting with `1` leads to version collisions.
 
 > ❗ **Important**: Only members of your Apple Development Team with the Admin or App Manager role can set the next build number to a custom value.
-
-Only members of your Apple Development Team with the Admin or App Manager role can set the next build number to a custom value.
 
 To configure the next build number:
 

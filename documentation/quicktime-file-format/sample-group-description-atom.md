@@ -1,6 +1,6 @@
 # Sample group description atom ('sgpd')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that gives information about the characteristics of sample groups.

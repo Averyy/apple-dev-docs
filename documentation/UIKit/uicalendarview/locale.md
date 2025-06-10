@@ -20,7 +20,7 @@ var locale: Locale { get set }
 
 #### Discussion
 
-Defaults to [`current`](https://developer.apple.com/documentation/foundation/nslocale/1409990-current).
+Defaults to [`current`](https://developer.apple.com/documentation/Foundation/NSLocale/current).
 
 ## See Also
 

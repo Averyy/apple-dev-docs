@@ -1,6 +1,6 @@
 # sourceFormatHint
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A hint about the format of the sample buffers to append to the input.

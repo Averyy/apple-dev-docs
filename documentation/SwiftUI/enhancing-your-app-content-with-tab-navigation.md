@@ -1,6 +1,6 @@
 # Enhancing your app’s content with tab navigation
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Keep your app content front and center while providing quick access to navigation using the tab bar.
 
@@ -208,4 +208,4 @@ For design guidance, see Human Interface Guidelines >  [`Tab bars`](https://deve
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/enhancing-your-app-content-with-tab-navigation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/enhancing-your-app-content-with-tab-navigation)*

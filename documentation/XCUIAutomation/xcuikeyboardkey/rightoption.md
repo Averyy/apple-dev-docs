@@ -1,6 +1,6 @@
 # rightOption
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A constant that represents the right Option key.

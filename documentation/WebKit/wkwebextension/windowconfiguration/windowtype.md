@@ -1,6 +1,6 @@
 # windowType
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the window type for the window.

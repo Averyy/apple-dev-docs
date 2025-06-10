@@ -23,7 +23,7 @@ An `NSImageCell` object is usually associated with some kind of control object. 
 
 ##### Designated Initializers
 
-When subclassing `NSImageCell` you must implement all of the designated initializers. Those methods are: init, [`init(coder:)`](https://developer.apple.com/documentation/OSLog/OSLogEntry/init(coder:)), [`init(textCell:)`](nscell/init(textcell:).md), and [`init(imageCell:)`](nscell/init(imagecell:).md).
+When subclassing `NSImageCell` you must implement all of the designated initializers. Those methods are: init, [`init(coder:)`](nscell/init(coder:).md), [`init(textCell:)`](nscell/init(textcell:).md), and [`init(imageCell:)`](nscell/init(imagecell:).md).
 
 ## Topics
 
@@ -58,6 +58,7 @@ When subclassing `NSImageCell` you must implement all of the designated initiali
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

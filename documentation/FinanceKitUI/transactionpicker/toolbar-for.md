@@ -1,6 +1,6 @@
 # toolbar(_:for:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Specifies the visibility of a bar managed by SwiftUI.

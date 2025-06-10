@@ -1,6 +1,6 @@
 # showsBuildings
 
-**Framework**: Mapkit  
+**Framework**: MapKit  
 **Kind**: property
 
 A Boolean value that indicates whether the map displays extruded building information on supported map types.

@@ -1,6 +1,6 @@
 # capsLock
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The Caps Lock key in a combination keystroke.

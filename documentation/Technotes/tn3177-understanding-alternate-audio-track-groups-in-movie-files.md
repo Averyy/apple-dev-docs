@@ -35,7 +35,7 @@ In the case of alternate groups with a Spatial Audio track, the stereo track is 
 
 ![AVAsset tracks](https://docs-assets.developer.apple.com/published/af2ba164304df4151d641baae2e6aed9/tn3177-avasset-tracks.png)
 
-If your app examines or uses audio tracks directly, and you have no other specific processing requirements, you can simply skip disabled tracks. To test whether a track is enabled or disabled, use [`load(_:)`](https://developer.apple.com/documentation/AVFoundation/AVAsynchronousKeyValueLoading/load(_:)):
+If your app examines or uses audio tracks directly, and you have no other specific processing requirements, you can simply skip disabled tracks. To test whether a track is enabled or disabled, use `load(.isEnabled)`:
 
 ```None
 for track in try await asset.loadTracks(withMediaType: .audio) {
@@ -118,4 +118,4 @@ A value of `0` indicates the track is not a member of an alternate group. A non-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3177-understanding-alternate-audio-track-groups-in-movie-files)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3177-understanding-alternate-audio-track-groups-in-movie-files)*

@@ -26,8 +26,6 @@ The [`ISO8601DateFormatter`](iso8601dateformatter.md) class generates and parses
 
 > 💡 **Tip**:  In Swift, you can use [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md) rather than [`ISO8601DateFormatter`](iso8601dateformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 
- In Swift, you can use [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md) rather than [`ISO8601DateFormatter`](iso8601dateformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
-
 ## Topics
 
 ### Configuring the Formatter

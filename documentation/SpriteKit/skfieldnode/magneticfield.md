@@ -17,7 +17,6 @@ Creates a field node that applies a magnetic force based on the velocity and ele
 ## Declaration
 
 ```swift
-@MainActor
 class func magneticField() -> SKFieldNode
 ```
 

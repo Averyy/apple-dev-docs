@@ -14,7 +14,6 @@ Sets the initial text for the subject line of the email.
 ## Declaration
 
 ```swift
-@MainActor
 func setSubject(_ subject: String)
 ```
 

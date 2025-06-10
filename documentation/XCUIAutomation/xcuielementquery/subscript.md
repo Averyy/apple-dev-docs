@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: subscript
 
 Returns a descendant element that matches a provided identifier.

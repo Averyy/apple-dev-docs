@@ -1,6 +1,6 @@
 # PlayAudioAction
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 An action which plays an audio resource on the given target entity.
@@ -10,6 +10,7 @@ An action which plays an audio resource on the given target entity.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -55,8 +56,6 @@ entity.playAnimation(snapAudioAnimation)
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](playaudioaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(targetEntity: ActionEntityResolution, audioResourceName: String, gain: Audio.Decibel, useControlledPlayback: Bool)](playaudioaction/init(targetentity:audioresourcename:gain:usecontrolledplayback:).md)
   Creates a new play audio action.
 ### Instance Properties
@@ -70,14 +69,6 @@ entity.playAnimation(snapAudioAnimation)
   The entity to play the audio.
 - [var useControlledPlayback: Bool](playaudioaction/usecontrolledplayback.md)
   A Boolean that indicates whether this action has control over the playback of the audio.
-### Instance Methods
-- [func encode(to: any Encoder) throws](playaudioaction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [PlayAudioAction.EventParameterType](playaudioaction/eventparametertype.md)
-  The associated event parameter type.
-### Default Implementations
-- [EntityAction Implementations](playaudioaction/entityaction-implementations.md)
 
 ## Relationships
 
@@ -108,4 +99,4 @@ entity.playAnimation(snapAudioAnimation)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/playaudioaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/playaudioaction)*

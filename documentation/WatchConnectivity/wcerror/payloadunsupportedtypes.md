@@ -1,6 +1,6 @@
 # payloadUnsupportedTypes
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An error indicating that a dictionary contains nonproperty list types.

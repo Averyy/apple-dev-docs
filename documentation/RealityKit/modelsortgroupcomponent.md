@@ -10,6 +10,7 @@ A component that configures the rendering order for an entity’s model.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -69,8 +70,6 @@ To draw each entity’s color and depth separately, set the [`depthPass`](models
 
 > 💡 **Tip**: You can also set the property with the [`init(depthPass:)`](modelsortgroup/init(depthpass:).md) initializer.
 
-You can also set the property with the [`init(depthPass:)`](modelsortgroup/init(depthpass:).md) initializer.
-
 To draw each model’s color on the first pass and then the depth, set the property to [`ModelSortGroup.DepthPass.postPass`](modelsortgroup/depthpass-swift.enum/postpass.md).
 
 ```swift
@@ -99,8 +98,6 @@ The [`ModelSortGroup.DepthPass.prePass`](modelsortgroup/depthpass-swift.enum/pre
 
 > 💡 **Tip**: Check out [`Swift Splash`](https://developer.apple.com/documentation/visionOS/swift-splash) which has an implementation that leverages `ModelSortGroupComponent`.
 
-Check out [`Swift Splash`](https://developer.apple.com/documentation/visionOS/swift-splash) which has an implementation that leverages `ModelSortGroupComponent`.
-
 ## Topics
 
 ### Initializers
@@ -111,8 +108,6 @@ Check out [`Swift Splash`](https://developer.apple.com/documentation/visionOS/sw
   The group that the component’s entity belongs to.
 - [var order: Int32](modelsortgroupcomponent/order.md)
   An integer value that represents when the renderer draws the model relative to other the models in its group.
-### Default Implementations
-- [Component Implementations](modelsortgroupcomponent/component-implementations.md)
 
 ## Relationships
 
@@ -129,6 +124,8 @@ Check out [`Swift Splash`](https://developer.apple.com/documentation/visionOS/sw
   A component that provides the suggested pixels per meter necessary to render an object.
 - [struct ModelDebugOptionsComponent](modeldebugoptionscomponent.md)
   A component that changes how RealityKit renders its entity to help with debugging.
+- [struct MeshInstancesComponent](meshinstancescomponent.md)
+  A component that performs GPU instancing on the ModelComponent on the same Entity.
 
 
 ---

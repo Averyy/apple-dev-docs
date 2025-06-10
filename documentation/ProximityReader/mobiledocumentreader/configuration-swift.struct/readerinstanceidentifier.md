@@ -1,6 +1,6 @@
 # readerInstanceIdentifier
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: property
 
 The unique identifier for the mobile document reader instance.
@@ -9,6 +9,7 @@ The unique identifier for the mobile document reader instance.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -27,4 +28,4 @@ let readerInstanceIdentifier: String
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ProximityReader/mobiledocumentreader/configuration-swift.struct/readerinstanceidentifier)*
+*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/mobiledocumentreader/configuration-swift.struct/readerinstanceidentifier)*

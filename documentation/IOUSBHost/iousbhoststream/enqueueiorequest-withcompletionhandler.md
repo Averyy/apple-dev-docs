@@ -1,6 +1,6 @@
 # enqueueIORequest(with:completionHandler:)
 
-**Framework**: Iousbhost  
+**Framework**: IOUSBHost  
 **Kind**: method
 
 Enqueues an input/output request on the stream.

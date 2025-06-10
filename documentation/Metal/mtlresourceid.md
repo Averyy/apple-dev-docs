@@ -17,6 +17,10 @@
 struct MTLResourceID
 ```
 
+## Mentions
+
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+
 ## Topics
 
 ### Initializers

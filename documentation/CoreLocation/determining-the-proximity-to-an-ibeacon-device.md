@@ -56,8 +56,6 @@ If your app is not running when a beacon is detected, the system tries to launch
 
 > ❗ **Important**:  Apps must have authorization to use region monitoring, and they must be configured with the Location updates background mode to be launched. For more information, see [`Requesting authorization to use location services`](requesting-authorization-to-use-location-services.md).
 
- Apps must have authorization to use region monitoring, and they must be configured with the Location updates background mode to be launched. For more information, see [`Requesting authorization to use location services`](requesting-authorization-to-use-location-services.md).
-
 ##### Determine the Proximity to Beacons Using Ranging
 
 After detecting an iBeacon, use ranging to determine the relative distance between the beacon and the user’s device. Ranging reports when the two devices are far apart, near to each other, or in the immediate vicinity of each other; it does not offer a precise distance, nor should you rely on the strength of a beacon’s signal to compute that information yourself. Use the relative values to determine an appropriate course of action. For example, an app for an art museum might wait until the user is in the immediate vicinity of an iBeacon before offering information about the corresponding artwork.
@@ -114,8 +112,6 @@ func locationManager(_ manager: CLLocationManager,
 ```
 
 > 💡 **Tip**:  When deploying beacons, consider giving each one a unique combination of UUID, major, and minor values so that you can distinguish among them. If multiple beacons use the same UUID, major, and minor values, the array of beacons delivered to the [`locationManager(_:didRangeBeacons:in:)`](cllocationmanagerdelegate/locationmanager(_:didrangebeacons:in:).md) method might be differentiated only by their proximity and accuracy values.
-
- When deploying beacons, consider giving each one a unique combination of UUID, major, and minor values so that you can distinguish among them. If multiple beacons use the same UUID, major, and minor values, the array of beacons delivered to the [`locationManager(_:didRangeBeacons:in:)`](cllocationmanagerdelegate/locationmanager(_:didrangebeacons:in:).md) method might be differentiated only by their proximity and accuracy values.
 
 ## See Also
 

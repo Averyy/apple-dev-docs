@@ -1,6 +1,6 @@
 # Creating custom navigation interactions
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Build nonstandard navigation interactions that move focus to the desired location.
 
@@ -51,4 +51,4 @@ When users swipe down from Button 2 or Button 3, focus correctly redirects to Bu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/creating-custom-navigation-interactions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/creating-custom-navigation-interactions)*

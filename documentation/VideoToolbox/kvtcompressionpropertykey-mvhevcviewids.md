@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_MVHEVCViewIDs
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The identifiers of the views corresponding to the video layers in a multiview encoding operation.

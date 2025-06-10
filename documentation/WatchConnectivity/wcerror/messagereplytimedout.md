@@ -1,6 +1,6 @@
 # messageReplyTimedOut
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An error that occurs when the counterpart app doesn’t return a reply in time.

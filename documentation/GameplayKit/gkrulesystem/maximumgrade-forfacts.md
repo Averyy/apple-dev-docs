@@ -1,6 +1,6 @@
 # maximumGrade(forFacts:)
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: method
 
 Returns the highest membership grade among the specified facts.

@@ -12,6 +12,7 @@ Creates and returns a search request based on the specified search completion da
 - macOS 10.11.4+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 

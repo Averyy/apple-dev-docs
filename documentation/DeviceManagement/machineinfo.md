@@ -12,14 +12,16 @@ A device’s information in response to a MDM enrollment profile request.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object MachineInfo
 ```
+
+## Mentions
+
+- [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
 
 #### Discussion
 

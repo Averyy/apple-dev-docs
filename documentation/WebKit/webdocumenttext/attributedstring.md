@@ -1,6 +1,6 @@
 # attributedString()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method  
 **Required**: Yes
 

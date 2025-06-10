@@ -29,4 +29,4 @@ Before you run the sample code project:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/building-a-resumable-upload-server-with-swiftnio)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/building-a-resumable-upload-server-with-swiftnio)*

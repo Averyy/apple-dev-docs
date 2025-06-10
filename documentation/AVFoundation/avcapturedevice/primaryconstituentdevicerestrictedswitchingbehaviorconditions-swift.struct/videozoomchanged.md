@@ -1,6 +1,6 @@
 # videoZoomChanged
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 Restrict switching to a fallback camera only when the device’s video zoom changes.

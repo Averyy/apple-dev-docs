@@ -1,6 +1,6 @@
 # webExtensionController(_:didUpdate:forExtensionContext:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when an action’s properties are updated.

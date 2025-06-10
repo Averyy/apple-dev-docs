@@ -31,6 +31,8 @@ object AppCustomProductPageLocalizationUpdateRequest
   A response that contains a single app custom product page resource.
 - [object AppCustomProductPageLocalizationsResponse](appcustomproductpagelocalizationsresponse.md)
   A response that contains a list of alternative distribution package variant resources.
+- [object AppCustomProductPageLocalizationAppPreviewSetsLinkagesResponse](appcustomproductpagelocalizationapppreviewsetslinkagesresponse.md)
+- [object AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponse](appcustomproductpagelocalizationappscreenshotsetslinkagesresponse.md)
 
 
 ---

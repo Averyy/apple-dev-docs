@@ -24,7 +24,7 @@ When a user asks Siri to “share this” on iOS, or clicks an [`NSSharingServic
 
 You can implement this property or provide configurations from view controllers with [`activityItemsConfiguration`](uiactivityitemsconfigurationproviding/activityitemsconfiguration.md).
 
-If you don’t provide a [`UIActivityItemsConfiguration`](uiactivityitemsconfiguration.md) in either of these ways, the system may fall back to sharing either the [`webpageURL`](https://developer.apple.com/documentation/foundation/nsuseractivity/1418086-webpageurl) of your app’s current user activity or a screenshot of the scene.
+If you don’t provide a [`UIActivityItemsConfiguration`](uiactivityitemsconfiguration.md) in either of these ways, the system may fall back to sharing either the [`webpageURL`](https://developer.apple.com/documentation/Foundation/NSUserActivity/webpageURL) of your app’s current user activity or a screenshot of the scene.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # webView(_:didReceiveIcon:for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when a page icon changes.

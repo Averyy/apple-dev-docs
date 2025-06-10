@@ -30,8 +30,6 @@ For more information, see [`Supporting Drag and Drop in Collection Views`](suppo
 
 > ❗ **Important**:  Placeholder cells are meant to be a temporary part of your collection view. Always replace them with actual cells as soon as possible, or cancel the drop to remove them from the collection view. Use the methods of a [`UICollectionViewDropPlaceholderContext`](uicollectionviewdropplaceholdercontext.md) object to remove placeholders from your collection view.
 
- Placeholder cells are meant to be a temporary part of your collection view. Always replace them with actual cells as soon as possible, or cancel the drop to remove them from the collection view. Use the methods of a [`UICollectionViewDropPlaceholderContext`](uicollectionviewdropplaceholdercontext.md) object to remove placeholders from your collection view.
-
 ## Topics
 
 ### Providing a Custom Preview

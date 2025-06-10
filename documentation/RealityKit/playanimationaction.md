@@ -1,6 +1,6 @@
 # PlayAnimationAction
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 An action that plays an animation on the given target entity with a range of playback options.
@@ -10,6 +10,7 @@ An action that plays an animation on the given target entity with a range of pla
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -72,8 +73,6 @@ let animationPlaybackController = entity.playAnimation(animationSequence)
 ### Initializers
 - [init(animationName: String, targetEntity: ActionEntityResolution, transitionDuration: TimeInterval, blendLayer: Int, separateAnimatedValue: Bool, useParentedControllers: Bool, handoffType: AnimationHandoffType)](playanimationaction/init(animationname:targetentity:transitionduration:blendlayer:separateanimatedvalue:useparentedcontrollers:handofftype:).md)
   Creates a new play animation action.
-- [init(from: any Decoder) throws](playanimationaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var animatedValueType: (any AnimatableData.Type)?](playanimationaction/animatedvaluetype.md)
   The type for the value that the action modifies over time.
@@ -91,14 +90,6 @@ let animationPlaybackController = entity.playAnimation(animationSequence)
   The duration in seconds over which the animation fades in or cross-fades.
 - [var useParentedControllers: Bool](playanimationaction/useparentedcontrollers.md)
   A Boolean that indicates whether to parent the new animation’s controller to the controller managing this action.
-### Instance Methods
-- [func encode(to: any Encoder) throws](playanimationaction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [PlayAnimationAction.EventParameterType](playanimationaction/eventparametertype.md)
-  The associated event parameter type.
-### Default Implementations
-- [EntityAction Implementations](playanimationaction/entityaction-implementations.md)
 
 ## Relationships
 
@@ -129,4 +120,4 @@ let animationPlaybackController = entity.playAnimation(animationSequence)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/playanimationaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/playanimationaction)*

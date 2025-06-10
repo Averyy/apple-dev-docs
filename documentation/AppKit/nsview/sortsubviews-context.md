@@ -22,7 +22,7 @@ func sortSubviews(_ compare: (NSView, NSView, UnsafeMutableRawPointer?) -> Compa
 
 ## See Also
 
-- [func sortedArray((Any, Any, UnsafeMutableRawPointer?) -> Int, context: UnsafeMutableRawPointer?) -> [Any]](../foundation/nsarray/1408213-sortedarray.md)
+- [func sortedArray(_ comparator: (Any, Any, UnsafeMutableRawPointer?) -> Int, context: UnsafeMutableRawPointer?) -> [Any]](../Foundation/NSArray/sortedArray(_:context:).md)
   Returns a new array that lists the receiving array’s elements in ascending order as defined by the comparison function `comparator`.
 - [func addSubview(NSView)](nsview/addsubview(_:).md)
   Adds a view to the view’s subviews so it’s displayed above its siblings.

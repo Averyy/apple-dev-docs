@@ -1,6 +1,6 @@
 # Improving Siri Media Interactions and App Selection
 
-**Framework**: Sirikit
+**Framework**: SiriKit
 
 Fine-tune voice controls and improve Siri Suggestions by sharing app capabilities, customized names, and listening habits with the system.
 
@@ -59,7 +59,7 @@ context.becomeCurrent()
 
 Add metadata about playlists and individual media items from the user’s local library to the Core Spotlight database. When the user searches for the item, the system can offer to play the media in your app alongside any other search results.
 
-For Swift, choose the [`completeUntilFirstUserAuthentication`](https://developer.apple.com/documentation/foundation/fileprotectiontype/1616633-completeuntilfirstuserauthentica) level of protection for your Spotlight database so the system can access this information even when your app isn’t running. In Objective-C, choose the [`NSFileProtectionCompleteUntilFirstUserAuthentication`](https://developer.apple.com/documentation/foundation/nsfileprotectioncompleteuntilfirstuserauthentication) level of protection for your Spotlight database so the system can access this information even when your app isn’t running.
+For Swift, choose the [`completeUntilFirstUserAuthentication`](https://developer.apple.com/documentation/Foundation/FileProtectionType/completeUntilFirstUserAuthentication) level of protection for your Spotlight database so the system can access this information even when your app isn’t running. In Objective-C, choose the [`completeUntilFirstUserAuthentication`](https://developer.apple.com/documentation/Foundation/FileProtectionType/completeUntilFirstUserAuthentication) level of protection for your Spotlight database so the system can access this information even when your app isn’t running.
 
 ```swift
 let attributes = CSSearchableItemAttributeSet(contentType: .audio)
@@ -125,4 +125,4 @@ Provide additional vocabulary programmatically with [`INVocabulary`](https://dev
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/improving-siri-media-interactions-and-app-selection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/improving-siri-media-interactions-and-app-selection)*

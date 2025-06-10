@@ -1,6 +1,6 @@
 # IPHONE_SIMULATOR_HOST_MIN_VERSION_REQUIRED
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 The minimum required Simulator host version.

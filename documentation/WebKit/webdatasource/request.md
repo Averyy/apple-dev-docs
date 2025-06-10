@@ -1,6 +1,6 @@
 # request
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The request that was used to create the data source.

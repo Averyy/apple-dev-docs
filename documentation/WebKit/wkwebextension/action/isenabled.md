@@ -1,6 +1,6 @@
 # isEnabled
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating whether the action is enabled.

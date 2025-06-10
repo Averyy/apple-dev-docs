@@ -18,8 +18,6 @@ GKLocalPlayer.local.register(self)
 
 > ❗ **Important**:  The code examples in this article use GameKit asynchronous methods that you invoke from an `async` method or within a `Task` structure. For details about asynchronous flows, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html).
 
- The code examples in this article use GameKit asynchronous methods that you invoke from an `async` method or within a `Task` structure. For details about asynchronous flows, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html).
-
 ##### Send Exchange Requests
 
 Any participant, including the current participant who is taking their turn, can send an exchange request to one or more other participants. When sending an exchange request, you pass the recipients, the game-specific exchange data, and a localized message to the `GKTurnBasedMatch` [`sendExchange(to:data:localizableMessageKey:arguments:timeout:completionHandler:)`](gkturnbasedmatch/sendexchange(to:data:localizablemessagekey:arguments:timeout:completionhandler:).md) method.

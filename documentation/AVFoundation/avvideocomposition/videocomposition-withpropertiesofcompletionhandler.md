@@ -1,6 +1,6 @@
 # videoComposition(withPropertiesOf:completionHandler:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Returns a new video composition that’s configured to present the video tracks of the specified asset.

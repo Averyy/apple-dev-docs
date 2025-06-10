@@ -1,6 +1,6 @@
 # Integrating a Toolbar and Touch Bar into Your App
 
-**Framework**: Appkit
+**Framework**: AppKit
 
 Provide users quick access to your app’s features from a toolbar and corresponding Touch Bar.
 
@@ -241,4 +241,4 @@ func applicationDidFinishLaunching(_ aNotification: Notification) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/integrating-a-toolbar-and-touch-bar-into-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/integrating-a-toolbar-and-touch-bar-into-your-app)*

@@ -32,6 +32,7 @@ protocol ASAuthorizationCredential : NSCopying, NSSecureCoding, NSObjectProtocol
 - [ASAuthorizationPublicKeyCredentialRegistration](asauthorizationpublickeycredentialregistration.md)
 - [ASPublicKeyCredential](aspublickeycredential.md)
 ### Conforming Types
+- [ASAuthorizationAccountCreationPlatformPublicKeyCredential](asauthorizationaccountcreationplatformpublickeycredential.md)
 - [ASAuthorizationAppleIDCredential](asauthorizationappleidcredential.md)
 - [ASAuthorizationPlatformPublicKeyCredentialAssertion](asauthorizationplatformpublickeycredentialassertion.md)
 - [ASAuthorizationPlatformPublicKeyCredentialRegistration](asauthorizationplatformpublickeycredentialregistration.md)

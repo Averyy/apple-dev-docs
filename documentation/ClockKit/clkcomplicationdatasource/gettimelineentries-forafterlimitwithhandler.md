@@ -17,8 +17,8 @@ optional func timelineEntries(for complication: CLKComplication, after date: Dat
 
 ## Mentions
 
-- [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
 - [Loading future timeline events](loading-future-timeline-events.md)
+- [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
 
 #### Discussion
 

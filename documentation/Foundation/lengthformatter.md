@@ -71,4 +71,4 @@ class LengthFormatter
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/lengthformatter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/lengthformatter)*

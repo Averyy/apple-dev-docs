@@ -22,8 +22,6 @@ func hv_vcpu_set_space(_ vcpu: hv_vcpuid_t, _ asid: hv_vm_space_t) -> hv_return_
 
 > ❗ **Important**:  This function must be called by the owning thread.
 
- This function must be called by the owning thread.
-
 ## Parameters
 
 - `vcpu`: The instance of the vCPU.

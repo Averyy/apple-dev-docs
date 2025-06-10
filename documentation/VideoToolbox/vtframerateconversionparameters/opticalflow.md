@@ -1,11 +1,14 @@
 # opticalFlow
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 A property that defines the optical flow for an object.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
 
 ## Declaration
@@ -30,8 +33,6 @@ An optional VTFrameProcessorReadOnlyOpticalFlow contains the forward and backwar
   A value describing the processing request in a parameters submission object.
 - [VTFrameRateConversionParameters.SubmissionMode](vtframerateconversionparameters/submissionmode-swift.enum.md)
   A value describing the processing request in a parameters submission object.
-- [var destinationFrames: [VTFrameProcessorFrame]](vtframerateconversionparameters/destinationframes.md)
-  A caller-allocated array of frames that contains the pixel buffers to receive the results.
 
 
 ---

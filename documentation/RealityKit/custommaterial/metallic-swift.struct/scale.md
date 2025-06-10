@@ -10,6 +10,7 @@ The reflectiveness value for the entire entity or a multiplier for the metallic 
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -25,8 +26,6 @@ This property is an input to your material’s surface shader. Although you can 
 
 - [var texture: CustomMaterial.Texture?](custommaterial/metallic-swift.struct/texture.md)
   The reflectiveness as a UV-mapped image texture.
-- [CustomMaterial.Metallic.FloatLiteralType](custommaterial/metallic-swift.struct/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 
 ---

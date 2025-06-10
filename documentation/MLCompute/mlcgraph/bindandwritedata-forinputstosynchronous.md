@@ -30,8 +30,6 @@ Use asynchronous execution for better performance, except when testing or debugg
 
 > ❗ **Important**:  You must guarantee the lifetime of the underlying memory of each value of `inputsData` for the entirety of each corresponding input tensor’s lifetime.
 
- You must guarantee the lifetime of the underlying memory of each value of `inputsData` for the entirety of each corresponding input tensor’s lifetime.
-
 ## Parameters
 
 - `inputsData`: An array that contains the input data to write to device memory.

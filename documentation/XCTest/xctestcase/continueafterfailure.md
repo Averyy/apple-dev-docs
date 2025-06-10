@@ -1,6 +1,6 @@
 # continueAfterFailure
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A Boolean value that indicates whether a test method should continue running after a failure occurs.

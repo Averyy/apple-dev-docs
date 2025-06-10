@@ -47,6 +47,7 @@ struct LinearRegressorModel<Scalar> where Scalar : MLShapedArrayScalar, Scalar :
 ### Conforms To
 - [Regressor](regressor.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transformer](transformer.md)
 
 ## See Also

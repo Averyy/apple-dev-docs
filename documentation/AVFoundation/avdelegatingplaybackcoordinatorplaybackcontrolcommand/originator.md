@@ -1,6 +1,6 @@
 # originator
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The participant that causes the coordinator to issue the command.

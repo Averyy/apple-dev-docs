@@ -1,6 +1,6 @@
 # animate(_:changes:completion:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Animate changes to one or more views using the specified SwiftUI animation.

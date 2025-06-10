@@ -1,6 +1,6 @@
 # NSWritingToolsCoordinator
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An object that manages interactions between Writing Tools and your custom text view.
@@ -79,6 +79,8 @@ When defining the delegate, choose an object from your app that has access to yo
   Options that indicate whether Writing Tools is animating changes to your view’s text.
 - [NSWritingToolsCoordinator.TextAnimation](nswritingtoolscoordinator/textanimation.md)
   The types of animations that Writing Tools performs during an interactive update of your view.
+### Instance Properties
+- [var includesTextListMarkers: Bool](nswritingtoolscoordinator/includestextlistmarkers.md)
 
 ## Relationships
 
@@ -105,8 +107,10 @@ When defining the delegate, choose an object from your app that has access to yo
   A data object that you use to share your custom view’s text with Writing Tools.
 - [NSWritingToolsCoordinator.AnimationParameters](nswritingtoolscoordinator/animationparameters.md)
   An object you use to configure additional tasks or animations to run alongside the Writing Tools animations.
+- [Enhancing your custom text engine with Writing Tools](enhancing-your-custom-text-engine-with-writing-tools.md)
+  Add Writing Tools support to your custom text engine to enhance the text editing experience.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nswritingtoolscoordinator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nswritingtoolscoordinator)*

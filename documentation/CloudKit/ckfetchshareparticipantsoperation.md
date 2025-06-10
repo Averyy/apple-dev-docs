@@ -1,6 +1,6 @@
 # CKFetchShareParticipantsOperation
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 An operation that converts user identities into share participants.
@@ -69,7 +69,7 @@ func fetchParticipants(for lookupInfos: [CKUserIdentity.LookupInfo],
 }
 ```
 
-The operation calls [`shareParticipantFetchedBlock`](ckfetchshareparticipantsoperation/shareparticipantfetchedblock.md) once for each item you provide, and CloudKit returns the participant, or an error if it can’t generate a particpant. CloudKit also batches per-participant errors. If the operation completes with errors, it returns a [`partialFailure`](ckerror/partialfailure.md) error. The error stores the individual errors in its [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary. Use the [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key to extract them.
+The operation calls [`shareParticipantFetchedBlock`](ckfetchshareparticipantsoperation/shareparticipantfetchedblock.md) once for each item you provide, and CloudKit returns the participant, or an error if it can’t generate a particpant. CloudKit also batches per-participant errors. If the operation completes with errors, it returns a [`partialFailure`](ckerror/partialfailure.md) error. The error stores the individual errors in its [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary. Use the [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key to extract them.
 
 ## Topics
 
@@ -102,6 +102,7 @@ The operation calls [`shareParticipantFetchedBlock`](ckfetchshareparticipantsope
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -111,4 +112,4 @@ The operation calls [`shareParticipantFetchedBlock`](ckfetchshareparticipantsope
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckfetchshareparticipantsoperation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckfetchshareparticipantsoperation)*

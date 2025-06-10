@@ -6,19 +6,13 @@
 A dictionary that maps team identifiers to bundle identifiers of extensions that are removable.
 
 **Availability**:
-- macOS 10.15+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- macOS 12.0+
 
 ## Declaration
 
 ```swift
 object SystemExtensions.RemovableSystemExtensions
 ```
-
-#### Discussion
-
-Available in macOS 12 and later.
 
 ## See Also
 

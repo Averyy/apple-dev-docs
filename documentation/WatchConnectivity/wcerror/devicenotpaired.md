@@ -1,6 +1,6 @@
 # deviceNotPaired
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An error indicating that the current device doesn’t have a paired counterpart.

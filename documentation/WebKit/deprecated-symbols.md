@@ -1,6 +1,6 @@
 # Deprecated Symbols
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Review unsupported symbols and their replacements.
 
@@ -25,6 +25,8 @@ Review unsupported symbols and their replacements.
 - [protocol WKPreviewActionItem](wkpreviewactionitem.md)
   The `WKPreviewActionItem` protocol provides access to the properties of a Preview action item.
 ### Content
+- [class WebView](webview-swift.class.md)
+  `WebView` is the core view class in the WebKit framework that manages interactions between the `WebFrame` and `WebFrameView` classes. To embed web content in your application, you just create a `WebView` object, attach it to a window, and send a [`load(_:)`](webframe/load(_:)-47p2s.md) message to its main frame.
 - [enum WebNavigationType](webnavigationtype.md)
   Possible values for the [`WebActionNavigationTypeKey`](webactionnavigationtypekey.md) key that appears in an action dictionary.
 - [enum WebViewInsertAction](webviewinsertaction.md)

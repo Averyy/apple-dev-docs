@@ -12,8 +12,6 @@ The command to configure settings on a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,15 +19,11 @@ The command to configure settings on a device.
 object SettingsCommand
 ```
 
-#### Discussion
-
-This command requires the Settings access right.
-
 ## Topics
 
-### Commands
+### Objects
 - [object SettingsCommand.Command](settingscommand/command-data.dictionary.md)
-  The request dictionary to configure settings on a device.
+  The command to configure settings on a device.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # mass
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: property
 
 The resistance of the agent to changes in speed or direction.

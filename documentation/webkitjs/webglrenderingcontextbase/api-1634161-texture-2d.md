@@ -1,6 +1,6 @@
 # TEXTURE_2D
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

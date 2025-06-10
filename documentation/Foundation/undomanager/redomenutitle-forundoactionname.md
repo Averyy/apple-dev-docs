@@ -17,6 +17,7 @@ Returns the localized title of the Redo menu command for the identified action.
 ## Declaration
 
 ```swift
+@MainActor
 func redoMenuTitle(forUndoActionName actionName: String) -> String
 ```
 

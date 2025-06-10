@@ -28,8 +28,6 @@ Include all of your toolbar’s items, including standard ones defined by [`NSTo
 
 > ❗ **Important**:  Even though this is an optional method, you must implement it if you create the toolbar programatically.
 
- Even though this is an optional method, you must implement it if you create the toolbar programatically.
-
 ## Parameters
 
 - `toolbar`: The toolbar whose allowed item identifiers are to be returned.

@@ -1,6 +1,6 @@
 # XCSourceTextPosition
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: struct
 
 A zero-based position in a source editor, defined by a line number and column number.

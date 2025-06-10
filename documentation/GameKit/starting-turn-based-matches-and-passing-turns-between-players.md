@@ -24,8 +24,6 @@ For design guidance, see [`Human Interface Guidelines > Technologies > Game Cent
 
 > ❗ **Important**:  The code examples in this article use GameKit asynchronous methods that you invoke from an `async` method or within a `Task` structure. For details about asynchronous flows, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html).
 
- The code examples in this article use GameKit asynchronous methods that you invoke from an `async` method or within a `Task` structure. For details about asynchronous flows, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html).
-
 ##### Create a Match Request
 
 First, create a [`GKMatchRequest`](gkmatchrequest.md) object that contains the parameters of your turn-based game. You can set the number of players, apply groups and attributes to filter the matches, provide an invitation message, and set other criteria.
@@ -63,7 +61,7 @@ Alternatively, create your own custom interface, and then programmatically find 
 
 Before sending invitations to other players, GameKit invokes the `GKTurnBasedEventListener` [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) protocol method for the local player to take the first turn. Later, GameKit invokes this method each time it becomes the player’s turn until the player reaches an outcome or the match ends. Implement this method to present the gameplay interface that lets the player take their turn.
 
-To receive the [`GKTurnBasedEventListener`](gkturnbasedeventlistener.md) callbacks, conform your game object to the [`GKLocalPlayerListener`](gklocalplayerlistener.md) protocol and register it with the local player object. Register for callbacks immediately after you authenticate the local player because the system brings your game to the foreground or launches it to deliver important turn-based events. For more information about authentication, see [`Authenticating a player`](authenticating-a-player.md).
+To receive the [`GKTurnBasedEventListener`](gkturnbasedeventlistener.md) callbacks, conform your game object to the [`GKLocalPlayerListener`](gklocalplayerlistener.md) protocol and register it with the local player object. Register for callbacks immediately after you initialize the local player because the system brings your game to the foreground or launches it to deliver important turn-based events. For more information about initializing a player, see [`Authenticating a player`](authenticating-a-player.md).
 
 ```swift
 GKLocalPlayer.local.register(self)

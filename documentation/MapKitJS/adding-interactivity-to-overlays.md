@@ -35,8 +35,6 @@ When the user taps or clicks the overlay, MapKit JS changes the overlay’s [`se
 
 > 💡 **Tip**:  Because MapKit JS places annotations on top of overlays, the user can inadvertently select the annotation when an annotation and an overlay are both visible. To keep an annotation visible and allow the selection of the overlay, set the annotation’s [`enabled`](mapkit.annotation/enabled.md) property to `false`.
 
- Because MapKit JS places annotations on top of overlays, the user can inadvertently select the annotation when an annotation and an overlay are both visible. To keep an annotation visible and allow the selection of the overlay, set the annotation’s [`enabled`](mapkit.annotation/enabled.md) property to `false`.
-
 MapKit JS emits a `select` or `deselect` event when the overlay’s [`selected`](mapkit.overlay/selected.md) property changes. Each event that originates from an overlay has an `overlay` property, which is the [`mapkit.Overlay`](mapkit.overlay.md) object that changes state.
 
 The following example shows the logging of a message when the user selects an overlay on the map:

@@ -23,8 +23,6 @@ var devicePassIdentifier: String? { get }
 
 > ❗ **Important**:  This property’s value is unique for each issuer. This property is available only to developers who work with Apple to enable this functionality.
 
- This property’s value is unique for each issuer. This property is available only to developers who work with Apple to enable this functionality.
-
 ## See Also
 
 - [var deviceAccountIdentifier: String](pksecureelementpass/deviceaccountidentifier.md)

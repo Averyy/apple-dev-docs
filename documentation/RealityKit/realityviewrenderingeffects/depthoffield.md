@@ -10,6 +10,7 @@ Enables or disables a depth of field effect for virtual content.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -32,8 +33,6 @@ If you place a virtual object outside of the range of focus, it can appear detac
 Because of its computational cost, [`RealityView`](realityview.md) does not apply depth of field by default. To enable depth of field, set the `depthOfField` property of the view’s [`renderingEffects`](realityviewcameracontent/renderingeffects.md). If you do enable depth of field, be sure to check your app’s performance, as described in [`Improving the Performance of a RealityKit App`](improving-the-performance-of-a-realitykit-app.md).
 
 > ❗ **Important**: This rendering effect is unavailable on macOS.
-
-This rendering effect is unavailable on macOS.
 
 
 ---

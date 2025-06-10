@@ -23,8 +23,6 @@ New-person view controllers are modal view controllers that manage a set of view
 
 > ❗ **Important**:  New-person view controllers must be used with a navigation controller in order to function properly.  It is recommended that you present a new-person view controller modally.
 
- New-person view controllers must be used with a navigation controller in order to function properly.  It is recommended that you present a new-person view controller modally.
-
 ##### Subclassing
 
 The `ABNewPersonViewController` class does not support subclassing.
@@ -59,6 +57,8 @@ The `ABNewPersonViewController` class does not support subclassing.
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

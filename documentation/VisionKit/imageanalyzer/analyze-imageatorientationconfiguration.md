@@ -1,6 +1,6 @@
 # analyze(imageAt:orientation:configuration:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Returns the data for providing a Live Text interaction with an image at a URL and in the specified orientation.

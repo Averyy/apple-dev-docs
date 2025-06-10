@@ -19,7 +19,7 @@ For example, your IT policy may require a device to have a 6-character passcode 
 
 ##### Install Provisioning Profiles
 
-Third-party enterprise apps require installation of a provisioning profile to enable running them. Use MDM to efficiently deliver up-to-date versions of provisioning profiles instead of manually distributing them through your corporate web portal or bundled with the app, and replacing them when they expire. Using MDM also prevents users from having to perform these tasks on their own. For more information on installation, see [`Install a Provisioning Profile`](install-provisioning-profile-command.md).
+Third-party enterprise apps require installation of a provisioning profile to enable running them. Use MDM to efficiently deliver up-to-date versions of provisioning profiles instead of manually distributing them through your corporate web portal or bundled with the app, and replacing them when they expire. Using MDM also prevents users from having to perform these tasks on their own. For more information on installation, see [`Install Provisioning Profile`](install-provisioning-profile-command.md).
 
 ## See Also
 

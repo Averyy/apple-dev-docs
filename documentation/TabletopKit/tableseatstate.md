@@ -30,6 +30,7 @@ struct TableSeatState
 ### Conforms To
 - [SeatState](seatstate.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

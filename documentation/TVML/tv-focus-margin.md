@@ -1,6 +1,6 @@
 # tv-focus-margin
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Specifies the amount of space required for a custom cell element in focus.
 
@@ -26,4 +26,4 @@ Specifies the amount of space required for a custom cell element in focus.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/tv-focus-margin)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/tv-focus-margin)*

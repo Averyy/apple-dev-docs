@@ -162,4 +162,4 @@ Or, if youʼre using an alternative build system, like a makefile, update it to 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/signing-a-daemon-with-a-restricted-entitlement)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/signing-a-daemon-with-a-restricted-entitlement)*

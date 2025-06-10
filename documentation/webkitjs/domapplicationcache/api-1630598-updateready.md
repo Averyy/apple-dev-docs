@@ -1,6 +1,6 @@
 # UPDATEREADY
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 Resources have finished downloading and the new cache is ready to be used.

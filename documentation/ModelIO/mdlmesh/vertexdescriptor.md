@@ -26,8 +26,6 @@ Read this property to determine the vertex data format to be used in rendering t
 
 > ❗ **Important**:  Changing a mesh’s vertex descriptor can be an expensive or destructive operation. Depending on the differences between the current and new vertex descriptors, reformatting may copy up to the entire vertex data into a new structure and delete any vertex data corresponding to attributes that are not present in the new vertex descriptor.
 
- Changing a mesh’s vertex descriptor can be an expensive or destructive operation. Depending on the differences between the current and new vertex descriptors, reformatting may copy up to the entire vertex data into a new structure and delete any vertex data corresponding to attributes that are not present in the new vertex descriptor.
-
 ## See Also
 
 - [var boundingBox: MDLAxisAlignedBoundingBox](mdlmesh/boundingbox.md)

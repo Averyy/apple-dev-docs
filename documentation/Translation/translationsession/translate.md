@@ -8,6 +8,7 @@ Translates a single string of text.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.0+
 
 ## Declaration
@@ -34,7 +35,9 @@ This function throws an `Error` if:
 
 - the user doesn’t agree to downloading the languages
 - the user dismisses the progress UI while the languages download,
-- the [`TranslationSession`](translationsession.md) fails to validate, or
+- the [`TranslationSession`](translationsession.md) fails to validate,
+- the languages aren’t installed when the session can’t request downloads,
+- the session was already cancelled, or
 - something goes wrong while performing the translation.
 
 If someone dismisses the progress UI while the languages download, the system throws a `CocoaError/userCancelled` error, and the languages continue to download in the background.

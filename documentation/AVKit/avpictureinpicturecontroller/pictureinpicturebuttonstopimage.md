@@ -16,7 +16,7 @@ A system-default template image for the button that stops Picture in Picture in 
 ## Declaration
 
 ```swift
-class var pictureInPictureButtonStopImage: UIImage { get }
+class var pictureInPictureButtonStopImage: NSImage { get }
 ```
 
 ## Mentions

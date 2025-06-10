@@ -1,6 +1,6 @@
 # Accessing location information in widgets
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Incorporate location information into your widget presentation to make it more relevant and contextual.
 
@@ -15,11 +15,7 @@ To use Location Services in your widget:
 - Add the [`NSWidgetWantsLocation`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSWidgetWantsLocation) key to your widget extension’s `Info.plist` file.
 - Add the relevant purpose strings to the `Info.plist` file of the app that contains the widget.
 
-> ❗ **Important**: Before your widget can receive location information, your app must request authorization from the user. For more information, see [`Requesting authorization to use location services`](https://developer.apple.com/documentation/CoreLocation/requesting-authorization-to-use-location-services).
-
-Before your widget can receive location information, your app must request authorization from the user. For more information, see [`Requesting authorization to use location services`](https://developer.apple.com/documentation/CoreLocation/requesting-authorization-to-use-location-services).
-
-As described in [`Choosing the  Location Services Authorization to Request`](https://developer.apple.com/documentation/BundleResources/choosing-the-location-services-authorization-to-request), whenever possible, request When In Use authorization.
+> ❗ **Important**: Before your widget can receive location information, your app must request a person’s permission to access their location. For most widgets, requesting When In Use authorization is the right choice, because of its better privacy and battery life implications. For more information, see [`Requesting authorization to use location services`](https://developer.apple.com/documentation/CoreLocation/requesting-authorization-to-use-location-services).
 
 ##### Access Location Information From Your Widget
 

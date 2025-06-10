@@ -1,6 +1,6 @@
 # User Management Entitlement
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 The entitlement for distinguishing between multiple user accounts on Apple TV.

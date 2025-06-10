@@ -91,4 +91,4 @@ This time, the inode number changed. This change indicates that `ditto` replaced
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/updating-mac-software)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/updating-mac-software)*

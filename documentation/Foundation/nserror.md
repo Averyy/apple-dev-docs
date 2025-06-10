@@ -99,11 +99,15 @@ Applications may choose to create subclasses of `NSError`, for example, to provi
   Error codes in the Cocoa error domain.
 ### Instance Properties
 - [var underlyingErrors: [any Error]](nserror/underlyingerrors.md)
+### Instance Methods
+- [func addError(NSError) -> NSError](nserror/adderror(_:).md)
+- [func addError(code: Int, message: String, logMessage: Bool) -> NSError](nserror/adderror(code:message:logmessage:).md)
 ### Type Methods
 - [class func fileProviderErrorForCollision(with: NSFileProviderItem) -> Self](nserror/fileprovidererrorforcollision(with:).md)
   Returns a properly formatted error object with a `NSFileProviderItemCollisionError` error code.
 - [class func fileProviderErrorForNonExistentItem(withIdentifier: NSFileProviderItemIdentifier) -> Self](nserror/fileprovidererrorfornonexistentitem(withidentifier:).md)
 - [class func fileProviderErrorForRejectedDeletion(of: NSFileProviderItem) -> Self](nserror/fileprovidererrorforrejecteddeletion(of:).md)
+- [static func ikError(code: Int, message: String, logMessage: Bool) -> NSError](nserror/ikerror(code:message:logmessage:).md)
 
 ## Relationships
 
@@ -122,6 +126,7 @@ Applications may choose to create subclasses of `NSError`, for example, to provi
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

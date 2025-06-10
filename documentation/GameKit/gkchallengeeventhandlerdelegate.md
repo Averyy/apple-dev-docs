@@ -60,6 +60,8 @@ Your event handler can override or extend this behavior:
 - [protocol GKAchievementViewControllerDelegate](gkachievementviewcontrollerdelegate.md)
   An object implementing the [`GKAchievementViewControllerDelegate`](gkachievementviewcontrollerdelegate.md) protocol is called when the user dismisses the achievements view controller. Typically, this protocol is implemented by the object in your game that originally displayed the achievements user interface.
 - [protocol GKChallengesViewControllerDelegate](gkchallengesviewcontrollerdelegate.md)
+- [protocol GKChallengeListener](gkchallengelistener.md)
+  An object that responds to challenge events.
 - [protocol GKFriendRequestComposeViewControllerDelegate](gkfriendrequestcomposeviewcontrollerdelegate.md)
   The [`GKFriendRequestComposeViewControllerDelegate`](gkfriendrequestcomposeviewcontrollerdelegate.md) protocol is implemented by delegates of the [`GKFriendRequestComposeViewController`](gkfriendrequestcomposeviewcontroller.md) class. The delegate is called when the player dismisses the friend request.
 - [protocol GKGameSessionEventListener](gkgamesessioneventlistener.md)

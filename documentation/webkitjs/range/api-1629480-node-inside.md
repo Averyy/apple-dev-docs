@@ -1,6 +1,6 @@
 # NODE_INSIDE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

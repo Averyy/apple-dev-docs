@@ -31,6 +31,7 @@ To add a bookmark, use the [`createBookmark(_:context:)`](tabletopaction/createb
 - [Equatable](../Swift/Equatable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

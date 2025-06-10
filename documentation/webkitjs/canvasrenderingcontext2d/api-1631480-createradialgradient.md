@@ -1,6 +1,6 @@
 # createRadialGradient
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Creates a radial gradient object using the cone defined by the specified starting and ending circles.

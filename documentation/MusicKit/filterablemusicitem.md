@@ -31,6 +31,7 @@ protocol FilterableMusicItem : MusicItem
 ### Inherits From
 - [MusicItem](musicitem.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [Album](album.md)
 - [Artist](artist.md)

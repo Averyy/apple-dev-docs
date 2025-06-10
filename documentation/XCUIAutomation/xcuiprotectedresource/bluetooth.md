@@ -1,6 +1,6 @@
 # XCUIProtectedResource.bluetooth
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The protected resource case for Bluetooth utilization.

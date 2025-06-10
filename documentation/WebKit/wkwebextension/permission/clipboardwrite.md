@@ -1,6 +1,6 @@
 # clipboardWrite
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A request for access to write to the clipboard.

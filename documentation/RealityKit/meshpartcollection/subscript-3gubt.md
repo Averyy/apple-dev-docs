@@ -10,6 +10,7 @@ Read a part given its id.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -24,13 +25,13 @@ subscript(id: String) -> MeshResource.Part? { get }
   Number of parts.
 - [var isEmpty: Bool](meshpartcollection/isempty.md)
   True if there are no parts.
-- [func insert(MeshResource.Part) -> Bool](meshpartcollection/insert(_:).md)
-  Add a new part to the container. Returns true if added.
-- [func remove(id: String) -> MeshResource.Part?](meshpartcollection/remove(id:).md)
+- [func insert(_:)](meshpartcollection/insert(_:).md)
+  Add a new part to the container. Returns true if added. Returns false if it already exists.
+- [func remove(id:)](meshpartcollection/remove(id:).md)
   Remove a part by id.
 - [func removeAll()](meshpartcollection/removeall.md)
   Remove all the parts.
-- [func update(MeshResource.Part) -> MeshResource.Part?](meshpartcollection/update(_:).md)
+- [func update(_:)](meshpartcollection/update(_:).md)
   Update an existing part. The old part is returned.
 
 

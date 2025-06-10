@@ -1,6 +1,6 @@
 # fullResolutionImage()
 
-**Framework**: Assetslibrary  
+**Framework**: Assets Library  
 **Kind**: method
 
 Returns a CGImage representation of the asset.
@@ -8,7 +8,7 @@ Returns a CGImage representation of the asset.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

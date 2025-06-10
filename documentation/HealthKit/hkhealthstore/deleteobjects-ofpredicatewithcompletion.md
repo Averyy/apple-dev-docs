@@ -1,6 +1,6 @@
 # deleteObjects(of:predicate:withCompletion:)
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: method
 
 Deletes objects saved by this application that match the provided type and predicate.

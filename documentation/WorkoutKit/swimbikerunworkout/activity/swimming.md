@@ -1,6 +1,6 @@
 # SwimBikeRunWorkout.Activity.swimming(_:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: case
 
 A swimming workout activity, with the specified location type.
@@ -10,6 +10,7 @@ A swimming workout activity, with the specified location type.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

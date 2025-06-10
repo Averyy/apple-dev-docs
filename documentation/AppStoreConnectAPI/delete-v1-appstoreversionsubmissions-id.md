@@ -18,11 +18,6 @@ Use this endpoint to remove a version from App Review. This request fails with a
 
 ##### Remove a Version From App Review
 
-## See Also
-
-- [Create an App Store version submission](post-v1-appstoreversionsubmissions.md)
-  Submit an App Store version to App Review.
-
 
 ---
 

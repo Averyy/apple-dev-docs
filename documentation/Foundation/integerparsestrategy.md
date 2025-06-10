@@ -66,6 +66,7 @@ let parsedUSDollars = try? Int(formattedUSDollars, format: .currency(code: "USD"
 - [Hashable](../Swift/Hashable.md)
 - [ParseStrategy](parsestrategy.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

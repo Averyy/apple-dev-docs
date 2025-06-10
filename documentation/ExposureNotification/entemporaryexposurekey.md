@@ -20,8 +20,6 @@ class ENTemporaryExposureKey
 
 > ❗ **Important**:  This class is available in iOS 12.5, and in iOS 13.5 and later.
 
- This class is available in iOS 12.5, and in iOS 13.5 and later.
-
 Upon a positive diagnosis, the user is allowed to submit their temporary exposure keys to their Health Authority server as diagnosis keys. Use [`getDiagnosisKeys(completionHandler:)`](enmanager/getdiagnosiskeys(completionhandler:).md) to obtain the user’s diagnosis keys for submission.
 
 ## Topics
@@ -52,9 +50,9 @@ Upon a positive diagnosis, the user is allowed to submit their temporary exposur
 
 ## See Also
 
-- [func getDiagnosisKeys(completionHandler: ENGetDiagnosisKeysHandler)](enmanager/getdiagnosiskeys(completionhandler:).md)
+- [func getDiagnosisKeys(completionHandler: ([ENTemporaryExposureKey]?, (any Error)?) -> Void)](enmanager/getdiagnosiskeys(completionhandler:).md)
   Requests the temporary exposure keys from the user’s device to share with a server.
-- [func getTestDiagnosisKeys(completionHandler: ENGetDiagnosisKeysHandler)](enmanager/gettestdiagnosiskeys(completionhandler:).md)
+- [func getTestDiagnosisKeys(completionHandler: ([ENTemporaryExposureKey]?, (any Error)?) -> Void)](enmanager/gettestdiagnosiskeys(completionhandler:).md)
   Requests the temporary exposure keys, including the current key, used by this device for testing.
 
 

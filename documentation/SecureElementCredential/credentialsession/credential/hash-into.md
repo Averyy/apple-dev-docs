@@ -21,8 +21,6 @@ Implement this method to conform to the  [`Hashable`](https://developer.apple.co
 
 > ❗ **Important**:  Don’t call `finalize()` on `hasher`. It may become a compile-time error.
 
- Don’t call `finalize()` on `hasher`. It may become a compile-time error.
-
 See [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) for more information about the concepts and uses of hashing.
 
 

@@ -1,6 +1,6 @@
 # Recording UI automation for testing
 
-**Framework**: Xcuiautomation
+**Framework**: XCUIAutomation
 
 Capture and replay interaction sequences to verify your app’s behavior.
 
@@ -14,11 +14,13 @@ In the UI automation test target for your app, create a class that subclasses [`
 
 ##### Record Your Interaction with Your App
 
-Move the pointer to the test method in the Xcode editor pane, and click the record button in the debug bar, as the following screenshot shows:
+Click in the test method body at the line where you want to record your test’s interactions with your app, and click the record button (red dot) at the edge of the editor.
 
-![A screenshot of the debug bar in Xcode, showing the Record UI Test button.](https://docs-assets.developer.apple.com/published/c2c1c4c855439f1d3333cef8f8fd17e7/record-automation-button%402x.png)
+![A screenshot of Xcode, showing the Record UI Test button in the editor sidebar.](https://docs-assets.developer.apple.com/published/d8c62fe86140904441270665c719e976/recording-ui-automation-xcode%402x.png)
 
-If your app isn’t running already, Xcode builds it and launches it. Then, as you interact with elements in your app, Xcode adds queries to the test that locate those elements, and actions that replicate your interactions with the elements. When you finish interacting with the app, you can stop recording by clicking the stop button in the debug bar.
+Xcode asks if you want to start recording a UI test. Click Yes.
+
+If your app isn’t running already, Xcode builds it and launches it. Then, as you interact with elements in your app, Xcode adds queries to the test that locate those elements, and actions that replicate your interactions with the elements. When you finish interacting with the app, stop recording by clicking the stop button at the edge of the editor.
 
 > **Note**: The first time you record a UI test, Xcode prompts you to grant it access to control the computer. In this alert, click Open Settings. Next, in the Accessibility privacy settings, toggle the Xcode Helper switch to the on position.
 
@@ -28,11 +30,9 @@ You can also record interactions with your app’s settings UI and any alert pan
 
 When you interact with elements in your app’s UI while recording UI automation, Xcode adds element queries to the test that locate the elements you interact with. Multiple element queries can identify the same element; for example, you can identify a button by its title, or by its index in its parent view’s collection of buttons. For each element query that Xcode adds to your test, it provides a collection of alternative queries that locate the same element.
 
-To choose from multiple queries representing the same UI element, click the disclosure triangle next to the element query, like in the following screenshot:
+To choose from multiple queries representing the same UI element, click the disclosure triangle next to the element query. Choose the query that best represents the meaning of the element in your app. For example, if you’re likely to move a given button when redesigning your app’s UI, but the name of the button never changes, choose a query that locates it by name instead of its index in its parent element.
 
-![A screenshot of a UI automation test in Xcode, with a disclosure triangle revealing a menu of alternative element queries to find a given control in the UI.](https://docs-assets.developer.apple.com/published/37cbfb75c391164126059ae318385811/choose-element-query%402x.png)
-
-Choose the query that best represents the meaning of the element in your app. For example, if you’re likely to move a given button when redesigning your app’s UI, but the name of the button never changes, choose a query that locates it by name instead of its index in its parent element.
+To commit your choice of element query, double-click the entry in the disclosure list.
 
 ##### Verify the State of Your App
 
@@ -43,4 +43,4 @@ In your test method, after the interactions that Xcode recorded, add assertions 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/XCUIAutomation/recording-ui-automation-for-testing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcuiautomation/recording-ui-automation-for-testing)*

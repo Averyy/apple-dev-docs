@@ -1,6 +1,6 @@
 # NSAccessibilityList
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: protocol
 
 A role-based protocol that declares the minimum interface necessary for an accessibility element to act as a list view.
@@ -44,4 +44,4 @@ Although the [`NSAccessibilityList`](nsaccessibilitylist.md) protocol doesn’t 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsaccessibilitylist)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsaccessibilitylist)*

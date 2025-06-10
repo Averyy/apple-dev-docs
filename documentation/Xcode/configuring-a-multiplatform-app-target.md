@@ -109,4 +109,4 @@ Build, run, and test your app on each platform before submitting each version to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-a-multiplatform-app-target)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-a-multiplatform-app-target)*

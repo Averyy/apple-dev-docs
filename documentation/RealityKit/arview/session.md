@@ -6,9 +6,9 @@
 The AR session that supports the view’s rendering.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

@@ -9,8 +9,6 @@ The payload you use to configure certificate revocation checking.
 - iOS 14.2+
 - iPadOS 14.2+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,17 +24,17 @@ Specify `com.apple.security.certificaterevocation` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, Shared iPad |
-| User Channel | - |
-| Allow Manual Install | iOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS |
-| Allow Multiple Payloads | iOS, Shared iPad |
+| Device channel | iOS, Shared iPad, visionOS |
+| User channel | NA |
+| Allow manual install | iOS, visionOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, visionOS |
+| Allow multiple payloads | iOS, Shared iPad, visionOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -83,7 +81,7 @@ Specify `com.apple.security.certificaterevocation` as the payload type.
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object CertificateRevocation.SubjectPublicKeyInfoHashDict](certificaterevocation/subjectpublickeyinfohashdict.md)
   A dictionary of hashed public keys.
 

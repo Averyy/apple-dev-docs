@@ -35,6 +35,7 @@ struct Role
   The column role.
 - [static let comboBox: NSAccessibility.Role](nsaccessibility-swift.struct/role/combobox.md)
   The combo box role.
+- [static let dateTimeAreaRole: NSAccessibility.Role](nsaccessibility-swift.struct/role/datetimearearole.md)
 - [static let disclosureTriangle: NSAccessibility.Role](nsaccessibility-swift.struct/role/disclosuretriangle.md)
   The disclosure triangle role.
 - [static let drawer: NSAccessibility.Role](nsaccessibility-swift.struct/role/drawer.md)
@@ -47,6 +48,7 @@ struct Role
   The grow (resize) area role in a window.
 - [static let handle: NSAccessibility.Role](nsaccessibility-swift.struct/role/handle.md)
   The drag handle role.
+- [static let headingRole: NSAccessibility.Role](nsaccessibility-swift.struct/role/headingrole.md)
 - [static let helpTag: NSAccessibility.Role](nsaccessibility-swift.struct/role/helptag.md)
   The help tag role.
 - [static let image: NSAccessibility.Role](nsaccessibility-swift.struct/role/image.md)
@@ -63,6 +65,7 @@ struct Role
   The link role.
 - [static let list: NSAccessibility.Role](nsaccessibility-swift.struct/role/list.md)
   The list role.
+- [static let listMarkerRole: NSAccessibility.Role](nsaccessibility-swift.struct/role/listmarkerrole.md)
 - [static let matte: NSAccessibility.Role](nsaccessibility-swift.struct/role/matte.md)
   The matte role.
 - [static let menu: NSAccessibility.Role](nsaccessibility-swift.struct/role/menu.md)
@@ -125,6 +128,7 @@ struct Role
   The toolbar role.
 - [static let valueIndicator: NSAccessibility.Role](nsaccessibility-swift.struct/role/valueindicator.md)
   The value indicator role.
+- [static let webAreaRole: NSAccessibility.Role](nsaccessibility-swift.struct/role/webarearole.md)
 - [static let window: NSAccessibility.Role](nsaccessibility-swift.struct/role/window.md)
   The window role.
 - [static let unknown: NSAccessibility.Role](nsaccessibility-swift.struct/role/unknown.md)
@@ -144,6 +148,7 @@ struct Role
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

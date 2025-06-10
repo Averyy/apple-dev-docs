@@ -1,6 +1,6 @@
 # showsNodeCount
 
-**Framework**: Spritekit  
+**Framework**: SpriteKit  
 **Kind**: property
 
 A Boolean value that indicates whether the view displays an overlay that shows physics bodies that are visible in the scene.

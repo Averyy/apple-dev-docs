@@ -1,6 +1,6 @@
 # sticky(horizontal:vertical:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Modifies self to be sticky in the specified dimensions — growing, but not shrinking.

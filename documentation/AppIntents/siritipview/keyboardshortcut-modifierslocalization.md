@@ -9,7 +9,7 @@ Defines a keyboard shortcut and assigns it to the modified control.
 - iOS 15.0+
 - iPadOS 15.0+
 - macOS 12.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

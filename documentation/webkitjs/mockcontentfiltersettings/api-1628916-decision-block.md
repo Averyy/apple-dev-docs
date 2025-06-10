@@ -1,6 +1,6 @@
 # DECISION_BLOCK
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

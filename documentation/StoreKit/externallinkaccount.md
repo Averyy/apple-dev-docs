@@ -33,6 +33,7 @@ This functionality is only available to apps with the [`com.apple.developer.stor
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

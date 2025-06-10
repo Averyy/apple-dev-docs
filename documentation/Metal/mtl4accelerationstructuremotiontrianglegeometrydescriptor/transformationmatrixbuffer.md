@@ -1,0 +1,31 @@
+# transformationMatrixBuffer
+
+**Framework**: Metal  
+**Kind**: property
+
+Assings an optional reference to a buffer containing a `float4x3` transformation matrix.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+var transformationMatrixBuffer: MTL4BufferRange { get set }
+```
+
+#### Discussion
+
+When the buffer address is non-zero, Metal applies this transform to the vertex data positions when building the acceleration structure. All keyframes share the same transformation matrix.
+
+Building an acceleration structure with a descriptor that specifies this property doesn’t modify the contents of the input `vertexBuffer`.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtl4accelerationstructuremotiontrianglegeometrydescriptor/transformationmatrixbuffer)*

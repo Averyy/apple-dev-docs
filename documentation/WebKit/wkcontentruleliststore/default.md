@@ -1,6 +1,6 @@
 # default()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the default content rule list store.

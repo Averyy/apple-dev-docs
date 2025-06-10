@@ -66,4 +66,4 @@ To minimize binary size when compiling a shader library on a device:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/minimizing-the-binary-size-of-a-shader-library)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/minimizing-the-binary-size-of-a-shader-library)*

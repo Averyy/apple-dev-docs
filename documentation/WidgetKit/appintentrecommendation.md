@@ -1,6 +1,6 @@
 # AppIntentRecommendation
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 An object that describes a recommended intent configuration for a user-customizable widget.
@@ -8,8 +8,9 @@ An object that describes a recommended intent configuration for a user-customiza
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
+- visionOS 26.0+ (Beta)
 - watchOS 10.0+
 
 ## Declaration
@@ -52,6 +53,9 @@ public func recommendations() -> [AppIntentRecommendation<DynamicCharacterConfig
   Creates a recommended configuration for a widget on platforms that don’t offer a dedicated user interface to customize widgets.
 - [init(intent: Intent, description: some StringProtocol)](appintentrecommendation/init(intent:description:)-7zn32.md)
   Creates a recommended configuration for a widget on platforms that don’t offer a dedicated user interface to customize widgets.
+### Initializers
+- [init(intent: Intent, description: LocalizedStringResource)](appintentrecommendation/init(intent:description:)-3j1cv.md)
+  Creates a recommended configuration for a widget on platforms that don’t offer a dedicated user interface to customize widgets with a localized description.
 
 ## See Also
 
@@ -71,4 +75,4 @@ public func recommendations() -> [AppIntentRecommendation<DynamicCharacterConfig
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/appintentrecommendation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/appintentrecommendation)*

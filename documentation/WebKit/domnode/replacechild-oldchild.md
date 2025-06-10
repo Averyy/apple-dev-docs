@@ -1,6 +1,6 @@
 # replaceChild(_:oldChild:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

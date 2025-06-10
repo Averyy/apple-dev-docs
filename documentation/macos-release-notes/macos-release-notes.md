@@ -16,6 +16,9 @@ When writing your report, please include the full version number in the title an
 
 ## Topics
 
+### macOS 26
+- [macOS Tahoe 26 Beta Release Notes](macos-26-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 ### macOS 15
 - [macOS Sequoia 15.5 Release Notes](macos-15_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
@@ -116,11 +119,11 @@ When writing your report, please include the full version number in the title an
 - [macOS Mojave 10.14 Release Notes](macos-mojave-10_14-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 ### Articles
+- [AppKit Release Notes for macOS 14](appkit-release-notes-for-macos-14.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [AppKit Release Notes for macOS Monterey 12](appkit-release-notes-for-macos-12.md)
   Update your apps to use new features, and test your apps against API changes.
 - [AppKit Release Notes for macOS Ventura 13](appkit-release-notes-for-macos-13.md)
-  Update your apps to use new features, and test your apps against API changes.
-- [AppKit Release Notes for macOS 14](appkit-release-notes-for-macos-14.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

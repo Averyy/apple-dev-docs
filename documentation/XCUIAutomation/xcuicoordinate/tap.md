@@ -1,6 +1,6 @@
 # tap()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a tap event at the coordinate.

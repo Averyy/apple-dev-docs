@@ -1,6 +1,6 @@
 # VStack
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A view that arranges its subviews in a vertical line.
@@ -26,12 +26,13 @@ struct VStack<Content> where Content : View
 - [Building layouts with stack views](building-layouts-with-stack-views.md)
 - [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
 - [Inspecting view layout](inspecting-view-layout.md)
-- [Picking container views for your content](picking-container-views-for-your-content.md)
 - [Adding a background to your view](adding-a-background-to-your-view.md)
-- [Declaring a custom view](declaring-a-custom-view.md)
+- [Picking container views for your content](picking-container-views-for-your-content.md)
+- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
 - [Configuring views](configuring-views.md)
-- [Aligning views across stacks](aligning-views-across-stacks.md)
+- [Declaring a custom view](declaring-a-custom-view.md)
 - [Aligning views within a stack](aligning-views-within-a-stack.md)
+- [Aligning views across stacks](aligning-views-across-stacks.md)
 
 #### Overview
 
@@ -80,4 +81,4 @@ var body: some View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/vstack)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/vstack)*

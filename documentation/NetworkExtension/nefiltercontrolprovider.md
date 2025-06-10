@@ -27,8 +27,6 @@ The Filter Control Provider’s primary responsibility is to provide information
 
 > ❗ **Important**:  To use the [`NEFilterControlProvider`](nefiltercontrolprovider.md) class, you must enable the Network Extensions capability in Xcode and select the Content Filter capability. See [`Configure network extensions`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
 
- To use the [`NEFilterControlProvider`](nefiltercontrolprovider.md) class, you must enable the Network Extensions capability in Xcode and select the Content Filter capability. See [`Configure network extensions`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
-
 ##### Creating a Filter Control Provider Extension
 
 Filter Control Providers run as App Extensions for the `com.apple.networkextension.filter-control` extension point.

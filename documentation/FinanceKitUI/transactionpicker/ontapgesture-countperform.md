@@ -1,6 +1,6 @@
 # onTapGesture(count:perform:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Adds an action to perform when this view recognizes a tap gesture.

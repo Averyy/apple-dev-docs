@@ -9,7 +9,8 @@
 ## Declaration
 
 ```swift
-static func rectangular(entity: Entity) -> TabletopShape
+@MainActor
+@preconcurrency static func rectangular(entity: Entity) -> TabletopShape
 ```
 
 ## See Also

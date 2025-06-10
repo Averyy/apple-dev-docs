@@ -8,6 +8,11 @@ Learn about important changes in ActivityKit.
 
 Browse notable changes in [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit).
 
+#### June 2025
+
+- Live Activities automatically appear on the Mac in the Menu bar and in CarPlay.
+- Schedule Live Activities for a specific time using [`request(attributes:content:pushType:style:alertConfiguration:start:)`](https://developer.apple.com/documentation/ActivityKit/Activity/request(attributes:content:pushType:style:alertConfiguration:start:)).
+
 #### June 2024
 
 - Support Live Activities in the Smart Stack in watchOS.
@@ -21,12 +26,16 @@ Browse notable changes in [`ActivityKit`](https://developer.apple.com/documentat
   Learn about important changes to Accessibility.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -39,12 +48,8 @@ Browse notable changes in [`ActivityKit`](https://developer.apple.com/documentat
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
-- [Core Location updates](corelocation.md)
-  Learn about important changes to Core Location.
+- [Background Tasks updates](backgroundtasks.md)
+  Learn about important changes in Background Tasks.
 
 
 ---

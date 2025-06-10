@@ -1,6 +1,6 @@
 # Creating a MIDI device driver
 
-**Framework**: Mididriverkit
+**Framework**: MIDIDriverKit
 
 Implement a configurable virtual MIDI driver as a driver extension that runs in user space in macOS and iPadOS.
 
@@ -344,4 +344,4 @@ When this method returns, the configuration change is complete, and the system r
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MIDIDriverKit/creating-a-midi-device-driver)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mididriverkit/creating-a-midi-device-driver)*

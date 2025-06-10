@@ -1,6 +1,6 @@
 # AudioPlaybackController
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: class
 
 A controller that manages an audio playback instance.
@@ -10,6 +10,7 @@ A controller that manages an audio playback instance.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -33,11 +34,6 @@ Look for one of the events in [`AudioEvents`](audioevents.md) if you want to be 
 
 ## Topics
 
-### Identifying the controller
-- [var id: UInt64](audioplaybackcontroller/id-87o6y.md)
-  The stable identity of the controller.
-- [AudioPlaybackController.ID](audioplaybackcontroller/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Managing the resource
 - [let resource: AudioResource](audioplaybackcontroller/resource.md)
   The resource that provides the audio stream.
@@ -68,13 +64,13 @@ Look for one of the events in [`AudioEvents`](audioevents.md) if you want to be 
 - [var entity: Entity?](audioplaybackcontroller/entity.md)
   The entity from which the audio stream emanates.
 ### Instance Methods
-- [func seek(to: Duration)](audioplaybackcontroller/seek(to:).md)
+- [func seek(to:)](audioplaybackcontroller/seek(to:).md)
   Sets the playback position to the specified time.
 ### Type Aliases
-- [AudioPlaybackController.Decibel](audioplaybackcontroller/decibel.md)
+- [AudioPlaybackController.Decibel](audioplaybackcontroller/decibel-350si.md)
   A type alias for Double expressing that the value is in Decibels.
-### Default Implementations
-- [Identifiable Implementations](audioplaybackcontroller/identifiable-implementations.md)
+- [AudioPlaybackController.Decibel](audioplaybackcontroller/decibel-73aqn.md)
+  A type alias for Double expressing that the value is in Decibels.
 
 ## Relationships
 
@@ -82,6 +78,7 @@ Look for one of the events in [`AudioEvents`](audioevents.md) if you want to be 
 - [Copyable](../Swift/Copyable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -97,4 +94,4 @@ Look for one of the events in [`AudioEvents`](audioevents.md) if you want to be 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/audioplaybackcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/audioplaybackcontroller)*

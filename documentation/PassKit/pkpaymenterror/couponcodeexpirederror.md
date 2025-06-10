@@ -1,6 +1,6 @@
 # couponCodeExpiredError
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
 The error code that indicates an expired coupon.

@@ -1,6 +1,6 @@
 # beginRefundRequest(for:in:)
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: method
 
 Presents the refund request sheet for the specified transaction in a view controller.

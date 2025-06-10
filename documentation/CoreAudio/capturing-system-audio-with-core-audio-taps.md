@@ -90,8 +90,6 @@ Before you run the sample code project in Xcode, ensure that you’re using macO
 
 > ❗ **Important**: To capture audio with a tap, you need to include the `NSAudioCaptureUsageDescription` key in your Info.plist file, along with a message that tells the user why the app is requesting access to capture audio.
 
-To capture audio with a tap, you need to include the `NSAudioCaptureUsageDescription` key in your Info.plist file, along with a message that tells the user why the app is requesting access to capture audio.
-
 The first time you start recording from an aggregate device that contains a tap, the system prompts you to grant the app system audio recording permission.
 
 ## See Also

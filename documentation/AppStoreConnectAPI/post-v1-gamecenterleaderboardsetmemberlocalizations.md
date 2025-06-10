@@ -8,6 +8,10 @@ Add a new leaderboard set localization.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Mentions
+
+- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
+
 ## See Also
 
 - [Read leaderboard set member localization information](get-v1-gamecenterleaderboardsetmemberlocalizations.md)
@@ -16,6 +20,7 @@ Add a new leaderboard set localization.
   Get information about a leaderboard for a specific leaderboard set member localization.
 - [Read leaderboard set information for a leaderboard set member localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-gamecenterleaderboardset.md)
   Get information about a leaderboard set for a specific leaderboard set member localization.
+- [GET /v1/gameCenterLeaderboardSetMemberLocalizations/{id}/relationships/gameCenterLeaderboardSet](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-relationships-gamecenterleaderboardset.md)
 - [Modify a leaderboard set member localization](patch-v1-gamecenterleaderboardsetmemberlocalizations-_id_.md)
   Edit a leaderboard set member localization.
 - [Delete a leaderboard set member localization](delete-v1-gamecenterleaderboardsetmemberlocalizations-_id_.md)

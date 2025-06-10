@@ -8,11 +8,11 @@ Creates a geometry element from the specified array of index values.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.1+
 - macOS 10.8+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 

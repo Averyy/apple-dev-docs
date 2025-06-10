@@ -1,6 +1,6 @@
 # wait(for:timeout:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Waits for the application to reach the specified state or timeout.

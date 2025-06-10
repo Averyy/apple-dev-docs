@@ -8,12 +8,12 @@ Include a property list dictionary to describe a RAW processor.
 
 A MediaExtension RAW processor needs to include an `EXAppExtensionAttributes` dictionary in its `Info.plist` file that contains the following keys and values:
 
-- [`kMEVideoDecoderClassImplementationIDKey`](kmevideodecoderclassimplementationidkey.md): The identifier for the RAW processor. Format similarly to the bundle identifier. The key is the same as for video decoders.
+- [`kMERAWProcessorClassImplementationIDKey`](kmerawprocessorclassimplementationidkey.md): A string that uniquely identifies the RAW processor. Start this string with your reverse domain identifier, and for clarity, include `.rawprocessor.` and the name of the codec.
 - `EXExtensionPointIdentifier`: The extension point name for RAW processors. Set to the value for [`kMERAWProcessorExtensionPointName`](kmerawprocessorextensionpointname.md).
 - `EXPrincipalClass`: The name of the RAW processor factory class that conforms to the [`MERAWProcessorExtension`](merawprocessorextension.md) protocol.
-- [`kMEVideoDecoderObjectNameKey`](kmevideodecoderobjectnamekey.md): A user-readable string that describes RAW processor. This string is used for uniquely identifying RAW processors and possibly for debug logging but is typically not visible to users. The key is the same as for video decoders.
-- [`kMEVideoDecoderCodecInfoKey`](kmevideodecodercodecinfokey.md): An array of one or more dictionaries describing the formats that the RAW processor supports. The key is the same as for video decoders. Each dictionary must include the following keys: - [`kMEVideoDecoderCodecTypeKey`](kmevideodecodercodectypekey.md): A string describing the four-character code of the codec associated with the video decoder. Each string should be exactly four characters long and use ASCII character set encoding. The key is the same as for video decoders.
-- [`kMEVideoDecoderCodecNameKey`](kmevideodecodercodecnamekey.md): A user-readable string describing the name of the codec format. This string might be displayed as format information for the video track in a player application. The key is the same as for video decoders.
+- [`kMERAWProcessorObjectNameKey`](kmerawprocessorobjectnamekey.md): A user-readable string that describes RAW processor. This string is used for uniquely identifying RAW processors and possibly for debug logging but is typically not visible to users.
+- [`kMERAWProcessorProcessorInfoKey`](kmerawprocessorprocessorinfokey.md): An array of one or more dictionaries describing the codecs that the RAW processor supports. Each dictionary must include the following keys: - [`kMERAWProcessorCodecTypeKey`](kmerawprocessorcodectypekey.md): A string describing the four-character code of the codec associated with the video decoder. Each string should be exactly four characters long and use ASCII character set encoding.
+- [`kMERAWProcessorCodecNameKey`](kmerawprocessorcodecnamekey.md): A user-readable string describing the name of the codec format. This string might be displayed as format information for the video track in a player application.
 
 ## Topics
 

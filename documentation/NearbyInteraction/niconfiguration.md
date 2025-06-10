@@ -30,6 +30,7 @@ The [`NIConfiguration`](niconfiguration.md) class serves as the common identity 
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
+- [NIDLTDOAConfiguration](nidltdoaconfiguration.md)
 - [NINearbyAccessoryConfiguration](ninearbyaccessoryconfiguration.md)
 - [NINearbyPeerConfiguration](ninearbypeerconfiguration.md)
 ### Conforms To

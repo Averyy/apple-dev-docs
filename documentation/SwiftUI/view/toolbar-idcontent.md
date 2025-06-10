@@ -1,6 +1,6 @@
 # toolbar(id:content:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Populates the toolbar or navigation bar with the specified items, allowing for user customization.
@@ -120,6 +120,8 @@ When you add the toolbar commands, the system adds a menu item to your app’s m
   The customization behavior of customizable toolbar content.
 - [struct ToolbarCustomizationOptions](toolbarcustomizationoptions.md)
   Options that influence the default customization behavior of customizable toolbar content.
+- [struct SearchToolbarBehavior](searchtoolbarbehavior.md)
+  The behavior of a search field in a toolbar.
 
 
 ---

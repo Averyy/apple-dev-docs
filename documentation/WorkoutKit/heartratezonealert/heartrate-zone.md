@@ -1,6 +1,6 @@
 # heartRate(zone:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 Returns an alert for the specified heart rate zone.

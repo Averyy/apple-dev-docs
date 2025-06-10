@@ -15,7 +15,7 @@ A string of attributed text.
 
 ```swift
 @NSCopying
-@MainActor var attributedText: NSAttributedString? { get set }
+var attributedText: NSAttributedString? { get set }
 ```
 
 #### Discussion

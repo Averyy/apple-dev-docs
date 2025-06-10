@@ -1,6 +1,6 @@
 # Implementing Plugins (Legacy)
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 ## Topics
 

@@ -55,6 +55,8 @@ You can use this class to modify the search queries for the font descriptors use
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSMutableCopying](../Foundation/NSMutableCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -50,8 +50,6 @@ The example above specifies [`trailing`](alignment/trailing.md) alignment for th
 
 > ❗ **Important**: A grid row behaves like a [`Group`](group.md) if you create it outside of a grid.
 
-A grid row behaves like a [`Group`](group.md) if you create it outside of a grid.
-
 To override column alignment, use [`gridColumnAlignment(_:)`](view/gridcolumnalignment(_:).md). To override alignment for a single cell, use [`gridCellAnchor(_:)`](view/gridcellanchor(_:).md).
 
 ## Parameters

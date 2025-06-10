@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes a request for an unlock token.
+A response from the device after it processes the command to request an unlock token from a device.
 
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,7 +17,7 @@ object RequestUnlockTokenResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object RequestUnlockTokenResponse.ErrorChainItem](requestunlocktokenresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 

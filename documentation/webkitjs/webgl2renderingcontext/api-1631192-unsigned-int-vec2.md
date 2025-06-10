@@ -1,6 +1,6 @@
 # UNSIGNED_INT_VEC2
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

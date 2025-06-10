@@ -1,6 +1,6 @@
 # rectPreservedDuringLiveResize
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The rectangle identifying the portion of your view that did not change during a live resize operation.
@@ -39,4 +39,4 @@ If your view does not support content preservation during live resizing, the rec
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsview/rectpreservedduringliveresize)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsview/rectpreservedduringliveresize)*

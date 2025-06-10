@@ -1,6 +1,6 @@
 # automaticTextOnly
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An option that enables all interaction types except image subjects and Visual Look Up.

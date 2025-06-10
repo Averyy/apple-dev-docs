@@ -1,6 +1,6 @@
 # evaluate(_:type:in:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

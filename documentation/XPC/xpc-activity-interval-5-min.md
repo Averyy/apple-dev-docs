@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_INTERVAL_5_MIN
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A constant that represents a 5-minute time interval.

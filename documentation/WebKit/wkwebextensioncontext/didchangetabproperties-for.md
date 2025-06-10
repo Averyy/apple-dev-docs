@@ -1,6 +1,6 @@
 # didChangeTabProperties(_:for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called by the app when the properties of a tab are changed to fire appropriate events with only this extension.

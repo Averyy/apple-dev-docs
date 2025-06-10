@@ -20,7 +20,7 @@ init(role: UISceneSession.Role = .windowApplication, userActivity: NSUserActivit
 
 #### Discussion
 
-Create an activation request with this method when you want the system to activate a scene session appropriate for the `role` and `userActivity` you provide. The system activates an existing scene session when the scene session’s [`role`](uiscenesession/role-swift.property.md) matches the [`role`](uiscenesessionactivationrequest-swift.struct/role.md) you request, and the user activity’s [`targetContentIdentifier`](https://developer.apple.com/documentation/foundation/nsuseractivity/3238062-targetcontentidentifier) satisfies the scene’s [`activationConditions`](uiscene/activationconditions.md). Otherwise, the system activates a new scene session.
+Create an activation request with this method when you want the system to activate a scene session appropriate for the `role` and `userActivity` you provide. The system activates an existing scene session when the scene session’s [`role`](uiscenesession/role-swift.property.md) matches the [`role`](uiscenesessionactivationrequest-swift.struct/role.md) you request, and the user activity’s [`targetContentIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/targetContentIdentifier) satisfies the scene’s [`activationConditions`](uiscene/activationconditions.md). Otherwise, the system activates a new scene session.
 
 ## Parameters
 

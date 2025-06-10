@@ -1,6 +1,6 @@
 # deviceName
 
-**Framework**: Gamekit  
+**Framework**: GameKit  
 **Kind**: property
 
 The name of the device that the player uses to save the game.

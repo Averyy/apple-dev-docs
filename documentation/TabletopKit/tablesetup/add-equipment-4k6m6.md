@@ -3,6 +3,8 @@
 **Framework**: TabletopKit  
 **Kind**: method
 
+Add the given equipment to the table setup.
+
 **Availability**:
 - visionOS 2.0+
 
@@ -12,9 +14,14 @@
 mutating func add(equipment: some Sequence)
 ```
 
+## Parameters
+
+- `equipment`: The collection of equipment to add.
+
 ## See Also
 
 - [func add(equipment: some Equipment)](tablesetup/add(equipment:)-29pef.md)
+  Add the given equipment to the table setup.
 - [func add(equipment: some EntityEquipment)](tablesetup/add(equipment:)-24tv6.md)
 - [func add(equipment: some Sequence)](tablesetup/add(equipment:)-9syh2.md)
 

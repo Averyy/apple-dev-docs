@@ -1,6 +1,6 @@
 # UIDatePicker
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A control for inputting date and time values.
@@ -155,6 +155,7 @@ For further information about making iOS controls accessible, see the [`Accessib
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)
@@ -197,4 +198,4 @@ For further information about making iOS controls accessible, see the [`Accessib
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uidatepicker)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uidatepicker)*

@@ -47,6 +47,7 @@ struct MyClippedView: View {
 ### Conforms To
 - [Animatable](animatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Shape](shape.md)
 - [View](view.md)
 

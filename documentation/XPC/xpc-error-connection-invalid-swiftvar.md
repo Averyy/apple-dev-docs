@@ -1,6 +1,6 @@
 # XPC_ERROR_CONNECTION_INVALID
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 An error that sends to the connection’s event handler to indicate that the connection is no longer usable.

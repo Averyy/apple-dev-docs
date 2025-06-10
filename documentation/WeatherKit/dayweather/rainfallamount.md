@@ -1,6 +1,6 @@
 # rainfallAmount
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The amount of liquid precipitation for the day.

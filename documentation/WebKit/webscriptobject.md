@@ -1,6 +1,6 @@
 # WebScriptObject
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 A `WebScriptObject` object is an Objective-C wrapper for a scripting object passed to your application from the scripting environment.
@@ -16,7 +16,7 @@ class WebScriptObject
 
 #### Overview
 
-You can not create a `WebScriptObject` object directly. You get a window `WebScriptObject` object by sending [`windowScriptObject`](webview/windowscriptobject.md) to your `WebView` object.
+You can not create a `WebScriptObject` object directly. You get a window `WebScriptObject` object by sending [`windowScriptObject`](webview-swift.class/windowscriptobject.md) to your `WebView` object.
 
 You can use key-value coding methods—for example, `setValue:forKey:` and `valueForKey:`—to get and set properties of a `WebScriptObject` object. You can also access properties by index using the [`setWebScriptValueAt(_:value:)`](webscriptobject/setwebscriptvalueat(_:value:).md) and [`webScriptValue(at:)`](webscriptobject/webscriptvalue(at:).md) methods. Use the [`removeWebScriptKey(_:)`](webscriptobject/removewebscriptkey(_:).md) method to remove a scripting object property.
 

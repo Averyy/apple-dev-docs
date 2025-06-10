@@ -1,6 +1,6 @@
 # onPencilSqueeze(perform:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Adds an action to perform when the user squeezes their Apple Pencil.

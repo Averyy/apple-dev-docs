@@ -1,6 +1,6 @@
 # observation
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An object that contains details about the location and content of text and glyphs in an image.

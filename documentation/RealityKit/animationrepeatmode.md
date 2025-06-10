@@ -10,6 +10,7 @@ Options that determine whether an animation replays after completion.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -40,17 +41,6 @@ clip.repeatMode = .repeat
   A mode that reverses the animation after reaching the end or the beginning.
 - [AnimationRepeatMode.none](animationrepeatmode/none.md)
   An option that determines the animation doesn’t repeat.
-### Comparing repeat modes
-- [static func == (AnimationRepeatMode, AnimationRepeatMode) -> Bool](animationrepeatmode/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](animationrepeatmode/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](animationrepeatmode/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](animationrepeatmode/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](animationrepeatmode/equatable-implementations.md)
 
 ## Relationships
 

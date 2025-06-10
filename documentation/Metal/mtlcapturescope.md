@@ -47,6 +47,9 @@ For more information about frame capture, see [`Metal debugger`](https://develop
   The device object from which you created the capture scope.
 - [var commandQueue: (any MTLCommandQueue)?](mtlcapturescope/commandqueue.md)
   The command queue that this capture scope uses to limit which commands are recorded.
+### Instance Properties
+- [var mtl4CommandQueue: (any MTL4CommandQueue)?](mtlcapturescope/mtl4commandqueue.md)
+  If set, this scope will only capture Metal commands from the associated Metal 4 command queue. Defaults to nil (all command queues from the associated device are captured).
 
 ## Relationships
 

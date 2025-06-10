@@ -128,4 +128,4 @@ Stopping background activity
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsbackgroundactivityscheduler)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsbackgroundactivityscheduler)*

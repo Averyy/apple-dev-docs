@@ -1,6 +1,6 @@
 # repeatForever(_:)
 
-**Framework**: Spritekit  
+**Framework**: SpriteKit  
 **Kind**: method
 
 Creates an action that repeats another action forever.

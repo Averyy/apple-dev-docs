@@ -1,6 +1,6 @@
 # TEST_CALLBACK_FUNCTION
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: tdef
 
 **Availability**:

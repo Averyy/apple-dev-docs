@@ -1,6 +1,6 @@
 # xpc_get_type(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the type of an object.

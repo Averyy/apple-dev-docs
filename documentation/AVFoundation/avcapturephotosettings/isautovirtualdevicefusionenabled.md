@@ -1,6 +1,6 @@
 # isAutoVirtualDeviceFusionEnabled
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that specifies whether to use automatic virtual-device image fusion.

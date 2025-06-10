@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Called when the provider’s audio session is activated.
+Tells the delegate that the app activated the conversation’s audio session.
 
 **Availability**:
 - iOS 17.4+
@@ -19,10 +19,21 @@ Called when the provider’s audio session is activated.
 func conversationManager(_ manager: ConversationManager, didActivate audioSession: AVAudioSession)
 ```
 
+## Mentions
+
+- [Initiating VoIP conversations with LiveCommunicationKit](initiating-voip-conversations-with-livecommunicationkit.md)
+
 ## Parameters
 
-- `manager`: The   that has requested the   to be performed.
-- `audioSession`: The audio session that was activated.
+- `manager`: A conversation manager informing the delegate that the app activated the audio session.
+- `audioSession`: The audio session that the app activated.
+
+## See Also
+
+- [func conversationManager(ConversationManager, conversationChanged: Conversation)](conversationmanagerdelegate/conversationmanager(_:conversationchanged:).md)
+  Tells the delegate that a conversation changed.
+- [func conversationManager(ConversationManager, didDeactivate: AVAudioSession)](conversationmanagerdelegate/conversationmanager(_:diddeactivate:).md)
+  Tells the delegate that the app deactivated a conversation’s audio session..
 
 
 ---

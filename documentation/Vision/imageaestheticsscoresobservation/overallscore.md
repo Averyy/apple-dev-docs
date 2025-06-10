@@ -3,7 +3,7 @@
 **Framework**: Vision  
 **Kind**: property
 
-A score which incorporates aesthetic score, failure score and utility labels.
+A score which incorporates aesthetic score, failure score, and utility labels.
 
 **Availability**:
 - iOS 18.0+
@@ -21,14 +21,14 @@ let overallScore: Float
 
 #### Discussion
 
-`overallScore` is within the range [-1, 1] where 1 is most desirable and -1 is not desirable.
+This returns a value within the range of `-1` and `1`, where `-1` is least desirable and `1` is most desirable.
 
 ## See Also
 
 - [enum RequestDescriptor](requestdescriptor.md)
   A type that describes the request and revision combination.
 - [let isUtility: Bool](imageaestheticsscoresobservation/isutility.md)
-  A Boolean value that represents images that aren’t necessarily of poor image quality but may not have memorable or exciting content.
+  A Boolean value that represents images that are not necessarily of poor image quality, but may not have memorable or exciting content.
 
 
 ---

@@ -53,8 +53,6 @@ The `Toggle` in the example above spans the column that contains the font names 
 
 > ❗ **Important**: When you tell a cell to span multiple columns, the grid changes the merged cell to use anchor alignment, rather than the usual alignment guides. For information about the behavior of anchor alignment, see `View/gridCellAnchor(_:)`.
 
-When you tell a cell to span multiple columns, the grid changes the merged cell to use anchor alignment, rather than the usual alignment guides. For information about the behavior of anchor alignment, see `View/gridCellAnchor(_:)`.
-
 As a convenience you can cause a view to span all of the `Grid` columns by placing the view directly in the content closure of the `Grid`, outside of a `GridRow`, and omitting the modifier. To do the opposite and include more than one view in a cell, group the views using an appropriate layout container, like an `HStack`, so that they act as a single view.
 
 ## Parameters

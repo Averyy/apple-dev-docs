@@ -1,6 +1,6 @@
 # shared
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The shared [`XCTestObservationCenter`](xctestobservationcenter.md) singleton instance.

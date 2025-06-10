@@ -33,6 +33,8 @@ object CertificateUpdateRequest
   A response that contains a list of Certificates resources.
 - [type CertificateType](certificatetype.md)
   Literal values that represent types of signing certificates.
+- [object CertificatePassTypeIdLinkageResponse](certificatepasstypeidlinkageresponse.md)
+  A response body that contains the ID of a single related resource.
 
 
 ---

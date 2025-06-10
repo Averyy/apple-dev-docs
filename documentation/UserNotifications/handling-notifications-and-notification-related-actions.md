@@ -1,6 +1,6 @@
 # Handling notifications and notification-related actions
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Respond to user interactions with the system’s notification interfaces, including handling your app’s custom actions.
 
@@ -123,4 +123,4 @@ If you registered your app with PushKit, notifications targeting PushKit-types a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/handling-notifications-and-notification-related-actions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/handling-notifications-and-notification-related-actions)*

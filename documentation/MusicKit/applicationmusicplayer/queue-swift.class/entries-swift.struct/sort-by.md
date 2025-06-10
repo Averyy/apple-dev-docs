@@ -1,6 +1,6 @@
 # sort(by:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Sorts the collection in place, using the given predicate as the comparison between elements.

@@ -20,8 +20,6 @@ If a sample isn’t contiguous, spans more than one file, or is for some other r
 
 ## See Also
 
-- [static var errorDomain: String](meerror-swift.struct/errordomain-6dfr0.md)
-  The domain of the error.
 - [static var allocationFailure: MEError.Code](meerror-swift.struct/allocationfailure.md)
   An error code that indicates the extension can’t allocate memory.
 - [static var endOfStream: MEError.Code](meerror-swift.struct/endofstream.md)

@@ -1,6 +1,6 @@
 # xpc_array_set_date(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Inserts a date value into an array.

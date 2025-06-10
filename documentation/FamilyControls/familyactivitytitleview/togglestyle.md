@@ -1,6 +1,6 @@
 # toggleStyle(_:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Sets the style for toggles in a view hierarchy.

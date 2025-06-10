@@ -1,6 +1,6 @@
 # WKGestureRecognizer
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 The base class for all other gesture recognizer classes.

@@ -1,6 +1,6 @@
 # DCAppAttestService
 
-**Framework**: Devicecheck  
+**Framework**: DeviceCheck  
 **Kind**: class
 
 A service that you use to validate the instance of your app running on a device.
@@ -80,4 +80,4 @@ For more information about how to support App Attest in your app, see [`Establis
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceCheck/dcappattestservice)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicecheck/dcappattestservice)*

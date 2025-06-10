@@ -40,6 +40,7 @@ A `LayoutDirectionBehavior` can be used with the `layoutDirectionBehavior` view 
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -49,6 +50,7 @@ A `LayoutDirectionBehavior` can be used with the `layoutDirectionBehavior` view 
   The layout direction associated with the current environment.
 - [enum LayoutDirection](layoutdirection.md)
   A direction in which SwiftUI can lay out content.
+- [struct LayoutRotationUnaryLayout](layoutrotationunarylayout.md)
 
 
 ---

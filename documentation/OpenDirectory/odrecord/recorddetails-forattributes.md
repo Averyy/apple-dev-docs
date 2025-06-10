@@ -1,6 +1,6 @@
 # recordDetails(forAttributes:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Returns a dictionary of attributes with their respective values.

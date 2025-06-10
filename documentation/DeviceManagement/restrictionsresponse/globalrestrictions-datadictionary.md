@@ -11,8 +11,6 @@ A dictionary that contains the global restrictions in effect.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,7 +20,7 @@ object RestrictionsResponse.GlobalRestrictions
 
 ## Topics
 
-### Commands
+### Objects
 - [object RestrictionsResponse.GlobalRestrictions.Intersection](restrictionsresponse/globalrestrictions-data.dictionary/intersection-data.dictionary.md)
   A dictionary that contains intersected restrictions.
 - [object RestrictionsResponse.GlobalRestrictions.RestrictedBool](restrictionsresponse/globalrestrictions-data.dictionary/restrictedbool-data.dictionary.md)
@@ -34,10 +32,10 @@ object RestrictionsResponse.GlobalRestrictions
 
 ## See Also
 
+- [object RestrictionsResponse.ErrorChainItem](restrictionsresponse/errorchainitem.md)
+  A dictionary that describes an error chain item.
 - [object RestrictionsResponse.ProfileRestrictions](restrictionsresponse/profilerestrictions-data.dictionary.md)
   A dictionary that contains restrictions from each profile.
-- [object RestrictionsResponse.ErrorChainItem](restrictionsresponse/errorchainitem.md)
-  A dictionary that describes an error chain.
 
 
 ---

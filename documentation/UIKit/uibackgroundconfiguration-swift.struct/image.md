@@ -42,6 +42,8 @@ Changing the image in this property doesn’t change the size of the view automa
   Generates the resolved background color for the specified tint color, using the background color and color transformer.
 - [var visualEffect: UIVisualEffect?](uibackgroundconfiguration-swift.struct/visualeffect.md)
   The visual effect that the configuration applies to the background.
+- [var shadowProperties: UIShadowProperties](uibackgroundconfiguration-swift.struct/shadowproperties.md)
+- [struct UIShadowProperties](uishadowproperties-swift.struct.md)
 - [var strokeColor: UIColor?](uibackgroundconfiguration-swift.struct/strokecolor.md)
   The color of the stroke.
 - [var strokeColorTransformer: UIConfigurationColorTransformer?](uibackgroundconfiguration-swift.struct/strokecolortransformer.md)
@@ -52,8 +54,6 @@ Changing the image in this property doesn’t change the size of the view automa
   The width of the stroke.
 - [var strokeOutset: CGFloat](uibackgroundconfiguration-swift.struct/strokeoutset.md)
   The outset (or inset, if negative) for the stroke.
-- [var imageContentMode: UIView.ContentMode](uibackgroundconfiguration-swift.struct/imagecontentmode.md)
-  A property that determines the layout of a background image in a view when its bounds change.
 
 
 ---

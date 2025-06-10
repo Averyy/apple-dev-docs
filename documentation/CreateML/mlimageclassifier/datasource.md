@@ -52,6 +52,7 @@ When you train a model using `MLImageClassifierBuilder`, you don’t initialize 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

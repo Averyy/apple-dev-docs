@@ -1,6 +1,6 @@
 # Loading and Displaying a Large Data Feed
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Consume data in the background, and lower memory use by batching imports and preventing duplicate records.
 

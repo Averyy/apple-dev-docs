@@ -40,7 +40,9 @@ The descriptor also allows you to set the [`bluetoothRange`](asdiscoverydescript
 - [var bluetoothCompanyIdentifier: ASBluetoothCompanyIdentifier](asdiscoverydescriptor/bluetoothcompanyidentifier.md)
   The accessory’s 16-bit Bluetooth Company Identifier.
 - [struct ASBluetoothCompanyIdentifier](asbluetoothcompanyidentifier.md)
-  The identifier of a Bluetooth accessory provider.
+  The type used to identify a Bluetooth accessory provider.
+- [struct ASBluetoothCompanyIdentifier](asbluetoothcompanyidentifier.md)
+  The type used to identify a Bluetooth accessory provider.
 - [var bluetoothManufacturerDataBlob: Data?](asdiscoverydescriptor/bluetoothmanufacturerdatablob.md)
   A byte buffer that matches the accessory’s Bluetooth manufacturer data.
 - [var bluetoothManufacturerDataMask: Data?](asdiscoverydescriptor/bluetoothmanufacturerdatamask.md)
@@ -51,6 +53,8 @@ The descriptor also allows you to set the [`bluetoothRange`](asdiscoverydescript
   The accessory’s Bluetooth service data mask.
 - [var bluetoothNameSubstring: String?](asdiscoverydescriptor/bluetoothnamesubstring.md)
   The accessory’s over-the-air Bluetooth name substring.
+- [var bluetoothNameSubstringCompareOptions: NSString.CompareOptions](asdiscoverydescriptor/bluetoothnamesubstringcompareoptions.md)
+  The accessory’s over-the-air Bluetooth name substring compare options.
 - [var bluetoothServiceUUID: CBUUID?](asdiscoverydescriptor/bluetoothserviceuuid.md)
   The accessory’s Bluetooth service UUID.
 - [var bluetoothRange: ASDiscoveryDescriptor.Range](asdiscoverydescriptor/bluetoothrange.md)
@@ -67,9 +71,19 @@ The descriptor also allows you to set the [`bluetoothRange`](asdiscoverydescript
   Options supported by an accessory.
 - [ASAccessory.SupportOptions](asaccessory/supportoptions.md)
   Options of discoverable accessories.
-### Instance Properties
-- [var bluetoothNameSubstringCompareOptions: NSString.CompareOptions](asdiscoverydescriptor/bluetoothnamesubstringcompareoptions.md)
-  The accessory’s over-the-air Bluetooth name substring compare options.
+### Specifying Wi-Fi Aware properties
+- [var wifiAwareServiceName: String?](asdiscoverydescriptor/wifiawareservicename.md)
+  The accessory’s Wi-Fi Aware’s service name if available.
+- [var wifiAwareServiceRole: ASDiscoveryDescriptor.WiFiAwareServiceRole](asdiscoverydescriptor/wifiawareservicerole-swift.property.md)
+  The role of the accessory’s Wi-Fi Aware’s service.
+- [ASDiscoveryDescriptor.WiFiAwareServiceRole](asdiscoverydescriptor/wifiawareservicerole-swift.enum.md)
+  A type that defines the role of an accessory’s Wi-Fi Aware’s service.
+- [var wifiAwareModelNameMatch: ASPropertyCompareString?](asdiscoverydescriptor/wifiawaremodelnamematch.md)
+  The accessory’s Wi-Fi Aware model name and matching options.
+- [var wifiAwareVendorNameMatch: ASPropertyCompareString?](asdiscoverydescriptor/wifiawarevendornamematch.md)
+  The accessory’s Wi-Fi Aware vendor name  and matching options.
+- [class ASPropertyCompareString](aspropertycomparestring.md)
+  A type that specifies how to filter a property against a given string and comparison options.
 
 ## Relationships
 
@@ -83,6 +97,7 @@ The descriptor also allows you to set the [`bluetoothRange`](asdiscoverydescript
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,0 +1,32 @@
+# navigationSubtitle(_:)
+
+**Framework**: FinanceKitUI  
+**Kind**: method
+
+Configures the view’s subtitle for purposes of navigation, using a string.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 14.0+
+- macOS 11.0+
+
+## Declaration
+
+```swift
+nonisolated
+func navigationSubtitle<S>(_ subtitle: S) -> some View where S : StringProtocol
+```
+
+#### Discussion
+
+A view’s navigation subtitle is used to provide additional contextual information alongside the navigation title. On macOS, the primary destination’s subtitle is displayed with the navigation title in the titlebar. On iOS and iPadOS, the subtitle is displayed with the navigation title in the navigation bar.
+
+## Parameters
+
+- `title`: The subtitle to display.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/financekitui/transactionpicker/navigationsubtitle(_:)-9vd0y)*

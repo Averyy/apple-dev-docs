@@ -1,6 +1,6 @@
 # labelsHidden()
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Hides the labels of any controls contained within this view.

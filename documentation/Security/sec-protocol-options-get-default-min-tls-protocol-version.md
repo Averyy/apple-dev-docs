@@ -25,7 +25,7 @@ The default minimum TLS version.
 #### Discussion
 
 ```None
-  Get the system default minimum TLS protocol version.
+ Get the system default minimum TLS protocol version.
 ```
 
 

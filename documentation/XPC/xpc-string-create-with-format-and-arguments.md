@@ -1,6 +1,6 @@
 # xpc_string_create_with_format_and_arguments(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates an XPC object that represents a C-string that the specified format string and argument list pointer generate.

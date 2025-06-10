@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_Depth
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The pixel depth of the encoded video.

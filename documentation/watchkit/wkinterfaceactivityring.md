@@ -1,6 +1,6 @@
 # WKInterfaceActivityRing
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A view that displays data from a HealthKit activity summary object.
@@ -38,9 +38,9 @@ To display data for a ring, the [`HKActivitySummary`](https://developer.apple.co
 
 | Ring | Value property | Goal property |
 | --- | --- | --- |
-| Move | [`activeEnergyBurned`](https://developer.apple.com/documentation/healthkit/hkactivitysummary/1615772-activeenergyburned) | [`activeEnergyBurnedGoal`](https://developer.apple.com/documentation/healthkit/hkactivitysummary/1615291-activeenergyburnedgoal) |
-| Exercise | [`appleExerciseTime`](https://developer.apple.com/documentation/healthkit/hkactivitysummary/1615266-appleexercisetime) | [`appleExerciseTimeGoal`](https://developer.apple.com/documentation/healthkit/hkactivitysummary/1615409-appleexercisetimegoal) |
-| Stand | [`appleStandHours`](https://developer.apple.com/documentation/healthkit/hkactivitysummary/1615636-applestandhours) | [`appleStandHoursGoal`](https://developer.apple.com/documentation/healthkit/hkactivitysummary/1615113-applestandhoursgoal) |
+| Move | [`activeEnergyBurned`](https://developer.apple.com/documentation/HealthKit/HKActivitySummary/activeEnergyBurned) | [`activeEnergyBurnedGoal`](https://developer.apple.com/documentation/HealthKit/HKActivitySummary/activeEnergyBurnedGoal) |
+| Exercise | [`appleExerciseTime`](https://developer.apple.com/documentation/HealthKit/HKActivitySummary/appleExerciseTime) | [`appleExerciseTimeGoal`](https://developer.apple.com/documentation/HealthKit/HKActivitySummary/appleExerciseTimeGoal) |
+| Stand | [`appleStandHours`](https://developer.apple.com/documentation/HealthKit/HKActivitySummary/appleStandHours) | [`appleStandHoursGoal`](https://developer.apple.com/documentation/HealthKit/HKActivitySummary/appleStandHoursGoal) |
 
 The activity ring view colors a percentage of each ring based on these properties, as shown here:
 

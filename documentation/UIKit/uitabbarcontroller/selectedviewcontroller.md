@@ -1,6 +1,6 @@
 # selectedViewController
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The view controller associated with the currently selected tab item.
@@ -29,6 +29,7 @@ In iOS 3.0 and later, you can use this property to select any of the view contro
 
 ## See Also
 
+- [var selectedTab: UITab?](uitabbarcontroller/selectedtab.md)
 - [var selectedIndex: Int](uitabbarcontroller/selectedindex.md)
   The index of the view controller associated with the currently selected tab item.
 

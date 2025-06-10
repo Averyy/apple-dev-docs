@@ -1,6 +1,6 @@
 # WKMediaCaptureState
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 An enumeration that describes whether a media device, like a camera or microphone, is currently capturing audio or video.
@@ -38,6 +38,7 @@ enum WKMediaCaptureState
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

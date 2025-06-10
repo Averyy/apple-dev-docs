@@ -20,8 +20,6 @@ var rollingPeriod: ENIntervalNumber { get set }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 The value of this property is the number of 10-minute windows between key rolling.
 
 ## See Also

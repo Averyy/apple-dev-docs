@@ -1,6 +1,6 @@
 # Using voice processing
 
-**Framework**: Avfaudio
+**Framework**: AVFAudio
 
 Add voice-processing capabilities to your app by using audio engine.
 
@@ -27,4 +27,4 @@ Before you run the sample code project in Xcode, ensure you’re using iOS 17 or
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/using-voice-processing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/using-voice-processing)*

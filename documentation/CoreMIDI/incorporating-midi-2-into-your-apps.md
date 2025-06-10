@@ -1,6 +1,6 @@
 # Incorporating MIDI 2 into your apps
 
-**Framework**: Coremidi
+**Framework**: Core MIDI
 
 Add precision and improve musical control for your MIDI apps.
 
@@ -151,4 +151,4 @@ The receiver target creates a Core MIDI client, and when the user presses the Cr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreMIDI/incorporating-midi-2-into-your-apps)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coremidi/incorporating-midi-2-into-your-apps)*

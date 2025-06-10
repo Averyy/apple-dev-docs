@@ -1,11 +1,14 @@
 # frameWidth
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 The width of a source frame in pixels.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
 
 ## Declaration
@@ -22,8 +25,6 @@ The maximum value is 8192 pixels for macOS, and 4096 pixels for iOS.
 
 - [var frameHeight: Int](vtmotionblurconfiguration/frameheight.md)
   The height of a source frame in pixels.
-- [var frameSupportedPixelFormats: [NSNumber]](vtmotionblurconfiguration/framesupportedpixelformats.md)
-  A list of source frame supported pixel formats for the current configuration.
 - [var destinationPixelBufferAttributes: [String : any Sendable]](vtmotionblurconfiguration/destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
 - [var sourcePixelBufferAttributes: [String : any Sendable]](vtmotionblurconfiguration/sourcepixelbufferattributes.md)

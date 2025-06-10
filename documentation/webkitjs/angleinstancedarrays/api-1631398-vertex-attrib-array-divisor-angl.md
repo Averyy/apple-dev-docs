@@ -1,6 +1,6 @@
 # VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

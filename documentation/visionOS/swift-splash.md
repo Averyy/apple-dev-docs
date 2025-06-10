@@ -1,6 +1,6 @@
 # Swift Splash
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Use RealityKit to create an interactive ride in visionOS.
 

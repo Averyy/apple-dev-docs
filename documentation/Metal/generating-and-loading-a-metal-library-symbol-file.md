@@ -94,4 +94,4 @@ Click Done when you finish adding your companion symbol files. Xcode imports the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/generating-and-loading-a-metal-library-symbol-file)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/generating-and-loading-a-metal-library-symbol-file)*

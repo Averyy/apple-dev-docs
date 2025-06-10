@@ -1,6 +1,6 @@
 # requestAccess(completionHandler:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Requests access to an external storage device on behalf of your app, which can present a dialog to a person on their device’s display.

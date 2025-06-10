@@ -77,6 +77,7 @@ To display a Look Around viewer a person can explore, apply a `lookAroundViewer`
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 

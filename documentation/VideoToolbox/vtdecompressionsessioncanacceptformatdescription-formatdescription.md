@@ -1,6 +1,6 @@
 # VTDecompressionSessionCanAcceptFormatDescription(_:formatDescription:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Indicates whether the session can decode frames with the given format description.

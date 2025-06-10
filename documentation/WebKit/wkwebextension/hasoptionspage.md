@@ -1,6 +1,6 @@
 # hasOptionsPage
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating whether the extension has an options page.

@@ -51,6 +51,8 @@ After you localize your app’s assets, you need to test the translations. Run y
 
 - [Localizing and varying text with a string catalog](localizing-and-varying-text-with-a-string-catalog.md)
   Use a string catalog to translate text, handle plurals, and vary the text your app displays on specific devices.
+- [Localizing Landmarks](localizing-landmarks.md)
+  Add localizations to the Landmarks sample code project.
 
 
 ---

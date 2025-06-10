@@ -1,6 +1,6 @@
 # setProperty(_:value:priority:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

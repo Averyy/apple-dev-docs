@@ -1,6 +1,6 @@
 # loadRangedAnnotations(parameters:continueOnFailure:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Loads training examples from a data frame containing annotations.

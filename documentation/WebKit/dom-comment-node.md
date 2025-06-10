@@ -1,6 +1,6 @@
 # DOM_COMMENT_NODE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

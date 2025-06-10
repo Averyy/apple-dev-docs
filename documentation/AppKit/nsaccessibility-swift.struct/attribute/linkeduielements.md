@@ -24,10 +24,13 @@ For example, the contents of a list item that are displayed in another pane or w
 - [static let allowedValues: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/allowedvalues.md)
   The allowed values in the slider (`NSArray`).
 - [static let alternateUIVisible: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/alternateuivisible.md)
+- [static let autoInteractableAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/autointeractableattribute.md)
+- [static let blockQuoteLevelAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/blockquotelevelattribute.md)
 - [static let cancelButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/cancelbutton.md)
   The element that represents the cancel button (`id`).
 - [static let children: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/children.md)
   The element’s child elements in the accessibility hierarchy (`NSArray`).
+- [static let childrenInNavigationOrderAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/childreninnavigationorderattribute.md)
 - [static let clearButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/clearbutton.md)
   The element that represents the clear button in a search field (`id`).
 - [static let closeButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/closebutton.md)
@@ -42,12 +45,6 @@ For example, the contents of a list item that are displayed in another pane or w
   The elements that represent the column titles (`NSArray`).
 - [static let columns: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/columns.md)
   The table’s columns (`NSArray`).
-- [static let containsProtectedContent: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/containsprotectedcontent.md)
-  A flag that indicates whether the object contains protected content ([`true`](https://developer.apple.com/documentation/swift/true)), or not ([`false`](https://developer.apple.com/documentation/swift/false)) (`NSNumber` as `boolValue`).
-- [static let contents: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/contents.md)
-  Elements that represent the contents in the current element, such as the document view of a scroll view (`NSArray`).
-- [static let criticalValue: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/criticalvalue.md)
-  The critical value in a level indicator (typically, `NSNumber`).
 
 
 ---

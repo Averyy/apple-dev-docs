@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: case
 
-The action failed to complete successfully.
+Indicates that the action failed.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,19 @@ The action failed to complete successfully.
 ```swift
 case failed(reason: String)
 ```
+
+## Parameters
+
+- `reason`: A string that describes why the action failed.
+
+## See Also
+
+- [ConversationAction.State.complete](conversationaction/state-swift.enum/complete.md)
+  The action finished successfully.
+- [ConversationAction.State.idle](conversationaction/state-swift.enum/idle.md)
+  The action has been created but hasn’t started.
+- [ConversationAction.State.running](conversationaction/state-swift.enum/running.md)
+  The action is currently processing.
 
 
 ---

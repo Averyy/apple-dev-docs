@@ -25,8 +25,6 @@ To customize a table view’s behavior without subclassing `NSTableView`, use th
 
 > ❗ **Important**:  It’s possible that your data source methods for populating the table view may be called before [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()) is called if the data source is specified in Interface Builder. You should defend against this by having the data source’s [`numberOfRows(in:)`](nstableviewdatasource/numberofrows(in:).md) method return `0` for the number of rows when the data source has not yet been configured. In [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()), when the data source is initialized you should always call `reloadData` on the table view.
 
- It’s possible that your data source methods for populating the table view may be called before [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()) is called if the data source is specified in Interface Builder. You should defend against this by having the data source’s [`numberOfRows(in:)`](nstableviewdatasource/numberofrows(in:).md) method return `0` for the number of rows when the data source has not yet been configured. In [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()), when the data source is initialized you should always call `reloadData` on the table view.
-
 ##### Subclassing
 
 Subclassing `NSTableView` is usually not necessary. Instead, you customize the table view using a delegate object (an object conforming to the [`NSTableViewDelegate`](nstableviewdelegate.md) protocol) and a data source object (conforming to the [`NSTableViewDataSource`](nstableviewdatasource.md) protocol), or by subclassing one of the following subcomponents: cells (when using [`NSCell`](nscell.md)-based table views), the row cell view or the row view (when using [`NSView`](nsview.md)-based table views), the table column class, or table column header classes.
@@ -351,6 +349,7 @@ Use the [`isEnabled`](nscontrol/isenabled.md) property to enable or disable the 
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

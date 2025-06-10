@@ -9,6 +9,7 @@ An abstract data class for a metric.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
+- macOS 10.15+
 - visionOS 1.0+
 
 ## Declaration
@@ -20,10 +21,10 @@ class MXMetric
 ## Topics
 
 ### Generate a report
+- [func dictionaryRepresentation() -> [AnyHashable : Any]](mxmetric/dictionaryrepresentation.md)
+  Returns the contents of a metric as a dictionary.
 - [func jsonRepresentation() -> Data](mxmetric/jsonrepresentation.md)
   Returns the contents of the metric in JSON format.
-- [func dictionaryRepresentation() -> [AnyHashable : Any]](mxmetric/dictionaryrepresentation.md)
-  Returns the contents of a metric as a Dictionary.
 
 ## Relationships
 
@@ -38,6 +39,7 @@ class MXMetric
 - [MXCPUMetric](mxcpumetric.md)
 - [MXCellularConditionMetric](mxcellularconditionmetric.md)
 - [MXDiskIOMetric](mxdiskiometric.md)
+- [MXDiskSpaceUsageMetric](mxdiskspaceusagemetric.md)
 - [MXDisplayMetric](mxdisplaymetric.md)
 - [MXGPUMetric](mxgpumetric.md)
 - [MXLocationActivityMetric](mxlocationactivitymetric.md)

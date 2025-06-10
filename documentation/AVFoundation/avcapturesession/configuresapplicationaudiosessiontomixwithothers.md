@@ -1,6 +1,6 @@
 # configuresApplicationAudioSessionToMixWithOthers
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that Indicates whether the capture session configures the app’s audio session to mix with others.
@@ -31,6 +31,8 @@ The default value is [`false`](https://developer.apple.com/documentation/swift/f
   A Boolean value that indicates whether the capture session uses the app’s shared audio session.
 - [var automaticallyConfiguresApplicationAudioSession: Bool](avcapturesession/automaticallyconfiguresapplicationaudiosession.md)
   A Boolean value that indicates whether the capture session automatically changes settings in the app’s shared audio session.
+- [var configuresApplicationAudioSessionForBluetoothHighQualityRecording: Bool](avcapturesession/configuresapplicationaudiosessionforbluetoothhighqualityrecording.md)
+  A Boolean value that indicates whether the capture session configures the app’s audio session for bluetooth high-quality recording.
 
 
 ---

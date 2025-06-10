@@ -1,6 +1,6 @@
 # UNTextInputNotificationResponse
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 The user’s response to an actionable notification, including any custom text that the user typed or dictated.

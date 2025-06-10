@@ -23,8 +23,6 @@ Accessing this property engages the layout engine to determine whether any other
 
 > ❗ **Important**:  This property should be used only for debugging constraint-based layout. Do not access this property in the shipping version of your app.
 
- This property should be used only for debugging constraint-based layout. Do not access this property in the shipping version of your app.
-
 ## See Also
 
 - [func constraintsAffectingLayout(for: NSLayoutConstraint.Orientation) -> [NSLayoutConstraint]](nsview/constraintsaffectinglayout(for:).md)

@@ -1,6 +1,6 @@
 # toolbar(id:content:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Populates the toolbar or navigation bar with the specified items, allowing for user customization.

@@ -1,6 +1,6 @@
 # webView(_:resource:didReceiveContentLength:from:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Invoked when some of the data for a given resource has arrived.

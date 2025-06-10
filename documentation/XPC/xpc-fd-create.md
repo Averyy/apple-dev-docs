@@ -1,6 +1,6 @@
 # xpc_fd_create(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates an XPC object that represents a POSIX file descriptor.
@@ -26,8 +26,6 @@ A new file descriptor object. `NULL` if sufficient memory could not be allocated
 This method performs the equivalent of a `dup(2)` on the descriptor, so it is safe to call `close(2)` on the descriptor after boxing it with a file descriptor object.
 
 > ❗ **Important**:  Pointer equality is the ONLY valid test for equality between two file descriptor objects. There is no reliable way to determine whether two file descriptors refer to the same inode with the same capabilities, so two file descriptor objects created from the same underlying file descriptor number will not compare equally with [`xpc_equal(_:_:)`](xpc_equal(_:_:).md). This is also true of a file descriptor object created using [`xpc_copy(_:)`](xpc_copy(_:).md) and the original.
-
- Pointer equality is the ONLY valid test for equality between two file descriptor objects. There is no reliable way to determine whether two file descriptors refer to the same inode with the same capabilities, so two file descriptor objects created from the same underlying file descriptor number will not compare equally with [`xpc_equal(_:_:)`](xpc_equal(_:_:).md). This is also true of a file descriptor object created using [`xpc_copy(_:)`](xpc_copy(_:).md) and the original.
 
 This also implies that two collections containing file descriptor objects cannot be equal unless the exact same object was inserted into both.
 

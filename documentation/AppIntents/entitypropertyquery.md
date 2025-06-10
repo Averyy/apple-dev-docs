@@ -8,10 +8,10 @@ An interface for locating entities by matching values against one or more of the
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -26,7 +26,7 @@ protocol EntityPropertyQuery : EntityQuery
 
 #### Overview
 
-`EntityPropertyQuery` provides a [`EntityQuery`](entityquery.md) the ability to query instances according to its traits as they are modeled through query properties and their corresponding comparators.
+`EntityPropertyQuery` provides an [`EntityQuery`](entityquery.md) with the ability to query instances according to its traits as they are modeled through query properties and their corresponding comparators.
 
 At runtime, [`entities(matching:mode:sortedBy:limit:)`](entitypropertyquery/entities(matching:mode:sortedby:limit:).md) receives an array of `ComparatorMappingType` instances - a type of your choice that represents the different comparator mappings given by the user - and is responsible for fetching entities matching those comparators.
 
@@ -111,6 +111,7 @@ struct MyPhotoQuery: EntityPropertyQuery {
 - [EntityQuery](entityquery.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

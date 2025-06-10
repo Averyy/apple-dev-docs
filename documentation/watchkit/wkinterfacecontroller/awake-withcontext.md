@@ -1,6 +1,6 @@
 # awake(withContext:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Initializes the interface controller with the specified context data.

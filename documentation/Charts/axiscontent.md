@@ -24,9 +24,9 @@ protocol AxisContent
 
 ### Instance Methods
 - [func compositingLayer() -> some AxisContent](axiscontent/compositinglayer.md)
-  Creates a compositing layer for the chart content.
+  Creates a compositing layer for the axis content.
 - [func compositingLayer<V>(style: (PlaceholderContentView<Self>) -> V) -> some AxisContent](axiscontent/compositinglayer(style:).md)
-  Creates a compositing layer for the chart content, and apply view modifiers to the compositing layer.
+  Creates a compositing layer for the axis content, and apply view modifiers to the compositing layer.
 
 ## Relationships
 

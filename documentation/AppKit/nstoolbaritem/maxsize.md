@@ -21,6 +21,8 @@ See [`Setting a Toolbar Item’s Size`](https://developer.apple.comhttps://devel
 
 ## See Also
 
+- [var allowsDuplicatesInToolbar: Bool](nstoolbaritem/allowsduplicatesintoolbar.md)
+  A Boolean value that indicates whether the toolbar item can appear more than once in a toolbar.
 - [var minSize: NSSize](nstoolbaritem/minsize.md)
   The toolbar item’s minimum size.
 

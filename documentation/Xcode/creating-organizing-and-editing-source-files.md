@@ -105,7 +105,12 @@ Xcode formats and displays the information as Quick Help when you view it.
 
 Xcode also formats Quick Help from multiline comments that begin with `/**` and end with `*/`. For more information about the Markup syntax for Quick Help, see [`Markup Formatting Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html#//apple_ref/doc/uid/TP40016497-CH2-SW1).
 
+## See Also
+
+- [Running code snippets using the playground macro](running-code-snippets-using-the-playground-macro.md)
+  Add playgrounds to your code that run and display results in the canvas.
+
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/creating-organizing-and-editing-source-files)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/creating-organizing-and-editing-source-files)*

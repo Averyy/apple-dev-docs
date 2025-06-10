@@ -6,6 +6,9 @@
 A delegate method the host view controller calls when an extension disconnects.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 13.0+
 
 ## Declaration

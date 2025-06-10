@@ -46,8 +46,6 @@ When you create an attributed string from Markdown, the system adds presentation
 
 > ❗ **Important**:  When reading or writing attributed strings, choose methods that return or throw an error, and check any errors you receive. Handling errors is the best way to detect issues with the import or export process and take corrective action.
 
- When reading or writing attributed strings, choose methods that return or throw an error, and check any errors you receive. Handling errors is the best way to detect issues with the import or export process and take corrective action.
-
 The methods for reading and writing common file formats also support document attributes. Document attributes aren’t part of the attributed string itself, but accompany the text when you save it to a file. When you read a file, the system returns any document attributes that it finds. Similarly, when you write an attributed string to a file, you can specify the attributes to include. For more information about document attributes, see [`NSAttributedString.DocumentAttributeKey`](nsattributedstring/documentattributekey.md) and [`NSAttributedString.DocumentReadingOptionKey`](nsattributedstring/documentreadingoptionkey.md).
 
 ##### System Framework Interoperability
@@ -181,6 +179,8 @@ The [`NSAttributedString`](nsattributedstring.md) class and its Core Foundation 
 ### Deprecated
 - [Deprecated Symbols](deprecated-symbols.md)
   Migrate your code away from using these symbols.
+### Initializers
+- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsattributedstring/init(pasteboardpropertylist:oftype:).md)
 
 ## Relationships
 

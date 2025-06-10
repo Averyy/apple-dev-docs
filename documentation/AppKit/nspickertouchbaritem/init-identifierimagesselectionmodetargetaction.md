@@ -13,7 +13,7 @@
 
 ```swift
 @MainActor
-convenience init(identifier: NSTouchBarItem.Identifier, images: [UIImage], selectionMode: NSPickerTouchBarItem.SelectionMode, target: Any?, action: Selector?)
+convenience init(identifier: NSTouchBarItem.Identifier, images: [NSImage], selectionMode: NSPickerTouchBarItem.SelectionMode, target: Any?, action: Selector?)
 ```
 
 ## See Also

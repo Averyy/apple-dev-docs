@@ -28,7 +28,7 @@ This property is not key value observable.
 
 ## See Also
 
-- [var sourcePixelBufferAttributes: [String : Any]?](avassetwriterinputtaggedpixelbuffergroupadaptor/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]?](avassetwriterinputtaggedpixelbuffergroupadaptor/sourcepixelbufferattributes.md)
   The attributes of buffers that the adaptor’s pixel buffer pool vends.
 
 

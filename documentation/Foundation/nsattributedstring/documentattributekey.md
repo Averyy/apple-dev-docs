@@ -40,8 +40,6 @@ The [`NSAttributedString.DocumentAttributeKey`](nsattributedstring/documentattri
   The document’s category.
 - [static let characterEncoding: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/characterencoding.md)
   The string encoding for the document.
-- [static let cocoaVersionDocumentAttribute: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/cocoaversiondocumentattribute.md)
-  The version of Cocoa that created the file.
 - [static let comment: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/comment.md)
   The document comments.
 - [static let company: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/company.md)
@@ -113,6 +111,8 @@ The [`NSAttributedString.DocumentAttributeKey`](nsattributedstring/documentattri
   Creates a document attribute key.
 - [init(rawValue: String)](nsattributedstring/documentattributekey/init(rawvalue:).md)
   Creates a document attribute key with the specified raw value.
+### Type Properties
+- [static let cocoaVersionDocumentAttribute: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/cocoaversion.md)
 
 ## Relationships
 
@@ -121,6 +121,7 @@ The [`NSAttributedString.DocumentAttributeKey`](nsattributedstring/documentattri
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

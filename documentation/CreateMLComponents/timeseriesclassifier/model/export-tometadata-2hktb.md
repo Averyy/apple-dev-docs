@@ -1,6 +1,6 @@
 # export(to:metadata:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Exports this temporal transformer as a CoreML model with user-supplied metadata.

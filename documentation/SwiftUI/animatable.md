@@ -1,83 +1,57 @@
-# Animatable
+# Animatable()
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: macro
 
-A type that describes how to animate a property of a view.
+A member and extension macro that, when applied to a struct, class or enum declaration, synthesizes the conformance to `Animatable` and its requirement, the `animatableData` property using the existing animatable properties of the type this macro is applied to.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
-protocol Animatable
+@attached
+(extension, conformances: Animatable) @attached(member, names: named(animatableData)) macro Animatable()
 ```
 
-## Topics
+#### Overview
 
-### Animating data
+```swift
+@Animatable
+struct CoolShape: Shape {
+    var width: CGFloat
+    var angle: Angle
+    @AnimatableIgnored var isOpaque: Bool
+
+    // ...
+}
+```
+
+In the above code, `animatableData` will be synthesized using `width` and `angle` properties of `CoolShape` structure.  Since changes to `isOpaque` property cannot be animated, it is annotated with `@AnimatableIgnored`.
+
+> **Note**: The `@Animatable` macro will not generate an `Animatable` conformance if the type already conforms to `Animatable`.
+
+> **Note**: It is only possible to attach `@Animatable` to types with properties.
+
+> **Note**: `@Animatable` will not include computed properties in the synthesized `animatableData`.
+
+## See Also
+
+- [macro AnimatableIgnored()](animatableignored().md)
+  An accessor macro that marks a property of a type to be excluded from the `animatableData` synthesis:
 - [var animatableData: Self.AnimatableData](animatable/animatabledata-6nydg.md)
   The data to animate.
 - [associatedtype AnimatableData : VectorArithmetic](animatable/animatabledata-swift.associatedtype.md)
   The type defining the data to animate.
 
-## Relationships
-
-### Inherited By
-- [AnimatableModifier](animatablemodifier.md)
-- [GeometryEffect](geometryeffect.md)
-- [InsettableShape](insettableshape.md)
-- [Layout](layout.md)
-- [Shape](shape.md)
-- [TextRenderer](textrenderer.md)
-- [VisualEffect](visualeffect.md)
-### Conforming Types
-- [Angle](angle.md)
-- [AnyLayout](anylayout.md)
-- [AnyShape](anyshape.md)
-- [ButtonBorderShape](buttonbordershape.md)
-- [Capsule](capsule.md)
-- [Circle](circle.md)
-- [Color.Resolved](color/resolved.md)
-- [ContainerRelativeShape](containerrelativeshape.md)
-- [EdgeInsets](edgeinsets.md)
-- [EdgeInsets3D](edgeinsets3d.md)
-- [Ellipse](ellipse.md)
-- [EmptyVisualEffect](emptyvisualeffect.md)
-- [GridLayout](gridlayout.md)
-- [HStackLayout](hstacklayout.md)
-- [OffsetShape](offsetshape.md)
-- [Path](path.md)
-- [Rectangle](rectangle.md)
-- [RectangleCornerRadii](rectanglecornerradii.md)
-- [RotatedShape](rotatedshape.md)
-- [RoundedRectangle](roundedrectangle.md)
-- [ScaledShape](scaledshape.md)
-- [StrokeStyle](strokestyle.md)
-- [TransformedShape](transformedshape.md)
-- [UnevenRoundedRectangle](unevenroundedrectangle.md)
-- [UnitPoint](unitpoint.md)
-- [UnitPoint3D](unitpoint3d.md)
-- [VStackLayout](vstacklayout.md)
-- [ZStackLayout](zstacklayout.md)
-
-## See Also
-
-- [struct AnimatablePair](animatablepair.md)
-  A pair of animatable values, which is itself animatable.
-- [protocol VectorArithmetic](vectorarithmetic.md)
-  A type that can serve as the animatable data of an animatable type.
-- [struct EmptyAnimatableData](emptyanimatabledata.md)
-  An empty type for animatable data.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/animatable)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/animatable())*

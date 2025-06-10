@@ -1,6 +1,6 @@
 # insert(_:beforeIndex:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: method  
 **Required**: Yes
 
@@ -11,6 +11,7 @@ Adds the specified entity to this collection directly before the entity at the g
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

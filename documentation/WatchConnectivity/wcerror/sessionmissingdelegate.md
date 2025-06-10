@@ -1,6 +1,6 @@
 # sessionMissingDelegate
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An error indicating that the WatchKit extension doesn’t have a valid extension delegate to process events.

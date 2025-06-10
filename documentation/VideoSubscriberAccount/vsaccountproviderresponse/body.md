@@ -1,6 +1,6 @@
 # body
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The raw response from the provider.

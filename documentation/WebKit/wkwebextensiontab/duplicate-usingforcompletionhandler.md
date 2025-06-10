@@ -1,6 +1,6 @@
 # duplicate(using:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to duplicate the tab.

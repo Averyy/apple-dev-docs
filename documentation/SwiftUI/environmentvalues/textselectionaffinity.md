@@ -36,6 +36,8 @@ You can configure the selection affinity on a given hierarchy by using the [`tex
   Sets the direction of a selection or cursor relative to a text character.
 - [enum TextSelectionAffinity](textselectionaffinity.md)
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
+- [struct AttributedTextSelection](attributedtextselection.md)
+  Represents a selection of attributed text.
 
 
 ---

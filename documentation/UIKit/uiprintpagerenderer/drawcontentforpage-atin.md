@@ -14,7 +14,6 @@ Draws the content of a page.
 ## Declaration
 
 ```swift
-@MainActor
 func drawContentForPage(at pageIndex: Int, in contentRect: CGRect)
 ```
 

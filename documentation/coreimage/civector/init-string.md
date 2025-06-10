@@ -1,0 +1,50 @@
+# init(string:)
+
+**Framework**: Core Image  
+**Kind**: init
+
+Initializes a vector with values provided in a string representation.
+
+**Availability**:
+- iOS 5.0+
+- iPadOS 5.0+
+- Mac Catalyst 13.1+
+- macOS 10.4+
+- tvOS ?+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+convenience init(string representation: String)
+```
+
+## Parameters
+
+- `representation`: A string that is in one of the formats returned by the   method.
+
+## See Also
+
+- [var stringRepresentation: String](civector/stringrepresentation.md)
+  The string representation of the vector.
+- [init(values: UnsafePointer<CGFloat>, count: Int)](civector/init(values:count:).md)
+  Initializes a vector with the provided values.
+- [convenience init(x: CGFloat)](civector/init(x:).md)
+  Initializes the first position of a vector with the provided values.
+- [convenience init(x: CGFloat, y: CGFloat)](civector/init(x:y:).md)
+  Initializes the first two positions of a vector with the provided values.
+- [convenience init(x: CGFloat, y: CGFloat, z: CGFloat)](civector/init(x:y:z:).md)
+  Initializes the first three positions of a vector with the provided values.
+- [convenience init(x: CGFloat, y: CGFloat, z: CGFloat, w: CGFloat)](civector/init(x:y:z:w:).md)
+  Initializes four positions of a vector with the provided values.
+- [convenience init(cgAffineTransform: CGAffineTransform)](civector/init(cgaffinetransform:).md)
+  Initializes a vector that is initialized with values provided by a `CGAffineTransform` structure.
+- [convenience init(cgPoint: CGPoint)](civector/init(cgpoint:).md)
+  Initializes a vector that is initialized with values provided by a `CGPoint` structure.
+- [convenience init(cgRect: CGRect)](civector/init(cgrect:).md)
+  Initializes a vector that is initialized with values provided by a `CGRect` structure.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreimage/civector/init(string:))*

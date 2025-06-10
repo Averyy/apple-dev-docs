@@ -19,8 +19,6 @@ Create an array that contains one dictionary for each allowed ad network, using 
 
 > ❗ **Important**:  Lowercase the ad network ID string; otherwise, the system doesn’t recognize it as valid.
 
- Lowercase the ad network ID string; otherwise, the system doesn’t recognize it as valid.
-
 The following example shows an array with two dictionaries that represent the example ad network IDs `example100.skadnetwork` and `example200.skadnetwork`:
 
 ```xml

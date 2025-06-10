@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: init
 
-Creates a new `UnmergeConversationAction`.
+Creates an action that separates two previously merged conversations.
 
 **Availability**:
 - iOS 17.4+
@@ -20,7 +20,7 @@ init(conversationUUID: UUID)
 
 ## Parameters
 
-- `conversationUUID`: The unique identifier of the   that represents 2 merged  s.
+- `conversationUUID`: The unique identifier of the conversation that represents two previously merged conversations.
 
 
 ---

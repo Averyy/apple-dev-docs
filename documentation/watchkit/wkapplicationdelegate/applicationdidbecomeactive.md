@@ -1,6 +1,6 @@
 # applicationDidBecomeActive()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Tells the delegate that the watchOS app is visible and processing events.

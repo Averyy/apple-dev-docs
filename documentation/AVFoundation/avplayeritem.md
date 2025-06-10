@@ -25,11 +25,12 @@ class AVPlayerItem
 
 - [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
 - [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
+- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
 - [Selecting Subtitles and Alternative Audio Tracks](selecting-subtitles-and-alternative-audio-tracks.md)
 
 #### Overview
 
-A player item stores a reference to an [`AVAsset`](avasset.md) object, which represents the media to play. If you require inspecting an asset before you enqueue it for playback, call its [`load(_:)`](avasynchronouskeyvalueloading/load(_:).md) method to retrieve the values of one or more properties. Alternatively, you can tell the player item to automatically load the required properties by passing them to its [`init(asset:automaticallyLoadedAssetKeys:)`](avplayeritem/init(asset:automaticallyloadedassetkeys:)-5czjh.md) initializer. When the player item is ready to play, the asset properties you request are ready to use.
+A player item stores a reference to an [`AVAsset`](avasset.md) object, which represents the media to play. If you require inspecting an asset before you enqueue it for playback, call its `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the values of one or more properties. Alternatively, you can tell the player item to automatically load the required properties by passing them to its [`init(asset:automaticallyLoadedAssetKeys:)`](avplayeritem/init(asset:automaticallyloadedassetkeys:)-5czjh.md) initializer. When the player item is ready to play, the asset properties you request are ready to use.
 
 ## Topics
 
@@ -108,8 +109,6 @@ A player item stores a reference to an [`AVAsset`](avasset.md) object, which rep
   An integrated timeline that represents the player item timing including its scheduled interstitial events.
 - [var automaticallyHandlesInterstitialEvents: Bool](avplayeritem/automaticallyhandlesinterstitialevents.md)
   A Boolean value that indicates whether the player item automatically plays interstitial events according to server-side directives.
-- [var translatesPlayerInterstitialEvents: Bool](avplayeritem/translatesplayerinterstitialevents.md)
-  A Boolean value that indicates whether the player translates interstitial events to interstitial time ranges.
 - [var interstitialTimeRanges: [AVInterstitialTimeRange]](avplayeritem/interstitialtimeranges.md)
   An array of time ranges that identify interstitial content.
 - [var template: AVPlayerItem?](avplayeritem/template.md)
@@ -236,16 +235,6 @@ A player item stores a reference to an [`AVAsset`](avasset.md) object, which rep
   The duration the player should buffer media from the network ahead of the playhead to guard against playback disruption.
 - [var canUseNetworkResourcesForLiveStreamingWhilePaused: Bool](avplayeritem/canusenetworkresourcesforlivestreamingwhilepaused.md)
   A Boolean value that indicates whether the player item can use network resources to keep the playback state up to date while paused.
-### Configuring Player Items for AVKit
-- [var navigationMarkerGroups: [AVNavigationMarkersGroup]](avplayeritem/navigationmarkergroups.md)
-  The time marker groups that provide ways to navigate the player item’s content.
-- [var nextContentProposal: AVContentProposal?](avplayeritem/nextcontentproposal.md)
-  The item proposed to follow the current content.
-### Requesting Playback Authorization in tvOS
-- [func requestPlaybackRestrictionsAuthorization((Bool, (any Error)?) -> Void)](avplayeritem/requestplaybackrestrictionsauthorization(_:).md)
-  Determines whether this item is subject to parental restrictions, and, if so, prompts the user to enter the restrictions passcode.
-- [func cancelPlaybackRestrictionsAuthorizationRequest()](avplayeritem/cancelplaybackrestrictionsauthorizationrequest.md)
-  Cancels a pending authorization request and dismisses the passcode entry, if displayed.
 ### Managing Playback Authorization in macOS
 - [var isContentAuthorizedForPlayback: Bool](avplayeritem/iscontentauthorizedforplayback.md)
   A Boolean value that indicates whether the content has been authorized by the user.
@@ -274,6 +263,20 @@ A player item stores a reference to an [`AVAsset`](avasset.md) object, which rep
 ### Deprecated
 - [Deprecated Symbols](avplayeritem-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Instance Properties
+- [var preferredCustomMediaSelectionSchemes: [AVCustomMediaSelectionScheme]](avplayeritem/preferredcustommediaselectionschemes.md)
+  Indicates the AVCustomMediaSelectionSchemes of AVMediaSelectionGroups of the receiver’s asset with which an associated UI implementation should configure its interface for media selection.
+### Instance Methods
+- [func effectiveMediaPresentationSettings(for: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : Any]](avplayeritem/effectivemediapresentationsettings(for:).md)
+  Indicates the media presentation settings with media characteristics that are possessed by the currently selected AVMediaSelectionOption in the specified AVMediaSelectionGroup.
+- [func select(AVMediaPresentationSetting, for: AVMediaSelectionGroup)](avplayeritem/select(_:for:).md)
+  When the associated AVPlayer’s appliesMediaSelectionCriteriaAutomatically property is set to YES, configures the player item to prefer a particular presentation setting, replacing any previous preference for settings of the same media presentation selector.
+- [func selectMediaPresentationLanguage(String, for: AVMediaSelectionGroup)](avplayeritem/selectmediapresentationlanguage(_:for:).md)
+  When the associated AVPlayer’s appliesMediaSelectionCriteriaAutomatically property is set to YES, configures the player item to prefer a particular language, replacing any previous preference for available languages of the specified group’s custom media selection scheme.
+- [func selectedMediaPresentationLanguage(for: AVMediaSelectionGroup) -> String?](avplayeritem/selectedmediapresentationlanguage(for:).md)
+  Returns the selected media presentation language for the specified media selection group, if any language has previously been selected via use of -selectMediaPresentationLanguages:forMediaSelectionGroup:.
+- [func selectedMediaPresentationSettings(for: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : Any]](avplayeritem/selectedmediapresentationsettings(for:).md)
+  Indicates the media presentation settings that have most recently been selected for each AVMediaPresentationSelector of the AVCustomMediaSelectionScheme of the specified AVMediaSelectionGroup.
 
 ## Relationships
 
@@ -289,12 +292,17 @@ A player item stores a reference to an [`AVAsset`](avasset.md) object, which rep
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)
 
 ## See Also
 
+- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
+  Keep your user interface in sync with state changes from playback objects.
 - [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
   Play, pause, and seek through a media presentation.
+- [Creating a seamless multiview playback experience](creating-a-seamless-multiview-playback-experience.md)
+  Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
 - [class AVPlayer](avplayer.md)
   An object that provides the interface to control the player’s transport behavior.
 - [class AVPlayerItemTrack](avplayeritemtrack.md)

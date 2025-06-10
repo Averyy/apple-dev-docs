@@ -1,4 +1,4 @@
 Completed scraping HealthKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 2
+Total pages scraped: 2022
+Pages skipped (unchanged): 3
 Pages failed: 0

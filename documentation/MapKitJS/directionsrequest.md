@@ -27,7 +27,7 @@ dictionary DirectionsRequest {
 Provide a `DirectionsRequest` object to the [`route`](mapkit.directions/route.md) method to get directions between two points, as shown in the code listing that follows. Direction requests require [`origin`](directionsrequest/origin.md) and [`destination`](directionsrequest/destination.md).
 
 ```javascript
-var myDirections = new mapkit.Directions();
+const myDirections = new mapkit.Directions();
 myDirections.route({ 
   origin: "San Francisco, CA", 
   destination: "Oakland, CA", 

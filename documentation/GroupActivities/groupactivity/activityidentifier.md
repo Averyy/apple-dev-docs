@@ -22,8 +22,8 @@ static var activityIdentifier: String { get }
 
 ## Mentions
 
-- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
 - [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
+- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
 
 #### Discussion
 

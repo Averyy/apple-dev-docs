@@ -32,8 +32,6 @@ To represent a quantity of time specified by an [`NSDateComponents`](nsdatecompo
 
 > 💡 **Tip**:  In Swift, you can use [`Date.FormatStyle`](date/formatstyle.md) or [`Date.VerbatimFormatStyle`](date/verbatimformatstyle.md) rather than [`DateFormatter`](dateformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 
- In Swift, you can use [`Date.FormatStyle`](date/formatstyle.md) or [`Date.VerbatimFormatStyle`](date/verbatimformatstyle.md) rather than [`DateFormatter`](dateformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
-
 ##### Working with User Visible Representations of Dates and Times
 
 When displaying a date to a user, you set the [`dateStyle`](dateformatter/datestyle.md) and [`timeStyle`](dateformatter/timestyle.md) properties of the date formatter according to your particular needs. For example, if you want to show the month, day, and year without showing the time, you would set the [`dateStyle`](dateformatter/datestyle.md) property to [`DateFormatter.Style.long`](dateformatter/style/long.md) and the [`timeStyle`](dateformatter/timestyle.md) property to [`DateFormatter.Style.none`](dateformatter/style/none.md). Conversely, if you want to show only the time, you would set the `dateStyle` property to [`DateFormatter.Style.none`](dateformatter/style/none.md) and the [`timeStyle`](dateformatter/timestyle.md) property to [`DateFormatter.Style.short`](dateformatter/style/short.md). Based on the values of the [`dateStyle`](dateformatter/datestyle.md) and [`timeStyle`](dateformatter/timestyle.md) properties, [`DateFormatter`](dateformatter.md) provides a representation of a specified date that is appropriate for a given locale.
@@ -43,8 +41,6 @@ If you need to define a format that cannot be achieved using the predefined styl
 ##### Working with Fixed Format Date Representations
 
 > ❗ **Important**:  In macOS 10.12 and later or iOS 10 and later, use the [`ISO8601DateFormatter`](iso8601dateformatter.md) class when working with ISO 8601 date representations.
-
- In macOS 10.12 and later or iOS 10 and later, use the [`ISO8601DateFormatter`](iso8601dateformatter.md) class when working with ISO 8601 date representations.
 
 When working with fixed format dates, such as RFC 3339, you set the [`dateFormat`](dateformatter/dateformat.md) property to specify a format string. For most fixed formats, you should also set the [`locale`](dateformatter/locale.md) property to a POSIX locale (`"en_US_POSIX"`), and set the [`timeZone`](dateformatter/timezone.md) property to UTC.
 
@@ -173,6 +169,7 @@ On earlier versions of the operating system, or when using the legacy formatter 
 - [NSCopying](nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

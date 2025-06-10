@@ -1,6 +1,6 @@
 # Sign in with Apple
 
-**Framework**: Signinwithapple
+**Framework**: Sign in with Apple
 
 Provide users the ability to sign in to your apps and websites using their Apple ID.
 

@@ -48,6 +48,7 @@ When using an angular gradient as a shape style, you can also use [`angularGradi
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 - [View](view.md)
 

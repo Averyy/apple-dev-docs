@@ -26,10 +26,8 @@ RealityKit calls this builder for you when SwiftUI annotates the `attachment` pa
 ### Type Methods
 - [static func buildBlock() -> EmptyAttachmentContent](attachmentcontentbuilder/buildblock.md)
   Creates an empty attachment content containing no statements.
-- [static func buildBlock<C>(C) -> C](attachmentcontentbuilder/buildblock(_:)-49uwv.md)
+- [static buildBlock(_:)](attachmentcontentbuilder/buildblock(_:).md)
   Creates a single content result.
-- [static func buildBlock<each Content>(repeat each Content) -> TupleAttachmentContent<(repeat each Content)>](attachmentcontentbuilder/buildblock(_:)-8vvap.md)
-  Provides support for lists of Attachments to be created in parallel.
 - [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> ConditionalAttachmentContent<TrueContent, FalseContent>](attachmentcontentbuilder/buildeither(first:).md)
   Provides support for “if” statements in multi-statement closures, producing conditional content for the “then” branch.
 - [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> ConditionalAttachmentContent<TrueContent, FalseContent>](attachmentcontentbuilder/buildeither(second:).md)
@@ -45,6 +43,7 @@ RealityKit calls this builder for you when SwiftUI annotates the `attachment` pa
 
 - [protocol AttachmentContent](attachmentcontent.md)
   A type that provides content for an attachment content builder.
+- [struct TuplePackAttachmentContent](tuplepackattachmentcontent.md)
 - [struct ConditionalAttachmentContent](conditionalattachmentcontent.md)
 - [struct EmptyAttachmentContent](emptyattachmentcontent.md)
   A attachment content that doesn’t contain any content.

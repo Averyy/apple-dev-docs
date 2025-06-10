@@ -1,6 +1,6 @@
 # setRelativeHeight(_:withAdjustment:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the height of the object relative to its container.

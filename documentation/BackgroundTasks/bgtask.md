@@ -3,7 +3,7 @@
 **Framework**: Background Tasks  
 **Kind**: class
 
-An abstract class representing a task that’s run while the app is in the background.
+An abstract class for the framework’s tasks.
 
 **Availability**:
 - iOS 13.0+
@@ -11,12 +11,21 @@ An abstract class representing a task that’s run while the app is in the backg
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 
 ```swift
 class BGTask
 ```
+
+## Mentions
+
+- [Performing long-running tasks on iOS and iPadOS](performing-long-running-tasks-on-ios-and-ipados.md)
+
+#### Overview
+
+With the exception of [`BGContinuedProcessingTask`](bgcontinuedprocessingtask.md), which your app executes in the foreground, the system executes [`BGTask`](bgtask.md) subclasses on behalf of your app, while your app is in the background.
 
 ## Topics
 
@@ -35,6 +44,7 @@ class BGTask
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
 - [BGAppRefreshTask](bgapprefreshtask.md)
+- [BGContinuedProcessingTask](bgcontinuedprocessingtask.md)
 - [BGProcessingTask](bgprocessingtask.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
@@ -46,12 +56,8 @@ class BGTask
 
 ## See Also
 
-- [class BGProcessingTask](bgprocessingtask.md)
-  A time-consuming processing task that runs while the app is in the background.
-- [class BGAppRefreshTask](bgapprefreshtask.md)
-  An object representing a short task typically used to refresh content that’s run while the app is in the background.
-- [class BGHealthResearchTask](bghealthresearchtask.md)
-  A time-consuming, necessary processing task that runs while the app is in the background to prepare data essential to a health research study.
+- [class BGTaskScheduler](bgtaskscheduler.md)
+  A class for scheduling tasks that add background support to your app’s most critical work.
 
 
 ---

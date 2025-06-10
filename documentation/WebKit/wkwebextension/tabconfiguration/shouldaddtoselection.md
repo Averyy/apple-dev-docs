@@ -1,6 +1,6 @@
 # shouldAddToSelection
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates whether the tab should be added to the current tab selection.

@@ -1,6 +1,6 @@
 # setFocusedColumn(_:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Sets the currently focused column to the specified index.

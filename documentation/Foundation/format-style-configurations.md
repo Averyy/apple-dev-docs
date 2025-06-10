@@ -16,6 +16,8 @@ Behaviors for traits like numeric precision, rounding, and scale, used for forma
 
 ## See Also
 
+- [Language Introspector](language-introspector.md)
+  Converts data into human-readable text using formatters and locales.
 - [protocol FormatStyle](formatstyle.md)
   A type that converts a given data type into a representation in another type, such as a string.
 - [struct IntegerFormatStyle](integerformatstyle.md)

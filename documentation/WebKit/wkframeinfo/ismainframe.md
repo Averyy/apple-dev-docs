@@ -1,6 +1,6 @@
 # isMainFrame
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating whether the frame is the web site’s main frame or a subframe.

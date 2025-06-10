@@ -1,6 +1,6 @@
 # motionStates
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: property
 
 Motion information from the dock accessory that includes current orientation and velocity of all axes.

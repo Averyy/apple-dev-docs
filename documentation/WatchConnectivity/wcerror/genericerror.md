@@ -1,6 +1,6 @@
 # genericError
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An error that occurs when there is an unknown problem.

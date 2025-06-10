@@ -1,6 +1,6 @@
 # UISearchTextField
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A view for displaying and editing text and search tokens.
@@ -79,6 +79,7 @@ Tokens can be programmatically selected by including their position in a range a
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)
@@ -115,4 +116,4 @@ Tokens can be programmatically selected by including their position in a range a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uisearchtextfield)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uisearchtextfield)*

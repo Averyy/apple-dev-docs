@@ -21,8 +21,8 @@ class func isHealthDataAvailable() -> Bool
 
 ## Mentions
 
-- [Authorizing access to health data](authorizing-access-to-health-data.md)
 - [About the HealthKit framework](about-the-healthkit-framework.md)
+- [Authorizing access to health data](authorizing-access-to-health-data.md)
 
 #### Return Value
 

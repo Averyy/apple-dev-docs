@@ -34,6 +34,7 @@ protocol MatchedTransitionSourceConfiguration : Sendable
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [EmptyMatchedTransitionSourceConfiguration](emptymatchedtransitionsourceconfiguration.md)
 

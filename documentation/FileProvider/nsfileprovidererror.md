@@ -68,6 +68,7 @@ struct NSFileProviderError
   An error indicating that the system is unable to service requests for the domain temporarily, and you can try again later.
 ### Type Properties
 - [static var errorDomain: String](nsfileprovidererror/errordomain.md)
+- [static var localVersionConflictingWithServer: NSFileProviderError.Code](nsfileprovidererror/localversionconflictingwithserver.md)
 
 ## Relationships
 
@@ -77,6 +78,7 @@ struct NSFileProviderError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

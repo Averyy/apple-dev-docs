@@ -1,6 +1,6 @@
 # display(in:)
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: method
 
 Requests the system to display the App Store message in the window scene.

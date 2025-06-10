@@ -1,0 +1,19 @@
+# kSCSICmd_READ_TOC_PMA_ATIP
+
+**Framework**: Kernel  
+**Kind**: econst
+
+**Availability**:
+- DriverKit 22.0+
+- macOS 10.12+
+
+## Declaration
+
+```swift
+kSCSICmd_READ_TOC_PMA_ATIP = 0x43
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/1643419-anonymous/kscsicmd_read_toc_pma_atip)*

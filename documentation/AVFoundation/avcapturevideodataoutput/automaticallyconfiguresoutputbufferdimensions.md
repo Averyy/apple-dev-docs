@@ -27,8 +27,6 @@ The default value of this property is [`true`](https://developer.apple.com/docum
 
 > ❗ **Important**:  You must set this property to [`false`](https://developer.apple.com/documentation/swift/false) before you can manually set [`deliversPreviewSizedOutputBuffers`](avcapturevideodataoutput/deliverspreviewsizedoutputbuffers.md) to [`true`](https://developer.apple.com/documentation/swift/true).
 
- You must set this property to [`false`](https://developer.apple.com/documentation/swift/false) before you can manually set [`deliversPreviewSizedOutputBuffers`](avcapturevideodataoutput/deliverspreviewsizedoutputbuffers.md) to [`true`](https://developer.apple.com/documentation/swift/true).
-
 ## See Also
 
 - [var videoSettings: [String : Any]!](avcapturevideodataoutput/videosettings.md)

@@ -21,6 +21,10 @@ Creates an environment values, transaction, container values, or focused values 
 (accessor) @attached(peer, names: prefixed(__Key_)) macro Entry()
 ```
 
+## Mentions
+
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+
 #### Environment Values
 
 Create [`EnvironmentValues`](environmentvalues.md) entries by extending the [`EnvironmentValues`](environmentvalues.md) structure with new properties and attaching the @Entry macro to the variable declarations:

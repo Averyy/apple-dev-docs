@@ -1,6 +1,6 @@
 # XCUIScreen
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: class
 
 A physical screen attached to a device.

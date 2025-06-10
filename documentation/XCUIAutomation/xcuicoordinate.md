@@ -1,6 +1,6 @@
 # XCUICoordinate
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: class
 
 A location on screen relative to a UI element.

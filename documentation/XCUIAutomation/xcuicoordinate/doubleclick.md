@@ -1,6 +1,6 @@
 # doubleClick()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a double-click event at the coordinate.

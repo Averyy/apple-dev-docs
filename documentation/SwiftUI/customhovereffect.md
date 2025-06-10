@@ -57,12 +57,6 @@ Hover effects do not affect a view’s layout, and may be applied to a view out-
 ### Creating custom hover effects
 - [func hoverEffect(some CustomHoverEffect, in: HoverEffectGroup?, isEnabled: Bool) -> some CustomHoverEffect](customhovereffect/hovereffect(_:in:isenabled:).md)
   Applies this effect in parallel with the given `effect`.
-- [func hoverEffect(in: HoverEffectGroup?, isEnabled: Bool, body: (EmptyHoverEffectContent, Bool, GeometryProxy) -> some HoverEffectContent) -> some CustomHoverEffect](customhovereffect/hovereffect(in:isenabled:body:).md)
-  Applies a hover effect based on the current phase.
-- [func hoverEffectGroup(HoverEffectGroup?) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(_:).md)
-  Activates this effect as part of an effect group.
-- [func hoverEffectGroup(id: String?, in: Namespace.ID, behavior: HoverEffectGroup.Behavior) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(id:in:behavior:).md)
-  Activates this effect as part of an effect group.
 - [func hoverEffectDisabled(Bool) -> some CustomHoverEffect](customhovereffect/hovereffectdisabled(_:).md)
   Disables this hover effect.
 ### Supporting types
@@ -80,19 +74,42 @@ Hover effects do not affect a view’s layout, and may be applied to a view out-
 ### Instance Methods
 - [func body(content: Self.Content) -> Self.Body](customhovereffect/body(content:).md)
   Defines the effect produced by this effect.
+- [func hoverEffect(in: HoverEffectGroup?, isEnabled: Bool, body: (EmptyHoverEffectContent, Bool, GeometryProxy) -> some HoverEffectContent) -> some CustomHoverEffect](customhovereffect/hovereffect(in:isenabled:body:)-swift.method.md)
+  Applies a hover effect based on the current phase.
+- [func hoverEffectGroup(HoverEffectGroup?) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(_:)-swift.method.md)
+  Activates this effect as part of an effect group.
+- [func hoverEffectGroup(id: String?, in: Namespace.ID, behavior: HoverEffectGroup.Behavior) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(id:in:behavior:)-swift.method.md)
+  Activates this effect as part of an effect group.
+- [func hoverEffectPhaseOverride(HoverEffectPhaseOverride?) -> some CustomHoverEffect](customhovereffect/hovereffectphaseoverride(_:).md)
+  Returns a new effect with the given `HoverEffectPhaseOverride` applied to this effect.
 ### Type Aliases
 - [CustomHoverEffect.Content](customhovereffect/content.md)
   The content effect type passed to `body(content:)`.
+### Type Methods
+- [static func hoverEffect<C>(in: HoverEffectGroup?, isEnabled: Bool, body: (EmptyHoverEffectContent, Bool, GeometryProxy) -> C) -> ContentHoverEffect<C>](customhovereffect/hovereffect(in:isenabled:body:)-swift.type.method.md)
+  Creates a hover effect that applies effects to a view using the given closure.
+- [static func hoverEffectGroup(HoverEffectGroup?) -> GroupHoverEffect](customhovereffect/hovereffectgroup(_:)-swift.type.method.md)
+  Creates an effect that activates a named group of effects.
+- [static func hoverEffectGroup(id: String?, in: Namespace.ID, behavior: HoverEffectGroup.Behavior) -> GroupHoverEffect](customhovereffect/hovereffectgroup(id:in:behavior:)-swift.type.method.md)
+  Creates an effect that activates a named group of effects.
+- [static func ornament<Content>(attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D, ornament: () -> Content) -> OrnamentHoverEffect<Content>](customhovereffect/ornament(attachmentanchor:contentalignment:ornament:).md)
+  Presents an ornament on hover.
+- [static func ornament<Content, EffectContent>(attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D, ornament: () -> Content, effect: (EmptyHoverEffectContent, Bool, GeometryProxy) -> EffectContent) -> OrnamentHoverContentEffect<Content, EffectContent>](customhovereffect/ornament(attachmentanchor:contentalignment:ornament:effect:).md)
+  Presents an ornament on hover.
 
 ## Relationships
 
 ### Conforming Types
 - [AutomaticHoverEffect](automatichovereffect.md)
+- [ContentHoverEffect](contenthovereffect.md)
 - [EmptyHoverEffect](emptyhovereffect.md)
+- [GroupHoverEffect](grouphovereffect.md)
 - [HighlightHoverEffect](highlighthovereffect.md)
 - [HoverEffect](hovereffect.md)
 - [LiftHoverEffect](lifthovereffect.md)
 - [ModifiedContent](modifiedcontent.md)
+- [OrnamentHoverContentEffect](ornamenthovercontenteffect.md)
+- [OrnamentHoverEffect](ornamenthovereffect.md)
 
 ## See Also
 
@@ -104,6 +121,8 @@ Hover effects do not affect a view’s layout, and may be applied to a view out-
   Applies a hover effect to this view, optionally adding it to a [`HoverEffectGroup`](hovereffectgroup.md).
 - [func hoverEffect(in: HoverEffectGroup?, isEnabled: Bool, body: (EmptyHoverEffectContent, Bool, GeometryProxy) -> some HoverEffectContent) -> some View](view/hovereffect(in:isenabled:body:).md)
   Applies a hover effect to this view described by the given closure.
+- [struct ContentHoverEffect](contenthovereffect.md)
+  A `CustomHoverEffect` that applies effects to a view on hover using a closure.
 - [struct HoverEffectGroup](hovereffectgroup.md)
   Describes a grouping of effects that activate together.
 - [func hoverEffectGroup() -> some View](view/hovereffectgroup.md)
@@ -112,6 +131,8 @@ Hover effects do not affect a view’s layout, and may be applied to a view out-
   Adds a [`HoverEffectGroup`](hovereffectgroup.md) to all effects defined on descendant views, and activates the group whenever this view or any descendant views are hovered.
 - [func hoverEffectGroup(id: String?, in: Namespace.ID, behavior: HoverEffectGroup.Behavior) -> some View](view/hovereffectgroup(id:in:behavior:).md)
   Adds a [`HoverEffectGroup`](hovereffectgroup.md) to all effects defined on descendant views, and activates the group whenever this view or any descendant views are hovered.
+- [struct GroupHoverEffect](grouphovereffect.md)
+  A `CustomHoverEffect` that activates a named group of effects.
 - [protocol HoverEffectContent](hovereffectcontent.md)
   A type that describes the effects of a view for a particular hover effect phase.
 - [struct EmptyHoverEffectContent](emptyhovereffectcontent.md)

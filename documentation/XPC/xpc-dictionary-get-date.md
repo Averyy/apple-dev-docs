@@ -1,6 +1,6 @@
 # xpc_dictionary_get_date(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Gets a date value from a dictionary directly.

@@ -1,6 +1,6 @@
 # xpc_connection_get_euid(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the EUID of the remote peer.

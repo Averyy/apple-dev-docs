@@ -17,6 +17,7 @@ A Boolean value that indicates whether the manager has any actions to redo.
 ## Declaration
 
 ```swift
+@MainActor
 var canRedo: Bool { get }
 ```
 

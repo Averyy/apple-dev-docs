@@ -20,8 +20,6 @@ var infectiousnessHighWeight: Double { get set }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.7 and later.
 
- This property is available in iOS 12.5, and in iOS 13.7 and later.
-
 The range of this value is 0-250%.
 
 ## See Also

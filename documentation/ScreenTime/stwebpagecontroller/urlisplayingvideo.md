@@ -24,8 +24,6 @@ The default value is [`NO`](https://developer.apple.com/documentation/ObjectiveC
 
 > ❗ **Important**: Set this value to [`NO`](https://developer.apple.com/documentation/ObjectiveC/NO) prior to changing [`url`](stwebpagecontroller/url.md) if the new webpage at that URL stops currently playing media and won’t immediately start playing new media.
 
-Set this value to [`NO`](https://developer.apple.com/documentation/ObjectiveC/NO) prior to changing [`url`](stwebpagecontroller/url.md) if the new webpage at that URL stops currently playing media and won’t immediately start playing new media.
-
 ## See Also
 
 - [var suppressUsageRecording: Bool](stwebpagecontroller/suppressusagerecording.md)

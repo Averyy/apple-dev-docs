@@ -28,6 +28,21 @@ A matrix factorization of `A^H`, where the original was of `A`. As this is refer
 
 - `Subfactor`: The object to conjugate transpose.
 
+## See Also
+
+- [func SparseGetConjugateTranspose(SparseMatrix_Complex_Float) -> SparseMatrix_Complex_Float](sparsegetconjugatetranspose(_:)-1e0js.md)
+  Returns a conjugate transposed copy of the specified matrix of complex float values.
+- [func SparseGetConjugateTranspose(SparseOpaqueSubfactor_Complex_Float) -> SparseOpaqueSubfactor_Complex_Float](sparsegetconjugatetranspose(_:)-4hysc.md)
+  Returns a conjugate transposed, reference-counted copy of a `SparseOpaqueSubfactor_Complex_Float`.
+- [func SparseGetConjugateTranspose(SparseOpaqueFactorization_Complex_Double) -> SparseOpaqueFactorization_Complex_Double](sparsegetconjugatetranspose(_:)-675y1.md)
+  Returns a conjugate transposed, reference-counted copy of a `SparseOpaqueFactorization_Complex_Double`.
+- [func SparseGetConjugateTranspose(SparseMatrix_Complex_Double) -> SparseMatrix_Complex_Double](sparsegetconjugatetranspose(_:)-9o30w.md)
+  Returns a conjugate transposed copy of the specified specified matrix of complex double values.
+- [func SparseGetConjugateTranspose(SparseMatrix_Complex_Double) -> SparseMatrix_Complex_Double](sparsegetconjugatetranspose(_:)-9o30w.md)
+  Returns a conjugate transposed copy of the specified specified matrix of complex double values.
+- [func SparseGetConjugateTranspose(SparseOpaqueFactorization_Complex_Float) -> SparseOpaqueFactorization_Complex_Float](sparsegetconjugatetranspose(_:)-a56p.md)
+  Returns a conjugate transposed, reference-counted copy of a `SparseOpaqueFactorization_Complex_Float`.
+
 
 ---
 

@@ -48,6 +48,8 @@ A [`CXProviderConfiguration`](cxproviderconfiguration.md) object controls the na
   A Boolean value that indicates whether the provider supports video in addition to audio.
 - [var includesCallsInRecents: Bool](cxproviderconfiguration/includescallsinrecents.md)
   A Boolean value that indicates whether the provider includes a call in the system’s Recents list after the call ends.
+### Instance Properties
+- [var supportsAudioTranslation: Bool](cxproviderconfiguration/supportsaudiotranslation.md)
 
 ## Relationships
 
@@ -74,6 +76,8 @@ A [`CXProviderConfiguration`](cxproviderconfiguration.md) object controls the na
   Use the CallKit framework to integrate native VoIP calling.
 - [Preparing your app to be the default calling app](preparing-your-app-to-be-the-default-calling-app.md)
   Configure your CallKit or LiveCommunicationKit app so people can set it as the default calling app on their device.
+- [CallKit updates](../Updates/CallKit.md)
+  Learn about important changes to CallKit.
 
 
 ---

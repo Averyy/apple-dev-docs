@@ -1,6 +1,6 @@
 # menuIndicator(_:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Sets the menu indicator visibility for controls within this view.

@@ -53,7 +53,7 @@ ScrollView {
     }
     .scrollTargetLayout()
 }
-.scrollPosition($scrolledID)
+.scrollPosition($position)
 ```
 
 You can then query the currently scrolled id by using the `ScrollPosition/viewID(type:)`.
@@ -94,7 +94,7 @@ ScrollView {
     }
     .scrollTargetLayout()
 }
-.scrollPosition($scrolledID, anchor: .bottom)
+.scrollPosition($position, anchor: .bottom)
 ```
 
 For example, providing a value of `UnitPoint/bottom` will prefer to have the bottom-most view chosen and prefer to scroll to views aligned to the bottom.

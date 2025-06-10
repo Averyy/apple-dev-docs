@@ -1,6 +1,6 @@
 # Pixel Transfer Properties
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 Properties used to configure a VideoToolbox pixel transfer session.
 

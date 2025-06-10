@@ -1,6 +1,6 @@
 # shadowOffset
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The shadow’s relative position, which you specify with horizontal and vertical offset values.

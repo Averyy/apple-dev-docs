@@ -1,6 +1,6 @@
 # unexpectedExceptionCount
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The number of uncaught exceptions during the run.

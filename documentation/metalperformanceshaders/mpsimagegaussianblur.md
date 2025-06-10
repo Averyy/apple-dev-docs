@@ -1,6 +1,6 @@
 # MPSImageGaussianBlur
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: cl
 
 A filter that convolves an image with a Gaussian blur of a given sigma in both the x and y directions.

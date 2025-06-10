@@ -72,7 +72,7 @@ You can use the same render targets across multiple render passes. Several load 
 ## See Also
 
 - [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a simple 2D triangle.
+  Render a colorful, 2D triangle by running a draw command on the GPU.
 - [Customizing Render Pass Setup](customizing-render-pass-setup.md)
   Render into an offscreen texture by creating a custom render pass.
 - [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
@@ -81,4 +81,4 @@ You can use the same render targets across multiple render passes. Several load 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/setting-load-and-store-actions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/setting-load-and-store-actions)*

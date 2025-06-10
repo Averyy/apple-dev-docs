@@ -183,9 +183,12 @@ let localizedInteger = match?.1 // 123456
 - [ParseableFormatStyle](parseableformatstyle.md)
 - [RegexComponent](../Swift/RegexComponent.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [Language Introspector](language-introspector.md)
+  Converts data into human-readable text using formatters and locales.
 - [protocol FormatStyle](formatstyle.md)
   A type that converts a given data type into a representation in another type, such as a string.
 - [struct FloatingPointFormatStyle](floatingpointformatstyle.md)
@@ -205,4 +208,4 @@ let localizedInteger = match?.1 // 123456
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/integerformatstyle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/integerformatstyle)*

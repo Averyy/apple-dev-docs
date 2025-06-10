@@ -21,7 +21,7 @@ Creating an [`ApplePaySession`](applepaysession.md) object throws a JavaScript e
 
 After the session is created, call its [`begin`](applepaysession/begin.md) method to show the payment sheet.
 
-[`Creating an Apple Pay Session`](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/creating_an_apple_pay_session) shows creating a payment request and a new Apple Pay session, and displaying the payment sheet.
+[`Creating an Apple Pay Session`](creating-an-apple-pay-session.md) shows creating a payment request and a new Apple Pay session, and displaying the payment sheet.
 
 Listing 1. Example of constructing an Apple Pay session
 

@@ -105,4 +105,4 @@ To manage workflows in App Store Connect:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/developing-a-workflow-strategy-for-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/developing-a-workflow-strategy-for-xcode-cloud)*

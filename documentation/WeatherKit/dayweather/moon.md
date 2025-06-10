@@ -1,6 +1,6 @@
 # moon
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The lunar events for the day.

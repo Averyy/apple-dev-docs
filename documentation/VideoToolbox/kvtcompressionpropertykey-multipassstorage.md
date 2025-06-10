@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_MultiPassStorage
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A property key that enables multipass compression and provides storage for encoder private data.

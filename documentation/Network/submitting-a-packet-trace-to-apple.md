@@ -59,4 +59,4 @@ If you’re using a packet trace tool whose native file format is PCAP or PcapNg
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Network/submitting-a-packet-trace-to-apple)*
+*[View on Apple Developer](https://developer.apple.com/documentation/network/submitting-a-packet-trace-to-apple)*

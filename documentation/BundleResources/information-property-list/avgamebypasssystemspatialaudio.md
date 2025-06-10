@@ -28,6 +28,10 @@ In iOS 18 and tvOS 18 and later, the system automatically adds spatial audio to 
   The platforms for which your app requires or you recommend a game controller.
 - [GCSupportsMultipleMicroGamepads](information-property-list/gcsupportsmultiplemicrogamepads.md)
   A Boolean value indicating whether the physical Apple TV Remote and the Apple TV Remote app operate as separate game controllers.
+- [LSSupportsGameMode](information-property-list/lssupportsgamemode.md)
+  A Boolean value indicating whether the app supports Game Mode.
+- [GCSupportsGameMode](information-property-list/gcsupportsgamemode.md)
+  A Boolean value indicating whether the app supports game mode.
 
 
 ---

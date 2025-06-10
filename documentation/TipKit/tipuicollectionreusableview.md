@@ -28,6 +28,8 @@ You create a tip view by providing a tip and an optional arrow edge. The tip is 
 - [init?(coder: NSCoder)](tipuicollectionreusableview/init(coder:).md)
 - [init(frame: CGRect)](tipuicollectionreusableview/init(frame:).md)
 ### Instance Properties
+- [var backgroundStyle: any ShapeStyle](tipuicollectionreusableview/backgroundstyle.md)
+  The background style to use for the tip view.
 - [var cornerRadius: CGFloat](tipuicollectionreusableview/cornerradius.md)
   Corner radius for the tip view.
 - [var imageSize: CGSize](tipuicollectionreusableview/imagesize.md)

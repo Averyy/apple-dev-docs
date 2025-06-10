@@ -25,8 +25,6 @@ Call this method as soon as you have finished using the tags managed by this req
 
 > ❗ **Important**:  The callback from [`beginAccessingResources(completionHandler:)`](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md) or [`conditionallyBeginAccessingResources(completionHandler:)`](nsbundleresourcerequest/conditionallybeginaccessingresources(completionhandler:).md) must have completed before calling [`endAccessingResources()`](nsbundleresourcerequest/endaccessingresources().md).
 
- The callback from [`beginAccessingResources(completionHandler:)`](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md) or [`conditionallyBeginAccessingResources(completionHandler:)`](nsbundleresourcerequest/conditionallybeginaccessingresources(completionhandler:).md) must have completed before calling [`endAccessingResources()`](nsbundleresourcerequest/endaccessingresources().md).
-
 ## See Also
 
 - [func beginAccessingResources(completionHandler: ((any Error)?) -> Void)](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md)

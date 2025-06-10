@@ -11,8 +11,6 @@ A custom HTTP header key field name.
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

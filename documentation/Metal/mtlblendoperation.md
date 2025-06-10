@@ -32,6 +32,9 @@ enum MTLBlendOperation
   Minimum of the source and destination pixel values.
 - [MTLBlendOperation.max](mtlblendoperation/max.md)
   Maximum of the source and destination pixel values.
+### Enumeration Cases
+- [MTLBlendOperation.unspecialized](mtlblendoperation/unspecialized.md)
+  Defers assigning the blend operation.
 ### Initializers
 - [init?(rawValue: UInt)](mtlblendoperation/init(rawvalue:).md)
 
@@ -43,6 +46,7 @@ enum MTLBlendOperation
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

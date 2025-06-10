@@ -44,9 +44,9 @@ See also [`init(top:left:bottom:right:)`](uiedgeinsets/init(top:left:bottom:righ
 ### Managing edge insets
 - [func inset(by insets: UIEdgeInsets) -> CGRect](../CoreFoundation/CGRect/inset(by:).md)
 ### Converting to and from strings
-- [class func string(for: UIEdgeInsets) -> String](../foundation/nscoder/1624527-string.md)
+- [class func string(for insets: UIEdgeInsets) -> String](../Foundation/NSCoder/string(for:)-26b4z.md)
   Returns a string formatted to contain the data from an edge insets structure.
-- [class func uiEdgeInsets(for: String) -> UIEdgeInsets](../foundation/nscoder/1624525-uiedgeinsets.md)
+- [class func uiEdgeInsets(for string: String) -> UIEdgeInsets](../Foundation/NSCoder/uiEdgeInsets(for:).md)
   Returns a UIKit edge insets structure based on the data in the specified string.
 ### Getting the empty edge insets
 - [static let zero: UIEdgeInsets](uiedgeinsets/zero.md)
@@ -64,6 +64,7 @@ See also [`init(top:left:bottom:right:)`](uiedgeinsets/init(top:left:bottom:righ
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

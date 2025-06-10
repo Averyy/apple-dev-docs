@@ -41,12 +41,16 @@
   Adds an accessibility action labeled by the contents of `label` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
 - [func accessibilityAction(named: LocalizedStringKey, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityaction(named:_:)-4fqf2.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
+- [func accessibilityAction(named: LocalizedStringResource, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityaction(named:_:)-79oau.md)
+  Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction<S>(named: S, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityaction(named:_:)-98uqi.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction(named: Text, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityaction(named:_:)-r43d.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction<S, I>(named: S, intent: I) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityaction(named:intent:)-28544.md)
   Adds an accessibility action labeled `name` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
+- [func accessibilityAction<I>(named: LocalizedStringResource, intent: I) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityaction(named:intent:)-7q2c6.md)
+  Adds an accessibility action labeled with the localized representation of `nameResource` to the view. Actions allow assistive technologies, such as VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
 - [func accessibilityAction<I>(named: LocalizedStringKey, intent: I) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityaction(named:intent:)-867fa.md)
   Adds an accessibility action labeled with the localized representation of `nameKey` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
 - [func accessibilityAction<I>(named: Text, intent: I) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityaction(named:intent:)-8jldn.md)
@@ -71,6 +75,12 @@
   Adds a descriptor to a View that represents a chart to make the chart’s contents accessible to all users.
 - [func accessibilityChildren<V>(children: () -> V) -> some View](shortcutslink/accessibilitychildren(children:).md)
   Replaces the existing accessibility element’s children with one or more new synthetic accessibility elements.
+- [func accessibilityCustomContent(LocalizedStringResource, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitycustomcontent(_:_:importance:)-2vrla.md)
+  Add additional accessibility information to the view.
+- [func accessibilityCustomContent(AccessibilityCustomContentKey, LocalizedStringResource, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitycustomcontent(_:_:importance:)-4buwk.md)
+  Add additional accessibility information to the view.
+- [func accessibilityCustomContent<V>(LocalizedStringResource, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitycustomcontent(_:_:importance:)-4zyql.md)
+  Add additional accessibility information to the view.
 - [func accessibilityCustomContent<V>(LocalizedStringKey, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitycustomcontent(_:_:importance:)-5fyx4.md)
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent(LocalizedStringKey, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitycustomcontent(_:_:importance:)-71nyz.md)
@@ -87,6 +97,10 @@
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent<L, V>(L, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitycustomcontent(_:_:importance:)-vryw.md)
   Add additional accessibility information to the view.
+- [func accessibilityCustomContent(LocalizedStringResource, LocalizedStringResource, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitycustomcontent(_:_:importance:)-z8na.md)
+  Add additional accessibility information to the view.
+- [func accessibilityDefaultFocus<Value>(AccessibilityFocusState<Value>.Binding, Value) -> some View](shortcutslink/accessibilitydefaultfocus(_:_:).md)
+  Defines a region in which default accessibility focus is evaluated by assigning a value to a given accessibility focus state binding.
 - [func accessibilityDirectTouch(Bool, options: AccessibilityDirectTouchOptions) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydirecttouch(_:options:).md)
   Explicitly set whether this accessibility element is a direct touch area. Direct touch areas passthrough touch events to the app rather than being handled through an assistive technology, such as VoiceOver. The modifier accepts an optional `AccessibilityDirectTouchOptions` option set to customize the functionality of the direct touch area.
 - [func accessibilityDragPoint(UnitPoint, description: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydragpoint(_:description:)-1leck.md)
@@ -95,19 +109,27 @@
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint<S>(UnitPoint, description: S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydragpoint(_:description:)-54hcs.md)
   The point an assistive technology should use to begin a drag interaction.
+- [func accessibilityDragPoint(UnitPoint, description: LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydragpoint(_:description:)-6u2lh.md)
+  The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint(UnitPoint, description: LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydragpoint(_:description:isenabled:)-189u3.md)
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint<S>(UnitPoint, description: S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydragpoint(_:description:isenabled:)-5njt8.md)
   The point an assistive technology should use to begin a drag interaction.
+- [func accessibilityDragPoint(UnitPoint, description: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydragpoint(_:description:isenabled:)-61zvb.md)
+  The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint(UnitPoint, description: Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydragpoint(_:description:isenabled:)-9pt3c.md)
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDropPoint<S>(UnitPoint, description: S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydroppoint(_:description:)-3lnlt.md)
+  The point an assistive technology should use to end a drag interaction.
+- [func accessibilityDropPoint(UnitPoint, description: LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydroppoint(_:description:)-3pun2.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydroppoint(_:description:)-7u8dq.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydroppoint(_:description:)-7vnvh.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydroppoint(_:description:isenabled:)-34ftt.md)
+  The point an assistive technology should use to end a drag interaction.
+- [func accessibilityDropPoint(UnitPoint, description: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydroppoint(_:description:isenabled:)-4qh8p.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint<S>(UnitPoint, description: S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitydroppoint(_:description:isenabled:)-4x6lb.md)
   The point an assistive technology should use to end a drag interaction.
@@ -125,11 +147,15 @@
   Specifies whether to hide this view from system accessibility features.
 - [func accessibilityHidden(Bool, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityhidden(_:isenabled:).md)
   Specifies whether to hide this view from system accessibility features.
+- [func accessibilityHint(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityhint(_:)-3czqo.md)
+  Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityhint(_:)-4offr.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityhint(_:)-61chm.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityhint(_:)-8b3m.md)
+  Communicates to the user what happens after performing the view’s action.
+- [func accessibilityHint(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityhint(_:isenabled:)-5k00a.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint<S>(S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityhint(_:isenabled:)-5rq02.md)
   Communicates to the user what happens after performing the view’s action.
@@ -161,9 +187,13 @@
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitylabel(_:)-2vnrg.md)
   Adds a label to the view that describes its contents.
+- [func accessibilityLabel(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitylabel(_:)-4in4z.md)
+  Adds a label to the view that describes its contents.
 - [func accessibilityLabel(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitylabel(_:isenabled:)-2m77u.md)
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel<S>(S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitylabel(_:isenabled:)-359nu.md)
+  Adds a label to the view that describes its contents.
+- [func accessibilityLabel(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitylabel(_:isenabled:)-8na38.md)
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitylabel(_:isenabled:)-9sd8k.md)
   Adds a label to the view that describes its contents.
@@ -189,15 +219,21 @@
   Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
 - [func accessibilityRotor<Content>(AccessibilitySystemRotor, entries: () -> Content) -> some View](shortcutslink/accessibilityrotor(_:entries:)-9u08x.md)
   Create an Accessibility Rotor replacing the specified system-provided Rotor.
+- [func accessibilityRotor<Content>(LocalizedStringResource, entries: () -> Content) -> some View](shortcutslink/accessibilityrotor(_:entries:)-ktzu.md)
+  Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
 - [func accessibilityRotor<EntryModel, ID>(Text, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](shortcutslink/accessibilityrotor(_:entries:entryid:entrylabel:)-53k89.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel, ID>(LocalizedStringKey, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](shortcutslink/accessibilityrotor(_:entries:entryid:entrylabel:)-756rn.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<L, EntryModel, ID>(L, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](shortcutslink/accessibilityrotor(_:entries:entryid:entrylabel:)-7bhaz.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
+- [func accessibilityRotor<EntryModel, ID>(LocalizedStringResource, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](shortcutslink/accessibilityrotor(_:entries:entryid:entrylabel:)-8p3ty.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel, ID>(AccessibilitySystemRotor, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](shortcutslink/accessibilityrotor(_:entries:entryid:entrylabel:)-8q75m.md)
   Create an Accessibility Rotor replacing the specified system-provided Rotor.
 - [func accessibilityRotor<EntryModel>(Text, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](shortcutslink/accessibilityrotor(_:entries:entrylabel:)-10j83.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries.
+- [func accessibilityRotor<EntryModel>(LocalizedStringResource, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](shortcutslink/accessibilityrotor(_:entries:entrylabel:)-617lf.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel>(LocalizedStringKey, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](shortcutslink/accessibilityrotor(_:entries:entrylabel:)-9mth9.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
@@ -209,6 +245,8 @@
   Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotor(AccessibilitySystemRotor, textRanges: [Range<String.Index>]) -> some View](shortcutslink/accessibilityrotor(_:textranges:)-5l3al.md)
   Create an Accessibility Rotor replacing the specified system-provided Rotor. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
+- [func accessibilityRotor(LocalizedStringResource, textRanges: [Range<String.Index>]) -> some View](shortcutslink/accessibilityrotor(_:textranges:)-8c7ct.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotor(Text, textRanges: [Range<String.Index>]) -> some View](shortcutslink/accessibilityrotor(_:textranges:)-8gmf2.md)
   Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotor(LocalizedStringKey, textRanges: [Range<String.Index>]) -> some View](shortcutslink/accessibilityrotor(_:textranges:)-8mglc.md)
@@ -217,6 +255,14 @@
   Defines an explicit identifier tying an Accessibility element for this view to an entry in an Accessibility Rotor.
 - [func accessibilityScrollAction((Edge) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityscrollaction(_:).md)
   Adds an accessibility scroll action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
+- [func accessibilityScrollStatus(some StringProtocol, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityscrollstatus(_:isenabled:)-3o5qv.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityscrollstatus(_:isenabled:)-75h5a.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityscrollstatus(_:isenabled:)-8gvyg.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityscrollstatus(_:isenabled:)-8k67.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
 - [func accessibilityShowsLargeContentViewer() -> some View](shortcutslink/accessibilityshowslargecontentviewer.md)
   Adds a default large content view to be shown by the large content viewer.
 - [func accessibilityShowsLargeContentViewer<V>(() -> V) -> some View](shortcutslink/accessibilityshowslargecontentviewer(_:).md)
@@ -225,6 +271,8 @@
   Sets the sort priority order for this view’s accessibility element, relative to other elements at the same level.
 - [func accessibilityTextContentType(AccessibilityTextContentType) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilitytextcontenttype(_:).md)
   Sets an accessibility text content type.
+- [func accessibilityValue(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityvalue(_:)-2h1bv.md)
+  Adds a textual description of the value that the view contains.
 - [func accessibilityValue(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityvalue(_:)-6jvrt.md)
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityvalue(_:)-8poju.md)
@@ -237,6 +285,8 @@
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityvalue(_:isenabled:)-8lpmp.md)
   Adds a textual description of the value that the view contains.
+- [func accessibilityValue(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityvalue(_:isenabled:)-9iplr.md)
+  Adds a textual description of the value that the view contains.
 - [func accessibilityZoomAction((AccessibilityZoomGestureAction) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](shortcutslink/accessibilityzoomaction(_:).md)
   Adds an accessibility zoom action to the view. Actions allow assistive technologies, such as VoiceOver, to interact with the view by invoking the action.
 - [func actionSheet(isPresented: Binding<Bool>, content: () -> ActionSheet) -> some View](shortcutslink/actionsheet(ispresented:content:).md)
@@ -247,10 +297,14 @@
   Presents an alert when a given condition is true, using a localized string key for the title.
 - [func alert<A>(Text, isPresented: Binding<Bool>, actions: () -> A) -> some View](shortcutslink/alert(_:ispresented:actions:)-7wqgn.md)
   Presents an alert when a given condition is true, using a text view for the title.
+- [func alert<A>(LocalizedStringResource, isPresented: Binding<Bool>, actions: () -> A) -> some View](shortcutslink/alert(_:ispresented:actions:)-9k77j.md)
+  Presents an alert when a given condition is true, using a localized string resource for the title.
 - [func alert<S, A>(S, isPresented: Binding<Bool>, actions: () -> A) -> some View](shortcutslink/alert(_:ispresented:actions:)-qr13.md)
   Presents an alert when a given condition is true, using a string variable as a title.
 - [func alert<A, M>(LocalizedStringKey, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](shortcutslink/alert(_:ispresented:actions:message:)-22eqj.md)
   Presents an alert with a message when a given condition is true, using a localized string key for a title.
+- [func alert<A, M>(LocalizedStringResource, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](shortcutslink/alert(_:ispresented:actions:message:)-2ssu3.md)
+  Presents an alert with a message when a given condition is true, using a localized string resource for a title.
 - [func alert<S, A, M>(S, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](shortcutslink/alert(_:ispresented:actions:message:)-2yiua.md)
   Presents an alert with a message when a given condition is true using a string variable as a title.
 - [func alert<A, M>(Text, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](shortcutslink/alert(_:ispresented:actions:message:)-7lfei.md)
@@ -259,10 +313,14 @@
   Presents an alert using the given data to produce the alert’s content and a text view as a title.
 - [func alert<S, A, T>(S, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](shortcutslink/alert(_:ispresented:presenting:actions:)-36epo.md)
   Presents an alert using the given data to produce the alert’s content and a string variable as a title.
+- [func alert<A, T>(LocalizedStringResource, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](shortcutslink/alert(_:ispresented:presenting:actions:)-4ievo.md)
+  Presents an alert using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert<A, T>(LocalizedStringKey, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](shortcutslink/alert(_:ispresented:presenting:actions:)-81nqk.md)
   Presents an alert using the given data to produce the alert’s content and a localized string key for a title.
 - [func alert<A, M, T>(LocalizedStringKey, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](shortcutslink/alert(_:ispresented:presenting:actions:message:)-1f51p.md)
   Presents an alert with a message using the given data to produce the alert’s content and a localized string key for a title.
+- [func alert<A, M, T>(LocalizedStringResource, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](shortcutslink/alert(_:ispresented:presenting:actions:message:)-1nhxz.md)
+  Presents an alert with a message using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert<S, A, M, T>(S, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](shortcutslink/alert(_:ispresented:presenting:actions:message:)-2lob.md)
   Presents an alert with a message using the given data to produce the alert’s content and a string variable as a title.
 - [func alert<A, M, T>(Text, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](shortcutslink/alert(_:ispresented:presenting:actions:message:)-81vvt.md)
@@ -275,6 +333,8 @@
   Presents an alert with a message when an error is present.
 - [func alert<Item>(item: Binding<Item?>, content: (Item) -> Alert) -> some View](shortcutslink/alert(item:content:).md)
   Presents an alert to the user.
+- [func alignmentGuide(DepthAlignment, computeValue: (ViewDimensions3D) -> CGFloat) -> some View](shortcutslink/alignmentguide(_:computevalue:)-3r1ji.md)
+  Returns a view modified so that its value for the given `guide` is the result of passing the `ViewDimensions` of the underlying element to `computeValue`.
 - [func alignmentGuide(HorizontalAlignment, computeValue: (ViewDimensions) -> CGFloat) -> some View](shortcutslink/alignmentguide(_:computevalue:)-55stq.md)
   Sets the view’s horizontal alignment.
 - [func alignmentGuide(VerticalAlignment, computeValue: (ViewDimensions) -> CGFloat) -> some View](shortcutslink/alignmentguide(_:computevalue:)-r8ti.md)
@@ -285,6 +345,8 @@
   Configures whether this view participates in hit test operations.
 - [func allowsTightening(Bool) -> some View](shortcutslink/allowstightening(_:).md)
   Sets whether text in this view can compress the space between characters when necessary to fit text in a line.
+- [func allowsWindowActivationEvents() -> some View](shortcutslink/allowswindowactivationevents.md)
+  Configures gestures in this view hierarchy to handle events that activate the containing window.
 - [func allowsWindowActivationEvents(Bool?) -> some View](shortcutslink/allowswindowactivationevents(_:).md)
   Configures whether gestures in this view hierarchy can handle events that activate the containing window.
 - [func anchorPreference<A, K>(key: K.Type, value: Anchor<A>.Source, transform: (Anchor<A>) -> K.Value) -> some View](shortcutslink/anchorpreference(key:value:transform:).md)
@@ -299,6 +361,18 @@
   Constrains this view’s dimensions to the specified aspect ratio.
 - [func aspectRatio(CGSize, contentMode: ContentMode) -> some View](shortcutslink/aspectratio(_:contentmode:)-xqmx.md)
   Constrains this view’s dimensions to the aspect ratio of the given size.
+- [func aspectRatio3D(Size3D?, contentMode: ContentMode) -> some View](shortcutslink/aspectratio3d(_:contentmode:).md)
+  Constrains this view’s dimensions to the specified 3D aspect ratio.
+- [func assistiveAccessNavigationIcon(Image) -> some View](shortcutslink/assistiveaccessnavigationicon(_:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func assistiveAccessNavigationIcon(systemImage: String) -> some View](shortcutslink/assistiveaccessnavigationicon(systemimage:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func attributedTextFormattingDefinition<S>(KeyPath<AttributeScopes, S.Type>) -> some View](shortcutslink/attributedtextformattingdefinition(_:)-1jxdl.md)
+  Apply an attribute-only text formatting definition to all nested editor views.
+- [func attributedTextFormattingDefinition<D>(D) -> some View](shortcutslink/attributedtextformattingdefinition(_:)-34d0f.md)
+  Apply a text formatting definition to all nested editor views.
+- [func attributedTextFormattingDefinition<S>(S.Type) -> some View](shortcutslink/attributedtextformattingdefinition(_:)-8b03.md)
+  Apply an attribute-only text formatting definition to all nested editor views.
 - [func autocapitalization(UITextAutocapitalizationType) -> some View](shortcutslink/autocapitalization(_:).md)
   Sets whether to apply auto-capitalization to this view.
 - [func autocorrectionDisabled(Bool) -> some View](shortcutslink/autocorrectiondisabled(_:).md)
@@ -319,12 +393,16 @@
   Sets the view’s background to an insettable shape filled with the default background style.
 - [func background<S>(in: S, fillStyle: FillStyle) -> some View](shortcutslink/background(in:fillstyle:)-94liv.md)
   Sets the view’s background to a shape filled with the default background style.
+- [func backgroundExtensionEffect() -> some View](shortcutslink/backgroundextensioneffect.md)
+  Adds the background extension effect to the view. The view will be duplicated into mirrored copies which will be placed around the view on any edge with available safe area. Additionally, a blur effect will be applied on top to blur out the copies.
 - [func backgroundPreferenceValue<Key, T>(Key.Type, (Key.Value) -> T) -> some View](shortcutslink/backgroundpreferencevalue(_:_:).md)
   Reads the specified preference value from the view, using it to produce a second view that is applied as the background of the original view.
 - [func backgroundPreferenceValue<K, V>(K.Type, alignment: Alignment, (K.Value) -> V) -> some View](shortcutslink/backgroundpreferencevalue(_:alignment:_:).md)
   Reads the specified preference value from the view, using it to produce a second view that is applied as the background of the original view.
 - [func backgroundStyle<S>(S) -> some View](shortcutslink/backgroundstyle(_:).md)
   Sets the specified style to render backgrounds within the view.
+- [func badge(LocalizedStringResource?) -> some View](shortcutslink/badge(_:)-2jgpc.md)
+  Generates a badge for the view from a localized string resource.
 - [func badge(LocalizedStringKey?) -> some View](shortcutslink/badge(_:)-43zjv.md)
   Generates a badge for the view from a localized string key.
 - [func badge(Int) -> some View](shortcutslink/badge(_:)-5hnb.md)
@@ -345,12 +423,15 @@
   Applies a bold font weight to the text in this view.
 - [func border<S>(S, width: CGFloat) -> some View](shortcutslink/border(_:width:).md)
   Adds a border to this view with the specified style and width.
+- [func breakthroughEffect(BreakthroughEffect) -> some View](shortcutslink/breakthrougheffect(_:).md)
+  Ensures that the view is always visible to the user, even when other content is occluding it, like 3D models.
 - [func brightness(Double) -> some View](shortcutslink/brightness(_:).md)
   Brightens this view by the specified amount.
 - [func buttonBorderShape(ButtonBorderShape) -> some View](shortcutslink/buttonbordershape(_:).md)
   Sets the border shape for buttons in this view.
 - [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](shortcutslink/buttonrepeatbehavior(_:).md)
   Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
+- [func buttonSizing(ButtonSizing) -> some View](shortcutslink/buttonsizing(_:).md)
 - [func buttonStyle<S>(S) -> some View](shortcutslink/buttonstyle(_:)-4zdrd.md)
   Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
 - [func buttonStyle<S>(S) -> some View](shortcutslink/buttonstyle(_:)-5qmbr.md)
@@ -371,6 +452,8 @@
   Wraps this view in a compositing group.
 - [func confirmationDialog<A>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](shortcutslink/confirmationdialog(_:ispresented:titlevisibility:actions:)-2xa9k.md)
   Presents a confirmation dialog when a given condition is true, using a localized string key for the title.
+- [func confirmationDialog<A>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](shortcutslink/confirmationdialog(_:ispresented:titlevisibility:actions:)-4tqxw.md)
+  Presents a confirmation dialog when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog<S, A>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](shortcutslink/confirmationdialog(_:ispresented:titlevisibility:actions:)-540w9.md)
   Presents a confirmation dialog when a given condition is true, using a string variable as a title.
 - [func confirmationDialog<A>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](shortcutslink/confirmationdialog(_:ispresented:titlevisibility:actions:)-q22q.md)
@@ -379,6 +462,8 @@
   Presents a confirmation dialog with a message when a given condition is true, using a localized string key for the title.
 - [func confirmationDialog<A, M>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](shortcutslink/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-3gca1.md)
   Presents a confirmation dialog with a message when a given condition is true, using a text view for the title.
+- [func confirmationDialog<A, M>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](shortcutslink/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-67tv0.md)
+  Presents a confirmation dialog with a message when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog<S, A, M>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](shortcutslink/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-j261.md)
   Presents a confirmation dialog with a message when a given condition is true, using a string variable for the title.
 - [func confirmationDialog<S, A, T>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](shortcutslink/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-1eroa.md)
@@ -387,10 +472,14 @@
   Presents a confirmation dialog using data to produce the dialog’s content and a localized string key for the title.
 - [func confirmationDialog<A, T>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](shortcutslink/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-2vszn.md)
   Presents a confirmation dialog using data to produce the dialog’s content and a text view for the title.
+- [func confirmationDialog<A, T>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](shortcutslink/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-53t7a.md)
+  Presents a confirmation dialog using data to produce the dialog’s content and a localized string resource for the title.
 - [func confirmationDialog<A, M, T>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](shortcutslink/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-1lq0n.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string key for the title.
 - [func confirmationDialog<S, A, M, T>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](shortcutslink/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-6kt07.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a string variable for the title.
+- [func confirmationDialog<A, M, T>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](shortcutslink/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-87b6i.md)
+  Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string resource for the title.
 - [func confirmationDialog<A, M, T>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](shortcutslink/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-9ijow.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a text view for the message.
 - [func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View](shortcutslink/containerbackground(_:for:).md)
@@ -407,6 +496,7 @@
   Sets the container shape to use for any container relative shape within this view.
 - [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](shortcutslink/containervalue(_:_:).md)
   Sets a particular container value of a view.
+- [func contentCaptureProtected(Bool) -> some View](shortcutslink/contentcaptureprotected(_:).md)
 - [func contentMargins(Edge.Set, EdgeInsets, for: ContentMarginPlacement) -> some View](shortcutslink/contentmargins(_:_:for:)-3g4op.md)
   Configures the content margin for a provided placement.
 - [func contentMargins(Edge.Set, CGFloat?, for: ContentMarginPlacement) -> some View](shortcutslink/contentmargins(_:_:for:)-4dp7d.md)
@@ -435,8 +525,10 @@
   Sets the contrast and separation between similar colors in this view.
 - [func controlGroupStyle<S>(S) -> some View](shortcutslink/controlgroupstyle(_:).md)
   Sets the style for control groups within this view.
-- [func controlSize(ControlSize) -> some View](shortcutslink/controlsize(_:).md)
+- [func controlSize(ControlSize) -> some View](shortcutslink/controlsize(_:)-2srh8.md)
   Sets the size for controls within this view.
+- [func controlSize<T>(T) -> some View](shortcutslink/controlsize(_:)-jxy2.md)
+  Limits the control size within the view to the given range.
 - [func coordinateSpace(NamedCoordinateSpace) -> some View](shortcutslink/coordinatespace(_:).md)
   Assigns a name to the view’s coordinate space, so other code can operate on dimensions like points and sizes relative to the named space.
 - [func coordinateSpace<T>(name: T) -> some View](shortcutslink/coordinatespace(name:).md)
@@ -467,6 +559,8 @@
   Configures the icon used by dialogs within this view.
 - [func dialogSuppressionToggle<S>(S, isSuppressed: Binding<Bool>) -> some View](shortcutslink/dialogsuppressiontoggle(_:issuppressed:)-32772.md)
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
+- [func dialogSuppressionToggle(LocalizedStringResource, isSuppressed: Binding<Bool>) -> some View](shortcutslink/dialogsuppressiontoggle(_:issuppressed:)-3ct68.md)
+  Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle(LocalizedStringKey, isSuppressed: Binding<Bool>) -> some View](shortcutslink/dialogsuppressiontoggle(_:issuppressed:)-7nloy.md)
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle(Text, isSuppressed: Binding<Bool>) -> some View](shortcutslink/dialogsuppressiontoggle(_:issuppressed:)-96cc4.md)
@@ -483,14 +577,34 @@
   Returns a new view that applies `shader` to `self` as a geometric distortion effect on the location of each pixel.
 - [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](shortcutslink/documentbrowsercontextmenu(_:).md)
   Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
+- [func dragConfiguration(DragConfiguration) -> some View](shortcutslink/dragconfiguration(_:).md)
+  Configures a drag session.
+- [func dragContainer<ItemID, Item, Data>(for: Item.Type, id: (Item) -> ItemID, in: Namespace.ID?, (ItemID) -> Data) -> some View](shortcutslink/dragcontainer(for:id:in:_:).md)
+  A container with draggable views. The drag payload is based on the current selection.
+- [func dragContainer<Item, ItemID>(for: Item.Type, id: (Item) -> ItemID, in: Namespace.ID?, selection: @autoclosure () -> ItemID?, (ItemID) -> Item?) -> some View](shortcutslink/dragcontainer(for:id:in:selection:_:)-9jwhg.md)
+  A container with single item selection and draggable views. The drag payload is based on the current selection and provided identifiers.
+- [func dragContainer<ItemID, Item, Data>(for: Item.Type, id: (consuming Item) -> ItemID, in: Namespace.ID?, selection: @autoclosure () -> Array<ItemID>, (Array<ItemID>) -> Data) -> some View](shortcutslink/dragcontainer(for:id:in:selection:_:)-s7ng.md)
+  A container with multiple selection and draggable views. The drag payload is based on the current selection and provided identifiers.
+- [func dragContainer<Item, Data>(for: Item.Type, in: Namespace.ID?, (Item.ID) -> Data) -> some View](shortcutslink/dragcontainer(for:in:_:).md)
+  A container with draggable views. The drag payload is identifiable. To form the payload, use the identifier of the dragged view inside the container.
+- [func dragContainer<Item, Data>(for: Item.Type, in: Namespace.ID?, selection: @autoclosure () -> Array<Item.ID>, (Array<Item.ID>) -> Data) -> some View](shortcutslink/dragcontainer(for:in:selection:_:)-99s7d.md)
+  A container with multiple selection and draggable views. The drag payload is identifiable and is based on the current selection.
+- [func dragContainer<Item>(for: Item.Type, in: Namespace.ID?, selection: @autoclosure () -> Item.ID?, (Item.ID) -> Item?) -> some View](shortcutslink/dragcontainer(for:in:selection:_:)-9ys9u.md)
+  A container with single item selection and draggable views. The drag payload is identifiable and is based on the current selection.
 - [func draggable<T>(@autoclosure () -> T) -> some View](shortcutslink/draggable(_:).md)
   Activates this view as the source of a drag and drop operation.
 - [func draggable<V, T>(@autoclosure () -> T, preview: () -> V) -> some View](shortcutslink/draggable(_:preview:).md)
   Activates this view as the source of a drag and drop operation.
+- [func draggable<T, ID>(for: T.Type, id: ID, (ID) -> T?) -> some View](shortcutslink/draggable(for:id:_:).md)
+  Activates this view as the source of a drag-and-drop operation.
 - [func drawingGroup(opaque: Bool, colorMode: ColorRenderingMode) -> some View](shortcutslink/drawinggroup(opaque:colormode:).md)
   Composites this view’s contents into an offscreen image before final display.
+- [func dropConfiguration((DropSession) -> DropConfiguration) -> some View](shortcutslink/dropconfiguration(_:).md)
+  Configures a drop session.
 - [func dropDestination<T>(for: T.Type, action: ([T], CGPoint) -> Bool, isTargeted: (Bool) -> Void) -> some View](shortcutslink/dropdestination(for:action:istargeted:).md)
   Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
+- [func dropDestination<T>(for: T.Type, isEnabled: Bool, action: ([T], DropSession) -> Void) -> some View](shortcutslink/dropdestination(for:isenabled:action:).md)
+  Defines the destination of a drag and drop operation that provides a drop operation proposal and handles the dropped content with a closure that you specify.
 - [func dynamicTypeSize(DynamicTypeSize) -> some View](shortcutslink/dynamictypesize(_:)-3r6u6.md)
   Sets the Dynamic Type size within the view to the given value.
 - [func dynamicTypeSize<T>(T) -> some View](shortcutslink/dynamictypesize(_:)-7xnnn.md)
@@ -507,6 +621,8 @@
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to provide a refined URL search experience: include or exclude hidden files, allow searching by tag, etc.
 - [func fileDialogConfirmationLabel(Text?) -> some View](shortcutslink/filedialogconfirmationlabel(_:)-5act7.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with custom text as a confirmation button label.
+- [func fileDialogConfirmationLabel(LocalizedStringResource) -> some View](shortcutslink/filedialogconfirmationlabel(_:)-6ebrx.md)
+  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 - [func fileDialogConfirmationLabel(LocalizedStringKey) -> some View](shortcutslink/filedialogconfirmationlabel(_:)-6mdrq.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 - [func fileDialogConfirmationLabel<S>(S) -> some View](shortcutslink/filedialogconfirmationlabel(_:)-7sc2z.md)
@@ -522,6 +638,8 @@
 - [func fileDialogMessage<S>(S) -> some View](shortcutslink/filedialogmessage(_:)-8eir2.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogMessage(LocalizedStringKey) -> some View](shortcutslink/filedialogmessage(_:)-98muc.md)
+  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
+- [func fileDialogMessage(LocalizedStringResource) -> some View](shortcutslink/filedialogmessage(_:)-ozz3.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogURLEnabled(Predicate<URL>) -> some View](shortcutslink/filedialogurlenabled(_:).md)
   On macOS, configures the the `fileImporter` or `fileMover` to conditionally disable presented URLs.
@@ -549,6 +667,8 @@
   On macOS, configures the `fileExporter` with a label for the file name field.
 - [func fileExporterFilenameLabel(Text?) -> some View](shortcutslink/fileexporterfilenamelabel(_:)-39eov.md)
   On macOS, configures the `fileExporter` with a text to use as a label for the file name field.
+- [func fileExporterFilenameLabel(LocalizedStringResource) -> some View](shortcutslink/fileexporterfilenamelabel(_:)-7b9ka.md)
+  On macOS, configures the `fileExporter` with a label for the file name field.
 - [func fileExporterFilenameLabel<S>(S) -> some View](shortcutslink/fileexporterfilenamelabel(_:)-9kgi8.md)
   On macOS, configures the `fileExporter` with a label for the file name field.
 - [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], allowsMultipleSelection: Bool, onCompletion: (Result<[URL], any Error>) -> Void) -> some View](shortcutslink/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:).md)
@@ -657,6 +777,14 @@
   Fills the view’s background with an automatic glass background effect and container-relative rounded rectangle shape.
 - [func glassBackgroundEffect<S>(in: S, displayMode: GlassBackgroundDisplayMode) -> some View](shortcutslink/glassbackgroundeffect(in:displaymode:).md)
   Fills the view’s background with an automatic glass background effect and a shape that you specify.
+- [func glassEffect(Glass, in: some Shape, isEnabled: Bool) -> some View](shortcutslink/glasseffect(_:in:isenabled:).md)
+  Applies a glass effect to this view.
+- [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](shortcutslink/glasseffectid(_:in:).md)
+  Associates an identity value to glass effects defined within this view.
+- [func glassEffectTransition(GlassEffectTransition, isEnabled: Bool) -> some View](shortcutslink/glasseffecttransition(_:isenabled:).md)
+  Associates a glass effect transition with any glass effects defined within this view.
+- [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](shortcutslink/glasseffectunion(id:namespace:).md)
+  Associates any glass effects defined within this view to a union with the provided id.
 - [func grayscale(Double) -> some View](shortcutslink/grayscale(_:).md)
   Adds a grayscale effect to this view.
 - [func gridCellAnchor(UnitPoint) -> some View](shortcutslink/gridcellanchor(_:).md)
@@ -679,6 +807,8 @@
   Sets the header prominence for this view.
 - [func help(LocalizedStringKey) -> some View](shortcutslink/help(_:)-3m9wt.md)
   Adds help text to a view using a localized string that you provide.
+- [func help(LocalizedStringResource) -> some View](shortcutslink/help(_:)-677x6.md)
+  Adds help text to a view using a localized string resource that you provide.
 - [func help(Text) -> some View](shortcutslink/help(_:)-807cb.md)
   Adds help text to a view using a text view that you provide.
 - [func help<S>(S) -> some View](shortcutslink/help(_:)-8u2lm.md)
@@ -753,6 +883,10 @@
   Loops the given keyframes continuously, updating the view using the modifiers you apply in `body`.
 - [func keyframeAnimator<Value>(initialValue: Value, trigger: some Equatable, content: (PlaceholderContentView<Self>, Value) -> some View, keyframes: (Value) -> some Keyframes) -> some View](shortcutslink/keyframeanimator(initialvalue:trigger:content:keyframes:).md)
   Plays the given keyframes when the given trigger value changes, updating the view using the modifiers you apply in `body`.
+- [func labelIconToTitleSpacing(CGFloat) -> some View](shortcutslink/labelicontotitlespacing(_:).md)
+  Set the spacing between the icon and title in labels.
+- [func labelReservedIconWidth(CGFloat) -> some View](shortcutslink/labelreservediconwidth(_:).md)
+  Set the width reserved for icons in labels.
 - [func labelStyle<S>(S) -> some View](shortcutslink/labelstyle(_:).md)
   Sets the style for labels within this view.
 - [func labeledContentStyle<S>(S) -> some View](shortcutslink/labeledcontentstyle(_:).md)
@@ -769,6 +903,8 @@
   Sets the priority by which a parent layout should apportion space to this child.
 - [func layoutValue<K>(key: K.Type, value: K.Value) -> some View](shortcutslink/layoutvalue(key:value:).md)
   Associates a value with a custom layout property.
+- [func lineHeight(AttributedString.LineHeight?) -> some View](shortcutslink/lineheight(_:).md)
+  A modifier for the default line height in the view hierarchy.
 - [func lineLimit(PartialRangeThrough<Int>) -> some View](shortcutslink/linelimit(_:)-4cfsc.md)
   Sets to a partial range the number of lines that text can occupy in this view.
 - [func lineLimit(ClosedRange<Int>) -> some View](shortcutslink/linelimit(_:)-4jmf9.md)
@@ -793,12 +929,18 @@
   Requests that the containing list row have its hover effect disabled.
 - [func listRowInsets(EdgeInsets?) -> some View](shortcutslink/listrowinsets(_:).md)
   Applies an inset to the rows in a list.
+- [func listRowInsets(Edge.Set, CGFloat?) -> some View](shortcutslink/listrowinsets(_:_:).md)
+  Sets the insets of rows in a list on the specified edges.
 - [func listRowSeparator(Visibility, edges: VerticalEdge.Set) -> some View](shortcutslink/listrowseparator(_:edges:).md)
   Sets the display mode for the separator associated with this specific row.
 - [func listRowSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](shortcutslink/listrowseparatortint(_:edges:).md)
   Sets the tint color associated with a row.
 - [func listRowSpacing(CGFloat?) -> some View](shortcutslink/listrowspacing(_:).md)
   Sets the vertical spacing between two adjacent rows in a List.
+- [func listSectionIndexVisibility(Visibility) -> some View](shortcutslink/listsectionindexvisibility(_:).md)
+  Changes the visibility of the list section index.
+- [func listSectionMargins(Edge.Set, CGFloat?) -> some View](shortcutslink/listsectionmargins(_:_:).md)
+  Set the section margins for the specific edges.
 - [func listSectionSeparator(Visibility, edges: VerticalEdge.Set) -> some View](shortcutslink/listsectionseparator(_:edges:).md)
   Sets whether to hide the separator associated with a list section.
 - [func listSectionSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](shortcutslink/listsectionseparatortint(_:edges:).md)
@@ -811,6 +953,14 @@
   Sets the style for lists within this view.
 - [func luminanceToAlpha() -> some View](shortcutslink/luminancetoalpha.md)
   Adds a luminance to alpha effect to this view.
+- [func manipulable(coordinateSpace: some CoordinateSpaceProtocol, operations: Manipulable.Operation.Set, inertia: Manipulable.Inertia, isEnabled: Bool, onChanged: ((Manipulable.Event) -> Void)?) -> some View](shortcutslink/manipulable(coordinatespace:operations:inertia:isenabled:onchanged:).md)
+  Allows this view to be manipulated using common hand gestures.
+- [func manipulable(transform: Binding<AffineTransform3D>, coordinateSpace: some CoordinateSpaceProtocol, operations: Manipulable.Operation.Set, inertia: Manipulable.Inertia, isEnabled: Bool, onChanged: ((Manipulable.Event) -> Void)?) -> some View](shortcutslink/manipulable(transform:coordinatespace:operations:inertia:isenabled:onchanged:).md)
+  Applies the given 3D affine transform to the view and allows it to be manipulated using common hand gestures.
+- [func manipulable(using: Manipulable.GestureState) -> some View](shortcutslink/manipulable(using:).md)
+  Allows the view to be manipulated using a manipulation gesture attached to a different view.
+- [func manipulationGesture(updating: Binding<Manipulable.GestureState>, coordinateSpace: some CoordinateSpaceProtocol, operations: Manipulable.Operation.Set, inertia: Manipulable.Inertia, isEnabled: Bool, onChanged: ((Manipulable.Event) -> Void)?) -> some View](shortcutslink/manipulationgesture(updating:coordinatespace:operations:inertia:isenabled:onchanged:).md)
+  Adds a manipulation gesture to this view without allowing this view to be manipulable itself.
 - [func mask<Mask>(Mask) -> some View](shortcutslink/mask(_:).md)
   Masks this view using the alpha channel of the given view.
 - [func mask<Mask>(alignment: Alignment, () -> Mask) -> some View](shortcutslink/mask(alignment:_:).md)
@@ -843,6 +993,8 @@
   Adds a condition for whether the view’s view hierarchy is movable.
 - [func multilineTextAlignment(TextAlignment) -> some View](shortcutslink/multilinetextalignment(_:).md)
   Sets the alignment of a text view that contains multiple lines of text.
+- [func multilineTextAlignment(strategy: Text.AlignmentStrategy) -> some View](shortcutslink/multilinetextalignment(strategy:).md)
+  A modifier for the default text alignment strategy in the view hierarchy.
 - [func navigationBarBackButtonHidden(Bool) -> some View](shortcutslink/navigationbarbackbuttonhidden(_:).md)
   Hides the navigation bar back button for the view.
 - [func navigationBarHidden(Bool) -> some View](shortcutslink/navigationbarhidden(_:).md)
@@ -882,6 +1034,8 @@
   Configures the view’s document for purposes of navigation.
 - [func navigationDocument<D>(D, preview: SharePreview<Never, Never>) -> some View](shortcutslink/navigationdocument(_:preview:)-92z3x.md)
   Configures the view’s document for purposes of navigation.
+- [func navigationLinkIndicatorVisibility(Visibility) -> some View](shortcutslink/navigationlinkindicatorvisibility(_:).md)
+  Configures whether navigation links show a disclosure indicator.
 - [func navigationSplitViewColumnWidth(CGFloat) -> some View](shortcutslink/navigationsplitviewcolumnwidth(_:).md)
   Sets a fixed, preferred width for the column containing this view.
 - [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](shortcutslink/navigationsplitviewcolumnwidth(min:ideal:max:).md)
@@ -894,10 +1048,14 @@
   Configures the view’s subtitle for purposes of navigation.
 - [func navigationSubtitle<S>(S) -> some View](shortcutslink/navigationsubtitle(_:)-7na9z.md)
   Configures the view’s subtitle for purposes of navigation, using a string.
+- [func navigationSubtitle(LocalizedStringResource) -> some View](shortcutslink/navigationsubtitle(_:)-8q4tb.md)
+  Configures the view’s subtitle for purposes of navigation, using a localized string resource.
 - [func navigationTitle<S>(S) -> some View](shortcutslink/navigationtitle(_:)-2acge.md)
   Configures the view’s title for purposes of navigation, using a string.
 - [func navigationTitle(LocalizedStringKey) -> some View](shortcutslink/navigationtitle(_:)-4gj5y.md)
   Configures the view’s title for purposes of navigation, using a localized string.
+- [func navigationTitle(LocalizedStringResource) -> some View](shortcutslink/navigationtitle(_:)-7hn96.md)
+  Configures the view’s title for purposes of navigation, using a localized string resource.
 - [func navigationTitle(Binding<String>) -> some View](shortcutslink/navigationtitle(_:)-7s101.md)
   Configures the view’s title for purposes of navigation, using a string binding.
 - [func navigationTitle<V>(() -> V) -> some View](shortcutslink/navigationtitle(_:)-hbeh.md)
@@ -914,6 +1072,8 @@
   Offset this view by the specified horizontal and vertical distances.
 - [func offset(z: CGFloat) -> some View](shortcutslink/offset(z:).md)
   Brings a view forward in Z by the provided distance in points.
+- [func onAppIntentExecution<I>(I.Type, perform: (I) -> Void) -> some View](shortcutslink/onappintentexecution(_:perform:).md)
+  Registers a handler to invoke in response to the specified app intent that your app receives.
 - [func onAppear(perform: (() -> Void)?) -> some View](shortcutslink/onappear(perform:).md)
   Adds an action to perform before this view appears.
 - [func onChange<V>(of: V, initial: Bool, (V, V) -> Void) -> some View](shortcutslink/onchange(of:initial:_:)-1e0we.md)
@@ -932,6 +1092,8 @@
   Activates this view as the source of a drag and drop operation.
 - [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](shortcutslink/ondrag(_:preview:).md)
   Activates this view as the source of a drag and drop operation.
+- [func onDragSessionUpdated((DragSession) -> Void) -> some View](shortcutslink/ondragsessionupdated(_:).md)
+  Specifies an action to perform on each update of an ongoing dragging operation activated by `draggable(_:)` or other drag modifiers.
 - [func onDrop(of: [UTType], delegate: any DropDelegate) -> some View](shortcutslink/ondrop(of:delegate:)-1avh7.md)
   Defines the destination of a drag and drop operation using behavior controlled by the delegate that you provide.
 - [func onDrop(of: [String], delegate: any DropDelegate) -> some View](shortcutslink/ondrop(of:delegate:)-fehu.md)
@@ -944,6 +1106,8 @@
   Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
 - [func onDrop(of: [UTType], isTargeted: Binding<Bool>?, perform: ([NSItemProvider]) -> Bool) -> some View](shortcutslink/ondrop(of:istargeted:perform:)-9n9jj.md)
   Defines the destination of a drag-and-drop operation that handles the dropped content with a closure that you specify.
+- [func onDropSessionUpdated((DropSession) -> Void) -> some View](shortcutslink/ondropsessionupdated(_:).md)
+  Specifies an action to perform on each update of an ongoing drop operation activated by `dropDestination(_:)` or other drop modifiers.
 - [func onGeometryChange<T>(for: T.Type, of: (GeometryProxy) -> T, action: (T, T) -> Void) -> some View](shortcutslink/ongeometrychange(for:of:action:)-3naw6.md)
   Adds an action to be performed when a value, created from a geometry proxy, changes.
 - [func onGeometryChange<T>(for: T.Type, of: (GeometryProxy) -> T, action: (T) -> Void) -> some View](shortcutslink/ongeometrychange(for:of:action:)-84iqq.md)
@@ -976,6 +1140,8 @@
   Adds an action to perform when this view recognizes a long press gesture.
 - [func onOpenURL(perform: (URL) -> ()) -> some View](shortcutslink/onopenurl(perform:).md)
   Registers a handler to invoke in response to a URL that your app receives.
+- [func onOpenURL(prefersInApp: Bool) -> some View](shortcutslink/onopenurl(prefersinapp:).md)
+  Sets an `OpenURLAction` that prefers opening URL with an in-app browser. It’s equivalent to calling `.onOpenURL(_:)`
 - [func onPencilDoubleTap(perform: (PencilDoubleTapGestureValue) -> Void) -> some View](shortcutslink/onpencildoubletap(perform:).md)
   Adds an action to perform after the user double-taps their Apple Pencil.
 - [func onPencilSqueeze(perform: (PencilSqueezeGesturePhase) -> Void) -> some View](shortcutslink/onpencilsqueeze(perform:).md)
@@ -1002,9 +1168,15 @@
   Adds an action to perform when this view recognizes a tap gesture.
 - [func onVolumeViewpointChange(updateStrategy: VolumeViewpointUpdateStrategy, initial: Bool, (Viewpoint3D, Viewpoint3D) -> Void) -> some View](shortcutslink/onvolumeviewpointchange(updatestrategy:initial:_:).md)
   Adds an action to perform when the viewpoint of the volume changes.
+- [func onWorldRecenter(action: () -> Void) -> some View](shortcutslink/onworldrecenter(action:)-3kpw8.md)
+  Adds an action to perform when recentering the view with the digital crown.
+- [func onWorldRecenter(action: (WorldRecenterPhase) -> Void) -> some View](shortcutslink/onworldrecenter(action:)-46mc4.md)
+  Adds an action to perform when recentering the view with the digital crown.
 - [func opacity(Double) -> some View](shortcutslink/opacity(_:).md)
   Sets the transparency of this view.
-- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment, ornament: () -> Content) -> some View](shortcutslink/ornament(visibility:attachmentanchor:contentalignment:ornament:).md)
+- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment, ornament: () -> Content) -> some View](shortcutslink/ornament(visibility:attachmentanchor:contentalignment:ornament:)-6mhi9.md)
+  Presents an ornament.
+- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D, ornament: () -> Content) -> some View](shortcutslink/ornament(visibility:attachmentanchor:contentalignment:ornament:)-f1iv.md)
   Presents an ornament.
 - [func overlay<Overlay>(Overlay, alignment: Alignment) -> some View](shortcutslink/overlay(_:alignment:).md)
   Layers a secondary view in front of this view.
@@ -1058,12 +1230,18 @@
   Sets the preferred color scheme for this presentation.
 - [func preferredSurroundingsEffect(SurroundingsEffect?) -> some View](shortcutslink/preferredsurroundingseffect(_:).md)
   Applies an effect to passthrough video.
+- [func preferredWindowClippingMargins(Edge3D.Set, EdgeInsets3D) -> some View](shortcutslink/preferredwindowclippingmargins(_:_:)-5rzfi.md)
+  Requests additional margins for drawing beyond the bounds of the window.
+- [func preferredWindowClippingMargins(Edge3D.Set, CGFloat?) -> some View](shortcutslink/preferredwindowclippingmargins(_:_:)-ijji.md)
+  Requests additional margins for drawing beyond the bounds of the window.
 - [func presentationBackground<S>(S) -> some View](shortcutslink/presentationbackground(_:).md)
   Sets the presentation background of the enclosing sheet using a shape style.
 - [func presentationBackground<V>(alignment: Alignment, content: () -> V) -> some View](shortcutslink/presentationbackground(alignment:content:).md)
   Sets the presentation background of the enclosing sheet to a custom view.
 - [func presentationBackgroundInteraction(PresentationBackgroundInteraction) -> some View](shortcutslink/presentationbackgroundinteraction(_:).md)
   Controls whether people can interact with the view behind a presentation.
+- [func presentationBreakthroughEffect(BreakthroughEffect) -> some View](shortcutslink/presentationbreakthrougheffect(_:).md)
+  Changes the way the enclosing presentation breaks through content occluding it.
 - [func presentationCompactAdaptation(PresentationAdaptation) -> some View](shortcutslink/presentationcompactadaptation(_:).md)
   Specifies how to adapt a presentation to compact size classes.
 - [func presentationCompactAdaptation(horizontal: PresentationAdaptation, vertical: PresentationAdaptation) -> some View](shortcutslink/presentationcompactadaptation(horizontal:vertical:).md)
@@ -1116,8 +1294,18 @@
   Rotates the view’s content by an angle about an axis that you specify as a tuple of elements.
 - [func rotation3DEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint, anchorZ: CGFloat, perspective: CGFloat) -> some View](shortcutslink/rotation3deffect(_:axis:anchor:anchorz:perspective:).md)
   Renders a view’s content as if it’s rotated in three dimensions around the specified axis.
+- [func rotation3DLayout(Rotation3D) -> some View](shortcutslink/rotation3dlayout(_:).md)
+  Rotates a view with impacts to its frame in a containing layout
+- [func rotation3DLayout(Angle, axis: RotationAxis3D) -> some View](shortcutslink/rotation3dlayout(_:axis:)-3q2kd.md)
+  Rotates a view with impacts to its frame in a containing layout
+- [func rotation3DLayout(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat)) -> some View](shortcutslink/rotation3dlayout(_:axis:)-x1m1.md)
+  Rotates a view with impacts to its frame in a containing layout
 - [func rotationEffect(Angle, anchor: UnitPoint) -> some View](shortcutslink/rotationeffect(_:anchor:).md)
   Rotates a view’s rendered output in two dimensions around the specified point.
+- [func safeAreaBar(edge: HorizontalEdge, alignment: VerticalAlignment, spacing: CGFloat?, content: () -> some View) -> some View](shortcutslink/safeareabar(edge:alignment:spacing:content:)-60y25.md)
+  Renders the provided content appropriately to be displayed as a custom bar.
+- [func safeAreaBar(edge: VerticalEdge, alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> some View) -> some View](shortcutslink/safeareabar(edge:alignment:spacing:content:)-9emp.md)
+  Renders the provided content appropriate to be displayed as a custom bar.
 - [func safeAreaInset<V>(edge: VerticalEdge, alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> V) -> some View](shortcutslink/safeareainset(edge:alignment:spacing:content:)-75000.md)
   Shows the specified content above or below the modified view.
 - [func safeAreaInset<V>(edge: HorizontalEdge, alignment: VerticalAlignment, spacing: CGFloat?, content: () -> V) -> some View](shortcutslink/safeareainset(edge:alignment:spacing:content:)-9g4qs.md)
@@ -1133,20 +1321,24 @@
 - [func scaleEffect(CGFloat, anchor: UnitPoint) -> ModifiedContent<Self, _UniformScaleEffect>](shortcutslink/scaleeffect(_:anchor:)-1jou8.md)
   Scales this view’s rendered output by the given amount in both the horizontal and vertical directions, relative to an anchor point.
 - [func scaleEffect(Size3D, anchor: UnitPoint3D) -> some View](shortcutslink/scaleeffect(_:anchor:)-1xcxp.md)
-  Scales this view uniformly by the specified size in each dimension.
+  Scales this view uniformly by the specified size in each dimension, relative to an anchor point.
 - [func scaleEffect(CGSize, anchor: UnitPoint) -> some View](shortcutslink/scaleeffect(_:anchor:)-1yzmo.md)
   Scales this view’s rendered output by the given vertical and horizontal size amounts, relative to an anchor point.
 - [func scaleEffect(CGFloat, anchor: UnitPoint3D) -> some View](shortcutslink/scaleeffect(_:anchor:)-6t3ck.md)
-  Scales this view uniformly by the specified factor.
+  Scales this view uniformly by the specified factor, relative to an anchor point.
 - [func scaleEffect(CGFloat, anchor: UnitPoint) -> some View](shortcutslink/scaleeffect(_:anchor:)-k4jy.md)
   Scales this view’s rendered output by the given amount in both the horizontal and vertical directions, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](shortcutslink/scaleeffect(x:y:anchor:).md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](shortcutslink/scaleeffect(x:y:z:anchor:).md)
-  Scales this view by the specified horizontal, vertical, and depth factors.
+  Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
 - [func scaledToFill() -> some View](shortcutslink/scaledtofill.md)
   Scales this view to fill its parent.
+- [func scaledToFill3D() -> some View](shortcutslink/scaledtofill3d.md)
+  Scales this view to fill its parent.
 - [func scaledToFit() -> some View](shortcutslink/scaledtofit.md)
+  Scales this view to fit its parent.
+- [func scaledToFit3D() -> some View](shortcutslink/scaledtofit3d.md)
   Scales this view to fit its parent.
 - [func scenePadding(Edge.Set) -> some View](shortcutslink/scenepadding(_:).md)
   Adds padding to the specified edges of this view using an amount that’s appropriate for the current scene.
@@ -1162,6 +1354,10 @@
   Disables or enables scrolling in scrollable views.
 - [func scrollDismissesKeyboard(ScrollDismissesKeyboardMode) -> some View](shortcutslink/scrolldismisseskeyboard(_:).md)
   Configures the behavior in which scrollable content interacts with the software keyboard.
+- [func scrollEdgeEffectDisabled(Bool, for: Edge.Set) -> some View](shortcutslink/scrolledgeeffectdisabled(_:for:).md)
+  Disables any scroll edge effects for scroll views within this hierarchy.
+- [func scrollEdgeEffectStyle(ScrollEdgeEffectStyle?, for: Edge.Set) -> some View](shortcutslink/scrolledgeeffectstyle(_:for:).md)
+  Configures the scroll edge effect style for scroll views within this hierarchy.
 - [func scrollIndicators(ScrollIndicatorVisibility, axes: Axis.Set) -> some View](shortcutslink/scrollindicators(_:axes:).md)
   Sets the visibility of scroll indicators within this view.
 - [func scrollIndicatorsFlash(onAppear: Bool) -> some View](shortcutslink/scrollindicatorsflash(onappear:).md)
@@ -1179,9 +1375,9 @@
 - [func scrollTargetLayout(isEnabled: Bool) -> some View](shortcutslink/scrolltargetlayout(isenabled:).md)
   Configures the outermost layout as a scroll target layout.
 - [func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](shortcutslink/scrolltransition(_:axis:transition:).md)
-  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing: ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](shortcutslink/scrolltransition(topleading:bottomtrailing:axis:transition:).md)
-  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [func searchCompletion(String) -> some View](shortcutslink/searchcompletion(_:)-5n903.md)
   Associates a fully formed string with the value of this view when used as a search suggestion.
 - [func searchCompletion<T>(T) -> some View](shortcutslink/searchcompletion(_:)-6nwe9.md)
@@ -1202,6 +1398,10 @@
   Configures the search suggestions for this view.
 - [func searchSuggestions(Visibility, for: SearchSuggestionsPlacement.Set) -> some View](shortcutslink/searchsuggestions(_:for:).md)
   Configures how to display search suggestions within this view.
+- [func searchToolbarBehavior(SearchToolbarBehavior) -> some View](shortcutslink/searchtoolbarbehavior(_:).md)
+  Configures the behavior for search in the toolbar.
+- [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (Binding<C.Element>) -> some View) -> some View](shortcutslink/searchable(text:editabletokens:ispresented:placement:prompt:token:)-10wu3.md)
+  Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (Binding<C.Element>) -> some View) -> some View](shortcutslink/searchable(text:editabletokens:ispresented:placement:prompt:token:)-1neod.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?, token: (Binding<C.Element>) -> some View) -> some View](shortcutslink/searchable(text:editabletokens:ispresented:placement:prompt:token:)-4jcl9.md)
@@ -1212,15 +1412,21 @@
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: some StringProtocol, token: (Binding<C.Element>) -> some View) -> some View](shortcutslink/searchable(text:editabletokens:placement:prompt:token:)-3k0zl.md)
   Marks this view as searchable, which configures the display of a search field.
+- [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (Binding<C.Element>) -> some View) -> some View](shortcutslink/searchable(text:editabletokens:placement:prompt:token:)-5d0yb.md)
+  Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (Binding<C.Element>) -> some View) -> some View](shortcutslink/searchable(text:editabletokens:placement:prompt:token:)-xf4n.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey) -> some View](shortcutslink/searchable(text:ispresented:placement:prompt:)-1dnc7.md)
+  Marks this view as searchable with programmatic presentation of the search field.
+- [func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource) -> some View](shortcutslink/searchable(text:ispresented:placement:prompt:)-62ebm.md)
   Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable<S>(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: S) -> some View](shortcutslink/searchable(text:ispresented:placement:prompt:)-8hj5.md)
   Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?) -> some View](shortcutslink/searchable(text:ispresented:placement:prompt:)-9cf6.md)
   Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement, prompt: S) -> some View](shortcutslink/searchable(text:placement:prompt:)-31st3.md)
+  Marks this view as searchable, which configures the display of a search field.
+- [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringResource) -> some View](shortcutslink/searchable(text:placement:prompt:)-54j2m.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: Text?) -> some View](shortcutslink/searchable(text:placement:prompt:)-7uayx.md)
   Marks this view as searchable, which configures the display of a search field.
@@ -1236,6 +1442,8 @@
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](shortcutslink/searchable(text:tokens:ispresented:placement:prompt:token:)-44lnk.md)
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](shortcutslink/searchable(text:tokens:ispresented:placement:prompt:token:)-5kn7.md)
+  Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](shortcutslink/searchable(text:tokens:ispresented:placement:prompt:token:)-xw71.md)
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](shortcutslink/searchable(text:tokens:placement:prompt:token:)-1nlm8.md)
@@ -1244,12 +1452,18 @@
   Marks this view as searchable with text and tokens.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](shortcutslink/searchable(text:tokens:placement:prompt:token:)-36bu2.md)
   Marks this view as searchable with text and tokens.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](shortcutslink/searchable(text:tokens:placement:prompt:token:)-85odk.md)
+  Marks this view as searchable with text and tokens.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](shortcutslink/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-1jw9n.md)
+  Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](shortcutslink/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-3a5k0.md)
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](shortcutslink/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-6juq0.md)
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](shortcutslink/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-80mta.md)
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](shortcutslink/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-2gi76.md)
+  Marks this view as searchable with text, tokens, and suggestions.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](shortcutslink/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-3yglt.md)
   Marks this view as searchable with text, tokens, and suggestions.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](shortcutslink/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-4v6zu.md)
@@ -1258,13 +1472,19 @@
   Marks this view as searchable with text, tokens, and suggestions.
 - [func sectionActions<Content>(content: () -> Content) -> some View](shortcutslink/sectionactions(content:).md)
   Adds custom actions to a section.
+- [func sectionIndexLabel<S>(S?) -> some View](shortcutslink/sectionindexlabel(_:)-5khqi.md)
+  Sets the title that is used for the section index label pointing to this section, typically only a single character long.
+- [func sectionIndexLabel(Text?) -> some View](shortcutslink/sectionindexlabel(_:)-8dqi3.md)
+  Sets the label that is used in a section index to point to this section, typically only a single character long.
 - [func selectionDisabled(Bool) -> some View](shortcutslink/selectiondisabled(_:).md)
   Adds a condition that controls whether users can select this view.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View](shortcutslink/sensoryfeedback(_:trigger:).md)
   Plays the specified `feedback` when the provided `trigger` value changes.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T, condition: (T, T) -> Bool) -> some View](shortcutslink/sensoryfeedback(_:trigger:condition:).md)
   Plays the specified `feedback` when the provided `trigger` value changes and the `condition` closure returns `true`.
-- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](shortcutslink/sensoryfeedback(trigger:_:).md)
+- [func sensoryFeedback<T>(trigger: T, () -> SensoryFeedback?) -> some View](shortcutslink/sensoryfeedback(trigger:_:)-1uibv.md)
+  Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
+- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](shortcutslink/sensoryfeedback(trigger:_:)-8yoc0.md)
   Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
 - [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some View](shortcutslink/shadow(color:radius:x:y:).md)
   Adds a shadow to this view.
@@ -1282,6 +1502,10 @@
   Attaches a gesture to the view to process simultaneously with gestures defined by the view.
 - [func siriTipViewStyle(SiriTipViewStyle) -> some View](shortcutslink/siritipviewstyle(_:).md)
   Sets the given style for SiriTipView within the view hierarchy
+- [func spatialOverlay<V>(alignment: Alignment3D, content: () -> V) -> some View](shortcutslink/spatialoverlay(alignment:content:).md)
+  Adds secondary views within the 3D bounds of this view.
+- [func spatialOverlayPreferenceValue<K, V>(K.Type, alignment: Alignment3D, (K.Value) -> V) -> some View](shortcutslink/spatialoverlaypreferencevalue(_:alignment:_:).md)
+  Uses the specified preference value from the view to produce another view occupying the same 3D space of the first view.
 - [func speechAdjustedPitch(Double) -> some View](shortcutslink/speechadjustedpitch(_:).md)
   Raises or lowers the pitch of spoken text.
 - [func speechAlwaysIncludesPunctuation(Bool) -> some View](shortcutslink/speechalwaysincludespunctuation(_:).md)
@@ -1306,6 +1530,8 @@
   Specifies which viewpoints are supported for the window bar and ornaments in a volume.
 - [func swipeActions<T>(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> T) -> some View](shortcutslink/swipeactions(edge:allowsfullswipe:content:).md)
   Adds custom swipe actions to a row in a list.
+- [func symbolColorRenderingMode(SymbolColorRenderingMode?) -> some View](shortcutslink/symbolcolorrenderingmode(_:).md)
+  Sets the color rendering mode for symbol images.
 - [func symbolEffect<T>(T, options: SymbolEffectOptions, isActive: Bool) -> some View](shortcutslink/symboleffect(_:options:isactive:).md)
   Returns a new view with a symbol effect added to it.
 - [func symbolEffect<T, U>(T, options: SymbolEffectOptions, value: U) -> some View](shortcutslink/symboleffect(_:options:value:).md)
@@ -1314,10 +1540,15 @@
   Returns a new view with its inherited symbol image effects either removed or left unchanged.
 - [func symbolRenderingMode(SymbolRenderingMode?) -> some View](shortcutslink/symbolrenderingmode(_:).md)
   Sets the rendering mode for symbol images within this view.
+- [func symbolVariableValueMode(SymbolVariableValueMode?) -> some View](shortcutslink/symbolvariablevaluemode(_:).md)
+  Sets the variable value mode mode for symbol images within this view.
 - [func symbolVariant(SymbolVariants) -> some View](shortcutslink/symbolvariant(_:).md)
   Makes symbols within the view show a particular variant.
+- [func tabBarMinimizeBehavior(TabBarMinimizeBehavior) -> some View](shortcutslink/tabbarminimizebehavior(_:).md)
+  Sets the behavior for tab bar minimization.
 - [func tabItem<V>(() -> V) -> some View](shortcutslink/tabitem(_:).md)
   Sets the tab bar item associated with this view.
+- [func tabViewBottomAccessory<Content>(content: () -> Content) -> some View](shortcutslink/tabviewbottomaccessory(content:).md)
 - [func tabViewCustomization(Binding<TabViewCustomization>?) -> some View](shortcutslink/tabviewcustomization(_:).md)
   Specifies the customizations to apply to the sidebar representation of the tab view.
 - [func tabViewSidebarBottomBar<Content>(content: () -> Content) -> some View](shortcutslink/tabviewsidebarbottombar(content:).md)
@@ -1348,6 +1579,8 @@
   Sets the style for text fields within this view.
 - [func textInputAutocapitalization(TextInputAutocapitalization?) -> some View](shortcutslink/textinputautocapitalization(_:).md)
   Sets how often the shift key in the keyboard is automatically enabled.
+- [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](shortcutslink/textinputformattingcontrolvisibility(_:for:).md)
+  Define which system text formatting controls are available.
 - [func textRenderer<T>(T) -> some View](shortcutslink/textrenderer(_:).md)
   Returns a new view such that any text views within it will use `renderer` to draw themselves.
 - [func textScale(Text.Scale, isEnabled: Bool) -> some View](shortcutslink/textscale(_:isenabled:).md)
@@ -1397,7 +1630,7 @@
 - [func transaction(value: some Equatable, (inout Transaction) -> Void) -> some View](shortcutslink/transaction(value:_:).md)
   Applies the given transaction mutation function to all animations used within the view.
 - [func transform3DEffect(AffineTransform3D) -> some View](shortcutslink/transform3deffect(_:).md)
-  Applies a 3D transformation to the receiver.
+  Applies a 3D transformation to this view’s rendered output.
 - [func transformAnchorPreference<A, K>(key: K.Type, value: Anchor<A>.Source, transform: (inout K.Value, Anchor<A>) -> Void) -> some View](shortcutslink/transformanchorpreference(key:value:transform:).md)
   Sets a value for the specified preference key, the value is a function of the key’s current value and a geometry value tied to the current coordinate space, allowing readers of the value to convert the geometry to their local coordinates.
 - [func transformEffect(CGAffineTransform) -> some View](shortcutslink/transformeffect(_:).md)
@@ -1415,6 +1648,8 @@
 - [func typeSelectEquivalent(LocalizedStringKey) -> some View](shortcutslink/typeselectequivalent(_:)-4sxmv.md)
   Sets an explicit type select equivalent text in a collection, such as a list or table.
 - [func typeSelectEquivalent(Text?) -> some View](shortcutslink/typeselectequivalent(_:)-70bjn.md)
+  Sets an explicit type select equivalent text in a collection, such as a list or table.
+- [func typeSelectEquivalent(LocalizedStringResource) -> some View](shortcutslink/typeselectequivalent(_:)-84yjd.md)
   Sets an explicit type select equivalent text in a collection, such as a list or table.
 - [func typeSelectEquivalent<S>(S) -> some View](shortcutslink/typeselectequivalent(_:)-9yj03.md)
   Sets an explicit type select equivalent text in a collection, such as a list or table.
@@ -1440,6 +1675,8 @@
   Sets the visibility of the baseplate of a volume, which appears when a user looks towards the ‘floor’ of a volume and during resize. Both `automatic` and `visible` will show the baseplate. `hidden` will never show it.
 - [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](shortcutslink/windowtoolbarfullscreenvisibility(_:).md)
   Configures the visibility of the window toolbar when the window enters full screen mode.
+- [func writingDirection(strategy: Text.WritingDirectionStrategy) -> some View](shortcutslink/writingdirection(strategy:).md)
+  A modifier for the default text writing direction strategy in the view hierarchy.
 - [func writingToolsAffordanceVisibility(Visibility) -> some View](shortcutslink/writingtoolsaffordancevisibility(_:).md)
   Specifies whether the system should show the Writing Tools affordance for text input views affected by the environment.
 - [func writingToolsBehavior(WritingToolsBehavior) -> some View](shortcutslink/writingtoolsbehavior(_:).md)

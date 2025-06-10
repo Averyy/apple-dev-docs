@@ -1,6 +1,6 @@
 # Closed captioning sample description
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that defines how to interpret closed captioning media data.

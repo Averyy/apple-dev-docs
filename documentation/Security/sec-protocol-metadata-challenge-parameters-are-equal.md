@@ -25,11 +25,11 @@ Returns true if both metadata values have the same challenge parameters.
 #### Discussion
 
 ```None
-  Compare challenge-relevant information for two `sec_protocol_metadata` instances.
+ Compare challenge-relevant information for two `sec_protocol_metadata` instances.
 
-  This comparison includes all information relevant to a challenge request, including:
-  distinguished names, signature algorithms, and supported certificate types.
-  See Section 7.4.4 of RFC5246 for more details.
+ This comparison includes all information relevant to a challenge request, including:
+ distinguished names, signature algorithms, and supported certificate types.
+ See Section 7.4.4 of RFC5246 for more details.
 ```
 
 ## Parameters

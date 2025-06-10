@@ -74,6 +74,7 @@ The size and precision of this type depend on the CPU architecture. When you bui
 - [Hashable](../Swift/Hashable.md)
 - [Numeric](../Swift/Numeric.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SignedNumeric](../Swift/SignedNumeric.md)
 - [Strideable](../Swift/Strideable.md)
 - [VectorArithmetic](../SwiftUI/VectorArithmetic.md)

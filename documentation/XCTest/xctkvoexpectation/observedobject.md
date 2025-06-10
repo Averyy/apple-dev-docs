@@ -1,6 +1,6 @@
 # observedObject
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The object that the system observes for KVO changes.

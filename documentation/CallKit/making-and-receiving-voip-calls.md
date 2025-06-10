@@ -1,6 +1,6 @@
 # Making and receiving VoIP calls
 
-**Framework**: Callkit
+**Framework**: CallKit
 
 Initiate outgoing calls with VoIP and configure your app to receive incoming calls.
 
@@ -16,7 +16,7 @@ Initiate an outgoing call with a VoIP app in any of the following ways:
 - Open a link with a supported custom URL scheme.
 - Begin a VoIP call using Siri.
 
-For more information about registering and handling URLs, see [`Defining a custom URL scheme for your app`](https://developer.apple.com/documentation/Xcode/defining-a-custom-url-scheme-for-your-app). For more information about initiating a call using Siri, see the doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling protocol.
+For more information about registering and handling URLs, see [`Defining a custom URL scheme for your app`](https://developer.apple.com/documentation/Xcode/defining-a-custom-url-scheme-for-your-app). For more information about initiating a call using Siri, see the [`INStartCallIntentHandling`](https://developer.apple.com/documentation/Intents/INStartCallIntentHandling) protocol.
 
 To make an outgoing call, an app requests a [`CXStartCallAction`](cxstartcallaction.md) object from its [`CXCallController`](cxcallcontroller.md) object. The action consists of a UUID to uniquely identify the call and a [`CXHandle`](cxhandle.md) object to specify the recipient, as the following code example shows:
 
@@ -94,8 +94,10 @@ func provider(_ provider: CXProvider, perform action: CXAnswerCallAction) {
   Use the CallKit framework to integrate native VoIP calling.
 - [Preparing your app to be the default calling app](preparing-your-app-to-be-the-default-calling-app.md)
   Configure your CallKit or LiveCommunicationKit app so people can set it as the default calling app on their device.
+- [CallKit updates](../Updates/CallKit.md)
+  Learn about important changes to CallKit.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CallKit/making-and-receiving-voip-calls)*
+*[View on Apple Developer](https://developer.apple.com/documentation/callkit/making-and-receiving-voip-calls)*

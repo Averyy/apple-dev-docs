@@ -1,6 +1,6 @@
 # download(_:decideDestinationUsing:suggestedFilename:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method  
 **Required**: Yes
 

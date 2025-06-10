@@ -19,6 +19,7 @@ struct DefaultEquipmentLayout
 ### Conforms To
 - [EquipmentLayout](equipmentlayout.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

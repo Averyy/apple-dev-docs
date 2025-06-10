@@ -1,6 +1,6 @@
 # isSync
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: property
 
 A Boolean value that indicates if this message is from a synchronous request.

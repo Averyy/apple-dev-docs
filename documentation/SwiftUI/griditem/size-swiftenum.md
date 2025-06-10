@@ -37,7 +37,10 @@ Use a `Size` instance when you create a [`GridItem`](griditem.md). The value tel
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
+- [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

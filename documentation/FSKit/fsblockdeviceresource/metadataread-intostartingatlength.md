@@ -1,6 +1,6 @@
 # metadataRead(into:startingAt:length:)
 
-**Framework**: Fskit  
+**Framework**: FSKit  
 **Kind**: method
 
 Synchronously reads file system metadata from the resource into a buffer.

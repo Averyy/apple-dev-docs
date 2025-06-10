@@ -1,6 +1,6 @@
 # Choosing the  Location Services Authorization to Request
 
-**Framework**: Bundleresources
+**Framework**: Bundle Resources
 
 Determine the authorization your app needs to access location data.
 
@@ -71,4 +71,4 @@ Apps compiled with iOS 13 or later SDKs but running in iOS 12 or earlier will ex
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/BundleResources/choosing-the-location-services-authorization-to-request)*
+*[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/choosing-the-location-services-authorization-to-request)*

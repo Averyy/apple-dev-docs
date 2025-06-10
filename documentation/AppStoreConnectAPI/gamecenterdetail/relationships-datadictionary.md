@@ -26,6 +26,12 @@ object GameCenterDetail.Relationships
 - [object GameCenterDetail.Relationships.GameCenterLeaderboards](gamecenterdetail/relationships-data.dictionary/gamecenterleaderboards-data.dictionary.md)
 - [object GameCenterDetail.Relationships.LeaderboardReleases](gamecenterdetail/relationships-data.dictionary/leaderboardreleases-data.dictionary.md)
 - [object GameCenterDetail.Relationships.LeaderboardSetReleases](gamecenterdetail/relationships-data.dictionary/leaderboardsetreleases-data.dictionary.md)
+### Dictionaries
+- [object GameCenterDetail.Relationships.ActivityReleases](gamecenterdetail/relationships-data.dictionary/activityreleases-data.dictionary.md)
+- [object GameCenterDetail.Relationships.ChallengeReleases](gamecenterdetail/relationships-data.dictionary/challengereleases-data.dictionary.md)
+- [object GameCenterDetail.Relationships.ChallengesMinimumPlatformVersions](gamecenterdetail/relationships-data.dictionary/challengesminimumplatformversions-data.dictionary.md)
+- [object GameCenterDetail.Relationships.GameCenterActivities](gamecenterdetail/relationships-data.dictionary/gamecenteractivities-data.dictionary.md)
+- [object GameCenterDetail.Relationships.GameCenterChallenges](gamecenterdetail/relationships-data.dictionary/gamecenterchallenges-data.dictionary.md)
 
 ## See Also
 

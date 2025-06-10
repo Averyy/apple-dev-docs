@@ -18,8 +18,6 @@ If you need location information in a macOS app, use [`NSLocationUsageDescriptio
 
 > ❗ **Important**:  This key is required if your iOS app uses APIs that access the user’s location information while the app is in use.
 
- This key is required if your iOS app uses APIs that access the user’s location information while the app is in use.
-
 ## See Also
 
 - [Choosing the  Location Services Authorization to Request](choosing-the-location-services-authorization-to-request.md)

@@ -10,6 +10,7 @@ A numerical representation of the impact an animation has on a scene or entity.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -43,10 +44,6 @@ let node = BlendTreeSourceNode(
 ### Comparing blend weights
 - [static func == (BlendWeight, BlendWeight) -> Bool](blendweight/==(_:_:).md)
   Returns a Boolean value that indicates whether two blend weights are equal.
-- [static func != (Self, Self) -> Bool](blendweight/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Equatable Implementations](blendweight/equatable-implementations.md)
 
 ## Relationships
 

@@ -23,6 +23,8 @@ For more information about how to draw your app’s content using Metal, see [`M
   Create a fully immersive experience in visionOS using a custom Metal-based rendering engine.
 - [Interacting with virtual content blended with passthrough](interacting-with-virtual-content-blended-with-passthrough.md)
   Present a mixed immersion style space to draw content in a person’s surroundings, and choose how upper limbs appear with respect to rendered content.
+- [Rendering hover effects in Metal immersive apps](rendering_hover_effects_in_metal_immersive_apps.md)
+  Change the appearance of a rendered onscreen element when a player gazes at it.
 - [struct CompositorLayer](compositorlayer.md)
   A type that you use with an immersive space to display fully immersive content using Metal.
 - [protocol CompositorLayerConfiguration](compositorlayerconfiguration.md)
@@ -47,6 +49,11 @@ For more information about how to draw your app’s content using Metal, see [`M
 ### Structures
 - [struct TextureTopology](texturetopology.md)
   A type that specifies the organization of one of the drawable’s textures.
+### Type Aliases
+- [typealias cp_drawable_array_t](cp_drawable_array_t.md)
+  An opaque type that contains the drawable types and other information you need to set up your render pipeline.
+- [typealias cp_hover_effect_t](cp_hover_effect_t.md)
+  An opaque type that describes a hover effect of the tracking area.
 
 
 ---

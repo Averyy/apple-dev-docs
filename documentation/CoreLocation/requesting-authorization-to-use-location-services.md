@@ -1,6 +1,6 @@
 # Requesting authorization to use location services
 
-**Framework**: Corelocation
+**Framework**: Core Location
 
 Obtain authorization to use location services and manage changes to your app’s authorization status.
 
@@ -100,4 +100,4 @@ The [`locationManagerDidChangeAuthorization(_:)`](cllocationmanagerdelegate/loca
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/requesting-authorization-to-use-location-services)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/requesting-authorization-to-use-location-services)*

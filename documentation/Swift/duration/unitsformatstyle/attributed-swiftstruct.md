@@ -74,6 +74,7 @@ The resulting `attributedDuration`, representing the string `1 hr, 10 min, 32 se
 - [FormatStyle](../Foundation/FormatStyle.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

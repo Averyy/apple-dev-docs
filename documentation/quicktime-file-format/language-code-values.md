@@ -1,6 +1,6 @@
 # Language code values
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Indicate the language associated with a particular object using language codes.
 

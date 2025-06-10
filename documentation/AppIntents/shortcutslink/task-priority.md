@@ -8,10 +8,10 @@ Adds an asynchronous task to perform before this view appears.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 8.0+
 
 ## Declaration
@@ -51,7 +51,7 @@ var body: some View {
 }
 ```
 
-This example uses the [`lines`](https://developer.apple.com/documentation/foundation/url/3767315-lines) method to get the content stored at the specified [`URL`](https://developer.apple.com/documentation/Foundation/URL) as an asynchronous sequence of strings. When each new line arrives, the body of the `for`-`await`-`in` loop stores the line in an array of strings and updates the content of the text view to report the latest line count.
+This example uses the [`lines`](https://developer.apple.com/documentation/Foundation/URL/lines) method to get the content stored at the specified [`URL`](https://developer.apple.com/documentation/Foundation/URL) as an asynchronous sequence of strings. When each new line arrives, the body of the `for`-`await`-`in` loop stores the line in an array of strings and updates the content of the text view to report the latest line count.
 
 ## Parameters
 

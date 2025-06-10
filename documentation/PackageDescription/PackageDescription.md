@@ -45,7 +45,7 @@ The package manifest also allows you to define executable products, as well as p
 
 For more information about adding a package dependency to your app project and creating Swift packages with Xcode, see [`Adding Package Dependencies to Your App`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app), [`Creating a Standalone Swift Package with Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/creating-a-standalone-swift-package-with-xcode), and [`Swift Packages`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/swift-packages).
 
-Support for Swift packages in Xcode builds on the open-source Swift Package Manager project. To learn more about the Swift Package Manager, visit [`Swift.org`](https://developer.apple.comhttps://www.swift.org/package-manager/) and the Swift Package Manager repository on [`GitHub`](https://developer.apple.comhttps://github.com/apple/swift-package-manager).
+Support for Swift packages in Xcode builds on the open-source Swift Package Manager project. To learn more about the Swift Package Manager, visit [`Swift.org`](https://developer.apple.comhttps://www.swift.org/package-manager/) and the Swift Package Manager repository on [`GitHub`](https://developer.apple.comhttps://github.com/swiftlang/swift-package-manager).
 
 ## Topics
 
@@ -57,13 +57,8 @@ Support for Swift packages in Xcode builds on the open-source Swift Package Mana
 ### Structures
 - [struct GitInformation](gitinformation.md)
   Information about the git status of a given package, if available.
-- [struct Trait](trait.md)
-  A struct representing a package’s trait.
 - [struct Version](version.md)
   A version according to the semantic versioning specification.
-### Enumerations
-- [enum SwiftLanguageMode](swiftlanguagemode.md)
-  The Swift language mode used to compile Swift sources in the package
 
 
 ---

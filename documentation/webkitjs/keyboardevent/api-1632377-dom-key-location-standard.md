@@ -1,6 +1,6 @@
 # DOM_KEY_LOCATION_STANDARD
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

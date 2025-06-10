@@ -1,6 +1,6 @@
 # currentWeather
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The current weather forecast.

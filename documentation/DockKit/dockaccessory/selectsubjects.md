@@ -1,6 +1,6 @@
 # selectSubjects(_:)
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: method
 
 Selects subjects to track with specific identifiers

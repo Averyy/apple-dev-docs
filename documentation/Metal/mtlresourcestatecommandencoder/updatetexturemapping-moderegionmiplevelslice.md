@@ -1,8 +1,7 @@
 # updateTextureMapping(_:mode:region:mipLevel:slice:)
 
 **Framework**: Metal  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Encodes a command to update the texture mappings for a region in a single texture mipmap.
 
@@ -17,7 +16,7 @@ Encodes a command to update the texture mappings for a region in a single textur
 ## Declaration
 
 ```swift
-optional func updateTextureMapping(_ texture: any MTLTexture, mode: MTLSparseTextureMappingMode, region: MTLRegion, mipLevel: Int, slice: Int)
+func updateTextureMapping(_ texture: any MTLTexture, mode: MTLSparseTextureMappingMode, region: MTLRegion, mipLevel: Int, slice: Int)
 ```
 
 #### Discussion

@@ -12,18 +12,12 @@ A dictionary that contains the server’s optional protocol features.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object ManagementServerCapabilitiesSupportedFeaturesObject
 ```
-
-#### Discussion
-
-Each dictionary item uses the key name to represent a feature, and the value to hold the feature’s associated parameters.
 
 
 ---

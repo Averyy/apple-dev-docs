@@ -1,6 +1,6 @@
 # removeWebScriptKey(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Removes a property from a scripting environment.

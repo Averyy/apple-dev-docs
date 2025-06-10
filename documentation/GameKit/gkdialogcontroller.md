@@ -74,6 +74,7 @@ func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterV
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -83,12 +84,8 @@ func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterV
   Provide an interface for players to navigate to their Game Center data from your game.
 - [class GKAccessPoint](gkaccesspoint.md)
   An object that allows players to view and manage their Game Center information from within your game.
-- [class GKGameCenterViewController](gkgamecenterviewcontroller.md)
-  The dashboard that allows players to access their Game Center data in your game.
 - [protocol GKViewController](gkviewcontroller.md)
   The abstract base protocol adopted by GameKit view controller classes.
-- [class GKNotificationBanner](gknotificationbanner.md)
-  A Game Center-style banner that displays a message to the local player.
 
 
 ---

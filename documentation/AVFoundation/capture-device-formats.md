@@ -1,6 +1,6 @@
 # Formats
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Configure capture formats and camera frame rates.
 

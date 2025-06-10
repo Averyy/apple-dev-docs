@@ -1,0 +1,43 @@
+# gamma
+
+**Framework**: Accelerate  
+**Kind**: property
+
+The `gamma` in the transfer function.
+
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
+
+## Declaration
+
+```swift
+var gamma: CGFloat
+```
+
+## See Also
+
+- [var c0: CGFloat](vimagetransferfunction/c0.md)
+  The `c0` in the transfer function.
+- [var c1: CGFloat](vimagetransferfunction/c1.md)
+  The `c1` in the transfer function.
+- [var c2: CGFloat](vimagetransferfunction/c2.md)
+  The `c2` in the transfer function.
+- [var c3: CGFloat](vimagetransferfunction/c3.md)
+  The `c3` in the transfer function.
+- [var cutoff: CGFloat](vimagetransferfunction/cutoff.md)
+  The `cutoff` in the transfer function.
+- [var c4: CGFloat](vimagetransferfunction/c4.md)
+  The `c4` in the transfer function.
+- [var c5: CGFloat](vimagetransferfunction/c5.md)
+  The `c5` in the transfer function.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/vimagetransferfunction/gamma)*

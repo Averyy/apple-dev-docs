@@ -45,7 +45,7 @@ IMPL ( ExampleSCSIDext, UserMapHBAData )
 }
 ```
 
-It’s important to perform preprocessing like memory mapping early — before serving I/O — because doing so on the I/O path can affect performance. For example, calling an API like [`CreateMapping`](https://developer.apple.com/documentation/driverkit/iomemorydescriptor/3180638-createmapping) in the I/O path can cause additional RPC overhead.
+It’s important to perform preprocessing like memory mapping early — before serving I/O — because doing so on the I/O path can affect performance. For example, calling an API like [`CreateMapping`](https://developer.apple.com/documentation/DriverKit/IOMemoryDescriptor/CreateMapping) in the I/O path can cause additional RPC overhead.
 
 ## Parameters
 

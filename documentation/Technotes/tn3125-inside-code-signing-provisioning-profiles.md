@@ -351,4 +351,4 @@ This DER-encoded profile is required starting with iOS 15, iPadOS 15, tvOS 15, a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3125-inside-code-signing-provisioning-profiles)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3125-inside-code-signing-provisioning-profiles)*

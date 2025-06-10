@@ -1,6 +1,6 @@
 # webView(_:didReceiveServerRedirectForProvisionalLoadFor:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when a provisional data source for a frame receives a server redirect.

@@ -30,6 +30,8 @@ object CiBuildRun
   A response that contains a single Build Runs resource.
 - [object CiBuildActionsResponse](cibuildactionsresponse.md)
   A response that contains a list of Build Actions resources.
+- [object CiBuildRunActionsLinkagesResponse](cibuildrunactionslinkagesresponse.md)
+- [object CiBuildRunBuildsLinkagesResponse](cibuildrunbuildslinkagesresponse.md)
 
 
 ---

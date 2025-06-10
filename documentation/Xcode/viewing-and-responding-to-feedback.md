@@ -45,4 +45,4 @@ To rename reports to help keep them organized and to add notes, use the controls
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/viewing-and-responding-to-feedback)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/viewing-and-responding-to-feedback)*

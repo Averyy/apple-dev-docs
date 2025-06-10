@@ -32,6 +32,12 @@ Rectangle().fill(.blue.gradient)
 
 - [func opacity(Double) -> Color](color/opacity(_:).md)
   Multiplies the opacity of the color by the given amount.
+- [func mix(with: Color, by: Double, in: Gradient.ColorSpace) -> Color](color/mix(with:by:in:).md)
+  Returns a version of self mixed with `rhs` by the amount specified by `fraction`.
+- [func exposureAdjust(Double) -> Color](color/exposureadjust(_:).md)
+  Returns a new color with an exposure adjustment applied.
+- [func headroom(Double?) -> Color](color/headroom(_:).md)
+  Creates a new color with specified HDR content headroom.
 
 
 ---

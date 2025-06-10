@@ -16,7 +16,7 @@ class let currentUserIdentifierDidChangeNotification: NSNotification.Name
 
 #### Discussion
 
-The object of the notification is `nil`. The notification doesn’t add any keys to the [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/1409222-userinfo) dictionary.
+The object of the notification is `nil`. The notification doesn’t add any keys to the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) dictionary.
 
 ## See Also
 

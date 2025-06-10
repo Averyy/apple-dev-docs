@@ -1,6 +1,6 @@
 # HTMLMediaElement
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 An abstract superclass for media classes that display audio or video in webpages. This class defines common properties and methods inherited by the [`HTMLAudioElement`](htmlaudioelement.md) and [`HTMLVideoElement`](htmlvideoelement.md) classes representing the HTML `audio` and `video` elements.

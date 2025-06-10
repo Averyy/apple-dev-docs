@@ -1,6 +1,6 @@
 # import(_:deep:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

@@ -36,8 +36,6 @@ If you construct your shaders dynamically at runtime, you can still construct ar
 
 > ❗ **Important**:  A runtime validation error occurs if you create a `MTLArgumentEncoder` object using structures that don’t reference any other resources and don’t provide any `[[id()]]` annotation on any of their members.
 
- A runtime validation error occurs if you create a `MTLArgumentEncoder` object using structures that don’t reference any other resources and don’t provide any `[[id()]]` annotation on any of their members.
-
 ## Topics
 
 ### Creating an Argument Buffer

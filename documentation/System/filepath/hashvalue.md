@@ -26,8 +26,6 @@ Hash values are not guaranteed to be equal across different executions of your p
 
 > ❗ **Important**: `hashValue` is deprecated as a `Hashable` requirement. To conform to `Hashable`, implement the `hash(into:)` requirement instead. The compiler provides an implementation for `hashValue` for you.
 
-`hashValue` is deprecated as a `Hashable` requirement. To conform to `Hashable`, implement the `hash(into:)` requirement instead. The compiler provides an implementation for `hashValue` for you.
-
 ## See Also
 
 - [static func == (FilePath, FilePath) -> Bool](filepath/==(_:_:).md)

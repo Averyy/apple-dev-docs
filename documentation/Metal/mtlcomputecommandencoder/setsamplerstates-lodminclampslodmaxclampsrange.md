@@ -23,8 +23,6 @@ func setSamplerStates(_ samplers: [(any MTLSamplerState)?], lodMinClamps: [Float
 
 > ❗ **Important**:  This method requires that the lengths of `samplers`, `lodMinClamps`, and `lodMaxClamps` be the same as the length of `range`.
 
- This method requires that the lengths of `samplers`, `lodMinClamps`, and `lodMaxClamps` be the same as the length of `range`.
-
 Calling this method ignores the [`lodMinClamp`](mtlsamplerdescriptor/lodminclamp.md) and [`lodMaxClamp`](mtlsamplerdescriptor/lodmaxclamp.md) properties of the samplers, using the provided levels of detail instead.
 
 ## Parameters

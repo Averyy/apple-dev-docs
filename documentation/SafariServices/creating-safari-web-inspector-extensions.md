@@ -1,6 +1,6 @@
 # Creating Safari Web Inspector extensions
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Learn how to make custom Safari Web Inspector extensions.
 
@@ -24,4 +24,4 @@ Before you run the sample code project in Xcode, open Safari and choose Develop 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/creating-safari-web-inspector-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/creating-safari-web-inspector-extensions)*

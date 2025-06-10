@@ -29,8 +29,6 @@ When a new app version passes notarization for an app that installs from your ma
 
 > ❗ **Important**: App Store Connect doesn’t send notifications for your marketplace app itself. When your app or app update passes Notarization, you need to download its associated alternative distribution package from App Store Connect manually. For more information, see [`Distributing your app from your website`](distributing-your-app-from-your-website.md).
 
-App Store Connect doesn’t send notifications for your marketplace app itself. When your app or app update passes Notarization, you need to download its associated alternative distribution package from App Store Connect manually. For more information, see [`Distributing your app from your website`](distributing-your-app-from-your-website.md).
-
 #### Set Up Your Notification Webhook
 
 A  is an endpoint that you create on your marketplace server, which receives HTTP POST requests from App Store Connect. The POST requests describe important events about your app or the apps that your marketplace distributes.

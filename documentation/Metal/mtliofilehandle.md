@@ -16,7 +16,7 @@ Represents a raw or compressed file, such as a resource asset file in your appâ€
 ## Declaration
 
 ```swift
-protocol MTLIOFileHandle : NSObjectProtocol
+protocol MTLIOFileHandle : NSObjectProtocol, Sendable
 ```
 
 ## Topics
@@ -29,6 +29,8 @@ protocol MTLIOFileHandle : NSObjectProtocol
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

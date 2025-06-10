@@ -30,8 +30,6 @@ Use this property to get the latest state of the element. If multiple elements c
 
 > ❗ **Important**:  To track every element value change, set the [`inputStateAvailableHandler`](gcdevicephysicalinput/inputstateavailablehandler.md) property instead and use the [`nextInputState()`](gcdevicephysicalinput/nextinputstate().md) method to get all the buffered changes.
 
- To track every element value change, set the [`inputStateAvailableHandler`](gcdevicephysicalinput/inputstateavailablehandler.md) property instead and use the [`nextInputState()`](gcdevicephysicalinput/nextinputstate().md) method to get all the buffered changes.
-
 ## See Also
 
 - [func nextInputState() -> (any GCDevicePhysicalInputState & GCDevicePhysicalInputStateDiff)?](gcdevicephysicalinput/nextinputstate.md)

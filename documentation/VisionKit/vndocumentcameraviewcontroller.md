@@ -1,6 +1,6 @@
 # VNDocumentCameraViewController
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: class
 
 An object that presents UI for a camera pass-through that helps people scan physical documents.

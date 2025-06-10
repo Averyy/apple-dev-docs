@@ -1,6 +1,6 @@
 # HoverEffectComponent
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 A component that applies a visual effect to a hierarchy of entities when a person looks at or selects an entity.
@@ -86,6 +86,66 @@ entityA.components.set(hoverEffectComponent)
 
 In this example only the highest entity in the hierarchy has a `HoverEffectComponent`. Activating this hover effect causes all of its children to display the same effect.
 
+##### Grouping Multiple Hover Effects
+
+The optional [`groupID`](hovereffectcomponent/hovereffect-swift.struct/groupid.md) connects entities so that they activate their hover effects together, which is independent from the entities’ hierarchy. When someone hovers over any entity in the group, all entities with the same [`HoverEffectComponent.GroupID`](hovereffectcomponent/groupid.md) instance start their hover effects together.
+
+```swift
+let boxSize = SIMD3<Float>(0.5, 0.1, 0.05)
+let modelComponent = ModelComponent(
+    mesh: MeshResource.generateBox(size: boxSize, cornerRadius: 0.2),
+    materials: [SimpleMaterial(color: .black, roughness: 0.5, isMetallic: false)]
+)
+let collisionComponent = CollisionComponent(
+    shapes: [ShapeResource.generateBox(size: boxSize)]
+)
+let inputTargetComponent = InputTargetComponent()
+
+let hoverEntityA = Entity(components:
+    modelComponent, collisionComponent, inputTargetComponent
+)
+let hoverEntityB = hoverEntityA.clone(recursive: true)
+hoverEntityB.position.y = -0.1
+let hoverEntityC = hoverEntityA.clone(recursive: true)
+hoverEntityC.position.y = -0.2
+
+content.add(hoverEntityA)
+content.add(hoverEntityB)
+content.add(hoverEntityC)
+
+// Create hover effect components for the two topmost entities in the scene.
+var hoverA = HoverEffectComponent(
+    .highlight(HoverEffectComponent.HighlightHoverEffectStyle(
+            color: .green, strength: 2.0
+        )))
+
+var hoverB = HoverEffectComponent(
+    .highlight(HoverEffectComponent.HighlightHoverEffectStyle(
+            color: .yellow, strength: 2.0
+        )))
+
+// Create a `HoverEffectComponent.GroupID` instance and assign it to the hover effect components for both `entityA` and `entityB`.
+let topGroupID = HoverEffectComponent.GroupID()
+hoverA.hoverEffect.groupID = topGroupID
+hoverB.hoverEffect.groupID = topGroupID
+hoverEntityA.components.set(hoverA)
+hoverEntityB.components.set(hoverB)
+
+// Create hover effect component for the bottommost entity in the scnee.
+var hoverC = HoverEffectComponent(
+    .highlight(HoverEffectComponent.HighlightHoverEffectStyle(
+            color: .blue, strength: 2.0
+        )))
+
+// Create a `HoverEffectComponent.GroupID` instance and assign it to the hover effect component for `entityC`
+let bottomGroupID = HoverEffectComponent.GroupID()
+hoverC.hoverEffect.groupID = bottomGroupID
+hoverEntityC.components.set(hoverC)
+
+```
+
+In this example, the top and middle entities, `entityA` and `entityB`, have a [`HoverEffectComponent`](hovereffectcomponent.md) with the same group identifier. However, the bottom entity, `entityC`, has a different group ID. The top amd middle entity both glow when a person activates either one. The bottom entity glows separately and only when someone activates it directly.
+
 ##### Styles
 
 You can customize the visual effect of the `HoverEffectComponent` through the use of styles.
@@ -152,6 +212,8 @@ Hovering over the entity displays the following effect.
 ## Topics
 
 ### Structures
+- [HoverEffectComponent.GroupID](hovereffectcomponent/groupid.md)
+  A struct for grouping hover effects together.
 - [HoverEffectComponent.HighlightHoverEffectStyle](hovereffectcomponent/highlighthovereffectstyle.md)
   A type that configures the visual aspects of a highlight hover effect for an entity
 - [HoverEffectComponent.HoverEffect](hovereffectcomponent/hovereffect-swift.struct.md)
@@ -171,8 +233,6 @@ Hovering over the entity displays the following effect.
 ### Enumerations
 - [HoverEffectComponent.OpacityFunction](hovereffectcomponent/opacityfunction.md)
   The blending technique options a hover effect applies to its entity’s base material.
-### Default Implementations
-- [Component Implementations](hovereffectcomponent/component-implementations.md)
 
 ## Relationships
 
@@ -183,8 +243,14 @@ Hovering over the entity displays the following effect.
 
 - [struct BillboardComponent](billboardcomponent.md)
   A component that orients an entity instance so that it continuously points toward the active camera.
+- [struct EnvironmentBlendingComponent](environmentblendingcomponent.md)
+  A component which controls how an entity will blend visually with objects in the user’s local environment
+- [struct LensDistortionData](lensdistortiondata.md)
+  A description of estimated lens distortion that can be used to rectify images.
+- [struct ImagePresentationComponent](imagepresentationcomponent.md)
+  A component that supports general image presentation.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/hovereffectcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/hovereffectcomponent)*

@@ -106,4 +106,4 @@ The following screenshot shows the options in tvOS:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/monitoring-your-metal-apps-graphics-performance)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/monitoring-your-metal-apps-graphics-performance)*

@@ -1,6 +1,6 @@
 # XCTNSPredicateExpectation.Handler
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: typealias
 
 A handler XCTest calls when evaluating the predicate returns `true`.

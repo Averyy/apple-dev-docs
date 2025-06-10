@@ -12,8 +12,6 @@ The prepopulated information includes details describing the build as well as lo
 
 > ❗ **Important**: These artifacts and logs might contain personal data and intellectual property. You can opt out of providing any or all of these files before submitting feedback.
 
-These artifacts and logs might contain personal data and intellectual property. You can opt out of providing any or all of these files before submitting feedback.
-
 ##### Initiate Feedback
 
 To report feedback that’s not related to a specific build, select Help > Provide Feedback in Xcode or launch the Feedback Assistant app. In cases where you need to report feedback that includes build-specific context:

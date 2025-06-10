@@ -1,6 +1,6 @@
 # resumeDownload(fromResumeData:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Resumes a failed or canceled download.

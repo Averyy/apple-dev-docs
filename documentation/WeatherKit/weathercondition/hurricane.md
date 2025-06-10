@@ -1,6 +1,6 @@
 # WeatherCondition.hurricane
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Hurricane.

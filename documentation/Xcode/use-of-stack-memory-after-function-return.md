@@ -46,4 +46,4 @@ Use pointer arguments to allow a function to return values by reference.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/use-of-stack-memory-after-function-return)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/use-of-stack-memory-after-function-return)*

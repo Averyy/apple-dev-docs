@@ -1,6 +1,6 @@
 # minuteAvailability
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The minute forecast availability.

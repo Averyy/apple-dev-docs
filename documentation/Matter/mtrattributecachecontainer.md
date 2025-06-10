@@ -21,7 +21,7 @@ class MTRAttributeCacheContainer
 ## Topics
 
 ### Instance Methods
-- [func readAttribute(withEndpointId: NSNumber?, clusterId: NSNumber?, attributeId: NSNumber?, clientQueue: dispatch_queue_t, completion: MTRDeviceResponseHandler)](mtrattributecachecontainer/readattribute(withendpointid:clusterid:attributeid:clientqueue:completion:).md)
+- [func readAttribute(withEndpointId: NSNumber?, clusterId: NSNumber?, attributeId: NSNumber?, clientQueue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](mtrattributecachecontainer/readattribute(withendpointid:clusterid:attributeid:clientqueue:completion:).md)
 
 ## Relationships
 

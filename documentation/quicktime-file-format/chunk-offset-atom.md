@@ -1,6 +1,6 @@
 # Chunk offset atom ('stco')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that identifies the location of each chunk of data in the media’s data stream.

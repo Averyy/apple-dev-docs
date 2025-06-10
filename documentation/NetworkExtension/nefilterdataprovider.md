@@ -33,8 +33,6 @@ To protect the user’s privacy, the Filter Data Provider extension sandbox prev
 
 > ❗ **Important**:  To use the [`handleNewFlow(_:)`](nefilterdataprovider/handlenewflow(_:).md) method, you must enable the Network Extensions capability in Xcode and select the Content Filter capability. See [`Configure network extensions`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
 
- To use the [`handleNewFlow(_:)`](nefilterdataprovider/handlenewflow(_:).md) method, you must enable the Network Extensions capability in Xcode and select the Content Filter capability. See [`Configure network extensions`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
-
 ##### Creating a Filter Data Provider Extension
 
 Filter Data Providers run as App Extensions for the `com.apple.networkextension.filter-data` extension point.

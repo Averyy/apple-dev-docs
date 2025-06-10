@@ -1,6 +1,6 @@
 # SHOW_PROCESSING_INSTRUCTION
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

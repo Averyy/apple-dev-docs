@@ -37,12 +37,6 @@ The `options` include `title` and `subtitle`, which appear in a callout if theyâ
 - `factory`: A factory function that returns a DOM element that represents the annotation.
 - `options`: A hash of properties MapKit JS uses to initialize the annotation.
 
-## Relationships
-
-### Inherits From
-- [mapkit.ImageAnnotation](mapkit.imageannotation.md)
-- [mapkit.MarkerAnnotation](mapkit.markerannotation.md)
-
 ## See Also
 
 - [AnnotationConstructorOptions](annotationconstructoroptions.md)

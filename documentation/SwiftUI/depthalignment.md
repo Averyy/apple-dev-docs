@@ -24,11 +24,17 @@ struct DepthAlignment
   A guide marking the vertical center of the view.
 - [static let front: DepthAlignment](depthalignment/front.md)
   A guide marking the top edge of the view.
+### Initializers
+- [init(any DepthAlignmentID.Type)](depthalignment/init(_:).md)
+### Instance Methods
+- [func combineExplicit<S>(S) -> CGFloat?](depthalignment/combineexplicit(_:).md)
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -48,6 +54,10 @@ struct DepthAlignment
   A type that you use to create custom alignment guides.
 - [struct ViewDimensions](viewdimensions.md)
   A view’s size and alignment guides in its own coordinate space.
+- [struct ViewDimensions3D](viewdimensions3d.md)
+  A view’s 3D size and alignment guides in its own coordinate space.
+- [struct SpatialContainer](spatialcontainer.md)
+  A layout container that aligns overlapping content in 3D space.
 
 
 ---

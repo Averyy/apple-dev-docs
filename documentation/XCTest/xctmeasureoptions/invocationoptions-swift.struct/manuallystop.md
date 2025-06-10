@@ -1,6 +1,6 @@
 # manuallyStop
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An invocation option that specifies that the test stops taking measurements when the `stopMeasuring()` function is called.

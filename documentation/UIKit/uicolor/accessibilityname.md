@@ -32,6 +32,8 @@ var accessibilityName: String { get }
   Returns the components that form the color in the RGB color space.
 - [func getWhite(UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?) -> Bool](uicolor/getwhite(_:alpha:).md)
   Returns the grayscale components of the color.
+- [var linearExposure: CGFloat](uicolor/linearexposure.md)
+  The linear brightness multiplier that was applied when generating this color. Colors created with an exposure by UIColor create CGColors that are tagged with a contentHeadroom value. While CGColors created without a contentHeadroom tag will return 0 from CGColorGetHeadroom, UIColors generated in a similar fashion return a linearExposure of 1.0.
 
 
 ---

@@ -21,7 +21,7 @@ class func startWirelessControllerDiscovery() async
 
 #### Discussion
 
-Call this method when the user chooses to discover wireless controllers from your interface. The framework searches asynchronously for discoverable wireless controllers. The framework posts the [`GCControllerDidConnect`](https://developer.apple.com/documentation/foundation/nsnotification/name/1458856-gccontrollerdidconnect) (Swift) or [`GCControllerDidConnectNotification`](gccontrollerdidconnectnotification.md) (Objective-C) notification when it discovers new controllers. Implement the completion handler you pass to this method to handle when the framework finishes discovering controllers or when it times out.
+Call this method when the user chooses to discover wireless controllers from your interface. The framework searches asynchronously for discoverable wireless controllers. The framework posts the [`GCControllerDidConnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCControllerDidConnect) (Swift) or [`GCControllerDidConnectNotification`](gccontrollerdidconnectnotification.md) (Objective-C) notification when it discovers new controllers. Implement the completion handler you pass to this method to handle when the framework finishes discovering controllers or when it times out.
 
 If you call the [`startWirelessControllerDiscovery(completionHandler:)`](gccontroller/startwirelesscontrollerdiscovery(completionhandler:).md) method multiple times during discovery, the framework only calls the last completion handler you pass to this method.
 
@@ -35,9 +35,9 @@ If you call the [`startWirelessControllerDiscovery(completionHandler:)`](gccontr
   Returns the connected controllers for the device.
 - [class func stopWirelessControllerDiscovery()](gccontroller/stopwirelesscontrollerdiscovery.md)
   Stops searching for nearby wireless controllers.
-- [static let GCControllerDidConnect: NSNotification.Name](../foundation/nsnotification/name/1458856-gccontrollerdidconnect.md)
+- [static let GCControllerDidConnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerDidConnect.md)
   A notification that posts after a controller connects to the device.
-- [static let GCControllerDidDisconnect: NSNotification.Name](../foundation/nsnotification/name/1458875-gccontrollerdiddisconnect.md)
+- [static let GCControllerDidDisconnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerDidDisconnect.md)
   A notification that posts after a controller disconnects from the device.
 
 

@@ -1,6 +1,6 @@
 # xpc_dictionary_create_empty()
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates an XPC object that represents a dictionary of XPC objects keyed to C-strings.

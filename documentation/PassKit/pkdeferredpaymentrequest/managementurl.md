@@ -1,6 +1,6 @@
 # managementURL
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
 A URL that links to a page on your web site where the user can manage the payment method for the deferred payment, including deleting it.

@@ -10,6 +10,7 @@ An action that performs an animation to call attention to an entity.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -47,13 +48,9 @@ entity.playAnimation(playfulBounceAnimation)
 
 > ❗ **Important**: This action directly animates the [`BindTarget.transform`](bindtarget/transform.md) on the bound entity. Ensure a correct bind target is supplied when creating the animation.
 
-This action directly animates the [`BindTarget.transform`](bindtarget/transform.md) on the bound entity. Ensure a correct bind target is supplied when creating the animation.
-
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](emphasizeaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(motionType: EmphasizeAction.EmphasisMotionType, style: EmphasizeAction.EmphasisAnimationStyle, isAdditive: Bool)](emphasizeaction/init(motiontype:style:isadditive:).md)
   Creates a new emphasize action.
 ### Instance Properties
@@ -65,19 +62,11 @@ This action directly animates the [`BindTarget.transform`](bindtarget/transform.
   An option that implements animation effects.
 - [var style: EmphasizeAction.EmphasisAnimationStyle](emphasizeaction/style.md)
   An option that implements different kinds of animation timing.
-### Instance Methods
-- [func encode(to: any Encoder) throws](emphasizeaction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [EmphasizeAction.EventParameterType](emphasizeaction/eventparametertype.md)
-  The associated event parameter type.
 ### Enumerations
 - [EmphasizeAction.EmphasisAnimationStyle](emphasizeaction/emphasisanimationstyle.md)
   Options available to determine the kinds of animation timing.
 - [EmphasizeAction.EmphasisMotionType](emphasizeaction/emphasismotiontype.md)
   Options available to determine the kinds of animation effects.
-### Default Implementations
-- [EntityAction Implementations](emphasizeaction/entityaction-implementations.md)
 
 ## Relationships
 

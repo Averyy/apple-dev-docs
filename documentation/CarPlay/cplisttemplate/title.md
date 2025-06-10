@@ -13,6 +13,7 @@ The title that the navigation bar displays when the template is visible.
 ## Declaration
 
 ```swift
+@MainActor
 var title: String? { get }
 ```
 

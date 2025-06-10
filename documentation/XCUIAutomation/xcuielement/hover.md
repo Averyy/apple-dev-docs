@@ -1,6 +1,6 @@
 # hover()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Moves the pointer over the element.

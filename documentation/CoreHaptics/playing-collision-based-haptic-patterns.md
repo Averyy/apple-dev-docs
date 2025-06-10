@@ -1,6 +1,6 @@
 # Playing Collision-Based Haptic Patterns
 
-**Framework**: Corehaptics
+**Framework**: Core Haptics
 
 Play a custom haptic pattern whose strength depends on an object’s collision speed.
 
@@ -174,4 +174,4 @@ Instead of adjusting haptic intensity and sharpness based on the sphere’s velo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/playing-collision-based-haptic-patterns)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/playing-collision-based-haptic-patterns)*

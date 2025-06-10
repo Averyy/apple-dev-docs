@@ -39,7 +39,13 @@ struct GKReleaseState
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
+
+## See Also
+
+- [var releaseState: GKReleaseState](gkchallengedefinition/releasestate.md)
+  The release state of the challenge definition in App Store Connect.
 
 
 ---

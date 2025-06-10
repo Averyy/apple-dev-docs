@@ -1,6 +1,6 @@
 # Making document reader actions available to Siri and Apple Intelligence
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Create app intents and entities to integrate your app’s document viewing and editing functionality with Siri and Apple Intelligence.
 
@@ -13,7 +13,7 @@ To integrate your app’s document viewing and editing capabilities with Siri an
 For example, if your app allows people to view and rotate a document, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.reader` domain and the [`rotatePages`](assistantschemas/readerintent/rotatepages.md) schema:
 
 ```swift
-@AssistantIntent(schema: .reader.rotatePages)
+@AppIntent(schema: .reader.rotatePages)
 struct ReaderRotatePagesIntent {
     var pages: [ReaderPageEntity]
     var isClockwise: Bool
@@ -31,7 +31,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `ReaderPageEntity`. The following code snippet shows how the `ReaderPageEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
 
 ```swift
-@AssistantEntity(schema: .reader.document)
+@AppEntity(schema: .reader.document)
 struct ReaderDocumentEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [ReaderDocumentEntity.ID]) async throws -> [ReaderDocumentEntity] { [] }
@@ -61,7 +61,7 @@ To make sure Siri and Apple Intelligence understand custom static types for your
 import Foundation
 import AppIntents
 
-@AssistantEnum(schema: .reader.documentKind)
+@AppEnum(schema: .reader.documentKind)
 enum ReaderDocumentKind: String, AppEnum, Codable {
     case image
     case pdf
@@ -85,4 +85,4 @@ For a list of available app enumeration schemas in the `.reader` domain, see [`A
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-document-reader-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-document-reader-actions-available-to-siri-and-apple-intelligence)*

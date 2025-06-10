@@ -6,6 +6,7 @@
 Returns an array of texture layouts that the layer supports.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

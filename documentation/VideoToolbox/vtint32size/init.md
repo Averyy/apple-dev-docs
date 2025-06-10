@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: init
 
 Creates a size with a width and height of zero.

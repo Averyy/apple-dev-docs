@@ -6,11 +6,11 @@
 The value stored in this editable field.
 
 **Availability**:
-- iOS 18.2+
-- iPadOS 18.2+
-- Mac Catalyst 18.2+
-- macOS 15.2+
-- visionOS 2.2+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -20,7 +20,7 @@ var value: String
 
 ## See Also
 
-- [var id: Data](asimportableeditablefield/id.md)
+- [var id: Data?](asimportableeditablefield/id.md)
   A unique identifier for this editable field.
 - [var fieldType: ASImportableEditableField.FieldType](asimportableeditablefield/fieldtype-swift.property.md)
   The type of this editable field.

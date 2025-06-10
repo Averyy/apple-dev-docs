@@ -1,6 +1,6 @@
 # COMPRESSED_SIGNED_RG11_EAC
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

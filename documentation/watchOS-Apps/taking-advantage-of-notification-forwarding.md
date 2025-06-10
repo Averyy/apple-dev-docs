@@ -1,6 +1,6 @@
 # Taking advantage of notification forwarding
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Deliver notifications to the user’s iPhone or Apple Watch.
 

@@ -18,8 +18,6 @@ func reconfigure(configuration: VZGraphicsDisplayConfiguration) throws
 
 > ❗ **Important**:  The type of configuration you pass to this method needs to match the corresponding type that you used to create this display.
 
- The type of configuration you pass to this method needs to match the corresponding type that you used to create this display.
-
 If successful, the framework passes the new configuration to the guest, but the guest may or may not respond to parts of the configuration. If the guest doesn’t use the new configuration, the Virtualization framework doesn’t return an error.
 
 Reconfiguration of the display triggers a display state change that you can track by adopting the [`VZGraphicsDisplayObserver`](vzgraphicsdisplayobserver.md) protocol.

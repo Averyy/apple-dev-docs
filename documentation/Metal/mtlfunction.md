@@ -16,7 +16,7 @@ An object that represents a public shader function in a Metal library.
 ## Declaration
 
 ```swift
-protocol MTLFunction : NSObjectProtocol
+protocol MTLFunction : NSObjectProtocol, Sendable
 ```
 
 #### Overview
@@ -76,6 +76,8 @@ To create a specialized function, call one of these [`MTLLibrary`](mtllibrary.md
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

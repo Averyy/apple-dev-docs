@@ -10,6 +10,7 @@ A mode that displays the intensity of indirect light hitting the entity as its s
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

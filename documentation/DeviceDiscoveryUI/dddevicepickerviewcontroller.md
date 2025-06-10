@@ -6,6 +6,9 @@
 A UIKit view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - tvOS 16.0+
 
 ## Declaration
@@ -60,6 +63,8 @@ myDeviceConnectionManager.connectTo(endpoint: endpoint)
 ### Accessing the selected endpoint
 - [var endpoint: NWEndpoint](dddevicepickerviewcontroller/endpoint.md)
   A network connection endpoint for the device selected by the user.
+### Initializers
+- [convenience init?(browseDescriptor: NWBrowser.Descriptor, parameters: NWParameters?, access: DDDevicePairingAccess)](dddevicepickerviewcontroller/init(browsedescriptor:parameters:access:).md)
 
 ## Relationships
 
@@ -75,9 +80,12 @@ myDeviceConnectionManager.connectTo(endpoint: endpoint)
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
 - [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
 - [UIStateRestoring](../UIKit/UIStateRestoring.md)
 - [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)

@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: init
 
-Creates a new `MuteConversationAction`.
+Creates an action to mute or unmute a conversation.
 
 **Availability**:
 - iOS 17.4+
@@ -20,8 +20,8 @@ init(conversationUUID: UUID, isMuted: Bool)
 
 ## Parameters
 
-- `conversationUUID`: The unique identfiier of the   to which this action will be applied.
-- `isMuted`: Specifies if the   should be muted or unmuted upon execution of this action.
+- `conversationUUID`: The unique identifier of the ongoing conversation.
+- `isMuted`: A value that specifies whether to mute or unmute the local participant of the conversation.
 
 
 ---

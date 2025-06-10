@@ -1,6 +1,6 @@
 # Sending broadcast push notification requests to APNs
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Transmit your broadcast notification payload to Apple Push Notifications service (APNs).
 
@@ -11,8 +11,6 @@ Starting with iOS 18 and iPadOS 18, devices can subscribe on channels to receive
 As a best-effort service, APNs may reorder notifications you send on the same channel. If APNs can’t deliver a notification immediately, it may store the notification based on the channel’s message storage policy specified during channel creation. Notifications with Medium and Low `apns-priority` might get grouped and delivered in bursts to the person’s device. APNs may also throttle your notifications and, in some cases, not deliver them. The exact behavior is determined by the way the person interacts with your application and the power state of the device.
 
 > 💡 **Tip**:  Refer to [`Viewing the status of push notifications using Metrics and APNs`](viewing-the-status-of-push-notifications-using-metrics-and-apns.md).
-
- Refer to [`Viewing the status of push notifications using Metrics and APNs`](viewing-the-status-of-push-notifications-using-metrics-and-apns.md).
 
 ##### Establish a Connection to Apns
 

@@ -1,6 +1,6 @@
 # NSExceptionDomains
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: dictionary
 
 Custom App Transport Security (ATS) configurations for named domains.

@@ -1,6 +1,6 @@
 # documentBrowser(_:applicationActivitiesForDocumentURLs:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Asks the delegate for additional activities when displaying an activity view.

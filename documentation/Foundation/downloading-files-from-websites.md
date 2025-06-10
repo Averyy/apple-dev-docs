@@ -10,8 +10,6 @@ For network resources that are already stored as files, like images and document
 
 > 💡 **Tip**:  You can also configure download tasks to operate while your application is suspended or terminated in the background. See [`Downloading files in the background`](downloading-files-in-the-background.md) for details.
 
- You can also configure download tasks to operate while your application is suspended or terminated in the background. See [`Downloading files in the background`](downloading-files-in-the-background.md) for details.
-
 ##### For Simple Downloads Use a Completion Handler
 
 To download files, you create a [`URLSessionDownloadTask`](urlsessiondownloadtask.md) from a [`URLSession`](urlsession.md). If you don’t care about receiving progress updates or other delegate callbacks during the download, you can use a completion handler. The task calls the completion handler when the download ends, either at the end of a successful download or when downloading fails.
@@ -49,8 +47,6 @@ downloadTask.resume()
 ```
 
 > 💡 **Tip**:  The previous example creates the download task with [`downloadTask(with:)`](urlsession/downloadtask(with:)-1onj.md), which simply takes a [`URL`](url.md) parameter. If you need to customize the request you send to the server, create the task with [`downloadTask(with:)`](urlsession/downloadtask(with:)-3fb7s.md) and pass in a customized [`URLRequest`](urlrequest.md).
-
- The previous example creates the download task with [`downloadTask(with:)`](urlsession/downloadtask(with:)-1onj.md), which simply takes a [`URL`](url.md) parameter. If you need to customize the request you send to the server, create the task with [`downloadTask(with:)`](urlsession/downloadtask(with:)-3fb7s.md) and pass in a customized [`URLRequest`](urlrequest.md).
 
 ##### To Receive Progress Updates Use a Delegate
 
@@ -105,8 +101,6 @@ func urlSession(_ session: URLSession,
 ```
 
 > 💡 **Tip**:  If the only UI update you need to perform during the download is to update a [`UIProgressView`](https://developer.apple.com/documentation/UIKit/UIProgressView), then use the task’s [`progress`](urlsessiontask/progress.md) property instead of performing your own progress calculations. This property is an instance of [`Progress`](progress.md) that you can assign to the [`UIProgressView`](https://developer.apple.com/documentation/UIKit/UIProgressView) property [`observedProgress`](https://developer.apple.com/documentation/UIKit/UIProgressView/observedProgress) when you create the task to get automatic updating of the progress view.
-
- If the only UI update you need to perform during the download is to update a [`UIProgressView`](https://developer.apple.com/documentation/UIKit/UIProgressView), then use the task’s [`progress`](urlsessiontask/progress.md) property instead of performing your own progress calculations. This property is an instance of [`Progress`](progress.md) that you can assign to the [`UIProgressView`](https://developer.apple.com/documentation/UIKit/UIProgressView) property [`observedProgress`](https://developer.apple.com/documentation/UIKit/UIProgressView/observedProgress) when you create the task to get automatic updating of the progress view.
 
 ##### Handle Download Completion or Errors in Your Delegate
 

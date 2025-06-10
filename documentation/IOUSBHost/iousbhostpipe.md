@@ -26,7 +26,7 @@ The client creates pipe objects using [`copyPipe(withAddress:)`](iousbhostinterf
   The completion handler for asynchronous control, bulk, and interrupt transfers.
 - [let IOUSBHostDefaultControlCompletionTimeout: TimeInterval](iousbhostdefaultcontrolcompletiontimeout.md)
   The default completion timeout for input/output requests.
-- [func enqueueIORequest(with: NSMutableData?, completionTimeout: TimeInterval, completionHandler: IOUSBHostCompletionHandler?) throws](iousbhostpipe/enqueueiorequest(with:completiontimeout:completionhandler:).md)
+- [func enqueueIORequest(with: NSMutableData?, completionTimeout: TimeInterval, completionHandler: ((IOReturn, Int) -> Void)?) throws](iousbhostpipe/enqueueiorequest(with:completiontimeout:completionhandler:).md)
   Enqueues an input/output request on the pipe.
 - [func clearStall() throws](iousbhostpipe/clearstall.md)
   Clears the halt condition of the pipe.
@@ -37,7 +37,7 @@ The client creates pipe objects using [`copyPipe(withAddress:)`](iousbhostinterf
   The absolute time.
 - [struct IOUSBHostIsochronousFrame](iousbhostisochronousframe.md)
   A structure that represents a single frame in an isochronous transfer.
-- [func enqueueIORequest(with: NSMutableData, frameList: UnsafeMutablePointer<IOUSBHostIsochronousFrame>, frameListCount: Int, firstFrameNumber: UInt64, completionHandler: IOUSBHostIsochronousCompletionHandler?) throws](iousbhostpipe/enqueueiorequest(with:framelist:framelistcount:firstframenumber:completionhandler:).md)
+- [func enqueueIORequest(with: NSMutableData, frameList: UnsafeMutablePointer<IOUSBHostIsochronousFrame>, frameListCount: Int, firstFrameNumber: UInt64, completionHandler: ((IOReturn, UnsafeMutablePointer<IOUSBHostIsochronousFrame>) -> Void)?) throws](iousbhostpipe/enqueueiorequest(with:framelist:framelistcount:firstframenumber:completionhandler:).md)
   Enqueues a request on an isochronous endpoint.
 - [func sendIORequest(with: NSMutableData, frameList: UnsafeMutablePointer<IOUSBHostIsochronousFrame>, frameListCount: Int, firstFrameNumber: UInt64) throws](iousbhostpipe/sendiorequest(with:framelist:framelistcount:firstframenumber:).md)
   Sends a request on an isochronous endpoint.
@@ -70,7 +70,7 @@ The client creates pipe objects using [`copyPipe(withAddress:)`](iousbhostinterf
 - [func disableStreams() throws](iousbhostpipe/disablestreams.md)
   Disables streams for the pipe.
 ### Instance Methods
-- [func enqueueIORequest(with: NSMutableData, transactionList: UnsafeMutablePointer<IOUSBHostIsochronousTransaction>, transactionListCount: Int, firstFrameNumber: UInt64, options: IOUSBHostIsochronousTransferOptions, completionHandler: IOUSBHostIsochronousTransactionCompletionHandler?) throws](iousbhostpipe/enqueueiorequest(with:transactionlist:transactionlistcount:firstframenumber:options:completionhandler:).md)
+- [func enqueueIORequest(with: NSMutableData, transactionList: UnsafeMutablePointer<IOUSBHostIsochronousTransaction>, transactionListCount: Int, firstFrameNumber: UInt64, options: IOUSBHostIsochronousTransferOptions, completionHandler: ((IOReturn, UnsafeMutablePointer<IOUSBHostIsochronousTransaction>) -> Void)?) throws](iousbhostpipe/enqueueiorequest(with:transactionlist:transactionlistcount:firstframenumber:options:completionhandler:).md)
 - [func sendIORequest(with: NSMutableData, transactionList: UnsafeMutablePointer<IOUSBHostIsochronousTransaction>, transactionListCount: Int, firstFrameNumber: UInt64, options: IOUSBHostIsochronousTransferOptions) throws](iousbhostpipe/sendiorequest(with:transactionlist:transactionlistcount:firstframenumber:options:).md)
 
 ## Relationships

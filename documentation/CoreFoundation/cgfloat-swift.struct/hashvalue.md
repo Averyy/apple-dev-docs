@@ -1,6 +1,6 @@
 # hashValue
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: property
 
 The hash value.
@@ -29,4 +29,4 @@ var hashValue: Int { get }
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreFoundation/cgfloat-swift.struct/hashvalue)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct/hashvalue)*

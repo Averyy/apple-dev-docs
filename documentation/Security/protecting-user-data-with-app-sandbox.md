@@ -19,7 +19,7 @@ Certain activities are forbidden by the operating system when an app runs in a s
 - Use of [`Authorization Services`](authorization-services.md) API.
 - Use of accessibility APIs in assistive apps.
 - Sending Apple Events to arbitrary apps.
-- Sending [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/1409222-userinfo) dictionaries in distributed notifications to other tasks.
+- Sending [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) dictionaries in distributed notifications to other tasks.
 - Loading kernel extensions.
 - Simulating user input in Open and Save dialogs.
 - Accessing or modifying preferences in other apps.
@@ -28,7 +28,7 @@ Certain activities are forbidden by the operating system when an app runs in a s
 
 ##### Place Data Files and Scripts in Standard Locations
 
-The operating system creates a container directory when launching your sandboxed app, to which the app has unrestricted read and write access. The sandboxed app doesn’t have unrestricted access to the user’s home folder. Use the [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) method [`url(for:in:appropriateFor:create:)`](https://developer.apple.com/documentation/foundation/filemanager/1407693-url) to find common directories for user documents, scripts, and supporting files, as it returns a location within the app’s container for a sandboxed app.
+The operating system creates a container directory when launching your sandboxed app, to which the app has unrestricted read and write access. The sandboxed app doesn’t have unrestricted access to the user’s home folder. Use the [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) method [`url(for:in:appropriateFor:create:)`](https://developer.apple.com/documentation/Foundation/FileManager/url(for:in:appropriateFor:create:)) to find common directories for user documents, scripts, and supporting files, as it returns a location within the app’s container for a sandboxed app.
 
 If you are enabling App Sandbox for an existing app that already has documents, user scripts, or supporting files in the user’s home folder, refer to [`Migrating your app’s files to its App Sandbox container`](migrating-your-app-s-files-to-its-app-sandbox-container.md).
 
@@ -66,4 +66,4 @@ If your app has the App Sandbox entitlement, you will see the following in the o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/protecting-user-data-with-app-sandbox)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/protecting-user-data-with-app-sandbox)*

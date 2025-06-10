@@ -1,6 +1,6 @@
 # WKCrownSequencer
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that reports the current state of the digital crown, including its rotational speed when it is in motion.

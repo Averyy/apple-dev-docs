@@ -28,10 +28,6 @@ Before attempting to create an AR configuration, verify that the user’s device
 
 > ❗ **Important**:  All ARKit configurations require an iOS device with an A9 or later processor. If your app otherwise supports other devices and offers augmented reality as a secondary feature, use this property to determine whether to offer AR-based features to the user. If your app requires ARKit for its core functionality, use the `arkit` key in the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities) section of your app’s Info.plist to make your app available only on devices that support ARKit.
 
- All ARKit configurations require an iOS device with an A9 or later processor. If your app otherwise supports other devices and offers augmented reality as a secondary feature, use this property to determine whether to offer AR-based features to the user.
-
-If your app requires ARKit for its core functionality, use the `arkit` key in the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities) section of your app’s Info.plist to make your app available only on devices that support ARKit.
-
 
 ---
 

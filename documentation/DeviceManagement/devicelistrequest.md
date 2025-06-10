@@ -18,9 +18,7 @@ object DeviceListRequest
 ## See Also
 
 - [object DeviceListResponse](devicelistresponse.md)
-  The response that contains a list of devices.
 - [object DeviceListResponse.Devices](devicelistresponse/devices-data.dictionary.md)
-  A dictionary of devices, with their serial numbers.
 
 
 ---

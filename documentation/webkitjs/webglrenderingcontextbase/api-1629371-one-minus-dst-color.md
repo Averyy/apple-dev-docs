@@ -1,6 +1,6 @@
 # ONE_MINUS_DST_COLOR
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

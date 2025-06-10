@@ -6,6 +6,7 @@
 The device capabilities of tracking translation changes in all dimensions are currently limited.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # httpCookieStore
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The object that manages the HTTP cookies for your website.

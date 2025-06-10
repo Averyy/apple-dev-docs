@@ -37,6 +37,7 @@ The testing library throws instances of this type when the `#require()` macro re
 ### Conforms To
 - [Error](../Swift/Error.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

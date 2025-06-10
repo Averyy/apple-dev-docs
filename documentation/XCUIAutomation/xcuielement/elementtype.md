@@ -1,6 +1,6 @@
 # XCUIElement.ElementType
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: enum
 
 The types of UI elements that you find, inspect, and interact with in a UI test.
@@ -204,6 +204,7 @@ enum ElementType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

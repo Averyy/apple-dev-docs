@@ -19,12 +19,12 @@ undefined completeMerchantValidation(
 
 ## Mentions
 
-- [Providing Merchant Validation](providing-merchant-validation.md)
 - [Requesting an Apple Pay payment session](requesting-an-apple-pay-payment-session.md)
+- [Providing Merchant Validation](providing-merchant-validation.md)
 
 #### Discussion
 
-Your server receives the merchant session object when it calls the `Payment Session` endpoint as described in [`Providing Merchant Validation`](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/providing_merchant_validation).
+Your server receives the merchant session object when it calls the `Payment Session` endpoint as described in [`Providing Merchant Validation`](providing-merchant-validation.md).
 
 You must pass the valid merchant session object to the [`completeMerchantValidation`](applepaysession/completemerchantvalidation.md) method to enable the user to authorize a transaction.
 

@@ -5,9 +5,6 @@
 
 The size of a plane.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift

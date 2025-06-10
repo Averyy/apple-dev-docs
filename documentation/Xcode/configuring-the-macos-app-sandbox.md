@@ -81,4 +81,4 @@ After you configure the necessary file access, Xcode updates your app’s entitl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-the-macos-app-sandbox)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-the-macos-app-sandbox)*

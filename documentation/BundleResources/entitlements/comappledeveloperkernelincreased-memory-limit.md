@@ -1,6 +1,6 @@
 # com.apple.developer.kernel.increased-memory-limit
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 A Boolean value that indicates whether core features of your app may perform better with a higher memory limit on supported devices.
@@ -8,6 +8,7 @@ A Boolean value that indicates whether core features of your app may perform bet
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- visionOS 2.5+
 
 #### Discussion
 

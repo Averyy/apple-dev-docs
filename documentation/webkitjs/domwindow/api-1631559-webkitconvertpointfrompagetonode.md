@@ -1,6 +1,6 @@
 # webkitConvertPointFromPageToNode
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Converts a point from page coordinates to node coordinates.

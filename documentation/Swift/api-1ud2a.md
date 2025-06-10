@@ -52,6 +52,8 @@ print(a == c)
   Returns a Boolean value indicating whether the corresponding components of two tuples are equal.
 - [func == <A, B, C, D, E>((A, B, C, D, E), (A, B, C, D, E)) -> Bool](==(_:_:)-1hbor.md)
   Returns a Boolean value indicating whether the corresponding components of two tuples are equal.
+- [func == ((any (~Copyable & ~Escapable).Type)?, (any (~Copyable & ~Escapable).Type)?) -> Bool](==(_:_:)-9kf9y.md)
+  Returns a Boolean value indicating whether two types are identical.
 - [func != ((), ()) -> Bool](!=(_:_:)-18co7.md)
   Returns a Boolean value indicating whether any corresponding components of the two tuples are not equal.
 - [func != <A, B>((A, B), (A, B)) -> Bool](!=(_:_:)-7er1l.md)
@@ -64,6 +66,8 @@ print(a == c)
   Returns a Boolean value indicating whether any corresponding components of the two tuples are not equal.
 - [func != <A, B, C, D, E, F>((A, B, C, D, E, F), (A, B, C, D, E, F)) -> Bool](!=(_:_:)-3nrcc.md)
   Returns a Boolean value indicating whether any corresponding components of the two tuples are not equal.
+- [func != ((any (~Copyable & ~Escapable).Type)?, (any (~Copyable & ~Escapable).Type)?) -> Bool](!=(_:_:)-1mxms.md)
+  Returns a Boolean value indicating whether two types are not identical.
 
 
 ---

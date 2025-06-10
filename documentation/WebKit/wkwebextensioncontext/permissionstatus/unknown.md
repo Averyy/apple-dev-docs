@@ -1,6 +1,6 @@
 # WKWebExtensionContext.PermissionStatus.unknown
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates an unknown permission status.

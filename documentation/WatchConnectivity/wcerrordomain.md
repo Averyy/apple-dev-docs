@@ -1,6 +1,6 @@
 # WCErrorDomain
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: var
 
 The domain for errors associated with the Watch Connectivity framework.

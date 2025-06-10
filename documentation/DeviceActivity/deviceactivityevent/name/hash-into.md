@@ -22,8 +22,6 @@ Implement this method to conform to the [`Hashable`](https://developer.apple.com
 
 > ❗ **Important**: Never call `finalize()` on hasher; it may cause a compile-time error.
 
-Never call `finalize()` on hasher; it may cause a compile-time error.
-
 ## Parameters
 
 - `hasher`: The hasher to use when combining the components of this instance.

@@ -1,6 +1,6 @@
 # kind
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The manner in which the comparison between the baseline and current values are compared.

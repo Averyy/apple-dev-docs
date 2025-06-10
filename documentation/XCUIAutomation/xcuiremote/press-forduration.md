@@ -1,6 +1,6 @@
 # press(_:forDuration:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a press and hold of a button on a physical remote control, holding for the specified duration.

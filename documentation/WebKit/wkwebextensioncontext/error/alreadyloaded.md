@@ -1,6 +1,6 @@
 # alreadyLoaded
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that the context is already loaded by a [`WKWebExtensionController`](wkwebextensioncontroller.md).

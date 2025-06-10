@@ -37,8 +37,6 @@ If your app uses the [`HKWorkoutActivityType.swimming`](hkworkoutactivitytype/sw
   The constant for sailing.
 - [HKWorkoutActivityType.surfingSports](hkworkoutactivitytype/surfingsports.md)
   The constant for a variety of surf sports, including surfing, kite surfing, and wind surfing.
-- [HKWorkoutActivityType.underwaterDiving](hkworkoutactivitytype/underwaterdiving.md)
-  The constant for underwater diving.
 - [HKWorkoutActivityType.waterFitness](hkworkoutactivitytype/waterfitness.md)
   The constant for aerobic exercise performed in shallow water.
 - [HKWorkoutActivityType.waterPolo](hkworkoutactivitytype/waterpolo.md)

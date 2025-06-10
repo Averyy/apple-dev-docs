@@ -1,6 +1,6 @@
 # WebKit Loading Fail Enumeration (Legacy)
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 ## Topics
 

@@ -17,6 +17,7 @@ The overall size of the tile map.
 ## Declaration
 
 ```swift
+@MainActor
 var mapSize: CGSize { get }
 ```
 

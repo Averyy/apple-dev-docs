@@ -25,6 +25,8 @@ Use this method in scenarios where an accessory has multiple wireless interfaces
   Properties of an accessory.
 - [func failAuthorization(for: ASAccessory, completionHandler: ((any Error)?) -> Void)](asaccessorysession/failauthorization(for:completionhandler:).md)
   End authorization of a partially-configured accessory as a failure.
+- [func updateAuthorization(for: ASAccessory, descriptor: ASDiscoveryDescriptor, completionHandler: ((any Error)?) -> Void)](asaccessorysession/updateauthorization(for:descriptor:completionhandler:).md)
+  Displays a view to upgrade an accessory with additional technology permissions.
 
 
 ---

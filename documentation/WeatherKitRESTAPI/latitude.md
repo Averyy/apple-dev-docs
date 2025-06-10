@@ -1,6 +1,6 @@
 # Latitude
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: typealias
 
 A numeric value indicating the latitude of the coordinate between `-90` and `90`.

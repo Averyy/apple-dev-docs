@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_PRIORITY
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A string property that indicates the priority of the activity.

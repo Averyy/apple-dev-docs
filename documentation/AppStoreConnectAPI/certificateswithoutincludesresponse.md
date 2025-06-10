@@ -26,6 +26,8 @@ object CertificatesWithoutIncludesResponse
   The request body you use to update a certificate activation status.
 - [type CertificateType](certificatetype.md)
   Literal values that represent types of signing certificates.
+- [object CertificatePassTypeIdLinkageResponse](certificatepasstypeidlinkageresponse.md)
+  A response body that contains the ID of a single related resource.
 
 
 ---

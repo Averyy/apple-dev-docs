@@ -1,6 +1,6 @@
 # semanticSegmentationMatte(for:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Retrieves the semantic segmentation matte associated with this photo.

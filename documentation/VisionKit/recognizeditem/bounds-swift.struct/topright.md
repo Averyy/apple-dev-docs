@@ -1,6 +1,6 @@
 # topRight
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The upper-right corner of the recognized item in view coordinates.

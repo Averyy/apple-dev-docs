@@ -1,6 +1,6 @@
 # translate
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Returns the result of translating this matrix by a given vector.

@@ -10,6 +10,7 @@ A protocol that defines a custom force effect.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -80,8 +81,8 @@ MyCustomForceClosure.register { event in
 - [var parameterTypes: PhysicsBodyParameterTypes](forceeffectprotocol/parametertypes.md)
   The input types to user’s custom force computation.
 ### Type Methods
-- [static func register(((inout ForceEffectEvent<Self>) -> Void)?)](forceeffectprotocol/register(_:)-96fsp.md)
-  Register the codable custom effect. If a handler is specified, the closure is used to update the effect.
+- [static register(_:)](forceeffectprotocol/register(_:).md)
+  Registers the custom effect.
 
 ## Relationships
 

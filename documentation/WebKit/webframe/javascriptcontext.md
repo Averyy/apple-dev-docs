@@ -1,6 +1,6 @@
 # javaScriptContext
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The frame’s global JavaScript execution context.

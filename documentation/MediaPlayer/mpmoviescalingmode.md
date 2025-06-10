@@ -9,8 +9,6 @@ Constants describing how the movie content is scaled to fit the frame of its vie
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
 
 ## Declaration
 
@@ -40,6 +38,7 @@ enum MPMovieScalingMode
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

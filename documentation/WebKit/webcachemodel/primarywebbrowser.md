@@ -1,6 +1,6 @@
 # WebCacheModel.primaryWebBrowser
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Caches a large number of resources and previously viewed documents in memory and on disk. This model is appropriate for a web view that behaves like a web browser.

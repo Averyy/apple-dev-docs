@@ -1,6 +1,6 @@
 # WeatherCondition.drizzle
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Drizzle or light rain.

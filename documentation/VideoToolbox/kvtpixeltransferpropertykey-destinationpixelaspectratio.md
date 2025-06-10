@@ -1,6 +1,6 @@
 # kVTPixelTransferPropertyKey_DestinationPixelAspectRatio
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The pixel aspect ratio for destination image buffers.

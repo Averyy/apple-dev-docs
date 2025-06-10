@@ -1,6 +1,6 @@
-# Tip.Rule
+# Rule
 
-**Framework**: Tipkit  
+**Framework**: TipKit  
 **Kind**: typealias
 
 A condition to meet before displaying a tip.
@@ -26,7 +26,7 @@ Use rules to control when your tips display.
 
 ##### Parameter Rules
 
-[`Tips.Parameter`](tips/parameter.md) based rules track app state. For example, to display a tip when someone logs in:
+[`Parameter`](tips/parameter.md) based rules track app state. For example, to display a tip when someone logs in:
 
 1. Define the app state you want to track using the `@Parameter` macro.
 2. Define a rule based on that app state using the `#Rule` macro.
@@ -50,9 +50,9 @@ struct FavoriteLandmarkTip: Tip {
 
 ##### Event Rules
 
-Event based rules track user interactions. For example, to display a tip only when a [`Tips.Event`](tips/event.md) occurs three or more times:
+Event based rules track user interactions. For example, to display a tip only when a [`Event`](tips/event.md) occurs three or more times:
 
-1. Define the user interaction you want to track as a [`Tips.Event`](tips/event.md) with a unique `id`.
+1. Define the user interaction you want to track as a [`Event`](tips/event.md) with a unique `id`.
 2. Define a rule based on that interaction using a `#Rule` macro.
 3. Set the conditions for when the tip displays in the macro closure.
 

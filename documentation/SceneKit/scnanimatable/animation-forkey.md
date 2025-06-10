@@ -13,6 +13,7 @@ Returns the animation with the specified key.
 - macOS 10.8+
 - tvOS 9.0+
 - visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 

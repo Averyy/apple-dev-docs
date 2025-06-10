@@ -3,7 +3,7 @@
 **Framework**: Assignables  
 **Kind**: method
 
-Scales this view uniformly by the specified size in each dimension.
+Scales this view uniformly by the specified size in each dimension, relative to an anchor point.
 
 **Availability**:
 - visionOS 1.0+

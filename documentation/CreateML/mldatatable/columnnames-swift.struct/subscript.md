@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: subscript
 
 Accesses the element at the specified position.

@@ -39,6 +39,7 @@ You typically generate one of these using the corresponding provider, which is a
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
+- [ASAuthorizationAccountCreationPlatformPublicKeyCredentialRequest](asauthorizationaccountcreationplatformpublickeycredentialrequest.md)
 - [ASAuthorizationOpenIDRequest](asauthorizationopenidrequest.md)
 - [ASAuthorizationPasswordRequest](asauthorizationpasswordrequest.md)
 - [ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](asauthorizationplatformpublickeycredentialassertionrequest.md)
@@ -56,6 +57,7 @@ You typically generate one of these using the corresponding provider, which is a
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

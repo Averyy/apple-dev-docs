@@ -1,6 +1,6 @@
 # metadata
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 A dictionary of additional information that was sent with the file.

@@ -1,6 +1,6 @@
 # removeContentRuleList(forIdentifier:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Removes a rule list from the current data store asynchronously.

@@ -20,8 +20,6 @@ An [`FSEntityIdentifier`](fsentityidentifier.md) is a UUID to identify a contain
 
 > ❗ **Important**: Don’t subclass this class.
 
-Don’t subclass this class.
-
 ## Topics
 
 ### Creating an entity identifier
@@ -61,6 +59,7 @@ Don’t subclass this class.
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

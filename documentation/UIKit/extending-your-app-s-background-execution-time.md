@@ -1,6 +1,6 @@
 # Extending your app’s background execution time
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Ensure that critical tasks finish when your app moves to the background.
 
@@ -38,7 +38,7 @@ func sendDataToServer( data : NSData ) {
 }
 ```
 
-> **Note**:  The [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method can’t be called from an app extension. To request extra execution time from your app extension, call the [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/foundation/processinfo/1617030-performexpiringactivity) method of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) instead.
+> **Note**:  The [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method can’t be called from an app extension. To request extra execution time from your app extension, call the [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/Foundation/ProcessInfo/performExpiringActivity(withReason:using:)) method of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) instead.
 
 ## See Also
 
@@ -50,4 +50,4 @@ func sendDataToServer( data : NSData ) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/extending-your-app-s-background-execution-time)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/extending-your-app-s-background-execution-time)*

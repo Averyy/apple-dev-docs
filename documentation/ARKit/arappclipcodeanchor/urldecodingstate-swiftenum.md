@@ -40,6 +40,7 @@ The possible states of decoding the [`url`](arappclipcodeanchor/url.md) of an Ap
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

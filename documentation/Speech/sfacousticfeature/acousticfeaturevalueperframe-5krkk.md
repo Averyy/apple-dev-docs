@@ -8,7 +8,7 @@ An array of feature values, one value per audio frame, corresponding to a transc
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - visionOS ?+
 

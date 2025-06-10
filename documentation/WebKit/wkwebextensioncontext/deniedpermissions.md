@@ -1,6 +1,6 @@
 # deniedPermissions
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The currently denied permissions and their expiration dates.

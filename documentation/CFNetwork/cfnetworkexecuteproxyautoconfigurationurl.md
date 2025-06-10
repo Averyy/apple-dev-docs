@@ -1,6 +1,6 @@
 # CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)
 
-**Framework**: Cfnetwork  
+**Framework**: CFNetwork  
 **Kind**: func
 
 Downloads a proxy autoconfiguration script and executes it.

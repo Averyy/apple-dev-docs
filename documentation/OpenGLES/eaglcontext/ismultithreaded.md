@@ -1,6 +1,6 @@
 # isMultiThreaded
 
-**Framework**: Opengles  
+**Framework**: OpenGL ES  
 **Kind**: property
 
 A Boolean value that determines whether OpenGL ES defers work to another thread.
@@ -30,4 +30,4 @@ If the current device does not support multithreaded OpenGL ES, the value of th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/OpenGLES/eaglcontext/ismultithreaded)*
+*[View on Apple Developer](https://developer.apple.com/documentation/opengles/eaglcontext/ismultithreaded)*

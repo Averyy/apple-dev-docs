@@ -1,6 +1,6 @@
 # CAMetalLayer
 
-**Framework**: Quartzcore  
+**Framework**: Core Animation  
 **Kind**: class
 
 A Core Animation layer that Metal can render into, typically displayed onscreen.
@@ -116,6 +116,8 @@ This block releases drawables promptly and avoids possible deadlock situations w
 ### Configuring the Metal Performance HUD
 - [var developerHUDProperties: [AnyHashable : Any]?](cametallayer/developerhudproperties.md)
   The properties of the Metal performance heads-up display.
+### Instance Properties
+- [var residencySet: any MTLResidencySet](cametallayer/residencyset.md)
 
 ## Relationships
 
@@ -131,6 +133,8 @@ This block releases drawables promptly and avoids possible deadlock situations w
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -148,4 +152,4 @@ This block releases drawables promptly and avoids possible deadlock situations w
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/cametallayer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/cametallayer)*

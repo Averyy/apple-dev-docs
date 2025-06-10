@@ -1,14 +1,14 @@
 # Log a Message
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: httpRequest
 
 Record a message on your server.
 
 **Availability**:
 - iOS 10.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 10.0+
+- watchOS 3.0+
 
 ## Request Body
 

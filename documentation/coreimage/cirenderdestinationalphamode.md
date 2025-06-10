@@ -6,17 +6,17 @@
 Different ways of representing alpha.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-enum CIRenderDestinationAlphaMode : UInt, @unchecked Sendable
+enum CIRenderDestinationAlphaMode
 ```
 
 ## Topics
@@ -28,22 +28,29 @@ enum CIRenderDestinationAlphaMode : UInt, @unchecked Sendable
   Designates a destination that expects premultiplied alpha values.
 - [CIRenderDestinationAlphaMode.unpremultiplied](cirenderdestinationalphamode/unpremultiplied.md)
   Designates a destination that expects non-premultiplied alpha values.
+### Initializers
+- [init?(rawValue: UInt)](cirenderdestinationalphamode/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [Generating an animation with a Core Image Render Destination](generating_an_animation_with_a_core_image_render_destination.md)
+- [Generating an animation with a Core Image Render Destination](generating-an-animation-with-a-core-image-render-destination.md)
   Animate a filtered image to a Metal view in a SwiftUI app using a Core Image Render Destination.
 - [class CIRenderDestination](cirenderdestination.md)
-  A specification for configuring all attributes of a render task's destination and issuing asynchronous render tasks.
+  A specification for configuring all attributes of a render task’s destination and issuing asynchronous render tasks.
 - [class CIRenderInfo](cirenderinfo.md)
-  An encapsulation of a render task's timing, passes, and pixels processed.
+  An encapsulation of a render task’s timing, passes, and pixels processed.
 - [class CIRenderTask](cirendertask.md)
-  A single render task issued in conjunction with [`CIRenderDestination`](cirenderdestination.md).
+  A single render task.
 
 
 ---

@@ -41,6 +41,7 @@ When using a radial gradient as a shape style, you can also use [`radialGradient
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 - [View](view.md)
 

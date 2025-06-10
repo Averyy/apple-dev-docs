@@ -1,6 +1,6 @@
 # xpc_array_get_uint64(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Gets a 64-bit unsigned integer primitive value from an array directly.

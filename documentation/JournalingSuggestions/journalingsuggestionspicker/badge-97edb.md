@@ -18,7 +18,7 @@ func badge(_ count: Int) -> some View
 
 #### Discussion
 
-Use a badge to convey optional, supplementary information about a view. Keep the contents of the badge as short as possible. Badges appear only in list rows, tab bars, and menus.
+Use a badge to convey optional, supplementary information about a view. Keep the contents of the badge as short as possible. Badges appear in list rows, tab bars, toolbar items, and menus.
 
 The following example shows a `List` with the value of `recentItems.count` represented by a badge on one of the rows:
 

@@ -1,6 +1,6 @@
 # labelsHidden()
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Hides the labels of any controls contained within this view.

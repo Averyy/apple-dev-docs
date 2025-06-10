@@ -1,6 +1,6 @@
 # vmnet_interface_id_key
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: var
 
 **Availability**:
@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-var vmnet_interface_id_key: UnsafePointer<CChar>
+let vmnet_interface_id_key: UnsafePointer<CChar>
 ```
 
 #### Discussion
@@ -27,7 +27,7 @@ The value specified for this key should be of type doc://com.apple.documentation
 
 ## See Also
 
-- [var vmnet_operation_mode_key: UnsafePointer<CChar>](vmnet_operation_mode_key.md)
+- [let vmnet_operation_mode_key: UnsafePointer<CChar>](vmnet_operation_mode_key.md)
 
 
 ---

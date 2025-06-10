@@ -17,8 +17,7 @@ Creates a transition that offset the view by the specified amount.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init(_ offset: CGSize)
+init(_ offset: CGSize)
 ```
 
 ## See Also

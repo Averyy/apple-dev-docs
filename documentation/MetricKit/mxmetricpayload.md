@@ -9,6 +9,7 @@ An object that encapsulates a daily metrics report.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
+- macOS 10.15+
 - visionOS 1.0+
 
 ## Declaration
@@ -68,6 +69,8 @@ class MXMetricPayload
   The version of the app on the device at the end of the reporting period.
 - [var metaData: MXMetaData?](mxmetricpayload/metadata.md)
   A set of system-level information for the device.
+### Instance Properties
+- [var diskSpaceUsageMetrics: MXDiskSpaceUsageMetric?](mxmetricpayload/diskspaceusagemetrics.md)
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # navigationAppBoundDomain
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An error that indicates navigation failed due to an app-bound domain restriction.

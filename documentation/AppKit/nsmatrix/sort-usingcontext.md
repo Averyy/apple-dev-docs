@@ -22,7 +22,7 @@ func sort(using compare: (Any, Any, UnsafeMutableRawPointer?) -> Int, context: U
 
 ## See Also
 
-- [func sort((Any, Any, UnsafeMutableRawPointer?) -> Int, context: UnsafeMutableRawPointer?)](../foundation/nsmutablearray/1408332-sort.md)
+- [func sort(_ compare: (Any, Any, UnsafeMutableRawPointer?) -> Int, context: UnsafeMutableRawPointer?)](../Foundation/NSMutableArray/sort(_:context:).md)
   Sorts the receiver in ascending order as defined by the comparison function `compare`.
 - [func addColumn()](nsmatrix/addcolumn.md)
   Adds a new column of cells to the right of the last column.

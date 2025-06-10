@@ -28,8 +28,6 @@ Calling this method is equivalent to, but not necessarily implemented as, settin
 
 > ❗ **Important**:  You should call this method only after setting the [`locale`](dateformatter/locale.md) of the receiver.
 
- You should call this method only after setting the [`locale`](dateformatter/locale.md) of the receiver.
-
 ## Parameters
 
 - `dateFormatTemplate`: For full details, see  .

@@ -1,6 +1,6 @@
 # VTDecompressionSession
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 An object that decompresses video data.
 

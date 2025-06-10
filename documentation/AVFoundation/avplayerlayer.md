@@ -46,8 +46,6 @@ class PlayerView: UIView {
 
 > ❗ **Important**:  The value of a player layer’s inherited [`contents`](https://developer.apple.com/documentation/QuartzCore/CALayer/contents) property is opaque and you can’t change it.
 
- The value of a player layer’s inherited [`contents`](https://developer.apple.com/documentation/QuartzCore/CALayer/contents) property is opaque and you can’t change it.
-
 ## Topics
 
 ### Creating a Player Layer
@@ -71,6 +69,9 @@ class PlayerView: UIView {
   The attributes of the visual output that displays in the player layer during playback.
 - [func displayedPixelBuffer() -> CVPixelBuffer?](avplayerlayer/displayedpixelbuffer.md)
   Returns the pixel buffer that the player layer currently displays.
+### Instance Methods
+- [func displayedReadOnlyPixelBuffer() -> CVReadOnlyPixelBuffer?](avplayerlayer/displayedreadonlypixelbuffer.md)
+  Returns the pixel buffer which is currently being displayed.
 
 ## Relationships
 
@@ -86,6 +87,8 @@ class PlayerView: UIView {
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

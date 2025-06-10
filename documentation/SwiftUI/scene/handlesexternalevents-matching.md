@@ -40,14 +40,12 @@ Don’t confuse the `handlesExternalEvents(matching:)` scene modifier with the [
 
 To find a scene type that handles a particular external event, SwiftUI compares a property of the event against the strings that you specify in the `conditions` set. SwiftUI examines the following event properties to perform the comparison:
 
-- For an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity), like when your app handles Handoff, SwiftUI uses the activity’s [`targetContentIdentifier`](https://developer.apple.com/documentation/foundation/nsuseractivity/3238062-targetcontentidentifier) property, or if that’s `nil`, its [`webpageURL`](https://developer.apple.com/documentation/foundation/nsuseractivity/1418086-webpageurl) property rendered as an [`absoluteString`](https://developer.apple.com/documentation/foundation/url/1779984-absolutestring).
-- For a [`URL`](https://developer.apple.com/documentation/Foundation/URL), like when another process opens a URL that your app handles, SwiftUI uses the URL’s [`absoluteString`](https://developer.apple.com/documentation/foundation/url/1779984-absolutestring).
+- For an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity), like when your app handles Handoff, SwiftUI uses the activity’s [`targetContentIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/targetContentIdentifier) property, or if that’s `nil`, its [`webpageURL`](https://developer.apple.com/documentation/Foundation/NSUserActivity/webpageURL) property rendered as an [`absoluteString`](https://developer.apple.com/documentation/Foundation/URL/absoluteString).
+- For a [`URL`](https://developer.apple.com/documentation/Foundation/URL), like when another process opens a URL that your app handles, SwiftUI uses the URL’s [`absoluteString`](https://developer.apple.com/documentation/Foundation/URL/absoluteString).
 
 An empty set of strings never matches. Similarly, empty strings never match. Conversely, as a special case, the string that contains only an asterisk (`*`) matches anything. The modifier performs string comparisons that are case and diacritic insensitive.
 
-> ❗ **Important**: [`DocumentGroup`](documentgroup.md) scenes ignore this modifier. Instead, document scenes decide whether to open a new scene to handle an external event by comparing the incoming URL or user activity’s [`webpageURL`](https://developer.apple.com/documentation/foundation/nsuseractivity/1418086-webpageurl) against the document group’s supported types.
-
-[`DocumentGroup`](documentgroup.md) scenes ignore this modifier. Instead, document scenes decide whether to open a new scene to handle an external event by comparing the incoming URL or user activity’s [`webpageURL`](https://developer.apple.com/documentation/foundation/nsuseractivity/1418086-webpageurl) against the document group’s supported types.
+> ❗ **Important**: [`DocumentGroup`](documentgroup.md) scenes ignore this modifier. Instead, document scenes decide whether to open a new scene to handle an external event by comparing the incoming URL or user activity’s [`webpageURL`](https://developer.apple.com/documentation/Foundation/NSUserActivity/webpageURL) against the document group’s supported types.
 
 ##### Choosing a Window to Open
 

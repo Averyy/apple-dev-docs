@@ -1,6 +1,6 @@
 # Explore more content with MusicKit
 
-**Framework**: Musickit
+**Framework**: MusicKit
 
 Track your outdoor runs with access to the Apple Music catalog, personal recommendations, and your own personal music library.
 

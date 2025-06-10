@@ -1,6 +1,6 @@
 # supportedAuthenticationSchemes
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A collection of authentication schemes your app supports for this request.

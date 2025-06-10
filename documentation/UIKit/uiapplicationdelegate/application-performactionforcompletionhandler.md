@@ -22,8 +22,6 @@ optional func application(_ application: UIApplication, performActionFor shortcu
 
 > ❗ **Important**:  This method is not called for scene-based apps. If you have a scene-based app, implement [`windowScene(_:performActionFor:completionHandler:)`](uiwindowscenedelegate/windowscene(_:performactionfor:completionhandler:).md) in your scene delegate instead.
 
- This method is not called for scene-based apps. If you have a scene-based app, implement [`windowScene(_:performActionFor:completionHandler:)`](uiwindowscenedelegate/windowscene(_:performactionfor:completionhandler:).md) in your scene delegate instead.
-
 Implement this method to respond to the user’s selection of a Home screen quick action for your app. When finished, call the completion handler, with an appropriate Boolean value.
 
 It’s your responsibility to ensure the system calls this method conditionally, depending on whether or not one of your app launch methods ([`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) or [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md)) has already handled a quick action invocation. The system calls a launch method (before calling this method) when a user selects a quick action for your app and your app  instead of .

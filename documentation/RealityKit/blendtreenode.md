@@ -1,6 +1,6 @@
 # BlendTreeNode
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: protocol
 
 An interface for a node that’s a member of a blend tree.
@@ -10,6 +10,7 @@ An interface for a node that’s a member of a blend tree.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -74,4 +75,4 @@ let blendNode = BlendTreeSourceNode(
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/blendtreenode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/blendtreenode)*

@@ -1,6 +1,6 @@
 # WeatherCondition.frigid
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Frigid conditions, low temperatures, or ice crystals.

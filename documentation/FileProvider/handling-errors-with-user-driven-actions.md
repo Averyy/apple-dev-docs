@@ -22,7 +22,7 @@ For authentication errors, you can present a custom user interface using the [`F
 
 If a name collision occurs when syncing a local item with your server, update the local item, giving it a unique file name. A name collision is not considered an error.
 
-If, however, you can detect a name collision locally, call the [`fileProviderErrorForCollision(with:)`](https://developer.apple.com/documentation/foundation/nserror/2882067-fileprovidererrorforcollision) method to create a [`NSFileProviderError.Code.filenameCollision`](nsfileprovidererror/code/filenamecollision.md) error, and pass this error to the completion handler. The system then asks the user if they want to replace the existing item (taking into account its [`allowsTrashing`](nsfileprovideritemcapabilities/allowstrashing.md) and [`allowsDeleting`](nsfileprovideritemcapabilities/allowsdeleting.md) capabilities).
+If, however, you can detect a name collision locally, call the [`fileProviderErrorForCollision(with:)`](https://developer.apple.com/documentation/Foundation/NSError/fileProviderErrorForCollision(with:)) method to create a [`NSFileProviderError.Code.filenameCollision`](nsfileprovidererror/code/filenamecollision.md) error, and pass this error to the completion handler. The system then asks the user if they want to replace the existing item (taking into account its [`allowsTrashing`](nsfileprovideritemcapabilities/allowstrashing.md) and [`allowsDeleting`](nsfileprovideritemcapabilities/allowsdeleting.md) capabilities).
 
 Perform all collision checks using case-insensitive comparisons, even if the filesystem or file provider allows case-sensitive names.
 

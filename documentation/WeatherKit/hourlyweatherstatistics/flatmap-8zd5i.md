@@ -1,6 +1,6 @@
 # flatMap(_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 **Availability**:

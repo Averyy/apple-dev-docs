@@ -7,14 +7,25 @@ Information about connection groups with member connection references that the s
 
 **Availability**:
 - macOS 14.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object StatusScreenSharingConnectionGroupUnresolvedConnections
 ```
+
+#### Discussion
+
+##### Status Item Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | macOS |
+| Allowed in device enrollment | NA |
+| Allowed in user enrollment | macOS |
+| Allowed in local enrollment | macOS |
+| Allowed in system scope | macOS |
+| Allowed in user scope | macOS |
 
 ## Topics
 
@@ -25,7 +36,6 @@ object StatusScreenSharingConnectionGroupUnresolvedConnections
 ## See Also
 
 - [object StatusReport](statusreport.md)
-  A status report of the device’s current state.
 - [object StatusAppManagedList](statusappmanagedlist.md)
   The device’s declarative managed apps.
 - [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)

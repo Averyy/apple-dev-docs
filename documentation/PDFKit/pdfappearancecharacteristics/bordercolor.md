@@ -17,7 +17,7 @@ The border color of the widget annotation.
 
 ```swift
 @NSCopying
-var borderColor: UIColor? { get set }
+var borderColor: NSColor? { get set }
 ```
 
 ## See Also

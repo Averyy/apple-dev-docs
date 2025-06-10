@@ -37,6 +37,14 @@ struct TipKitError
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [struct AnyTip](anytip.md)
+  A type-erased tip value.
+- [protocol TipOption](tipoption.md)
+  A type that represents the various customizations that you can make to a tip’s behavior.
 
 
 ---

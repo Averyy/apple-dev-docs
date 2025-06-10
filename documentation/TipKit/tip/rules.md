@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The rules that determine when a tip is eligible for display. For more information on rules, see [`Tips.Rule`](tips/rule.md).
+The rules that determine when a tip is eligible for display. For more information on rules, see [`Rule`](tips/rule.md).
 
 **Availability**:
 - iOS 17.0+

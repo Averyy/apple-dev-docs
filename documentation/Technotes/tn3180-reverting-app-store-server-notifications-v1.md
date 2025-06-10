@@ -72,4 +72,4 @@ To change your server’s URL for receiving App Store Server Notifications in th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3180-reverting-app-store-server-notifications-v1)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3180-reverting-app-store-server-notifications-v1)*

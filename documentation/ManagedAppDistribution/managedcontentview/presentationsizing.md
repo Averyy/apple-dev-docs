@@ -1,6 +1,6 @@
 # presentationSizing(_:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Sets the sizing of the containing presentation.

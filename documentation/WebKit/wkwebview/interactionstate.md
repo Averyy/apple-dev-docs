@@ -1,6 +1,6 @@
 # interactionState
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An object you use to capture the current state of interaction in a web view so that you can restore that state later to another web view.

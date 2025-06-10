@@ -25,8 +25,6 @@ Sample buffers may contain metadata, like the camera intrinsics. Vision algorith
 
 > ❗ **Important**:  Use a physical device to perform your testing. Performing requests in Simulator may produce inaccurate results due to the inability of Core Image to render certain pixel formats in this environment.
 
- Use a physical device to perform your testing. Performing requests in Simulator may produce inaccurate results due to the inability of Core Image to render certain pixel formats in this environment.
-
 ## Parameters
 
 - `sampleBuffer`: The sample buffer that contains the image to analyze. If the sample buffer doesn’t contain an image buffer with image data, the system raises an error.

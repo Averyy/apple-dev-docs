@@ -1,6 +1,6 @@
 # WKAudioFilePlayer
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that controls playback of a single audio item.

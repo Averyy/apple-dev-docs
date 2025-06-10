@@ -39,7 +39,7 @@ The names of these placements aren’t visible in the user interface, but the di
 - [static let importExport: CommandGroupPlacement](commandgroupplacement/importexport.md)
   Placement for commands that relate to importing and exporting data using formats that the app doesn’t natively support.
 - [static let newItem: CommandGroupPlacement](commandgroupplacement/newitem.md)
-  Placement for commands that create and open different kinds of documents.
+  Placement for commands that create different kinds of documents.
 - [static let printItem: CommandGroupPlacement](commandgroupplacement/printitem.md)
   Placement for commands related to printing app content.
 - [static let saveItem: CommandGroupPlacement](commandgroupplacement/saveitem.md)

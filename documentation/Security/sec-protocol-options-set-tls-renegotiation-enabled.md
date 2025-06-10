@@ -21,7 +21,7 @@ func sec_protocol_options_set_tls_renegotiation_enabled(_ options: sec_protocol_
 #### Discussion
 
 ```None
-  Enable or disable TLS (1.2 and prior) session renegotiation. This defaults to `true`.
+ Enable or disable TLS (1.2 and prior) session renegotiation. This defaults to `true`.
 ```
 
 ## Parameters

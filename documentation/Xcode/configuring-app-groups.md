@@ -38,9 +38,9 @@ Xcode automatically selects the new app group in the App Groups list; this selec
 
 When your app becomes a member of an app group, there are a number of APIs you can use to read and write data to that group’s shared container, such as:
 
-- Sharing preferences and other limited data by using the [`init(suiteName:)`](https://developer.apple.com/documentation/foundation/userdefaults/1409957-init) method to access the app group’s shared user defaults database.
-- Retrieving the physical location of the app group’s shared container by calling the [`containerURL(forSecurityApplicationGroupIdentifier:)`](https://developer.apple.com/documentation/foundation/filemanager/1412643-containerurl) method, which you can later use to read and write data.
-- Set the [`sharedContainerIdentifier`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/1409450-sharedcontaineridentifier) property on the configuration of a background URL session to download files directly into the app group’s shared container.
+- Sharing preferences and other limited data by using the [`init(suiteName:)`](https://developer.apple.com/documentation/Foundation/UserDefaults/init(suiteName:)) method to access the app group’s shared user defaults database.
+- Retrieving the physical location of the app group’s shared container by calling the [`containerURL(forSecurityApplicationGroupIdentifier:)`](https://developer.apple.com/documentation/Foundation/FileManager/containerURL(forSecurityApplicationGroupIdentifier:)) method, which you can later use to read and write data.
+- Set the [`sharedContainerIdentifier`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/sharedContainerIdentifier) property on the configuration of a background URL session to download files directly into the app group’s shared container.
 
 ## See Also
 
@@ -52,4 +52,4 @@ When your app becomes a member of an app group, there are a number of APIs you c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-app-groups)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-app-groups)*

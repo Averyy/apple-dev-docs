@@ -1,6 +1,6 @@
 # Constant-size timed metadata sample data
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Create metadata tracks with samples that have the same size.
 

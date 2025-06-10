@@ -22,8 +22,8 @@ case memoryless
 ## Mentions
 
 - [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
 - [Reducing the Memory Footprint of Metal Apps](reducing-the-memory-footprint-of-metal-apps.md)
+- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
 
 #### Discussion
 

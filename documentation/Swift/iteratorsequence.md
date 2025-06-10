@@ -44,6 +44,7 @@ for x in IteratorSequence(i) { ... }
 - [Copyable](copyable.md)
 - [IteratorProtocol](iteratorprotocol.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

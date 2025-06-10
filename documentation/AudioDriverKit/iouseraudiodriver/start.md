@@ -22,7 +22,7 @@ kern_return_t Start(IOService * provider);
 
 Override this method inherited from [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService).
 
-After successfully matching the specified provider to your driver’s service, the system instantiates your service object and calls this method. Use this method to configure your driver’s data structures and setup the associated hardware. You might also store a reference to the `provider` object for later use. After you configure your driver, call the [`RegisterService`](https://developer.apple.com/documentation/kernel/ioservice/3180701-registerservice) method to let the system know your service is running.
+After successfully matching the specified provider to your driver’s service, the system instantiates your service object and calls this method. Use this method to configure your driver’s data structures and setup the associated hardware. You might also store a reference to the `provider` object for later use. After you configure your driver, call the [`RegisterService`](https://developer.apple.com/documentation/DriverKit/IOService/RegisterService) method to let the system know your service is running.
 
 Always call `super` early in your implementation of this method.
 

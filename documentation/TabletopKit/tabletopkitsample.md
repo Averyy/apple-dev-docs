@@ -1,6 +1,6 @@
 # Creating tabletop games
 
-**Framework**: Tabletopkit
+**Framework**: TabletopKit
 
 Develop a spatial board game where multiple players interact with pieces on a table.
 
@@ -49,6 +49,8 @@ Players who join the FaceTime call can drag the pawns, pick up cards, and toss t
 
 ## See Also
 
+- [Synchronizing group gameplay with TabletopKit](synchronizing-group-gameplay-with-tabletopkit.md)
+  Maintain game state across multiple players in a race to capture all the coins.
 - [class TabletopGame](tabletopgame.md)
   An object that manages the setup and gameplay of a tabletop game.
 - [struct TableSetup](tablesetup.md)
@@ -63,4 +65,4 @@ Players who join the FaceTime call can drag the pawns, pick up cards, and toss t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TabletopKit/tabletopkitsample)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tabletopkit/tabletopkitsample)*

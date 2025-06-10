@@ -1,6 +1,6 @@
 # VSAccountProviderResponse
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: class
 
 An object that contains the response from the account provider.

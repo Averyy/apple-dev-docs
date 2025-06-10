@@ -1,6 +1,6 @@
 # prefix(_:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.

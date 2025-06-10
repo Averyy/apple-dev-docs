@@ -8,8 +8,6 @@ An atom that is the parent of one or more node ID atoms.
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
-
 The node parent atom is the parent of one or more node ID atoms. The atom type of the node parent atom is `kQTVRNodeParentAtomType` (`'vrnp'`) and the atom type of the each node ID atom is `kQTVRNodeIDAtomType` (`'vrni'`).
 
 There is one node ID atom for each node in the file. The atom ID of the node ID atom is the node ID of the node. The node ID atom is the parent of the node location atom. The node location atom is the only child atom defined for the node ID atom. Its atom type is `kQTVRNodeLocationAtomType` (`'nloc'`).

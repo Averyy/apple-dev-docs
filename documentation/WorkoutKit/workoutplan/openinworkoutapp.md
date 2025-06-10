@@ -1,6 +1,6 @@
 # openInWorkoutApp()
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 Opens the workout in Workout on Apple Watch.

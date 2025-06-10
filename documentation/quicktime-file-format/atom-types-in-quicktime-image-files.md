@@ -1,6 +1,6 @@
 # Atom types in QuickTime image files
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Build QuickTime image files with atoms.
 

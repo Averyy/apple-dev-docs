@@ -1,6 +1,6 @@
 # textSelection(_:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Controls whether people can select text within this view.

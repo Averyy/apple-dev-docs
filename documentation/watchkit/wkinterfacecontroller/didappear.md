@@ -1,6 +1,6 @@
 # didAppear()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Tells the interface controller that its view is now onscreen.
@@ -17,8 +17,8 @@ func didAppear()
 
 ## Mentions
 
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
 - [Navigating Between Scenes](navigating-between-scenes.md)
+- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
 
 #### Discussion
 

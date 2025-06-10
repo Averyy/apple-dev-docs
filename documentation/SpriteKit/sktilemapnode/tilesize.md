@@ -17,7 +17,6 @@ The size of each tile in points.
 ## Declaration
 
 ```swift
-@MainActor
 var tileSize: CGSize { get set }
 ```
 

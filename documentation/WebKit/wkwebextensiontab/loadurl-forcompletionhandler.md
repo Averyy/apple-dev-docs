@@ -1,6 +1,6 @@
 # loadURL(_:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to load a URL in the tab.

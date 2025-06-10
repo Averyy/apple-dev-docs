@@ -3,10 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
+The dictionary of forced settings.
+
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -16,8 +16,9 @@ object ManagedPreferences.PayloadContent.ANY.Settings
 
 ## Topics
 
-### Profiles
+### Objects
 - [object ManagedPreferences.PayloadContent.ANY.Settings.Mcx_preference_settings](managedpreferences/payloadcontent-data.dictionary/any-data.dictionary/settings/mcx_preference_settings-data.dictionary.md)
+  The dictionary of settings.
 
 
 ---

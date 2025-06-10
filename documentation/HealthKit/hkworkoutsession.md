@@ -89,6 +89,8 @@ Apple Watch runs one workout session at a time. If a second workout starts while
   The workout activity performed during this session.
 - [var locationType: HKWorkoutSessionLocationType](hkworkoutsession/locationtype.md)
   A value that indicates whether the workout session occurred indoors or outdoors.
+### Instance Properties
+- [var currentGeneratedTypes: Set<HKQuantityType>](hkworkoutsession/currentgeneratedtypes.md)
 
 ## Relationships
 
@@ -104,6 +106,7 @@ Apple Watch runs one workout session at a time. If a second workout starts while
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -113,6 +116,8 @@ Apple Watch runs one workout session at a time. If a second workout starts while
   Create your own workout app, quickly and easily, with HealthKit and SwiftUI.
 - [Building a multidevice workout app](building-a-multidevice-workout-app.md)
   Mirror a workout from a watchOS app to its companion iOS app, and perform bidirectional communication between them.
+- [Building a workout app for iPhone and iPad](building-a-workout-app-for-iphone-and-ipad.md)
+  Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
 - [class HKWorkoutConfiguration](hkworkoutconfiguration.md)
   An object that contains configuration information about a workout session.
 - [enum HKWorkoutSessionState](hkworkoutsessionstate.md)

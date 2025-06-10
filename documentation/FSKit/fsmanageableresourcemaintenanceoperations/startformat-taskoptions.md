@@ -17,7 +17,7 @@ func startFormat(task: FSTask, options: FSTaskOptions) throws -> Progress
 
 #### Return Value
 
-An [`NSProgress`](https://developer.apple.com/documentation/foundation/nsprogress) object that you use to update progress as the format operation progresses. Return `nil` if starting to format the file system encountered an error.
+An [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) object that you use to update progress as the format operation progresses. Return `nil` if starting to format the file system encountered an error.
 
 ## Parameters
 

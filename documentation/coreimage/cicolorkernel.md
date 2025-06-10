@@ -1,7 +1,7 @@
 # CIColorKernel
 
 **Framework**: Core Image  
-**Kind**: cl
+**Kind**: class
 
 A GPU-based image-processing routine that processes only the color information in images, used to create custom Core Image filters.
 
@@ -10,13 +10,13 @@ A GPU-based image-processing routine that processes only the color information i
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS 9.0+
+- tvOS ?+
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
-class CIColorKernel : CIKernel
+class CIColorKernel
 ```
 
 #### Overview
@@ -28,7 +28,7 @@ The kernel language routine for a color kernel has the following characteristics
 
 A color kernel routine receives as input single-pixel colors (one sampled from each input image) and computes a final pixel color (output using the `return` keyword). For example, the Metal Shading Language source below implements a filter that passes through its input image unchanged.
 
-```other
+```c
 #include <CoreImage/CoreImage.h>
  
 extern "C" {
@@ -42,7 +42,7 @@ extern "C" {
 
 The equivalent code in Core Image Kernel Language is:
 
-```other
+```c
 kernel vec4 do_nothing(__sample s) {
     return s.rgba;
 }
@@ -53,20 +53,31 @@ The Core Image Kernel Language is a dialect of the OpenGL Shading Language. See 
 ## Topics
 
 ### Creating a Kernel
-- [init?(source: String)](cicolorkernel/1438143-init.md)
+- [convenience init?(source: String)](cicolorkernel/init(source:).md)
   Creates a color kernel object from the specified kernel source code.
 ### Applying a Kernel to Filter an Image
-- [func apply(extent: CGRect, arguments: [Any]) -> CIImage?](cicolorkernel/1438110-apply.md)
+- [func apply(extent: CGRect, arguments: [Any]) -> CIImage?](cicolorkernel/apply(extent:arguments:).md)
   Creates a new image using the kernel and specified arguments.
 
 ## Relationships
 
 ### Inherits From
 - [CIKernel](cikernel.md)
+### Inherited By
+- [CIBlendKernel](ciblendkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [Writing Custom Kernels](writing_custom_kernels.md)
+- [Writing Custom Kernels](writing-custom-kernels.md)
   Write your own custom kernels in either the Core Image Kernel Language or the Metal Shading Language.
 - [class CIKernel](cikernel.md)
   A GPU-based image-processing routine used to create custom Core Image filters.

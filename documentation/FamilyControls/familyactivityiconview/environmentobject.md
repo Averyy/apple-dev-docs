@@ -1,6 +1,6 @@
 # environmentObject(_:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Supplies an observable object to a view’s hierarchy.

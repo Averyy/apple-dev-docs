@@ -16,6 +16,7 @@ object App.Attributes
 
 ## Mentions
 
+- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
 - [App Store Connect API 1.6 release notes](app-store-connect-api-1-6-release-notes.md)
 
 ## See Also

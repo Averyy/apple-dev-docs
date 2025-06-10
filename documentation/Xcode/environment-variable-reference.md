@@ -50,4 +50,4 @@ The availability of the following environment variables depends on the action Xc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/environment-variable-reference)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/environment-variable-reference)*

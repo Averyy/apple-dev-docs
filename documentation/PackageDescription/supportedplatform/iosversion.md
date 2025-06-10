@@ -32,6 +32,8 @@ struct IOSVersion
   The value that represents iOS 17.0.
 - [static let v18: SupportedPlatform.IOSVersion](supportedplatform/iosversion/v18.md)
   The value that represents iOS 18.0.
+- [static let v26: SupportedPlatform.IOSVersion](supportedplatform/iosversion/v26.md)
+  The value that represents iOS 26.0.
 - [static let v8: SupportedPlatform.IOSVersion](supportedplatform/iosversion/v8.md)
   The value that represents iOS 8.0.
 - [static let v9: SupportedPlatform.IOSVersion](supportedplatform/iosversion/v9.md)
@@ -41,6 +43,7 @@ struct IOSVersion
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

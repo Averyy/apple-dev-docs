@@ -1,6 +1,6 @@
 # Start
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: method
 
 Starts the service for the specified provider.
@@ -20,7 +20,7 @@ kern_return_t Start(IOService * provider);
 
 #### Discussion
 
-After successfully matching the specified `provider` to your driver’s service, the system instantiates your service object and calls this method. Use this method to perform any additional configuration of your driver. For example, you might store a reference to the specified provider object for later use. When your service is configured, call the [`RegisterService`](https://developer.apple.com/documentation/kernel/ioservice/3180701-registerservice) method to let the system know that your service is running. Always call `super` early in your implementation of this method.
+After successfully matching the specified `provider` to your driver’s service, the system instantiates your service object and calls this method. Use this method to perform any additional configuration of your driver. For example, you might store a reference to the specified provider object for later use. When your service is configured, call the [`RegisterService`](https://developer.apple.com/documentation/DriverKit/IOService/RegisterService) method to let the system know that your service is running. Always call `super` early in your implementation of this method.
 
 You don’t need to open a communications channel to your device in this method. The system calls your service’s [`HwActivate`](https://developer.apple.com/documentation/SerialDriverKit/IOUserSerial/HwActivate) method separately to activate your hardware.
 

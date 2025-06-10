@@ -23,7 +23,7 @@ struct ReferenceObject
   Creates a reference object from a bundle.
 ### Inspecting a reference object
 - [var id: UUID](referenceobject/id-swift.property.md)
-  The unique identifier of this anchor.
+  The unique identifier of this reference object.
 - [ReferenceObject.ID](referenceobject/id-swift.typealias.md)
   A type representing the stable identity of the entity associated with an instance.
 - [var inputFile: URL?](referenceobject/inputfile.md)
@@ -42,6 +42,7 @@ struct ReferenceObject
 - [Equatable](../Swift/Equatable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

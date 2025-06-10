@@ -1,6 +1,6 @@
 # DOM Modification Enumeration (Legacy)
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 ## Topics
 

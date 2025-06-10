@@ -35,9 +35,10 @@ self.ornaments = [
 - [var contentAlignment: Alignment](uihostingornament/contentalignment.md)
   The alignment in the ornament used to position it.
 ### Initializers
-- [init(sceneAnchor: UnitPoint, contentAlignment: Alignment, content: () -> Content)](uihostingornament/init(sceneanchor:contentalignment:content:).md)
+- [init(sceneAnchor:contentAlignment:content:)](uihostingornament/init(sceneanchor:contentalignment:content:).md)
   Creates an ornament with the specified alignment and content.
 ### Instance Properties
+- [var contentAlignment3D: Alignment3D](uihostingornament/contentalignment3d.md)
 - [var sceneAnchor: UnitPoint](uihostingornament/sceneanchor.md)
   The anchor point for aligning the ornament’s content (based on the `contentAlignment`) with the scene.
 
@@ -45,6 +46,9 @@ self.ornaments = [
 
 ### Inherits From
 - [UIOrnament](uiornament.md)
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

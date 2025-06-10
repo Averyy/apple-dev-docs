@@ -1,6 +1,6 @@
 # kVTPropertyReadWriteStatus_ReadWrite
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

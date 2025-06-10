@@ -6,6 +6,7 @@
 A type that specifies the organization of one of the drawable’s textures.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

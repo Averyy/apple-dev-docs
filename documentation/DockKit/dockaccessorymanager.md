@@ -42,6 +42,7 @@ This class is a singleton, so use [`shared`](dockaccessorymanager/shared.md) to 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

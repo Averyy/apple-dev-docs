@@ -1,6 +1,6 @@
 # Modifying content in newly delivered notifications
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Modify the payload of a remote notification before it’s displayed on the user’s iOS device.
 
@@ -15,8 +15,6 @@ You may want to modify the content of a remote notification on a user’s iOS de
 Modifying a remote notification requires a notification service app extension, which you include inside your iOS app bundle. The app extension receives the contents of your remote notifications before the system displays them to the user, giving you time to update the notification payload. You control which notifications your extension handles.
 
 > ❗ **Important**:  Notification service app extensions only operate on remote notifications configured in the system to display an alert to the user. If alerts are disabled for your app, or if the payload specifies only the playing of a sound or the badging of an icon, the extension isn’t employed.
-
- Notification service app extensions only operate on remote notifications configured in the system to display an alert to the user. If alerts are disabled for your app, or if the payload specifies only the playing of a sound or the badging of an icon, the extension isn’t employed.
 
 ##### Add a Service App Extension to Your Project
 

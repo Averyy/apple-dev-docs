@@ -14,9 +14,9 @@ A validation dataset you provide as a data source.
 case dataSource(MLObjectDetector.DataSource)
 ```
 
-#### Discussion
+## Parameters
 
-- dataSource : An [`MLObjectDetector.DataSource`](mlobjectdetector/datasource.md) instance the enumeration case uses as its associated value.
+- `dataSource `: An   instance the enumeration case uses as its associated   value.
 
 ## See Also
 

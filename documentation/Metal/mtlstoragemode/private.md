@@ -23,15 +23,15 @@ case `private`
 
 - [Choosing a Resource Storage Mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
 - [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
-- [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
-- [Optimizing Texture Data](optimizing-texture-data.md)
-- [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
 - [Setting Resource Storage Modes](setting-resource-storage-modes.md)
+- [Creating Sparse Heaps and Sparse Textures](creating-sparse-heaps-and-sparse-textures.md)
+- [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
 - [Adjusting for GPU Memory Bandwidth Tradeoffs](adjusting-for-gpu-memory-bandwidth-tradeoffs.md)
+- [Copying Data to a Private Resource](copying-data-to-a-private-resource.md)
 - [Transferring Data Between Connected GPUs](transferring-data-between-connected-gpus.md)
 - [Creating a Counter Sample Buffer to Store a GPU’s Counter Data During a Pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
-- [Creating Sparse Heaps and Sparse Textures](creating-sparse-heaps-and-sparse-textures.md)
-- [Copying Data to a Private Resource](copying-data-to-a-private-resource.md)
+- [Optimizing Texture Data](optimizing-texture-data.md)
+- [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Discussion
 

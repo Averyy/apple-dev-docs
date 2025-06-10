@@ -20,8 +20,6 @@ After this method returns, the controller dismisses the picker interface.
 
 > ❗ **Important**:  Although optional in the protocol, Game Kit expects your application to implement this method.
 
- Although optional in the protocol, Game Kit expects your application to implement this method.
-
 ## Parameters
 
 - `picker`: The controller for the peer picker dialog.

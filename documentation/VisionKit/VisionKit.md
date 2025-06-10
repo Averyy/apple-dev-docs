@@ -1,6 +1,6 @@
 # VisionKit
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: module
 
 Identify and extract information in the environment using the device’s camera, or in images that your app displays.
@@ -65,6 +65,9 @@ In iOS 17 and macOS 14 and later, VisionKit identifies subjects within an image 
   A delegate protocol through which the document camera returns its scanned results.
 - [class VNDocumentCameraScan](vndocumentcamerascan.md)
   A single document scanned in the document camera.
+### Structures
+- [struct CameraRegionView](cameraregionview.md)
+  CameraRegionView displays a view of a stabilized region of interest within a user’s view, and then provide Passthrough camera feed for the selected region. It also allows additional post-processing of the passthrough camera frames. Example of such region of interest could be documents, a user manual, gauges or displays.
 
 
 ---

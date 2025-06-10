@@ -46,6 +46,7 @@ This protocol provides common properties for game controllers, and mouse and key
 - [GCKeyboard](gckeyboard.md)
 - [GCMouse](gcmouse.md)
 - [GCRacingWheel](gcracingwheel.md)
+- [GCStylus](gcstylus.md)
 
 ## See Also
 
@@ -53,6 +54,8 @@ This protocol provides common properties for game controllers, and mouse and key
   Support a physical controller or add a virtual controller to enhance how people interact with your game through haptics, lighting, and motion sensing.
 - [Letting players use their second-generation Siri Remote as a game controller](letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
   Support the second-generation Siri Remote as a game controller in your Apple TV game.
+- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
+  Receive controller and stylus input to interact with content in your augmented reality app.
 - [class GCController](gccontroller.md)
   A representation of a real game controller, a virtual controller, or a snapshot of a controller.
 - [class GCRacingWheel](gcracingwheel.md)
@@ -61,6 +64,8 @@ This protocol provides common properties for game controllers, and mouse and key
   An object that represents a physical keyboard connected to a device.
 - [class GCMouse](gcmouse.md)
   An object that represents a physical mouse connected to a device.
+- [class GCStylus](gcstylus.md)
+  An object that represents a physical stylus connected to the device.
 
 
 ---

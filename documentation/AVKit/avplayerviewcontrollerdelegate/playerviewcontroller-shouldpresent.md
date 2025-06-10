@@ -20,7 +20,7 @@ optional func playerViewController(_ playerViewController: AVPlayerViewControlle
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the player view controller should propose the content; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+`true` if the player view controller should propose the content; otherwise `false`.
 
 ## Parameters
 

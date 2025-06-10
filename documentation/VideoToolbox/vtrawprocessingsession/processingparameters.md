@@ -1,6 +1,6 @@
 # processingParameters
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 An array of processing parameters available for this RAW processing session.

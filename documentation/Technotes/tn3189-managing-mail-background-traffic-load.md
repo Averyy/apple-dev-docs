@@ -123,4 +123,4 @@ Here the IMAP email server responds with a tagged response containing `NO` and t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3189-managing-mail-background-traffic-load)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3189-managing-mail-background-traffic-load)*

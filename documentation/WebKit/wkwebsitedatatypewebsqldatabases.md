@@ -1,6 +1,6 @@
 # WKWebsiteDataTypeWebSQLDatabases
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 WebSQL databases.

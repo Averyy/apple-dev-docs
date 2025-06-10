@@ -1,6 +1,6 @@
 # PowerRangeAlert
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: struct
 
 An alert for a range of power values.
@@ -10,6 +10,7 @@ An alert for a range of power values.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -55,6 +56,7 @@ struct PowerRangeAlert
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [WorkoutAlert](workoutalert.md)
 
 ## See Also

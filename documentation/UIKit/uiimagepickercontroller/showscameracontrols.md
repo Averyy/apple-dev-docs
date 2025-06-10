@@ -1,6 +1,6 @@
 # showsCameraControls
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A Boolean value that indicates whether the image picker displays the default camera controls.
@@ -25,7 +25,7 @@ The default value of this property is [`true`](https://developer.apple.com/docum
 
 If you set this property to [`false`](https://developer.apple.com/documentation/swift/false) and provide your own custom controls, you can take multiple pictures before dismissing the image picker interface. However, if you set this property to [`true`](https://developer.apple.com/documentation/swift/true), your delegate must dismiss the image picker interface after the user takes one picture or cancels the operation.
 
-You can access this property only when the source type of the image picker is set to [`UIImagePickerController.SourceType.camera`](uiimagepickercontroller/sourcetype-swift.enum/camera.md). Attempting to access this property for other source types results in the throwing of an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) exception. Depending on the value you assign to the [`mediaTypes`](uiimagepickercontroller/mediatypes.md) property, the default controls display the still camera or movie camera interface, or a selection control that lets the user choose the picker interface.
+You can access this property only when the source type of the image picker is set to [`UIImagePickerController.SourceType.camera`](uiimagepickercontroller/sourcetype-swift.enum/camera.md). Attempting to access this property for other source types results in the throwing of an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception. Depending on the value you assign to the [`mediaTypes`](uiimagepickercontroller/mediatypes.md) property, the default controls display the still camera or movie camera interface, or a selection control that lets the user choose the picker interface.
 
 ## See Also
 

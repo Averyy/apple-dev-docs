@@ -1,6 +1,6 @@
 # MonthPrecipitationStatistics
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that describes precipitation statistics for a specific month.
@@ -50,6 +50,7 @@ struct MonthPrecipitationStatistics
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -72,6 +72,7 @@ extension UTType {
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [CodableRepresentation](codablerepresentation.md)
 - [DataRepresentation](datarepresentation.md)

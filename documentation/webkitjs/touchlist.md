@@ -1,6 +1,6 @@
 # TouchList
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 The `TouchList` class is used to represent a collection of [`Touch`](touch.md) objects. For example, the [`changedTouches`](touchevent/1629351-changedtouches.md) method in [`TouchEvent`](touchevent.md) returns a `TouchList` object.

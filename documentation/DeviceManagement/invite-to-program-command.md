@@ -1,4 +1,4 @@
-# Invite to the Program
+# Invite To Program
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -9,8 +9,6 @@ Invite a user to join the Volume Purchase Program (VPP).
 - iOS 7.0+
 - iPadOS 7.0+
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -20,25 +18,25 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | Shared iPad, macOS |
-| Requires Supervision | - |
-| Allowed in User Enrollment | - |
-| Required Access Right | AllowAppInstallation |
+| Device channel | iOS |
+| User channel | macOS, Shared iPad |
+| Requires supervision | macOS |
+| Allowed in user enrollment | NA |
+| Required access right | AllowAppInstallation |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object InviteToProgramCommand](invitetoprogramcommand.md)
-  The command to invite a user on a device to join the Volume Purchase Program (VPP).
+  The command to invite a user to join the Volume Purchase Program (VPP).
 - [object InviteToProgramResponse](invitetoprogramresponse.md)
   A response from the device after it processes the command to invite a user to join the Volume Purchase Program (VPP).
 
 ## Request Body
 
-The command to invite a user on a device to join the Volume Purchase Program (VPP).
+The request object the server returns for the Invite To Program Command.
 
 ## See Also
 

@@ -31,8 +31,6 @@ enum Error
 ### Instance Properties
 - [var localizedDescription: String](objectcapturesession/error/localizeddescription.md)
   Retrieve the localized description for this error.
-### Default Implementations
-- [LocalizedError Implementations](objectcapturesession/error/localizederror-implementations.md)
 
 ## Relationships
 
@@ -40,6 +38,7 @@ enum Error
 - [Error](../Swift/Error.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

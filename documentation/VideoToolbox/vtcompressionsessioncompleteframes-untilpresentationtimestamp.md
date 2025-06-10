@@ -1,6 +1,6 @@
 # VTCompressionSessionCompleteFrames(_:untilPresentationTimeStamp:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Forces the compression session to complete the encoding of frames.

@@ -1,6 +1,6 @@
 # drawArrow(_:highlight:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Draws the scroll button indicated by `arrow`, which is either `NSScrollerIncrementArrow` (the down or right scroll button) or `NSScrollerDecrementArrow` (up or left).

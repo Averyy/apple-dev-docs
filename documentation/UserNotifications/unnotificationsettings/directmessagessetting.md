@@ -1,6 +1,6 @@
 # directMessagesSetting
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 **Availability**:

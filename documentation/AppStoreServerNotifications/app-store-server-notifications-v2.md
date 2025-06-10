@@ -12,8 +12,8 @@ Specify your secure server’s URL in App Store Connect to receive version 2 not
 
 - [App Store Server Notifications changelog](app-store-server-notifications-changelog.md)
 - [Enabling App Store Server Notifications](enabling-app-store-server-notifications.md)
-- [Receiving App Store Server Notifications](receiving-app-store-server-notifications.md)
 - [Responding to App Store Server Notifications](responding-to-app-store-server-notifications.md)
+- [Receiving App Store Server Notifications](receiving-app-store-server-notifications.md)
 
 #### Discussion
 

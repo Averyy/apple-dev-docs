@@ -1,6 +1,6 @@
 # Set Up and Tear Down State in Your Tests
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Prepare initial state before tests run, and clean up resources after tests complete.
 
@@ -27,8 +27,6 @@ When XCTest finishes running all the test methods and the test class completes, 
 
 > 💡 **Tip**:  You can include test assertions in a test class’s `setUp() async throws`, `setUp()`, `setUpWithError()`, `tearDown() async throws`, `tearDown()`, and `tearDownWithError()` instance methods. XCTest evaluates these assertions as part of every test method’s run. However, you can’t include test assertions in a test class’s `setUp()` or `tearDown()` class methods. Test assertions require a test class instance, which doesn’t exist within the scope of class methods.
 
- You can include test assertions in a test class’s `setUp() async throws`, `setUp()`, `setUpWithError()`, `tearDown() async throws`, `tearDown()`, and `tearDownWithError()` instance methods. XCTest evaluates these assertions as part of every test method’s run. However, you can’t include test assertions in a test class’s `setUp()` or `tearDown()` class methods. Test assertions require a test class instance, which doesn’t exist within the scope of class methods.
-
 ##### Prepare and Tear Down State for a Test Class
 
 For state that’s common to all the test methods in your test class and that doesn’t need a reset for each test method, use the [`setUp()`](xctestcase/setup().md) class method on [`XCTestCase`](xctestcase.md).
@@ -53,8 +51,6 @@ XCTest runs the teardown methods once after each test method completes: first `t
 
 > ❗ **Important**:  If your setup or teardown code needs to run on the Main actor, specify `@MainActor` for any asynchronous Swift setup or teardown methods you define. If you don’t specify an actor, the test executes asynchronous code in `setUp() async throws` and `tearDown() async throws` on an arbitrary actor.
 
- If your setup or teardown code needs to run on the Main actor, specify `@MainActor` for any asynchronous Swift setup or teardown methods you define. If you don’t specify an actor, the test executes asynchronous code in `setUp() async throws` and `tearDown() async throws` on an arbitrary actor.
-
 ##### Tear Down State After a Specific Test Method
 
 For teardown that you need to complete immediately after a specific test method is complete, add a teardown block to the test method.
@@ -66,8 +62,6 @@ If you register any teardown blocks during a test method’s execution, XCTest r
 Avoid preparing state for subsequent tests in teardown blocks. XCTest doesn’t guarantee that it will call teardown blocks; if the test crashes before completion, XCTest doesn’t call the teardown blocks.
 
 > ❗ **Important**:  If any asynchronous Swift code you define in your teardown block needs to run on the Main actor, mark your teardown block `@MainActor`. If you don’t specify an actor, the test executes asynchronous code in teardown blocks on an arbitrary actor. If you call a throwing method with `try` in a teardown block, the block runs asynchronously.
-
- If any asynchronous Swift code you define in your teardown block needs to run on the Main actor, mark your teardown block `@MainActor`. If you don’t specify an actor, the test executes asynchronous code in teardown blocks on an arbitrary actor. If you call a throwing method with `try` in a teardown block, the block runs asynchronously.
 
 ## See Also
 

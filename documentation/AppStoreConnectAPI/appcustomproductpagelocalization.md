@@ -32,6 +32,8 @@ object AppCustomProductPageLocalization
   The request body you use to update an app custom product page localization.
 - [object AppCustomProductPageLocalizationsResponse](appcustomproductpagelocalizationsresponse.md)
   A response that contains a list of alternative distribution package variant resources.
+- [object AppCustomProductPageLocalizationAppPreviewSetsLinkagesResponse](appcustomproductpagelocalizationapppreviewsetslinkagesresponse.md)
+- [object AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponse](appcustomproductpagelocalizationappscreenshotsetslinkagesresponse.md)
 
 
 ---

@@ -41,8 +41,6 @@ The system automatically opts in any app linked against the iOS 13.0 or later SD
 
 > ❗ **Important**:  Supporting Dark Mode is strongly encouraged. Use the [`UIUserInterfaceStyle`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIUserInterfaceStyle) key to opt out only temporarily while you work on improvements to your app’s Dark Mode support.
 
- Supporting Dark Mode is strongly encouraged. Use the [`UIUserInterfaceStyle`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIUserInterfaceStyle) key to opt out only temporarily while you work on improvements to your app’s Dark Mode support.
-
 ## See Also
 
 - [Choosing a Specific Appearance for Your macOS App](../AppKit/choosing-a-specific-appearance-for-your-macos-app.md)

@@ -21,7 +21,7 @@ kern_return_t Start(IOService * provider);
 
 #### Discussion
 
-After successfully matching the specified provider to your event service, the system instantiates your service object and calls this method. Use this method to configure your custom data structures and associated hardware. You might also store a reference to the provider object for later use. After you configure your event service, call the [`RegisterService`](https://developer.apple.com/documentation/kernel/ioservice/3180701-registerservice) method to let the system know that your service is running. If you encounter an error, return an appropriate error code without calling `RegisterService`.
+After successfully matching the specified provider to your event service, the system instantiates your service object and calls this method. Use this method to configure your custom data structures and associated hardware. You might also store a reference to the provider object for later use. After you configure your event service, call the [`RegisterService`](https://developer.apple.com/documentation/DriverKit/IOService/RegisterService) method to let the system know that your service is running. If you encounter an error, return an appropriate error code without calling `RegisterService`.
 
 Always call `super` early in your implementation of this method.
 

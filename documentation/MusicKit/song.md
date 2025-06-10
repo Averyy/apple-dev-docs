@@ -137,6 +137,7 @@ struct Song
 - [MusicRecentlyPlayedRequestable](musicrecentlyplayedrequestable.md)
 - [PlayableMusicItem](playablemusicitem.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

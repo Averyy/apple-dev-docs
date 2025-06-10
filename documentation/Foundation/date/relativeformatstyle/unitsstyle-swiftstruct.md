@@ -49,6 +49,7 @@ Cases include [`wide`](date/relativeformatstyle/unitsstyle-swift.struct/wide.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # WorkoutAlert
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: protocol
 
 An alert that notifies the user of significant events during a workout.
@@ -10,6 +10,7 @@ An alert that notifies the user of significant events during a workout.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -78,6 +79,7 @@ protocol WorkoutAlert : Hashable, Sendable
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [CadenceRangeAlert](cadencerangealert.md)
 - [CadenceThresholdAlert](cadencethresholdalert.md)

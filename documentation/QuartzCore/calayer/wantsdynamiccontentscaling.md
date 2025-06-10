@@ -15,7 +15,6 @@ var wantsDynamicContentScaling: Bool { get set }
 ## See Also
 
 - [var cornerCurve: CALayerCornerCurve](calayer/cornercurve.md)
-- [var wantsExtendedDynamicRangeContent: Bool](calayer/wantsextendeddynamicrangecontent.md)
 
 
 ---

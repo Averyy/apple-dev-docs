@@ -1,6 +1,6 @@
 # NETWORK_IDLE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 The network connection is idle.

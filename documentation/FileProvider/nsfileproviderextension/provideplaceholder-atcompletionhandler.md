@@ -22,21 +22,9 @@ func providePlaceholder(at url: URL) async throws
 func providePlaceholder(at url: URL) async throws
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func providePlaceholder(at url: URL) async throws
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 The system calls this method when it needs a placeholder for a document that’s returned by the File Provider extension, but is not stored locally. Override `providePlaceholder(at:completionHandler:)` to create a placeholder for the given URL. This task can be broken into three steps: looking up the document’s file provider item, writing the placeholder, and calling the completion handler.
 
 > ❗ **Important**:  Both the [`providePlaceholder(at:completionHandler:)`](nsfileproviderextension/provideplaceholder(at:completionhandler:).md) and [`startProvidingItem(at:completionHandler:)`](nsfileproviderextension/startprovidingitem(at:completionhandler:).md) methods can be triggered as other processes attempt to access documents provided by the File Provider extension. These methods may be called in response to user interaction with the document browser, or due to a coordinated read or coordinated write of the document’s URL. Exactly which methods are triggered, and their sequence, depends on the type of coordinated access. For example, a coordinated read using the `NSFileCoordinatorReadingImmediatelyAvailableMetadataOnly` option triggers only the creation of a placeholder. As a result, your extension should not create dependencies between these methods. They may be called in any order.
-
- Both the [`providePlaceholder(at:completionHandler:)`](nsfileproviderextension/provideplaceholder(at:completionhandler:).md) and [`startProvidingItem(at:completionHandler:)`](nsfileproviderextension/startprovidingitem(at:completionhandler:).md) methods can be triggered as other processes attempt to access documents provided by the File Provider extension. These methods may be called in response to user interaction with the document browser, or due to a coordinated read or coordinated write of the document’s URL.
-
-Exactly which methods are triggered, and their sequence, depends on the type of coordinated access. For example, a coordinated read using the `NSFileCoordinatorReadingImmediatelyAvailableMetadataOnly` option triggers only the creation of a placeholder. As a result, your extension should not create dependencies between these methods. They may be called in any order.
 
 ##### Look Up the Documents File Provider Item
 

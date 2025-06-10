@@ -1,6 +1,6 @@
 # WKWebsiteDataTypeMemoryCache
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 In-memory caches.

@@ -5,6 +5,13 @@
 
 Inserts the given element into the set.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift
@@ -20,7 +27,7 @@ The intersection of `[newMember]` and the set if the intersection was nonempty; 
 
 If `newMember` is not contained in the set but subsumes current members of the set, the subsumed members are returned.
 
-```swift
+```None
 var options: ShippingOptions = [.secondDay, .priority]
 let replaced = options.update(with: .express)
 print(replaced == .secondDay)

@@ -34,6 +34,7 @@ static let pageRole: NSAccessibility.Role
   The column role.
 - [static let comboBox: NSAccessibility.Role](nsaccessibility-swift.struct/role/combobox.md)
   The combo box role.
+- [static let dateTimeAreaRole: NSAccessibility.Role](nsaccessibility-swift.struct/role/datetimearearole.md)
 - [static let disclosureTriangle: NSAccessibility.Role](nsaccessibility-swift.struct/role/disclosuretriangle.md)
   The disclosure triangle role.
 - [static let drawer: NSAccessibility.Role](nsaccessibility-swift.struct/role/drawer.md)
@@ -44,8 +45,6 @@ static let pageRole: NSAccessibility.Role
   The group role.
 - [static let growArea: NSAccessibility.Role](nsaccessibility-swift.struct/role/growarea.md)
   The grow (resize) area role in a window.
-- [static let handle: NSAccessibility.Role](nsaccessibility-swift.struct/role/handle.md)
-  The drag handle role.
 
 
 ---

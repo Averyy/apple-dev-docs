@@ -1,6 +1,6 @@
 # DOM_KEY_LOCATION_LEFT
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

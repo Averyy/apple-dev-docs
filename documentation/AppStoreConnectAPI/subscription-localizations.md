@@ -7,6 +7,9 @@ Create, modify, and delete localized metadata for auto-renewable subscriptions.
 ## Topics
 
 ### Endpoints
+- [List All Localizations for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-subscriptionlocalizations.md)
+  Get a list of the subscription localizations for a specific auto-renewable subscription.
+- [GET /v1/subscriptions/{id}/relationships/subscriptionLocalizations](get-v1-subscriptions-_id_-relationships-subscriptionlocalizations.md)
 - [Read Subscription Localization Information](get-v1-subscriptionlocalizations-_id_.md)
   Get the specific localized metadata for an auto-renewable subscription.
 - [Create a Subscription Localization](post-v1-subscriptionlocalizations.md)

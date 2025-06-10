@@ -43,6 +43,7 @@ The paste button ([`UIPasteControl`](uipastecontrol.md)) property [`displayMode`
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

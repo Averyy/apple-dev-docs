@@ -22,8 +22,8 @@ var status: MTLCommandBufferStatus { get }
 
 ## Mentions
 
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
 - [Preparing Your Metal App to Run in the Background](preparing-your-metal-app-to-run-in-the-background.md)
+- [Setting Up a Command Structure](setting-up-a-command-structure.md)
 
 #### Discussion
 

@@ -176,7 +176,7 @@ enum MTRAttributeIDType
 - [MTRAttributeIDType.MTRClusterGlobalAttributeClusterRevisionID](mtrattributeidtype/mtrclusterglobalattributeclusterrevisionid.md)
 - [MTRAttributeIDType.MTRClusterGlobalAttributeFeatureMapID](mtrattributeidtype/mtrclusterglobalattributefeaturemapid.md)
 - [MTRAttributeIDType.MTRClusterGlobalAttributeGeneratedCommandListID](mtrattributeidtype/mtrclusterglobalattributegeneratedcommandlistid.md)
-- [static var MTRClusterIdentifyAttributeIdentifyTimeID: MTRAttributeIDType](mtrattributeidtype/mtrclusteridentifyattributeidentifytimeid.md)
+- [MTRAttributeIDType.MTRClusterIdentifyAttributeIdentifyTimeID](mtrattributeidtype/mtrclusteridentifyattributeidentifytimeid.md)
 - [MTRAttributeIDType.MTRClusterIdentifyAttributeIdentifyTypeID](mtrattributeidtype/mtrclusteridentifyattributeidentifytypeid.md)
 - [MTRAttributeIDType.MTRClusterLevelControlAttributeCurrentFrequencyID](mtrattributeidtype/mtrclusterlevelcontrolattributecurrentfrequencyid.md)
 - [MTRAttributeIDType.MTRClusterLevelControlAttributeDefaultMoveRateID](mtrattributeidtype/mtrclusterlevelcontrolattributedefaultmoverateid.md)
@@ -261,7 +261,7 @@ enum MTRAttributeIDType
 - [static var MTRClusterPowerSourceAttributeBatANSIDesignationID: MTRAttributeIDType](mtrattributeidtype/mtrclusterpowersourceattributebatansidesignationid.md)
 - [static var MTRClusterPowerSourceAttributeBatIECDesignationID: MTRAttributeIDType](mtrattributeidtype/mtrclusterpowersourceattributebatiecdesignationid.md)
 - [static var MTRClusterThermostatAttributeACCapacityID: MTRAttributeIDType](mtrattributeidtype/mtrclusterthermostatattributeaccapacityid.md)
-- [static var MTRClusterThermostatAttributeACCompressorTypeID: MTRAttributeIDType](mtrattributeidtype/mtrclusterthermostatattributeaccompressortypeid.md)
+- [MTRAttributeIDType.MTRClusterThermostatAttributeACCompressorTypeID](mtrattributeidtype/mtrclusterthermostatattributeaccompressortypeid.md)
 - [static var MTRClusterThermostatAttributeACRefrigerantTypeID: MTRAttributeIDType](mtrattributeidtype/mtrclusterthermostatattributeacrefrigeranttypeid.md)
 - [static var MTRClusterThermostatAttributeACTypeID: MTRAttributeIDType](mtrattributeidtype/mtrclusterthermostatattributeactypeid.md)
 - [static var MTRClusterThreadNetworkDiagnosticsAttributeTxBeaconRequestCountID: MTRAttributeIDType](mtrattributeidtype/mtrclusterthreadnetworkdiagnosticsattributetxbeaconrequestcountid.md)
@@ -976,7 +976,7 @@ enum MTRAttributeIDType
 - [static var MTRClusterTestClusterAttributeTimedWriteBooleanID: MTRAttributeIDType](mtrattributeidtype/mtrclustertestclusterattributetimedwritebooleanid.md)
 - [static var MTRClusterTestClusterAttributeVendorIdID: MTRAttributeIDType](mtrattributeidtype/mtrclustertestclusterattributevendoridid.md)
 - [static var MTRClusterThermostatAttributeACCapacityID: MTRAttributeIDType](mtrattributeidtype/mtrclusterthermostatattributeaccapacityid.md)
-- [static var MTRClusterThermostatAttributeACCompressorTypeID: MTRAttributeIDType](mtrattributeidtype/mtrclusterthermostatattributeaccompressortypeid.md)
+- [MTRAttributeIDType.MTRClusterThermostatAttributeACCompressorTypeID](mtrattributeidtype/mtrclusterthermostatattributeaccompressortypeid.md)
 - [static var MTRClusterThermostatAttributeACRefrigerantTypeID: MTRAttributeIDType](mtrattributeidtype/mtrclusterthermostatattributeacrefrigeranttypeid.md)
 - [static var MTRClusterThermostatAttributeACTypeID: MTRAttributeIDType](mtrattributeidtype/mtrclusterthermostatattributeactypeid.md)
 - [static var MTRClusterThermostatAttributeAbsMaxCoolSetpointLimitID: MTRAttributeIDType](mtrattributeidtype/mtrclusterthermostatattributeabsmaxcoolsetpointlimitid.md)
@@ -2837,6 +2837,7 @@ enum MTRAttributeIDType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

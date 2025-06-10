@@ -1,6 +1,6 @@
 # WKWebExtensionController.Configuration
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 A [`WKWebExtensionController.Configuration`](wkwebextensioncontroller/configuration-swift.class.md) object with which to initialize a web extension controller.

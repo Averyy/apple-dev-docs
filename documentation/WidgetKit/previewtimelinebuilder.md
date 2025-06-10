@@ -1,13 +1,14 @@
 # PreviewTimelineBuilder
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
+- visionOS 26.0+ (Beta)
 - watchOS 10.0+
 
 ## Declaration
@@ -28,6 +29,8 @@ struct PreviewTimelineBuilder
 ## See Also
 
 - [struct PreviewActivityBuilder](previewactivitybuilder.md)
+- [struct PreviewRelevanceEntryBuilder](previewrelevanceentrybuilder.md)
+  A builder that allows you to construct a list of relevance entries to preview your widget.
 
 
 ---

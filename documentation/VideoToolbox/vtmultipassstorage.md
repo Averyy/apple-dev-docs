@@ -1,6 +1,6 @@
 # VTMultiPassStorage
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: class
 
 An object for storing information for each frame of a multipass compression session.

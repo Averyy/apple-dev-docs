@@ -1,6 +1,6 @@
 # Safari app extensions
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Learn how Safari app extensions extend the web-browsing experience in Safari by leveraging web technologies and native code.
 
@@ -74,4 +74,4 @@ To become familiar with app extension concepts, see [`App Extensions`](https://d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/safari-app-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/safari-app-extensions)*

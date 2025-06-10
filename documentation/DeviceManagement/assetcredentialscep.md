@@ -12,8 +12,6 @@ A reference to an SCEP identity.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,9 +19,13 @@ A reference to an SCEP identity.
 object AssetCredentialSCEP
 ```
 
+#### Discussion
+
+Specify `com.apple.asset.credential.scep` as the declaration type.
+
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object AssetCredentialSCEPAuthenticationObject](assetcredentialscepauthenticationobject.md)
   The server authentication details for an SCEP asset credential.
 - [object AssetCredentialSCEPReferenceObject](assetcredentialscepreferenceobject.md)

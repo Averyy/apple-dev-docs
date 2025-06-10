@@ -1,6 +1,6 @@
 # developerPostbackURL
 
-**Framework**: Storekittest  
+**Framework**: StoreKit Test  
 **Kind**: property
 
 The URL that SKAdNetwork computes to send copies of winning postbacks to the advertised app’s developer.

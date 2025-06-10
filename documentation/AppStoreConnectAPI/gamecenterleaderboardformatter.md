@@ -16,8 +16,8 @@ string GameCenterLeaderboardFormatter
 
 ## Mentions
 
-- [App Store Connect API 3.8 release notes](app-store-connect-api-3-8-release-notes.md)
 - [App Store Connect API 3.5 release notes](app-store-connect-api-3-5-release-notes.md)
+- [App Store Connect API 3.8 release notes](app-store-connect-api-3-8-release-notes.md)
 
 #### Discussion
 

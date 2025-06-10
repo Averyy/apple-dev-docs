@@ -1,6 +1,6 @@
 # HIGH_FLOAT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

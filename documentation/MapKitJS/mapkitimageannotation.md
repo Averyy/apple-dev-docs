@@ -36,7 +36,7 @@ The shape of your icon might affect the placement of the callout. You can modify
 ## Relationships
 
 ### Inherited By
-- [mapkit.Annotation](mapkit.annotation/mapkit.annotation.md)
+- [mapkit.Annotation](mapkit.annotation.md)
 
 
 ---

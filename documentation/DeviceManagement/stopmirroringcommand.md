@@ -9,8 +9,6 @@ The command to stop mirroring the display on another device.
 - iOS 7.0+
 - iPadOS 7.0+
 - macOS 10.10+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,9 +18,9 @@ object StopMirroringCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object StopMirroringCommand.Command](stopmirroringcommand/command-data.dictionary.md)
-  The request dictionary to stop mirroring the display on another device.
+  The command to stop mirroring the display on another device.
 
 ## See Also
 

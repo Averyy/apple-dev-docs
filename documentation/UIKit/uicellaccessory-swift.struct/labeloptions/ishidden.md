@@ -1,0 +1,41 @@
+# isHidden
+
+**Framework**: UIKit  
+**Kind**: property
+
+A Boolean value that determines whether the cell hides the accessory.
+
+**Availability**:
+- iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst ?+
+- tvOS 14.0+
+- visionOS ?+
+
+## Declaration
+
+```swift
+var isHidden: Bool
+```
+
+#### Discussion
+
+A hidden accessory takes up space in the layout, but it isn’t visible and doesn’t provide any behaviors.
+
+Use this property to achieve a consistent layout across cells when some cells show this type of accessory and others don’t.
+
+## See Also
+
+- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/labeloptions/reservedlayoutwidth.md)
+  The layout width that the system reserves for the accessory, and then centers the accessory within.
+- [var tintColor: UIColor?](uicellaccessory-swift.struct/labeloptions/tintcolor.md)
+  The tint color to apply to the accessory.
+- [var font: UIFont](uicellaccessory-swift.struct/labeloptions/font.md)
+  The font for the label.
+- [var adjustsFontForContentSizeCategory: Bool](uicellaccessory-swift.struct/labeloptions/adjustsfontforcontentsizecategory.md)
+  A Boolean value that determines whether the label automatically adjusts its font according to the content size category.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uicellaccessory-swift.struct/labeloptions/ishidden)*

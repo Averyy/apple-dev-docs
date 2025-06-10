@@ -61,4 +61,4 @@ Ensure that accessed indexes don’t exceed the array’s bounds.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/out-of-bounds-array-access)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/out-of-bounds-array-access)*

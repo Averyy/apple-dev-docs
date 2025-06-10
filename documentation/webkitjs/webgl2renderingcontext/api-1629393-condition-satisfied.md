@@ -1,6 +1,6 @@
 # CONDITION_SATISFIED
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # isAutorotating
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A Boolean value that determines whether the interface automatically rotates when the user flips their wrist.

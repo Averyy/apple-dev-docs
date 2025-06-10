@@ -1,6 +1,6 @@
 # swipeDown()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a swipe-down gesture.

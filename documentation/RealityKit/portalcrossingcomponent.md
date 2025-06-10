@@ -10,6 +10,7 @@ A component that allows entities to cross portal boundaries.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -32,8 +33,6 @@ See [`PortalComponent`](portalcomponent.md) for detailed usage.
 
 ### Initializers
 - [init()](portalcrossingcomponent/init.md)
-### Default Implementations
-- [Component Implementations](portalcrossingcomponent/component-implementations.md)
 
 ## Relationships
 

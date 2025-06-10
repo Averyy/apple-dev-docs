@@ -1,6 +1,6 @@
 # MLImageClassifier.FeatureExtractorType.scenePrint(revision:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: case
 
 A feature extractor trained on millions of images.

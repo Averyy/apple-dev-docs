@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-func selection(from startPage: PDFPage, at startPoint: CGPoint, to endPage: PDFPage, at endPoint: CGPoint, with granularity: PDFSelectionGranularity) -> PDFSelection?
+func selection(from startPage: PDFPage, at startPoint: NSPoint, to endPage: PDFPage, at endPoint: NSPoint, with granularity: PDFSelectionGranularity) -> PDFSelection?
 ```
 
 

@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_FieldCount
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The field count indicating whether the frames should be encoded progressive (1) or interlaced (2).

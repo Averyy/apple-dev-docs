@@ -1,6 +1,6 @@
 # UIEventAttribution
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An object that contains event attribution information for Web AdAttributionKit.
@@ -97,4 +97,4 @@ If your app displays a web page in [`SFSafariViewController`](https://developer.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uieventattribution)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uieventattribution)*

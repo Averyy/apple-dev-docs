@@ -1,6 +1,6 @@
 # setTaskCompletedWithSnapshot(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Marks the task as complete and indicates whether the system should take a new snapshot of the app.

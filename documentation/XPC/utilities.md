@@ -1,6 +1,6 @@
 # Utilities
 
-**Framework**: Xpc
+**Framework**: XPC
 
 Browse debugging utilities and constants to use with the XPC APIs.
 

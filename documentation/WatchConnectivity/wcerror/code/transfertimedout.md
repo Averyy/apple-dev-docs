@@ -1,6 +1,6 @@
 # WCError.Code.transferTimedOut
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 An error that occurs when the transfer reaches the timeout limit before it completes.

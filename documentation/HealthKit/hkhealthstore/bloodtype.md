@@ -1,6 +1,6 @@
 # bloodType()
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: method
 
 Reads the user’s blood type from the HealthKit store.

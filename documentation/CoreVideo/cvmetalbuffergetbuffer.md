@@ -17,14 +17,13 @@
 func CVMetalBufferGetBuffer(_ buffer: CVMetalBuffer) -> (any MTLBuffer)?
 ```
 
-#### Discussion
+#### Return Value
 
-```None
-@function   CVMetalBufferGetBuffer
-@abstract   Returns the Metal MTLBuffer object of the CVMetalBufferRef
-@param      buffer Target CVMetalBuffer
-@result     Metal buffer
-```
+Metal buffer
+
+## Parameters
+
+- `buffer`: Target CVMetalBuffer
 
 
 ---

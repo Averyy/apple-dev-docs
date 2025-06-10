@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_SpatialAdaptiveQPLevel
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A value that controls spatial adaptation of the quantization parameter (QP) based on per-frame statistics.

@@ -1,6 +1,6 @@
 # accelerationIncludingGravity
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The total acceleration of the device, which includes the user acceleration and the gravity.

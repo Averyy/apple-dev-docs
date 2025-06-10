@@ -1,6 +1,6 @@
 # register(_:forIdentifier:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Registers a NIB for the specified identifier, so that view-based table views can use it to instantiate views.

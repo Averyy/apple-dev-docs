@@ -3,13 +3,13 @@
 **Framework**: RoomPlan  
 **Kind**: method
 
-Stop capture process
+Stops the room-capture session.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -26,8 +26,9 @@ func stop()
 - [func run(configuration: RoomCaptureSession.Configuration)](roomcapturesession/run(configuration:).md)
   Starts a room-capture session with the specified configuration.
 - [RoomCaptureSession.Configuration](roomcapturesession/configuration.md)
-  An object to configure the capture process
+  Settings that configure the room-scanning process.
 - [func stop(pauseARSession: Bool)](roomcapturesession/stop(pausearsession:).md)
+  Stops the room-capture session and indicates whether the app pauses the underlying AR session.
 
 
 ---

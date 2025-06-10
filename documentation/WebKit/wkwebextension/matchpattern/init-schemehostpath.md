@@ -1,6 +1,6 @@
 # init(scheme:host:path:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Returns a pattern object for the specified scheme, host, and path strings.

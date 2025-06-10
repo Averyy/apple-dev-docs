@@ -23,7 +23,7 @@ class MTRClusterBooleanStateConfiguration
 ### Initializers
 - [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterbooleanstateconfiguration/init(device:endpointid:queue:).md)
 ### Instance Methods
-- [func enableDisableAlarm(with: MTRBooleanStateConfigurationClusterEnableDisableAlarmParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterbooleanstateconfiguration/enabledisablealarm(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func enableDisableAlarm(with: MTRBooleanStateConfigurationClusterEnableDisableAlarmParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterbooleanstateconfiguration/enabledisablealarm(with:expectedvalues:expectedvalueinterval:completion:).md)
 - [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributeacceptedcommandlist(with:).md)
 - [func readAttributeAlarmsActive(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributealarmsactive(with:).md)
 - [func readAttributeAlarmsEnabled(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributealarmsenabled(with:).md)
@@ -37,7 +37,7 @@ class MTRClusterBooleanStateConfiguration
 - [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributegeneratedcommandlist(with:).md)
 - [func readAttributeSensorFault(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributesensorfault(with:).md)
 - [func readAttributeSupportedSensitivityLevels(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributesupportedsensitivitylevels(with:).md)
-- [func suppressAlarm(with: MTRBooleanStateConfigurationClusterSuppressAlarmParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterbooleanstateconfiguration/suppressalarm(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func suppressAlarm(with: MTRBooleanStateConfigurationClusterSuppressAlarmParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterbooleanstateconfiguration/suppressalarm(with:expectedvalues:expectedvalueinterval:completion:).md)
 - [func writeAttributeCurrentSensitivityLevel(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterbooleanstateconfiguration/writeattributecurrentsensitivitylevel(withvalue:expectedvalueinterval:).md)
 - [func writeAttributeCurrentSensitivityLevel(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterbooleanstateconfiguration/writeattributecurrentsensitivitylevel(withvalue:expectedvalueinterval:params:).md)
 

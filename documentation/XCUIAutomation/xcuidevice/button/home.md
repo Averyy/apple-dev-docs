@@ -1,6 +1,6 @@
 # XCUIDevice.Button.home
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The device’s home button.

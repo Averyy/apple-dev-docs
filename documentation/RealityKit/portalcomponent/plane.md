@@ -10,6 +10,7 @@ A representation of a portal as an infinite plane.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -37,9 +38,6 @@ See [`PortalComponent`](portalcomponent.md) for example usage.
 
 ## Topics
 
-### Operators
-- [static func == (PortalComponent.Plane, PortalComponent.Plane) -> Bool](portalcomponent/plane/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(position: SIMD3<Float>, normal: SIMD3<Float>)](portalcomponent/plane/init(position:normal:).md)
   Creates a portal plane with position and normal.
@@ -61,8 +59,6 @@ See [`PortalComponent`](portalcomponent.md) for example usage.
   A portal plane sitting at the origin facing the positive y direction.
 - [static let positiveZ: PortalComponent.Plane](portalcomponent/plane/positivez.md)
   A portal plane sitting at the origin facing the positive z direction.
-### Default Implementations
-- [Equatable Implementations](portalcomponent/plane/equatable-implementations.md)
 
 ## Relationships
 

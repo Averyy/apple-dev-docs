@@ -1,6 +1,6 @@
 # VTRAWProcessingSession.Parameter.ListParameter.Element
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: struct
 
 **Availability**:
@@ -23,6 +23,7 @@ struct Element
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

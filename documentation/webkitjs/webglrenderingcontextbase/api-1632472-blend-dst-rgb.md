@@ -1,6 +1,6 @@
 # BLEND_DST_RGB
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

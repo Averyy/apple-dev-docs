@@ -15,7 +15,7 @@ Initializes a popover controller with the specified tip.
 
 ```swift
 @MainActor
-@preconcurrency convenience init(_ tip: any Tip, sourceItem: any UIPopoverPresentationControllerSourceItem, actionHandler: @escaping (Tips.Action) -> Void = { _ in })
+@preconcurrency convenience init(_ tip: any Tip, sourceItem: any UIPopoverPresentationControllerSourceItem, actionHandler: @escaping @MainActor (Tips.Action) -> Void = { _ in })
 ```
 
 ## Parameters

@@ -1,6 +1,6 @@
 # XCUIElement.ElementType.progressIndicator
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents an element type for progress-indicator controls.

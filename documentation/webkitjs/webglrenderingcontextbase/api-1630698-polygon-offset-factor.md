@@ -1,6 +1,6 @@
 # POLYGON_OFFSET_FACTOR
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -29,8 +29,6 @@ init(center: simd_double3 = .zero, size: simd_double3)
 
 - [init()](rect3d/init.md)
   Creates a rectangle structure.
-- [init(BoundingBox)](rect3d/init(_:).md)
-  Creates a rectangle structure from a bounding box.
 - [init(center: Point3D, size: Size3D)](rect3d/init(center:size:)-133fy.md)
   Creates a rectangle with the specified center and the specified size from Spatial structures.
 - [init(center: Vector3D, size: Vector3D)](rect3d/init(center:size:)-9cfq7.md)

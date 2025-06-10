@@ -16,7 +16,7 @@ optional func playerViewControllerShouldDismiss(_ playerViewController: AVPlayer
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the player view controller should dismiss itself; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+`true` if the player view controller should dismiss itself; otherwise `false`.
 
 #### Discussion
 

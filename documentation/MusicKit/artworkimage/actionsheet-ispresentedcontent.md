@@ -1,6 +1,6 @@
 # actionSheet(isPresented:content:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Presents an action sheet when a given condition is true.

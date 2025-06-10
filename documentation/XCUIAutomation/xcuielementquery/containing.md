@@ -1,6 +1,6 @@
 # containing(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Returns a new query that matches elements containing a descendant that meets the logical conditions of the provided predicate.

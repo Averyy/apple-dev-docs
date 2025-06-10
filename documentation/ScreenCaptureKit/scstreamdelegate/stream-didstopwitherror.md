@@ -1,6 +1,6 @@
 # stream(_:didStopWithError:)
 
-**Framework**: Screencapturekit  
+**Framework**: ScreenCaptureKit  
 **Kind**: method
 
 Tells the delegate that the stream stopped with an error.

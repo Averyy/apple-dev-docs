@@ -1,6 +1,6 @@
 # LineMark
 
-**Framework**: Charts  
+**Framework**: Swift Charts  
 **Kind**: struct
 
 Chart content that represents data using a sequence of connected line segments.
@@ -115,6 +115,7 @@ var body: some View {
 - [ChartContent](chartcontent.md)
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -134,4 +135,4 @@ var body: some View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Charts/linemark)*
+*[View on Apple Developer](https://developer.apple.com/documentation/charts/linemark)*

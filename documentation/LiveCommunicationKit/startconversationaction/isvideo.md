@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-Specifies if the `Conversation` contains a video stream.
+A value that specifies if the conversation contains a video stream.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,11 @@ Specifies if the `Conversation` contains a video stream.
 ```swift
 final let isVideo: Bool
 ```
+
+## See Also
+
+- [let handles: [Handle]](startconversationaction/handles.md)
+  The handles of all remote members who receive an invite  to join the conversation.
 
 
 ---

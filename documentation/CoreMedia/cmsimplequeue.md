@@ -44,6 +44,10 @@ class CMSimpleQueue
 ### Errors
 - [CMSimpleQueue.Error](cmsimplequeue/error.md)
   A structure that defines errors that queue operations can produce.
+### Initializers
+- [init(referencing: CMSimpleQueue)](cmsimplequeue/init(referencing:).md)
+### Type Aliases
+- [CMSimpleQueue.T](cmsimplequeue/t.md)
 
 ## Relationships
 

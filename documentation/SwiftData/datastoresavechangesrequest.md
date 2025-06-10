@@ -31,6 +31,7 @@ struct DataStoreSaveChangesRequest<SnapshotType> where SnapshotType : DataStoreS
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

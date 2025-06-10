@@ -1,6 +1,6 @@
 # date
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The time of the weather data request.

@@ -1,6 +1,6 @@
 # uniformMatrix4x2fv
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 **Availability**:

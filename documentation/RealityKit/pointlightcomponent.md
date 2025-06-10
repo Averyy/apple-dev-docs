@@ -1,6 +1,6 @@
 # PointLightComponent
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 A component that defines a point light source.
@@ -10,6 +10,7 @@ A component that defines a point light source.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -76,22 +77,23 @@ The point light illuminates entities based on its distance from them. Here is a 
   The distance from the light source where its intensity reaches zero.
 - [var intensity: Float](pointlightcomponent/intensity.md)
   The intensity of the point light, measured in lumen.
-- [var attenuationFalloffExponent: Float](pointlightcomponent/attenuationfalloffexponent.md)
+### Initializers
+- [init(color:intensity:attenuationRadius:)](pointlightcomponent/init(color:intensity:attenuationradius:).md)
+  Creates a point light component with a configuration.
+- [init(color:intensity:attenuationRadius:attenuationFalloffExponent:)](pointlightcomponent/init(color:intensity:attenuationradius:attenuationfalloffexponent:).md)
+  Creates a point light component with a configuration.
+### Instance Properties
+- [var attenuationFalloffExponent: Float](pointlightcomponent/attenuationfalloffexponent-6l8an.md)
   The exponent value for the light’s intensity falloff-transition curve.
-### Registering a component type
-- [static func registerComponent()](pointlightcomponent/registercomponent.md)
-  Registers a new component type.
-### Comparing point light components
-- [static func == (PointLightComponent, PointLightComponent) -> Bool](pointlightcomponent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](pointlightcomponent/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Supporting types
-- [PointLightComponent.Color](pointlightcomponent/color-swift.typealias.md)
+- [var attenuationFalloffExponent: Float](pointlightcomponent/attenuationfalloffexponent-8omwe.md)
+  The exponent value for the light’s intensity falloff-transition curve.
+- [var color: PointLightComponent.Color](pointlightcomponent/color-4ksx7.md)
+  A color for the point light.
+### Type Aliases
+- [PointLightComponent.Color](pointlightcomponent/color-1d04v.md)
   A platform-specific type used to define color for a point light.
-### Default Implementations
-- [Component Implementations](pointlightcomponent/component-implementations.md)
-- [Equatable Implementations](pointlightcomponent/equatable-implementations.md)
+- [PointLightComponent.Color](pointlightcomponent/color-6zkji.md)
+  A platform-specific type used to define color for a point light.
 
 ## Relationships
 
@@ -102,4 +104,4 @@ The point light illuminates entities based on its distance from them. Here is a 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/pointlightcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/pointlightcomponent)*

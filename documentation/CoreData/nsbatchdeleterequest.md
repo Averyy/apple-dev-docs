@@ -52,8 +52,6 @@ Alternatively, you can use persistent history tracking to make your contexts awa
 
 > ❗ **Important**:  Ensure that a request’s changes don’t violate the validation rules in your data model beyond basic delete rules, such as reducing a relationship count below the specified minimum. The Deny delete rule isn’t compatible with `NSBatchDeleteRequest`.
 
- Ensure that a request’s changes don’t violate the validation rules in your data model beyond basic delete rules, such as reducing a relationship count below the specified minimum. The Deny delete rule isn’t compatible with `NSBatchDeleteRequest`.
-
 ## Topics
 
 ### Creating a Request

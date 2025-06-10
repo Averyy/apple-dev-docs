@@ -1,6 +1,6 @@
 # preferredContentSize
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 The hosting controller creates and updates constraints that represent its content’s ideal size. These constraints in turn influence the hosting controller’s `preferredContentSize`.
@@ -34,4 +34,4 @@ The constraints reflect the size that fits a proposal of `.unspecified`.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/nshostingsizingoptions/preferredcontentsize)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/nshostingsizingoptions/preferredcontentsize)*

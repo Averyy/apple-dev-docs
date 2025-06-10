@@ -8,7 +8,7 @@ Signature for the block executed when [`writeVideoAtPath(toSavedPhotosAlbum:comp
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

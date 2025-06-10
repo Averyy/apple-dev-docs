@@ -54,4 +54,4 @@ if let lastNumber = numbers.last {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/array/last)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/array/last)*

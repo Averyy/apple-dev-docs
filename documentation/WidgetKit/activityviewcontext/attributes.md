@@ -1,6 +1,6 @@
 # attributes
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 A set of attributes that describe a Live Activity and its content at the time of its creation.

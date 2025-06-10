@@ -28,6 +28,8 @@ To get started, create a [`TabletopGame`](tabletopgame.md) object that represent
 ### Essentials
 - [Creating tabletop games](tabletopkitsample.md)
   Develop a spatial board game where multiple players interact with pieces on a table.
+- [Synchronizing group gameplay with TabletopKit](synchronizing-group-gameplay-with-tabletopkit.md)
+  Maintain game state across multiple players in a race to capture all the coins.
 - [class TabletopGame](tabletopgame.md)
   An object that manages the setup and gameplay of a tabletop game.
 - [struct TableSetup](tablesetup.md)
@@ -108,7 +110,7 @@ To get started, create a [`TabletopGame`](tabletopgame.md) object that represent
 - [struct TableVisualState](tablevisualstate.md)
   A structure that represents the appearance of an object on the table.
 - [struct TableCursor](tablecursor.md)
-  A visual indicator that represents the destination of player interactions with equipment.
+  A cursor conveys information about one equipment that is currently being controlled by an interaction.
 - [struct TableCursorIdentifier](tablecursoridentifier.md)
   A unique identifier for cursors.
 ### Bookmarks
@@ -126,6 +128,22 @@ To get started, create a [`TabletopGame`](tabletopgame.md) object that represent
 ### Debugging
 - [struct DebugDrawOptions](debugdrawoptions.md)
   Types of items in a rendering that you want to debug.
+### Protocols
+- [protocol CustomAction](customaction.md)
+  A protocol that represents an action whose behavior is implemented outside of TabletopKit. A custom action that can be applied to a `TableState`.
+- [protocol CustomEquipmentState](customequipmentstate.md)
+  A specialized protocol for the equipment state that allows to accommodate custom data that TabletopKit syncs between players.
+- [protocol MutableEquipmentState](mutableequipmentstate.md)
+  A protocol for equipment data that TabletopKit syncs between players, and that can be mutated.
+### Structures
+- [struct CounterCollection](countercollection.md)
+  A collection of score counters that can be inspected and modified.
+- [struct EquipmentCollection](equipmentcollection.md)
+  A collection of equipment whose state can be inspected and modified.
+- [struct EquipmentStateCollection](equipmentstatecollection.md)
+  A collection of equipment states that can be inspected and modified.
+- [struct TableState](tablestate.md)
+  The state of the table that can be queried and modified.
 
 
 ---

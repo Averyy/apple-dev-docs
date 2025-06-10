@@ -12,6 +12,7 @@ Submits the request to create a snapshot and executes the resulting block on the
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 
@@ -24,14 +25,6 @@ func start(with queue: dispatch_queue_t) async throws -> MKMapSnapshotter.Snapsh
 > **Note**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func start(with queue: dispatch_queue_t) async throws -> MKMapSnapshotter.Snapshot
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func start(with queue: dispatch_queue_t) async throws -> MKMapSnapshotter.Snapshot
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
 Call this method to begin generating a snapshot image based on the specified parameters. This method executes the request asynchronously. When rendering is complete, the snapshotter delivers the results to your block on the dispatch queue in the `queue` parameter.
 

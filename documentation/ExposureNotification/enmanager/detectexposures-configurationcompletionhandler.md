@@ -24,15 +24,9 @@ The progress of the method.
 
 > ❗ **Important**:  This method is available in iOS 12.5, and in iOS 13.5 and later.
 
- This method is available in iOS 12.5, and in iOS 13.5 and later.
-
 This method allows recalculating a new score using different configuration parameters. If you’ve previously called   [`detectExposures(configuration:diagnosisKeyURLs:completionHandler:)`](enmanager/detectexposures(configuration:diagnosiskeyurls:completionhandler:).md), any keys you submitted in the previous 14 days are cached. Only use this method if your app specifies an `ENAPIVersion` of `2` in its `Info.plist` file, because older versions did not cache keys.
 
 > ❗ **Important**:  On iOS 13.6 and later, you’re limited to using this method a maximum of 15 times per 24-hour period. If you’re on iOS 13.7 and later and specify `2` as the `ENAPIVersion` in your app’s `Info.plist` file, you’re limited to using this method a maximum of 6 times per 24-hour period. On iOS 13.5, you can only submit 15 uncached key files per 24-hour period, regardless of the number of API calls you make.
-
- On iOS 13.6 and later, you’re limited to using this method a maximum of 15 times per 24-hour period. If you’re on iOS 13.7 and later and specify `2` as the `ENAPIVersion` in your app’s `Info.plist` file, you’re limited to using this method a maximum of 6 times per 24-hour period.
-
-On iOS 13.5, you can only submit 15 uncached key files per 24-hour period, regardless of the number of API calls you make.
 
 ## Parameters
 
@@ -47,7 +41,7 @@ On iOS 13.5, you can only submit 15 uncached key files per 24-hour period, regar
   Obtains information from the provided summary about the user’s exposure within a window of time.
 - [typealias ENGetExposureWindowsHandler](engetexposurewindowshandler.md)
   The handler the system invokes when the acquisition of windows completes.
-- [func getUserTraveled(completionHandler: ENGetUserTraveledHandler)](enmanager/getusertraveled(completionhandler:).md)
+- [func getUserTraveled(completionHandler: (Bool, (any Error)?) -> Void)](enmanager/getusertraveled(completionhandler:).md)
   Obtains information about the user’s travel within an exposure period.
 - [typealias ENGetUserTraveledHandler](engetusertraveledhandler.md)
   The handler the system invokes when acquistiion of the user’s travel status completes.

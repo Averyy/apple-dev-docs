@@ -101,6 +101,7 @@ For examples of how you use [`UIMenu`](uimenu.md), see [`Adding menus and shortc
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 
 ## See Also
@@ -109,6 +110,8 @@ For examples of how you use [`UIMenu`](uimenu.md), see [`Adding menus and shortc
   An interface for adding and removing menus from a menu system.
 - [class UIMenuSystem](uimenusystem.md)
   An object representing a main or contextual menu system.
+- [class UIMainMenuSystem](uimainmenusystem.md)
+  The main menu system.
 
 
 ---

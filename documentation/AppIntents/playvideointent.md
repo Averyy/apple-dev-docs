@@ -8,10 +8,10 @@ An intent that looks for videos based on a search term, then plays the content.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst 17.2+
+- Mac Catalyst ?+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -34,6 +34,7 @@ protocol PlayVideoIntent : SystemIntent
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SystemIntent](systemintent.md)
 
 ## See Also

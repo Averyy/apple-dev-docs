@@ -78,4 +78,4 @@ The results array of a Core ML-based image analysis request contains a different
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/vncoremlrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/vncoremlrequest)*

@@ -32,6 +32,7 @@ For an example, see [`updateElements(_:timeout:)`](hiddeviceclient/updateelement
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

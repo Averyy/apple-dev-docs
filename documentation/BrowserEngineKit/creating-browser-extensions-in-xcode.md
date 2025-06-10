@@ -1,6 +1,6 @@
 # Creating browser extensions in Xcode
 
-**Framework**: Browserenginekit
+**Framework**: BrowserEngineKit
 
 Configure your Xcode project to support your alternative browser engine.
 

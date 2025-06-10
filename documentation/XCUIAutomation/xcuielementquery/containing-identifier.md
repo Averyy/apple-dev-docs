@@ -1,6 +1,6 @@
 # containing(_:identifier:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Returns a new query that matches elements that contain a descendant of the requested type and an identifying property that matches a provided identifier.

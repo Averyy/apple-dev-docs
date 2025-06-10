@@ -42,8 +42,6 @@ Each primary app can have a maximum of two private keys.
 
 > ❗ **Important**:  Never share your private keys outside of your developer team. If a private key becomes compromised, create a new private key for the primary app. Then, after transitioning to the new key, revoke the old private key. For more information, see [`Create a Sign in with Apple private key`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/create-a-sign-in-with-apple-private-key).
 
- Never share your private keys outside of your developer team. If a private key becomes compromised, create a new private key for the primary app. Then, after transitioning to the new key, revoke the old private key. For more information, see [`Create a Sign in with Apple private key`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/create-a-sign-in-with-apple-private-key).
-
 ##### Register Email Sources for Communication
 
 To communicate with users who opt to use an anonymous email address with Sign in with Apple, you must register your outbound email domains, subdomains, or email addresses as email sources for the Private Email Relay Service. Email sources associate with your Apple Developer Team ID, and have the following parameters:

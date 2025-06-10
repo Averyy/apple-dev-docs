@@ -1,6 +1,6 @@
 # Handling the Ride-Booking Intents
 
-**Framework**: Sirikit
+**Framework**: SiriKit
 
 Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
 
@@ -66,4 +66,4 @@ Shortcuts and Siri Suggestions send your Intents app extension [`INRequestRideIn
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/handling-the-ride-booking-intents)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/handling-the-ride-booking-intents)*

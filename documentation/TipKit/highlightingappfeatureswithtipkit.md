@@ -1,6 +1,6 @@
 # Highlighting app features with TipKit
 
-**Framework**: Tipkit
+**Framework**: TipKit
 
 Bring attention to new features in your app by using tips.
 
@@ -109,7 +109,7 @@ To display a popover tip:
 
 1. Define an instance of your tip content.
 2. Place the tip on the feature to highlight using the [`popoverTip(_:arrowEdge:action:)`](https://developer.apple.com/documentation/SwiftUI/View/popoverTip(_:arrowEdge:action:)) view modifier, passing in the tip content.
-3. Invalidate the tip after someone uses the feature, passing in an instance of [`Tips.InvalidationReason`](tips/invalidationreason.md).
+3. Invalidate the tip after someone uses the feature, passing in an instance of [`InvalidationReason`](tips/invalidationreason.md).
 
 ```swift
 struct PopoverView: View {
@@ -136,7 +136,7 @@ struct PopoverView: View {
 
 Buttons present people with additional information and options before they decide whether to use a new feature. For example, consider using buttons to redirect people to an area where they can learn more about what the given feature does. Or consider sending people to a settings screen if adjustments are necessary before a new feature can be used.
 
-To add a button to a tip, the sample code defines actions using the [`Tip.Action`](tip/action.md) type in the [`actions`](tip/actions.md) property of the tip content.
+To add a button to a tip, the sample code defines actions using the [`Action`](tip/action.md) type in the [`actions`](tip/actions.md) property of the tip content.
 
 ```swift
 struct PasswordResetTip: Tip {
@@ -203,7 +203,7 @@ struct PasswordResetView: View {
 
 ##### Display Tips Based on App State Using Parameters
 
-This sample demonstrates how to use app state to display a tip. Define a variable in your tip structure to represent the app state to track. Wrap it in a [`Tips.Parameter`](tips/parameter.md) property wrapper, and then define a [`Tips.Rule`](tips/rule.md) for when it displays using the `#Rule` macro in the [`rules`](tip/rules.md) property of the structure defining the tip. This sample only displays the tip when someone taps the button and logs in.
+This sample demonstrates how to use app state to display a tip. Define a variable in your tip structure to represent the app state to track. Wrap it in a [`Parameter`](tips/parameter.md) property wrapper, and then define a [`Rule`](tips/rule.md) for when it displays using the `#Rule` macro in the [`rules`](tip/rules.md) property of the structure defining the tip. This sample only displays the tip when someone taps the button and logs in.
 
 ```swift
 struct ParameterRuleTip: Tip {
@@ -260,7 +260,7 @@ struct ParameterView: View {
 
 > **Note**: A tip dismissed by the user won’t appear again until its datastore is reset. See the section on overriding tip eligibility rules for instructions on how to reset a tip’s state.
 
-The [`Tips.Parameter`](tips/parameter.md) property wrapper also support types that conforms to the `Codable` and `Sendable` protocol. In this example, the tip displays if the plants tip has more than two favorites, and one of the favorites is a string with the value “Rose”.
+The [`Parameter`](tips/parameter.md) property wrapper also support types that conforms to the `Codable` and `Sendable` protocol. In this example, the tip displays if the plants tip has more than two favorites, and one of the favorites is a string with the value “Rose”.
 
 ```swift
 struct FavoritePlantTip: Tip {
@@ -310,7 +310,7 @@ struct FavoritePlantTip: Tip {
 
 ##### Display Tips Based on User Actions with Events
 
-To track and display tips based on user actions, define a [`Tip.Event`](tip/event.md) constant with an `id` in your tip structure representing the user interaction you want to track. Then define a [`Tips.Rule`](tips/rule.md) for when the tip displays using a `#Rule` macro referencing the event to track. Set the conditions for when the tip displays within the `#Rule` macro closure. In this sample, the tip displays when the event occurs three or more times.
+To track and display tips based on user actions, define a [`Event`](tip/event.md) constant with an `id` in your tip structure representing the user interaction you want to track. Then define a [`Rule`](tips/rule.md) for when the tip displays using a `#Rule` macro referencing the event to track. Set the conditions for when the tip displays within the `#Rule` macro closure. In this sample, the tip displays when the event occurs three or more times.
 
 ```swift
 struct EventRuleTip: Tip {
@@ -349,7 +349,7 @@ struct EventView: View {
 
 ##### Creating an Event with an Associated Donation Value
 
-You can also create a [`Tips.Event`](tips/event.md) property wrapper with associated donated values. These values hold additional information relevant to the tip itself.
+You can also create a [`Event`](tips/event.md) property wrapper with associated donated values. These values hold additional information relevant to the tip itself.
 
 The example below donates the `viewedSpecificFood` event with an associated donation value when the user action occurs. In this sample, the tip displays if the following rules are satisfied:
 
@@ -432,7 +432,7 @@ struct FoodEventTip: Tip {
 
 ##### Control Display Frequency Using Options
 
-Options control the frequency with which tips display. Define a [`Tip.Option`](tip/option.md) in the [`options`](tip/options.md) property of your tip structure and set the frequency for the tip display there.
+Options control the frequency with which tips display. Define a [`Option`](tip/option.md) in the [`options`](tip/options.md) property of your tip structure and set the frequency for the tip display there.
 
 ```swift
 struct OptionTip: Tip {
@@ -545,4 +545,4 @@ try Tips.resetDatastore()
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TipKit/highlightingappfeatureswithtipkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tipkit/highlightingappfeatureswithtipkit)*

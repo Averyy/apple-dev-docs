@@ -1,6 +1,6 @@
 # SVG_SPREADMETHOD_REFLECT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

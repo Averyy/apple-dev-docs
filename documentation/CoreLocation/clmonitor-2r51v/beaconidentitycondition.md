@@ -41,6 +41,7 @@ Use `CLMonitor.BeaconIdentityCondition` to observe events from beacons based on 
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

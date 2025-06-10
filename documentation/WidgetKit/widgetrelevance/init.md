@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: init
 
 Creates a type collecting the relevances for a widget kind.
@@ -8,8 +8,9 @@ Creates a type collecting the relevances for a widget kind.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
+- visionOS 26.0+ (Beta)
 - watchOS 11.0+
 
 ## Declaration

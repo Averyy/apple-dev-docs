@@ -27,8 +27,6 @@ The renderbuffer to be displayed must have been allocated storage using the [`re
 
 > ❗ **Important**:  The contents of the renderbuffer may be altered after the renderbuffer is presented to the screen. After presenting the renderbuffer, your application must   redraw the contents of the renderbuffer before presenting it again. To preserve the contents of the renderbuffer you may set the [`kEAGLDrawablePropertyRetainedBacking`](keagldrawablepropertyretainedbacking.md) key of the `drawableProperties` dictionary to [`true`](https://developer.apple.com/documentation/swift/true). Setting the key to [`true`](https://developer.apple.com/documentation/swift/true) may result in reduced graphics performance and increased memory usage. Therefore, choose this setting only when you need the renderbuffer’s contents to remain unchanged.
 
- The contents of the renderbuffer may be altered after the renderbuffer is presented to the screen. After presenting the renderbuffer, your application must   redraw the contents of the renderbuffer before presenting it again. To preserve the contents of the renderbuffer you may set the [`kEAGLDrawablePropertyRetainedBacking`](keagldrawablepropertyretainedbacking.md) key of the `drawableProperties` dictionary to [`true`](https://developer.apple.com/documentation/swift/true). Setting the key to [`true`](https://developer.apple.com/documentation/swift/true) may result in reduced graphics performance and increased memory usage. Therefore, choose this setting only when you need the renderbuffer’s contents to remain unchanged.
-
 ## Parameters
 
 - `target`: The OpenGL ES binding point for a currently bound renderbuffer. The value of this parameter must be   (or   in an OpenGL ES 1.1 context).

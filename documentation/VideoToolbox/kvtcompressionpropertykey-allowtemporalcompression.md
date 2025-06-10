@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_AllowTemporalCompression
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A Boolean value indicating whether temporal compression is enabled.

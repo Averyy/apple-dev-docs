@@ -1,6 +1,6 @@
 # mimeType
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The receiver’s MIME type.

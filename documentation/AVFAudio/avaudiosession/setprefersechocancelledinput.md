@@ -1,6 +1,6 @@
 # setPrefersEchoCancelledInput(_:)
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: method
 
 Sets a preference to enable echo-canceled input on supported hardware.

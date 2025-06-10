@@ -1,6 +1,6 @@
 # webView(_:contextMenuWillPresentForElement:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that the web view is about to present the contextual menu for the specified element.

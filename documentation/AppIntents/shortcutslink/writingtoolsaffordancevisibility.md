@@ -8,7 +8,7 @@ Specifies whether the system should show the Writing Tools affordance for text i
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
+- Mac Catalyst ?+
 - macOS 15.4+
 - tvOS 18.4+
 - visionOS 2.4+
@@ -21,13 +21,13 @@ Specifies whether the system should show the Writing Tools affordance for text i
 @preconcurrency func writingToolsAffordanceVisibility(_ visibility: Visibility) -> some View
 ```
 
+#### Return Value
+
+A view with the specified Writing Tools affordance visibility.
+
 #### Discussion
 
 Use this view modifier to disable the Writing Tools affordance for `TextField` views when running on macOS or Mac Catalyst.
-
-Parameters:
-
-Returns: A view with the specified Writing Tools affordance visibility.
 
 ## Parameters
 

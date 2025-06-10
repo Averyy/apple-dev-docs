@@ -28,6 +28,7 @@ struct SendRight
 - [Copyable](../Swift/Copyable.md)
 - [MachPortRight](machportright.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

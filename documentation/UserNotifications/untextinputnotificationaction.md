@@ -1,6 +1,6 @@
 # UNTextInputNotificationAction
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 An action that accepts user-typed text.

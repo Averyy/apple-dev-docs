@@ -34,8 +34,6 @@ Implementing this method doesn’t guarantee that Core ML evaluates this layer o
 
 > ❗ **Important**:  The GPU works with 16-bit floats, not 32-bit floats. Verify that lower precision values don’t impact your network’s behavior.
 
- The GPU works with 16-bit floats, not 32-bit floats. Verify that lower precision values don’t impact your network’s behavior.
-
 If you don’t implement this method, Core ML instead uses [`evaluate(inputs:outputs:)`](mlcustomlayer/evaluate(inputs:outputs:).md).
 
 For more information about using the GPU for general purpose programming, see `Compute Processing`.

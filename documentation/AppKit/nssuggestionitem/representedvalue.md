@@ -1,6 +1,6 @@
 # representedValue
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The value represented by the receiver.
@@ -21,4 +21,4 @@ var representedValue: SuggestionItemType
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nssuggestionitem/representedvalue)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nssuggestionitem/representedvalue)*

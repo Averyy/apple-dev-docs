@@ -10,8 +10,6 @@ To display SpriteKit content in a watch app, you use [`WKInterfaceSKScene`](http
 
 > ❗ **Important**:  SKRenderer is not available on watchOS.
 
- SKRenderer is not available on watchOS.
-
 ##### On Ios Tvos and Macos Draw Using a View or a Renderer
 
 Choose from the options below to display SpriteKit content on iOS, tvOS, or macOS.

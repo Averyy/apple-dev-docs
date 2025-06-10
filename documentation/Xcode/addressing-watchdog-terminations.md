@@ -131,4 +131,4 @@ If networking code is contributing to your watchdog termination, consider these 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/addressing-watchdog-terminations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/addressing-watchdog-terminations)*

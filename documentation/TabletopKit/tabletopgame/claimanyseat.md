@@ -3,7 +3,7 @@
 **Framework**: TabletopKit  
 **Kind**: method
 
-Claims any free seat. If there are no free seats, it has no effect
+Claims any free seat. Has no effect if the player is already seated or if there are no free seats.
 
 **Availability**:
 - visionOS 2.0+

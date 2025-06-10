@@ -1,4 +1,4 @@
-# Tips.ConfigurationOption
+# ConfigurationOption
 
 **Framework**: TipKit  
 **Kind**: struct
@@ -23,11 +23,11 @@ struct ConfigurationOption
 ## Topics
 
 ### Structures
-- [Tips.ConfigurationOption.CloudKitContainer](tips/configurationoption/cloudkitcontainer.md)
+- [struct CloudKitContainer](tips/configurationoption/cloudkitcontainer.md)
   A type for specifying the CloudKit container used for syncing tips.
-- [Tips.ConfigurationOption.DatastoreLocation](tips/configurationoption/datastorelocation.md)
+- [struct DatastoreLocation](tips/configurationoption/datastorelocation.md)
   A type for specifying a custom location for your tips datastore.
-- [Tips.ConfigurationOption.DisplayFrequency](tips/configurationoption/displayfrequency.md)
+- [struct DisplayFrequency](tips/configurationoption/displayfrequency.md)
   A type for specifying the minimum duration after one tip is shown before another tip will become eligible.
 ### Type Methods
 - [static func cloudKitContainer(Tips.ConfigurationOption.CloudKitContainer?) -> Tips.ConfigurationOption](tips/configurationoption/cloudkitcontainer(_:).md)
@@ -41,15 +41,12 @@ struct ConfigurationOption
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [struct IgnoresDisplayFrequency](tips/ignoresdisplayfrequency.md)
-  Controls whether a tip obeys the preconfigured display frequency interval.
-- [struct MaxDisplayCount](tips/maxdisplaycount.md)
-  Specifies the maximum number of times a tip displays before the system automatically invalidates it.
-- [struct ParameterOption](tips/parameteroption.md)
-  A type that represents the various customizations that you can make to a tip parameter.
+- [static func configure([Tips.ConfigurationOption]) throws](tips/configure(_:).md)
+  Loads and configures the persistent state of all tips in your app.
 
 
 ---

@@ -1,6 +1,6 @@
 # WebMenuItemTagSearchWeb
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Search the web for the current selection.

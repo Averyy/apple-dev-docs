@@ -1,6 +1,6 @@
 # testLog(withFormat:arguments:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Logs test results to the test log.

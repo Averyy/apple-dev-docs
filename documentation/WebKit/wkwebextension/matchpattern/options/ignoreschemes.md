@@ -1,6 +1,6 @@
 # ignoreSchemes
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that the scheme components should be ignored while matching.

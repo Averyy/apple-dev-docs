@@ -22,6 +22,8 @@ Use for directions that are suitable for a pedestrian.
 
 - [Automobile](mapkit.directions.transport/automobile.md)
   A constant identifying the mode of transportation as driving.
+- [Cycling](mapkit.directions.transport/cycling.md)
+  A constant identifying the mode of transportation as cycling.
 
 
 ---

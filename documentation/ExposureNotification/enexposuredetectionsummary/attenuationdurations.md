@@ -1,6 +1,6 @@
 # attenuationDurations
 
-**Framework**: Exposurenotification  
+**Framework**: Exposure Notification  
 **Kind**: property
 
 An array of durations at specific radio signal attenuations.
@@ -52,4 +52,4 @@ Use the [`attenuationDurationThresholds`](enexposureconfiguration/attenuationdur
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposuredetectionsummary/attenuationdurations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposuredetectionsummary/attenuationdurations)*

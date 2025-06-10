@@ -67,6 +67,7 @@ You can get the current search suggestion placement by querying the [`searchSugg
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

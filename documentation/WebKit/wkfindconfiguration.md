@@ -1,6 +1,6 @@
 # WKFindConfiguration
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 The configuration parameters to use when searching the contents of the web view.

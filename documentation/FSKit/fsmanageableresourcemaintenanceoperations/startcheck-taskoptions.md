@@ -17,7 +17,7 @@ func startCheck(task: FSTask, options: FSTaskOptions) throws -> Progress
 
 #### Return Value
 
-An [`NSProgress`](https://developer.apple.com/documentation/foundation/nsprogress) object that you use to update progress as the check operation progresses. Return `nil` if starting the file system check encountered an error.
+An [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) object that you use to update progress as the check operation progresses. Return `nil` if starting the file system check encountered an error.
 
 ## Parameters
 

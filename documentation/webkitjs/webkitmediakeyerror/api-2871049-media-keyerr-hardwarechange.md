@@ -1,6 +1,6 @@
 # MEDIA_KEYERR_HARDWARECHANGE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

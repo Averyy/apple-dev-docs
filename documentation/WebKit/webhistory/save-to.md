@@ -1,6 +1,6 @@
 # save(to:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Saves the web history to the specified file.

@@ -1,6 +1,6 @@
 # previewController(_:frameFor:inSourceView:)
 
-**Framework**: Quicklook  
+**Framework**: Quick Look  
 **Kind**: method
 
 Tells the delegate that the system is about to present the preview full screen or dismiss it, and asks for information to provide a zoom effect.

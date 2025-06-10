@@ -1,6 +1,6 @@
 # fileAttributesToWrite(to:ofType:for:originalContentsURL:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Returns the attributes to write to the file or file package at the specified URL, and targeting the specified type of save operation.

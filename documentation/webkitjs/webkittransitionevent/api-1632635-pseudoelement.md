@@ -1,6 +1,6 @@
 # pseudoElement
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 An abstract element representing the portion of the CSS render tree on which the transition occurs.

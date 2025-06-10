@@ -1,6 +1,6 @@
 # init(keyPath:observedObject:options:expectedValue:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an expectation that the system fulfills when the value of the observed property changes to an expected value.

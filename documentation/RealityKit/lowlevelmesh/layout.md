@@ -10,6 +10,7 @@ An object that describes a set of attributes that share a buffer index, offset, 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -38,6 +39,12 @@ If you store your attributes separately, use one `Layout` per attribute.
 - [var bufferStride: Int](lowlevelmesh/layout/bufferstride.md)
   The distance, in bytes, between consecutive vertices for attributes using this layout.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
@@ -56,6 +63,8 @@ If you store your attributes separately, use one `Layout` per attribute.
   Designates the intended usage of a vertex attribute.
 - [LowLevelMesh.PartsCollection](lowlevelmesh/partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
+- [class LowLevelBuffer](lowlevelbuffer.md)
+- [class LowLevelInstanceData](lowlevelinstancedata.md)
 
 
 ---

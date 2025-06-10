@@ -22,20 +22,18 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPho
 
 - [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
 - [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
-- [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
+- [Capturing Uncompressed Image Data](capturing-uncompressed-image-data.md)
 - [Saving Captured Photos](saving-captured-photos.md)
 - [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
-- [Capturing Uncompressed Image Data](capturing-uncompressed-image-data.md)
 - [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
 - [Capturing Photos with Depth](capturing-photos-with-depth.md)
+- [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
 
 #### Discussion
 
 Use this method to receive the results of photo capture regardless of format.
 
 > ❗ **Important**:  Implementing this method is recommended for all still image (as opposed to Live Photo) capture workflows, and required if you request depth data delivery. The photo output validates this requirement when you call its [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method; if your delegate does not implement the correct methods, the photo output raises an exception.
-
- Implementing this method is recommended for all still image (as opposed to Live Photo) capture workflows, and required if you request depth data delivery. The photo output validates this requirement when you call its [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method; if your delegate does not implement the correct methods, the photo output raises an exception.
 
 The photo output calls this method once for each primary image to be delivered in a capture request. If you request capture in both RAW and processed formats, this method fires once for each format. If you request a bracketed capture with multiple exposures, this method fires once for each exposure.
 

@@ -89,7 +89,7 @@ func render(pixelBuffer: CVPixelBuffer) -> CVPixelBuffer?
 
 AVCamFilter applies a rose-colored filter on top of the camera stream in two ways:
 
-- `RosyCIRenderer` applies a Core Image [`CIColorMatrix`](https://developer.apple.com/documentation/coreimage/cicolormatrix) filter to the input buffer.
+- `RosyCIRenderer` applies a Core Image [`CIColorMatrix`](https://developer.apple.com/documentation/CoreImage/CIColorMatrix) filter to the input buffer.
 - `RosyMetalRenderer` creates a Metal texture from the image buffer and applies the shader in `RosyEffect.metal`.
 
 Both approaches run on the GPU for optimal performance. Because the Core Image approach doesn’t require GPU command queues, `RosyCIRenderer` involves less direct manipulation of the GPU than its Metal counterpart and chains more seamlessly with other Core Image filters. Unlike the Metal function, `RosyCIRenderer` requires the creation and application of a [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter):

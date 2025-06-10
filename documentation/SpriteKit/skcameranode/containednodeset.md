@@ -17,7 +17,6 @@ Finds nodes that are visible in the camera’s viewport.
 ## Declaration
 
 ```swift
-@MainActor
 func containedNodeSet() -> Set<SKNode>
 ```
 

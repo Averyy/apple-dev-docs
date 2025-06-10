@@ -1,6 +1,6 @@
 # addItem(with:title:previewText:)
 
-**Framework**: Safariservices  
+**Framework**: Safari Services  
 **Kind**: method
 
 Adds an item to the Reading List.

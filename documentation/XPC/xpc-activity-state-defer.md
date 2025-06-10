@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_STATE_DEFER
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 The activity needs to wait until it satisfies its criteria again.

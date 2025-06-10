@@ -1,6 +1,6 @@
 # kVTVideoEncoderSpecification_EnableLowLatencyRateControl
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Specifies to select an encoder that supports low-latency operation and enables low-latency mode.

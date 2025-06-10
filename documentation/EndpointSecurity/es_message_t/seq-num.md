@@ -31,8 +31,6 @@ This field is available if the message version is greater than `2`.
 
 > 💡 **Tip**:  For an equivalent counter that filters only by client and not event type, see [`global_seq_num`](es_message_t/global_seq_num.md).
 
- For an equivalent counter that filters only by client and not event type, see [`global_seq_num`](es_message_t/global_seq_num.md).
-
 ## See Also
 
 - [var time: timespec](es_message_t/time.md)

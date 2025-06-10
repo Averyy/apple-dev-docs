@@ -1,6 +1,6 @@
 # linkURL
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The URL of the link that the user clicked.

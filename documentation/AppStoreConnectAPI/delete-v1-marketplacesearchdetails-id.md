@@ -20,6 +20,7 @@ Delete search detail URL for the alternative marketplace.
   Add a search detail URL for the alternative marketplace.
 - [Read the marketplace search detail URL](get-v1-apps-_id_-marketplacesearchdetail.md)
   Get search detail URL for the alternative marketplace.
+- [GET /v1/apps/{id}/relationships/marketplaceSearchDetail](get-v1-apps-_id_-relationships-marketplacesearchdetail.md)
 - [Modify a marketplace search detail URL](patch-v1-marketplacesearchdetails-_id_.md)
   Update the search detail URL for the alternative marketplace.
 

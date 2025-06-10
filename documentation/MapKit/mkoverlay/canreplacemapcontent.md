@@ -12,6 +12,7 @@ Returns a Boolean value that indicates whether the overlay content replaces the 
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 2.0+
 
 ## Declaration
 

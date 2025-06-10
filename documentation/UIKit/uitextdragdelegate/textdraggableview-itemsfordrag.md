@@ -1,6 +1,6 @@
 # textDraggableView(_:itemsForDrag:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Asks the delegate for custom drag items from a text view.

@@ -5,6 +5,9 @@
 
 A handler for enumerating a collection of mesh anchors.
 
+**Availability**:
+- visionOS 1.0+
+
 ## Declaration
 
 ```swift

@@ -1,6 +1,6 @@
 # videoWidth
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The native width of the video in CSS pixels. (read-only)

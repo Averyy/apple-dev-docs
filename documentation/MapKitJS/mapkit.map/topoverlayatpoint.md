@@ -28,7 +28,7 @@ The following code example identifies the topmost overlay during a mouse move ev
 
 ```javascript
 document.querySelector(".mk-map-view").addEventListener("mousemove", function(event) {
-    var targetOverlay = map.topOverlayAtPoint(new DOMPoint(event.pageX, event.pageY));
+    const targetOverlay = map.topOverlayAtPoint(new DOMPoint(event.pageX, event.pageY));
     // Add special styling to the overlay to indicate its hover state or whatever you want.
     // ...
 });

@@ -1,6 +1,6 @@
 # value
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The measured value, including the unit of measure.

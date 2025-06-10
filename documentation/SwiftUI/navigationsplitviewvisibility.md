@@ -1,6 +1,6 @@
 # NavigationSplitViewVisibility
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 The visibility of the leading columns in a navigation split view.
@@ -50,6 +50,7 @@ Use a value of this type to control the visibility of the columns of a [`Navigat
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -71,4 +72,4 @@ Use a value of this type to control the visibility of the columns of a [`Navigat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/navigationsplitviewvisibility)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/navigationsplitviewvisibility)*

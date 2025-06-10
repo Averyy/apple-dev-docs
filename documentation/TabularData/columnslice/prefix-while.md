@@ -1,6 +1,6 @@
 # prefix(while:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns a subsequence containing the initial elements until `predicate` returns `false` and skipping the remaining elements.

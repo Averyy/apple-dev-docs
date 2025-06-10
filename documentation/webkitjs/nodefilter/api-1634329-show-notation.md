@@ -1,6 +1,6 @@
 # SHOW_NOTATION
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

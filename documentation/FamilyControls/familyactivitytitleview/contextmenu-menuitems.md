@@ -1,6 +1,6 @@
 # contextMenu(menuItems:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Adds a context menu to a view.

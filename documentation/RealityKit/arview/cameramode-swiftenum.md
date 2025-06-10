@@ -6,9 +6,9 @@
 The available camera modes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 14.0+
 
 ## Declaration
 
@@ -20,20 +20,9 @@ enum CameraMode
 
 ### Setting the camera mode
 - [ARView.CameraMode.ar](arview/cameramode-swift.enum/ar.md)
-  Use the device’s camera, managed by the AR session.
+  A mode that uses the device’s camera to place virtual entities relative to the real world.
 - [ARView.CameraMode.nonAR](arview/cameramode-swift.enum/nonar.md)
-  Use the device’s camera, managed by the AR session.
-### Comparing modes
-- [static func == (ARView.CameraMode, ARView.CameraMode) -> Bool](arview/cameramode-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](arview/cameramode-swift.enum/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](arview/cameramode-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](arview/cameramode-swift.enum/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](arview/cameramode-swift.enum/equatable-implementations.md)
+  A mode that creates a fully virtual environment with no relationship to the real world.
 
 ## Relationships
 

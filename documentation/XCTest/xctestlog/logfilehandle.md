@@ -1,6 +1,6 @@
 # logFileHandle
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An object to interact with the test log file.

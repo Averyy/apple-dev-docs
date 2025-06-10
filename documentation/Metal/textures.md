@@ -98,7 +98,7 @@ Although textures can consume large amounts of memory, they also offer strategie
 ## See Also
 
 - [Resource Fundamentals](resource-fundamentals.md)
-  Learn the common attributes of all Metal memory resources, including buffers and textures, and how to manage the underlying memory.
+  Control the common attributes of all Metal memory resources, including buffers and textures, and how to configure their underlying memory.
 - [Buffers](buffers.md)
   Create and manage untyped data your app uses to exchange information with its shader functions.
 - [Memory Heaps](memory-heaps.md)
@@ -106,7 +106,7 @@ Although textures can consume large amounts of memory, they also offer strategie
 - [Resource Loading](resource-loading.md)
   Load assets in your games and apps quickly by running a dedicated input/output queue alongside your GPU tasks.
 - [Resource Synchronization](resource-synchronization.md)
-  Coordinate the contents of data buffers, textures, and other resources that CPUs and GPUs share access to.
+  Prevent multiple commands that can access the same resources simultaneously by coordinating those accesses with barriers, fences, or events.
 
 
 ---

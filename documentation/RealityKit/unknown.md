@@ -10,6 +10,7 @@ Returns a predicate which evaluates to `true` if `left` OR `right` evaluates to 
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

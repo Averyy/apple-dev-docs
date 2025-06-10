@@ -1,14 +1,14 @@
 # SemanticTagType
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 A compilation of data object types for semantic tags.
 
 **Availability**:
 - iOS 12.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 12.0+
+- watchOS 5.0+
 
 ## Declaration
 

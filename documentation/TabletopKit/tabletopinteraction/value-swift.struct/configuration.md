@@ -3,7 +3,7 @@
 **Framework**: TabletopKit  
 **Kind**: property
 
-The configuration of this interaction
+The current configuration of this interaction
 
 **Availability**:
 - visionOS 2.2+

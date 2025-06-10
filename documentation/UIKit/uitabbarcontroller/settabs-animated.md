@@ -17,6 +17,11 @@
 func setTabs(_ tabs: [UITab], animated: Bool)
 ```
 
+## See Also
+
+- [var tabs: [UITab]](uitabbarcontroller/tabs.md)
+  An array of tabs that the tab bar displays.
+
 
 ---
 

@@ -1,6 +1,6 @@
 # Configuring Action Timing
 
-**Framework**: Spritekit
+**Framework**: SpriteKit
 
 Time an action in a scene, by adding or modifying timing properties, or cancel an action.
 
@@ -42,4 +42,4 @@ To cancel actions that a node is running, call its [`removeAllActions()`](sknode
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/configuring-action-timing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/configuring-action-timing)*

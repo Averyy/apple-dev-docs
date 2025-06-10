@@ -21,6 +21,7 @@ object InAppPurchaseAvailabilityCreateRequest
 
 - [object InAppPurchaseAvailability](inapppurchaseavailability.md)
 - [object InAppPurchaseAvailabilityResponse](inapppurchaseavailabilityresponse.md)
+- [object InAppPurchaseAvailabilityAvailableTerritoriesLinkagesResponse](inapppurchaseavailabilityavailableterritorieslinkagesresponse.md)
 
 
 ---

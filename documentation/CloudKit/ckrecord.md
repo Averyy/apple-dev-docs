@@ -1,6 +1,6 @@
 # CKRecord
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 A collection of key-value pairs that store your app’s data.
@@ -154,6 +154,7 @@ If you store records in a local database, use the [`encodeSystemFields(with:)`](
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also
@@ -174,4 +175,4 @@ If you store records in a local database, use the [`encodeSystemFields(with:)`](
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckrecord)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckrecord)*

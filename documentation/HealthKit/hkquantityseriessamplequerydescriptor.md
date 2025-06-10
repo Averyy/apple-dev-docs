@@ -25,8 +25,6 @@ Use [`HKQuantitySeriesSampleQueryDescriptor`](hkquantityseriessamplequerydescrip
 
 > ❗ **Important**:  Only use this query when you need direct access to the high-frequency series data, for example when visualizing the raw data or when exporting objects from the HealthKit store. For most common calculations, consider using a statistical query instead. Statistical queries correctly handle quantity data, whether the samples represent a single quantity or a series.
 
- Only use this query when you need direct access to the high-frequency series data, for example when visualizing the raw data or when exporting objects from the HealthKit store. For most common calculations, consider using a statistical query instead. Statistical queries correctly handle quantity data, whether the samples represent a single quantity or a series.
-
 To read the individual data entries, create a predicate that identifies the sample type and limits the results to the desired data. For example, to read the series for a particular sample object, include a [`predicateForObject(with:)`](hkquery/predicateforobject(with:).md) predicate. However, if you’re reading high-frequency data during a workout, you may want to include a [`predicateForSamples(withStart:end:options:)`](hkquery/predicateforsamples(withstart:end:options:).md) predicate that returns matching series data based on the workout’s time period instead.
 
 ```swift

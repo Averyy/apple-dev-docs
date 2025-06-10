@@ -1,6 +1,6 @@
 # preferredSurroundingsEffect(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Applies an effect to passthrough video.

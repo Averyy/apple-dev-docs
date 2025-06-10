@@ -1,6 +1,6 @@
 # Handling an iCloud Container’s Data
 
-**Framework**: Cloudkit
+**Framework**: CloudKit
 
 Inspect and manage your app’s iCloud container data using the CloudKit Database app.
 
@@ -72,4 +72,4 @@ To modify or delete an existing record:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/handling-an-icloud-container-s-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/handling-an-icloud-container-s-data)*

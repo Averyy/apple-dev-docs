@@ -1,6 +1,6 @@
 # Asynchronous Tests and Expectations
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Verify that asynchronous code behaves as expected.
 
@@ -33,8 +33,6 @@ When the asynchronous task completes, perform assertions to confirm that the tas
 If your test encounters a thrown error, `XCTest` records a test failure.
 
 > ❗ **Important**:  If your test code needs to run on the Main actor, specify `@MainActor` for your test method or class. If you don’t specify an actor, the test method executes on an arbitrary actor.
-
- If your test code needs to run on the Main actor, specify `@MainActor` for your test method or class. If you don’t specify an actor, the test method executes on an arbitrary actor.
 
 ##### Build Asynchronous Tests with Expectations
 

@@ -1,6 +1,6 @@
 # Maintaining a local copy of server data
 
-**Framework**: Swiftdata
+**Framework**: SwiftData
 
 Create and update a persistent store to cache read-only network data.
 
@@ -172,4 +172,4 @@ The insert method works for both creating and updating earthquake model instance
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftData/maintaining-a-local-copy-of-server-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/maintaining-a-local-copy-of-server-data)*

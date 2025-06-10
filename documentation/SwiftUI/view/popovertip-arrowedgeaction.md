@@ -6,18 +6,18 @@
 Presents a popover tip on the modified view.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
-- Mac Catalyst 18.4+
-- macOS 15.4+
-- tvOS 18.4+
-- visionOS 2.4+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 17.0+
+- visionOS 1.0+
 
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func popoverTip(_ tip: (any Tip)?, arrowEdge: Edge? = nil, action: @escaping (Tips.Action) -> Void = { _ in }) -> some View
+@preconcurrency
+nonisolated func popoverTip(_ tip: (any Tip)?, arrowEdge: Edge? = nil, action: @escaping @MainActor (Tips.Action) -> Void = { _ in }) -> some View
 ```
 
 ##### Discussion
@@ -66,7 +66,7 @@ struct SampleView: View {
 
 ## See Also
 
-- [func tipBackground(some ShapeStyle) -> some View](view/tipbackground(_:).md)
+- [func tipBackground<S>(S) -> some View](view/tipbackground(_:).md)
   Sets the tip’s view background to a style. Currently this only applies to inline tips, not popover tips.
 - [func tipCornerRadius(CGFloat, antialiased: Bool) -> some View](view/tipcornerradius(_:antialiased:).md)
   Sets the corner radius for an inline tip view.

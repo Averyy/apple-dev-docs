@@ -1,6 +1,6 @@
 # overlayContainerView
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A view that the data scanner displays over its view without interfering with the Live Text interface.

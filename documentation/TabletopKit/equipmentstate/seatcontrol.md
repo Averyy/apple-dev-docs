@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The seats that can manipulate or interact with the equipment.
+The seats that can manipulate or interact with this equipment.
 
 **Availability**:
 - visionOS 2.0+

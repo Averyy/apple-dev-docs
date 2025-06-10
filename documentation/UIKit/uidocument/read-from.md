@@ -1,6 +1,6 @@
 # read(from:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Reads the document data in a file at a specified location in the application sandbox.

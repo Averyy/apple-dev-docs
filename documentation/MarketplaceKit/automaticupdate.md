@@ -34,6 +34,7 @@ Your app’s [`MarketplaceExtension`](marketplaceextension.md) provides the oper
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

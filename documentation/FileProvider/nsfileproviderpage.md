@@ -41,13 +41,14 @@ Your file provider should populate the page with the information it needs to par
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [Defining Your File Provider’s Content](defining-your-file-provider-s-content.md)
-  Create enumerators to specify your file provider’s content.
-- [protocol NSFileProviderEnumerationObserver](nsfileproviderenumerationobserver.md)
-  An observer that receives batches of items during enumeration.
+- [func enumerateSearchResults(for: any NSFileProviderSearchEnumerationObserver, startingAt: NSFileProviderPage?)](nsfileprovidersearchenumerator/enumeratesearchresults(for:startingat:).md)
+  Enumerates search results starting from the specified page, in response to a call from the framework.
+- [protocol NSFileProviderSearchEnumerationObserver](nsfileprovidersearchenumerationobserver.md)
+  A protocol that defines a type that receives enumerations of search results from your extension.
 
 
 ---

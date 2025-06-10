@@ -8,9 +8,6 @@ The array of valid Apple TV identifiers that the remote can connect to.
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
-- tvOS 11.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

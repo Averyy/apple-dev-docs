@@ -6,7 +6,7 @@
 The last call to request content authorization couldn’t be completed because another asset is currently attempting authorization.
 
 **Availability**:
-- macOS ?+
+- macOS 10.7+
 
 ## Declaration
 

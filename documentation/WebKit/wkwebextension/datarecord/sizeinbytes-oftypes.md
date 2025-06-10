@@ -1,6 +1,6 @@
 # sizeInBytes(ofTypes:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Retrieves the size in bytes of the specific data types in this data record.

@@ -1,6 +1,6 @@
 # subscript(_:as:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: subscript
 
 Reads the value associated with the given key as an XPC dictionary.

@@ -17,6 +17,10 @@
 var isUIToggleEnabled: Bool { get set }
 ```
 
+#### Discussion
+
+Determines if the user will have the ability to enable and disable the relay
+
 
 ---
 

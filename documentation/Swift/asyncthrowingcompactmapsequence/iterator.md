@@ -37,6 +37,7 @@ struct Iterator
 ### Conforms To
 - [AsyncIteratorProtocol](asynciteratorprotocol.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 
 ---

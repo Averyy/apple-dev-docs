@@ -22,8 +22,6 @@ func hv_gic_get_redistributor_base(_ vcpu: hv_vcpu_t, _ redistributor_base_addre
 
 > ❗ **Important**:  Call this method after you set the affinity of the given vCPU in its `MPIDR_EL1` register.
 
- Call this method after you set the affinity of the given vCPU in its `MPIDR_EL1` register.
-
 ## Parameters
 
 - `vcpu`: Handle for the vCPU.

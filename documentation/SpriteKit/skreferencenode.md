@@ -1,6 +1,6 @@
 # SKReferenceNode
 
-**Framework**: Spritekit  
+**Framework**: SpriteKit  
 **Kind**: class
 
 A node that’s defined in an archived `.sks` file.
@@ -17,6 +17,7 @@ A node that’s defined in an archived `.sks` file.
 ## Declaration
 
 ```swift
+@MainActor
 class SKReferenceNode
 ```
 
@@ -77,6 +78,7 @@ When each scene is loaded, the reference nodes are resolved dynamically, and the
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
@@ -98,4 +100,4 @@ When each scene is loaded, the reference nodes are resolved dynamically, and the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/skreferencenode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/skreferencenode)*

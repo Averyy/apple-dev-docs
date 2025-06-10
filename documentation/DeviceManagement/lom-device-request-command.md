@@ -1,4 +1,4 @@
-# LOM Device Request Command
+# LOM Device Request
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -7,8 +7,6 @@ Send requests to a device using lights-out management (LOM).
 
 **Availability**:
 - macOS 11.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -20,29 +18,29 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | - |
-| Requires Supervision | - |
-| Allowed in User Enrollment | - |
-| Required Access Right | DeviceLockAndRemovePasscode |
+| Device channel | macOS |
+| User channel | NA |
+| Requires supervision | macOS |
+| Allowed in user enrollment | NA |
+| Required access right | DeviceLockAndRemovePasscode |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object LOMDeviceRequestCommand](lomdevicerequestcommand.md)
   The command to send requests to a device using lights-out management (LOM).
 - [object LOMDeviceRequestResponse](lomdevicerequestresponse.md)
-  A response from the device after it processes requests it receives through lights-out management (LOM).
+  A response from the device after it processes the command to send requests to a device using lights-out management (LOM).
 
 ## Request Body
 
-The command to send requests to a device using lights-out management (LOM).
+The request object the server returns for the LOM Device Request Command.
 
 ## See Also
 
-- [LOM Setup Request Command](lom-setup-request-command.md)
+- [LOM Setup Request](lom-setup-request-command.md)
   Get information from a device to set up lights-out management (LOM).
 
 

@@ -1,6 +1,6 @@
 # VSUserAccount.AccountType.free
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 A constant that indicates a user has access to free content.

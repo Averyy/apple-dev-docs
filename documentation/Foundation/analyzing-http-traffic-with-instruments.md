@@ -85,4 +85,4 @@ In addition to the two lists in the detail pane, there’s a summary view. From 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/analyzing-http-traffic-with-instruments)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/analyzing-http-traffic-with-instruments)*

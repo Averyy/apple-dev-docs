@@ -1,6 +1,6 @@
 # didFocusWindow(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Should be called by the app when a window gains focus to fire appropriate events with all loaded web extensions.

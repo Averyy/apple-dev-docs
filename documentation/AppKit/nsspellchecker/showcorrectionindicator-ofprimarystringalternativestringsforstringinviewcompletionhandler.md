@@ -1,6 +1,6 @@
 # showCorrectionIndicator(of:primaryString:alternativeStrings:forStringIn:view:completionHandler:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Display a suitable user interface to indicate a correction may need to be made.

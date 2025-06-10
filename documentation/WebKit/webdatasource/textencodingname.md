@@ -1,6 +1,6 @@
 # textEncodingName
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The text encoding for the data source’s web view, if set, or the text encoding of the response.

@@ -152,4 +152,4 @@ To run the tests in the “Performance Tests” test plan, using all configurati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/organizing-tests-to-improve-feedback)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/organizing-tests-to-improve-feedback)*

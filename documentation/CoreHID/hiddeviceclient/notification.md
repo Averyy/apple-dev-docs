@@ -36,6 +36,7 @@ You can receive these notifications using [`monitorNotifications(reportIDsToMoni
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

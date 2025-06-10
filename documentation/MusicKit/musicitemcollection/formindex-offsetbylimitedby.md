@@ -1,6 +1,6 @@
 # formIndex(_:offsetBy:limitedBy:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Offsets the given index by the specified distance, or so that it equals the given limiting index.

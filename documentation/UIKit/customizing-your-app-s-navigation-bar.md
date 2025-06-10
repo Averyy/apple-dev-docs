@@ -1,6 +1,6 @@
 # Customizing your app’s navigation bar
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Create custom titles, prompts, and buttons in your app’s navigation bar.
 
@@ -184,4 +184,4 @@ optionsBarItem.menu = barButtonMenu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/customizing-your-app-s-navigation-bar)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/customizing-your-app-s-navigation-bar)*

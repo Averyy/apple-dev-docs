@@ -1,9 +1,9 @@
-# <(_:_:)
+# !=(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
 
-Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
+Returns a Boolean value indicating whether two values are not equal.
 
 **Availability**:
 - iOS 8.0+
@@ -17,12 +17,14 @@ Returns a Boolean value indicating whether the value of the first argument is le
 ## Declaration
 
 ```swift
-static func < (lhs: Unicode.CanonicalCombiningClass, rhs: Unicode.CanonicalCombiningClass) -> Bool
+static func != (lhs: Self, rhs: Self) -> Bool
 ```
 
 #### Discussion
 
-This function is the only requirement of the `Comparable` protocol. The remainder of the relational operator functions are implemented by the standard library for any type that conforms to `Comparable`.
+Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
+
+This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
 
 ## Parameters
 
@@ -32,4 +34,4 @@ This function is the only requirement of the `Comparable` protocol. The remainde
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/unicode/canonicalcombiningclass/_(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/unicode/canonicalcombiningclass/!=(_:_:))*

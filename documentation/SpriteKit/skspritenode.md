@@ -17,14 +17,15 @@ An image or solid color.
 ## Declaration
 
 ```swift
+@MainActor
 class SKSpriteNode
 ```
 
 ## Mentions
 
 - [Getting Started with Shape Nodes](getting-started-with-shape-nodes.md)
-- [Adding a Video to a Scene](adding-a-video-to-a-scene.md)
 - [Customizing the Behavior of a Node](customizing-the-behavior-of-a-node.md)
+- [Adding a Video to a Scene](adding-a-video-to-a-scene.md)
 - [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
 - [Loading and Using Textures](loading-and-using-textures.md)
 - [Getting Started with Nodes](getting-started-with-nodes.md)
@@ -137,6 +138,7 @@ class SKSpriteNode
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [SKWarpable](skwarpable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)

@@ -1,6 +1,6 @@
 # init(identifier:displayName:doubleValue:unitSymbol:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Initializes a performance measurement for a single iteration with the value and unit of measurement.

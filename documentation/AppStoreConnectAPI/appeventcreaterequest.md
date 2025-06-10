@@ -24,6 +24,7 @@ object AppEventCreateRequest
 - [object AppEventsResponse](appeventsresponse.md)
 - [object AppEventResponse](appeventresponse.md)
 - [type AppEventAssetType](appeventassettype.md)
+- [object AppEventLocalizationsLinkagesResponse](appeventlocalizationslinkagesresponse.md)
 
 
 ---

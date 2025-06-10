@@ -1,6 +1,6 @@
 # ClassKit
 
-**Framework**: Classkit  
+**Framework**: ClassKit  
 **Kind**: module
 
 Enable teachers to assign activities from your app’s content and to view student progress.

@@ -12,7 +12,6 @@ Returns the text marker that follows the given text marker.
 - macOS ?+
 - tvOS 18.2+
 - visionOS 2.2+
-- watchOS 11.2+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # Modifying RealityKit rendering using custom materials
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Write Metal shader functions to implement custom rendering effects.
 
@@ -196,6 +196,7 @@ You can download RealityKit’s custom shader Metal API documentation from [`the
 ## See Also
 
 - [struct ShaderGraphMaterial](shadergraphmaterial.md)
+  Create dynamic materials without Metal.
 - [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 - [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)
@@ -217,4 +218,4 @@ You can download RealityKit’s custom shader Metal API documentation from [`the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/modifying-realitykit-rendering-using-custom-materials)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/modifying-realitykit-rendering-using-custom-materials)*

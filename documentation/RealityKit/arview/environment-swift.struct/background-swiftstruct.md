@@ -10,6 +10,7 @@ Content that appears as the background of the scene.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -28,6 +29,9 @@ struct Background
   Use a solid color as a background.
 - [static func skybox(EnvironmentResource) -> ARView.Environment.Background](arview/environment-swift.struct/background-swift.struct/skybox(_:).md)
   Use a skybox environment resource as a background.
+### Type Methods
+- [static color(_:)](arview/environment-swift.struct/background-swift.struct/color(_:).md)
+  Use a solid color as a background.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # location
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The proxy location a test uses to simulate longitude, latitude, and course information for the device.

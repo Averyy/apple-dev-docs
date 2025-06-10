@@ -27,6 +27,8 @@ enum OSLogIntExtendedFormat
 - [OSLogIntExtendedFormat.bitrateIEC](oslogintextendedformat/bitrateiec.md)
 - [OSLogIntExtendedFormat.byteCount](oslogintextendedformat/bytecount.md)
 - [OSLogIntExtendedFormat.byteCountIEC](oslogintextendedformat/bytecountiec.md)
+### Enumeration Cases
+- [OSLogIntExtendedFormat.secondsSince1970](oslogintextendedformat/secondssince1970.md)
 
 ## Relationships
 

@@ -6,6 +6,7 @@
 The GPU device that the layer renderer uses for drawing operations
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

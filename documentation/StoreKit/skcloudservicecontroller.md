@@ -55,11 +55,11 @@ Use an [`SKCloudServiceController`](skcloudservicecontroller.md) object to deter
   Gets the device’s storefront identifier.
 - [func requestPersonalizationToken(forClientToken: String, withCompletionHandler: (String?, (any Error)?) -> Void)](skcloudservicecontroller/requestpersonalizationtoken(forclienttoken:withcompletionhandler:).md)
 ### Notifications
-- [static let SKStorefrontIdentifierDidChange: NSNotification.Name](../foundation/nsnotification/name/1620636-skstorefrontidentifierdidchange.md)
+- [static let SKStorefrontIdentifierDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/SKStorefrontIdentifierDidChange.md)
   A notification name for indicating a change in the storefront identifier associated with the device.
-- [static let SKCloudServiceCapabilitiesDidChange: NSNotification.Name](../foundation/nsnotification/name/1620626-skcloudservicecapabilitiesdidcha.md)
+- [static let SKCloudServiceCapabilitiesDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/SKCloudServiceCapabilitiesDidChange.md)
   A notification name for indicating a change in the capabilities associated with the Music library on the device.
-- [static let SKStorefrontCountryCodeDidChange: NSNotification.Name](../foundation/nsnotification/name/2909077-skstorefrontcountrycodedidchange.md)
+- [static let SKStorefrontCountryCodeDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/SKStorefrontCountryCodeDidChange.md)
   A notification name for indicating a change in the storefront country or region code associated with the device.
 
 ## Relationships

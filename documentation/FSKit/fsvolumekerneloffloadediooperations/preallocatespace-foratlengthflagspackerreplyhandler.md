@@ -20,8 +20,6 @@ This method allows the module to opportunistically supply extents, avoiding futu
 
 > ❗ **Important**: Only implement this method if your file system conforms to [`FSVolume.PreallocateOperations`](fsvolume/preallocateoperations.md).
 
-Only implement this method if your file system conforms to [`FSVolume.PreallocateOperations`](fsvolume/preallocateoperations.md).
-
 ## Parameters
 
 - `file`: The item for which to preallocate space.

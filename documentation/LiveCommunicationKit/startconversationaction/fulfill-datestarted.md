@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: method
 
-Indicates that the action has been successfully executed.
+Indicates that a local participant successfully started a conversation.
 
 **Availability**:
 - iOS 17.4+
@@ -20,7 +20,7 @@ final func fulfill(dateStarted: Date)
 
 ## Parameters
 
-- `dateStarted`: The     at which the   was started.
+- `dateStarted`: The point in time when the local participant started a conversation.
 
 
 ---

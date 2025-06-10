@@ -1,6 +1,6 @@
 # WKWebExtensionWindow
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 A protocol with methods that represent a window to web extensions.

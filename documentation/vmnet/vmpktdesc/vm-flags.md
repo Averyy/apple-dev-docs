@@ -1,6 +1,6 @@
 # vm_flags
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: property
 
 Option flags. Should be set to `0` on read.

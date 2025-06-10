@@ -1,6 +1,6 @@
 # webView(_:didStartProvisionalNavigation:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that navigation from the main frame has started.

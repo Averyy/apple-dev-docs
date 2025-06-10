@@ -21,8 +21,6 @@ If a [`MediaExtension`](MediaExtension.md) method fails, the [`NSError`](https:/
 ## Topics
 
 ### Identifying the error domain and codes
-- [static var errorDomain: String](meerror-swift.struct/errordomain-6dfr0.md)
-  The domain of the error.
 - [static var allocationFailure: MEError.Code](meerror-swift.struct/allocationfailure.md)
   An error code that indicates the extension can’t allocate memory.
 - [static var endOfStream: MEError.Code](meerror-swift.struct/endofstream.md)
@@ -48,16 +46,16 @@ If a [`MediaExtension`](MediaExtension.md) method fails, the [`NSError`](https:/
 - [static var unsupportedFeature: MEError.Code](meerror-swift.struct/unsupportedfeature.md)
   An error code that indicates the extension doesn’t support an aspect of the media.
 ### Inspecting an error
-- [var code: Int](../foundation/nserror/1409165-code.md)
+- [var code: Int { get }](../Foundation/NSError/code.md)
   The error code.
-- [var errorCode: Int](../foundation/customnserror/2946828-errorcode.md)
-- [var errorUserInfo: [String : Any]](../foundation/customnserror/3017373-erroruserinfo.md)
+- [var errorCode: Int { get }](../Foundation/CustomNSError/errorCode.md)
+- [var errorUserInfo: [String : Any] { get }](../Foundation/CustomNSError/errorUserInfo.md)
 - [var hashValue: Int { get }](../Swift/Hashable/hashValue.md)
   The hash value.
 - [var localizedDescription: String](meerror-swift.struct/localizeddescription.md)
   A string that contains the localized description of the error.
-- [var userInfo: [String : Any]](../foundation/nserror/1411580-userinfo.md)
-  The user info dictionary. 
+- [var userInfo: [String : Any] { get }](../Foundation/NSError/userInfo.md)
+  The user info dictionary.
 - [static func == (lhs: Self, rhs: Self) -> Bool](../Swift/Equatable/==(_:_:)-3axv1.md)
   Returns a Boolean value indicating whether two values are equal.
 - [static func != (lhs: Self, rhs: Self) -> Bool](../Swift/Equatable/!=(_:_:).md)
@@ -83,6 +81,7 @@ If a [`MediaExtension`](MediaExtension.md) method fails, the [`NSError`](https:/
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -26,7 +26,7 @@ A bitmap (or sampled) image is a rectangular array of pixels, with each pixel re
 
 ## Topics
 
-### Creating Images
+### Creating images
 - [init?(width: Int, height: Int, bitsPerComponent: Int, bitsPerPixel: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: CGBitmapInfo, provider: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool, intent: CGColorRenderingIntent)](cgimage/init(width:height:bitspercomponent:bitsperpixel:bytesperrow:space:bitmapinfo:provider:decode:shouldinterpolate:intent:).md)
   Creates a bitmap image from data supplied by a data provider.
 - [init?(jpegDataProviderSource: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool, intent: CGColorRenderingIntent)](cgimage/init(jpegdataprovidersource:decode:shouldinterpolate:intent:).md)
@@ -34,7 +34,7 @@ A bitmap (or sampled) image is a rectangular array of pixels, with each pixel re
 - [init?(pngDataProviderSource: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool, intent: CGColorRenderingIntent)](cgimage/init(pngdataprovidersource:decode:shouldinterpolate:intent:).md)
   Creates a bitmap image using PNG-encoded data supplied by a data provider.
 - [init?(headroom: Float, width: Int, height: Int, bitsPerComponent: Int, bitsPerPixel: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: CGBitmapInfo, provider: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool, intent: CGColorRenderingIntent)](cgimage/init(headroom:width:height:bitspercomponent:bitsperpixel:bytesperrow:space:bitmapinfo:provider:decode:shouldinterpolate:intent:).md)
-### Examining an Image
+### Examining an image
 - [var isMask: Bool](cgimage/ismask.md)
   Returns whether a bitmap image is an image mask.
 - [var width: Int](cgimage/width.md)
@@ -67,20 +67,27 @@ A bitmap (or sampled) image is a rectangular array of pixels, with each pixel re
   Component information for a bitmap image.
 - [var utType: CFString?](cgimage/uttype.md)
   The Universal Type Identifier for the image.
-### Copying an Image
+### Copying an image
 - [func copy() -> CGImage?](cgimage/copy.md)
   Creates a copy of a bitmap image.
 - [func copy(colorSpace: CGColorSpace) -> CGImage?](cgimage/copy(colorspace:).md)
   Creates a copy of a bitmap image, replacing its colorspace.
-### Creating Images by Modifying an Image
+### Creating images by modifying an image
 - [func cropping(to: CGRect) -> CGImage?](cgimage/cropping(to:).md)
   Creates a bitmap image using the data contained within a subregion of an existing bitmap image.
 - [func masking(CGImage) -> CGImage?](cgimage/masking(_:).md)
   Creates a bitmap image from an existing image and an image mask.
 - [func copy(maskingColorComponents: [CGFloat]) -> CGImage?](cgimage/copy(maskingcolorcomponents:).md)
-### Creating Image Masks
+### Creating image masks
 - [init?(maskWidth: Int, height: Int, bitsPerComponent: Int, bitsPerPixel: Int, bytesPerRow: Int, provider: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool)](cgimage/init(maskwidth:height:bitspercomponent:bitsperpixel:bytesperrow:provider:decode:shouldinterpolate:).md)
   Creates a bitmap image mask from data supplied by a data provider.
+### High dynamic range
+- [var contentHeadroom: Float](cgimage/contentheadroom.md)
+- [func CGImageCalculateContentHeadroom(CGImage) -> Float](cgimagecalculatecontentheadroom(_:).md)
+- [func CGImageGetContentAverageLightLevel(CGImage) -> Float](cgimagegetcontentaveragelightlevel(_:).md)
+- [func CGImageCalculateContentAverageLightLevel(CGImage) -> Float](cgimagecalculatecontentaveragelightlevel(_:).md)
+- [func CGImageCreateCopyWithContentAverageLightLevel(Float, CGImage) -> CGImage?](cgimagecreatecopywithcontentaveragelightlevel(_:_:).md)
+- [func CGImageCreateCopyWithCalculatedHDRStats(CGImage) -> CGImage?](cgimagecreatecopywithcalculatedhdrstats(_:).md)
 ### Constants
 - [enum CGImageAlphaInfo](cgimagealphainfo.md)
   Storage options for alpha component data.
@@ -88,10 +95,10 @@ A bitmap (or sampled) image is a rectangular array of pixels, with each pixel re
   Component information for a bitmap image.
 - [Host Endian Bitmap Formats](host-endian-bitmap-formats.md)
   Bit-depth constants for image bitmaps in host-endian byte order.
-### Working with Core Foundation Types
+### Working with Core Foundation types
 - [class var typeID: CFTypeID](cgimage/typeid.md)
   Returns the type identifier for CGImage objects.
-### Instance Properties
+### Instance properties
 - [var byteOrderInfo: CGImageByteOrderInfo](cgimage/byteorderinfo.md)
 - [var containsImageSpecificToneMappingMetadata: Bool](cgimage/containsimagespecifictonemappingmetadata.md)
 - [var contentHeadroom: Float](cgimage/contentheadroom.md)
@@ -104,6 +111,7 @@ A bitmap (or sampled) image is a rectangular array of pixels, with each pixel re
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

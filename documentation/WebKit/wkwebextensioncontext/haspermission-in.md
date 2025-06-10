@@ -1,6 +1,6 @@
 # hasPermission(_:in:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Checks the specified permission against the currently granted permissions in a specific tab.

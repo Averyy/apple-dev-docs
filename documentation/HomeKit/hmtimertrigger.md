@@ -59,6 +59,7 @@ When a timer trigger is enabled using [`enable(_:completionHandler:)`](hmtrigger
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

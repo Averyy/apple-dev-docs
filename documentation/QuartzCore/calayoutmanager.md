@@ -6,7 +6,7 @@
 Methods that allow an object to manage the layout of a layer and its sublayers.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst 13.1+
 - macOS ?+
 
 ## Declaration

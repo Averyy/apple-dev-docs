@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_StereoCameraBaseline
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A value that specifies the distance between centers of the lenses of the camera system.

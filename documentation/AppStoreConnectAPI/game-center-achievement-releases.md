@@ -9,8 +9,10 @@ Manage releases for your Game Center achievements.
 ### Managing Game Center achievement releases
 - [List achievement releases ](get-v1-gamecenterdetails-_id_-achievementreleases.md)
   Read information about the achievement releases for specific Game Center detail.
+- [GET /v1/gameCenterDetails/{id}/relationships/achievementReleases](get-v1-gamecenterdetails-_id_-relationships-achievementreleases.md)
 - [Read release information for an achievement](get-v1-gamecenterachievements-_id_-releases.md)
   Read the state of an achievement release and related information.
+- [GET /v1/gameCenterAchievements/{id}/relationships/releases](get-v1-gamecenterachievements-_id_-relationships-releases.md)
 - [Read Game Center achievement release information](get-v1-gamecenterachievementreleases-_id_.md)
   Read the state of a specific achievement release.
 - [Create a Game Center achievement release](post-v1-gamecenterachievementreleases.md)
@@ -26,6 +28,7 @@ Manage releases for your Game Center achievements.
   A response that contains a single achievement release resource.
 - [object GameCenterAchievementReleasesResponse](gamecenterachievementreleasesresponse.md)
   A response that contains a list of achievement release resources.
+- [object GameCenterAchievementReleasesLinkagesResponse](gamecenterachievementreleaseslinkagesresponse.md)
 
 ## See Also
 

@@ -76,12 +76,19 @@ This request generates a collection of [`RecognizedTextObservation`](recognizedt
 - [Hashable](../Swift/Hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionRequest](visionrequest.md)
 
 ## See Also
 
+- [Recognizing tables within a document](recognize-tables-within-a-document.md)
+  Scan a document containing a contact table and extract the content within the table in a formatted way.
 - [Locating and displaying recognized text](locating-and-displaying-recognized-text.md)
   Perform text recognition on a photo using the Vision framework’s text-recognition request.
+- [struct RecognizeDocumentsRequest](recognizedocumentsrequest.md)
+  An image-analysis request to scan an image of a document and provide information about its structure.
+- [struct DocumentObservation](documentobservation.md)
+  Information about the sections of content that an image-analysis request detects in a document.
 - [struct DetectTextRectanglesRequest](detecttextrectanglesrequest.md)
   An image-analysis request that finds regions of visible text in an image.
 

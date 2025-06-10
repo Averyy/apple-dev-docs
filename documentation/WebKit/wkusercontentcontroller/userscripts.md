@@ -1,6 +1,6 @@
 # userScripts
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The user scripts associated with the user content controller.

@@ -1,6 +1,6 @@
 # activeFormat
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The capture format in use by the device.

@@ -10,6 +10,7 @@ Initializes an AudioFileResource asynchronously.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -22,8 +23,6 @@ Initializes an AudioFileResource asynchronously.
 #### Discussion
 
 > ❗ **Important**: The name provided  be unique.
-
-The name provided  be unique.
 
 
 ---

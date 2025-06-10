@@ -1,6 +1,6 @@
 # supportsZoom
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The accessibility element supports zooming in and out on its content.

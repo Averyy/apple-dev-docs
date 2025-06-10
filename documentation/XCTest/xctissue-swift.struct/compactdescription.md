@@ -1,6 +1,6 @@
 # compactDescription
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A concise description of the issue with no transient data, suitable for use in test run summaries and results aggregation across multiple test runs.

@@ -1,6 +1,6 @@
 # WebMenuItemTagStop
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Stop loading the current page.

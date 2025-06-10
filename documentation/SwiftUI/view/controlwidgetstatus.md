@@ -9,12 +9,14 @@ The status of the control described by the modified label.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
+- macOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
 @MainActor
-@preconcurrency func controlWidgetStatus(_ status: Text) -> some View
+@preconcurrency func controlWidgetStatus(_ status: LocalizedStringResource) -> some View
 ```
 
 #### Discussion
@@ -31,7 +33,7 @@ ControlWidgetToggle("Do Not Disturb", ...) { isOn in
 
 ## Parameters
 
-- `status`: The status to display.
+- `status`: The localized string resource to display.
 
 ## See Also
 

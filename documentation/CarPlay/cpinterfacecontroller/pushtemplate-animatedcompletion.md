@@ -13,6 +13,7 @@ Adds the specified template to the navigation hierarchy and displays it.
 ## Declaration
 
 ```swift
+@MainActor
 func pushTemplate(_ templateToPush: CPTemplate, animated: Bool) async throws -> Bool
 ```
 
@@ -21,14 +22,6 @@ func pushTemplate(_ templateToPush: CPTemplate, animated: Bool) async throws -> 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func pushTemplate(_ templateToPush: CPTemplate, animated: Bool) async throws -> Bool
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func pushTemplate(_ templateToPush: CPTemplate, animated: Bool) async throws -> Bool
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
 The template you add becomes the [`topTemplate`](cpinterfacecontroller/toptemplate.md) in the navigation hierarchy.
 

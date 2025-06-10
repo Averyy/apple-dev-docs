@@ -1,6 +1,6 @@
 # WebViewInsertAction.pasted
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates the user inserted content by pasting.

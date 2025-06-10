@@ -1,6 +1,6 @@
 # CKFetchWebAuthTokenOperation
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 An operation that creates an authentication token for use with CloudKit web services.
@@ -36,9 +36,9 @@ This operation executes the handlers you provide on an internal queue it manages
 
 The operation calls [`fetchWebAuthTokenCompletionBlock`](ckfetchwebauthtokenoperation/fetchwebauthtokencompletionblock.md) after it executes to provide the fetched token. Use the completion handler to perform housekeeping tasks for the operation. It should also manage any failures, whether due to an error or an explicit cancellation.
 
-> **Note**:  Because this class inherits from [`Operation`](https://developer.apple.com/documentation/Foundation/Operation), you can also set the [`completionBlock`](https://developer.apple.com/documentation/foundation/operation/1408085-completionblock) property. The operation calls both completion handlers if they’re both set.
+> **Note**:  Because this class inherits from [`Operation`](https://developer.apple.com/documentation/Foundation/Operation), you can also set the [`completionBlock`](https://developer.apple.com/documentation/Foundation/Operation/completionBlock) property. The operation calls both completion handlers if they’re both set.
 
-CloudKit operations have a default QoS of [`QualityOfService.default`](https://developer.apple.com/documentation/Foundation/QualityOfService/default). Operations with this service level are discretionary. The system schedules their execution at an optimal time according to battery level and network conditions, among other factors. Use the [`qualityOfService`](https://developer.apple.com/documentation/foundation/operation/1413553-qualityofservice) property to set a more appropriate QoS for the operation.
+CloudKit operations have a default QoS of [`QualityOfService.default`](https://developer.apple.com/documentation/Foundation/QualityOfService/default). Operations with this service level are discretionary. The system schedules their execution at an optimal time according to battery level and network conditions, among other factors. Use the [`qualityOfService`](https://developer.apple.com/documentation/Foundation/Operation/qualityOfService) property to set a more appropriate QoS for the operation.
 
 The following example shows how to create the operation, configure its callbacks, and execute it in the user’s private database:
 
@@ -94,6 +94,7 @@ func fetchWebAuthToken(for apiToken: String,
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -111,4 +112,4 @@ func fetchWebAuthToken(for apiToken: String,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckfetchwebauthtokenoperation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckfetchwebauthtokenoperation)*

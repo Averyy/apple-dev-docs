@@ -1,6 +1,6 @@
 # webView(_:shouldChangeSelectedDOMRange:to:affinity:stillSelecting:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns whether the user should be allowed to change the selected range.

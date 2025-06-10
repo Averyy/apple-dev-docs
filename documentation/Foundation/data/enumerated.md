@@ -6,10 +6,7 @@
 Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
 - Mac Catalyst 13.0+
-- macOS 10.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

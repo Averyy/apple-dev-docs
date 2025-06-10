@@ -12,14 +12,25 @@ A test status item for an integer.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object StatusTestIntegerValue
 ```
+
+#### Discussion
+
+##### Status Item Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| Allowed in device enrollment | iOS, Shared iPad, tvOS, visionOS |
+| Allowed in user enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in local enrollment | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| Allowed in user scope | macOS, Shared iPad |
 
 ## See Also
 

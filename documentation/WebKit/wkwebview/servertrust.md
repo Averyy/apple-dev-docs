@@ -1,6 +1,6 @@
 # serverTrust
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The trust management object you use to evaluate trust for the current webpage.

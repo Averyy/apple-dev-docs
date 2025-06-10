@@ -1,6 +1,6 @@
 # Adopting the system player interface in visionOS
 
-**Framework**: Avkit
+**Framework**: AVKit
 
 Provide an optimized viewing experience for watching 3D video content.
 
@@ -146,6 +146,8 @@ private func addTimeObserver() {
 
 ## See Also
 
+- [Playing immersive media with AVKit](playing-immersive-media-with-avkit.md)
+  Adopt the system playback interface to provide an immersive video watching experience.
 - [Creating a multiview video playback experience in visionOS](creating-a-multiview-video-playback-experience-in-visionos.md)
   Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
 - [Trimming and exporting media in visionOS](trimming-and-exporting-media-in-visionos.md)
@@ -164,4 +166,4 @@ private func addTimeObserver() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/adopting-the-system-player-interface-in-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/adopting-the-system-player-interface-in-visionos)*

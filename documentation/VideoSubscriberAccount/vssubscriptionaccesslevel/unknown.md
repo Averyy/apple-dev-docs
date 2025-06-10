@@ -1,6 +1,6 @@
 # VSSubscriptionAccessLevel.unknown
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 The default access level.
@@ -21,8 +21,6 @@ case unknown
 #### Discussion
 
 > ⚠️ **Warning**:  An error occurs if you try to set a `VSSubscriptionAccessLevel` type to this value.
-
- An error occurs if you try to set a `VSSubscriptionAccessLevel` type to this value.
 
 ## See Also
 

@@ -10,7 +10,7 @@ Performs an action if the user presses one or more keys on a hardware keyboard w
 - iPadOS 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

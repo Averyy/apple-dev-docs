@@ -1,6 +1,6 @@
 # NSCollectionViewDataSource
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: protocol
 
 A set of methods that a data source object implements to provide the information and view objects that a collection view requires to present content.
@@ -83,4 +83,4 @@ After returning an item object from your [`collectionView(_:itemForRepresentedOb
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nscollectionviewdatasource)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nscollectionviewdatasource)*

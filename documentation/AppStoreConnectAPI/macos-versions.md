@@ -1,6 +1,6 @@
 # macOS Versions
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Read macOS version information you configure for an Xcode Cloud workflow.
 
@@ -21,6 +21,7 @@ To change a workflow’s build environment, use the [`Workflows`](workflows.md) 
   Get information about a specific macOS version that’s available to Xcode Cloud workflows.
 - [List Available Xcode Versions for a macOS Version](get-v1-cimacosversions-_id_-xcodeversions.md)
   List all Xcode versions available for a specific macOS version in Xcode Cloud.
+- [GET /v1/ciMacOsVersions/{id}/relationships/xcodeVersions](get-v1-cimacosversions-_id_-relationships-xcodeversions.md)
 ### Objects
 - [object CiMacOsVersion](cimacosversion.md)
   The data structure that represents a macOS Versions resource.
@@ -28,6 +29,7 @@ To change a workflow’s build environment, use the [`Workflows`](workflows.md) 
   A response that contains a single macOS Versions resource.
 - [object CiMacOsVersionsResponse](cimacosversionsresponse.md)
   A response that contains a list of macOS Versions resources.
+- [object CiMacOsVersionXcodeVersionsLinkagesResponse](cimacosversionxcodeversionslinkagesresponse.md)
 
 ## See Also
 
@@ -41,4 +43,4 @@ To change a workflow’s build environment, use the [`Workflows`](workflows.md) 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/macos-versions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/macos-versions)*

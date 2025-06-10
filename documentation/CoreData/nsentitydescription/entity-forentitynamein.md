@@ -26,7 +26,7 @@ The entity with the specified name from the managed object model associated with
 
 #### Discussion
 
-Raises [`internalInconsistencyException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1416220-internalinconsistencyexception) if `context` is `nil`.
+Raises [`internalInconsistencyException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/internalInconsistencyException) if `context` is `nil`.
 
 This method is functionally equivalent to the following code example.
 

@@ -17,6 +17,7 @@ The average initial direction of a particle, expressed as an angle in radians.
 ## Declaration
 
 ```swift
+@MainActor
 var emissionAngle: CGFloat { get set }
 ```
 

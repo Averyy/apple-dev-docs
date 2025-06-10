@@ -1,6 +1,6 @@
 # CSSRule Additions Reference
 
-**Framework**: Webkitjs
+**Framework**: WebKit JS
 
 These extensions to the `CSSRule` class are used to access animation keyframe and keyframes rules.
 

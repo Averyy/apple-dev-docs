@@ -3,35 +3,18 @@
 **Framework**: RoomPlan  
 **Kind**: property
 
-The corresponding value of the raw type.
+A raw value for a configuration option.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
 let rawValue: Int
-```
-
-#### Discussion
-
-A new instance initialized with `rawValue` will be equivalent to this instance. For example:
-
-```None
-enum PaperSize: String {
-    case A4, A5, Letter, Legal
-}
-
-let selectedSize = PaperSize.Letter
-print(selectedSize.rawValue)
-// Prints "Letter"
-
-print(selectedSize == PaperSize(rawValue: selectedSize.rawValue)!)
-// Prints "true"
 ```
 
 ## See Also

@@ -26,12 +26,8 @@ To further animate models in the scene, you may need to define a [`SkeletalPose`
   A component that exposes the collection of named animation skeletal poses.
 - [struct SkeletalPose](skeletalpose.md)
   A container that holds the position and orientation of each joint in a single animation skeleton.
-- [SkeletalPose.ID](skeletalpose/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 - [struct SkeletalPoseSet](skeletalposeset.md)
   A collection of named skeletal poses.
-- [SkeletalPoseSet.Element](skeletalposeset/element.md)
-  A type representing the sequence’s elements.
 ### Inverse kinematics components
 - [struct IKComponent](ikcomponent.md)
   A component that allows you to procedurally animate a skeletal model using a full body inverse kinematics solver.
@@ -51,8 +47,6 @@ To further animate models in the scene, you may need to define a [`SkeletalPose`
   A reference counted immutable resource which contains one or more inverse kinematics solver rigs.
 - [struct IKSolverDefinition](iksolverdefinition.md)
   A container describing a solver instance.
-- [IKSolverDefinition.ID](iksolverdefinition/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Inverse kinematics rigs
 - [struct IKRig](ikrig.md)
   A full body inverse kinematics rig definition for a single skeleton.

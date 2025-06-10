@@ -8,10 +8,10 @@ A result builder that allows you to declaratively describe the App Shortcuts tha
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -23,7 +23,7 @@ enum AppShortcutsBuilder
 
 ## Topics
 
-### Type Methods
+### Building App Shortcuts
 - [static func buildBlock() -> [AppShortcut]](appshortcutsbuilder/buildblock.md)
 - [static func buildBlock(AppShortcut...) -> [AppShortcut]](appshortcutsbuilder/buildblock(_:)-110ow.md)
 - [static func buildBlock([AppShortcut]...) -> [AppShortcut]](appshortcutsbuilder/buildblock(_:)-8xfbe.md)

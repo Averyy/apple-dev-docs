@@ -3,6 +3,8 @@
 **Framework**: Safari Services  
 **Kind**: property
 
+The style of dismiss button to use in the navigation bar to close the Safari view controller.
+
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
@@ -14,6 +16,10 @@
 @MainActor
 var dismissButtonStyle: SFSafariViewController.DismissButtonStyle { get set }
 ```
+
+#### Discussion
+
+The Safari view controller sets dismissButtonStyle to [`SFSafariViewController.DismissButtonStyle.close`](sfsafariviewcontroller/dismissbuttonstyle-swift.enum/close.md) during initialization, displaying “xmark” icon by default. You can use other values such as [`SFSafariViewController.DismissButtonStyle.done`](sfsafariviewcontroller/dismissbuttonstyle-swift.enum/done.md) to show “checkmark” icon to provide consistency with your app.
 
 ## See Also
 

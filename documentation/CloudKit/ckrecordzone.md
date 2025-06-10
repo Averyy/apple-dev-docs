@@ -58,6 +58,11 @@ After creating a `CKRecordZone` object and saving it to the database, you don’
 ### Sharing Records
 - [var share: CKRecord.Reference?](ckrecordzone/share.md)
   A reference to the record zone’s share record.
+### Instance Properties
+- [var encryptionScope: CKRecordZone.EncryptionScope](ckrecordzone/encryptionscope-swift.property.md)
+  The encryption scope determines the granularity at which encryption keys are stored within the zone.
+### Enumerations
+- [CKRecordZone.EncryptionScope](ckrecordzone/encryptionscope-swift.enum.md)
 
 ## Relationships
 
@@ -74,6 +79,7 @@ After creating a `CKRecordZone` object and saving it to the database, you don’
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

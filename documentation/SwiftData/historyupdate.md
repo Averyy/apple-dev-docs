@@ -37,6 +37,7 @@ protocol HistoryUpdate<Model> : Sendable
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [DefaultHistoryUpdate](defaulthistoryupdate.md)
 

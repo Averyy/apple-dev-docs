@@ -21,8 +21,6 @@ To disable SIP, do the following:
 
 > ⚠️ **Warning**:  Disable SIP only temporarily to perform necessary tasks, and reenable it as soon as possible. Failure to reenable SIP when you are done testing leaves your computer vulnerable to malicious code.
 
- Disable SIP only temporarily to perform necessary tasks, and reenable it as soon as possible. Failure to reenable SIP when you are done testing leaves your computer vulnerable to malicious code.
-
 ##### Enable System Integrity Protection
 
 To reenable SIP, do the following:

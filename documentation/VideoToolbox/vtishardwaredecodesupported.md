@@ -1,6 +1,6 @@
 # VTIsHardwareDecodeSupported(_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Returns a Boolean value that indicates whether the current system supports hardware decode for the specified codec.

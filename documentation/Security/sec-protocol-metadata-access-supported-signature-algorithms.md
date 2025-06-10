@@ -25,8 +25,8 @@ Returns true if the supported signature list was accessible, false otherwise.
 #### Discussion
 
 ```None
-  Get the signature algorithms supported by the peer. Clients may call this
-  in response to a challenge block.
+ Get the signature algorithms supported by the peer. Clients may call this
+ in response to a challenge block.
 ```
 
 ## Parameters

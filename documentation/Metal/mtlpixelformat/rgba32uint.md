@@ -19,6 +19,10 @@ Ordinary format with four 32-bit unsigned integer components in RGBA order.
 case rgba32Uint
 ```
 
+## Mentions
+
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+
 ## See Also
 
 - [MTLPixelFormat.rgba32Sint](mtlpixelformat/rgba32sint.md)

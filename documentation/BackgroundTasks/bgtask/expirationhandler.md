@@ -11,12 +11,17 @@ A handler called shortly before the task’s background time expires.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 
 ```swift
 var expirationHandler: (() -> Void)? { get set }
 ```
+
+## Mentions
+
+- [Performing long-running tasks on iOS and iPadOS](performing-long-running-tasks-on-ios-and-ipados.md)
 
 #### Discussion
 

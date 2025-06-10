@@ -32,9 +32,14 @@ Writing Tools supports both the standard system views and custom text views you 
   A data object that you use to share your custom view’s text with Writing Tools.
 - [NSWritingToolsCoordinator.AnimationParameters](nswritingtoolscoordinator/animationparameters.md)
   An object you use to configure additional tasks or animations to run alongside the Writing Tools animations.
+- [Enhancing your custom text engine with Writing Tools](enhancing-your-custom-text-engine-with-writing-tools.md)
+  Add Writing Tools support to your custom text engine to enhance the text editing experience.
 ### Text previews
 - [class NSTextPreview](nstextpreview.md)
   A snapshot of the text in your view, which the system uses to create user-visible effects.
+### Toolbar configuration
+- [static let writingToolsItemIdentifier: NSToolbarItem.Identifier](nstoolbaritem/identifier/writingtoolsitemidentifier.md)
+  A standard item that is configured to send -showWritingTools: to the firstResponder when invoked.
 
 ## See Also
 

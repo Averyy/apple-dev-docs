@@ -26,8 +26,6 @@ This method uses a combination of locale rules and the provided parse strategy o
 
 > ❗ **Important**:  The format style only parses names using Latin or CJK scripts.
 
- The format style only parses names using Latin or CJK scripts.
-
 ## Parameters
 
 - `value`: A string to parse into person name components.

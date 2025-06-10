@@ -1,6 +1,6 @@
 # macOS WebDriver Commands for Safari 11.1 and earlier
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Test your web content using the WebDriver commands supported by Safari 11.1 and earlier.
 
@@ -111,4 +111,4 @@ All URI templates listed here work in Safari on macOS 10.11 and later.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/macos-webdriver-commands-for-safari-11-1-and-earlier)*
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/macos-webdriver-commands-for-safari-11-1-and-earlier)*

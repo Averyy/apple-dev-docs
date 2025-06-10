@@ -32,6 +32,7 @@ protocol NSEditor : NSObjectProtocol
 - [NSObjectController](nsobjectcontroller.md)
 - [NSPageController](nspagecontroller.md)
 - [NSSplitViewController](nssplitviewcontroller.md)
+- [NSSplitViewItemAccessoryViewController](nssplitviewitemaccessoryviewcontroller.md)
 - [NSTabViewController](nstabviewcontroller.md)
 - [NSTitlebarAccessoryViewController](nstitlebaraccessoryviewcontroller.md)
 - [NSTreeController](nstreecontroller.md)

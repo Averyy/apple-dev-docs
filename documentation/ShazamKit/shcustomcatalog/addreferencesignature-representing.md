@@ -1,6 +1,6 @@
 # addReferenceSignature(_:representing:)
 
-**Framework**: Shazamkit  
+**Framework**: ShazamKit  
 **Kind**: method
 
 Adds a reference signature and its associated metadata to a catalog.

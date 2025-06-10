@@ -26,8 +26,6 @@ A file coordinator calls this method when your object’s presented item is abou
 
 > ❗ **Important**:  If you implement this method, you must execute the block in the `completionHandler` parameter at the end of your implementation. The system waits for you to execute that block before allowing the other object to delete the file or directory. Therefore, failure to execute the block could stall threads in your application or other processes.
 
- If you implement this method, you must execute the block in the `completionHandler` parameter at the end of your implementation. The system waits for you to execute that block before allowing the other object to delete the file or directory. Therefore, failure to execute the block could stall threads in your application or other processes.
-
 ## Parameters
 
 - `completionHandler`: The   to call after updating your data structures. Pass   to the block’s   parameter if you were able to successfully prepare for the deletion of the item. Pass an error object if your object could not prepare itself properly.

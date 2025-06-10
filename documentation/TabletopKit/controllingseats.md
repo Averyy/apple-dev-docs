@@ -25,12 +25,16 @@ enum ControllingSeats
   The value is inherited from the parent. The table implicit value is considered to be `.any`.
 - [ControllingSeats.current](controllingseats/current.md)
   Lets only seats currently in turn interact with the equipment.
+### Enumeration Cases
+- [case restrictedCurrent([TableSeatIdentifier])](controllingseats/restrictedcurrent(_:).md)
+  Lets players in specific seats interact with the equipment if they are currently in turn.
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -33,6 +33,7 @@ The `CLMonitor.Record` contains a condition and most recent event that affects i
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

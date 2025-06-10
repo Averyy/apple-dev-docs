@@ -18,6 +18,7 @@ object GameCenterGroupGameCenterAchievementsLinkagesResponse
 
 ### Objects
 - [object GameCenterGroupGameCenterAchievementsLinkagesResponse.Data](gamecentergroupgamecenterachievementslinkagesresponse/data-data.dictionary.md)
+  The data structure that represents a group resource.
 
 ## See Also
 
@@ -41,6 +42,9 @@ object GameCenterGroupGameCenterAchievementsLinkagesResponse
   The request body you use to update a group.
 - [object GameCenterGroupsResponse](gamecentergroupsresponse.md)
   A response that contains one or more groups.
+- [object GameCenterGroupGameCenterActivitiesLinkagesResponse](gamecentergroupgamecenteractivitieslinkagesresponse.md)
+- [object GameCenterGroupGameCenterChallengesLinkagesResponse](gamecentergroupgamecenterchallengeslinkagesresponse.md)
+- [object GameCenterGroupGameCenterDetailsLinkagesResponse](gamecentergroupgamecenterdetailslinkagesresponse.md)
 
 
 ---

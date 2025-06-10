@@ -1,6 +1,6 @@
 # WKPreviewActionItem
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 The `WKPreviewActionItem` protocol provides access to the properties of a Preview action item.

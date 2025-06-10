@@ -69,6 +69,7 @@ enum Item
 - [Identifiable](../Swift/Identifiable.md)
 - [MusicItem](musicitem.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

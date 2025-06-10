@@ -1,6 +1,6 @@
 # Positioning and sizing windows
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Influence the initial geometry of windows that your app presents.
 
@@ -79,12 +79,16 @@ Although you can specify a volume’s size in points, it’s typically better to
 
 ## See Also
 
+- [Canyon Crosser: Building a volumetric hike-planning app](canyon-crosser-building-a-volumetric-hike-planning-app.md)
+  Create a hike planning app using SwiftUI and RealityKit.
 - [Hello World](world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
 - [Presenting windows and spaces](presenting-windows-and-spaces.md)
   Open and close the scenes that make up your app’s interface.
+- [Adopting best practices for persistent UI](adopting-best-practices-for-scene-restoration.md)
+  Create persistent and contextually relevant spatial experiences by managing scene restoration, customizing window behaviors, and surface snapping data.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/positioning-and-sizing-windows)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/positioning-and-sizing-windows)*

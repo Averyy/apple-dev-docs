@@ -1,6 +1,6 @@
 # ARConfiguration.WorldAlignment.gravityAndHeading
 
-**Framework**: Arkit  
+**Framework**: ARKit  
 **Kind**: case
 
 The coordinate system’s y-axis is parallel to gravity, its x- and z-axes are oriented to compass heading, and its origin is the initial position of the device.
@@ -38,4 +38,4 @@ Although this option fixes the  of the three coordinate axes to real-world direc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arconfiguration/worldalignment-swift.enum/gravityandheading)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arconfiguration/worldalignment-swift.enum/gravityandheading)*

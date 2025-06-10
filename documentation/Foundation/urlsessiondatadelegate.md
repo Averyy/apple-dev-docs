@@ -54,6 +54,7 @@ Your session delegate should also implement the methods in the [`URLSessionTaskD
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [URLSessionDelegate](urlsessiondelegate.md)
 - [URLSessionTaskDelegate](urlsessiontaskdelegate.md)
 

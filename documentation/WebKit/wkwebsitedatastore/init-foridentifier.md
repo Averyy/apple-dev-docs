@@ -1,6 +1,6 @@
 # init(forIdentifier:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Returns the persistent data store with the unique identifier you provide.

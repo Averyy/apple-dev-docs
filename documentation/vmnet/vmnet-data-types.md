@@ -1,6 +1,6 @@
 # vmnet Data Types
 
-**Framework**: Vmnet
+**Framework**: vmnet
 
 ## Topics
 

@@ -5,6 +5,13 @@
 
 Returns a new option set with the elements contained in this set or in the given set, but not in both.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift

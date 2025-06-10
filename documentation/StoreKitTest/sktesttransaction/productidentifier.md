@@ -1,6 +1,6 @@
 # productIdentifier
 
-**Framework**: Storekittest  
+**Framework**: StoreKit Test  
 **Kind**: property
 
 An identifier that uniquely represents a product, which you provide in the StoreKit configuration file.

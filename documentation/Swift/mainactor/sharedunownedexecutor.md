@@ -33,4 +33,4 @@ Returning different executors for different invocations of this computed propert
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/mainactor/sharedunownedexecutor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/mainactor/sharedunownedexecutor)*

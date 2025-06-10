@@ -23,7 +23,7 @@ struct Changes<Model> where Model : Identifiable
 - [let inserted: [Model]](financestore/changes/inserted.md)
   An array of model objects the framework inserted into the finance store.
 - [let newToken: FinanceStore.HistoryToken](financestore/changes/newtoken.md)
-  An updated history token.
+  An updated history token that you can use to query more historical data.
 - [let updated: [Model]](financestore/changes/updated.md)
   An array of model objects that the framework updated in the finance store.
 
@@ -31,6 +31,7 @@ struct Changes<Model> where Model : Identifiable
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

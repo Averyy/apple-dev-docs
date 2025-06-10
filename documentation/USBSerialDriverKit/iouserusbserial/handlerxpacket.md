@@ -1,6 +1,6 @@
 # handleRxPacket
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: method
 
 Processes the data received from the USB device.

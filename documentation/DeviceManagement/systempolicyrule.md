@@ -7,8 +7,6 @@ The payload you use to configure the system policy.
 
 **Availability**:
 - macOS 10.8+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,25 +18,27 @@ object SystemPolicyRule
 
 Specify `com.apple.systempolicy.rule` as the payload type.
 
+Specify `com.apple.systempolicy.rule` as the payload type.
+
 This payload allows control over Gatekeeper’s system policy rules. The keys and functionality are tightly related to the `spctl` command line tool. For more information, see the manual page for `spctl`.
 
-This payload must only exist in a device profile. If the payload is present in a user profile, an error is generated during installation and the profile installation fails.
+This payload can only exist in a device profile. If the payload is present in a user profile, an error occurs during installation and the profile installation fails.
 
 ##### Profile Availability
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | - |
-| Allow Manual Install | macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | macOS |
+| Device channel | macOS |
+| User channel | NA |
+| Allow manual install | macOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | macOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

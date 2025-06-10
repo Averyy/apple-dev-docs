@@ -1,6 +1,6 @@
 # keylineTint(_:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method
 
 Applies a subtle tint color to the surrounding border of a Live Activity that appears in the Dynamic Island.
@@ -8,7 +8,6 @@ Applies a subtle tint color to the surrounding border of a Live Activity that ap
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

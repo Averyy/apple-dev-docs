@@ -9,7 +9,7 @@
   The “past the end” position—that is, the position one greater than the last valid subscript argument.
 - [var first: Self.Element?](unsafebufferpointer/first.md)
   The first element of the collection.
-- [var indices: UnsafeBufferPointer<Element>.Indices](unsafebufferpointer/indices-swift.property.md)
+- [var indices: Range<Int>](unsafebufferpointer/indices-swift.property.md)
   The indices that are valid for subscripting the collection, in ascending order.
 - [var isEmpty: Bool](unsafebufferpointer/isempty.md)
   A Boolean value indicating whether the buffer is empty.

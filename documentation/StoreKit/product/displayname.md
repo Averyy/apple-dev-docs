@@ -1,6 +1,6 @@
 # displayName
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: property
 
 The localized display name of the product, if it exists.

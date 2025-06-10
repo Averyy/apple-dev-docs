@@ -1,6 +1,6 @@
 # cancellationHandler
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 A handler to be invoked by Xcode to indicate that the invocation has been canceled by the user.

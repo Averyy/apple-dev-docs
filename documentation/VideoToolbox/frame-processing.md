@@ -1,16 +1,18 @@
 # Frame processing
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
-An interface used to access a range of different video processing features.
+An interface for accessing a range of different video-processing features.
 
 #### Overview
 
-Each processor implementation is defined by a Configuration object, used to pass initialization and configuration parameters for the processor and a Parameter object which provides the parameters for each individual processing operation.
+A `Configuration` object defines each processor implementation by passing initialization and configuration parameters for the processor, and a `Parameter` object provides the parameters for each individual processing operation.
 
 ## Topics
 
 ### Frame processor
+- [Enhancing your app with machine learning-based video effects](enhancing-your-app-with-machine-learning-based-video-effects.md)
+  Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
 - [class VTFrameProcessor](vtframeprocessor.md)
   A class that creates a new frame processor for the configured video effect.
 - [class VTFrameProcessorFrame](vtframeprocessorframe.md)

@@ -58,6 +58,8 @@ This attachment doesn’t require your app to have the [`com.apple.vm.networking
   A network device that interacts directly with a physical network interface on the host computer.
 - [class VZNATNetworkDeviceAttachment](vznatnetworkdeviceattachment.md)
   A device that routes network requests through the host computer and performs network address translation on the resulting packets.
+- [class VZVmnetNetworkDeviceAttachment](vzvmnetnetworkdeviceattachment.md)
+  A network device attachment that allows a custom network topology.
 - [class VZNetworkDeviceAttachment](vznetworkdeviceattachment.md)
   The common behaviors for the network attachment points of your virtual machine.
 

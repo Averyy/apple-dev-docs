@@ -37,6 +37,7 @@ struct AsyncFlatMapSequence<Base, SegmentOfResult> where Base : AsyncSequence, S
 - [AsyncSequence](asyncsequence.md)
 - [Copyable](copyable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

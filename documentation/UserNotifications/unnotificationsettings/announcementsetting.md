@@ -1,6 +1,6 @@
 # announcementSetting
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The setting that indicates whether Siri can announce your app’s notifications.

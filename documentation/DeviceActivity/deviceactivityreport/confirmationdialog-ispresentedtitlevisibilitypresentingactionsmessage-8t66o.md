@@ -1,6 +1,6 @@
 # confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string key for the title.

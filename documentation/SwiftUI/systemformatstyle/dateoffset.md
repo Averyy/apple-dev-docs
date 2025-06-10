@@ -39,6 +39,7 @@ struct DateOffset
 - [FormatStyle](../Foundation/FormatStyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

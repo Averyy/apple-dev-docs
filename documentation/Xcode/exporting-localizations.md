@@ -16,8 +16,6 @@ In the Project navigator, select the project, then choose Product > Export Local
 
 > ❗ **Important**: To include all localizable text in your export, enable the [`Use Compiler to Extract Swift Strings`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/build-settings-reference#Use-Compiler-to-Extract-Swift-Strings) build setting for your project. This setting only impacts Swift strings. Objective-C string extraction works without any additional build settings.
 
-To include all localizable text in your export, enable the [`Use Compiler to Extract Swift Strings`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/build-settings-reference#Use-Compiler-to-Extract-Swift-Strings) build setting for your project. This setting only impacts Swift strings. Objective-C string extraction works without any additional build settings.
-
 If you generate screenshots when testing your localizations, provide context for localizers by clicking “Include screenshots” to include the localization-specific screenshots in the `Notes` folder of the exported files. To filter the screenshots, click Customize, deselect the screenshots you don’t want to include, and click Done.
 
 Xcode creates an Xcode Localization Catalog (a folder with a `.xcloc` file extension) containing the localizable resources for each language and region. You can open and edit this file in Xcode, or use any third-party tool that supports this file type. Xcode manages the localizable strings in your app for you as follows:

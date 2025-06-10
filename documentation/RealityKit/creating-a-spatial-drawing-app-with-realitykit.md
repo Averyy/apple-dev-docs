@@ -1,6 +1,6 @@
 # Creating a spatial drawing app with RealityKit
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
 
@@ -33,6 +33,8 @@ Because this sample app uses ARKit hand tracking on visionOS, drawing features a
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
+- [Presenting images in RealityKit](presenting-images-in-realitykit.md)
+  Create and display spatial scenes in RealityKit.
 - [Models and meshes](scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
 - [Materials, textures, and shaders](scene-content-materials-and-shaders.md)
@@ -51,4 +53,4 @@ Because this sample app uses ARKit hand tracking on visionOS, drawing features a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/creating-a-spatial-drawing-app-with-realitykit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/creating-a-spatial-drawing-app-with-realitykit)*

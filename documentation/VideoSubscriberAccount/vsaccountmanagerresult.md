@@ -1,6 +1,6 @@
 # VSAccountManagerResult
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: class
 
 An object that represents a request made for subscriber account information.

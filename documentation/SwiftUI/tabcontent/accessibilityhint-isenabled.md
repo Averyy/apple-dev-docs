@@ -18,7 +18,7 @@ Communicates to the user what happens after selecting the tab.
 
 ```swift
 nonisolated
-func accessibilityHint(_ hint: Text, isEnabled: Bool = true) -> some TabContent<Self.TabValue>
+func accessibilityHint(_ hint: LocalizedStringResource, isEnabled: Bool = true) -> some TabContent<Self.TabValue>
 ```
 
 #### Discussion

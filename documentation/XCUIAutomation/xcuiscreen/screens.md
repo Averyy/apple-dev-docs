@@ -1,6 +1,6 @@
 # screens
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The current device’s active screens.

@@ -1,6 +1,6 @@
 # capturesCursor
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that specifies whether the mouse cursor appears in the captured output.

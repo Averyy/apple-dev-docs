@@ -28,8 +28,6 @@ init(degrees: Double)
 
 - [init()](angle2d/init.md)
   Creates an angle.
-- [init(Angle)](angle2d/init(_:).md)
-  Creates an angle from a SwiftUI angle.
 - [init(radians: Double)](angle2d/init(radians:)-3zcwo.md)
   Creates an angle with the specified double-precision radians.
 - [init(radians: Double)](angle2d/init(radians:)-6s7o6.md)

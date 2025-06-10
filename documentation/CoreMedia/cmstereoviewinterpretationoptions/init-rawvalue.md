@@ -24,8 +24,6 @@ init(rawValue: UInt64)
 
 > ❗ **Important**: Use constants from [`CMStereoViewInterpretationOptions`](cmstereoviewinterpretationoptions.md) instead of creating a new instance with this method.
 
-Use constants from [`CMStereoViewInterpretationOptions`](cmstereoviewinterpretationoptions.md) instead of creating a new instance with this method.
-
 ## Parameters
 
 - `rawValue`: A string value.

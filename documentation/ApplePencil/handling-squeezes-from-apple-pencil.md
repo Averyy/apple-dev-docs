@@ -1,6 +1,6 @@
 # Handling squeezes from Apple Pencil
 
-**Framework**: Applepencil
+**Framework**: Apple Pencil
 
 Detect and respond to squeezes a person makes on Apple Pencil Pro.
 
@@ -37,4 +37,4 @@ The following code shows a snippet from a drawing app that provides custom drawi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePencil/handling-squeezes-from-apple-pencil)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepencil/handling-squeezes-from-apple-pencil)*

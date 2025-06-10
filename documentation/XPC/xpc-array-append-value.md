@@ -1,6 +1,6 @@
 # xpc_array_append_value(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Appends an object to an XPC array.

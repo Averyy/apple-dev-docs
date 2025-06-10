@@ -1,6 +1,6 @@
 # activate(for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to activate the tab, making it frontmost.

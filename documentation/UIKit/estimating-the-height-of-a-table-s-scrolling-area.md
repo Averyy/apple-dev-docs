@@ -10,8 +10,6 @@ Whenever possible, table views use height estimates for cells, headers, and foot
 
 > ❗ **Important**:  If your table view includes self-sizing cells, headers, or footers, you must provide estimated heights for those items.
 
- If your table view includes self-sizing cells, headers, or footers, you must provide estimated heights for those items.
-
 The table view provides default height estimates for table view items based on the standard header, footer, and row styles. If your table’s items are significantly shorter or taller than the default values, you can supply custom estimates by assigning values to your table’s [`estimatedRowHeight`](uitableview/estimatedrowheight.md), [`estimatedSectionHeaderHeight`](uitableview/estimatedsectionheaderheight.md), and [`estimatedSectionFooterHeight`](uitableview/estimatedsectionfooterheight.md) properties. If the height of individual items varies, provide custom estimates using the following methods of your delegate object:
 
 - [`tableView(_:estimatedHeightForRowAt:)`](uitableviewdelegate/tableview(_:estimatedheightforrowat:).md)

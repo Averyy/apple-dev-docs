@@ -34,4 +34,4 @@ This property will be implicitly accessed when work needs to be scheduled onto t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/mainactor/unownedexecutor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/mainactor/unownedexecutor)*

@@ -20,8 +20,6 @@ enum ENAuthorizationStatus
 
 > ❗ **Important**:  This enumeration is available in iOS 12.5, and in iOS 13.5 and later.
 
- This enumeration is available in iOS 12.5, and in iOS 13.5 and later.
-
 ## Topics
 
 ### Authorization States
@@ -44,6 +42,7 @@ enum ENAuthorizationStatus
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

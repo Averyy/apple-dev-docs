@@ -1,6 +1,6 @@
 # right
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: uid
 
 #### Overview

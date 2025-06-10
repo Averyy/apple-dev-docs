@@ -22,7 +22,7 @@ let AVPlayerInterstitialEventMonitorAssetListResponseStatusDidChangeErrorKey: St
 
 #### Discussion
 
-This key only exists in the notification’s [`userInfo`](https://developer.apple.com/documentation/foundation/notification/1779652-userinfo) dictionary when the status is [`AVPlayerInterstitialEventAssetListResponseStatus.unavailable`](avplayerinterstitialeventassetlistresponsestatus/unavailable.md). Use it to retrieve an error object that provides information about the failure to read the asset list.
+This key only exists in the notification’s [`userInfo`](https://developer.apple.com/documentation/Foundation/Notification/userInfo) dictionary when the status is [`AVPlayerInterstitialEventAssetListResponseStatus.unavailable`](avplayerinterstitialeventassetlistresponsestatus/unavailable.md). Use it to retrieve an error object that provides information about the failure to read the asset list.
 
 ## See Also
 

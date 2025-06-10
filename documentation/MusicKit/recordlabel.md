@@ -75,6 +75,7 @@ struct RecordLabel
 - [MusicItem](musicitem.md)
 - [MusicPropertyContainer](musicpropertycontainer.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

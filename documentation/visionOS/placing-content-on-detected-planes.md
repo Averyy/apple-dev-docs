@@ -1,6 +1,6 @@
 # Placing content on detected planes
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
 

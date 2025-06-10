@@ -1,6 +1,6 @@
 # ContactAccessButton
 
-**Framework**: Contactsui  
+**Framework**: Contacts UI  
 **Kind**: struct
 
 A SwiftUI button that you use to add to the set of contacts someone shares with your app.
@@ -43,9 +43,10 @@ To show a picker of all contacts and allow someone to add them to your app, with
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ContactsUI/contactaccessbutton)*
+*[View on Apple Developer](https://developer.apple.com/documentation/contactsui/contactaccessbutton)*

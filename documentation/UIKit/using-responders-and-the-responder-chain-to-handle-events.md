@@ -1,6 +1,6 @@
 # Using responders and the responder chain to handle events
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Learn how to handle events that propagate through your app.
 
@@ -63,4 +63,4 @@ Many UIKit classes already override this property and return specific objects, i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/using-responders-and-the-responder-chain-to-handle-events)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/using-responders-and-the-responder-chain-to-handle-events)*

@@ -1,6 +1,6 @@
 # Accessing provisioned secrets with identifiers
 
-**Framework**: Managedapp
+**Framework**: ManagedApp
 
 Specify the secrets your app requires for device management features, receive secrets from MDM servers and use secrets in your app.
 
@@ -167,4 +167,4 @@ let signature = SecKeyCreateSignature(privateKey, algorithm, message as CFData, 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ManagedApp/accessing-provisioned-secrets-with-identifiers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/managedapp/accessing-provisioned-secrets-with-identifiers)*

@@ -20,14 +20,6 @@ func shouldStorePreferenceForCurrentUser(to profile: TVAppProfileDescriptor) asy
 func shouldStorePreferenceForCurrentUser(to profile: TVAppProfileDescriptor) async -> Bool
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func shouldStorePreferenceForCurrentUser(to profile: TVAppProfileDescriptor) async -> Bool
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 Use this method to confirm that the profile chosen by the user should become their new preferred profile. The method prompts the user to confirm the profile change and calls the completion handler with the results. Call this method only once for each user.
 
 ## Parameters

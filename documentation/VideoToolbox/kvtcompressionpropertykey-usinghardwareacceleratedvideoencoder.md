@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_UsingHardwareAcceleratedVideoEncoder
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A Boolean value indicating whether a hardware-accelerated video encoder is used.

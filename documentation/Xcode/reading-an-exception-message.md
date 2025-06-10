@@ -6,7 +6,7 @@ Understand and address the common reasons apps crash.
 
 #### Overview
 
-Frameworks detect common errors associated with using their APIs and raise exceptions when they occur. If your app doesn’t handle those errors, for example by calling [`NSSetUncaughtExceptionHandler(_:)`](https://developer.apple.com/documentation/foundation/1409609-nssetuncaughtexceptionhandler) to install an exception handler, then it crashes. The operating system records a crash report that contains information about the app’s state at the time of the crash.
+Frameworks detect common errors associated with using their APIs and raise exceptions when they occur. If your app doesn’t handle those errors, for example by calling [`NSSetUncaughtExceptionHandler(_:)`](https://developer.apple.com/documentation/Foundation/NSSetUncaughtExceptionHandler(_:)) to install an exception handler, then it crashes. The operating system records a crash report that contains information about the app’s state at the time of the crash.
 
 The following sections each describe common mistakes in using framework APIs and the exception messages that appear in your app’s crash reports when it encounters these cases. In each case, the exception thread trace in the crash report shows the location in your code where your app crashed. For more information, see [`Analyzing a crash report`](analyzing-a-crash-report.md).
 
@@ -22,7 +22,7 @@ If you need to add an object to a `Foundation` or `CoreFoundation` collection cl
 
 ##### Address a Crash Caused By Using a Null Object in Apis That Require Non Null Parameters
 
-Many APIs expect their parameters to be non-`nil` and throw exceptions if they receive `nil`. For example, [`addAttribute(_:value:range:)`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/1417080-addattribute) requires both its `name` and `value` to be non-`nil`. If your app adds a `nil` attribute to an attributed string, it crashes, and an exception message like this example is included in the crash report:
+Many APIs expect their parameters to be non-`nil` and throw exceptions if they receive `nil`. For example, [`addAttribute(_:value:range:)`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString/addAttribute(_:value:range:)) requires both its `name` and `value` to be non-`nil`. If your app adds a `nil` attribute to an attributed string, it crashes, and an exception message like this example is included in the crash report:
 
 ```None
 *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: 'NSConcreteMutableAttributedString addAttribute:value:range:: nil value'
@@ -34,7 +34,7 @@ APIs that require non-`nil` parameters include nullability designations, and you
 
 ##### Address a Crash Caused By Sending an Unrecognized Selector to a Class or Object
 
-You often send messages to Objective-C classes and objects by writing the method name into your source code; for example, you send [`addAttribute(_:value:range:)`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/1417080-addattribute) by typing `[myAttributedString addAttribute:aName value:aValue range:aRange];`. There are situations where you construct a method name — also known as a  — dynamically and send that to the class or object. A common example is setting the name of a controller method as an action in a storyboard file. If the object or class receiving the message doesn’t respond to the selector and can’t forward it to another object, your app crashes and an exception message like this example is included in the crash report:
+You often send messages to Objective-C classes and objects by writing the method name into your source code; for example, you send [`addAttribute(_:value:range:)`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString/addAttribute(_:value:range:)) by typing `[myAttributedString addAttribute:aName value:aValue range:aRange];`. There are situations where you construct a method name — also known as a  — dynamically and send that to the class or object. A common example is setting the name of a controller method as an action in a storyboard file. If the object or class receiving the message doesn’t respond to the selector and can’t forward it to another object, your app crashes and an exception message like this example is included in the crash report:
 
 ```None
 *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFBoolean insertObject:atIndex:]: unrecognized selector sent to instance 0x1e75db6c0'
@@ -58,7 +58,7 @@ If you need to modify a collection that you share with other code, the source of
 
 APIs that take a parameter indicating the position of an object or other data in an ordered collection or a sequence raise an exception if that position is outside the containing collection. APIs that take a parameter indicating a range of values in a sequence raise an exception if either the start or end of the range is outside the containing collection.
 
-> **Note**:  The special value [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound) isn’t meant to be used as a position in a collection or sequence and will cause an out-of-range exception if you use it this way in your code.
+> **Note**:  The special value [`NSNotFound`](https://developer.apple.com/documentation/Foundation/NSNotFound-4qp9h) isn’t meant to be used as a position in a collection or sequence and will cause an out-of-range exception if you use it this way in your code.
 
 If your app tries to access the content of a collection or sequence outside of its range, it crashes and an exception message like this example is included in the crash report:
 
@@ -76,7 +76,7 @@ Check that your app is using an up-to-date value for the collection’s size, an
 
 ##### Address a Crash Caused By Requesting a Range That Overflows the Integer Type
 
-The [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange) structure uses the same type ([`NSUInteger`](https://developer.apple.com/documentation/ObjectiveC/NSUInteger)) for both its location and its length, which is also the type that collection classes use to represent indexes into the collection. It’s possible to create a range where the end of the range is beyond the values that can be represented as indexes into the collection that’s using the range. When a collection or sequence detects this case, your app crashes and an exception message like this example is included in the crash report:
+The [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange-c.struct) structure uses the same type ([`NSUInteger`](https://developer.apple.com/documentation/ObjectiveC/NSUInteger)) for both its location and its length, which is also the type that collection classes use to represent indexes into the collection. It’s possible to create a range where the end of the range is beyond the values that can be represented as indexes into the collection that’s using the range. When a collection or sequence detects this case, your app crashes and an exception message like this example is included in the crash report:
 
 ```None
 *** Terminating app due to uncaught exception 'NSRangeException', reason: '*** -[NSConcreteMutableData subdataWithRange:]: range {20, 18446744073709551605} causes integer overflow'
@@ -86,7 +86,7 @@ Check that your app is using an up-to-date value for the collection’s size, an
 
 ##### Address a Crash Caused By Incorrectly Initializing a Dictionary
 
-When you initialize an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) or [`NSMutableDictionary`](https://developer.apple.com/documentation/Foundation/NSMutableDictionary) using the initializer method [`initWithObjects:forKeys:`](https://developer.apple.com/documentation/foundation/nsdictionary/1410010-initwithobjects), you have to supply an equal number of keys and objects. If you supply arrays with different lengths, your app crashes and an exception message like this example is included in the crash report:
+When you initialize an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) or [`NSMutableDictionary`](https://developer.apple.com/documentation/Foundation/NSMutableDictionary) using the initializer method [`init(objects:forKeys:)`](https://developer.apple.com/documentation/Foundation/NSDictionary/init(objects:forKeys:)), you have to supply an equal number of keys and objects. If you supply arrays with different lengths, your app crashes and an exception message like this example is included in the crash report:
 
 ```None
 *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[NSDictionary initWithObjects:forKeys:]: count of objects (1) differs from count of keys (2)'
@@ -116,4 +116,4 @@ Replace the object with one that conforms to `NSCoding`, or add `NSCoding` confo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/reading-an-exception-message)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/reading-an-exception-message)*

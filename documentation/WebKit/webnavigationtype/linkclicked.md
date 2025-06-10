@@ -1,6 +1,6 @@
 # WebNavigationType.linkClicked
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A link (an `href`) was clicked.

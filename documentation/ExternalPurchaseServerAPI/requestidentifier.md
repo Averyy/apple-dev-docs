@@ -16,8 +16,8 @@ uuid requestIdentifier
 
 ## Mentions
 
-- [Reporting unrecognized tokens and tokens without transactions](reportwithouttransactions.md)
 - [Reporting corrections](reportcorrections.md)
+- [Reporting unrecognized tokens and tokens without transactions](reportwithouttransactions.md)
 
 #### Discussion
 

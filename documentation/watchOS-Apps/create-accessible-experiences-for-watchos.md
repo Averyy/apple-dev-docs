@@ -1,6 +1,6 @@
 # Create accessible experiences for watchOS
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Learn how to make your watchOS app more accessible.
 
@@ -17,4 +17,4 @@ Learn how to make your watchOS app more accessible.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/create-accessible-experiences-for-watchos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/create-accessible-experiences-for-watchos)*

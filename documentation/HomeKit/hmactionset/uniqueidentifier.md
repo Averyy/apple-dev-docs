@@ -23,7 +23,7 @@ var uniqueIdentifier: UUID { get }
 
 - [var name: String](hmactionset/name.md)
   The name of the action set.
-- [func updateName(String, completionHandler: HMErrorBlock)](hmactionset/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmactionset/updatename(_:completionhandler:).md)
   Updates the name of the action set.
 
 

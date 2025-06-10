@@ -1,6 +1,6 @@
 # enqueue(_:completionHandler:)
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: method
 
 Submits a request for subscriber account information.

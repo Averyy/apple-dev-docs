@@ -12,7 +12,7 @@ Designing with accessibility in mind is a foundational principle when creating a
 
 Add accessibility labels for each SwiftUI view you use as needed and make sure your accessibility labels fit the widget or Live Activity content. To review API that allows you to add accessible descriptions to SwiftUI views, see [`Accessible descriptions`](https://developer.apple.com/documentation/SwiftUI/Accessible-descriptions).
 
-The example below shows how the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations) app uses the [`accessibilityLabel(_:)`](https://developer.apple.com/documentation/SwiftUI/View/accessibilityLabel(_:)-1d7jv) modifier to add an accessibility labels for minimal, compact leading, and compact trailing presentations.
+The example below shows how the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations) app uses the [`accessibilityLabel(_:)`](https://developer.apple.com/documentation/SwiftUI/View/accessibilityLabel(_:)-1d7jv) modifier to add accessibility labels for minimal, compact leading, and compact trailing presentations.
 
 ```swift
 import SwiftUI
@@ -62,18 +62,10 @@ If you provide a content description for an image you update while a Live Activi
 
 ## See Also
 
-- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
-  Display your app’s data in the Dynamic Island and on the Lock Screen and offer quick interactions.
-- [Starting and updating Live Activities with ActivityKit push notifications](starting-and-updating-live-activities-with-activitykit-push-notifications.md)
-  Use ActivityKit to receive push tokens and to remotely start, update, and end your Live Activity with ActivityKit notifications.
-- [class Activity](activity.md)
-  The object you use to start, update, and end a Live Activity.
-- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
-  Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [NSSupportsLiveActivities](../BundleResources/Information-Property-List/NSSupportsLiveActivities.md)
-  A Boolean value that indicates whether an app supports Live Activities.
-- [NSSupportsLiveActivitiesFrequentUpdates](../BundleResources/Information-Property-List/NSSupportsLiveActivitiesFrequentUpdates.md)
-  A Boolean value that indicates whether an app can update its Live Activities frequently.
+- [Creating custom views for Live Activities](creating-custom-views-for-live-activities.md)
+  Create reusable custom views and layouts that support each Live Activity presentation.
+- [Launching your app from a Live Activity](launching-your-app-from-a-live-activity.md)
+  Use deep links to enable people to open your app’s scene that matches the data of you Live Activity.
 
 
 ---

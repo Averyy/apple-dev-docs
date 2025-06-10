@@ -17,7 +17,8 @@ Creates a control, consisting of a URL and a label, used to navigate to the give
 ## Declaration
 
 ```swift
-init(destination: URL, @ViewBuilder label: () -> Label)
+@MainActor
+@preconcurrency init(destination: URL, @ViewBuilder label: () -> Label)
 ```
 
 ## Parameters

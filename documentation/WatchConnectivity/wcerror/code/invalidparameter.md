@@ -1,6 +1,6 @@
 # WCError.Code.invalidParameter
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 An error indicating that a parameter is invalid.

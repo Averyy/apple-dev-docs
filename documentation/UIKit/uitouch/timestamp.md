@@ -21,7 +21,7 @@ var timestamp: TimeInterval { get }
 
 #### Discussion
 
-The value of this property is the time, in seconds since system startup, that the touch originated or was last changed. You can store the value of this property and compare it to the timestamp in subsequent [`UITouch`](uitouch.md) objects to determine the duration of the touch and, if it is being swiped, the speed of movement. For a definition of the time since system startup, see the description of the [`systemUptime`](https://developer.apple.com/documentation/foundation/processinfo/1414553-systemuptime) method of the [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) class.
+The value of this property is the time, in seconds since system startup, that the touch originated or was last changed. You can store the value of this property and compare it to the timestamp in subsequent [`UITouch`](uitouch.md) objects to determine the duration of the touch and, if it is being swiped, the speed of movement. For a definition of the time since system startup, see the description of the [`systemUptime`](https://developer.apple.com/documentation/Foundation/ProcessInfo/systemUptime) method of the [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) class.
 
 ## See Also
 

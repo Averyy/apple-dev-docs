@@ -1,6 +1,6 @@
 # createPDF(configuration:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Generates PDF data from the web view’s contents asynchronously.

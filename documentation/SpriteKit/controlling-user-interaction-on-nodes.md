@@ -1,6 +1,6 @@
 # Controlling User Interaction on Nodes
 
-**Framework**: Spritekit
+**Framework**: SpriteKit
 
 Enable your node to respond to user input, like touches or mouse clicks.
 
@@ -186,4 +186,4 @@ In this case, only touches or mouse events over the red spots shown in the figur
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/controlling-user-interaction-on-nodes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/controlling-user-interaction-on-nodes)*

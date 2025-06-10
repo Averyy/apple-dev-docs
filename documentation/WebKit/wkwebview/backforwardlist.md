@@ -1,6 +1,6 @@
 # backForwardList
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The web view’s back-forward list.

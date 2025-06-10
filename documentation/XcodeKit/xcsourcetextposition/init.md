@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: init
 
 Creates a new source text position at the beginning of the source text.

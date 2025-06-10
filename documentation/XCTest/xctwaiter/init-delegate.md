@@ -1,6 +1,6 @@
 # init(delegate:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates a new waiter with the specified delegate.

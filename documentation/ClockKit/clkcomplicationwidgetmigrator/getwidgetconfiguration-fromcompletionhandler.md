@@ -50,8 +50,6 @@ func getWidgetConfiguration(from complicationDescriptor: CLKComplicationDescript
 
 > ❗ **Important**:  After you add a WidgetKit extension to your project, the system tries to use it to generate complications for your watchOS app. As soon as your WidgetKit extension begins providing widget-based complications, the system disables your app’s ClockKit complications. It no longer wakes your app to call your [`CLKComplicationDataSource`](clkcomplicationdatasource.md) object’s methods to request timeline entries. However, the system may still wake your data source to call [`getWidgetConfiguration(from:completionHandler:)`](clkcomplicationwidgetmigrator/getwidgetconfiguration(from:completionhandler:).md) while migrating complications from ClockKit to WidgetKit.
 
- After you add a WidgetKit extension to your project, the system tries to use it to generate complications for your watchOS app. As soon as your WidgetKit extension begins providing widget-based complications, the system disables your app’s ClockKit complications. It no longer wakes your app to call your [`CLKComplicationDataSource`](clkcomplicationdatasource.md) object’s methods to request timeline entries. However, the system may still wake your data source to call [`getWidgetConfiguration(from:completionHandler:)`](clkcomplicationwidgetmigrator/getwidgetconfiguration(from:completionhandler:).md) while migrating complications from ClockKit to WidgetKit.
-
 For more information, see [`Migrating ClockKit complications to WidgetKit`](https://developer.apple.com/documentation/WidgetKit/Converting-A-ClockKit-App).
 
 ## Parameters

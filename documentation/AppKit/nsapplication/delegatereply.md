@@ -38,6 +38,7 @@ These constants are used by the [`reply(toOpenOrPrint:)`](nsapplication/reply(to
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

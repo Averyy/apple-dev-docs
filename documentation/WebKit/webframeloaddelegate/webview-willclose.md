@@ -1,6 +1,6 @@
 # webView(_:willClose:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when a frame will be closed.

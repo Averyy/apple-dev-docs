@@ -1,6 +1,6 @@
 # wrappedValue
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 The underlying value referenced by the state variable.
@@ -34,4 +34,4 @@ This works identically to `State.wrappedValue`.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/scenestorage/wrappedvalue)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/scenestorage/wrappedvalue)*

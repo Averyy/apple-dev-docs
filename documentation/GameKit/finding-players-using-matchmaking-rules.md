@@ -132,8 +132,6 @@ POST /v1/gameCenterMatchmakingQueues
 
 > ❗ **Important**:  If you have previous versions of your game that don’t use matchmaking rules, you can apply the same rules to match requests from those versions. Set the `classicMatchmakingBundleIds` field to the bundle IDs of the versions that you want to include when Game Center applies the rules. Otherwise, Game Center doesn’t match players running previous versions with current versions that specify a queue name. To create rules that include players running previous versions, see [`Creating matchmaking rules for backward compatibility`](creating-matchmaking-rules-for-backward-compatibility.md).
 
- If you have previous versions of your game that don’t use matchmaking rules, you can apply the same rules to match requests from those versions. Set the `classicMatchmakingBundleIds` field to the bundle IDs of the versions that you want to include when Game Center applies the rules. Otherwise, Game Center doesn’t match players running previous versions with current versions that specify a queue name. To create rules that include players running previous versions, see [`Creating matchmaking rules for backward compatibility`](creating-matchmaking-rules-for-backward-compatibility.md).
-
 ##### Create Match Requests That Use the Matchmaking Rules
 
 In your code, create a [`GKMatchRequest`](gkmatchrequest.md) object and set the parameters of the game.

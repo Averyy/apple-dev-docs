@@ -7,6 +7,7 @@ Prevents find and replace operations in a text editor.
 
 **Availability**:
 - iOS 16.0+
+- macOS 26.0+ (Beta)
 
 ## Declaration
 

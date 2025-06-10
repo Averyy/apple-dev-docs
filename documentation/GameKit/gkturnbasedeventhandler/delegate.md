@@ -18,7 +18,7 @@ weak var delegate: (any GKTurnBasedEventHandlerDelegate & NSObjectProtocol)? { g
 
 #### Discussion
 
-If your game implements turn-based matches, it should set the delegate immediately after the local player is successfully authenticated. You want to set the delegate immediately because your game may have been launched specifically to handle a turn-based match event.
+If your game implements turn-based matches, it should set the delegate immediately after the local player is successfully initialized. You want to set the delegate immediately because your game may have been launched specifically to handle a turn-based match event.
 
 
 ---

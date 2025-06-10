@@ -43,4 +43,4 @@ Before you run the sample code project in Xcode, ensure you’re using an iOS de
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/detecting-human-body-poses-in-3d-with-vision)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/detecting-human-body-poses-in-3d-with-vision)*

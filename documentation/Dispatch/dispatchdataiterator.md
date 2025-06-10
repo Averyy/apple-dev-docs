@@ -30,6 +30,7 @@ struct DispatchDataIterator
 ### Conforms To
 - [IteratorProtocol](../Swift/IteratorProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

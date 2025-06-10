@@ -21,8 +21,6 @@ Suspends the execution of the receiver only if the receiver is being executed in
 
 > ❗ **Important**:  The script command handler that is being executed when this method is invoked must return before the subsequent invocation of [`resumeExecution(withResult:)`](nsscriptcommand/resumeexecution(withresult:).md). That is, it is not valid to suspend a command’s execution and then resume it immediately.
 
- The script command handler that is being executed when this method is invoked must return before the subsequent invocation of [`resumeExecution(withResult:)`](nsscriptcommand/resumeexecution(withresult:).md). That is, it is not valid to suspend a command’s execution and then resume it immediately.
-
 Another command can execute while a command is suspended.
 
 ## See Also

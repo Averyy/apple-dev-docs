@@ -1,6 +1,6 @@
 # DownloadLinks
 
-**Framework**: Accountdatatransfer  
+**Framework**: Account Data Transfer  
 **Kind**: dictionary
 
 An object that contains URLs to download someone’s account data.
@@ -39,4 +39,4 @@ The URLs you get from the `assetInfo` property are valid for 15 minutes after yo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AccountDataTransfer/downloadlinks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/accountdatatransfer/downloadlinks)*

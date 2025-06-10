@@ -1,6 +1,6 @@
 # init(screenshot:quality:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an attachment containing a representation of the provided screenshot at the requested image quality.

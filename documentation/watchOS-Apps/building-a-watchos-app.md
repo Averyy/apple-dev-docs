@@ -1,6 +1,6 @@
 # Building a watchOS app
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Set up your app’s life cycle and create its user interface with SwiftUI.
 

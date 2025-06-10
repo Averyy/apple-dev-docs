@@ -1,12 +1,12 @@
 # Animating data updates in widgets and Live Activities
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Use SwiftUI animations to indicate data updates in your widgets and Live Activities.
 
 #### Overview
 
-Animations bring your widgets and Live Activities to life and alert a person when new information is available. Starting with iOS 17, iPadOS 17, and macOS 14, widgets and Live Activities animate data updates with default animations or SwiftUI animations you choose, bringing a person’s attention to updated data. In earlier OS versions, widgets don’t animate, and Live Activities only use a subset of SwiftUI transitions and animations.
+Animations bring your widgets and Live Activities to life and alert a person when new information is available. Widgets and Live Activities animate data updates with default animations or SwiftUI animations you choose, bringing a person’s attention to updated data. In earlier OS versions, widgets don’t animate, and Live Activities only use a subset of SwiftUI transitions and animations.
 
 > **Note**: Animations in widgets and Live Activities have a maximum duration of two seconds.
 
@@ -96,4 +96,4 @@ If a content update changes many views in your widget or Live Activity, consider
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/animating-data-updates-in-widgets-and-live-activities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/animating-data-updates-in-widgets-and-live-activities)*

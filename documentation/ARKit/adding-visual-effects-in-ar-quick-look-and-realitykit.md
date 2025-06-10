@@ -1,6 +1,6 @@
 # Adding Visual Effects in AR Quick Look and RealityKit
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Balance the appearance and performance of your AR experiences with modeling strategies.
 
@@ -66,8 +66,6 @@ When developing your model for optimal performance, begin with a conservative co
   Display a model or scene that the user can move, scale, and share with others.
 - [Adding an Apple Pay Button or a Custom Action in AR Quick Look](adding-an-apple-pay-button-or-a-custom-action-in-ar-quick-look.md)
   Provide a banner that users can tap to make a purchase or perform a custom action in an AR experience.
-- [class ARQuickLookPreviewItem](arquicklookpreviewitem.md)
-  An object for customizing the AR Quick Look experience.
 - [USDZ schemas for AR](../RealityKit/usdz-schemas-for-ar.md)
   Add augmented reality functionality to your 3D content using USDZ schemas.
 - [Specifying a lighting environment in AR Quick Look](specifying-a-lighting-environment-in-ar-quick-look.md)
@@ -76,4 +74,4 @@ When developing your model for optimal performance, begin with a conservative co
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/adding-visual-effects-in-ar-quick-look-and-realitykit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/adding-visual-effects-in-ar-quick-look-and-realitykit)*

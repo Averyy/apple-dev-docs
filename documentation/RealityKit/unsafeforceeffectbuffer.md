@@ -10,6 +10,7 @@ Provides access to physics body parameters from the effect’s update function o
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -36,11 +37,6 @@ This struct is a transient buffer view of underlying data, and is only available
 ### Subscripts
 - [subscript(Int) -> T](unsafeforceeffectbuffer/subscript(_:).md)
   Returns an element by index.
-### Type Aliases
-- [UnsafeForceEffectBuffer.Element](unsafeforceeffectbuffer/element.md)
-  A type representing the sequence’s elements.
-### Default Implementations
-- [Sequence Implementations](unsafeforceeffectbuffer/sequence-implementations.md)
 
 ## Relationships
 

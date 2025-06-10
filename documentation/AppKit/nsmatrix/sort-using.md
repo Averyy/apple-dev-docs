@@ -25,7 +25,7 @@ The comparator message is sent to each object in the matrix and has as its singl
 
 ## See Also
 
-- [func sort(using: Selector)](../foundation/nsmutablearray/1412273-sort.md)
+- [func sort(using comparator: Selector)](../Foundation/NSMutableArray/sort(using:)-537vs.md)
   Sorts the receiver in ascending order, as determined by the comparison method specified by a given selector.
 - [func addColumn()](nsmatrix/addcolumn.md)
   Adds a new column of cells to the right of the last column.

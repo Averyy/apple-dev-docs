@@ -22,6 +22,7 @@ object SubscriptionAvailability
 
 - [object SubscriptionAvailabilityCreateRequest](subscriptionavailabilitycreaterequest.md)
 - [object SubscriptionAvailabilityResponse](subscriptionavailabilityresponse.md)
+- [object SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse](subscriptionavailabilityavailableterritorieslinkagesresponse.md)
 
 
 ---

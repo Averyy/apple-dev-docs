@@ -10,6 +10,7 @@ Initializes and runs the widget.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
+- visionOS 1.0+
 - watchOS 9.0+
 
 ## Declaration

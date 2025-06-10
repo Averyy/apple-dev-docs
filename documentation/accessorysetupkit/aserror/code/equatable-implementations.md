@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](aserror/code/!=(_:_:).md)
+- [static func != (Self, Self) -> Bool](aserror/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 
 

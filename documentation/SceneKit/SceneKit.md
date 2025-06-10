@@ -1,6 +1,6 @@
 # SceneKit
 
-**Framework**: Scenekit  
+**Framework**: SceneKit  
 **Kind**: module
 
 Create 3D games and add 3D content to apps using high-level scene descriptions, and easily add animations, physics simulation, particle effects, and realistic physically based rendering.
@@ -27,6 +27,8 @@ SceneKit combines a high-performance rendering engine with a descriptive API for
   A container for the node hierarchy and global properties that together form a displayable 3D scene.
 - [class SCNView](scnview.md)
   A view for displaying 3D SceneKit content.
+- [struct SceneView](sceneview.md)
+  A SwiftUI view for displaying 3D SceneKit content.
 ### Scene Structure
 - [Organizing a Scene with Nodes](organizing-a-scene-with-nodes.md)
   Use nodes to define the structure of a scene.
@@ -115,9 +117,6 @@ SceneKit combines a high-performance rendering engine with a descriptive API for
 - [SceneKit Enumerations](scenekit-enumerations.md)
 - [SceneKit Constants](scenekit-constants.md)
   Constants used throughout the SceneKit framework.
-### Structures
-- [struct SceneView](sceneview.md)
-  A SwiftUI view for displaying 3D SceneKit content.
 
 
 ---

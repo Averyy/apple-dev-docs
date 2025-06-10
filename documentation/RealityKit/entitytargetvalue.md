@@ -47,10 +47,6 @@ DragGesture(coordinateSpace: .global).targetedToEntity().updating($state) { stat
   Unproject `point` from a 2D coordinate space into 3D world coordinates.
 - [func unproject(KeyPath<Value, CGPoint>, to: some RealityCoordinateSpace) -> SIMD3<Float>?](entitytargetvalue/unproject(_:to:).md)
   Unproject a 2D point from the gesture value into 3D world coordinates.
-### Default Implementations
-- [Equatable Implementations](entitytargetvalue/equatable-implementations.md)
-- [RealityCoordinateSpaceConverting Implementations](entitytargetvalue/realitycoordinatespaceconverting-implementations.md)
-- [RealityCoordinateSpaceProjecting Implementations](entitytargetvalue/realitycoordinatespaceprojecting-implementations.md)
 
 ## Relationships
 
@@ -66,6 +62,9 @@ DragGesture(coordinateSpace: .global).targetedToEntity().updating($state) { stat
   Build a RealityKit component to support standard visionOS gestures on any entity.
 - [struct InputTargetComponent](inputtargetcomponent.md)
   A component that gives an entity the ability to receive system input.
+- [struct ManipulationComponent](manipulationcomponent.md)
+  A component that adds fluid and immersive interactive behaviors and effects.
+- [struct GestureComponent](gesturecomponent.md)
 
 
 ---

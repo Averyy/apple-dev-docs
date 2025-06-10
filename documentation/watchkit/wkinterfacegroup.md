@@ -1,6 +1,6 @@
 # WKInterfaceGroup
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A container for one or more interface objects.

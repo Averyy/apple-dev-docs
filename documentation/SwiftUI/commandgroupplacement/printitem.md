@@ -30,7 +30,7 @@ By default, this group includes the following commands in macOS:
 - [static let importExport: CommandGroupPlacement](commandgroupplacement/importexport.md)
   Placement for commands that relate to importing and exporting data using formats that the app doesn’t natively support.
 - [static let newItem: CommandGroupPlacement](commandgroupplacement/newitem.md)
-  Placement for commands that create and open different kinds of documents.
+  Placement for commands that create different kinds of documents.
 - [static let saveItem: CommandGroupPlacement](commandgroupplacement/saveitem.md)
   Placement for commands that save open documents and close windows.
 

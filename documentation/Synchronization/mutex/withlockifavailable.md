@@ -42,8 +42,6 @@ return try body(&value)
 
 > ⚠️ **Warning**: Recursive calls to `withLockIfAvailable` within the closure parameter has behavior that is platform dependent. Some platforms may choose to panic the process, deadlock, or leave this behavior unspecified. This will never reacquire the lock however.
 
-Recursive calls to `withLockIfAvailable` within the closure parameter has behavior that is platform dependent. Some platforms may choose to panic the process, deadlock, or leave this behavior unspecified. This will never reacquire the lock however.
-
 ## Parameters
 
 - `body`: A closure with a parameter of    that has exclusive access to the value being stored within   this mutex. This closure is considered the critical section   as it will only be executed if the calling thread acquires   the lock.

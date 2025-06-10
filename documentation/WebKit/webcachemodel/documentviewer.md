@@ -1,6 +1,6 @@
 # WebCacheModel.documentViewer
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Releases resources when they are no longer referenced and caches remote resources on disk. This model is appropriate for displaying a static document with no navigation user interface. This is the most memory-efficient model.

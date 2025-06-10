@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_MaxFrameDelayCount
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The maximum number of frames that a compressor is allowed to hold before it must output a compressed frame.

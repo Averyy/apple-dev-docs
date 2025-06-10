@@ -1,6 +1,6 @@
 # prefetchStorage(with:imageDescriptorList:)
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: clm
 
 A method that helps the framework decide which allocations to make ahead of time.

@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to clear a restrictions passcode.
+The command to clear the restrictions password and the restrictions on a device.
 
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

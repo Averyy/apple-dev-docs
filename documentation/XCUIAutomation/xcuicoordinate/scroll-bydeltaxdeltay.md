@@ -1,6 +1,6 @@
 # scroll(byDeltaX:deltaY:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Scrolls the view by the number of x and y pixels you specify.

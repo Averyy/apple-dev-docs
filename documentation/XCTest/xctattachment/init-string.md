@@ -1,6 +1,6 @@
 # init(string:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an attachment containing the provided string.

@@ -1,6 +1,6 @@
 # supportedAttributes(forRecordType:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Returns an array of attribute types supported by the node’s records.

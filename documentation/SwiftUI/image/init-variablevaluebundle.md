@@ -1,6 +1,6 @@
 # init(_:variableValue:bundle:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: init
 
 Creates a labeled image that you can use as content for controls, with a variable value.

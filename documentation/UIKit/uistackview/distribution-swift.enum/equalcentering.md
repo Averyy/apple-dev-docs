@@ -1,6 +1,6 @@
 # UIStackView.Distribution.equalCentering
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: case
 
 A layout that attempts to position the arranged views with equal center-to-center spacing along the stack view’s axis, while maintaining the spacing property’s distance between views.

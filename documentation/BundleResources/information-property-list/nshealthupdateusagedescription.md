@@ -14,8 +14,6 @@ A message to the user that explains why the app requested permission to save sam
 
 > ❗ **Important**:  This key is required if your app uses APIs that update the user’s health data.
 
- This key is required if your app uses APIs that update the user’s health data.
-
 ## See Also
 
 - [Setting up HealthKit](../HealthKit/setting-up-healthkit.md)

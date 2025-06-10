@@ -1,6 +1,6 @@
 # last(where:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns the last element of the sequence that satisfies the given predicate.

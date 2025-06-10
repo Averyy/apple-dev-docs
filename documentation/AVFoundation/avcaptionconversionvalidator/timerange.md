@@ -21,7 +21,7 @@ var timeRange: CMTimeRange { get }
 
 If captions need to appear only after the start of the associated media, the start time of this time range can be less than the start time of the first caption’s time range.
 
-If the media duration is unknown, this time range can have a duration of [`positiveInfinity`](https://developer.apple.com/documentation/coremedia/cmtime/1400789-positiveinfinity). However, to comprehensively validate the conversion of closed captions, set the duration of the time range to the duration of the associated media.
+If the media duration is unknown, this time range can have a duration of [`positiveInfinity`](https://developer.apple.com/documentation/CoreMedia/CMTime/positiveInfinity). However, to comprehensively validate the conversion of closed captions, set the duration of the time range to the duration of the associated media.
 
 ## See Also
 

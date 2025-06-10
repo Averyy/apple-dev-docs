@@ -20,7 +20,7 @@ func addTypeIdentifiers(forAccepting aClass: any NSItemProviderReading.Type)
 
 #### Discussion
 
-This method uses the property [`readableTypeIdentifiersForItemProvider`](https://developer.apple.com/documentation/foundation/nsitemproviderreading/2888305-readabletypeidentifiersforitempr), implemented on `aClass`, to determine the uniform type identifiers (UTIs) to add to the paste configuration’s [`acceptableTypeIdentifiers`](uipasteconfiguration/acceptabletypeidentifiers.md) array.
+This method uses the property [`readableTypeIdentifiersForItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading/readableTypeIdentifiersForItemProvider), implemented on `aClass`, to determine the uniform type identifiers (UTIs) to add to the paste configuration’s [`acceptableTypeIdentifiers`](uipasteconfiguration/acceptabletypeidentifiers.md) array.
 
 ## Parameters
 

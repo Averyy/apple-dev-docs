@@ -3,13 +3,13 @@
 **Framework**: RoomPlan  
 **Kind**: struct
 
-The configuration options for the RoomBuilder
+Options that configure a room builder.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -17,13 +17,17 @@ The configuration options for the RoomBuilder
 struct ConfigurationOptions
 ```
 
+#### Overview
+
+The `options` argument to the [`RoomBuilder`](roombuilder.md) initializer [`init(options:)`](roombuilder/init(options:).md) is of this type.
+
 ## Topics
 
 ### Creating a configuration option
 - [init(rawValue: Int)](roombuilder/configurationoptions/init(rawvalue:).md)
   Creates a configuration option with the specified raw value.
 - [let rawValue: Int](roombuilder/configurationoptions/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
+  A raw value for a configuration option.
 ### Choosing a configuration option
 - [static let beautifyObjects: RoomBuilder.ConfigurationOptions](roombuilder/configurationoptions/beautifyobjects.md)
   An option that instructs the captured room to enhance its look.

@@ -22,8 +22,6 @@ func remove(_ subscriber: any MXMetricManagerSubscriber)
 
 > ⚠️ **Warning**:  If you call this function from a method that deallocates the object, your app might crash.
 
- If you call this function from a method that deallocates the object, your app might crash.
-
 ## Parameters
 
 - `subscriber`: The object that receives daily metrics reports. Passing an object that is not currently subscribed does nothing.

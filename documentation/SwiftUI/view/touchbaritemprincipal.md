@@ -1,6 +1,6 @@
 # touchBarItemPrincipal(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Sets principal views that have special significance to this Touch Bar.

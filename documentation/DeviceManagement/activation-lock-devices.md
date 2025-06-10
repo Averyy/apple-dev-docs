@@ -21,7 +21,6 @@ There are two ways to manage Activation Lock: the Activation Lock request is ava
 - [object ActivationLockRequest](activationlockrequest.md)
   Request enabling activation lock for a device.
 - [object ActivationLockStatusResponse](activationlockstatusresponse.md)
-  The response to a request for activation lock.
 ### Bypass Codes
 - [Creating and Using Bypass Codes](creating-and-using-bypass-codes.md)
   Maintain the bypass code parameters for disabling Activation Lock.

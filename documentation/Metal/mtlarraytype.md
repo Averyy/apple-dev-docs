@@ -43,6 +43,9 @@ A [`MTLArrayType`](mtlarraytype.md) object provides details about an array param
   Provides a description of the underlying pointer type when an array holds pointers as its elements.
 - [func elementTextureReferenceType() -> MTLTextureReferenceType?](mtlarraytype/elementtexturereferencetype.md)
   Provides a description of the underlying texture type when an array holds textures as its elements.
+### Instance Methods
+- [func elementTensorReferenceType() -> MTLTensorReferenceType?](mtlarraytype/elementtensorreferencetype.md)
+  Provides a description of the underlying tensor type when this array holds tensors as its elements.
 
 ## Relationships
 

@@ -22,7 +22,7 @@ If [`isStillImageStabilizationSupported`](avcapturestillimageoutput/isstillimage
 
 The default value is [`true`](https://developer.apple.com/documentation/swift/true) when supported by the input device; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
-Setting this property throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception)) if [`isStillImageStabilizationSupported`](avcapturestillimageoutput/isstillimagestabilizationsupported.md) returns [`false`](https://developer.apple.com/documentation/swift/false).
+Setting this property throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)) if [`isStillImageStabilizationSupported`](avcapturestillimageoutput/isstillimagestabilizationsupported.md) returns [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

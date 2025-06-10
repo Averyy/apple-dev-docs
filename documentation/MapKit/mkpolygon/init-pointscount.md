@@ -12,6 +12,7 @@ Creates and returns a polygon object from the specified set of map points.
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 

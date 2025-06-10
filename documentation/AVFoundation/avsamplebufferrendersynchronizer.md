@@ -22,8 +22,8 @@ class AVSampleBufferRenderSynchronizer
 
 ## Mentions
 
-- [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
 - [Implementing flexible enhanced buffering for your content](implementing-flexible-enhanced-buffering-for-your-content.md)
+- [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
 
 #### Overview
 
@@ -60,6 +60,9 @@ This class synchronizes multiple objects that conform to [`AVQueuedSampleBufferR
   Requests invocation of a block when specified times are traversed during normal rendering.
 - [func removeTimeObserver(Any)](avsamplebufferrendersynchronizer/removetimeobserver(_:).md)
   Cancels the specified time observer.
+### Instance Properties
+- [var intendedSpatialAudioExperience: any SpatialAudioExperience](avsamplebufferrendersynchronizer/intendedspatialaudioexperience-3z7d3.md)
+  The intended spatial audio experience applied to all `AVSampleBufferAudioRenderer`’s within this synchronizer.
 
 ## Relationships
 

@@ -50,6 +50,8 @@ You can pass data to the input ports, or retrieve data from the output ports, of
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [QCCompositionRenderer](qccompositionrenderer.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -76,4 +78,4 @@ You can pass data to the input ports, or retrieve data from the output ports, of
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Quartz/qccompositionlayer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/quartz/qccompositionlayer)*

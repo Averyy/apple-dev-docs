@@ -1,6 +1,6 @@
 # isEmpty
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A Boolean value that indicates whether the set has no elements.

@@ -26,8 +26,6 @@ In situations with multiple competing requests, a sample buffer generator may de
 
 > ❗ **Important**:  The system may postpone an opportunistic request indefinitely. Don’t use this mode for time-sensitive processing.
 
- The system may postpone an opportunistic request indefinitely. Don’t use this mode for time-sensitive processing.
-
 ## See Also
 
 - [AVSampleBufferRequest.Mode.immediate](avsamplebufferrequest/mode-swift.enum/immediate.md)

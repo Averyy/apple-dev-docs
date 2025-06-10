@@ -1,12 +1,17 @@
 # kVTCompressionPropertyKey_RecommendedParallelizedSubdivisionMinimumFrameCount
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The recommended minimum number of video frames for a given subdivision in a parallel encoding configuration.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 

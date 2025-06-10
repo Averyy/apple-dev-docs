@@ -21,7 +21,7 @@ func sec_protocol_options_set_tls_resumption_enabled(_ options: sec_protocol_opt
 #### Discussion
 
 ```None
-  Enable or disable TLS session resumption.
+ Enable or disable TLS session resumption.
 ```
 
 ## Parameters

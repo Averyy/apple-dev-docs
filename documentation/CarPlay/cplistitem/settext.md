@@ -13,6 +13,7 @@ Updates the list item’s primary text.
 ## Declaration
 
 ```swift
+@MainActor
 func setText(_ text: String)
 ```
 

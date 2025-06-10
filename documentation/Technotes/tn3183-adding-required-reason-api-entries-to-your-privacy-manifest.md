@@ -178,4 +178,4 @@ Repeat step 5 for each additional required reason API your app or third-party SD
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3183-adding-required-reason-api-entries-to-your-privacy-manifest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3183-adding-required-reason-api-entries-to-your-privacy-manifest)*

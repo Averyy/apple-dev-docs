@@ -1,6 +1,6 @@
 # load(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Loads an archive into the web frame.

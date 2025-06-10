@@ -13,6 +13,7 @@ The items that the template displays.
 ## Declaration
 
 ```swift
+@MainActor
 var items: [CPInformationItem] { get set }
 ```
 

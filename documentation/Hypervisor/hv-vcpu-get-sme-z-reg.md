@@ -22,8 +22,6 @@ func hv_vcpu_get_sme_z_reg(_ vcpu: hv_vcpu_t, _ reg: hv_sme_z_reg_t, _ value: Un
 
 > ❗ **Important**:  You need to call this on the owning thread.
 
- You need to call this on the owning thread.
-
 The method returns an error if not in streaming SVE mode, for example if[`streaming_sve_mode_enabled`](hv_vcpu_sme_state_t/streaming_sve_mode_enabled.md) is `false`, or if the value `length` isn’t maximum SVL bytes.
 
 ## Parameters

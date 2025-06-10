@@ -1,6 +1,6 @@
 # showsUserLocation
 
-**Framework**: Mapkitjs  
+**Framework**: MapKit JS  
 **Kind**: property
 
 A Boolean value that determines whether to show the user’s location on the map.
@@ -36,4 +36,4 @@ Set this property to `false` to remove the user location annotation and to stop 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit.map/showsuserlocation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit.map/showsuserlocation)*

@@ -1,6 +1,6 @@
 # errors
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 All errors that occurred in the extension context.

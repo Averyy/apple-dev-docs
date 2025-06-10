@@ -40,6 +40,7 @@ struct TeamIdentifierMatchesCurrentProcess
 - [Encodable](../Swift/Encodable.md)
 - [ProcessConstraint](processconstraint.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

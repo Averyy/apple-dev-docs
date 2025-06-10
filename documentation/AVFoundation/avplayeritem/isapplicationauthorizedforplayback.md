@@ -6,9 +6,7 @@
 A Boolean value that indicates whether the application can be used to play the content.
 
 **Availability**:
-- iOS 4.2+
-- iPadOS 4.2+
-- Mac Catalyst 13.1+
+- Mac Catalyst 13.0+
 - macOS 10.7+
 
 ## Declaration

@@ -80,6 +80,8 @@ The `EKCalendarItem` is a an abstract superclass for calendar events and reminde
   Removes a recurrence rule from the recurrence rule array.
 - [var recurrenceRules: [EKRecurrenceRule]?](ekcalendaritem/recurrencerules.md)
   The recurrence rules for the calendar item.
+### Instance Properties
+- [var hasMaximumAlarms: Bool](ekcalendaritem/hasmaximumalarms.md)
 
 ## Relationships
 

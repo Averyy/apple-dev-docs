@@ -1,6 +1,6 @@
 # chunkDetails()
 
-**Framework**: Mediaextension  
+**Framework**: MediaExtension  
 **Kind**: method
 
 Returns information about the chunk that holds the sample indicated by the cursor.

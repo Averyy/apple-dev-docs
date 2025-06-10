@@ -11,7 +11,6 @@ Returns nil if manifestURL is invalid or jsonData cannot be parsed.
 - macOS ?+
 - tvOS 17.5+
 - visionOS 1.2+
-- watchOS 10.5+
 
 ## Declaration
 

@@ -22,7 +22,7 @@ weak var delegate: (any NSTouchBarDelegate)? { get set }
 
 Employ a bar delegate, according to the needs of your app, to dynamically create items ([`NSTouchBarItem`](nstouchbaritem.md) instances). For more information, see [`Item objects`](nstouchbar#Item-objects.md).
 
-This property is conditionally archived, as described in the [`encodeConditionalObject(_:forKey:)`](https://developer.apple.com/documentation/foundation/nskeyedarchiver/1413677-encodeconditionalobject) method.
+This property is conditionally archived, as described in the [`encodeConditionalObject(_:forKey:)`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver/encodeConditionalObject(_:forKey:)) method.
 
 ## See Also
 

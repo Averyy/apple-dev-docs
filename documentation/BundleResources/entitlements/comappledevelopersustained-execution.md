@@ -1,6 +1,6 @@
 # com.apple.developer.sustained-execution
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 A Boolean value that indicates whether your app performs consistently when the system constrains it to a sustainable performance level.

@@ -17,8 +17,7 @@ A composite `Transition` that uses a different transition for insertion versus r
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct AsymmetricTransition<Insertion, Removal> where Insertion : Transition, Removal : Transition
+struct AsymmetricTransition<Insertion, Removal> where Insertion : Transition, Removal : Transition
 ```
 
 ## Topics

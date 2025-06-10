@@ -1,0 +1,27 @@
+# PE_cpu_machine_quiesce
+
+**Framework**: Kernel  
+**Kind**: func
+
+**Availability**:
+- macOS 10.0+
+
+## Declaration
+
+```swift
+void PE_cpu_machine_quiesce(cpu_id_t target);
+```
+
+## See Also
+
+- [PE_cpu_halt](1553664-pe_cpu_halt.md)
+- [PE_cpu_machine_init](1553675-pe_cpu_machine_init.md)
+- [PE_cpu_signal](1553636-pe_cpu_signal.md)
+- [PE_cpu_signal_cancel](1553700-pe_cpu_signal_cancel.md)
+- [PE_cpu_signal_deferred](1553622-pe_cpu_signal_deferred.md)
+- [PE_cpu_start](1553604-pe_cpu_start.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/1553608-pe_cpu_machine_quiesce)*

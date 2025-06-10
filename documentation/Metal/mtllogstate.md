@@ -16,7 +16,7 @@ A container for shader log messages.
 ## Declaration
 
 ```swift
-protocol MTLLogState : NSObjectProtocol
+protocol MTLLogState : NSObjectProtocol, Sendable
 ```
 
 ## Mentions
@@ -41,6 +41,8 @@ Because logging incurs an overhead, regardless of whether the system prints mess
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

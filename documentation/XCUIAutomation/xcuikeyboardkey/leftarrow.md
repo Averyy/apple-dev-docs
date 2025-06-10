@@ -1,6 +1,6 @@
 # leftArrow
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A constant that represents the Left Arrow key.

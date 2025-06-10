@@ -1,6 +1,6 @@
 # CMSampleBufferCopySampleBufferForRange(allocator:sampleBuffer:sampleRange:sampleBufferOut:)
 
-**Framework**: Coremedia  
+**Framework**: Core Media  
 **Kind**: func
 
 Creates a sample buffer that contains a range of samples from an existing sample buffer.

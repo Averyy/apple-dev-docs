@@ -32,6 +32,7 @@ struct BasicChartSymbolShape
 - [Animatable](../SwiftUI/Animatable.md)
 - [ChartSymbolShape](chartsymbolshape.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Shape](../SwiftUI/Shape.md)
 - [View](../SwiftUI/View.md)
 

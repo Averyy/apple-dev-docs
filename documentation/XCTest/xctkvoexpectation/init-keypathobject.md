@@ -1,6 +1,6 @@
 # init(keyPath:object:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an expectation that any KVO change to the specified key path of the observed object fulfills.
@@ -24,10 +24,10 @@ convenience init(keyPath: String, object: Any)
 
 This initializer sets up KVO observation for `keyPath` with the following [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions):
 
-- [`new`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/1417881-new)
-- [`old`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/1414041-old)
+- [`new`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/new)
+- [`old`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/old)
 
-The inclusion of the [`new`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/1417881-new) and [`old`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/1414041-old) options means that any custom KVO handler you provide in the expectation’s [`handler`](xctkvoexpectation/handler-swift.property.md) property receives a change info dictionary that contains the [`newKey`](https://developer.apple.com/documentation/foundation/nskeyvaluechangekey/1416259-newkey) and [`oldKey`](https://developer.apple.com/documentation/foundation/nskeyvaluechangekey/1415014-oldkey) keys.
+The inclusion of the [`new`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/new) and [`old`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/old) options means that any custom KVO handler you provide in the expectation’s [`handler`](xctkvoexpectation/handler-swift.property.md) property receives a change info dictionary that contains the [`newKey`](https://developer.apple.com/documentation/Foundation/NSKeyValueChangeKey/newKey) and [`oldKey`](https://developer.apple.com/documentation/Foundation/NSKeyValueChangeKey/oldKey) keys.
 
 ## Parameters
 

@@ -34,6 +34,8 @@ Menu("PDF") {
 
 ## See Also
 
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+  Improve your app by populating menus with controls and organizing your content intuitively.
 - [struct Menu](menu.md)
   A control for presenting a menu of actions.
 

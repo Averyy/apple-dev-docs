@@ -1,6 +1,6 @@
 # Playing Haptics on Game Controllers
 
-**Framework**: Corehaptics
+**Framework**: Core Haptics
 
 Add haptic feedback to supported game controllers by using Core Haptics.
 
@@ -18,4 +18,4 @@ This sample code project must be run on a physical device and requires a Bluetoo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/playing-haptics-on-game-controllers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/playing-haptics-on-game-controllers)*

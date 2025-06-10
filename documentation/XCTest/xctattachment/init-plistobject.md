@@ -1,6 +1,6 @@
 # init(plistObject:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an attachment from an object that can be represented in an XML property list.

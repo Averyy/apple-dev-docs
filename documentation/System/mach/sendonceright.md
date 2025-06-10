@@ -34,6 +34,7 @@ Upon destruction a send-once notification will be sent to the receiving end.
 - [Copyable](../Swift/Copyable.md)
 - [MachPortRight](machportright.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

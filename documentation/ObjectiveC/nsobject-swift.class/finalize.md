@@ -45,8 +45,6 @@ It is an error to store `self` into a new or existing live object (colloquially 
 
 > ❗ **Important**:  `finalize` methods must be thread-safe.
 
- `finalize` methods must be thread-safe.
-
 ## See Also
 
 - [func accessibilityAttributeNames() -> [NSAccessibility.Attribute]](nsobject-swift.class/accessibilityattributenames.md)
@@ -77,8 +75,8 @@ It is an error to store `self` into a new or existing live object (colloquially 
   Overrides the specified attribute in the receiver or adds it if it does not exist, and sets its value to the specified value.
 - [func accessibilitySetValue(Any?, forAttribute: NSAccessibility.Attribute)](nsobject-swift.class/accessibilitysetvalue(_:forattribute:).md)
   Sets the value of the specified attribute in the receiver to the specified value.
-- [func fileManager(FileManager, shouldProceedAfterError: [AnyHashable : Any]) -> Bool](nsobject-swift.class/filemanager(_:shouldproceedaftererror:).md)
-  An `NSFileManager` object sends this message to its handler for each error it encounters when copying, moving, removing, or linking files or directories.
+- [func fontManager(Any, willIncludeFont: String) -> Bool](nsobject-swift.class/fontmanager(_:willincludefont:).md)
+  Requests permission from the Font panel delegate to display the given font name in the Font panel.
 
 
 ---

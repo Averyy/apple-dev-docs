@@ -1,6 +1,6 @@
 # readyState
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The ready state of the media resource. (read-only)

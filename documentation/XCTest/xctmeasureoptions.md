@@ -1,6 +1,6 @@
 # XCTMeasureOptions
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 Options to control the gathering of performance measurements during tests.

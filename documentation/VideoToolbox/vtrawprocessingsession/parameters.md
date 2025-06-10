@@ -1,6 +1,6 @@
 # parameters()
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: method
 
 Returns an asynchronous sequence that provides updates to the processing Parameter array if the processing extension makes changes to the set of Parameters.

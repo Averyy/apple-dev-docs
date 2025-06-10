@@ -1,6 +1,6 @@
 # matchStreamingBuffer(_:at:)
 
-**Framework**: Shazamkit  
+**Framework**: ShazamKit  
 **Kind**: method
 
 Converts the audio in the buffer to a signature, and searches the reference signatures in the session catalog.

@@ -1,6 +1,6 @@
 # normalizedSliderPosition
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 Returns the position of the slider’s indicator as a normalized value.

@@ -1,6 +1,6 @@
 # xpc_uuid_create(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates an XPC object that represents a universally unique identifier (UUID).

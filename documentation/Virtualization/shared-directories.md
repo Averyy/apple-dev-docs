@@ -71,4 +71,4 @@ Use [`VZSingleDirectoryShare`](vzsingledirectoryshare.md) to share the immediate
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Virtualization/shared-directories)*
+*[View on Apple Developer](https://developer.apple.com/documentation/virtualization/shared-directories)*

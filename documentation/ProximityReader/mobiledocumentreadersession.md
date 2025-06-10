@@ -9,6 +9,7 @@ The object you use to start reading a mobile document.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -37,6 +38,7 @@ Maintain a strong reference to a session object for the duration of the document
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

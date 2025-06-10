@@ -1,6 +1,6 @@
 # GKARC4RandomSource
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: class
 
 A basic random number generator implementing the ARC4 algorithm, which is suitable for most gameplay mechanics.
@@ -81,4 +81,4 @@ For more information on choosing and using randomizers in GameplayKit, read [`Ra
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameplayKit/gkarc4randomsource)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gameplaykit/gkarc4randomsource)*

@@ -1,6 +1,6 @@
 # launchApplication(at:options:configuration:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Launches the app at the specified URL.

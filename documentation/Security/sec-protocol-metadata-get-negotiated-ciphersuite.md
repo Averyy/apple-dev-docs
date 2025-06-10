@@ -25,7 +25,7 @@ A SSLCipherSuite.
 #### Discussion
 
 ```None
-  Get the negotiated TLS ciphersuite.
+ Get the negotiated TLS ciphersuite.
 ```
 
 ## Parameters

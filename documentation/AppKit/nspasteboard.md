@@ -107,12 +107,12 @@ The general pasteboard, available by way of the [`general`](nspasteboard/general
   Determines whether the first pasteboard item matches the specified patterns, without notifying the person using the app.
 - [func detectedValues(for: Set<PartialKeyPath<NSPasteboard.DetectedValues>>) async throws -> NSPasteboard.DetectedValues](nspasteboard/detectedvalues(for:).md)
   Determines whether the first pasteboard item matches the specified patterns, reading the contents if it finds a match.
-- [NSPasteboard.DetectedValues](nspasteboard/detectedvalues.md)
-  A type that contains common types of data that the data detection system matches for a pasteboard.
+- [Pasteboard detection patterns](nspasteboard-detection-patterns.md)
+  Common types of data that the data detection system matches for a pasteboard.
 - [func detectedMetadata(for: Set<PartialKeyPath<NSPasteboard.DetectedMetadata>>) async throws -> NSPasteboard.DetectedMetadata](nspasteboard/detectedmetadata(for:).md)
   Determines available metadata from the specified metadata types for the first pasteboard item, without notifying the person using the app.
-- [NSPasteboard.DetectedMetadata](nspasteboard/detectedmetadata.md)
-  An object that contains common types of metadata that the data detection system matches for a pasteboard.
+- [Pasteboard detection metadata types](nspasteboard-detection-metadata-types.md)
+  Common types of metadata that the data detection system matches for a pasteboard.
 ### Preparing the pasteboard for content
 - [func prepareForNewContents(with: NSPasteboard.ContentsOptions) -> Int](nspasteboard/preparefornewcontents(with:).md)
   Prepares the pasteboard to receive new contents, removing the existing pasteboard contents.
@@ -140,6 +140,8 @@ The general pasteboard, available by way of the [`general`](nspasteboard/general
 ### Structures
 - [NSPasteboard.WritingOptions](nspasteboard/writingoptions.md)
   Type to specify options for writing to a pasteboard.
+- [NSPasteboard.DetectedMetadata](nspasteboard/detectedmetadata.md)
+  An object that contains common types of metadata that the data detection system matches for a pasteboard.
 
 ## Relationships
 

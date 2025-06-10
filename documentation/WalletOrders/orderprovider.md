@@ -1,6 +1,6 @@
 # OrderProvider
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 Information about the platform providing the order data.

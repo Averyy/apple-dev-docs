@@ -34,6 +34,7 @@ A [`WKInterfaceObjectRepresentableContext`](wkinterfaceobjectrepresentablecontex
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

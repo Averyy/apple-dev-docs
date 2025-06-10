@@ -1,6 +1,6 @@
 # xpc_array_get_date(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Gets a date interval from an array directly.

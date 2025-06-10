@@ -1,6 +1,6 @@
 # XCUIDevice.Button.camera
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The device’s camera button.

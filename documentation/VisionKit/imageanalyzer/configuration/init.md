@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: init
 
 Creates a configuration that an image analyzer uses to find items.

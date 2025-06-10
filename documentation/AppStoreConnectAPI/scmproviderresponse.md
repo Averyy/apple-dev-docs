@@ -20,6 +20,7 @@ object ScmProviderResponse
   The data structure that represents a Providers resource.
 - [object ScmProvidersResponse](scmprovidersresponse.md)
   A response that contains a list of Providers resources.
+- [object ScmProviderRepositoriesLinkagesResponse](scmproviderrepositorieslinkagesresponse.md)
 
 
 ---

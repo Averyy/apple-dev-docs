@@ -14,8 +14,6 @@ A message to the user that explains why the app requested permission to read cli
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the user’s clinical records.
 
- This key is required if your app uses APIs that access the user’s clinical records.
-
 ## See Also
 
 - [Setting up HealthKit](../HealthKit/setting-up-healthkit.md)

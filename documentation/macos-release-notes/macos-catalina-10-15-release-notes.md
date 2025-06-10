@@ -16,7 +16,7 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 
 ###### Deprecations
 
-- macOS frameworks are now thinned for the x86-64 architecture. Apps that execute i386 code now fail with the [`EBADARCH`](https://developer.apple.com/documentation/foundation/posixerror/2293398-ebadarch) error code. The remaining stub frameworks are nonfunctional and exist only for compatibility purposes. (51236070)
+- macOS frameworks are now thinned for the x86-64 architecture. Apps that execute i386 code now fail with the [`EBADARCH`](https://developer.apple.com/documentation/Foundation/POSIXError/EBADARCH) error code. The remaining stub frameworks are nonfunctional and exist only for compatibility purposes. (51236070)
 
 ##### Airdrop
 
@@ -75,10 +75,10 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 
 - The [`init(imageURL:options:)`](https://developer.apple.com/documentation/coreimage/cifilter/1438096-init) and [`init(imageData:options:)`](https://developer.apple.com/documentation/coreimage/cifilter/1437879-init) initializers no longer support RAW decoder versions earlier than 6. Version 6 and later remain supported. (50911303)
 - Added new APIs for instantiating and modifying the built-in Core Image filters.
-- The [`CICoreMLModel`](https://developer.apple.com/documentation/coreimage/cicoremlmodel) filter is enhanced to support models with an input or output of type [`MLFeatureType.multiArray`](https://developer.apple.com/documentation/CoreML/MLFeatureType/multiArray).
-- Metal [`CIKernel`](https://developer.apple.com/documentation/coreimage/cikernel) instances now support arguments with arbitrarily structured data.
-- Metal [`CIKernel`](https://developer.apple.com/documentation/coreimage/cikernel) instances now support returning a group of two by two pixels.
-- The integer values of [`CIFormat`](https://developer.apple.com/documentation/coreimage/ciformat) symbols, such as [`ARGB8`](https://developer.apple.com/documentation/coreimage/ciformat/1437883-argb8), have changed to a new set of values which are consistent across platforms. The former values remain supported for backward compatibility; however, you should avoid dependancies on specific numerical values.
+- The [`CICoreMLModel`](https://developer.apple.com/documentation/CoreImage/CICoreMLModel) filter is enhanced to support models with an input or output of type [`MLFeatureType.multiArray`](https://developer.apple.com/documentation/CoreML/MLFeatureType/multiArray).
+- Metal [`CIKernel`](https://developer.apple.com/documentation/CoreImage/CIKernel) instances now support arguments with arbitrarily structured data.
+- Metal [`CIKernel`](https://developer.apple.com/documentation/CoreImage/CIKernel) instances now support returning a group of two by two pixels.
+- The integer values of [`CIFormat`](https://developer.apple.com/documentation/CoreImage/CIFormat) symbols, such as [`ARGB8`](https://developer.apple.com/documentation/coreimage/ciformat/1437883-argb8), have changed to a new set of values which are consistent across platforms. The former values remain supported for backward compatibility; however, you should avoid dependancies on specific numerical values.
 
 ##### Endpointsecurity
 
@@ -140,8 +140,8 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 
 ###### New Features
 
-- [`NSURLRequest.CachePolicy.reloadRevalidatingCacheData`](https://developer.apple.com/documentation/foundation/nsurlrequest/cachepolicy/reloadrevalidatingcachedata) and [`NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData`](https://developer.apple.com/documentation/foundation/nsurlrequest/cachepolicy/reloadignoringlocalandremotecachedata) APIs are now available. (49660334)
-- All [`URLSessionTask`](https://developer.apple.com/documentation/Foundation/URLSessionTask) instances with a GET HTTP method which contain a body will now produce the error [`NSURLErrorDataLengthExceedsMaximum`](https://developer.apple.com/documentation/foundation/nsurlerrordatalengthexceedsmaximum). (46025234)
+- [`NSURLRequest.CachePolicy.reloadRevalidatingCacheData`](https://developer.apple.com/documentation/Foundation/NSURLRequest/CachePolicy-swift.enum/reloadRevalidatingCacheData) and [`NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData`](https://developer.apple.com/documentation/Foundation/NSURLRequest/CachePolicy-swift.enum/reloadIgnoringLocalAndRemoteCacheData) APIs are now available. (49660334)
+- All [`URLSessionTask`](https://developer.apple.com/documentation/Foundation/URLSessionTask) instances with a GET HTTP method which contain a body will now produce the error [`NSURLErrorDataLengthExceedsMaximum`](https://developer.apple.com/documentation/Foundation/NSURLErrorDataLengthExceedsMaximum-swift.var). (46025234)
 
 ###### Known Issues
 
@@ -149,7 +149,7 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 
 ###### Deprecations
 
-- Support for FTP and File URL schemes for Proxy Automatic Configuration (PAC) is removed. HTTP and HTTPS are the only supported URL schemes for PAC. This affects all PAC configurations including but not limited to configurations set using Settings, System Preferences, profiles, URLSession APIs such as [`connectionProxyDictionary`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/1411499-connectionproxydictionary), and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](https://developer.apple.com/documentation/CFNetwork/CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)). (28578280)
+- Support for FTP and File URL schemes for Proxy Automatic Configuration (PAC) is removed. HTTP and HTTPS are the only supported URL schemes for PAC. This affects all PAC configurations including but not limited to configurations set using Settings, System Preferences, profiles, URLSession APIs such as [`connectionProxyDictionary`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/connectionProxyDictionary), and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](https://developer.apple.com/documentation/CFNetwork/CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)). (28578280)
 - SPDY support is removed from the [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) and [`NSURLConnection`](https://developer.apple.com/documentation/Foundation/NSURLConnection) APIs. Servers should use HTTP 2 or HTTP 1.1. (43391641)
 - The Network Kernel Extension API is now deprecated. (49284108)
 

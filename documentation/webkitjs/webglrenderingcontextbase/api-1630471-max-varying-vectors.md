@@ -1,6 +1,6 @@
 # MAX_VARYING_VECTORS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

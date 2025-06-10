@@ -1,6 +1,6 @@
 # ImageAnalysisOverlayView.MenuTag
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: struct
 
 Tags that enable your app to manage image-analysis context menu items.

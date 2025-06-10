@@ -1,6 +1,6 @@
 # notification_type
 
-**Framework**: Appstoreservernotifications  
+**Framework**: App Store Server Notifications  
 **Kind**: typealias
 
 The type that describes the in-app purchase event for which the App Store sends the version 1 notification.

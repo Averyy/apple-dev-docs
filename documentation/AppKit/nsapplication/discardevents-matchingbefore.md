@@ -1,6 +1,6 @@
 # discardEvents(matching:before:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Removes all events matching the given mask and generated before the specified event.

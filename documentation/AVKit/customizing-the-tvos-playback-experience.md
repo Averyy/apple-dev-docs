@@ -1,6 +1,6 @@
 # Customizing the tvOS Playback Experience
 
-**Framework**: Avkit
+**Framework**: AVKit
 
 Adopt the latest features of the redesigned tvOS player user interface to provide a more streamlined way to watch your content.
 
@@ -66,7 +66,7 @@ playerItem.externalMetadata = createMetadataItems(for: metadata)
 
 Only the title and subtitle values display in the title view. The player presents the other supported metadata values in its Info tab, which the Display Content Tabs section below describes.
 
-> **Note**:  If your app would prefer to always hide the title view, set the value of the player view controller’s [`transportBarIncludesTitleView`](avplayerviewcontroller/transportbarincludestitleview.md) to [`false`](https://developer.apple.com/documentation/swift/false).
+> **Note**:  If your app would prefer to always hide the title view, set the value of the player view controller’s [`transportBarIncludesTitleView`](avplayerviewcontroller/transportbarincludestitleview.md) to `false`.
 
 ##### Add Custom Transport Bar Items
 
@@ -236,4 +236,4 @@ func addTimeObserver() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/customizing-the-tvos-playback-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/customizing-the-tvos-playback-experience)*

@@ -19,8 +19,6 @@ To display a composition interface, present the corresponding view controller mo
 
 > ❗ **Important**:  The view controllers in this framework provide methods for determining if you can send a given message type on the current iOS device. If you can’t send a message, don’t display the corresponding view controller.
 
- The view controllers in this framework provide methods for determining if you can send a given message type on the current iOS device. If you can’t send a message, don’t display the corresponding view controller.
-
 ## Topics
 
 ### Email composition interface

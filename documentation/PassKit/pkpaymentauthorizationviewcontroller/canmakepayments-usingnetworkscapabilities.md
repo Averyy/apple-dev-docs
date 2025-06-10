@@ -1,6 +1,6 @@
 # canMakePayments(usingNetworks:capabilities:)
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: method
 
 Returns whether the user can make payments using a card from the specified network with the specified capabilities.
@@ -15,7 +15,7 @@ Returns whether the user can make payments using a card from the specified netwo
 ## Declaration
 
 ```swift
-@MainActor
+nonisolated
 class func canMakePayments(usingNetworks supportedNetworks: [PKPaymentNetwork], capabilities capabilties: PKMerchantCapability) -> Bool
 ```
 

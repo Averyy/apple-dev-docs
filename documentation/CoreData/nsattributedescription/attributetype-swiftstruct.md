@@ -1,6 +1,6 @@
 # NSAttributeDescription.AttributeType
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: struct
 
 The types of attributes that Core Data supports.

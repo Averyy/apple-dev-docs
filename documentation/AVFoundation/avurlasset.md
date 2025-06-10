@@ -88,6 +88,9 @@ let asset = AVURLAsset(url: url, options: options)
   The properties of the media extension format reader that decodes the asset.
 - [class AVMediaExtensionProperties](avmediaextensionproperties.md)
   An object that describes a Media Extension.
+### Type Properties
+- [class var audiovisualContentTypes: [UTType]](avurlasset/audiovisualcontenttypes.md)
+  Provides the content types the AVURLAsset class understands.
 
 ## Relationships
 
@@ -109,6 +112,7 @@ let asset = AVURLAsset(url: url, options: options)
 - [NSItemProviderWriting](../Foundation/NSItemProviderWriting.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

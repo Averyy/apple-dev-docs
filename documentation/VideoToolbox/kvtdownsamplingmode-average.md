@@ -1,6 +1,6 @@
 # kVTDownsamplingMode_Average
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Average missing samples (default center).

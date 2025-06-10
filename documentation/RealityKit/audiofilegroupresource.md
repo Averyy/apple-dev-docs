@@ -10,6 +10,7 @@ An audio file group.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -32,8 +33,6 @@ An audio file group.
 - [let resources: [AudioFileResource]](audiofilegroupresource/resources.md)
   The `AudioFileResource` objects which comprise this `AudioFileGroupResource`.
 - [static func == (AudioFileGroupResource, AudioFileGroupResource) -> Bool](audiofilegroupresource/==(_:_:).md)
-### Default Implementations
-- [Hashable Implementations](audiofilegroupresource/hashable-implementations.md)
 
 ## Relationships
 
@@ -45,6 +44,7 @@ An audio file group.
 - [Hashable](../Swift/Hashable.md)
 - [Resource](resource.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -56,10 +56,6 @@ An audio file group.
   A container for audio resources that you can look up by user-defined names.
 - [class AudioResource](audioresource.md)
   A playable audio resource
-- [AudioResource.Calibration](audioresource/calibration.md)
-  A container for different calibration modes that can be applied for playback.
-- [AudioResource.Normalization](audioresource/normalization.md)
-  Normalization adjusts the level of an audio file or buffer to be at a defined target.
 
 
 ---

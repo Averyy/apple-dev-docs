@@ -79,6 +79,11 @@ When a host app sends a request to an app extension, it provides an extension co
   The largest display mode the widget supports.
 - [func widgetMaximumSize(for: NCWidgetDisplayMode) -> CGSize](nsextensioncontext/widgetmaximumsize(for:).md)
   Returns the maximum size for the specified widget display mode.
+### Structures
+- [NSExtensionContext.DidBecomeActiveMessage](nsextensioncontext/didbecomeactivemessage.md)
+- [NSExtensionContext.DidEnterBackgroundMessage](nsextensioncontext/didenterbackgroundmessage.md)
+- [NSExtensionContext.WillEnterForegroundMessage](nsextensioncontext/willenterforegroundmessage.md)
+- [NSExtensionContext.WillResignActiveMessage](nsextensioncontext/willresignactivemessage.md)
 
 ## Relationships
 

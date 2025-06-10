@@ -21,8 +21,8 @@ struct RenewalState
 
 ## Mentions
 
-- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 - [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
+- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 
 #### Overview
 
@@ -56,6 +56,7 @@ For more information about Family Sharing, see [`Supporting Family Sharing in yo
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

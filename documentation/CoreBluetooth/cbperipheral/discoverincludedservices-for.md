@@ -1,6 +1,6 @@
 # discoverIncludedServices(_:for:)
 
-**Framework**: Corebluetooth  
+**Framework**: Core Bluetooth  
 **Kind**: method
 
 Discovers the specified included services of a previously-discovered service.

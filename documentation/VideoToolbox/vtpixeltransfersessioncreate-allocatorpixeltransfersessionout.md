@@ -1,6 +1,6 @@
 # VTPixelTransferSessionCreate(allocator:pixelTransferSessionOut:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Creates a session for transferring images between Core Video image buffers that hold pixels in main memory.

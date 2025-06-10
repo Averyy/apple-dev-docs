@@ -1,15 +1,13 @@
-# User Configured Command
+# User Configured
 
 **Framework**: Device Management  
 **Kind**: httpRequest
 
-Informs the device that it can continue past Setup Assistant and finish login.
+Inform the device that it can continue past Setup Assistant and finish login.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -19,33 +17,33 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device Channel | - |
-| User Channel | Shared iPad |
-| Requires Supervision | Shared iPad |
-| Allowed in User Enrollment | - |
-| Required Access Right | - |
+| Device channel | iOS |
+| User channel | Shared iPad |
+| Requires supervision | iOS |
+| Allowed in user enrollment | NA |
+| Required access right | NA |
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object UserConfiguredCommand](userconfiguredcommand.md)
-  The command to inform a Shared iPad that the system has configured the user and can allow the user to continue in Setup Assistant.
+  The command to inform the device that it can continue past Setup Assistant and finish login.
 - [object UserConfiguredResponse](userconfiguredresponse.md)
-  A response from the Shared iPad after it processes the command to configure the user and continue in Setup Assistant.
+  A response from the device after it processes the command to inform the device that it can continue past Setup Assistant and finish login.
 
 ## Request Body
 
-missing
+The request object the server returns for the User Configured Command.
 
 ## See Also
 
-- [List the Installed Apps](installed-application-list-command.md)
+- [Installed Application List](installed-application-list-command.md)
   Get a list of the installed apps on a device.
-- [Get Device Information](device-information-command.md)
+- [Device Information](device-information-command.md)
   Get detailed information about a device.
-- [Release Device from Await Configuration](device-configured-command.md)
+- [Device Configured](device-configured-command.md)
   Inform the device that it can allow the user to continue in Setup Assistant.
-- [List the Installed Restrictions](restrictions-command.md)
+- [Restrictions](restrictions-command.md)
   Get a list of restrictions on the device.
 
 

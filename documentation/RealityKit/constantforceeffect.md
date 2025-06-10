@@ -10,6 +10,7 @@ A force effect that exerts a constant force in a direction relative to the effec
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -21,8 +22,6 @@ struct ConstantForceEffect
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](constantforceeffect/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(strength: Double, direction: SIMD3<Float>)](constantforceeffect/init(strength:direction:).md)
   Creates a constant force effect.
 ### Instance Properties
@@ -35,12 +34,8 @@ struct ConstantForceEffect
 - [let strength: Float](constantforceeffect/strength.md)
   The magnitude of the force.
 ### Instance Methods
-- [func encode(to: any Encoder) throws](constantforceeffect/encode(to:).md)
-  Encodes this value into the given encoder.
 - [func update(parameters: inout ForceEffectParameters)](constantforceeffect/update(parameters:).md)
   Calculates the constant forces for rigid bodies from the force effect.
-### Default Implementations
-- [ForceEffectProtocol Implementations](constantforceeffect/forceeffectprotocol-implementations.md)
 
 ## Relationships
 

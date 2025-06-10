@@ -24,8 +24,6 @@ If [`false`](https://developer.apple.com/documentation/swift/false), the viewer 
 
 > 💡 **Tip**:  For best results when scaling, use a PDF asset and select the Preserve Vector Data option in the asset catalog.
 
- For best results when scaling, use a PDF asset and select the Preserve Vector Data option in the asset catalog.
-
 ## See Also
 
 - [var accessibilityIgnoresInvertColors: Bool](uiview/accessibilityignoresinvertcolors.md)

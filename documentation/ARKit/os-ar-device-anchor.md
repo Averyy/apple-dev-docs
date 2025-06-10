@@ -5,9 +5,6 @@
 
 The position and orientation of Apple Vision Pro.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift

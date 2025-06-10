@@ -1,6 +1,6 @@
 # vertexAttribI4iv
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 **Availability**:

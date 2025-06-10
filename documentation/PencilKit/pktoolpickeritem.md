@@ -9,6 +9,7 @@ The base class for an item in the tool picker.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
+- macOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -22,6 +23,9 @@ class PKToolPickerItem
 ### Identifying the item
 - [var identifier: String](pktoolpickeritem/identifier.md)
   A string that identifies the item in the tool picker.
+### Instance Properties
+- [var tool: (any PKTool)?](pktoolpickeritem/tool-2ji9h.md)
+  A tool for drawing on a PKCanvasView.
 
 ## Relationships
 

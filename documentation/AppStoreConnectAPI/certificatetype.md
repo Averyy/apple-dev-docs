@@ -47,6 +47,8 @@ string CertificateType
   A response that contains a list of Certificates resources.
 - [object CertificateUpdateRequest](certificateupdaterequest.md)
   The request body you use to update a certificate activation status.
+- [object CertificatePassTypeIdLinkageResponse](certificatepasstypeidlinkageresponse.md)
+  A response body that contains the ID of a single related resource.
 
 
 ---

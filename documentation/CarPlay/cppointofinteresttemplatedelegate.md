@@ -13,6 +13,7 @@ The methods to handle a Point of Interest template’s events.
 ## Declaration
 
 ```swift
+@MainActor
 protocol CPPointOfInterestTemplateDelegate : NSObjectProtocol
 ```
 

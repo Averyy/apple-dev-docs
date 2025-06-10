@@ -1,6 +1,6 @@
 # onTapGesture(count:perform:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Adds an action to perform when this view recognizes a tap gesture.

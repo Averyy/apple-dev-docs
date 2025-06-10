@@ -46,6 +46,8 @@ protocol TabletopAction
 ### Creating bookmarks
 - [static func createBookmark(StateBookmark, context: UInt64) -> Self](tabletopaction/createbookmark(_:context:).md)
 - [static func createBookmark(id: StateBookmarkIdentifier, context: UInt64) -> Self](tabletopaction/createbookmark(id:context:).md)
+### Type Methods
+- [static func customAction(some CustomAction, context: UInt64) -> Self](tabletopaction/customaction(_:context:).md)
 
 ## Relationships
 

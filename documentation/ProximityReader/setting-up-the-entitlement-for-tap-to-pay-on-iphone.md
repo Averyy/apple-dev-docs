@@ -1,6 +1,6 @@
 # Setting up Tap to Pay on iPhone
 
-**Framework**: Proximityreader
+**Framework**: ProximityReader
 
 Request and configure the required entitlement to support Tap to Pay on iPhone.
 
@@ -75,4 +75,4 @@ The following example shows the contents of an app’s `.entitlements` file with
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ProximityReader/setting-up-the-entitlement-for-tap-to-pay-on-iphone)*
+*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/setting-up-the-entitlement-for-tap-to-pay-on-iphone)*

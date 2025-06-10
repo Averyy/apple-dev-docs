@@ -23,8 +23,6 @@ To enable App Store Server Notifications, follow these steps:
 
 > ❗ **Important**:  If you specify a port in your URL, the port must be either `443` or greater than or equal to `1024`. For example, the URL `https://example.com:1234/notifications` specifies the port `1234`.
 
- If you specify a port in your URL, the port must be either `443` or greater than or equal to `1024`. For example, the URL `https://example.com:1234/notifications` specifies the port `1234`.
-
 Configure your server to respond with HTTP status codes to indicate whether the App Store server notification `POST` is successful. For more information, see [`Responding to App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications/responding-to-app-store-server-notifications).
 
 For new implementations, use [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2). To transition from using version 1 notifications to version 2, test version 2 notifications in the sandbox environment before you update your production environment to version 2.

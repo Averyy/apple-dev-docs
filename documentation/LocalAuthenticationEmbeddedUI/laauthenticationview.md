@@ -46,11 +46,11 @@ override func viewDidAppear() {
 }
 ```
 
-The local authentication view displays an icon that depends on the type of authentication you request, and the types of authentication that the system supports. For example, for a device that supports Touch ID, if you request the [`LAPolicy.deviceOwnerAuthenticationWithBiometricsOrWatch`](https://developer.apple.com/documentation/LocalAuthentication/LAPolicy/deviceOwnerAuthenticationWithBiometricsOrWatch) policy, like in the example above, the view displays the familiar finger print icon:
+The local authentication view displays an icon that depends on the type of authentication you request, and the types of authentication that the system supports. For example, for a device that supports Touch ID, if you request the [`deviceOwnerAuthenticationWithBiometricsOrWatch`](https://developer.apple.com/documentation/LocalAuthentication/LAPolicy/deviceOwnerAuthenticationWithBiometricsOrWatch) policy, like in the example above, the view displays the familiar finger print icon:
 
 ![A screenshot of a circular icon with a pattern that resembles a finger print.](https://docs-assets.developer.apple.com/published/63abc31f750ffd3e74f794a1a8a9e37c/laauthenticationview-1%402x.png)
 
-In the case above, if the user has a connected Apple Watch, that authentication mechanism works as well. If you limit the authentication to the [`LAPolicy.deviceOwnerAuthenticationWithWatch`](https://developer.apple.com/documentation/LocalAuthentication/LAPolicy/deviceOwnerAuthenticationWithWatch) policy, the icon shows an Apple Watch in profile:
+In the case above, if the user has a connected Apple Watch, that authentication mechanism works as well. If you limit the authentication to the [`deviceOwnerAuthenticationWithWatch`](https://developer.apple.com/documentation/LocalAuthentication/LAPolicy/deviceOwnerAuthenticationWithWatch) policy, the icon shows an Apple Watch in profile:
 
 ![A screenshot of a circular icon containing the profile of an Apple Watch.](https://docs-assets.developer.apple.com/published/27733d7dd339bc1a9956c15a7d5f16b7/laauthenticationview-2%402x.png)
 

@@ -1,6 +1,6 @@
 # DOM_VERTICAL
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

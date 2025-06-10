@@ -1,6 +1,6 @@
 # xpc_string_create(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates an XPC object that represents a null-terminated C-string.

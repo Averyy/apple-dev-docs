@@ -72,4 +72,4 @@ To prevent the test environment from simulating a load products failure scenario
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3185-troubleshooting-in-app-purchases-availability-in-xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3185-troubleshooting-in-app-purchases-availability-in-xcode)*

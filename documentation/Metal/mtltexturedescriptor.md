@@ -21,9 +21,10 @@ class MTLTextureDescriptor
 
 ## Mentions
 
+- [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 - [Setting Resource Storage Modes](setting-resource-storage-modes.md)
 - [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
-- [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
 
 #### Overview
 
@@ -81,6 +82,8 @@ When you create a texture, Metal copies property values from the descriptor into
   An enumeration for the various options that determine how you can use a texture.
 ### Instance Properties
 - [var compressionType: MTLTextureCompressionType](mtltexturedescriptor/compressiontype.md)
+- [var placementSparsePageSize: MTLSparsePageSize](mtltexturedescriptor/placementsparsepagesize.md)
+  Determines the page size for a placement sparse texture.
 
 ## Relationships
 

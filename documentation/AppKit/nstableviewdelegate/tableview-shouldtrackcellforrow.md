@@ -1,6 +1,6 @@
 # tableView(_:shouldTrackCell:for:row:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Asks the delegate whether the specified cell should be tracked.

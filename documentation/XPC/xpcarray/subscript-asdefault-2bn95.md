@@ -1,6 +1,6 @@
 # subscript(_:as:default:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: subscript
 
 Reads and writes the value at the given index as a Boolean value, falling back to the given default value.

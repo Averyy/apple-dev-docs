@@ -10,8 +10,7 @@ A status report that contains details about the reason for a pending software up
 - iPadOS 17.0+
 - macOS 14.0+
 - tvOS 18.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 

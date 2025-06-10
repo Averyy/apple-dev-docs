@@ -1,6 +1,6 @@
 # Creating and using tokens with Maps Server API
 
-**Framework**: Applemapsserverapi
+**Framework**: Apple Maps Server API
 
 Sign JSON Web Tokens to use Maps Server API and debug common signing errors.
 
@@ -66,4 +66,4 @@ For next steps, go to [`Generate a Maps token`](-v1-token.md).
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleMapsServerAPI/creating-and-using-tokens-with-maps-server-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applemapsserverapi/creating-and-using-tokens-with-maps-server-api)*

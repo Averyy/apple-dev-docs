@@ -8,7 +8,6 @@ Constants that specify the edges of a rectangle.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst 13.1+
 - tvOS ?+
 - visionOS 1.0+
 - watchOS 2.0+
@@ -39,6 +38,10 @@ You can add these constants together to specify multiple edges at the same time.
 ### Initializers
 - [init(rawValue: UInt)](uirectedge/init(rawvalue:).md)
   Creates an edges structure with the specified raw value.
+### Default Implementations
+- [Equatable Implementations](uirectedge/equatable-implementations.md)
+- [OptionSet Implementations](uirectedge/optionset-implementations.md)
+- [SetAlgebra Implementations](uirectedge/setalgebra-implementations.md)
 
 ## Relationships
 
@@ -49,6 +52,7 @@ You can add these constants together to specify multiple edges at the same time.
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

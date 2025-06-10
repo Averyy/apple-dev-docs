@@ -25,7 +25,7 @@ A `sec_certificate_t` instance.
 #### Discussion
 
 ```None
-  Create an ARC-able `sec_certificate_t` instance from a `SecCertificateRef`.
+ Create an ARC-able `sec_certificate_t` instance from a `SecCertificateRef`.
 ```
 
 ## Parameters

@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByPerformance
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 An array indicating speed tradeoffs between pixel formats (optional).

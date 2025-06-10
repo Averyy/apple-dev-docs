@@ -1,6 +1,6 @@
 # AVPlayerItemMetadataOutput
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: class
 
 An object that vends collections of metadata items that a player item’s tracks carry.
@@ -52,6 +52,8 @@ class AVPlayerItemMetadataOutput
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -75,4 +77,4 @@ class AVPlayerItemMetadataOutput
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avplayeritemmetadataoutput)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avplayeritemmetadataoutput)*

@@ -1,6 +1,6 @@
 # webViewFirstResponder(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the first responder of the web view’s window.

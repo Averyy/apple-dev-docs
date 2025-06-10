@@ -16,7 +16,7 @@ Measurements of the model’s performance at the time the session saved the chec
 ## Declaration
 
 ```swift
-var metrics: [MLProgress.Metric : Any]
+var metrics: [MLProgress.Metric : Any] { get set }
 ```
 
 ## See Also

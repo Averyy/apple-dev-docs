@@ -1,6 +1,6 @@
 # displayDescription
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The localized extension description.

@@ -31,8 +31,6 @@ Purchase options enable you to provide additional information for the purchase, 
 
 > ❗ **Important**:  Purchases fail if a purchase option is invalid, and can result in the purchase method throwing a [`StoreKitError`](storekiterror.md) or [`Product.PurchaseError`](product/purchaseerror.md).
 
- Purchases fail if a purchase option is invalid, and can result in the purchase method throwing a [`StoreKitError`](storekiterror.md) or [`Product.PurchaseError`](product/purchaseerror.md).
-
 ##### Use Purchase Options During Testing
 
 In the sandbox testing environment, use [`simulatesAskToBuyInSandbox(_:)`](product/purchaseoption/simulatesasktobuyinsandbox(_:).md) to test Ask To Buy scenarios.
@@ -81,6 +79,9 @@ In the Xcode testing environment with [`StoreKit Test`](https://developer.apple.
   Adds a Boolean value for a custom key to a purchase.
 - [static func custom(key: String, value: Double) -> Product.PurchaseOption](product/purchaseoption/custom(key:value:)-7rju9.md)
   Adds a number for a custom key to a purchase.
+### Type Methods
+- [static func promotionalOffer(String, compactJWS: String) -> [Product.PurchaseOption]](product/purchaseoption/promotionaloffer(_:compactjws:).md)
+  Apply a promotional offer to a purchase.
 
 ## Relationships
 
@@ -90,6 +91,7 @@ In the Xcode testing environment with [`StoreKit Test`](https://developer.apple.
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

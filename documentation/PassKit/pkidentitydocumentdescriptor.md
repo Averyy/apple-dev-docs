@@ -1,6 +1,6 @@
 # PKIdentityDocumentDescriptor
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: protocol
 
 A type that describes the structure and behavior of an identity document.
@@ -44,8 +44,10 @@ A descriptor object describes the type of document that your app can request or 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 ### Conforming Types
+- [PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)
 - [PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)
 - [PKIdentityNationalIDCardDescriptor](pkidentitynationalidcarddescriptor.md)
+- [PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
 
 ## See Also
 
@@ -57,4 +59,4 @@ A descriptor object describes the type of document that your app can request or 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/pkidentitydocumentdescriptor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/passkit/pkidentitydocumentdescriptor)*

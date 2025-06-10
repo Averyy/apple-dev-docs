@@ -38,6 +38,7 @@ The focus ring type is used by [`NSView`](nsview.md) and [`NSCell`](nscell.md) t
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

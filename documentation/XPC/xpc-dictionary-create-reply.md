@@ -1,6 +1,6 @@
 # xpc_dictionary_create_reply(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates a dictionary that is in reply to the specified dictionary.

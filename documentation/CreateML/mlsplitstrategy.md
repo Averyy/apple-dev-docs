@@ -30,12 +30,13 @@ enum MLSplitStrategy
   Resolves this split strategy for a specific element count.
 ### Creating a random seed
 - [func timestampSeed() -> Int](timestampseed().md)
-  Creates a deterministic number from the current system time to seed random-number generators.
+  Returns a number based on the current system time.
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

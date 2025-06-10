@@ -1,6 +1,6 @@
 # fileAttributesToWrite(to:for:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Returns a dictionary of file attributes to associate with the document file when writing or updating it.
@@ -24,7 +24,7 @@ A dictionary of file attributes — for example, level of file protection and cr
 
 #### Discussion
 
-The attributes are associated with a specific file type and save operation. You can override this method to return a dictionary of file attributes that are different than the default file attribute, which for new files is [`extensionHidden`](https://developer.apple.com/documentation/foundation/fileattributekey/1409258-extensionhidden).
+The attributes are associated with a specific file type and save operation. You can override this method to return a dictionary of file attributes that are different than the default file attribute, which for new files is [`extensionHidden`](https://developer.apple.com/documentation/Foundation/FileAttributeKey/extensionHidden).
 
 The [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md) calls this method before executing asynchronous writing. It passes the dictionary into [`writeContents(_:andAttributes:safelyTo:for:)`](uidocument/writecontents(_:andattributes:safelyto:for:).md) when it calls that method to write the document file.
 

@@ -1,6 +1,6 @@
 # MAX_VERTEX_ATTRIBS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # Tables in an Article
 
-**Framework**: Applenews
+**Framework**: Apple News
 
 Add a JSON or HTML data table, and understand  the options for changing the look of your table.
 
@@ -45,4 +45,4 @@ Once you add a table, you can apply styles (backgrounds, borders, and so on) and
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/tables-in-an-article)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applenews/tables-in-an-article)*

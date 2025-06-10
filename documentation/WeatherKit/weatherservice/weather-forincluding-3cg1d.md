@@ -1,6 +1,6 @@
 # weather(for:including:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns the weather forecast for the requested location.
@@ -17,7 +17,8 @@ Returns the weather forecast for the requested location.
 ## Declaration
 
 ```swift
-final func weather<T>(for location: CLLocation, including dataSet: WeatherQuery<T>) async throws -> T
+@preconcurrency
+final func weather<T>(for location: CLLocation, including dataSet: WeatherQuery<T>) async throws -> T where T : Sendable
 ```
 
 #### Return Value

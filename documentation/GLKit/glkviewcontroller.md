@@ -1,6 +1,6 @@
 # GLKViewController
 
-**Framework**: Glkit  
+**Framework**: GLKit  
 **Kind**: class
 
 A view controller that manages an OpenGL ES rendering loop.
@@ -84,6 +84,7 @@ As an alternative to implementing a [`glkViewControllerUpdate(_:)`](glkviewcontr
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
@@ -107,4 +108,4 @@ As an alternative to implementing a [`glkViewControllerUpdate(_:)`](glkviewcontr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GLKit/glkviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/glkit/glkviewcontroller)*

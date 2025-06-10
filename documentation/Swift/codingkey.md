@@ -39,6 +39,7 @@ protocol CodingKey : CustomDebugStringConvertible, CustomStringConvertible, Send
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomStringConvertible](customstringconvertible.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

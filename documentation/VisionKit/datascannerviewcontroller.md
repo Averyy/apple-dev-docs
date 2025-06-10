@@ -1,6 +1,6 @@
 # DataScannerViewController
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: class
 
 An object that scans the camera live video for text, data in text, and machine-readable codes.
@@ -120,7 +120,6 @@ Alternatively, you can track items that appear in the live video using the async
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

@@ -76,6 +76,7 @@ When you create a credential, you can specify it for a single request, persist i
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -91,4 +92,4 @@ When you create a credential, you can specify it for a single request, persist i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlcredential)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlcredential)*

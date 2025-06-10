@@ -71,4 +71,4 @@ Connect the iPhone to the Mac over USB. The first time you run this sample app, 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/extracting-phone-numbers-from-text-in-images)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/extracting-phone-numbers-from-text-in-images)*

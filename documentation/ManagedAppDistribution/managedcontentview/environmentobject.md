@@ -1,6 +1,6 @@
 # environmentObject(_:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Supplies an observable object to a view’s hierarchy.

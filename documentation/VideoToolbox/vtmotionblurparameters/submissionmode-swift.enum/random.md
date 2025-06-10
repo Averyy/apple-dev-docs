@@ -1,11 +1,14 @@
 # VTMotionBlurParameters.SubmissionMode.random
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: case
 
 A submission follow presentation time order with a jump or skip in a frame sequence.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
 
 ## Declaration

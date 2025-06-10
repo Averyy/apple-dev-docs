@@ -1,6 +1,6 @@
 # WebMenuItemPDFZoomOut
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Scale down a PDF document.

@@ -62,11 +62,14 @@ You can also use `MapScaleView` with the [`mapControls(_:)`](https://developer.a
 ### Creating a map scale view
 - [init(anchorEdge: HorizontalEdge, scope: Namespace.ID?)](mapscaleview/init(anchoredge:scope:).md)
   Creates a map scale view.
+- [init(alignment: HorizontalAlignment, scope: Namespace.ID?)](mapscaleview/init(alignment:scope:).md)
+  Creates a scale view with the provided alignment and scope.
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

@@ -1,6 +1,6 @@
 # Configuring a home automation device
 
-**Framework**: Homekit
+**Framework**: HomeKit
 
 Give users a familiar experience when they manage HomeKit accessories.
 
@@ -202,4 +202,4 @@ Characteristic types are stored as UUID strings. The value specified in the code
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HomeKit/configuring-a-home-automation-device)*
+*[View on Apple Developer](https://developer.apple.com/documentation/homekit/configuring-a-home-automation-device)*

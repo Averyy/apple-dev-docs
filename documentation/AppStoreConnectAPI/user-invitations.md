@@ -27,6 +27,7 @@ You can also get a list of all invited users, read the invite information of a s
 ### Getting Visible Apps
 - [List All Apps Visible to an Invited User](get-v1-userinvitations-_id_-visibleapps.md)
   Get a list of apps that will be visible to a user with a pending invitation.
+- [GET /v1/userInvitations/{id}/relationships/visibleApps](get-v1-userinvitations-_id_-relationships-visibleapps.md)
 ### Objects
 - [object UserInvitation](userinvitation.md)
   The data structure that represents a User Invitations resource.
@@ -36,6 +37,7 @@ You can also get a list of all invited users, read the invite information of a s
   A response that contains a single User Invitations resource.
 - [object UserInvitationsResponse](userinvitationsresponse.md)
   A response that contains a list of User Invitations resources.
+- [object UserInvitationVisibleAppsLinkagesResponse](userinvitationvisibleappslinkagesresponse.md)
 
 ## See Also
 

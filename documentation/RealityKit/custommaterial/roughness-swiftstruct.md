@@ -10,6 +10,7 @@ An object that defines how the surface of an entity scatters the light it reflec
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -37,8 +38,6 @@ For more information on using roughness values in a custom material, see [`rough
   The roughness value for the entire entity or a multiplier for its texture.
 - [var texture: CustomMaterial.Texture?](custommaterial/roughness-swift.struct/texture.md)
   The roughness values as a UV-mapped image texture.
-- [CustomMaterial.Roughness.FloatLiteralType](custommaterial/roughness-swift.struct/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 ## Relationships
 

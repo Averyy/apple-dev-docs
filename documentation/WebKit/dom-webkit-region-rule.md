@@ -1,6 +1,6 @@
 # DOM_WEBKIT_REGION_RULE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

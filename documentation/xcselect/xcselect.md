@@ -1,6 +1,6 @@
 # xcselect
 
-**Framework**: Xcselect  
+**Framework**: xcselect  
 **Kind**: module
 
 Access the path of the macOS SDK available on the host system.

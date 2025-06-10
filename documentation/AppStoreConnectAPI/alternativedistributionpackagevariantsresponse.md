@@ -72,6 +72,9 @@ This object is the response that contains a list of alternative distribution pac
   The data structure that represents an alternative distribution package variant resource.
 - [object AlternativeDistributionPackageVariantResponse](alternativedistributionpackagevariantresponse.md)
   A response that contains a single alternative distribution package variant resource.
+- [object AlternativeDistributionPackageVersionDeltasLinkagesResponse](alternativedistributionpackageversiondeltaslinkagesresponse.md)
+- [object AlternativeDistributionPackageVersionVariantsLinkagesResponse](alternativedistributionpackageversionvariantslinkagesresponse.md)
+- [object AlternativeDistributionPackageVersionsLinkagesResponse](alternativedistributionpackageversionslinkagesresponse.md)
 
 
 ---

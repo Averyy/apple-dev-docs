@@ -1,6 +1,6 @@
 # sessionCompanionAppInstalledDidChange(_:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Indicates a change to the companion app’s installed state.

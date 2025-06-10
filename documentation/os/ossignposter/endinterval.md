@@ -24,8 +24,6 @@ func endInterval(_ name: StaticString, _ state: OSSignpostIntervalState, _ messa
 
 > ❗ **Important**:  Don’t create an instance of [`SignpostMetadata`](signpostmetadata.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 
- Don’t create an instance of [`SignpostMetadata`](signpostmetadata.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
-
 The signposter uses interval state to enforce the following runtime assertions:
 
 - Multiple end calls don’t consume the same interval state.
@@ -38,8 +36,6 @@ In debug builds, any assertion failures result in a crash. In production builds,
 If you don’t have access to the returned interval state from the corresponding begin call, or the cost you incur when serializing the state to pass between processes is unacceptable, recreate the interval state by passing the interval’s signpost ID to [`beginState(id:)`](ossignpostintervalstate/beginstate(id:).md). For more information about serializing interval state, see [`OSSignpostIntervalState`](ossignpostintervalstate.md).
 
 > ❗ **Important**:  Recreating interval state using the [`beginState(id:)`](ossignpostintervalstate/beginstate(id:).md) method bypasses runtime assertions that check for consistency between the beginning and the end of a signposted interval.
-
- Recreating interval state using the [`beginState(id:)`](ossignpostintervalstate/beginstate(id:).md) method bypasses runtime assertions that check for consistency between the beginning and the end of a signposted interval.
 
 The following example shows how to recreate interval state in a scope other than the one that includes the begin call, and also demonstrates the use of message interpolation:
 

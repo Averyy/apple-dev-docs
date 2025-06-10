@@ -1,6 +1,6 @@
 # DOM_SHOW_DOCUMENT_FRAGMENT
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

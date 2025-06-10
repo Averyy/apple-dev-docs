@@ -1,6 +1,6 @@
 # Building missing contexts
 
-**Framework**: Classkit
+**Framework**: ClassKit
 
 Create and initialize missing contexts.
 
@@ -73,4 +73,4 @@ Once you create and configure the context, you simply return it to the data stor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/building-missing-contexts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/classkit/building-missing-contexts)*

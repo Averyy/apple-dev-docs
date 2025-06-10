@@ -63,6 +63,10 @@ Alternatively, either add the access point or display the dashboard so that the 
 - [var groupIdentifier: String?](gkachievementdescription/groupidentifier.md)
   The identifier for the group that the achievement description is part of.
 ### Instance Properties
+- [var activityIdentifier: String](gkachievementdescription/activityidentifier.md)
+  The identifier of the game activity associated with this achievement, as configured by the developer in App Store Connect.
+- [var activityProperties: [String : String]](gkachievementdescription/activityproperties.md)
+  The properties when associating this achievement with a game activity, as configured by the developer in App Store Connect.
 - [var releaseState: GKReleaseState](gkachievementdescription/releasestate.md)
   The release state of the achievement in App Store Connect.
 

@@ -26,8 +26,6 @@ In iOS 3.x and earlier, the value in this property is always measured relative t
 
 > ❗ **Important**:  This property contains a valid value only if location updates are also enabled for the corresponding location manager object. Because the position of true north is different from the position of magnetic north on the Earth’s surface, Core Location needs the current location of the device to compute the value of this property.
 
- This property contains a valid value only if location updates are also enabled for the corresponding location manager object. Because the position of true north is different from the position of magnetic north on the Earth’s surface, Core Location needs the current location of the device to compute the value of this property.
-
 ## See Also
 
 - [var magneticHeading: CLLocationDirection](clheading/magneticheading.md)

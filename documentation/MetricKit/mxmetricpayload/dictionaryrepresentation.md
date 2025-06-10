@@ -9,6 +9,7 @@ Returns the results of the payload as a dictionary.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
+- macOS 11.0+
 - visionOS 1.0+
 
 ## Declaration

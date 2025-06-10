@@ -11,7 +11,7 @@ A universally unique value to identify a player.
 ## Declaration
 
 ```swift
-let uuid: UUID
+var uuid: UUID { get }
 ```
 
 

@@ -26,7 +26,7 @@ A date representation of `string`. If [`date(from:)`](dateformatter/date(from:).
 
 #### Discussion
 
-For more information about using [`DateFormatter`](dateformatter.md) to convert a string to a date, see [`Working With Fixed Format Date Representations`](dateformatter#Working-With-Fixed-Format-Date-Representations.md). For a sample code playground, see [`Displaying Human-Friendly Content`](formatter/displaying_human-friendly_content.md).
+For more information about using [`DateFormatter`](dateformatter.md) to convert a string to a date, see [`Working With Fixed Format Date Representations`](dateformatter#Working-With-Fixed-Format-Date-Representations.md). For a sample code playground, see [`Displaying Human-Friendly Content`](displaying_human-friendly_content.md).
 
 ## Parameters
 

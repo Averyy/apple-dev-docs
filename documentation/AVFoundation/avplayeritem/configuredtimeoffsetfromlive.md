@@ -23,7 +23,7 @@ var configuredTimeOffsetFromLive: CMTime { get set }
 
 #### Discussion
 
-For nonlive stream content, the value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid).
+For nonlive stream content, the value is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid).
 
 ## See Also
 

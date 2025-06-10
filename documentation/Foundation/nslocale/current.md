@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-A locale representing the user’s region settings at the time the property is read.
+A locale that represents the user’s region settings at the time the property is read.
 
 **Availability**:
 - iOS 2.0+
@@ -22,11 +22,15 @@ class var current: Locale { get }
 
 #### Discussion
 
-The locale is formed from the settings for the current user’s chosen system locale overlaid with any custom settings the user has specified.
+This value represents the locale currently used by the app, based on the following:
 
-Use this property when you need to rely on a consistent locale. A locale instance obtained this way does not change even when the user changes region settings. If you want a locale instance that always reflects the current configuration, use the one provided by the [`autoupdatingCurrent`](nslocale/autoupdatingcurrent.md) property instead.
+- The current system locale.
+- Any app-specific locale choice made in the Settings app.
+- The availability of the preferred locale in the app. For example, if the person using an app has set their device to use a Spanish-language locale, but the app only supports English, this value returns an English locale.
 
-To receive notification of locale changes, add your object as an observer of the a [`currentLocaleDidChangeNotification`](nslocale/currentlocaledidchangenotification.md).
+Use this property when you need to rely on a consistent locale. A locale instance obtained this way does not change even when the person using the device changes region settings. If you want a locale instance that always reflects the current configuration, use the one provided by the [`autoupdatingCurrent`](nslocale/autoupdatingcurrent.md) property instead.
+
+To receive notification of locale changes, add your object as an observer of [`currentLocaleDidChangeNotification`](nslocale/currentlocaledidchangenotification.md).
 
 ## See Also
 

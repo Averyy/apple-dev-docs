@@ -44,6 +44,7 @@ The system returns [`HKQueryAnchor`](hkqueryanchor.md) objects in both the ancho
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

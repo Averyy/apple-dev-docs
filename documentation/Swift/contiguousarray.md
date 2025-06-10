@@ -39,6 +39,8 @@ For more information about using arrays, see `Array` and `ArraySlice`, with whic
 ### Instance Properties
 - [var capacity: Int](contiguousarray/capacity.md)
   The total number of elements that the array can contain without allocating new storage.
+- [var mutableSpan: MutableSpan<Element>](contiguousarray/mutablespan.md)
+- [var span: Span<Element>](contiguousarray/span.md)
 ### Instance Methods
 - [func insert(Element, at: Int)](contiguousarray/insert(_:at:).md)
   Inserts a new element at the specified position.
@@ -55,6 +57,7 @@ For more information about using arrays, see `Array` and `ArraySlice`, with whic
 - [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer) throws -> R) rethrows -> R](contiguousarray/withunsafemutablebytes(_:).md)
   Calls the given closure with a pointer to the underlying bytes of the array’s mutable contiguous storage.
 ### Default Implementations
+- [Attachable Implementations](contiguousarray/attachable-implementations.md)
 - [BidirectionalCollection Implementations](contiguousarray/bidirectionalcollection-implementations.md)
 - [Collection Implementations](contiguousarray/collection-implementations.md)
 - [CustomDebugStringConvertible Implementations](contiguousarray/customdebugstringconvertible-implementations.md)
@@ -66,6 +69,7 @@ For more information about using arrays, see `Array` and `ArraySlice`, with whic
 - [ExpressibleByArrayLiteral Implementations](contiguousarray/expressiblebyarrayliteral-implementations.md)
 - [Hashable Implementations](contiguousarray/hashable-implementations.md)
 - [MutableCollection Implementations](contiguousarray/mutablecollection-implementations.md)
+- [OperationParameter Implementations](contiguousarray/operationparameter-implementations.md)
 - [RandomAccessCollection Implementations](contiguousarray/randomaccesscollection-implementations.md)
 - [RangeReplaceableCollection Implementations](contiguousarray/rangereplaceablecollection-implementations.md)
 - [Sequence Implementations](contiguousarray/sequence-implementations.md)
@@ -75,6 +79,8 @@ For more information about using arrays, see `Array` and `ArraySlice`, with whic
 ### Conforms To
 - [AccelerateBuffer](../Accelerate/AccelerateBuffer.md)
 - [AccelerateMutableBuffer](../Accelerate/AccelerateMutableBuffer.md)
+- [Attachable](../Testing/Attachable.md)
+- [BNNSGraph.Builder.OperationParameter](../Accelerate/BNNSGraph/Builder/OperationParameter.md)
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
@@ -93,6 +99,7 @@ For more information about using arrays, see `Array` and `ArraySlice`, with whic
 - [RandomAccessCollection](randomaccesscollection.md)
 - [RangeReplaceableCollection](rangereplaceablecollection.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

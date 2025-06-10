@@ -52,8 +52,6 @@ channelManager.requestJoinChannel(channelUUID: channelUUID,
 
 > ❗ **Important**:  A person can only join a channel when a PTT app is running in the foreground — with explicit user interaction — so apps need to provide buttons to allow a person to join and leave a channel.
 
- A person can only join a channel when a PTT app is running in the foreground — with explicit user interaction — so apps need to provide buttons to allow a person to join and leave a channel.
-
 After initializing the channel manager, the framework provides an ephemeral APNs device token in [`channelManager(_:receivedEphemeralPushToken:)`](ptchannelmanagerdelegate/channelmanager(_:receivedephemeralpushtoken:).md). Get the variable-length push token and send it to the app’s server. The token isn’t active until a person joins the channel. If they leave the channel, wait until they rejoin to resume notifications.
 
 Joining a channel can fail when another channel is already active. On failure, the framework calls the delegate method [`channelManager(_:failedToJoinChannel:error:)`](ptchannelmanagerdelegate/channelmanager(_:failedtojoinchannel:error:).md) and contains a [`PTChannelError.Code`](ptchannelerror-swift.struct/code.md).
@@ -132,8 +130,6 @@ func channelManager(_ channelManager: PTChannelManager,
 ```
 
 > ❗ **Important**:  Let the system activate and deactivate the audio session to ensure it has the proper priority within the system.
-
- Let the system activate and deactivate the audio session to ensure it has the proper priority within the system.
 
 The system provides built-in sound effects to indicate that the microphone is in an activated or deactivated state. Don’t provide sound effects for these events. The framework doesn’t support custom sound effects.
 

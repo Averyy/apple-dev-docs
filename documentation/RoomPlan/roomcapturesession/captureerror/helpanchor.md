@@ -22,7 +22,7 @@ var helpAnchor: String? { get }
 ## See Also
 
 - [var errorDescription: String?](roomcapturesession/captureerror/errordescription.md)
-  A localized message describing what error occurred.
+  A human-readable explanation for the error.
 - [var failureReason: String?](roomcapturesession/captureerror/failurereason.md)
   A localized message describing the reason for the failure.
 - [var localizedDescription: String](roomcapturesession/captureerror/localizeddescription.md)

@@ -1,6 +1,6 @@
 # WKBackgroundFetchResult.failed
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The download attempt failed.

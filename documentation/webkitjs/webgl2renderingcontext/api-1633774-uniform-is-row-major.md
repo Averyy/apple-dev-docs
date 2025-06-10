@@ -1,6 +1,6 @@
 # UNIFORM_IS_ROW_MAJOR
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

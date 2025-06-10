@@ -1,6 +1,6 @@
 # wait(for:timeout:enforceOrder:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Waits for the test to satisfy an array of expectations and specifies whether they must occur in the array’s order.

@@ -10,8 +10,7 @@ A dictionary that contains details about a software update failure.
 - iPadOS 17.0+
 - macOS 14.0+
 - tvOS 18.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 

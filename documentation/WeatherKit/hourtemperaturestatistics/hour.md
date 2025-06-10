@@ -1,6 +1,6 @@
 # hour
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The hour of the year, in UTC.

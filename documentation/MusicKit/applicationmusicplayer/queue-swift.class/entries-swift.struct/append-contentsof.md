@@ -1,6 +1,6 @@
 # append(contentsOf:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Adds the elements of a sequence or collection to the end of this collection.

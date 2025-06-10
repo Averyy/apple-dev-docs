@@ -1,6 +1,6 @@
 # poster
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The URI address of an image file that is shown when no video data is available.

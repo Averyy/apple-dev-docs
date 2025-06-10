@@ -1,22 +1,23 @@
 # export(to:as:isolation:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Exports the asset to the output location in the specified file type.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
+- iOS 13.0+
+- iPadOS 13.0+
 - Mac Catalyst ?+
-- macOS 15.0+
-- tvOS 18.0+
-- visionOS 2.0+
+- macOS 10.15+
+- tvOS 13.0+
+- visionOS 1.0+
 
 ## Declaration
 
 ```swift
-func export(to url: URL, as fileType: AVFileType, isolation: isolated (any Actor)? = #isolation) async throws
+@backDeployed(before: macOS 16, iOS 19, tvOS 19, visionOS 3)
+final func export(to url: URL, as fileType: AVFileType, isolation: isolated (any Actor)? = #isolation) async throws
 ```
 
 #### Discussion

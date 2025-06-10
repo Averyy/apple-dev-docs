@@ -1,6 +1,6 @@
 # ImageAnalysisOverlayView.Subject
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: struct
 
 An area of interest in an image that the framework identifies as a primary focal point.

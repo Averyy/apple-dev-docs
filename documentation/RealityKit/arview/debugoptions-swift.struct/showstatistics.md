@@ -10,6 +10,7 @@ Collect performance statistics and display them in the view.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

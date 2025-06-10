@@ -29,8 +29,6 @@ When you install the interaction on your text input view, the system installs tw
 
 > ❗ **Important**:  When assigning a value to this property, you must provide exactly two views. One view provides the leading selection handle and the other provides the trailing selection handle.
 
- When assigning a value to this property, you must provide exactly two views. One view provides the leading selection handle and the other provides the trailing selection handle.
-
 ## See Also
 
 - [var highlightView: any UIView & UITextSelectionHighlightView](uitextselectiondisplayinteraction/highlightview.md)

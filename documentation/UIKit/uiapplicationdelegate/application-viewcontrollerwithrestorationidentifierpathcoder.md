@@ -1,6 +1,6 @@
 # application(_:viewControllerWithRestorationIdentifierPath:coder:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Asks the delegate to provide the specified view controller.

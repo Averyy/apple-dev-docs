@@ -1,6 +1,6 @@
 # PKIdentityNationalIDCardDescriptor
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: class
 
 An object for requesting information from a user’s national ID card.
@@ -68,6 +68,18 @@ Building an app with this entitlement requires macOS 13 or later. For more infor
 
 ## See Also
 
+- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
+  Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
+- [class PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
+  An object you use to request information from a user’s photo ID or equivalent document.
+- [class PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)
+  An object you use to request information from multiple identity documents.
+- [class PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)
+  An object for requesting information from a user’s driver’s license or equivalent document.
+- [class PKAddIdentityDocumentMetadata](pkaddidentitydocumentmetadata.md)
+  The object for specifying the metadata necessary to provision identity documents.
+- [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
+  Configuration to define the identity document.
 - [struct JPKIPassContents](jpkipasscontents.md)
   A set of actions for viewing and updating PINs, passwords, and signing abilities associated with digital identities on the JPKI applet.
 - [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
@@ -75,11 +87,11 @@ Building an app with this entitlement requires macOS 13 or later. For more infor
 - [class PKAddPassMetadataPreview](pkaddpassmetadatapreview.md)
   A preview object that contains information representing the pass you add to Wallet.
 - [class PKIdentityDocumentMetadata](pkidentitydocumentmetadata.md)
-  A set of configured metadata defining the required information to add the corresponding pass to Wallet.
+  A set of configured metadata that defines the required information to add the corresponding pass to Wallet.
 - [class PKJapanIndividualNumberCardMetadata](pkjapanindividualnumbercardmetadata.md)
   A class that contains metadata indicating the specific product instance to provision.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/pkidentitynationalidcarddescriptor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/passkit/pkidentitynationalidcarddescriptor)*

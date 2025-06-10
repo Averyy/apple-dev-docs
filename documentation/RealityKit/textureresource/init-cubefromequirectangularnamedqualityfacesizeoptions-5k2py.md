@@ -10,6 +10,7 @@ Synchronously creates a cube texture resource from an equirectangular image.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -70,8 +71,6 @@ if let source = CGImageSourceCreateWithURL(url as CFURL, nil),
   Synchronously creates a cube texture resource from a pixel Metal buffer, or data.
 - [convenience init(dimensions: TextureResource.DimensionsCube, format: TextureResource.Format, contents: TextureResource.Contents) async throws](textureresource/init(dimensions:format:contents:)-75en1.md)
   Asynchronously creates a cube texture resource from a pixel Metal buffer, or data.
-- [TextureResource.DimensionsCube](textureresource/dimensionscube.md)
-  The dimensions of the cube texture.
 
 
 ---

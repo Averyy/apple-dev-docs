@@ -1,6 +1,6 @@
 # webView(_:shouldApplyStyle:toElementsIn:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns whether the user should be allowed to apply a style to a range of content.

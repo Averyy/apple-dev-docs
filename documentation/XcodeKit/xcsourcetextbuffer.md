@@ -1,6 +1,6 @@
 # XCSourceTextBuffer
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: class
 
 A buffer you use to access and modify the text contents and text selections in a source editor.

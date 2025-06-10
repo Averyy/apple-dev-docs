@@ -1,6 +1,6 @@
 # perform(handGesture:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 **Availability**:

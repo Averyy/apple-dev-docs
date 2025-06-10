@@ -1,6 +1,6 @@
 # xpc_dictionary_set_double(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Inserts a double-precision floating point primitive value into a dictionary.

@@ -1,17 +1,17 @@
 # CIFeatureTypeFace
 
 **Framework**: Core Image  
-**Kind**: data
+**Kind**: var
 
 The discovered feature is a person’s face.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.0+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 

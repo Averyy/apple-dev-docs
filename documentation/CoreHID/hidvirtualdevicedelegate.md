@@ -34,6 +34,7 @@ A delegate must be created and provided to [`activate(delegate:)`](hidvirtualdev
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -78,8 +78,6 @@ The Vision frameworks represents a 3D position as a [`simd_float4x4`](https://de
 
 > ❗ **Important**:  A joint’s position is always relative to the root joint.
 
- A joint’s position is always relative to the root joint.
-
 Use [`pointInImage(_:)`](vnhumanbodypose3dobservation/pointinimage(_:).md) to project a 3D joint coordinate back to a 2D input image for the body joint you specify. For instance, if you want to align the 3D body pose with the 2D input image, use [`pointInImage(_:)`](vnhumanbodypose3dobservation/pointinimage(_:).md) to get the root joint position in the input image.
 
 A [`localPosition`](vnhumanbodyrecognizedpoint3d/localposition.md) is useful if your app is only working with one area of the body, and simplifies determining the angle between a child and parent joint.

@@ -1,6 +1,6 @@
 # pageZoom
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The scale factor by which the web view scales content relative to its bounds.

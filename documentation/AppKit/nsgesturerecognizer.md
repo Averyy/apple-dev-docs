@@ -1,6 +1,6 @@
 # NSGestureRecognizer
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An object that monitors events and calls its action method when a predefined sequence of events occur.
@@ -164,6 +164,8 @@ For more information about using the delegate to control the behavior of your ge
 - [init?(coder: NSCoder)](nsgesturerecognizer/init(coder:).md)
 ### Instance Properties
 - [var allowedTouchTypes: NSTouch.TouchTypeMask](nsgesturerecognizer/allowedtouchtypes.md)
+- [var modifierFlags: NSEvent.ModifierFlags](nsgesturerecognizer/modifierflags.md)
+- [var name: String?](nsgesturerecognizer/name.md)
 ### Instance Methods
 - [func touchesBegan(with: NSEvent)](nsgesturerecognizer/touchesbegan(with:).md)
   Called when one or more fingers first make contact with an [`NSTouchBar`](nstouchbar.md) instance on the Touch Bar.
@@ -173,6 +175,7 @@ For more information about using the delegate to control the behavior of your ge
   Called when one or more fingers are removed from contact with an [`NSTouchBar`](nstouchbar.md) instance on the Touch Bar.
 - [func touchesMoved(with: NSEvent)](nsgesturerecognizer/touchesmoved(with:).md)
   Called when one or more fingers, associated with an in-progress event, move within an [`NSTouchBar`](nstouchbar.md) instance on the Touch Bar.
+- [func mouseCancelled(NSEvent)](nsgesturerecognizer/mousecancelled(_:).md)
 
 ## Relationships
 
@@ -202,4 +205,4 @@ For more information about using the delegate to control the behavior of your ge
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsgesturerecognizer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsgesturerecognizer)*

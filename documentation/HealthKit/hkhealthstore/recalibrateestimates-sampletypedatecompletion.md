@@ -25,8 +25,6 @@ Your app can use this method to recalibrate HealthKitʼs prediction algorithms a
 
 > ⚠️ **Warning**:  Before calling this method, your app must include the `com.apple.developer.healthkit.recalibrate-estimates` entitlement. Also, you must request both share and read access to all the data types you pass to the `sampleType` parameter. If you haven’t completed all of these steps, recalibration fails with an [`HKError.Code.errorAuthorizationDenied`](hkerror/code/errorauthorizationdenied.md) error.
 
- Before calling this method, your app must include the `com.apple.developer.healthkit.recalibrate-estimates` entitlement. Also, you must request both share and read access to all the data types you pass to the `sampleType` parameter. If you haven’t completed all of these steps, recalibration fails with an [`HKError.Code.errorAuthorizationDenied`](hkerror/code/errorauthorizationdenied.md) error.
-
 Check the [`HKSampleType`](hksampletype.md) class’s [`allowsRecalibrationForEstimates`](hksampletype/allowsrecalibrationforestimates.md) method to see if a given sample type supports recalibrating the algorithm.
 
 The following sample code recalibrates the estimates for the six-minute walk test.

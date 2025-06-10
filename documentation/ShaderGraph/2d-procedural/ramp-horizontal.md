@@ -5,17 +5,25 @@
 
 A left-to-right linear value ramp (gradient) generator.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-This node uses interpolation to create a horizontal ramp or gradient from two values. Any point within the output ramp is a mix of the two values. A given point is more similar to the value that its horizontal position is closer to. Below is a an example of a simple node graph that uses Ramp Horizontal to create a color gradient.
+This node uses interpolation to create a horizontal ramp or gradient from two values. Any point within the output ramp is a mix of the two values. A given point is more similar to the value that its horizontal position is closer to. Below is a an example of a simple node graph that uses `Ramp Horizontal` to create a color gradient:
 
 ![None](https://docs-assets.developer.apple.com/published/262f1f12dc34a4ffc9d1065f449f1c8c/RampHorizontalGraph.png)
 
-The image below shows the resulting texture, along with the color values on either side.
+The image below shows the resulting texture, along with the color values on either side:
 
 ![None](https://docs-assets.developer.apple.com/published/be3386c09c6ce3c9d3076223b98fea13/RampHorizontalMaterial.png)
 

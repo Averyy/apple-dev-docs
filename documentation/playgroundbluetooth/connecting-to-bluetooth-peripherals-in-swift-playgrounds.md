@@ -43,8 +43,6 @@ PlaygroundPage.current.liveView = page
 
 > ❗ **Important**: Always use the system-provided [`PlaygroundBluetoothConnectionView`](playgroundbluetoothconnectionview.md) to display connection information for peripherals. Doing so helps provide a consistent experience for people who also use playground books created by others.
 
-Always use the system-provided [`PlaygroundBluetoothConnectionView`](playgroundbluetoothconnectionview.md) to display connection information for peripherals. Doing so helps provide a consistent experience for people who also use playground books created by others.
-
 ## See Also
 
 - [class PlaygroundBluetoothCentralManager](playgroundbluetoothcentralmanager.md)

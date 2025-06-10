@@ -14,7 +14,6 @@ The methods for customizing the menu the interaction displays.
 ## Declaration
 
 ```swift
-@MainActor
 protocol UIEditMenuInteractionDelegate : NSObjectProtocol
 ```
 

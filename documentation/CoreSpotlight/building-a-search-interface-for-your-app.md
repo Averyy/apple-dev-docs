@@ -1,6 +1,6 @@
 # Building a search interface for your app
 
-**Framework**: Corespotlight
+**Framework**: Core Spotlight
 
 Add a search interface to your app to execute Spotlight queries and offer suggested text completions.
 
@@ -113,4 +113,4 @@ For more information on adding search suggestions to your SwiftUI views, see [`S
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreSpotlight/building-a-search-interface-for-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corespotlight/building-a-search-interface-for-your-app)*

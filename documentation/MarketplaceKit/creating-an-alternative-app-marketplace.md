@@ -1,6 +1,6 @@
 # Creating an alternative app marketplace
 
-**Framework**: Marketplacekit
+**Framework**: MarketplaceKit
 
 Enable the distribution of other third-party apps from within your marketplace app.
 
@@ -86,4 +86,4 @@ To test distribution over the web, ensure:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/creating-an-alternative-app-marketplace)*
+*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/creating-an-alternative-app-marketplace)*

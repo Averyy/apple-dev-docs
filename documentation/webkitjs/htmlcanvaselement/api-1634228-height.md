@@ -1,6 +1,6 @@
 # height
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 An integer containing the height of the canvas in CSS pixels.

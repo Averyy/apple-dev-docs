@@ -25,8 +25,6 @@ convenience init(_ stages: [NSMigrationStage])
 
 > ❗ **Important**:  Core Data processes the migration stages in the order that you provide them.
 
- Core Data processes the migration stages in the order that you provide them.
-
 ## Parameters
 
 - `stages`: The array of migration stages to execute.

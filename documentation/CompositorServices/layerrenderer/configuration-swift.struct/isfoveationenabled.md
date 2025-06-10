@@ -6,6 +6,7 @@
 A value that indicates if the layer is using variable rasterization rates.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

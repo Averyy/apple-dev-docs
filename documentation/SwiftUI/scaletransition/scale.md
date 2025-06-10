@@ -17,8 +17,7 @@ The amount to scale the view by.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency var scale: Double
+var scale: Double
 ```
 
 ## See Also

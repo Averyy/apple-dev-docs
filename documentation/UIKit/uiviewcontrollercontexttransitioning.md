@@ -27,8 +27,6 @@ A context object encapsulates information about the views and view controllers i
 
 > ❗ **Important**:  When defining custom animator objects, always check the value returned by the [`isAnimated`](uiviewcontrollercontexttransitioning/isanimated.md) method to determine whether you should create animations at all. And when you do create transition animations, always call the [`completeTransition(_:)`](uiviewcontrollercontexttransitioning/completetransition(_:).md) method from an appropriate completion block to let UIKit know when all of your animations have finished.
 
- When defining custom animator objects, always check the value returned by the [`isAnimated`](uiviewcontrollercontexttransitioning/isanimated.md) method to determine whether you should create animations at all. And when you do create transition animations, always call the [`completeTransition(_:)`](uiviewcontrollercontexttransitioning/completetransition(_:).md) method from an appropriate completion block to let UIKit know when all of your animations have finished.
-
 ## Topics
 
 ### Accessing the transition objects

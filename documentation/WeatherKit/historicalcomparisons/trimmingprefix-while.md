@@ -1,6 +1,6 @@
 # trimmingPrefix(while:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 **Availability**:

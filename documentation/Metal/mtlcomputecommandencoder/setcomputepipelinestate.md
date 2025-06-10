@@ -24,8 +24,6 @@ func setComputePipelineState(_ state: any MTLComputePipelineState)
 
 > ❗ **Important**:  Set a compute encoder’s pipeline state before encoding any commands. Encoding commands without an available pipeline state causes an error.
 
- Set a compute encoder’s pipeline state before encoding any commands. Encoding commands without an available pipeline state causes an error.
-
 Create your pipeline state through one of the [`MTLDevice`](mtldevice.md) methods in Creating Compute Pipeline States.
 
 A compute pipeline state provides information Metal uses to compile and run encoded commands. You can change the pipeline state at any time, allowing you to encode multiple kernel calls in a single command buffer. Changing the pipeline state doesn’t affect any previously encoded commands.

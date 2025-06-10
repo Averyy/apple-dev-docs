@@ -17,6 +17,18 @@
 let estimatedTax: Decimal
 ```
 
+## See Also
+
+- [let description: String?](transaction/advancedcommerceinfo-swift.struct/description.md)
+- [let displayName: String?](transaction/advancedcommerceinfo-swift.struct/displayname.md)
+- [let items: [Transaction.AdvancedCommerceInfo.Item]](transaction/advancedcommerceinfo-swift.struct/items.md)
+  The items purchased as part of this transaction.
+- [let period: SubscriptionPeriod?](transaction/advancedcommerceinfo-swift.struct/period.md)
+- [let requestReferenceID: String](transaction/advancedcommerceinfo-swift.struct/requestreferenceid.md)
+- [let taxCode: String](transaction/advancedcommerceinfo-swift.struct/taxcode.md)
+- [let taxExclusivePrice: Decimal](transaction/advancedcommerceinfo-swift.struct/taxexclusiveprice.md)
+- [let taxRate: Decimal](transaction/advancedcommerceinfo-swift.struct/taxrate.md)
+
 
 ---
 

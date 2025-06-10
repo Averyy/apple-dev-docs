@@ -1,6 +1,6 @@
 # setAutoplays(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets a Boolean value indicating whether the movie automatically begins playing as soon as the scene is presented.

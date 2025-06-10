@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_UsingGPURegistryID
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

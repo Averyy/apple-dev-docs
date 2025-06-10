@@ -1,6 +1,6 @@
 # CPSearchTemplate
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: class
 
 A template that provides the ability to search for a destination and see a list of search results.
@@ -13,6 +13,7 @@ A template that provides the ability to search for a destination and see a list 
 ## Declaration
 
 ```swift
+@MainActor
 class CPSearchTemplate
 ```
 
@@ -49,6 +50,8 @@ When the user selects an item from the search result, the system calls the [`sea
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -66,4 +69,4 @@ When the user selects an item from the search result, the system calls the [`sea
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cpsearchtemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cpsearchtemplate)*

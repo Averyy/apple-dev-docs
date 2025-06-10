@@ -1,6 +1,6 @@
 # limitsNavigationsToAppBoundDomains
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether the web view limits navigation to pages within the app’s domain.

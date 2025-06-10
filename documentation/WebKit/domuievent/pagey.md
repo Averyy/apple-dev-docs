@@ -1,6 +1,6 @@
 # pageY
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 **Availability**:

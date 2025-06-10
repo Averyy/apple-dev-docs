@@ -1,6 +1,6 @@
 # init(id:_:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: init
 
 Creates an new attachment from an identifier and a closure.

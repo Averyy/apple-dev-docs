@@ -20,6 +20,13 @@ The authenticated encryption with additional data (AEAD) algorithm for encryptin
 let aead: HPKE.AEAD
 ```
 
+## See Also
+
+- [let kdf: HPKE.KDF](hpke/ciphersuite/kdf.md)
+  The key derivation function (KDF) for deriving the symmetric key.
+- [let kem: HPKE.KEM](hpke/ciphersuite/kem.md)
+  The key encapsulation mechanism (KEM) for encapsulating the symmetric key.
+
 
 ---
 

@@ -54,8 +54,6 @@ For design guidance, see [`Human Interface Guidelines > Technologies > Wallet`](
 
 > ❗ **Important**:  This API only works on iPhone and returns an error if you access it on iPad. This framework requires a special entitlement from Apple. This entitlement is not yet available.
 
- This API only works on iPhone and returns an error if you access it on iPad. This framework requires a special entitlement from Apple. This entitlement is not yet available.
-
 ## Topics
 
 ### Describing a document

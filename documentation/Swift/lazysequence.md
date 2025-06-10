@@ -49,6 +49,7 @@ struct LazySequence<Base> where Base : Sequence
 - [LazySequenceProtocol](lazysequenceprotocol.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

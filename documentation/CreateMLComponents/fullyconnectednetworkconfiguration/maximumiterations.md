@@ -1,6 +1,6 @@
 # maximumIterations
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: property
 
 The maximum number of iterations.
@@ -46,4 +46,4 @@ More iterations will produce better models as long as there is no over-fitting. 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/fullyconnectednetworkconfiguration/maximumiterations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/fullyconnectednetworkconfiguration/maximumiterations)*

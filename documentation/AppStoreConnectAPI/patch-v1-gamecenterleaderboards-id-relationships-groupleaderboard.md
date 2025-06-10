@@ -14,6 +14,8 @@ Modify the group leadboard to which a leaderboard belongs.
   Add a new leaderboard to your app.
 - [Edit a leaderboard](patch-v1-gamecenterleaderboards-_id_.md)
   Modify the details of a leaderboard.
+- [PATCH /v1/gameCenterLeaderboards/{id}/relationships/activity](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md)
+- [PATCH /v1/gameCenterLeaderboards/{id}/relationships/challenge](patch-v1-gamecenterleaderboards-_id_-relationships-challenge.md)
 - [Delete a leaderboard](delete-v1-gamecenterleaderboards-_id_.md)
   Delete a leaderboard from your app.
 

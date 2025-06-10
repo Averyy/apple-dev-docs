@@ -96,4 +96,4 @@ The [`Wireshark wiki`](https://developer.apple.comhttps://wiki.wireshark.org/) h
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Network/troubleshooting-packet-traces)*
+*[View on Apple Developer](https://developer.apple.com/documentation/network/troubleshooting-packet-traces)*

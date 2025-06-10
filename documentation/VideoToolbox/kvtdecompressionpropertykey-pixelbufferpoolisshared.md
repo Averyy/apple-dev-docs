@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_PixelBufferPoolIsShared
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A Boolean value indicating whether a common pixel buffer pool is shared between the video decoder and the session client.

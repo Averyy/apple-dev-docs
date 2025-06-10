@@ -1,6 +1,6 @@
 # WKInterfaceDeviceBatteryState.unplugged
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The device is not connected to a charger and is running on battery power.

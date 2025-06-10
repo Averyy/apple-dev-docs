@@ -1,6 +1,6 @@
 # UIDocument
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An abstract base class for managing discrete portions of your app’s data.
@@ -57,9 +57,9 @@ The [`UIDocument`](uidocument.md) class adopts the [`NSFilePresenter`](https://d
 
 Although some implementations do nothing, [`UIDocument`](uidocument.md) implements all [`NSFilePresenter`](https://developer.apple.com/documentation/Foundation/NSFilePresenter) methods. Specifically, [`UIDocument`](uidocument.md):
 
-- Implements [`relinquishPresentedItem(toReader:)`](https://developer.apple.com/documentation/foundation/nsfilepresenter/1410743-relinquishpresenteditem) to forward the incoming block to [`performAsynchronousFileAccess(_:)`](uidocument/performasynchronousfileaccess(_:).md)
-- Implements [`relinquishPresentedItem(toWriter:)`](https://developer.apple.com/documentation/foundation/nsfilepresenter/1413688-relinquishpresenteditem) to check if the file-modification date changed; if the file is newer than before, it calls [`revert(toContentsOf:completionHandler:)`](uidocument/revert(tocontentsof:completionhandler:).md) with the value of the [`fileURL`](uidocument/fileurl.md) as the URL parameter
-- Implements [`presentedItemDidMove(to:)`](https://developer.apple.com/documentation/foundation/nsfilepresenter/1417861-presenteditemdidmove) to update the document’s file URL ([`fileURL`](uidocument/fileurl.md))
+- Implements [`relinquishPresentedItem(toReader:)`](https://developer.apple.com/documentation/Foundation/NSFilePresenter/relinquishPresentedItem(toReader:)) to forward the incoming block to [`performAsynchronousFileAccess(_:)`](uidocument/performasynchronousfileaccess(_:).md)
+- Implements [`relinquishPresentedItem(toWriter:)`](https://developer.apple.com/documentation/Foundation/NSFilePresenter/relinquishPresentedItem(toWriter:)) to check if the file-modification date changed; if the file is newer than before, it calls [`revert(toContentsOf:completionHandler:)`](uidocument/revert(tocontentsof:completionhandler:).md) with the value of the [`fileURL`](uidocument/fileurl.md) as the URL parameter
+- Implements [`presentedItemDidMove(to:)`](https://developer.apple.com/documentation/Foundation/NSFilePresenter/presentedItemDidMove(to:)) to update the document’s file URL ([`fileURL`](uidocument/fileurl.md))
 
 In your [`UIDocument`](uidocument.md) subclass, if you override a [`NSFilePresenter`](https://developer.apple.com/documentation/Foundation/NSFilePresenter) method, you can always invoke the superclass implementation (`super`).
 
@@ -89,7 +89,7 @@ There are two primary ways to implement change tracking in your [`UIDocument`](u
 
 A [`UIDocument`](uidocument.md) object has a specific state at any moment in its life cycle. You can check the current state by querying the [`documentState`](uidocument/documentstate.md) property, and get notified about changes by observing the [`stateChangedNotification`](uidocument/statechangednotification.md) notification.
 
-If the owner enables a document for iCloud, it’s important to check for conflicting versions and to attempt to resolve conflicts. Listen for the [`stateChangedNotification`](uidocument/statechangednotification.md) notification and then checking if the document state is [`inConflict`](uidocument/state/inconflict.md). This state indicates that there are conflicting versions of the document, which you can access by calling the [`NSFileVersion`](https://developer.apple.com/documentation/Foundation/NSFileVersion) class method [`unresolvedConflictVersionsOfItem(at:)`](https://developer.apple.com/documentation/foundation/nsfileversion/1417854-unresolvedconflictversionsofitem), passing in the document’s file URL. If you can resolve a conflict correctly without user interaction, do so. Otherwise, discretely notify the user that a conflict exists and let them choose how to resolve it. Possible approaches include:
+If the owner enables a document for iCloud, it’s important to check for conflicting versions and to attempt to resolve conflicts. Listen for the [`stateChangedNotification`](uidocument/statechangednotification.md) notification and then checking if the document state is [`inConflict`](uidocument/state/inconflict.md). This state indicates that there are conflicting versions of the document, which you can access by calling the [`NSFileVersion`](https://developer.apple.com/documentation/Foundation/NSFileVersion) class method [`unresolvedConflictVersionsOfItem(at:)`](https://developer.apple.com/documentation/Foundation/NSFileVersion/unresolvedConflictVersionsOfItem(at:)), passing in the document’s file URL. If you can resolve a conflict correctly without user interaction, do so. Otherwise, discretely notify the user that a conflict exists and let them choose how to resolve it. Possible approaches include:
 
 - Display the conflicting versions, from which a user can pick one or both versions to keep.
 - Display a merged version and giving the user an option to pick it.
@@ -245,6 +245,8 @@ class EditorViewController: UIViewController,
 ### Notifications
 - [class let stateChangedNotification: NSNotification.Name](uidocument/statechangednotification.md)
   A notification the document object posts when there’s a change in the state of the document.
+### Structures
+- [UIDocument.StateChangedMessage](uidocument/statechangedmessage.md)
 
 ## Relationships
 
@@ -275,4 +277,4 @@ class EditorViewController: UIViewController,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uidocument)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uidocument)*

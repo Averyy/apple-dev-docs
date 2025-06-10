@@ -26,6 +26,19 @@ Decide whether your project accepts updates to a package dependency up to the ne
 - [Package.Dependency.RegistryRequirement.range(_:)](package/dependency/registryrequirement/range(_:).md)
   A requirement based on a range of versions.
 
+## See Also
+
+- [let traits: Set<Package.Dependency.Trait>](package/dependency/traits.md)
+  The dependencies traits configuration.
+- [Package.Dependency.Trait](package/dependency/trait.md)
+  A struct representing an enabled trait of a dependency.
+- [Package.Dependency.SourceControlRequirement](package/dependency/sourcecontrolrequirement.md)
+  An enum that represents the requirement for a package dependency.
+- [var requirement: Package.Dependency.Requirement](package/dependency/requirement-swift.property.md)
+  The dependency requirement of the package dependency.
+- [Package.Dependency.Requirement](package/dependency/requirement-swift.enum.md)
+  An enum that represents the requirement for a package dependency.
+
 
 ---
 

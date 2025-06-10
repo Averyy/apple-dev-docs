@@ -25,8 +25,6 @@ convenience init(for givenSchema: Schema, migrationPlan: (any SchemaMigrationPla
 
 > ❗ **Important**: A container must have at least one configuration. If you don’t specify any, the framework creates an instance of [`ModelConfiguration`](modelconfiguration.md) for you by combining your app’s entitlements with the type’s default values.
 
-A container must have at least one configuration. If you don’t specify any, the framework creates an instance of [`ModelConfiguration`](modelconfiguration.md) for you by combining your app’s entitlements with the type’s default values.
-
 ## Parameters
 
 - `givenSchema`: A schema that maps your app’s model classes to the associated data in the app’s persistent storage. For more information, see  .

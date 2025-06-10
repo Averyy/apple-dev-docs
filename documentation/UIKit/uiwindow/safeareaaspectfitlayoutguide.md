@@ -25,8 +25,6 @@ This layout guide provides a centered region in the window where you can place m
 
 > ❗ **Important**:  Use this layout guide for full-screen content. Avoid adding constraints to the guide through deeply nested view hierarchies.
 
- Use this layout guide for full-screen content. Avoid adding constraints to the guide through deeply nested view hierarchies.
-
 ## See Also
 
 - [protocol UILayoutGuideAspectFitting](uilayoutguideaspectfitting.md)

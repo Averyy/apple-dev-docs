@@ -22,8 +22,10 @@ struct Button<Label> where Label : View
 
 ## Mentions
 
-- [Managing search interface activation](managing-search-interface-activation.md)
 - [Configuring views](configuring-views.md)
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Managing search interface activation](managing-search-interface-activation.md)
 
 #### Overview
 
@@ -170,6 +172,9 @@ You can also create custom styles. To add a custom appearance with standard inte
   Creates a button with a specified role that generates its label from a string and an image resource.
 - [init(_:systemImage:role:intent:)](button/init(_:systemimage:role:intent:).md)
   Creates a button with a specified role that generates its label from a string and a system image.
+### Initializers
+- [init(role: ButtonRole, action: () -> Void)](button/init(role:action:).md)
+  Creates a button that displays a default label.
 
 ## Relationships
 
@@ -192,6 +197,7 @@ You can also create custom styles. To add a custom appearance with standard inte
   A value that describes the purpose of a button.
 - [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
+- [struct ButtonSizing](buttonsizing.md)
 
 
 ---

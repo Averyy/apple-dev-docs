@@ -12,6 +12,7 @@ A utility object for generating a list of completion strings based on a partial 
 - macOS 10.11.4+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 

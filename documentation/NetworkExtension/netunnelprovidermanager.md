@@ -1,6 +1,6 @@
 # NETunnelProviderManager
 
-**Framework**: Networkextension  
+**Framework**: Network Extension  
 **Kind**: class
 
 An object to create and manage the tunnel provider’s VPN configuration.
@@ -167,4 +167,4 @@ The system will create one app rule in the VPN configuration for each bundle ide
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/NetworkExtension/netunnelprovidermanager)*
+*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/netunnelprovidermanager)*

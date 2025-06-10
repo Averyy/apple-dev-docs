@@ -1,6 +1,6 @@
 # Testing Your Source Editor Extension
 
-**Framework**: Xcodekit
+**Framework**: XcodeKit
 
 Launch a special instance of Xcode to test your source editor extension.
 

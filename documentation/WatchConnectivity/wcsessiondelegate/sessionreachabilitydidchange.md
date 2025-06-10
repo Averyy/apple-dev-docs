@@ -1,6 +1,6 @@
 # sessionReachabilityDidChange(_:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Indicates a change to the counterpart’s reachability status.

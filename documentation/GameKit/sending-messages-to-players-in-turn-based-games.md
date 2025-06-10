@@ -1,6 +1,6 @@
 # Sending messages to players in turn-based games
 
-**Framework**: Gamekit
+**Framework**: GameKit
 
 Notify players of match events by sending messages and game data.
 
@@ -85,4 +85,4 @@ When the player taps the notification, GameKit invokes the `GKTurnBasedEventList
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/sending-messages-to-players-in-turn-based-games)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/sending-messages-to-players-in-turn-based-games)*

@@ -1,6 +1,6 @@
 # selectedText
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The current selected text.

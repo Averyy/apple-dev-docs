@@ -1,6 +1,6 @@
 # reversed()
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns a view presenting the elements of the collection in reverse order.

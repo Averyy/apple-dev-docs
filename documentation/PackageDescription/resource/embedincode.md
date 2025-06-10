@@ -26,6 +26,15 @@ You can use the embed rule to embed the contents of the resource into the execut
 
 - `path`: The path for a resource.
 
+## See Also
+
+- [static func process(String, localization: Resource.Localization?) -> Resource](resource/process(_:localization:).md)
+  Applies a platform-specific rules to the resource at the given path.
+- [Resource.Localization](resource/localization.md)
+  Defines the explicit type of localization for resources.
+- [static func copy(String) -> Resource](resource/copy(_:).md)
+  Applies the copy rule to a resource at the given path.
+
 
 ---
 

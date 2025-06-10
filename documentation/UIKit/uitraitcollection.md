@@ -20,8 +20,8 @@ class UITraitCollection
 
 ## Mentions
 
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
 - [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
+- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
 
 #### Overview
 
@@ -208,10 +208,20 @@ let viewTheme = view.traitCollection.theme
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-836bk.md)
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-8k1t1.md)
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-vvgw.md)
+- [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](uitraitcollection/init(hdrheadroomusagelimit:).md)
 - [init(imageDynamicRange: UIImage.DynamicRange)](uitraitcollection/init(imagedynamicrange:).md)
 - [init(listEnvironment: UIListEnvironment)](uitraitcollection/init(listenvironment:).md)
 - [init(sceneCaptureState: UISceneCaptureState)](uitraitcollection/init(scenecapturestate:).md)
+- [init(tabAccessoryEnvironment: UITabAccessory.Environment)](uitraitcollection/init(tabaccessoryenvironment:).md)
+  Constructs a new trait collection with the given `tabAccessoryEnvironment`.
 - [convenience init(typesettingLanguage: Locale.Language?)](uitraitcollection/init(typesettinglanguage:).md)
+### Instance Properties
+- [var hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit](uitraitcollection/hdrheadroomusagelimit.md)
+  If HDR headroom should be used for the current UI configuration. Headroom usage is disabled in certain UI configurations, such as when all an application’s windows are in the background.
+- [var splitViewControllerLayoutEnvironment: UISplitViewController.LayoutEnvironment](uitraitcollection/splitviewcontrollerlayoutenvironment.md)
+  The split view controller layout environment represents whether an ancestor split view controller is expanded or collapsed.
+- [var tabAccessoryEnvironment: UITabAccessory.Environment](uitraitcollection/tabaccessoryenvironment.md)
+  The tab accessory environment represents whether a given trait collection is from a view in a `UITabAccessory` content view.
 ### Instance Methods
 - [func changedTraits(from: UITraitCollection?) -> [UITrait]](uitraitcollection/changedtraits(from:).md)
 - [func replacing<T>(T.Type, value: T.Value) -> UITraitCollection](uitraitcollection/replacing(_:value:)-162et.md)
@@ -266,6 +276,7 @@ let viewTheme = view.traitCollection.theme
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

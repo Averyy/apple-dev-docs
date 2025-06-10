@@ -26,8 +26,6 @@ The system calls this method to stop the proxy. You indicate that the proxy is f
 
 > ❗ **Important**:  Don’t call this method to stop the proxy from within the proxy provider itself. Call [`cancelProxyWithError(_:)`](nednsproxyprovider/cancelproxywitherror(_:).md) instead.
 
- Don’t call this method to stop the proxy from within the proxy provider itself. Call [`cancelProxyWithError(_:)`](nednsproxyprovider/cancelproxywitherror(_:).md) instead.
-
 ## Parameters
 
 - `reason`: A code indicating why the proxy is being stopped.

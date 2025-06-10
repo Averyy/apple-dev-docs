@@ -21,8 +21,8 @@ class UIInputViewController
 
 ## Mentions
 
-- [Configuring open access for a custom keyboard](configuring-open-access-for-a-custom-keyboard.md)
 - [Handling text interactions in custom keyboards](handling-text-interactions-in-custom-keyboards.md)
+- [Configuring open access for a custom keyboard](configuring-open-access-for-a-custom-keyboard.md)
 
 #### Overview
 
@@ -89,6 +89,7 @@ For more about creating a custom keyboard, read [`Custom Keyboard`](https://deve
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

@@ -153,8 +153,10 @@ You can also navigate to Settings on the simulated device and change the deviceÊ
 
 - [Supporting multiple languages in your app](supporting-multiple-languages-in-your-app.md)
   Internationalize your appâ€™s strings, images, and other resource types to prepare for the translation process.
+- [Localizing Landmarks](localizing-landmarks.md)
+  Add localizations to the Landmarks sample code project.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/localizing-and-varying-text-with-a-string-catalog)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog)*

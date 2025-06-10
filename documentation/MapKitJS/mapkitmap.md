@@ -16,6 +16,7 @@ interface mapkit.Map
 
 ## Mentions
 
+- [Loading the latest version of MapKit JS](loading-the-latest-version-of-mapkit-js.md)
 - [Adding interactivity to overlays](adding-interactivity-to-overlays.md)
 
 #### Overview
@@ -66,6 +67,8 @@ A map is a self-contained view object that you embed on a webpage. It’s possib
   A constraint of the location of the center of the map.
 - [setCameraBoundaryAnimated](mapkit.map/setcameraboundaryanimated.md)
   Changes the map’s camera boundary with an animated transition.
+- [CameraBoundaryDescription](cameraboundarydescription.md)
+  An object literal containing at least one property defining an area on the map.
 - [cameraDistance](mapkit.map/cameradistance.md)
   The altitude of the camera relative to the elevation of the center of the map.
 - [setCameraDistanceAnimated](mapkit.map/setcameradistanceanimated.md)
@@ -74,6 +77,8 @@ A map is a self-contained view object that you embed on a webpage. It’s possib
   The minimum and maximum distances of the camera from the map center.
 - [setCameraZoomRangeAnimated](mapkit.map/setcamerazoomrangeanimated.md)
   Changes the map’s camera zoom range with an animated transition.
+- [CameraZoomRangeLiteral](camerazoomrangeliteral.md)
+  An object literal containing minimum and maximum camera distance in meters.
 ### Showing the map’s controls
 - [showsCompass](mapkit.map/showscompass.md)
   A feature visibility setting that determines when the compass is visible.
@@ -160,6 +165,19 @@ A map is a self-contained view object that you embed on a webpage. It’s possib
   Removes a tile overlay from the map.
 - [removeTileOverlays](mapkit.map/removetileoverlays.md)
   Removes an array of tile overlays from the map.
+### Exploring at street level
+- [mapkit.LookAround](mapkit.lookaround.md)
+  A view that allows someone to see a street level view of a place.
+- [LookAroundOptions](lookaroundoptions.md)
+  Options for initializing a LookAround view.
+- [mapkit.LookAroundPreview](mapkit.lookaroundpreview.md)
+  A class that renders a preview of a LookAround view.
+- [LookAroundPreviewOptions](lookaroundpreviewoptions.md)
+  Options for initializing a LookAroundPreview object.
+- [mapkit.LookAroundScene](mapkit.lookaroundscene.md)
+  Object that represents the current location of the view.
+- [CommonLookAroundOptions](commonlookaroundoptions.md)
+  Options that control the behavior of Look Around views.
 ### Displaying the user’s location
 - [showsUserLocation](mapkit.map/showsuserlocation.md)
   A Boolean value that determines whether to show the user’s location on the map.

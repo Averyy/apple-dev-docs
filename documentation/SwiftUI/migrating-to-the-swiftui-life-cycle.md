@@ -1,6 +1,6 @@
 # Migrating to the SwiftUI life cycle
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Use a scene-based life cycle in SwiftUI while keeping your existing codebase.
 
@@ -104,4 +104,4 @@ For more information on handling scene-based life cycle events, see [`Managing y
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/migrating-to-the-swiftui-life-cycle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/migrating-to-the-swiftui-life-cycle)*

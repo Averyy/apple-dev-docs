@@ -1,6 +1,6 @@
 # NSAccessibilityGroup
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: protocol
 
 A role-based protocol that declares the minimum interface necessary to act as a container for other user interface elements.
@@ -44,4 +44,4 @@ You can further enhance the adopting element by implementing any of the informat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsaccessibilitygroup)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsaccessibilitygroup)*

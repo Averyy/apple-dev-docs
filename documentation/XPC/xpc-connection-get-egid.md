@@ -1,6 +1,6 @@
 # xpc_connection_get_egid(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the EGID of the remote peer.

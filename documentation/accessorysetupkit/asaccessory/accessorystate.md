@@ -20,9 +20,12 @@ enum AccessoryState
 ### Creating a state instance
 - [init?(rawValue: Int)](asaccessory/accessorystate/init(rawvalue:).md)
 ### Accessory states
-- [ASAccessory.AccessoryState.authorized](asaccessory/accessorystate/authorized.md)
-- [ASAccessory.AccessoryState.awaitingAuthorization](asaccessory/accessorystate/awaitingauthorization.md)
 - [ASAccessory.AccessoryState.unauthorized](asaccessory/accessorystate/unauthorized.md)
+  The accessory is invalid or unauthorized.
+- [ASAccessory.AccessoryState.awaitingAuthorization](asaccessory/accessorystate/awaitingauthorization.md)
+  The accessory is selected, but full authorization is still pending.
+- [ASAccessory.AccessoryState.authorized](asaccessory/accessorystate/authorized.md)
+  The accessory is authorized and available.
 ### Default Implementations
 - [Equatable Implementations](asaccessory/accessorystate/equatable-implementations.md)
 - [RawRepresentable Implementations](asaccessory/accessorystate/rawrepresentable-implementations.md)
@@ -35,6 +38,7 @@ enum AccessoryState
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

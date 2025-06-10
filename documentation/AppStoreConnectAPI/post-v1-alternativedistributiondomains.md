@@ -10,8 +10,8 @@ Add an alternative distribution domain to your account.
 
 ## Mentions
 
-- [Configuring apps for web distribution](configuring-apps-for-web-distribution.md)
 - [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
+- [Configuring apps for web distribution](configuring-apps-for-web-distribution.md)
 - [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
 
 #### Discussion
@@ -26,14 +26,6 @@ Add an alternative distribution domain to your account.
   List all the alternative distribution domains for your account.
 - [Delete an alternative distribution domain](delete-v1-alternativedistributiondomains-_id_.md)
   Delete the alternative distribution search domain for an app.
-- [Add a marketplace domain](post-v1-marketplacedomains.md)
-  Add an alternative marketplace domain to your account.
-- [Read marketplace domain information](get-v1-marketplacedomains-_id_.md)
-  Read information for a specific alternative marketplace domain.
-- [List marketplace domains](get-v1-marketplacedomains.md)
-  List all the alternative marketplace domains for your account.
-- [Delete a marketplace domain](delete-v1-marketplacedomains-_id_.md)
-  Delete the alternative marketplace search domain for an app.
 
 
 ---

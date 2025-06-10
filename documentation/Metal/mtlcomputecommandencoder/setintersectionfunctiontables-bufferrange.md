@@ -23,8 +23,6 @@ func setIntersectionFunctionTables(_ intersectionFunctionTables: [(any MTLInters
 
 > ⚠️ **Warning**:  This method requires that the number of instances in `visibleFunctionTables` be the same as the length of `bufferRange`.
 
- This method requires that the number of instances in `visibleFunctionTables` be the same as the length of `bufferRange`.
-
 ## Parameters
 
 - `intersectionFunctionTables`: An array of   instances to bind.

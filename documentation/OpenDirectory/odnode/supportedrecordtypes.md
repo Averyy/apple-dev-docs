@@ -1,6 +1,6 @@
 # supportedRecordTypes()
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Returns an array of the record types supported by the node.

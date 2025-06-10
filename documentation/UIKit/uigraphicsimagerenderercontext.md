@@ -1,6 +1,6 @@
 # UIGraphicsImageRendererContext
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 The drawing environment for an image renderer.
@@ -46,6 +46,8 @@ To learn how to use a `UIGraphicsImageRendererContext` object in combination wit
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -69,4 +71,4 @@ To learn how to use a `UIGraphicsImageRendererContext` object in combination wit
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uigraphicsimagerenderercontext)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uigraphicsimagerenderercontext)*

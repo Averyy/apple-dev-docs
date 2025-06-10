@@ -88,4 +88,4 @@ To configure a workflow to send a build notification to a Slack channel:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/connecting-xcode-cloud-to-slack)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/connecting-xcode-cloud-to-slack)*

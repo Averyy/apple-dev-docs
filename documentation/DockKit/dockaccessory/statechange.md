@@ -36,6 +36,7 @@ DockKit generates this event when a device docks or undocks from the dock access
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

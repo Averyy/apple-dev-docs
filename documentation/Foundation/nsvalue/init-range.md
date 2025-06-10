@@ -30,8 +30,6 @@ A new value object that contains the range information.
 
 ## See Also
 
-- [typealias NSRange](nsrange.md)
-  A structure used to describe a portion of a series, such as characters in a string or objects in an array.
 - [var rangeValue: NSRange](nsvalue/rangevalue.md)
   The Foundation range structure representation of the value.
 

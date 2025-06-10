@@ -20,6 +20,10 @@ The format of pixels in the texture.
 var pixelFormat: MTLPixelFormat { get }
 ```
 
+## Mentions
+
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+
 ## See Also
 
 - [var textureType: MTLTextureType](mtltexture/texturetype.md)

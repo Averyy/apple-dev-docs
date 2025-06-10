@@ -1,6 +1,6 @@
 # executionCount
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The number of test executions during the run.

@@ -21,8 +21,6 @@ If your app only adds assets to the photo library and does not read assets, use 
 
 > ❗ **Important**:  This key is required if your app uses APIs that have read or write access to the user’s photo library.
 
- This key is required if your app uses APIs that have read or write access to the user’s photo library.
-
 ## See Also
 
 - [Delivering an Enhanced Privacy Experience in Your Photos App](../PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md)

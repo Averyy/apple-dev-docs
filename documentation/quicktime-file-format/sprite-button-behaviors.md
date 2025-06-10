@@ -1,6 +1,6 @@
 # Sprite button behaviors
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Specify simple button behaviors for sprites in a sprite track.
 

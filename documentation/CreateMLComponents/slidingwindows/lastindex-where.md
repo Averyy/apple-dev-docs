@@ -1,6 +1,6 @@
 # lastIndex(where:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns the index of the last element in the collection that matches the given predicate.

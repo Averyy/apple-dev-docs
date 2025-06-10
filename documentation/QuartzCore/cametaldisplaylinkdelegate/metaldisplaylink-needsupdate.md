@@ -26,8 +26,6 @@ In this method’s implementation, perform your app’s rendering on the [`layer
 
 > ⚠️ **Warning**:  Using alternative methods to [`present()`](https://developer.apple.com/documentation/Metal/MTLDrawable/present()) that target the presentation for a specific time cause an assert when used with a [`CAMetalDisplayLink`](cametaldisplaylink.md).
 
- Using alternative methods to [`present()`](https://developer.apple.com/documentation/Metal/MTLDrawable/present()) that target the presentation for a specific time cause an assert when used with a [`CAMetalDisplayLink`](cametaldisplaylink.md).
-
 ## Parameters
 
 - `link`: A Metal display link instance the system notifies.

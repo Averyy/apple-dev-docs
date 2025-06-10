@@ -1,6 +1,6 @@
 # setTintColor(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Changes the color applied to a template image.

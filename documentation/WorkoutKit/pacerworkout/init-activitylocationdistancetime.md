@@ -1,6 +1,6 @@
 # init(activity:location:distance:time:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: init
 
 Creates a new pacer workout for the specified distance and time.
@@ -10,6 +10,7 @@ Creates a new pacer workout for the specified distance and time.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

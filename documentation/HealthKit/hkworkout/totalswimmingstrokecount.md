@@ -1,6 +1,6 @@
 # totalSwimmingStrokeCount
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: property
 
 The total stroke count for the workout.

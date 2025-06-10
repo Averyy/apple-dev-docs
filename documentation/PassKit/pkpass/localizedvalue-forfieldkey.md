@@ -39,6 +39,7 @@ If your app works with passes from arbitrary sources, such as an email client, i
   The name of the organization that creates the pass.
 - [var relevantDate: Date?](pkpass/relevantdate.md)
   The date when the pass is most likely to be useful or necessary.
+- [class PKPassRelevantDate](pkpassrelevantdate.md)
 
 
 ---

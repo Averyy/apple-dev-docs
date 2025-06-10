@@ -1,6 +1,6 @@
 # name
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The attachment’s name, or `nil` if the attachment is unnamed.

@@ -1,6 +1,6 @@
 # webView(_:contextMenuItemsForElement:defaultMenuItems:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns menu items to display in an element’s contextual menu.

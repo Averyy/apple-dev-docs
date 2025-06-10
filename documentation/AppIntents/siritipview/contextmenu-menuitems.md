@@ -1,6 +1,6 @@
 # contextMenu(menuItems:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Adds a context menu to a view.
@@ -10,7 +10,7 @@ Adds a context menu to a view.
 - iPadOS 13.0+
 - macOS 10.15+
 - tvOS 14.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 6.0+
 
 ## Declaration

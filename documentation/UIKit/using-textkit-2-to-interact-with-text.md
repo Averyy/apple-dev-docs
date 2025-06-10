@@ -1,6 +1,6 @@
 # Using TextKit 2 to interact with text
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Interact with text by managing text selection and inserting custom text elements.
 
@@ -34,4 +34,4 @@ Interact with text by managing text selection and inserting custom text elements
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/using-textkit-2-to-interact-with-text)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/using-textkit-2-to-interact-with-text)*

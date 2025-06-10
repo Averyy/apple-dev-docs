@@ -35,6 +35,8 @@ A [`SecCertificate`](seccertificate.md) object for a certificate that is stored 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

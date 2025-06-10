@@ -16,7 +16,7 @@ func addTemporaryAttribute(_ attrName: NSAttributedString.Key, value: Any, forCh
 
 #### Discussion
 
-Raises an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) if `attrName` or `value` is `nil`.
+Raises an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if `attrName` or `value` is `nil`.
 
 ## Parameters
 

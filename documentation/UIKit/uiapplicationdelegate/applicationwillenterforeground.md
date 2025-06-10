@@ -9,7 +9,7 @@ Tells the delegate that the app is about to enter the foreground.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -22,8 +22,6 @@ optional func applicationWillEnterForeground(_ application: UIApplication)
 #### Discussion
 
 > ❗ **Important**:  If you’re using scenes (see [`Scenes`](scenes.md)), UIKit will not call this method. Use [`sceneWillEnterForeground(_:)`](uiscenedelegate/scenewillenterforeground(_:).md) instead to prepare your app to enter the foreground. UIKit posts a [`willEnterForegroundNotification`](uiapplication/willenterforegroundnotification.md) regardless of whether your app uses [`Scenes`](scenes.md).
-
- If you’re using scenes (see [`Scenes`](scenes.md)), UIKit will not call this method. Use [`sceneWillEnterForeground(_:)`](uiscenedelegate/scenewillenterforeground(_:).md) instead to prepare your app to enter the foreground. UIKit posts a [`willEnterForegroundNotification`](uiapplication/willenterforegroundnotification.md) regardless of whether your app uses [`Scenes`](scenes.md).
 
 In iOS 4.0 and later, UIKit calls this method as part of the transition from the background to the active state. You can use this method to undo many of the changes you made to your app upon entering the background. The call to this method is invariably followed by a call to the [`applicationDidBecomeActive(_:)`](uiapplicationdelegate/applicationdidbecomeactive(_:).md) method, which then moves the app from the inactive to the active state.
 

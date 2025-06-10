@@ -1,6 +1,6 @@
 # UIImageView
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A view that displays a single image or a sequence of animated images in your interface.
@@ -171,6 +171,9 @@ When you assign a value to an image view’s [`restorationIdentifier`](uiviewcon
   A completion handler for adding and removing symbol effects and transitions.
 - [struct UISymbolEffectCompletionContext](uisymboleffectcompletioncontext-swift.struct.md)
   Information about a symbol effect’s addition or removal.
+### Transitioning between symbol effects
+- [class UISymbolContentTransition](uisymbolcontenttransition.md)
+  Represents a symbol content transition and options.
 ### Managing focus-related behaviors
 - [var adjustsImageWhenAncestorFocused: Bool](uiimageview/adjustsimagewhenancestorfocused.md)
   Allows [`UIImageView`](uiimageview.md) to respond when an ancestor becomes focused.
@@ -202,6 +205,7 @@ When you assign a value to an image view’s [`restorationIdentifier`](uiviewcon
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityContentSizeCategoryImageAdjusting](uiaccessibilitycontentsizecategoryimageadjusting.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
@@ -238,4 +242,4 @@ When you assign a value to an image view’s [`restorationIdentifier`](uiviewcon
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiimageview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiimageview)*

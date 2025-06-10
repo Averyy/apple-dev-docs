@@ -275,12 +275,8 @@ Finally, the render loop draws each submesh in the model with the specific LOD p
 
 ## See Also
 
-- [Stepping through code and inspecting variables to isolate bugs](../Xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs.md)
-  Find the cause of your bugs by watching variables change as you step through your source code in the debugger.
-- [Optimizing GPU performance](../Xcode/Optimizing-GPU-performance.md)
-  Find and address performance bottlenecks using the Metal debugger.
-- [Logging shader debug messages](logging-shader-debug-messages.md)
-  Print debugging messages that a shader generates using shader logging.
+- [Using the Metal 4 compilation API](using-the-metal-4-compilation-api.md)
+  Control when and how you compile an app’s shaders.
 - [Shader Libraries](shader-libraries.md)
   Manage and load your app’s Metal shaders.
 

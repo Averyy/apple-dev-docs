@@ -1,6 +1,6 @@
 # WeatherAttribution
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that  defines the necessary information for attributing a weather data provider.
@@ -52,6 +52,8 @@ Attribution is required for publishing software using WeatherKit.
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

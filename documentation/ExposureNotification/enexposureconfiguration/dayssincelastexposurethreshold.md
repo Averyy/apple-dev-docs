@@ -20,8 +20,6 @@ var daysSinceLastExposureThreshold: Int { get set }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.7 and later.
 
- This property is available in iOS 12.5, and in iOS 13.7 and later.
-
 The default value is 0, meaning no filtering is applied.
 
 ## See Also

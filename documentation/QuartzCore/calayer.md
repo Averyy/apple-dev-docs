@@ -27,22 +27,22 @@ If the layer object was created by a view, the view typically assigns itself as 
 
 ## Topics
 
-### Creating a Layer
+### Creating a layer
 - [init()](calayer/init.md)
   Returns an initialized `CALayer` object.
 - [init(layer: Any)](calayer/init(layer:).md)
   Override to copy or initialize custom fields of the specified layer.
 - [init(remoteClientId: UInt32)](calayer/init(remoteclientid:).md)
   Initializes a layer with a remote client ID.
-### Accessing Related Layer Objects
+### Accessing related layer objects
 - [func presentation() -> Self?](calayer/presentation.md)
   Returns a copy of the presentation layer object that represents the state of the layer as it currently appears onscreen.
 - [func model() -> Self](calayer/model.md)
   Returns the model layer object associated with the receiver, if any.
-### Accessing the Delegate
+### Accessing the delegate
 - [var delegate: (any CALayerDelegate)?](calayer/delegate.md)
   The layer’s delegate object.
-### Providing the Layer’s Content
+### Providing the layer’s content
 - [var contents: Any?](calayer/contents.md)
   An object that provides the contents of the layer. Animatable.
 - [var contentsRect: CGRect](calayer/contentsrect.md)
@@ -53,7 +53,7 @@ If the layer object was created by a view, the view typically assigns itself as 
   Reloads the content of this layer.
 - [func draw(in: CGContext)](calayer/draw(in:).md)
   Draws the layer’s content using the specified graphics context.
-### Modifying the Layer’s Appearance
+### Modifying the layer’s appearance
 - [var contentsGravity: CALayerContentsGravity](calayer/contentsgravity.md)
   A constant that specifies how the layer’s contents are positioned or scaled within its bounds.
 - [Contents Gravity Values](contents-gravity-values.md)
@@ -94,7 +94,7 @@ If the layer object was created by a view, the view typically assigns itself as 
   A Boolean indicating whether the layer is allowed to perform edge antialiasing.
 - [var allowsGroupOpacity: Bool](calayer/allowsgroupopacity.md)
   A Boolean indicating whether the layer is allowed to composite itself as a group separate from its parent.
-### Layer Filters
+### Layer filters
 - [var filters: [Any]?](calayer/filters.md)
   An array of Core Image filters to apply to the contents of the layer and its sublayers. Animatable.
 - [var compositingFilter: Any?](calayer/compositingfilter.md)
@@ -107,7 +107,7 @@ If the layer object was created by a view, the view typically assigns itself as 
   The bias factor used by the minification filter to determine the levels of detail.
 - [var magnificationFilter: CALayerContentsFilter](calayer/magnificationfilter.md)
   The filter used when increasing the size of the content.
-### Configuring the Layer’s Rendering Behavior
+### Configuring the layer’s rendering behavior
 - [var isOpaque: Bool](calayer/isopaque.md)
   A Boolean value indicating whether the layer contains completely opaque content.
 - [var edgeAntialiasingMask: CAEdgeAntialiasingMask](calayer/edgeantialiasingmask.md)
@@ -126,7 +126,7 @@ If the layer object was created by a view, the view typically assigns itself as 
   A hint for the desired storage format of the layer contents.
 - [func render(in: CGContext)](calayer/render(in:).md)
   Renders the layer and its sublayers into the specified context.
-### Modifying the Layer Geometry
+### Modifying the layer geometry
 - [var frame: CGRect](calayer/frame.md)
   The layer’s frame rectangle.
 - [var bounds: CGRect](calayer/bounds.md)
@@ -141,7 +141,7 @@ If the layer object was created by a view, the view typically assigns itself as 
   Defines the anchor point of the layer’s bounds rectangle. Animatable.
 - [var contentsScale: CGFloat](calayer/contentsscale.md)
   The scale factor applied to the layer.
-### Managing the Layer’s Transform
+### Managing the layer’s transform
 - [var transform: CATransform3D](calayer/transform.md)
   The transform applied to the layer’s contents. Animatable.
 - [var sublayerTransform: CATransform3D](calayer/sublayertransform.md)
@@ -150,7 +150,7 @@ If the layer object was created by a view, the view typically assigns itself as 
   Returns an affine version of the layer’s transform.
 - [func setAffineTransform(CGAffineTransform)](calayer/setaffinetransform(_:).md)
   Sets the layer’s transform to the specified affine transform.
-### Managing the Layer Hierarchy
+### Managing the layer hierarchy
 - [var sublayers: [CALayer]?](calayer/sublayers.md)
   An array containing the layer’s sublayers.
 - [var superlayer: CALayer?](calayer/superlayer.md)
@@ -167,7 +167,7 @@ If the layer object was created by a view, the view typically assigns itself as 
   Inserts the specified sublayer above a different sublayer that already belongs to the receiver.
 - [func replaceSublayer(CALayer, with: CALayer)](calayer/replacesublayer(_:with:).md)
   Replaces the specified sublayer with a different layer object.
-### Updating Layer Display
+### Updating layer display
 - [func setNeedsDisplay()](calayer/setneedsdisplay.md)
   Marks the layer’s contents as needing to be updated.
 - [func setNeedsDisplay(CGRect)](calayer/setneedsdisplay(_:).md)
@@ -180,7 +180,7 @@ If the layer object was created by a view, the view typically assigns itself as 
   Returns a Boolean indicating whether the layer has been marked as needing an update.
 - [class func needsDisplay(forKey: String) -> Bool](calayer/needsdisplay(forkey:).md)
   Returns a Boolean indicating whether changes to the specified key require the layer to be redisplayed.
-### Layer Animations
+### Layer animations
 - [func add(CAAnimation, forKey: String?)](calayer/add(_:forkey:).md)
   Add the specified animation object to the layer’s render tree.
 - [func animation(forKey: String) -> CAAnimation?](calayer/animation(forkey:).md)
@@ -191,7 +191,7 @@ If the layer object was created by a view, the view typically assigns itself as 
   Remove the animation object with the specified key.
 - [func animationKeys() -> [String]?](calayer/animationkeys.md)
   Returns an array of strings that identify the animations currently attached to the layer.
-### Managing Layer Resizing and Layout
+### Managing layer resizing and layout
 - [var layoutManager: (any CALayoutManager)?](calayer/layoutmanager.md)
   The object responsible for laying out the layer’s sublayers.
 - [func setNeedsLayout()](calayer/setneedslayout.md)
@@ -210,19 +210,19 @@ If the layer object was created by a view, the view typically assigns itself as 
   Informs the receiver’s sublayers that the receiver’s size has changed.
 - [func preferredFrameSize() -> CGSize](calayer/preferredframesize.md)
   Returns the preferred size of the layer in the coordinate space of its superlayer.
-### Managing Layer Constraints
+### Managing layer constraints
 - [var constraints: [CAConstraint]?](calayer/constraints.md)
   The constraints used to position current layer’s sublayers.
 - [func addConstraint(CAConstraint)](calayer/addconstraint(_:).md)
   Adds the specified constraint to the layer.
-### Getting the Layer’s Actions
+### Getting the layer’s actions
 - [func action(forKey: String) -> (any CAAction)?](calayer/action(forkey:).md)
   Returns the action object assigned to the specified key.
 - [var actions: [String : any CAAction]?](calayer/actions.md)
   A dictionary containing layer actions.
 - [class func defaultAction(forKey: String) -> (any CAAction)?](calayer/defaultaction(forkey:).md)
   Returns the default action for the current class.
-### Mapping Between Coordinate and Time Spaces
+### Mapping between coordinate and time spaces
 - [func convert(CGPoint, from: CALayer?) -> CGPoint](calayer/convert(_:from:)-8kl76.md)
   Converts the point from the specified layer’s coordinate system to the receiver’s coordinate system.
 - [func convert(CGPoint, to: CALayer?) -> CGPoint](calayer/convert(_:to:)-7dcke.md)
@@ -235,7 +235,7 @@ If the layer object was created by a view, the view typically assigns itself as 
   Converts the time interval from the specified layer’s time space to the receiver’s time space.
 - [func convertTime(CFTimeInterval, to: CALayer?) -> CFTimeInterval](calayer/converttime(_:to:).md)
   Converts the time interval from the receiver’s time space to the specified layer’s time space
-### Hit Testing
+### Hit testing
 - [func hitTest(CGPoint) -> CALayer?](calayer/hittest(_:).md)
   Returns the farthest descendant of the receiver in the layer hierarchy (including itself) that contains the specified point.
 - [func contains(CGPoint) -> Bool](calayer/contains(_:).md)
@@ -247,14 +247,18 @@ If the layer object was created by a view, the view typically assigns itself as 
   Initiates a scroll in the layer’s closest ancestor scroll layer so that the specified point lies at the origin of the scroll layer.
 - [func scrollRectToVisible(CGRect)](calayer/scrollrecttovisible(_:).md)
   Initiates a scroll in the layer’s closest ancestor scroll layer so that the specified rectangle becomes visible.
-### Identifying the Layer
+### Identifying the layer
 - [var name: String?](calayer/name.md)
   The name of the receiver.
-### Key-Value Coding Extensions
+### Key-value coding extensions
 - [func shouldArchiveValue(forKey: String) -> Bool](calayer/shouldarchivevalue(forkey:).md)
   Returns a Boolean indicating whether the value of the specified key should be archived.
 - [class func defaultValue(forKey: String) -> Any?](calayer/defaultvalue(forkey:).md)
   Specifies the default value associated with the specified key.
+### High dynamic range
+- [var preferredDynamicRange: CALayer.DynamicRange](calayer/preferreddynamicrange.md)
+- [var contentsHeadroom: CGFloat](calayer/contentsheadroom.md)
+- [var wantsExtendedDynamicRangeContent: Bool](calayer/wantsextendeddynamicrangecontent.md)
 ### Constants
 - [struct CAAutoresizingMask](caautoresizingmask.md)
   These constants are used by the [`autoresizingMask`](calayer/autoresizingmask.md) property.
@@ -268,13 +272,14 @@ If the layer object was created by a view, the view typically assigns itself as 
   These constants specify the scaling filters used by [`magnificationFilter`](calayer/magnificationfilter.md) and [`minificationFilter`](calayer/minificationfilter.md).
 - [struct CATransform3D](catransform3d.md)
   The standard transform matrix used throughout Core Animation.
-### Instance Properties
+- [CALayer.DynamicRange](calayer/dynamicrange.md)
+### Instance properties
 - [var cornerCurve: CALayerCornerCurve](calayer/cornercurve.md)
 - [var wantsDynamicContentScaling: Bool](calayer/wantsdynamiccontentscaling.md)
-- [var wantsExtendedDynamicRangeContent: Bool](calayer/wantsextendeddynamicrangecontent.md)
-- [var toneMapMode: CALayer.ToneMapMode](calayer/tonemapmode-swift.property.md)
-### Type Methods
+### Type methods
 - [class func cornerCurveExpansionFactor(CALayerCornerCurve) -> CGFloat](calayer/cornercurveexpansionfactor(_:).md)
+### Instance Properties
+- [var toneMapMode: CALayer.ToneMapMode](calayer/tonemapmode-swift.property.md)
 ### Instance Methods
 - [func createRemoteLayerBound(to: mach_port_t) -> (any JRSRemoteLayer & NSObjectProtocol)!](calayer/createremotelayerbound(to:).md)
 - [func hostRemoteLayer(UInt32)](calayer/hostremotelayer(_:).md)

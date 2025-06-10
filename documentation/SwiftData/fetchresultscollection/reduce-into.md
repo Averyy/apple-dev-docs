@@ -1,6 +1,6 @@
 # reduce(into:_:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns the result of combining the elements of the sequence using the given closure.

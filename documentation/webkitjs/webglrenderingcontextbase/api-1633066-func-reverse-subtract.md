@@ -1,6 +1,6 @@
 # FUNC_REVERSE_SUBTRACT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

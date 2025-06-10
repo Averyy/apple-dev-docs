@@ -23,7 +23,7 @@ class MTRClusterOTASoftwareUpdateRequestor
 ### Initializers
 - [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterotasoftwareupdaterequestor-5qeao/init(device:endpointid:queue:).md)
 ### Instance Methods
-- [func announceOTAProvider(with: MTROTASoftwareUpdateRequestorClusterAnnounceOTAProviderParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterotasoftwareupdaterequestor-5qeao/announceotaprovider(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func announceOTAProvider(with: MTROTASoftwareUpdateRequestorClusterAnnounceOTAProviderParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterotasoftwareupdaterequestor-5qeao/announceotaprovider(with:expectedvalues:expectedvalueinterval:completion:).md)
 - [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterotasoftwareupdaterequestor-5qeao/readattributeacceptedcommandlist(with:).md)
 - [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterotasoftwareupdaterequestor-5qeao/readattributeattributelist(with:).md)
 - [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterotasoftwareupdaterequestor-5qeao/readattributeclusterrevision(with:).md)

@@ -1,6 +1,6 @@
 # scrollView
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The scroll view associated with the web view.

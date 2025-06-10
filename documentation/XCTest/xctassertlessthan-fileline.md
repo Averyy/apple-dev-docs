@@ -1,6 +1,6 @@
 # XCTAssertLessThan(_:_:_:file:line:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: func
 
 Asserts that the value of the first expression is less than the value of the second expression.

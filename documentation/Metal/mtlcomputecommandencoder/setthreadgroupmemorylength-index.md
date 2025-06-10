@@ -24,8 +24,6 @@ func setThreadgroupMemoryLength(_ length: Int, index: Int)
 
 > ❗ **Important**:  The sum of all threadgroup memory allocations (whether made using this method or directly in the shader) can’t exceed the device limits for threadgroup memory. Check threadgroup memory limits with the [`staticThreadgroupMemoryLength`](mtlcomputepipelinestate/staticthreadgroupmemorylength.md) property.
 
- The sum of all threadgroup memory allocations (whether made using this method or directly in the shader) can’t exceed the device limits for threadgroup memory. Check threadgroup memory limits with the [`staticThreadgroupMemoryLength`](mtlcomputepipelinestate/staticthreadgroupmemorylength.md) property.
-
 The `threadgroup` memory space allows for sharing data between multiple threads in a threadgroup, which can be faster than using `device` memory in your kernels. Before using any threadgroup memory, call this method to configure the threadgroup memory argument table. Kernels accessing their arguments from threadgroup memory have the `[[threadgroup]]` attribute.
 
 To learn more about using the threadgroup address space, see the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/metal-shading-language-specification.pdf#//apple_ref/doc/uid/TP40014364-CH4-SW5) section 4.4.

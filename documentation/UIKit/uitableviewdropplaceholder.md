@@ -30,8 +30,6 @@ For more information, see [`Supporting drag and drop in table views`](supporting
 
 > ❗ **Important**:  Placeholder cells are meant to be a temporary part of your table view. Always replace them with actual cells as soon as possible, or cancel the drop to remove them from the table. Use the methods of a [`UITableViewDropPlaceholderContext`](uitableviewdropplaceholdercontext.md) object to remove placeholders from your table.
 
- Placeholder cells are meant to be a temporary part of your table view. Always replace them with actual cells as soon as possible, or cancel the drop to remove them from the table. Use the methods of a [`UITableViewDropPlaceholderContext`](uitableviewdropplaceholdercontext.md) object to remove placeholders from your table.
-
 ## Topics
 
 ### Providing preview parameters

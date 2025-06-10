@@ -1,6 +1,6 @@
 # WKImage
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A wrapper for images you use with a picker interface.

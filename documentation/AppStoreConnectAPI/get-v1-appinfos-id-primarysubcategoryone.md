@@ -16,6 +16,10 @@ Get the first App Store subcategory within an app’s primary category.
   Get the first App Store subcategory within an app’s secondary category.
 - [Read the Secondary Subcategory Two Information of an App Info](get-v1-appinfos-_id_-secondarysubcategorytwo.md)
   Get the second App Store subcategory within an app’s secondary category.
+- [GET /v1/appInfos/{id}/relationships/primarySubcategoryOne](get-v1-appinfos-_id_-relationships-primarysubcategoryone.md)
+- [GET /v1/appInfos/{id}/relationships/primarySubcategoryTwo](get-v1-appinfos-_id_-relationships-primarysubcategorytwo.md)
+- [GET /v1/appInfos/{id}/relationships/secondarySubcategoryOne](get-v1-appinfos-_id_-relationships-secondarysubcategoryone.md)
+- [GET /v1/appInfos/{id}/relationships/secondarySubcategoryTwo](get-v1-appinfos-_id_-relationships-secondarysubcategorytwo.md)
 
 
 ---

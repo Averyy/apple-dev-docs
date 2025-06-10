@@ -1,6 +1,6 @@
 # update
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Manually triggers the update process.

@@ -1,6 +1,6 @@
 # vmnet_return_t
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: enum
 
 Values returned by functions in the vmnet Framework.

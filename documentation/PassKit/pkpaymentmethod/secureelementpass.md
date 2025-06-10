@@ -1,6 +1,6 @@
 # secureElementPass
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
 The accompanying Secure Element pass.

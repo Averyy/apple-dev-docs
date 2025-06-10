@@ -1,6 +1,6 @@
 # Creating a Model from Tabular Data
 
-**Framework**: Createml
+**Framework**: Create ML
 
 Train a machine learning model by using Core ML to import and manage tabular data.
 

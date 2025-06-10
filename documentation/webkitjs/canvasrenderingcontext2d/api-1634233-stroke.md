@@ -1,6 +1,6 @@
 # stroke
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Draws the outline of the current path using the current stroke style and line width.

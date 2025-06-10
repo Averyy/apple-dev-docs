@@ -16,7 +16,7 @@ An object representing a function that you can add to a visible function table.
 ## Declaration
 
 ```swift
-protocol MTLFunctionHandle : NSObjectProtocol
+protocol MTLFunctionHandle : NSObjectProtocol, Sendable
 ```
 
 ## Topics
@@ -28,11 +28,15 @@ protocol MTLFunctionHandle : NSObjectProtocol
   The shader function’s type.
 - [var name: String](mtlfunctionhandle/name.md)
   The function’s name.
+### Instance Properties
+- [var gpuResourceID: MTLResourceID](mtlfunctionhandle/gpuresourceid.md)
 
 ## Relationships
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

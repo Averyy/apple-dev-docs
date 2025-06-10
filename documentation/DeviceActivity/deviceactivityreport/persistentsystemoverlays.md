@@ -1,6 +1,6 @@
 # persistentSystemOverlays(_:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Sets the preferred visibility of the non-transient system views overlaying the app.

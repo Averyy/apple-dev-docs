@@ -32,7 +32,7 @@ print(now.formatted(Date.ISO8601FormatStyle().dateSeparator(.dash)))
 // 2021-06-21T211015Z
 ```
 
-Use the static factory property [`iso8601`](formatstyle/iso8601.md) to create an instance of [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md). Then apply instance modifier methods to customize the format, as in the example below.
+Use the static factory property `FormatStyle/iso8601` to create an instance of [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md). Then apply instance modifier methods to customize the format, as in the example below.
 
 ```swift
 let meetNow = Date()
@@ -116,6 +116,7 @@ let formatted = meetNow.formatted(.iso8601
 - [ParseableFormatStyle](parseableformatstyle.md)
 - [RegexComponent](../Swift/RegexComponent.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -123,8 +124,6 @@ let formatted = meetNow.formatted(.iso8601
   A style for formatting a date and time.
 - [struct FormatStyle](date/formatstyle.md)
   A structure that creates a locale-appropriate string representation of a date instance and converts strings of dates and times into date instances.
-- [static var iso8601: Date.ISO8601FormatStyle](formatstyle/iso8601.md)
-  A style for formatting a date in accordance with the ISO-8601 standard.
 - [static func verbatim(Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar) -> Date.VerbatimFormatStyle](formatstyle/verbatim(_:locale:timezone:calendar:).md)
   Returns a style for formatting a date with an explicitly-specified style.
 - [struct VerbatimFormatStyle](date/verbatimformatstyle.md)

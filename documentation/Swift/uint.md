@@ -165,6 +165,7 @@ On 32-bit platforms, `UInt` is the same size as `UInt32`, and on 64-bit platform
 - [PrimitivePlottableProtocol](../Charts/PrimitivePlottableProtocol.md)
 - [SIMDScalar](simdscalar.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Strideable](strideable.md)
 - [UnsignedInteger](unsignedinteger.md)
 

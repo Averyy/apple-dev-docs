@@ -1,6 +1,6 @@
 # popLast()
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Removes and returns the last element of the collection.

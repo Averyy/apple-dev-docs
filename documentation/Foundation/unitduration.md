@@ -74,6 +74,7 @@ The [`UnitDuration`](unitduration.md) class defines its [`baseUnit()`](dimension
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -87,4 +88,4 @@ The [`UnitDuration`](unitduration.md) class defines its [`baseUnit()`](dimension
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/unitduration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/unitduration)*

@@ -1,6 +1,6 @@
 # SVG_TRANSFORM_ROTATE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

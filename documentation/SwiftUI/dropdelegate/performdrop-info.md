@@ -28,6 +28,8 @@ A Boolean that is `true` if the drop was successful, `false` otherwise.
 
 Incorporate the received data into your app’s data model as appropriate.
 
+Make sure to start loading the contents of `NSItemProvider` instances from [`DropInfo`](dropinfo.md) within the scope of this method. Do not perform loading asynchronously on a different actor. Loading the contents may finish later, but it must start here. For security reasons, the drop receiver can access the dropped payload only before this method returns.
+
 ## See Also
 
 - [func dropEntered(info: DropInfo)](dropdelegate/dropentered(info:).md)

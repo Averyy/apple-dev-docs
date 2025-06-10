@@ -16,7 +16,7 @@ The window that contains the access point.
 ## Declaration
 
 ```swift
-weak var parentWindow: NSWindow? { get set }
+weak var parentWindow: UIWindow? { get set }
 ```
 
 ## Mentions

@@ -1,6 +1,6 @@
 # colorScheme
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 The color scheme of this environment.
@@ -48,4 +48,4 @@ When adjusting your app’s user interface to match the color scheme, consider a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/environmentvalues/colorscheme)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/environmentvalues/colorscheme)*

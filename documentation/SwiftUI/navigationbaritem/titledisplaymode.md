@@ -40,6 +40,7 @@ Use one of these values with the [`navigationBarTitleDisplayMode(_:)`](view/navi
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

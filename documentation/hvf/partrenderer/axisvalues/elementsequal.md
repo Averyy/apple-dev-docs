@@ -1,6 +1,6 @@
 # elementsEqual(_:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns a Boolean value indicating whether this sequence and another sequence contain the same elements in the same order.

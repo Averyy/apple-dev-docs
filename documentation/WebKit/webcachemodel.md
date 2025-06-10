@@ -1,6 +1,6 @@
 # WebCacheModel
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 Specifies the caching model for a web view.
@@ -34,6 +34,7 @@ enum WebCacheModel
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

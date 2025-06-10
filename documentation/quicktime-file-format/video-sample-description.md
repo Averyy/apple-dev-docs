@@ -1,6 +1,6 @@
 # Video sample description ('stsd')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that contains information that defines how to interpret video media data.

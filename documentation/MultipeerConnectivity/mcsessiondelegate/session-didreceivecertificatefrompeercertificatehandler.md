@@ -27,8 +27,6 @@ For information about validating certificates, read [`Cryptographic Services Gui
 
 > ❗ **Important**:  The multipeer connectivity framework makes no attempt to validate the peer-provided identity or certificates in any way. If your delegate does not implement this method, all certificates are accepted automatically.
 
- The multipeer connectivity framework makes no attempt to validate the peer-provided identity or certificates in any way. If your delegate does not implement this method, all certificates are accepted automatically.
-
 ## Parameters
 
 - `session`: The session that the nearby peer wishes to join.

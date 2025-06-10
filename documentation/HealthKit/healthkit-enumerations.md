@@ -25,7 +25,6 @@
   Categories representing the user’s skin type based on the Fitzpatrick scale.
 - [enum HKWheelchairUse](hkwheelchairuse.md)
   Constants indicating the user’s wheelchair use.
-- [enum HKMCPregnancyDatesConstants](hkmcpregnancydatesconstants.md)
 
 ## See Also
 

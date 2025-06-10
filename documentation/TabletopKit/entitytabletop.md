@@ -36,9 +36,12 @@ struct Table: EntityTabletop {
 
 ### Creating a round or rectangular table
 - [var shape: TabletopShape](entitytabletop/shape.md)
+  The shape of the table.
 ### Displaying the tabletop
 - [var entity: Entity](entitytabletop/entity.md)
   The entity associated with the equipment.
+### Default Implementations
+- [Tabletop Implementations](entitytabletop/tabletop-implementations.md)
 
 ## Relationships
 
@@ -50,6 +53,8 @@ struct Table: EntityTabletop {
 
 - [Creating tabletop games](tabletopkitsample.md)
   Develop a spatial board game where multiple players interact with pieces on a table.
+- [Synchronizing group gameplay with TabletopKit](synchronizing-group-gameplay-with-tabletopkit.md)
+  Maintain game state across multiple players in a race to capture all the coins.
 - [class TabletopGame](tabletopgame.md)
   An object that manages the setup and gameplay of a tabletop game.
 - [struct TableSetup](tablesetup.md)

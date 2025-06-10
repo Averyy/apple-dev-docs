@@ -1,6 +1,6 @@
 # init(data:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Initializes and returns the receiver, specifying the initial content data.

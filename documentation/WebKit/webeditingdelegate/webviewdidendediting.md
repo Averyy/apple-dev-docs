@@ -1,6 +1,6 @@
 # webViewDidEndEditing(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sent by the default notification center when the user stops editing the web view.

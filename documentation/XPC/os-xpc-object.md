@@ -1,6 +1,6 @@
 # OS_xpc_object
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: protocol
 
 The interface for an XPC object.

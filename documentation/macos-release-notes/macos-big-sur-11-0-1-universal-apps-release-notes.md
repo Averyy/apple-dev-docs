@@ -16,8 +16,6 @@ This page is specific to the Developer Transition Kit. For additional macOS 11 c
 
 > ❗ **Important**: If you need to restore your Developer Transition Kit to macOS Big Sur 11.0.1, you must use another Mac running macOS Big Sur 11.0.1 to perform the restore. (69589918)
 
-If you need to restore your Developer Transition Kit to macOS Big Sur 11.0.1, you must use another Mac running macOS Big Sur 11.0.1 to perform the restore. (69589918)
-
 ##### Auto Unlock
 
 ###### Known Issues

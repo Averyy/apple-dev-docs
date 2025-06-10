@@ -12,11 +12,12 @@ The size of the image that you want to create.
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 
 ```swift
-var size: CGSize { get set }
+var size: NSSize { get set }
 ```
 
 #### Discussion

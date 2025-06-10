@@ -28,8 +28,6 @@ This method executes synchronously.
 
 > ❗ **Important**:  If the Block parameter is `nil` this method will raise an exception.
 
- If the Block parameter is `nil` this method will raise an exception.
-
 ## Parameters
 
 - `opts`: A bitmask that specifies the   for the enumeration (whether it should be performed concurrently and whether it should be performed in reverse order).

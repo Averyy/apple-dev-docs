@@ -79,6 +79,7 @@ Use the other two options to target a `WindowGroup` and provide a value to prese
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -19,6 +19,7 @@ A type-erased content of a glass background.
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](view.md)
 
 

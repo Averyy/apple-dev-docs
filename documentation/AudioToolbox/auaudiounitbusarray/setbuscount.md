@@ -1,6 +1,6 @@
 # setBusCount(_:)
 
-**Framework**: Audiotoolbox  
+**Framework**: Audio Toolbox  
 **Kind**: method
 
 Changes the number of busses in the array.

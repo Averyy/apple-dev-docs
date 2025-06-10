@@ -35,6 +35,7 @@ If the framework identifies details about an [`CapturedRoom.Object`](capturedroo
 - [CaseIterable](../Swift/CaseIterable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [ChairArmType](chairarmtype.md)
 - [ChairBackType](chairbacktype.md)

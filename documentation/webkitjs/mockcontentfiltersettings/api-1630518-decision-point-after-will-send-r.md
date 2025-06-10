@@ -1,6 +1,6 @@
 # DECISION_POINT_AFTER_WILL_SEND_REQUEST
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

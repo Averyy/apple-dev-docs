@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_INTERVAL_4_HOURS
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A constant that represents a 4-hour time interval.

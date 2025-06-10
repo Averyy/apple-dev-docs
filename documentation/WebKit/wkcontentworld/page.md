@@ -1,6 +1,6 @@
 # page
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The content world for the current webpage’s content.

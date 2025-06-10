@@ -16,8 +16,6 @@ static var allocationFailure: MEError.Code { get }
 
 ## See Also
 
-- [static var errorDomain: String](meerror-swift.struct/errordomain-6dfr0.md)
-  The domain of the error.
 - [static var endOfStream: MEError.Code](meerror-swift.struct/endofstream.md)
   An error code that indicates the extension reached the end of the source file.
 - [static var internalFailure: MEError.Code](meerror-swift.struct/internalfailure.md)

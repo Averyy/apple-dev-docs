@@ -10,6 +10,8 @@ Use the Xcode Organizer to view anonymized performance data from your app’s us
 
 In Xcode, choose Window > Organizer to open the Organizer window, and then select the desired metric or report. In some cases, the pane shows “Insufficient usage data available” because there may not be enough anonymized data reported from participating user devices. When this happens, try checking back in a few days.
 
+When Xcode has enough information to calculate a recommendation, it displays a recommended value for a metric on the chart displaying your app’s metrics. Use this information to plan and prioritize performance engineering work.
+
 ##### Read Data for a Metric
 
 The Xcode Organizer shows a title, description, and graph for each type of metric. In the graph, each bar represents a version of your app. Use the pop-up menus to filter the metric data for different devices and the median or high value. If your app has an App Clip available, use the pop-up menu to filter by app type and switch between viewing metrics for the main app and the App Clip.
@@ -26,6 +28,12 @@ The data for both the selected and latest versions appear to the right of the gr
 
 ![A labeled screenshot of the comparison view in the Hang Rate metric pane of the Xcode Organizer. Key pieces are the highlighted selected version bar, data for the latest and selected app versions, and change information between those two versions.](https://docs-assets.developer.apple.com/published/dec652d302d51a04c683c1ac27692d45/analyzing-the-performance-of-your-shipping-app-2%402x.png)
 
+##### Compare Your Apps Metrics with Recommended Values
+
+Xcode compares your app’s launch time metrics with other sources, including metrics from similar apps and historical data from your app. If your app has sufficient metrics data available and Xcode determines that the launch time metrics for the current version of your app are greater than the values from other sources, it displays a recommended value for the metric as a dashed line on the histogram in the Xcode Organizer.
+
+> **Note**:  In Xcode 17 Beta 1, metric recommendations are available for the app launch time metric.
+
 ##### Read Data for Smart Insights
 
 The Xcode Organizer presents a list of smart insights whenever the system detects new performance regressions for the latest version of your app. Each item in the insights list contains information that provides a brief summary.
@@ -37,6 +45,14 @@ To the right of the list is the detail pane that shows a chart corresponding to 
 To the right of the chart is the insight data showing the metric value for the latest version, as well as the average metric values for the previous four versions. Use this information to see how your latest app version is performing with respect to the average of the previous versions.
 
 Select the Notifications button in the upper-right corner to opt in to power and performance regression notifications. Xcode sends you a notification for the latest version of each of your shipped apps when it detects a high-impact regression. A regression is considered high impact if performance data is available and indicates the latest version of your app regresses 75 percent or more compared to the average of the previous four app versions available in the App Store. Xcode notifies you once per 24-hour period when Xcode is running. To keep notifications to a minimum, Xcode sends you no more than one notification for the same app version.
+
+##### Identify Trending Insights
+
+Xcode displays a flame icon next to reports in the list of smart insight reports for the issues that exhibit the largest regressions over the most recent five versions of your app, if it has enough data available. Click on an individual report to view a bar chart showing the impact trend for the most recent five versions of your app. Use this information to prioritize performance engineering work.
+
+Xcode identifies trending insights for disk writes, hang rate, and launch time metrics.
+
+##### Improve Your Apps Performance
 
 For more details about how to use the data in the Organizer panes to improve the performance of the next version of your app, see the topics below.
 

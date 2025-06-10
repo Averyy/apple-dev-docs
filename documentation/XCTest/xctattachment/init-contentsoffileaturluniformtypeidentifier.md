@@ -1,6 +1,6 @@
 # init(contentsOfFileAtURL:uniformTypeIdentifier:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an attachment from the contents of an existing file on disk, with a custom UTI.

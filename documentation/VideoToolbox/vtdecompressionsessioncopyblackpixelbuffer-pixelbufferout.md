@@ -1,6 +1,6 @@
 # VTDecompressionSessionCopyBlackPixelBuffer(_:pixelBufferOut:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Copies a black pixel buffer from the decompression session.

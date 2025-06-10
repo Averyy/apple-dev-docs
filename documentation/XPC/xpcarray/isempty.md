@@ -1,6 +1,6 @@
 # isEmpty
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: property
 
 A Boolean value that indicates whether the array is empty.

@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionState.invalid
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Either the session has encountered an error, or it has stopped running.

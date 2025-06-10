@@ -22,18 +22,6 @@ var normalized: Angle2D { get }
 
 ## See Also
 
-- [func cos(Angle2D) -> Double](cos(_:).md)
-  Returns the cosine of the specified angle.
-- [func cosh(Angle2D) -> Double](cosh(_:).md)
-  Returns the hyperbolic cosine of the specified angle.
-- [func sin(Angle2D) -> Double](sin(_:).md)
-  Returns the sine of the specified angle.
-- [func sinh(Angle2D) -> Double](sinh(_:).md)
-  Returns the hyperbolic sine of the specified angle.
-- [func tan(Angle2D) -> Double](tan(_:).md)
-  Returns the tangent of the specified angle.
-- [func tanh(Angle2D) -> Double](tanh(_:).md)
-  Returns the hyperbolic tangent of the specified angle.
 - [static func acos(Double) -> Angle2D](angle2d/acos(_:).md)
   Returns the inverse cosine of the specified value.
 - [static func acosh(Double) -> Angle2D](angle2d/acosh(_:).md)

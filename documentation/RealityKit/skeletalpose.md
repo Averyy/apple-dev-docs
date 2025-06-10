@@ -10,6 +10,7 @@ A container that holds the position and orientation of each joint in a single an
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -25,12 +26,12 @@ Each index in [`jointNames`](skeletalpose/jointnames.md) directly corresponds to
 ## Topics
 
 ### Initializers
-- [init(id: SkeletalPose.ID, from: MeshResource.Skeleton)](skeletalpose/init(id:from:).md)
+- [init(id:from:)](skeletalpose/init(id:from:).md)
   Creates a skeletal pose from the rest pose of the model skeleton.
 - [init(id: SkeletalPose.ID, joints: [(String, JointTransforms.Element)])](skeletalpose/init(id:joints:).md)
   Creates a pose for the joint name and transformation pairs.
 ### Instance Properties
-- [var id: SkeletalPose.ID](skeletalpose/id-swift.property.md)
+- [var id: SkeletalPose.ID](skeletalpose/id.md)
   The unique identifier of the pose.
 - [var jointNames: [String]](skeletalpose/jointnames.md)
   The names of the joints in the pose in specific order.
@@ -39,9 +40,6 @@ Each index in [`jointNames`](skeletalpose/jointnames.md) directly corresponds to
 ### Subscripts
 - [subscript(String) -> Transform?](skeletalpose/subscript(_:).md)
   Accesses a pose transformation using the index of the joint name.
-### Type Aliases
-- [SkeletalPose.ID](skeletalpose/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 
@@ -52,12 +50,8 @@ Each index in [`jointNames`](skeletalpose/jointnames.md) directly corresponds to
 
 - [struct SkeletalPosesComponent](skeletalposescomponent.md)
   A component that exposes the collection of named animation skeletal poses.
-- [SkeletalPose.ID](skeletalpose/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 - [struct SkeletalPoseSet](skeletalposeset.md)
   A collection of named skeletal poses.
-- [SkeletalPoseSet.Element](skeletalposeset/element.md)
-  A type representing the sequence’s elements.
 
 
 ---

@@ -10,6 +10,7 @@ Read the state of releases for a leaderboard and related information.
 
 ## See Also
 
+- [GET /v1/gameCenterLeaderboards/{id}/relationships/releases](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
 - [Read leaderboard release information](get-v1-gamecenterleaderboardreleases-_id_.md)
   Read the state of a specific leaderboard release.
 - [Create a leaderboard release](post-v1-gamecenterleaderboardreleases.md)

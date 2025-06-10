@@ -12,9 +12,7 @@ Capturing images in RAW formats results in much larger files than compressed for
 
 Beginning in iOS 14.3, and available on iPhone 12 Pro and Pro Max, you can use the Apple ProRAW format. The Apple ProRAW format provides the benefits of RAW capture, and applies many of the multi-image fusion techniques previously unavailable to RAW workflows.
 
-> 💡 **Tip**:  You can use Core Image to display and edit RAW and Apple ProRAW files. See the [`CIRAWFilter`](https://developer.apple.com/documentation/coreimage/cirawfilter) class’s [`init(imageURL:)`](https://developer.apple.com/documentation/coreimage/cirawfilter/3801630-init) initializer for more information.
-
- You can use Core Image to display and edit RAW and Apple ProRAW files. See the [`CIRAWFilter`](https://developer.apple.com/documentation/coreimage/cirawfilter) class’s [`init(imageURL:)`](https://developer.apple.com/documentation/coreimage/cirawfilter/3801630-init) initializer for more information.
+> 💡 **Tip**:  You can use Core Image to display and edit RAW and Apple ProRAW files. See the [`CIRAWFilter`](https://developer.apple.com/documentation/CoreImage/CIRAWFilter) class’s [`init(imageURL:)`](https://developer.apple.com/documentation/coreimage/cirawfilter/3801630-init) initializer for more information.
 
 ##### Enable Apple Proraw Support
 
@@ -60,8 +58,6 @@ private func setupSession() throws {
 Enabling use of the Apple ProRAW format adds an entry to the photo output’s [`availableRawPhotoPixelFormatTypes`](avcapturephotooutput/availablerawphotopixelformattypes-5fatm.md) array. You can determine whether a particular format in the array is an Apple ProRAW or a Bayer RAW format by querying the output’s [`isAppleProRAWPixelFormat(_:)`](avcapturephotooutput/isappleprorawpixelformat(_:).md) or [`isBayerRAWPixelFormat(_:)`](avcapturephotooutput/isbayerrawpixelformat(_:).md) methods.
 
 > ❗ **Important**:  To avoid a lengthy reconfiguration of the capture pipeline, enable Apple ProRAW capture before starting the capture session.
-
- To avoid a lengthy reconfiguration of the capture pipeline, enable Apple ProRAW capture before starting the capture session.
 
 ##### Capture Raw and Apple Proraw Photos
 

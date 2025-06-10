@@ -1,6 +1,6 @@
 # VTDecompressionSessionGetTypeID()
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Returns the Core Foundation type identifier for the decompression session.

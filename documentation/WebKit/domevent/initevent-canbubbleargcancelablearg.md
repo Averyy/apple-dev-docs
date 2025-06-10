@@ -1,6 +1,6 @@
 # initEvent(_:canBubbleArg:cancelableArg:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

@@ -12,6 +12,7 @@ The distance from the center point of the map to the camera, in meters.
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 

@@ -26,9 +26,7 @@ Your implementation of this method must execute the block in the handler paramet
 
 If you don’t implement this method, ClockKit doesn’t attempt to retrieve timeline entries after the current entry.
 
-> ❗ **Important**:  In watchOS 6 and earlier, if you passed `nil` to the completion handler, ClockKit set the timeline end date to [`distantFuture`](https://developer.apple.com/documentation/foundation/nsdate/1415385-distantfuture). In watchOS 7 and later, it assumes your app can’t provide future data, and only asks for the current timeline entry.
-
- In watchOS 6 and earlier, if you passed `nil` to the completion handler, ClockKit set the timeline end date to [`distantFuture`](https://developer.apple.com/documentation/foundation/nsdate/1415385-distantfuture). In watchOS 7 and later, it assumes your app can’t provide future data, and only asks for the current timeline entry.
+> ❗ **Important**:  In watchOS 6 and earlier, if you passed `nil` to the completion handler, ClockKit set the timeline end date to [`distantFuture`](https://developer.apple.com/documentation/Foundation/NSDate/distantFuture). In watchOS 7 and later, it assumes your app can’t provide future data, and only asks for the current timeline entry.
 
 ## Parameters
 

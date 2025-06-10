@@ -30,8 +30,6 @@ You can pass the same buffer to the `sourceBuffer` and `destinationBuffer` param
 
 > ❗ **Important**:  Copying data to overlapping regions within the same buffer may result in unexpected behavior.
 
- Copying data to overlapping regions within the same buffer may result in unexpected behavior.
-
 ## Parameters
 
 - `sourceBuffer`: A buffer the command copies data from.

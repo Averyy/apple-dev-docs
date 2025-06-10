@@ -1,6 +1,6 @@
 # photoOutput(_:willCapturePhotoFor:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Notifies the delegate that photo capture is about to occur.

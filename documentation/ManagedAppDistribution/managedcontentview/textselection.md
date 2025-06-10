@@ -1,6 +1,6 @@
 # textSelection(_:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Controls whether people can select text within this view.

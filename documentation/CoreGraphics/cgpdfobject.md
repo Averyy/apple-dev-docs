@@ -18,7 +18,7 @@ This object is not derived from CFType and therefore there are no functions for 
 - [func CGPDFObjectGetValue(CGPDFObjectRef, CGPDFObjectType, UnsafeMutableRawPointer?) -> Bool](cgpdfobjectgetvalue(_:_:_:).md)
   Returns whether an object is of a given type and if it is, retrieves its value.
 ### Data Types
-- [typealias CGPDFObjectRef](cgpdfobjectref.md)
+- [struct CGPDFObjectRef](cgpdfobjectref.md)
   A type that contains information about a PDF object.
 - [typealias CGPDFBoolean](cgpdfboolean.md)
   A PDF Boolean value.

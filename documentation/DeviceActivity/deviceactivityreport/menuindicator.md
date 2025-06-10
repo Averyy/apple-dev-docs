@@ -1,6 +1,6 @@
 # menuIndicator(_:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Sets the menu indicator visibility for controls within this view.

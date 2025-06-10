@@ -8,7 +8,7 @@ Configures the icon used by dialogs within this view.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 17.0+
 - watchOS 10.0+

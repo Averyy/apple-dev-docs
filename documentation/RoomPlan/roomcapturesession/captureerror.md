@@ -3,19 +3,23 @@
 **Framework**: RoomPlan  
 **Kind**: enum
 
-Capture error types
+Errors that can occur during a room-capture session.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
 enum CaptureError
 ```
+
+#### Overview
+
+The `error` argument of a room-capture session delgate’s  [`captureSession(_:didEndWith:error:)`](roomcapturesessiondelegate/capturesession(_:didendwith:error:).md) function is of this type.
 
 ## Topics
 
@@ -34,7 +38,7 @@ enum CaptureError
   An error that indicates when the framework encounters an unexpected error case.
 ### Inspecting error information
 - [var errorDescription: String?](roomcapturesession/captureerror/errordescription.md)
-  A localized message describing what error occurred.
+  A human-readable explanation for the error.
 - [var failureReason: String?](roomcapturesession/captureerror/failurereason.md)
   A localized message describing the reason for the failure.
 - [var helpAnchor: String?](roomcapturesession/captureerror/helpanchor.md)
@@ -66,6 +70,7 @@ enum CaptureError
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

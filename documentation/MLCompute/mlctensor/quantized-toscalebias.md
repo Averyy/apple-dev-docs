@@ -26,8 +26,6 @@ A tensor the system quantizes.
 
 > ❗ **Important**:  The tensor type must be [`MLCDataType.int8`](mlcdatatype/int8.md), [`MLCDataType.uint8`](mlcdatatype/uint8.md), or [`MLCDataType.int32`](mlcdatatype/int32.md).
 
- The tensor type must be [`MLCDataType.int8`](mlcdatatype/int8.md), [`MLCDataType.uint8`](mlcdatatype/uint8.md), or [`MLCDataType.int32`](mlcdatatype/int32.md).
-
 ## Parameters
 
 - `type`: The tensor data type.

@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: init
 
-Creates a new `Handle`.
+Creates a new handle that identifies a participant in a conversation.
 
 **Availability**:
 - iOS 17.4+
@@ -20,9 +20,14 @@ init(type: Handle.Kind, value: String, displayName: String? = nil)
 
 ## Parameters
 
-- `type`: The type of handle (e.g. a phone number or email address)
+- `type`: The type of the handle; for example, a phone number or email address.
 - `value`: The raw value of the handle.
-- `displayName`: The value that should be displayed to the user at the UI layer. If the given   is   then the   is used instead.
+- `displayName`: The name that people see for a participant of a conversation in the conversation UI. If the   is  , the system uses   instead.
+
+## See Also
+
+- [init(from: any Decoder) throws](handle/init(from:).md)
+  Creates a new instance by decoding from the given decoder.
 
 
 ---

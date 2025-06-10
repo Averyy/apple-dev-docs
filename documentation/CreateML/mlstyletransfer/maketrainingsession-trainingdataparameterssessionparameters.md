@@ -22,10 +22,11 @@ static func makeTrainingSession(trainingData: MLStyleTransfer.DataSource, parame
 
 An [`MLTrainingSession`](mltrainingsession.md) that represents the style transfer model-training session.
 
-#### Discussion
+## Parameters
 
-- trainingData: The style image and content images represented by a data source.
-- sessionParameters: An [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you use to configure the training session.
+- `trainingData`: The style image and content images represented by a data source.
+- `parameters`: An   instance you use to configure the model for the training   session.
+- `sessionParameters`: An   instance you use to configure the training session.
 
 ## See Also
 

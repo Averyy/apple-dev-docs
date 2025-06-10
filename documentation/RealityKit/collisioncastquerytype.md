@@ -10,6 +10,7 @@ The kinds of ray and convex shape cast queries that you can make.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -27,17 +28,6 @@ enum CollisionCastQueryType
   Report all hits sorted in ascending order by distance from the cast origin.
 - [CollisionCastQueryType.any](collisioncastquerytype/any.md)
   Report one hit.
-### Comparing collision cast queries
-- [static func == (CollisionCastQueryType, CollisionCastQueryType) -> Bool](collisioncastquerytype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](collisioncastquerytype/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](collisioncastquerytype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](collisioncastquerytype/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](collisioncastquerytype/equatable-implementations.md)
 
 ## Relationships
 
@@ -49,8 +39,6 @@ enum CollisionCastQueryType
 
 - [struct CollisionCastHit](collisioncasthit.md)
   A hit result of a collision cast.
-- [CollisionCastHit.TriangleHit](collisioncasthit/trianglehit-swift.struct.md)
-  Information returned when ray intersects a triangle mesh.
 - [struct PixelCastHit](pixelcasthit.md)
 
 

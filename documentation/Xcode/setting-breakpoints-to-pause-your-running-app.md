@@ -58,8 +58,6 @@ The debugger pauses when the app or your code calls the symbol you specify. The 
 
 > 💡 **Tip**: Some symbols receive calls very frequently and pausing on each can be unmanageable. Add a condition to the breakpoint to reduce the frequency of calls, or disable the symbolic breakpoint until you reach a breakpoint in your code where you want to start diagnosing the issue, and then enable the symbolic breakpoint.
 
-Some symbols receive calls very frequently and pausing on each can be unmanageable. Add a condition to the breakpoint to reduce the frequency of calls, or disable the symbolic breakpoint until you reach a breakpoint in your code where you want to start diagnosing the issue, and then enable the symbolic breakpoint.
-
 ##### Pause on an Uncaught Swift Error or Objective C Exception
 
 When your app encounters an unhandled Swift Error or Objective-C exception, it crashes. Frequently, the stack trace doesn’t point directly to where the problem occurs. Set a breakpoint to pause on an uncaught Swift Error or Objective-C exception so you can locate the problem.

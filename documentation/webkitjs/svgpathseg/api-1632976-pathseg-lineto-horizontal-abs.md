@@ -1,6 +1,6 @@
 # PATHSEG_LINETO_HORIZONTAL_ABS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

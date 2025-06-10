@@ -6,9 +6,9 @@
 Value is a set of [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects identifying the asset groups that were deleted.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

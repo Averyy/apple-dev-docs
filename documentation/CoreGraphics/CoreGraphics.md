@@ -81,6 +81,40 @@ In macOS, Core Graphics also includes services for working with display hardware
 - [Core Graphics Constants](core-graphics-constants.md)
 - [Core Graphics Functions](core-graphics-functions.md)
 - [Core Graphics Data Types](core-graphics-data-types.md)
+### Classes
+- [class CGPDFWrappedObject](cgpdfwrappedobject.md)
+  CGPDFWrappedObject is used to add a PDF object to a CGPDFArray or CGPDFDictionary.
+- [class CGRenderingBufferProvider](cgrenderingbufferprovider.md)
+### Protocols
+- [protocol PDFObjectType](pdfobjecttype.md)
+### Structures
+- [struct CGBitmapParameters](cgbitmapparameters-4v8wo.md)
+- [struct CGColorModel](cgcolormodel.md)
+- [struct CGContentInfo](cgcontentinfo.md)
+- [struct CGContentToneMappingInfo](cgcontenttonemappinginfo.md)
+### Variables
+- [let kCGContentAverageLightLevel: CFString](kcgcontentaveragelightlevel.md)
+- [let kCGContentAverageLightLevelNits: CFString](kcgcontentaveragelightlevelnits.md)
+- [let kCGDynamicRangeConstrained: CFString](kcgdynamicrangeconstrained.md)
+- [let kCGDynamicRangeHigh: CFString](kcgdynamicrangehigh.md)
+- [let kCGDynamicRangeStandard: CFString](kcgdynamicrangestandard.md)
+- [let kCGPreferredDynamicRange: CFString](kcgpreferreddynamicrange.md)
+### Functions
+- [func CGContextGetContentToneMappingInfo(CGContext) -> CGContentToneMappingInfo](cgcontextgetcontenttonemappinginfo(_:).md)
+- [func CGContextSynchronizeAttributes(CGContext)](cgcontextsynchronizeattributes(_:).md)
+- [func CGEXRToneMappingGammaGetDefaultOptions() -> CFDictionary](cgexrtonemappinggammagetdefaultoptions().md)
+- [func CGPDFWrappedObjectCreateWithArray(CGPDFArrayRef) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewitharray(_:).md)
+- [func CGPDFWrappedObjectCreateWithBoolean(CGPDFBoolean) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithboolean(_:).md)
+- [func CGPDFWrappedObjectCreateWithDictionary(CGPDFDictionaryRef) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithdictionary(_:).md)
+- [func CGPDFWrappedObjectCreateWithInteger(CGPDFInteger) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithinteger(_:).md)
+- [func CGPDFWrappedObjectCreateWithName(UnsafePointer<CChar>) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithname(_:).md)
+- [func CGPDFWrappedObjectCreateWithReal(CGPDFReal) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithreal(_:).md)
+- [func CGPDFWrappedObjectCreateWithStream(CGPDFStreamRef) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithstream(_:).md)
+- [func CGPDFWrappedObjectCreateWithString(CGPDFStringRef) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithstring(_:).md)
+### Enumerations
+- [enum CGBitmapLayout](cgbitmaplayout.md)
+- [enum CGComponent](cgcomponent.md)
+- [enum CGImageComponentInfo](cgimagecomponentinfo.md)
 
 ## See Also
 

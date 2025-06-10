@@ -8,7 +8,7 @@ Invokes a given block using each of the assets in the group at specified indexes
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # isDefault
 
-**Framework**: Cfnetwork  
+**Framework**: CFNetwork  
 **Kind**: property
 
 Specifies whether the resulting domain is the default registration or browse domain.
@@ -39,4 +39,4 @@ If set, the resulting domain is the default registration or browse domain, depen
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CFNetwork/cfnetservicebrowserflags/isdefault)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cfnetwork/cfnetservicebrowserflags/isdefault)*

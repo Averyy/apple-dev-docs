@@ -1,6 +1,6 @@
 # accountManager(_:present:)
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: method  
 **Required**: Yes
 

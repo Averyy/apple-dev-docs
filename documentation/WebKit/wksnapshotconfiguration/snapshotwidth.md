@@ -1,6 +1,6 @@
 # snapshotWidth
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The width of the captured image, in points.

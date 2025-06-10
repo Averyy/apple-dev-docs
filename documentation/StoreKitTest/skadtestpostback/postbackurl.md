@@ -1,6 +1,6 @@
 # postbackURL
 
-**Framework**: Storekittest  
+**Framework**: StoreKit Test  
 **Kind**: property
 
 A URL on your server where the testing environment sends test postbacks.

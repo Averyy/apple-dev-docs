@@ -1,6 +1,6 @@
 # Supporting Exposure Notifications Express
 
-**Framework**: Exposurenotification
+**Framework**: Exposure Notification
 
 Configure servers to notify users of potential exposures to COVID-19 without an app.
 
@@ -72,4 +72,4 @@ The validated and uploaded keys are available for download by other devices to b
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/supporting-exposure-notifications-express)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/supporting-exposure-notifications-express)*

@@ -1,6 +1,6 @@
 # com.apple.developer.device-information.user-assigned-device-name
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 The entitlement for accessing the user-assigned device name instead of a generic device name.

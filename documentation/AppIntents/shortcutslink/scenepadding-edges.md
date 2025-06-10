@@ -8,10 +8,10 @@ Adds a specified kind of padding to the specified edges of this view using an am
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -54,8 +54,6 @@ The text with minimum scene padding uses the system minimum padding and the text
 Scene padding in watchOS also ensures that your content avoids the curved edges of a device like Apple Watch Series 7. In other platforms, scene padding produces the same default padding that you get from the `View/padding(_:_:)` modifier.
 
 > ❗ **Important**: Scene padding doesn’t pad the top and bottom edges of a view in watchOS, even if you specify those edges as part of the input. For example, if you specify `Edge/Set/vertical` instead of `Edge/Set/horizontal` in the example above, the modifier would have no effect in watchOS. It does, however, apply to all the edges that you specify in other platforms.
-
-Scene padding doesn’t pad the top and bottom edges of a view in watchOS, even if you specify those edges as part of the input. For example, if you specify `Edge/Set/vertical` instead of `Edge/Set/horizontal` in the example above, the modifier would have no effect in watchOS. It does, however, apply to all the edges that you specify in other platforms.
 
 ## Parameters
 

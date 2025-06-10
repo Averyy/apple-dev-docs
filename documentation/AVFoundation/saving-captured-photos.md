@@ -1,6 +1,6 @@
 # Saving Captured Photos
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Add an image and other data from a photo capture to the photo library.
 
@@ -101,4 +101,4 @@ func save(photo: AVCapturePhoto) async {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/saving-captured-photos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/saving-captured-photos)*

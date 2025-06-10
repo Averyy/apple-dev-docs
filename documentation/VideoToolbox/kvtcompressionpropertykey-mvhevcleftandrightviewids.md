@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_MVHEVCLeftAndRightViewIDs
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Specifies which view identifier corresponds to the left eye and right eye.

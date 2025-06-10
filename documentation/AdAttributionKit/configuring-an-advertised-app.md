@@ -50,6 +50,8 @@ To receive copies of winning reengagement postbacks, you need to add an addition
   Use the AdAttributionKit APIs for your ad campaigns after registering your ad network with Apple.
 - [Configuring a publisher app](configuring-a-publisher-app.md)
   Set up a publisher app to participate in ad campaigns.
+- [Configuring attribution rules for your app](configuring-attribution-rules-for-your-app.md)
+  Tune aspects of attribution flow, including the time available to register impressions and the minimum time your app is willing to accept conversions.
 
 
 ---

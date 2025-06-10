@@ -21,8 +21,6 @@ Before you run the sample program:
 
 > ❗ **Important**: The kernel and RAM disk image must support the CPU architecture of your Mac.
 
-The kernel and RAM disk image must support the CPU architecture of your Mac.
-
 You may obtain a kernel image and the corresponding initial RAM disk image for a given release of the Fedora Linux distribution from `https://download.fedoraproject.org/pub/fedora/linux/releases/<release>/Everything/<architecture>/os/images/pxeboot`, where `<release>` is the Fedora release number and `<architecture>` is `x86_64` for Intel Macs and `aarch64` for Apple silicon Macs.
 
 To launch the virtual machine, run the sample’s executable from Xcode or in Terminal. You’ll need to specify the path to the kernel image and initial RAM disk image as parameters. The parameters are position-dependent, so use the following the order:

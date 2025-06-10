@@ -19,15 +19,11 @@ Your app can support external GPUs effectively by responding to these events app
 
 > ⚠️ **Warning**:  A person can disconnect an external GPU from a Mac at any time, without requesting or following a safe disconnect procedure. Prepare your app for this possibility and take actions in response to an unexpected removal.
 
- A person can disconnect an external GPU from a Mac at any time, without requesting or following a safe disconnect procedure. Prepare your app for this possibility and take actions in response to an unexpected removal.
-
 ##### Set a Gpu Eject Policy
 
 You can control how your app responds to a safe disconnect request for an external GPU by configuring the `GPUEjectPolicy` key in your app’s `Info.plist`. You can assign the key to one of the following string values:
 
 > 💡 **Tip**:  Support external GPUs effectively by setting the `GPUEjectPolicy` key in your app’s `Info.plist` to `“wait”` and appropriately respond to a safe disconnect ([`removalRequested`](mtldevicenotificationname/removalrequested.md)) notification.
-
- Support external GPUs effectively by setting the `GPUEjectPolicy` key in your app’s `Info.plist` to `“wait”` and appropriately respond to a safe disconnect ([`removalRequested`](mtldevicenotificationname/removalrequested.md)) notification.
 
 ##### Set a Gpu Selection Policy
 

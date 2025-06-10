@@ -1,6 +1,6 @@
 # Incorporating ClassKit into an Educational App
 
-**Framework**: Classkit
+**Framework**: ClassKit
 
 Walk through the process of setting up assignments and recording student progress.
 
@@ -374,4 +374,4 @@ If you do decide to set a primary item, make sure you always set the same kind o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/incorporating-classkit-into-an-educational-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/classkit/incorporating-classkit-into-an-educational-app)*

@@ -10,6 +10,7 @@ A renderer that displays a RealityKit scene in an existing Metal workflow.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -45,7 +46,9 @@ All RealityKit APIs for loading resources, creating entities and adding componen
 - [var entities: RealityRenderer.EntityCollection](realityrenderer/entities.md)
   A collection of RealityKit entities that this renderer renders within the scene.
 - [var extendedDynamicRangeHeadroom: Float](realityrenderer/extendeddynamicrangeheadroom.md)
+  The amount of headroom available for extended dynamic range content.
 - [var extendedDynamicRangeOutput: Bool](realityrenderer/extendeddynamicrangeoutput.md)
+  Specify whether the target Metal layer has been configured for EDR output.
 - [var lighting: RealityRenderer.ImageBasedLight](realityrenderer/lighting.md)
   The lighting used in the environment of a particular scene.
 ### Instance Methods

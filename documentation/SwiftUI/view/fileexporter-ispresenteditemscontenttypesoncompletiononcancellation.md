@@ -44,7 +44,7 @@ In order for the interface to appear `isPresented` must be set to `true`. When t
 - [func fileExporter<T>(isPresented: Binding<Bool>, item: T?, contentTypes: [UTType], defaultFilename: String?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileexporter(ispresented:item:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
   Presents a system interface allowing the user to export a `Transferable` item to file on disk.
 - [func fileExporterFilenameLabel(_:)](view/fileexporterfilenamelabel(_:).md)
-  On macOS, configures the `fileExporter` with a text to use as a label for the file name field.
+  On macOS, configures the `fileExporter` with a label for the file name field.
 
 
 ---

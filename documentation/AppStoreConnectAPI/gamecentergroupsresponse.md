@@ -36,6 +36,9 @@ object GameCenterGroupsResponse
   A response that contains a single group resource.
 - [object GameCenterGroupUpdateRequest](gamecentergroupupdaterequest.md)
   The request body you use to update a group.
+- [object GameCenterGroupGameCenterActivitiesLinkagesResponse](gamecentergroupgamecenteractivitieslinkagesresponse.md)
+- [object GameCenterGroupGameCenterChallengesLinkagesResponse](gamecentergroupgamecenterchallengeslinkagesresponse.md)
+- [object GameCenterGroupGameCenterDetailsLinkagesResponse](gamecentergroupgamecenterdetailslinkagesresponse.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # SVG_ZOOMANDPAN_DISABLE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

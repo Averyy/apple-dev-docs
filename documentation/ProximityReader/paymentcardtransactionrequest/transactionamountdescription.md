@@ -43,6 +43,7 @@ This information appears below the central transaction details in the system UI.
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

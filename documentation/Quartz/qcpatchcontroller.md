@@ -26,6 +26,8 @@ class QCPatchController
 - [NSEditor](../AppKit/NSEditor.md)
 - [NSEditorRegistration](../AppKit/NSEditorRegistration.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

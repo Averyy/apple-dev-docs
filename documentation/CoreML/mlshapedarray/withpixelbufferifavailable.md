@@ -22,7 +22,7 @@ func withPixelBufferIfAvailable<R>(_ body: (CVPixelBuffer) throws -> R) rethrows
 
 #### Return Value
 
- The value returned from body, unless the shaped array doesn’t use a pixel buffer backing, in which case the method ignores body and returns nil.
+The value returned from body, unless the shaped array doesn’t use a pixel buffer backing, in which case the method ignores body and returns nil.
 
 #### Discussion
 

@@ -1,6 +1,6 @@
 # CPTabBarTemplate
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: class
 
 A container template that displays and manages other templates, presenting them as tabs.
@@ -13,6 +13,7 @@ A container template that displays and manages other templates, presenting them 
 ## Declaration
 
 ```swift
+@MainActor
 class CPTabBarTemplate
 ```
 
@@ -65,6 +66,8 @@ When the user selects a tab, the template calls the [`tabBarTemplate(_:didSelect
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -80,4 +83,4 @@ When the user selects a tab, the template calls the [`tabBarTemplate(_:didSelect
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cptabbartemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cptabbartemplate)*

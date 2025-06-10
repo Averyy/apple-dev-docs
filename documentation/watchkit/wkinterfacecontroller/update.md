@@ -1,6 +1,6 @@
 # update(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Registers the current user activity with the system.

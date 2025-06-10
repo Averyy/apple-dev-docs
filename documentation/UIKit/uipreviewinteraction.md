@@ -1,6 +1,6 @@
 # UIPreviewInteraction
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A class that registers a view to provide a custom user experience in response to 3D Touch interactions.
@@ -79,4 +79,4 @@ For more information about the state transitions through which a preview interac
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uipreviewinteraction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uipreviewinteraction)*

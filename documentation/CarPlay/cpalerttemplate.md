@@ -13,6 +13,7 @@ A template that displays a modal alert.
 ## Declaration
 
 ```swift
+@MainActor
 class CPAlertTemplate
 ```
 
@@ -46,6 +47,8 @@ You must present alerts modally by calling the [`presentTemplate(_:animated:comp
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -34,6 +34,8 @@ The default now playing info center holds Now Playing information for the app th
   The current Now Playing information for the default Now Playing info center.
 - [enum MPNowPlayingInfoMediaType](mpnowplayinginfomediatype.md)
   The type of media currently playing.
+- [class var supportedAnimatedArtworkKeys: [String]](mpnowplayinginfocenter/supportedanimatedartworkkeys.md)
+  Keys related to animated artwork that are supported by the current platform.
 
 
 ---

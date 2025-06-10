@@ -21,7 +21,7 @@ func CTFontManagerRegisterFontsWithAssetNames(_ fontAssetNames: CFArray, _ bundl
 
 Registered fonts are discoverable through font descriptor matching in the calling process.
 
-Calling this function extracts the font assets from the asset catalog and registers them. You must make this call after the completion handler of either [`beginAccessingResources(completionHandler:)`](https://developer.apple.com/documentation/foundation/nsbundleresourcerequest/1614840-beginaccessingresources): or [`conditionallyBeginAccessingResources(completionHandler:)`](https://developer.apple.com/documentation/foundation/nsbundleresourcerequest/1614834-conditionallybeginaccessingresou) is called successfully.
+Calling this function extracts the font assets from the asset catalog and registers them. You must make this call after the completion handler of either [`beginAccessingResources(completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSBundleResourceRequest/beginAccessingResources(completionHandler:)): or [`conditionallyBeginAccessingResources(completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSBundleResourceRequest/conditionallyBeginAccessingResources(completionHandler:)) is called successfully.
 
 Name the assets using PostScript names for individual faces, or family names for variable or collection fonts. You can use the same names to unregister the fonts with [`CTFontManagerUnregisterFontDescriptors(_:_:_:)`](ctfontmanagerunregisterfontdescriptors(_:_:_:).md).
 

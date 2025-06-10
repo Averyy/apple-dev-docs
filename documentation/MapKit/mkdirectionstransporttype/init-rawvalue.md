@@ -12,6 +12,7 @@ Creates a direction transport type using a raw unsigned integer value.
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 

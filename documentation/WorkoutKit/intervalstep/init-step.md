@@ -1,6 +1,6 @@
 # init(_:step:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: init
 
 Creates a new interval step.
@@ -10,6 +10,7 @@ Creates a new interval step.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -25,7 +26,7 @@ init(_ purpose: IntervalStep.Purpose, step: WorkoutStep)
 
 ## See Also
 
-- [init(IntervalStep.Purpose, goal: WorkoutGoal, alert: (WorkoutAlert)?)](intervalstep/init(_:goal:alert:).md)
+- [init(IntervalStep.Purpose, goal: WorkoutGoal, alert: (any WorkoutAlert)?)](intervalstep/init(_:goal:alert:).md)
 
 
 ---

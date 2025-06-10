@@ -1,6 +1,6 @@
 # WKWebExtensionContext.PermissionStatus.deniedImplicitly
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates that the permission was implicitly denied because of another explicitly denied permission.

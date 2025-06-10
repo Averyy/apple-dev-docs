@@ -22,7 +22,6 @@ init?(optionsSrc src: CGColorSpace, dst: CGColorSpace, options: CFDictionary?)
 
 - [init?(src: CGColorSpace, dst: CGColorSpace)](cgcolorconversioninfo/init(src:dst:).md)
   Creates a conversion between two specified color spaces.
-- [init?(src: CGColorSpace, srcHeadroom: Float, dst: CGColorSpace, dstHeadroom: Float, toneMapping: CGToneMapping, options: CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?)](cgcolorconversioninfo/init(src:srcheadroom:dst:dstheadroom:tonemapping:options:).md)
 - [enum CGColorConversionInfoTransformType](cgcolorconversioninfotransformtype.md)
   Constants describing how a color conversion uses color spaces.
 

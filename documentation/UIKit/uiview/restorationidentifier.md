@@ -27,8 +27,6 @@ Assign a value to this property only if you are implementing a custom view that 
 
 > ❗ **Important**:  Simply setting the value of this property is not enough to ensure that the view is preserved and restored. Its owning view controller, and all of that view controller’s parent view controllers, must also have a restoration identifier. For more information about the preservation and restoration process, see [`App Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072).
 
- Simply setting the value of this property is not enough to ensure that the view is preserved and restored. Its owning view controller, and all of that view controller’s parent view controllers, must also have a restoration identifier. For more information about the preservation and restoration process, see [`App Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072).
-
 ## See Also
 
 - [func encodeRestorableState(with: NSCoder)](uiview/encoderestorablestate(with:).md)

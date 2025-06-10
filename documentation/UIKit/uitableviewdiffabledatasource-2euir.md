@@ -43,8 +43,6 @@ Then, you generate the current state of the data and display the data in the UI 
 
 > ❗ **Important**:  Do not change the [`dataSource`](uitableview/datasource.md) on the table view after you configure it with a diffable data source. If the table view needs a new data source after you configure it initially, create and configure a new table view and diffable data source.
 
- Do not change the [`dataSource`](uitableview/datasource.md) on the table view after you configure it with a diffable data source. If the table view needs a new data source after you configure it initially, create and configure a new table view and diffable data source.
-
 ## Topics
 
 ### Creating a diffable data source
@@ -94,6 +92,7 @@ Then, you generate the current state of the data and display the data in the UI 
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UITableViewDataSource](uitableviewdatasource.md)
 
 ## See Also

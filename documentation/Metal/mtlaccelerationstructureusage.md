@@ -31,6 +31,9 @@ struct MTLAccelerationStructureUsage
   An option that specifies that Metal needs to build the acceleration structure quickly, even if that reduces ray-tracing performance.
 - [static var extendedLimits: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/extendedlimits.md)
   A structure usage option that indicates you intend to use larger ray-tracing limits for the acceleration structure.
+### Type Properties
+- [static var minimizeMemory: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/minimizememory.md)
+- [static var preferFastIntersection: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/preferfastintersection.md)
 
 ## Relationships
 
@@ -41,6 +44,7 @@ struct MTLAccelerationStructureUsage
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also
@@ -49,10 +53,16 @@ struct MTLAccelerationStructureUsage
   Simplify data access and improve GPU utilization by storing custom primitive data directly in the acceleration structure.
 - [protocol MTLAccelerationStructure](mtlaccelerationstructure.md)
   A collection of model data for GPU-accelerated intersection of rays with the model.
+- [class MTL4AccelerationStructureDescriptor](mtl4accelerationstructuredescriptor.md)
+  Base class for Metal 4 acceleration structure descriptors.
 - [class MTLAccelerationStructureDescriptor](mtlaccelerationstructuredescriptor.md)
   A base class for classes that define the configuration for a new acceleration structure.
+- [class MTL4PrimitiveAccelerationStructureDescriptor](mtl4primitiveaccelerationstructuredescriptor.md)
+  Descriptor for a primitive acceleration structure that directly references geometric shapes, such as triangles and bounding boxes.
 - [class MTLPrimitiveAccelerationStructureDescriptor](mtlprimitiveaccelerationstructuredescriptor.md)
   A description of an acceleration structure that contains geometry primitives.
+- [class MTL4InstanceAccelerationStructureDescriptor](mtl4instanceaccelerationstructuredescriptor.md)
+  Descriptor for an instance acceleration structure.
 - [class MTLInstanceAccelerationStructureDescriptor](mtlinstanceaccelerationstructuredescriptor.md)
   A description of an acceleration structure that derives from instances of primitive acceleration structures.
 - [protocol MTLAccelerationStructureCommandEncoder](mtlaccelerationstructurecommandencoder.md)

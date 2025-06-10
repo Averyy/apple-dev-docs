@@ -1,6 +1,6 @@
 # moveItem(at:inParent:to:inParent:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Moves an item at a given index in the given parent to a new index in a new parent.

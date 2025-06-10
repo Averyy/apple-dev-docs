@@ -44,6 +44,7 @@ These status values are returned by [`incrementalLoad(from:complete:)`](nsbitmap
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

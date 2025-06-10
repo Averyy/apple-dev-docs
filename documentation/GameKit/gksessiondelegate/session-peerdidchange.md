@@ -26,8 +26,6 @@ A session calls this method whenever a visible peer changes it state relative to
 
 > ❗ **Important**:  If a [`GKPeerPickerController`](gkpeerpickercontroller.md) object is being used to configure the session, the controller handles updates for the GKPeerStateAvailable, GKPeerStateUnavailable, and GKPeerStateConnected states. Your delegate can ignore state changes if the peer picker dialog is in use.
 
- If a [`GKPeerPickerController`](gkpeerpickercontroller.md) object is being used to configure the session, the controller handles updates for the GKPeerStateAvailable, GKPeerStateUnavailable, and GKPeerStateConnected states. Your delegate can ignore state changes if the peer picker dialog is in use.
-
 ## Parameters
 
 - `session`: The session that received the update.

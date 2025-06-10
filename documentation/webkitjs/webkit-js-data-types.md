@@ -1,6 +1,6 @@
 # WebKit JS Data Types
 
-**Framework**: Webkitjs
+**Framework**: WebKit JS
 
 ## Topics
 

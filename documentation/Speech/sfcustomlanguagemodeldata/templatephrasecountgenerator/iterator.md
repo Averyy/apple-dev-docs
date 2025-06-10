@@ -6,11 +6,9 @@
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
-- tvOS 17.0+
 - visionOS 1.1+
-- watchOS 10.0+
 
 ## Declaration
 
@@ -20,12 +18,12 @@ class Iterator
 
 ## Topics
 
-### Type Aliases
-- [SFCustomLanguageModelData.TemplatePhraseCountGenerator.Iterator.Element](sfcustomlanguagemodeldata/templatephrasecountgenerator/iterator/element.md)
 ### Initializers
 - [init(templates: [SFCustomLanguageModelData.TemplatePhraseCountGenerator.Template], templateClasses: [String : [String]])](sfcustomlanguagemodeldata/templatephrasecountgenerator/iterator/init(templates:templateclasses:).md)
 ### Instance Methods
 - [func next() async throws -> SFCustomLanguageModelData.PhraseCount?](sfcustomlanguagemodeldata/templatephrasecountgenerator/iterator/next.md)
+### Type Aliases
+- [SFCustomLanguageModelData.TemplatePhraseCountGenerator.Iterator.Element](sfcustomlanguagemodeldata/templatephrasecountgenerator/iterator/element.md)
 
 ## Relationships
 

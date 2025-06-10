@@ -20,8 +20,6 @@ var date: Date { get }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.7 and later.
 
- This property is available in iOS 12.5, and in iOS 13.7 and later.
-
 The framework stores the date in Universal Coordinated Time (UTC) and rounds the value to the beginning of the exposure day. For example, a date and time of February 1, 2021 at 10:14 UTC rounds to February 1, 2021 at 00:00 UTC.
 
 ## See Also

@@ -56,6 +56,10 @@ This class is only available to carrier apps with suitable entitlements.
 
 - [class CTCellularPlanProvisioning](ctcellularplanprovisioning.md)
   An object you use to download and install a carrier eSIM.
+- [class CTCellularPlanProperties](ctcellularplanproperties.md)
+  An object you use for an eSIM.
+- [enum CTCellularPlanCapability](ctcellularplancapability.md)
+  The type of cellular plan available for an eSIM.
 
 
 ---

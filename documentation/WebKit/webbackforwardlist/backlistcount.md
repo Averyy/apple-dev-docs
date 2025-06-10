@@ -1,6 +1,6 @@
 # backListCount
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The number of items that precede the current item in the back-forward list.

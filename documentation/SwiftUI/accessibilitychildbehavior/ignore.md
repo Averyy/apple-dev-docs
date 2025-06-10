@@ -1,6 +1,6 @@
 # ignore
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 Any child accessibility elements become hidden.
@@ -57,4 +57,4 @@ Before using the  [`ignore`](accessibilitychildbehavior/ignore.md)behavior, cons
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/accessibilitychildbehavior/ignore)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/accessibilitychildbehavior/ignore)*

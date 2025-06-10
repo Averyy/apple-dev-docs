@@ -29,8 +29,6 @@ Only physical cameras for which factory calibrations exist provide an extrinsic 
 
 > ❗ **Important**:  If you enable video stabilization by setting a [`preferredVideoStabilizationMode`](avcaptureconnection/preferredvideostabilizationmode.md) value, the pixels in stabilized video frames no longer match the relative extrinsic matrix from one device to another due to warping. Disable video stabilization if you’re using the extrinsic matrix and camera intrinsics.
 
- If you enable video stabilization by setting a [`preferredVideoStabilizationMode`](avcaptureconnection/preferredvideostabilizationmode.md) value, the pixels in stabilized video frames no longer match the relative extrinsic matrix from one device to another due to warping. Disable video stabilization if you’re using the extrinsic matrix and camera intrinsics.
-
 ## Parameters
 
 - `fromDevice`: The capture device that represents the source camera.

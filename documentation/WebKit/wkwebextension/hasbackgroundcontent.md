@@ -1,6 +1,6 @@
 # hasBackgroundContent
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating whether the extension has background content that can run when needed.

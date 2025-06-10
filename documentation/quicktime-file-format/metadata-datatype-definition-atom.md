@@ -1,6 +1,6 @@
 # Metadata datatype definition atom ('dtyp')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom you use to specify the data type of the metadata key atom’s value.

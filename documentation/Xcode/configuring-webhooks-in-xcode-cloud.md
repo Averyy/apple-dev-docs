@@ -222,4 +222,4 @@ The following code snippet shows the payload Xcode Cloud sends with a request:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-webhooks-in-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-webhooks-in-xcode-cloud)*

@@ -1,6 +1,6 @@
 # fulfilledExpectations
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An array of expectations that were fulfilled, in order, up until the waiter stopped waiting.

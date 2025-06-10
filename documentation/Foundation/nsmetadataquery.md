@@ -114,6 +114,9 @@ You must set a predicate with the [`predicate`](nsmetadataquery/predicate.md) pr
   Posted when the receiver’s results have changed during the live-update phase of the query.
 - [static let NSMetadataQueryGatheringProgress: NSNotification.Name](nsnotification/name-swift.struct/nsmetadataquerygatheringprogress.md)
   Posted as the receiver is collecting results during the initial result-gathering phase of the query.
+### Structures
+- [NSMetadataQuery.DidFinishGatheringMessage](nsmetadataquery/didfinishgatheringmessage.md)
+- [NSMetadataQuery.DidStartGatheringMessage](nsmetadataquery/didstartgatheringmessage.md)
 
 ## Relationships
 

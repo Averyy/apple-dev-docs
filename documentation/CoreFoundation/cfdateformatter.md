@@ -1,6 +1,6 @@
 # CFDateFormatter
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: class
 
 **Availability**:
@@ -101,4 +101,4 @@ The format of the format string itself is defined by Unicode Technical Standard 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreFoundation/cfdateformatter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corefoundation/cfdateformatter)*

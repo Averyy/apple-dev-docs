@@ -33,8 +33,6 @@ TextEdit then implements the `orderedDocuments` method in its controller class t
 
 > ❗ **Important**:  Cocoa scripting does not invoke this method for script commands other than `get` or `set`. For information on working with other commands, see [`Script Commands`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_script_cmds/SAppsScriptCmds.html#//apple_ref/doc/uid/20001242) in [`Cocoa Scripting Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164).
 
- Cocoa scripting does not invoke this method for script commands other than `get` or `set`. For information on working with other commands, see [`Script Commands`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_script_cmds/SAppsScriptCmds.html#//apple_ref/doc/uid/20001242) in [`Cocoa Scripting Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164).
-
 ## Parameters
 
 - `sender`: The app object associated with the delegate.

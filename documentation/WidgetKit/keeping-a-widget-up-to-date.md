@@ -1,12 +1,18 @@
 # Keeping a widget up to date
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
 
 #### Overview
 
-Widgets use SwiftUI views to display their content. WidgetKit renders the views on your behalf in a separate process. As a result, your widget extension is not continually active, even if the widget is onscreen. Despite your widget not always being active, there are several ways you can keep its content up to date.
+Widgets use SwiftUI views to display their content. WidgetKit renders the views on your behalf in a separate process. As a result, your widget extension is not continually active, even if the widget is onscreen. Despite your widget not always being active, there are several ways you can keep its content up to date:
+
+- Create a timeline that updates your widget for for regular, predictable events.
+- Tell the system to reload all timelines when data changes; for example, when your app receives new data.
+- Use WidgetKit push notifications in addition to timelines to update your widget.
+
+WidgetKit push notifications are an additional way to update your widget that doesn’t replace timeline updates. For more information, refer to [`Updating widgets with WidgetKit push notifications`](updating-widgets-with-widgetkit-push-notifications.md).
 
 ##### Plan Reloads Within a Budget
 
@@ -38,7 +44,7 @@ For cases such as system appearance changes or system locale changes, don’t re
 Although your widget timeline provider drives your reload schedule, WidgetKit sometimes reloads your widget to help keep its content fresh. Some common scenarios include:
 
 - If a widget is on a Home Screen page that the user rarely visits, WidgetKit may reduce the frequency of reloads for that widget. Later, when the user views the page, WidgetKit may reload the widget when it becomes visible.
-- For widgets that use Location Services, WidgetKit reloads them after a significant location change happens. For more information related to reloads for widgets that use Location Services, see [`Accessing location information in widgets`](accessing-location-information-in-widgets.md).
+- For widgets that use Location Services, WidgetKit reloads them after a significant location change happens. For more information related to reloads for widgets that use Location Services, refer to [`Accessing location information in widgets`](accessing-location-information-in-widgets.md).
 
 If your widget can predict points in time that it should reload, the best approach is to generate a timeline for as many future dates as possible. Keep the interval of entries in the timeline as large as possible for the content you display. WidgetKit imposes a minimum amount of time before it reloads a widget. Your timeline provider should create timeline entries that are at least about 5 minutes apart. WidgetKit may coalesce reloads across multiple widgets, affecting the exact time a widget is reloaded.
 
@@ -60,7 +66,7 @@ In addition to the `atEnd` and `never` refresh policies, a provider can specify 
 
 Due to the battle with the dragon, the character’s healing will take 2 additional hours to reach 100 percent. The new timeline consists of two entries, one for the current time, and a second entry 2 hours in the future. The timeline specifies `atEnd` for the refresh policy, indicating there are no more known events that might alter the timeline.
 
-When the 2 hours have passed, and the character’s health is at 100 percent, WidgetKit asks the provider for a new timeline. Because the character’s health has recovered, the provider generates the same final timeline as the first diagram above. When the user plays the game and the character’s health level changes, the app uses `WidgetCenter` to have WidgetKit refresh the timeline and update the widget.
+When the 2 hours have passed, and the character’s health is at 100 percent, WidgetKit asks the provider for a new timeline. Because the character’s health has recovered, the provider generates the same final timeline as the first diagram above. When the user plays the game and the character’s health level changes, the app uses [`WidgetCenter`](widgetcenter.md) to have WidgetKit refresh the timeline and update the widget.
 
 In addition to specifying a date  the end of the timeline, the provider can specify a date  the end of the timeline. This is useful when you know that the widget’s state will not change until a later time. For example, a stock market widget could create a timeline at the close of the market on Friday with an [`after(_:)`](timelinereloadpolicy/after(_:).md) refresh policy specifying the time the market opens on Monday. Because the stock market is closed over the weekend, there is no need to update the widget until the market opens.
 
@@ -103,18 +109,24 @@ If your app uses [`WidgetBundle`](https://developer.apple.com/documentation/Swif
 WidgetCenter.shared.reloadAllTimelines()
 ```
 
+##### Update Relevance Information
+
+On iPhone and iPad, people place widgets in Smart Stacks and rely on the system to show them the most relevant widget at the right time. On Apple Watch, widgets automatically appear in the Smart Stack. To help the system determine when a widget in a Smart Stack is most relevant, and to offer Widget Suggestions, provide the system with hints about your widget’s relevance. While this is an optional step, providing relevance clues gives your widget additional visibility. In your timeline provider, implement the [`relevance()`](timelineprovider/relevance().md) callback and make sure to keep relevance information up-to-date. For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](widget-suggestions-in-smart-stacks.md).
+
 ##### Display Dynamic Dates
 
-Even though your widget doesn’t run continually, it can display time-based information that WidgetKit updates live. For example, it might display a countdown timer that continues to count down even if your widget extension isn’t running. For more information, see [`Displaying dynamic dates in widgets`](displaying-dynamic-dates.md).
+Even though your widget doesn’t run continually, it can display time-based information that WidgetKit updates live. For example, it might display a countdown timer that continues to count down even if your widget extension isn’t running. For more information, refer to [`Displaying dynamic dates in widgets`](displaying-dynamic-dates.md).
 
 ##### Load Data From Your Server Before Updating the Timeline
 
-You may need to load new data from your server before reloading a timeline. To do this, use the system’s URL loading system and a [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession). To learn more, see [`Making network requests in a widget extension`](making-network-requests-in-a-widget-extension.md).
+You may need to load new data from your server before reloading a timeline. To do this, use the system’s URL loading system and a [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession). To learn more, refer to [`Making network requests in a widget extension`](making-network-requests-in-a-widget-extension.md).
 
 ## See Also
 
 - [protocol TimelineProvider](timelineprovider.md)
   A type that advises WidgetKit when to update a widget’s display.
+- [protocol AppIntentTimelineProvider](appintenttimelineprovider.md)
+  A type that advises WidgetKit when to update a user-configurable widget’s display.
 - [protocol IntentTimelineProvider](intenttimelineprovider.md)
   A type that advises WidgetKit when to update a user-configurable widget’s display.
 - [struct TimelineProviderContext](timelineprovidercontext.md)
@@ -125,10 +137,8 @@ You may need to load new data from your server before reloading a timeline. To d
   An object that specifies a date for WidgetKit to update a widget’s view.
 - [class WidgetCenter](widgetcenter.md)
   An object that contains a list of user-configured widgets and is used for reloading widget timelines.
-- [protocol AppIntentTimelineProvider](appintenttimelineprovider.md)
-  A type that advises WidgetKit when to update a user-configurable widget’s display.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/keeping-a-widget-up-to-date)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/keeping-a-widget-up-to-date)*

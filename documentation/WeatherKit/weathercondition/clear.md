@@ -1,6 +1,6 @@
 # WeatherCondition.clear
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Clear.

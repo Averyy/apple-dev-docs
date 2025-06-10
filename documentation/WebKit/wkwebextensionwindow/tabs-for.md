@@ -1,6 +1,6 @@
 # tabs(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the tabs are needed for the window.

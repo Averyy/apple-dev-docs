@@ -20,6 +20,7 @@ The example request below lists Xcode versions available to Xcode Cloud workflow
   Get information about a specific Xcode version that’s available to Xcode Cloud workflows.
 - [List Available macOS Versions for an Xcode Version](get-v1-cixcodeversions-_id_-macosversions.md)
   List all macOS versions available in Xcode Cloud that support a specific Xcode version.
+- [GET /v1/ciXcodeVersions/{id}/relationships/macOsVersions](get-v1-cixcodeversions-_id_-relationships-macosversions.md)
 
 
 ---

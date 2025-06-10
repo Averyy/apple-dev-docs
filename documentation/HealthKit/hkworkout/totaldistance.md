@@ -1,6 +1,6 @@
 # totalDistance
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: property
 
 The total distance traveled during the workout.

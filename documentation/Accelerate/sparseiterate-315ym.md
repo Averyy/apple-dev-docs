@@ -31,6 +31,19 @@ func SparseIterate(_ method: SparseIterativeMethod, _ iteration: Int32, _ conver
 - `R`: (Output) Residual estimate. On entry with  , it must hold   the residuals   (equal to   if  ). On return from each call with   , the first entry(s) of each vector contain various   estimates of norms to be used in convergence testing.
 - `X`: (Input/Output) The current estimate of the solution vectors X.   On entry with iteration=0, this should be an initial estimate for the   solution. If no good estimate is available, use X = 0.0.   Depending on the method used, X may not be updated at each iteration,   or may be used to store some other vector.   The user should make a call with iteration<0 once convergence has   been achieved to bring X up to date.
 
+## See Also
+
+- [func SparseIterate(SparseIterativeMethod, Int32, UnsafePointer<Bool>, UnsafeMutableRawPointer, (Bool, CBLAS_TRANSPOSE, DenseMatrix_Double, DenseMatrix_Double) -> Void, DenseMatrix_Double, DenseMatrix_Double, DenseMatrix_Double, SparseOpaquePreconditioner_Double)](sparseiterate(_:_:_:_:_:_:_:_:_:)-99ji7.md)
+  Performs a single iteration of the specified iterative method for double-precision matrices, applying a preconditioner.
+- [func SparseIterate(SparseIterativeMethod, Int32, UnsafePointer<Bool>, UnsafeMutableRawPointer, (Bool, CBLAS_TRANSPOSE, DenseMatrix_Float, DenseMatrix_Float) -> Void, DenseMatrix_Float, DenseMatrix_Float, DenseMatrix_Float, SparseOpaquePreconditioner_Float)](sparseiterate(_:_:_:_:_:_:_:_:_:)-1anay.md)
+  Performs a single iteration of the specified iterative method for single-precision matrices, applying a preconditioner.
+- [func SparseIterate(SparseIterativeMethod, Int32, UnsafePointer<Bool>, UnsafeMutableRawPointer, (Bool, CBLAS_TRANSPOSE, DenseMatrix_Complex_Float, DenseMatrix_Complex_Float) -> Void, DenseMatrix_Complex_Float, DenseMatrix_Complex_Float, DenseMatrix_Complex_Float)](sparseiterate(_:_:_:_:_:_:_:_:)-9v7qh.md)
+  Perform a single iteration of the specified iterative method for complex float values.
+- [func SparseIterate(SparseIterativeMethod, Int32, UnsafePointer<Bool>, UnsafeMutableRawPointer, (Bool, CBLAS_TRANSPOSE, DenseMatrix_Complex_Double, DenseMatrix_Complex_Double) -> Void, DenseMatrix_Complex_Double, DenseMatrix_Complex_Double, DenseMatrix_Complex_Double, SparseOpaquePreconditioner_Complex_Double)](sparseiterate(_:_:_:_:_:_:_:_:_:)-1wv28.md)
+  Perform a single iteration of the specified iterative method for complex double values with preconditioner.
+- [func SparseIterate(SparseIterativeMethod, Int32, UnsafePointer<Bool>, UnsafeMutableRawPointer, (Bool, CBLAS_TRANSPOSE, DenseMatrix_Complex_Float, DenseMatrix_Complex_Float) -> Void, DenseMatrix_Complex_Float, DenseMatrix_Complex_Float, DenseMatrix_Complex_Float, SparseOpaquePreconditioner_Complex_Float)](sparseiterate(_:_:_:_:_:_:_:_:_:)-4td1l.md)
+  Perform a single iteration of the specified iterative method for complex float values with preconditioner.
+
 
 ---
 

@@ -28,7 +28,7 @@ The Animation Hitches instrument measures system performance for multiple stages
 
 Avoid using this method on the main thread unless you previously started preparing an image with [`prepareForDisplay(completionHandler:)`](uiimage/preparefordisplay(completionhandler:).md). If you’re decoding many images, such as with a collection view, calling this method from a concurrent queue can degrade performance by demanding too many system threads. Use a serial queue instead.
 
-This method returns a new image object for efficient display by an image view. Assign the image object created by this method to the [`image`](uiimageview/image.md) property of the image view. If [`UIImageView`](uiimageview.md) can render the image without decoding, this method returns a valid image without further processing. If the system can’t decode the image, such as an image created from a [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage), the method returns `nil`.
+This method returns a new image object for efficient display by an image view. Assign the image object created by this method to the [`image`](uiimageview/image.md) property of the image view. If [`UIImageView`](uiimageview.md) can render the image without decoding, this method returns a valid image without further processing. If the system can’t decode the image, such as an image created from a [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage), the method returns `nil`.
 
 UIKit doesn’t associate the prepared image with the original, or with any related variants from an asset catalog. If your app environment dynamically changes display traits, listen for changes in the trait environment and prepare new images when the environment changes.
 

@@ -1,6 +1,6 @@
 # WebNavigationType
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 Possible values for the [`WebActionNavigationTypeKey`](webactionnavigationtypekey.md) key that appears in an action dictionary.
@@ -40,9 +40,12 @@ enum WebNavigationType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [class WebView](webview-swift.class.md)
+  `WebView` is the core view class in the WebKit framework that manages interactions between the `WebFrame` and `WebFrameView` classes. To embed web content in your application, you just create a `WebView` object, attach it to a window, and send a [`load(_:)`](webframe/load(_:)-47p2s.md) message to its main frame.
 - [enum WebViewInsertAction](webviewinsertaction.md)
   The type of user action that initiated a delegate message.
 

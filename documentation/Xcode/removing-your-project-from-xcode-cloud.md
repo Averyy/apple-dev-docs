@@ -77,4 +77,4 @@ If you connected your team’s Slack workspace to Xcode Cloud, the connection be
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/removing-your-project-from-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/removing-your-project-from-xcode-cloud)*

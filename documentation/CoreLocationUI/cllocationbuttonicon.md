@@ -9,6 +9,7 @@ Constants that specify styles for the location arrow icon on the button.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
+- watchOS 10.0+
 
 ## Declaration
 
@@ -36,6 +37,7 @@ enum CLLocationButtonIcon
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

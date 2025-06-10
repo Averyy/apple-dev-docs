@@ -49,20 +49,37 @@ Play, record, and process audio; configure your app’s system audio behavior.
   Configure voices to speak strings of text.
 ### Macros
 - [Macros](macros.md)
+### Classes
+- [class AVAudioSessionCapability](avaudiosessioncapability.md)
+  Describes whether a specific capability is supported and if that capability is currently enabled
+- [class AVAudioSessionPortExtensionBluetoothMicrophone](avaudiosessionportextensionbluetoothmicrophone.md)
+  An object that describes capabilities of Bluetooth microphone ports.
+### Protocols
+- [protocol AVAudioSessionSpatialExperience](avaudiosessionspatialexperience-swift.protocol.md)
 ### Variables
 - [var AVAudioSessionSetActiveFlags_NotifyOthersOnDeactivation: Int](avaudiosessionsetactiveflags_notifyothersondeactivation.md)
   A flag that indicates that when your audio session deactivates, any audio sessions that your audio session interrupted can reactivate themselves.
+- [let AVEncoderASPFrequencyKey: String](avencoderaspfrequencykey.md)
+- [let AVEncoderContentSourceKey: String](avencodercontentsourcekey.md)
+- [let AVEncoderDynamicRangeControlConfigurationKey: String](avencoderdynamicrangecontrolconfigurationkey.md)
 - [let AVSampleRateConverterAlgorithm_Mastering: String](avsamplerateconverteralgorithm_mastering.md)
   The mastering encoder bit rate strategy.
 - [let AVSampleRateConverterAlgorithm_MinimumPhase: String](avsamplerateconverteralgorithm_minimumphase.md)
   The minimum phase encoder bit rate strategy.
 - [let AVSampleRateConverterAlgorithm_Normal: String](avsamplerateconverteralgorithm_normal.md)
   The usual encoder bit rate strategy.
+### Functions
+- [func AVMakeBeatRange(AVMusicTimeStamp, AVMusicTimeStamp) -> AVBeatRange](avmakebeatrange(_:_:).md)
+  Creates a beat range with the specified start time and length.
 ### Type Aliases
 - [typealias AVAudioConverterInputBlock](avaudioconverterinputblock.md)
   A block to get input data for conversion, as necessary.
+- [typealias AVBeatRange](avbeatrange-swift.typealias.md)
 - [typealias AVMIDIPlayerCompletionHandler](avmidiplayercompletionhandler.md)
   A callback the system invokes when MIDI playback completes.
+### Enumerations
+- [enum AVAudioContentSource](avaudiocontentsource.md)
+- [enum AVAudioDynamicRangeControlConfiguration](avaudiodynamicrangecontrolconfiguration.md)
 
 
 ---

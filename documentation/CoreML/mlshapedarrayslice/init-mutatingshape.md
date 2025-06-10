@@ -24,7 +24,7 @@ init(mutating pixelBuffer: CVPixelBuffer, shape: [Int])
 
 Use this initializer to create an IOSurface backed `MLShapedArraySlice`, which can reduce the inference latency by avoiding the buffer copy.
 
-The pixel buffer’s pixel format type must be `OneComponent16Half`. As such, the scalar type must be `Float16`.
+The pixel buffer’s pixel format type must be `OneComponent16Half` for scalar type `Float16` and `OneComponent8` for scalar type `Int8`. Other data types are not supported.
 
 ```swift
 var pixelBuffer: CVPixelBuffer?
@@ -67,7 +67,7 @@ assert(slice2[scalarAt: 0] == 0)
 ## Parameters
 
 - `pixelBuffer`: The pixel buffer to be owned by the instance.
-- `shape`: The shape of the MLShapedArray. The last dimension of   must match the pixel buffer’s width. The product of the rest of the dimensions must match the height.
+- `shape`: The shape of the MLShapedArray. The last dimension of   must match the pixel buffer’s   width. The product of the rest of the dimensions must match the height.
 
 
 ---

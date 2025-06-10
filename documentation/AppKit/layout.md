@@ -141,6 +141,7 @@ Specify the size and position your view relative to other nearby views using rul
   Draw the content of custom views and update that content when the view’s size or appearance changes.
 - [Printing](nsview-printing.md)
   Create a printable version of your view’s content and handle pagination and printer-related behaviors.
+- [protocol NSViewContentSelectionInfo](nsviewcontentselectioninfo.md)
 
 
 ---

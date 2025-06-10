@@ -10,14 +10,17 @@ The payload you use to configure an app extension that performs single sign-on (
 - iPadOS 13.0+
 - macOS 10.15+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object ExtensibleSingleSignOn
 ```
+
+## Mentions
+
+- [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
+- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
 
 #### Discussion
 
@@ -29,17 +32,17 @@ The system supports user channel installation in macOS 11 and later.
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | macOS, Shared iPad |
-| Allow Manual Install | - |
-| Requires Supervision | - |
-| Requires User Approved MDM | macOS |
-| Allowed in User Enrollment | iOS, macOS |
-| Allow Multiple Payloads | iOS, macOS, Shared iPad |
+| Device channel | iOS, macOS, visionOS |
+| User channel | macOS, Shared iPad |
+| Allow manual install | NA |
+| Requires supervision | NA |
+| Requires user-approved MDM | macOS |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -89,7 +92,7 @@ The system supports user channel installation in macOS 11 and later.
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object ExtensibleSingleSignOn.ExtensionData](extensiblesinglesignon/extensiondata-data.dictionary.md)
   The additional data to pass to the app extension.
 - [object ExtensibleSingleSignOn.PlatformSSO](extensiblesinglesignon/platformsso-data.dictionary.md)

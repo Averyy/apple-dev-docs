@@ -26,6 +26,10 @@ var symbolRenderingMode: SymbolRenderingMode? { get set }
   Sets the rendering mode for symbol images within this view.
 - [struct SymbolRenderingMode](symbolrenderingmode.md)
   A symbol rendering mode.
+- [struct SymbolColorRenderingMode](symbolcolorrenderingmode.md)
+  A method of filling a layer in a symbol image.
+- [struct SymbolVariableValueMode](symbolvariablevaluemode.md)
+  A method of rendering the variable value of a symbol image.
 
 
 ---

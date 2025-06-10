@@ -25,10 +25,13 @@ struct AnyTip
 ### Conforms To
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Tip](tip.md)
 
 ## See Also
 
+- [struct TipKitError](tipkiterror.md)
+  A localized tip kit error.
 - [protocol TipOption](tipoption.md)
   A type that represents the various customizations that you can make to a tip’s behavior.
 

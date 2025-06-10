@@ -44,17 +44,6 @@ case let x?:
 - `lhs`: A   literal.
 - `rhs`: A value to match against  .
 
-## See Also
-
-- [static func == (borrowing Wrapped?, _OptionalNilComparisonType) -> Bool](optional/==(_:_:)-5uee5.md)
-  Returns a Boolean value indicating whether the left-hand-side argument is `nil`.
-- [static func == (_OptionalNilComparisonType, borrowing Wrapped?) -> Bool](optional/==(_:_:)-6ztpi.md)
-  Returns a Boolean value indicating whether the right-hand-side argument is `nil`.
-- [static func != (borrowing Wrapped?, _OptionalNilComparisonType) -> Bool](optional/!=(_:_:)-38b38.md)
-  Returns a Boolean value indicating whether the left-hand-side argument is not `nil`.
-- [static func != (_OptionalNilComparisonType, borrowing Wrapped?) -> Bool](optional/!=(_:_:)-6xpzw.md)
-  Returns a Boolean value indicating whether the right-hand-side argument is not `nil`.
-
 
 ---
 

@@ -26,6 +26,8 @@ Remove a specific analytics report request.
   Get details for and the state of a specific analytics report request.
 - [Read reports for a specific request](get-v1-analyticsreportrequests-_id_-reports.md)
   Get a list of reports generated from a specific analytics report request.
+- [Read reports Ids for a specific request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
+  Get a list of reports Ids from a specific analytics report request.
 
 
 ---

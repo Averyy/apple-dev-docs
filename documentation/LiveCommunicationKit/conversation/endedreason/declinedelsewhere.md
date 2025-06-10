@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: case
 
-Another device declined the `Conversation`.
+Another device declined the conversation.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,17 @@ Another device declined the `Conversation`.
 ```swift
 case declinedElsewhere
 ```
+
+## See Also
+
+- [Conversation.EndedReason.failed](conversation/endedreason/failed.md)
+  An error occurred while attempting to service the conversation.
+- [Conversation.EndedReason.joinedElsewhere](conversation/endedreason/joinedelsewhere.md)
+  Another device joined the conversation.
+- [Conversation.EndedReason.remoteEnded](conversation/endedreason/remoteended.md)
+  The remote party explicitly ended the conversation.
+- [Conversation.EndedReason.unanswered](conversation/endedreason/unanswered.md)
+  The conversation didn’t complete the connection process and was never explicitly ended.
 
 
 ---

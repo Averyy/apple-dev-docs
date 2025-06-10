@@ -12,8 +12,6 @@ The declaration to configure the managing organization’s contact information.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,7 +25,7 @@ Specify `com.apple.management.organization-info` as the declaration type.
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object ManagementOrganizationInformationProofObject](managementorganizationinformationproofobject.md)
   The additional properties that verify the identity and authenticity of the organization.
 

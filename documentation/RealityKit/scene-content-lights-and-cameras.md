@@ -31,16 +31,11 @@ Lighting and shadows are an essential part of creating immersive and realistic e
   A component that defines a directional light source.
 - [DirectionalLightComponent.Shadow](directionallightcomponent/shadow.md)
   A directional light component that adds shadows to entities that it illuminates
-- [DirectionalLightComponent.Shadow.ShadowProjectionType](directionallightcomponent/shadow/shadowprojectiontype.md)
-- [DirectionalLightComponent.Shadow.ShadowMapCullMode](directionallightcomponent/shadow/shadowmapcullmode.md)
 ### Spotlights and their shadows
 - [struct SpotLightComponent](spotlightcomponent.md)
   A component that defines a spotlight source.
 - [SpotLightComponent.Shadow](spotlightcomponent/shadow.md)
   A spotlight component that adds shadows to entities that it illuminates.
-- [SpotLightComponent.Shadow.ShadowClippingPlane](spotlightcomponent/shadow/shadowclippingplane.md)
-  An object that specifies the mode of a shadow clipping plane.
-- [SpotLightComponent.Shadow.ShadowMapCullMode](spotlightcomponent/shadow/shadowmapcullmode.md)
 ### Image-based lights
 - [struct ImageBasedLightComponent](imagebasedlightcomponent.md)
 - [ImageBasedLightComponent.Source](imagebasedlightcomponent/source-swift.enum.md)
@@ -91,6 +86,8 @@ Lighting and shadows are an essential part of creating immersive and realistic e
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
+- [Presenting images in RealityKit](presenting-images-in-realitykit.md)
+  Create and display spatial scenes in RealityKit.
 - [Models and meshes](scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
 - [Materials, textures, and shaders](scene-content-materials-and-shaders.md)

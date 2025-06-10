@@ -1,6 +1,6 @@
 # WKInterfaceInlineMovie
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that displays a video’s poster image and supports inline playing of the video.

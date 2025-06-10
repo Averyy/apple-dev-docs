@@ -8,7 +8,7 @@ An object you use to check for the availability of the speech recognition servic
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 10.0+
 - macOS 10.15+
 - visionOS 1.0+
 
@@ -56,12 +56,12 @@ Here are some tips to consider when adding speech recognition support to your ap
 
 ## Topics
 
-### Creating a Speech Recognizer
+### Creating a speech recognizer
 - [convenience init?()](sfspeechrecognizer/init.md)
   Creates a speech recognizer associated with the user’s default language settings.
 - [init?(locale: Locale)](sfspeechrecognizer/init(locale:).md)
   Creates a speech recognizer associated with the specified locale.
-### Monitoring the Availability of Speech Recognition
+### Monitoring speech recognition availability
 - [var delegate: (any SFSpeechRecognizerDelegate)?](sfspeechrecognizer/delegate.md)
   The delegate object that handles changes to the availability of speech recognition services.
 - [protocol SFSpeechRecognizerDelegate](sfspeechrecognizerdelegate.md)
@@ -70,26 +70,26 @@ Here are some tips to consider when adding speech recognition support to your ap
   A Boolean value that indicates whether the speech recognizer is currently available.
 - [var supportsOnDeviceRecognition: Bool](sfspeechrecognizer/supportsondevicerecognition.md)
   A Boolean value that indicates whether the speech recognizer can operate without network access.
-### Requesting Authorization from the User
+### Requesting user authorization
 - [class func requestAuthorization((SFSpeechRecognizerAuthorizationStatus) -> Void)](sfspeechrecognizer/requestauthorization(_:).md)
   Asks the user to allow your app to perform speech recognition.
 - [class func authorizationStatus() -> SFSpeechRecognizerAuthorizationStatus](sfspeechrecognizer/authorizationstatus.md)
   Returns your app’s current authorization to perform speech recognition.
 - [enum SFSpeechRecognizerAuthorizationStatus](sfspeechrecognizerauthorizationstatus.md)
   The app’s authorization to perform speech recognition.
-### Configuring the Speech Recognizer
+### Configuring the speech recognizer
 - [var defaultTaskHint: SFSpeechRecognitionTaskHint](sfspeechrecognizer/defaulttaskhint.md)
   A hint that indicates the type of speech recognition being requested.
 - [var queue: OperationQueue](sfspeechrecognizer/queue.md)
   The queue on which to execute recognition task handlers and delegate methods.
-### Performing Speech Recognition on Audio
+### Performing speech recognition on audio
 - [func recognitionTask(with: SFSpeechRecognitionRequest, resultHandler: (SFSpeechRecognitionResult?, (any Error)?) -> Void) -> SFSpeechRecognitionTask](sfspeechrecognizer/recognitiontask(with:resulthandler:).md)
   Executes the speech recognition request and delivers the results to the specified handler block.
 - [func recognitionTask(with: SFSpeechRecognitionRequest, delegate: any SFSpeechRecognitionTaskDelegate) -> SFSpeechRecognitionTask](sfspeechrecognizer/recognitiontask(with:delegate:).md)
   Recognizes speech from the audio source associated with the specified request, using the specified delegate to manage the results.
 - [protocol SFSpeechRecognitionTaskDelegate](sfspeechrecognitiontaskdelegate.md)
   A protocol with methods for managing multi-utterance speech recognition requests.
-### Getting the Current Language
+### Getting the current language
 - [var locale: Locale](sfspeechrecognizer/locale.md)
   The locale of the speech recognizer.
 - [class func supportedLocales() -> Set<Locale>](sfspeechrecognizer/supportedlocales.md)
@@ -111,6 +111,12 @@ Here are some tips to consider when adding speech recognition support to your ap
 
 - [Asking Permission to Use Speech Recognition](asking-permission-to-use-speech-recognition.md)
   Ask the user’s permission to perform speech recognition using Apple’s servers.
+- [protocol SFSpeechRecognizerDelegate](sfspeechrecognizerdelegate.md)
+  A protocol that you adopt in your objects to track the availability of a speech recognizer.
+- [enum SFSpeechRecognitionTaskHint](sfspeechrecognitiontaskhint.md)
+  The type of task for which you are using speech recognition.
+- [enum SFSpeechRecognizerAuthorizationStatus](sfspeechrecognizerauthorizationstatus.md)
+  The app’s authorization to perform speech recognition.
 
 
 ---

@@ -1,6 +1,6 @@
 # availableApps
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: property
 
 The current managed apps available to this device.

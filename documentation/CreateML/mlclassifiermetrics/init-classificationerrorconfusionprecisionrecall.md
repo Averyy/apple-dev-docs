@@ -25,8 +25,6 @@ You typically don’t initialize metrics directly. Instead you get metrics about
 
 > ⚠️ **Warning**: This initializer should not be used, it creates an empty instance.
 
-This initializer should not be used, it creates an empty instance.
-
 ## Parameters
 
 - `classificationError`: The fraction of incorrectly labeled examples.

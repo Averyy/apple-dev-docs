@@ -42,8 +42,6 @@ LocationButton(.currentLocation) {
 
 > ❗ **Important**: When a user taps the button, it only provides one-time authorization to fetch location data — not the location data itself. For more details about fetching location data, see [`Configuring your app to use location services`](https://developer.apple.com/documentation/CoreLocation/configuring-your-app-to-use-location-services).
 
-When a user taps the button, it only provides one-time authorization to fetch location data — not the location data itself. For more details about fetching location data, see [`Configuring your app to use location services`](https://developer.apple.com/documentation/CoreLocation/configuring-your-app-to-use-location-services).
-
 Configure the button to display an icon, a label, or both using the [`labelStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/labelStyle(_:)) view modifier. If you include an icon, you can customize its appearance using the [`symbolVariant(_:)`](https://developer.apple.com/documentation/SwiftUI/View/symbolVariant(_:)) modifier. For design guidance, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/accessing-user-data/).
 
 ## Topics
@@ -58,6 +56,7 @@ Configure the button to display an icon, a label, or both using the [`labelStyl
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

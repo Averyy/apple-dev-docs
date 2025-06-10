@@ -34,8 +34,6 @@ The App Store requires your app to include a , which accurately and concisely de
 
 > ❗ **Important**: Apps that enable Homekit but don’t include a purpose string crash when attempting to use the framework’s APIs.
 
-Apps that enable Homekit but don’t include a purpose string crash when attempting to use the framework’s APIs.
-
 Remember that the user can revoke their permission at any time in the Settings app, and your app must respond to this accordingly. You can check your app’s current authorization status by accessing the [`authorizationStatus`](https://developer.apple.com/documentation/HomeKit/HMHomeManager/authorizationStatus) property. HomeKit also returns a [`homeAccessNotAuthorized`](https://developer.apple.com/documentation/HomeKit/HMError/homeAccessNotAuthorized) error if your app attempts to make an unauthorized call to any of the framework’s APIs.
 
 ##### Install the Homekit Accessory Simulator

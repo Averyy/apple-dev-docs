@@ -87,4 +87,4 @@ As shown in the image below, the Security Server is a daemon running in the oper
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/authorization-services)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/authorization-services)*

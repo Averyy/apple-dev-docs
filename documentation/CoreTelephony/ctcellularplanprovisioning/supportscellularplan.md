@@ -30,6 +30,8 @@ It doesn’t check whether the user has installed an eSIM. You can call this met
 
 - [var supportsEmbeddedSIM: Bool](ctcellularplanprovisioning/supportsembeddedsim.md)
   A Boolean value that indicates whether the device has hardware eSIM support.
+- [func addPlan(request: CTCellularPlanProvisioningRequest, properties: CTCellularPlanProperties?, completionHandler: (CTCellularPlanProvisioningAddPlanResult) -> Void)](ctcellularplanprovisioning/addplan(request:properties:completionhandler:).md)
+  Starts the provisioning process with optional properties for the specified eSIM.
 - [func addPlan(with: CTCellularPlanProvisioningRequest, completionHandler: (CTCellularPlanProvisioningAddPlanResult) -> Void)](ctcellularplanprovisioning/addplan(with:completionhandler:).md)
   Starts the provisioning process for a specified eSIM.
 - [enum CTCellularPlanProvisioningAddPlanResult](ctcellularplanprovisioningaddplanresult.md)

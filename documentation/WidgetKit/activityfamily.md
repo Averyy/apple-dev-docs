@@ -1,6 +1,6 @@
 # ActivityFamily
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: enum
 
 A family that defines the Live Activity’s size.
@@ -55,7 +55,7 @@ struct RideSharingActivity: Widget {
 - [ActivityFamily.small](activityfamily/small.md)
   A size family of a Live Activity on watchOS.
 - [ActivityFamily.medium](activityfamily/medium.md)
-  A size family of a Live Activity on iOS.
+  A size family of a Live Activity on iOS and macOS.
 ### Environment keys
 - [struct SupportedActivityFamiliesEnvironmentKey](supportedactivityfamiliesenvironmentkey.md)
   An environment key for the size of a rendered Live Activity.

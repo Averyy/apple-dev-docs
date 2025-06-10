@@ -9,6 +9,7 @@ A type that represents the mobile driver’s license’ DHS (U.S. Department of 
 - iOS 17.2+
 - iPadOS 17.2+
 - Mac Catalyst 17.2+
+- visionOS 1.2+
 
 ## Declaration
 
@@ -45,6 +46,7 @@ This is also known as the document’s “REAL ID status”.
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

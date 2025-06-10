@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: init
 
 Creates an overlay view with the specified delegate object.

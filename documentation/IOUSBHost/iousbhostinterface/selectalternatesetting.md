@@ -1,6 +1,6 @@
 # selectAlternateSetting(_:)
 
-**Framework**: Iousbhost  
+**Framework**: IOUSBHost  
 **Kind**: method
 
 Selects an alternative setting for the interface.

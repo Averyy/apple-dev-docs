@@ -1,6 +1,6 @@
 # DeviceActivityMonitor
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: class
 
 The object that monitors scheduled device activity.
@@ -75,4 +75,4 @@ class MyMonitorExtension: DeviceActivityMonitor {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceActivity/deviceactivitymonitor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/deviceactivity/deviceactivitymonitor)*

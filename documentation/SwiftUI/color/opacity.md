@@ -32,6 +32,12 @@ A view with modified opacity.
 
 - [var gradient: AnyGradient](color/gradient.md)
   Returns the standard gradient for the color `self`.
+- [func mix(with: Color, by: Double, in: Gradient.ColorSpace) -> Color](color/mix(with:by:in:).md)
+  Returns a version of self mixed with `rhs` by the amount specified by `fraction`.
+- [func exposureAdjust(Double) -> Color](color/exposureadjust(_:).md)
+  Returns a new color with an exposure adjustment applied.
+- [func headroom(Double?) -> Color](color/headroom(_:).md)
+  Creates a new color with specified HDR content headroom.
 
 
 ---

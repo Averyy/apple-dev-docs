@@ -1,6 +1,6 @@
 # Push to Talk
 
-**Framework**: Pushtotalk  
+**Framework**: Push to Talk  
 **Kind**: module
 
 Display the system user interface for your app’s Push to Talk services.

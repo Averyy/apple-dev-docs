@@ -7,6 +7,7 @@ Creates a window with a title and an identifier.
 
 **Availability**:
 - macOS 13.0+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -19,8 +20,6 @@ init(_ title: Text, id: String, @ViewBuilder content: () -> Content)
 The window displays the view that you specify.
 
 > ❗ **Important**: The system ignores any text styling that you apply to the [`Text`](text.md) view title, like bold or italics. However, you can use the formatting controls that the view offers, like for localization, dates, and numerical representations.
-
-The system ignores any text styling that you apply to the [`Text`](text.md) view title, like bold or italics. However, you can use the formatting controls that the view offers, like for localization, dates, and numerical representations.
 
 ## Parameters
 

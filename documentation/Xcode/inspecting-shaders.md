@@ -12,8 +12,6 @@ When you profile the Metal workload, you can see per-line performance metrics. A
 
 > ❗ **Important**: Include source code when you capture a Metal workload because the Shader editor needs it to function correctly. For more information, see [`Building your project with embedded shader sources`](building-your-project-with-embedded-shader-sources.md).
 
-Include source code when you capture a Metal workload because the Shader editor needs it to function correctly. For more information, see [`Building your project with embedded shader sources`](building-your-project-with-embedded-shader-sources.md).
-
 ##### Navigate Your Shader
 
 The Shader editor shows your source code in the context of an executed function, and includes familiar Xcode source-editing abilities, like [`Fixing issues in your code as you type`](fixing-issues-in-your-code-as-you-type.md).
@@ -73,8 +71,6 @@ After updating the captured frame, Xcode does the following:
 - Maintains your place in the captured frame, providing an interactive environment to enhance your shader performance tuning.
 
 > ❗ **Important**: To avoid getting misleading results between different runs, using a consistent performance state is useful when iterating on your shader.
-
-To avoid getting misleading results between different runs, using a consistent performance state is useful when iterating on your shader.
 
 You can profile using a specific performance state by clicking the GPU Profiler button in the debug bar.
 

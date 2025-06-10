@@ -43,6 +43,7 @@ A line join specifies how [`strokePath()`](cgcontext/strokepath().md) draws the 
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

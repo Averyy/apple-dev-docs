@@ -22,9 +22,9 @@ let AVURLAssetURLRequestAttributionKey: String
 
 #### Discussion
 
-The value is a number that represents an [`NSURLRequest.Attribution`](https://developer.apple.com/documentation/foundation/nsurlrequest/attribution). URL requests that the system issues on behalf of the asset attribute this value and follow the App Privacy Policy accordingly.
+The value is a number that represents an [`NSURLRequest.Attribution`](https://developer.apple.com/documentation/Foundation/NSURLRequest/Attribution-swift.enum). URL requests that the system issues on behalf of the asset attribute this value and follow the App Privacy Policy accordingly.
 
-The default value is [`NSURLRequest.Attribution.developer`](https://developer.apple.com/documentation/foundation/nsurlrequest/attribution/developer).
+The default value is [`NSURLRequest.Attribution.developer`](https://developer.apple.com/documentation/Foundation/NSURLRequest/Attribution-swift.enum/developer).
 
 ## See Also
 

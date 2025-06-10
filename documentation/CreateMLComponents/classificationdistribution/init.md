@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: init
 
 Creates a classification distribution.

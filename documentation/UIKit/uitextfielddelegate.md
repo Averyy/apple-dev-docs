@@ -75,6 +75,9 @@ For more information about the features of a text field, see [`UITextField`](uit
 ### Inserting a Smart Reply suggestion
 - [func textField(UITextField, insertInputSuggestion: UIInputSuggestion)](uitextfielddelegate/textfield(_:insertinputsuggestion:).md)
   Tells the delegate when the keyboard delivers an input suggestion.
+### Instance Methods
+- [func textField(UITextField, editMenuForCharactersInRanges: [NSValue], suggestedActions: [UIMenuElement]) -> UIMenu?](uitextfielddelegate/textfield(_:editmenuforcharactersinranges:suggestedactions:).md)
+- [func textField(UITextField, shouldChangeCharactersInRanges: [NSValue], replacementString: String) -> Bool](uitextfielddelegate/textfield(_:shouldchangecharactersinranges:replacementstring:).md)
 
 ## Relationships
 

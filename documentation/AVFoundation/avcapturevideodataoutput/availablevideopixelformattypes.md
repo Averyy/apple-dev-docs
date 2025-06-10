@@ -1,6 +1,6 @@
 # availableVideoPixelFormatTypes
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The video pixel formats the output supports.

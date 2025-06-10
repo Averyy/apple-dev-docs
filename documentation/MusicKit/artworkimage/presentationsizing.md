@@ -1,6 +1,6 @@
 # presentationSizing(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Sets the sizing of the containing presentation.

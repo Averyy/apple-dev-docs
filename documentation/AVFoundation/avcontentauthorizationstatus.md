@@ -6,7 +6,7 @@
 A value representing the status of a content authorization request.
 
 **Availability**:
-- macOS ?+
+- macOS 10.7+
 
 ## Declaration
 
@@ -46,6 +46,7 @@ Even if authorization is completed by the user, there is no guarantee that the c
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

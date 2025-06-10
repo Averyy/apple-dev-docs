@@ -1,6 +1,6 @@
 # NSFetchedResultsControllerDelegate
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: protocol
 
 A delegate protocol that describes the methods that the associated fetched results controller calls when the fetch results change.
@@ -160,4 +160,4 @@ func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nsfetchedresultscontrollerdelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nsfetchedresultscontrollerdelegate)*

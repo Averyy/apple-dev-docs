@@ -15,6 +15,10 @@ Returns the account balance history since a time specified by the provided finan
 func accountBalanceHistory(forAccountID accountID: UUID, since token: FinanceStore.HistoryToken? = nil, isMonitoring: Bool = true) -> FinanceStore.History<AccountBalance>
 ```
 
+#### Return Value
+
+A `History` that describes the account balances.
+
 #### Discussion
 
 Use this method to monitor the balance of a specific account.  Provide a `historyToken` to specify a starting data and time.
@@ -22,6 +26,7 @@ Use this method to monitor the balance of a specific account.  Provide a `histor
 ## Parameters
 
 - `accountID`: A    that identifies a specific account a person has added to the finance store.
+- `token`: An optional   that defines the starting date   and time to return records from.
 - `isMonitoring`: A Boolean value that indicates whether the framework should return a    sequence that indicates the changes to the accounts over time.   Defaults to  .
 
 ## See Also
@@ -29,7 +34,7 @@ Use this method to monitor the balance of a specific account.  Provide a `histor
 - [func accountBalances(query: AccountBalanceQuery) async throws -> [AccountBalance]](financestore/accountbalances(query:).md)
   Returns a list of balances that meet the criteria in the provided account query.
 - [struct AccountBalance](accountbalance.md)
-  A structure that describes the financial balance of an account at a specific point in time.
+  A structure that describes the financial balance of an account at a specific point in time. The financial balance of an account at a specific point in time.
 - [struct AccountBalanceQuery](accountbalancequery.md)
   A structure that defines an account balance query.
 - [struct Balance](balance.md)

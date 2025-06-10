@@ -20,7 +20,7 @@ static let shutdown: AVCaptureDevice.SystemPressureState.Level
 
 #### Discussion
 
-When system pressure reaches this level, the capture system automatically shuts down, causing a session interruption. Use the [`AVCaptureSessionInterruptionSystemPressureStateKey`](avcapturesessioninterruptionsystempressurestatekey.md) in the interruption notification’s [`userInfo`](https://developer.apple.com/documentation/foundation/notification/1779652-userinfo) dictionary to find details about the system pressure factors causing the interruption.
+When system pressure reaches this level, the capture system automatically shuts down, causing a session interruption. Use the [`AVCaptureSessionInterruptionSystemPressureStateKey`](avcapturesessioninterruptionsystempressurestatekey.md) in the interruption notification’s [`userInfo`](https://developer.apple.com/documentation/Foundation/Notification/userInfo) dictionary to find details about the system pressure factors causing the interruption.
 
 ## See Also
 

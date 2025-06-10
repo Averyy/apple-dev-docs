@@ -1,6 +1,6 @@
 # addColorStop
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Adds a color to the gradient.

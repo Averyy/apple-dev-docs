@@ -36,8 +36,6 @@ The caller needs to invoke [`invalidate()`](credentialtransaction/configuration/
 
 > ❗ **Important**: Calling this method may generate a billable event to the credential provider.
 
-Calling this method may generate a billable event to the credential provider.
-
 ## Parameters
 
 - `options`: The options to transition the credential to card emulation mode.

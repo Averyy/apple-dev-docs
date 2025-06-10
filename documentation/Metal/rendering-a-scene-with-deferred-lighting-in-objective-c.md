@@ -399,4 +399,4 @@ return half4(fragColor, c.x);
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/rendering-a-scene-with-deferred-lighting-in-objective-c)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/rendering-a-scene-with-deferred-lighting-in-objective-c)*

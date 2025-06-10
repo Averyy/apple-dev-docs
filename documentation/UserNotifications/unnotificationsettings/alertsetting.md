@@ -1,6 +1,6 @@
 # alertSetting
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The authorization status for displaying alerts.

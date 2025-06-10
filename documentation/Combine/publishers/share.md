@@ -26,8 +26,6 @@ This publisher type supports multiple subscribers, all of whom receive unchanged
 
 > 💡 **Tip**: [`Publishers.Share`](publishers/share.md) is effectively a combination of the [`Publishers.Multicast`](publishers/multicast.md) and [`PassthroughSubject`](passthroughsubject.md) publishers, with an implicit [`autoconnect()`](connectablepublisher/autoconnect().md).
 
-[`Publishers.Share`](publishers/share.md) is effectively a combination of the [`Publishers.Multicast`](publishers/multicast.md) and [`PassthroughSubject`](passthroughsubject.md) publishers, with an implicit [`autoconnect()`](connectablepublisher/autoconnect().md).
-
 Be aware that [`Publishers.Share`](publishers/share.md) is a class rather than a structure like most other publishers. Use this type when you need a publisher instance that uses reference semantics.
 
 ## Topics

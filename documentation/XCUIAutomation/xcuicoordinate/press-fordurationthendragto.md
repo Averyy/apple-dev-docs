@@ -1,6 +1,6 @@
 # press(forDuration:thenDragTo:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Initiates a press-and-hold gesture at the coordinate, then drags to another coordinate.

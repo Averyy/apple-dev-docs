@@ -1,6 +1,6 @@
 # isDepthDataDeliveryEnabled
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that determines whether the photo output captures depth data along with the photo.

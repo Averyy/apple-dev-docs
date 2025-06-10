@@ -30,6 +30,7 @@ protocol NWGroupDescriptor : AnyObject, Sendable
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [NWMulticastGroup](nwmulticastgroup.md)
 - [NWMultiplexGroup](nwmultiplexgroup.md)

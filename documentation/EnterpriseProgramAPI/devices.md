@@ -1,6 +1,6 @@
 # Devices
 
-**Framework**: Enterpriseprogramapi
+**Framework**: Enterprise Program API
 
 Register devices for development and testing.
 
@@ -51,4 +51,4 @@ A `devices` resource represents the Apple devices that you register to use for d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/EnterpriseProgramAPI/devices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/enterpriseprogramapi/devices)*

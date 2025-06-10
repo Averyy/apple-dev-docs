@@ -1,6 +1,6 @@
 # update(_:)
 
-**Framework**: Activitykit  
+**Framework**: ActivityKit  
 **Kind**: method
 
 Updates the dynamic content of the Live Activity.
@@ -35,8 +35,6 @@ Use this function to update the Live Activity while your app is in the foregroun
   Updates the dynamic content of a Live Activity and alerts a person about the Live Activity update.
 - [struct AlertConfiguration](alertconfiguration.md)
   A structure you use to configure an alert that appears when you update your Live Activity.
-- [func update(using: Activity<Attributes>.ContentState) async](activity/update(using:).md)
-  Updates the dynamic content of the Live Activity.
 - [func update(ActivityContent<Activity<Attributes>.ContentState>, alertConfiguration: AlertConfiguration?, timestamp: Date) async](activity/update(_:alertconfiguration:timestamp:).md)
   Updates the dynamic content of a Live Activity and alerts a person about the Live Activity update.
 

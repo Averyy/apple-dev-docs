@@ -24,7 +24,7 @@ Use this property to check that your updates to the test postbacks, such as conv
 
 - [func setPostbacks([SKAdTestPostback]) throws](skadtestsession/setpostbacks(_:).md)
   Add test postbacks to the test session.
-- [func flushPostbacks(responses: SKANTestPostbackResponseHandler)](skadtestsession/flushpostbacks(responses:).md)
+- [func flushPostbacks(responses: ([String : SKAdTestPostbackResponse]?, (any Error)?) -> Void)](skadtestsession/flushpostbacks(responses:).md)
   Sends the test postbacks and handles the responses.
 - [typealias SKANTestPostbackResponseHandler](skantestpostbackresponsehandler.md)
   A type that represents the test postback response handler.

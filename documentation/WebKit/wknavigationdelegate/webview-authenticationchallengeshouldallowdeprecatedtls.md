@@ -1,6 +1,6 @@
 # webView(_:authenticationChallenge:shouldAllowDeprecatedTLS:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Asks the delegate whether to continue with a connection that uses a deprecated version of TLS.

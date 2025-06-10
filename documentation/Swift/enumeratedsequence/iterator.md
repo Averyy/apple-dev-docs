@@ -46,6 +46,7 @@ To create an instance, call `enumerated().makeIterator()` on a sequence or colle
 - [Copyable](copyable.md)
 - [IteratorProtocol](iteratorprotocol.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 

@@ -40,6 +40,8 @@ For more information about the payment modes, see [`Pricing and availability`](h
   A payment mode of a product discount that applies over a single billing period or multiple billing periods.
 - [static let payUpFront: Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct/payupfront.md)
   A payment mode of a product discount that applies the discount up front.
+### Type Properties
+- [static var oneTime: Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct/onetime.md)
 
 ## Relationships
 
@@ -48,6 +50,7 @@ For more information about the payment modes, see [`Pricing and availability`](h
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

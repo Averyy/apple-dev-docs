@@ -1,6 +1,6 @@
 # DOM_FILTER_SKIP
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

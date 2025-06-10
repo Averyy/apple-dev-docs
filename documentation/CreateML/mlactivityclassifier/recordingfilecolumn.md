@@ -1,6 +1,6 @@
 # recordingFileColumn
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: property
 
 The name of the column that contains the data files the activity classifier used during its training session.

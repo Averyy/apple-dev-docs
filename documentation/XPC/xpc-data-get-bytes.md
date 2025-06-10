@@ -1,6 +1,6 @@
 # xpc_data_get_bytes(_:_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Copies the bytes in a data object into the specified buffer.

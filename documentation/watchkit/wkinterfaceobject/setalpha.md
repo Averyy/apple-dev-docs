@@ -1,6 +1,6 @@
 # setAlpha(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the opacity of the interface object.

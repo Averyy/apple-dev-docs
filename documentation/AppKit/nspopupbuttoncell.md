@@ -23,8 +23,6 @@ Changes made to a menu (such as adding, removing, or changing the items) are not
 
 > ❗ **Important**: Setting a pop up button’s [`image`](nscell/image.md) property has no effect. The image displayed in a pop up button is taken from the selected menu item (in the case of a pop up menu) or from the first menu item (in the case of a pull-down menu).
 
-Setting a pop up button’s [`image`](nscell/image.md) property has no effect. The image displayed in a pop up button is taken from the selected menu item (in the case of a pop up menu) or from the first menu item (in the case of a pull-down menu).
-
 ## Topics
 
 ### Initialization
@@ -137,6 +135,7 @@ Setting a pop up button’s [`image`](nscell/image.md) property has no effect. T
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -10,8 +10,6 @@ iOS and macOS have built-in network debugging tools (see [`Analyzing HTTP traffi
 
 > ❗ **Important**:  Information about products not manufactured by Apple is provided without recommendation or endorsement. Apple assumes no responsibility with regard to the selection, performance, or use of third-party products. [`Contact the vendor`](https://developer.apple.comhttps://support.apple.com/en-us/HT201777) for additional information. Other company and product names may be trademarks of their respective owners.
 
- Information about products not manufactured by Apple is provided without recommendation or endorsement. Apple assumes no responsibility with regard to the selection, performance, or use of third-party products. [`Contact the vendor`](https://developer.apple.comhttps://support.apple.com/en-us/HT201777) for additional information. Other company and product names may be trademarks of their respective owners.
-
 ##### Debugging Http Proxies
 
 ##### Macos Apps

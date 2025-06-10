@@ -20,4 +20,4 @@ Play and edit Cinematic mode video with an adjustable depth of field and focus p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Cinematic/playing-and-editing-cinematic-mode-video)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cinematic/playing-and-editing-cinematic-mode-video)*

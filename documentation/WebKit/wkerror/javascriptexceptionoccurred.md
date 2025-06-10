@@ -1,6 +1,6 @@
 # javaScriptExceptionOccurred
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An error that indicates a JavaScript exception occurred.

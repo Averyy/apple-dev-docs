@@ -1,6 +1,6 @@
 # startProvidingItem(at:completionHandler:)
 
-**Framework**: Fileprovider  
+**Framework**: File Provider  
 **Kind**: method
 
 Provides an actual file on disk for a placeholder.

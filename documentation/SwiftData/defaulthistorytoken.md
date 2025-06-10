@@ -59,6 +59,7 @@ struct DefaultHistoryToken
 - [HistoryToken](historytoken.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

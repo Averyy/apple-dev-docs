@@ -1,6 +1,6 @@
 # WorkoutPlan.Workout
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: enum
 
 The workout for the workout plan.
@@ -10,6 +10,7 @@ The workout for the workout plan.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -50,6 +51,7 @@ enum Workout
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

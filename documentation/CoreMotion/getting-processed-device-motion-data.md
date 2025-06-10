@@ -24,8 +24,6 @@ Device-motion data might be unavailable for a variety of reasons, so verify that
 
 > ❗ **Important**:  In visionOS, device-motion data is available only when your app has an open immersive space. For more information, see [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace).
 
- In visionOS, device-motion data is available only when your app has an open immersive space. For more information, see [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace).
-
 ##### Choose a Frame of Reference for Interpreting Attitude Data
 
 The attitude of a device refers to the amount of rotation around each of the device’s axes. The device-motion service reports attitude values relative to a known orientation of the device, also known as the device’s frame of reference. When you start the device-motion service, you specify which frame of reference you want Core Motion to use.

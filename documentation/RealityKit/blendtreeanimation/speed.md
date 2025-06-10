@@ -10,6 +10,7 @@ A factor that increases or decreases the animation’s rate of playback.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -38,8 +39,6 @@ This property doesn’t affect the animation’s [`delay`](fromtobyanimation/del
   The optional time, in seconds, at which the source animation plays.
 - [var trimEnd: TimeInterval?](blendtreeanimation/trimend.md)
   The optional time, in seconds, at which the source animation stops.
-- [func trimmed(start: TimeInterval?, end: TimeInterval?, duration: TimeInterval?) -> Self](blendtreeanimation/trimmed(start:end:duration:).md)
-  Edits the animation duration according to the specified time.
 
 
 ---

@@ -31,6 +31,7 @@ object BetaLicenseAgreement
   A response that contains a list of Beta License Agreement resources.
 - [object BetaLicenseAgreementResponse](betalicenseagreementresponse.md)
   A response that contains a single Beta License Agreements resource.
+- [object BetaLicenseAgreementAppLinkageResponse](betalicenseagreementapplinkageresponse.md)
 
 
 ---

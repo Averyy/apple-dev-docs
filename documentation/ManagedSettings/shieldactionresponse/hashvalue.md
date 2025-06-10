@@ -22,8 +22,6 @@ Hash values aren’t guaranteed to be equal across different executions of your 
 
 > ❗ **Important**: `hashValue` is deprecated as a [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) requirement. To conform to Hashable, implement the [`hash(into:)`](shieldactionresponse/hash(into:).md) requirement instead.
 
-`hashValue` is deprecated as a [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) requirement. To conform to Hashable, implement the [`hash(into:)`](shieldactionresponse/hash(into:).md) requirement instead.
-
 ## See Also
 
 - [static func != (Self, Self) -> Bool](shieldactionresponse/!=(_:_:).md)

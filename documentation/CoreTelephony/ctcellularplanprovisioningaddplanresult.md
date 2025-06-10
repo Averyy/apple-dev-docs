@@ -38,6 +38,7 @@ enum CTCellularPlanProvisioningAddPlanResult
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -45,6 +46,8 @@ enum CTCellularPlanProvisioningAddPlanResult
   Indicates whether the device supports eSIM and the activation policy allows eSIM installation.
 - [var supportsEmbeddedSIM: Bool](ctcellularplanprovisioning/supportsembeddedsim.md)
   A Boolean value that indicates whether the device has hardware eSIM support.
+- [func addPlan(request: CTCellularPlanProvisioningRequest, properties: CTCellularPlanProperties?, completionHandler: (CTCellularPlanProvisioningAddPlanResult) -> Void)](ctcellularplanprovisioning/addplan(request:properties:completionhandler:).md)
+  Starts the provisioning process with optional properties for the specified eSIM.
 - [func addPlan(with: CTCellularPlanProvisioningRequest, completionHandler: (CTCellularPlanProvisioningAddPlanResult) -> Void)](ctcellularplanprovisioning/addplan(with:completionhandler:).md)
   Starts the provisioning process for a specified eSIM.
 

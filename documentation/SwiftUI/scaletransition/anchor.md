@@ -17,8 +17,7 @@ The anchor point to scale the view around.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency var anchor: UnitPoint
+var anchor: UnitPoint
 ```
 
 ## See Also

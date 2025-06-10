@@ -1,6 +1,6 @@
 # hourlyForecast
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The hourly forecast.

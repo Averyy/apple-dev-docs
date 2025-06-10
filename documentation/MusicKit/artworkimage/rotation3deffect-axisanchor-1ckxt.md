@@ -1,6 +1,6 @@
 # rotation3DEffect(_:axis:anchor:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Rotates the view’s content by an angle about an axis that you specify as a tuple of elements.

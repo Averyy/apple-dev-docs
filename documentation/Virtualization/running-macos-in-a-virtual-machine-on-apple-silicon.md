@@ -87,4 +87,4 @@ The system defers app termination until the [`saveMachineStateTo(url:completionH
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Virtualization/running-macos-in-a-virtual-machine-on-apple-silicon)*
+*[View on Apple Developer](https://developer.apple.com/documentation/virtualization/running-macos-in-a-virtual-machine-on-apple-silicon)*

@@ -37,8 +37,6 @@ Use the convenience method, [`dominantLanguage(for:)`](nllanguagerecognizer/domi
 
 > ❗ **Important**:  Don’t use an instance of [`NLLanguageRecognizer`](nllanguagerecognizer.md) from more than one thread simultaneously.
 
- Don’t use an instance of [`NLLanguageRecognizer`](nllanguagerecognizer.md) from more than one thread simultaneously.
-
 ## Topics
 
 ### Creating a recognizer

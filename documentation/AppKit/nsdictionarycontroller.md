@@ -1,6 +1,6 @@
 # NSDictionaryController
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 A bindings-compatible controller that manages the display and editing of a dictionary of key-value pairs.
@@ -77,6 +77,8 @@ The constants listed below are used to specify a binding to [`bind(_:to:withKeyP
 - [NSEditor](nseditor.md)
 - [NSEditorRegistration](nseditorregistration.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -96,4 +98,4 @@ The constants listed below are used to specify a binding to [`bind(_:to:withKeyP
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsdictionarycontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsdictionarycontroller)*

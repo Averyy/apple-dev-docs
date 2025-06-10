@@ -1,6 +1,6 @@
 # Displaying a Read-Only Pickup Address
 
-**Framework**: Passkit
+**Framework**: PassKit (Apple Pay and Wallet)
 
 Configure a payment request to display a read-only pickup address on the payment sheet.
 
@@ -75,4 +75,4 @@ paymentRequest.shippingContactEditingMode = .storePickup
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/displaying-a-read-only-pickup-address)*
+*[View on Apple Developer](https://developer.apple.com/documentation/passkit/displaying-a-read-only-pickup-address)*

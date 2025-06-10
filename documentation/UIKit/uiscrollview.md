@@ -101,6 +101,19 @@ If you assign a value to this view’s [`restorationIdentifier`](uiviewcontrolle
   A floating-point value that determines the rate of deceleration after the user lifts their finger.
 - [UIScrollView.DecelerationRate](uiscrollview/decelerationrate-swift.struct.md)
   Deceleration rates for the scroll view.
+### Applying edge effects
+- [var bottomEdgeEffect: UIScrollEdgeEffect](uiscrollview/bottomedgeeffect.md)
+  The effect for the bottom edge of the scroll view.
+- [var leftEdgeEffect: UIScrollEdgeEffect](uiscrollview/leftedgeeffect.md)
+  The effect for the left edge of the scroll view.
+- [var rightEdgeEffect: UIScrollEdgeEffect](uiscrollview/rightedgeeffect.md)
+  The effect for the right edge of the scroll view.
+- [var topEdgeEffect: UIScrollEdgeEffect](uiscrollview/topedgeeffect.md)
+  The effect for the top edge of the scroll view.
+- [class UIScrollEdgeEffect](uiscrolledgeeffect.md)
+  Properties of the effect on a particular edge of the scroll view.
+- [UIScrollEdgeEffect.Style](uiscrolledgeeffect/style-swift.class.md)
+  Styles for a scroll view’s edge effect.
 ### Managing the scroll indicator and refresh control
 - [var indicatorStyle: UIScrollView.IndicatorStyle](uiscrollview/indicatorstyle-swift.property.md)
   The style of the scroll indicators.
@@ -185,6 +198,8 @@ If you assign a value to this view’s [`restorationIdentifier`](uiviewcontrolle
 ### Instance Properties
 - [var allowsKeyboardScrolling: Bool](uiscrollview/allowskeyboardscrolling.md)
   A Boolean value that determines whether the scroll view allows scrolling its content with hardware keyboard input.
+- [var lookToScrollAxes: UIAxis](uiscrollview/looktoscrollaxes.md)
+  Defines which axes are considered for Look to Scroll. Does not affect when isPagingEnabled is true.
 
 ## Relationships
 
@@ -205,6 +220,7 @@ If you assign a value to this view’s [`restorationIdentifier`](uiviewcontrolle
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

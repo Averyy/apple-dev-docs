@@ -1,6 +1,6 @@
 # isSupplementaryInterfaceHidden
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A Boolean value that indicates whether the view hides supplementary interface objects.

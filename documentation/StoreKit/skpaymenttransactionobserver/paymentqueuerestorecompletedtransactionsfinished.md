@@ -22,8 +22,8 @@ optional func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymen
 
 ## Mentions
 
-- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 - [Processing a transaction](processing-a-transaction.md)
+- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 
 #### Discussion
 

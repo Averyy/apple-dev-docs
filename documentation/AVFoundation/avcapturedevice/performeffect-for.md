@@ -1,6 +1,6 @@
 # performEffect(for:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Performs the specified reaction type on the video stream.

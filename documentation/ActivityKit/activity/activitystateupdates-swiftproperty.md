@@ -17,8 +17,8 @@ var activityStateUpdates: Activity<Attributes>.ActivityStateUpdates { get }
 
 ## Mentions
 
-- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
 - [Starting and updating Live Activities with ActivityKit push notifications](starting-and-updating-live-activities-with-activitykit-push-notifications.md)
+- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
 
 ## See Also
 

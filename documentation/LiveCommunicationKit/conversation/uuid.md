@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-The unique identifier for this conversation.
+The unique identifier for a conversation.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,15 @@ The unique identifier for this conversation.
 ```swift
 final var uuid: UUID { get set }
 ```
+
+## See Also
+
+- [var localMember: Handle?](conversation/localmember.md)
+  The handle that identifies the local participant to remote participants.
+- [var state: Conversation.State](conversation/state-swift.property.md)
+  The current state of the conversation.
+- [Conversation.State](conversation/state-swift.enum.md)
+  Values that describe the current state of a conversation.
 
 
 ---

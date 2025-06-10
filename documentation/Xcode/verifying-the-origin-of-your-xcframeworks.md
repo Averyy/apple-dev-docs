@@ -50,8 +50,6 @@ If your team and the SDK provider can’t account for the change to the XCFramew
 
 > ⚠️ **Warning**: If you encounter an unexpected code signature change in an XCFramework, it’s possible that an attacker is exploiting a security vulnerability in your infrastructure. Audit the origins for your XCFrameworks to ensure you obtained them from official sources. You also need to audit your software development and deployment environment carefully, even if you revert the XCFramework to a correctly-signed version.
 
-If you encounter an unexpected code signature change in an XCFramework, it’s possible that an attacker is exploiting a security vulnerability in your infrastructure. Audit the origins for your XCFrameworks to ensure you obtained them from official sources. You also need to audit your software development and deployment environment carefully, even if you revert the XCFramework to a correctly-signed version.
-
 Xcode also warns you if the XCFramework is signed with an expired or revoked code signing identity, even if the identity hasn’t changed since you added the XCFramework to your project. If this happens, work with the SDK provider to obtain a new version of the framework that’s signed by a valid code signing identity.
 
 ##### Diagnose Failures Caused When a Code Signature Is Removed
@@ -67,6 +65,17 @@ The build system fails with an error if you attempt to build the software withou
 3. In the dialog that appears, click Accept Change.
 
 ![A screenshot of Xcode. The Issues navigator reports an error due to an XCFramework missing a code signature. A dialog presents more information about the missing code signature, with options to cancel, move the framework to Trash, or accept the change.](https://docs-assets.developer.apple.com/published/f491f3644b3ff6ac4916fb0ad5659ee7/verifying-the-origin-of-your-xcframeworks-6%402x.png)
+
+## See Also
+
+- [Enabling enhanced security for your app](enabling-enhanced-security-for-your-app.md)
+  Detect out-of-bounds memory access, use of freed memory, and other potential vulnerabilities.
+- [Creating extensions with enhanced security](creating-extensions-with-enhanced-security.md)
+  Reduce opportunities for an attacker to target your app through its extensions.
+- [Adopting type-aware memory allocation](adopting-type-aware-memory-allocation.md)
+  Reduce the opportunities to treat pointers as data in your code.
+- [Conforming to Mach IPC security restrictions](conforming-to-mach-ipc-security-restrictions.md)
+  Avoid crashes and potentially insecure situations associated with Mach messages.
 
 
 ---

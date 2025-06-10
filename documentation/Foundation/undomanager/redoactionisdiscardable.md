@@ -17,6 +17,7 @@ A Boolean value that indicates whether the next redo action is discardable.
 ## Declaration
 
 ```swift
+@MainActor
 var redoActionIsDiscardable: Bool { get }
 ```
 

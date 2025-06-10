@@ -1,6 +1,6 @@
 # Specifying prices for Advanced Commerce SKUs
 
-**Framework**: Advancedcommerceapi
+**Framework**: Advanced Commerce API
 
 Provide prices for SKUs with the supported number of decimal places, in milliunits of currency.
 
@@ -115,4 +115,4 @@ The following currencies support two decimal places:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AdvancedCommerceAPI/prices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/advancedcommerceapi/prices)*

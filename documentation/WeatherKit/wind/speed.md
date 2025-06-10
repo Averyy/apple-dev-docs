@@ -1,6 +1,6 @@
 # speed
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 Sustained wind speed.

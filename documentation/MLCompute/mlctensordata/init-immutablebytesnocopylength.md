@@ -22,8 +22,6 @@ convenience init(immutableBytesNoCopy bytes: UnsafeRawPointer, length: Int)
 
 > ❗ **Important**:  Don’t mutate the underlying bytes in a tensor data instance you create with this initializer. Doing so may result in unexpected behavior.
 
- Don’t mutate the underlying bytes in a tensor data instance you create with this initializer. Doing so may result in unexpected behavior.
-
 ## Parameters
 
 - `bytes`: A buffer that contains immutable data.

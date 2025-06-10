@@ -1,6 +1,6 @@
 # scrollDecelerationMetric
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A metric that records scroll deceleration animations.

@@ -55,6 +55,18 @@ enum Identifier
   Identifier for the Persian calendar.
 - [Calendar.Identifier.republicOfChina](calendar/identifier-swift.enum/republicofchina.md)
   Identifier for the Republic of China calendar.
+### Enumeration Cases
+- [Calendar.Identifier.bangla](calendar/identifier-swift.enum/bangla.md)
+- [Calendar.Identifier.dangi](calendar/identifier-swift.enum/dangi.md)
+- [Calendar.Identifier.gujarati](calendar/identifier-swift.enum/gujarati.md)
+- [Calendar.Identifier.kannada](calendar/identifier-swift.enum/kannada.md)
+- [Calendar.Identifier.malayalam](calendar/identifier-swift.enum/malayalam.md)
+- [Calendar.Identifier.marathi](calendar/identifier-swift.enum/marathi.md)
+- [Calendar.Identifier.odia](calendar/identifier-swift.enum/odia.md)
+- [Calendar.Identifier.tamil](calendar/identifier-swift.enum/tamil.md)
+- [Calendar.Identifier.telugu](calendar/identifier-swift.enum/telugu.md)
+- [Calendar.Identifier.vietnamese](calendar/identifier-swift.enum/vietnamese.md)
+- [Calendar.Identifier.vikram](calendar/identifier-swift.enum/vikram.md)
 
 ## Relationships
 
@@ -66,6 +78,7 @@ enum Identifier
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # WKUserNotificationInterfaceType
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 The type of notification interface to display.
@@ -32,6 +32,7 @@ enum WKUserNotificationInterfaceType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

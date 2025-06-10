@@ -1,6 +1,6 @@
 # send(_:replyHandler:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Sends an encodable message over the session to the destination service, using the closure you specify to handle a reply and rich error.
@@ -16,6 +16,7 @@ Sends an encodable message over the session to the destination service, using th
 ## Declaration
 
 ```swift
+@preconcurrency
 func send<Message>(_ message: Message, replyHandler: @escaping (Result<XPCReceivedMessage, XPCRichError>) -> Void) throws where Message : Encodable
 ```
 
@@ -28,8 +29,6 @@ If the session fails to send the message, this method throws an error that conta
 If the system tears down the session’s connection before receiving a reply, it invokes `replyHandler` with a result containing an [`XPCRichError`](xpcricherror.md) describing the failure. For example, the remote service exits prematurely before sending a reply.
 
 > ❗ **Important**:  If you create an inactive session, you must activate it before sending messages. Calling this method with an inactive session crashes.
-
- If you create an inactive session, you must activate it before sending messages. Calling this method with an inactive session crashes.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # reload()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Reloads the initial request passed as an argument to [`load(_:)`](webframe/load(_:)-47p2s.md).

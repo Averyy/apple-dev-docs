@@ -38,6 +38,7 @@ Use this type in conjunction with the [`defaultCustomization(_:options:)`](custo
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also
@@ -48,6 +49,8 @@ Use this type in conjunction with the [`defaultCustomization(_:options:)`](custo
   Conforming types represent items that can be placed in various locations in a customizable toolbar.
 - [struct ToolbarCustomizationBehavior](toolbarcustomizationbehavior.md)
   The customization behavior of customizable toolbar content.
+- [struct SearchToolbarBehavior](searchtoolbarbehavior.md)
+  The behavior of a search field in a toolbar.
 
 
 ---

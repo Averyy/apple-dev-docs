@@ -75,6 +75,7 @@ After you create the `PaymentCardReader` object, call [`prepare(using:)`](paymen
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

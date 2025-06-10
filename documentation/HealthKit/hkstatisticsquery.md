@@ -21,8 +21,8 @@ class HKStatisticsQuery
 
 ## Mentions
 
-- [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
 - [Executing Statistics Collection Queries](executing-statistics-collection-queries.md)
+- [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
 
 #### Overview
 
@@ -52,6 +52,7 @@ Statistics queries are immutable. Their properties are set when they are first c
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

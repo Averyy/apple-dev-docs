@@ -1,6 +1,6 @@
 # Rewarding players with achievements
 
-**Framework**: Gamekit
+**Framework**: GameKit
 
 Use achievements to motivate players and engage them more in your game.
 
@@ -112,4 +112,4 @@ If you want to display the data directly in your interface, you can load details
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/rewarding-players-with-achievements)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/rewarding-players-with-achievements)*

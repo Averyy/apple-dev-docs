@@ -1,6 +1,6 @@
 # addLocalMonitorForEvents(matching:handler:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Installs an event monitor that receives copies of events the system posts to this app prior to their dispatch.

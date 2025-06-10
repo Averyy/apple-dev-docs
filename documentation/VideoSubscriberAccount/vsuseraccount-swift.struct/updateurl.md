@@ -1,6 +1,6 @@
 # updateURL
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A URL that points to the application’s JavaScript endpoint for update requests.

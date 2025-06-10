@@ -51,9 +51,6 @@ If you still see visual artifacts, continue editing the shader and reloading it 
 > ❗ **Important**: Changes to your shader source code exist only within the Metal debugger. Your original shader source code doesn’t change.
 If your shader results look correct after reloading the shader, make sure that you copy your changes to your original shader source code.
 
-Changes to your shader source code exist only within the Metal debugger. Your original shader source code doesn’t change.
-If your shader results look correct after reloading the shader, make sure that you copy your changes to your original shader source code.
-
 To learn more, see [`Debugging the shaders within a draw command or compute dispatch`](debugging-the-shaders-within-a-draw-command-or-compute-dispatch.md).
 
 ## See Also

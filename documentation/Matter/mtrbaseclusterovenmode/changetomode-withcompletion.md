@@ -22,7 +22,7 @@ func changeToMode(with params: MTROvenModeClusterChangeToModeParams) async throw
 
 #### Discussion
 
-This command is used to change device modes. On receipt of this command the device SHALL respond with a ChangeToModeResponse command.
+This command is used to change device modes.
 
 
 ---

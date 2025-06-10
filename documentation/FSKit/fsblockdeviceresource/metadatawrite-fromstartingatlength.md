@@ -1,6 +1,6 @@
 # metadataWrite(from:startingAt:length:)
 
-**Framework**: Fskit  
+**Framework**: FSKit  
 **Kind**: method
 
 Synchronously writes file system metadata from a buffer to the resource.

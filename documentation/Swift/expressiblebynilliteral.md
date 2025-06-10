@@ -17,7 +17,7 @@ A type that can be initialized using the nil literal, `nil`.
 ## Declaration
 
 ```swift
-protocol ExpressibleByNilLiteral : ~Copyable
+protocol ExpressibleByNilLiteral : ~Copyable, ~Escapable
 ```
 
 #### Overview

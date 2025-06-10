@@ -1,6 +1,6 @@
 # flattened()
 
-**Framework**: Coreml  
+**Framework**: Core ML  
 **Kind**: method
 
 Reshape to a one-dimensional tensor.

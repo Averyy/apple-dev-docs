@@ -1,6 +1,6 @@
 # sorted()
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Returns the elements of the sequence, sorted.

@@ -25,8 +25,6 @@ func withUnsafeBytes<ResultType, ContentType>(_ body: (UnsafePointer<ContentType
 
 > ⚠️ **Warning**:  The byte pointer argument should not be stored and used outside of the lifetime of the call to the closure.
 
- The byte pointer argument should not be stored and used outside of the lifetime of the call to the closure.
-
 ## See Also
 
 - [func withUnsafeMutableBytes<ResultType, ContentType>((UnsafeMutablePointer<ContentType>) throws -> ResultType) rethrows -> ResultType](data/withunsafemutablebytes(_:)-7ac1g.md)

@@ -15,6 +15,12 @@ The dictionary that contains the lists of declarations available on the server.
 object DeclarationItemsResponse.ManifestDeclarationItems
 ```
 
+## Topics
+
+### Supporting Objects
+- [object ManifestDeclaration](manifestdeclaration.md)
+  A dictionary that describes a declaration.
+
 ## See Also
 
 - [object ManifestDeclaration](manifestdeclaration.md)

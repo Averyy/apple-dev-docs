@@ -39,6 +39,7 @@ You can use the identifiers you define in UI Automation scripts because the valu
 - [UIActivityIndicatorView](uiactivityindicatorview.md)
 - [UIAlertAction](uialertaction.md)
 - [UIAlertView](uialertview.md)
+- [UIBackgroundExtensionView](uibackgroundextensionview.md)
 - [UIBarButtonItem](uibarbuttonitem.md)
 - [UIBarItem](uibaritem.md)
 - [UIButton](uibutton.md)

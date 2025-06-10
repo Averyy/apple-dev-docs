@@ -17,8 +17,8 @@ Creates a tip action that generates its label from a string.
 ## Declaration
 
 ```swift
-nonisolated
-init(id: String? = nil, title: some StringProtocol, perform handler: @escaping () -> Void = {})
+@preconcurrency
+nonisolated init(id: String? = nil, title: some StringProtocol, perform handler: @escaping @MainActor () -> Void = {})
 ```
 
 ## Parameters

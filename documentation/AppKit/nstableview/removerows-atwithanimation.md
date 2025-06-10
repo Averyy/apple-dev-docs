@@ -1,6 +1,6 @@
 # removeRows(at:withAnimation:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Removes the rows using the specified animation.

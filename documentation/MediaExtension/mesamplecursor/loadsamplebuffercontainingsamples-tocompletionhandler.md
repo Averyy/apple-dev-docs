@@ -22,8 +22,6 @@ If there’s no sample data between the sample cursor and `endSampleCursor`, the
 
 > ❗ **Important**:  If there’s a change of format description between the sample cursor and `endSampleCursor`, the returned sample buffer needs to contain only the contiguous samples with the same format description as the first sample.
 
- If there’s a change of format description between the sample cursor and `endSampleCursor`, the returned sample buffer needs to contain only the contiguous samples with the same format description as the first sample.
-
 ## Parameters
 
 - `endSampleCursor`: If not  , this cursor indicates the last sample that the new sample buffer should contain.

@@ -23,17 +23,9 @@ class func `import`(_ domain: NSFileProviderDomain, fromDirectoryAt url: URL) as
 class func `import`(_ domain: NSFileProviderDomain, fromDirectoryAt url: URL) async throws
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-class func `import`(_ domain: NSFileProviderDomain, fromDirectoryAt url: URL) async throws
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 Use this method to migrate an existing file hierarchy on disk to a [`NSFileProviderExtension`](nsfileproviderextension.md) without redownloading the data. After you call the method, the provided URL is no longer valid. The system has moved and now manages all of its contents.
 
-If a domain with the same name already exists, the method fails with an [`NSFileWriteFileExistsError`](https://developer.apple.com/documentation/foundation/nsfilewritefileexistserror) error. The URL remains untouched. If the system doesn’t allow the extension to request a migration, the method fails with an [`NSFeatureUnsupportedError`](https://developer.apple.com/documentation/foundation/nsfeatureunsupportederror) error.
+If a domain with the same name already exists, the method fails with an [`NSFileWriteFileExistsError`](https://developer.apple.com/documentation/Foundation/NSFileWriteFileExistsError-swift.var) error. The URL remains untouched. If the system doesn’t allow the extension to request a migration, the method fails with an [`NSFeatureUnsupportedError`](https://developer.apple.com/documentation/Foundation/NSFeatureUnsupportedError-swift.var) error.
 
 The system starts by moving the provided directory into its local cache, and then calls the completion handler. Then, for each item in the directory, it calls your extension’s [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](nsfileproviderreplicatedextension/createitem(basedon:fields:contents:options:request:completionhandler:).md) with the [`mayAlreadyExist`](nsfileprovidercreateitemoptions/mayalreadyexist.md) option.
 

@@ -1,6 +1,6 @@
 # Addressing architectural differences in your macOS code
 
-**Framework**: Apple Silicon
+**Framework**: Apple silicon
 
 Fix problems that stem from architectural differences between Apple silicon and Intel-based Mac computers.
 

@@ -1,6 +1,6 @@
 # ONE_MINUS_SRC_COLOR
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

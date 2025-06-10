@@ -5,13 +5,21 @@
 
 Render different results for each eye in a stereoscopic render.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-Use the Camera Index Switch node to render stereoscopic images. On most devices, this node simply returns its `Mono` input paramter. On Vision Pro, this node outputs either `Left` or `Right`, depending on which eye the texture renders through.
+Use the `Camera Index Switch` node to render stereoscopic images. On most devices, this node returns its `Mono` input parameter. On Apple Vision Pro, this node outputs either `Left` or `Right`, depending on which eye the texture renders through.
 
 ## See Also
 

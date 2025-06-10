@@ -1,0 +1,27 @@
+# showImageFullHeight
+
+**Framework**: CarPlay  
+**Kind**: property
+
+A Boolean value indicating whether the element should be fill with the image.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+
+## Declaration
+
+```swift
+@MainActor
+var showImageFullHeight: Bool { get }
+```
+
+#### Discussion
+
+Set the value of this property to @c YES to fill the element with the image or @c NO to use a rounded square image that does not fill the card.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cplistimagerowitemcardelement/showimagefullheight)*

@@ -14,7 +14,6 @@ Returns the page renderer for the print formatter.
 ## Declaration
 
 ```swift
-@MainActor
 weak var printPageRenderer: UIPrintPageRenderer? { get }
 ```
 

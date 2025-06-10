@@ -1,6 +1,6 @@
 # finishSeries(metadata:completion:)
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: method
 
 Finalizes the series and returns the resulting quantity samples.

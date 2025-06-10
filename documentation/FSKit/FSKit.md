@@ -1,6 +1,6 @@
 # FSKit
 
-**Framework**: Fskit  
+**Framework**: FSKit  
 **Kind**: module
 
 Implement a file system that runs in user space.
@@ -104,6 +104,11 @@ When you choose a design flow, write an app extension that conforms to either `F
   A range that describes contiguous metadata segments on disk.
 - [class FSProbeResult](fsproberesult.md)
   An object that represents the results of a specific probe.
+### Classes
+- [class FSGenericURLResource](fsgenericurlresource.md)
+  A resource representing an abstract URL
+- [class FSPathURLResource](fspathurlresource.md)
+  A resource representing a path
 
 
 ---

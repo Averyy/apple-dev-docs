@@ -30,8 +30,6 @@ You can’t use this attribute to:
 
 > ❗ **Important**:  This attribute is mutually exclusive with the [`kSecAttrAccessControl`](ksecattraccesscontrol.md) attribute. Also, it only applies to keychain items stored in macOS that don’t have one or both of the [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) or [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) keys set to `true`. For information on access control for other keychain items, see [`Sharing access to keychain items among a collection of apps`](sharing-access-to-keychain-items-among-a-collection-of-apps.md).
 
- This attribute is mutually exclusive with the [`kSecAttrAccessControl`](ksecattraccesscontrol.md) attribute. Also, it only applies to keychain items stored in macOS that don’t have one or both of the [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) or [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) keys set to `true`. For information on access control for other keychain items, see [`Sharing access to keychain items among a collection of apps`](sharing-access-to-keychain-items-among-a-collection-of-apps.md).
-
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-A set containing all four of the SquareAzimuth constants.
+A set containing all four of the [`SquareAzimuth`](squareazimuth.md) constants.
 
 **Availability**:
 - visionOS 2.0+

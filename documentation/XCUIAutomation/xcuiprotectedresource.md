@@ -1,6 +1,6 @@
 # XCUIProtectedResource
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: enum
 
 A system resource that requires user authorization to access.
@@ -82,6 +82,7 @@ enum XCUIProtectedResource
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

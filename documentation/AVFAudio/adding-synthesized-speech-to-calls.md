@@ -1,6 +1,6 @@
 # Adding synthesized speech to calls
 
-**Framework**: Avfaudio
+**Framework**: AVFAudio
 
 Provide a more accessible experience by adding your app’s audio to a call.
 
@@ -125,4 +125,4 @@ When a call begins or ends, the system posts a notification of the change. The a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/adding-synthesized-speech-to-calls)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/adding-synthesized-speech-to-calls)*

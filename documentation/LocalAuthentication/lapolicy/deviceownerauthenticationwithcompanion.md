@@ -1,7 +1,7 @@
-# deviceOwnerAuthenticationWithCompanion
+# LAPolicy.deviceOwnerAuthenticationWithCompanion
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: case
 
 Device owner will be authenticated by a companion device e.g. Watch, Mac, etc.
 
@@ -14,7 +14,7 @@ Device owner will be authenticated by a companion device e.g. Watch, Mac, etc
 ## Declaration
 
 ```swift
-static var deviceOwnerAuthenticationWithCompanion: LAPolicy { get }
+case deviceOwnerAuthenticationWithCompanion
 ```
 
 #### Discussion

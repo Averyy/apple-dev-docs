@@ -1,6 +1,6 @@
 # Presenting windows and spaces
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Open and close the scenes that make up your app’s interface.
 
@@ -83,8 +83,6 @@ When the action runs on a system that supports multiple scenes, SwiftUI looks fo
 
 > ❗ **Important**: If [`supportsMultipleWindows`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/supportsMultipleWindows) is `false` and you try to open a new window, SwiftUI ignores the action and logs a runtime error.
 
-If [`supportsMultipleWindows`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/supportsMultipleWindows) is `false` and you try to open a new window, SwiftUI ignores the action and logs a runtime error.
-
 In addition to opening more instances of an app’s main window, as in the above example, you can also open other window types that your app’s body declares. For example, you can open an instance of the [`Window`](https://developer.apple.com/documentation/SwiftUI/Window) that displays connectivity information:
 
 ```swift
@@ -120,8 +118,6 @@ Your app can display any number of windows together with an immersive space. How
 When visionOS launches an app, it opens the first window group, window, or document scene that the app’s body declares, just like on other platforms. This is true even if you first declare a space. However, if you want to open your app into an immersive space directly, specify a space as the default scene for your app by adding the [`UIApplicationPreferredDefaultSceneSessionRole`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationPreferredDefaultSceneSessionRole) key to your app’s information property list and setting its value to `UISceneSessionRoleImmersiveSpaceApplication`. In that case, visionOS opens the first space that it finds in your app declaration.
 
 > ❗ **Important**: Be careful not to overwhelm people when starting your app with an immersive space. For design guidance, see [`Immersive experiences`](https://developer.apple.com/design/Human-Interface-Guidelines/immersive-experiences).
-
-Be careful not to overwhelm people when starting your app with an immersive space. For design guidance, see [`Immersive experiences`](https://developer.apple.com/design/Human-Interface-Guidelines/immersive-experiences).
 
 ##### Close Windows Programmatically
 
@@ -180,10 +176,14 @@ In the above code, it’s important to include the [`dismissWindow`](https://dev
 
 ## See Also
 
+- [Canyon Crosser: Building a volumetric hike-planning app](canyon-crosser-building-a-volumetric-hike-planning-app.md)
+  Create a hike planning app using SwiftUI and RealityKit.
 - [Hello World](world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
 - [Positioning and sizing windows](positioning-and-sizing-windows.md)
   Influence the initial geometry of windows that your app presents.
+- [Adopting best practices for persistent UI](adopting-best-practices-for-scene-restoration.md)
+  Create persistent and contextually relevant spatial experiences by managing scene restoration, customizing window behaviors, and surface snapping data.
 
 
 ---

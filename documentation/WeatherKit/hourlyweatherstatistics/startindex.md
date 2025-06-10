@@ -1,6 +1,6 @@
 # startIndex
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The start index for the hourly weather statistics.

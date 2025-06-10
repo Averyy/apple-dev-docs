@@ -26,8 +26,6 @@ The notification’s object is the item that finished playing.
 
 > ❗ **Important**:  The system may post this notification on a thread other than the one you use to register the observer.
 
- The system may post this notification on a thread other than the one you use to register the observer.
-
 ## See Also
 
 - [class let failedToPlayToEndTimeNotification: NSNotification.Name](avplayeritem/failedtoplaytoendtimenotification.md)

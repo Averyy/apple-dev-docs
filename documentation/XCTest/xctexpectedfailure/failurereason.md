@@ -1,6 +1,6 @@
 # failureReason
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An optional string that describes why the test expects a failure.

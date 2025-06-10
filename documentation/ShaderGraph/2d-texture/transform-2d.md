@@ -5,13 +5,21 @@
 
 A node that applies an affine transformation to a 2d input.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-The Transform 2D node takes a 2D vector as an input, applies the given rotation, scale, and translation, and then outputs the transformed vector.
+The `Transform 2D` node takes a 2D vector as an input, applies the given rotation, scale, and translation, then outputs the transformed vector.
 
 ## See Also
 

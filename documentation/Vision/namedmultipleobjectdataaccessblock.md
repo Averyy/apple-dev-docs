@@ -17,6 +17,12 @@
 typealias NamedMultipleObjectDataAccessBlock = ([String : Data]) throws -> Void
 ```
 
+## See Also
+
+- [typealias DetectorKey](detectorkey.md)
+- [typealias NamedObjectDataAccessBlock](namedobjectdataaccessblock.md)
+- [typealias NamedObjectsDictionary](namedobjectsdictionary.md)
+
 
 ---
 

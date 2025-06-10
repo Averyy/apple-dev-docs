@@ -38,6 +38,7 @@ struct ECDSASignature
 ### Conforms To
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

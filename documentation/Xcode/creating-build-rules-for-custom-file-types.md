@@ -101,4 +101,4 @@ Create the actual files in your script code when you build custom files. Fill th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/creating-build-rules-for-custom-file-types)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/creating-build-rules-for-custom-file-types)*

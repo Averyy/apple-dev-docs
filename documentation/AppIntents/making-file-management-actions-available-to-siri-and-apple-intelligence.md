@@ -1,6 +1,6 @@
 # Making file management actions available to Siri and Apple Intelligence
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Create app intents and entities to integrate your app’s file management functionality with Siri and Apple Intelligence.
 
@@ -13,7 +13,7 @@ To integrate your app’s file management functionality with Siri and Apple Inte
 For example, if your app allows a person to open a file, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.files` domain and the [`openFile`](assistantschemas/filesintent/openfile.md) schema:
 
 ```swift
-@AssistantIntent(schema: .files.openFile)
+@AppIntent(schema: .files.openFile)
 struct OpenFileIntent: OpenIntent {
     var target: FileEntity
 
@@ -30,7 +30,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `FileEntity`. The following code snippet shows how the `FileEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
 
 ```swift
-@AssistantEntity(schema: .files.file)
+@AppEntity(schema: .files.file)
 struct FilesEntity: FileEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [FilesEntity.ID]) async throws -> [FilesEntity] { [] }
@@ -62,4 +62,4 @@ For a list of available app entity schemas in the `.files` domain, see [`Assista
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-file-management-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-file-management-actions-available-to-siri-and-apple-intelligence)*

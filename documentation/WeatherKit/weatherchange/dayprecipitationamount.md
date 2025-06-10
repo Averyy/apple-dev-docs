@@ -1,6 +1,6 @@
 # dayPrecipitationAmount
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 How the forecasted precipitation amount for this day, during daylight hours, compares to that of before.

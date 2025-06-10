@@ -25,7 +25,7 @@ class let didDisconnectNotification: NSNotification.Name
 
 #### Discussion
 
-Use this notification to perform any final cleanup before your scene is purged from memory. For example, use it to release references to files or shared resources and to save user data. UIKit places the affected scene in the [`object`](https://developer.apple.com/documentation/foundation/nsnotification/1414469-object) property of the notification.
+Use this notification to perform any final cleanup before your scene is purged from memory. For example, use it to release references to files or shared resources and to save user data. UIKit places the affected scene in the [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) property of the notification.
 
 The removal of a scene is a precursor to the destruction of that scene. UIKit disconnects a scene when the user explicitly closes it in the app switcher. UIKit may also disconnect a scene in order to reclaim memory for other processes. UIKit does not automatically disconnect a scene when the user switches to another app.
 

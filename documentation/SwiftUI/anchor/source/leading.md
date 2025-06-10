@@ -20,7 +20,6 @@ static var leading: Anchor<CGPoint>.Source { get }
 
 ## See Also
 
-- [static var center: Anchor<CGPoint>.Source](anchor/source/center.md)
 - [static var trailing: Anchor<CGPoint>.Source](anchor/source/trailing.md)
 
 

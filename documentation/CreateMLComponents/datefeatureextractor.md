@@ -22,7 +22,7 @@ struct DateFeatureExtractor<Scalar> where Scalar : BinaryFloatingPoint
 
 #### Overview
 
-This transformer takes a [`Date`](https://developer.apple.com/documentation/Foundation/Date) and extracts floating-point feature values according to the features parameter. Every feature value is roughly between -0.5 and 0.5. All date calculations are based on a [`Calendar`](https://developer.apple.com/documentation/Foundation/Calendar), which defaults to [`current`](https://developer.apple.com/documentation/foundation/calendar/2293438-current).
+This transformer takes a [`Date`](https://developer.apple.com/documentation/Foundation/Date) and extracts floating-point feature values according to the features parameter. Every feature value is roughly between -0.5 and 0.5. All date calculations are based on a [`Calendar`](https://developer.apple.com/documentation/Foundation/Calendar), which defaults to [`current`](https://developer.apple.com/documentation/Foundation/Calendar/current).
 
 ## Topics
 
@@ -54,6 +54,7 @@ This transformer takes a [`Date`](https://developer.apple.com/documentation/Foun
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transformer](transformer.md)
 
 ## See Also

@@ -5,9 +5,6 @@
 
 A source of live data about the shape of a person’s surroundings.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift

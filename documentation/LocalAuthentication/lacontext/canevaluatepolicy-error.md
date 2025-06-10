@@ -31,8 +31,6 @@ Don’t store the return value from this method because it might change as a res
 
 > ❗ **Important**:  Don’t call this method in the reply block of the [`evaluatePolicy(_:localizedReason:reply:)`](lacontext/evaluatepolicy(_:localizedreason:reply:).md) method because that might lead to deadlock.
 
- Don’t call this method in the reply block of the [`evaluatePolicy(_:localizedReason:reply:)`](lacontext/evaluatepolicy(_:localizedreason:reply:).md) method because that might lead to deadlock.
-
 ## Parameters
 
 - `policy`: The policy to evaluate. For possible values, see  .

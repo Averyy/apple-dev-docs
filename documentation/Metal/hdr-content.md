@@ -28,6 +28,10 @@ High dynamic range (HDR) content has a wider range of brightness levels than sta
 
 ## See Also
 
+- [Managing your game window for Metal in macOS](managing-your-game-window-for-metal-in-macos.md)
+  Set up a window and view for optimally displaying your Metal content.
+- [Adapting your game interface for smaller screens](adapting-your-game-interface-for-smaller-screens.md)
+  Make text legible on all devices the player chooses to run your game on.
 - [Onscreen Presentation](onscreen-presentation.md)
   Show the output from a GPU’s rendering pass to the user in your app.
 

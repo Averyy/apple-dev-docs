@@ -1,6 +1,6 @@
 # canPrintHeadersAndFooters
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating whether the receiver can print headers and footers.

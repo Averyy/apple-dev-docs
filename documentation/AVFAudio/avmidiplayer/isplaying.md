@@ -23,7 +23,7 @@ var isPlaying: Bool { get }
 
 - [func prepareToPlay()](avmidiplayer/preparetoplay.md)
   Prepares the player to play the sequence by prerolling all events.
-- [func play(AVMIDIPlayerCompletionHandler?)](avmidiplayer/play(_:).md)
+- [func play((() -> Void)?)](avmidiplayer/play(_:).md)
   Plays the MIDI sequence.
 - [func stop()](avmidiplayer/stop.md)
   Stops playing the sequence.

@@ -1,6 +1,6 @@
 # Requesting Entitlements for DriverKit Development
 
-**Framework**: Driverkit
+**Framework**: DriverKit
 
 Request the entitlement for DriverKit development, and request other entitlements your driver needs to interact with specific devices and interfaces.
 
@@ -82,4 +82,4 @@ For more information about how to install drivers, see `Installing System Extens
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DriverKit/requesting-entitlements-for-driverkit-development)*
+*[View on Apple Developer](https://developer.apple.com/documentation/driverkit/requesting-entitlements-for-driverkit-development)*

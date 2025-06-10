@@ -10,8 +10,6 @@ The UIKit framework provides the core objects that you need to build apps for iO
 
 > ❗ **Important**:  You always start the development of an iOS or tvOS app by creating a project in Xcode, Apple’s integrated development environment. If you don’t have Xcode, you can download it from the App Store. You can also download the latest version from [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com).
 
- You always start the development of an iOS or tvOS app by creating a project in Xcode, Apple’s integrated development environment. If you don’t have Xcode, you can download it from the App Store. You can also download the latest version from [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com).
-
 Xcode provides template projects as starting points for every app you create. For example, the following image shows the structure of an app created using the single view app template in Xcode. The template projects provide a minimal user interface, so you can build and run your project immediately and see the results on a device or in the simulator.
 
 ![The template for a new single view app contains source files for an app delegate and view controller. It also contains storyboard, asset catalog, and Info.plist files.](https://docs-assets.developer.apple.com/published/845c646f662306d96beb0e6ac9602b0a/media-3004316%402x.png)
@@ -57,6 +55,8 @@ UIKit provides most of the objects in the controller and view layers of your app
 
 ## See Also
 
+- [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
+  Find out how to bring the new material to your app.
 - [UIKit updates](../Updates/UIKit.md)
   Learn about important changes to UIKit.
 - [Protecting the User’s Privacy](protecting-the-user-s-privacy.md)

@@ -47,7 +47,7 @@ static var matchRequestInvalid: GKError.Code { get }
 - [static var matchNotConnected: GKError.Code](gkerror/matchnotconnected.md)
   The system can’t complete the requested operation because the match isn’t connected to other players.
 - [static var notAuthenticated: GKError.Code](gkerror/notauthenticated.md)
-  The system can’t complete the requested operation because the system hasn’t authenticated the local player.
+  The system can’t complete the requested operation because the system hasn’t initialized the local player.
 - [static var notSupported: GKError.Code](gkerror/notsupported.md)
   The app doesn’t have Game Center enabled.
 - [static var parentalControlsBlocked: GKError.Code](gkerror/parentalcontrolsblocked.md)

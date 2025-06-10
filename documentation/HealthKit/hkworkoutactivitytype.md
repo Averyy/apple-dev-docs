@@ -171,8 +171,6 @@ enum HKWorkoutActivityType
   The constant for a variety of surf sports, including surfing, kite surfing, and wind surfing.
 - [HKWorkoutActivityType.swimming](hkworkoutactivitytype/swimming.md)
   The constant for swimming.
-- [HKWorkoutActivityType.underwaterDiving](hkworkoutactivitytype/underwaterdiving.md)
-  The constant for underwater diving.
 - [HKWorkoutActivityType.waterFitness](hkworkoutactivitytype/waterfitness.md)
   The constant for aerobic exercise performed in shallow water.
 - [HKWorkoutActivityType.waterPolo](hkworkoutactivitytype/waterpolo.md)
@@ -205,6 +203,8 @@ enum HKWorkoutActivityType
   The constant for multisport activities like triathlons.
 - [HKWorkoutActivityType.transition](hkworkoutactivitytype/transition.md)
   A constant for the transition time between activities in a multisport workout.
+### Enumeration Cases
+- [HKWorkoutActivityType.underwaterDiving](hkworkoutactivitytype/underwaterdiving.md)
 ### Initializers
 - [init?(rawValue: UInt)](hkworkoutactivitytype/init(rawvalue:).md)
 
@@ -216,6 +216,7 @@ enum HKWorkoutActivityType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

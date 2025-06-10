@@ -22,6 +22,7 @@
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StoreContent](storecontent.md)
 
 ## See Also

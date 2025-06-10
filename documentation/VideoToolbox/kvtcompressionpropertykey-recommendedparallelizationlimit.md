@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_RecommendedParallelizationLimit
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The recommended number of compression sessions to instantiate in a parallel encoding configuration.

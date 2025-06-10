@@ -1,6 +1,6 @@
 # setAttributedTitle(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the switch title to the specified attributed string.

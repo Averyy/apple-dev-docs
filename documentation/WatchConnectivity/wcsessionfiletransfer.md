@@ -1,6 +1,6 @@
 # WCSessionFileTransfer
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: class
 
 Information about in-progress file transfers.

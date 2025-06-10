@@ -8,8 +8,6 @@ The command to request an unlock token from a device.
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,14 +17,14 @@ object RequestUnlockTokenCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object RequestUnlockTokenCommand.Command](requestunlocktokencommand/command-data.dictionary.md)
-  The request dictionary to request an unlock token from a device.
+  The command to request an unlock token from a device.
 
 ## See Also
 
 - [object RequestUnlockTokenResponse](requestunlocktokenresponse.md)
-  A response from the device after it processes a request for an unlock token.
+  A response from the device after it processes the command to request an unlock token from a device.
 
 
 ---

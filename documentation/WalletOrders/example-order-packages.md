@@ -1,6 +1,6 @@
 # Example Order Packages
 
-**Framework**: Walletorders
+**Framework**: Wallet Orders
 
 Edit, build, and add example order packages to Wallet.
 
@@ -24,4 +24,4 @@ Edit, build, and add example order packages to Wallet.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WalletOrders/example-order-packages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/walletorders/example-order-packages)*

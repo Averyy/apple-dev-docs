@@ -6,10 +6,10 @@
 This environment variable is for SwiftUI clients of the credential exchange API. An example usage might look like:
 
 **Availability**:
-- iOS 18.2+
-- iPadOS 18.2+
-- macOS 15.2+
-- visionOS 2.2+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 

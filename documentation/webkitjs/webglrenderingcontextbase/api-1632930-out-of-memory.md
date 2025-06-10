@@ -1,6 +1,6 @@
 # OUT_OF_MEMORY
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # accountProviderAuthenticationToken
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 An authentication session token that your app sends to the account provider.

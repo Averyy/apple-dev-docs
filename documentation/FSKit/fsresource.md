@@ -41,6 +41,8 @@ Some resources, like [`FSBlockDeviceResource`](fsblockdeviceresource.md), come i
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
 - [FSBlockDeviceResource](fsblockdeviceresource.md)
+- [FSGenericURLResource](fsgenericurlresource.md)
+- [FSPathURLResource](fspathurlresource.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)

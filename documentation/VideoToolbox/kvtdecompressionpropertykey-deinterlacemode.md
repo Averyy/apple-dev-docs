@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_DeinterlaceMode
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Modes for requesting a specific deinterlacing technique.

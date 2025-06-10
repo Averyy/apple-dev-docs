@@ -3,8 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The response to a request for activation lock.
-
 **Availability**:
 - Device Assignment Services ?+
 - VPP License Management ?+

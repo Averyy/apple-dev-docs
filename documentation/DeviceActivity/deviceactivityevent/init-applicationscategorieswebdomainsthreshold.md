@@ -22,8 +22,6 @@ An application’s extension receives a callback once the combination of specifi
 
 > ❗ **Important**: When your app calls [`startMonitoring(_:during:events:)`](deviceactivitycenter/startmonitoring(_:during:events:).md) and the event’s schedule is active, the system will only consider the person’s device activity when it starts monitoring the event.
 
-When your app calls [`startMonitoring(_:during:events:)`](deviceactivitycenter/startmonitoring(_:during:events:).md) and the event’s schedule is active, the system will only consider the person’s device activity when it starts monitoring the event.
-
 ## Parameters
 
 - `applications`: An optional list of applications to include in the event. A small subset of popular App Store   apps have known associated web domains that get included implicitly. For example, an event that includes   an app implicitly includes usage of the app’s web domain.

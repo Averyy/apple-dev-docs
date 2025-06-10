@@ -72,6 +72,7 @@ The default time style is [`shortened`](date/formatstyle/timestyle/shortened.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

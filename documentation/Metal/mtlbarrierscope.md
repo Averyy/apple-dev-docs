@@ -40,14 +40,31 @@ struct MTLBarrierScope
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also
 
+- [Synchronizing resource accesses within a single pass with an intrapass barrier](synchronizing-resource-accesses-within-a-single-pass-with-an-intrapass-barrier.md)
+  Resolve resource access conflicts between stages within a single pass by adding an intrapass barrier.
+- [Synchronizing resource accesses between multiple passes with a fence](synchronizing-resource-accesses-between-multiple-passes-with-a-fence.md)
+  Resolve resource access conflicts between multiple passes within a single command queue by signaling a fence in one pass and waiting for it in another.
+- [Synchronizing resource accesses with earlier passes with a consumer-based queue barrier](synchronizing-resource-accesses-with-earlier-passes-with-a-consumer-based-queue-barrier.md)
+  Resolve resource access conflicts between multiple passes within a single command queue by creating a consumer-based intraqueue barrier.
+- [Synchronizing resource accesses with subsequent passes with a producer-based queue barrier](synchronizing-resource-accesses-with-subsequent-passes-with-a-producer-based-queue-barrier.md)
+  Resolve resource access conflicts between multiple passes within a single command queue by creating a producer-based intraqueue barrier.
+- [Synchronizing CPU and GPU Work](synchronizing-cpu-and-gpu-work.md)
+  Avoid stalls between CPU and GPU work by using multiple instances of a resource.
 - [Implementing a Multistage Image Filter Using Heaps and Fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
+- [struct MTLStages](mtlstages.md)
+  Describes stages of GPU work.
 - [protocol MTLFence](mtlfence.md)
   A memory fence to capture, track, and manage resource dependencies across command encoders.
+- [struct MTLRenderStages](mtlrenderstages.md)
+  The stages in a render pass that triggers a synchronization command.
+- [struct MTL4VisibilityOptions](mtl4visibilityoptions.md)
+  Memory consistency options for synchronization commands.
 
 
 ---

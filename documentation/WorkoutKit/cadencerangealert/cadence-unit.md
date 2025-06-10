@@ -1,6 +1,6 @@
 # cadence(_:unit:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 Creates a new cadence alert for the target range.

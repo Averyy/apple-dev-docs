@@ -17,6 +17,7 @@ Searches the Scene Kit scene for objects corresponding to a point in the rendere
 ## Declaration
 
 ```swift
+@MainActor
 func hitTest(_ point: CGPoint, options: [String : Any]? = nil) -> [SCNHitTestResult]
 ```
 

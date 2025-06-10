@@ -1,6 +1,6 @@
 # Preparing your app to be the default navigation app
 
-**Framework**: Mapkit
+**Framework**: MapKit
 
 Configure your navigation app so people can set it as the default on their devices.
 
@@ -60,4 +60,4 @@ To submit your app to App Store Connect, it needs to meet the following criteria
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKit/preparing-your-app-to-be-the-default-navigation-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkit/preparing-your-app-to-be-the-default-navigation-app)*

@@ -141,7 +141,6 @@ Swift Charts supports localization and accessibility features. You can also over
 - [struct AnnotationPosition](annotationposition.md)
   The position of an annotation.
 - [struct AnnotationOverflowResolution](annotationoverflowresolution.md)
-  The behavior for resolving an annotation that extends past a boundary of the chart.
 ### Data bins
 - [struct NumberBins](numberbins.md)
   A collection of bins for a chart that plots data against numbers.
@@ -159,6 +158,25 @@ Swift Charts supports localization and accessibility features. You can also over
   A type that configures the scroll behavior of charts.
 - [struct ChartScrollTargetBehaviorContext](chartscrolltargetbehaviorcontext.md)
   Contextual information that you can use to determine how to best adjust how charts scroll.
+### Protocols
+- [protocol AGChartsDecider](agchartsdecider.md)
+- [protocol Chart3DContent](chart3dcontent.md)
+- [protocol Chart3DSurfaceStyle](chart3dsurfacestyle.md)
+- [protocol Chart3DSymbolShape](chart3dsymbolshape.md)
+  A type that can act as a shape for the marks that you add to a chart.
+### Structures
+- [struct AnyChart3DSymbolShape](anychart3dsymbolshape.md)
+  A type-erased plotting shape.
+- [struct BasicChart3DSurfaceStyle](basicchart3dsurfacestyle.md)
+- [struct BasicChart3DSymbolShape](basicchart3dsymbolshape.md)
+  A basic chart symbol shape.
+- [struct Chart3D](chart3d.md)
+- [struct Chart3DCameraPose](chart3dcamerapose.md)
+- [struct Chart3DCameraProjection](chart3dcameraprojection.md)
+- [struct Chart3DContentBuilder](chart3dcontentbuilder.md)
+- [struct Chart3DPose](chart3dpose.md)
+- [struct Chart3DRenderingStyle](chart3drenderingstyle.md)
+- [struct SurfacePlot](surfaceplot.md)
 
 
 ---

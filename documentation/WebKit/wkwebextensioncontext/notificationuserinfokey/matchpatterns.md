@@ -1,6 +1,6 @@
 # matchPatterns
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The corresponding value represents the affected permission match patterns in [`WKWebExtensionContext`](wkwebextensioncontext.md) notifications.

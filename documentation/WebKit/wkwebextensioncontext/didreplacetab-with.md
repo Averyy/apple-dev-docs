@@ -1,6 +1,6 @@
 # didReplaceTab(_:with:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called by the app when a tab is replaced by another tab to fire appropriate events with only this extension.

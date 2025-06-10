@@ -87,6 +87,7 @@ logger.log("Ordered smoothie \(smoothieName, privacy: .public)")  // Visible
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

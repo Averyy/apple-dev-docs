@@ -1,6 +1,6 @@
 # Exporting a Reality Composer Scene to USDZ
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Save a scene or project as USDZ to read, collect, or display in an app or website.
 
@@ -42,4 +42,4 @@ Some or all of the functionality enabled by these custom schemas may eventually 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/exporting-a-reality-composer-scene-to-usdz)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/exporting-a-reality-composer-scene-to-usdz)*

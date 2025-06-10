@@ -1,6 +1,6 @@
 # Creating a Photogrammetry Command-Line App
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Generate 3D objects from images using RealityKit Object Capture.
 

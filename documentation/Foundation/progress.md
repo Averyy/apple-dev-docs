@@ -236,6 +236,7 @@ In the following example, the overall progress object has 10 units. The subopera
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -245,4 +246,4 @@ In the following example, the overall progress object has 10 units. The subopera
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/progress)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/progress)*

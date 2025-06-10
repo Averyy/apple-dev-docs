@@ -21,8 +21,6 @@ Provide this object to update the [`multiTokenContexts`](applepaypaymentrequest/
 
 > ❗ **Important**:  You can’t use this property with [`newAutomaticReloadPaymentRequest`](applepayshippingmethodupdate/newautomaticreloadpaymentrequest.md) or [`newRecurringPaymentRequest`](applepaypaymentmethodupdate/newrecurringpaymentrequest.md) properties. Simultaneous use of these properties results in an error and cancels the payment request.
 
- You can’t use this property with [`newAutomaticReloadPaymentRequest`](applepayshippingmethodupdate/newautomaticreloadpaymentrequest.md) or [`newRecurringPaymentRequest`](applepaypaymentmethodupdate/newrecurringpaymentrequest.md) properties. Simultaneous use of these properties results in an error and cancels the payment request.
-
 ## See Also
 
 - [ApplePayPaymentTokenContext](applepaypaymenttokencontext.md)

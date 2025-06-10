@@ -39,6 +39,7 @@ Use values of this type with the [`presentationContentInteraction(_:)`](view/pre
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

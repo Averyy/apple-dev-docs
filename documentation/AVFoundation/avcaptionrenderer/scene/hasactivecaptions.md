@@ -23,8 +23,6 @@ Knowing when the renderer has active captions can be useful to scrub to times wh
 
 > ❗ **Important**:  Don’t use this property value to restrict drawing. Instead, draw an empty fill in [`render(in:for:)`](avcaptionrenderer/render(in:for:).md) when there aren’t active captions to render.
 
- Don’t use this property value to restrict drawing. Instead, draw an empty fill in [`render(in:for:)`](avcaptionrenderer/render(in:for:).md) when there aren’t active captions to render.
-
 ## See Also
 
 - [var timeRange: CMTimeRange](avcaptionrenderer/scene/timerange.md)

@@ -1,6 +1,6 @@
 # height
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Specifies the height of an element.
 
@@ -47,4 +47,4 @@ Here’s an example that shows how to set the height of an image to 376 points.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/element-shaping-height)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/element-shaping-height)*

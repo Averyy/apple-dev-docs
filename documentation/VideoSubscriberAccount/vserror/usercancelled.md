@@ -1,6 +1,6 @@
 # userCancelled
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The user canceled the request.

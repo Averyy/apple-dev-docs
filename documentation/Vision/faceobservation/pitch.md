@@ -29,7 +29,7 @@ This value indicates the rotational angle of the face around the x-axis.
   A type that describes the request and revision combination.
 - [FaceObservation.Landmarks2D](faceobservation/landmarks2d.md)
   A collection of facial features that a request detects.
-- [let landmarks: FaceObservation.Landmarks2D?](faceobservation/landmarks.md)
+- [var landmarks: FaceObservation.Landmarks2D?](faceobservation/landmarks.md)
   The facial features of the detected face.
 - [let roll: Measurement<UnitAngle>](faceobservation/roll.md)
   The roll angle of a face.

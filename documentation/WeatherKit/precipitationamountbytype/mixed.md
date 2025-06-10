@@ -1,6 +1,6 @@
 # mixed
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The amount of wintry mix for the period.

@@ -6,7 +6,7 @@
 The last call to request content authorization was cancelled because the timeout interval was reached.
 
 **Availability**:
-- macOS ?+
+- macOS 10.7+
 
 ## Declaration
 

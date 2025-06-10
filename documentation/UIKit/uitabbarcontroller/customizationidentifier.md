@@ -17,6 +17,16 @@
 var customizationIdentifier: String? { get set }
 ```
 
+## See Also
+
+- [var isTabBarHidden: Bool](uitabbarcontroller/istabbarhidden.md)
+- [func setTabBarHidden(Bool, animated: Bool)](uitabbarcontroller/settabbarhidden(_:animated:).md)
+- [var bottomAccessory: UITabAccessory?](uitabbarcontroller/bottomaccessory.md)
+  An optional bottom accessory of the tab bar controller.
+- [func setBottomAccessory(UITabAccessory?, animated: Bool)](uitabbarcontroller/setbottomaccessory(_:animated:).md)
+  Sets a bottom accessory with an option to animate the change.
+- [var compactTabIdentifiers: [String]?](uitabbarcontroller/compacttabidentifiers.md)
+
 
 ---
 

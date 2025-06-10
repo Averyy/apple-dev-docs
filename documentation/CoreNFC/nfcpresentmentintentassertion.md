@@ -42,6 +42,7 @@ After the presentment intent assertion expires, you must wait through a 15-secon
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

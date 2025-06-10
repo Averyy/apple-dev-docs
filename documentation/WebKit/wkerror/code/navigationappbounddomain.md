@@ -1,6 +1,6 @@
 # WKError.Code.navigationAppBoundDomain
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 An error that indicates navigation failed due to an app-bound domain restriction.

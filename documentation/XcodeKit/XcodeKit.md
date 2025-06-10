@@ -1,6 +1,6 @@
 # XcodeKit
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: module
 
 Create extensions to add commands to the Xcode source editor.

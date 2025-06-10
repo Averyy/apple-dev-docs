@@ -1,6 +1,6 @@
 # testRun
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The test run object that executes the test.

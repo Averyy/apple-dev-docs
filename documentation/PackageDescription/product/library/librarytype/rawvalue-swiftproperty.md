@@ -28,15 +28,6 @@ print(selectedSize == PaperSize(rawValue: selectedSize.rawValue)!)
 // Prints "true"
 ```
 
-The corresponding value of the raw type.
-
-A new instance initialized with `rawValue` will be equivalent to this instance.
-
-## See Also
-
-- [Product.Library.LibraryType.RawValue](product/library/librarytype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-
 
 ---
 

@@ -22,8 +22,6 @@ Before your app can use this entitlement, you must first get permission to use i
 
 > ❗ **Important**:  If your app has a deployment target earlier than macOS 11, to use the [`com.apple.developer.automatic-assessment-configuration`](entitlements/com.apple.developer.automatic-assessment-configuration.md) entitlement, your app also needs the `com.apple.security.temporary-exception.mach-lookup.global-name` entitlement. Add this to your app’s entitlements file with a corresponding value that’s an array of strings containing the string `com.apple.assessmentagent`.
 
- If your app has a deployment target earlier than macOS 11, to use the [`com.apple.developer.automatic-assessment-configuration`](entitlements/com.apple.developer.automatic-assessment-configuration.md) entitlement, your app also needs the `com.apple.security.temporary-exception.mach-lookup.global-name` entitlement. Add this to your app’s entitlements file with a corresponding value that’s an array of strings containing the string `com.apple.assessmentagent`.
-
 ## See Also
 
 - [ClassKit Environment Entitlement](entitlements/com.apple.developer.classkit-environment.md)

@@ -196,11 +196,14 @@ print(allowedMoves.rawValue & Directions.right.rawValue)
 ### Inherited By
 - [OptionSet](optionset.md)
 ### Conforming Types
+- [ClockTraits](clocktraits.md)
 - [CodingUserInfoKey](codinguserinfokey.md)
+- [ExecutorJob.Kind](executorjob/kind-swift.struct.md)
 - [FloatingPointSign](floatingpointsign.md)
 - [String.Encoding](string/encoding.md)
 - [TaskPriority](taskpriority.md)
 - [Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass.md)
+- [Unicode.UTF8.ValidationError.Kind](unicode/utf8/validationerror/kind-swift.struct.md)
 
 ## See Also
 

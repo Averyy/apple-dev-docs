@@ -1,6 +1,6 @@
 # VTCreateCGImageFromCVPixelBuffer(_:options:imageOut:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Creates a Core Graphics bitmap image or image mask using the provided pixel buffer.

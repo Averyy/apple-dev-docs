@@ -1,6 +1,6 @@
 # DOM_AT_TARGET
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

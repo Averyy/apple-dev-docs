@@ -27,11 +27,6 @@ These constants are described as part of the [`NSLayoutConstraint.Attribute`](ht
 > **Note**:  Using certain values in this property can result in unexpected behavior: - Specifying the [`NSLayoutConstraint.Attribute.notAnAttribute`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute/notAnAttribute) constant can result in an ambiguous layout.
 - A value inappropriate for the layout direction is ignored; for example, the system ignores a value of [`NSLayoutConstraint.Attribute.centerX`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute/centerX) for the horizontal layout.
 
- Using certain values in this property can result in unexpected behavior:
-
-- Specifying the [`NSLayoutConstraint.Attribute.notAnAttribute`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute/notAnAttribute) constant can result in an ambiguous layout.
-- A value inappropriate for the layout direction is ignored; for example, the system ignores a value of [`NSLayoutConstraint.Attribute.centerX`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute/centerX) for the horizontal layout.
-
 ## See Also
 
 - [var orientation: NSUserInterfaceLayoutOrientation](nsstackview/orientation.md)

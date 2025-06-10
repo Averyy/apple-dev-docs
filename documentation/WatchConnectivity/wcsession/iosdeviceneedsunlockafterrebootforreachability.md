@@ -1,6 +1,6 @@
 # iOSDeviceNeedsUnlockAfterRebootForReachability
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 A Boolean value indicating whether the paired iPhone must be in an unlocked state to be reachable.

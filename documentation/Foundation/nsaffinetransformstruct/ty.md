@@ -1,0 +1,34 @@
+# tY
+
+**Framework**: Foundation  
+**Kind**: property
+
+An element of the transform matrix that contributes translation.
+
+**Availability**:
+- Mac Catalyst 13.0+
+- macOS 10.0+
+
+## Declaration
+
+```swift
+var tY: Double
+```
+
+## See Also
+
+- [var m11: Double](nsaffinetransformstruct/m11.md)
+  An element of the transform matrix that contributes scaling, rotation, and shear.
+- [var m12: Double](nsaffinetransformstruct/m12.md)
+  An element of the transform matrix that contributes scaling, rotation, and shear.
+- [var m21: Double](nsaffinetransformstruct/m21.md)
+  An element of the transform matrix that contributes scaling, rotation, and shear.
+- [var m22: Double](nsaffinetransformstruct/m22.md)
+  An element of the transform matrix that contributes scaling, rotation, and shear.
+- [var tX: Double](nsaffinetransformstruct/tx.md)
+  An element of the transform matrix that contributes translation.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsaffinetransformstruct/ty)*

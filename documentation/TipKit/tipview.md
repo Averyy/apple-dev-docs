@@ -34,8 +34,6 @@ For example, display a tip view, above an image, with an arrow edge along the bo
 
 > ❗ **Important**: Use [`TipUIView`](tipuiview.md) and [`TipNSView`](tipnsview.md) when adding tips to UIView and NSView hierarchies.
 
-Use [`TipUIView`](tipuiview.md) and [`TipNSView`](tipnsview.md) when adding tips to UIView and NSView hierarchies.
-
 ```swift
 import SwiftUI
 import TipKit
@@ -72,10 +70,7 @@ struct SampleView: View {
 ## Topics
 
 ### Creating a tip view
-- [init((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void)](tipview/init(_:arrowedge:action:)-ztv8.md)
-  Creates a tip view with an optional arrow.
-### Initializers
-- [init(Content, arrowEdge: Edge?, action: (Tips.Action) -> Void)](tipview/init(_:arrowedge:action:)-5qrb4.md)
+- [init((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void)](tipview/init(_:arrowedge:action:).md)
   Creates a tip view with an optional arrow.
 
 ## Relationships
@@ -85,7 +80,7 @@ struct SampleView: View {
 
 ## See Also
 
-- [@MainActor @preconcurrency func popoverTip(_ tip: (any Tip)?, arrowEdge: Edge? = nil, action: @escaping (Tips.Action) -> Void = { _ in }) -> some View
+- [@preconcurrency nonisolated func popoverTip(_ tip: (any Tip)?, arrowEdge: Edge? = nil, action: @escaping @MainActor (Tips.Action) -> Void = { _ in }) -> some View
 ](../SwiftUI/View/popoverTip(_:arrowEdge:action:).md)
   Presents a popover tip on the modified view.
 

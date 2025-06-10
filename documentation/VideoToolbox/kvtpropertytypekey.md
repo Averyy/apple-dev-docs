@@ -1,6 +1,6 @@
 # kVTPropertyTypeKey
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Dictionary key used to access the property type.

@@ -17,6 +17,7 @@ A scaling factor that multiplies the height of a node and its children.
 ## Declaration
 
 ```swift
+@MainActor
 var yScale: CGFloat { get set }
 ```
 
@@ -24,8 +25,8 @@ var yScale: CGFloat { get set }
 
 - [Getting Started with a Camera](getting-started-with-a-camera.md)
 - [Resizing a Sprite in Nine Parts](resizing-a-sprite-in-nine-parts.md)
-- [About Node Property Propagation](about-node-property-propagation.md)
 - [Getting Started with Nodes](getting-started-with-nodes.md)
+- [About Node Property Propagation](about-node-property-propagation.md)
 
 #### Discussion
 

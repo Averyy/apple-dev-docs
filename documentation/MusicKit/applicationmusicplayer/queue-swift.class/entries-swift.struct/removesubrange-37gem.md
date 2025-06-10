@@ -1,6 +1,6 @@
 # removeSubrange(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Removes the elements in the specified subrange from the collection.

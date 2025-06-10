@@ -35,7 +35,7 @@ Chart {
         y: .value("Project", \.project)
     )
     .foregroundStyle(by: .value("Status", \.status))
-    .opacity(/.opacity)
+    .opacity(\.opacity)
     .lineStyle(StrokeStyle(lineWidth: 8, lineCap: .round))
 }
 ```

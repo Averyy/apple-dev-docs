@@ -28,8 +28,6 @@ When an app is launched, this property is initially set to the app’s current w
 
 > ⚠️ **Warning**:  This property reports the current working directory for the current process, not just the receiver.
 
- This property reports the current working directory for the current process, not just the receiver.
-
 ## See Also
 
 - [func createDirectory(atPath: String, withIntermediateDirectories: Bool, attributes: [FileAttributeKey : Any]?) throws](filemanager/createdirectory(atpath:withintermediatedirectories:attributes:).md)

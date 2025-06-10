@@ -89,8 +89,6 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
 ### Accessing the preferred units
 - [func preferredUnits(for: Set<HKQuantityType>, completion: ([HKQuantityType : HKUnit], (any Error)?) -> Void)](hkhealthstore/preferredunits(for:completion:).md)
   Returns the user’s preferred units for the given quantity types.
-- [static let HKUserPreferencesDidChange: NSNotification.Name](../foundation/nsnotification/name/1614169-hkuserpreferencesdidchange.md)
-  Notifies observers whenever the user changes his or her preferred units.
 ### Managing background delivery
 - [func enableBackgroundDelivery(for: HKObjectType, frequency: HKUpdateFrequency, withCompletion: (Bool, (any Error)?) -> Void)](hkhealthstore/enablebackgrounddelivery(for:frequency:withcompletion:).md)
   Enables the delivery of updates to an app running in the background.
@@ -122,8 +120,6 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
 ### Accessing the move mode
 - [func activityMoveMode() throws -> HKActivityMoveModeObject](hkhealthstore/activitymovemode.md)
   Returns the activity move mode for the current user.
-- [static let HKUserPreferencesDidChange: NSNotification.Name](../foundation/nsnotification/name/1614169-hkuserpreferencesdidchange.md)
-  Notifies observers whenever the user changes his or her preferred units.
 ### Deprecated symbols
 - [func add([HKSample], to: HKWorkout, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/add(_:to:completion:).md)
   Associates the provided samples with the specified workout.
@@ -147,6 +143,7 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -164,6 +161,8 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
   Query health and fitness data.
 - [Visualizing HealthKit State of Mind in visionOS](visualizing-healthkit-state-of-mind-in-visionos.md)
   Incorporate HealthKit State of Mind into your app and visualize the data in visionOS.
+- [Logging symptoms associated with a medication](logging-symptoms-associated-with-a-medication.md)
+  Fetch medications and dose events from the HealthKit store, and create symptom samples to associate with them.
 
 
 ---

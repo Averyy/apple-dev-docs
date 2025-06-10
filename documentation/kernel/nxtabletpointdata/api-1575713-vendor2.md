@@ -1,0 +1,18 @@
+# vendor2
+
+**Framework**: Kernel  
+**Kind**: structp
+
+**Availability**:
+- macOS 10.1+
+
+## Declaration
+
+```swift
+SInt16 vendor2;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/nxtabletpointdata/1575713-vendor2)*

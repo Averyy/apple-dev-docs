@@ -131,4 +131,4 @@ To read or write the [`note`](cncontact/note.md) field from a contact in iOS 13,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Contacts/accessing-the-contact-store)*
+*[View on Apple Developer](https://developer.apple.com/documentation/contacts/accessing-the-contact-store)*

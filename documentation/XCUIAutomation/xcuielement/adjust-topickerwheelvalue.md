@@ -1,6 +1,6 @@
 # adjust(toPickerWheelValue:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Changes the value that the picker wheel displays.

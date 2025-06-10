@@ -1,6 +1,6 @@
 # window
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the window where the tab should be opened.

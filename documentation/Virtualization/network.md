@@ -20,6 +20,8 @@ Configure the devices that connect the guest system to the network.
   A network device that transmits raw network packets and frames using a datagram socket.
 - [class VZNATNetworkDeviceAttachment](vznatnetworkdeviceattachment.md)
   A device that routes network requests through the host computer and performs network address translation on the resulting packets.
+- [class VZVmnetNetworkDeviceAttachment](vzvmnetnetworkdeviceattachment.md)
+  A network device attachment that allows a custom network topology.
 - [class VZNetworkDeviceAttachment](vznetworkdeviceattachment.md)
   The common behaviors for the network attachment points of your virtual machine.
 ### Hardware interfaces

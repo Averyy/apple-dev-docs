@@ -1,6 +1,6 @@
 # WeatherCondition.thunderstorms
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Thunderstorms.

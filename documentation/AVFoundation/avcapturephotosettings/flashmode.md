@@ -1,6 +1,6 @@
 # flashMode
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A setting for whether to fire the flash when capturing photos.

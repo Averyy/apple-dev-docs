@@ -1,6 +1,6 @@
 # init(ssmlRepresentation:)
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: init
 
 Creates a speech utterance with an Speech Synthesis Markup Language (SSML) string.

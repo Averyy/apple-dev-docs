@@ -1,6 +1,6 @@
 # xpc_dictionary_applier_t
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 A block to invoke for every key-value pair in the dictionary.

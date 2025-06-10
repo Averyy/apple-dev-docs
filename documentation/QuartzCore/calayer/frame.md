@@ -1,6 +1,6 @@
 # frame
 
-**Framework**: Quartzcore  
+**Framework**: Core Animation  
 **Kind**: property
 
 The layer’s frame rectangle.
@@ -47,4 +47,4 @@ For more information about the relationship between the [`frame`](calayer/frame.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/calayer/frame)*
+*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/calayer/frame)*

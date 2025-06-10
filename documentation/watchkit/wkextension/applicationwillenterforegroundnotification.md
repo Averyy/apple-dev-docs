@@ -1,6 +1,6 @@
 # applicationWillEnterForegroundNotification
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A message indicating that the watchOS app is about to transition from the background to the foreground.

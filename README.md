@@ -127,6 +127,12 @@ python3 scripts/utilities/rescrape_existing.py --clear-hashes
 
 # Resume interrupted scraping
 python3 scrape.py --resume --yes
+
+# Scrape with orphan cleanup (removes deleted pages)
+python3 scrape.py --all --yes --cleanup-orphans
+
+# Manual orphan cleanup for all frameworks
+python3 scripts/check_orphans.py --clean --no-dry-run
 ```
 
 ### Embedding Generation & Management
@@ -285,7 +291,7 @@ Comprehensive documentation is organized in the `docs/` folder:
 ## Performance Metrics
 
 ### Scraping Performance
-- **Rate Limiting**: 0.2s between requests, 10 concurrent connections
+- **Rate Limiting**: 0.2s between requests, 20 concurrent connections
 - **Throughput**: ~300 pages/minute with full content processing
 - **Memory Usage**: ~100MB for concurrent processing
 - **Incremental Updates**: Hash-based change detection avoids re-scraping

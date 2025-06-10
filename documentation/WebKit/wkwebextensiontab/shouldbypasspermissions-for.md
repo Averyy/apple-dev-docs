@@ -1,6 +1,6 @@
 # shouldBypassPermissions(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to determine if the tab should bypass host permission checks.

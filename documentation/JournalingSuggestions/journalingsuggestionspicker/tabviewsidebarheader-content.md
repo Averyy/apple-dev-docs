@@ -1,6 +1,6 @@
 # tabViewSidebarHeader(content:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Adds a custom header to the sidebar of a tab view.

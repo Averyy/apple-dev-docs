@@ -24,8 +24,6 @@ let kCVImageBufferTransferFunction_SMPTE_240M_1995: CFString
 
 > 💡 **Tip**:  Most apps shouldn’t use this constant.
 
- Most apps shouldn’t use this constant.
-
 ## See Also
 
 - [let kCVImageBufferTransferFunction_ITU_R_709_2: CFString](kcvimagebuffertransferfunction_itu_r_709_2.md)

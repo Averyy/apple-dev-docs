@@ -1,6 +1,6 @@
 # DEPTH32F_STENCIL8
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

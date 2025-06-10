@@ -9,8 +9,6 @@ A status report of the device’s enrolled beta program.
 - iOS 18.0+
 - iPadOS 18.0+
 - macOS 15.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,10 +16,22 @@ A status report of the device’s enrolled beta program.
 object StatusSoftwareUpdateBetaEnrollment
 ```
 
+#### Discussion
+
+##### Status Item Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad |
+| Allowed in device enrollment | iOS, Shared iPad |
+| Allowed in user enrollment | NA |
+| Allowed in local enrollment | NA |
+| Allowed in system scope | iOS, macOS, Shared iPad |
+| Allowed in user scope | NA |
+
 ## See Also
 
 - [object StatusReport](statusreport.md)
-  A status report of the device’s current state.
 - [object StatusAppManagedList](statusappmanagedlist.md)
   The device’s declarative managed apps.
 - [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)

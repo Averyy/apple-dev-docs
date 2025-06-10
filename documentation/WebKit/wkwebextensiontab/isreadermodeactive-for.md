@@ -1,6 +1,6 @@
 # isReaderModeActive(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to check if the tab is currently showing reader mode.

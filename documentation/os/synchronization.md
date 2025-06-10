@@ -1,6 +1,6 @@
 # Synchronization
 
-**Framework**: Os
+**Framework**: os
 
 Access low-level synchronization mechanisms to control state across threads.
 

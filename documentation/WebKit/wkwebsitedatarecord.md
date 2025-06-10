@@ -1,6 +1,6 @@
 # WKWebsiteDataRecord
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 A record of the data that a particular website stores persistently.
@@ -59,7 +59,7 @@ You don’t create [`WKWebsiteDataRecord`](wkwebsitedatarecord.md) objects direc
   A protocol for loading resources with URL schemes that WebKit doesn’t handle.
 - [protocol WKURLSchemeTask](wkurlschemetask.md)
   An interface that WebKit uses to request custom resources from your app.
-- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../foundation/nsattributedstring/documentreadingoptionkey/3182829-readaccessurl.md)
+- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../Foundation/NSAttributedString/DocumentReadingOptionKey/readAccessURL.md)
   The local files WebKit can access when loading content.
 
 

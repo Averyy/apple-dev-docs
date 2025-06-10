@@ -1,6 +1,6 @@
 # dropFirst(_:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns a subsequence containing all but the given number of initial elements.

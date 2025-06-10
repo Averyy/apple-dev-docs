@@ -1,11 +1,14 @@
 # nextOpticalFlow
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 Optional optical flow object that contains forward and backward optical flow with the next frame.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
 
 ## Declaration
@@ -22,8 +25,6 @@ For the last frame this will always be nil. This object is only needed if optica
 
 - [var sourceFrame: VTFrameProcessorFrame](vtmotionblurparameters/sourceframe.md)
   The current source frame.
-- [var destinationFrame: VTFrameProcessorFrame](vtmotionblurparameters/destinationframe.md)
-  A user-allocated pixel buffer that receives the results.
 - [var nextFrame: VTFrameProcessorFrame?](vtmotionblurparameters/nextframe.md)
   The next source frame in presentation time order.
 - [var previousFrame: VTFrameProcessorFrame?](vtmotionblurparameters/previousframe.md)

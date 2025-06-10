@@ -1,6 +1,6 @@
 # VTPixelTransferSession
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 An object converts video data from source pixel buffers to destination pixel buffers.
 

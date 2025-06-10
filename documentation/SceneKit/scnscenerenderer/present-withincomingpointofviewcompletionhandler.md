@@ -7,13 +7,13 @@
 Displays the specified scene with an animated transition.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.11+
+- macOS 10.8+
 - tvOS 9.0+
 - visionOS 1.0+
-- watchOS 2.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -26,14 +26,6 @@ func present(_ scene: SCNScene, with transition: SKTransition, incomingPointOfVi
 > **Note**:  In Swift, you can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func present(_ scene: SCNScene, with transition: SKTransition, incomingPointOfView pointOfView: SCNNode?) async
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
- In Swift, you can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func present(_ scene: SCNScene, with transition: SKTransition, incomingPointOfView pointOfView: SCNNode?) async
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
 Use this method to change the scene displayed in a SceneKit view (or other renderer) with an animated transition. For details on transition styles, see [`SKTransition`](https://developer.apple.com/documentation/SpriteKit/SKTransition).
 

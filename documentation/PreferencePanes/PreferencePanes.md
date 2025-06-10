@@ -1,6 +1,6 @@
 # Preference Panes
 
-**Framework**: Preferencepanes  
+**Framework**: Preference Panes  
 **Kind**: module
 
 Integrate your app’s custom preferences into the System Preferences app.
@@ -23,16 +23,16 @@ System Preferences works with your bundle’s custom [`NSPreferencePane`](nspref
 - [class NSPreferencePane](nspreferencepane.md)
   The interface for providing preference panes to System Preferences or other apps.
 ### Notifications
-- [static let NSPreferencePrefPaneIsAvailable: NSNotification.Name](../foundation/nsnotification/name/1638126-nspreferenceprefpaneisavailable.md)
+- [static let NSPreferencePrefPaneIsAvailable: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSPreferencePrefPaneIsAvailable.md)
   Notifies observers that the system preferences app is available to display your preferences.
-- [static let NSPreferencePaneDoUnselect: NSNotification.Name](../foundation/nsnotification/name/1507050-nspreferencepanedounselect.md)
+- [static let NSPreferencePaneDoUnselect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSPreferencePaneDoUnselect.md)
   Notifies observers that the preference pane may be deselected.
-- [static let NSPreferencePaneCancelUnselect: NSNotification.Name](../foundation/nsnotification/name/1507018-nspreferencepanecancelunselect.md)
+- [static let NSPreferencePaneCancelUnselect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSPreferencePaneCancelUnselect.md)
   Notifies observers that the preference pane should not be deselected.
-- [static let NSPreferencePaneSwitchToPane: NSNotification.Name](../foundation/nsnotification/name/1638130-nspreferencepaneswitchtopane.md)
+- [static let NSPreferencePaneSwitchToPane: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSPreferencePaneSwitchToPane.md)
   Notifies observers that the user selected a new preference pane.
-- [static let NSPreferencePaneUpdateHelpMenu: NSNotification.Name](../foundation/nsnotification/name/1638128-nspreferencepaneupdatehelpmenu.md)
-  Notifies observers that your help menu content changed. 
+- [static let NSPreferencePaneUpdateHelpMenu: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSPreferencePaneUpdateHelpMenu.md)
+  Notifies observers that your help menu content changed.
 ### Help Menu Keys
 - [let NSPrefPaneHelpMenuInfoPListKey: String](nsprefpanehelpmenuinfoplistkey.md)
   The global help menu items associated with a preference pane.

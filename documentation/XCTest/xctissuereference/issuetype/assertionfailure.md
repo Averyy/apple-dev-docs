@@ -1,6 +1,6 @@
 # XCTIssueReference.IssueType.assertionFailure
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 A test failure due to a failed test assertion or related API.

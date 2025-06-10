@@ -1,6 +1,6 @@
 # WeatherCondition.blizzard
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Blizzard.

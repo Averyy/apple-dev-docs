@@ -30,8 +30,6 @@ You may call this method while the session is running.
 
 > ❗ **Important**:  For a control to become active, you must set a [`AVCaptureSessionControlsDelegate`](avcapturesessioncontrolsdelegate.md) on the session.
 
- For a control to become active, you must set a [`AVCaptureSessionControlsDelegate`](avcapturesessioncontrolsdelegate.md) on the session.
-
 ## Parameters
 
 - `control`: The capture control to add.

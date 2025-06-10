@@ -17,6 +17,7 @@ Ends and removes all actions from the node.
 ## Declaration
 
 ```swift
+@MainActor
 func removeAllActions()
 ```
 

@@ -17,7 +17,6 @@ Returns an array of nodes that match the name parameter.
 ## Declaration
 
 ```swift
-@MainActor
 subscript(name: String) -> [SKNode] { get }
 ```
 

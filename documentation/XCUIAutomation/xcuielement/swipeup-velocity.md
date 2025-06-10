@@ -1,6 +1,6 @@
 # swipeUp(velocity:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a swipe-up gesture with a velocity you specify.

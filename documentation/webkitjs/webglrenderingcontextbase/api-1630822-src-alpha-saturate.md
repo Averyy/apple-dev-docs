@@ -1,6 +1,6 @@
 # SRC_ALPHA_SATURATE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

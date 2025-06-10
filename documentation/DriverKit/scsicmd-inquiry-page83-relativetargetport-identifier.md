@@ -15,6 +15,10 @@
 typedef struct SCSICmd_INQUIRY_Page83_RelativeTargetPort_Identifier { ... } SCSICmd_INQUIRY_Page83_RelativeTargetPort_Identifier;
 ```
 
+#### Overview
+
+INQUIRY Page 83h Relative Target Port Identifier.
+
 ## Topics
 
 ### Instance Properties

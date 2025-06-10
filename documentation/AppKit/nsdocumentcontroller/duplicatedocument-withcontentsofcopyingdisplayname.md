@@ -1,6 +1,6 @@
 # duplicateDocument(withContentsOf:copying:displayName:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Creates a new document by reading the contents for the document from another URL, presents its user interface, and returns the document if successful.
@@ -23,7 +23,7 @@ The newly created [`NSDocument`](nsdocument.md) object, or `nil` if the document
 
 The default implementation of this method copies the file if specified, determines the type of the document, calls [`makeDocument(for:withContentsOf:ofType:)`](nsdocumentcontroller/makedocument(for:withcontentsof:oftype:).md) to instantiate it, sends the document `setDisplayName:` to name it if `displayNameOrNil` is not `nil`, calls [`addDocument(_:)`](nsdocumentcontroller/adddocument(_:).md) to record its opening, and sends the document [`makeWindowControllers()`](nsdocument/makewindowcontrollers().md) and [`showWindows()`](nsdocument/showwindows().md) messages.
 
-The default implementation of this method uses the file coordination mechanism introduced in OS X v10.7. It passes the document to the `NSFileCoordinator` method [`addFilePresenter(_:)`](https://developer.apple.com/documentation/foundation/nsfilecoordinator/1417120-addfilepresenter) immediately after calling the [`addDocument(_:)`](nsdocumentcontroller/adddocument(_:).md) method. (The balancing invocation of the [`NSFileCoordinator`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator) method [`removeFilePresenter(_:)`](https://developer.apple.com/documentation/foundation/nsfilecoordinator/1414924-removefilepresenter) is in the [`NSDocument`](nsdocument.md) method [`close()`](nsdocument/close().md).)
+The default implementation of this method uses the file coordination mechanism introduced in OS X v10.7. It passes the document to the `NSFileCoordinator` method [`addFilePresenter(_:)`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator/addFilePresenter(_:)) immediately after calling the [`addDocument(_:)`](nsdocumentcontroller/adddocument(_:).md) method. (The balancing invocation of the [`NSFileCoordinator`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator) method [`removeFilePresenter(_:)`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator/removeFilePresenter(_:)) is in the [`NSDocument`](nsdocument.md) method [`close()`](nsdocument/close().md).)
 
 You can override this method to customize how documents are duplicated. It is called by the [`NSDocument`](nsdocument.md) method [`duplicate()`](nsdocument/duplicate().md). It may also be called from other places in AppKit.
 

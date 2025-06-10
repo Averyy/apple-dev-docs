@@ -1,6 +1,6 @@
 # Dividing a HealthKit workout into activities
 
-**Framework**: Healthkit
+**Framework**: HealthKit
 
 Partition multisport and interval workouts into activities that represent the different parts of the workout.
 
@@ -188,4 +188,4 @@ This example returns all the workouts that have an activity with an average hear
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/dividing-a-healthkit-workout-into-activities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/dividing-a-healthkit-workout-into-activities)*

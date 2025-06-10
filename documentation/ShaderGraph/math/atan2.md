@@ -1,15 +1,23 @@
 # Atan2
 
-**Framework**: Shadergraph  
+**Framework**: ShaderGraph  
 **Kind**: subscript
 
 The arctangent of the expression (iny/inx) in radians.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
 
 #### Parameter Types
 
 #### Overview
 
-> **Note**: Atan2 follows the MaterialX specification parameter names which may differ from the implementation used by content creation applications.
+> **Note**: `Atan2` follows the MaterialX specification parameter names which may differ from the implementation used by content-creation apps.
 
 ## See Also
 

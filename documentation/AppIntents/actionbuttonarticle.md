@@ -1,6 +1,6 @@
 # Responding to the Action button on Apple Watch Ultra
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Use App Intents to register actions for your app.
 
@@ -467,4 +467,4 @@ Any logging from your intents appears in Xcode’s console. The system also paus
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/actionbuttonarticle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/actionbuttonarticle)*

@@ -18,8 +18,6 @@ case unixSocket(String)
 
 > ❗ **Important**:  The guest operating system needs to have a directory at `path` created in order for translation caching to operate correctly.
 
- The guest operating system needs to have a directory at `path` created in order for translation caching to operate correctly.
-
 ## Parameters
 
 - `path`: The path of the Unix Domain Socket for Rosetta to use.

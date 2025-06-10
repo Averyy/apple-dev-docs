@@ -36,8 +36,6 @@ The [`Developer Forums`](https://developer.apple.comhttps://developer.apple.com/
 
 > ❗ **Important**: Report all issues using Feedback Assistant. Discussing an issue on a Developer Forum is helpful as a second step after you report the issue.
 
-Report all issues using Feedback Assistant. Discussing an issue on a Developer Forum is helpful as a second step after you report the issue.
-
 If you identify a change in API behavior that reproduces on the older, non-beta OS, report the issue using [`Feedback Assistant`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/). Mention all OS versions that can reproduce the issue in your feedback, and also include a runnable Xcode project that demonstrates the issue. If you require assistance while investigating a workaround for the issue, [`Submit a Developer Technical Support Incident`](https://developer.apple.comhttps://developer.apple.com/support/technical/) to get help from Apple’s Developer Technical Support Group (DTS).
 
 ## See Also

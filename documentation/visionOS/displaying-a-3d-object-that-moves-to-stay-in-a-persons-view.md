@@ -1,6 +1,6 @@
 # Displaying an entity that follows a person’s view
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Create an entity that tracks and follows head movement in an immersive scene.
 

@@ -1,6 +1,6 @@
 # WKInterfacePaymentButton
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A button that you can use to trigger payments through Apple Pay.
@@ -76,4 +76,4 @@ Payment buttons can be used only to initiate Apple Pay transactions.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkinterfacepaymentbutton)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkinterfacepaymentbutton)*

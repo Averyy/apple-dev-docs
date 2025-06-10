@@ -1,6 +1,6 @@
 # parent
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The web frame’s parent web frame.

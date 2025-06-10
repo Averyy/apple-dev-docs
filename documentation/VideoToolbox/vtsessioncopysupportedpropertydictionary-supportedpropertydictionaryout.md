@@ -1,6 +1,6 @@
 # VTSessionCopySupportedPropertyDictionary(_:supportedPropertyDictionaryOut:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Retrieves a dictionary enumerating all the supported properties of a video toolbox session.

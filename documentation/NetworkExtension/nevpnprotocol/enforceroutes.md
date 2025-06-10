@@ -1,6 +1,6 @@
 # enforceRoutes
 
-**Framework**: Networkextension  
+**Framework**: Network Extension  
 **Kind**: property
 
 A Boolean value that indicates whether route rules for the tunnel take precedence over any locally defined routes.

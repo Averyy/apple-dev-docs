@@ -1,6 +1,6 @@
 # IOSurfaceCreateMachPort(_:)
 
-**Framework**: Iosurface  
+**Framework**: IOSurface  
 **Kind**: func
 
 Returns a mach_port_t that holds a reference to the IOSurface.

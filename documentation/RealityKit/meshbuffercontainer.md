@@ -10,6 +10,7 @@ Conforming objects contain a table of mesh buffers.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -46,7 +47,8 @@ protocol MeshBufferContainer
 
 ### Conforming Types
 - [MeshDescriptor](meshdescriptor.md)
-- [MeshResource.Part](meshresource/part.md)
+- [MeshResource.Part](meshresource/part-3q1vw.md)
+- [MeshResource.Part](meshresource/part-4ge48.md)
 
 ## See Also
 

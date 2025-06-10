@@ -138,4 +138,4 @@ When you import the `RegexBuilder` module, you can also create `Regex` instances
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/regex)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/regex)*

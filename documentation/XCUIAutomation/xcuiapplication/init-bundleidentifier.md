@@ -1,6 +1,6 @@
 # init(bundleIdentifier:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: init
 
 Creates a proxy for an application for the specified bundle identifier.

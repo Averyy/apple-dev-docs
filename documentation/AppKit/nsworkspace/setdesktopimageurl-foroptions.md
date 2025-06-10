@@ -1,6 +1,6 @@
 # setDesktopImageURL(_:for:options:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Sets the desktop image for the given screen to the image at the specified URL.

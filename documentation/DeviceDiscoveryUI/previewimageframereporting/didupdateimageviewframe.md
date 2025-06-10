@@ -5,6 +5,9 @@
 **Required**: Yes
 
 **Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
 - tvOS 16.0+
 
 ## Declaration

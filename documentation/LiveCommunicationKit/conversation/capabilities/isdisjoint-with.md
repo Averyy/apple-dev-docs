@@ -5,6 +5,13 @@
 
 Returns a Boolean value that indicates whether the set has no members in common with the given set.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift
@@ -19,7 +26,7 @@ func isDisjoint(with other: Self) -> Bool
 
 In the following example, the `employees` set is disjoint with the `visitors` set because no name appears in both sets.
 
-```swift
+```None
 let employees: Set = ["Alicia", "Bethany", "Chris", "Diana", "Eric"]
 let visitors: Set = ["Marcia", "Nathaniel", "Olivia"]
 print(employees.isDisjoint(with: visitors))

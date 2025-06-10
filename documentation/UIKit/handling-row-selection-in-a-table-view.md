@@ -1,6 +1,6 @@
 # Handling row selection in a table view
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Detect when a user taps a table view cell so your app can take the next indicated action.
 
@@ -114,4 +114,4 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/handling-row-selection-in-a-table-view)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/handling-row-selection-in-a-table-view)*

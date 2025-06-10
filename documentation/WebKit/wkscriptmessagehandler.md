@@ -1,6 +1,6 @@
 # WKScriptMessageHandler
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 An interface for receiving messages from JavaScript code running in a webpage.
@@ -62,4 +62,4 @@ To call your message handler from JavaScript, call the function `window.webkit.m
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/wkscriptmessagehandler)*
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/wkscriptmessagehandler)*

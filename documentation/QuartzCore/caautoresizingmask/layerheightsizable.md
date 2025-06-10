@@ -6,7 +6,7 @@
 The receiver’s height is flexible.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst 13.1+
 - macOS ?+
 
 ## Declaration

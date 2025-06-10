@@ -1,6 +1,6 @@
 # init(target:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: init
 
 Creates a new power alert for the target range.
@@ -10,6 +10,7 @@ Creates a new power alert for the target range.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

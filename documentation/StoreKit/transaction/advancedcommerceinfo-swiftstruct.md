@@ -46,6 +46,12 @@ struct AdvancedCommerceInfo
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [Transaction.OfferType](transaction/offertype-swift.struct.md)
+  The types of subscription offers for auto-renewable subscriptions.
 
 
 ---

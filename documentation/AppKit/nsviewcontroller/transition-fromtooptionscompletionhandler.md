@@ -1,6 +1,6 @@
 # transition(from:to:options:completionHandler:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Performs a transition between two sibling child view controllers of the view controller.

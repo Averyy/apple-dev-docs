@@ -41,6 +41,7 @@ Use these keys in the [`errors`](nsspeechsynthesizer/speechpropertykey/errors.md
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

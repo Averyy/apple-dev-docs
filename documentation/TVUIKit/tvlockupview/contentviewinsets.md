@@ -17,7 +17,7 @@ var contentViewInsets: NSDirectionalEdgeInsets { get set }
 
 #### Discussion
 
-Use negative values for positive spacing. The [`top`](https://developer.apple.com/documentation/AppKit/NSDirectionalEdgeInsets/top) and [`bottom`](https://developer.apple.com/documentation/AppKit/NSDirectionalEdgeInsets/bottom) values represent the spacing between the content view and the header and footer views, respectively. The [`leading`](https://developer.apple.com/documentation/AppKit/NSDirectionalEdgeInsets/leading) and [`trailing`](https://developer.apple.com/documentation/AppKit/NSDirectionalEdgeInsets/trailing) values represent the spacing between the content view and the lockup view. The default value is [`NSDirectionalEdgeInsetsZero`](https://developer.apple.com/documentation/AppKit/NSDirectionalEdgeInsetsZero).
+Use negative values for positive spacing. The [`top`](https://developer.apple.com/documentation/UIKit/NSDirectionalEdgeInsets/top) and [`bottom`](https://developer.apple.com/documentation/UIKit/NSDirectionalEdgeInsets/bottom) values represent the spacing between the content view and the header and footer views, respectively. The [`leading`](https://developer.apple.com/documentation/UIKit/NSDirectionalEdgeInsets/leading) and [`trailing`](https://developer.apple.com/documentation/UIKit/NSDirectionalEdgeInsets/trailing) values represent the spacing between the content view and the lockup view. The default value is [`zero`](https://developer.apple.com/documentation/UIKit/NSDirectionalEdgeInsets/zero).
 
 ## See Also
 

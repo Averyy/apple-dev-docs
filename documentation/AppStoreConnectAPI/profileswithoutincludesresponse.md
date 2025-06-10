@@ -22,6 +22,9 @@ object ProfilesWithoutIncludesResponse
   A response that contains a single Profiles resource.
 - [object ProfilesResponse](profilesresponse.md)
   A response that contains a list of Profiles resources.
+- [object ProfileBundleIdLinkageResponse](profilebundleidlinkageresponse.md)
+- [object ProfileCertificatesLinkagesResponse](profilecertificateslinkagesresponse.md)
+- [object ProfileDevicesLinkagesResponse](profiledeviceslinkagesresponse.md)
 
 
 ---

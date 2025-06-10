@@ -1,6 +1,6 @@
 # metric
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 The metric for the alert.

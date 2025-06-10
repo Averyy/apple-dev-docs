@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to erase a device.
+The command to remotely and immediately erase a device.
 
 **Availability**:
 - iOS 4.0+
@@ -12,8 +12,6 @@ The request dictionary to erase a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,9 +21,9 @@ object EraseDeviceCommand.Command
 
 ## Topics
 
-### Commands
+### Objects
 - [object EraseDeviceCommand.Command.ReturnToService](erasedevicecommand/command-data.dictionary/returntoservice-data.dictionary.md)
-  The configuration settings for Return to Service.
+  The configuration settings for return to service.
 
 
 ---

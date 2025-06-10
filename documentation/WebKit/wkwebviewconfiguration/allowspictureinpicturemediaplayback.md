@@ -1,6 +1,6 @@
 # allowsPictureInPictureMediaPlayback
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether HTML5 videos can play Picture in Picture.

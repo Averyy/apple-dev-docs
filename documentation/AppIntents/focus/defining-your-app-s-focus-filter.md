@@ -1,6 +1,6 @@
 # Defining your app’s Focus filter
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Customize your app’s behavior to reflect the device’s current Focus.
 

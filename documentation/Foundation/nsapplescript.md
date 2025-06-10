@@ -27,8 +27,6 @@ This class provides applications with the ability to
 
 > ❗ **Important**:  `NSAppleScript` provides the [`executeAppleEvent(_:error:)`](nsapplescript/executeappleevent(_:error:).md) method so that you can send an Apple event to invoke a handler in a script. (In an AppleScript script, a handler is the equivalent of a function.) However, you cannot use this method to send Apple events to other applications.
 
- `NSAppleScript` provides the [`executeAppleEvent(_:error:)`](nsapplescript/executeappleevent(_:error:).md) method so that you can send an Apple event to invoke a handler in a script. (In an AppleScript script, a handler is the equivalent of a function.) However, you cannot use this method to send Apple events to other applications.
-
 When you create an instance of `NSAppleScript` object, you can use a URL to specify a script that can be in either text or compiled form, or you can supply the script as a string. Should an error occur when compiling or executing the script, several of the methods return a dictionary containing error information. The keys for obtaining error information, such as [`errorMessage`](nsapplescript/errormessage.md), are described in the Constants section.
 
 See also NSAppleScript Additions Reference in the Application Kit framework, which defines a method that returns the syntax-highlighted source code for a script.

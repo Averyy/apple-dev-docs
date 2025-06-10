@@ -10,6 +10,7 @@ A component that contains a mesh and materials for the visual appearance of an e
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -46,8 +47,6 @@ Make different primitive shapes, like spheres with [`generateSphere(radius:)`](m
 
 > 💡 **Tip**: To load a USDZ or reality file to your app, use an entity initializer such as [`init(named:in:)`](entity/init(named:in:).md) or [`init(contentsOf:withName:)`](entity/init(contentsof:withname:).md).
 
-To load a USDZ or reality file to your app, use an entity initializer such as [`init(named:in:)`](entity/init(named:in:).md) or [`init(contentsOf:withName:)`](entity/init(contentsof:withname:).md).
-
 Use other components like [`CollisionComponent`](collisioncomponent.md), [`PhysicsBodyComponent`](physicsbodycomponent.md), [`PhysicsMotionComponent`](physicsmotioncomponent.md), and [`InputTargetComponent`](inputtargetcomponent.md) to make entities interactive and dynamic.
 
 ## Topics
@@ -61,14 +60,9 @@ Use other components like [`CollisionComponent`](collisioncomponent.md), [`Physi
 ### Configuring the materials
 - [var materials: [any Material]](modelcomponent/materials.md)
   The materials that define the model’s visual appearance.
-### Registering a component type
-- [static func registerComponent()](modelcomponent/registercomponent.md)
-  Registers a new component type.
 ### Modifying the bounding box for rendering
 - [var boundsMargin: Float](modelcomponent/boundsmargin.md)
   A margin applied to an entity’s bounding box that determines object visibility.
-### Default Implementations
-- [Component Implementations](modelcomponent/component-implementations.md)
 
 ## Relationships
 

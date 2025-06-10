@@ -1,6 +1,6 @@
 # Matching audio using the built-in microphone
 
-**Framework**: Shazamkit
+**Framework**: ShazamKit
 
 Use the audio stream from the microphone as the source for a ShazamKit session.
 
@@ -142,4 +142,4 @@ func match(_ catalog: SHCustomCatalog) throws {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ShazamKit/matching-audio-using-the-built-in-microphone)*
+*[View on Apple Developer](https://developer.apple.com/documentation/shazamkit/matching-audio-using-the-built-in-microphone)*

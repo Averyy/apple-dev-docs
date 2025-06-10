@@ -18,8 +18,6 @@ Create the UTF-8 string for version 1.0 if you compile your app with an SDK prio
 
 > ❗ **Important**:  You must use lowercase for the string representation of the nonce: [`SKStoreProductParameterAdNetworkNonce`](skstoreproductparameteradnetworknonce.md).
 
- You must use lowercase for the string representation of the nonce: [`SKStoreProductParameterAdNetworkNonce`](skstoreproductparameteradnetworknonce.md).
-
 Combine the values into a UTF-8 string with an invisible separator (`‘\u2063’`) between them, in the exact order shown:
 
 ```javascript

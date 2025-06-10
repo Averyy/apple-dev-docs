@@ -1,6 +1,6 @@
 # lowTemperatureTime
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The time at which the low temperature occurs on this day.

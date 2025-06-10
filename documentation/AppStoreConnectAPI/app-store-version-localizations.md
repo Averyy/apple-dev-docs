@@ -33,10 +33,12 @@ You can update the Promotional Text for your version at any time. Update other a
 - [Delete an App Store Version Localization](delete-v1-appstoreversionlocalizations-_id_.md)
   Delete a language from your version metadata.
 ### Getting Information from a Localization
-- [List All App Screenshot Sets for an App Store Version Localization](get-v1-appstoreversionlocalizations-_id_-appscreenshotsets.md)
-  List all screenshot sets for a specific localization.
 - [List All App Preview Sets for an App Store Version Localization](get-v1-appstoreversionlocalizations-_id_-apppreviewsets.md)
   List all app preview sets for a specific localization.
+- [List All App Screenshot Sets for an App Store Version Localization](get-v1-appstoreversionlocalizations-_id_-appscreenshotsets.md)
+  List all screenshot sets for a specific localization.
+- [GET /v1/appStoreVersionLocalizations/{id}/relationships/appPreviewSets](get-v1-appstoreversionlocalizations-_id_-relationships-apppreviewsets.md)
+- [GET /v1/appStoreVersionLocalizations/{id}/relationships/appScreenshotSets](get-v1-appstoreversionlocalizations-_id_-relationships-appscreenshotsets.md)
 ### Objects
 - [object AppStoreVersionLocalization](appstoreversionlocalization.md)
   The data structure that represent an App Store Version Localizations resource.
@@ -59,6 +61,8 @@ You can update the Promotional Text for your version at any time. Update other a
   Manage versions of your app that are available in App Store.
 - [Routing App Coverages](routing-app-coverages.md)
   Manage geographic coverage files for apps that use location to provide routing information.
+- [Accessibility declarations](accessibility-declarations.md)
+  Manage accessibility metadata for your apps per device family.
 
 
 ---

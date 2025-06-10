@@ -9,7 +9,7 @@ Specifies the external events that the view’s scene handles if the scene is al
 - iOS 14.0+
 - iPadOS 14.0+
 - macOS 11.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -30,16 +30,14 @@ When your app receives an event on a platform that supports multiple simultaneou
 
 > ❗ **Important**: Don’t confuse this view modifier with the `Scene/handlesExternalEvents(matching:)`  modifier. You use the view modifier to indicate that an open scene handles certain events, whereas you use the scene modifier to help SwiftUI choose a new scene to open when no open scene handles the event.
 
-Don’t confuse this view modifier with the `Scene/handlesExternalEvents(matching:)`  modifier. You use the view modifier to indicate that an open scene handles certain events, whereas you use the scene modifier to help SwiftUI choose a new scene to open when no open scene handles the event.
-
 On platforms that support only a single scene, SwiftUI ignores this modifier and sends all external events to the one open scene.
 
 ##### Matching an Event
 
 To find an open scene that handles a particular external event, SwiftUI compares a property of the event against the strings that you specify in the `preferring` and `allowing` sets. SwiftUI examines the following event properties to perform the comparison:
 
-- For an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity), like when your app handles Handoff, SwiftUI uses the activity’s [`targetContentIdentifier`](https://developer.apple.com/documentation/foundation/nsuseractivity/3238062-targetcontentidentifier) property, or if that’s `nil`, its [`webpageURL`](https://developer.apple.com/documentation/foundation/nsuseractivity/1418086-webpageurl) property rendered as an [`absoluteString`](https://developer.apple.com/documentation/foundation/url/1779984-absolutestring).
-- For a [`URL`](https://developer.apple.com/documentation/Foundation/URL), like when another process opens a URL that your app handles, SwiftUI uses the URL’s [`absoluteString`](https://developer.apple.com/documentation/foundation/url/1779984-absolutestring).
+- For an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity), like when your app handles Handoff, SwiftUI uses the activity’s [`targetContentIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/targetContentIdentifier) property, or if that’s `nil`, its [`webpageURL`](https://developer.apple.com/documentation/Foundation/NSUserActivity/webpageURL) property rendered as an [`absoluteString`](https://developer.apple.com/documentation/Foundation/URL/absoluteString).
+- For a [`URL`](https://developer.apple.com/documentation/Foundation/URL), like when another process opens a URL that your app handles, SwiftUI uses the URL’s [`absoluteString`](https://developer.apple.com/documentation/Foundation/URL/absoluteString).
 
 For both parameter sets, an empty set of strings never matches. Similarly, empty strings never match. Conversely, as a special case, the string that contains only an asterisk (`*`) matches anything. The modifier performs string comparisons that are case and diacritic insensitive.
 

@@ -1,6 +1,6 @@
 # pageController(_:prepare:with:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Prepare the view controller and it’s view for drawing.

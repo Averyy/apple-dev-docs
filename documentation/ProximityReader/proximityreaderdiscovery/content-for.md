@@ -1,6 +1,6 @@
 # content(for:)
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Fetches the content for the specified topic.

@@ -1,6 +1,6 @@
 # VTCompressionSessionEncodeMultiImageFrame(_:taggedBuffers:presentationTimeStamp:duration:frameProperties:infoFlagsOut:outputHandler:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Passes a multi-image frame to a compression session for encoding and provides a callback to handle the output.
@@ -29,8 +29,6 @@ The system doesn’t guarantee that encoded frames be output before the function
 You can’t call this function on a session created with a [`VTCompressionOutputCallback`](vtcompressionoutputcallback.md).
 
 > ❗ **Important**:  Don’t modify the pixel data after making this call.
-
- Don’t modify the pixel data after making this call.
 
 ## Parameters
 

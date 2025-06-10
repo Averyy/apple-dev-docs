@@ -1,6 +1,6 @@
 # init(input:configuration:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: init
 
 Creates a session from a sequence of samples.

@@ -26,7 +26,7 @@ A string representation of `date`.
 
 #### Discussion
 
-For more information about using [`DateFormatter`](dateformatter.md) to produce a string representation of a date, see [`Working With User-Visible Representations of Dates and Times`](dateformatter#Working-With-User-Visible-Representations-of-Dates-and-Times.md). For a sample code playground, see [`Displaying Human-Friendly Content`](formatter/displaying_human-friendly_content.md).
+For more information about using [`DateFormatter`](dateformatter.md) to produce a string representation of a date, see [`Working With User-Visible Representations of Dates and Times`](dateformatter#Working-With-User-Visible-Representations-of-Dates-and-Times.md). For a sample code playground, see [`Displaying Human-Friendly Content`](displaying_human-friendly_content.md).
 
 ## Parameters
 

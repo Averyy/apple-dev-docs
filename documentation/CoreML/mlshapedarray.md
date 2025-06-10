@@ -1,6 +1,6 @@
 # MLShapedArray
 
-**Framework**: Coreml  
+**Framework**: Core ML  
 **Kind**: struct
 
 A machine learning collection type that stores scalar values in a multidimensional array.
@@ -111,6 +111,7 @@ A shaped array’s [`shape`](mlmultiarray/shape.md) property is an integer array
 - [MutableCollection](../Swift/MutableCollection.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also
@@ -127,4 +128,4 @@ A shaped array’s [`shape`](mlmultiarray/shape.md) property is an integer array
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/mlshapedarray)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coreml/mlshapedarray)*

@@ -16,7 +16,7 @@ Returns the whole line of text that includes the specified point.
 ## Declaration
 
 ```swift
-func selectionForLine(at point: NSPoint) -> PDFSelection?
+func selectionForLine(at point: CGPoint) -> PDFSelection?
 ```
 
 #### Discussion

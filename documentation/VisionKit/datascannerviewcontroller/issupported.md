@@ -1,6 +1,6 @@
 # isSupported
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A Boolean value that indicates whether the device supports data scanning.
@@ -26,8 +26,6 @@ class var isSupported: Bool { get }
 For this property to be `true`, the device must have the A12 Bionic chip or later. This property is `false` for apps running in visionOS.
 
 > ❗ **Important**: If your app requires data scanning for its core functionality, you can make your app available only on devices that support data scanning. Add the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities) key to your app’s information property list and include the `iphone-ipad-minimum-performance-a12` subkey in the array of device capabilities.
-
-If your app requires data scanning for its core functionality, you can make your app available only on devices that support data scanning. Add the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities) key to your app’s information property list and include the `iphone-ipad-minimum-performance-a12` subkey in the array of device capabilities.
 
 ## See Also
 

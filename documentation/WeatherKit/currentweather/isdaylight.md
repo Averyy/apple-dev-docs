@@ -1,6 +1,6 @@
 # isDaylight
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A Boolean value indicating whether there is daylight.

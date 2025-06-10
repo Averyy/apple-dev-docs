@@ -9,7 +9,7 @@ Sets how often the shift key in the keyboard is automatically enabled.
 - iOS 15.0+
 - iPadOS 15.0+
 - tvOS 15.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 8.0+
 
 ## Declaration

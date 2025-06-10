@@ -25,16 +25,17 @@ Call [`status()`](storeandforwardpaymentcardreadersession/status().md) to get th
 
 ## Topics
 
+### Getting the status
+- [let expiration: Date](storeandforwardstatus/expiration.md)
+  The date when the Store and Forward session expires.
+- [let readCount: Int](storeandforwardstatus/readcount.md)
+  The number of successful reads the framework performed using a Store and Forward session.
 ### Operators
 - [static func == (StoreAndForwardStatus, StoreAndForwardStatus) -> Bool](storeandforwardstatus/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
-- [let expiration: Date](storeandforwardstatus/expiration.md)
-  The date when the Store and Forward session expires.
 - [var hashValue: Int](storeandforwardstatus/hashvalue.md)
   The hash value.
-- [let readCount: Int](storeandforwardstatus/readcount.md)
-  The number of successful reads the framework performed using a Store and Forward session.
 ### Instance Methods
 - [func hash(into: inout Hasher)](storeandforwardstatus/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
@@ -47,6 +48,18 @@ Call [`status()`](storeandforwardpaymentcardreadersession/status().md) to get th
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [struct StoreAndForwardBatch](storeandforwardbatch.md)
+  A structure that stores the data to send to the payment service provider to process.
+- [struct StoreAndForwardBatchDeletionToken](storeandforwardbatchdeletiontoken.md)
+  A secure token that you use to delete a Store and Forward batch.
+- [class StoreAndForwardPaymentCardReaderSession](storeandforwardpaymentcardreadersession.md)
+  The object you use to start reading a contactless payment or loyalty card in Store and Forward mode.
+- [struct PaymentCardReaderStore](paymentcardreaderstore.md)
+  A structure that manages the store that contains all the Store and Forward reads.
 
 
 ---

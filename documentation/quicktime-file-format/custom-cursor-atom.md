@@ -1,6 +1,6 @@
 # Custom cursor atom
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 An atom you use to replace the default cursors used by QuickTime VR.
 

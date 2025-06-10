@@ -11,13 +11,6 @@ This document describes the generic `CFStream` functions, data types, and consta
 3. Call [`CFReadStreamOpen(_:)`](cfreadstreamopen(_:).md) and [`CFWriteStreamOpen(_:)`](cfwritestreamopen(_:).md) to open each stream.
 4. Read only after receiving a [`hasBytesAvailable`](cfstreameventtype/hasbytesavailable.md) notification. Write only after receiving a [`canAcceptBytes`](cfstreameventtype/canacceptbytes.md) notification.
 
- When you use the `CFStream` API for networking, read and write operations on sockets can block. To prevent blocking:
-
-1. Call [`CFReadStreamSetClient(_:_:_:_:)`](cfreadstreamsetclient(_:_:_:_:).md) and [`CFWriteStreamSetClient(_:_:_:_:)`](cfwritestreamsetclient(_:_:_:_:).md) to register to receive stream-related event notifications.
-2. Call [`CFReadStreamScheduleWithRunLoop(_:_:_:)`](cfreadstreamschedulewithrunloop(_:_:_:).md) and [`CFWriteStreamScheduleWithRunLoop(_:_:_:)`](cfwritestreamschedulewithrunloop(_:_:_:).md) to schedule the stream on a run loop for receiving stream-related event notifications.
-3. Call [`CFReadStreamOpen(_:)`](cfreadstreamopen(_:).md) and [`CFWriteStreamOpen(_:)`](cfwritestreamopen(_:).md) to open each stream.
-4. Read only after receiving a [`hasBytesAvailable`](cfstreameventtype/hasbytesavailable.md) notification. Write only after receiving a [`canAcceptBytes`](cfstreameventtype/canacceptbytes.md) notification.
-
 ## Topics
 
 ### Creating Streams

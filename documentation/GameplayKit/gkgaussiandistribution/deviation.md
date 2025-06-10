@@ -1,6 +1,6 @@
 # deviation
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: property
 
 The standard deviation of the distribution (also called ).

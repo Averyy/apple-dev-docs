@@ -23,9 +23,11 @@ struct HistoryDescriptor<TransactionType> where TransactionType : HistoryTransac
 
 ### Initializers
 - [init(predicate: Predicate<TransactionType>?)](historydescriptor/init(predicate:).md)
+- [init(predicate: Predicate<TransactionType>?, sortBy: [SortDescriptor<TransactionType>])](historydescriptor/init(predicate:sortby:).md)
 ### Instance Properties
 - [var fetchLimit: UInt64](historydescriptor/fetchlimit.md)
 - [var predicate: Predicate<TransactionType>?](historydescriptor/predicate.md)
+- [var sortBy: [SortDescriptor<TransactionType>]](historydescriptor/sortby.md)
 
 
 ---

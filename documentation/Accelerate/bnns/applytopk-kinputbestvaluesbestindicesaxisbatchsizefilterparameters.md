@@ -24,8 +24,6 @@ static func applyTopK(k: Int, input: BNNSNDArrayDescriptor, bestValues: BNNSNDAr
 
 > ❗ **Important**:  The input data type and best values data type must be `float`, and the best indices data type must be `int32`.
 
- The input data type and best values data type must be `float`, and the best indices data type must be `int32`.
-
 ## Parameters
 
 - `k`: The number of entries the operation finds.

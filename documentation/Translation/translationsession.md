@@ -8,6 +8,7 @@ A class that performs translations between a pair of languages.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.0+
 
 ## Declaration
@@ -18,7 +19,9 @@ class TranslationSession
 
 #### Overview
 
-You don’t instantiate this class directly. Instead, you obtain an instance of it by adding a [`translationTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(_:action:)) or [`translationTask(source:target:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(source:target:action:)) function to the SwiftUI view containing the content you want to translate, such as a [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) view. When you do, the function passes you an instance of a translation session in its `action` closure which triggers as soon as the view appears. After you receive this instance, use one of the translate functions to translate one or more strings of text.
+In most cases you don’t instantiate this class directly. Instead, you obtain an instance of it by adding a [`translationTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(_:action:)) or [`translationTask(source:target:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(source:target:action:)) function to the SwiftUI view containing the content you want to translate, such as a [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) view. When you do, the function passes you an instance of a translation session in its `action` closure which triggers as soon as the view appears. After you receive this instance, use one of the translate functions to translate one or more strings of text.
+
+In contexts where there’s no SwiftUI view to present from, use the [`init(installedSource:target:)`](translationsession/init(installedsource:target:).md) initializer to attempt to translate between languages already installed on the device.
 
 The following example demonstrates how to translate a single string of text:
 
@@ -74,6 +77,17 @@ struct TranslationExample: View {
   The input language to translate from.
 - [let targetLanguage: Locale.Language?](translationsession/targetlanguage.md)
   The output language to translate into.
+### Initializers
+- [convenience init(installedSource: Locale.Language, target: Locale.Language?)](translationsession/init(installedsource:target:).md)
+  Create a `TranslationSession` to translate between a given source and target language already installed on the device.
+### Instance Properties
+- [var canRequestDownloads: Bool](translationsession/canrequestdownloads.md)
+  Whether this session is able to present UI to request downloading languages if they’re not already installed.
+- [var isReady: Bool](translationsession/isready.md)
+  Whether the source and target languages of this session are installed and ready for translation.
+### Instance Methods
+- [func cancel()](translationsession/cancel.md)
+  Attempt to stop all ongoing work for this session. Future requests will throw an error that the session is cancelled already.
 
 ## See Also
 
@@ -92,4 +106,4 @@ struct TranslationExample: View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Translation/translationsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/translation/translationsession)*

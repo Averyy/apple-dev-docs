@@ -1,6 +1,6 @@
 # WKDialogResult.handled
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A result that indicates the delegate displayed the first use message.

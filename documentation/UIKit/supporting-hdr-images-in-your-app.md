@@ -1,6 +1,6 @@
 # Supporting HDR images in your app
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 ​ Load, display, edit, and save HDR images using SwiftUI and Core Image. ​
 
@@ -89,4 +89,4 @@ guard let outputURL = try? output.renderedContentURL(for: .heic) else {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/supporting-hdr-images-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/supporting-hdr-images-in-your-app)*

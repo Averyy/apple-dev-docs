@@ -21,8 +21,8 @@ func sec_protocol_options_set_tls_pre_shared_key_identity_hint(_ options: sec_pr
 #### Discussion
 
 ```None
-  Set the PSK identity hint to use by servers when negotiating a PSK ciphersuite.
-  See https://tools.ietf.org/html/rfc4279 for more details.
+ Set the PSK identity hint to use by servers when negotiating a PSK ciphersuite.
+ See https://tools.ietf.org/html/rfc4279 for more details.
 ```
 
 ## Parameters

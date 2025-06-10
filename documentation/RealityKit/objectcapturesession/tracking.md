@@ -21,9 +21,6 @@ During an object capture, many factors contribute to the session’s ability to 
 
 ## Topics
 
-### Operators
-- [static func == (ObjectCaptureSession.Tracking, ObjectCaptureSession.Tracking) -> Bool](objectcapturesession/tracking/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [case limited(reason: ObjectCaptureSession.Tracking.Reason)](objectcapturesession/tracking/limited(reason:).md)
   Tracking is available but its quality is degraded. The ARKit coaching overlay will appear when [`cameraTracking`](objectcapturesession/cameratracking.md) enters this state.
@@ -34,8 +31,6 @@ During an object capture, many factors contribute to the session’s ability to 
 ### Enumerations
 - [ObjectCaptureSession.Tracking.Reason](objectcapturesession/tracking/reason.md)
   The reason that tracking quality has degraded.
-### Default Implementations
-- [Equatable Implementations](objectcapturesession/tracking/equatable-implementations.md)
 
 ## Relationships
 

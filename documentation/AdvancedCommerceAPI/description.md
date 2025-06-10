@@ -20,8 +20,6 @@ You provide a description of a SKU when you create or modify a purchase transact
 
 > ❗ **Important**: Don’t include any personal customer information in the description.
 
-Don’t include any personal customer information in the description.
-
 ## See Also
 
 - [type currency](currency.md)

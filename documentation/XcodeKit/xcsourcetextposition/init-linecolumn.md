@@ -1,6 +1,6 @@
 # init(line:column:)
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: init
 
 Creates a source text position at the specified line and column.

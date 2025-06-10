@@ -21,7 +21,7 @@ func intersection(_ textRange: NSTextRange) -> Self?
 
 #### Return Value
 
-An [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange) that represents the intersection of the ranges, or `nil` if they don’t intersect.
+An [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange-c.struct) that represents the intersection of the ranges, or `nil` if they don’t intersect.
 
 ## Parameters
 

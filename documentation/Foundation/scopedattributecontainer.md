@@ -35,6 +35,7 @@ Use a [`ScopedAttributeContainer`](scopedattributecontainer.md) when you need to
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

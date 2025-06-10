@@ -38,8 +38,6 @@ In the Project navigator, select a file in the list to view the code changes for
 
 > ⚠️ **Warning**: When you add a new file or delete an unused file, you must commit both the file and the Xcode project file (called `project.pbxproj`) together for your project to remain in a consistent state.
 
-When you add a new file or delete an unused file, you must commit both the file and the Xcode project file (called `project.pbxproj`) together for your project to remain in a consistent state.
-
 Document your changes with a commit message that describes what your commit accomplishes. Click the “Commit [] files” button to commit your changes, or click Cancel to continue working without committing to the repository. Xcode shows the commit message you provide when you look at the source control history.
 
 If you don’t want to commit any of your changes, and want to remove them, choose Source Control > Discard All Changes, and click Discard. Xcode removes all the current changes and restores your source files to the most recent commit.

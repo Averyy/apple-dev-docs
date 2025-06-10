@@ -16,7 +16,7 @@ optional func locationManager(_ manager: CLLocationManager, didUpdateTo newLocat
 
 #### Discussion
 
-By the time this message is delivered to your delegate, the new location data is also available directly from the [`CLLocationManager`](cllocationmanager.md) object. The `newLocation` parameter may contain the data that was cached from a previous usage of the location service. You can use the [`timestamp`](cllocation/timestamp.md) property of the location object to determine how recent the location data is.
+By the time this message is delivered to your delegate, the new location data is also available directly from the [`CLLocationManager`](cllocationmanager.md) object. The `newLocation` parameter may contain the data that was cached from a previous usage of the location service. You can use the `CLLocation/timestamp` property of the location object to determine how recent the location data is.
 
 ## Parameters
 

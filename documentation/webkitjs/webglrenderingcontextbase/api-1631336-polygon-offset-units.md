@@ -1,6 +1,6 @@
 # POLYGON_OFFSET_UNITS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

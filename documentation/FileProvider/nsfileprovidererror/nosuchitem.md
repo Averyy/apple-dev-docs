@@ -19,7 +19,7 @@ static var noSuchItem: NSFileProviderError.Code { get }
 
 #### Discussion
 
-Use [`fileProviderErrorForNonExistentItem(withIdentifier:)`](https://developer.apple.com/documentation/foundation/nserror/2915899-fileprovidererrorfornonexistenti) to create properly formatted [`noSuchItem`](nsfileprovidererror/nosuchitem.md) errors.
+Use [`fileProviderErrorForNonExistentItem(withIdentifier:)`](https://developer.apple.com/documentation/Foundation/NSError/fileProviderErrorForNonExistentItem(withIdentifier:)) to create properly formatted [`noSuchItem`](nsfileprovidererror/nosuchitem.md) errors.
 
 ## See Also
 

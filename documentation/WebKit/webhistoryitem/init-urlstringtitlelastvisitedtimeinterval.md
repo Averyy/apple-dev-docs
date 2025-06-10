@@ -1,6 +1,6 @@
 # init(urlString:title:lastVisitedTimeInterval:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Initializes the receiver with a URL,`URLString`, a title specified by `title` and the last time this item was visited specified by `time` title, and time last visited.

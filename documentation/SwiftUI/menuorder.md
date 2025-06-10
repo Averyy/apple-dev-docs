@@ -40,6 +40,7 @@ You can configure the preferred menu order using the [`menuOrder(_:)`](view/menu
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

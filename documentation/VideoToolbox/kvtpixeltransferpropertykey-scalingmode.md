@@ -1,6 +1,6 @@
 # kVTPixelTransferPropertyKey_ScalingMode
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Scaling mode for images during transfer between source and destination buffers.

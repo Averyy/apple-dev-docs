@@ -1,6 +1,6 @@
 # TipKit
 
-**Framework**: Tipkit  
+**Framework**: TipKit  
 **Kind**: module
 
 Display tips that help people discover features in your app.
@@ -25,6 +25,8 @@ Define your tip content, and the conditions under which they appear, with the [`
 As you design tips for your app, ensure you don’t overwhelm your users. Use tips sparingly to highlight nonobvious features people haven’t discovered on their own. Similarly, avoid displaying tips each time someone uses your app. Tips can become distracting when they appear unnecessarily. Don’t use tips to guide people through your app, or for advertising and promotion purposes.
 
 For design guidance on tips, see [`Human Interface Guidelines > Offering help`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/offering-help).
+
+> **Note**: Session 10070: [`Customize feature discovery with TipKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10070/)
 
 > **Note**: Session 10229: [`Make features discoverable with TipKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10229/)
 
@@ -99,7 +101,7 @@ struct LandmarkTips: App {
 ### Views
 - [struct TipView](tipview.md)
   A user interface element that represents an inline tip.
-- [@MainActor @preconcurrency func popoverTip(_ tip: (any Tip)?, arrowEdge: Edge? = nil, action: @escaping (Tips.Action) -> Void = { _ in }) -> some View
+- [@preconcurrency nonisolated func popoverTip(_ tip: (any Tip)?, arrowEdge: Edge? = nil, action: @escaping @MainActor (Tips.Action) -> Void = { _ in }) -> some View
 ](../SwiftUI/View/popoverTip(_:arrowEdge:action:).md)
   Presents a popover tip on the modified view.
 ### UIKit Views
@@ -124,7 +126,7 @@ struct LandmarkTips: App {
 - [struct Event](tips/event.md)
   A repeatable user-defined action.
 ### View Style
-- [@MainActor @preconcurrency func tipViewStyle(_ style: some TipViewStyle) -> some View
+- [nonisolated func tipViewStyle(_ style: some TipViewStyle) -> some View
 ](../SwiftUI/View/tipViewStyle(_:).md)
   Sets the given style for TipView within the view hierarchy.
 - [protocol TipViewStyle](tipviewstyle.md)
@@ -144,12 +146,11 @@ struct LandmarkTips: App {
   Hide specified tips regardless of their display rule eligibility for UI testing without certain tips.
 - [static func resetDatastore() throws](tips/resetdatastore.md)
   Resets the tips’ datastore to the initial state for re-testing tip display rules and eligibility.
-### Errors
-- [struct TipKitError](tipkiterror.md)
-  A localized tip kit error.
 ### Common types
 - [struct AnyTip](anytip.md)
   A type-erased tip value.
+- [struct TipKitError](tipkiterror.md)
+  A localized tip kit error.
 - [protocol TipOption](tipoption.md)
   A type that represents the various customizations that you can make to a tip’s behavior.
 ### Enumerations

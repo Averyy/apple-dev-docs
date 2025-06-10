@@ -1,6 +1,6 @@
 # SVG_TRANSFORM_SKEWY
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

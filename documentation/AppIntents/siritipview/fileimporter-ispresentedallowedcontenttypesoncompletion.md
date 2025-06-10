@@ -1,6 +1,6 @@
 # fileImporter(isPresented:allowedContentTypes:onCompletion:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Presents a system interface for allowing the user to import an existing file.
@@ -9,7 +9,7 @@ Presents a system interface for allowing the user to import an existing file.
 - iOS 14.0+
 - iPadOS 14.0+
 - macOS 11.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

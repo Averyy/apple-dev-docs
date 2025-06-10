@@ -1,6 +1,6 @@
 # batchSize
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: property
 
 The number of examples in each training batch.
@@ -27,4 +27,4 @@ var batchSize: Int
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/lineartimeseriesforecasterconfiguration/batchsize)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/lineartimeseriesforecasterconfiguration/batchsize)*

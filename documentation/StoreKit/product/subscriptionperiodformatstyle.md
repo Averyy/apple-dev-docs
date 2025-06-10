@@ -1,6 +1,6 @@
 # subscriptionPeriodFormatStyle
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: property
 
 The format style for the date components related to a subscription’s duration.

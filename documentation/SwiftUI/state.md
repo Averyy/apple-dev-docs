@@ -1,6 +1,6 @@
 # State
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A property wrapper type that can read and write a value managed by SwiftUI.
@@ -23,9 +23,9 @@ A property wrapper type that can read and write a value managed by SwiftUI.
 
 ## Mentions
 
-- [Managing user interface state](managing-user-interface-state.md)
 - [Performing a search operation](performing-a-search-operation.md)
 - [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
+- [Managing user interface state](managing-user-interface-state.md)
 
 #### Overview
 
@@ -245,6 +245,7 @@ struct BookEditorView: View {
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -258,4 +259,4 @@ struct BookEditorView: View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/state)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/state)*

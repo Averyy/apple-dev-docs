@@ -44,7 +44,7 @@
   Returns a Boolean value indicating whether the sequence precedes another sequence in a lexicographical (dictionary) ordering, using the given predicate to compare elements.
 - [func makeIterator() -> EnumeratedSequence<Base>.Iterator](enumeratedsequence/makeiterator.md)
   Returns an iterator over the elements of this sequence.
-- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](enumeratedsequence/map(_:).md)
+- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](enumeratedsequence/map(_:)-2mfl2.md)
   Returns an array containing the results of mapping the given closure over the sequence’s elements.
 - [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](enumeratedsequence/max(by:).md)
   Returns the maximum element in the sequence, using the given predicate as the comparison between elements.

@@ -9,7 +9,7 @@ An object that generates a 3D asset from room-capture data.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -34,13 +34,13 @@ Your app generates a detailed captured room object by calling [`capturedRoom(fro
 - [init(options: RoomBuilder.ConfigurationOptions)](roombuilder/init(options:).md)
   Creates a room builder using the specified options.
 - [RoomBuilder.ConfigurationOptions](roombuilder/configurationoptions.md)
-  The configuration options for the RoomBuilder
+  Options that configure a room builder.
 ### Processing a prior scan
 - [func capturedRoom(from: CapturedRoomData) async throws -> CapturedRoom](roombuilder/capturedroom(from:).md)
-  Begins the 3D model generation process
+  Processes the specified raw scan results and returns a detailed representation of the room.
 ### Handling errors
 - [RoomBuilder.BuildError](roombuilder/builderror.md)
-  3D model generation failures
+  Errors that can occur during captured room-data processing.
 
 ## See Also
 

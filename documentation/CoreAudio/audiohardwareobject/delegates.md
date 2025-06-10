@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-var delegates: [any PropertyListenerDelegate]
+var delegates: [any PropertyListenerDelegate] { get set }
 ```
 
 

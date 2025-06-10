@@ -1,6 +1,6 @@
 # VTCopyVideoEncoderList(_:_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Builds a list of available video encoders.

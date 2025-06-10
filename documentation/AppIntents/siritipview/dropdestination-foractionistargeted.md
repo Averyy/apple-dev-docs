@@ -9,7 +9,7 @@ Defines the destination of a drag and drop operation that handles the dropped co
 - iOS 16.0+
 - iPadOS 16.0+
 - macOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

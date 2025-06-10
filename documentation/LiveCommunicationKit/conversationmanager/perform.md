@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: method
 
-Instructs the `ConversationManager` to asynchronously perform the given actions.
+Tells the conversation manager to asynchronously perform actions for a conversation.
 
 **Availability**:
 - iOS 17.4+
@@ -20,7 +20,12 @@ final func perform(_ actions: [ConversationAction]) async throws
 
 ## Parameters
 
-- `actions`: An array of   to perform.
+- `actions`: An array of actions to perform for a conversation.
+
+## See Also
+
+- [func invalidate()](conversationmanager/invalidate.md)
+  Invalidates the conversation manager, ends all conversations, and fails all pending concersation actions.
 
 
 ---

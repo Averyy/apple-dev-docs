@@ -40,6 +40,12 @@ The default value is `nil`, displaying the `Text` without any case changes.
   Modifies the fonts of all child views to use the fixed-width variant of the current font, if possible.
 - [func monospacedDigit() -> some View](view/monospaceddigit.md)
   Modifies the fonts of all child views to use fixed-width digits, if possible, while leaving other characters proportionally spaced.
+- [protocol AttributedTextFormattingDefinition](attributedtextformattingdefinition.md)
+  A protocol for defining how text can be styled in a certain context, e.g. a `TextEditor`.
+- [protocol AttributedTextValueConstraint](attributedtextvalueconstraint.md)
+  A protocol for defining a constraint on the value of a certain attribute.
+- [enum AttributedTextFormatting](attributedtextformatting.md)
+  A namespace for types related to attributed text formatting definitions.
 
 
 ---

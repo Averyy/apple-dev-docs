@@ -32,6 +32,7 @@ For more information about the response that includes this alternative distribut
   A response that contains a list of alternative distribution keys.
 - [object AlternativeDistributionKeyCreateRequest](alternativedistributionkeycreaterequest.md)
   The request body you use to create an alternative distribution key.
+- [object AppAlternativeDistributionKeyLinkageResponse](appalternativedistributionkeylinkageresponse.md)
 
 
 ---

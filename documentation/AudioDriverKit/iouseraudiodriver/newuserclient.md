@@ -20,7 +20,7 @@ kern_return_t NewUserClient(uint32_t in_type, IOUserClient * * out_user_client);
 
 #### Discussion
 
-Override this method if your service supports communication though an external user client. When an app calls [`IOServiceOpen(_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514515-ioserviceopen) to start a new service, the system calls this method on the service passed to that function. In your implementation, call the [`Create`](https://developer.apple.com/documentation/driverkit/ioservice/3325579-create) method to create a new [`IOUserClient`](https://developer.apple.com/documentation/DriverKit/IOUserClient) object for your service and return that object in the `userClient` parameter.
+Override this method if your service supports communication though an external user client. When an app calls [`IOServiceOpen(_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514515-ioserviceopen) to start a new service, the system calls this method on the service passed to that function. In your implementation, call the [`Create`](https://developer.apple.com/documentation/DriverKit/IOService/Create) method to create a new [`IOUserClient`](https://developer.apple.com/documentation/DriverKit/IOUserClient) object for your service and return that object in the `userClient` parameter.
 
 ## Parameters
 

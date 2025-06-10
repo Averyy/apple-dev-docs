@@ -1,6 +1,6 @@
 # Sharing Core Data objects between iCloud users
 
-**Framework**: Coredata
+**Framework**: Core Data
 
 Use Core Data and CloudKit to synchronize data between devices of an iCloud user and share data between different iCloud users.
 
@@ -214,4 +214,4 @@ self.persistentContainer.persistUpdatedShare(share, in: persistentStore) { (shar
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/sharing-core-data-objects-between-icloud-users)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/sharing-core-data-objects-between-icloud-users)*

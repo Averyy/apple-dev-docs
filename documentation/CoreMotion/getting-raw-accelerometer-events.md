@@ -14,8 +14,6 @@ You access the raw accelerometer data using the classes of the Core Motion frame
 
 > ❗ **Important**:  If your app relies on the presence of accelerometer hardware, configure the `UIRequiredDeviceCapabilities` key of its `Info.plist` file with the `accelerometer` value. For more information about the meaning of this key, see [`Information Property List Key Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/).
 
- If your app relies on the presence of accelerometer hardware, configure the `UIRequiredDeviceCapabilities` key of its `Info.plist` file with the `accelerometer` value. For more information about the meaning of this key, see [`Information Property List Key Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/).
-
 For information about the coordinate axes of different device types, see [`CMMotionManager`](cmmotionmanager.md).
 
 ##### Check for the Availability of Accelerometer Data
@@ -23,8 +21,6 @@ For information about the coordinate axes of different device types, see [`CMMot
 Accelerometer data might be unavailable for a variety of reasons, so verify that the data is available before you try to obtain it. Check the value of the [`isAccelerometerAvailable`](cmmotionmanager/isaccelerometeravailable.md) property of `CMMotionManager` and make sure it’s `true`. If it’s `false`, starting updates doesn’t deliver any data to your app.
 
 > ❗ **Important**:  In visionOS, accelerometer data is available only when your app has an open immersive space. For more information, see [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace).
-
- In visionOS, accelerometer data is available only when your app has an open immersive space. For more information, see [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace).
 
 ##### Get Accelerometer Data Only When You Need It
 

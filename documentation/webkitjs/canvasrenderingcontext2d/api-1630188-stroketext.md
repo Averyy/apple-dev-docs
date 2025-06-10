@@ -1,6 +1,6 @@
 # strokeText
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Draws a line of text in outline at the specified x,y coordinates, optionally limited to a specified maximum width.

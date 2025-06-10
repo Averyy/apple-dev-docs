@@ -1,6 +1,6 @@
 # webExtensionController(_:connectUsing:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when an extension context wants to establish a persistent connection to an application.

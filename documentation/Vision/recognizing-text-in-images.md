@@ -114,4 +114,4 @@ Enabling language correction on the request helps minimize common recognition er
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/recognizing-text-in-images)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/recognizing-text-in-images)*

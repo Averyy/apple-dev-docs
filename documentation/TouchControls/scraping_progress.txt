@@ -1,0 +1,4 @@
+Completed scraping Touch Controls!
+Total pages scraped: 359
+Pages skipped (unchanged): 1
+Pages failed: 0

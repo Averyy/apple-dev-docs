@@ -52,6 +52,8 @@ If your app supports audio input, configure your audio session for recording onl
 
 ## See Also
 
+- [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
+  Find out how to bring the new material to your app.
 - [UIKit updates](../Updates/UIKit.md)
   Learn about important changes to UIKit.
 - [About App Development with UIKit](about-app-development-with-uikit.md)

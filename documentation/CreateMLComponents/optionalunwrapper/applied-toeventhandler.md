@@ -1,6 +1,6 @@
 # applied(to:eventHandler:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Unwraps an optional element or throws if the value is `nil`.

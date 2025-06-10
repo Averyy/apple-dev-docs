@@ -37,4 +37,4 @@ In cases where your app can’t handle the provided phone number, you can config
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Messages/preparing-your-app-to-be-the-default-messaging-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/messages/preparing-your-app-to-be-the-default-messaging-app)*

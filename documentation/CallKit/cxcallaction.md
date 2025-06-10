@@ -30,6 +30,7 @@ The CallKit framework provides the following concrete [`CXCallAction`](cxcallact
 | [`CXSetHeldCallAction`](cxsetheldcallaction.md) | Places a call on hold or removes a call from hold. |
 | [`CXSetGroupCallAction`](cxsetgroupcallaction.md) | Groups a call with another call or removes a call from a group. |
 | [`CXSetMutedCallAction`](cxsetmutedcallaction.md) | Mutes or unmutes a call. |
+| [`CXSetTranslatingCallAction`](cxsettranslatingcallaction.md) | Starts or stops call translation. |
 | [`CXPlayDTMFCallAction`](cxplaydtmfcallaction.md) | Plays a DTMF (dual tone multifrequency) tone sequence on a call. |
 
 To perform one or more actions, you add them to a new [`CXTransaction`](cxtransaction.md) object and pass the transaction to an instance of [`CXCallController`](cxcallcontroller.md) using the [`request(_:completion:)`](cxcallcontroller/request(_:completion:).md) method. After each action is performed by the telephony provider, the provider’s delegate calls either the [`CXCallAction`](cxcallaction.md) method, indicating that the action was successfully performed, or the [`CXCallAction`](cxcallaction.md) method, to indicate that an error occurred; both of these methods set the [`CXCallAction`](cxcallaction.md) property of the action to [`true`](https://developer.apple.com/documentation/swift/true).
@@ -56,6 +57,7 @@ To perform one or more actions, you add them to a new [`CXTransaction`](cxtransa
 - [CXSetGroupCallAction](cxsetgroupcallaction.md)
 - [CXSetHeldCallAction](cxsetheldcallaction.md)
 - [CXSetMutedCallAction](cxsetmutedcallaction.md)
+- [CXSetTranslatingCallAction](cxsettranslatingcallaction.md)
 - [CXStartCallAction](cxstartcallaction.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
@@ -82,6 +84,8 @@ To perform one or more actions, you add them to a new [`CXTransaction`](cxtransa
   An encapsulation of the act of placing a call on hold or removing a call from hold.
 - [class CXSetMutedCallAction](cxsetmutedcallaction.md)
   An encapsulation of the act of muting or unmuting a call.
+- [class CXSetTranslatingCallAction](cxsettranslatingcallaction.md)
+  An encapsulation of the act of translating a call.
 
 
 ---

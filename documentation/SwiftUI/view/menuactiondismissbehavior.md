@@ -21,6 +21,10 @@ nonisolated
 func menuActionDismissBehavior(_ behavior: MenuActionDismissBehavior) -> some View
 ```
 
+## Mentions
+
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+
 #### Return Value
 
 A view that has the specified menu dismissal behavior.

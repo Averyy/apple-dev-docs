@@ -1,6 +1,6 @@
 # xpc_array_get_dictionary(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the dictionary at the specified index in the array.

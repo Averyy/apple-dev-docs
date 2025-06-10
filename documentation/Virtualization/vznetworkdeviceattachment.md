@@ -26,6 +26,7 @@ Don’t create a [`VZNetworkDeviceAttachment`](vznetworkdeviceattachment.md) obj
 - [VZBridgedNetworkDeviceAttachment](vzbridgednetworkdeviceattachment.md)
 - [VZFileHandleNetworkDeviceAttachment](vzfilehandlenetworkdeviceattachment.md)
 - [VZNATNetworkDeviceAttachment](vznatnetworkdeviceattachment.md)
+- [VZVmnetNetworkDeviceAttachment](vzvmnetnetworkdeviceattachment.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -42,6 +43,8 @@ Don’t create a [`VZNetworkDeviceAttachment`](vznetworkdeviceattachment.md) obj
   A network device that transmits raw network packets and frames using a datagram socket.
 - [class VZNATNetworkDeviceAttachment](vznatnetworkdeviceattachment.md)
   A device that routes network requests through the host computer and performs network address translation on the resulting packets.
+- [class VZVmnetNetworkDeviceAttachment](vzvmnetnetworkdeviceattachment.md)
+  A network device attachment that allows a custom network topology.
 
 
 ---

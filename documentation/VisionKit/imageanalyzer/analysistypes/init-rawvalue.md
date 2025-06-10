@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: init
 
 Creates an analysis type with the given value.

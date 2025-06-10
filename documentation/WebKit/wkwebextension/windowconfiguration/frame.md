@@ -1,6 +1,6 @@
 # frame
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the frame where the window should be positioned on the main screen.

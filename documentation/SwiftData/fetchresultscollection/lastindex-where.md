@@ -1,6 +1,6 @@
 # lastIndex(where:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns the index of the last element in the collection that matches the given predicate.

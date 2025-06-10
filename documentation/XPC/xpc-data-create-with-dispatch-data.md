@@ -1,6 +1,6 @@
 # xpc_data_create_with_dispatch_data(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates an XPC object that represents a buffer of bytes that the specified GCD data object describes.

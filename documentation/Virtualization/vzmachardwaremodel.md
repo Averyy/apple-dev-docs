@@ -16,8 +16,8 @@ class VZMacHardwareModel
 
 ## Mentions
 
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
 - [Using iCloud with macOS virtual machines](using-icloud-with-macos-virtual-machines.md)
+- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
 
 #### Overview
 

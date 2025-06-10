@@ -45,6 +45,12 @@ SMS and Call Reporting provides app extensions to manage unwanted communication.
   The entry point that provides access to a collection of functions that help manage the state of the Live Caller ID Lookup app extension.
 ### Macros
 - [Macros](macros.md)
+### Type Aliases
+- [typealias BlockingInfoCoreDataPropertiesSet](blockinginfocoredatapropertiesset.md)
+- [typealias IdentityInfoCoreDataPropertiesSet](identityinfocoredatapropertiesset.md)
+- [typealias LiveLookupDBExtensionCoreDataPropertiesSet](livelookupdbextensioncoredatapropertiesset.md)
+- [typealias LiveLookupStoreCoreDataFrameworkManagedObject](livelookupstorecoredataframeworkmanagedobject.md)
+- [typealias LiveLookupStoreFoundationFrameworkSet](livelookupstorefoundationframeworkset.md)
 
 
 ---

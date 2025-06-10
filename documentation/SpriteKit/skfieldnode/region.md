@@ -17,7 +17,6 @@ The area (relative to the node’s origin) that the field affects.
 ## Declaration
 
 ```swift
-@MainActor
 var region: SKRegion? { get set }
 ```
 

@@ -31,6 +31,7 @@ object BetaAppLocalizationUpdateRequest
 - [object BetaAppLocalizationsWithoutIncludesResponse](betaapplocalizationswithoutincludesresponse.md)
 - [object BetaAppLocalizationsResponse](betaapplocalizationsresponse.md)
   A response that contains a list of Beta App Localization resources.
+- [object BetaAppLocalizationAppLinkageResponse](betaapplocalizationapplinkageresponse.md)
 
 
 ---

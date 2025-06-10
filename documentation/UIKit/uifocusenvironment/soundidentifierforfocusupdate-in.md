@@ -31,8 +31,6 @@ If you do not implement this method, the system assumes a `nil` return value. If
 
 > ❗ **Important**:  You must register custom sounds before returning the associated identifiers from this method. Returning an identifier that is unknown to UIKit will result in an assertion failure and an immediate crash.
 
- You must register custom sounds before returning the associated identifiers from this method. Returning an identifier that is unknown to UIKit will result in an assertion failure and an immediate crash.
-
 ## Parameters
 
 - `context`: The context object associated with the update.

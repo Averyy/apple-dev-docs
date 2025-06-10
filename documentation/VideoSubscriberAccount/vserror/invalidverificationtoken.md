@@ -1,6 +1,6 @@
 # invalidVerificationToken
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The user’s subscription provider rejected the verification token that the app sent with the request.

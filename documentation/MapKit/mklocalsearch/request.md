@@ -12,6 +12,7 @@ The parameters to use when searching for points of interest on the map.
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 
@@ -34,6 +35,11 @@ If your app uses an [`MKLocalSearchCompleter`](mklocalsearchcompleter.md) object
   Creates a local search request.
 - [init(completion: MKLocalSearchCompletion)](mklocalsearch/request/init(completion:).md)
   Creates and returns a search request based on the specified search completion data.
+### Initializing a natural language search request
+- [convenience init(naturalLanguageQuery: String)](mklocalsearch/request/init(naturallanguagequery:).md)
+  Initializes and returns a local search request based on the provided string.
+- [convenience init(naturalLanguageQuery: String, region: MKCoordinateRegion)](mklocalsearch/request/init(naturallanguagequery:region:).md)
+  Initializes and returns a local search request based on the provided string and region.
 ### Configuring the search parameters
 - [var addressFilter: MKAddressFilter?](mklocalsearch/request/addressfilter.md)
   A filter that lists which address options to include or exclude in search results.

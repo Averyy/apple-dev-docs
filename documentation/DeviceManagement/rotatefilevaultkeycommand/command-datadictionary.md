@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to change the FileVault primary password on a device.
+The command to change the FileVault primary password on a device.
 
 **Availability**:
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,7 +16,7 @@ object RotateFileVaultKeyCommand.Command
 
 ## Topics
 
-### Commands
+### Objects
 - [object RotateFileVaultKeyCommand.Command.FileVaultUnlock](rotatefilevaultkeycommand/command-data.dictionary/filevaultunlock-data.dictionary.md)
   A dictionary that contains FileVault unlock options.
 

@@ -20,7 +20,7 @@ static func unitPoint(_ p: UnitPoint) -> Anchor<Value>.Source
 
 ## See Also
 
-- [static func point(CGPoint) -> Anchor<Value>.Source](anchor/source/point(_:).md)
+- [static point(_:)](anchor/source/point(_:).md)
 
 
 ---

@@ -1,6 +1,6 @@
 # fitted(to:eventHandler:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Fits a fully-connected network multi-label classifier model to a sequence of examples.

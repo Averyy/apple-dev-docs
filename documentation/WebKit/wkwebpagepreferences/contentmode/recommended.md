@@ -1,6 +1,6 @@
 # WKWebpagePreferences.ContentMode.recommended
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 The content mode that is appropriate for the current device.

@@ -1,6 +1,6 @@
 # makeUntitledDocument(ofType:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Instantiates a new untitled document of the specified type and returns it if successful.

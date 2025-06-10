@@ -10,6 +10,7 @@ An object that defines the specular highlights of an entity.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -44,8 +45,6 @@ Use this object to specify the amount of [`specular`](physicallybasedmaterial/sp
   The intended use of the object’s texture property.
 - [var scale: Float](physicallybasedmaterial/specular-swift.struct/scale.md)
   The amount of specular for the entire entity.
-- [PhysicallyBasedMaterial.Specular.FloatLiteralType](physicallybasedmaterial/specular-swift.struct/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 ## Relationships
 

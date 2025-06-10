@@ -1,6 +1,6 @@
 # accessibilityHint(_:isEnabled:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Communicates to the user what happens after performing the view’s action.

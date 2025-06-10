@@ -1,6 +1,6 @@
 # orientation
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The orientation of the device.

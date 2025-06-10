@@ -1,6 +1,6 @@
 # init(identifier:content:trigger:)
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: init
 
 Creates a notification request object that you use to schedule a notification.

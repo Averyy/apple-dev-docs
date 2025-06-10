@@ -1,6 +1,6 @@
 # DOM_INVALID_ACCESS_ERR
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

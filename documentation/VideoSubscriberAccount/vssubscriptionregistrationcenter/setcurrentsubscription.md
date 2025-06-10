@@ -1,6 +1,6 @@
 # setCurrentSubscription(_:)
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: method
 
 Sets the subscription information for the current user.

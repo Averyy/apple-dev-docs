@@ -1,6 +1,6 @@
 # flatMap(_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns an array containing the concatenated results of calling the given transformation with each element of this sequence.

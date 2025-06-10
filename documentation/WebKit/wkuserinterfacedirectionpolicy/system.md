@@ -1,6 +1,6 @@
 # WKUserInterfaceDirectionPolicy.system
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 The directionality follows the view’s user interface layout direction.

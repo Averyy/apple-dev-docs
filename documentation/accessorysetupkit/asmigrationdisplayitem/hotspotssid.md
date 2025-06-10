@@ -23,6 +23,8 @@ var hotspotSSID: String? { get set }
 
 - [var peripheralIdentifier: UUID?](asmigrationdisplayitem/peripheralidentifier.md)
   The Bluetooth identifier of the accessory to migrate.
+- [var wifiAwarePairedDeviceID: ASAccessory.WiFiAwarePairedDeviceID](asmigrationdisplayitem/wifiawarepaireddeviceid.md)
+  The Wi-Fi Aware paired device identififer of the accessory to migrate.
 
 
 ---

@@ -25,6 +25,9 @@ struct NSFileProviderModifyItemOptions
 ### Creating Modify Options
 - [init(rawValue: UInt)](nsfileprovidermodifyitemoptions/init(rawvalue:).md)
   Creates an option instance from the raw value.
+### Type Properties
+- [static var failOnConflict: NSFileProviderModifyItemOptions](nsfileprovidermodifyitemoptions/failonconflict.md)
+  If the base version of the item trying to be uploaded doesn’t match the version of the file on server, the call to modifyItem should fail with a NSFileProviderErrorLocalVersionConflictingWithServer error.
 
 ## Relationships
 
@@ -35,6 +38,7 @@ struct NSFileProviderModifyItemOptions
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

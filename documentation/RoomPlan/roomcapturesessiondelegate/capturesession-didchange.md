@@ -10,7 +10,7 @@ Notifies the delegate when the session changes the dimensions and the transform 
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -26,9 +26,9 @@ func captureSession(_ session: RoomCaptureSession, didChange room: CapturedRoom)
 ## See Also
 
 - [func captureSession(RoomCaptureSession, didAdd: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didadd:).md)
-  session has newly added surfaces and objects
+  Notifies the delegate of newly added surfaces and objects.
 - [func captureSession(RoomCaptureSession, didRemove: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didremove:).md)
-  session has recently removed surfaces and objects
+  Notifies the delegate when the session removes surfaces and objects.
 - [func captureSession(RoomCaptureSession, didUpdate: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didupdate:).md)
   Notifies the delegate when the session updates the scan results.
 

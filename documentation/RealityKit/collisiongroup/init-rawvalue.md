@@ -10,6 +10,7 @@ Creates a collision group from a raw value.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -34,15 +35,6 @@ let yellowGroup = CollisionGroup(rawValue: 1 << 3)
 ## Parameters
 
 - `rawValue`: The raw value of the option set to create. Each bit of   rawValue potentially represents an element of the option set, though raw   values may include bits that are not defined as distinct values of the   OptionSet type.
-
-## See Also
-
-- [init()](collisiongroup/init.md)
-  Creates an empty option set.
-- [init<S>(S)](collisiongroup/init(_:).md)
-  Creates a new set from a finite sequence of items.
-- [init(arrayLiteral: Self.Element...)](collisiongroup/init(arrayliteral:).md)
-  Creates a set containing the elements of the given array literal.
 
 
 ---

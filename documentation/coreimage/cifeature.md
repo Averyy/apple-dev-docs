@@ -1,7 +1,7 @@
 # CIFeature
 
-**Framework**: Coreimage  
-**Kind**: cl
+**Framework**: Core Image  
+**Kind**: class
 
 The abstract superclass for objects representing notable features detected in an image.
 
@@ -10,27 +10,27 @@ The abstract superclass for objects representing notable features detected in an
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS 9.0+
+- tvOS ?+
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
-class CIFeature : NSObject
+class CIFeature
 ```
 
 #### Overview
 
-> **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNObservation`](https://developer.apple.com/documentation/vision/vnobservation).
+> **Note**:  In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/Vision) framework replaces these classes for identifying and analyzing image features. See [`VNObservation`](https://developer.apple.com/documentation/Vision/VNObservation).
 
-A [`CIFeature`](cifeature.md) object represents a portion of an image that a detector believes matches its criteria. Subclasses of `CIFeature` typically hold additional information specific to the detector that discovered the feature.
+A `CIFeature` object represents a portion of an image that a detector believes matches its criteria. Subclasses of `CIFeature` typically hold additional information specific to the detector that discovered the feature.
 
 ## Topics
 
 ### Feature Properties
-- [var bounds: CGRect](cifeature/1437782-bounds.md)
+- [var bounds: CGRect](cifeature/bounds.md)
   The rectangle that holds discovered feature.
-- [var type: String](cifeature/1438092-type.md)
+- [var type: String](cifeature/type.md)
   The type of feature that was discovered.
 ### Feature Types
 - [let CIFeatureTypeFace: String](cifeaturetypeface.md)
@@ -45,7 +45,19 @@ A [`CIFeature`](cifeature.md) object represents a portion of an image that a det
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Inherited By
+- [CIFaceFeature](cifacefeature.md)
+- [CIQRCodeFeature](ciqrcodefeature.md)
+- [CIRectangleFeature](cirectanglefeature.md)
+- [CITextFeature](citextfeature.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

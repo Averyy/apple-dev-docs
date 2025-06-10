@@ -26,8 +26,6 @@ A  is an opaque representation of program state. To create a continuation in asy
 
 > ❗ **Important**: You must call a resume method exactly once on every execution path throughout the program.
 
-You must call a resume method exactly once on every execution path throughout the program.
-
 Resuming from a continuation more than once is undefined behavior. Never resuming leaves the task in a suspended state indefinitely, and leaks any associated resources. `CheckedContinuation` logs a message if either of these invariants is violated.
 
 `CheckedContinuation` performs runtime checks for missing or multiple resume operations. `UnsafeContinuation` avoids enforcing these invariants at runtime because it aims to be a low-overhead mechanism for interfacing Swift tasks with event loops, delegate methods, callbacks, and other non-`async` scheduling mechanisms. However, during development, the ability to verify that the invariants are being upheld in testing is important. Because both types have the same interface, you can replace one with the other in most circumstances, without making other changes.
@@ -53,6 +51,7 @@ Resuming from a continuation more than once is undefined behavior. Never resumin
 
 ### Conforms To
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

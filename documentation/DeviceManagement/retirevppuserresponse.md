@@ -1,6 +1,6 @@
 # RetireVppUserResponse
 
-**Framework**: Devicemanagement  
+**Framework**: Device Management  
 **Kind**: dictionary
 
 The response from retiring a user.
@@ -27,4 +27,4 @@ object RetireVppUserResponse
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/retirevppuserresponse)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/retirevppuserresponse)*

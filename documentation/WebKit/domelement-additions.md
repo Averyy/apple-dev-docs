@@ -1,6 +1,6 @@
 # DOMElement Additions
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Additions to the `DOMElement` class to retrieve the image of `DOMHTMLImageElement` objects.
 

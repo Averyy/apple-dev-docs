@@ -1,6 +1,6 @@
 # daysSinceLastExposure
 
-**Framework**: Exposurenotification  
+**Framework**: Exposure Notification  
 **Kind**: property
 
 Number of days since the most recent exposure.
@@ -48,4 +48,4 @@ The framework computes this property’s value across all matching exposures, no
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposuredetectionsummary/dayssincelastexposure)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposuredetectionsummary/dayssincelastexposure)*

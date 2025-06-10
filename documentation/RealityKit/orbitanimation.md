@@ -10,6 +10,7 @@ An animation that revolves an entity around its origin.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -92,21 +93,11 @@ Use [`generate(with:)`](animationresource/generate(with:).md) to convert `OrbitA
   The optional time, in seconds, at which the animation plays.
 - [var trimEnd: TimeInterval?](orbitanimation/trimend.md)
   The optional time, in seconds, at which the animation stops.
-- [func trimmed(start: TimeInterval?, end: TimeInterval?, duration: TimeInterval?) -> Self](orbitanimation/trimmed(start:end:duration:).md)
-  Edits the animation duration according to the specified time.
 ### Repeating animation playback
 - [var repeatMode: AnimationRepeatMode](orbitanimation/repeatmode.md)
   An option that determines how the animation repeats.
 - [var fillMode: AnimationFillMode](orbitanimation/fillmode.md)
   An option that determines which data displays outside of the normal duration.
-- [func repeated(count: TimeInterval) -> Self](orbitanimation/repeated(count:)-4kqll.md)
-  Repeats an animation the number of times specified by an irrational number.
-- [func repeated(count: Int) -> Self](orbitanimation/repeated(count:)-5i6tq.md)
-  Repeats an animation the number of times specified by a whole number.
-- [func repeatingForever() -> Self](orbitanimation/repeatingforever.md)
-  Repeats the animation infinitely.
-### Default Implementations
-- [AnimationDefinition Implementations](orbitanimation/animationdefinition-implementations.md)
 
 ## Relationships
 

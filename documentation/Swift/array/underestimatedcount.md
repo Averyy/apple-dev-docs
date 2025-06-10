@@ -36,4 +36,4 @@ var underestimatedCount: Int { get }
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/array/underestimatedcount)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/array/underestimatedcount)*

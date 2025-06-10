@@ -21,7 +21,7 @@ func updateActivity(uuid UUID: UUID, adding metadata: [String : Any]) async thro
 
 #### Discussion
 
-You can call this method multiple times to incrementally add metadata to the workout activity. The system merges the new metadata with any existing metadata using [`addEntriesFromDictionary:`](https://developer.apple.com/documentation/foundation/nsmutabledictionary/1411035-addentriesfromdictionary). Calling this method after calling [`finishWorkout(completion:)`](hkworkoutbuilder/finishworkout(completion:).md) fails with an error.
+You can call this method multiple times to incrementally add metadata to the workout activity. The system merges the new metadata with any existing metadata using [`addEntries(from:)`](https://developer.apple.com/documentation/Foundation/NSMutableDictionary/addEntries(from:)). Calling this method after calling [`finishWorkout(completion:)`](hkworkoutbuilder/finishworkout(completion:).md) fails with an error.
 
 ## Parameters
 

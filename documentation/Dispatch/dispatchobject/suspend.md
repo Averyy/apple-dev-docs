@@ -28,8 +28,6 @@ Any blocks submitted to a dispatch queue or events observed by a dispatch source
 
 > ❗ **Important**:  It is a programmer error to release an object that is currently suspended, because suspension implies that there is still work to be done. Therefore, always balance calls to this method with a corresponding call to [`resume()`](dispatchobject/resume().md) before disposing of the object. The behavior when releasing the last reference to a dispatch object while it is in a suspended state is undefined.
 
- It is a programmer error to release an object that is currently suspended, because suspension implies that there is still work to be done. Therefore, always balance calls to this method with a corresponding call to [`resume()`](dispatchobject/resume().md) before disposing of the object. The behavior when releasing the last reference to a dispatch object while it is in a suspended state is undefined.
-
 ## See Also
 
 - [func activate()](dispatchobject/activate.md)

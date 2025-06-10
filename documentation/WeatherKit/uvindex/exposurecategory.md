@@ -1,6 +1,6 @@
 # UVIndex.ExposureCategory
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: enum
 
 An enumeration that indicates risk of harm from unprotected sun exposure.
@@ -76,6 +76,7 @@ enum ExposureCategory
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

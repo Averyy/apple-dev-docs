@@ -10,6 +10,7 @@ Do not apply any technique to smooth jagged edges.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS ?+
 - visionOS 2.0+
 
 ## Declaration

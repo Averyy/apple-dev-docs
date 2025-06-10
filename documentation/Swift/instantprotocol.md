@@ -33,6 +33,7 @@ protocol InstantProtocol<Duration> : Comparable, Hashable, Sendable
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 ### Conforming Types
 - [ContinuousClock.Instant](continuousclock/instant.md)
 - [SuspendingClock.Instant](suspendingclock/instant.md)

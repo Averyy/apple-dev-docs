@@ -132,6 +132,7 @@ The domain for these errors is [`VZErrorDomain`](vzerrordomain.md). When an erro
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

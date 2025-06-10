@@ -1,6 +1,6 @@
 # NSTableView.Style.automatic
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: case
 
 The system resolves the table view style based on the table view hierarchy.
@@ -38,4 +38,4 @@ The system resolves the table view style in the following manner:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstableview/style-swift.enum/automatic)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstableview/style-swift.enum/automatic)*

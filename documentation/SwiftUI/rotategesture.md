@@ -59,8 +59,8 @@ struct RotateGestureView: View {
 
 ## See Also
 
-- [func gesture(some UIGestureRecognizerRepresentable) -> some View](view/gesture(_:).md)
-  Attaches a [`UIGestureRecognizerRepresentable`](uigesturerecognizerrepresentable.md) to the view.
+- [func gesture(_:)](view/gesture(_:).md)
+  Attaches an [`NSGestureRecognizerRepresentable`](nsgesturerecognizerrepresentable.md) to the view.
 - [func gesture<T>(T, isEnabled: Bool) -> some View](view/gesture(_:isenabled:).md)
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
 - [func gesture<T>(T, name: String, isEnabled: Bool) -> some View](view/gesture(_:name:isenabled:).md)

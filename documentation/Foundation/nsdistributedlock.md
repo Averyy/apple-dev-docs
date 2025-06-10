@@ -52,6 +52,7 @@ Use the [`try()`](nsdistributedlock/try().md) method to attempt to acquire a loc
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

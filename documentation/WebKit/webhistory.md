@@ -1,6 +1,6 @@
 # WebHistory
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 `WebHistory` objects are used to maintain the pages visited by users. Visited pages are represented by [`WebHistoryItem`](webhistoryitem.md) objects. You add and remove history items using the [`addItems(_:)`](webhistory/additems(_:).md) and [`removeItems(_:)`](webhistory/removeitems(_:).md) methods. These methods post appropriate notifications when items are added or removed so you can update the display. `WebHistory` organizes the `WebHistoryItem` objects by the day they were visited, ordered from most recent to oldest. You can request all the days that contain history items using the [`orderedLastVisitedDays`](webhistory/orderedlastvisiteddays.md) method or request the items visited on a particular day using the [`orderedItemsLastVisited(onDay:)`](webhistory/ordereditemslastvisited(onday:).md) method. `WebHistory` objects can be loaded and saved by specifying a file URL (see [`load(from:)`](webhistory/load(from:).md)).
@@ -49,17 +49,17 @@ class WebHistory
 - [Web History Dictionary Keys](web-history-dictionary-keys.md)
   The key for accessing the web history items stored in a notification’s user information dictionary.
 ### Notifications
-- [static let WebHistoryAllItemsRemoved: NSNotification.Name](../foundation/nsnotification/name/1521391-webhistoryallitemsremoved.md)
+- [static let WebHistoryAllItemsRemoved: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryAllItemsRemoved.md)
   Posted when all history items have been removed from the web history.
-- [static let WebHistoryItemChanged: NSNotification.Name](../foundation/nsnotification/name/1525160-webhistoryitemchanged.md)
+- [static let WebHistoryItemChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryItemChanged.md)
   Posted by a WebHistoryItem object when the value of the history item’s title, alternate title, URL strings, or last visited interval changes.
-- [static let WebHistoryItemsAdded: NSNotification.Name](../foundation/nsnotification/name/1521408-webhistoryitemsadded.md)
+- [static let WebHistoryItemsAdded: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryItemsAdded.md)
   Posted when history items have been added to a web history.
-- [static let WebHistoryItemsRemoved: NSNotification.Name](../foundation/nsnotification/name/1521392-webhistoryitemsremoved.md)
+- [static let WebHistoryItemsRemoved: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryItemsRemoved.md)
   Posted when items have been removed from the web history.
-- [static let WebHistoryLoaded: NSNotification.Name](../foundation/nsnotification/name/1521395-webhistoryloaded.md)
+- [static let WebHistoryLoaded: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryLoaded.md)
   Posted when web history items have been loaded from a URL.
-- [static let WebHistorySaved: NSNotification.Name](../foundation/nsnotification/name/1521397-webhistorysaved.md)
+- [static let WebHistorySaved: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistorySaved.md)
   Posted when web history items have been saved to a URL.
 
 ## Relationships

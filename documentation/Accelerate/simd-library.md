@@ -8,7 +8,7 @@ Perform computations on small vectors and matrices.
 
 simd provides types and functions for small vector and matrix computations. The types include integer and floating-point vectors and matrices, and the functions provide basic arithmetic operations, element-wise mathematical operations, and geometric and linear algebra operations.
 
-simd supports vectors containing up to 16 elements (for single-precision values) or 8 elements (for double-precision values), and matrices up to 4 x 4 elements in size. Other frameworks, such as [`vForce`](veclib/vforce.md), allow you to work with larger vectors.
+simd supports vectors containing up to 16 elements (for single-precision values) or 8 elements (for double-precision values), and matrices up to 4 x 4 elements in size. Other frameworks, such as [`vForce`](vforce-library.md), allow you to work with larger vectors.
 
 ## Topics
 

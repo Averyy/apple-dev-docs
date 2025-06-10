@@ -1,6 +1,6 @@
 # init(mesh:device:)
 
-**Framework**: Metalkit  
+**Framework**: MetalKit  
 **Kind**: init
 
 Initializes a MetalKit mesh and its submeshes from a Model I/O mesh.

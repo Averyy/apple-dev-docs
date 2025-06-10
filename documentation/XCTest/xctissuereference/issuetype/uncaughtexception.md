@@ -1,6 +1,6 @@
 # XCTIssueReference.IssueType.uncaughtException
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 A test failure when code throws an exception and doesn’t catch it.

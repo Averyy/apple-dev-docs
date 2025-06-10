@@ -1,6 +1,6 @@
 # CoreLocationUI
 
-**Framework**: Corelocationui  
+**Framework**: CoreLocationUI  
 **Kind**: module
 
 Streamline access to users’ location data through a standard, secure UI.

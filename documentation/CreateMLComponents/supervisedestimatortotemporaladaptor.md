@@ -49,6 +49,7 @@ struct SupervisedEstimatorToTemporalAdaptor<Base> where Base : SupervisedEstimat
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SupervisedTemporalEstimator](supervisedtemporalestimator.md)
 
 ## See Also

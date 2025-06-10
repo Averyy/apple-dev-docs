@@ -1,6 +1,6 @@
 # VTDecompressionMultiImageCapableOutputHandler
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: typealias
 
 A type alias for callback that the system invokes when it finishes decompressing a frame.
@@ -23,8 +23,6 @@ typealias VTDecompressionMultiImageCapableOutputHandler = (OSStatus, VTDecodeInf
 Pass a callback of this type to [`VTDecompressionSessionDecodeFrameWithMultiImageCapableOutputHandler`](vtdecompressionsessiondecodeframewithmultiimagecapableoutputhandler.md) to handle the decompressed frame output. The system doesn’t necessarily invoke the callback in display order. If the multi-image decompression call returns an error, the system doesn’t call this block.
 
 > ❗ **Important**:  The video decompressor may still reference the pixel buffers that this callback provides if the [`imageBufferModifiable`](vtdecodeinfoflags/imagebuffermodifiable.md) flag isn’t set. It’s not safe to modify the returned pixel buffers in this state.
-
- The video decompressor may still reference the pixel buffers that this callback provides if the [`imageBufferModifiable`](vtdecodeinfoflags/imagebuffermodifiable.md) flag isn’t set. It’s not safe to modify the returned pixel buffers in this state.
 
 ## Parameters
 

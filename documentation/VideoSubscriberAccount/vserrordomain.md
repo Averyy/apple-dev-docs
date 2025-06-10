@@ -1,6 +1,6 @@
 # VSErrorDomain
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: var
 
 The domain for all errors in the framework.

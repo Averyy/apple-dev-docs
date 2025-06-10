@@ -1,6 +1,6 @@
 # xpc_listener_incoming_session_handler_t
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 A block that receives an incoming peer session request from a client.
@@ -25,8 +25,6 @@ When a client connects to your service, the system invokes this block with a ses
 - Call [`xpc_session_cancel`](xpc_session_cancel.md) to cancel the session.
 
 > ❗ **Important**:  Failure to take one of these actions results in an API misuse crash.
-
- Failure to take one of these actions results in an API misuse crash.
 
 When the `incoming_session_handler` returns, the system automatically activates the peer session unless you explicitly cancel it.
 

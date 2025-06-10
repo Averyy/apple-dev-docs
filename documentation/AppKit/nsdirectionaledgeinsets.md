@@ -31,9 +31,9 @@ struct NSDirectionalEdgeInsets
 - [var trailing: CGFloat](nsdirectionaledgeinsets/trailing.md)
   The trailing edge inset value.
 ### Converting to and from strings
-- [class func string(for: NSDirectionalEdgeInsets) -> String](../foundation/nscoder/2865946-string.md)
+- [class func string(for insets: NSDirectionalEdgeInsets) -> String](../Foundation/NSCoder/string(for:)-hp8b.md)
   Returns a string formatted to contain the data from a directional edge insets structure.
-- [class func nsDirectionalEdgeInsets(for: String) -> NSDirectionalEdgeInsets](../foundation/nscoder/2865991-nsdirectionaledgeinsets.md)
+- [class func nsDirectionalEdgeInsets(for string: String) -> NSDirectionalEdgeInsets](../Foundation/NSCoder/nsDirectionalEdgeInsets(for:).md)
   Returns a directional edge insets structure based on data in the specified string.
 ### Getting the empty edge insets
 - [let NSDirectionalEdgeInsetsZero: NSDirectionalEdgeInsets](nsdirectionaledgeinsetszero.md)
@@ -47,6 +47,7 @@ struct NSDirectionalEdgeInsets
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

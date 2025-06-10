@@ -1,6 +1,6 @@
 # setAccessibilityValue(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the value of the accessibility element.

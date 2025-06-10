@@ -1,6 +1,6 @@
 # restore
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Restores the last saved set of context settings.

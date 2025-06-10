@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from a device in Lost Mode after it processes the command to request its location.
+A response from the device after it processes the command to request the location of a device when in Lost Mode.
 
 **Availability**:
 - iOS 9.3+
 - iPadOS 9.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,14 +17,14 @@ object DeviceLocationResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object DeviceLocationResponse.ErrorChainItem](devicelocationresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object DeviceLocationCommand](devicelocationcommand.md)
-  The command to request a device’s location.
+  The command to request the location of a device when in Lost Mode.
 
 
 ---

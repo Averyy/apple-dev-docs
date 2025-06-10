@@ -5,6 +5,14 @@
 
 A MaterialX version of USD UV Texture reader.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Descriptions
@@ -13,11 +21,11 @@ A MaterialX version of USD UV Texture reader.
 
 #### Discussion
 
-The Wrap parameters for the node tell the node how to handle S and T values outside of the normal range of `0-1`. These inputs take one of four values to determine there behavior.
+The `Wrap` parameters for the node tell the node how to handle `S` and `T` values outside of the normal range of `0-1`. These inputs take one of four values to determine their behavior.
 
 - black: Texture coordinates outside the normal range return black.
-- clamp: Texture coordinates outside the normal range are clamped to the normal range. Any values greater than `1` will be set to `1` and any values less than `0` will be set to `0`
-- periodic: Texture coordinates outside the normal range will “wrap around”. This is effectively equivalent to modulo 1 being applied to the coordinates.
+- clamp: Texture coordinates outside the normal range clamp to the normal range. Any values greater than `1` are set to `1`, and any values less than `0` are set to `0`
+- periodic: Texture coordinates outside the normal range are normalized into a range of `0-1`, tiling the image. This is effectively equivalent to applying modulo 1 to the coordinates.
 
 ## See Also
 

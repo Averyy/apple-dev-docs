@@ -17,7 +17,6 @@ The range of allowed random values for a particle’s initial direction, express
 ## Declaration
 
 ```swift
-@MainActor
 var emissionAngleRange: CGFloat { get set }
 ```
 

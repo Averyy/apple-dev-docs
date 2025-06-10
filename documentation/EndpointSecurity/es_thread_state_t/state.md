@@ -1,6 +1,6 @@
 # state
 
-**Framework**: Endpointsecurity  
+**Framework**: Endpoint Security  
 **Kind**: property
 
 The machine-specific thread state.

@@ -5,9 +5,6 @@
 
 A source of live data from ARKit.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift

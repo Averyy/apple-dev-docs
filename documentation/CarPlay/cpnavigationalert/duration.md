@@ -13,6 +13,7 @@ The amount of time, in seconds, that the alert is visible.
 ## Declaration
 
 ```swift
+@MainActor
 var duration: TimeInterval { get }
 ```
 

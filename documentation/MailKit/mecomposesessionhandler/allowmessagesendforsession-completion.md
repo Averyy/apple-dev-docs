@@ -1,6 +1,6 @@
 # allowMessageSendForSession(_:completion:)
 
-**Framework**: Mailkit  
+**Framework**: MailKit  
 **Kind**: method
 
 Confirms that the message is ready for delivery.

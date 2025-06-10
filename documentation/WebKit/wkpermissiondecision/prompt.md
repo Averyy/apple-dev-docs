@@ -1,6 +1,6 @@
 # WKPermissionDecision.prompt
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Prompt the user for permission for the requested resource.

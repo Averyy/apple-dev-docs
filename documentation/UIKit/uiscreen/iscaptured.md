@@ -26,8 +26,6 @@ Observe this property and optionally take an appropriate action in your app to p
 
 > ❗ **Important**:  The system doesn’t include video content encrypted using [`FairPlay Streaming`](https://developer.apple.comhttps://developer.apple.com/streaming/fps/) (FPS) when recording, mirroring, or using AirPlay to stream the contents of the screen. However, although it blacks out FPS-encrypted video content, it includes FPS-encrypted audio content. To prevent the system from recording the audio portion, observe the `isCaptured` property and take appropriate action in your app as described above.
 
- The system doesn’t include video content encrypted using [`FairPlay Streaming`](https://developer.apple.comhttps://developer.apple.com/streaming/fps/) (FPS) when recording, mirroring, or using AirPlay to stream the contents of the screen. However, although it blacks out FPS-encrypted video content, it includes FPS-encrypted audio content. To prevent the system from recording the audio portion, observe the `isCaptured` property and take appropriate action in your app as described above.
-
 UIKit sends the [`capturedDidChangeNotification`](uiscreen/captureddidchangenotification.md) notification when the capture status of the screen changes.
 
 ## See Also

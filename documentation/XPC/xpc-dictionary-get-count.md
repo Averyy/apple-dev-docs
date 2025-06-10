@@ -1,6 +1,6 @@
 # xpc_dictionary_get_count(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the number of values in the dictionary.

@@ -12,6 +12,7 @@ The map item identifer.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 11.0+
 
 ## Declaration
 
@@ -29,6 +30,8 @@ var mapItemIdentifier: MKMapItem.Identifier? { get }
   The map feature.
 - [var featureAnnotation: MKMapFeatureAnnotation](mkmapitemrequest/featureannotation.md)
   The feature annotation.
+- [var placeDescriptor: PlaceDescriptor?](mkmapitemrequest/placedescriptor.md)
+  The place descriptor that contains information that’s helpful in uniquely identifying this place.
 
 
 ---

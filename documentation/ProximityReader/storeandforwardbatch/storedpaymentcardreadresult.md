@@ -41,6 +41,7 @@ struct StoredPaymentCardReadResult
 - [Encodable](../Swift/Encodable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

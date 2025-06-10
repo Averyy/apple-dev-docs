@@ -1,6 +1,6 @@
 # unload(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Unloads the specified extension context.

@@ -41,6 +41,7 @@ See [`Improving CPU Performance by Using Argument Buffers`](improving-cpu-perfor
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

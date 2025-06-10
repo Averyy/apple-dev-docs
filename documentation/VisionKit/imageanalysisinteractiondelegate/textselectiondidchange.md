@@ -1,6 +1,6 @@
 # textSelectionDidChange(_:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method  
 **Required**: Yes
 

@@ -6,10 +6,7 @@
 Executes a closure on the collection’s contiguous storage.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
 - Mac Catalyst 13.0+
-- macOS 10.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
@@ -33,8 +30,6 @@ The optimizer can often eliminate bounds- and uniqueness-checking within an algo
 Always perform any necessary cleanup in the closure, because the method makes no guarantees about the state of the collection if the closure throws an error. Your changes to the collection may be absent from the collection after throwing the error, because the closure could receive a temporary copy rather than direct access to the collection’s storage.
 
 > ⚠️ **Warning**: Your `body` closure must not replace `buffer`. This leads to a crash in all implementations of this method within the standard library.
-
-Your `body` closure must not replace `buffer`. This leads to a crash in all implementations of this method within the standard library.
 
 Successive calls to this method may provide a different pointer on each call. Don’t store `buffer` outside of this method.
 

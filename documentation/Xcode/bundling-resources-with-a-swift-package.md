@@ -64,8 +64,6 @@ When you build your Swift package, Xcode treats each target as a Swift module. I
 
 > ❗ **Important**: Always use `Bundle.module` when you access resources. A package shouldn’t make assumptions about the exact location of a resource.
 
-Always use `Bundle.module` when you access resources. A package shouldn’t make assumptions about the exact location of a resource.
-
 If you want to make a package resource available to apps that depend on your Swift package, declare a public constant for it. For example, use the following to expose a property list file to apps that use your Swift package:
 
 `let settingsURL = Bundle.module.url(forResource: "settings", withExtension: "plist")`

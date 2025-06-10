@@ -10,8 +10,6 @@ Before you deploy your ClassKit Catalog API changes, you can test them in a deve
 
 > ❗ **Important**:  Contexts that you publish in the development environment may be visible to other developers using the development environment in Schoolwork.
 
- Contexts that you publish in the development environment may be visible to other developers using the development environment in Schoolwork.
-
 ##### Target the Development Environment
 
 For calls that you make to the ClassKit Catalog API, you set the `environment` query parameter. During normal operation, you set the value of this parameter to `production`. For example, the following `curl` command retrieves the main app context of an example app:

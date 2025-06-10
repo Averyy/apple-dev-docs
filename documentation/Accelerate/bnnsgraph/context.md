@@ -27,13 +27,9 @@ A [`BNNSGraph.Context`](bnnsgraph/context.md) instance provides a wrapper around
 ## Topics
 
 ### Creating a graph context
-- [init(compileFromPath: String, functionName: String?, options: BNNSGraph.CompileOptions) async throws](bnnsgraph/context/init(compilefrompath:functionname:options:).md)
-  Returns a new context that wraps a graph object representing the compiled mlmodelc file.
 - [BNNSGraph.CompileOptions](bnnsgraph/compileoptions.md)
   The compilation options that BNNS uses when compiling a source mlmodelc file to a graph object.
 ### Specifying and querying a graph context’s properties
-- [func setBatchSize(Int, forFunction: String?) async](bnnsgraph/context/setbatchsize(_:forfunction:).md)
-  Sets the batch size for a graph.
 - [func setDynamicShapes([BNNSGraph.Shape], forFunction: String?) async throws -> [BNNSGraph.Shape]](bnnsgraph/context/setdynamicshapes(_:forfunction:).md)
   Specifies the dynamic shapes for a graph and, if possible, infers the output shapes.
 - [BNNSGraph.Shape](bnnsgraph/shape.md)
@@ -63,6 +59,23 @@ A [`BNNSGraph.Context`](bnnsgraph/context.md) instance provides a wrapper around
 ### Handling errors
 - [BNNSGraph.Error](bnnsgraph/error.md)
   Error codes that a graph context throws.
+### Initializers
+- [init(compileFromPath: String, functionName: String?, options: BNNSGraph.CompileOptions) async throws](bnnsgraph/context/init(compilefrompath:functionname:options:)-3nn5g.md)
+  Returns a new context that wraps a graph object which represents the compiled `.mlmodelc` file.
+- [init(compileFromPath: String, functionName: String?, options: BNNSGraph.CompileOptions) throws](bnnsgraph/context/init(compilefrompath:functionname:options:)-6ghot.md)
+  Synchronously returns a new context that wraps a graph object which represents the compiled `.mlmodelc` file.
+### Instance Properties
+- [var streamingAdvanceCount: Int](bnnsgraph/context/streamingadvancecount.md)
+  Sets streaming advancement amount for cases with dynamically shaped inputs.
+### Instance Methods
+- [func allocateTensor(forFunction: String?, argument: String, fillKnownDynamicShapes: Bool) -> BNNSTensor?](bnnsgraph/context/allocatetensor(forfunction:argument:fillknowndynamicshapes:).md)
+  Returns an allocated tensor for a given function argument.
+- [func executeFunction(String?, arguments: inout [BNNSTensor]) throws](bnnsgraph/context/executefunction(_:arguments:)-52eh3.md)
+  Synchronously executes the specified function with the provided context.
+- [func setBatchSize(Int, forFunction: String?) async](bnnsgraph/context/setbatchsize(_:forfunction:)-4872x.md)
+  Sets the batch size for a graph.
+- [func setBatchSize(Int, forFunction: String?)](bnnsgraph/context/setbatchsize(_:forfunction:)-8eqzm.md)
+  Synchronously sets the batch size for a graph.
 
 
 ---

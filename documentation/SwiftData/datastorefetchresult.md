@@ -32,6 +32,7 @@ struct DataStoreFetchResult<ModelType, SnapshotType> where ModelType : Persisten
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

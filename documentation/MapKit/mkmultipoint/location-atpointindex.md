@@ -12,6 +12,7 @@ Translates a point index into a unit distance along the shape.
 - macOS 11.0+
 - tvOS 14.0+
 - visionOS 1.0+
+- watchOS 7.0+
 
 ## Declaration
 

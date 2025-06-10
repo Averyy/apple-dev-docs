@@ -27,7 +27,9 @@ Manage the in-app purchase or auto-renewable subscription that’s promoted on a
 - [object PromotedPurchaseCreateRequest](promotedpurchasecreaterequest.md)
 - [object PromotedPurchaseUpdateRequest](promotedpurchaseupdaterequest.md)
 - [object AppPromotedPurchasesLinkagesRequest](apppromotedpurchaseslinkagesrequest.md)
+  The data structure that represents an app promoted purchases linkages request resource.
 - [object AppPromotedPurchasesLinkagesResponse](apppromotedpurchaseslinkagesresponse.md)
+  A response that contains a list of Ids of related resources.
 
 ## See Also
 

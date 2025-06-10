@@ -36,6 +36,15 @@ struct SparseMatrix_Complex_Float
 - [var structure: SparseMatrixStructureComplex](sparsematrix_complex_float/structure.md)
   A type representing the sparsity structure of a sparse complex matrix.
 
+## See Also
+
+- [struct SparseMatrix_Complex_Double](sparsematrix_complex_double.md)
+  A type representing a sparse complex matrix.
+- [struct SparseAttributesComplex_t](sparseattributescomplex_t.md)
+  A type representing the attributes of a matrix.
+- [struct SparseMatrixStructureComplex](sparsematrixstructurecomplex.md)
+  A type representing the sparsity structure of a sparse complex matrix.
+
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: TabletopKit  
 **Kind**: property
 
-The player that the cursor represents.
+The player that owns the interaction.
 
 **Availability**:
 - visionOS 2.0+

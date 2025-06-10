@@ -53,6 +53,8 @@ If the task has already run past the last point where it could have performed a 
 - [static func checkCancellation() throws](task/checkcancellation.md)
   Throws an error if the task was canceled.
 - [func withTaskCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](withtaskcancellationhandler(handler:operation:).md)
+- [func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel: () -> Void, isolation: isolated (any Actor)?) async rethrows -> T](withtaskcancellationhandler(operation:oncancel:isolation:).md)
+  Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
 
 
 ---

@@ -48,6 +48,7 @@ Create a [`UIWindowScene.ActivationAction`](uiwindowscene/activationaction.md) o
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIMenuLeaf](uimenuleaf.md)
 

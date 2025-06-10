@@ -1,6 +1,6 @@
 # symmetricDifference(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Returns a new option set with the elements contained in this set or in the given set, but not in both.

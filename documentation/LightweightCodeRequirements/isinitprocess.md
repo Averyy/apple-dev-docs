@@ -41,6 +41,7 @@ struct IsInitProcess
 - [LaunchConstraint](launchconstraint.md)
 - [ProcessConstraint](processconstraint.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -10,6 +10,7 @@ Maps a 2D point from the pixel coordinate system of a viewport into a 3D coordin
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

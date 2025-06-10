@@ -22,15 +22,11 @@ class CMMovementDisorderManager
 
 > ❗ **Important**:  Only collect data from patients clinically diagnosed with a movement disorder. This API is not designed to collect data from users who have not been diagnosed with a movement disorder. All medical decisions should be made through the guidance of a licensed clinician. For more information, see [`Adhering to the movement disorder data collection requirements`](adhering-to-the-movement-disorder-data-collection-requirements.md).
 
- Only collect data from patients clinically diagnosed with a movement disorder. This API is not designed to collect data from users who have not been diagnosed with a movement disorder. All medical decisions should be made through the guidance of a licensed clinician. For more information, see [`Adhering to the movement disorder data collection requirements`](adhering-to-the-movement-disorder-data-collection-requirements.md).
-
 Use `CMMovementDisorderManager` to measure a resting Parkinsonian tremor in the 3-7 Hz range and choreiform dyskinetic symptoms. When collecting data, the user should wear Apple Watch on their most affected arm.
 
 `CMMovementDisorderManager` requires an entitlement from Apple. To apply for the entitlement, see [`Movement Disorder Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/movement-disorder-api-entitlement/).
 
 > ❗ **Important**:  To use this API, you must include the [`NSMotionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMotionUsageDescription) key in your app’s `Info.plist` file and provide a usage description string for this key. The usage description appears in the prompt that the user must accept the first time the system asks the user to access motion data for your app. If you don’t include a usage description string, your app crashes when you call this API.
-
- To use this API, you must include the [`NSMotionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMotionUsageDescription) key in your app’s `Info.plist` file and provide a usage description string for this key. The usage description appears in the prompt that the user must accept the first time the system asks the user to access motion data for your app. If you don’t include a usage description string, your app crashes when you call this API.
 
 ## Topics
 

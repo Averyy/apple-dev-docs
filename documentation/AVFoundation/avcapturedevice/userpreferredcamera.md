@@ -1,6 +1,6 @@
 # userPreferredCamera
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A camera the user prefers to use for video and photo capture.

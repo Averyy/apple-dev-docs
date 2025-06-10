@@ -1,6 +1,6 @@
 # grantedPermissionMatchPatterns
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The currently granted permission match patterns and their expiration dates.

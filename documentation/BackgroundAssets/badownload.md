@@ -1,6 +1,6 @@
 # BADownload
 
-**Framework**: Backgroundassets  
+**Framework**: Background Assets  
 **Kind**: class
 
 An object that represents an in-progress or concluded asset download.
@@ -61,6 +61,7 @@ class BADownload
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -72,4 +73,4 @@ class BADownload
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/BackgroundAssets/badownload)*
+*[View on Apple Developer](https://developer.apple.com/documentation/backgroundassets/badownload)*

@@ -1,6 +1,6 @@
 # CHHapticEngine.StoppedHandler
 
-**Framework**: Corehaptics  
+**Framework**: Core Haptics  
 **Kind**: typealias
 
 A typealias for the block that the haptic engine calls after it stops due to an external cause.

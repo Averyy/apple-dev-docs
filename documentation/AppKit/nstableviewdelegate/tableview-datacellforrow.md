@@ -1,6 +1,6 @@
 # tableView(_:dataCellFor:row:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Asks the delegate for a custom data cell for the specified row and column.

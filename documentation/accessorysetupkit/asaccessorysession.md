@@ -29,8 +29,6 @@ With your event-handler prepared, create an array of [`ASPickerDisplayItem`](asp
 
 > ❗ **Important**: Starting in iOS 18.4, apps can use AccessorySetupKit for discovery and setup of Bluetooth LE devices that conform to the Human Interface Device (HID) service, such as keyboard and mouse accessories. The HID accessory needs to advertise a custom service besides the HID service. Add the [`bluetoothHID`](asaccessory/supportoptions/bluetoothhid.md) option to the [`supportedOptions`](asdiscoverydescriptor/supportedoptions.md) and configure the [`ASDiscoveryDescriptor`](asdiscoverydescriptor.md) to discover the custom service instead of the HID service.
 
-Starting in iOS 18.4, apps can use AccessorySetupKit for discovery and setup of Bluetooth LE devices that conform to the Human Interface Device (HID) service, such as keyboard and mouse accessories. The HID accessory needs to advertise a custom service besides the HID service. Add the [`bluetoothHID`](asaccessory/supportoptions/bluetoothhid.md) option to the [`supportedOptions`](asdiscoverydescriptor/supportedoptions.md) and configure the [`ASDiscoveryDescriptor`](asdiscoverydescriptor.md) to discover the custom service instead of the HID service.
-
 ## Topics
 
 ### Managing the session life cycle
@@ -43,6 +41,11 @@ Starting in iOS 18.4, apps can use AccessorySetupKit for discovery and setup of 
   Present a picker that shows accessories managed by a Device Discovery Extension in your app.
 - [func showPicker(for: [ASPickerDisplayItem], completionHandler: ((any Error)?) -> Void)](asaccessorysession/showpicker(for:completionhandler:).md)
   Present a picker that shows discovered accessories matching an array of display items.
+### Customizing picker behavior
+- [var pickerDisplaySettings: ASPickerDisplaySettings?](asaccessorysession/pickerdisplaysettings.md)
+  Settings that affect the display of the accessory picker.
+- [class ASPickerDisplaySettings](aspickerdisplaysettings.md)
+  A type that contains settings to customize the display of the accessory picker
 ### Accessing discovered accessories
 - [var accessories: [ASAccessory]](asaccessorysession/accessories.md)
   An array of previously-selected accessories for this application.
@@ -60,6 +63,8 @@ Starting in iOS 18.4, apps can use AccessorySetupKit for discovery and setup of 
   Properties of an accessory.
 - [func failAuthorization(for: ASAccessory, completionHandler: ((any Error)?) -> Void)](asaccessorysession/failauthorization(for:completionhandler:).md)
   End authorization of a partially-configured accessory as a failure.
+- [func updateAuthorization(for: ASAccessory, descriptor: ASDiscoveryDescriptor, completionHandler: ((any Error)?) -> Void)](asaccessorysession/updateauthorization(for:descriptor:completionhandler:).md)
+  Displays a view to upgrade an accessory with additional technology permissions.
 
 ## Relationships
 
@@ -73,6 +78,7 @@ Starting in iOS 18.4, apps can use AccessorySetupKit for discovery and setup of 
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -10,6 +10,7 @@ A component that controls the opacity of an entity and its descendants.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -52,9 +53,6 @@ The following images show robot models with opacity values of `1.0` and `0.5`.
 ### Instance Properties
 - [var opacity: Float](opacitycomponent/opacity.md)
   The floating-point value the renderer applies to an entity and its descendants.
-### Default Implementations
-- [Component Implementations](opacitycomponent/component-implementations.md)
-- [Equatable Implementations](opacitycomponent/equatable-implementations.md)
 
 ## Relationships
 
@@ -72,6 +70,8 @@ The following images show robot models with opacity values of `1.0` and `0.5`.
   A component that provides the suggested pixels per meter necessary to render an object.
 - [struct ModelDebugOptionsComponent](modeldebugoptionscomponent.md)
   A component that changes how RealityKit renders its entity to help with debugging.
+- [struct MeshInstancesComponent](meshinstancescomponent.md)
+  A component that performs GPU instancing on the ModelComponent on the same Entity.
 
 
 ---

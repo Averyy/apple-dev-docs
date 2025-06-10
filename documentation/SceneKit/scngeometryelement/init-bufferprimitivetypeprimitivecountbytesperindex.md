@@ -4,12 +4,13 @@
 **Kind**: init
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.1+
+- macOS 10.8+
+- tvOS 9.0+
 - visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 

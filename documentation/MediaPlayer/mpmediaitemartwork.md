@@ -53,6 +53,8 @@ class MPMediaItemArtwork
 
 - [class MPMediaItem](mpmediaitem.md)
   A collection of properties that represents a single item in the media library.
+- [class MPMediaItemAnimatedArtwork](mpmediaitemanimatedartwork.md)
+  An animated image, such as an animated music album cover art, for a media item.
 - [class MPMediaItemCollection](mpmediaitemcollection.md)
   A sorted set of media items from the media library.
 - [class MPMediaPlaylist](mpmediaplaylist.md)

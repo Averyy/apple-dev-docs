@@ -20,8 +20,6 @@ typealias ENGetUserTraveledHandler = (Bool, (any Error)?) -> Void
 
 > ❗ **Important**:  This type is available in iOS 12.5, and in iOS 13.5 and later.
 
- This type is available in iOS 12.5, and in iOS 13.5 and later.
-
 ## Parameters
 
 - `traveled`: Indicates whether the user has traveled.
@@ -37,7 +35,7 @@ typealias ENGetUserTraveledHandler = (Bool, (any Error)?) -> Void
   Obtains information from the provided summary about the user’s exposure within a window of time.
 - [typealias ENGetExposureWindowsHandler](engetexposurewindowshandler.md)
   The handler the system invokes when the acquisition of windows completes.
-- [func getUserTraveled(completionHandler: ENGetUserTraveledHandler)](enmanager/getusertraveled(completionhandler:).md)
+- [func getUserTraveled(completionHandler: (Bool, (any Error)?) -> Void)](enmanager/getusertraveled(completionhandler:).md)
   Obtains information about the user’s travel within an exposure period.
 - [func getExposureInfo(summary: ENExposureDetectionSummary, userExplanation: String, completionHandler: ENGetExposureInfoHandler) -> Progress](enmanager/getexposureinfo(summary:userexplanation:completionhandler:).md)
   Returns information about each exposure.

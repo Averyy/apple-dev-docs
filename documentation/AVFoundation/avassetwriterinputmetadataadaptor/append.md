@@ -29,8 +29,6 @@ The timing of metadata items in the output asset correspond to the time range of
 
 > ❗ **Important**:  Only call this method after you’ve attached the related input to the asset writer and called its [`startWriting()`](avassetwriter/startwriting().md) method.
 
- Only call this method after you’ve attached the related input to the asset writer and called its [`startWriting()`](avassetwriter/startwriting().md) method.
-
 ## Parameters
 
 - `timedMetadataGroup`: The timed metadata group to append.

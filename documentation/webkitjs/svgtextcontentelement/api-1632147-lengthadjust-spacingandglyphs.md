@@ -1,6 +1,6 @@
 # LENGTHADJUST_SPACINGANDGLYPHS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

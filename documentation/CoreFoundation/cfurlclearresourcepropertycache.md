@@ -1,6 +1,6 @@
 # CFURLClearResourcePropertyCache(_:)
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: func
 
 Removes all cached resource values and temporary resource values from the URL object.

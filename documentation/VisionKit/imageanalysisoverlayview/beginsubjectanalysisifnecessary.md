@@ -1,6 +1,6 @@
 # beginSubjectAnalysisIfNecessary()
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Begins subject analysis on the overlay view’s image.

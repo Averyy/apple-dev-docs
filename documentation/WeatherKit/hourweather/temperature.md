@@ -1,6 +1,6 @@
 # temperature
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The temperature during the hour.

@@ -6,7 +6,7 @@ Provide space-efficient, context-dependent access to commands and controls.
 
 #### Overview
 
-Use a menu to provide people with easy access to common commands. You can add items to a macOS app’s menu bar using the [`commands(content:)`](scene/commands(content:).md) scene modifier, or create context menus that people reveal near their current task using the [`contextMenu(menuItems:)`](view/contextmenu(menuitems:).md) view modifier.
+Use a menu to provide people with easy access to common commands. You can add items to a macOS or iPadOS app’s menu bar using the [`commands(content:)`](scene/commands(content:).md) scene modifier, or create context menus that people reveal near their current task using the [`contextMenu(menuItems:)`](view/contextmenu(menuitems:).md) view modifier.
 
 ![None](https://docs-assets.developer.apple.com/published/dfe1ae858d3f19de19a190f122aaf44a/menus-and-commands-hero%402x.png)
 
@@ -16,7 +16,12 @@ For design guidance, see [`Menus`](https://developer.apple.com/design/Human-Inte
 
 ## Topics
 
+### Building a menu bar
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+  Provide a seamless, cross-platform user experience by building a native menu bar for iPadOS and macOS.
 ### Creating a menu
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+  Improve your app by populating menus with controls and organizing your content intuitively.
 - [struct Menu](menu.md)
   A control for presenting a menu of actions.
 - [func menuStyle<S>(S) -> some View](view/menustyle(_:).md)

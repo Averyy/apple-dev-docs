@@ -1,6 +1,6 @@
 # allowsToolTipsWhenApplicationIsInactive
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 A Boolean value that indicates whether the window can display tooltips even when the application is in the background.
@@ -24,4 +24,4 @@ The value of this property is [`true`](https://developer.apple.com/documentation
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nswindow/allowstooltipswhenapplicationisinactive)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nswindow/allowstooltipswhenapplicationisinactive)*

@@ -22,12 +22,12 @@ func SecItemCopyMatching(_ query: CFDictionary, _ result: UnsafeMutablePointer<C
 
 ## Mentions
 
-- [Storing Keys in the Keychain](storing-keys-in-the-keychain.md)
 - [Searching for keychain items](searching-for-keychain-items.md)
-- [Storing a Certificate in the Keychain](storing-a-certificate-in-the-keychain.md)
-- [Updating and deleting keychain items](updating-and-deleting-keychain-items.md)
-- [Sharing access to keychain items among a collection of apps](sharing-access-to-keychain-items-among-a-collection-of-apps.md)
+- [Storing Keys in the Keychain](storing-keys-in-the-keychain.md)
 - [Adding a password to the keychain](adding-a-password-to-the-keychain.md)
+- [Updating and deleting keychain items](updating-and-deleting-keychain-items.md)
+- [Storing a Certificate in the Keychain](storing-a-certificate-in-the-keychain.md)
+- [Sharing access to keychain items among a collection of apps](sharing-access-to-keychain-items-among-a-collection-of-apps.md)
 
 #### Return Value
 

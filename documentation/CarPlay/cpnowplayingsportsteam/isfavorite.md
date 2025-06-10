@@ -13,6 +13,7 @@ If true, the team is marked with a star to indicate it has been saved as a user 
 ## Declaration
 
 ```swift
+@MainActor
 var isFavorite: Bool { get }
 ```
 

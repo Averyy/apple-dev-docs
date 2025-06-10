@@ -22,8 +22,8 @@ struct SecAccessControlCreateFlags
 
 ## Mentions
 
-- [Restricting keychain item accessibility](restricting-keychain-item-accessibility.md)
 - [Protecting keys with the Secure Enclave](protecting-keys-with-the-secure-enclave.md)
+- [Restricting keychain item accessibility](restricting-keychain-item-accessibility.md)
 
 #### Overview
 
@@ -72,6 +72,7 @@ Use these flags with the [`SecAccessControlCreateWithFlags(_:_:_:_:)`](secaccess
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 

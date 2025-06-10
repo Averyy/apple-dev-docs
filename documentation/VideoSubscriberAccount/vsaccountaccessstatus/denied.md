@@ -1,6 +1,6 @@
 # VSAccountAccessStatus.denied
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 The user denied the app access to subscription information.

@@ -1,6 +1,6 @@
 # IOSurfaceSetValue(_:_:_:)
 
-**Framework**: Iosurface  
+**Framework**: IOSurface  
 **Kind**: func
 
 Sets a value in the dictionary associated with the buffer.

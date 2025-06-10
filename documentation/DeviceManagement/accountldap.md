@@ -10,8 +10,6 @@ The declaration to configure a Lightweight Directory Access Protocol (LDAP) acco
 - iPadOS 15.0+
 - macOS 13.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,16 +23,18 @@ Specify `com.apple.configuration.account.ldap` as the declaration type.
 
 ##### Configuration Availability
 
-| Allowed in Device Enrollment | iOS, macOS |
+|  |  |
 | --- | --- |
-| Allowed in User Enrollment | iOS, macOS |
-| Allowed in Local Enrollment | iOS, macOS |
-| Allowed in System Scope | iOS |
-| Allowed in User Scope | macOS, Shared iPad |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in device enrollment | iOS, Shared iPad, visionOS |
+| Allowed in user enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in local enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in system scope | iOS, visionOS |
+| Allowed in user scope | macOS, Shared iPad |
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object AccountLDAPSearchSettingsItemObject](accountldapsearchsettingsitemobject.md)
   The settings for configuring the search behavior with an LDAP server.
 
@@ -54,6 +54,8 @@ Specify `com.apple.configuration.account.ldap` as the declaration type.
   The declaration to configure a Calendar subscription.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AudioAccessorySettings](audioaccessorysettings.md)
+  The declaration to configure audio accessory settings.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
@@ -66,10 +68,8 @@ Specify `com.apple.configuration.account.ldap` as the declaration type.
   The declaration to test the MDM system.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
-- [object PasscodeSettings](passcodesettings.md)
-  The declaration to configure passcode policy settings.
-- [object SafariExtensionSettings](safariextensionsettings.md)
-  The declaration to configure Safari Extensions.
+- [object Package](package.md)
+  The declaration to install a package.
 
 
 ---

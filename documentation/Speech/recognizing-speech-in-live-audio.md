@@ -17,8 +17,6 @@ This sample project demonstrates how to use the Speech framework to recognize wo
 
 > ❗ **Important**: Apps need to include the `NSSpeechRecognitionUsageDescription` key in their `Info.plist` file and request authorization to perform speech recognition. For information about requesting authorization, see [`Asking Permission to Use Speech Recognition`](asking-permission-to-use-speech-recognition.md).
 
-Apps need to include the `NSSpeechRecognitionUsageDescription` key in their `Info.plist` file and request authorization to perform speech recognition. For information about requesting authorization, see [`Asking Permission to Use Speech Recognition`](asking-permission-to-use-speech-recognition.md).
-
 ##### Customize the Language Model
 
 Developers can enhance the `SFSpeechRecognizer` for specific use cases and applications by customizing its language model. The SpokenWord app uses language model customization to improve accuracy when recognizing certain chess moves. The high-level steps in this process are:

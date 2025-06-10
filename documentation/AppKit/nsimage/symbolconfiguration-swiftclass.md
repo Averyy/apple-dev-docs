@@ -46,10 +46,16 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   Creates a symbol configuration with the specified text style and symbol scale.
 - [convenience init(scale: NSImage.SymbolScale)](nsimage/symbolconfiguration-swift.class/init(scale:).md)
   Creates a symbol configuration using the scale you specify.
+- [convenience init(colorRenderingMode: NSImage.SymbolColorRenderingMode)](nsimage/symbolconfiguration-swift.class/init(colorrenderingmode:).md)
+  Create a configuration with a specific color rendering mode.
+- [convenience init(variableValueMode: NSImage.SymbolVariableValueMode)](nsimage/symbolconfiguration-swift.class/init(variablevaluemode:).md)
+  Create a configuration with a specified variable value mode.
 - [NSFont.TextStyle](nsfont/textstyle.md)
   Constants that specify the preferred text styles you use with fonts.
 - [NSImage.SymbolScale](nsimage/symbolscale.md)
   Constants that specify which scale variant of a symbol image to use.
+- [NSImage.SymbolColorRenderingMode](nsimage/symbolcolorrenderingmode.md)
+- [NSImage.SymbolVariableValueMode](nsimage/symbolvariablevaluemode.md)
 ### Applying a Configuration
 - [func applying(NSImage.SymbolConfiguration) -> Self](nsimage/symbolconfiguration-swift.class/applying(_:).md)
   Creates a configuration object by applying the values from the configuration you specify.

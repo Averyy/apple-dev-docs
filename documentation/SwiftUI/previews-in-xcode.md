@@ -66,6 +66,9 @@ You typically rely on preview macros to create previews in your code. However, i
   A context type for use with a preview.
 - [protocol PreviewContextKey](previewcontextkey.md)
   A key type for a preview context.
+### Building in debug mode
+- [struct DebugReplaceableView](debugreplaceableview.md)
+  Erases view opaque result types in debug builds.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # WKNavigationResponsePolicy.download
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Allow the download to proceed.

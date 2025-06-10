@@ -1,6 +1,6 @@
 # kVTProfileLevel_HEVC_Main42210_AutoLevel
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

@@ -1,27 +1,27 @@
-# init(_:)
+# init()
 
 **Framework**: Spatial  
 **Kind**: init
 
-Creates a rectangle structure from a bounding box.
+Creates a rectangle structure.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Mac Catalyst 18.0+
-- macOS 15.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-init(_ bounds: BoundingBox)
+init()
 ```
 
 ## See Also
 
-- [init()](rect3d/init.md)
-  Creates a rectangle structure.
 - [init(center: Point3D, size: Size3D)](rect3d/init(center:size:)-133fy.md)
   Creates a rectangle with the specified center and the specified size from Spatial structures.
 - [init(center: simd_double3, size: simd_double3)](rect3d/init(center:size:)-77l0z.md)
@@ -46,4 +46,4 @@ init(_ bounds: BoundingBox)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spatial/rect3d/init(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/rect3d/init())*

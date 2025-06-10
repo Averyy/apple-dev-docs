@@ -1,6 +1,6 @@
 # hash(into:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Hashes the components of this value using the specified hasher.

@@ -6,19 +6,19 @@
 The two-dimensional path forming the basis of the shape.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.9+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
 ```swift
 @NSCopying
-var path: UIBezierPath? { get set }
+var path: NSBezierPath? { get set }
 ```
 
 #### Discussion

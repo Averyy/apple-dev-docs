@@ -1,6 +1,6 @@
 # groups
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property  
 **Required**: Yes
 

@@ -16,11 +16,11 @@ MapKit JS creates cluster annotations automatically. Although you can’t instan
 
 Although visible on a map, cluster annotations aren’t members of the map’s [`annotations`](mapkit.map/annotations.md) array. The annotations that make up the cluster do belong to the [`annotations`](mapkit.map/annotations.md) array, however, even if they’re not individually visible on the map. For example, the following figure shows a map with annotations A, B, C, D, and E:
 
-![A map showing annotations A, B, C, D, and E with pin markers.](https://docs-assets.developer.apple.com/published/afc2f1ad0a5e5d3e1605e7cdea6c5612/media-3118383%402x.png)
+![A map showing annotations A, B, C, D, and E with markers.](https://docs-assets.developer.apple.com/published/9b726c928f429a9d0e686e2680c4a407/cluster-annotations-01%402x.png)
 
 If the user zooms out so A, B, and C overlap on the map, the annotations combine to create cluster annotation Q, as in the following figure:
 
-![A map showing cluster annotation Q, and annotations D and E. Annotations D and E have pin markers. Cluster annotation Q has the letters ABC in its marker.](https://docs-assets.developer.apple.com/published/bcb4b5d74b5fc6b2dd0d3a954b67b032/media-3118380%402x.png)
+![A map showing cluster annotation Q, and annotations D and E. Annotations D and E have markers. Cluster annotation Q has the letters ABC in its marker.](https://docs-assets.developer.apple.com/published/fed1d7801c2f71b2277c4cac2681cf29/cluster-annotations-02%402x.png)
 
 The map displays annotations Q, D, and E, and the resulting annotation arrays are:
 

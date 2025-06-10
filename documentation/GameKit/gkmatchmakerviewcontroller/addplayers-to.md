@@ -26,8 +26,6 @@ Call this method prior to presenting the view controller to the player. This met
 
 > ❗ **Important**:  Invoke this method from the game instance of only one player connected to the match. Don’t add the same players from multiple game instances.
 
- Invoke this method from the game instance of only one player connected to the match. Don’t add the same players from multiple game instances.
-
 ## Parameters
 
 - `match`: The match to which you want to add players.

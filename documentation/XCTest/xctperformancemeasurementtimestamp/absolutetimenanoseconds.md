@@ -1,6 +1,6 @@
 # absoluteTimeNanoSeconds
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The nanoseconds component of the absolute time.

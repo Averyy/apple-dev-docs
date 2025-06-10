@@ -31,10 +31,10 @@ class MTRClusterAudioOutput
 - [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusteraudiooutput/readattributefeaturemap(with:).md)
 - [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusteraudiooutput/readattributegeneratedcommandlist(with:).md)
 - [func readAttributeOutputList(with: MTRReadParams?) -> [String : Any]?](mtrclusteraudiooutput/readattributeoutputlist(with:).md)
-- [func renameOutput(with: MTRAudioOutputClusterRenameOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusteraudiooutput/renameoutput(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func renameOutput(with: MTRAudioOutputClusterRenameOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclusteraudiooutput/renameoutput(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func select(with: MTRAudioOutputClusterSelectOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusteraudiooutput/select(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func select(with: MTRAudioOutputClusterSelectOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclusteraudiooutput/select(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func renameOutput(with: MTRAudioOutputClusterRenameOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusteraudiooutput/renameoutput(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func renameOutput(with: MTRAudioOutputClusterRenameOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusteraudiooutput/renameoutput(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func select(with: MTRAudioOutputClusterSelectOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusteraudiooutput/select(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func select(with: MTRAudioOutputClusterSelectOutputParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusteraudiooutput/select(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
 
 ## Relationships
 

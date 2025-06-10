@@ -1,0 +1,42 @@
+# SparseMatrixIsSingular
+
+**Framework**: Accelerate  
+**Kind**: var
+
+The factorization aborted because the matrix is singular.
+
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
+
+## Declaration
+
+```swift
+var SparseMatrixIsSingular: SparseStatus_t { get }
+```
+
+## See Also
+
+- [init(Int32)](sparsestatus_t/init(_:).md)
+- [init(rawValue: Int32)](sparsestatus_t/init(rawvalue:).md)
+- [var rawValue: Int32](sparsestatus_t/rawvalue.md)
+- [var SparseStatusOK: SparseStatus_t](sparsestatusok.md)
+  The factorization was successful.
+- [var SparseFactorizationFailed: SparseStatus_t](sparsefactorizationfailed.md)
+  The factorization failed due to a numerical issue.
+- [var SparseInternalError: SparseStatus_t](sparseinternalerror.md)
+  The factorization encountered an internal error, such as failing to allocate memory.
+- [var SparseParameterError: SparseStatus_t](sparseparametererror.md)
+  An error in a user-supplied parameter.
+- [var SparseStatusReleased: SparseStatus_t](sparsestatusreleased.md)
+  The system freed the factorization object.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/sparsematrixissingular)*

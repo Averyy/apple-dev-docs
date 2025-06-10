@@ -1,6 +1,6 @@
 # baselineStartDate
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The date when the statistics collection began.

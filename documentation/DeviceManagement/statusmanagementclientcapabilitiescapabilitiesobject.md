@@ -12,8 +12,6 @@ A collection of the device’s supported features, payloads, and versions.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,14 +19,13 @@ A collection of the device’s supported features, payloads, and versions.
 object StatusManagementClientCapabilitiesCapabilitiesObject
 ```
 
-## See Also
+## Topics
 
+### Objects
 - [object StatusManagementClientCapabilitiesCapabilities_SupportedFeaturesObject](statusmanagementclientcapabilitiescapabilities_supportedfeaturesobject.md)
   A set of optional protocol features that the client supports.
 - [object StatusManagementClientCapabilitiesCapabilities_SupportedPayloadsObject](statusmanagementclientcapabilitiescapabilities_supportedpayloadsobject.md)
   The set of declaration and status items that the client supports.
-- [object StatusManagementClientCapabilitiesCapabilities_SupportedPayloads_DeclarationsObject](statusmanagementclientcapabilitiescapabilities_supportedpayloads_declarationsobject.md)
-  A declaration that the client supports.
 
 
 ---

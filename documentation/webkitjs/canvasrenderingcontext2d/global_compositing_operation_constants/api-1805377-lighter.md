@@ -1,6 +1,6 @@
 # lighter
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 #### Overview

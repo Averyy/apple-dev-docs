@@ -22,9 +22,9 @@ let kSecClass: CFString
 
 ## Mentions
 
-- [Storing an Identity in the Keychain](storing-an-identity-in-the-keychain.md)
-- [Storing a Certificate in the Keychain](storing-a-certificate-in-the-keychain.md)
 - [Storing Keys in the Keychain](storing-keys-in-the-keychain.md)
+- [Storing a Certificate in the Keychain](storing-a-certificate-in-the-keychain.md)
+- [Storing an Identity in the Keychain](storing-an-identity-in-the-keychain.md)
 
 #### Discussion
 

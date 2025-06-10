@@ -1,6 +1,6 @@
 # VTSessionCopyProperty(_:key:allocator:valueOut:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Retrieves a property on a Video Toolbox session.

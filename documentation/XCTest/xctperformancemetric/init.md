@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates a new instance with the specified raw value.

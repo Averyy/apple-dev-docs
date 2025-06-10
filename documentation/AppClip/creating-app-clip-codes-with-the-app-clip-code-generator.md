@@ -1,6 +1,6 @@
 # Creating App Clip Codes with the App Clip Code Generator
 
-**Framework**: Appclip
+**Framework**: App Clips
 
 Use the App Clip Code Generator command-line tool to verify your code’s colors, get color suggestions, and create App Clip Codes.
 
@@ -19,7 +19,7 @@ With the App Clip Code Generator command-line tool, you can:
 
 Use the generated SVG files to test your App Clip’s launch experience during development and to create App Clip Codes for use at physical locations, in digital communications, and so on. For design and printing guidance, see [`Human Interface Guidelines > App Clips > App Clip Codes`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/app-clip-codes/).
 
-If you already created an advanced App Clip experience in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) and prefer a tool with a more visual interface, you can use App Store Connect to create the App Clip Code. For more information, see [`Creating App Clip Codes with App Store Connect`](creating-app-clip-codes-with-app-store-connect.md).
+If you already created an advanced App Clip experience in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) or prefer a tool with a more visual interface, you can use App Store Connect to create the App Clip Code. For more information, see [`Creating App Clip Codes with App Store Connect`](creating-app-clip-codes-with-app-store-connect.md).
 
 ##### Install the App Clip Code Generator
 
@@ -125,7 +125,7 @@ When you’ve decided on the invocation URL and the color pair, use the App Clip
 
 To see all available commands and options, run `AppClipCodeGenerator --help`.
 
-App Clip Codes can only encode a limited amount of information. The App Clip Code Generator displays an error message if you choose an invocation URL that exceeds the amount of encodable information or if it contains invalid characters. For more information, see [`Encoding a URL in an App Clip Code`](encoding-a-url-in-an-app-clip-code.md). For general information about choosing an App Clip’s invocation URL, see [`Configuring the launch experience of your App Clip`](configuring-the-launch-experience-of-your-app-clip.md).
+App Clip Codes can only encode a limited amount of information. The App Clip Code Generator displays an error message if you choose an invocation URL that exceeds the amount of encodable information or if it contains invalid characters. For more information, see [`Encoding a URL in an App Clip Code`](encoding-a-url-in-an-app-clip-code.md). For general information about choosing the invocation URL for your App Clip, see [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md).
 
 Use the SVG file to test your App Clip invocations locally, add it to your digital and print media, or create NFC-integrated App Clip Codes. Print your App Clip Codes yourself, or work with a professional printing service — for example, [`RR Donnelley`](https://developer.apple.comhttps://touchless.acc.rrd.com/). For printing guidance, see [`Preparing multiple App Clip Codes for production`](preparing-multiple-app-clip-codes-for-production.md) and [`Human Interface Guidelines > App Clips > Printing Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/printing-guidelines/).
 
@@ -164,7 +164,12 @@ Doing so generates four App Clip Codes using the data in the CSV file and saves 
 
 ![Screenshot of a Finder window that shows the file structure of a directory named AppClipCodes. The folder contains files you copied from the Scripts folder. It also contains a new directory named GeneratedCodes that contains generated App Clip Codes.](https://docs-assets.developer.apple.com/published/c89a60427bde7627ab0382ce610a15fb/media-3706526%402x.png)
 
+## See Also
+
+- [Creating App Clip Codes with App Store Connect](creating-app-clip-codes-with-app-store-connect.md)
+  Select one or more advanced App Clip experiences in App Store Connect and create App Clip Codes for users to scan to launch your App Clip.
+
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/creating-app-clip-codes-with-the-app-clip-code-generator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appclip/creating-app-clip-codes-with-the-app-clip-code-generator)*

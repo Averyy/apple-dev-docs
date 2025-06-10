@@ -1,6 +1,6 @@
 # metadata
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 Descriptive information about the weather change data.

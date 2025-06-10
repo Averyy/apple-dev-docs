@@ -1,6 +1,6 @@
 # shadowOffset
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The shadow’s relative position, which you specify with horizontal and vertical offset values.
@@ -30,4 +30,4 @@ This property contains the horizontal and vertical offset values that you specif
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsshadow/shadowoffset)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsshadow/shadowoffset)*

@@ -14,8 +14,6 @@ Xcode understands the bundle structure and, if you use Xcode to build your bundl
 
 > ❗ **Important**:  If you put content in the wrong location, you may encounter hard-to-debug code signing and distribution problems. These problems aren’t always immediately obvious. For example, when building a Mac app, incorrectly placed code might work during day-to-day development, but might cause problems during notarization.
 
- If you put content in the wrong location, you may encounter hard-to-debug code signing and distribution problems. These problems aren’t always immediately obvious. For example, when building a Mac app, incorrectly placed code might work during day-to-day development, but might cause problems during notarization.
-
 ##### Place Content Based on Type and Platform
 
 Bundled content includes the bundle’s `Info.plist`, code content and resources:
@@ -114,8 +112,6 @@ CoreWaffleVarnishing.framework/
 ```
 
 > ❗ **Important**:  The framework’s root must contain only the `Versions` directory and symlinks. Don’t place any other content there. Doing so causes code-signing problems. Similarly, the `Versions` directory must contain only version directories — ideally just one, called `A` — and a symlink called `Current` that targets one version directory.
-
- The framework’s root must contain only the `Versions` directory and symlinks. Don’t place any other content there. Doing so causes code-signing problems. Similarly, the `Versions` directory must contain only version directories — ideally just one, called `A` — and a symlink called `Current` that targets one version directory.
 
 ##### Place Code Content Directly in Its Location
 

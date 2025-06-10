@@ -1,6 +1,6 @@
 # min()
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns the minimum element in the sequence.

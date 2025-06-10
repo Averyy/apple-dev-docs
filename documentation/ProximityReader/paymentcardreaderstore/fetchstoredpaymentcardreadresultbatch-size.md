@@ -1,6 +1,6 @@
 # fetchStoredPaymentCardReadResultBatch(size:)
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Returns a batch of reads the framework previously stored, in chronological order, of the size you request.

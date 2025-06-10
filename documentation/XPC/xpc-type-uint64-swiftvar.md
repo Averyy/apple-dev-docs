@@ -1,6 +1,6 @@
 # XPC_TYPE_UINT64
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents an unsigned, 64-bit integer value.

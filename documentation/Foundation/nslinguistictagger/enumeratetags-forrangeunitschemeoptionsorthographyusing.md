@@ -26,8 +26,6 @@ This method’s block is called for all tokens intersecting a given range, suppl
 
 > ❗ **Important**:  This method enumerates over the ranges of all tokens that intersect the specified range.
 
- This method enumerates over the ranges of all tokens that intersect the specified range.
-
 This is a convenience method for initializing a linguistic tagger, setting the [`string`](nslinguistictagger/string.md) property, and calling the [`enumerateTags(in:unit:scheme:options:using:)`](nslinguistictagger/enumeratetags(in:unit:scheme:options:using:).md) method. If you analyze the same string more than once, you should create a linguistic tagger object instead of calling this method.
 
 ## Parameters

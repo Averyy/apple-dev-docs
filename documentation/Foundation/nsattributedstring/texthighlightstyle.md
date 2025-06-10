@@ -40,6 +40,7 @@ Use an [`NSAttributedString.TextHighlightStyle`](nsattributedstring/texthighligh
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

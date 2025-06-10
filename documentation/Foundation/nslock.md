@@ -26,8 +26,6 @@ An [`NSLock`](nslock.md) object can be used to mediate access to an application�
 
 > ⚠️ **Warning**:  The [`NSLock`](nslock.md) class uses POSIX threads to implement its locking behavior. When sending an unlock message to an [`NSLock`](nslock.md) object, you must be sure that message is sent from the same thread that sent the initial lock message. Unlocking a lock from a different thread can result in undefined behavior.
 
- The [`NSLock`](nslock.md) class uses POSIX threads to implement its locking behavior. When sending an unlock message to an [`NSLock`](nslock.md) object, you must be sure that message is sent from the same thread that sent the initial lock message. Unlocking a lock from a different thread can result in undefined behavior.
-
 You should not use this class to implement a recursive lock. Calling the `lock` method twice on the same thread will lock up your thread permanently. Use the [`NSRecursiveLock`](nsrecursivelock.md) class to implement recursive locks instead.
 
 Unlocking a lock that is not locked is considered a programmer error and should be fixed in your code. The [`NSLock`](nslock.md) class reports such errors by printing an error message to the console when they occur.
@@ -56,6 +54,7 @@ Unlocking a lock that is not locked is considered a programmer error and should 
 - [NSLocking](nslocking.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

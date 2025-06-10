@@ -1,6 +1,6 @@
 # WebArchivePboardType
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 The pasteboard type constant used when adding or accessing a WebArchive on the pasteboard.

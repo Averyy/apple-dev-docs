@@ -1,6 +1,6 @@
 # binding
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Associates information in a data item with an element.
 
@@ -30,4 +30,4 @@ The `binding` attribute can be used with any element.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/binding)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/binding)*

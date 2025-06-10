@@ -1,6 +1,6 @@
 # sourceFrame
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The frame that requested the navigation.

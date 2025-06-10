@@ -72,11 +72,12 @@ For more information on using [`PhotogrammetrySession`](photogrammetrysession.md
   Data structure to observe hardware limits for reconstruction.  Note that these are specific to the device on which the `PhotogrammetrySession` is run.
 - [PhotogrammetrySession.Outputs](photogrammetrysession/outputs-swift.struct.md)
   An asynchronous sequence of session-related updates.
+### Initializers
+- [convenience(input:configuration:)](photogrammetrysession/init(input:configuration:).md)
+  Creates a session from a specified directory of images.
 ### Type Properties
 - [static let limits: PhotogrammetrySession.Limits](photogrammetrysession/limits-swift.type.property.md)
   Observer for the device-specific constant hardware limits for reconstruction.
-### Default Implementations
-- [Identifiable Implementations](photogrammetrysession/identifiable-implementations.md)
 
 ## Relationships
 

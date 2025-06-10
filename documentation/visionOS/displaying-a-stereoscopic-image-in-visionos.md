@@ -1,6 +1,6 @@
 # Displaying a stereoscopic image
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
 

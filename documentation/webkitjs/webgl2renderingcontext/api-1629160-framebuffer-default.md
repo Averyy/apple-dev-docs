@@ -1,6 +1,6 @@
 # FRAMEBUFFER_DEFAULT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

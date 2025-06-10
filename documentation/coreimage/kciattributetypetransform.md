@@ -1,16 +1,16 @@
 # kCIAttributeTypeTransform
 
 **Framework**: Core Image  
-**Kind**: data
+**Kind**: var
 
-An [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) is associated with attribute.
+The transform type of an attribute.
 
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS 9.0+
+- tvOS ?+
 - visionOS 1.0+
 
 ## Declaration
@@ -18,6 +18,15 @@ An [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundatio
 ```swift
 let kCIAttributeTypeTransform: String
 ```
+
+#### Discussion
+
+An [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) is associated with attribute.
+
+## See Also
+
+- [let kCIAttributeTypeImage: String](kciattributetypeimage.md)
+  A [`CIImage`](ciimage.md) object.
 
 
 ---

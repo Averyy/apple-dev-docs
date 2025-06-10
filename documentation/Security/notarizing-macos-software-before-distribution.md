@@ -117,4 +117,4 @@ For information about how to incorporate notarization into your custom build scr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/notarizing-macos-software-before-distribution)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution)*

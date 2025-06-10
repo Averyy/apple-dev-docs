@@ -9,8 +9,6 @@ A response from the device after it processes the command to stop mirroring the 
 - iOS 7.0+
 - iPadOS 7.0+
 - macOS 10.10+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,7 +18,7 @@ object StopMirroringResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object StopMirroringResponse.ErrorChainItem](stopmirroringresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 

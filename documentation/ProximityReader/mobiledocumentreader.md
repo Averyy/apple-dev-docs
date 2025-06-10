@@ -9,6 +9,7 @@ An object for configuring mobile document reading on the current device.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -49,6 +50,7 @@ You can optionally display your brand’s name and logo during a mobile document
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

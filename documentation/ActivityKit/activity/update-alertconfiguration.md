@@ -34,8 +34,6 @@ The system ignores updates to a Live Activity that’s in the [`ActivityState.en
   Updates the dynamic content of the Live Activity.
 - [struct AlertConfiguration](alertconfiguration.md)
   A structure you use to configure an alert that appears when you update your Live Activity.
-- [func update(using: Activity<Attributes>.ContentState) async](activity/update(using:).md)
-  Updates the dynamic content of the Live Activity.
 - [func update(ActivityContent<Activity<Attributes>.ContentState>, alertConfiguration: AlertConfiguration?, timestamp: Date) async](activity/update(_:alertconfiguration:timestamp:).md)
   Updates the dynamic content of a Live Activity and alerts a person about the Live Activity update.
 

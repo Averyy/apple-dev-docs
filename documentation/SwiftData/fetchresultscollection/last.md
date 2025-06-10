@@ -1,6 +1,6 @@
 # last
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: property
 
 The last element of the collection.

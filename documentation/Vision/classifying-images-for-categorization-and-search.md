@@ -116,6 +116,10 @@ List {
   A type for image-analysis requests.
 - [protocol VisionObservation](visionobservation.md)
   A type for objects produced by image-analysis requests.
+- [struct DetectLensSmudgeRequest](detectlenssmudgerequest.md)
+  A request that detects a smudge on a lens from an image or video frame capture.
+- [struct SmudgeObservation](smudgeobservation.md)
+  An observation that provides an overall score of the presence of a smudge in an image or video frame capture.
 
 
 ---

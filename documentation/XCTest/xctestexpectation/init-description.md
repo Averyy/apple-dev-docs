@@ -1,6 +1,6 @@
 # init(description:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates a new [`XCTestExpectation`](xctestexpectation.md) with the provided description.

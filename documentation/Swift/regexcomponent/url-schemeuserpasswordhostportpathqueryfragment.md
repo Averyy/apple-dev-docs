@@ -30,9 +30,9 @@ All the parameters to this method take a [`URL.ParseStrategy.ComponentParseStrat
 
 - [`URL.ParseStrategy.ComponentParseStrategy.required`](https://developer.apple.com/documentation/Foundation/URL/ParseStrategy/ComponentParseStrategy/required) — The URL component needs to be present for matching to succeed.
 - [`URL.ParseStrategy.ComponentParseStrategy.optional`](https://developer.apple.com/documentation/Foundation/URL/ParseStrategy/ComponentParseStrategy/optional) — The URL component doesn’t need to be present for matching to succeed.
-- [`URL.ParseStrategy.ComponentParseStrategy.defaultValue(_:)`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy/defaultvalue) — If the URL component is absent, the captured URL contains the provided default value for the component.
+- [`URL.ParseStrategy.ComponentParseStrategy.defaultValue(_:)`](https://developer.apple.com/documentation/Foundation/URL/ParseStrategy/ComponentParseStrategy/defaultValue(_:)) — If the URL component is absent, the captured URL contains the provided default value for the component.
 
-The following example creates a [`Regex`](regex.md) that matches a URL, when it contains a scheme and a host. It then matches against a source string that contains a date formatted in the `en_US` locale, some whitespace, and a valid URL. The regex defines a default value for the port with [`URL.ParseStrategy.ComponentParseStrategy.defaultValue(_:)`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy/defaultvalue), and because the source URL doesn’t include a port, the captured URL adds it.
+The following example creates a [`Regex`](regex.md) that matches a URL, when it contains a scheme and a host. It then matches against a source string that contains a date formatted in the `en_US` locale, some whitespace, and a valid URL. The regex defines a default value for the port with [`URL.ParseStrategy.ComponentParseStrategy.defaultValue(_:)`](https://developer.apple.com/documentation/Foundation/URL/ParseStrategy/ComponentParseStrategy/defaultValue(_:)), and because the source URL doesn’t include a port, the captured URL adds it.
 
 ```swift
 let source = "7/31/2022, 5:15:12 AM  https://www.example.com/productList?query=slushie"

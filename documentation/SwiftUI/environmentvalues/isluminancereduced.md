@@ -1,6 +1,6 @@
 # isLuminanceReduced
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 A Boolean value that indicates whether the display or environment currently requires reduced luminance.
@@ -58,4 +58,4 @@ In addition to the changes that you make, the system could also dim the display 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/environmentvalues/isluminancereduced)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/environmentvalues/isluminancereduced)*

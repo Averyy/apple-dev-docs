@@ -1,6 +1,6 @@
 # UNNotificationSettings
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 The object for managing notification-related settings and the authorization status of your app.

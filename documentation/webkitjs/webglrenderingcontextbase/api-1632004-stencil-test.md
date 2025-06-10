@@ -1,6 +1,6 @@
 # STENCIL_TEST
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

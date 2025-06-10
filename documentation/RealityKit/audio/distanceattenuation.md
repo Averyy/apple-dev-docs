@@ -10,6 +10,7 @@ The different ways that audio intensity diminishes as the distance between the l
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -26,11 +27,6 @@ enum DistanceAttenuation
 ### Type Properties
 - [static let `default`: Audio.DistanceAttenuation](audio/distanceattenuation/default.md)
   The default distance attenuation, which uses a rolloff model that mimics real-world physics.
-### Default Implementations
-- [Decodable Implementations](audio/distanceattenuation/decodable-implementations.md)
-- [Encodable Implementations](audio/distanceattenuation/encodable-implementations.md)
-- [Equatable Implementations](audio/distanceattenuation/equatable-implementations.md)
-- [Hashable Implementations](audio/distanceattenuation/hashable-implementations.md)
 
 ## Relationships
 

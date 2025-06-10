@@ -1,0 +1,36 @@
+# CreateMapping_Invoke
+
+**Framework**: Kernel  
+**Kind**: clm
+
+**Availability**:
+- macOS 10.15+
+
+## Declaration
+
+```swift
+static kern_return_t CreateMapping_Invoke(const IORPC rpc, OSMetaClassBase *target, CreateMapping_Handler func);
+```
+
+## See Also
+
+- [reserved](iomemorydescriptor/reserved.md)
+- [+ initialize](iomemorydescriptor/1441798-initialize.md)
+- [- Dispatch](iomemorydescriptor/3180641-dispatch.md)
+- [- populateDevicePager](iomemorydescriptor/1442017-populatedevicepager.md)
+- [- CreateMapping](iomemorydescriptor/3174974-createmapping.md)
+- [- CreateMapping_Impl](iomemorydescriptor/3174975-createmapping_impl.md)
+- [- Map](../driverkit/iomemorydescriptor/map.md)
+  Maps memory internally.
+- [- addMapping](iomemorydescriptor/1442013-addmapping.md)
+- [- removeMapping](iomemorydescriptor/1441778-removemapping.md)
+- [- makeMapping](iomemorydescriptor/1441923-makemapping.md)
+- [- doMap](iomemorydescriptor/1441941-domap.md)
+- [- doUnmap](iomemorydescriptor/1441883-dounmap.md)
+- [- handleFault](iomemorydescriptor/1441782-handlefault.md)
+- [- redirect](iomemorydescriptor/1441871-redirect.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/iomemorydescriptor/3174976-createmapping_invoke)*

@@ -1,6 +1,6 @@
 # executionTimeAllowance
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The number of seconds, rounded up to the nearest minute, for a test to run before it fails with a timeout error.

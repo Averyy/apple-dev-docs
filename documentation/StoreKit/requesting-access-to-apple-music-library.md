@@ -16,8 +16,6 @@ Provide a purpose string or usage description that describes how your app intend
 
 > ❗ **Important**:  This key is required for apps that access the user’s music library. Apps crash when the key is absent.
 
- This key is required for apps that access the user’s music library. Apps crash when the key is absent.
-
 See [`Requesting access to protected resources`](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources) for more details.
 
 ##### Request Authorization

@@ -21,9 +21,9 @@ class VNImageRequestHandler
 
 ## Mentions
 
-- [Recognizing Text in Images](recognizing-text-in-images.md)
 - [Identifying 3D human body poses in images](identifying-3d-human-body-poses-in-images.md)
 - [Detecting Human Body Poses in Images](detecting-human-body-poses-in-images.md)
+- [Recognizing Text in Images](recognizing-text-in-images.md)
 
 #### Overview
 

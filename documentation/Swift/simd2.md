@@ -356,6 +356,7 @@ struct SIMD2<Scalar> where Scalar : SIMDScalar
 - [SIMD](simd.md)
 - [SIMDStorage](simdstorage.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

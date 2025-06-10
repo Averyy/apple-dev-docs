@@ -24,14 +24,6 @@ func credentials(forExtendedPANID extendedPANID: Data) async throws -> THCredent
 func credentials(forExtendedPANID extendedPANID: Data) async throws -> THCredentials
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
-You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func credentials(forExtendedPANID extendedPANID: Data) async throws -> THCredentials
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 When calling this method, an alert appears asking for user permission to access credentials.
 
 Call the method as follows:

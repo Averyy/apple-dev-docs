@@ -16,7 +16,7 @@ An array that represents the gradient’s color transition points.
 ## Declaration
 
 ```swift
-var colors: [NSColor] { get }
+var colors: [UIColor] { get }
 ```
 
 ## See Also

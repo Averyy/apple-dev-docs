@@ -1,6 +1,6 @@
 # getImageData
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Gets an `imageData` object containing an RGBa pixel array corresponding to a rectangular area of the canvas.

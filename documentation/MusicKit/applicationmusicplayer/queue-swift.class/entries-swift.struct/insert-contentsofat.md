@@ -1,6 +1,6 @@
 # insert(contentsOf:at:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Inserts the elements of a sequence into the collection at the specified position.

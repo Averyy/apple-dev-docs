@@ -1,6 +1,6 @@
 # distanceAttenuation
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: property
 
 A value that specifies the way that the sound level decreases as the distance between the listener and the sound source increases.
@@ -10,6 +10,7 @@ A value that specifies the way that the sound level decreases as the distance be
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

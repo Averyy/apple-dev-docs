@@ -26,8 +26,6 @@ You use the [`string(from:)`](measurementformatter/string(from:)-wt9y.md) method
 
 > 💡 **Tip**:  In Swift, you can use [`Measurement.FormatStyle`](measurement/formatstyle.md) rather than [`MeasurementFormatter`](measurementformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 
- In Swift, you can use [`Measurement.FormatStyle`](measurement/formatstyle.md) rather than [`MeasurementFormatter`](measurementformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
-
 ## Topics
 
 ### Specifying the Format

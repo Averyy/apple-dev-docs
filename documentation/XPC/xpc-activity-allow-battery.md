@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_ALLOW_BATTERY
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A Boolean value that indicates whether to allow the activity to run while the computer is on battery power.

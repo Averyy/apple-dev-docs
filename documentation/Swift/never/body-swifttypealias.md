@@ -1,0 +1,26 @@
+# Never.Body
+
+**Framework**: Swift  
+**Kind**: typealias
+
+The transfer representation for the item.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
+- macOS 10.15+
+- tvOS 13.0+
+- visionOS 1.0+
+- watchOS 6.0+
+
+## Declaration
+
+```swift
+typealias Body = Never
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/never/body-swift.typealias)*

@@ -27,8 +27,6 @@ To record a view-through impression,  call [`beginView()`](appimpression/beginvi
 
 > ❗ **Important**: Regenerate an `AppImpression` for each ad you show. Don’t reuse `AppImpression` structures across multiple ads.
 
-Regenerate an `AppImpression` for each ad you show. Don’t reuse `AppImpression` structures across multiple ads.
-
 To support click-through attribution, place a [`UIEventAttributionView`](https://developer.apple.com/documentation/UIKit/UIEventAttributionView) over the ad content and call  either [`handleTap(reengagementURL:)`](appimpression/handletap(reengagementurl:).md) or [`handleTap()`](appimpression/handletap().md) after a person taps the ad content. The framework then validates that a person taps a `UIEventAttributionView` before recording the impression, and throws an error if it can’t validate that a tap occurred in a `UIEventAttributionView`.
 
 After the framework validates the tap, it records the impression and then attempts to launch one of the user’s installed marketplaces to show the product page for the advertised app. The system uses the advertised item ID from the JSON Web Signature (JWS) string you provide to initialize the `AppImpression`, in addition to the user’s preferred marketplaces, to help determine which marketplace the framework needs to launch. If the app is already installed, the framework launches into the app’s Home Screen instead.
@@ -105,6 +103,7 @@ In iOS 18 and later, `AppImpression` supports reengagement for click-through int
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -6,6 +6,7 @@
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -28,6 +29,7 @@ struct TextAlignment
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

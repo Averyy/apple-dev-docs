@@ -1,6 +1,6 @@
 # Event
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: protocol
 
 A type that can be sent as an event.
@@ -10,6 +10,7 @@ A type that can be sent as an event.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -67,17 +68,23 @@ struct RealityGame: View {
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AccessibilityEvents.Activate](accessibilityevents/activate.md)
 - [AccessibilityEvents.CustomAction](accessibilityevents/customaction.md)
 - [AccessibilityEvents.Decrement](accessibilityevents/decrement.md)
 - [AccessibilityEvents.Increment](accessibilityevents/increment.md)
 - [AccessibilityEvents.RotorNavigation](accessibilityevents/rotornavigation.md)
+- [AnchorStateEvents.DidAnchor](anchorstateevents/didanchor.md)
+- [AnchorStateEvents.DidFailToAnchor](anchorstateevents/didfailtoanchor.md)
+- [AnchorStateEvents.WillUnanchor](anchorstateevents/willunanchor.md)
 - [AnimationEvents.PlaybackCompleted](animationevents/playbackcompleted.md)
 - [AnimationEvents.PlaybackLooped](animationevents/playbacklooped.md)
-- [AnimationEvents.PlaybackStarted](animationevents/playbackstarted.md)
+- [AnimationEvents.PlaybackStarted](animationevents/playbackstarted-876gy.md)
+- [AnimationEvents.PlaybackStarted](animationevents/playbackstarted-6pxcp.md)
 - [AnimationEvents.PlaybackTerminated](animationevents/playbackterminated.md)
-- [AnimationEvents.SkeletalPoseUpdateComplete](animationevents/skeletalposeupdatecomplete.md)
+- [AnimationEvents.SkeletalPoseUpdateComplete](animationevents/skeletalposeupdatecomplete-o560.md)
+- [AnimationEvents.SkeletalPoseUpdateComplete](animationevents/skeletalposeupdatecomplete-88hp5.md)
 - [AudioEvents.PlaybackCompleted](audioevents/playbackcompleted.md)
 - [CollisionEvents.Began](collisionevents/began.md)
 - [CollisionEvents.Ended](collisionevents/ended.md)
@@ -87,21 +94,38 @@ struct RealityGame: View {
 - [ComponentEvents.DidChange](componentevents/didchange.md)
 - [ComponentEvents.WillDeactivate](componentevents/willdeactivate.md)
 - [ComponentEvents.WillRemove](componentevents/willremove.md)
+- [ImagePresentationEvents.TransitionCompleted](imagepresentationevents/transitioncompleted.md)
+- [ImagePresentationEvents.TransitionStarted](imagepresentationevents/transitionstarted.md)
+- [ManipulationEvents.DidHandOff](manipulationevents/didhandoff.md)
+- [ManipulationEvents.DidUpdateTransform](manipulationevents/didupdatetransform.md)
+- [ManipulationEvents.WillBegin](manipulationevents/willbegin.md)
+- [ManipulationEvents.WillEnd](manipulationevents/willend.md)
+- [ManipulationEvents.WillRelease](manipulationevents/willrelease.md)
 - [PhysicsSimulationEvents.DidSimulate](physicssimulationevents/didsimulate.md)
 - [PhysicsSimulationEvents.WillSimulate](physicssimulationevents/willsimulate.md)
 - [SceneEvents.AnchoredStateChanged](sceneevents/anchoredstatechanged.md)
-- [SceneEvents.DidActivateEntity](sceneevents/didactivateentity.md)
-- [SceneEvents.DidAddEntity](sceneevents/didaddentity.md)
-- [SceneEvents.DidReparentEntity](sceneevents/didreparententity.md)
+- [SceneEvents.DidActivateEntity](sceneevents/didactivateentity-5jy9a.md)
+- [SceneEvents.DidActivateEntity](sceneevents/didactivateentity-8my6.md)
+- [SceneEvents.DidAddEntity](sceneevents/didaddentity-6yi7l.md)
+- [SceneEvents.DidAddEntity](sceneevents/didaddentity-9sx4i.md)
+- [SceneEvents.DidReparentEntity](sceneevents/didreparententity-2rsns.md)
+- [SceneEvents.DidReparentEntity](sceneevents/didreparententity-8xr41.md)
+- [SceneEvents.TrackingStateUpdate](sceneevents/trackingstateupdate-59q6r.md)
+- [SceneEvents.TrackingStateUpdate](sceneevents/trackingstateupdate-9q21e.md)
 - [SceneEvents.Update](sceneevents/update.md)
-- [SceneEvents.WillDeactivateEntity](sceneevents/willdeactivateentity.md)
-- [SceneEvents.WillRemoveEntity](sceneevents/willremoveentity.md)
+- [SceneEvents.WillDeactivateEntity](sceneevents/willdeactivateentity-3mahl.md)
+- [SceneEvents.WillDeactivateEntity](sceneevents/willdeactivateentity-4vvwc.md)
+- [SceneEvents.WillRemoveEntity](sceneevents/willremoveentity-2fca3.md)
+- [SceneEvents.WillRemoveEntity](sceneevents/willremoveentity-83c6c.md)
 - [SynchronizationEvents.OwnershipChanged](synchronizationevents/ownershipchanged.md)
 - [SynchronizationEvents.OwnershipRequest](synchronizationevents/ownershiprequest.md)
 - [VideoPlayerEvents.ContentTypeDidChange](videoplayerevents/contenttypedidchange.md)
 - [VideoPlayerEvents.ImmersiveViewingModeDidChange](videoplayerevents/immersiveviewingmodedidchange.md)
 - [VideoPlayerEvents.ImmersiveViewingModeDidTransition](videoplayerevents/immersiveviewingmodedidtransition.md)
 - [VideoPlayerEvents.ImmersiveViewingModeWillTransition](videoplayerevents/immersiveviewingmodewilltransition.md)
+- [VideoPlayerEvents.RenderingStatusDidChange](videoplayerevents/renderingstatusdidchange.md)
+- [VideoPlayerEvents.SpatialVideoModeDidChange](videoplayerevents/spatialvideomodedidchange.md)
+- [VideoPlayerEvents.VideoComfortMitigationDidOccur](videoplayerevents/videocomfortmitigationdidoccur.md)
 - [VideoPlayerEvents.VideoSizeDidChange](videoplayerevents/videosizedidchange.md)
 - [VideoPlayerEvents.ViewingModeDidChange](videoplayerevents/viewingmodedidchange.md)
 
@@ -111,12 +135,8 @@ struct RealityGame: View {
   A type on which events can be published and subscribed.
 - [struct EventSubscription](eventsubscription.md)
   A subscription to an event.
-- [enum SceneEvents](sceneevents.md)
-  Events the scene invokes.
-- [enum ComponentEvents](componentevents.md)
-  Provides the events related to components.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/event)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/event)*

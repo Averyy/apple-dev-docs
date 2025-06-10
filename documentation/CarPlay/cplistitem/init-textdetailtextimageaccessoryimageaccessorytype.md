@@ -13,6 +13,7 @@ Creates a list item that displays an accessory beside its content.
 ## Declaration
 
 ```swift
+@MainActor
 init(text: String?, detailText: String?, image: UIImage?, accessoryImage: UIImage?, accessoryType: CPListItemAccessoryType)
 ```
 

@@ -6,7 +6,7 @@
 The last call to request content authorization couldn’t be completed in a non-recoverable way.
 
 **Availability**:
-- macOS ?+
+- macOS 10.7+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:infoFlagsOut:outputHandler:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Presents frames to the compression session and invokes the output callback when compression is complete.
@@ -24,8 +24,6 @@ func VTCompressionSessionEncodeFrame(_ session: VTCompressionSession, imageBuffe
 Encoded frames may or may not be output before the function returns. The client should not modify the pixel data after making this call. The session and/or encoder retains the image buffer as long as necessary.
 
 > ❗ **Important**:  This function cannot be called with a session created with a [`VTCompressionOutputCallback`](vtcompressionoutputcallback.md).
-
- This function cannot be called with a session created with a [`VTCompressionOutputCallback`](vtcompressionoutputcallback.md).
 
 ## Parameters
 

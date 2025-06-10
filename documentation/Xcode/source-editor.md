@@ -9,6 +9,11 @@ Edit your source files, locate issues, and make necessary changes using the Sour
 ### Source file creation, organization, and editing
 - [Editing source files in Xcode](creating-organizing-and-editing-source-files.md)
   Edit source files in Xcode and add Quick Help comments to improve your project’s maintainability.
+- [Running code snippets using the playground macro](running-code-snippets-using-the-playground-macro.md)
+  Add playgrounds to your code that run and display results in the canvas.
+### Writing code with intelligence in Xcode
+- [Writing code with intelligence in Xcode](writing-code-with-intelligence-in-xcode.md)
+  Generate code, fix bugs fast, and learn as you go with intelligence built directly into Xcode.
 ### Issue detection
 - [Fixing issues in your code as you type](fixing-issues-in-your-code-as-you-type.md)
   Minimize typing-related errors using code completion, and let Xcode fix common mistakes for you.

@@ -1,6 +1,6 @@
 # Managing MDM Devices and Users in macOS
 
-**Framework**: Devicemanagement
+**Framework**: Device Management
 
 Manage devices and users as separate entities in macOS.
 
@@ -65,4 +65,4 @@ If a user requests a password change for an account, your servers can update the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/managing-mdm-devices-and-users-in-macos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/managing-mdm-devices-and-users-in-macos)*

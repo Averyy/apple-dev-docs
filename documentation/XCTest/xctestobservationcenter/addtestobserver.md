@@ -1,6 +1,6 @@
 # addTestObserver(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Registers an object conforming to [`XCTestObservation`](xctestobservation.md) as an observer for the current test session.

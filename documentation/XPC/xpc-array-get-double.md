@@ -1,6 +1,6 @@
 # xpc_array_get_double(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Gets a double-precision floating point primitive value from an array directly.

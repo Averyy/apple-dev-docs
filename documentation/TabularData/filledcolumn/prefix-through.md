@@ -1,6 +1,6 @@
 # prefix(through:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns a subsequence from the start of the collection through the specified position.

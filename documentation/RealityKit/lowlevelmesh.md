@@ -1,6 +1,6 @@
 # LowLevelMesh
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: class
 
 A container for vertex data that you can use to create and update meshes using your own format.
@@ -10,6 +10,7 @@ A container for vertex data that you can use to create and update meshes using y
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -178,6 +179,7 @@ The [`MeshResource`](meshresource.md) retains a reference to the `LowLevelMesh`,
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -197,8 +199,10 @@ The [`MeshResource`](meshresource.md) retains a reference to the `LowLevelMesh`,
   Designates the intended usage of a vertex attribute.
 - [LowLevelMesh.PartsCollection](lowlevelmesh/partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
+- [class LowLevelBuffer](lowlevelbuffer.md)
+- [class LowLevelInstanceData](lowlevelinstancedata.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/lowlevelmesh)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/lowlevelmesh)*

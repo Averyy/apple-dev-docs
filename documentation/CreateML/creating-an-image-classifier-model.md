@@ -1,6 +1,6 @@
 # Creating an Image Classifier Model
 
-**Framework**: Createml
+**Framework**: Create ML
 
 Train a machine learning model to classify images, and add it to your Core ML app.
 
@@ -147,4 +147,4 @@ For example, you can initialize two [`MLImageClassifier.DataSource`](mlimageclas
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateML/creating-an-image-classifier-model)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createml/creating-an-image-classifier-model)*

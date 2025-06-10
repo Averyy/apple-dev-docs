@@ -1,6 +1,6 @@
 # tangents
 
-**Framework**: Compositorservices  
+**Framework**: Compositor Services  
 **Kind**: property
 
 The tangent values for the angles you use to determine the planes of the viewing frustum.
@@ -30,4 +30,4 @@ This function returns the tangent values you use to build the perspective projec
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CompositorServices/layerrenderer/drawable/view/tangents)*
+*[View on Apple Developer](https://developer.apple.com/documentation/compositorservices/layerrenderer/drawable/view/tangents)*

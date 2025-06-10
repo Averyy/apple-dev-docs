@@ -91,4 +91,4 @@ The following table describes the alternate modes that associated domains suppor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-an-associated-domain)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-an-associated-domain)*

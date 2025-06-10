@@ -1,6 +1,6 @@
 # subjects
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The set of all subjects the framework identifies in an image.

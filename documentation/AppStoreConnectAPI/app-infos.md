@@ -30,9 +30,11 @@ For more information about the metadata in the `appInfos` resource, see [`App an
 ### Reading Localization Information
 - [List All App Info Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)
   Get a list of localized, app-level information for an app.
+- [GET /v1/appInfos/{id}/relationships/appInfoLocalizations](get-v1-appinfos-_id_-relationships-appinfolocalizations.md)
 ### Reading Age Rating Information
 - [Read age rating declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
   Get the age rating declaration for the app info.
+- [GET /v1/appInfos/{id}/relationships/ageRatingDeclaration](get-v1-appinfos-_id_-relationships-ageratingdeclaration.md)
 ### Objects
 - [object AppInfo](appinfo.md)
   The data structure that represent an App Infos resource.
@@ -42,6 +44,13 @@ For more information about the metadata in the `appInfos` resource, see [`App an
   A response that contains a list of App Info resources.
 - [object AppInfoUpdateRequest](appinfoupdaterequest.md)
   The request body you use to update an App Info.
+- [object AppInfoAppInfoLocalizationsLinkagesResponse](appinfoappinfolocalizationslinkagesresponse.md)
+- [object AppInfoPrimaryCategoryLinkageResponse](appinfoprimarycategorylinkageresponse.md)
+- [object AppInfoPrimarySubcategoryOneLinkageResponse](appinfoprimarysubcategoryonelinkageresponse.md)
+- [object AppInfoPrimarySubcategoryTwoLinkageResponse](appinfoprimarysubcategorytwolinkageresponse.md)
+- [object AppInfoSecondaryCategoryLinkageResponse](appinfosecondarycategorylinkageresponse.md)
+- [object AppInfoSecondarySubcategoryOneLinkageResponse](appinfosecondarysubcategoryonelinkageresponse.md)
+- [object AppInfoSecondarySubcategoryTwoLinkageResponse](appinfosecondarysubcategorytwolinkageresponse.md)
 
 ## See Also
 
@@ -53,6 +62,8 @@ For more information about the metadata in the `appInfos` resource, see [`App an
   Create and maintain version-specific App Store metadata that’s localized.
 - [Routing App Coverages](routing-app-coverages.md)
   Manage geographic coverage files for apps that use location to provide routing information.
+- [Accessibility declarations](accessibility-declarations.md)
+  Manage accessibility metadata for your apps per device family.
 
 
 ---

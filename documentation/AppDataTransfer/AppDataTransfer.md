@@ -1,6 +1,6 @@
 # App Data Transfer
 
-**Framework**: Appdatatransfer  
+**Framework**: App Data Transfer  
 **Kind**: module
 
 Download App Store information and app-install activity about your app.

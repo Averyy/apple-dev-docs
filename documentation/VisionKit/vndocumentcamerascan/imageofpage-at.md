@@ -1,6 +1,6 @@
 # imageOfPage(at:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Requests the image of a page at a specified index.

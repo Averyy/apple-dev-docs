@@ -74,6 +74,41 @@ ForEach(subviews: containedContent) { subviews in
 }
 ```
 
+The container values modifier can also be used to modify mutable subfields of container values.
+
+```swift
+struct PinPosition {
+    var rotation: Double = 0
+    var xOffset: Int = 0
+}
+
+extension ContainerValues {
+    @Entry var pinPosition: PinPosition = .init()
+}
+
+// pinPosition.rotation = 0, pinPosition.xOffset = 3
+Text("A").containerValue(\.pinPosition.xOffset, 3)
+
+// pinPosition.rotation = 10, pinPosition.xOffset = 5
+Text("B")
+    .containerValue(\.pinPosition.rotation, 10)
+    .containerValue(\.pinPosition.xOffset, 5)
+```
+
+This allows you to group multiple related container values into structs while maintaining separate modifiers to write each value.
+
+```swift
+extension View {
+    func pinRotation(_ rotation: Double) -> some View {
+        containerValue(\.pinPosition.rotation, rotation)
+    }
+
+    func pinXOffset(_ xOffset: Int) -> some View {
+        containerValue(\.pinPosition.xOffset, xOffset)
+    }
+}
+```
+
 ## Parameters
 
 - `keyPath`: A key path that indicates the property of the    structure to update.

@@ -79,6 +79,10 @@ Color objects provide a fast and convenient way to manage and set colors, especi
 ### Type Properties
 - [class let conversionBlackPointCompensation: CFString](cgcolor/conversionblackpointcompensation.md)
   An option for whether to apply black point compensation when converting between color profiles.
+### Initializers
+- [init?(headroom: Float, colorSpace: CGColorSpace, red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](cgcolor/init(headroom:colorspace:red:green:blue:alpha:).md)
+### Instance Properties
+- [var contentHeadroom: Float](cgcolor/contentheadroom.md)
 
 ## Relationships
 
@@ -87,6 +91,7 @@ Color objects provide a fast and convenient way to manage and set colors, especi
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

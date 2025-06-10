@@ -41,12 +41,14 @@ This type is suitable for use as the `animatableData` property of types that do 
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VectorArithmetic](vectorarithmetic.md)
 
 ## See Also
 
 - [protocol Animatable](animatable.md)
   A type that describes how to animate a property of a view.
+- [struct AnimatableValues](animatablevalues.md)
 - [struct AnimatablePair](animatablepair.md)
   A pair of animatable values, which is itself animatable.
 - [protocol VectorArithmetic](vectorarithmetic.md)

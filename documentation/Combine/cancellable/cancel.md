@@ -34,8 +34,6 @@ After you receive one call to `cancel()`, subsequent calls shouldn’t do anythi
 
 > 💡 **Tip**: Keep in mind that your `cancel()` may execute concurrently with another call to `cancel()` — including the scenario where an [`AnyCancellable`](anycancellable.md) is deallocating — or to [`request(_:)`](subscription/request(_:).md).
 
-Keep in mind that your `cancel()` may execute concurrently with another call to `cancel()` — including the scenario where an [`AnyCancellable`](anycancellable.md) is deallocating — or to [`request(_:)`](subscription/request(_:).md).
-
 
 ---
 

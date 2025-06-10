@@ -1,6 +1,6 @@
 # removeMemberRecord(_:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Removes a record as a member of this group record.

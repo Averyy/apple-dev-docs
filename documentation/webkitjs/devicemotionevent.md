@@ -1,6 +1,6 @@
 # DeviceMotionEvent
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 An instance of `DeviceMotionEvent` is created when significant change in motion occurs. The event object encapsulates the measurements of the interval, rotation rate, and acceleration of a device. 

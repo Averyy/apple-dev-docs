@@ -1,6 +1,6 @@
 # indentationWidth
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The number of space characters used for indentation of the text in the buffer.

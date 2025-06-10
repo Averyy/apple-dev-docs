@@ -20,8 +20,6 @@ A [`VZBridgedNetworkDeviceAttachment`](vzbridgednetworkdeviceattachment.md) obje
 
 > ❗ **Important**:  To use this attachment, your app must have the [`com.apple.vm.networking`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.vm.networking) entitlement. If it doesn’t, the use of this attachment point results in an invalid [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) object.
 
- To use this attachment, your app must have the [`com.apple.vm.networking`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.vm.networking) entitlement. If it doesn’t, the use of this attachment point results in an invalid [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) object.
-
 To configure a network device with a bridged network interface:
 
 1. Obtain a reference to one of the host’s physical network interfaces from the [`networkInterfaces`](vzbridgednetworkinterface/networkinterfaces.md) property of [`VZBridgedNetworkInterface`](vzbridgednetworkinterface.md).
@@ -56,6 +54,8 @@ To configure a network device with a bridged network interface:
   A network device that transmits raw network packets and frames using a datagram socket.
 - [class VZNATNetworkDeviceAttachment](vznatnetworkdeviceattachment.md)
   A device that routes network requests through the host computer and performs network address translation on the resulting packets.
+- [class VZVmnetNetworkDeviceAttachment](vzvmnetnetworkdeviceattachment.md)
+  A network device attachment that allows a custom network topology.
 - [class VZNetworkDeviceAttachment](vznetworkdeviceattachment.md)
   The common behaviors for the network attachment points of your virtual machine.
 

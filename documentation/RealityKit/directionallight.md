@@ -10,6 +10,7 @@ An entity that casts a virtual light in a particular direction.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -34,19 +35,14 @@ A RealityKit scene can contain up to eight dynamic lights, which are entities th
 ### Creating a directional light
 - [init()](directionallight/init.md)
   Creates a new entity.
-### Configuring the directional light
-- [var light: DirectionalLightComponent](directionallight/light.md)
-  A directional light component for the entity.
-- [var shadow: DirectionalLightComponent.Shadow?](directionallight/shadow.md)
-  The shadow settings for a directional light.
-### Default Implementations
-- [HasDirectionalLight Implementations](directionallight/hasdirectionallight-implementations.md)
 
 ## Relationships
 
 ### Inherits From
 - [Entity](entity.md)
 ### Conforms To
+- [CoordinateSpace3D](../Spatial/CoordinateSpace3D.md)
+- [CoordinateSpace3DFloat](../Spatial/CoordinateSpace3DFloat.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [EventSource](eventsource.md)
@@ -56,8 +52,10 @@ A RealityKit scene can contain up to eight dynamic lights, which are entities th
 - [HasTransform](hastransform.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
+- [Observable](../Observation/Observable.md)
 - [RealityCoordinateSpace](realitycoordinatespace.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -14,7 +14,7 @@ The team logo or, if no logo is available, the initials/abbreviation for this te
 
 ```swift
 @NSCopying
-var logo: CPNowPlayingSportsTeamLogo { get }
+@MainActor var logo: CPNowPlayingSportsTeamLogo { get }
 ```
 
 

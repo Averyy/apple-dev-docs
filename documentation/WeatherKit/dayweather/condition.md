@@ -1,6 +1,6 @@
 # condition
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A description of the weather condition on this day.

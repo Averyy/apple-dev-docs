@@ -16,11 +16,12 @@ An instance you use to create, submit, and schedule command buffers to a specifi
 ## Declaration
 
 ```swift
-protocol MTLCommandQueue : NSObjectProtocol
+protocol MTLCommandQueue : NSObjectProtocol, Sendable
 ```
 
 ## Mentions
 
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 - [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Overview
@@ -70,6 +71,8 @@ For more information about command buffers and encoding GPU commands to them —
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -89,4 +92,4 @@ For more information about command buffers and encoding GPU commands to them —
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/mtlcommandqueue)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlcommandqueue)*

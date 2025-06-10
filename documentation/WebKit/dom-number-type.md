@@ -1,6 +1,6 @@
 # DOM_NUMBER_TYPE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

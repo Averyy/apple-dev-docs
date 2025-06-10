@@ -1,6 +1,6 @@
 # userActivity
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 An object encapsulating a user activity supported by this responder.

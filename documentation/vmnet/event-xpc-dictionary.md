@@ -1,13 +1,13 @@
 # event XPC Dictionary
 
-**Framework**: Vmnet
+**Framework**: vmnet
 
 XPC dictionary keys used by the `event` value returned to the client in the `handler` callback specified by the `vmnet` function that provides information about the callback event.
 
 ## Topics
 
 ### Constants
-- [var vmnet_estimated_packets_available_key: UnsafePointer<CChar>](vmnet_estimated_packets_available_key.md)
+- [let vmnet_estimated_packets_available_key: UnsafePointer<CChar>](vmnet_estimated_packets_available_key.md)
 
 ## See Also
 

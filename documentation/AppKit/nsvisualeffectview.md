@@ -1,6 +1,6 @@
 # NSVisualEffectView
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 A view that adds translucency and vibrancy effects to the views in your interface.
@@ -106,6 +106,7 @@ If you subclass `NSVisualEffectView`:
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -115,4 +116,4 @@ If you subclass `NSVisualEffectView`:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsvisualeffectview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsvisualeffectview)*

@@ -28,7 +28,7 @@ func withKnownIssue(_ comment: Comment? = nil, isIntermittent: Bool = false, iso
 
 #### Discussion
 
-Use this function when a test is known to raise one or more issues that should not cause the test to fail. For example:
+Use this function when a test is known to record one or more issues that should not cause the test to fail. For example:
 
 ```swift
 @Test func example() {
@@ -50,6 +50,8 @@ Because all errors thrown by `body` are caught as known issues, this function is
 
 ## See Also
 
+- [Known issues](known-issues.md)
+  Mark issues as known when running tests.
 - [func withKnownIssue(Comment?, isIntermittent: Bool, sourceLocation: SourceLocation, () throws -> Void)](withknownissue(_:isintermittent:sourcelocation:_:).md)
   Invoke a function that has a known issue that is expected to occur during its execution.
 - [func withKnownIssue(Comment?, isIntermittent: Bool, sourceLocation: SourceLocation, () throws -> Void, when: () -> Bool, matching: KnownIssueMatcher) rethrows](withknownissue(_:isintermittent:sourcelocation:_:when:matching:).md)

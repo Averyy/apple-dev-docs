@@ -9,8 +9,7 @@ An error response that indicates the system requires a software update.
 - iOS 17.0+
 - iPadOS 17.0+
 - macOS 14.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -26,9 +25,16 @@ The system returns this response when a device attempts to enroll with an MDM se
 
 ## Topics
 
-### Details
+### Objects
 - [object ErrorCodeSoftwareUpdateRequired.Details](errorcodesoftwareupdaterequired/details-data.dictionary.md)
   A dictionary that contains additional data about the software update required error code.
+
+## See Also
+
+- [object ErrorCodePairingTokenMissing](errorcodepairingtokenmissing.md)
+  An error response that indicates a missing pairing token.
+- [object ErrorUnrecognizedDevice](errorunrecognizeddevice.md)
+- [object ErrorWellKnownFailed](errorwellknownfailed.md)
 
 
 ---

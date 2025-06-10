@@ -1,6 +1,6 @@
 # init(data:url:mimeType:textEncodingName:frameName:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Initializes and returns a web resource instance.

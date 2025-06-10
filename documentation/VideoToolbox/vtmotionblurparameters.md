@@ -1,11 +1,14 @@
 # VTMotionBlurParameters
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: class
 
 This object contains both input and output parameters necessary to run the motion blur processor on a frame.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
 
 ## Declaration
@@ -27,8 +30,6 @@ The parameters within VTMotionBlurParameters are frame level parameters.
 ### Inspecting the parameters
 - [var sourceFrame: VTFrameProcessorFrame](vtmotionblurparameters/sourceframe.md)
   The current source frame.
-- [var destinationFrame: VTFrameProcessorFrame](vtmotionblurparameters/destinationframe.md)
-  A user-allocated pixel buffer that receives the results.
 - [var nextFrame: VTFrameProcessorFrame?](vtmotionblurparameters/nextframe.md)
   The next source frame in presentation time order.
 - [var previousFrame: VTFrameProcessorFrame?](vtmotionblurparameters/previousframe.md)

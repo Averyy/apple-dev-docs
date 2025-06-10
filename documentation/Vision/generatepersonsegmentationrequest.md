@@ -68,6 +68,7 @@ Perform this request to detect and generate an image mask for a person in an ima
 - [Hashable](../Swift/Hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StatefulRequest](statefulrequest.md)
 - [VisionRequest](visionrequest.md)
 

@@ -46,6 +46,7 @@ Use one of these values to set the [`kind`](clsprogressreportingcapability/kind-
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

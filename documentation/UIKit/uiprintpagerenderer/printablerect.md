@@ -14,7 +14,6 @@ The area in which printing can occur.
 ## Declaration
 
 ```swift
-@MainActor
 var printableRect: CGRect { get }
 ```
 

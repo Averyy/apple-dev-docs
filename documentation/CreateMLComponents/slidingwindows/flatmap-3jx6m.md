@@ -1,6 +1,6 @@
 # flatMap(_:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns an array containing the concatenated results of calling the given transformation with each element of this sequence.

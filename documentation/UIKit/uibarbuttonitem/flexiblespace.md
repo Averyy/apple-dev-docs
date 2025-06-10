@@ -27,6 +27,8 @@ A flexible-width space [`UIBarButtonItem`](uibarbuttonitem.md).
 
 - [class func fixedSpace(CGFloat) -> Self](uibarbuttonitem/fixedspace(_:).md)
   Creates a new fixed-width space item.
+- [class func fixedSpace() -> Self](uibarbuttonitem/fixedspace.md)
+  Creates a new fixed space item of zero width.
 
 
 ---

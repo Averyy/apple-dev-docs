@@ -62,6 +62,7 @@ Use these constants with the [`keyboardType`](uitextinputtraits/keyboardtype.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -72,9 +73,9 @@ Use these constants with the [`keyboardType`](uitextinputtraits/keyboardtype.md)
 - [enum UIKeyboardAppearance](uikeyboardappearance.md)
   Constants that specify the appearance of the keyboard for a text-based view.
 - [var returnKeyType: UIReturnKeyType](uitextinputtraits/returnkeytype.md)
-  The visible title of the Return key.
+  The visible indication of what the Return key does.
 - [enum UIReturnKeyType](uireturnkeytype.md)
-  Constants that specify the text string that displays in the Return key of a keyboard.
+  Constants that specify the type of Return key the keyboard displays.
 - [var textContentType: UITextContentType!](uitextinputtraits/textcontenttype.md)
   The semantic meaning for a text input area.
 - [struct UITextContentType](uitextcontenttype.md)

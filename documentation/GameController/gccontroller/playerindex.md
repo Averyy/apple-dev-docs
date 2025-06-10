@@ -29,8 +29,6 @@ The default value for this property is [`GCControllerPlayerIndex.indexUnset`](gc
 
 > ❗ **Important**:  In iOS 13 and later, tvOS 13 and later, and macOS 10.15 and later, two apps can use the same player index. Prior to these releases, if another app uses the index, this framework sets the player index in the other app to [`GCControllerPlayerIndex.indexUnset`](gccontrollerplayerindex/indexunset.md).
 
- In iOS 13 and later, tvOS 13 and later, and macOS 10.15 and later, two apps can use the same player index. Prior to these releases, if another app uses the index, this framework sets the player index in the other app to [`GCControllerPlayerIndex.indexUnset`](gccontrollerplayerindex/indexunset.md).
-
 ## See Also
 
 - [enum GCControllerPlayerIndex](gccontrollerplayerindex.md)

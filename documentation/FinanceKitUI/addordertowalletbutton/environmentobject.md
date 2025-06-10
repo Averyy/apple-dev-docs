@@ -1,6 +1,6 @@
 # environmentObject(_:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Supplies an observable object to a view’s hierarchy.

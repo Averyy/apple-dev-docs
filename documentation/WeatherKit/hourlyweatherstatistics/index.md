@@ -1,6 +1,6 @@
 # HourlyWeatherStatistics.Index
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: typealias
 
 A type that represents a position in the collection.

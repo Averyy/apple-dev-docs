@@ -1,6 +1,6 @@
 # clickedPathComponentCell()
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Returns the clicked cell.

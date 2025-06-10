@@ -84,6 +84,8 @@ When overriding methods of this class, be aware that methods that take a `task` 
   A notification posted when the cookies stored in the cookie storage have changed.
 - [static let NSHTTPCookieManagerAcceptPolicyChanged: NSNotification.Name](nsnotification/name-swift.struct/nshttpcookiemanageracceptpolicychanged.md)
   A notification posted when the acceptance policy of the cookie storage has changed.
+### Structures
+- [HTTPCookieStorage.CookiesChangedMessage](httpcookiestorage/cookieschangedmessage.md)
 
 ## Relationships
 
@@ -97,6 +99,7 @@ When overriding methods of this class, be aware that methods that take a `task` 
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -106,4 +109,4 @@ When overriding methods of this class, be aware that methods that take a `task` 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/httpcookiestorage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/httpcookiestorage)*

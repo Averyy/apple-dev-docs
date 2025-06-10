@@ -1,6 +1,6 @@
 # WKInterfaceObjectHorizontalAlignment
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Constants for horizontally aligning objects in their container.
@@ -34,6 +34,7 @@ enum WKInterfaceObjectHorizontalAlignment
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

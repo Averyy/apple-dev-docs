@@ -1,6 +1,6 @@
 # localizedDisplayName
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The display name of the provider as it will appear in the list of providers.

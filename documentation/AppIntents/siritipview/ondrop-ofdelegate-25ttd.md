@@ -9,7 +9,7 @@ Defines the destination of a drag and drop operation using behavior controlled b
 - iOS 14.0+
 - iPadOS 14.0+
 - macOS 11.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -21,10 +21,6 @@ func onDrop(of supportedContentTypes: [UTType], delegate: any DropDelegate) -> s
 #### Return Value
 
 A view that provides a drop destination for a drag operation of the specified types.
-
-#### Discussion
-
-The drop destination is the same size and position as this view.
 
 ## Parameters
 

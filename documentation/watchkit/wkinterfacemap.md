@@ -1,6 +1,6 @@
 # WKInterfaceMap
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that displays a noninteractive map for the location you specify.

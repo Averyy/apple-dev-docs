@@ -28,8 +28,6 @@ The object for the specified key, or `nil` if no such key exists in the record.
 
 > ❗ **Important**:  Don’t call this method directly. The presence of this method is necessary to support subscripting syntax for record objects.
 
- Don’t call this method directly. The presence of this method is necessary to support subscripting syntax for record objects.
-
 ## Parameters
 
 - `key`: The string that identifies a field in the record. A key must consist of one or more alphanumeric characters and must start with a letter. CloudKit permits the use of underscores, but not spaces.

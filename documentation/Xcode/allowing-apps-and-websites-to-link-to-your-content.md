@@ -113,4 +113,4 @@ For more information on handling links within your app, see [`Supporting univers
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content)*

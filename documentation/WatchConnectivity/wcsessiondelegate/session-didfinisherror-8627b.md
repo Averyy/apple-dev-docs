@@ -1,6 +1,6 @@
 # session(_:didFinish:error:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Tells the delegate that a data transfer operation has finished successfully or ended because of an error.

@@ -10,7 +10,7 @@ Sets the priority by which a parent layout should apportion space to this child.
 - iPadOS 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 6.0+
 
 ## Declaration

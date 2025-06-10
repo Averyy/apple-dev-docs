@@ -1,6 +1,6 @@
 # ScreenCaptureKit
 
-**Framework**: Screencapturekit  
+**Framework**: ScreenCaptureKit  
 **Kind**: module
 
 Filter and select screen content and stream it to your app.
@@ -48,6 +48,8 @@ Use the ScreenCaptureKit framework to add support for high-performance frame cap
   A delegate protocol your app implements to respond to stream events.
 - [class SCScreenshotManager](scscreenshotmanager.md)
   An instance for the capture of single frames from a stream.
+- [class SCScreenshotConfiguration](scscreenshotconfiguration.md)
+- [class SCScreenshotOutput](scscreenshotoutput.md)
 ### Output processing
 - [protocol SCStreamOutput](scstreamoutput.md)
   A delegate protocol your app implements to receive capture stream output events.

@@ -1,6 +1,6 @@
 # onprogress
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 Sent when each resource in the manifest file begins to download.

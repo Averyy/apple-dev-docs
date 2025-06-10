@@ -58,6 +58,7 @@ An engine’s state changes periodically and, when it does, the sync engine disp
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

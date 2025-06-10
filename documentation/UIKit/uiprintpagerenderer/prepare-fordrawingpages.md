@@ -14,7 +14,6 @@ Prepares the renderer for drawing a range of pages.
 ## Declaration
 
 ```swift
-@MainActor
 func prepare(forDrawingPages range: NSRange)
 ```
 

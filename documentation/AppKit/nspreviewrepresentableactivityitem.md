@@ -1,6 +1,6 @@
 # NSPreviewRepresentableActivityItem
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: protocol
 
 An interface you adopt in custom objects that you want to share using the macOS share sheet.
@@ -58,4 +58,4 @@ Adopt the [`NSPreviewRepresentableActivityItem`](nspreviewrepresentableactivityi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nspreviewrepresentableactivityitem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nspreviewrepresentableactivityitem)*

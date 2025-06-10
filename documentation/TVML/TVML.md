@@ -1,6 +1,6 @@
 # TVML
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Use Apple TV Markup Language to create individual pages inside of a client-server app.
 

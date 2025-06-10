@@ -10,8 +10,6 @@ The payload you use to configure a Contacts account.
 - iPadOS 4.0+
 - macOS 10.7+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,17 +25,17 @@ Specify `com.apple.carddav.account` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS |
-| User Channel | macOS, Shared iPad |
-| Allow Manual Install | iOS, macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Allow Multiple Payloads | iOS, macOS, Shared iPad |
+| Device channel | iOS, visionOS |
+| User channel | macOS, Shared iPad |
+| Allow manual install | iOS, macOS, visionOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -83,7 +81,7 @@ Specify `com.apple.carddav.account` as the payload type.
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object CardDAV.CommunicationServiceRules](carddav/communicationservicerules-data.dictionary.md)
   The communication service handler rules for this account.
 

@@ -1,6 +1,6 @@
 # selectedGlyphImage
 
-**Framework**: Mapkitjs  
+**Framework**: MapKit JS  
 **Kind**: property
 
 The glyph image for the selected feature.
@@ -36,4 +36,4 @@ attribute mapkit.MapFeatureAnnotationGlyphImage selectedGlyphImage;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit.mapfeatureannotation/selectedglyphimage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit.mapfeatureannotation/selectedglyphimage)*

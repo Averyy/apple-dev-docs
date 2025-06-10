@@ -1,6 +1,6 @@
 # newPassword
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A new password.

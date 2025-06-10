@@ -1,6 +1,6 @@
 # init(recipientKey:ciphersuite:info:authenticatedBy:presharedKey:presharedKeyIdentifier:)
 
-**Framework**: Cryptokit  
+**Framework**: Apple CryptoKit  
 **Kind**: init
 
 Creates a sender in authentication and preshared key mode.

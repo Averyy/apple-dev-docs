@@ -12,6 +12,7 @@ The block to use for processing travel-time information.
 - macOS ?+
 - tvOS ?+
 - visionOS ?+
+- watchOS ?+
 
 ## Declaration
 
@@ -30,7 +31,7 @@ The implementation of your block needs to check for a value in the `error` param
 
 ## See Also
 
-- [func calculateETA(completionHandler: MKDirections.ETAHandler)](mkdirections/calculateeta(completionhandler:).md)
+- [func calculateETA(completionHandler: (MKDirections.ETAResponse?, (any Error)?) -> Void)](mkdirections/calculateeta(completionhandler:).md)
   Begins calculating the requested travel-time information asynchronously.
 - [MKDirections.ETAResponse](mkdirections/etaresponse.md)
   The travel-time information that Apple servers return.

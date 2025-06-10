@@ -6,6 +6,7 @@
 Removes a data provider from a collection.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

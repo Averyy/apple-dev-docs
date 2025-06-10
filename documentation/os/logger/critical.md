@@ -24,8 +24,6 @@ func critical(_ message: OSLogMessage)
 
 > ❗ **Important**:  Don’t create an instance of [`OSLogMessage`](oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 
- Don’t create an instance of [`OSLogMessage`](oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
-
 This method is functionally equivalent to the [`fault(_:)`](logger/fault(_:).md) method.
 
 ## Parameters

@@ -1,6 +1,6 @@
 # init(nsColor:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: init
 
 Creates a color from an AppKit color.

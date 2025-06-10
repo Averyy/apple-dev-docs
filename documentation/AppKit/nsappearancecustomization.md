@@ -34,6 +34,7 @@ When an object adopts this protocol, assigning a value to the [`appearance`](nsa
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 ### Conforming Types
 - [NSApplication](nsapplication.md)
+- [NSBackgroundExtensionView](nsbackgroundextensionview.md)
 - [NSBox](nsbox.md)
 - [NSBrowser](nsbrowser.md)
 - [NSButton](nsbutton.md)
@@ -47,6 +48,8 @@ When an object adopts this protocol, assigning a value to the [`appearance`](nsa
 - [NSDatePicker](nsdatepicker.md)
 - [NSFontPanel](nsfontpanel.md)
 - [NSForm](nsform.md)
+- [NSGlassEffectContainerView](nsglasseffectcontainerview.md)
+- [NSGlassEffectView](nsglasseffectview.md)
 - [NSGridView](nsgridview.md)
 - [NSImageView](nsimageview.md)
 - [NSLevelIndicator](nslevelindicator.md)

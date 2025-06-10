@@ -1,6 +1,6 @@
 # lifetime
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 Indicates whether the attachment is kept or discarded when its associated test passes.

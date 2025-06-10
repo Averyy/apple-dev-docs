@@ -1,6 +1,6 @@
 # CloudKit
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: module
 
 Store structured app and user data in iCloud containers that all users of your app can share.
@@ -102,6 +102,8 @@ Before using CloudKit, make sure it’s the most suitable option for your app. F
 ### Deprecated
 - [Deprecated Symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Classes
+- [class CKShareRequestAccessOperation](cksharerequestaccessoperation.md)
 ### Variables
 - [let CKRecordParentKey: String](ckrecordparentkey-1elhg.md)
 - [let CKRecordShareKey: String](ckrecordsharekey-gc8w.md)

@@ -1,6 +1,6 @@
 # XCUIDevice.Button
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: enum
 
 A physical button on an iOS device.
@@ -19,10 +19,6 @@ A physical button on an iOS device.
 ```swift
 enum Button
 ```
-
-#### Overview
-
-The [`XCUIDevice.Button.volumeUp`](xcuidevice/button/volumeup.md) and [`XCUIDevice.Button.volumeDown`](xcuidevice/button/volumedown.md) buttons aren’t available in Simulator. Use `targetEnvironment(simulator)` in Swift, or `TARGET_OS_SIMULATOR` in Objective-C, to check that your test isn’t running in Simulator before calling these APIs.
 
 ## Topics
 
@@ -51,6 +47,7 @@ The [`XCUIDevice.Button.volumeUp`](xcuidevice/button/volumeup.md) and [`XCUIDevi
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

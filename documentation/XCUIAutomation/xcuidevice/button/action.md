@@ -1,6 +1,6 @@
 # XCUIDevice.Button.action
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The device’s action button.

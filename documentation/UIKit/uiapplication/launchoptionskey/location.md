@@ -9,7 +9,7 @@ A key indicating that the app was launched to handle an incoming location event.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration

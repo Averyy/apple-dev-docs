@@ -6,7 +6,7 @@
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS 1.0+
@@ -42,6 +42,8 @@ protocol Intent : AssistantSchemas.Model
   Assistant schema conformance for app intents that offer spreadsheet functionality.
 - [static var system: some AssistantSchemas.SystemIntent](assistantschemas/intent/system.md)
   Assistant schema conformance for app intents that match system-provided intents.
+- [static var visualIntelligence: some AssistantSchemas.VisualIntelligenceIntent](assistantschemas/intent/visualintelligence.md)
+  Assistant schema conformance for app intents that match visual intelligence intents.
 - [static var whiteboard: some AssistantSchemas.WhiteboardIntent](assistantschemas/intent/whiteboard.md)
   Assistant schema conformance for app intents that offer whiteboard functionality.
 - [static var wordProcessor: some AssistantSchemas.WordProcessorIntent](assistantschemas/intent/wordprocessor.md)

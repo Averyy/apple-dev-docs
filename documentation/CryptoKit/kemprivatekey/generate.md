@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Generate a new random Private Key
+Generates a new random private key.
 
 **Availability**:
 - iOS 17.0+
@@ -23,7 +23,11 @@ static func generate() throws -> Self
 
 #### Return Value
 
-The generated private key
+The generated private key.
+
+#### Discussion
+
+Give the [`publicKey`](kemprivatekey/publickey-swift.property.md) to another person so that they can encapsulate shared secrets that you recover by calling [`decapsulate(_:)`](kemprivatekey/decapsulate(_:).md).
 
 
 ---

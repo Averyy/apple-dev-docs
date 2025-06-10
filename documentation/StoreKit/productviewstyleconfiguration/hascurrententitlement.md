@@ -25,8 +25,6 @@ Use the [`hasCurrentEntitlement`](productviewstyleconfiguration/hascurrententitl
 
 > ❗ **Important**:  Don’t use this value to determine whether to enable access to the product; check the in-app purchase transaction information instead ([`Transaction`](transaction.md)).
 
- Don’t use this value to determine whether to enable access to the product; check the in-app purchase transaction information instead ([`Transaction`](transaction.md)).
-
 ## See Also
 
 - [var product: Product?](productviewstyleconfiguration/product.md)

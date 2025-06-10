@@ -1,6 +1,6 @@
 # requestJoinChannel(channelUUID:descriptor:)
 
-**Framework**: Pushtotalk  
+**Framework**: Push to Talk  
 **Kind**: method
 
 Joins a channel with the identifier and descriptor you specify.

@@ -1,6 +1,6 @@
 # stopMonitoringEvent(with:)
 
-**Framework**: Corewlan  
+**Framework**: Core WLAN  
 **Kind**: method
 
 Unregister for specific Wi-Fi event notifications.

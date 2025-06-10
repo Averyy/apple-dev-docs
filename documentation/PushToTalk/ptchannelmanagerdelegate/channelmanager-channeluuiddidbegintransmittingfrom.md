@@ -27,8 +27,6 @@ The system calls this method when the user begins pressing the talk button in th
 
 > ❗ **Important**:  Your app must wait for the system to call [`channelManager(_:didActivate:)`](ptchannelmanagerdelegate/channelmanager(_:didactivate:).md) before you begin recording audio from the user.
 
- Your app must wait for the system to call [`channelManager(_:didActivate:)`](ptchannelmanagerdelegate/channelmanager(_:didactivate:).md) before you begin recording audio from the user.
-
 ## Parameters
 
 - `channelManager`: The channel manager.

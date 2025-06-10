@@ -1,6 +1,6 @@
 # height
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 The height of the size.

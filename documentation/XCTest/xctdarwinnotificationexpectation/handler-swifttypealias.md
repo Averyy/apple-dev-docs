@@ -1,6 +1,6 @@
 # XCTDarwinNotificationExpectation.Handler
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: typealias
 
 A custom handler to be called when a matching notification is received.

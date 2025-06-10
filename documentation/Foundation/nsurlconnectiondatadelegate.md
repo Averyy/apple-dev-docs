@@ -67,4 +67,4 @@ In addition to the methods described in this protocol, an `NSURLConnection` dele
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsurlconnectiondatadelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsurlconnectiondatadelegate)*

@@ -1,6 +1,6 @@
 # customUserAgent
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The custom user agent string.

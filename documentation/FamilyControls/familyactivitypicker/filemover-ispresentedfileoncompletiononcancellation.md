@@ -1,6 +1,6 @@
 # fileMover(isPresented:file:onCompletion:onCancellation:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Presents a system dialog for allowing the user to move an existing file to a new location.

@@ -1,0 +1,85 @@
+# setObject
+
+**Framework**: Kernel  
+**Kind**: instm
+
+Adds an object to the OSSet if it is not already present.
+
+## Declaration
+
+```swift
+virtual bool setObject(
+ const OSMetaClassBase *anObject);
+```
+
+#### Return_value
+
+`true` if `anObject` was successfully added to the set, `false` otherwise (including if it was already in the set).
+
+#### Overview
+
+The set adds storage to accomodate the new object, if necessary. If successfully added, the object is retained.
+
+A `false` return value can mean either that `anObject` is already present in the set, or that a memory allocation failure occurred. If you need to know whether the object is already present, use containsObject.
+
+## Parameters
+
+- `anObject`: The OSMetaClassBase-derived object to be added to the set.
+
+## See Also
+
+- [containsObject](osset/1808031-containsobject.md)
+  Checks the set for the presence of an object.
+- [copyCollection](osset/1808046-copycollection.md)
+  Creates a deep copy of this set and its child collections.
+- [ensureCapacity](osset/1808068-ensurecapacity.md)
+  Ensures the set has enough space to store the requested number of distinct objects.
+- [flushCollection](osset/1808084-flushcollection.md)
+  Removes and releases all objects within the set.
+- [free](osset/1808104-free.md)
+  Deallocates or releases any resources used by the OSSet instance.
+- [getAnyObject](osset/1808128-getanyobject.md)
+  Returns an arbitrary (not random) object from the set.
+- [getCapacity](osset/1808152-getcapacity.md)
+  Returns the number of objects the set can store without reallocating.
+- [getCapacityIncrement](osset/1808173-getcapacityincrement.md)
+  Returns the storage increment of the set.
+- [getCount](osset/1808189-getcount.md)
+  Returns the current number of objects within the set.
+- [initWithArray](osset/1808200-initwitharray.md)
+  Initializes a new OSSet populated with the contents of an OSArray.
+- [initWithCapacity](osset/1808213-initwithcapacity.md)
+  Initializes a new instance of OSSet.
+- [initWithObjects](osset/1808221-initwithobjects.md)
+  Initializes a new OSSet populated with objects provided.
+- [initWithSet](osset/1808228-initwithset.md)
+  Initializes a new OSSet populated with the contents of another OSSet.
+- [isEqualTo(const OSMetaClassBase *)](osset/1808235-isequalto.md)
+  Tests the equality of an OSSet against an arbitrary object.
+- [isEqualTo(const OSSet *)](osset/1808239-isequalto.md)
+  Tests the equality of two OSSet objects.
+- [member](osset/1808245-member.md)
+  Checks the set for the presence of an object.
+- [merge(const OSArray *)](osset/1808250-merge.md)
+  Adds the contents of an OSArray to the set.
+- [merge(const OSSet *)](osset/1808253-merge.md)
+  Adds the contents of an OSet to the set.
+- [removeObject](osset/1808257-removeobject.md)
+  Removes an object from the set.
+- [serialize](osset/1808260-serialize.md)
+  Archives the receiver into the provided OSSerialize object.
+- [setCapacityIncrement](osset/1808264-setcapacityincrement.md)
+  Sets the storage increment of the set.
+- [withArray](osset/1808277-witharray.md)
+  Creates and initializes an OSSet populated with the contents of an OSArray.
+- [withCapacity](osset/1808282-withcapacity.md)
+  Creates and initializes an empty OSSet.
+- [withObjects](osset/1808287-withobjects.md)
+  Creates and initializes an OSSet populated with objects provided.
+- [withSet](osset/1808291-withset.md)
+  Creates and initializes an OSSet populated with the contents of another OSSet.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/osset/1808269-setobject)*

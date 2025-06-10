@@ -1,6 +1,6 @@
 # enable()
 
-**Framework**: Contactprovider  
+**Framework**: ContactProvider  
 **Kind**: method
 
 Requests the person using the app to enable the extension domain.

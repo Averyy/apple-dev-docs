@@ -50,6 +50,9 @@ class AVMediaSelectionGroup
 ### Creating a Now Playing Language Option Group
 - [func makeNowPlayingInfoLanguageOptionGroup() -> MPNowPlayingInfoLanguageOptionGroup](avmediaselectiongroup/makenowplayinginfolanguageoptiongroup.md)
   Creates a language option group from the media selection group.
+### Instance Properties
+- [var customMediaSelectionScheme: AVCustomMediaSelectionScheme?](avmediaselectiongroup/custommediaselectionscheme.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
 
 ## Relationships
 

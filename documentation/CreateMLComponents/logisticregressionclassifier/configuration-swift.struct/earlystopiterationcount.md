@@ -1,6 +1,6 @@
 # earlyStopIterationCount
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: property
 
 The number of iterations to use when evaluating whether to stop early.
@@ -46,4 +46,4 @@ The `fitted` method will stop if no significant progress is made for this many i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/logisticregressionclassifier/configuration-swift.struct/earlystopiterationcount)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/logisticregressionclassifier/configuration-swift.struct/earlystopiterationcount)*

@@ -1,6 +1,6 @@
 # Requesting identity data from a Wallet pass
 
-**Framework**: Passkit
+**Framework**: PassKit (Apple Pay and Wallet)
 
 Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
 
@@ -12,11 +12,11 @@ Beginning on iPhone with iOS 16, you can request information from IDs in Wallet 
 
 For design guidance, see [`Human Interface Guidelines > Technologies > Wallet`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/technologies/wallet/introduction).
 
-> ❗ **Important**:  This API only works on iPhone and returns an error if you access it on iPad. It requires a special entitlement from Apple. Building an app with this entitlement requires macOS 13 or later. For more information about the entitlement, see [`Getting started with the Verify with Wallet API`](https://developer.apple.comhttps://developer.apple.com/wallet/get-started-with-verify-with-wallet/).
+> ❗ **Important**:  Building an app with this entitlement requires macOS 13 or later. For more information about the entitlement, see [`Getting started with the Verify with Wallet API`](https://developer.apple.comhttps://developer.apple.com/wallet/get-started-with-verify-with-wallet/).
 
 ##### Create an Identity Document Descriptor
 
-Before you request information from an ID in Wallet, you create an object to describe the elements you need. Your app can only request the elements your entitlement grants. Create a [`PKIdentityDriversLicenseDescriptor`](pkidentitydriverslicensedescriptor.md) if you’re requesting information from a person’s state or mobile driver’s license. Create a [`PKIdentityNationalIDCardDescriptor`](pkidentitynationalidcarddescriptor.md) if you’re requesting information from their national identificaton card, and add the elements to the request.
+Before you request information from an ID in Wallet, you create an object to describe the elements you need. Your app can only request the elements your entitlement grants. There are a few identity document descriptor options:
 
 For each element, you specify your intent to store the resulting data by using [`mayStore(days:)`](pkidentityintenttostore/maystore(days:).md), [`mayStore`](pkidentityintenttostore/maystore.md), or [`willNotStore`](pkidentityintenttostore/willnotstore.md). Upon request, the system presents the information for a person to review in a system sheet.
 
@@ -24,27 +24,7 @@ The framework allows for requesting the Boolean [`age(atLeast:)`](pkidentityelem
 
 An app can’t include both an [`age(atLeast:)`](pkidentityelement/age(atleast:).md) element and an [`age`](pkidentityelement/age.md) element in the same request.
 
-The following code shows the creation of [`PKIdentityDriversLicenseDescriptor`](pkidentitydriverslicensedescriptor.md) requesting information from a person’s state or mobile driver’s license and [`PKIdentityNationalIDCardDescriptor`](pkidentitynationalidcarddescriptor.md) requesting information from a person’s national identification card.
-
-```swift
-let driversLicenseDescriptor = PKIdentityDriversLicenseDescriptor()
-driversLicenseDescriptor.addElements([.age(atLeast: 18)],
-                       intentToStore: .willNotStore)
-driversLicenseDescriptor.addElements([.givenName, 
-                        .familyName,
-                        .portrait],
-                       intentToStore: .mayStore(days: 30))
-```
-
-```swift
-let nationalIDCardDescriptor = PKIdentityNationalIDCardDescriptor()
-nationalIDCardDescriptor.addElements([.age(atLeast: 18)],
-                       intentToStore: .willNotStore)
-nationalIDCardDescriptor.addElements([.givenName, 
-                        .familyName,
-                        .portrait],
-                       intentToStore: .mayStore(days: 30))
-```
+The following code shows how you create the different identity document descriptors:
 
 To check whether the identity document you describe is available to request, create a [`PKIdentityAuthorizationController`](pkidentityauthorizationcontroller.md) and call [`checkCanRequestDocument(_:completion:)`](pkidentityauthorizationcontroller/checkcanrequestdocument(_:completion:).md). If the document exists, show a [`PKIdentityButton`](pkidentitybutton.md) to allow the user to begin the authorization request.
 
@@ -84,7 +64,12 @@ do {
 
 When you receive a [`PKIdentityDocument`](pkidentitydocument.md), you’re ready to verify the request payload. The data in the [`encryptedData`](pkidentitydocument/encrypteddata.md) property isn’t readable on the device, so you need to send it to your server for verification.
 
-The elements in [`PKIdentityDriversLicenseDescriptor`](pkidentitydriverslicensedescriptor.md) map to a set of elements in the ISO and American Association of Motor Vehicle Administrators (AAMVA) namespaces in the response. For [`PKIdentityNationalIDCardDescriptor`](pkidentitynationalidcarddescriptor.md), the elements map to a set of elements in the ISO and JP namespace in the response. For a list of elements, see [`PKIdentityDriversLicenseDescriptor`](pkidentitydriverslicensedescriptor.md) and [`PKIdentityNationalIDCardDescriptor`](pkidentitynationalidcarddescriptor.md).
+The elements in the descriptors map this way in their responses:
+
+- [`PKIdentityDriversLicenseDescriptor`](pkidentitydriverslicensedescriptor.md) maps to a set of elements in the ISO and American Association of Motor Vehicle Administrators (AAMVA) namespaces.
+- [`PKIdentityPhotoIDDescriptor`](pkidentityphotoiddescriptor.md) maps to a set of elements in the ISO.
+- [`PKIdentityNationalIDCardDescriptor`](pkidentitynationalidcarddescriptor.md) maps to a set of elements in the ISO and JP namespace.
+- See [`PKIdentityDriversLicenseDescriptor`](pkidentitydriverslicensedescriptor.md), [`PKIdentityPhotoIDDescriptor`](pkidentityphotoiddescriptor.md), and [`PKIdentityNationalIDCardDescriptor`](pkidentitynationalidcarddescriptor.md) for a list of elements.
 
 > **Note**:  Only one request can be in progress at a time. Otherwise, the system returns a [`PKIdentityError.Code.requestAlreadyInProgress`](pkidentityerror-swift.struct/code/requestalreadyinprogress.md) error.
 
@@ -96,26 +81,30 @@ Even if you don’t live in an area that supports IDs in Wallet, you can test yo
 
 ## See Also
 
-- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
-  Decrypt and verify an in-app presentment request on your server.
-- [class PKIdentityAuthorizationController](pkidentityauthorizationcontroller.md)
-  An object that presents a sheet that prompts the user to allow a request for identity information.
-- [class PKIdentityRequest](pkidentityrequest.md)
-  An object that represents a request for identity information from a Wallet pass.
-- [class PKIdentityDocument](pkidentitydocument.md)
-  An object that represents the response to a request.
-- [class PKIdentityElement](pkidentityelement.md)
-  An object that represents the elements an app requests from identity documents.
-- [class PKIdentityButton](pkidentitybutton.md)
-  An object that displays a button to trigger the identity verification flow.
-- [struct VerifyIdentityWithWalletButton](verifyidentitywithwalletbutton.md)
-  A view that displays a button for identity verification.
-- [struct VerifyIdentityWithWalletButtonLabel](verifyidentitywithwalletbuttonlabel.md)
-  A type that represents the label you use with a verify identity button.
-- [struct VerifyIdentityWithWalletButtonStyle](verifyidentitywithwalletbuttonstyle.md)
-  A type that represents the style you use with a verify identity button.
+- [class PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
+  An object you use to request information from a user’s photo ID or equivalent document.
+- [class PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)
+  An object you use to request information from multiple identity documents.
+- [class PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)
+  An object for requesting information from a user’s driver’s license or equivalent document.
+- [class PKAddIdentityDocumentMetadata](pkaddidentitydocumentmetadata.md)
+  The object for specifying the metadata necessary to provision identity documents.
+- [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
+  Configuration to define the identity document.
+- [struct JPKIPassContents](jpkipasscontents.md)
+  A set of actions for viewing and updating PINs, passwords, and signing abilities associated with digital identities on the JPKI applet.
+- [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
+  Configuration to define the identity document.
+- [class PKAddPassMetadataPreview](pkaddpassmetadatapreview.md)
+  A preview object that contains information representing the pass you add to Wallet.
+- [class PKIdentityDocumentMetadata](pkidentitydocumentmetadata.md)
+  A set of configured metadata that defines the required information to add the corresponding pass to Wallet.
+- [class PKIdentityNationalIDCardDescriptor](pkidentitynationalidcarddescriptor.md)
+  An object for requesting information from a user’s national ID card.
+- [class PKJapanIndividualNumberCardMetadata](pkjapanindividualnumbercardmetadata.md)
+  A class that contains metadata indicating the specific product instance to provision.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/requesting-identity-data-from-a-wallet-pass)*
+*[View on Apple Developer](https://developer.apple.com/documentation/passkit/requesting-identity-data-from-a-wallet-pass)*

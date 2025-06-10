@@ -1,6 +1,6 @@
 # XCUIGestureVelocity.FloatLiteralType
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: typealias
 
 The native type that specifies the gesture velocity value.

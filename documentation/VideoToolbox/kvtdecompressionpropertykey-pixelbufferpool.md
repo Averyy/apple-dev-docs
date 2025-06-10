@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_PixelBufferPool
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A pixel buffer pool for pixel buffers being output by the decompression session.

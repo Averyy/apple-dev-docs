@@ -1,6 +1,6 @@
 # api
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 Represents any authentication scheme.

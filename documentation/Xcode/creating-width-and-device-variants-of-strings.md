@@ -8,8 +8,6 @@ Change a localized string for different interface widths and devices.
 
 > ❗ **Important**: In Xcode 15 and later, string catalogs are the recommended way to create width and device variants of strings. In earlier versions of Xcode, use strings and `stringsdict` files. For more information about string catalogs, see [`Localizing and varying text with a string catalog`](localizing-and-varying-text-with-a-string-catalog.md).
 
-In Xcode 15 and later, string catalogs are the recommended way to create width and device variants of strings. In earlier versions of Xcode, use strings and `stringsdict` files. For more information about string catalogs, see [`Localizing and varying text with a string catalog`](localizing-and-varying-text-with-a-string-catalog.md).
-
 You can use a `.stringsdict` file to provide variants of a string for different view widths and for different devices. For example, display a different string for an iOS device in landscape or in portrait mode, or display a different string when your iPad app built with Mac Catalyst runs on a Mac.
 
 A `.stringsdict` file is a property list that defines plural, width, and device variants of localizable strings. The `.stringsdict` file contains a dictionary of key-value pairs where the values are either a plural, width, or device rule.
@@ -57,7 +55,7 @@ The width rule defines variants for a range of widths:
 
 In the code above, if the width is `2`, the macro returns `Hi`. If the width is `55`, the macro returns `Hello`.
 
-To get a variant for a specific width in your code, see the [`variantFittingPresentationWidth(_:)`](https://developer.apple.com/documentation/foundation/nsstring/1413104-variantfittingpresentationwidth) method.
+To get a variant for a specific width in your code, see the [`variantFittingPresentationWidth(_:)`](https://developer.apple.com/documentation/Foundation/NSString/variantFittingPresentationWidth(_:)) method.
 
 ##### Provide Device Specific String Variants
 

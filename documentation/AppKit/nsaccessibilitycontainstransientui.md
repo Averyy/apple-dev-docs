@@ -1,6 +1,6 @@
 # NSAccessibilityContainsTransientUI
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: protocol
 
 A role-based protocol that declares the minimum interface necessary for an accessibility element to support dynamic UI changes.
@@ -41,4 +41,4 @@ Use this protocol in addition to another role-based protocol. See [`Custom Contr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsaccessibilitycontainstransientui)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsaccessibilitycontainstransientui)*

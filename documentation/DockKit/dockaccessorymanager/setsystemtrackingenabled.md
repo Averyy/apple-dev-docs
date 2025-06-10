@@ -1,6 +1,6 @@
 # setSystemTrackingEnabled(_:)
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: method
 
 Enable and disable system tracking for camera-enabled apps.

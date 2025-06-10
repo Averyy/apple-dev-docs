@@ -1,6 +1,6 @@
 # groupDisplayName
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: property
 
 The localized name of the subscription group, suitable for display.

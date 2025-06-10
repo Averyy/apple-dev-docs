@@ -1,6 +1,6 @@
 # UNIFORM_BUFFER_START
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

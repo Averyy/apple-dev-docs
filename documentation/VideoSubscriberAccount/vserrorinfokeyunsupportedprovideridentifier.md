@@ -1,6 +1,6 @@
 # VSErrorInfoKeyUnsupportedProviderIdentifier
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: var
 
 The identifier of the unsupported subscription provider.
@@ -20,7 +20,7 @@ let VSErrorInfoKeyUnsupportedProviderIdentifier: String
 
 #### Discussion
 
-This key is a string in the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary that the system returns with the error.
+This key is a string in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary that the system returns with the error.
 
 ## See Also
 

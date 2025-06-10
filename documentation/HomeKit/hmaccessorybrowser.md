@@ -22,8 +22,6 @@ Discovering new network accessories is an expensive operation in terms of time a
 
 > ❗ **Important**:  To enable a consistent user experience across HomeKit enabled apps, use either the [`addAndSetupAccessories(completionHandler:)`](hmhome/addandsetupaccessories(completionhandler:).md) or the [`addAndSetupAccessories(with:completionHandler:)`](hmhome/addandsetupaccessories(with:completionhandler:).md) method of the [`HMHome`](hmhome.md) class instead of an accessory browser. These calls manage all the details of the accessory search process for you.
 
- To enable a consistent user experience across HomeKit enabled apps, use either the [`addAndSetupAccessories(completionHandler:)`](hmhome/addandsetupaccessories(completionhandler:).md) or the [`addAndSetupAccessories(with:completionHandler:)`](hmhome/addandsetupaccessories(with:completionhandler:).md) method of the [`HMHome`](hmhome.md) class instead of an accessory browser. These calls manage all the details of the accessory search process for you.
-
 ## Topics
 
 ### Discovering accessories
@@ -53,6 +51,7 @@ Discovering new network accessories is an expensive operation in terms of time a
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

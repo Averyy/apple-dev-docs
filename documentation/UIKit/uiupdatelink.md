@@ -57,8 +57,6 @@ updateLink.addAction(to: .afterUpdateScheduled) { link, info in
 
 > ❗ **Important**:  Only use [`UIUpdateLink`](uiupdatelink.md) from the main thread.
 
- Only use [`UIUpdateLink`](uiupdatelink.md) from the main thread.
-
 ## Topics
 
 ### Creating a UI update link

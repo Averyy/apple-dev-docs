@@ -12,8 +12,6 @@ A reference to data that describes a credential that represents a user name and 
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,9 +19,13 @@ A reference to data that describes a credential that represents a user name and 
 object AssetCredentialUserNameAndPassword
 ```
 
+#### Discussion
+
+Specify `com.apple.asset.credential.userpassword` as the declaration type.
+
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object AssetCredentialUserNameAndPasswordAuthenticationObject](assetcredentialusernameandpasswordauthenticationobject.md)
   The server authentication details for an asset-credential user name and password.
 - [object AssetCredentialUserNameAndPasswordReferenceObject](assetcredentialusernameandpasswordreferenceobject.md)

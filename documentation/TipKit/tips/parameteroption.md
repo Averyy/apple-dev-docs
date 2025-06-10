@@ -1,4 +1,4 @@
-# Tips.ParameterOption
+# ParameterOption
 
 **Framework**: TipKit  
 **Kind**: struct
@@ -30,15 +30,14 @@ struct ParameterOption
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [struct IgnoresDisplayFrequency](tips/ignoresdisplayfrequency.md)
-  Controls whether a tip obeys the preconfigured display frequency interval.
-- [struct MaxDisplayCount](tips/maxdisplaycount.md)
-  Specifies the maximum number of times a tip displays before the system automatically invalidates it.
-- [struct ConfigurationOption](tips/configurationoption.md)
-  A type that marks an object as a tip configuration.
+- [struct Parameter](tips/parameter.md)
+  A type that monitors the state of its wrapped value to reevaluate any dependent tip rules when the value changes.
+- [struct Parameter](tips/parameter.md)
+  A type that monitors the state of its wrapped value to reevaluate any dependent tip rules when the value changes.
 
 
 ---

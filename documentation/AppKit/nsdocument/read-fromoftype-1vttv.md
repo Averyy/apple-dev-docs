@@ -1,6 +1,6 @@
 # read(from:ofType:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Sets the contents of this document by reading from a file or file package, of a specified type, located by a URL.

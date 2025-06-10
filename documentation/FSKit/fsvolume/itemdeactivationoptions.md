@@ -1,6 +1,6 @@
 # FSVolume.ItemDeactivationOptions
 
-**Framework**: Fskit  
+**Framework**: FSKit  
 **Kind**: struct
 
 Options to specify the item deactivation policy.
@@ -45,6 +45,7 @@ Callers may want to set a deactivation policy because [`deactivateItem(_:replyHa
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also
@@ -55,4 +56,4 @@ Callers may want to set a deactivation policy because [`deactivateItem(_:replyHa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/FSKit/fsvolume/itemdeactivationoptions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/fskit/fsvolume/itemdeactivationoptions)*

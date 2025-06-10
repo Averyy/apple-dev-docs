@@ -45,6 +45,7 @@ struct ObjectDetectionMetrics<Label> where Label : Comparable, Label : Decodable
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

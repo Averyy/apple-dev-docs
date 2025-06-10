@@ -7,8 +7,6 @@ A list of printer dictionaries.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,7 +16,7 @@ object Printing.UserPrinterList
 
 ## Topics
 
-### Profiles
+### Objects
 - [object Printing.UserPrinterList.Printer](printing/userprinterlist-data.dictionary/printer-data.dictionary.md)
   A printer dictionary.
 
@@ -26,8 +24,6 @@ object Printing.UserPrinterList
 
 - [object Printing.DefaultPrinter](printing/defaultprinter-data.dictionary.md)
   A default printer for the user.
-- [object Printing.UserPrinterList.Printer](printing/userprinterlist-data.dictionary/printer-data.dictionary.md)
-  A printer dictionary.
 
 
 ---

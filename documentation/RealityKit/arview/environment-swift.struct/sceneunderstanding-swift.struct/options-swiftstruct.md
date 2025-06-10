@@ -10,6 +10,7 @@ Available scene-understanding options.
 - iPadOS 13.4+
 - Mac Catalyst 14.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -19,19 +20,6 @@ struct Options
 
 ## Topics
 
-### Initializers
-- [init(rawValue: UInt32)](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/init(rawvalue:).md)
-  Creates a new option set from the given raw value.
-### Instance Properties
-- [let rawValue: UInt32](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [ARView.Environment.SceneUnderstanding.Options.ArrayLiteralElement](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [ARView.Environment.SceneUnderstanding.Options.Element](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/element.md)
-  The element type of the option set.
-- [ARView.Environment.SceneUnderstanding.Options.RawValue](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let collision: ARView.Environment.SceneUnderstanding.Options](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/collision.md)
   The `.collision` option means that the reconstructed geometry can be used for collision queries (i.e. raycasting)
@@ -43,10 +31,6 @@ struct Options
   No abstract
 - [static let receivesLighting: ARView.Environment.SceneUnderstanding.Options](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/receiveslighting.md)
   The `.receivesLighting` option means that the virtual lights will interact with real world surfaces causing them to shine. The properties  of the mesh will be set to a default material.
-### Default Implementations
-- [Equatable Implementations](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/equatable-implementations.md)
-- [OptionSet Implementations](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/optionset-implementations.md)
-- [SetAlgebra Implementations](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/setalgebra-implementations.md)
 
 ## Relationships
 

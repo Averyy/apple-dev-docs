@@ -17,6 +17,7 @@ Sets whether the next undo or redo action is discardable.
 ## Declaration
 
 ```swift
+@MainActor
 func setActionIsDiscardable(_ discardable: Bool)
 ```
 

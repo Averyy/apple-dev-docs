@@ -1,6 +1,6 @@
 # Capturing screen content in macOS
 
-**Framework**: Screencapturekit
+**Framework**: ScreenCaptureKit
 
 Stream desktop content like displays, apps, and windows by adopting screen capture in your app.
 
@@ -207,4 +207,4 @@ The app retrieves the audio stream basic description that it uses to create an [
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ScreenCaptureKit/capturing-screen-content-in-macos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/screencapturekit/capturing-screen-content-in-macos)*

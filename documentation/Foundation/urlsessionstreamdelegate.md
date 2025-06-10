@@ -45,6 +45,7 @@ In addition to these methods, be sure to implement the methods in the [`URLSessi
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [URLSessionDelegate](urlsessiondelegate.md)
 - [URLSessionTaskDelegate](urlsessiontaskdelegate.md)
 
@@ -60,4 +61,4 @@ In addition to these methods, be sure to implement the methods in the [`URLSessi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessionstreamdelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessionstreamdelegate)*

@@ -1,6 +1,6 @@
 # toolbarVisibility(_:for:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Specifies the visibility of a bar managed by SwiftUI.

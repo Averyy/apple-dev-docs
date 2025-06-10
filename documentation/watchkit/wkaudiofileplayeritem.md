@@ -1,6 +1,6 @@
 # WKAudioFilePlayerItem
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that manages the presentation state of an audio file while it is playing.

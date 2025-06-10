@@ -17,7 +17,6 @@ Initializes an audio node from an audio asset with the specified filename.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(fileNamed name: String)
 ```
 

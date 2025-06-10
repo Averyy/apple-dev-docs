@@ -1,6 +1,6 @@
 # absoluteTime
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The absolute time of the timestamp, which is the value of the mach absolute time clock.

@@ -8,6 +8,7 @@ A type that provides asynchronous access to translation responses.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.0+
 
 ## Declaration

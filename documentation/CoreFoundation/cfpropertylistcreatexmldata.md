@@ -28,8 +28,6 @@ A CFData object containing the XML data. Ownership follows the [`The Create Rule
 
 > ⚠️ **Warning**:  This function is obsolete and will be deprecated soon. Use [`CFPropertyListCreateData(_:_:_:_:_:)`](cfpropertylistcreatedata(_:_:_:_:_:).md) instead.
 
- This function is obsolete and will be deprecated soon. Use [`CFPropertyListCreateData(_:_:_:_:_:)`](cfpropertylistcreatedata(_:_:_:_:_:).md) instead.
-
 ## Parameters
 
 - `allocator`: The allocator to use to allocate memory for the new data object. Pass   or kCFAllocatorDefault to use the current default allocator.

@@ -1,6 +1,6 @@
 # Downloading Analytics Reports
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Learn how to request and review data about your apps, their usage, engagement, and performance.
 
@@ -66,4 +66,4 @@ For `ONGOING` report requests you need to regularly use these APIs to get update
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/downloading-analytics-reports)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/downloading-analytics-reports)*

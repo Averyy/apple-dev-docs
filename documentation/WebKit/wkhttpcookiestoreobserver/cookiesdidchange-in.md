@@ -1,6 +1,6 @@
 # cookiesDidChange(in:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that the cookies in the specified cookie store changed.

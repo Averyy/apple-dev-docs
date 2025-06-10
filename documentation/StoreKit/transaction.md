@@ -1,6 +1,6 @@
 # Transaction
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: struct
 
 Information that represents the customer’s purchase of a product in your app.
@@ -23,12 +23,12 @@ struct Transaction
 
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 - [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
-- [Testing purchases made outside your app](testing-purchases-made-outside-your-app.md)
 - [Testing win-back offers in the sandbox environment](testing-win-back-offers-in-the-sandbox-environment.md)
-- [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
-- [Choosing a StoreKit API for In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
+- [Testing purchases made outside your app](testing-purchases-made-outside-your-app.md)
 - [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
 - [Testing refund requests](testing-refund-requests.md)
+- [Choosing a StoreKit API for In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
+- [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
 
 #### Overview
 
@@ -158,6 +158,7 @@ All In-App Purchases that customers make are equally available to your app in th
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -171,4 +172,4 @@ All In-App Purchases that customers make are equally available to your app in th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/transaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/transaction)*

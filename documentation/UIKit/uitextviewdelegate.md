@@ -77,6 +77,8 @@ All of the methods in this protocol are optional. You can use them in situations
 ### Instance Methods
 - [func textView(UITextView, didBeginFormattingWith: UITextFormattingViewController)](uitextviewdelegate/textview(_:didbeginformattingwith:).md)
 - [func textView(UITextView, didEndFormattingWith: UITextFormattingViewController)](uitextviewdelegate/textview(_:didendformattingwith:).md)
+- [func textView(UITextView, editMenuForTextInRanges: [NSValue], suggestedActions: [UIMenuElement]) -> UIMenu?](uitextviewdelegate/textview(_:editmenufortextinranges:suggestedactions:).md)
+- [func textView(UITextView, shouldChangeTextInRanges: [NSValue], replacementText: String) -> Bool](uitextviewdelegate/textview(_:shouldchangetextinranges:replacementtext:).md)
 - [func textView(UITextView, willBeginFormattingWith: UITextFormattingViewController)](uitextviewdelegate/textview(_:willbeginformattingwith:).md)
 - [func textView(UITextView, willEndFormattingWith: UITextFormattingViewController)](uitextviewdelegate/textview(_:willendformattingwith:).md)
 

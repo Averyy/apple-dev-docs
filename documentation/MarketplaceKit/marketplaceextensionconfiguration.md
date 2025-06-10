@@ -25,6 +25,7 @@ A marketplace extension ([`MarketplaceExtension`](marketplaceextension.md)) prop
 ### Inherits From
 - [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

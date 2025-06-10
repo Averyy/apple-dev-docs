@@ -25,6 +25,7 @@ struct AttributesSlice5<T, U, V, W, X> where T : AttributedStringKey, U : Attrib
 - [BidirectionalCollection](../Swift/BidirectionalCollection.md)
 - [Collection](../Swift/Collection.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 

@@ -1,6 +1,6 @@
 # first(where:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns the first element of the sequence that satisfies the given predicate.

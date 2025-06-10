@@ -11,8 +11,6 @@ The payload you use to configure a global HTTP proxy.
 - macOS 10.9+
 - tvOS 9.0+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -30,17 +28,17 @@ There can only be one payload of this type on the device at any time.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS |
-| User Channel | - |
-| Allow Manual Install | iOS, macOS, tvOS |
-| Requires Supervision | iOS, tvOS |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS |
+| User channel | NA |
+| Allow manual install | iOS, macOS, tvOS, visionOS |
+| Requires supervision | iOS, tvOS, visionOS |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

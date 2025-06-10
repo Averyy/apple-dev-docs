@@ -44,6 +44,8 @@ TextKit uses the abstract [`NSTextLocation`](nstextlocation.md) protocol to iden
   Returns the text element corresponding to object’s attributed string.
 - [func attributedString(for: NSTextElement) -> NSAttributedString?](nstextcontentstorage/attributedstring(for:).md)
   Returns a new attributed string for the text element.
+### Instance Properties
+- [var includesTextListMarkers: Bool](nstextcontentstorage/includestextlistmarkers.md)
 
 ## Relationships
 
@@ -60,6 +62,8 @@ TextKit uses the abstract [`NSTextLocation`](nstextlocation.md) protocol to iden
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [NSTextElementProvider](nstextelementprovider.md)
 - [NSTextStorageObserving](nstextstorageobserving.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

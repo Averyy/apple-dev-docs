@@ -1,6 +1,6 @@
 # WKPageOrientation.horizontal
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 A horizontal page-based scrolling orientation.

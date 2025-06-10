@@ -1,6 +1,6 @@
 # Track aperture mode dimension atoms
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Atoms that store information for each of the track aperture presentation modes.
 

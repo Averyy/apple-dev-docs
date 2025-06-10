@@ -20,9 +20,13 @@ Generates a signature that you can use to authenticate the local player on your 
 func fetchItemsForIdentityVerificationSignature() async throws -> (URL, Data, Data, UInt64)
 ```
 
+## Mentions
+
+- [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
+
 #### Discussion
 
-To generate a signature for your authentication server, you perform steps in the game and pass data to the server, which completes the process.
+Use this method when you need to authenticate with your server. To generate a signature for your authentication server, you perform steps in the game and pass data to the server, which completes the process.
 
 In your game, follow these steps:
 
@@ -42,8 +46,6 @@ If the generated and retrieved signatures match, GameKit authenticates the local
 
 > ❗ **Important**:  Trust only the fields in the signed payload. Consider other data, such as nicknames, as player-provided information.
 
- Trust only the fields in the signed payload. Consider other data, such as nicknames, as player-provided information.
-
 ## Parameters
 
 - `completionHandler`: The block receives the following parameters:
@@ -51,11 +53,11 @@ If the generated and retrieved signatures match, GameKit authenticates the local
 ## See Also
 
 - [var authenticateHandler: ((UIViewController?, (any Error)?) -> Void)?](gklocalplayer/authenticatehandler.md)
-  A handler that GameKit calls while authenticating the local player.
+  A handler that GameKit calls while initializing the local player.
 - [var isAuthenticated: Bool](gklocalplayer/isauthenticated.md)
   A Boolean value that indicates whether a local player has signed in to Game Center.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1515396-gkplayerauthenticationdidchangen.md)
-  A notification that posts after GameKit authenticates the local player. 
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+  A notification that posts after GameKit authenticates the local player.
 
 
 ---

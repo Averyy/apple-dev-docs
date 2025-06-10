@@ -1,6 +1,6 @@
 # STREAM_COPY
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

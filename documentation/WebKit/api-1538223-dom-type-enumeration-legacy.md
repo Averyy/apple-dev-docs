@@ -1,6 +1,6 @@
 # DOM Type Enumeration (Legacy)
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 ## Topics
 

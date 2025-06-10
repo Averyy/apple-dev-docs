@@ -1,6 +1,6 @@
 # WCSessionFile
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: class
 
 Information about a file currently being transferred between an iOS app and WatchKit extension.

@@ -1,6 +1,6 @@
 # CSS_INHERIT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -12,7 +12,7 @@ Consider an app that needs to filter a table or collection view based on the con
 
 ##### Connect a Publisher to a Subscriber
 
-To receive the text field’s notifications with Combine, access the default instance of [`NotificationCenter`](https://developer.apple.com/documentation/Foundation/NotificationCenter) and call its [`publisher(for:object:)`](https://developer.apple.com/documentation/foundation/notificationcenter/3329353-publisher) method. This call takes the notification name and source object that you want notifications from, and returns a publisher that produces notification elements.
+To receive the text field’s notifications with Combine, access the default instance of [`NotificationCenter`](https://developer.apple.com/documentation/Foundation/NotificationCenter) and call its [`publisher(for:object:)`](https://developer.apple.com/documentation/Foundation/NotificationCenter/publisher(for:object:)) method. This call takes the notification name and source object that you want notifications from, and returns a publisher that produces notification elements.
 
 ```swift
 let pub = NotificationCenter.default

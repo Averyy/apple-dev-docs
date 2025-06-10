@@ -24,10 +24,6 @@ func hash(into hasher: inout Hasher)
 
 - [static func == (BodyTrackingComponent.Target, BodyTrackingComponent.Target) -> Bool](bodytrackingcomponent/target-swift.enum/==(_:_:).md)
   Indicates whether two targets are equal.
-- [static func != (Self, Self) -> Bool](bodytrackingcomponent/target-swift.enum/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [var hashValue: Int](bodytrackingcomponent/target-swift.enum/hashvalue.md)
-  The hash value.
 
 
 ---

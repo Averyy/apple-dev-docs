@@ -27,8 +27,6 @@ For custom accessories, you determine their placement. The order of custom acces
 
 > ❗ **Important**:  The system throws an exception if you include more than one instance of any system accessory. You can include multiple custom accessories.
 
- The system throws an exception if you include more than one instance of any system accessory. You can include multiple custom accessories.
-
 ## See Also
 
 - [struct UICellAccessory](uicellaccessory-swift.struct.md)

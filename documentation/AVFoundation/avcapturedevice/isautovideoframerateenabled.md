@@ -24,8 +24,6 @@ You can enable this property on a device when its active format’s [`isAutoVide
 
 > ❗ **Important**:  After enabling automatic frame rate adjustments, attempting to set a device’s [`activeVideoMinFrameDuration`](avcapturedevice/activevideominframeduration.md) or [`activeVideoMaxFrameDuration`](avcapturedevice/activevideomaxframeduration.md) throws an exception.
 
- After enabling automatic frame rate adjustments, attempting to set a device’s [`activeVideoMinFrameDuration`](avcapturedevice/activevideominframeduration.md) or [`activeVideoMaxFrameDuration`](avcapturedevice/activevideomaxframeduration.md) throws an exception.
-
 Changing the device’s active format resets this property to its default value of [`false`](https://developer.apple.com/documentation/swift/false).
 
 

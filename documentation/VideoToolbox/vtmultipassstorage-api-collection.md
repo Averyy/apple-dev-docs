@@ -1,6 +1,6 @@
 # VTMultiPassStorage
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 An object that stores video encoding metadata from a multipass encoding session.
 

@@ -17,6 +17,7 @@ The rate at which the blue component of a particle’s color changes per second.
 ## Declaration
 
 ```swift
+@MainActor
 var particleColorBlueSpeed: CGFloat { get set }
 ```
 

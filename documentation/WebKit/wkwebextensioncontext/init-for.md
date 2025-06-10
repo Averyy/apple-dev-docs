@@ -1,6 +1,6 @@
 # init(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Returns a web extension context initialized with a specified extension.

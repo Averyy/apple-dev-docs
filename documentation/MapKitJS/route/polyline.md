@@ -22,13 +22,13 @@ attribute mapkit.PolylineOverlay polyline;
 
 You can add the value of the `polyline` property directly to the map.
 
-```swift
-var route = directions.route({
+```javascript
+const route = directions.route({
     origin: new mapkit.Coordinate(37.616934, -122.383790),
     destination: new mapkit.Coordinate(37.3349, -122.0090201)
 }, function(error, data) {
 
-    var polylines = data.routes.map(function(route) {
+    const polylines = data.routes.map(function(route) {
         return route.polyline;
     });
 

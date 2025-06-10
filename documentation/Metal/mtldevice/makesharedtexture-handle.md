@@ -30,8 +30,6 @@ Call this method from the same [`MTLDevice`](mtldevice.md) instance that created
 
 > 💡 **Tip**:  You can identify the correct device with the texture handle’s [`device`](mtlsharedtexturehandle/device.md) property.
 
- You can identify the correct device with the texture handle’s [`device`](mtlsharedtexturehandle/device.md) property.
-
 ## Parameters
 
 - `sharedHandle`: An   instance, typically from another process using the same GPU device.

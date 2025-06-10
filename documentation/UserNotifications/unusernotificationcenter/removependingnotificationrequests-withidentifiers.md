@@ -1,6 +1,6 @@
 # removePendingNotificationRequests(withIdentifiers:)
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: method
 
 Removes your app’s local notifications that are pending and match the specified identifiers.

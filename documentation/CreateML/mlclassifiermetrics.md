@@ -1,6 +1,6 @@
 # MLClassifierMetrics
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: struct
 
 Metrics you use to evaluate a classifier’s performance.
@@ -93,4 +93,4 @@ Accuracy can be a misleading metric if you use unbalanced data, which means the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateML/mlclassifiermetrics)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createml/mlclassifiermetrics)*

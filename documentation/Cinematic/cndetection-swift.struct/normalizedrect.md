@@ -8,6 +8,7 @@ The rectangle within the image where the object occurs, normalized such that (0.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 

@@ -21,6 +21,10 @@ nonisolated
 var currentItem: AVPlayerItem? { get }
 ```
 
+## Mentions
+
+- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
+
 ## See Also
 
 - [func replaceCurrentItem(with: AVPlayerItem?)](avplayer/replacecurrentitem(with:).md)

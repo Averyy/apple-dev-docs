@@ -103,6 +103,11 @@ Avoid using screen objects to make decisions about your app’s interface. Use a
 ### Deprecated
 - [Deprecated symbols](uiscreen-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Structures
+- [UIScreen.BrightnessDidChangeMessage](uiscreen/brightnessdidchangemessage.md)
+- [UIScreen.CapturedDidChangeMessage](uiscreen/captureddidchangemessage.md)
+- [UIScreen.ModeDidChangeMessage](uiscreen/modedidchangemessage.md)
+- [UIScreen.ReferenceDisplayModeStatusDidChangeMessage](uiscreen/referencedisplaymodestatusdidchangemessage.md)
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # chartYAxis(content:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Configures the y-axis for charts in the view.

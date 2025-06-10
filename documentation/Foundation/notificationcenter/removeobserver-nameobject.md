@@ -24,7 +24,7 @@ func removeObserver(_ observer: Any, name aName: NSNotification.Name?, object an
 
 Removing the observer stops it from receiving notifications.
 
-If you used [`addObserver(forName:object:queue:using:)`](notificationcenter/addobserver(forname:object:queue:using:).md) to create your observer, you should call this method or [`removeObserver(_:)`](notificationcenter/removeobserver(_:).md) before the system deallocates any object that [`addObserver(forName:object:queue:using:)`](notificationcenter/addobserver(forname:object:queue:using:).md) specifies.
+If you used [`addObserver(forName:object:queue:using:)`](notificationcenter/addobserver(forname:object:queue:using:).md) to create your observer, you should call this method or `NotificationCenter/removeObserver(_:)` before the system deallocates any object that [`addObserver(forName:object:queue:using:)`](notificationcenter/addobserver(forname:object:queue:using:).md) specifies.
 
 If your app targets iOS 9.0 and later or macOS 10.11 and later, and you used [`addObserver(_:selector:name:object:)`](notificationcenter/addobserver(_:selector:name:object:).md) to create your observer, you do not need to unregister the observer. If you forget or are unable to remove the observer, the system cleans up the next time it would have posted to it.
 
@@ -42,8 +42,6 @@ When unregistering an observer, use the most specific detail possible. For examp
   Adds an entry to the notification center to receive notifications that passed to the provided block.
 - [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: Any?)](notificationcenter/addobserver(_:selector:name:object:).md)
   Adds an entry to the notification center to call the provided selector with the notification.
-- [func removeObserver(Any)](notificationcenter/removeobserver(_:).md)
-  Removes all entries specifying an observer from the notification center’s dispatch table.
 
 
 ---

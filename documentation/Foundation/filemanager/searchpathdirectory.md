@@ -92,6 +92,7 @@ Use these constants with the [`init(for:in:appropriateFor:create:)`](url/init(fo
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

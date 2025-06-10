@@ -1,6 +1,6 @@
 # min()
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns the minimum element in the sequence.

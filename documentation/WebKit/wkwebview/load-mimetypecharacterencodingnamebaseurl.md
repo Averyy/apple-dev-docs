@@ -1,6 +1,6 @@
 # load(_:mimeType:characterEncodingName:baseURL:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Loads the content of the specified data object and navigates to it.

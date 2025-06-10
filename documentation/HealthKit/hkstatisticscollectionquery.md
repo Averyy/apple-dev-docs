@@ -21,16 +21,14 @@ class HKStatisticsCollectionQuery
 
 ## Mentions
 
-- [Executing Statistics Collection Queries](executing-statistics-collection-queries.md)
 - [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
+- [Executing Statistics Collection Queries](executing-statistics-collection-queries.md)
 
 #### Overview
 
 Statistics collection queries are often used to produce data for graphs and charts. For example, you might create a statistics collection query that calculates the total number of steps for each day or the average heart rate for each hour. Like observer queries, collection queries can also act as long-running queries, receiving updates when the HealthKit store’s content changes.
 
 > ❗ **Important**:  You can only use statistics collection queries with quantity samples. If you want to calculate statistics over workouts or correlation samples, you must perform the appropriate query and process the data yourself.
-
- You can only use statistics collection queries with quantity samples. If you want to calculate statistics over workouts or correlation samples, you must perform the appropriate query and process the data yourself.
 
 Statistics collection queries are mostly immutable. You can assign the query’s [`initialResultsHandler`](hkstatisticscollectionquery/initialresultshandler.md) and [`statisticsUpdateHandler`](hkstatisticscollectionquery/statisticsupdatehandler.md) properties after instantiating the object. You must set all other properties when you instantiate the object, and they can’t change.
 
@@ -68,6 +66,7 @@ For more information about statistics queries, see [`HKStatisticsQuery`](hkstati
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -21,10 +21,10 @@ class AVCaptureDevice
 
 ## Mentions
 
-- [Requesting authorization to capture and save media](requesting-authorization-to-capture-and-save-media.md)
-- [Setting Up a Capture Session](setting-up-a-capture-session.md)
 - [Enhancing your app experience with the Camera Control](enhancing-your-app-experience-with-the-camera-control.md)
 - [Choosing a Capture Device](choosing-a-capture-device.md)
+- [Setting Up a Capture Session](setting-up-a-capture-session.md)
+- [Requesting authorization to capture and save media](requesting-authorization-to-capture-and-save-media.md)
 
 #### Overview
 
@@ -178,6 +178,28 @@ A capture device provides several configuration options. Before attempting to co
 ### Determining Lens Stabilization
 - [AVCaptureDevice.LensStabilizationStatus](avcapturedevice/lensstabilizationstatus.md)
   Constants that indicate the status of optical image stabilization hardware during a bracketed photo capture.
+### Instance Properties
+- [var cameraLensSmudgeDetectionInterval: CMTime](avcapturedevice/cameralenssmudgedetectioninterval.md)
+- [var cameraLensSmudgeDetectionStatus: AVCaptureCameraLensSmudgeDetectionStatus](avcapturedevice/cameralenssmudgedetectionstatus.md)
+- [var cinematicVideoCaptureSceneMonitoringStatuses: Set<AVCaptureSceneMonitoringStatus>](avcapturedevice/cinematicvideocapturescenemonitoringstatuses.md)
+- [var exposureRectOfInterest: CGRect](avcapturedevice/exposurerectofinterest.md)
+- [var focusRectOfInterest: CGRect](avcapturedevice/focusrectofinterest.md)
+- [var isCameraLensSmudgeDetectionEnabled: Bool](avcapturedevice/iscameralenssmudgedetectionenabled.md)
+- [var isExposureRectOfInterestSupported: Bool](avcapturedevice/isexposurerectofinterestsupported.md)
+- [var isFocusRectOfInterestSupported: Bool](avcapturedevice/isfocusrectofinterestsupported.md)
+- [var minExposureRectOfInterestSize: CGSize](avcapturedevice/minexposurerectofinterestsize.md)
+- [var minFocusRectOfInterestSize: CGSize](avcapturedevice/minfocusrectofinterestsize.md)
+- [var nominalFocalLengthIn35mmFilm: Float](avcapturedevice/nominalfocallengthin35mmfilm.md)
+  The nominal 35mm equivalent focal length of the capture device’s lens.
+### Instance Methods
+- [func defaultRectForExposurePoint(ofInterest: CGPoint) -> CGRect](avcapturedevice/defaultrectforexposurepoint(ofinterest:).md)
+- [func defaultRectForFocusPoint(ofInterest: CGPoint) -> CGRect](avcapturedevice/defaultrectforfocuspoint(ofinterest:).md)
+- [func setCameraLensSmudgeDetectionEnabled(Bool, detectionInterval: CMTime)](avcapturedevice/setcameralenssmudgedetectionenabled(_:detectioninterval:).md)
+- [func setCinematicVideoFixedFocus(at: CGPoint, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideofixedfocus(at:focusmode:).md)
+- [func setCinematicVideoTrackingFocus(at: CGPoint, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideotrackingfocus(at:focusmode:).md)
+- [func setCinematicVideoTrackingFocus(detectedObjectID: Int, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideotrackingfocus(detectedobjectid:focusmode:).md)
+### Enumerations
+- [AVCaptureDevice.CinematicVideoFocusMode](avcapturedevice/cinematicvideofocusmode.md)
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # Accessing the camera while multitasking on iPad
 
-**Framework**: Avkit
+**Framework**: AVKit
 
 Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
 
@@ -27,7 +27,7 @@ For information about Split View and Slide Over modes, see [`Use multitasking on
 
 ##### Enable Camera Access While Multitasking
 
-Set up a capture session to enable your app to capture photos or videos. See [`Setting Up a Capture Session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session) for more information. You can configure a capture session to allow use of the camera while multitasking if the current environment supports it. To determine if a capture session supports this feature, query its [`isMultitaskingCameraAccessSupported`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/isMultitaskingCameraAccessSupported). If this value is [`true`](https://developer.apple.com/documentation/swift/true), you can enable multitasking camera access by setting [`isMultitaskingCameraAccessEnabled`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/isMultitaskingCameraAccessEnabled) to [`true`](https://developer.apple.com/documentation/swift/true), as the example below shows:
+Set up a capture session to enable your app to capture photos or videos. See [`Setting Up a Capture Session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session) for more information. You can configure a capture session to allow use of the camera while multitasking if the current environment supports it. To determine if a capture session supports this feature, query its [`isMultitaskingCameraAccessSupported`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/isMultitaskingCameraAccessSupported). If this value is `true`, you can enable multitasking camera access by setting [`isMultitaskingCameraAccessEnabled`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/isMultitaskingCameraAccessEnabled) to `true`, as the example below shows:
 
 ```swift
 let captureSession = AVCaptureSession()
@@ -155,4 +155,4 @@ The notification object’s user information dictionary contains the reason for 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/accessing-the-camera-while-multitasking-on-ipad)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/accessing-the-camera-while-multitasking-on-ipad)*

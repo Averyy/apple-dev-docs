@@ -14,6 +14,7 @@ Get a list of all treatments for a specific App Store version experiment.
   Get information for a specific App Store version experiment.
 - [List All Treatments for an App Store Experiment](get-v2-appstoreversionexperiments-_id_-appstoreversionexperimenttreatments.md)
   Get a list of all treatments for a specific App Store version experiment.
+- [GET /v2/appStoreVersionExperiments/{id}/relationships/appStoreVersionExperimentTreatments](get-v2-appstoreversionexperiments-_id_-relationships-appstoreversionexperimenttreatments.md)
 - [Create an App Store Experiment](post-v2-appstoreversionexperiments.md)
   Add a new experiment to an App Store version.
 - [Modify an App Store Experiment](patch-v2-appstoreversionexperiments-_id_.md)
@@ -22,6 +23,7 @@ Get a list of all treatments for a specific App Store version experiment.
   Delete a specific App Store version experiment before it starts.
 - [Read App Store experiment information v1](get-v1-appstoreversionexperiments-_id_.md)
   Get information for a specific App Store version experiment.
+- [GET /v1/appStoreVersionExperiments/{id}/relationships/appStoreVersionExperimentTreatments](get-v1-appstoreversionexperiments-_id_-relationships-appstoreversionexperimenttreatments.md)
 - [Modify an App Store experiment v1](patch-v1-appstoreversionexperiments-_id_.md)
   Update the name, the started state, and the proportion of traffic to send to an App Store experiment.
 - [Create an App Store experiment v1](post-v1-appstoreversionexperiments.md)

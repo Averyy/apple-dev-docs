@@ -1,6 +1,6 @@
 # Notifications
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Communicate with users even when your app isn’t running.
 

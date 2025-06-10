@@ -1,6 +1,6 @@
 # WorkoutScheduler.AuthorizationState.authorized
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: case
 
 The user authorized your app to schedule workouts.
@@ -10,6 +10,7 @@ The user authorized your app to schedule workouts.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

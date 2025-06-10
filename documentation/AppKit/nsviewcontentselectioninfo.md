@@ -16,13 +16,6 @@ protocol NSViewContentSelectionInfo : NSObjectProtocol
 
 - [Supporting Writing Tools via the pasteboard](supporting-writing-tools-via-the-pasteboard.md)
 
-#### Overview
-
-```None
-@protocol  `NSViewContentSelectionInfo`
-@abstract  A protocol to request information from NSView subclasses about the selected content in the view.
-```
-
 ## Topics
 
 ### Instance Properties
@@ -32,6 +25,15 @@ protocol NSViewContentSelectionInfo : NSObjectProtocol
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [Layout](layout.md)
+  Specify the size and position your view relative to other nearby views using rules that update your view hierarchy automatically.
+- [Drawing](nsview-drawing.md)
+  Draw the content of custom views and update that content when the view’s size or appearance changes.
+- [Printing](nsview-printing.md)
+  Create a printable version of your view’s content and handle pagination and printer-related behaviors.
 
 
 ---

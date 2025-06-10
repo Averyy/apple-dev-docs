@@ -1,6 +1,6 @@
 # VTFrameSilo
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 An object that stores sample buffers from a multipass encoding session.
 

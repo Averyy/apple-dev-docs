@@ -1,6 +1,6 @@
 # deleteData(_:length:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

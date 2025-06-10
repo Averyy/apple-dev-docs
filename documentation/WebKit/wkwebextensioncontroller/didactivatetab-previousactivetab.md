@@ -1,6 +1,6 @@
 # didActivateTab(_:previousActiveTab:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Should be called by the app when a tab is activated to notify all loaded web extensions.

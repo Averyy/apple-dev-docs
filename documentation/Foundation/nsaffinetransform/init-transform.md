@@ -12,7 +12,7 @@ Initializes the receiver’s matrix using another transform object.
 ## Declaration
 
 ```swift
-convenience init(transform: AffineTransform)
+convenience init(transform: NSAffineTransform)
 ```
 
 #### Return Value

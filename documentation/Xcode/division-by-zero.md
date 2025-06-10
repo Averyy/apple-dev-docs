@@ -61,4 +61,4 @@ Modify the logic to check for and avoid division when the divisor might equal ze
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/division-by-zero)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/division-by-zero)*

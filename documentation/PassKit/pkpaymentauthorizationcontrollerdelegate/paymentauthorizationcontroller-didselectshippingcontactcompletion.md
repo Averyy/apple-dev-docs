@@ -1,6 +1,6 @@
 # paymentAuthorizationController(_:didSelectShippingContact:completion:)
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: method
 
 Tells the delegate that the user selected a shipping address.

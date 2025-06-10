@@ -22,10 +22,10 @@ class UIApplication
 ## Mentions
 
 - [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
-- [About the UI preservation process](about-the-ui-preservation-process.md)
 - [About the app launch sequence](about-the-app-launch-sequence.md)
-- [Handling key presses made on a physical keyboard](handling-key-presses-made-on-a-physical-keyboard.md)
 - [About App Development with UIKit](about-app-development-with-uikit.md)
+- [Handling key presses made on a physical keyboard](handling-key-presses-made-on-a-physical-keyboard.md)
+- [About the UI preservation process](about-the-ui-preservation-process.md)
 
 #### Overview
 
@@ -201,7 +201,7 @@ Intercepting events is only rarely required and you should avoid it if possible.
 - [func supportedInterfaceOrientations(for: UIWindow?) -> UIInterfaceOrientationMask](uiapplication/supportedinterfaceorientations(for:).md)
   Returns the default set of interface orientations to use for the view controllers in the specified window.
 ### Tracking controls in the run loop
-- [static let tracking: RunLoop.Mode](../foundation/runloop/mode/1622929-tracking.md)
+- [static let tracking: RunLoop.Mode](../Foundation/RunLoop/Mode/tracking.md)
   The mode set while tracking in controls takes place.
 ### Detecting screenshots
 - [class let userDidTakeScreenshotNotification: NSNotification.Name](uiapplication/userdidtakescreenshotnotification.md)
@@ -216,6 +216,19 @@ Intercepting events is only rarely required and you should avoid it if possible.
 ### Deprecated
 - [Deprecated symbols](uiapplication-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Structures
+- [UIApplication.BackgroundRefreshStatusDidChangeMessage](uiapplication/backgroundrefreshstatusdidchangemessage.md)
+- [UIApplication.DidBecomeActiveMessage](uiapplication/didbecomeactivemessage.md)
+- [UIApplication.DidEnterBackgroundMessage](uiapplication/didenterbackgroundmessage.md)
+- [UIApplication.DidFinishLaunchingMessage](uiapplication/didfinishlaunchingmessage.md)
+- [UIApplication.DidReceiveMemoryWarningMessage](uiapplication/didreceivememorywarningmessage.md)
+- [UIApplication.ProtectedDataDidBecomeAvailableMessage](uiapplication/protecteddatadidbecomeavailablemessage.md)
+- [UIApplication.ProtectedDataWillBecomeUnavailableMessage](uiapplication/protecteddatawillbecomeunavailablemessage.md)
+- [UIApplication.SignificantTimeChangeMessage](uiapplication/significanttimechangemessage.md)
+- [UIApplication.UserDidTakeScreenshotMessage](uiapplication/userdidtakescreenshotmessage.md)
+- [UIApplication.WillEnterForegroundMessage](uiapplication/willenterforegroundmessage.md)
+- [UIApplication.WillResignActiveMessage](uiapplication/willresignactivemessage.md)
+- [UIApplication.WillTerminateMessage](uiapplication/willterminatemessage.md)
 
 ## Relationships
 
@@ -230,6 +243,7 @@ Intercepting events is only rarely required and you should avoid it if possible.
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
 - [UIResponderStandardEditActions](uiresponderstandardeditactions.md)

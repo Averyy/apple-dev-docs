@@ -33,24 +33,16 @@
   Adds a textual description of the value that the view contains.
 - [func accessibilityAction(AccessibilityActionKind, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityaction(_:_:).md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
-- [func accessibilityAction<I>(AccessibilityActionKind, intent: I) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityaction(_:intent:).md)
-  Adds an accessibility action representing `actionKind` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
 - [func accessibilityAction<Label>(action: () -> Void, label: () -> Label) -> some View](transactionpicker/accessibilityaction(action:label:).md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
-- [func accessibilityAction<I, Label>(intent: I, label: () -> Label) -> some View](transactionpicker/accessibilityaction(intent:label:).md)
-  Adds an accessibility action labeled by the contents of `label` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
 - [func accessibilityAction(named: Text, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityaction(named:_:)-35e7g.md)
+  Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
+- [func accessibilityAction(named: LocalizedStringResource, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityaction(named:_:)-4ecgw.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction<S>(named: S, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityaction(named:_:)-6xtwe.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction(named: LocalizedStringKey, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityaction(named:_:)-9pny8.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
-- [func accessibilityAction<I>(named: LocalizedStringKey, intent: I) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityaction(named:intent:)-3m0r7.md)
-  Adds an accessibility action labeled with the localized representation of `nameKey` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
-- [func accessibilityAction<S, I>(named: S, intent: I) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityaction(named:intent:)-8994x.md)
-  Adds an accessibility action labeled `name` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
-- [func accessibilityAction<I>(named: Text, intent: I) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityaction(named:intent:)-h218.md)
-  Adds an accessibility action labeled `name` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
 - [func accessibilityActions<Content>(() -> Content) -> some View](transactionpicker/accessibilityactions(_:).md)
   Adds multiple accessibility actions to the view.
 - [func accessibilityActions<Content>(category: AccessibilityActionCategory, () -> Content) -> some View](transactionpicker/accessibilityactions(category:_:).md)
@@ -73,6 +65,8 @@
   Replaces the existing accessibility element’s children with one or more new synthetic accessibility elements.
 - [func accessibilityCustomContent(AccessibilityCustomContentKey, LocalizedStringKey, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitycustomcontent(_:_:importance:)-13w5f.md)
   Add additional accessibility information to the view.
+- [func accessibilityCustomContent(LocalizedStringResource, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitycustomcontent(_:_:importance:)-1cy94.md)
+  Add additional accessibility information to the view.
 - [func accessibilityCustomContent<V>(LocalizedStringKey, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitycustomcontent(_:_:importance:)-3jy8n.md)
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent(Text, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitycustomcontent(_:_:importance:)-3r7uc.md)
@@ -85,15 +79,27 @@
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent<V>(AccessibilityCustomContentKey, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitycustomcontent(_:_:importance:)-4wftr.md)
   Add additional accessibility information to the view.
+- [func accessibilityCustomContent<V>(LocalizedStringResource, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitycustomcontent(_:_:importance:)-7uekk.md)
+  Add additional accessibility information to the view.
+- [func accessibilityCustomContent(AccessibilityCustomContentKey, LocalizedStringResource, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitycustomcontent(_:_:importance:)-7yc8t.md)
+  Add additional accessibility information to the view.
+- [func accessibilityCustomContent(LocalizedStringResource, LocalizedStringResource, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitycustomcontent(_:_:importance:)-7zsty.md)
+  Add additional accessibility information to the view.
 - [func accessibilityCustomContent<L, V>(L, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitycustomcontent(_:_:importance:)-9lih.md)
   Add additional accessibility information to the view.
+- [func accessibilityDefaultFocus<Value>(AccessibilityFocusState<Value>.Binding, Value) -> some View](transactionpicker/accessibilitydefaultfocus(_:_:).md)
+  Defines a region in which default accessibility focus is evaluated by assigning a value to a given accessibility focus state binding.
 - [func accessibilityDirectTouch(Bool, options: AccessibilityDirectTouchOptions) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydirecttouch(_:options:).md)
   Explicitly set whether this accessibility element is a direct touch area. Direct touch areas passthrough touch events to the app rather than being handled through an assistive technology, such as VoiceOver. The modifier accepts an optional `AccessibilityDirectTouchOptions` option set to customize the functionality of the direct touch area.
 - [func accessibilityDragPoint(UnitPoint, description: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydragpoint(_:description:)-4hiic.md)
   The point an assistive technology should use to begin a drag interaction.
+- [func accessibilityDragPoint(UnitPoint, description: LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydragpoint(_:description:)-5bzqd.md)
+  The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint<S>(UnitPoint, description: S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydragpoint(_:description:)-6q8wi.md)
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint(UnitPoint, description: LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydragpoint(_:description:)-9z7qf.md)
+  The point an assistive technology should use to begin a drag interaction.
+- [func accessibilityDragPoint(UnitPoint, description: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydragpoint(_:description:isenabled:)-1ahis.md)
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint(UnitPoint, description: Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydragpoint(_:description:isenabled:)-29ktm.md)
   The point an assistive technology should use to begin a drag interaction.
@@ -103,6 +109,8 @@
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydroppoint(_:description:)-1b8zp.md)
   The point an assistive technology should use to end a drag interaction.
+- [func accessibilityDropPoint(UnitPoint, description: LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydroppoint(_:description:)-5uezm.md)
+  The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint<S>(UnitPoint, description: S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydroppoint(_:description:)-6mqib.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydroppoint(_:description:)-812wb.md)
@@ -110,6 +118,8 @@
 - [func accessibilityDropPoint<S>(UnitPoint, description: S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydroppoint(_:description:isenabled:)-2gje4.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydroppoint(_:description:isenabled:)-4me1l.md)
+  The point an assistive technology should use to end a drag interaction.
+- [func accessibilityDropPoint(UnitPoint, description: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydroppoint(_:description:isenabled:)-8ihnm.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitydroppoint(_:description:isenabled:)-s8kw.md)
   The point an assistive technology should use to end a drag interaction.
@@ -131,7 +141,11 @@
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityhint(_:)-5j3w.md)
   Communicates to the user what happens after performing the view’s action.
+- [func accessibilityHint(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityhint(_:)-k4x2.md)
+  Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityhint(_:isenabled:)-2wbvr.md)
+  Communicates to the user what happens after performing the view’s action.
+- [func accessibilityHint(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityhint(_:isenabled:)-313qo.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityhint(_:isenabled:)-412vn.md)
   Communicates to the user what happens after performing the view’s action.
@@ -161,6 +175,10 @@
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitylabel(_:)-63hc2.md)
   Adds a label to the view that describes its contents.
+- [func accessibilityLabel(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitylabel(_:)-6b5go.md)
+  Adds a label to the view that describes its contents.
+- [func accessibilityLabel(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitylabel(_:isenabled:)-1jqpe.md)
+  Adds a label to the view that describes its contents.
 - [func accessibilityLabel(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitylabel(_:isenabled:)-6i9zk.md)
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel<S>(S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitylabel(_:isenabled:)-7bxce.md)
@@ -183,6 +201,8 @@
   Explicitly set whether this Accessibility element responds to user interaction and would thus be interacted with by technologies such as Switch Control, Voice Control or Full Keyboard Access.
 - [func accessibilityRotor<Content>(AccessibilitySystemRotor, entries: () -> Content) -> some View](transactionpicker/accessibilityrotor(_:entries:)-1gid5.md)
   Create an Accessibility Rotor replacing the specified system-provided Rotor.
+- [func accessibilityRotor<Content>(LocalizedStringResource, entries: () -> Content) -> some View](transactionpicker/accessibilityrotor(_:entries:)-33p1d.md)
+  Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
 - [func accessibilityRotor<Content>(LocalizedStringKey, entries: () -> Content) -> some View](transactionpicker/accessibilityrotor(_:entries:)-4oy8u.md)
   Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
 - [func accessibilityRotor<Content>(Text, entries: () -> Content) -> some View](transactionpicker/accessibilityrotor(_:entries:)-810nv.md)
@@ -195,7 +215,11 @@
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<L, EntryModel, ID>(L, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](transactionpicker/accessibilityrotor(_:entries:entryid:entrylabel:)-85l93.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
+- [func accessibilityRotor<EntryModel, ID>(LocalizedStringResource, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](transactionpicker/accessibilityrotor(_:entries:entryid:entrylabel:)-9735a.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel, ID>(Text, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](transactionpicker/accessibilityrotor(_:entries:entryid:entrylabel:)-nr0b.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries.
+- [func accessibilityRotor<EntryModel>(LocalizedStringResource, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](transactionpicker/accessibilityrotor(_:entries:entrylabel:)-16o8m.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel>(Text, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](transactionpicker/accessibilityrotor(_:entries:entrylabel:)-1onu0.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
@@ -209,6 +233,8 @@
   Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotor(LocalizedStringKey, textRanges: [Range<String.Index>]) -> some View](transactionpicker/accessibilityrotor(_:textranges:)-3dxtq.md)
   Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
+- [func accessibilityRotor(LocalizedStringResource, textRanges: [Range<String.Index>]) -> some View](transactionpicker/accessibilityrotor(_:textranges:)-4hooa.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotor(AccessibilitySystemRotor, textRanges: [Range<String.Index>]) -> some View](transactionpicker/accessibilityrotor(_:textranges:)-8toaz.md)
   Create an Accessibility Rotor replacing the specified system-provided Rotor. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotor<L>(L, textRanges: [Range<String.Index>]) -> some View](transactionpicker/accessibilityrotor(_:textranges:)-vug9.md)
@@ -217,6 +243,14 @@
   Defines an explicit identifier tying an Accessibility element for this view to an entry in an Accessibility Rotor.
 - [func accessibilityScrollAction((Edge) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityscrollaction(_:).md)
   Adds an accessibility scroll action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
+- [func accessibilityScrollStatus(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityscrollstatus(_:isenabled:)-2jbos.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityscrollstatus(_:isenabled:)-73b99.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(some StringProtocol, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityscrollstatus(_:isenabled:)-7pj5o.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityscrollstatus(_:isenabled:)-9aqao.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
 - [func accessibilityShowsLargeContentViewer() -> some View](transactionpicker/accessibilityshowslargecontentviewer.md)
   Adds a default large content view to be shown by the large content viewer.
 - [func accessibilityShowsLargeContentViewer<V>(() -> V) -> some View](transactionpicker/accessibilityshowslargecontentviewer(_:).md)
@@ -226,6 +260,8 @@
 - [func accessibilityTextContentType(AccessibilityTextContentType) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilitytextcontenttype(_:).md)
   Sets an accessibility text content type.
 - [func accessibilityValue<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityvalue(_:)-2qmur.md)
+  Adds a textual description of the value that the view contains.
+- [func accessibilityValue(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityvalue(_:)-8tyvq.md)
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityvalue(_:)-975pe.md)
   Adds a textual description of the value that the view contains.
@@ -237,16 +273,14 @@
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue<S>(S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityvalue(_:isenabled:)-6yohf.md)
   Adds a textual description of the value that the view contains.
+- [func accessibilityValue(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityvalue(_:isenabled:)-71nu7.md)
+  Adds a textual description of the value that the view contains.
 - [func accessibilityZoomAction((AccessibilityZoomGestureAction) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](transactionpicker/accessibilityzoomaction(_:).md)
   Adds an accessibility zoom action to the view. Actions allow assistive technologies, such as VoiceOver, to interact with the view by invoking the action.
 - [func actionSheet(isPresented: Binding<Bool>, content: () -> ActionSheet) -> some View](transactionpicker/actionsheet(ispresented:content:).md)
   Presents an action sheet when a given condition is true.
 - [func actionSheet<T>(item: Binding<T?>, content: (T) -> ActionSheet) -> some View](transactionpicker/actionsheet(item:content:).md)
   Presents an action sheet using the given item as a data source for the sheet’s content.
-- [func activityBackgroundTint(Color?) -> some View](transactionpicker/activitybackgroundtint(_:).md)
-  Sets the tint color for the background of a Live Activity that appears on the Lock Screen.
-- [func activitySystemActionForegroundColor(Color?) -> some View](transactionpicker/activitysystemactionforegroundcolor(_:).md)
-  The text color for the auxiliary action button that the system shows next to a Live Activity on the Lock Screen.
 - [func addOrderToWalletButtonStyle(AddOrderToWalletButtonStyle) -> some View](transactionpicker/addordertowalletbuttonstyle(_:).md)
   Sets the button’s style.
 - [func alert<S, A>(S, isPresented: Binding<Bool>, actions: () -> A) -> some View](transactionpicker/alert(_:ispresented:actions:)-3aked.md)
@@ -255,16 +289,22 @@
   Presents an alert when a given condition is true, using a text view for the title.
 - [func alert<A>(LocalizedStringKey, isPresented: Binding<Bool>, actions: () -> A) -> some View](transactionpicker/alert(_:ispresented:actions:)-82bt1.md)
   Presents an alert when a given condition is true, using a localized string key for the title.
+- [func alert<A>(LocalizedStringResource, isPresented: Binding<Bool>, actions: () -> A) -> some View](transactionpicker/alert(_:ispresented:actions:)-8smtm.md)
+  Presents an alert when a given condition is true, using a localized string resource for the title.
 - [func alert<A, M>(Text, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](transactionpicker/alert(_:ispresented:actions:message:)-11qhp.md)
   Presents an alert with a message when a given condition is true using a text view as a title.
 - [func alert<S, A, M>(S, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](transactionpicker/alert(_:ispresented:actions:message:)-1hzbn.md)
   Presents an alert with a message when a given condition is true using a string variable as a title.
+- [func alert<A, M>(LocalizedStringResource, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](transactionpicker/alert(_:ispresented:actions:message:)-3okze.md)
+  Presents an alert with a message when a given condition is true, using a localized string resource for a title.
 - [func alert<A, M>(LocalizedStringKey, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](transactionpicker/alert(_:ispresented:actions:message:)-592nk.md)
   Presents an alert with a message when a given condition is true, using a localized string key for a title.
 - [func alert<A, T>(LocalizedStringKey, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](transactionpicker/alert(_:ispresented:presenting:actions:)-3hiir.md)
   Presents an alert using the given data to produce the alert’s content and a localized string key for a title.
 - [func alert<S, A, T>(S, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](transactionpicker/alert(_:ispresented:presenting:actions:)-4i1e4.md)
   Presents an alert using the given data to produce the alert’s content and a string variable as a title.
+- [func alert<A, T>(LocalizedStringResource, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](transactionpicker/alert(_:ispresented:presenting:actions:)-5d88n.md)
+  Presents an alert using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert<A, T>(Text, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](transactionpicker/alert(_:ispresented:presenting:actions:)-6rksr.md)
   Presents an alert using the given data to produce the alert’s content and a text view as a title.
 - [func alert<S, A, M, T>(S, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](transactionpicker/alert(_:ispresented:presenting:actions:message:)-18bpj.md)
@@ -273,6 +313,8 @@
   Presents an alert with a message using the given data to produce the alert’s content and a localized string key for a title.
 - [func alert<A, M, T>(Text, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](transactionpicker/alert(_:ispresented:presenting:actions:message:)-4aidl.md)
   Presents an alert with a message using the given data to produce the alert’s content and a text view for a title.
+- [func alert<A, M, T>(LocalizedStringResource, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](transactionpicker/alert(_:ispresented:presenting:actions:message:)-9yvl4.md)
+  Presents an alert with a message using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert(isPresented: Binding<Bool>, content: () -> Alert) -> some View](transactionpicker/alert(ispresented:content:).md)
   Presents an alert to the user.
 - [func alert<E, A>(isPresented: Binding<Bool>, error: E?, actions: () -> A) -> some View](transactionpicker/alert(ispresented:error:actions:).md)
@@ -291,6 +333,8 @@
   Configures whether this view participates in hit test operations.
 - [func allowsTightening(Bool) -> some View](transactionpicker/allowstightening(_:).md)
   Sets whether text in this view can compress the space between characters when necessary to fit text in a line.
+- [func allowsWindowActivationEvents() -> some View](transactionpicker/allowswindowactivationevents.md)
+  Configures gestures in this view hierarchy to handle events that activate the containing window.
 - [func allowsWindowActivationEvents(Bool?) -> some View](transactionpicker/allowswindowactivationevents(_:).md)
   Configures whether gestures in this view hierarchy can handle events that activate the containing window.
 - [func anchorPreference<A, K>(key: K.Type, value: Anchor<A>.Source, transform: (Anchor<A>) -> K.Value) -> some View](transactionpicker/anchorpreference(key:value:transform:).md)
@@ -305,6 +349,16 @@
   Constrains this view’s dimensions to the specified aspect ratio.
 - [func aspectRatio(CGSize, contentMode: ContentMode) -> some View](transactionpicker/aspectratio(_:contentmode:)-9trjk.md)
   Constrains this view’s dimensions to the aspect ratio of the given size.
+- [func assistiveAccessNavigationIcon(Image) -> some View](transactionpicker/assistiveaccessnavigationicon(_:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func assistiveAccessNavigationIcon(systemImage: String) -> some View](transactionpicker/assistiveaccessnavigationicon(systemimage:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func attributedTextFormattingDefinition<S>(S.Type) -> some View](transactionpicker/attributedtextformattingdefinition(_:)-2n4zh.md)
+  Apply an attribute-only text formatting definition to all nested editor views.
+- [func attributedTextFormattingDefinition<D>(D) -> some View](transactionpicker/attributedtextformattingdefinition(_:)-38u1p.md)
+  Apply a text formatting definition to all nested editor views.
+- [func attributedTextFormattingDefinition<S>(KeyPath<AttributeScopes, S.Type>) -> some View](transactionpicker/attributedtextformattingdefinition(_:)-9t29x.md)
+  Apply an attribute-only text formatting definition to all nested editor views.
 - [func autocapitalization(UITextAutocapitalizationType) -> some View](transactionpicker/autocapitalization(_:).md)
   Sets whether to apply auto-capitalization to this view.
 - [func autocorrectionDisabled(Bool) -> some View](transactionpicker/autocorrectiondisabled(_:).md)
@@ -325,6 +379,8 @@
   Sets the view’s background to a shape filled with the default background style.
 - [func background<S>(in: S, fillStyle: FillStyle) -> some View](transactionpicker/background(in:fillstyle:)-e3rs.md)
   Sets the view’s background to an insettable shape filled with the default background style.
+- [func backgroundExtensionEffect() -> some View](transactionpicker/backgroundextensioneffect.md)
+  Adds the background extension effect to the view. The view will be duplicated into mirrored copies which will be placed around the view on any edge with available safe area. Additionally, a blur effect will be applied on top to blur out the copies.
 - [func backgroundPreferenceValue<Key, T>(Key.Type, (Key.Value) -> T) -> some View](transactionpicker/backgroundpreferencevalue(_:_:).md)
   Reads the specified preference value from the view, using it to produce a second view that is applied as the background of the original view.
 - [func backgroundPreferenceValue<K, V>(K.Type, alignment: Alignment, (K.Value) -> V) -> some View](transactionpicker/backgroundpreferencevalue(_:alignment:_:).md)
@@ -333,6 +389,8 @@
   Sets the specified style to render backgrounds within the view.
 - [func badge(LocalizedStringKey?) -> some View](transactionpicker/badge(_:)-1ft0b.md)
   Generates a badge for the view from a localized string key.
+- [func badge(LocalizedStringResource?) -> some View](transactionpicker/badge(_:)-37wwo.md)
+  Generates a badge for the view from a localized string resource.
 - [func badge(Text?) -> some View](transactionpicker/badge(_:)-4sh96.md)
   Generates a badge for the view from a text view.
 - [func badge(Int) -> some View](transactionpicker/badge(_:)-5eaf5.md)
@@ -357,6 +415,7 @@
   Sets the border shape for buttons in this view.
 - [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](transactionpicker/buttonrepeatbehavior(_:).md)
   Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
+- [func buttonSizing(ButtonSizing) -> some View](transactionpicker/buttonsizing(_:).md)
 - [func buttonStyle<S>(S) -> some View](transactionpicker/buttonstyle(_:)-13i92.md)
   Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
 - [func buttonStyle<S>(S) -> some View](transactionpicker/buttonstyle(_:)-6nr7z.md)
@@ -381,16 +440,22 @@
   Presents a confirmation dialog when a given condition is true, using a localized string key for the title.
 - [func confirmationDialog<A>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](transactionpicker/confirmationdialog(_:ispresented:titlevisibility:actions:)-49ufj.md)
   Presents a confirmation dialog when a given condition is true, using a text view for the title.
+- [func confirmationDialog<A>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](transactionpicker/confirmationdialog(_:ispresented:titlevisibility:actions:)-99lcq.md)
+  Presents a confirmation dialog when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog<A, M>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](transactionpicker/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-2ct9s.md)
   Presents a confirmation dialog with a message when a given condition is true, using a localized string key for the title.
 - [func confirmationDialog<S, A, M>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](transactionpicker/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-2wlda.md)
   Presents a confirmation dialog with a message when a given condition is true, using a string variable for the title.
 - [func confirmationDialog<A, M>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](transactionpicker/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-497jx.md)
   Presents a confirmation dialog with a message when a given condition is true, using a text view for the title.
+- [func confirmationDialog<A, M>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](transactionpicker/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-50b0x.md)
+  Presents a confirmation dialog with a message when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog<A, T>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](transactionpicker/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-3g9dd.md)
   Presents a confirmation dialog using data to produce the dialog’s content and a text view for the title.
 - [func confirmationDialog<S, A, T>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](transactionpicker/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-463t6.md)
   Presents a confirmation dialog using data to produce the dialog’s content and a string variable for the title.
+- [func confirmationDialog<A, T>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](transactionpicker/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-6cyzb.md)
+  Presents a confirmation dialog using data to produce the dialog’s content and a localized string resource for the title.
 - [func confirmationDialog<A, T>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](transactionpicker/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-7ywl3.md)
   Presents a confirmation dialog using data to produce the dialog’s content and a localized string key for the title.
 - [func confirmationDialog<A, M, T>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](transactionpicker/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-2a5rf.md)
@@ -399,6 +464,8 @@
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a text view for the message.
 - [func confirmationDialog<S, A, M, T>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](transactionpicker/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-8q245.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a string variable for the title.
+- [func confirmationDialog<A, M, T>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](transactionpicker/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-9h1kc.md)
+  Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string resource for the title.
 - [func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View](transactionpicker/containerbackground(_:for:).md)
   Sets the container background of the enclosing container using a view.
 - [func containerBackground<V>(for: ContainerBackgroundPlacement, alignment: Alignment, content: () -> V) -> some View](transactionpicker/containerbackground(for:alignment:content:).md)
@@ -441,20 +508,10 @@
   Sets the contrast and separation between similar colors in this view.
 - [func controlGroupStyle<S>(S) -> some View](transactionpicker/controlgroupstyle(_:).md)
   Sets the style for control groups within this view.
-- [func controlSize(ControlSize) -> some View](transactionpicker/controlsize(_:).md)
+- [func controlSize<T>(T) -> some View](transactionpicker/controlsize(_:)-5hkrg.md)
+  Limits the control size within the view to the given range.
+- [func controlSize(ControlSize) -> some View](transactionpicker/controlsize(_:)-8e1p9.md)
   Sets the size for controls within this view.
-- [func controlWidgetActionHint(LocalizedStringKey) -> some View](transactionpicker/controlwidgetactionhint(_:)-19afs.md)
-  The action hint of the control described by the modified label.
-- [func controlWidgetActionHint<S>(S) -> some View](transactionpicker/controlwidgetactionhint(_:)-4y7j1.md)
-  The action hint of the control described by the modified label.
-- [func controlWidgetActionHint(Text) -> some View](transactionpicker/controlwidgetactionhint(_:)-84cg3.md)
-  The action hint of the control described by the modified label.
-- [func controlWidgetStatus(Text) -> some View](transactionpicker/controlwidgetstatus(_:)-1tvbz.md)
-  The status of the control described by the modified label.
-- [func controlWidgetStatus(LocalizedStringKey) -> some View](transactionpicker/controlwidgetstatus(_:)-68av5.md)
-  The status of the control described by the modified label.
-- [func controlWidgetStatus<S>(S) -> some View](transactionpicker/controlwidgetstatus(_:)-9y6b6.md)
-  The status of the control described by the modified label.
 - [func coordinateSpace(NamedCoordinateSpace) -> some View](transactionpicker/coordinatespace(_:).md)
   Assigns a name to the view’s coordinate space, so other code can operate on dimensions like points and sizes relative to the named space.
 - [func coordinateSpace<T>(name: T) -> some View](transactionpicker/coordinatespace(name:).md)
@@ -485,6 +542,8 @@
   Configures the icon used by dialogs within this view.
 - [func dialogSuppressionToggle<S>(S, isSuppressed: Binding<Bool>) -> some View](transactionpicker/dialogsuppressiontoggle(_:issuppressed:)-46c0c.md)
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
+- [func dialogSuppressionToggle(LocalizedStringResource, isSuppressed: Binding<Bool>) -> some View](transactionpicker/dialogsuppressiontoggle(_:issuppressed:)-4dh1b.md)
+  Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle(LocalizedStringKey, isSuppressed: Binding<Bool>) -> some View](transactionpicker/dialogsuppressiontoggle(_:issuppressed:)-5zsme.md)
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle(Text, isSuppressed: Binding<Bool>) -> some View](transactionpicker/dialogsuppressiontoggle(_:issuppressed:)-8ooyf.md)
@@ -501,16 +560,34 @@
   Returns a new view that applies `shader` to `self` as a geometric distortion effect on the location of each pixel.
 - [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](transactionpicker/documentbrowsercontextmenu(_:).md)
   Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
+- [func dragConfiguration(DragConfiguration) -> some View](transactionpicker/dragconfiguration(_:).md)
+  Configures a drag session.
+- [func dragContainer<ItemID, Item, Data>(for: Item.Type, id: (Item) -> ItemID, in: Namespace.ID?, (ItemID) -> Data) -> some View](transactionpicker/dragcontainer(for:id:in:_:).md)
+  A container with draggable views. The drag payload is based on the current selection.
+- [func dragContainer<ItemID, Item, Data>(for: Item.Type, id: (consuming Item) -> ItemID, in: Namespace.ID?, selection: @autoclosure () -> Array<ItemID>, (Array<ItemID>) -> Data) -> some View](transactionpicker/dragcontainer(for:id:in:selection:_:)-1j646.md)
+  A container with multiple selection and draggable views. The drag payload is based on the current selection and provided identifiers.
+- [func dragContainer<Item, ItemID>(for: Item.Type, id: (Item) -> ItemID, in: Namespace.ID?, selection: @autoclosure () -> ItemID?, (ItemID) -> Item?) -> some View](transactionpicker/dragcontainer(for:id:in:selection:_:)-43uih.md)
+  A container with single item selection and draggable views. The drag payload is based on the current selection and provided identifiers.
+- [func dragContainer<Item, Data>(for: Item.Type, in: Namespace.ID?, (Item.ID) -> Data) -> some View](transactionpicker/dragcontainer(for:in:_:).md)
+  A container with draggable views. The drag payload is identifiable. To form the payload, use the identifier of the dragged view inside the container.
+- [func dragContainer<Item>(for: Item.Type, in: Namespace.ID?, selection: @autoclosure () -> Item.ID?, (Item.ID) -> Item?) -> some View](transactionpicker/dragcontainer(for:in:selection:_:)-522v0.md)
+  A container with single item selection and draggable views. The drag payload is identifiable and is based on the current selection.
+- [func dragContainer<Item, Data>(for: Item.Type, in: Namespace.ID?, selection: @autoclosure () -> Array<Item.ID>, (Array<Item.ID>) -> Data) -> some View](transactionpicker/dragcontainer(for:in:selection:_:)-7i82n.md)
+  A container with multiple selection and draggable views. The drag payload is identifiable and is based on the current selection.
 - [func draggable<T>(@autoclosure () -> T) -> some View](transactionpicker/draggable(_:).md)
   Activates this view as the source of a drag and drop operation.
 - [func draggable<V, T>(@autoclosure () -> T, preview: () -> V) -> some View](transactionpicker/draggable(_:preview:).md)
   Activates this view as the source of a drag and drop operation.
+- [func draggable<T, ID>(for: T.Type, id: ID, (ID) -> T?) -> some View](transactionpicker/draggable(for:id:_:).md)
+  Activates this view as the source of a drag-and-drop operation.
 - [func drawingGroup(opaque: Bool, colorMode: ColorRenderingMode) -> some View](transactionpicker/drawinggroup(opaque:colormode:).md)
   Composites this view’s contents into an offscreen image before final display.
+- [func dropConfiguration((DropSession) -> DropConfiguration) -> some View](transactionpicker/dropconfiguration(_:).md)
+  Configures a drop session.
 - [func dropDestination<T>(for: T.Type, action: ([T], CGPoint) -> Bool, isTargeted: (Bool) -> Void) -> some View](transactionpicker/dropdestination(for:action:istargeted:).md)
   Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
-- [func dynamicIsland(verticalPlacement: DynamicIslandExpandedRegionVerticalPlacement) -> some View](transactionpicker/dynamicisland(verticalplacement:).md)
-  Specifies the vertical placement for a view of an expanded Live Activity that appears in the Dynamic Island.
+- [func dropDestination<T>(for: T.Type, isEnabled: Bool, action: ([T], DropSession) -> Void) -> some View](transactionpicker/dropdestination(for:isenabled:action:).md)
+  Defines the destination of a drag and drop operation that provides a drop operation proposal and handles the dropped content with a closure that you specify.
 - [func dynamicTypeSize(DynamicTypeSize) -> some View](transactionpicker/dynamictypesize(_:)-26ln1.md)
   Sets the Dynamic Type size within the view to the given value.
 - [func dynamicTypeSize<T>(T) -> some View](transactionpicker/dynamictypesize(_:)-8rviw.md)
@@ -527,6 +604,8 @@
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to provide a refined URL search experience: include or exclude hidden files, allow searching by tag, etc.
 - [func fileDialogConfirmationLabel(LocalizedStringKey) -> some View](transactionpicker/filedialogconfirmationlabel(_:)-202g4.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
+- [func fileDialogConfirmationLabel(LocalizedStringResource) -> some View](transactionpicker/filedialogconfirmationlabel(_:)-7vyl5.md)
+  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 - [func fileDialogConfirmationLabel<S>(S) -> some View](transactionpicker/filedialogconfirmationlabel(_:)-9rpzp.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 - [func fileDialogConfirmationLabel(Text?) -> some View](transactionpicker/filedialogconfirmationlabel(_:)-yu26.md)
@@ -541,6 +620,8 @@
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogMessage(Text?) -> some View](transactionpicker/filedialogmessage(_:)-3cpbn.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
+- [func fileDialogMessage(LocalizedStringResource) -> some View](transactionpicker/filedialogmessage(_:)-5iu0.md)
+  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogMessage<S>(S) -> some View](transactionpicker/filedialogmessage(_:)-7ssra.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogURLEnabled(Predicate<URL>) -> some View](transactionpicker/filedialogurlenabled(_:).md)
@@ -569,6 +650,8 @@
   On macOS, configures the `fileExporter` with a label for the file name field.
 - [func fileExporterFilenameLabel(Text?) -> some View](transactionpicker/fileexporterfilenamelabel(_:)-4q656.md)
   On macOS, configures the `fileExporter` with a text to use as a label for the file name field.
+- [func fileExporterFilenameLabel(LocalizedStringResource) -> some View](transactionpicker/fileexporterfilenamelabel(_:)-9jnb9.md)
+  On macOS, configures the `fileExporter` with a label for the file name field.
 - [func fileExporterFilenameLabel(LocalizedStringKey) -> some View](transactionpicker/fileexporterfilenamelabel(_:)-s3oo.md)
   On macOS, configures the `fileExporter` with a label for the file name field.
 - [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], allowsMultipleSelection: Bool, onCompletion: (Result<[URL], any Error>) -> Void) -> some View](transactionpicker/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:).md)
@@ -665,6 +748,14 @@
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
 - [func gesture<T>(T, name: String, isEnabled: Bool) -> some View](transactionpicker/gesture(_:name:isenabled:).md)
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
+- [func glassEffect(Glass, in: some Shape, isEnabled: Bool) -> some View](transactionpicker/glasseffect(_:in:isenabled:).md)
+  Applies a glass effect to this view.
+- [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](transactionpicker/glasseffectid(_:in:).md)
+  Associates an identity value to glass effects defined within this view.
+- [func glassEffectTransition(GlassEffectTransition, isEnabled: Bool) -> some View](transactionpicker/glasseffecttransition(_:isenabled:).md)
+  Associates a glass effect transition with any glass effects defined within this view.
+- [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](transactionpicker/glasseffectunion(id:namespace:).md)
+  Associates any glass effects defined within this view to a union with the provided id.
 - [func grayscale(Double) -> some View](transactionpicker/grayscale(_:).md)
   Adds a grayscale effect to this view.
 - [func gridCellAnchor(UnitPoint) -> some View](transactionpicker/gridcellanchor(_:).md)
@@ -689,6 +780,8 @@
   Adds help text to a view using a localized string that you provide.
 - [func help(Text) -> some View](transactionpicker/help(_:)-4wcrs.md)
   Adds help text to a view using a text view that you provide.
+- [func help(LocalizedStringResource) -> some View](transactionpicker/help(_:)-66ito.md)
+  Adds help text to a view using a localized string resource that you provide.
 - [func hidden() -> some View](transactionpicker/hidden.md)
   Hides this view unconditionally.
 - [func highPriorityGesture<T>(T, including: GestureMask) -> some View](transactionpicker/highprioritygesture(_:including:).md)
@@ -745,6 +838,10 @@
   Loops the given keyframes continuously, updating the view using the modifiers you apply in `body`.
 - [func keyframeAnimator<Value>(initialValue: Value, trigger: some Equatable, content: (PlaceholderContentView<Self>, Value) -> some View, keyframes: (Value) -> some Keyframes) -> some View](transactionpicker/keyframeanimator(initialvalue:trigger:content:keyframes:).md)
   Plays the given keyframes when the given trigger value changes, updating the view using the modifiers you apply in `body`.
+- [func labelIconToTitleSpacing(CGFloat) -> some View](transactionpicker/labelicontotitlespacing(_:).md)
+  Set the spacing between the icon and title in labels.
+- [func labelReservedIconWidth(CGFloat) -> some View](transactionpicker/labelreservediconwidth(_:).md)
+  Set the width reserved for icons in labels.
 - [func labelStyle<S>(S) -> some View](transactionpicker/labelstyle(_:).md)
   Sets the style for labels within this view.
 - [func labeledContentStyle<S>(S) -> some View](transactionpicker/labeledcontentstyle(_:).md)
@@ -761,6 +858,8 @@
   Sets the priority by which a parent layout should apportion space to this child.
 - [func layoutValue<K>(key: K.Type, value: K.Value) -> some View](transactionpicker/layoutvalue(key:value:).md)
   Associates a value with a custom layout property.
+- [func lineHeight(AttributedString.LineHeight?) -> some View](transactionpicker/lineheight(_:).md)
+  A modifier for the default line height in the view hierarchy.
 - [func lineLimit(PartialRangeThrough<Int>) -> some View](transactionpicker/linelimit(_:)-10yss.md)
   Sets to a partial range the number of lines that text can occupy in this view.
 - [func lineLimit(PartialRangeFrom<Int>) -> some View](transactionpicker/linelimit(_:)-7kdgf.md)
@@ -781,12 +880,18 @@
   Places a custom background view behind a list row item.
 - [func listRowInsets(EdgeInsets?) -> some View](transactionpicker/listrowinsets(_:).md)
   Applies an inset to the rows in a list.
+- [func listRowInsets(Edge.Set, CGFloat?) -> some View](transactionpicker/listrowinsets(_:_:).md)
+  Sets the insets of rows in a list on the specified edges.
 - [func listRowSeparator(Visibility, edges: VerticalEdge.Set) -> some View](transactionpicker/listrowseparator(_:edges:).md)
   Sets the display mode for the separator associated with this specific row.
 - [func listRowSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](transactionpicker/listrowseparatortint(_:edges:).md)
   Sets the tint color associated with a row.
 - [func listRowSpacing(CGFloat?) -> some View](transactionpicker/listrowspacing(_:).md)
   Sets the vertical spacing between two adjacent rows in a List.
+- [func listSectionIndexVisibility(Visibility) -> some View](transactionpicker/listsectionindexvisibility(_:).md)
+  Changes the visibility of the list section index.
+- [func listSectionMargins(Edge.Set, CGFloat?) -> some View](transactionpicker/listsectionmargins(_:_:).md)
+  Set the section margins for the specific edges.
 - [func listSectionSeparator(Visibility, edges: VerticalEdge.Set) -> some View](transactionpicker/listsectionseparator(_:edges:).md)
   Sets whether to hide the separator associated with a list section.
 - [func listSectionSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](transactionpicker/listsectionseparatortint(_:edges:).md)
@@ -831,6 +936,8 @@
   Adds a condition for whether the view’s view hierarchy is movable.
 - [func multilineTextAlignment(TextAlignment) -> some View](transactionpicker/multilinetextalignment(_:).md)
   Sets the alignment of a text view that contains multiple lines of text.
+- [func multilineTextAlignment(strategy: Text.AlignmentStrategy) -> some View](transactionpicker/multilinetextalignment(strategy:).md)
+  A modifier for the default text alignment strategy in the view hierarchy.
 - [func navigationBarBackButtonHidden(Bool) -> some View](transactionpicker/navigationbarbackbuttonhidden(_:).md)
   Hides the navigation bar back button for the view.
 - [func navigationBarHidden(Bool) -> some View](transactionpicker/navigationbarhidden(_:).md)
@@ -870,16 +977,28 @@
   Configures the view’s document for purposes of navigation.
 - [func navigationDocument<D>(D, preview: SharePreview<Never, Never>) -> some View](transactionpicker/navigationdocument(_:preview:)-7008j.md)
   Configures the view’s document for purposes of navigation.
+- [func navigationLinkIndicatorVisibility(Visibility) -> some View](transactionpicker/navigationlinkindicatorvisibility(_:).md)
+  Configures whether navigation links show a disclosure indicator.
 - [func navigationSplitViewColumnWidth(CGFloat) -> some View](transactionpicker/navigationsplitviewcolumnwidth(_:).md)
   Sets a fixed, preferred width for the column containing this view.
 - [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](transactionpicker/navigationsplitviewcolumnwidth(min:ideal:max:).md)
   Sets a flexible, preferred width for the column containing this view.
 - [func navigationSplitViewStyle<S>(S) -> some View](transactionpicker/navigationsplitviewstyle(_:).md)
   Sets the style for navigation split views within this view.
+- [func navigationSubtitle(Text) -> some View](transactionpicker/navigationsubtitle(_:)-49pcz.md)
+  Configures the view’s subtitle for purposes of navigation.
+- [func navigationSubtitle(LocalizedStringResource) -> some View](transactionpicker/navigationsubtitle(_:)-7rw24.md)
+  Configures the view’s subtitle for purposes of navigation, using a localized string resource.
+- [func navigationSubtitle(LocalizedStringKey) -> some View](transactionpicker/navigationsubtitle(_:)-8gcqy.md)
+  Configures the view’s subtitle for purposes of navigation, using a localized string.
+- [func navigationSubtitle<S>(S) -> some View](transactionpicker/navigationsubtitle(_:)-9vd0y.md)
+  Configures the view’s subtitle for purposes of navigation, using a string.
 - [func navigationTitle(LocalizedStringKey) -> some View](transactionpicker/navigationtitle(_:)-1n86s.md)
   Configures the view’s title for purposes of navigation, using a localized string.
 - [func navigationTitle(Text) -> some View](transactionpicker/navigationtitle(_:)-4eepc.md)
   Configures the view’s title for purposes of navigation.
+- [func navigationTitle(LocalizedStringResource) -> some View](transactionpicker/navigationtitle(_:)-53k92.md)
+  Configures the view’s title for purposes of navigation, using a localized string resource.
 - [func navigationTitle<V>(() -> V) -> some View](transactionpicker/navigationtitle(_:)-567cb.md)
   Configures the view’s title for purposes of navigation, using a custom view.
 - [func navigationTitle<S>(S) -> some View](transactionpicker/navigationtitle(_:)-68829.md)
@@ -912,6 +1031,8 @@
   Activates this view as the source of a drag and drop operation.
 - [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](transactionpicker/ondrag(_:preview:).md)
   Activates this view as the source of a drag and drop operation.
+- [func onDragSessionUpdated((DragSession) -> Void) -> some View](transactionpicker/ondragsessionupdated(_:).md)
+  Specifies an action to perform on each update of an ongoing dragging operation activated by `draggable(_:)` or other drag modifiers.
 - [func onDrop(of: [String], delegate: any DropDelegate) -> some View](transactionpicker/ondrop(of:delegate:)-3ldpm.md)
   Defines the destination for a drag and drop operation with the same size and position as this view, with behavior controlled by the given delegate.
 - [func onDrop(of: [UTType], delegate: any DropDelegate) -> some View](transactionpicker/ondrop(of:delegate:)-8tbcp.md)
@@ -924,6 +1045,8 @@
   Defines the destination for a drag and drop operation with the same size and position as this view, handling dropped content and the drop location with the given closure.
 - [func onDrop(of: [String], isTargeted: Binding<Bool>?, perform: ([NSItemProvider]) -> Bool) -> some View](transactionpicker/ondrop(of:istargeted:perform:)-c4w9.md)
   Defines the destination for a drag and drop operation, using the same size and position as this view, handling dropped content with the given closure.
+- [func onDropSessionUpdated((DropSession) -> Void) -> some View](transactionpicker/ondropsessionupdated(_:).md)
+  Specifies an action to perform on each update of an ongoing drop operation activated by `dropDestination(_:)` or other drop modifiers.
 - [func onGeometryChange<T>(for: T.Type, of: (GeometryProxy) -> T, action: (T, T) -> Void) -> some View](transactionpicker/ongeometrychange(for:of:action:)-5p9h7.md)
   Adds an action to be performed when a value, created from a geometry proxy, changes.
 - [func onGeometryChange<T>(for: T.Type, of: (GeometryProxy) -> T, action: (T) -> Void) -> some View](transactionpicker/ongeometrychange(for:of:action:)-95s2f.md)
@@ -950,6 +1073,8 @@
   Adds an action to perform when this view recognizes a long press gesture.
 - [func onOpenURL(perform: (URL) -> ()) -> some View](transactionpicker/onopenurl(perform:).md)
   Registers a handler to invoke in response to a URL that your app receives.
+- [func onOpenURL(prefersInApp: Bool) -> some View](transactionpicker/onopenurl(prefersinapp:).md)
+  Sets an `OpenURLAction` that prefers opening URL with an in-app browser. It’s equivalent to calling `.onOpenURL(_:)`
 - [func onPencilDoubleTap(perform: (PencilDoubleTapGestureValue) -> Void) -> some View](transactionpicker/onpencildoubletap(perform:).md)
   Adds an action to perform after the user double-taps their Apple Pencil.
 - [func onPencilSqueeze(perform: (PencilSqueezeGesturePhase) -> Void) -> some View](transactionpicker/onpencilsqueeze(perform:).md)
@@ -1068,6 +1193,10 @@
   Renders a view’s content as if it’s rotated in three dimensions around the specified axis.
 - [func rotationEffect(Angle, anchor: UnitPoint) -> some View](transactionpicker/rotationeffect(_:anchor:).md)
   Rotates a view’s rendered output in two dimensions around the specified point.
+- [func safeAreaBar(edge: VerticalEdge, alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> some View) -> some View](transactionpicker/safeareabar(edge:alignment:spacing:content:)-8qn43.md)
+  Renders the provided content appropriate to be displayed as a custom bar.
+- [func safeAreaBar(edge: HorizontalEdge, alignment: VerticalAlignment, spacing: CGFloat?, content: () -> some View) -> some View](transactionpicker/safeareabar(edge:alignment:spacing:content:)-dst3.md)
+  Renders the provided content appropriately to be displayed as a custom bar.
 - [func safeAreaInset<V>(edge: VerticalEdge, alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> V) -> some View](transactionpicker/safeareainset(edge:alignment:spacing:content:)-53edo.md)
   Shows the specified content above or below the modified view.
 - [func safeAreaInset<V>(edge: HorizontalEdge, alignment: VerticalAlignment, spacing: CGFloat?, content: () -> V) -> some View](transactionpicker/safeareainset(edge:alignment:spacing:content:)-7rxp4.md)
@@ -1104,6 +1233,10 @@
   Disables or enables scrolling in scrollable views.
 - [func scrollDismissesKeyboard(ScrollDismissesKeyboardMode) -> some View](transactionpicker/scrolldismisseskeyboard(_:).md)
   Configures the behavior in which scrollable content interacts with the software keyboard.
+- [func scrollEdgeEffectDisabled(Bool, for: Edge.Set) -> some View](transactionpicker/scrolledgeeffectdisabled(_:for:).md)
+  Disables any scroll edge effects for scroll views within this hierarchy.
+- [func scrollEdgeEffectStyle(ScrollEdgeEffectStyle?, for: Edge.Set) -> some View](transactionpicker/scrolledgeeffectstyle(_:for:).md)
+  Configures the scroll edge effect style for scroll views within this hierarchy.
 - [func scrollIndicators(ScrollIndicatorVisibility, axes: Axis.Set) -> some View](transactionpicker/scrollindicators(_:axes:).md)
   Sets the visibility of scroll indicators within this view.
 - [func scrollIndicatorsFlash(onAppear: Bool) -> some View](transactionpicker/scrollindicatorsflash(onappear:).md)
@@ -1121,9 +1254,9 @@
 - [func scrollTargetLayout(isEnabled: Bool) -> some View](transactionpicker/scrolltargetlayout(isenabled:).md)
   Configures the outermost layout as a scroll target layout.
 - [func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](transactionpicker/scrolltransition(_:axis:transition:).md)
-  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing: ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](transactionpicker/scrolltransition(topleading:bottomtrailing:axis:transition:).md)
-  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [func searchCompletion(String) -> some View](transactionpicker/searchcompletion(_:)-62ljl.md)
   Associates a fully formed string with the value of this view when used as a search suggestion.
 - [func searchCompletion<T>(T) -> some View](transactionpicker/searchcompletion(_:)-swh3.md)
@@ -1144,6 +1277,10 @@
   Configures the search suggestions for this view.
 - [func searchSuggestions(Visibility, for: SearchSuggestionsPlacement.Set) -> some View](transactionpicker/searchsuggestions(_:for:).md)
   Configures how to display search suggestions within this view.
+- [func searchToolbarBehavior(SearchToolbarBehavior) -> some View](transactionpicker/searchtoolbarbehavior(_:).md)
+  Configures the behavior for search in the toolbar.
+- [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (Binding<C.Element>) -> some View) -> some View](transactionpicker/searchable(text:editabletokens:ispresented:placement:prompt:token:)-5jgue.md)
+  Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (Binding<C.Element>) -> some View) -> some View](transactionpicker/searchable(text:editabletokens:ispresented:placement:prompt:token:)-6y0ds.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?, token: (Binding<C.Element>) -> some View) -> some View](transactionpicker/searchable(text:editabletokens:ispresented:placement:prompt:token:)-8j4tf.md)
@@ -1151,6 +1288,8 @@
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: some StringProtocol, token: (Binding<C.Element>) -> some View) -> some View](transactionpicker/searchable(text:editabletokens:ispresented:placement:prompt:token:)-95hgj.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: some StringProtocol, token: (Binding<C.Element>) -> some View) -> some View](transactionpicker/searchable(text:editabletokens:placement:prompt:token:)-5d22c.md)
+  Marks this view as searchable, which configures the display of a search field.
+- [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (Binding<C.Element>) -> some View) -> some View](transactionpicker/searchable(text:editabletokens:placement:prompt:token:)-7bfh0.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: Text?, token: (Binding<C.Element>) -> some View) -> some View](transactionpicker/searchable(text:editabletokens:placement:prompt:token:)-7vdmb.md)
   Marks this view as searchable, which configures the display of a search field.
@@ -1160,6 +1299,8 @@
   Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable<S>(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: S) -> some View](transactionpicker/searchable(text:ispresented:placement:prompt:)-6uzzy.md)
   Marks this view as searchable with programmatic presentation of the search field.
+- [func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource) -> some View](transactionpicker/searchable(text:ispresented:placement:prompt:)-8x7p7.md)
+  Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey) -> some View](transactionpicker/searchable(text:ispresented:placement:prompt:)-yl3l.md)
   Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: Text?) -> some View](transactionpicker/searchable(text:placement:prompt:)-2jhjk.md)
@@ -1167,6 +1308,8 @@
 - [func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement, prompt: S) -> some View](transactionpicker/searchable(text:placement:prompt:)-6i7wh.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringKey) -> some View](transactionpicker/searchable(text:placement:prompt:)-9ah5h.md)
+  Marks this view as searchable, which configures the display of a search field.
+- [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringResource) -> some View](transactionpicker/searchable(text:placement:prompt:)-m0b0.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, suggestions: () -> S) -> some View](transactionpicker/searchable(text:placement:prompt:suggestions:)-4o9uq.md)
   Marks this view as searchable, which configures the display of a search field.
@@ -1178,11 +1321,15 @@
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](transactionpicker/searchable(text:tokens:ispresented:placement:prompt:token:)-2dbkj.md)
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](transactionpicker/searchable(text:tokens:ispresented:placement:prompt:token:)-38uvw.md)
+  Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](transactionpicker/searchable(text:tokens:ispresented:placement:prompt:token:)-7jomd.md)
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](transactionpicker/searchable(text:tokens:placement:prompt:token:)-6mwax.md)
   Marks this view as searchable with text and tokens.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](transactionpicker/searchable(text:tokens:placement:prompt:token:)-72nmt.md)
+  Marks this view as searchable with text and tokens.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](transactionpicker/searchable(text:tokens:placement:prompt:token:)-82f69.md)
   Marks this view as searchable with text and tokens.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](transactionpicker/searchable(text:tokens:placement:prompt:token:)-9hf60.md)
   Marks this view as searchable with text and tokens.
@@ -1192,6 +1339,10 @@
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](transactionpicker/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-7sf2e.md)
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](transactionpicker/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-88abu.md)
+  Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](transactionpicker/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-267gf.md)
+  Marks this view as searchable with text, tokens, and suggestions.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](transactionpicker/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-303vh.md)
   Marks this view as searchable with text, tokens, and suggestions.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](transactionpicker/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-5a6rn.md)
@@ -1200,13 +1351,19 @@
   Marks this view as searchable with text, tokens, and suggestions.
 - [func sectionActions<Content>(content: () -> Content) -> some View](transactionpicker/sectionactions(content:).md)
   Adds custom actions to a section.
+- [func sectionIndexLabel<S>(S?) -> some View](transactionpicker/sectionindexlabel(_:)-3q9pk.md)
+  Sets the title that is used for the section index label pointing to this section, typically only a single character long.
+- [func sectionIndexLabel(Text?) -> some View](transactionpicker/sectionindexlabel(_:)-6imtk.md)
+  Sets the label that is used in a section index to point to this section, typically only a single character long.
 - [func selectionDisabled(Bool) -> some View](transactionpicker/selectiondisabled(_:).md)
   Adds a condition that controls whether users can select this view.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View](transactionpicker/sensoryfeedback(_:trigger:).md)
   Plays the specified `feedback` when the provided `trigger` value changes.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T, condition: (T, T) -> Bool) -> some View](transactionpicker/sensoryfeedback(_:trigger:condition:).md)
   Plays the specified `feedback` when the provided `trigger` value changes and the `condition` closure returns `true`.
-- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](transactionpicker/sensoryfeedback(trigger:_:).md)
+- [func sensoryFeedback<T>(trigger: T, () -> SensoryFeedback?) -> some View](transactionpicker/sensoryfeedback(trigger:_:)-4jhfw.md)
+  Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
+- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](transactionpicker/sensoryfeedback(trigger:_:)-8glfd.md)
   Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
 - [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some View](transactionpicker/shadow(color:radius:x:y:).md)
   Adds a shadow to this view.
@@ -1214,16 +1371,12 @@
   Presents a sheet when a binding to a Boolean value that you provide is true.
 - [func sheet<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)?, content: (Item) -> Content) -> some View](transactionpicker/sheet(item:ondismiss:content:).md)
   Presents a sheet using the given item as a data source for the sheet’s content.
-- [func shortcutsLinkStyle(ShortcutsLinkStyle) -> some View](transactionpicker/shortcutslinkstyle(_:).md)
-  Sets the given style for ShortcutsLinks within the view hierarchy
 - [func simultaneousGesture<T>(T, including: GestureMask) -> some View](transactionpicker/simultaneousgesture(_:including:).md)
   Attaches a gesture to the view to process simultaneously with gestures defined by the view.
 - [func simultaneousGesture<T>(T, isEnabled: Bool) -> some View](transactionpicker/simultaneousgesture(_:isenabled:).md)
   Attaches a gesture to the view to process simultaneously with gestures defined by the view.
 - [func simultaneousGesture<T>(T, name: String, isEnabled: Bool) -> some View](transactionpicker/simultaneousgesture(_:name:isenabled:).md)
   Attaches a gesture to the view to process simultaneously with gestures defined by the view.
-- [func siriTipViewStyle(SiriTipViewStyle) -> some View](transactionpicker/siritipviewstyle(_:).md)
-  Sets the given style for SiriTipView within the view hierarchy
 - [func speechAdjustedPitch(Double) -> some View](transactionpicker/speechadjustedpitch(_:).md)
   Raises or lowers the pitch of spoken text.
 - [func speechAlwaysIncludesPunctuation(Bool) -> some View](transactionpicker/speechalwaysincludespunctuation(_:).md)
@@ -1246,6 +1399,8 @@
   Prevents submission triggers originating from this view to invoke a submission action configured by a submission modifier higher up in the view hierarchy.
 - [func swipeActions<T>(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> T) -> some View](transactionpicker/swipeactions(edge:allowsfullswipe:content:).md)
   Adds custom swipe actions to a row in a list.
+- [func symbolColorRenderingMode(SymbolColorRenderingMode?) -> some View](transactionpicker/symbolcolorrenderingmode(_:).md)
+  Sets the color rendering mode for symbol images.
 - [func symbolEffect<T>(T, options: SymbolEffectOptions, isActive: Bool) -> some View](transactionpicker/symboleffect(_:options:isactive:).md)
   Returns a new view with a symbol effect added to it.
 - [func symbolEffect<T, U>(T, options: SymbolEffectOptions, value: U) -> some View](transactionpicker/symboleffect(_:options:value:).md)
@@ -1254,10 +1409,15 @@
   Returns a new view with its inherited symbol image effects either removed or left unchanged.
 - [func symbolRenderingMode(SymbolRenderingMode?) -> some View](transactionpicker/symbolrenderingmode(_:).md)
   Sets the rendering mode for symbol images within this view.
+- [func symbolVariableValueMode(SymbolVariableValueMode?) -> some View](transactionpicker/symbolvariablevaluemode(_:).md)
+  Sets the variable value mode mode for symbol images within this view.
 - [func symbolVariant(SymbolVariants) -> some View](transactionpicker/symbolvariant(_:).md)
   Makes symbols within the view show a particular variant.
+- [func tabBarMinimizeBehavior(TabBarMinimizeBehavior) -> some View](transactionpicker/tabbarminimizebehavior(_:).md)
+  Sets the behavior for tab bar minimization.
 - [func tabItem<V>(() -> V) -> some View](transactionpicker/tabitem(_:).md)
   Sets the tab bar item associated with this view.
+- [func tabViewBottomAccessory<Content>(content: () -> Content) -> some View](transactionpicker/tabviewbottomaccessory(content:).md)
 - [func tabViewCustomization(Binding<TabViewCustomization>?) -> some View](transactionpicker/tabviewcustomization(_:).md)
   Specifies the customizations to apply to the sidebar representation of the tab view.
 - [func tabViewSidebarBottomBar<Content>(content: () -> Content) -> some View](transactionpicker/tabviewsidebarbottombar(content:).md)
@@ -1288,6 +1448,8 @@
   Sets the style for text fields within this view.
 - [func textInputAutocapitalization(TextInputAutocapitalization?) -> some View](transactionpicker/textinputautocapitalization(_:).md)
   Sets how often the shift key in the keyboard is automatically enabled.
+- [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](transactionpicker/textinputformattingcontrolvisibility(_:for:).md)
+  Define which system text formatting controls are available.
 - [func textRenderer<T>(T) -> some View](transactionpicker/textrenderer(_:).md)
   Returns a new view such that any text views within it will use `renderer` to draw themselves.
 - [func textScale(Text.Scale, isEnabled: Bool) -> some View](transactionpicker/textscale(_:isenabled:).md)
@@ -1352,6 +1514,8 @@
   Associates a transition with the view.
 - [func truncationMode(Text.TruncationMode) -> some View](transactionpicker/truncationmode(_:).md)
   Sets the truncation mode for lines of text that are too long to fit in the available space.
+- [func typeSelectEquivalent(LocalizedStringResource) -> some View](transactionpicker/typeselectequivalent(_:)-2k5ll.md)
+  Sets an explicit type select equivalent text in a collection, such as a list or table.
 - [func typeSelectEquivalent(Text?) -> some View](transactionpicker/typeselectequivalent(_:)-5bb5t.md)
   Sets an explicit type select equivalent text in a collection, such as a list or table.
 - [func typeSelectEquivalent<S>(S) -> some View](transactionpicker/typeselectequivalent(_:)-64gw7.md)
@@ -1372,20 +1536,10 @@
   Advertises a user activity type.
 - [func visualEffect((EmptyVisualEffect, GeometryProxy) -> some VisualEffect) -> some View](transactionpicker/visualeffect(_:).md)
   Applies effects to this view, while providing access to layout information through a geometry proxy.
-- [func widgetAccentable(Bool) -> some View](transactionpicker/widgetaccentable(_:).md)
-  Adds the view and all of its subviews to the accented group.
-- [func widgetCurvesContent(Bool) -> some View](transactionpicker/widgetcurvescontent(_:).md)
-  Displays the widget’s content along a curve if the context allows it.
-- [func widgetLabel(LocalizedStringKey) -> some View](transactionpicker/widgetlabel(_:)-3zuo6.md)
-  Returns a localized text label that displays additional content outside the accessory family widget’s main SwiftUI view.
-- [func widgetLabel<S>(S) -> some View](transactionpicker/widgetlabel(_:)-88ak0.md)
-  Returns a text label that displays additional content outside the accessory family widget’s main SwiftUI view.
-- [func widgetLabel<Label>(label: () -> Label) -> some View](transactionpicker/widgetlabel(label:).md)
-  Creates a label for displaying additional content outside an accessory family widget’s main SwiftUI view.
-- [func widgetURL(URL?) -> some View](transactionpicker/widgeturl(_:).md)
-  Sets the URL to open in the containing app when the user clicks the widget.
 - [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](transactionpicker/windowtoolbarfullscreenvisibility(_:).md)
   Configures the visibility of the window toolbar when the window enters full screen mode.
+- [func writingDirection(strategy: Text.WritingDirectionStrategy) -> some View](transactionpicker/writingdirection(strategy:).md)
+  A modifier for the default text writing direction strategy in the view hierarchy.
 - [func writingToolsAffordanceVisibility(Visibility) -> some View](transactionpicker/writingtoolsaffordancevisibility(_:).md)
   Specifies whether the system should show the Writing Tools affordance for text input views affected by the environment.
 - [func writingToolsBehavior(WritingToolsBehavior) -> some View](transactionpicker/writingtoolsbehavior(_:).md)

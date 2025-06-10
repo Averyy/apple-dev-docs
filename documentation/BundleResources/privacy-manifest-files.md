@@ -1,6 +1,6 @@
 # Privacy manifest files
 
-**Framework**: Bundleresources
+**Framework**: Bundle Resources
 
 Describe the data your app or third-party SDK collects and the reasons required APIs it uses.
 
@@ -55,4 +55,4 @@ To provide a list of internet domains in `NSPrivacyTrackingDomains`, set `NSPriv
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/BundleResources/privacy-manifest-files)*
+*[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/privacy-manifest-files)*

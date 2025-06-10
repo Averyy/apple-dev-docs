@@ -1,6 +1,6 @@
 # NotificationHistoryResponse
 
-**Framework**: Appstoreserverapi  
+**Framework**: App Store Server API  
 **Kind**: dictionary
 
 A response that contains the App Store Server Notifications history for your app.
@@ -46,4 +46,4 @@ The notification history response contains a maximum of 20 notification history 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/notificationhistoryresponse)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/notificationhistoryresponse)*

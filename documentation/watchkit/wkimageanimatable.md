@@ -1,6 +1,6 @@
 # WKImageAnimatable
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: protocol
 
 A collection of methods you can use to control the playback of animated images.

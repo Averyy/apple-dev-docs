@@ -10,6 +10,7 @@ A collection of components that an entity stores.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -55,16 +56,21 @@ for component in entity.components {
 ### Checking for membership
 - [func has(any Component.Type) -> Bool](entity/componentset/has(_:).md)
   Returns a Boolean value that indicates whether the set contains a component of the given type.
-### Default Implementations
-- [Collection Implementations](entity/componentset/collection-implementations.md)
-- [Sequence Implementations](entity/componentset/sequence-implementations.md)
+### Instance Methods
+- [func set(_:)](entity/componentset/set(_:).md)
+  Adds multiple components to the set, overriding any existing components of the same type.
+### Subscripts
+- [subscript(_:)](entity/componentset/subscript(_:).md)
+  Gets or sets the component with a specific dynamically supplied type.
 
 ## Relationships
 
 ### Conforms To
+- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
 - [Collection](../Swift/Collection.md)
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

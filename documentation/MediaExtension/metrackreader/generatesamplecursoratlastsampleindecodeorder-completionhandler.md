@@ -12,7 +12,7 @@ Provides a new sample cursor that points to the last sample in decode order.
 ## Declaration
 
 ```swift
-var sampleCursorAtLastSampleInDecodeOrder: any MESampleCursor { get async throws }
+func sampleCursorAtLastSampleInDecodeOrder() async throws -> any MESampleCursor
 ```
 
 #### Discussion

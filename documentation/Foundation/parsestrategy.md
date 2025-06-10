@@ -53,13 +53,16 @@ let parsed = try? Decimal("$12,345.67",
 ### Commonly-used format styles
 - [static var dateTime: Date.FormatStyle](parsestrategy/datetime.md)
   A default format style for formatting dates.
-- [static var iso8601: Date.ISO8601FormatStyle](parsestrategy/iso8601.md)
-  A style for formatting a date in accordance with the ISO-8601 standard.
 ### Supporting types
 - [associatedtype ParseInput](parsestrategy/parseinput.md)
   The input type parsed by this strategy.
 - [associatedtype ParseOutput](parsestrategy/parseoutput.md)
   The output type returned by this strategy.
+### Type Properties
+- [static var http: Date.HTTPFormatStyle](parsestrategy/http-5mpzc.md)
+- [static var http: DateComponents.HTTPFormatStyle](parsestrategy/http-6hyig.md)
+- [static var iso8601: DateComponents.ISO8601FormatStyle](parsestrategy/iso8601-69scf.md)
+- [static var iso8601: Date.ISO8601FormatStyle](parsestrategy/iso8601-8z0au.md)
 
 ## Relationships
 
@@ -70,8 +73,11 @@ let parsed = try? Decimal("$12,345.67",
 - [Hashable](../Swift/Hashable.md)
 ### Conforming Types
 - [Date.FormatStyle](date/formatstyle.md)
+- [Date.HTTPFormatStyle](date/httpformatstyle.md)
 - [Date.ISO8601FormatStyle](date/iso8601formatstyle.md)
 - [Date.ParseStrategy](date/parsestrategy.md)
+- [DateComponents.HTTPFormatStyle](datecomponents/httpformatstyle.md)
+- [DateComponents.ISO8601FormatStyle](datecomponents/iso8601formatstyle.md)
 - [Decimal.ParseStrategy](decimal/parsestrategy.md)
 - [FloatingPointParseStrategy](floatingpointparsestrategy.md)
 - [IntegerParseStrategy](integerparsestrategy.md)

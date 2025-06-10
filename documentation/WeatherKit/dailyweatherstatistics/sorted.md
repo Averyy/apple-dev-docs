@@ -1,6 +1,6 @@
 # sorted()
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns the elements of the sequence, sorted.

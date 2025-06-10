@@ -22,8 +22,6 @@ In many cases, the most general level of information provides all you need to kn
 
 > 💡 **Tip**:  Examine the error code using prefix matching rather than exact string comparison. Exact string comparison may not work if the error code includes additional levels of detail.
 
- Examine the error code using prefix matching rather than exact string comparison. Exact string comparison may not work if the error code includes additional levels of detail.
-
 ##### Relate Error Codes to the Parts of the Request
 
 You can analyze the parts of your request in order to trace the correlating error information. Requests consist of a method, path, and parameters or a request entity, as shown in the `GET` request annotated below.

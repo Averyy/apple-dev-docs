@@ -57,6 +57,7 @@ enum FloatingPointSign
 - [Hashable](hashable.md)
 - [RawRepresentable](rawrepresentable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

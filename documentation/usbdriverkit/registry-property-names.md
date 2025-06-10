@@ -90,7 +90,6 @@ Search for specific keys in the device registry.
 - [kUSBHostPortPropertyPowerSource](kusbhostportpropertypowersource.md)
 - [kUSBHostPortPropertyPortNumber](kusbhostportpropertyportnumber.md)
 - [kUSBHostPortPropertyOvercurrent](kusbhostportpropertyovercurrent.md)
-- [kUSBHostPortPropertyMux](kusbhostportpropertymux.md)
 - [kUSBHostPortPropertyExternalDeviceResetController](kusbhostportpropertyexternaldeviceresetcontroller.md)
 - [kUSBHostPortPropertyExternalDevicePowerController](kusbhostportpropertyexternaldevicepowercontroller.md)
 - [kUSBHostPortPropertyDisconnectInterval](kusbhostportpropertydisconnectinterval.md)
@@ -109,9 +108,7 @@ Search for specific keys in the device registry.
 - [kUSBHostHubPropertyPortSequenceDelay](kusbhosthubpropertyportsequencedelay.md)
 - [kUSBHostHubPropertyHubPowerSupplyType](kusbhosthubpropertyhubpowersupplytype.md)
 ### Host Controller Properties
-- [kUSBHostControllerPropertyRevision](kusbhostcontrollerpropertyrevision.md)
 - [kUSBHostControllerPropertyCompanion](kusbhostcontrollerpropertycompanion.md)
-- [kUSBHostControllerPropertyMuxEnabled](kusbhostcontrollerpropertymuxenabled.md)
 - [kUSBHostControllerPropertyRTD3Supported](kusbhostcontrollerpropertyrtd3supported.md)
 - [kUSBHostControllerPropertySleepSupported](kusbhostcontrollerpropertysleepsupported.md)
 - [kUSBHostControllerPropertyLowSpeedCompanion](kusbhostcontrollerpropertylowspeedcompanion.md)

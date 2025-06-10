@@ -277,7 +277,7 @@ extension CLKComplicationServer {
 }
 ```
 
-This method starts by setting up an observer for the [`CLKComplicationServerActiveComplicationsDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name/1627889-clkcomplicationserveractivecompl) notification. Then it checks the value of the [`activeComplications`](clkcomplicationserver/activecomplications.md) property. If the property has a non-`nil` value, it cancels the observer and returns the value. Otherwise, it waits for the observer, and then returns the value.
+This method starts by setting up an observer for the [`CLKComplicationServerActiveComplicationsDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/CLKComplicationServerActiveComplicationsDidChange) notification. Then it checks the value of the [`activeComplications`](clkcomplicationserver/activecomplications.md) property. If the property has a non-`nil` value, it cancels the observer and returns the value. Otherwise, it waits for the observer, and then returns the value.
 
 ##### Schedule Background Observer Queries
 
@@ -317,7 +317,7 @@ public func setUpHealthKit() {
 }
 ```
 
-Coffee Tracker requests both read and write access to [`dietaryCaffeine`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/1615498-dietarycaffeine) samples. Then it enables the background delivery for observer queries. Finally, it creates and executes an observer query for the `.dietaryCaffeine` data type.
+Coffee Tracker requests both read and write access to [`dietaryCaffeine`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/dietaryCaffeine) samples. Then it enables the background delivery for observer queries. Finally, it creates and executes an observer query for the `.dietaryCaffeine` data type.
 
 Coffee tracker creates the background observer query immediately after it launches. Setting up an observer query quickly after launch enables the observer to respond promptly when the system launches it in the background because of a change in HealthKit.
 
@@ -359,7 +359,7 @@ This method checks the update for errors. If there aren’t any errors, it async
 
 To preserve battery life and maintain performance, WatchKit carefully budgets each app’s time for background tasks. In general, if an app has a complication on the active watch face, it can safely use four updates per hour, shared between both the app’s background tasks and it’s background observer queries. However, HealthKit further limits the update on caffeine samples to a maximum of one per hour. And the system may further limit background activity as needed.
 
-This means, the first update from HealthKit should trigger within a minute. However, the system may delay additional updates for up to an hour or more. For more information, see [`enableBackgroundDelivery(for:frequency:withCompletion:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/1614175-enablebackgrounddelivery).
+This means, the first update from HealthKit should trigger within a minute. However, the system may delay additional updates for up to an hour or more. For more information, see [`enableBackgroundDelivery(for:frequency:withCompletion:)`](https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery(for:frequency:withCompletion:)).
 
 The app also loads any new data from HealthKit whenever it enters the foreground.
 

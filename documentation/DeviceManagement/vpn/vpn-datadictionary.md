@@ -11,8 +11,6 @@ The dictionary that contains VPN, IPSec, and IKEv2 settings.
 - macOS 10.7+
 - tvOS 17.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,15 +18,11 @@ The dictionary that contains VPN, IPSec, and IKEv2 settings.
 object VPN.VPN
 ```
 
-#### Discussion
-
-The system uses this dictionary when the `VPNType` is `VPN`, `IPSec`, or `IKEv2`.
-
 ## Topics
 
 ### Objects
 - [object VPN.VPN.OnDemandRulesElement](vpn/vpn-data.dictionary/ondemandruleselement.md)
-  The dictionary that contains settings for On Demand connections.
+  An On Demand rule
 
 ## See Also
 

@@ -29,6 +29,9 @@ Provide custom scope for tests by implementing the [`scopeProvider(for:testCase:
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+### Conforming Types
+- [ParallelizationTrait](parallelizationtrait.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # kVTDecompressionProperty_TemporalLevelLimit
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

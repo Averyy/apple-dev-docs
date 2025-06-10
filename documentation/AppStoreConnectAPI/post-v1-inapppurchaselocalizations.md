@@ -1,6 +1,6 @@
 # Create an In-App Purchase Localization
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Create a localized display name and description for an in-app purchase.
@@ -26,4 +26,4 @@ Create a localized display name and description for an in-app purchase.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-inapppurchaselocalizations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-inapppurchaselocalizations)*

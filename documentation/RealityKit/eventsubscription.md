@@ -10,6 +10,7 @@ A subscription to an event.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -31,10 +32,6 @@ struct EventSubscription
   A type that can be sent as an event.
 - [protocol EventSource](eventsource.md)
   A type on which events can be published and subscribed.
-- [enum SceneEvents](sceneevents.md)
-  Events the scene invokes.
-- [enum ComponentEvents](componentevents.md)
-  Provides the events related to components.
 
 
 ---

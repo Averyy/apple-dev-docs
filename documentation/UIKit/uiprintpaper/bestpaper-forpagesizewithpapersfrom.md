@@ -14,7 +14,6 @@ The print-paper object that UIKit determines to be the best for a print job base
 ## Declaration
 
 ```swift
-@MainActor
 class func bestPaper(forPageSize contentSize: CGSize, withPapersFrom paperList: [UIPrintPaper]) -> UIPrintPaper
 ```
 

@@ -41,8 +41,8 @@ Set up an MDM server and send commands to managed devices.
   Manage the configuration and behavior of your devices.
 - [Check-in](check-in.md)
   Authenticate devices and maintain push tokens with these commands.
-- [User Enrollment](user-enrollment.md)
-  Authenticate devices using an user identity focused workflow.
+- [Account-driven enrollment](account-driven-enrollment.md)
+  Authenticate devices using a user identity-focused workflow.
 
 
 ---

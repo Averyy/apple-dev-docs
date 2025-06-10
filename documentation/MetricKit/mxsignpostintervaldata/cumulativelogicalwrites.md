@@ -9,6 +9,7 @@ The total amount of data written to disk or other long term storage during the l
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
+- macOS 10.15+
 - visionOS 1.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # documentCameraViewControllerDidCancel(_:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Tells the delegate that the user canceled out of the document scanner camera.

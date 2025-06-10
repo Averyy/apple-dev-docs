@@ -1,6 +1,6 @@
 # init(anchor:)
 
-**Framework**: Arkit  
+**Framework**: ARKit  
 **Kind**: init  
 **Required**: Yes
 

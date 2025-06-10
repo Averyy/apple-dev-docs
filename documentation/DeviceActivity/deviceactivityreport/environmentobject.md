@@ -1,6 +1,6 @@
 # environmentObject(_:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Supplies an observable object to a view’s hierarchy.

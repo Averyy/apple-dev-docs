@@ -52,6 +52,9 @@ This class is a concrete subclass of [`AVCaptureInput`](avcaptureinput.md) that 
 ### Instance Properties
 - [var isWindNoiseRemovalEnabled: Bool](avcapturedeviceinput/iswindnoiseremovalenabled.md)
 - [var isWindNoiseRemovalSupported: Bool](avcapturedeviceinput/iswindnoiseremovalsupported.md)
+- [var isCinematicVideoCaptureEnabled: Bool](avcapturedeviceinput/iscinematicvideocaptureenabled.md)
+- [var isCinematicVideoCaptureSupported: Bool](avcapturedeviceinput/iscinematicvideocapturesupported.md)
+- [var simulatedAperture: Float](avcapturedeviceinput/simulatedaperture.md)
 
 ## Relationships
 

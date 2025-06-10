@@ -8,7 +8,7 @@ Sets the default hover effect to use within this view hierarchy.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - tvOS 18.0+
 - visionOS 2.0+
 

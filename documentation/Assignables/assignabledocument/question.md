@@ -41,6 +41,9 @@ struct Question
 ### Hashing a question
 - [func hash(into: inout Hasher)](assignabledocument/question/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
+### Initializers
+- [init(boxes: [AssignableDocument.QuestionBox], maxScore: Double?)](assignabledocument/question/init(boxes:maxscore:).md)
+  Initializes an instance of this object with the given values.
 ### Instance Properties
 - [var hashValue: Int](assignabledocument/question/hashvalue.md)
   The hash value.

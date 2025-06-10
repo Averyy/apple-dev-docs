@@ -1,6 +1,6 @@
 # duplicateCredential
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An error that indicates the system found a duplicate passkey during an import.

@@ -21,7 +21,7 @@ var recurrences: [DateComponents]? { get }
 
 #### Discussion
 
-This property represents the days of the week that the trigger recurs; the trigger ignores all properties other than [`weekday`](https://developer.apple.com/documentation/foundation/datecomponents/1780094-weekday) on the [`DateComponents`](https://developer.apple.com/documentation/Foundation/DateComponents) object.
+This property represents the days of the week that the trigger recurs; the trigger ignores all properties other than [`weekday`](https://developer.apple.com/documentation/Foundation/DateComponents/weekday) on the [`DateComponents`](https://developer.apple.com/documentation/Foundation/DateComponents) object.
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: MapKit  
 **Kind**: struct
 
-A structure you use to change the type of content MapKit uses in a map view.
+A type-erased map content.
 
 **Availability**:
 - iOS 17.5+
@@ -23,7 +23,7 @@ A structure you use to change the type of content MapKit uses in a map view.
 
 #### Overview
 
-`AnyMapContent` enables you to change the type of content in a map. When you change the type of content the map uses in `AnyMapContent`, the framework destroys the old hierarchy and creates a new hierarchy for the new type.
+An `AnyMapContent` allows changing the type of content used in a given map view.
 
 ## Topics
 
@@ -36,20 +36,7 @@ A structure you use to change the type of content MapKit uses in a map view.
 ### Conforms To
 - [MapContent](mapcontent.md)
 - [Sendable](../Swift/Sendable.md)
-
-## See Also
-
-- [struct DefaultUserAnnotationContent](defaultuserannotationcontent.md)
-  A structure that represents the view to show at the user’s location on the map.
-- [struct EmptyMapContent](emptymapcontent.md)
-  A map content element that doesn’t contain any content.
-- [struct MapProxy](mapproxy.md)
-  A proxy for accessing sizing information about a given map view.
-- [struct MapReader](mapreader.md)
-  A container view that defines its contents as a function of information about the first contained map.
-- [struct TupleMapContent](tuplemapcontent.md)
-  A view created from a Swift tuple of map content values.
-- [struct MapSelectableContentView](mapselectablecontentview.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

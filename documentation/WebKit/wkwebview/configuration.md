@@ -1,6 +1,6 @@
 # configuration
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The object that contains the configuration details for the web view.

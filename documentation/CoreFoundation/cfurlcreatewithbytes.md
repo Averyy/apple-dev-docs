@@ -1,6 +1,6 @@
 # CFURLCreateWithBytes(_:_:_:_:_:)
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: func
 
 Creates a `CFURL` object using a given character bytes.

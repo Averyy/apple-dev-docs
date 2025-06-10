@@ -1,6 +1,6 @@
 # setWLANChannel(_:)
 
-**Framework**: Corewlan  
+**Framework**: Core WLAN  
 **Kind**: method
 
 Sets the interface channel.

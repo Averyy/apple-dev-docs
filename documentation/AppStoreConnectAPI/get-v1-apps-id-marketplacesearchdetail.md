@@ -18,6 +18,7 @@ Get search detail URL for the alternative marketplace.
   Set up and build your alternative marketplace’s searchable index.
 - [Add a marketplace search detail URL](post-v1-marketplacesearchdetails.md)
   Add a search detail URL for the alternative marketplace.
+- [GET /v1/apps/{id}/relationships/marketplaceSearchDetail](get-v1-apps-_id_-relationships-marketplacesearchdetail.md)
 - [Modify a marketplace search detail URL](patch-v1-marketplacesearchdetails-_id_.md)
   Update the search detail URL for the alternative marketplace.
 - [Delete a marketplace search detail URL](delete-v1-marketplacesearchdetails-_id_.md)

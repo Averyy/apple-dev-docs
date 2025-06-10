@@ -9,7 +9,8 @@
 ## Declaration
 
 ```swift
-init(rawValue: UInt64, parentID: EquipmentIdentifier, seatControl: ControllingSeats = .any, pose: TableVisualState.Pose2D = .identity, entity: Entity)
+@MainActor
+@preconcurrency init(rawValue: UInt64, parentID: EquipmentIdentifier, seatControl: ControllingSeats = .any, pose: TableVisualState.Pose2D = .identity, entity: Entity)
 ```
 
 ## See Also

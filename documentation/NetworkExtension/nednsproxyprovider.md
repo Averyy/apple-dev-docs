@@ -30,8 +30,6 @@ You create a DNS proxy as an app extension based on a custom subclass of the [`N
 
 > ❗ **Important**:  To use the [`NEDNSProxyProvider`](nednsproxyprovider.md) class, you must enable the Network Extensions capability in Xcode and select the DNS Proxy capability. See [`Configure network extensions`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
 
- To use the [`NEDNSProxyProvider`](nednsproxyprovider.md) class, you must enable the Network Extensions capability in Xcode and select the DNS Proxy capability. See [`Configure network extensions`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
-
 When you subclass [`NEDNSProxyProvider`](nednsproxyprovider.md), you must provide implementations for the following methods:
 
 - [`startProxy(options:completionHandler:)`](nednsproxyprovider/startproxy(options:completionhandler:).md)

@@ -1,6 +1,6 @@
 # Journaling Suggestions
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: module
 
 Display a set of recent, personal events that inspire someone to contribute to your app’s creative workflow.
@@ -25,6 +25,8 @@ For the picker to appear, your app needs a special entitlement in your app’s c
 ## Topics
 
 ### Essentials
+- [Journaling Suggestions updates](../Updates/JournalingSuggestions.md)
+  Learn about important changes in Journaling Suggestions.
 - [Presenting the suggestions picker and processing a selection](presenting-the-suggestions-picker-and-processing-a-selection.md)
   Display the journaling suggestions picker and process a suggestion that someone chooses.
 - [com.apple.developer.journal.allow](../BundleResources/Entitlements/com.apple.developer.journal.allow.md)
@@ -34,8 +36,12 @@ For the picker to appear, your app needs a special entitlement in your app’s c
   A view that lists different types of recent events in a person’s life.
 - [struct JournalingSuggestion](journalingsuggestion.md)
   High-level information about a suggestion that a person chooses in the journaling suggestions picker.
+- [class JournalingSuggestionsConfiguration](journalingsuggestionsconfiguration.md)
+  The scheduled configuration settings for your app.
 - [protocol JournalingSuggestionAsset](journalingsuggestionasset.md)
   An interface for the content that the suggestions picker presents.
+- [struct JournalingSuggestionPresentationToken](journalingsuggestionpresentationtoken.md)
+  A token you use to modify the content of the presentation.
 
 
 ---

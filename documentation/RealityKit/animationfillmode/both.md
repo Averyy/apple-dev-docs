@@ -10,6 +10,7 @@ An option that displays the animation’s initial frame or final frame when play
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -30,8 +31,6 @@ For example, if you extend a hand-waving animation’s duration by one second in
   An option that freezes the last frame of the animation until it stops.
 - [static let backwards: AnimationFillMode](animationfillmode/backwards.md)
   An option that shows the first animation frame while playback progresses to the beginning position.
-- [let rawValue: Int8](animationfillmode/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 
 
 ---

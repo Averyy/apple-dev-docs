@@ -55,8 +55,6 @@ Task {
   Asynchronously creates a 2D array texture resource from a pixel Metal buffer, or data.
 - [convenience init(dimensions: TextureResource.Dimensions2DArray, format: TextureResource.Format, contents: TextureResource.Contents) throws](textureresource/init(dimensions:format:contents:)-7p7hr.md)
   Synchronously creates a 2D array texture resource from a pixel Metal buffer, or data.
-- [TextureResource.Dimensions2DArray](textureresource/dimensions2darray.md)
-  The dimensions of the 2D array texture.
 
 
 ---

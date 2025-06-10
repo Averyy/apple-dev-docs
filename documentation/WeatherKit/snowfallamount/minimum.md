@@ -1,6 +1,6 @@
 # minimum
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The minimum amount of snowfall as depth of snow crystals for the period.

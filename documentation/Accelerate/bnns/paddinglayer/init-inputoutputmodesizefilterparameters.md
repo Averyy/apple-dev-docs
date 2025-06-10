@@ -25,8 +25,6 @@ convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, m
 
 > ❗ **Important**:  Padding isn’t supported beyond 4D tensors.
 
- Padding isn’t supported beyond 4D tensors.
-
 ## Parameters
 
 - `input`: The descriptor of the input.

@@ -1,6 +1,6 @@
-# Debugging Widgets
+# Debugging widgets
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Set environment variables in Xcode to control your widget’s configuration in the debugger.
 
@@ -57,4 +57,4 @@ To select the default view the WidgetKit Simulator app shows when you start a de
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/debugging-widgets)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/debugging-widgets)*

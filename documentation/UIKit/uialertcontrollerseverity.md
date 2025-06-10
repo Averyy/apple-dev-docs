@@ -42,6 +42,7 @@ You should only use the [`UIAlertControllerSeverity.critical`](uialertcontroller
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

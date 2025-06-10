@@ -22,7 +22,7 @@ var exitsFullScreenWhenPlaybackEnds: Bool { get set }
 
 If you enqueue multiple player items, the player exits full-screen mode after it plays all remaining items in the queue.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is `false`.
 
 ## See Also
 

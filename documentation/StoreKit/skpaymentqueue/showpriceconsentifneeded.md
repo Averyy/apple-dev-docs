@@ -1,6 +1,6 @@
 # showPriceConsentIfNeeded()
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: method
 
 Asks the system to display the price consent sheet if the user hasn’t yet responded to a subscription price increase.

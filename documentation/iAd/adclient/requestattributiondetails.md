@@ -22,14 +22,6 @@ func requestAttributionDetails() async throws -> [String : NSObject]
 func requestAttributionDetails() async throws -> [String : NSObject]
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func requestAttributionDetails() async throws -> [String : NSObject]
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 For iOS 14 and later, obtaining an attribution response depends on the calling app’s [`trackingAuthorizationStatus`](https://developer.apple.com/documentation/AppTrackingTransparency/ATTrackingManager/trackingAuthorizationStatus) value and the device-level setting Allow Apps to Request to Track (AAtRtT). The AAtRtT setting allows users to opt in or out of allowing apps to request user consent to access app-related data that third parties can use for both attribution and tracking the user or the device. The following table shows the combination of tracking interactions and expected attribution payload response.
 
 |  |  |  |

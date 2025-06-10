@@ -1,6 +1,6 @@
 # XCUIApplication.State.runningBackground
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The application is running in the background.

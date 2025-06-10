@@ -1,6 +1,6 @@
 # UNErrorDomain
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: var
 
 The error domain for notifications.

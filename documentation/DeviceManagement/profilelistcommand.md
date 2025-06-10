@@ -12,8 +12,6 @@ The command to get a list of installed profiles on a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,14 +25,14 @@ object ProfileListCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object ProfileListCommand.Command](profilelistcommand/command-data.dictionary.md)
-  The request dictionary to get a list of installed profiles.
+  The command to get a list of installed profiles on a device.
 
 ## See Also
 
 - [object ProfileListResponse](profilelistresponse.md)
-  A response from the device after it processes the command to get a list of installed profiles.
+  A response from the device after it processes the command to get a list of installed profiles on a device.
 
 
 ---

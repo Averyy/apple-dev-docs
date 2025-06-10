@@ -20,8 +20,6 @@ var attenuationDurationThresholds: [NSNumber] { get set }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.6 and later.
 
- This property is available in iOS 12.5, and in iOS 13.6 and later.
-
 Signal attenuation and duration are measurable aspects of exposure risk. Set threshold values to configure the degree to which the signal loss between two devices for a specific duration signifies a potential exposure. Four categories are described in [`ENExposureConfiguration`](enexposureconfiguration.md): , , , and .
 
 ![Illustration showing the immediate attenuation threshold atop the immediate and near categories, the near attenuation threshold atop the near and medium categories, and the medium attenuation threshold atop the medium and other categories.](https://docs-assets.developer.apple.com/published/bb22dd39361dd13e579f70e52b2780b9/media-3699755%402x.png)

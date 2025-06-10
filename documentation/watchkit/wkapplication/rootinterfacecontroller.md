@@ -1,6 +1,6 @@
 # rootInterfaceController
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The app’s root interface controller.

@@ -1,6 +1,6 @@
 # isStrict
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A Boolean value that indicates whether the test reports an error if the expected failure doesn’t occur.

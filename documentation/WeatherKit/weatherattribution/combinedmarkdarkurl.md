@@ -1,6 +1,6 @@
 # combinedMarkDarkURL
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A URL for the combined “ Apple Weather” mark, in dark variant.

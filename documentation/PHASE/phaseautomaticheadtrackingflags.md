@@ -9,6 +9,7 @@
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -19,10 +20,11 @@ struct PHASEAutomaticHeadTrackingFlags
 #### Overview
 
 ```None
-@enum PHASEAutomaticHeadTrackingFlags
-@abstract Automatic Head-Tracking flags.
-@constant PHASEAutomaticHeadTrackingFlagOrientation
-    On capable devices, listener orientation will be automatically rotated based on user's head-orientation.
+On capable devices, listener orientation will be automatically rotated based on user's head-orientation.
+```
+
+```None
+On capable devices, listener position will be automatically set based on user's position.
 ```
 
 ## Topics
@@ -31,6 +33,7 @@ struct PHASEAutomaticHeadTrackingFlags
 - [init(rawValue: UInt)](phaseautomaticheadtrackingflags/init(rawvalue:).md)
 ### Type Properties
 - [static var orientation: PHASEAutomaticHeadTrackingFlags](phaseautomaticheadtrackingflags/orientation.md)
+- [static var position: PHASEAutomaticHeadTrackingFlags](phaseautomaticheadtrackingflags/position.md)
 
 ## Relationships
 
@@ -41,6 +44,7 @@ struct PHASEAutomaticHeadTrackingFlags
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 

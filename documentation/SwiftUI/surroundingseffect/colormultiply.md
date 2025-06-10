@@ -6,6 +6,7 @@
 An effect that applies a custom tint to the passthrough video by multiplying the passthrough with a [`Color`](color.md).
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

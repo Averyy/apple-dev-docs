@@ -50,6 +50,15 @@ The returned structures `.structure.columnStarts`, `.structure.rowIndices`, and 
 - `storage`: (Output) The output storage.
 - `workspace`: (Scratch) Workspace of size  .
 
+## See Also
+
+- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributesComplex_t, UnsafePointer<Int32>, UnsafePointer<Int32>, OpaquePointer) -> SparseMatrix_Complex_Double](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:)-58kub.md)
+  Convert from coordinate format arrays to a matrix of complex double values, dropping out-of-range entries and summing duplicates.
+- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributesComplex_t, UnsafePointer<Int32>, UnsafePointer<Int32>, OpaquePointer) -> SparseMatrix_Complex_Float](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:)-58lgv.md)
+  Convert from coordinate format arrays to a  matrix of complex float values, dropping out-of-range entries and summing duplicates.
+- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributesComplex_t, UnsafePointer<Int32>, UnsafePointer<Int32>, OpaquePointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> SparseMatrix_Complex_Double](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:_:_:)-6ocm1.md)
+  Convert from coordinate format arrays to a  matrix of complex double values, dropping out-of-range entries and summing duplicates.
+
 
 ---
 

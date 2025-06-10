@@ -1,6 +1,6 @@
 # NSRuleEditor
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An interface for configuring a rule-based list of options.
@@ -128,6 +128,7 @@ A rule editor lets the user visually create and configure a list of options that
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -165,4 +166,4 @@ A rule editor lets the user visually create and configure a list of options that
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsruleeditor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsruleeditor)*

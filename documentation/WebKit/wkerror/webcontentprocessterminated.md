@@ -1,6 +1,6 @@
 # webContentProcessTerminated
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An error that indicates the web process that contains the content is no longer running.

@@ -1,6 +1,6 @@
 # createAudioUnit(with:)
 
-**Framework**: Audiotoolbox  
+**Framework**: Audio Toolbox  
 **Kind**: method  
 **Required**: Yes
 

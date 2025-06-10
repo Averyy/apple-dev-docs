@@ -45,14 +45,14 @@ protocol InitializableFromCGImage : SinglePlanePixelFormat
 
 ## See Also
 
-- [protocol PixelFormat](pixelformat.md)
-  A pixel buffer pixel format.
-- [protocol StaticPixelFormat](staticpixelformat.md)
-  A pixel format that’s known at compile time.
-- [protocol SinglePlanePixelFormat](singleplanepixelformat.md)
-  A pixel format that contains a single underlying vImage buffer.
 - [protocol MultiplePlanePixelFormat](multipleplanepixelformat.md)
   A pixel format that contains multiple homogeneous planes represented by multiple underlying vImage buffers.
+- [protocol PixelFormat](pixelformat.md)
+  A pixel buffer pixel format.
+- [protocol SinglePlanePixelFormat](singleplanepixelformat.md)
+  A pixel format that contains a single underlying vImage buffer.
+- [protocol StaticPixelFormat](staticpixelformat.md)
+  A pixel format that’s known at compile time.
 
 
 ---

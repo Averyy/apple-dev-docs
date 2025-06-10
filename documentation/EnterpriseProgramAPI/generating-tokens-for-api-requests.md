@@ -1,6 +1,6 @@
 # Generating Tokens for API Requests
 
-**Framework**: Enterpriseprogramapi
+**Framework**: Enterprise Program API
 
 Create JSON Web Tokens (JWTs) signed with your private key to authorize API requests.
 
@@ -153,4 +153,4 @@ curl -v -H 'Authorization: Bearer [signed token]'
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/EnterpriseProgramAPI/generating-tokens-for-api-requests)*
+*[View on Apple Developer](https://developer.apple.com/documentation/enterpriseprogramapi/generating-tokens-for-api-requests)*

@@ -1,6 +1,6 @@
 # CarKeyRemoteControlSession
 
-**Framework**: Carkey  
+**Framework**: CarKey  
 **Kind**: class
 
 The object that manages communication with the vehicles you manufacture.
@@ -70,4 +70,4 @@ When you configure a new session, provide a delegate object to receive data from
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CarKey/carkeyremotecontrolsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/carkey/carkeyremotecontrolsession)*

@@ -34,8 +34,6 @@ When you create a linguistic tagger, you specify what kind of information you’
 
 > ❗ **Important**:  Don’t use an instance of [`NLTagger`](nltagger.md) simultaneously from multiple threads.
 
- Don’t use an instance of [`NLTagger`](nltagger.md) simultaneously from multiple threads.
-
 ## Topics
 
 ### Creating a tagger

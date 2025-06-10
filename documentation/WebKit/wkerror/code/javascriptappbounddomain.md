@@ -1,6 +1,6 @@
 # WKError.Code.javaScriptAppBoundDomain
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 An error that indicates JavaScript execution failed due to an app-bound domain restriction.

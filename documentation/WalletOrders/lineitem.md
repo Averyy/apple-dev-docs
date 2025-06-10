@@ -1,6 +1,6 @@
 # LineItem
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 An item associated with the order.

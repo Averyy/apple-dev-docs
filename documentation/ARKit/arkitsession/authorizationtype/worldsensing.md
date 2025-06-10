@@ -6,6 +6,7 @@
 The authorization for access to plane detection, scene reconstruction, and image tracking.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

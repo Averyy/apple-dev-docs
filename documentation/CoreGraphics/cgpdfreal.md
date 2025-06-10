@@ -22,7 +22,7 @@ typealias CGPDFReal = CGFloat
 
 ## See Also
 
-- [typealias CGPDFObjectRef](cgpdfobjectref.md)
+- [struct CGPDFObjectRef](cgpdfobjectref.md)
   A type that contains information about a PDF object.
 - [typealias CGPDFBoolean](cgpdfboolean.md)
   A PDF Boolean value.

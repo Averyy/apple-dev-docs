@@ -8,8 +8,6 @@ Remove a previously installed book from a device.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -19,31 +17,31 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, Shared iPad |
-| User Channel | - |
-| Requires Supervision | - |
-| Allowed in User Enrollment | iOS |
-| Required Access Right | AllowAppInstallation |
+| Device channel | iOS, Shared iPad |
+| User channel | NA |
+| Requires supervision | NA |
+| Allowed in user enrollment | iOS |
+| Required access right | AllowAppInstallation |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object RemoveMediaCommand](removemediacommand.md)
-  The command to remove an installed book from a device.
+  The command to remove a previously installed book from a device.
 - [object RemoveMediaResponse](removemediaresponse.md)
-  A response from the device after it processes the command to remove a book from a device.
+  A response from the device after it processes the command to remove a previously installed book from a device.
 
 ## Request Body
 
-The command to remove an installed book from a device.
+The request object the server returns for the Remove Media Command.
 
 ## See Also
 
 - [Install Media](install-media-command.md)
   Install a book on a device.
-- [List the Managed Media](managed-media-list-command.md)
+- [Managed Media List](managed-media-list-command.md)
   Get a list of the managed books on a device.
 
 

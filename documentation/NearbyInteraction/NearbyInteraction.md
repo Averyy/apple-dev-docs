@@ -1,6 +1,6 @@
 # Nearby Interaction
 
-**Framework**: Nearbyinteraction  
+**Framework**: Nearby Interaction  
 **Kind**: module
 
 Locate and interact with nearby devices using identifiers, distance, and direction.
@@ -97,6 +97,16 @@ In iOS 18.4 and later, your app can continue ranging in the background with any 
 ### Deprecated
 - [NSNearbyInteractionAllowOnceUsageDescription](../BundleResources/Information-Property-List/NSNearbyInteractionAllowOnceUsageDescription.md)
   A one-time request for user permission to begin an interaction session with nearby devices.
+### Classes
+- [class NIDLTDOAConfiguration](nidltdoaconfiguration.md)
+  A session configuration that enables UWB Down Link Time Difference of Arrival(DL-TDoA) ranging with nearby anchors.
+- [class NIDLTDOAMeasurement](nidltdoameasurement.md)
+  Represents a single measurement relative to a DL-TDOA anchor.
+### Enumerations
+- [enum NIDLTDOACoordinatesType](nidltdoacoordinatestype.md)
+  The coordinate types of DL-TDOA measurement updates that Nearby Interaction supports.
+- [enum NIDLTDOAMeasurementType](nidltdoameasurementtype.md)
+  The measurement types of DL-TDOA measurement updates that Nearby Interaction supports.
 
 
 ---

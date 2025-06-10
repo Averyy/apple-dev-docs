@@ -1,6 +1,6 @@
 # Requesting authorization to capture and save media
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Prompt the user to authorize access to the camera, microphone, and photo library.
 
@@ -80,4 +80,4 @@ Your app must get permission to access the photo library before it attempts to s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/requesting-authorization-to-capture-and-save-media)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/requesting-authorization-to-capture-and-save-media)*

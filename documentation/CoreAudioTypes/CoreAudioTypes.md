@@ -96,6 +96,8 @@ If you’re unfamiliar with the specialized terminology regarding the manipulati
   An error that indicates the app called an unimplemented system function.
 ### Reference
 - [CoreAudioTypes Enumerations](coreaudiotypes-enumerations.md)
+### Structures
+- [struct AudioStreamPacketDependencyDescription](audiostreampacketdependencydescription.md)
 ### Variables
 - [var kAudioChannelLayoutTag_Ogg_3_0: AudioChannelLayoutTag](kaudiochannellayouttag_ogg_3_0.md)
 - [var kAudioChannelLayoutTag_Ogg_4_0: AudioChannelLayoutTag](kaudiochannellayouttag_ogg_4_0.md)

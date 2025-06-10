@@ -25,7 +25,7 @@ An attributed string describing the content.
 
 #### Discussion
 
-Your implementation of this method returns a description of the content that’s currently visible in the scroll view. Use this method (instead of the [`accessibilityScrollStatus(for:)`](uiscrollviewaccessibilitydelegate/accessibilityscrollstatus(for:).md) method) when you want to include attributes that specify which language to use when speaking the text. For more information, see [`accessibilitySpeechLanguage`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1620188-accessibilityspeechlanguage) (Swift) or [`UIAccessibilitySpeechAttributeLanguage`](uiaccessibilityspeechattributelanguage.md) (Objective-C).
+Your implementation of this method returns a description of the content that’s currently visible in the scroll view. Use this method (instead of the [`accessibilityScrollStatus(for:)`](uiscrollviewaccessibilitydelegate/accessibilityscrollstatus(for:).md) method) when you want to include attributes that specify which language to use when speaking the text. For more information, see [`accessibilitySpeechLanguage`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/accessibilitySpeechLanguage) (Swift) or [`UIAccessibilitySpeechAttributeLanguage`](uiaccessibilityspeechattributelanguage.md) (Objective-C).
 
 ## Parameters
 

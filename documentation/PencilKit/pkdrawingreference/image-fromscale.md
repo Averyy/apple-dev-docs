@@ -15,7 +15,7 @@ Returns an image object that contains the specified portion of the drawing.
 ## Declaration
 
 ```swift
-func image(from rect: CGRect, scale: CGFloat) -> UIImage
+func image(from rect: CGRect, scale: CGFloat) -> NSImage
 ```
 
 #### Return Value

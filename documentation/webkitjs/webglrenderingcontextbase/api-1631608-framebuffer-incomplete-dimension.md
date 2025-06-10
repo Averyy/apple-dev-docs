@@ -1,6 +1,6 @@
 # FRAMEBUFFER_INCOMPLETE_DIMENSIONS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

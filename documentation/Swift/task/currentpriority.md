@@ -44,6 +44,8 @@ If you access this property outside of any task, this queries the system to dete
   Runs the given throwing operation asynchronously as part of a new top-level task.
 - [static var basePriority: TaskPriority?](task/basepriority.md)
   The current task’s base priority.
+- [func withTaskPriorityEscalationHandler<T, E>(operation: () async throws(E) -> T, onPriorityEscalated: (TaskPriority, TaskPriority) -> Void, isolation: isolated (any Actor)?) async throws(E) -> T](withtaskpriorityescalationhandler(operation:onpriorityescalated:isolation:).md)
+  Runs the passed `operation` while registering a task priority escalation handler. The handler will be triggered concurrently to the current task if the current is subject to priority escalation.
 
 
 ---

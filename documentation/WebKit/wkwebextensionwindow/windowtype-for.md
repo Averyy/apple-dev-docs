@@ -1,6 +1,6 @@
 # windowType(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the type of the window is needed.

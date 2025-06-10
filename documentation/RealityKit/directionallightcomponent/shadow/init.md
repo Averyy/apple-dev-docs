@@ -10,6 +10,7 @@ Creates a directional light shadow using default values.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -20,7 +21,7 @@ init()
 
 ## See Also
 
-- [init(shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType, depthBias: Float, cullMode: DirectionalLightComponent.Shadow.ShadowMapCullMode?)](directionallightcomponent/shadow/init(shadowprojection:depthbias:cullmode:).md)
+- [init(shadowProjection:depthBias:cullMode:)](directionallightcomponent/shadow/init(shadowprojection:depthbias:cullmode:).md)
   Creates a directional light shadow with a shadow projection, depth bias and cull mode.
 - [init(maximumDistance: Float, depthBias: Float)](directionallightcomponent/shadow/init(maximumdistance:depthbias:).md)
   Creates a directional light shadow with a maximum distance and depth bias.

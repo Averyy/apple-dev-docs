@@ -50,6 +50,7 @@ This layout container behaves like a [`Grid`](grid.md), but conforms to the [`La
 - [Copyable](../Swift/Copyable.md)
 - [Layout](layout.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

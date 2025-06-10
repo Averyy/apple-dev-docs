@@ -1,6 +1,6 @@
 # WKWebExtension.TabConfiguration
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that encapsulates configuration options for a tab in an extension.

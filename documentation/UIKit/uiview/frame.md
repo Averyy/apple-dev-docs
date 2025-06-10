@@ -25,8 +25,6 @@ This rectangle defines the size and position of the view in its superview’s co
 
 > ⚠️ **Warning**:  If the [`transform`](uiview/transform.md) property is not the identity transform, the value of this property is undefined and therefore should be ignored.
 
- If the [`transform`](uiview/transform.md) property is not the identity transform, the value of this property is undefined and therefore should be ignored.
-
 Changing the frame rectangle automatically redisplays the view without calling its [`draw(_:)`](uiview/draw(_:).md) method. If you want UIKit to call the [`draw(_:)`](uiview/draw(_:).md) method when the frame rectangle changes, set the [`contentMode`](uiview/contentmode-swift.property.md) property to [`UIView.ContentMode.redraw`](uiview/contentmode-swift.enum/redraw.md).
 
 Changes to this property can be animated. However, if the [`transform`](uiview/transform.md) property contains a non-identity transform, the value of the [`frame`](uiview/frame.md) property is undefined and should not be modified. In that case, reposition the view using the [`center`](uiview/center.md) property and adjust the size using the [`bounds`](uiview/bounds.md) property instead.

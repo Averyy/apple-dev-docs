@@ -1,6 +1,6 @@
 # Playing video content in a standard user interface
 
-**Framework**: Avkit
+**Framework**: AVKit
 
 Play media full screen, embedded inline, or in a floating Picture in Picture (PiP) window using a player view controller.
 
@@ -222,8 +222,12 @@ func playerViewController(
   An object that registers handlers to respond to capture events from system hardware buttons.
 - [class AVCaptureEvent](avcaptureevent.md)
   An object that describes a user interaction with a system hardware button.
+- [class AVCaptureEventSound](avcaptureeventsound.md)
+  A sound object for a capture event.
+- [class AVInputPickerInteraction](avinputpickerinteraction.md)
+  Use `AVInputPickerInteraction` to present an input picker.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/playing-video-content-in-a-standard-user-interface)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/playing-video-content-in-a-standard-user-interface)*

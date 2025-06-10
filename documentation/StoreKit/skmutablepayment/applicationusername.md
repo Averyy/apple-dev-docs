@@ -40,8 +40,6 @@ If you don’t assign a UUID string value to [`applicationUsername`](skmutablepa
 
 > ❗ **Important**:  An [`applicationUsername`](skmutablepayment/applicationusername.md) property that isn’t a UUID isn’t guaranteed to persist between the time when you add the payment transaction to the queue and when the queue updates the transaction.
 
- An [`applicationUsername`](skmutablepayment/applicationusername.md) property that isn’t a UUID isn’t guaranteed to persist between the time when you add the payment transaction to the queue and when the queue updates the transaction.
-
 ## See Also
 
 - [var productIdentifier: String](skmutablepayment/productidentifier.md)

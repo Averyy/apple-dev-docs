@@ -5,11 +5,8 @@
 ## Topics
 
 ### Initializers
-- [init(stringInterpolation: DefaultStringInterpolation)](comment/init(stringinterpolation:).md)
-  Creates a new instance from an interpolated string literal.
-### Type Aliases
-- [typealias StringInterpolation](comment/stringinterpolation.md)
-  The type each segment of a string literal containing interpolations should be appended to.
+- [init(stringInterpolation: Comment.StringInterpolation)](comment/init(stringinterpolation:).md)
+  Creates an instance from a string interpolation.
 
 
 ---

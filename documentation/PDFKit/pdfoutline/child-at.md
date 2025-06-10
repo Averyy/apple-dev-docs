@@ -25,8 +25,6 @@ The index is zero-based. This method throws an exception if `index` is out of ra
 
 > ❗ **Important**:  In macOS 10.5 and later, a `PDFOutline` object retains all its children, so `childAtIndex:` returns the same retained child outline object every time it’s called. This means that you do not need to retain the object returned by `childAtIndex:`. This differs from the behavior of `PDFOutline` in OS X v10.4. In Tiger, `childAtIndex:` returns an auto-released, one-off child outline object, when meant that you had to include code to retain the child.
 
- In macOS 10.5 and later, a `PDFOutline` object retains all its children, so `childAtIndex:` returns the same retained child outline object every time it’s called. This means that you do not need to retain the object returned by `childAtIndex:`. This differs from the behavior of `PDFOutline` in OS X v10.4. In Tiger, `childAtIndex:` returns an auto-released, one-off child outline object, when meant that you had to include code to retain the child.
-
 ## See Also
 
 - [var document: PDFDocument?](pdfoutline/document.md)

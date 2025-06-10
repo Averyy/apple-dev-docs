@@ -1,6 +1,6 @@
 # randomElement(using:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns a random element of the collection, using the given generator as a source for randomness.

@@ -21,8 +21,6 @@ The values for the contact editing mode:
 
 > ❗ **Important**:  Previous versions of the Apple Pay JS API accepted `enabled` rather than `available` as a parameter for the `ApplePayShippingContactEditingMode`. Developers should upgrade their code to use `available`.``
 
- Previous versions of the Apple Pay JS API accepted `enabled` rather than `available` as a parameter for the `ApplePayShippingContactEditingMode`. Developers should upgrade their code to use `available`.``
-
 ## Topics
 
 ### Enumeration Cases

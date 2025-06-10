@@ -25,8 +25,6 @@ Values for `SSLProtocol` are defined in `<Security/SecureTransport.h>`. If set t
 
 > ❗ **Important**:  This property should be used with caution, since it may limit the use of preferred SSL protocols.
 
- This property should be used with caution, since it may limit the use of preferred SSL protocols.
-
 ## See Also
 
 - [var tlsSessionID: Data?](nwtlsparameters/tlssessionid.md)

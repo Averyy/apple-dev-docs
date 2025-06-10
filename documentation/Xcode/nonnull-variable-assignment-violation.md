@@ -61,4 +61,4 @@ Correct logic errors, or remove the `_Nonnull` annotation.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/nonnull-variable-assignment-violation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/nonnull-variable-assignment-violation)*

@@ -46,7 +46,7 @@ watcher.setInsertionHandler { tokenID in
 
 ##### Use a Persistent Reference to Record a Token Item
 
-When you want to keep a record of a token item or pass it to another process, you can get a persistent reference to the associated keychain item. Do this by setting the [`kSecReturnPersistentRef`](https://developer.apple.com/documentation/Security/kSecReturnPersistentRef) key’s value to [`true`](https://developer.apple.com/documentation/foundation/nsexpression/1411874-true) in the keychain search query. For example, the earlier query becomes:
+When you want to keep a record of a token item or pass it to another process, you can get a persistent reference to the associated keychain item. Do this by setting the [`kSecReturnPersistentRef`](https://developer.apple.com/documentation/Security/kSecReturnPersistentRef) key’s value to [`true`](https://developer.apple.com/documentation/Foundation/NSExpression/true) in the keychain search query. For example, the earlier query becomes:
 
 ```swift
 let getquery: [String: Any] = [kSecClass as String: kSecClassKey,

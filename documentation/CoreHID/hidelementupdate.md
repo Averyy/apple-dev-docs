@@ -24,6 +24,7 @@ Not intended to be used directly, see [`HIDDeviceClient.ProvideElementUpdate`](h
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [HIDDeviceClient.ProvideElementUpdate](hiddeviceclient/provideelementupdate.md)
 - [HIDDeviceClient.RequestElementUpdate](hiddeviceclient/requestelementupdate.md)

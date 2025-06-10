@@ -1,6 +1,6 @@
 # Creating a Spaceship game
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Build an immersive game using RealityKit audio, simulation, and rendering features.
 
@@ -40,4 +40,4 @@ To run this sample app, you need one of the following:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/creating-a-spaceship-game)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/creating-a-spaceship-game)*

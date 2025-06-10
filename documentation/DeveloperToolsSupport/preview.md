@@ -50,6 +50,12 @@ Frameworks like SwiftUI and WidgetKit define initializers for this type, along w
 - [init(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIViewController)](preview/init(_:traits:body:)-941vb.md)
 - [init(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> any View, cameras: () -> [PreviewCamera])](preview/init(_:traits:body:cameras:).md)
   Creates a preview of a SwiftUI view using the specified traits and custom viewpoints.
+- [init<Entry>(String?, widget: () -> some Widget, relevanceEntries: () async -> [Entry])](preview/init(_:widget:relevanceentries:).md)
+  Creates a preview of a relevance-driven widget.
+- [init<Provider>(String?, widget: () -> some Widget, relevanceProvider: () -> Provider)](preview/init(_:widget:relevanceprovider:).md)
+  Creates a preview of a relevance-driven widget.
+- [init<Provider>(String?, widget: () -> some Widget, relevanceProvider: () -> Provider, relevance: () async -> WidgetRelevance<Provider.Configuration>)](preview/init(_:widget:relevanceprovider:relevance:).md)
+  Creates a preview of a relevance-driven widget.
 - [init(String?, windowStyle: some WindowStyle, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> any View, cameras: () -> [PreviewCamera])](preview/init(_:windowstyle:traits:body:cameras:).md)
   Creates a preview of a SwiftUI view in a window with custom viewpoints.
 ### Enumerations
@@ -60,6 +66,7 @@ Frameworks like SwiftUI and WidgetKit define initializers for this type, along w
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -24,6 +24,8 @@ Get information about a specific app custom product page localization.
   List the app preview sets for a specific custom product page localization.
 - [List app screenshot sets for a custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-appscreenshotsets.md)
   List the app screenshot sets for a specific custom product page localization.
+- [GET /v1/appCustomProductPageLocalizations/{id}/relationships/appPreviewSets](get-v1-appcustomproductpagelocalizations-_id_-relationships-apppreviewsets.md)
+- [GET /v1/appCustomProductPageLocalizations/{id}/relationships/appScreenshotSets](get-v1-appcustomproductpagelocalizations-_id_-relationships-appscreenshotsets.md)
 - [Delete an app custom product page localization](delete-v1-appcustomproductpagelocalizations-_id_.md)
   Delete localized metadata that you configured for a custom product page.
 

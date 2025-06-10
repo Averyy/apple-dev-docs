@@ -1,6 +1,6 @@
 # SYNC_GPU_COMMANDS_COMPLETE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

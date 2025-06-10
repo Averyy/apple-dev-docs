@@ -1,6 +1,6 @@
 # MAX_COLOR_ATTACHMENTS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

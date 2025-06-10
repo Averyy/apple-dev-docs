@@ -3,6 +3,8 @@
 **Framework**: Speech  
 **Kind**: property
 
+The location of a compiled vocabulary file.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -19,7 +21,7 @@ var vocabulary: URL? { get }
 ## See Also
 
 - [var languageModel: URL](sfspeechlanguagemodel/configuration/languagemodel.md)
-- [var languageModel: URL](sfspeechlanguagemodel/configuration/languagemodel.md)
+  The location of a compiled language model file.
 
 
 ---

@@ -1,6 +1,6 @@
 # WeatherChange.Direction.increase
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 The value will be significantly higher than before.

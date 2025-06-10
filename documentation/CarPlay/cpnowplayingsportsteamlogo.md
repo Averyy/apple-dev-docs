@@ -13,6 +13,7 @@ A logo image or, if no image is available, an abbreviation or initialism for thi
 ## Declaration
 
 ```swift
+@MainActor
 class CPNowPlayingSportsTeamLogo
 ```
 
@@ -42,6 +43,7 @@ class CPNowPlayingSportsTeamLogo
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

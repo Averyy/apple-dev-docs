@@ -7,18 +7,18 @@ Apply attributes to text in an attributed string to modify the pronunciation of 
 ## Topics
 
 ### Constants
-- [static let accessibilitySpeechPunctuation: NSAttributedString.Key](../foundation/nsattributedstring/key/1620201-accessibilityspeechpunctuation.md)
-  A key that indicates whether to speak punctuation. 
-- [static let accessibilitySpeechLanguage: NSAttributedString.Key](../foundation/nsattributedstring/key/1620188-accessibilityspeechlanguage.md)
-  A key that indicates the language to use when speaking a string. 
-- [static let accessibilitySpeechPitch: NSAttributedString.Key](../foundation/nsattributedstring/key/1620195-accessibilityspeechpitch.md)
-  A key that indicates the pitch to apply to spoken content. 
-- [static let accessibilitySpeechQueueAnnouncement: NSAttributedString.Key](../foundation/nsattributedstring/key/2865770-accessibilityspeechqueueannounce.md)
+- [nonisolated static let accessibilitySpeechPunctuation: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechPunctuation.md)
+  A key that indicates whether to speak punctuation.
+- [nonisolated static let accessibilitySpeechLanguage: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechLanguage.md)
+  A key that indicates the language to use when speaking a string.
+- [nonisolated static let accessibilitySpeechPitch: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechPitch.md)
+  A key that indicates the pitch to apply to spoken content.
+- [nonisolated static let accessibilitySpeechQueueAnnouncement: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechQueueAnnouncement.md)
   A key that indicates whether to queue an announcement behind existing speech or to interrupt it.
-- [static let accessibilitySpeechIPANotation: NSAttributedString.Key](../foundation/nsattributedstring/key/2890748-accessibilityspeechipanotation.md)
+- [nonisolated static let accessibilitySpeechIPANotation: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechIPANotation.md)
   A key that indicates the pronunciation of a specific word or phrase, such as a proper name.
-- [static let accessibilitySpeechAnnouncementPriority: NSAttributedString.Key](../foundation/nsattributedstring/key/4168159-accessibilityspeechannouncementp.md)
-- [static let accessibilitySpeechSpellOut: NSAttributedString.Key](../foundation/nsattributedstring/key/3333285-accessibilityspeechspellout.md)
+- [nonisolated static let accessibilitySpeechAnnouncementPriority: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechAnnouncementPriority.md)
+- [nonisolated static let accessibilitySpeechSpellOut: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechSpellOut.md)
 - [struct UIAccessibilityPriority](uiaccessibilitypriority.md)
   Constants that specify priorities for accessibility announcements.
 

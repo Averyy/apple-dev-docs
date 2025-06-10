@@ -14,7 +14,7 @@ Register for the following notifications so the system can notify your app about
 
 When the system posts a display change notification, you can decide if you should get and use a new device.
 
-To deregister from the previous notifications, call the [`removeObserver(_:name:object:)`](https://developer.apple.com/documentation/foundation/notificationcenter/1407263-removeobserver) method.
+To deregister from the previous notifications, call the [`removeObserver(_:name:object:)`](https://developer.apple.com/documentation/Foundation/NotificationCenter/removeObserver(_:name:object:)) method.
 
 ##### Identify the Device That Drives Your Views Display
 
@@ -26,7 +26,7 @@ Get the [`CGDirectDisplayID`](https://developer.apple.com/documentation/CoreGrap
   Locate, identify, and choose suitable GPUs for your app.
 - [func MTLCopyAllDevices() -> [any MTLDevice]](mtlcopyalldevices().md)
   Returns an array of all the Metal device instances in the system.
-- [func MTLCopyAllDevicesWithObserver(handler: MTLDeviceNotificationHandler) -> (devices: [any MTLDevice], observer: NSObject)](mtlcopyalldeviceswithobserver(handler:).md)
+- [func MTLCopyAllDevicesWithObserver(handler: (any MTLDevice, MTLDeviceNotificationName) -> Void) -> (devices: [any MTLDevice], observer: NSObject)](mtlcopyalldeviceswithobserver(handler:).md)
   Returns an array of all the Metal GPU devices in the system and registers a notification handler that Metal calls when the device list changes.
 - [func MTLRemoveDeviceObserver(any NSObjectProtocol)](mtlremovedeviceobserver(_:).md)
   Removes a registered observer of device notifications.

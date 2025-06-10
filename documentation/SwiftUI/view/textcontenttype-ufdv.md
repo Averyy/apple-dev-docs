@@ -60,6 +60,8 @@ TextField("Enter your email", text: $emailAddress)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on a watchOS device.
 - [func textContentType(NSTextContentType?) -> some View](view/textcontenttype(_:)-6fic1.md)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on macOS.
+- [struct TextInputFormattingControlPlacement](textinputformattingcontrolplacement.md)
+  A structure defining the system text formatting controls available on each platform.
 
 
 ---

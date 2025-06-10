@@ -13,6 +13,7 @@ The methods an object implements to act as the delegate for a tab bar template.
 ## Declaration
 
 ```swift
+@MainActor
 protocol CPTabBarTemplateDelegate : NSObjectProtocol
 ```
 

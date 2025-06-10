@@ -1,6 +1,6 @@
 # hail
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The amount of hail for the period.

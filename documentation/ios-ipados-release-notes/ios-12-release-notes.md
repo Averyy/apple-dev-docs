@@ -60,7 +60,7 @@ See [`Foundation Release Notes`](foundation-release-notes.md).
 
 ###### Deprecations
 
-- FTP and File URL schemes for Proxy Automatic Configuration (PAC) are deprecated. HTTP and HTTPS are the only supported URL schemes for PAC. This affects all PAC configurations including, but not limited to, configurations set via Settings, System Preferences, profiles, and [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) APIs such as [`connectionProxyDictionary`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/1411499-connectionproxydictionary), and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](https://developer.apple.com/documentation/CFNetwork/CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)). (37811761)
+- FTP and File URL schemes for Proxy Automatic Configuration (PAC) are deprecated. HTTP and HTTPS are the only supported URL schemes for PAC. This affects all PAC configurations including, but not limited to, configurations set via Settings, System Preferences, profiles, and [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) APIs such as [`connectionProxyDictionary`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/connectionProxyDictionary), and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](https://developer.apple.com/documentation/CFNetwork/CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)). (37811761)
 
 ##### Phone and Facetime
 
@@ -82,7 +82,7 @@ See [`Foundation Release Notes`](foundation-release-notes.md).
 
 ###### Known Issues
 
-- When using doc://com.apple.documentation/documentation/SiriKit/INUIAddVoiceShortcutButton, the “Add to Siri” and “Added to Siri” button text isn’t localized. (43251696)  To localize “Add to Siri” and “Added to Siri” button text, include localizations for this text in the strings files of your app bundle.
+- When using [`INUIAddVoiceShortcutButton`](https://developer.apple.com/documentation/IntentsUI/INUIAddVoiceShortcutButton), the “Add to Siri” and “Added to Siri” button text isn’t localized. (43251696)  To localize “Add to Siri” and “Added to Siri” button text, include localizations for this text in the strings files of your app bundle.
 - While multiple ride-sharing apps are installed, Siri might open the app instead of providing an ETA or location when asked. (42324032)  Ask Siri for the ETA or location again.
 - Siri Shortcuts might not work if a device is locked. (41307405)
 - Siri Suggestions for Shortcuts are enabled on iPhone 6s or later, iPad Pro, iPad (5th generation or later), iPad Air 2, and iPad mini 4. (40669231)

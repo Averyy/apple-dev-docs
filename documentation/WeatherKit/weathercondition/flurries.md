@@ -1,6 +1,6 @@
 # WeatherCondition.flurries
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Flurries or light snow.

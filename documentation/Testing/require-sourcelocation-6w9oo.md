@@ -1,6 +1,6 @@
 # require(_:_:sourceLocation:)
 
-**Framework**: Testing  
+**Framework**: Swift Testing  
 **Kind**: macro
 
 Unwrap an optional value or, if it is `nil`, fail and throw an error.

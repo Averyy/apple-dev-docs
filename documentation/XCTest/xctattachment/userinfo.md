@@ -1,6 +1,6 @@
 # userInfo
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 User-provided metadata associated with the attachment.

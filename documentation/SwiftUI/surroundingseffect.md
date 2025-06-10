@@ -6,6 +6,7 @@
 Effects that the system can apply to passthrough video.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -45,6 +46,7 @@ Use one of these values with the [`preferredSurroundingsEffect(_:)`](view/prefer
 
 - [func preferredSurroundingsEffect(SurroundingsEffect?) -> some View](view/preferredsurroundingseffect(_:).md)
   Applies an effect to passthrough video.
+- [struct BreakthroughEffect](breakthrougheffect.md)
 
 
 ---

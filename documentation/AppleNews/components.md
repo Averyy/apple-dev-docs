@@ -1,6 +1,6 @@
 # Components
 
-**Framework**: Applenews
+**Framework**: Apple News
 
 Understand the types of components that can make up an article.
 
@@ -209,4 +209,4 @@ The following table gives you an overview of the components you can use to creat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/components)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applenews/components)*

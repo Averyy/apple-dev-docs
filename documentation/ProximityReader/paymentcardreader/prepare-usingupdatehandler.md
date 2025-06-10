@@ -1,6 +1,6 @@
 # prepare(using:updateHandler:)
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Configures the pipeline for reading payment or loyalty cards.

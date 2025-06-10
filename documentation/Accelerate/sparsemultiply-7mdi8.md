@@ -26,6 +26,21 @@ func SparseMultiply(_ Subfactor: SparseOpaqueSubfactor_Complex_Double, _ XY: Den
 - `XY`: (Input/Output) On input, the matrix  . On return it is overwritten   with the matrix  . If   is  , then   must have dimension   , where   and   is the number of right-hand   side vectors. If  , then only the first   entries are   used for input or output as approriate.
 - `workspace`: (Scratch) A workspace of size   .   This memory must be 16-byte aligned (any allocation returned   by   has this property).
 
+## See Also
+
+- [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:)-20xvs.md)
+  Performs the multiply operation  , in place on a dense matrix of double-precision values and without any internal memory allocations.
+- [func SparseMultiply(SparseOpaqueSubfactor_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:)-6thvw.md)
+  Performs the multiply operation  , in place on a dense matrix of single-precision values and without any internal memory allocations.
+- [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseMatrix_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:_:)-2osop.md)
+  Performs the multiply operation   on a dense matrix of double-precision values and without any internal memory allocations.
+- [func SparseMultiply(SparseOpaqueSubfactor_Float, DenseMatrix_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:_:)-9v8hk.md)
+  Performs the multiply operation   on a dense matrix of single-precision values and without any internal memory allocations.
+- [func SparseMultiply(SparseOpaqueSubfactor_Complex_Float, DenseMatrix_Complex_Float, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:)-6strd.md)
+  Perform the multiply operation `Y = Subfactor * X `for complex float values, in place.
+- [func SparseMultiply(SparseOpaqueSubfactor_Complex_Float, DenseMatrix_Complex_Float, DenseMatrix_Complex_Float, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:_:)-581zl.md)
+  Perform the multiply operation `Y = Subfactor * X` for complex float values.
+
 
 ---
 

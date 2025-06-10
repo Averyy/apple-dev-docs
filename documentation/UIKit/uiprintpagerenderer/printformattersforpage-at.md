@@ -14,7 +14,6 @@ Returns the print formatters for a specified page.
 ## Declaration
 
 ```swift
-@MainActor
 func printFormattersForPage(at pageIndex: Int) -> [UIPrintFormatter]?
 ```
 

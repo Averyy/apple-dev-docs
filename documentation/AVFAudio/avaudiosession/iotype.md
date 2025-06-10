@@ -49,6 +49,7 @@ Apps that don’t use [`AVCaptureSession`](https://developer.apple.com/documenta
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

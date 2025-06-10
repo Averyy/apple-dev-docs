@@ -28,8 +28,6 @@ A new [`MTLBuffer`](mtlbuffer.md) instance if the method completes successfully;
 
 > ❗ **Important**:  The existing memory allocation must exist within a single virtual memory (VM) region.
 
- The existing memory allocation must exist within a single virtual memory (VM) region.
-
 ## Parameters
 
 - `pointer`: A page-aligned pointer to the starting memory address.

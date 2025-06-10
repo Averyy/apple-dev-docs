@@ -23,20 +23,10 @@ By default, if an item with the same identifier is already in the toolbar, dragg
 
 ## See Also
 
-- [var isVisible: Bool](nstoolbaritem/isvisible.md)
-  A Boolean value that indicates whether the item is currently visible in the toolbar, and not in the overflow menu.
-- [var isBordered: Bool](nstoolbaritem/isbordered.md)
-  A Boolean value that indicates whether the toolbar item has a bordered style.
-- [var isNavigational: Bool](nstoolbaritem/isnavigational.md)
-  A Boolean value that indicates whether the item behaves as a navigation item in the toolbar.
-- [var isEnabled: Bool](nstoolbaritem/isenabled.md)
-  A Boolean value that indicates whether the item is enabled.
-- [var visibilityPriority: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.property.md)
-  The display priority associated with the toolbar item.
-- [NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct.md)
-  Constants that indicate which toolbar items to keep in the toolbar when space is limited.
-- [var tag: Int](nstoolbaritem/tag.md)
-  An integer tag you can use to identify the toolbar item.
+- [var minSize: NSSize](nstoolbaritem/minsize.md)
+  The toolbar item’s minimum size.
+- [var maxSize: NSSize](nstoolbaritem/maxsize.md)
+  The toolbar item’s maximum size.
 
 
 ---

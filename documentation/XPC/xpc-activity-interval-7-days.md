@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_INTERVAL_7_DAYS
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A constant that represents a seven-day time interval.

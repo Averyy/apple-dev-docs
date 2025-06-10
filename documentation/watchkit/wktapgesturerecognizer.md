@@ -1,6 +1,6 @@
 # WKTapGestureRecognizer
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A gesture recognizer that interprets a touch event occurring and ending in approximately the same area on the screen.

@@ -1,6 +1,6 @@
 # VTMultiPassStorageCreate(allocator:fileURL:timeRange:options:multiPassStorageOut:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Creates a multipass storage object using a temporary file.

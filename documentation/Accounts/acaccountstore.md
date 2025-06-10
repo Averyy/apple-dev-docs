@@ -24,7 +24,7 @@ The [`ACAccountStore`](acaccountstore.md) class provides an interface for access
 ## Topics
 
 ### Requesting Access
-- [func requestAccessToAccounts(with: ACAccountType!, options: [AnyHashable : Any]!, completion: ACAccountStoreRequestAccessCompletionHandler!)](acaccountstore/requestaccesstoaccounts(with:options:completion:).md)
+- [func requestAccessToAccounts(with: ACAccountType!, options: [AnyHashable : Any]!, completion: ((Bool, (any Error)?) -> Void)!)](acaccountstore/requestaccesstoaccounts(with:options:completion:).md)
   Obtains permission to access protected user properties.
 - [typealias ACAccountStoreRequestAccessCompletionHandler](acaccountstorerequestaccesscompletionhandler.md)
   Specifies a handler to call when access is granted or denied.
@@ -39,19 +39,19 @@ The [`ACAccountStore`](acaccountstore.md) class provides an interface for access
 - [func accountType(withAccountTypeIdentifier: String!) -> ACAccountType!](acaccountstore/accounttype(withaccounttypeidentifier:).md)
   Returns an account type that matches the specified identifier.
 ### Saving Accounts
-- [func saveAccount(ACAccount!, withCompletionHandler: ACAccountStoreSaveCompletionHandler!)](acaccountstore/saveaccount(_:withcompletionhandler:).md)
+- [func saveAccount(ACAccount!, withCompletionHandler: ((Bool, (any Error)?) -> Void)!)](acaccountstore/saveaccount(_:withcompletionhandler:).md)
   Saves an account to the Accounts database.
 - [typealias ACAccountStoreSaveCompletionHandler](acaccountstoresavecompletionhandler.md)
   Specifies a handler to call when an Accounts database operation is complete.
 ### Renewing Account Credentials
-- [func renewCredentials(for: ACAccount!, completion: ACAccountStoreCredentialRenewalHandler!)](acaccountstore/renewcredentials(for:completion:).md)
+- [func renewCredentials(for: ACAccount!, completion: ((ACAccountCredentialRenewResult, (any Error)?) -> Void)!)](acaccountstore/renewcredentials(for:completion:).md)
   Renews account credentials when the credentials are no longer valid.
 - [typealias ACAccountStoreCredentialRenewalHandler](acaccountstorecredentialrenewalhandler.md)
   Specifies a handler to call when credentials are renewed.
 - [enum ACAccountCredentialRenewResult](acaccountcredentialrenewresult.md)
   Status codes of credential renewal requests.
 ### Removing Accounts
-- [func removeAccount(ACAccount!, withCompletionHandler: ACAccountStoreRemoveCompletionHandler!)](acaccountstore/removeaccount(_:withcompletionhandler:).md)
+- [func removeAccount(ACAccount!, withCompletionHandler: ((Bool, (any Error)?) -> Void)!)](acaccountstore/removeaccount(_:withcompletionhandler:).md)
   Removes an account from the account store.
 - [typealias ACAccountStoreRemoveCompletionHandler](acaccountstoreremovecompletionhandler.md)
   Specifies a handler to call when an account is removed from the store.

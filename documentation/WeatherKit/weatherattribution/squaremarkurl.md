@@ -1,6 +1,6 @@
 # squareMarkURL
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A URL for the square Apple Weather mark.

@@ -29,8 +29,6 @@ These samples use percentage units (described in [`HKUnit`](hkunit.md)) and meas
 
 > ❗ **Important**:  These samples are read-only. You can request permission to read the samples using this identifier, but you can’t request authorization to share them. This means you can’t save new AFib burden samples to the HealthKit store.
 
- These samples are read-only. You can request permission to read the samples using this identifier, but you can’t request authorization to share them. This means you can’t save new AFib burden samples to the HealthKit store.
-
 ## See Also
 
 - [static let heartRate: HKQuantityTypeIdentifier](hkquantitytypeidentifier/heartrate.md)

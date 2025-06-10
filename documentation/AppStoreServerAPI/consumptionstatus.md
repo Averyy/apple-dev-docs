@@ -26,7 +26,7 @@ Some examples of consumption status include the following scenarios:
 - [type accountTenure](accounttenure.md)
   The age of the customer’s account.
 - [type appAccountToken](appaccounttoken.md)
-  The UUID that an app optionally generates to map a customer’s In-App Purchase with its resulting App Store transaction.
+  The UUID that you generate to associate a customer’s In-App Purchase with its resulting App Store transaction.
 - [type customerConsented](customerconsented.md)
   A Boolean value that indicates whether the customer consented to provide consumption data to the App Store.
 - [type deliveryStatus](deliverystatus.md)

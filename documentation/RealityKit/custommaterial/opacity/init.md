@@ -10,6 +10,7 @@ Creates an object from the opacity property of an existing physically based mate
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

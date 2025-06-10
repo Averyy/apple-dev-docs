@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-The local member in the conversation.
+The local participant in the conversation.
 
 **Availability**:
 - iOS 17.4+
@@ -15,8 +15,17 @@ The local member in the conversation.
 ## Declaration
 
 ```swift
-var localMember: Handle?
+var localMember: Handle? { get set }
 ```
+
+## See Also
+
+- [var activeRemoteMembers: Set<Handle>?](conversation/update/activeremotemembers.md)
+  All active remote participants.
+- [var capabilities: Conversation.Capabilities?](conversation/update/capabilities.md)
+  Functionality that the conversation supports after the system applies the update.
+- [var members: Set<Handle>?](conversation/update/members.md)
+  All participants of the conversation, including invited, but inactive remote participants.
 
 
 ---

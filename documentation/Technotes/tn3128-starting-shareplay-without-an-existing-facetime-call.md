@@ -32,7 +32,7 @@ Tap the SharePlay button, and select a person in the people-picker. Then tap the
 
 Displaying the SharePlay button in the share sheet as just described allows you to initiate a FaceTime call without an activity to start. You must interact with the app again to pick the content to SharePlay.
 
-You can improve this same SharePlay experience by using  [`registerGroupActivity(_:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/3920459-registergroupactivity) to register a group activity on the item provider, provide the item provider to the share sheet, and present the share sheet. That way, the FaceTime call starts with an activity.
+You can improve this same SharePlay experience by using  [`registerGroupActivity(_:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/registerGroupActivity(_:)) to register a group activity on the item provider, provide the item provider to the share sheet, and present the share sheet. That way, the FaceTime call starts with an activity.
 
 ```swift
 // Register your group activity.

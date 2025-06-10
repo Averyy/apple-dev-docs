@@ -22,17 +22,7 @@ func userTraveled() async throws -> Bool
 func userTraveled() async throws -> Bool
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func userTraveled() async throws -> Bool
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 > ❗ **Important**:  This method is available in iOS 12.5, and in iOS 13.5 and later.
-
- This method is available in iOS 12.5, and in iOS 13.5 and later.
 
 Use this method to determine whether the user has traveled outside of the region associated with your app anytime in the last 14 days. You might use this information to determine when to share keys across regions. The first time you use this method, the user will be asked for permission. The app must be in the foreground the first time this is called so that the app may ask the user for permission.
 

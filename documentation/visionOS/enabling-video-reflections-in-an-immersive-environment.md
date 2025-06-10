@@ -1,6 +1,6 @@
 # Enabling video reflections in an immersive environment
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Create a more immersive experience by adding video reflections in a custom environment.
 
@@ -41,7 +41,7 @@ Specular reflections, like shown below, provide a direct reflection of the video
 
 ![An image that shows an example of a specular reflection. The image displays a multicolored bounding rectangle that represents a docked video screen. Below the video screen is a mirror image reflection of it on the ground plane.](https://docs-assets.developer.apple.com/published/50e416ed9a99d74e6ad7fa1f091d7ef0/specular-example%402x.png)
 
-To enable this type of reflection, you define a material with the [`Reflection Specular (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/Other/Reflection-Specular-(RealityKit)) node connected and apply it to a surface in your scene. The system automatically calculates the appropriate reflection based on your viewing angle relative to the docking region.
+To enable this type of reflection, you define a material with the doc://com.apple.documentation/documentation/shadergraph/other/reflection-specular-(realitykit) node connected and apply it to a surface in your scene. The system automatically calculates the appropriate reflection based on your viewing angle relative to the docking region.
 
 ![An image that shows the Reflection Specular node in Reality Composer Pro’s Shader Graph. The image shows a View Direction node connected to the Unreflected Direction input of the reflection node, and the output of the reflection node connected to an undetermined destination.](https://docs-assets.developer.apple.com/published/f76f8e1519599bb125e4a628cddaf47f/specular-shader-graph%402x.png)
 
@@ -57,7 +57,7 @@ Diffuse reflections provide a softer falloff of media content, which can be usef
 
 ![An image that shows an example of a diffuse reflection. The image shows a multicolored bounding rectangle that represents a docked video screen. Below the video screen is a soft glow of the video content’s color and light reflected on onto the ground plane.](https://docs-assets.developer.apple.com/published/a8ca9357b8fc1b65d22337b75cee0a39/diffuse-example%402x.png)
 
-You enable diffuse reflections by adding a material on a surface with the [`Reflection Diffuse (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/Other/Reflection-Diffuse-(RealityKit)) node connected.
+You enable diffuse reflections by adding a material on a surface with the doc://com.apple.documentation/documentation/shadergraph/other/reflection-diffuse-(realitykit) node connected.
 
 ![An image that shows the Reflection Diffuse node in Reality Composer Pro’s Shader Graph. The image shows two Primvar Reader nodes connected to inputs of the reflection node. The configuration connects one node to the Emitter UV input of the reflection node and the other to the Attenuation UV input. The output of the Reflection Diffuse node connects to an undetermined destination.](https://docs-assets.developer.apple.com/published/4dfa7f4477e06cfa2b5595995104c560/diffuse-shader-graph%402x.png)
 
@@ -106,4 +106,4 @@ To learn more about how the environment sets up and applies diffuse reflections,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/enabling-video-reflections-in-an-immersive-environment)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/enabling-video-reflections-in-an-immersive-environment)*

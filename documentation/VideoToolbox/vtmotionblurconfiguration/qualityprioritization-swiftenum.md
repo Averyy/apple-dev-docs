@@ -1,11 +1,14 @@
 # VTMotionBlurConfiguration.QualityPrioritization
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: enum
 
 Values that specify whether to prioritize quality or performance.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
 
 ## Declaration
@@ -32,6 +35,7 @@ enum QualityPrioritization
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -39,8 +43,6 @@ enum QualityPrioritization
   The width of a source frame in pixels.
 - [var frameHeight: Int](vtmotionblurconfiguration/frameheight.md)
   The height of a source frame in pixels.
-- [var frameSupportedPixelFormats: [NSNumber]](vtmotionblurconfiguration/framesupportedpixelformats.md)
-  A list of source frame supported pixel formats for the current configuration.
 - [var destinationPixelBufferAttributes: [String : any Sendable]](vtmotionblurconfiguration/destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
 - [var sourcePixelBufferAttributes: [String : any Sendable]](vtmotionblurconfiguration/sourcepixelbufferattributes.md)

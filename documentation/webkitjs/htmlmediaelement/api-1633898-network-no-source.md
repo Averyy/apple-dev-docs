@@ -1,6 +1,6 @@
 # NETWORK_NO_SOURCE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 No media resource was found.

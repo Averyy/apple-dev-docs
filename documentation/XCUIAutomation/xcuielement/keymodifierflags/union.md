@@ -1,6 +1,6 @@
 # union(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Returns a new option set of the elements contained in this set, in the given set, or in both.

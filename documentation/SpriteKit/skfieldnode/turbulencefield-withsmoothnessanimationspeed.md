@@ -17,6 +17,7 @@ Creates a field node that applies a randomized acceleration to physics bodies.
 ## Declaration
 
 ```swift
+@MainActor
 class func turbulenceField(withSmoothness smoothness: CGFloat, animationSpeed speed: CGFloat) -> SKFieldNode
 ```
 

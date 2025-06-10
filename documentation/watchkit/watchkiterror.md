@@ -1,6 +1,6 @@
 # WatchKitError
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: struct
 
 An error reported by WatchKit.
@@ -46,6 +46,7 @@ struct WatchKitError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -10,7 +10,7 @@ Configures the search toolbar presentation behavior for any searchable modifiers
 - iPadOS 17.1+
 - macOS 14.1+
 - tvOS 17.1+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.1+
 
 ## Declaration

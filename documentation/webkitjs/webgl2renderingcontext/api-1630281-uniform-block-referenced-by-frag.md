@@ -1,6 +1,6 @@
 # UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

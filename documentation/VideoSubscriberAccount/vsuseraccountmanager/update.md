@@ -1,6 +1,6 @@
 # update(_:)
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: method
 
 Registers a new user account.

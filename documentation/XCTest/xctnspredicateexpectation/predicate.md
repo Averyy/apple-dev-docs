@@ -1,6 +1,6 @@
 # predicate
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The predicate the expectation evaluates.

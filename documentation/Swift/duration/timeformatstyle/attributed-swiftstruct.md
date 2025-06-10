@@ -70,6 +70,7 @@ The resulting `attributedDuration`, representing the string `1:10:32` contains t
 - [FormatStyle](../Foundation/FormatStyle.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

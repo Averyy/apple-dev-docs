@@ -38,6 +38,8 @@ The default is `nil` for items outside the window toolbar.
   A specification for the appearance and behavior of a window’s toolbar.
 - [struct ToolbarLabelStyle](toolbarlabelstyle.md)
   The label style of a toolbar.
+- [struct SpacerSizing](spacersizing.md)
+  A type which defines how spacers should size themselves.
 
 
 ---

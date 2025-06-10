@@ -1,6 +1,6 @@
 # Detecting human body poses in an image
 
-**Framework**: Coreml
+**Framework**: Core ML
 
 Locate people and the stance of their bodies by analyzing an image with a PoseNet model.
 
@@ -215,4 +215,4 @@ let dstImage = renderer.image { rendererContext in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/detecting-human-body-poses-in-an-image)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coreml/detecting-human-body-poses-in-an-image)*

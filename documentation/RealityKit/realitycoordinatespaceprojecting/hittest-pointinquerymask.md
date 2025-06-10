@@ -11,6 +11,7 @@ Searches the scene for entities at the specified point in the view.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -25,8 +26,6 @@ An array of hit-test results.
 #### Discussion
 
 > ❗ **Important**: RealityKit performs hit tests (ray-casts) against collision shapes. Entities without a proper [`CollisionComponent`](collisioncomponent.md) are ignored by hit tests.
-
-RealityKit performs hit tests (ray-casts) against collision shapes. Entities without a proper [`CollisionComponent`](collisioncomponent.md) are ignored by hit tests.
 
 ## Parameters
 

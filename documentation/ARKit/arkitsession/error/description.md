@@ -6,6 +6,7 @@
 A textual representation of this error.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

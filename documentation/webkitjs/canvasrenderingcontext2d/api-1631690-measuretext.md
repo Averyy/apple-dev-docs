@@ -1,6 +1,6 @@
 # measureText
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Determines the width of the bounding box required to render the specified text with the current font settings.

@@ -123,6 +123,7 @@ You can define shapes in relation to an implicit frame of reference, such as the
 ### Inherits From
 - [Animatable](animatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](view.md)
 ### Inherited By
 - [InsettableShape](insettableshape.md)

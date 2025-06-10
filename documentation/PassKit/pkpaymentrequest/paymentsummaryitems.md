@@ -1,6 +1,6 @@
 # paymentSummaryItems
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
 An array of payment summary item objects that summarize the amount of the payment.

@@ -17,8 +17,7 @@ The average initial color for a particle.
 ## Declaration
 
 ```swift
-@MainActor
-var particleColor: NSColor { get set }
+var particleColor: UIColor { get set }
 ```
 
 #### Discussion
@@ -28,8 +27,6 @@ The default value is `[SKColor clearColor]`.
 A particle’s color is blended with the texture using its blend color factor. See [`SKEmitterNode`](skemitternode.md).
 
 > ❗ **Important**:  If you create an [`SKEmitterNode`](skemitternode.md) object using Xcode’s particle editor, it uses the [`particleColorSequence`](skemitternode/particlecolorsequence.md) property to implement the color change. This means that the [`particleColor`](skemitternode/particlecolor.md) property is ignored.
-
- If you create an [`SKEmitterNode`](skemitternode.md) object using Xcode’s particle editor, it uses the [`particleColorSequence`](skemitternode/particlecolorsequence.md) property to implement the color change. This means that the [`particleColor`](skemitternode/particlecolor.md) property is ignored.
 
 ## See Also
 

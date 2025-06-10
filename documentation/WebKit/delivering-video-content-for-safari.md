@@ -1,6 +1,6 @@
 # Delivering Video Content for Safari
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Improve the performance and appearance of video in your website in Safari.
 
@@ -124,4 +124,4 @@ For more details on WebRTC, see [`Announcing WebRTC and Media Capture`](https://
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/delivering-video-content-for-safari)*
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/delivering-video-content-for-safari)*

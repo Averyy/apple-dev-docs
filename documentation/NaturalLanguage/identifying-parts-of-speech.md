@@ -26,7 +26,7 @@ tagger.enumerateTags(in: text.startIndex..<text.endIndex, unit: .word, scheme: .
 1. Create an instance of [`NLTagger`](nltagger.md), specifying [`lexicalClass`](nltagscheme/lexicalclass.md) as the tag scheme to be used.
 2. Set the string property of the linguistic tagger to the natural language text.
 3. Create the options to omit punctuation and whitespace.
-4. Enumerate over the entire range of the string, specifying [`word`](https://developer.apple.com/documentation/foundation/nslinguistictag/1418153-word) as the tag unit and [`lexicalClass`](nltagscheme/lexicalclass.md) as the tag scheme, and the tagger options.
+4. Enumerate over the entire range of the string, specifying [`word`](https://developer.apple.com/documentation/Foundation/NSLinguisticTag/word) as the tag unit and [`lexicalClass`](nltagscheme/lexicalclass.md) as the tag scheme, and the tagger options.
 5. In the enumeration block, take a substring of the original text at `tokenRange` to obtain each word.
 6. Run this code to print out each word and its part of speech on a new line.
 

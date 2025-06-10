@@ -1,0 +1,30 @@
+# newstate
+
+**Framework**: Kernel  
+**Kind**: structp
+
+The "newstate" should be set to a value which changes if the contents of a directory change through an addition or deletion but stays the same otherwise.
+
+## See Also
+
+- [vp](vnop_readlink_args/1807660-vp.md)
+  Directory in which to enumerate entries' attributes.
+- [alist](vnop_readlink_args/1807668-alist.md)
+  Which attributes are wanted for each directory entry.
+- [uio](vnop_readlink_args/1807675-uio.md)
+  Destination information for resulting attributes.
+- [maxcount](vnop_readlink_args/1807683-maxcount.md)
+  Maximum count of files to get attributes for.
+- [options](vnop_readlink_args/1807690-options.md)
+  FSOPT_NOFOLLOW: do not follow symbolic links. FSOPT_NOINMEMUPDATE: do not use data which have been updated since an inode was loaded into memory.
+- [eofflag](vnop_readlink_args/1807701-eofflag.md)
+  Should be set to 1 if the end of the directory has been reached.
+- [actualcount](vnop_readlink_args/1807705-actualcount.md)
+  Should be set to number of files whose attributes were written into buffer.
+- [ctx](vnop_readlink_args/1807709-ctx.md)
+  Context to authenticate for readdirattr request.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/vnop_readlink_args/1807697-newstate)*

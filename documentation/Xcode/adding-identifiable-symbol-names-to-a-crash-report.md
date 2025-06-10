@@ -186,4 +186,4 @@ Once you have at least a partially symbolicated crash report by using `atos`, co
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/adding-identifiable-symbol-names-to-a-crash-report)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/adding-identifiable-symbol-names-to-a-crash-report)*

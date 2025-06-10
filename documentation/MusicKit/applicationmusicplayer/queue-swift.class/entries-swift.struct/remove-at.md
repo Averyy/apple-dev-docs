@@ -1,6 +1,6 @@
 # remove(at:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Removes and returns the element at the specified position.

@@ -1,6 +1,6 @@
 # webScriptValue(at:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the value of a property at the specified index.

@@ -14,8 +14,6 @@ The Apple Search Ads iAd Attribution API is a legacy framework for attributing a
 
 > ⚠️ **Warning**:  After February 7, 2023, all requests made to the Apple Search Ads iAd Attribution API will return with a value of `"iad-attribution"` `=` `false`, or errors. See [`requestAttributionDetails(_:)`](adclient/requestattributiondetails(_:).md). Use the [`AdServices`](https://developer.apple.com/documentation/AdServices) framework for current attribution integration with the [`Apple Search Ads`](https://developer.apple.com/documentation/apple_search_ads) Campaign Management API for devices using iOS 14.3 and later. Attribution isn’t available for downloads and redownloads from devices using iOS 14.2 or earlier.
 
- After February 7, 2023, all requests made to the Apple Search Ads iAd Attribution API will return with a value of `"iad-attribution"` `=` `false`, or errors. See [`requestAttributionDetails(_:)`](adclient/requestattributiondetails(_:).md). Use the [`AdServices`](https://developer.apple.com/documentation/AdServices) framework for current attribution integration with the [`Apple Search Ads`](https://developer.apple.com/documentation/apple_search_ads) Campaign Management API for devices using iOS 14.3 and later. Attribution isn’t available for downloads and redownloads from devices using iOS 14.2 or earlier.
-
 Attribution data consists of campaign metadata from app ads, such as app downloads and redownloads that result from taps on ads created through the Apple Search Ads user interface or the Apple Search Ads API.
 
 All Apple Search Ads data that Apple collects is subject to the [`Apple Privacy Policy`](https://developer.apple.comhttps://www.apple.com/privacy).

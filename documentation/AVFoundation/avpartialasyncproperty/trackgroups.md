@@ -22,7 +22,7 @@ static var trackGroups: AVAsyncProperty<Root, [AVAssetTrackGroup]> { get }
 
 #### Discussion
 
-Use the [`load(_:)`](avasynchronouskeyvalueloading/load(_:).md) method to retrieve the property value.
+Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
 
 The value is an empty array if the asset has no track groups.
 

@@ -33,7 +33,7 @@ class MTRClusterCommissionerControl
 - [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclustercommissionercontrol/readattributefeaturemap(with:).md)
 - [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclustercommissionercontrol/readattributegeneratedcommandlist(with:).md)
 - [func readAttributeSupportedDeviceCategories(with: MTRReadParams?) -> [String : Any]?](mtrclustercommissionercontrol/readattributesupporteddevicecategories(with:).md)
-- [func requestCommissioningApproval(with: MTRCommissionerControlClusterRequestCommissioningApprovalParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustercommissionercontrol/requestcommissioningapproval(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func requestCommissioningApproval(with: MTRCommissionerControlClusterRequestCommissioningApprovalParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustercommissionercontrol/requestcommissioningapproval(with:expectedvalues:expectedvalueinterval:completion:).md)
 
 ## Relationships
 

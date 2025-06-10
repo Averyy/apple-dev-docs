@@ -16,7 +16,7 @@ init(ciImage: CIImage)
 
 #### Return Value
 
-An [`NSBitmapImageRep`](nsbitmapimagerep.md) object initialized from the contents of the Core Image ([`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage)) object.
+An [`NSBitmapImageRep`](nsbitmapimagerep.md) object initialized from the contents of the Core Image ([`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage)) object.
 
 #### Discussion
 
@@ -24,7 +24,7 @@ The image in the `ciImage` parameter must be fully rendered before the receiver 
 
 By the time this method returns, the resultant [`NSBitmapImageRep`](nsbitmapimagerep.md) object can have its raw pixel data inspected, can be put on the pasteboard, and can be encoded to any of the standard image formats that [`NSBitmapImageRep`](nsbitmapimagerep.md) supports (JPEG, TIFF, and so on.)
 
-If you pass in a [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) object whose extents are not finite, this method raises an exception.
+If you pass in a [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) object whose extents are not finite, this method raises an exception.
 
 ## Parameters
 

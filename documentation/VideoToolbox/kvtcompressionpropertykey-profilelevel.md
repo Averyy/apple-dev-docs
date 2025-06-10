@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_ProfileLevel
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The profile and level for the encoded bitstream.

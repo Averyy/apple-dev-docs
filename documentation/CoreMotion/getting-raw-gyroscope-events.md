@@ -14,8 +14,6 @@ You access the raw gyroscope data using the classes of the Core Motion framework
 
 > ❗ **Important**:  If your app relies on the presence of gyroscope hardware, configure the `UIRequiredDeviceCapabilities` key of its `Info.plist` file with the `gyroscope` value. For more information about the meaning of this key, see [`Information Property List Key Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/).
 
- If your app relies on the presence of gyroscope hardware, configure the `UIRequiredDeviceCapabilities` key of its `Info.plist` file with the `gyroscope` value. For more information about the meaning of this key, see [`Information Property List Key Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/).
-
 The raw rotation rate data delivered by the gyroscope interfaces may be biased by other factors such as temperature. If your app requires unbiased rotation values, use the device-motion interfaces instead. The device-motion interfaces use special algorithms to remove any bias and deliver more precise rotation values. For more information, see [`Getting processed device-motion data`](getting-processed-device-motion-data.md).
 
 For information about the coordinate axes of different device types, see [`CMMotionManager`](cmmotionmanager.md).
@@ -25,8 +23,6 @@ For information about the coordinate axes of different device types, see [`CMMot
 Gyroscope data might be unavailable for a variety of reasons, so verify that the data is available before you try to obtain it. Check the value of the [`isGyroAvailable`](cmmotionmanager/isgyroavailable.md) property of `CMMotionManager` and make sure it’s `true`. If it’s `false`, starting updates doesn’t deliver any data to your app.
 
 > ❗ **Important**:  In visionOS, gyroscope data is available only when your app has an open immersive space. For more information, see [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace).
-
- In visionOS, gyroscope data is available only when your app has an open immersive space. For more information, see [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace).
 
 ##### Get Gyroscope Data Only When You Need It
 

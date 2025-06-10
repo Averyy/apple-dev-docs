@@ -108,11 +108,6 @@ Once a session enters the `.completed` state, your app can transfer the images t
   Starts the session with the provided output image directory and optional checkpoint directory.
 - [func startDetecting() -> Bool](objectcapturesession/startdetecting.md)
   Requests that the session should start detecting the object in the center of the camera.
-### Type Aliases
-- [ObjectCaptureSession.ID](objectcapturesession/id.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [Identifiable Implementations](objectcapturesession/identifiable-implementations.md)
 
 ## Relationships
 
@@ -121,6 +116,7 @@ Once a session enters the `.completed` state, your app can transfer the images t
 - [Identifiable](../Swift/Identifiable.md)
 - [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

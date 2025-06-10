@@ -1,6 +1,6 @@
 # setBorderCollapse(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

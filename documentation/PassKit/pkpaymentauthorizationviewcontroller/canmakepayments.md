@@ -15,7 +15,7 @@ Returns whether the user can make payments.
 ## Declaration
 
 ```swift
-@MainActor
+nonisolated
 class func canMakePayments() -> Bool
 ```
 

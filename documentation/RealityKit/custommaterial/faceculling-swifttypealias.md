@@ -10,6 +10,7 @@ The type of object used to control the removal of polygons that aren’t visible
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

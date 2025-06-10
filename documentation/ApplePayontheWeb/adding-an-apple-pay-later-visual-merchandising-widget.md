@@ -1,6 +1,6 @@
 # Adding an Apple Pay Later visual merchandising widget
 
-**Framework**: Applepayontheweb
+**Framework**: Apple Pay on the Web
 
 Configure and style Apple Pay Later visual merchandising widgets to match your website.
 
@@ -58,4 +58,4 @@ For sizing requirements for the Apple Pay Later visual merchandising widget, alo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/adding-an-apple-pay-later-visual-merchandising-widget)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/adding-an-apple-pay-later-visual-merchandising-widget)*

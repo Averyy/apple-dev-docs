@@ -24,8 +24,6 @@ mutating func appendInterpolation<T>(_ value: @autoclosure @escaping () -> T, al
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated type that adopts the [`CustomStringConvertible`](https://developer.apple.com/documentation/Swift/CustomStringConvertible) protocol to a log message.
 
- You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated type that adopts the [`CustomStringConvertible`](https://developer.apple.com/documentation/Swift/CustomStringConvertible) protocol to a log message.
-
 ## Parameters
 
 - `value`: The interpolated type, which the system automatically wraps in a closure. The type itself doesn’t appear in the log message. Instead, the system incorporates the textual representation the type provides through its implementation of the   protocol.

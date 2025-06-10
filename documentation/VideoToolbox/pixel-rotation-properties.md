@@ -1,6 +1,6 @@
 # Pixel Rotation Properties
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 Properties used to configure a VideoToolbox pixel rotation session.
 

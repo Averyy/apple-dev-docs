@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to install a profile on a device.
+The command to install a configuration profile on a device.
 
 **Availability**:
 - iOS 4.0+
@@ -12,8 +12,6 @@ The command to install a profile on a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,14 +21,14 @@ object InstallProfileCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object InstallProfileCommand.Command](installprofilecommand/command-data.dictionary.md)
-  The request dictionary to install a configuration profile.
+  The command to install a configuration profile on a device.
 
 ## See Also
 
 - [object InstallProfileResponse](installprofileresponse.md)
-  A response from the device after it processes the command to install a configuration profile.
+  A response from the device after it processes the command to install a configuration profile on a device.
 
 
 ---

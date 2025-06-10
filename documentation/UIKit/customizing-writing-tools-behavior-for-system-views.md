@@ -1,6 +1,6 @@
 # Customizing Writing Tools behavior for UIKit views
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Modify the behavior of Writing Tools in standard iOS text views, and adjust your app’s behavior while the feature is active.
 
@@ -36,4 +36,4 @@ If you don’t want Writing Tools to modify portions of your [`UITextView`](uite
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/customizing-writing-tools-behavior-for-system-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/customizing-writing-tools-behavior-for-system-views)*

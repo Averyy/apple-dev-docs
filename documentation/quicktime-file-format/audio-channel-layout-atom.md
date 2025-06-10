@@ -1,6 +1,6 @@
 # Audio channel layout atom ('chan')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An optional extension to the sound sample description specifying audio channel layouts for sound media contained in QuickTime movies.

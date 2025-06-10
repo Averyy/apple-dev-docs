@@ -1,6 +1,6 @@
 # Modify a Subscription Group Localization
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Update a specific localized display name and optional custom app name for a subscription group.

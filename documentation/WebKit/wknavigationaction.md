@@ -1,6 +1,6 @@
 # WKNavigationAction
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that contains information about an action that causes navigation to occur.

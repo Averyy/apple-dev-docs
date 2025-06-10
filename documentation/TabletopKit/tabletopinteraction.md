@@ -35,7 +35,7 @@ struct MoveInteraction: TabletopInteraction.Delegate {
 
 To get information about the equipment that the interaction applies to, use the [`value`](tabletopinteraction/value-swift.property.md) property. To get the phase of the interaction or gesture, use the `Value` [`gesturePhase`](tabletopinteraction/value-swift.struct/gesturephase.md) or [`phase`](tabletopinteraction/value-swift.struct/phase-swift.property.md) properties.
 
-Then execute actions — for example, move equipment when the phase ends — using the [`addAction(_:)`](tabletopinteraction/addaction(_:).md) or [`addActions(_:)`](tabletopinteraction/addactions(_:).md) method.
+Then execute actions — for example, move equipment when the phase ends — using the `addAction(_:)` or [`addActions(_:)`](tabletopinteraction/addactions(_:).md) method.
 
 To start an interaction programmatically, use the `TabletopGame` [`startInteraction(onEquipmentID:)`](tabletopgame/startinteraction(onequipmentid:).md) method.
 
@@ -44,8 +44,8 @@ To start an interaction programmatically, use the `TabletopGame` [`startInteract
 ### Performing actions
 - [TabletopInteraction.Delegate](tabletopinteraction/delegate.md)
   A protocol for objects that manage the entire flow of players interacting with equipment.
-- [func addAction(some TabletopAction)](tabletopinteraction/addaction(_:).md)
 - [func addActions(some Sequence<any TabletopAction>)](tabletopinteraction/addactions(_:).md)
+  Submit a collection of actions tied to this interaction. If the interaction gets canceled, all the associated actions will be automatically rolled back.
 - [func toss(equipmentID: EquipmentIdentifier, as: TossableRepresentation, linearVelocity: Vector3D?, angularVelocity: Vector3D?)](tabletopinteraction/toss(equipmentid:as:linearvelocity:angularvelocity:).md)
   Begins a simulation of a toss of the equipment with the specificied parameters. Equipment that begins a toss in the same TabletopInteraction may interact with each other as well as the game’s boundary.
 - [func end()](tabletopinteraction/end.md)
@@ -73,14 +73,41 @@ To start an interaction programmatically, use the `TabletopGame` [`startInteract
 - [TabletopInteraction.Identifier](tabletopinteraction/identifier.md)
   A unique identifier for interactions.
 ### Structures
+- [TabletopInteraction.CollisionTargets](tabletopinteraction/collisiontargets.md)
+  A set of targets for collision behaviors during an interaction
 - [TabletopInteraction.Configuration](tabletopinteraction/configuration.md)
-  A struct containing the parameters that affect the behavior of the interaction.
+- [TabletopInteraction.DirectInteractionConstants](tabletopinteraction/directinteractionconstants.md)
+  An object that represents the parameters of a direct interaction that cannot be changed while the interaction is active.
+- [TabletopInteraction.DirectPickupBehavior](tabletopinteraction/directpickupbehavior.md)
+  An object that represents the behavior of the pickup phase of the direct interaction. The pickup phase describes how the object moves from its initial pose to the pose it will have when moving rigidly with the input device.
+- [TabletopInteraction.IndirectInteractionConstants](tabletopinteraction/indirectinteractionconstants.md)
+  An object that represents the parameters of an indirect interaction that cannot be changed while the interaction is active.
+- [TabletopInteraction.NewDirectInteractionIntent](tabletopinteraction/newdirectinteractionintent.md)
+  An object that represent the developer’s intent when a new direct interaction is proposed by the system
+- [TabletopInteraction.NewIndirectInteractionIntent](tabletopinteraction/newindirectinteractionintent.md)
+  An object that represent the developer’s intent when a new indirect interaction is proposed by the system
+- [TabletopInteraction.ProgrammaticInteractionConstants](tabletopinteraction/programmaticinteractionconstants.md)
+  An object that represents the parameters of a programmatic interaction that cannot be changed while the interaction is active.
+- [TabletopInteraction.TossOutcome](tabletopinteraction/tossoutcome.md)
+  An object representing the final outcome of tossing one equipment, as it appears at the end of its simulation.
 ### Instance Methods
+- [func addAction(some TabletopAction)](tabletopinteraction/addaction(_:)-1cety.md)
+  Submit an action tied to this interaction. If the interaction gets canceled, all the associated actions will be automatically rolled back.
+- [func addAction(some CustomAction)](tabletopinteraction/addaction(_:)-4rx16.md)
+  Submit a custom action tied to this interaction. If the interaction gets canceled, all the associated actions will be automatically rolled back.
 - [func setConfiguration(TabletopInteraction.Configuration)](tabletopinteraction/setconfiguration(_:).md)
   Sets the configuration of this interaction.
 ### Enumerations
+- [TabletopInteraction.Constants](tabletopinteraction/constants.md)
+- [TabletopInteraction.DeadZone](tabletopinteraction/deadzone.md)
+  The dead zone allows to specify how much the input device should move or rotate from its initial pose to start moving the object.
+- [TabletopInteraction.HoverAlignmentBehavior](tabletopinteraction/hoveralignmentbehavior.md)
+  An object that describes how the controlled equipment should behave when approaching a target.
+- [TabletopInteraction.HoverAlignmentSource](tabletopinteraction/hoveralignmentsource.md)
+  An object representing the types of features that can be auto aligned by the `HoverAlignmentBehavior`
+- [TabletopInteraction.IndirectRotationAlignmentBehavior](tabletopinteraction/indirectrotationalignmentbehavior.md)
+  An object that represents how the equipment’s orientation should be automatically aligned during the course of the interaction.
 - [TabletopInteraction.NewInteractionIntent](tabletopinteraction/newinteractionintent.md)
-  The possible outcomes when a new interaction is about to be started.
 
 ## See Also
 
@@ -91,7 +118,7 @@ To start an interaction programmatically, use the `TabletopGame` [`startInteract
 - [struct TableVisualState](tablevisualstate.md)
   A structure that represents the appearance of an object on the table.
 - [struct TableCursor](tablecursor.md)
-  A visual indicator that represents the destination of player interactions with equipment.
+  A cursor conveys information about one equipment that is currently being controlled by an interaction.
 - [struct TableCursorIdentifier](tablecursoridentifier.md)
   A unique identifier for cursors.
 

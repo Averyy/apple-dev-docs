@@ -7,8 +7,6 @@ The payload you use to configure Autonomous Single App mode.
 
 **Availability**:
 - macOS 10.13.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,21 +20,23 @@ Specify `com.apple.asam` as the payload type.
 
 The system only allows installation of one profile of this type, and it requires installation through a user-approved MDM server. Apps listed in this profile have low-level access to the system, including, but not limited to, key logging and user interface manipulation outside the app’s context.
 
+> ❗ **Important**:  If two dictionaries contain the same `BundleIdentifier` value but a different `TeamIdentifier` value, an error occurs and the system doesn’t install the profile.
+
 ##### Profile Availability
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | - |
-| Allow Manual Install | - |
-| Requires Supervision | - |
-| Requires User Approved MDM | macOS |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | macOS |
+| User channel | NA |
+| Allow manual install | NA |
+| Requires supervision | NA |
+| Requires user-approved MDM | macOS |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -79,7 +79,7 @@ The system only allows installation of one profile of this type, and it requires
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object AutonomousSingleAppMode.AllowedApplicationsItem](autonomoussingleappmode/allowedapplicationsitem.md)
   A dictionary that specifies an app that can be granted access to the Accessibilty APIs.
 

@@ -57,13 +57,22 @@ struct NormalizedPoint
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [struct NormalizedRect](normalizedrect.md)
   The location and dimensions of a rectangle.
+- [typealias NormalizedRegion](normalizedregion.md)
+  A polygon composed of normalized points.
 - [struct NormalizedCircle](normalizedcircle.md)
   The center point and radius of a 2D circle.
+- [protocol BoundingBoxProviding](boundingboxproviding.md)
+  A protocol for objects that have a bounding box.
+- [protocol BoundingRegionProviding](boundingregionproviding.md)
+  A protocol for objects that have a defined boundary in an image.
+- [protocol QuadrilateralProviding](quadrilateralproviding.md)
+  A protocol for objects that have a bounding quadrilateral.
 - [enum CoordinateOrigin](coordinateorigin.md)
   The origin of a coordinate system relative to an image.
 

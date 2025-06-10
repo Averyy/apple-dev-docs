@@ -1,6 +1,6 @@
 # Preview(_:as:using:widget:contentStates:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: macro
 
 Preview a widget with an activity configuration, using the specified attributes and content states.

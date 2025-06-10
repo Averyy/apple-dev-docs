@@ -1,6 +1,6 @@
 # performTextFinderAction(_:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Performs all find oriented actions.

@@ -21,7 +21,6 @@
 - [kUSBHostPortPropertyRemovable](kusbhostportpropertyremovable.md)
 - [kUSBHostPortPropertyPortNumber](kusbhostportpropertyportnumber.md)
 - [kUSBHostPortPropertyOvercurrent](kusbhostportpropertyovercurrent.md)
-- [kUSBHostPortPropertyMux](kusbhostportpropertymux.md)
 - [kUSBHostPortPropertyExternalDeviceResetController](kusbhostportpropertyexternaldeviceresetcontroller.md)
 - [kUSBHostPortPropertyExternalDevicePowerController](kusbhostportpropertyexternaldevicepowercontroller.md)
 - [kUSBHostPortPropertyDisconnectInterval](kusbhostportpropertydisconnectinterval.md)
@@ -29,6 +28,7 @@
 - [kUSBHostPortPropertyConnectable](kusbhostportpropertyconnectable.md)
 - [kUSBHostPortPropertyCompanionPortNumber](kusbhostportpropertycompanionportnumber.md)
 - [kUSBHostPortPropertyCompanionIndex](kusbhostportpropertycompanionindex.md)
+- [kUSBHostPortPropertyCardReaderValidateDescriptors](kusbhostportpropertycardreadervalidatedescriptors.md)
 
 
 ---

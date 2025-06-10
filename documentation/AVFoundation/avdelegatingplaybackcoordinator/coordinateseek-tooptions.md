@@ -1,6 +1,6 @@
 # coordinateSeek(to:options:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Coordinates a seek to the specified time for all connected participants.

@@ -1,6 +1,6 @@
 # metadataVideoSrc
 
-**Framework**: Livephotoskitjs  
+**Framework**: LivePhotosKit JS  
 **Kind**: property
 
 A string or array buffer that contains metadata about the properties of a Live Photo.

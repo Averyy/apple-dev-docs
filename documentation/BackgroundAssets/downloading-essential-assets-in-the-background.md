@@ -1,6 +1,6 @@
 # Downloading essential assets in the background
 
-**Framework**: Backgroundassets
+**Framework**: Background Assets
 
 Fetch the assets your app requires before its first launch using an app extension and the Background Assets framework.
 
@@ -34,4 +34,4 @@ Before you run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/BackgroundAssets/downloading-essential-assets-in-the-background)*
+*[View on Apple Developer](https://developer.apple.com/documentation/backgroundassets/downloading-essential-assets-in-the-background)*

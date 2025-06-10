@@ -12,6 +12,7 @@ A structure that contains options for filtering results in a search.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 11.0+
 
 ## Declaration
 
@@ -59,6 +60,7 @@ struct Options
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

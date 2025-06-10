@@ -1,6 +1,6 @@
 # Defining Relevant Shortcuts for the Siri Watch Face
 
-**Framework**: Sirikit
+**Framework**: SiriKit
 
 Inform Siri when your app’s shortcuts may be useful to the user.
 
@@ -131,4 +131,4 @@ Replace the list when your app needs to add or remove a relevant shortcut. It is
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/defining-relevant-shortcuts-for-the-siri-watch-face)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/defining-relevant-shortcuts-for-the-siri-watch-face)*

@@ -40,7 +40,7 @@ Swift clients should prefer the asynchronous `images(for:)` method instead.
 
 - [func image(at: CMTime) async throws -> (image: CGImage, actualTime: CMTime)](avassetimagegenerator/image(at:).md)
   Generates an image for a requested time.
-- [func images(for: [CMTime]) -> AVAssetImageGenerator.Images](avassetimagegenerator/images(for:).md)
+- [func images(for: [CMTime]) -> sending AVAssetImageGenerator.Images](avassetimagegenerator/images(for:).md)
   Generates images for times within the video timeline.
 - [func generateCGImageAsynchronously(for: CMTime, completionHandler: (CGImage?, CMTime, (any Error)?) -> Void)](avassetimagegenerator/generatecgimageasynchronously(for:completionhandler:).md)
   Generates an image asynchronously for a requested time, and returns the result in a callback.

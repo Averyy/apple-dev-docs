@@ -1,6 +1,6 @@
 # synchronize()
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Synchronizes the record from the directory to get current data and commit changes.

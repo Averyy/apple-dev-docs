@@ -16,6 +16,14 @@
 func insertCollaborationItemProvider(_ itemProvider: NSItemProvider) async -> Bool
 ```
 
+#### Discussion
+
+If the return value is YES, the itemProvider was added to the composition.  The itemProvider must be non-nil.
+
+## Parameters
+
+- `itemProvider`: Specifying the intended content for collaboration
+
 
 ---
 

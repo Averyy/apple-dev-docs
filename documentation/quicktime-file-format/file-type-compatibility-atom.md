@@ -1,6 +1,6 @@
 # File type compatibility atom ('ftyp')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that identifies the file type specifications with which the file is compatible.

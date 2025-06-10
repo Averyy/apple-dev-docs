@@ -5,9 +5,6 @@
 
 A container for vertex indices of lines or triangles.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift

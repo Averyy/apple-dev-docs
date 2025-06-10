@@ -1,6 +1,6 @@
 # group
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: property
 
 The group that the component’s entity belongs to.
@@ -10,6 +10,7 @@ The group that the component’s entity belongs to.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

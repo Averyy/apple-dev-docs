@@ -40,6 +40,7 @@ enum CSVWritingError
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Error](../Swift/Error.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Downsampling Mode Constants
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 Supported constant values for the [`kVTPixelTransferPropertyKey_DownsamplingMode`](kvtpixeltransferpropertykey_downsamplingmode.md) key.
 

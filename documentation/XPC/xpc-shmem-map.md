@@ -1,6 +1,6 @@
 # xpc_shmem_map(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Maps the region that the XPC shared memory object boxes into the caller’s address space.

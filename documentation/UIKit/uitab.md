@@ -71,7 +71,7 @@ For more information, see [`Elevating your iPad app with a tab bar and sidebar`]
 - [var isEnabled: Bool](uitab/isenabled.md)
   Determines if the tab is enabled. When NO, tabs will have a disabled appearance and cannot be selected by the user. Default is YES.
 - [var managingTabGroup: UITabGroup?](uitab/managingtabgroup.md)
-  The managing tab group for the tab. This returns the rootmost `UITabGroup` in the tab’s parent hierarchy with an active `managingNavigationController`. This can be different to `parent` if the tab is nested in multiple levels of tab groups. If the tab does not belong to a hierarchy with a managing navigation controller, then this will return nil. Default is nil.
+  The managing tab group for the tab. This returns the root-most `UITabGroup` in the tab’s parent hierarchy with an active `managingNavigationController`. This can be different to `parent` if the tab is nested in multiple levels of tab groups. If the tab does not belong to a hierarchy with a managing navigation controller, then this will return nil. Default is nil.
 
 ## Relationships
 
@@ -111,6 +111,7 @@ For more information, see [`Elevating your iPad app with a tab bar and sidebar`]
   A control that displays one or more buttons in a tab bar for selecting between different subtasks, views, or modes in an app.
 - [class UITabBarItem](uitabbaritem.md)
   An object that describes an item in a tab bar.
+- [class UITabAccessory](uitabaccessory.md)
 - [class UISearchTab](uisearchtab.md)
   A tab subclass that represents the system’s search tab.
 - [class UITabGroup](uitabgroup.md)

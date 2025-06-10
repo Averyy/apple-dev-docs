@@ -37,10 +37,6 @@ Third-party storage services can also provide access to the documents they manag
 
 > ❗ **Important**:  Don’t assume that the files you access are local. Users can store files in iCloud Drive, or in any cloud storage that provides a current File Provider extension. Remember that the system (or other apps) might modify the files that the document browser provides at any time. Therefore, you must coordinate your access to these files using either a [`UIDocument`](uidocument.md) subclass, or [`NSFilePresenter`](https://developer.apple.com/documentation/Foundation/NSFilePresenter) and [`NSFileCoordinator`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator) objects.
 
- Don’t assume that the files you access are local. Users can store files in iCloud Drive, or in any cloud storage that provides a current File Provider extension.
-
-Remember that the system (or other apps) might modify the files that the document browser provides at any time. Therefore, you must coordinate your access to these files using either a [`UIDocument`](uidocument.md) subclass, or [`NSFilePresenter`](https://developer.apple.com/documentation/Foundation/NSFilePresenter) and [`NSFileCoordinator`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator) objects.
-
 ## Topics
 
 ### Creating a document browser
@@ -127,6 +123,7 @@ Remember that the system (or other apps) might modify the files that the documen
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

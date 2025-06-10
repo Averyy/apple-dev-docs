@@ -1,6 +1,6 @@
 # CMAttitude
 
-**Framework**: Coremotion  
+**Framework**: Core Motion  
 **Kind**: class
 
 The device’s orientation relative to a known frame of reference at a point in time.
@@ -77,4 +77,4 @@ The `CMAttitude` class offers three different mathematical representations of at
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreMotion/cmattitude)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coremotion/cmattitude)*

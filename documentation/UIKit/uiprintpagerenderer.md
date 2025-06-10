@@ -14,7 +14,6 @@ An object that draws pages of content to print, with or without the assistance o
 ## Declaration
 
 ```swift
-@MainActor
 class UIPrintPageRenderer
 ```
 
@@ -85,7 +84,6 @@ You may assign one or more print formatters — [`UIPrintFormatter`](uiprintform
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

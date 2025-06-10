@@ -1,6 +1,6 @@
 # WKWebsiteDataTypeOfflineWebApplicationCache
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 HTML offline web app caches.

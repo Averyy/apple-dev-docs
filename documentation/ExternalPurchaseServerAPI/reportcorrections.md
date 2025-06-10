@@ -15,15 +15,11 @@ There are two types of corrections:
 
 > ❗ **Important**: The [`netAmountTaxExclusive`](netamounttaxexclusive.md) must represent the correct net amount (excluding taxes) for the transaction, including in line items that are corrections.
 
-The [`netAmountTaxExclusive`](netamounttaxexclusive.md) must represent the correct net amount (excluding taxes) for the transaction, including in line items that are corrections.
-
 ##### Correct Data in a Line Item
 
 To submit a line item with corrections, use the line item’s original [`lineItemId`](lineitemid.md) and include the [`restatement`](restatement.md) flag set to `true`. Make corrections to any type of line item: [`OneTimeBuyLineItem`](onetimebuylineitem.md), [`SubscriptionBuyLineItem`](subscriptionbuylineitem.md), and [`RefundLineItem`](refundlineitem.md).
 
 > ❗ **Important**: Restated line items overwrite the originally reported line item. Include all the data in the line item — even fields that are the same as the previous version.
-
-Restated line items overwrite the originally reported line item. Include all the data in the line item — even fields that are the same as the previous version.
 
 Apple uses only the most recent version of the line item.
 

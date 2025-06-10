@@ -29,8 +29,6 @@ If you call [`view(atColumn:row:makeIfNecessary:)`](nstableview/view(atcolumn:ro
 
 > ❗ **Important**:  To avoid the possibility of a hang due to unexpected recursion, don’t call geometry-calculating methods such as [`bounds`](nsview/bounds.md),  [`rect(ofColumn:)`](nstableview/rect(ofcolumn:).md), or any [`NSTableView`](nstableview.md) method that calls [`tile()`](nstableview/tile().md) within your implementation of this method, such as [`intercellSpacing`](nstableview/intercellspacing.md). To confirm your code isn’t inadvertently causing any calls to [`tile()`](nstableview/tile().md), set a breakpoint on [`tile()`](nstableview/tile().md) in Xcode.
 
- To avoid the possibility of a hang due to unexpected recursion, don’t call geometry-calculating methods such as [`bounds`](nsview/bounds.md),  [`rect(ofColumn:)`](nstableview/rect(ofcolumn:).md), or any [`NSTableView`](nstableview.md) method that calls [`tile()`](nstableview/tile().md) within your implementation of this method, such as [`intercellSpacing`](nstableview/intercellspacing.md). To confirm your code isn’t inadvertently causing any calls to [`tile()`](nstableview/tile().md), set a breakpoint on [`tile()`](nstableview/tile().md) in Xcode.
-
 ## Parameters
 
 - `tableView`: The table view that sent the message.

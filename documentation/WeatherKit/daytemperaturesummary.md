@@ -1,6 +1,6 @@
 # DayTemperatureSummary
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that describes the temperature summary for a day.
@@ -48,6 +48,7 @@ struct DayTemperatureSummary
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

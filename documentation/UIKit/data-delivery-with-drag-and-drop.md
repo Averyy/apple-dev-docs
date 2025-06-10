@@ -1,6 +1,6 @@
 # Data delivery with drag and drop
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Share data between iPad apps during a drag and drop operation using an item provider.
 
@@ -53,13 +53,13 @@ func tableView(_ tableView: UITableView,
 
 In both cases, the [`UITableViewDragDelegate`](uitableviewdragdelegate.md) methods create item providers using instances of the `ContactCard` class. This class implements the [`NSItemProviderWriting`](https://developer.apple.com/documentation/Foundation/NSItemProviderWriting) protocol, making it possible to initialize a new item provider with a contact card object.
 
-By conforming to this protocol, a contact card object can tell the item provider the data types it supports; the sample app supports vCard and plain text. A contact card can also load data of a specified type, which an item provider retrieves by calling the contact card’s [`loadData(withTypeIdentifier:forItemProviderCompletionHandler:)`](https://developer.apple.com/documentation/foundation/nsitemproviderwriting/2888302-loaddata) method.
+By conforming to this protocol, a contact card object can tell the item provider the data types it supports; the sample app supports vCard and plain text. A contact card can also load data of a specified type, which an item provider retrieves by calling the contact card’s [`loadData(withTypeIdentifier:forItemProviderCompletionHandler:)`](https://developer.apple.com/documentation/Foundation/NSItemProviderWriting/loadData(withTypeIdentifier:forItemProviderCompletionHandler:)) method.
 
 ##### Add Drop Support
 
-When the user drops contact information from another app into the sample app, the system calls the [`tableView(_:performDropWith:)`](uitableviewdropdelegate/tableview(_:performdropwith:).md) method. `ContactsTableViewController` implements this method to handle the drop operation. The implementation of the method uses the drop item’s item provider to call [`loadObject(ofClass:completionHandler:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/2888336-loadobject), which retrieves a `ContactCard` object representing the dropped contact information.
+When the user drops contact information from another app into the sample app, the system calls the [`tableView(_:performDropWith:)`](uitableviewdropdelegate/tableview(_:performdropwith:).md) method. `ContactsTableViewController` implements this method to handle the drop operation. The implementation of the method uses the drop item’s item provider to call [`loadObject(ofClass:completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/loadObject(ofClass:completionHandler:)-8ak5d), which retrieves a `ContactCard` object representing the dropped contact information.
 
-The `loadObject` method asks the `ContactCard` class for the contact card object. The class, which conforms to the [`NSItemProviderReading`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading) protocol, implements the [`object(withItemProviderData:typeIdentifier:)`](https://developer.apple.com/documentation/foundation/nsitemproviderreading/2919479-object) class method, which creates and initializes a contact card object with the item provider data.
+The `loadObject` method asks the `ContactCard` class for the contact card object. The class, which conforms to the [`NSItemProviderReading`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading) protocol, implements the [`object(withItemProviderData:typeIdentifier:)`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading/object(withItemProviderData:typeIdentifier:)) class method, which creates and initializes a contact card object with the item provider data.
 
 When the user drops a contact at a specific location within the table view, the completion handler (from the `loadObject` call) creates a placeholder that displays a gap at the drop location. Next, the handler inserts the dropped contact into the list of contacts at the index path of the drop location. And finally, the completion handler replaces the placeholder with a view displaying contact.
 
@@ -129,4 +129,4 @@ _ = dropItem.dragItem.itemProvider.loadObject(
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/data-delivery-with-drag-and-drop)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/data-delivery-with-drag-and-drop)*

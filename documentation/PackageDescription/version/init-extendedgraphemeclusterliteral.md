@@ -11,6 +11,10 @@ Initializes a version struct with the provided extended grapheme cluster.
 init(extendedGraphemeClusterLiteral value: String)
 ```
 
+## Parameters
+
+- `value`: An extended grapheme cluster to use for creating a new   version struct.
+
 
 ---
 

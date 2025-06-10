@@ -1,6 +1,6 @@
 # ForecastMinute
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 The precipitation forecast for a specified minute.

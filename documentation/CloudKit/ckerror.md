@@ -126,6 +126,7 @@ If you attempt to save a record and the server’s version of that record is new
   The number of seconds to wait before you retry the request.
 ### Type Properties
 - [static var errorDomain: String](ckerror/errordomain.md)
+- [static var participantAlreadyInvited: CKError.Code](ckerror/participantalreadyinvited.md)
 
 ## Relationships
 
@@ -135,6 +136,7 @@ If you attempt to save a record and the server’s version of that record is new
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

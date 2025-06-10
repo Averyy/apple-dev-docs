@@ -1,6 +1,6 @@
 # Creating screen annotations for objects in an AR experience
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Annotate an AR experience with virtual sticky notes that you display onscreen over real and virtual objects.
 
@@ -272,4 +272,4 @@ func animateTo(_ point: CGPoint) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/creating-screen-annotations-for-objects-in-an-ar-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/creating-screen-annotations-for-objects-in-an-ar-experience)*

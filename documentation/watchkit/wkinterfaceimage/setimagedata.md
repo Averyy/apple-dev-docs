@@ -1,6 +1,6 @@
 # setImageData(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the displayed image using a formatted data object.

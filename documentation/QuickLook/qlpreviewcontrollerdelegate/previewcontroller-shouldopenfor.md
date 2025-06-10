@@ -1,6 +1,6 @@
 # previewController(_:shouldOpen:for:)
 
-**Framework**: Quicklook  
+**Framework**: Quick Look  
 **Kind**: method
 
 Tells the delegate that the preview controller is trying to open a URL.

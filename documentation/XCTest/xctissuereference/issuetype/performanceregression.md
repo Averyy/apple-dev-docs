@@ -1,6 +1,6 @@
 # XCTIssueReference.IssueType.performanceRegression
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 A test failure due to a performance regression.

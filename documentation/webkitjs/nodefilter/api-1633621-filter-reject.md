@@ -1,6 +1,6 @@
 # FILTER_REJECT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

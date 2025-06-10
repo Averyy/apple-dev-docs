@@ -6,6 +6,7 @@
 An action that presents an immersive space.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -18,6 +19,8 @@ struct OpenImmersiveSpaceAction
 #### Overview
 
 Use the [`openImmersiveSpace`](environmentvalues/openimmersivespace.md) environment value to get the instance of this structure for a given [`Environment`](environment.md). Then call the instance to present a space. You call the instance directly because it defines `callAsFunction()` methods that Swift calls when you call the instance.
+
+On macOS, this may be used to open a remote immersive space declared with [`RemoteImmersiveSpace`](remoteimmersivespace.md). When your app opens a remote immersive space, the system may ask the user for a preferred device with which to display the content.
 
 For example, you can define a button that opens a specified planet in an immersive space:
 
@@ -72,6 +75,7 @@ If you provide a value when you open the space, the scene’s trailing closure r
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

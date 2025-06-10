@@ -1,6 +1,6 @@
 # Adding Custom Graphics to a PDF
 
-**Framework**: Pdfkit
+**Framework**: PDFKit
 
 Create and add custom annotation and page graphics to your PDF document.
 
@@ -130,4 +130,4 @@ class LineAnnotation: PDFAnnotation {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PDFKit/adding-custom-graphics-to-a-pdf)*
+*[View on Apple Developer](https://developer.apple.com/documentation/pdfkit/adding-custom-graphics-to-a-pdf)*

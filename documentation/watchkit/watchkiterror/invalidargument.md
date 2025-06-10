@@ -1,6 +1,6 @@
 # invalidArgument
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 An invalid argument error.

@@ -22,6 +22,7 @@ struct Participant
 ## Mentions
 
 - [Synchronizing data during a SharePlay activity](synchronizing-data-during-a-shareplay-activity.md)
+- [Configure your visionOS app for sharing with people nearby](configure-your-app-for-sharing-with-people-nearby.md)
 
 #### Overview
 
@@ -42,6 +43,8 @@ You don’t create participant objects directly. The system creates a participan
 ### Instance Properties
 - [var hashValue: Int](participant/hashvalue.md)
   The hash value.
+- [var isNearbyWithLocalParticipant: Bool](participant/isnearbywithlocalparticipant.md)
+  A Boolean value that indicates whether the participant is physically nearby with the local participant.
 ### Instance Methods
 - [func hash(into: inout Hasher)](participant/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
@@ -61,6 +64,7 @@ You don’t create participant objects directly. The system creates a participan
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

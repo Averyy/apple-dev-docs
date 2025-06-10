@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_RealTime
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A Boolean value indicating whether it’s recommended that the video decoder perform decompression in real time.

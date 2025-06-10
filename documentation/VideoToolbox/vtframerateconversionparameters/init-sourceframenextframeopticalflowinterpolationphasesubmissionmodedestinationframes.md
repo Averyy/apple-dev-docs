@@ -1,11 +1,14 @@
 # init(sourceFrame:nextFrame:opticalFlow:interpolationPhase:submissionMode:destinationFrames:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: init
 
 Creates a new frame rate conversion parameters object.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
 
 ## Declaration

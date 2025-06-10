@@ -1,6 +1,6 @@
 # willBeginMeasuring()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 A method that XCTest calls when it’s ready to begin running the measured code.

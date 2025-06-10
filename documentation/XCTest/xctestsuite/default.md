@@ -1,6 +1,6 @@
 # default
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 Creates a suite of test suites that represents all test case methods in the current runtime.

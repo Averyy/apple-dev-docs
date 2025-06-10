@@ -6,11 +6,11 @@
 Blend factor of one minus source alpha. This option supports dual-source blending and reads from the second color output of the fragment function.
 
 **Availability**:
-- iOS 10.11+
-- iPadOS 10.11+
+- iOS 11.0+
+- iPadOS 11.0+
 - Mac Catalyst 13.1+
 - macOS 10.12+
-- tvOS 10.0+
+- tvOS 11.0+
 - visionOS 1.0+
 
 ## Declaration

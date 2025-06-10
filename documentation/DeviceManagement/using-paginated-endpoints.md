@@ -1,6 +1,6 @@
 # Using Paginated Endpoints
 
-**Framework**: Devicemanagement
+**Framework**: Device Management
 
 Manage paginated endpoints to efficiently work with large record sets.
 
@@ -272,4 +272,4 @@ The response that contains the updated data looks like the following:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/using-paginated-endpoints)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/using-paginated-endpoints)*

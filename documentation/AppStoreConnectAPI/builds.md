@@ -25,8 +25,10 @@ Once the build is in the system, you can use the API to perform actions like:
   Get the app information for a specific build.
 - [Read the App Store Version Information of a Build](get-v1-builds-_id_-appstoreversion.md)
   Get the App Store version of a specific build.
+- [GET /v1/builds/{id}/relationships/appStoreVersion](get-v1-builds-_id_-relationships-appstoreversion.md)
 - [Read the Prerelease Version of a Build](get-v1-builds-_id_-prereleaseversion.md)
   Get the prerelease version for a specific build.
+- [GET /v1/builds/{id}/relationships/preReleaseVersion](get-v1-builds-_id_-relationships-prereleaseversion.md)
 - [Read usage metrics for a beta build](get-v1-builds-_id_-metrics-betabuildusages.md)
   Get usage metrics for a specific build.
 ### Modifying Builds
@@ -51,15 +53,25 @@ Once the build is in the system, you can use the API to perform actions like:
 ### Checking Beta Review Submission Status
 - [Read the Beta App Review Submission of a Build](get-v1-builds-_id_-betaappreviewsubmission.md)
   Get the beta app review submission status for a specific build.
+- [GET /v1/builds/{id}/relationships/betaAppReviewSubmission](get-v1-builds-_id_-relationships-betaappreviewsubmission.md)
 ### Getting Information Associated with Builds
 - [Read the Build Beta Details Information of a Build](get-v1-builds-_id_-buildbetadetail.md)
   Get the beta test details for a specific build.
+- [GET /v1/builds/{id}/relationships/buildBetaDetail](get-v1-builds-_id_-relationships-buildbetadetail.md)
 - [Read the App Encryption Declaration of a Build](get-v1-builds-_id_-appencryptiondeclaration.md)
   Read an app encryption declaration associated with a specific build.
 - [Get the App Encryption Declaration ID for a Build](get-v1-builds-_id_-relationships-appencryptiondeclaration.md)
   Get the beta app encryption declaration resource ID associated with a build.
 - [List All Beta Build Localizations of a Build](get-v1-builds-_id_-betabuildlocalizations.md)
   Get a list of localized beta test information for a specific build.
+- [GET /v1/builds/{id}/relationships/betaBuildLocalizations](get-v1-builds-_id_-relationships-betabuildlocalizations.md)
+- [List All Diagnostic Signatures for a Build](get-v1-builds-_id_-diagnosticsignatures.md)
+  List the aggregate backtrace signatures captured for a specific build.
+- [List All Icons for a Build](get-v1-builds-_id_-icons.md)
+  List all the icons for various platforms delivered with a build.
+- [GET /v1/builds/{id}/relationships/icons](get-v1-builds-_id_-relationships-icons.md)
+- [GET /v1/builds/{id}/relationships/diagnosticSignatures](get-v1-builds-_id_-relationships-diagnosticsignatures.md)
+- [GET /v1/builds/{id}/relationships/appStoreVersion](get-v1-builds-_id_-relationships-appstoreversion.md)
 ### Objects
 - [object Build](build.md)
   The data structure that represents a Builds resource.
@@ -85,6 +97,15 @@ Once the build is in the system, you can use the API to perform actions like:
   An image asset, including its height, width, and template URL.
 - [object BetaBuildUsagesV1MetricResponse](betabuildusagesv1metricresponse.md)
   A response that contains one or more beta build metric resources.
+- [object BuildAppLinkageResponse](buildapplinkageresponse.md)
+- [object BuildAppStoreVersionLinkageResponse](buildappstoreversionlinkageresponse.md)
+- [object BuildBetaAppReviewSubmissionLinkageResponse](buildbetaappreviewsubmissionlinkageresponse.md)
+- [object BuildBetaBuildLocalizationsLinkagesResponse](buildbetabuildlocalizationslinkagesresponse.md)
+- [object BuildBetaDetailBuildLinkageResponse](buildbetadetailbuildlinkageresponse.md)
+- [object BuildDiagnosticSignaturesLinkagesResponse](builddiagnosticsignatureslinkagesresponse.md)
+- [object BuildIconsLinkagesResponse](buildiconslinkagesresponse.md)
+- [object BuildPerfPowerMetricsLinkagesResponse](buildperfpowermetricslinkagesresponse.md)
+- [object BuildPreReleaseVersionLinkageResponse](buildprereleaseversionlinkageresponse.md)
 
 ## See Also
 

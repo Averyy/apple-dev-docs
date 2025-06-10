@@ -1,6 +1,6 @@
 # PhysicsBodyComponent
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 A component that defines an entity’s behavior in physics body simulations.
@@ -10,6 +10,7 @@ A component that defines an entity’s behavior in physics body simulations.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -60,24 +61,22 @@ Note the following when considering applying a non-uniform scale to an entity:
 ### Setting mass properties
 - [var massProperties: PhysicsMassProperties](physicsbodycomponent/massproperties.md)
   The physics body’s mass properties, like inertia and center of mass.
-### Registering a component type
-- [static func registerComponent()](physicsbodycomponent/registercomponent.md)
-  Registers a new component type.
 ### Comparing physics body components
 - [static func == (PhysicsBodyComponent, PhysicsBodyComponent) -> Bool](physicsbodycomponent/==(_:_:).md)
   Indicates whether two physics body components are equal.
-- [static func != (Self, Self) -> Bool](physicsbodycomponent/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Instance Properties
-- [var angularDamping: Float](physicsbodycomponent/angulardamping.md)
+- [var angularDamping: Float](physicsbodycomponent/angulardamping-6vei0.md)
   The value that controls how fast a dynamic rigid body’s rotational motion approaches the zero rest state.
-- [var isAffectedByGravity: Bool](physicsbodycomponent/isaffectedbygravity.md)
+- [var angularDamping: Float](physicsbodycomponent/angulardamping-8yzzw.md)
+  The value that controls how fast a dynamic rigid body’s rotational motion approaches the zero rest state.
+- [var isAffectedByGravity: Bool](physicsbodycomponent/isaffectedbygravity-50ezb.md)
   A Boolean value that indicates whether gravity acts on dynamic rigid bodies.
-- [var linearDamping: Float](physicsbodycomponent/lineardamping.md)
+- [var isAffectedByGravity: Bool](physicsbodycomponent/isaffectedbygravity-9nlr4.md)
+  A Boolean value that indicates whether gravity acts on dynamic rigid bodies.
+- [var linearDamping: Float](physicsbodycomponent/lineardamping-2fehc.md)
   The value that controls how fast a dynamic rigid body’s translation motion approaches the zero rest state.
-### Default Implementations
-- [Component Implementations](physicsbodycomponent/component-implementations.md)
-- [Equatable Implementations](physicsbodycomponent/equatable-implementations.md)
+- [var linearDamping: Float](physicsbodycomponent/lineardamping-3m534.md)
+  The value that controls how fast a dynamic rigid body’s translation motion approaches the zero rest state.
 
 ## Relationships
 
@@ -97,4 +96,4 @@ Note the following when considering applying a non-uniform scale to an entity:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/physicsbodycomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/physicsbodycomponent)*

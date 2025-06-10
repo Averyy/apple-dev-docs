@@ -54,6 +54,7 @@ final class App
 - [Identifiable](../Swift/Identifiable.md)
 - [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

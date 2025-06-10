@@ -1,6 +1,6 @@
 # addEventListener(_:listener:useCapture:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method  
 **Required**: Yes
 

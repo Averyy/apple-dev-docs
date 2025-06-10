@@ -76,4 +76,4 @@ Capabilities simplify the configuration process for many of Apple’s services, 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/capabilities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/capabilities)*

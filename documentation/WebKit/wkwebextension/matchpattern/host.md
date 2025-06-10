@@ -1,6 +1,6 @@
 # host
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The host part of the pattern string, unless [`matchesAllURLs`](wkwebextension/matchpattern/matchesallurls.md) is `YES`.

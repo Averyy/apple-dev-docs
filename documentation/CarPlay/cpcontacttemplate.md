@@ -1,6 +1,6 @@
 # CPContactTemplate
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: class
 
 A template that displays information about a person or a business.
@@ -13,6 +13,7 @@ A template that displays information about a person or a business.
 ## Declaration
 
 ```swift
+@MainActor
 class CPContactTemplate
 ```
 
@@ -51,8 +52,10 @@ To display a contact template, call your interface controller’s [`pushTemplate
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cpcontacttemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cpcontacttemplate)*

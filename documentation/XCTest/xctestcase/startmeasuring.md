@@ -1,6 +1,6 @@
 # startMeasuring()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Starts recording performance metrics within a block of code.

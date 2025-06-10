@@ -26,8 +26,6 @@ This basic level of motion tracking can create limited AR experiences: A virtual
 
 > ❗ **Important**:  Because 3DOF tracking creates limited AR experiences, you should generally not use the [`AROrientationTrackingConfiguration`](arorientationtrackingconfiguration.md) class directly. Instead, use [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md) for six degrees of freedom (6DOF) plane detection and hit testing. Use 3DOF tracking only as a fallback in situations where 6DOF tracking is temporarily unavailable.
 
- Because 3DOF tracking creates limited AR experiences, you should generally not use the [`AROrientationTrackingConfiguration`](arorientationtrackingconfiguration.md) class directly. Instead, use [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md) for six degrees of freedom (6DOF) plane detection and hit testing. Use 3DOF tracking only as a fallback in situations where 6DOF tracking is temporarily unavailable.
-
 ![None](https://docs-assets.developer.apple.com/published/fe068e13bffe2d5438e7df5078b06416/media-2923907%402x.png)
 
 ## Topics

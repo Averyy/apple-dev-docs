@@ -1,6 +1,6 @@
 # copy(into:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Copies the elements of the array to a different array.

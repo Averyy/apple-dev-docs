@@ -1,6 +1,6 @@
 # interruptionNotification
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: property
 
 A notification the system posts when an audio interruption occurs.

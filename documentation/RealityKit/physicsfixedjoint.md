@@ -10,6 +10,7 @@ A joint that rigidly connects two entity pins, with zero degrees of freedom.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -20,30 +21,18 @@ struct PhysicsFixedJoint
 
 #### Overview
 
-A fixed joint connects two [`GeometricPin`](geometricpin.md) instances, [`pin0`](physicsfixedjoint/pin0.md) and [`pin1`](physicsfixedjoint/pin1.md), so that their poses coincide.
+A fixed joint connects two [`GeometricPin`](geometricpin.md) instances, `pin0` and `pin1`, so that their poses coincide.
 
 There are zero degrees of rotational or linear freedom between the two pins.
 
 ## Topics
 
-### Operators
-- [static func == (PhysicsFixedJoint, PhysicsFixedJoint) -> Bool](physicsfixedjoint/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(pin0: GeometricPin, pin1: GeometricPin)](physicsfixedjoint/init(pin0:pin1:).md)
   Creates a new fixed joint.
 ### Instance Properties
 - [let checksForInternalCollisions: Bool](physicsfixedjoint/checksforinternalcollisions.md)
   A Boolean that indicates whether the joint checks and reports collisions between the two entity instances.
-- [var isActive: Bool](physicsfixedjoint/isactive.md)
-  A Boolean that indicates whether the joint is active.
-- [var pin0: GeometricPin](physicsfixedjoint/pin0.md)
-  The pin that defines a local position and orientation on the first entity.
-- [var pin1: GeometricPin](physicsfixedjoint/pin1.md)
-  The pin that defines a local position and orientation on the second entity.
-### Default Implementations
-- [Equatable Implementations](physicsfixedjoint/equatable-implementations.md)
-- [PhysicsJoint Implementations](physicsfixedjoint/physicsjoint-implementations.md)
 
 ## Relationships
 

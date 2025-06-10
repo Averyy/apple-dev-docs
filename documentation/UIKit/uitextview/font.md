@@ -1,6 +1,6 @@
 # font
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The font of the text.

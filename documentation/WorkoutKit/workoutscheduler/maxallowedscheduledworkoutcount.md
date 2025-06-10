@@ -1,6 +1,6 @@
 # maxAllowedScheduledWorkoutCount
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 The maximum number of workouts your app can schedule.
@@ -10,6 +10,7 @@ The maximum number of workouts your app can schedule.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

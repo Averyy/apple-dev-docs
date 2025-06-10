@@ -1,6 +1,6 @@
 # reduce(into:_:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns the result of combining the elements of the sequence using the given closure.

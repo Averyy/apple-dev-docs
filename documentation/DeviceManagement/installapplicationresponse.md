@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to install a third-party app.
+A response from the device after it processes the command to install a third-party app on a device.
 
 **Availability**:
 - iOS 5.0+
@@ -12,8 +12,6 @@ A response from the device after it processes the command to install a third-par
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,14 +21,14 @@ object InstallApplicationResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object InstallApplicationResponse.ErrorChainItem](installapplicationresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object InstallApplicationCommand](installapplicationcommand.md)
-  The command to install an app on a device.
+  The command to install a third-party app on a device.
 
 
 ---

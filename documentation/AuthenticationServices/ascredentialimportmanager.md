@@ -6,11 +6,11 @@
 A class to manage importing credentials.
 
 **Availability**:
-- iOS 18.2+
-- iPadOS 18.2+
-- Mac Catalyst 18.2+
-- macOS 15.2+
-- visionOS 2.2+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -37,9 +37,9 @@ For iOS 18.2, visionOS 2.2, and macOS 15.2, you also need to explicitly enable c
 
 ##### Importing Credentials
 
-Credential export begins when another app calls [`exportCredentials(_:)`](ascredentialexportmanager/exportcredentials(_:).md), which brings up a system UI to choose an app to export to. When the person using the export app chooses your app to receive the credentials, the system launches your app and sends an  [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) whose [`activityType`](https://developer.apple.com/documentation/foundation/nsuseractivity/1409611-activitytype) is `ASCredentialExchangeActivity`. In order to support this process, add the [`NSUserActivityTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserActivityTypes) array to your app’s Info.plist and add the item `ASCredentialExchangeActivityType` to the array.
+Credential export begins when another app calls [`exportCredentials(_:)`](ascredentialexportmanager/exportcredentials(_:).md), which brings up a system UI to choose an app to export to. When the person using the export app chooses your app to receive the credentials, the system launches your app and sends an  [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) whose [`activityType`](https://developer.apple.com/documentation/Foundation/NSUserActivity/activityType) is `ASCredentialExchangeActivity`. In order to support this process, add the [`NSUserActivityTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserActivityTypes) array to your app’s Info.plist and add the item `ASCredentialExchangeActivityType` to the array.
 
-Your app needs to handle being launched from this activity by fetching the `ASCredentialImportToken` from the activity’s  [`userInfo`](https://developer.apple.com/documentation/foundation/nsuseractivity/1411706-userinfo) dictionary. The value of this key is a [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) token; create an instance of [`ASCredentialImportManager`](ascredentialimportmanager.md) and pass the token to [`importCredentials(token:)`](ascredentialimportmanager/importcredentials(token:).md) to begin the import process.
+Your app needs to handle being launched from this activity by fetching the `ASCredentialImportToken` from the activity’s  [`userInfo`](https://developer.apple.com/documentation/Foundation/NSUserActivity/userInfo) dictionary. The value of this key is a [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) token; create an instance of [`ASCredentialImportManager`](ascredentialimportmanager.md) and pass the token to [`importCredentials(token:)`](ascredentialimportmanager/importcredentials(token:).md) to begin the import process.
 
 The following example shows how a SwiftUI app handles launching from the user activity and beginning the credential import process.
 

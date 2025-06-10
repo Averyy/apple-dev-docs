@@ -21,12 +21,13 @@ protocol MTLRenderCommandEncoder : MTLCommandEncoder
 
 ## Mentions
 
-- [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
 - [Tracking the Resource Residency of Argument Buffers](tracking-the-resource-residency-of-argument-buffers.md)
 - [Setting Up a Command Structure](setting-up-a-command-structure.md)
-- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
 - [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
 
 #### Overview
 
@@ -42,8 +43,6 @@ To create an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instance, c
 To configure the render pass for your first drawing commands, start with a pipeline state by passing an [`MTLRenderPipelineState`](mtlrenderpipelinestate.md) instance to the encoder’s [`setRenderPipelineState(_:)`](mtlrendercommandencoder/setrenderpipelinestate(_:).md) method. You create the pipeline states your render pass needs, typically ahead of time, by calling one or more [`MTLDevice`](mtldevice.md) methods (see [`Pipeline State Creation`](pipeline-state-creation.md)).
 
 > 💡 **Tip**:  Avoid visual stutter by creating pipeline states at a noncritical time, such as during launch, because of the time it can take to make them.
-
- Avoid visual stutter by creating pipeline states at a noncritical time, such as during launch, because of the time it can take to make them.
 
 Set any other applicable parts of the encoder’s configuration by calling the methods on the [`Render Pass Configuration`](render-pass-configuration.md) page. For example, you may need to configure the pass’s viewport, its scissor rectangle, and the settings for depth and stencil tests.
 
@@ -106,6 +105,10 @@ When you finish encoding the render pass’s commands, finalize it into the comm
 
 ## See Also
 
+- [protocol MTL4RenderCommandEncoder](mtl4rendercommandencoder.md)
+  Encodes a render pass into a command buffer, including all its draw calls and configuration.
+- [struct MTL4RenderEncoderOptions](mtl4renderencoderoptions.md)
+  Custom render pass options you specify at encoder creation time.
 - [enum MTLTriangleFillMode](mtltrianglefillmode.md)
   Specifies how to rasterize triangle and triangle strip primitives.
 - [enum MTLWinding](mtlwinding.md)
@@ -120,6 +123,8 @@ When you finish encoding the render pass’s commands, finalize it into the comm
   The mode that determines how to deal with fragments outside of the near or far planes.
 - [enum MTLVisibilityResultMode](mtlvisibilityresultmode.md)
   The mode that determines what, if anything, the GPU writes to the results buffer, after the GPU executes the render pass.
+- [enum MTLVisibilityResultType](mtlvisibilityresulttype.md)
+  This enumeration controls if Metal accumulates visibility results between render encoders or resets them.
 
 
 ---

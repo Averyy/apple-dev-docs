@@ -3,12 +3,12 @@
 **Framework**: RealityKit  
 **Kind**: case
 
-Use the device’s camera, managed by the AR session.
+A mode that uses the device’s camera to place virtual entities relative to the real world.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 14.0+
 
 ## Declaration
 
@@ -16,10 +16,14 @@ Use the device’s camera, managed by the AR session.
 case ar
 ```
 
+#### Discussion
+
+Use this mode to display virtual content in the real world using [`ARView`](arview.md) This mode requires an iOS device with at least one front-facing camera, such as an iPhone or iPad.
+
 ## See Also
 
 - [ARView.CameraMode.nonAR](arview/cameramode-swift.enum/nonar.md)
-  Use the device’s camera, managed by the AR session.
+  A mode that creates a fully virtual environment with no relationship to the real world.
 
 
 ---

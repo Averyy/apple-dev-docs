@@ -39,8 +39,6 @@ When someone chooses a suggestion, SwiftUI replaces the text in the search field
 
 > ❗ **Important**: In tvOS, searchable modifiers only support suggestion views of type `Text`, like in the above example. Other platforms can use any view for the suggestions, including custom views.
 
-In tvOS, searchable modifiers only support suggestion views of type `Text`, like in the above example. Other platforms can use any view for the suggestions, including custom views.
-
 You can update the suggestions that you provide as conditions change.
 
 For example, you can specify an array of suggestions that you store in a model:

@@ -28,8 +28,6 @@ Not all export presets are compatible with all assets. For example, video-only a
 
 > ❗ **Important**:  Load the asset’s [`tracks`](avasset/tracks.md) property before calling this method to avoid blocking the calling thread.
 
- Load the asset’s [`tracks`](avasset/tracks.md) property before calling this method to avoid blocking the calling thread.
-
 ## Parameters
 
 - `asset`: An asset to export.

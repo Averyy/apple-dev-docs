@@ -1,6 +1,6 @@
 # WeatherCondition.mostlyClear
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Mostly clear.

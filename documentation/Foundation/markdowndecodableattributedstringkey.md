@@ -30,8 +30,6 @@ To define your own attributes for use with Markdown syntax, make sure your attri
 
 > 💡 **Tip**:  When creating attributed strings from Markdown-based initializers like [`init(markdown:options:baseURL:)`](attributedstring/init(markdown:options:baseurl:)-52n3u.md), be sure to set the [`allowsExtendedAttributes`](attributedstring/markdownparsingoptions/allowsextendedattributes.md) option. If you don’t include this option, the string won’t parse [`MarkdownDecodableAttributedStringKey`](markdowndecodableattributedstringkey.md)-based attributes.
 
- When creating attributed strings from Markdown-based initializers like [`init(markdown:options:baseURL:)`](attributedstring/init(markdown:options:baseurl:)-52n3u.md), be sure to set the [`allowsExtendedAttributes`](attributedstring/markdownparsingoptions/allowsextendedattributes.md) option. If you don’t include this option, the string won’t parse [`MarkdownDecodableAttributedStringKey`](markdowndecodableattributedstringkey.md)-based attributes.
-
 ## Topics
 
 ### Decoding Values

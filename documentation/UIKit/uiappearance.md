@@ -1,6 +1,6 @@
 # UIAppearance
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: protocol
 
 A collection of methods that gives you access to the appearance proxy for a class.
@@ -75,6 +75,7 @@ To support appearance customization, a class must conform to the [`UIAppearanceC
 - [UIActionSheet](uiactionsheet.md)
 - [UIActivityIndicatorView](uiactivityindicatorview.md)
 - [UIAlertView](uialertview.md)
+- [UIBackgroundExtensionView](uibackgroundextensionview.md)
 - [UIBarButtonItem](uibarbuttonitem.md)
 - [UIBarItem](uibaritem.md)
 - [UIButton](uibutton.md)
@@ -129,4 +130,4 @@ To support appearance customization, a class must conform to the [`UIAppearanceC
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiappearance)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiappearance)*

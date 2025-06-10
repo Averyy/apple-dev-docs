@@ -114,6 +114,7 @@ When you reverse geocode a geographic coordinate using a [`CLGeocoder`](clgeocod
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TypeDisplayRepresentable](../AppIntents/TypeDisplayRepresentable.md)
 
 ## See Also

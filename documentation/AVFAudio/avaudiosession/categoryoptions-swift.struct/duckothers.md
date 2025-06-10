@@ -29,8 +29,6 @@ Ducking begins when you activate your app’s audio session and ends when you de
 
 > ❗ **Important**:  Set this option on a temporary basis only. Don’t use it to duck the audio of other apps for more than a few seconds.
 
- Set this option on a temporary basis only. Don’t use it to duck the audio of other apps for more than a few seconds.
-
 ## See Also
 
 - [static var mixWithOthers: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/mixwithothers.md)

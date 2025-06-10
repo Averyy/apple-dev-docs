@@ -36,6 +36,7 @@ struct DefaultIndices<Elements> where Elements : Collection
 - [Copyable](copyable.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 

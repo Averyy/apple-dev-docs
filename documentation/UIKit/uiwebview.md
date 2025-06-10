@@ -1,6 +1,6 @@
 # UIWebView
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A view that embeds web content in your app.
@@ -144,6 +144,7 @@ The [`UIWebView`](uiwebview.md) class shouldn’t be subclassed.
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)
@@ -180,4 +181,4 @@ The [`UIWebView`](uiwebview.md) class shouldn’t be subclassed.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiwebview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiwebview)*

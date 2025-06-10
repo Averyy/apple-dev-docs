@@ -12,8 +12,6 @@ When you add code to support Core Location, plan for situations where location d
 
 > ❗ **Important**:  Location data is sensitive information, and it’s important for you to secure any location data you collect. Encrypt any location data you store on disk or send over the network. In addition, provide a clear privacy policy that explains how you use someone’s location data.
 
- Location data is sensitive information, and it’s important for you to secure any location data you collect. Encrypt any location data you store on disk or send over the network. In addition, provide a clear privacy policy that explains how you use someone’s location data.
-
 ##### Check the Availability of Services Your App Uses
 
 Always verify that location services are available before you attempt to use them. Services might be unavailable for many different reasons, including:
@@ -43,8 +41,6 @@ If your app can’t function without specific location services, declare those r
 You can request location updates in your code immediately. If the system hasn’t requested authorization for your app, it does so when your code starts iterating over the asynchronous stream of updates. Because location data is sensitive personal information, the owner of a device controls which apps give access. They can grant or deny access to apps separately, and can change an app’s access at any time in system settings.
 
 > 💡 **Tip**:  Begin requesting location updates where your app uses location data, such as from the view that displays location-related data. Don’t make requests at launch time or from a part of your app that isn’t connected to location, unless absolutely necessary. Someone might not fully understand why your app is asking for authorization and deny the request.
-
- Begin requesting location updates where your app uses location data, such as from the view that displays location-related data. Don’t make requests at launch time or from a part of your app that isn’t connected to location, unless absolutely necessary. Someone might not fully understand why your app is asking for authorization and deny the request.
 
 Location updates and authorization status changes arrive in an asynchronous fashion. Check for both the presence of a location update and authentication status changes within the loop. The loop doesn’t terminate unless you explicitly use `return`, `break`, or throw an exception.
 

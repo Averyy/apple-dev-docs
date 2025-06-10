@@ -25,6 +25,9 @@ object ProfilesResponse
 - [object ProfileResponse](profileresponse.md)
   A response that contains a single Profiles resource.
 - [object ProfilesWithoutIncludesResponse](profileswithoutincludesresponse.md)
+- [object ProfileBundleIdLinkageResponse](profilebundleidlinkageresponse.md)
+- [object ProfileCertificatesLinkagesResponse](profilecertificateslinkagesresponse.md)
+- [object ProfileDevicesLinkagesResponse](profiledeviceslinkagesresponse.md)
 
 
 ---

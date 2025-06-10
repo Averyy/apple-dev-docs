@@ -27,7 +27,7 @@ Your refund preference is one of a variety of factors that the App Store uses to
 - [type accountTenure](accounttenure.md)
   The age of the customer’s account.
 - [type appAccountToken](appaccounttoken.md)
-  The UUID that an app optionally generates to map a customer’s In-App Purchase with its resulting App Store transaction.
+  The UUID that you generate to associate a customer’s In-App Purchase with its resulting App Store transaction.
 - [type consumptionStatus](consumptionstatus.md)
   A value that indicates the extent to which the customer consumed the in-app purchase.
 - [type customerConsented](customerconsented.md)

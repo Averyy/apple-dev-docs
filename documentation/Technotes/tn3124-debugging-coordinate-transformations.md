@@ -58,8 +58,6 @@ The best first step towards understanding a coordinate space is to visualize its
 
 > ⚠️ **Warning**: Do not rely on textual descriptions of a coordinate space, they are easy to misinterpret.
 
-Do not rely on textual descriptions of a coordinate space, they are easy to misinterpret.
-
 Projects targeting visionOS can use [`Diagnosing issues in the appearance of a running app`](https://developer.apple.com/documentation/Xcode/diagnosing-issues-in-the-appearance-of-your-running-app). In other contexts, the exact code to visualize the origin will differ depending on the framework involved.
 
 Some frameworks offer built-in ways to visualize certain origins. For example, `ARView` and `ARSCNView` both have API to visualize the world origin for debugging:

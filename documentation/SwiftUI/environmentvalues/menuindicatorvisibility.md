@@ -1,6 +1,6 @@
 # menuIndicatorVisibility
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 The menu indicator visibility to apply to controls within a view.
@@ -31,4 +31,4 @@ var menuIndicatorVisibility: Visibility { get set }
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/environmentvalues/menuindicatorvisibility)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/environmentvalues/menuindicatorvisibility)*

@@ -1,6 +1,6 @@
 # UIPointerStyle
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An object that defines the pointer shape and effect.
@@ -55,6 +55,8 @@ For more information, see [`Human Interface Guidelines`](https://developer.apple
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -68,4 +70,4 @@ For more information, see [`Human Interface Guidelines`](https://developer.apple
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uipointerstyle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uipointerstyle)*

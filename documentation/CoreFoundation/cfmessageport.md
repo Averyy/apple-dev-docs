@@ -28,8 +28,6 @@ To listen for messages, you need to create a run loop source with [`CFMessagePor
 
 > ❗ **Important**:  If you want to tear down the connection, you must invalidate the port (using [`CFMessagePortInvalidate(_:)`](cfmessageportinvalidate(_:).md)) before releasing the runloop source and the message port object.
 
- If you want to tear down the connection, you must invalidate the port (using [`CFMessagePortInvalidate(_:)`](cfmessageportinvalidate(_:).md)) before releasing the runloop source and the message port object.
-
 Your message port’s callback function will be called when a message arrives. To send data, you store the data in a CFData object and call [`CFMessagePortSendRequest(_:_:_:_:_:_:_:)`](cfmessageportsendrequest(_:_:_:_:_:_:_:).md). You can optionally have the function wait for a reply and return the reply in another CFData object.
 
 Message ports only support communication on the local machine. For network communication, you have to use a [`CFSocket`](cfsocket.md) object.

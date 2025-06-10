@@ -39,8 +39,6 @@ You can use the asterisk character anywhere in the domain or path, but not in th
 
 > ❗ **Important**:  The format for URL patterns in `Allowed URL Patterns` and `Excluded URL Patterns` keys isn’t the same as the format for domain patterns in the `Allowed Domains` array that you specify in your website access list.  See [`Adjusting website access permissions`](adjusting-website-access-permissions.md).
 
- The format for URL patterns in `Allowed URL Patterns` and `Excluded URL Patterns` keys isn’t the same as the format for domain patterns in the `Allowed Domains` array that you specify in your website access list.  See [`Adjusting website access permissions`](adjusting-website-access-permissions.md).
-
 ## See Also
 
 - [Setting Safari app extension feature keys](setting-safari-app-extension-feature-keys.md)

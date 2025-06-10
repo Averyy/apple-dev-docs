@@ -62,8 +62,6 @@ do {
 
 > ❗ **Important**:  If you don’t use [`NSPersistentContainer`](nspersistentcontainer.md) to set up your Core Data stack, you also need to manually set the options to enable lightweight data migrations. For more information, see [`Migrating your data model automatically`](migrating-your-data-model-automatically.md).
 
- If you don’t use [`NSPersistentContainer`](nspersistentcontainer.md) to set up your Core Data stack, you also need to manually set the options to enable lightweight data migrations. For more information, see [`Migrating your data model automatically`](migrating-your-data-model-automatically.md).
-
 There are advantages and disadvantages to each of the store types. Refer to the [`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md) documentation for details on each store type.
 
 ##### Create a Managed Object Context

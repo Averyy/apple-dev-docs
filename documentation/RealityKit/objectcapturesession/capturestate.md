@@ -39,14 +39,13 @@ A session starts in `.initializing` state and proceeds through the other states 
   The session and camera feed are initializing.
 - [ObjectCaptureSession.CaptureState.ready](objectcapturesession/capturestate/ready.md)
   The session is ready to begin taking calls to capture.
-### Default Implementations
-- [Equatable Implementations](objectcapturesession/capturestate/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

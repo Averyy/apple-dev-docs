@@ -99,4 +99,4 @@ The method tells Metal that it can reuse the memory backing that residency setâ€
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/simplifying-gpu-resource-management-with-residency-sets)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/simplifying-gpu-resource-management-with-residency-sets)*

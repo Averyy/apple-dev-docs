@@ -23,7 +23,7 @@ var content: Content
 ## See Also
 
 - [init(content: Content, modifier: Modifier)](modifiedcontent/init(content:modifier:).md)
-  A structure that the defines the content and modifier needed to produce a new view or view modifier.
+  A structure that defines the content and modifier needed to produce a new view or view modifier.
 - [var modifier: Modifier](modifiedcontent/modifier.md)
   The view modifier.
 

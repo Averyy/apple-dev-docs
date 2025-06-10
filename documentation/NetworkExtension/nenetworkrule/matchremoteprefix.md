@@ -16,7 +16,7 @@ var matchRemotePrefix: Int { get }
 
 #### Discussion
 
-This property is [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound) for rules where [`matchRemoteEndpoint`](nenetworkrule/matchremoteendpoint.md) doesn’t contain an IP address.
+This property is [`NSNotFound`](https://developer.apple.com/documentation/Foundation/NSNotFound-4qp9h) for rules where [`matchRemoteEndpoint`](nenetworkrule/matchremoteendpoint.md) doesn’t contain an IP address.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # session(_:didReceiveApplicationContext:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Tells the delegate that the session has received context data from the counterpart.

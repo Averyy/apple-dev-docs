@@ -13,7 +13,7 @@ Changes the map’s camera boundary with an animated transition.
 ```swift
 mapkit.Map setCameraBoundaryAnimated(
 	mapkit.CoordinateRegion coordinateRegion,
-	|mapkit.MapRect mapRect,
+	mapkit.MapRect mapRect,
 	optional boolean animate
 );
 ```
@@ -55,6 +55,8 @@ By default, the change of boundary animates.
   Changes the map’s visible map rectangle to the specified map rectangle.
 - [cameraBoundary](mapkit.map/cameraboundary.md)
   A constraint of the location of the center of the map.
+- [CameraBoundaryDescription](cameraboundarydescription.md)
+  An object literal containing at least one property defining an area on the map.
 - [cameraDistance](mapkit.map/cameradistance.md)
   The altitude of the camera relative to the elevation of the center of the map.
 - [setCameraDistanceAnimated](mapkit.map/setcameradistanceanimated.md)
@@ -63,6 +65,8 @@ By default, the change of boundary animates.
   The minimum and maximum distances of the camera from the map center.
 - [setCameraZoomRangeAnimated](mapkit.map/setcamerazoomrangeanimated.md)
   Changes the map’s camera zoom range with an animated transition.
+- [CameraZoomRangeLiteral](camerazoomrangeliteral.md)
+  An object literal containing minimum and maximum camera distance in meters.
 
 
 ---

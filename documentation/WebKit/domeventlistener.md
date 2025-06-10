@@ -1,6 +1,6 @@
 # DOMEventListener
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 **Availability**:

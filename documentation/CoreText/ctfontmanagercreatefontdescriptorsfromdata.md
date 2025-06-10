@@ -1,6 +1,6 @@
 # CTFontManagerCreateFontDescriptorsFromData(_:)
 
-**Framework**: Coretext  
+**Framework**: Core Text  
 **Kind**: func
 
 Creates an array of font descriptors for the fonts in the supplied data.

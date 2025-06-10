@@ -58,11 +58,17 @@ If your app’s authorization flow reuses an existing [`LAContext`](lacontext.md
   Creates a local authentication view with a label and required context.
 - [init(LocalizedStringKey, context: LAContext)](localauthenticationview/init(_:context:)-676qx.md)
   Creates a local authentication view with a localizable title and required context.
+### Initializers
+- [init(LocalizedStringResource, context: LAContext)](localauthenticationview/init(_:context:)-7ejbu.md)
+  Creates a new view and pairs it with the specified authentication context.
+- [init(LocalizedStringResource, reason: Text, context: LAContext?, result: (Result<Void, any Error>) -> Void)](localauthenticationview/init(_:reason:context:result:)-88u6u.md)
+  Creates a new `LocalAuthenticationView`.
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 

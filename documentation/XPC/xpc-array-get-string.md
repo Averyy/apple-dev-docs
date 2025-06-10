@@ -1,6 +1,6 @@
 # xpc_array_get_string(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Gets a C-string value from an array directly.

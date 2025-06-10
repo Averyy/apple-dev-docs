@@ -42,12 +42,6 @@ init(scale: Size3D = Size3D(width: 1.0, height: 1, depth: 1), rotation: Rotation
   Creates a projective transform from the specified affine transform.
 - [init(pose: Pose3D)](projectivetransform3d/init(pose:).md)
   Creates a projective transform from the specified pose structure.
-- [init(scale: Size3D)](projectivetransform3d/init(scale:).md)
-  Creates a projective transform from the specified scale transform.
-- [init(rotation: Rotation3D)](projectivetransform3d/init(rotation:).md)
-  Creates a projective transform from the specified rotate transform.
-- [init(translation: Vector3D)](projectivetransform3d/init(translation:)-7l5gj.md)
-  Creates a projective transform from the specified translate transform.
 - [init(shear: AxisWithFactors)](projectivetransform3d/init(shear:).md)
   Creates a projective transform from the specified shear transform.
 - [init(leftTangent: Double, rightTangent: Double, topTangent: Double, bottomTangent: Double, nearZ: Double, farZ: Double, reverseZ: Bool)](projectivetransform3d/init(lefttangent:righttangent:toptangent:bottomtangent:nearz:farz:reversez:).md)

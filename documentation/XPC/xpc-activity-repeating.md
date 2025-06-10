@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_REPEATING
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A Boolean property that indicates whether this is a repeating activity.

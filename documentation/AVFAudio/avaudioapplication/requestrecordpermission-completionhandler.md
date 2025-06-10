@@ -41,10 +41,6 @@ After a user responds to a recording permission prompt from your app, the system
 
 > ❗ **Important**:  Apps that access any of the device’s microphones must declare their intent to do so. You do this by including the `NSMicrophoneUsageDescription` key and a corresponding purpose string in your app’s `Info.plist`. When the system prompts the user to allow access, it displays the purpose string as part of the alert. If an application attempts to access any of the device’s microphones without a corresponding purpose string, the app exits.
 
- Apps that access any of the device’s microphones must declare their intent to do so. You do this by including the `NSMicrophoneUsageDescription` key and a corresponding purpose string in your app’s `Info.plist`. When the system prompts the user to allow access, it displays the purpose string as part of the alert.
-
-If an application attempts to access any of the device’s microphones without a corresponding purpose string, the app exits.
-
 ## Parameters
 
 - `response`: A Boolean value that indicates whether the user grants the app permission to record audio.

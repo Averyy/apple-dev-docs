@@ -37,6 +37,7 @@ Use one of these flags with the [`SSLCreateContext(_:_:_:)`](sslcreatecontext(_:
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # Building a signal generator
 
-**Framework**: Avfaudio
+**Framework**: AVFAudio
 
 Use an audio source node and a custom render callback to generate audio signals.
 
@@ -28,4 +28,4 @@ Before you run the sample code project in Xcode, ensure you’re using macOS 14 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/building-a-signal-generator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/building-a-signal-generator)*

@@ -1,6 +1,6 @@
 # autoplay
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A Boolean value that determines whether the media resource plays automatically when available.

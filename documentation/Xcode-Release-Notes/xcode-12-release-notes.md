@@ -392,7 +392,7 @@ xcrun momc
 ###### New Features
 
 - Simulator can display a simulated device in full-screen mode, or tile its window alongside Xcode. (32866357)
-- Simulated watchOS 7 devices support 64-bit processes. To verify watchOS projects are 64-bit clean in Simulator, make sure `ARCHS` is set to its default value. (54654060, 66352876) > **Note**: Projects must be 64-bit clean in Simulator on Macs with Apple silicon, which don’t support 32-bit code. Projects must be 64-bit clean in Simulator on Macs with Apple silicon, which don’t support 32-bit code.
+- Simulated watchOS 7 devices support 64-bit processes. To verify watchOS projects are 64-bit clean in Simulator, make sure `ARCHS` is set to its default value. (54654060, 66352876) > **Note**: Projects must be 64-bit clean in Simulator on Macs with Apple silicon, which don’t support 32-bit code.
 - Window > Stay On Top keeps device windows in front of other application windows. (57060945) (FB7439463)
 - When a device window loses focus, it pauses capturing input events from Send Pointer to Device and Send Keyboard Input to Device until Simulator regains focus. (57351155)
 - Simulator defaults to the internal microphone unless you explicitly choose a different audio source. This avoids triggering phone call mode on Bluetooth headsets, which degrades audio quality while listening to music. (59338925, 59803381)

@@ -26,6 +26,8 @@ FSKit creates an instance of this class for each long-running operations.
 ### Sending completion messages
 - [func didComplete(error: (any Error)?)](fstask/didcomplete(error:).md)
   Informs the client that the task completed.
+### Instance Properties
+- [var cancellationHandler: (() -> (any Error)?)?](fstask/cancellationhandler.md)
 
 ## Relationships
 

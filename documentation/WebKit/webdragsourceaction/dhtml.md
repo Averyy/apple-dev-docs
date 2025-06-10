@@ -1,6 +1,6 @@
 # DHTML
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Allows DHTML (such as JavaScript) in the source object to initiate a drag operation.

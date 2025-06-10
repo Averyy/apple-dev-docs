@@ -17,7 +17,6 @@ The string that the label node displays.
 ## Declaration
 
 ```swift
-@MainActor
 var text: String? { get set }
 ```
 

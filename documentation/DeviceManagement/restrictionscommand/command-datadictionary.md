@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to get a list of restrictions on a device.
+The command to get a list of restrictions on the device.
 
 **Availability**:
 - iOS 4.0+
@@ -11,8 +11,6 @@ The request dictionary to get a list of restrictions on a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

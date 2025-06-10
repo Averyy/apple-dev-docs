@@ -8,6 +8,10 @@ Update app information, including bundle ID, primary locale, price schedule, and
 **Availability**:
 - App Store Connect API 1.2+
 
+## Mentions
+
+- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
+
 #### Discussion
 
 ##### Example Request and Response
@@ -20,6 +24,7 @@ Update app information, including bundle ID, primary locale, price schedule, and
   Get information about a specific app.
 - [Read an App’s Encryption Declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
   Find and list all available app encryption declarations.
+- [GET /v1/apps/{id}/relationships/appEncryptionDeclarations](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
 
 
 ---

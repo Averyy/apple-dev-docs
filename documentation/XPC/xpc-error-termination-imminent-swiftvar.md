@@ -1,6 +1,6 @@
 # XPC_ERROR_TERMINATION_IMMINENT
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 An error that sends to a peer connection’s event handler when the XPC runtime determines that the program needs to exit and that all outstanding transactions must wind down.

@@ -1,6 +1,6 @@
 # Building a distributable order package
 
-**Framework**: Walletorders
+**Framework**: Wallet Orders
 
 Prepare an order for distribution by building, signing, and compressing the source files.
 
@@ -117,4 +117,4 @@ If your order package doesn’t build correctly, check whether the following are
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WalletOrders/building-a-distributable-order-package)*
+*[View on Apple Developer](https://developer.apple.com/documentation/walletorders/building-a-distributable-order-package)*

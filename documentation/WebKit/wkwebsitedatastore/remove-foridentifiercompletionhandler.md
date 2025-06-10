@@ -1,6 +1,6 @@
 # remove(forIdentifier:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Removes the data store that matches the identifier you provide.

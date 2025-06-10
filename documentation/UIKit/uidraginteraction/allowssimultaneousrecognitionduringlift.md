@@ -1,6 +1,6 @@
 # allowsSimultaneousRecognitionDuringLift
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A Boolean value that determines whether the interaction allows recognition of other gestures during the lift activity.

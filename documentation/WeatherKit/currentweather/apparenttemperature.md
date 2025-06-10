@@ -1,6 +1,6 @@
 # apparentTemperature
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The feels-like temperature when factoring wind and humidity.

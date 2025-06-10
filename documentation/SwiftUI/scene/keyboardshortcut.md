@@ -15,6 +15,10 @@ nonisolated
 func keyboardShortcut(_ shortcut: KeyboardShortcut?) -> some Scene
 ```
 
+## Mentions
+
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+
 #### Return Value
 
 A scene that can be presented with a keyboard shortcut.

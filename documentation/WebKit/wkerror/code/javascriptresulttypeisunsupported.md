@@ -1,6 +1,6 @@
 # WKError.Code.javaScriptResultTypeIsUnsupported
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 An error that indicates the result of JavaScript execution could not be returned.

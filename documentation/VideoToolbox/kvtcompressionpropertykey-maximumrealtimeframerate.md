@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_MaximumRealTimeFrameRate
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A value that specifies the maximum real time rate at which frames can be submitted to a compression session.

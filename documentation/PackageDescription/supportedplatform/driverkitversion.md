@@ -26,11 +26,14 @@ struct DriverKitVersion
   The value that represents DriverKit 23.0.
 - [static let v24: SupportedPlatform.DriverKitVersion](supportedplatform/driverkitversion/v24.md)
   The value that represents DriverKit 24.0.
+- [static let v25: SupportedPlatform.DriverKitVersion](supportedplatform/driverkitversion/v25.md)
+  The value that represents DriverKit 25.0.
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

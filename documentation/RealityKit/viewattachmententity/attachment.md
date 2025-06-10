@@ -12,7 +12,7 @@ The view attachment component for this entity.
 
 ```swift
 @MainActor
-@preconcurrency var attachment: ViewAttachmentComponent { get }
+@preconcurrency var attachment: ViewAttachmentComponent { get set }
 ```
 
 

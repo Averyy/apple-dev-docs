@@ -1,6 +1,6 @@
 # finishDeferredLightweightMigration()
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: method
 
 Executes all remaining tasks of a deferred lightweight migration.

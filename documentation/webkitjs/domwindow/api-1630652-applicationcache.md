@@ -1,6 +1,6 @@
 # applicationCache
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The application cache associated with the current document.

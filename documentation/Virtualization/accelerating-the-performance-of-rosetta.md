@@ -24,8 +24,6 @@ The Rosetta Linux kernel patches are available to download on Apple’s develope
 
 > ⚠️ **Warning**:  Applying patches to and replacing the Linux kernel may result in an unstable or unusable system; the process described below presumes you have experience with kernel patching, and generating and installing new kernel images.
 
- Applying patches to and replacing the Linux kernel may result in an unstable or unusable system; the process described below presumes you have experience with kernel patching, and generating and installing new kernel images.
-
 This patch applies cleanly to Linux 6.10 kernel. You can apply these patches to other Linux kernel versions, but they may require some manual editing.
 
 Follow these steps to apply the Rosetta patch:

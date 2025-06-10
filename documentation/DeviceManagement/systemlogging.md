@@ -6,9 +6,12 @@
 The payload you use to configure system logging.
 
 **Availability**:
+- iOS 9.0+
+- iPadOS 9.0+
 - macOS 10.12+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -24,17 +27,17 @@ Specify `com.apple.system.logging` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | macOS |
-| Allow Manual Install | iOS, macOS, tvOS, watchOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | iOS, macOS, Shared iPad, tvOS, watchOS |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| User channel | macOS |
+| Allow manual install | iOS, macOS, tvOS, visionOS, watchOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -88,8 +91,11 @@ Specify `com.apple.system.logging` as the payload type.
 
 ### Objects
 - [object SystemLogging.Processes](systemlogging/processes-data.dictionary.md)
+  Not to be used.
 - [object SystemLogging.Subsystems](systemlogging/subsystems-data.dictionary.md)
+  A dictionary enabling the logging level for subsystems. See `Customizing Logging Behavior While Debugging` for more details about the format of the dictionary.
 - [object SystemLogging.System](systemlogging/system-data.dictionary.md)
+  This dictionary has one key, `Enable-Private-Data`. Setting that value to `true` enables private data logging for the entire system.
 
 ## See Also
 

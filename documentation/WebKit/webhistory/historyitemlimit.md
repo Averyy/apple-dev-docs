@@ -1,6 +1,6 @@
 # historyItemLimit
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The maximum number of web history items that can be stored.

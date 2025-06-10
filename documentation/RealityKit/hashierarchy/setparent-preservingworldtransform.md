@@ -10,6 +10,7 @@ Attaches the entity as a child to the specified entity.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -26,8 +27,6 @@ Attaching an entity to a new parent automatically detaches it from its old paren
 The [`children`](hashierarchy/children.md) collections of both the old and new parent are automatically updated as well.
 
 > ❗ **Important**: On visionOS, only use `preservingWorldTransform` when moving an entity within the same `AnchorEntity`, `ImmersiveSpace` or SwiftUI `WindowGroup` hierarchy. Moving entities across these hierarchy boundaries while `preservingWorldTransform` is set to `true`, is not supported.
-
-On visionOS, only use `preservingWorldTransform` when moving an entity within the same `AnchorEntity`, `ImmersiveSpace` or SwiftUI `WindowGroup` hierarchy. Moving entities across these hierarchy boundaries while `preservingWorldTransform` is set to `true`, is not supported.
 
 ## Parameters
 

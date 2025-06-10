@@ -1,6 +1,6 @@
 # Global Compositing Operation Constants
 
-**Framework**: Webkitjs
+**Framework**: WebKit JS
 
 Constants used to set the `globalCompositeOperation` property.
 

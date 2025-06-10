@@ -21,7 +21,7 @@ case automatic
 
 #### Discussion
 
-Create ML typically creates a validation dataset by partitioning up to 10% from the training dataset, depending on its size:
+Create ML creates a validation dataset by partitioning up to 10% from the training dataset, depending on its size:
 
 | Training samples | % used for validation |
 | --- | --- |

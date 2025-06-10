@@ -1,6 +1,6 @@
 # COMPRESSED_RGBA_S3TC_DXT1_EXT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # targetFrame
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The frame in which to display the new content.

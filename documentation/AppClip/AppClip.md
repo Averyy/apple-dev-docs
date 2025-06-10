@@ -1,48 +1,55 @@
 # App Clips
 
-**Framework**: Appclip  
+**Framework**: App Clips  
 **Kind**: module
 
-Provide people a shortcut to selected content and features of your app.
+Create a lightweight, in-the-moment experience or demo version for your app that’s instantly available.
 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 #### Overview
 
-An  is a lightweight version of your app that offers people access to some of the app’s functionality. A coffee shop app downloaded and installed from the App Store, for example, might provide people the ability to order a drink, save favorites, collect rewards, get special offers, and so on. The coffee shop App Clip only offers the functionality to order a drink.
+An  is a lightweight version of your app that offers access to some of the app’s functionality. For example, a donut shop’s app a person downloads and installs from the App Store may allow them to order donuts, save favorites, collect rewards, get special offers, and so on. The donut shop’s App Clip is instantly available – for example, when someone searches for “donuts” near the shop – without the need to install the full app. To ensure a fast launch experience and a fast order experience, the App Clip offers only the functionality to order donuts.
 
 ![A flowchart illustrating the flow for an App Clip. From left to right, the images shows an App Clip Code as an invocation, an App Clip card for a donut shop, the App Clip of the donut shop, and a donut.](https://docs-assets.developer.apple.com/published/1fa269ccc94c2866e6b1c27d127a4cb5/media-4301753%402x.png)
 
-People find an App Clip by performing an  for example, by tapping a location-based suggestion from Siri Suggestions or by scanning an App Clip Code. After a person confirms the invocation, the App Clip launches instantly, helps a person perform an everyday task as quickly as possible, and only stays on their device for as long as they need it. When a person installs the corresponding full app for your App Clip, the full app replaces the App Clip. From this moment on, confirming an invocation launches the full app instead of the App Clip, and a person gets the functionality of the App Clip within the full app. If they don’t install the full app, the system automatically removes the App Clip after a period of inactivity.
-
-Again, consider the coffee shop’s App Clip: When a person walks past the coffee shop, the system displays a location-based suggestion from Siri Suggestions on their device. They tap the suggestion, confirm the launch of the App Clip on the system-provided , and instantly use the App Clip to order a drink. After a person completes the order, the App Clip recommends its corresponding app to them, and they download the app. The next time they tap the location-based suggestion, they launch the full app instead of the App Clip. If they don’t install the app, tapping the suggestion and confirming the invocation continues launching the App Clip.
-
-> **Note**:  Session 10178: [`What’s new in App Clips`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10178) (WWDC23) Session 10097: [`What’s new in App Clips`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10097) (WWDC22) Session 10013: [`Build light and fast App Clips`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10013) (WWDC21) Session 10012:  [`What’s new in App Clips`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10012) (WWDC21)
+App Clips that conform to a set of constraints can be larger in size, making it possible to offer an App Clip that’s a demo version of your app. The larger demo size allows people to experience your app’s functionality without a purchase or subscription. For example, a game might offer an App Clip to play the first level, a fitness app might offer an App Clip with a free workout, and so on. When a person has finished the game’s first level or completed the free workout, the App Clip displays a prompt to install the full app.
 
 ##### Offer a Great User Experience
 
-App Clips provide a polished user experience that helps users solve a real-world task as quickly as possible. Additionally, App Clips don’t appear on the Home screen, and users don’t manage them the way they manage full apps. Instead, the system removes an App Clip from a device after a period of inactivity, emphasizing the importance of a polished user experience.
+App Clips provide a polished user experience that helps users solve a real-world task as quickly as possible or effortlessly try out a new app. Additionally, App Clips don’t appear on the Home screen, and users don’t manage them the way they manage full apps. Instead, the system removes an App Clip from a device after a period of inactivity, emphasizing the importance of a polished user experience.
 
 For design guidance, see [`Human Interface Guidelines > App Clips`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/).
 
 ##### Review App Clip Creation
 
-Limit the function of an App Clip to ensure a fast launch experience, protect user privacy, and preserve resources. Before you create an App Clip, first review the technology available to App Clips and identify which of your app’s functionalities would make a great App Clip. When you create an App Clip, plan to spend time with:
+Limit the function of an App Clip to ensure a fast launch experience, protect user privacy, and preserve resources for in-the-moment experiences and demo versions of your app. Before you create an App Clip:
 
-- Making changes to your app’s Xcode project and your code, for example, adding an App Clip target or sharing code between your App Clip and full app
-- Planning the launch experience for your App Clip, identifying invocations to support, and adding code to respond to them
-- Associating your App Clip with your website to support additional invocations and advanced App Clip experiences (optional)
-- Creating App Clip experiences in App Store Connect
-- Creating App Clip Codes that offer the best experience for people to discover and launch your App Clip (optional)
+1. Review technology available to App Clips and constraints that ensure a good user experience.
+2. Identify which of your app’s functionalities might make a great App Clip.
+3. Learn how people discover and launch App Clips with  and how you configure App Clip experiences and use invocation URLs to offer a great launch experience.
+
+For more information, refer to [`Choosing the right functionality for your App Clip`](choosing-the-right-functionality-for-your-app-clip.md) and [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md).
+
+When you’ve identified functionality for your App Clip and identified invocations:
+
+- Make changes to your app’s Xcode project and your code; for example, add an App Clip target and share code between your App Clip and full app.
+- Add code to respond to invocations and to handle invocation URLs.
+- Create App Clip experiences in App Store Connect.
+- Optionally, associate your App Clip with your website to support additional invocations and advanced App Clip experiences.
+- Optionally, create App Clip Codes that offer the best experience for people to discover and launch your App Clip.
 
 ## Topics
 
 ### Essentials
 - [Choosing the right functionality for your App Clip](choosing-the-right-functionality-for-your-app-clip.md)
   Review frameworks available to App Clips and identify functionality that makes a great App Clip.
+- [Configuring App Clip experiences](configuring-the-launch-experience-of-your-app-clip.md)
+  Review how people launch your App Clip with invocation URLs, default and demo links, and advanced App Clip experiences.
+- [App Clips updates](../Updates/AppClips.md)
+  Learn about important changes in App Clips.
 ### Creation
 - [Creating an App Clip with Xcode](creating-an-app-clip-with-xcode.md)
   Add an App Clip target to your Xcode project and share code between the App Clip and its corresponding full app.
@@ -55,14 +62,12 @@ Limit the function of an App Clip to ensure a fast launch experience, protect us
 - [com.apple.developer.on-demand-install-capable](../BundleResources/Entitlements/com.apple.developer.on-demand-install-capable.md)
   A Boolean value that indicates whether a bundle represents an App Clip.
 ### Launch
-- [Configuring the launch experience of your App Clip](configuring-the-launch-experience-of-your-app-clip.md)
-  Review how people launch your App Clip, identify invocation URLs, make use of default App Clip links, and configure experiences in App Store Connect.
-- [Associating your App Clip with your website](associating-your-app-clip-with-your-website.md)
-  Enable the system to verify your App Clip to support invocations in iOS 16.3 or earlier and from your website.
-- [Supporting invocations from your website and the Messages app](supporting-invocations-from-your-website-and-the-messages-app.md)
-  Display a Smart App Banner and the App Clip card on your website that people tap to launch your App Clip, and add support for invocations from the Messages app.
 - [Responding to invocations](responding-to-invocations.md)
   Add code to respond to invocations and offer a focused launch experience.
+- [Associating your App Clip with your website](associating-your-app-clip-with-your-website.md)
+  Enable the system to verify your App Clip to support invocations from your website and devices running iOS 16.3 or earlier.
+- [Supporting invocations from your website and the Messages app](supporting-invocations-from-your-website-and-the-messages-app.md)
+  Display a Smart App Banner and the App Clip card on your website that people tap to launch your App Clip, and add support for invocations from the Messages app.
 - [Confirming a person’s physical location](confirming-a-person-s-physical-location.md)
   Add code to quickly confirm a person’s physical location while respecting their privacy.
 - [Launching another app’s App Clip from your app](launching-another-app-s-app-clip-from-your-app.md)
@@ -74,6 +79,8 @@ Limit the function of an App Clip to ensure a fast launch experience, protect us
 ### App Clip Codes
 - [Creating App Clip Codes](creating-app-clip-codes.md)
   Help users discover your App Clip by using an NFC-integrated or scan-only App Clip Code.
+- [Encoding a URL in an App Clip Code](encoding-a-url-in-an-app-clip-code.md)
+  Choose an invocation URL for your App Clip Code that you can encode efficiently.
 - [Preparing multiple App Clip Codes for production](preparing-multiple-app-clip-codes-for-production.md)
   Prepare your App Clip Codes to send to a professional printing service.
 - [Interacting with App Clip Codes in AR](interacting-with-app-clip-codes-in-ar.md)
@@ -95,13 +102,6 @@ Limit the function of an App Clip to ensure a fast launch experience, protect us
 ### Distribution
 - [Distributing your App Clip](distributing-your-app-clip.md)
   Archive the full app for your App Clip, upload it to App Store Connect, and distribute it to testers or publish it on the App Store.
-### Articles
-- [Creating App Clip Codes with App Store Connect](creating-app-clip-codes-with-app-store-connect.md)
-  Select one or more advanced App Clip experiences in App Store Connect and create App Clip Codes for users to scan to launch your App Clip.
-- [Creating App Clip Codes with the App Clip Code Generator](creating-app-clip-codes-with-the-app-clip-code-generator.md)
-  Use the App Clip Code Generator command-line tool to verify your code’s colors, get color suggestions, and create App Clip Codes.
-- [Encoding a URL in an App Clip Code](encoding-a-url-in-an-app-clip-code.md)
-  Choose an invocation URL for your App Clip Code that you can encode efficiently.
 
 
 ---

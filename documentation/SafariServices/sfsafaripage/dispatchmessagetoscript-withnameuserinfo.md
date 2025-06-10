@@ -16,8 +16,8 @@ func dispatchMessageToScript(withName messageName: String, userInfo: [String : A
 
 ## Mentions
 
-- [Adjusting settings for contextual menu items](adjusting-settings-for-contextual-menu-items.md)
 - [Passing messages between Safari app extensions and injected scripts](passing-messages-between-safari-app-extensions-and-injected-scripts.md)
+- [Adjusting settings for contextual menu items](adjusting-settings-for-contextual-menu-items.md)
 
 ## Parameters
 

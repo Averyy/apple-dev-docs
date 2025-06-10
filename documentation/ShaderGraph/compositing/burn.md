@@ -5,17 +5,29 @@
 
 A blend operation that darkens the foreground layer using the background.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
+#### Overview
+
+1 - (1 - B) / F
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-The Burn node darkens each area in the background based on the darkness of the corresponding area in the foreground, represented by the equation `1 - (1 - B) / F`. Below is an example of a simple node graph that uses the the burn node to darken a brick texture.
+The `Burn` node darkens each area in the background based on the darkness of the corresponding area in the foreground, represented by the equation `1 - (1 - B) / F`. Below is an example of a node graph that uses the `Burn` node to darken a brick texture:
 
 ![None](https://docs-assets.developer.apple.com/published/47249df37324d4d19ad18877480395f9/BurnGraph.png)
 
-Use a [`Noise 2D`](2d-procedural/noise-2d.md) node to generate Perlin noise, and use the output of that texture as the foreground in the burn node. This process darkens the background brick texture according to the procedural pattern. Below, the resulting texture applies to a cube.
+Use a [`Noise 2D`](2d-procedural/noise-2d.md) node to generate Perlin noise, and use the output of that texture as the foreground in the `Burn` node. This process darkens the background brick texture according to the procedural pattern. Below, the resulting texture applies to a cube:
 
 ![None](https://docs-assets.developer.apple.com/published/566f3dfbd55a92bb27315df1e62c5540/BurnMaterial.png)
 

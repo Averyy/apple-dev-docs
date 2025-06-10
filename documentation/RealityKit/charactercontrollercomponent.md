@@ -1,6 +1,6 @@
 # CharacterControllerComponent
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 A component that manages character movement.
@@ -10,6 +10,7 @@ A component that manages character movement.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -125,8 +126,6 @@ The following video shows a character entity jumping in response to player input
   A container that holds collision state for the character controller.
 - [CharacterControllerComponent.CollisionFlags](charactercontrollercomponent/collisionflags.md)
   An option set that specifies which parts of the character capsule have collided with other objects.
-### Default Implementations
-- [Component Implementations](charactercontrollercomponent/component-implementations.md)
 
 ## Relationships
 
@@ -145,4 +144,4 @@ The following video shows a character entity jumping in response to player input
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/charactercontrollercomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/charactercontrollercomponent)*

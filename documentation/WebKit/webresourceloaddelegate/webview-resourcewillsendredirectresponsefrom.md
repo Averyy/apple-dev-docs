@@ -1,6 +1,6 @@
 # webView(_:resource:willSend:redirectResponse:from:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Invoked before a request is initiated for a resource and returns a possibly modified request.

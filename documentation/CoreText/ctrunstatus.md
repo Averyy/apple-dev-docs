@@ -46,6 +46,7 @@ The [`CTRunGetStatus(_:)`](ctrungetstatus(_:).md) function passes back this bitf
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 

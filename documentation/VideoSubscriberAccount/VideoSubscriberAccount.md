@@ -1,6 +1,6 @@
 # Video Subscriber Account
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: module
 
 Support TV provider and Apple TV app functionality.
@@ -14,7 +14,7 @@ Support TV provider and Apple TV app functionality.
 
 #### Overview
 
-`VideoSubscriberAccount` provides APIs to help you create apps that require secure communication with a TV provider’s authentication service. The framework also informs the Apple TV app about whether your user has a subscription and the details of that subscription.
+`VideoSubscriberAccount` provides APIs to help you create apps that require secure communication with a TV provider’s authentication service. The framework also informs the Apple TV app about whether someone has a subscription and the details of that subscription.
 
 ## Topics
 
@@ -22,13 +22,15 @@ Support TV provider and Apple TV app functionality.
 - [class VSAccountManager](vsaccountmanager.md)
   The object that coordinates your app’s authentication requests with a TV provider’s authentication service.
 ### TV app integration
-- [class VSSubscription](vssubscription.md)
-  An object that describes a subscriber’s access to content.
+- [struct VSAppleSubscription](vsapplesubscription-swift.struct.md)
+  An Apple streaming service customer and their subscriptions.
 - [class VSSubscriptionRegistrationCenter](vssubscriptionregistrationcenter.md)
   An object that stores subscription information that the system provides to the Apple TV app.
 - [class VSAccountApplicationProvider](vsaccountapplicationprovider.md)
   An object to display app-specific providers in your app.
 ### User account management
+- [Signing people in to their media accounts automatically](signing-people-in-to-media-apps-automatically.md)
+  Implement single sign-on for media-streaming apps by managing a sign-in token on a person’s Apple Account.
 - [class VSUserAccountManager](vsuseraccountmanager.md)
   The object that coordinates your app’s user account actions.
 - [struct VSUserAccount](vsuseraccount-swift.struct.md)
@@ -48,8 +50,9 @@ Support TV provider and Apple TV app functionality.
   Error information in the framework error domain.
 - [VSError.Code](vserror/code.md)
   Error codes in the framework error domain.
-### Structures
-- [struct VSAppleSubscription](vsapplesubscription-swift.struct.md)
+### Deprecated
+- [class VSSubscription](vssubscription.md)
+  An object that describes a subscriber’s access to content.
 
 
 ---

@@ -27,6 +27,7 @@ object BetaAppLocalizationsResponse
 - [object BetaAppLocalizationsWithoutIncludesResponse](betaapplocalizationswithoutincludesresponse.md)
 - [object BetaAppLocalizationUpdateRequest](betaapplocalizationupdaterequest.md)
   The request body you use to update a Beta App Localization.
+- [object BetaAppLocalizationAppLinkageResponse](betaapplocalizationapplinkageresponse.md)
 
 
 ---

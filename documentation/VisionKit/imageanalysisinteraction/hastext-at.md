@@ -1,6 +1,6 @@
 # hasText(at:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Returns a Boolean value that indicates whether active text exists at the specified point.

@@ -15,7 +15,7 @@ Start by creating the type object for the desired samples. The following example
 ```swift
 guard let energyConsumed = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryEnergyConsumed) else {
     // This should never fail when using a defined constant.
-    fatalError("*** Unable to get the dietary energy consumed type ***")
+    fatalError("*** Unable to get the step count type ***")
 }
 ```
 

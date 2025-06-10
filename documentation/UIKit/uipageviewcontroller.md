@@ -21,16 +21,14 @@ class UIPageViewController
 
 ## Mentions
 
-- [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
 - [Managing content in your app’s windows](managing-content-in-your-app-s-windows.md)
+- [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
 
 #### Overview
 
 Page view controller–navigation can be controlled programmatically by your app or directly by the user using gestures. When navigating from page to page, the page view controller uses the transition that you specify to animate the change.
 
 > ❗ **Important**:  In tvOS, the [`UIPageViewController`](uipageviewcontroller.md) class provides only a way to swipe between full-screen content pages. Unlike in iOS, a user cannot interact with or move focus between items on each page.
-
- In tvOS, the [`UIPageViewController`](uipageviewcontroller.md) class provides only a way to swipe between full-screen content pages. Unlike in iOS, a user cannot interact with or move focus between items on each page.
 
 When defining a page view controller interface, you can provide the content view controllers one at a time (or two at a time, depending upon the spine position and double-sided state) or as-needed using a data source. When providing content view controllers one at a time, you use the [`setViewControllers(_:direction:animated:completion:)`](uipageviewcontroller/setviewcontrollers(_:direction:animated:completion:).md) method to set the current content view controllers. To support gesture-based navigation, you must provide your view controllers using a data source object.
 
@@ -97,6 +95,7 @@ This class is generally used as-is, but can also be subclassed.
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)
@@ -128,6 +127,7 @@ This class is generally used as-is, but can also be subclassed.
   An object that describes an item in a tab bar.
 - [class UITab](uitab.md)
   An object that manages a tab in a tab bar.
+- [class UITabAccessory](uitabaccessory.md)
 - [class UISearchTab](uisearchtab.md)
   A tab subclass that represents the system’s search tab.
 - [class UITabGroup](uitabgroup.md)

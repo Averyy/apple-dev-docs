@@ -16,8 +16,6 @@ Replace the profile that contains your MDM payload before any of the certificate
 
 > ⚠️ **Warning**:  If any certificate in the SSL trust chain expires, the device can’t connect to the MDM server to receive its commands. When this occurs, you lose the ability to manage that device.
 
- If any certificate in the SSL trust chain expires, the device can’t connect to the MDM server to receive its commands. When this occurs, you lose the ability to manage that device.
-
 An MDM server identifies a connecting device by examining the deviceʼs identity certificate. The server then cross-checks the `UDID` in the message to ensure there’s an association between the `UDID` and the certificate.
 
 The system uses the deviceʼs identity certificate to establish the SSL/TLS connection to the MDM server.
@@ -35,8 +33,6 @@ If your MDM server sits behind a proxy that strips away or doesn’t ask for an 
 Your server validates the body of the message with the detached signature in the `SignMessage` header. If the validation is successful, the message is from the signer of the certificate in the signature.
 
 > 💡 **Tip**:  Only use this option if necessary because it adds approximately 2 kilobytes of data to each message.
-
- Only use this option if necessary because it adds approximately 2 kilobytes of data to each message.
 
 ## See Also
 

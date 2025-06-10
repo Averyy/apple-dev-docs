@@ -24,8 +24,6 @@ func saveOrder(signedArchive: Data) async throws -> FinanceStore.SaveOrderResult
 
 - [struct FullyQualifiedOrderIdentifier](fullyqualifiedorderidentifier.md)
   A structure that specifies the characteristics of an order.
-- [FinanceStore.HistoryToken](financestore/historytoken.md)
-  A structure that describes the starting point to use for financial data queries.
 
 
 ---

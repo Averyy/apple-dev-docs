@@ -79,6 +79,7 @@ let formatted = counts.map ( {style.format($0) } ) // ["Zero kB", "1 kB", "2 kB"
 - [FormatStyle](formatstyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

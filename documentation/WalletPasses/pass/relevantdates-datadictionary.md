@@ -1,14 +1,14 @@
 # Pass.RelevantDates
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that represents a date interval that the system uses to show a relevant pass.
 
 **Availability**:
 - iOS 18.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 18.0+
+- watchOS 11.0+
 
 ## Declaration
 

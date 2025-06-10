@@ -24,8 +24,6 @@ required init(from decoder: any Decoder) throws
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the object you’re using to decode the interval state, which must adopt the [`Decoder`](https://developer.apple.com/documentation/Swift/Decoder) protocol, calls it on your behalf as part of the serialization process.
 
- You don’t call this method directly. Instead, the object you’re using to decode the interval state, which must adopt the [`Decoder`](https://developer.apple.com/documentation/Swift/Decoder) protocol, calls it on your behalf as part of the serialization process.
-
 The initializer throws an error if reading from the decoder fails, or if the decoder’s data is corrupt or invalid.
 
 ## Parameters

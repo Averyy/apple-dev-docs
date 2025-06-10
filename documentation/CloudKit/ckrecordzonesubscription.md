@@ -1,6 +1,6 @@
 # CKRecordZoneSubscription
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 A subscription that generates push notifications when CloudKit modifies records in a specific record zone.
@@ -113,6 +113,7 @@ if([[NSUserDefaults standardUserDefaults]
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -124,4 +125,4 @@ if([[NSUserDefaults standardUserDefaults]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckrecordzonesubscription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckrecordzonesubscription)*

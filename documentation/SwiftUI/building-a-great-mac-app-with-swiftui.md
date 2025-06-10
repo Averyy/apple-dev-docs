@@ -1,6 +1,6 @@
 # Building a Great Mac App with SwiftUI
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Create engaging SwiftUI Mac apps by incorporating side bars, tables, toolbars, and several other popular user interface elements.
 

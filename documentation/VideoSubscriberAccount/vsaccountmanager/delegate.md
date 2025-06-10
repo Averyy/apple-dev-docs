@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The delegate of the account manager object.
@@ -20,7 +20,7 @@ weak var delegate: (any VSAccountManagerDelegate)? { get set }
 
 #### Discussion
 
-The system notifies the delegate when the app needs to present or dismiss authentication views, or decide whether to authenticate the user with their chosen provider.
+The system notifies the delegate when the app needs to present or dismiss authentication views, or decide whether to authenticate the person with their chosen provider.
 
 The delegate must adopt the [`VSAccountManagerDelegate`](vsaccountmanagerdelegate.md) protocol.
 

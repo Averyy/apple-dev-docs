@@ -10,8 +10,7 @@ The declaration to configure software updates.
 - iPadOS 18.0+
 - macOS 15.0+
 - tvOS 18.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -19,17 +18,28 @@ The declaration to configure software updates.
 object SoftwareUpdateSettings
 ```
 
+#### Discussion
+
+Specify `com.apple.configuration.softwareupdate.settings` as the declaration type.
+
+##### Configuration Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad, tvOS, visionOS |
+| Allowed in device enrollment | iOS, Shared iPad, tvOS, visionOS |
+| Allowed in user enrollment | NA |
+| Allowed in local enrollment | NA |
+| Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
+| Allowed in user scope | NA |
+
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object SoftwareUpdateSettingsAutomaticActionsObject](softwareupdatesettingsautomaticactionsobject.md)
   The object that configures various automatic Software Update functionality.
 - [object SoftwareUpdateSettingsBetaObject](softwareupdatesettingsbetaobject.md)
   The object that configures overall beta program settings.
-- [object SoftwareUpdateSettingsBeta_ProgramObject](softwareupdatesettingsbeta_programobject.md)
-  The object that configures a specific beta program.
-- [object SoftwareUpdateSettingsBeta_RequireProgramObject](softwareupdatesettingsbeta_requireprogramobject.md)
-  The object that configures beta program requirement settings.
 - [object SoftwareUpdateSettingsDeferralsObject](softwareupdatesettingsdeferralsobject.md)
   The object that configures update deferrals.
 - [object SoftwareUpdateSettingsRapidSecurityResponseObject](softwareupdatesettingsrapidsecurityresponseobject.md)
@@ -53,6 +63,8 @@ object SoftwareUpdateSettings
   The declaration to configure a Calendar subscription.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AudioAccessorySettings](audioaccessorysettings.md)
+  The declaration to configure audio accessory settings.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
@@ -65,8 +77,6 @@ object SoftwareUpdateSettings
   The declaration to test the MDM system.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
-- [object PasscodeSettings](passcodesettings.md)
-  The declaration to configure passcode policy settings.
 
 
 ---

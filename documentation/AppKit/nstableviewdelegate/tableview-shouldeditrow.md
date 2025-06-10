@@ -1,6 +1,6 @@
 # tableView(_:shouldEdit:row:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Asks the delegate if the cell at the specified row and column can be edited.

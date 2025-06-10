@@ -1,6 +1,6 @@
 # index(_:offsetBy:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns an index that is the specified distance from the given index.

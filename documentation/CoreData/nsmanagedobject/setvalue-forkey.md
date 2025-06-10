@@ -28,8 +28,6 @@ This method is overridden by `NSManagedObject` to access the managed object’s 
 
 > ❗ **Important**:  You must not override this method.
 
- You must not override this method.
-
 ## Parameters
 
 - `value`: The new value for the property specified by  .

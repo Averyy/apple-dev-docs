@@ -1,12 +1,12 @@
 # Creating an App Clip with Xcode
 
-**Framework**: Appclip
+**Framework**: App Clips
 
 Add an App Clip target to your Xcode project and share code between the App Clip and its corresponding full app.
 
 #### Overview
 
-An  is a lightweight version of your app that offers some of its functionality when and where people need it. With Xcode, you can add an App Clip target to your app’s project, share code and assets between the App Clip and the full app, and build, run, and debug your App Clip.
+An  is a lightweight version of your app that offers some of its functionality when and where people need it or that people use to try out your full app. With Xcode, you can add an App Clip target to your app’s project, share code and assets between the App Clip and the full app, and build, run, and debug your App Clip.
 
 ##### Add an App Clip Target
 
@@ -26,7 +26,7 @@ Xcode creates all required files for the options you choose and adds a target fo
 - The `_XCAppClipURL` environment variable for the scheme of your App Clip that allows you to debug invocations
 - Support for the same devices as the full app, not including macOS
 
-Additionally, Xcode creates a new build phase for the app target that embeds the App Clip in the app
+Additionally, Xcode creates a new build phase for the app target that embeds the App Clip in the app.
 
 Before you add code to the App Clip target, run the App Clip in Simulator or on a device. At this point, the App Clip shows an empty white screen because you haven’t yet added any code and assets to the App Clip target.
 
@@ -40,20 +40,11 @@ App Clips make use of the same frameworks as full apps, and adding code or asset
 - If you add an App Clip to an existing app, set aside time to refactor the app’s code base to be modular and share code between the App Clip and the full app to avoid duplicating code.
 - Add shared assets to a new asset catalog, and use the catalog in both the full app and the App Clip. For more information about asset catalogs, see [`Managing assets with asset catalogs`](https://developer.apple.com/documentation/Xcode/managing-assets-with-asset-catalogs).
 
-##### Keep Your App Clip Small in Size
+##### Verify the Size of Your App Clip
 
-Your App Clips must be small to launch instantly:
+Your App Clips must be small to launch instantly. Aim to keep your App Clip well below the applicable limits outlined in [`Choosing the right functionality for your App Clip`](choosing-the-right-functionality-for-your-app-clip.md).
 
-- If you make your App Clip available on devices running iOS 16 and later, the uncompressed App Clip binary can be up to 15 MB in size.
-- If you make your App Clip available on devices running iOS 15 and earlier, the uncompressed App Clip binary can be up to 10 MB in size.
-
-If you make your App Clip available on devices running iOS 17 and later, the uncompressed App Clip binary can be up to 100 MB in size if it meets the following conditions:
-
-- The App Clip only supports digital invocations — for example from your website or Spotlight search — and not from physical invocations like App Clip Codes, QR codes, or NFC tags.
-- People use your App Clip in situations where a reliable internet connection is likely, for example, at home.
-- Your App Clip doesn’t support iOS versions prior to iOS 17.
-
-Aim to keep your App Clip well below the applicable limit. To measure the size of your App Clip, create an app-size report for your App Clip:
+To measure the size of your App Clip, create an app-size report for your App Clip:
 
 1. In Xcode, archive the app that belongs to your App Clip, open the Organizer window, select the archive, and click Distribute App.
 2. Export the App Clip as an Ad Hoc or Development build with App Thinning enabled.
@@ -61,6 +52,14 @@ Aim to keep your App Clip well below the applicable limit. To measure the size o
 The output folder for your exported App Clip contains its size report, a file named `App Thinning Size Report.txt`. Open the text file, note the uncompressed size of your App Clip for each variant, and then make adjustments to your project to keep the uncompressed size for each variant below the applicable size limit.
 
 For more information on measuring your app’s size, see [`Reducing your app’s size`](https://developer.apple.com/documentation/Xcode/reducing-your-app-s-size).
+
+##### Download Additional Assets
+
+App Clips can use [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets) to download additional content. If your App Clip offers an in-the-moment experience, ensure instant availability by keeping the App Clip as small as possible and avoiding usage of Background Assets.
+
+If you create an App Clip to offer a demo version of your app or your game, and are confident that people have a reliable and fast network connection when they invoke your App Clip, use Background Assets to down additional content. For example, the App Clip demo of a game might include assets needed for people to start the demo and create their in-game hero. To keep the App Clip small, it might not include the assets needed to play the first three levels of the game but downloads them while people create their hero.
+
+To download additional assets in the background, make sure you configure Background Assets for your app and App Clip targets. Note that your App Clip can’t set a background asset download’s priority to essential with [`isEssential`](https://developer.apple.com/documentation/BackgroundAssets/BADownload/isEssential).
 
 ##### Use Active Compilation Conditions
 
@@ -91,12 +90,15 @@ Adding an App Clip target to your app’s Xcode project and modifying the projec
 
 Based on the decisions you make, you’ll use [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) to:
 
-- Configure the required default App Clip experience in App Store Connect.
-- Enable default App Clip links.
-- Configure optional advanced App Clip experience.
-- Create App Clip Codes.
+- Configure the required default App Clip experience
+- Use the default App Clip link or the App Clip demo link
+- Configure optional advanced App Clip experience
+- Add code to respond to different invocation URLs
+- Create App Clip Codes
 
-You may also have to associate your App Clip with your website by adding the [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains) to your app and App Clip targets and making changes to your server. To learn more about the App Clip launch experience for your App Clip, see [`Configuring the launch experience of your App Clip`](configuring-the-launch-experience-of-your-app-clip.md) and [`Responding to invocations`](responding-to-invocations.md). For more information about making changes to your server, see [`Associating your App Clip with your website`](associating-your-app-clip-with-your-website.md).
+To learn more about the App Clip launch experience for your App Clip, see [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md) and [`Responding to invocations`](responding-to-invocations.md).
+
+You may also have to associate your App Clip with your website and make changes to your server. For more information, refer to [`Associating your App Clip with your website`](associating-your-app-clip-with-your-website.md).
 
 When it’s time to test your App Clip, use Xcode to test the launch experience locally or test it with [`TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/). For more information, see [`Testing the launch experience of your App Clip`](testing-the-launch-experience-of-your-app-clip.md).
 
@@ -114,4 +116,4 @@ When it’s time to test your App Clip, use Xcode to test the launch experience 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/creating-an-app-clip-with-xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appclip/creating-an-app-clip-with-xcode)*

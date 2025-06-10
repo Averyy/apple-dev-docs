@@ -72,6 +72,7 @@ The type specified in the call to [`CFNumberCreate(_:_:_:)`](cfnumbercreate(_:_:
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

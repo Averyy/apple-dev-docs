@@ -10,6 +10,7 @@ An ordered, mutable collection of entities.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -64,6 +65,8 @@ protocol EntityCollection : Collection where Self.Element == Entity, Self.Index 
   A view that represents the default placeholder for a RealityView.
 - [struct RealityViewEntityCollection](realityviewentitycollection.md)
   A collection of entities in a RealityView.
+- [struct RealityViewLayoutOption](realityviewlayoutoption.md)
+  Specifies the frame sizing and content alignment option for`RealityView`.
 
 
 ---

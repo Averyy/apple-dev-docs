@@ -10,6 +10,7 @@ Creates a new CustomContent with the given label, value, and importance.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

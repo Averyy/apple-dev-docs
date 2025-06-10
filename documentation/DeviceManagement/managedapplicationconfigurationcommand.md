@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to get managed app configurations on a device.
+The command to get app configurations from managed apps on a device.
 
 **Availability**:
 - iOS 7.0+
@@ -12,8 +12,6 @@ The command to get managed app configurations on a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,14 +21,14 @@ object ManagedApplicationConfigurationCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object ManagedApplicationConfigurationCommand.Command](managedapplicationconfigurationcommand/command-data.dictionary.md)
-  The request dictionary to get managed app configurations.
+  The command to get app configurations from managed apps on a device.
 
 ## See Also
 
 - [object ManagedApplicationConfigurationResponse](managedapplicationconfigurationresponse.md)
-  A response from the device after it processes the command to get app configurations from managed apps.
+  A response from the device after it processes the command to get app configurations from managed apps on a device.
 
 
 ---

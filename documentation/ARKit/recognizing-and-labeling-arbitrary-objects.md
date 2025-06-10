@@ -1,6 +1,6 @@
 # Recognizing and Labeling Arbitrary Objects
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Create anchors that track objects you recognize in the camera feed, using a custom optical-recognition algorithm.
 
@@ -108,4 +108,4 @@ func view(_ view: ARSKView, didAdd node: SKNode, for anchor: ARAnchor) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/recognizing-and-labeling-arbitrary-objects)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/recognizing-and-labeling-arbitrary-objects)*

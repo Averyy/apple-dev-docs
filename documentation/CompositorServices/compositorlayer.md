@@ -6,13 +6,13 @@
 A type that you use with an immersive space to display fully immersive content using Metal.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct CompositorLayer
+struct CompositorLayer
 ```
 
 ## Mentions
@@ -45,14 +45,19 @@ For more information about how to set up and start your Metal rendering engine, 
 ## Topics
 
 ### Initializers
-- [init(configuration: any CompositorLayerConfiguration, renderer: (LayerRenderer) -> Void)](compositorlayer/init(configuration:renderer:).md)
+- [init(configuration: any CompositorLayerConfiguration, renderer: (LayerRenderer) -> Void)](compositorlayer/init(configuration:renderer:)-2uxn7.md)
+  Creates a [`CompositorLayer`](compositorlayer.md) instance.
+- [init(configuration: any CompositorLayerConfiguration, renderer: (LayerRenderer, NWEndpoint?) -> Void)](compositorlayer/init(configuration:renderer:)-81vbz.md)
 - [init(configuration: any CompositorLayerConfiguration, renderer: (LayerRenderer) -> Void, Void)](compositorlayer/init(configuration:renderer:_:).md)
 
 ## Relationships
 
 ### Conforms To
+- [CompositorContent](../SwiftUI/CompositorContent.md)
+- [Copyable](../Swift/Copyable.md)
 - [ImmersiveSpaceContent](../SwiftUI/ImmersiveSpaceContent.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -60,6 +65,8 @@ For more information about how to set up and start your Metal rendering engine, 
   Create a fully immersive experience in visionOS using a custom Metal-based rendering engine.
 - [Interacting with virtual content blended with passthrough](interacting-with-virtual-content-blended-with-passthrough.md)
   Present a mixed immersion style space to draw content in a person’s surroundings, and choose how upper limbs appear with respect to rendered content.
+- [Rendering hover effects in Metal immersive apps](rendering_hover_effects_in_metal_immersive_apps.md)
+  Change the appearance of a rendered onscreen element when a player gazes at it.
 - [protocol CompositorLayerConfiguration](compositorlayerconfiguration.md)
   An interface for specifying the texture configurations and rendering behaviors to use with your Metal rendering engine.
 - [struct DefaultCompositorLayerConfiguration](defaultcompositorlayerconfiguration.md)

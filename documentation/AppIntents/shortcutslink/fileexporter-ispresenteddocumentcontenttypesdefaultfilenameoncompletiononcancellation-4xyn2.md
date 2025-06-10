@@ -8,9 +8,9 @@ Presents a system interface for allowing the user to export a `FileDocument` to 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

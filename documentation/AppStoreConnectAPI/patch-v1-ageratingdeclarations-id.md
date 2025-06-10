@@ -10,6 +10,7 @@ Provide age-related information so the App Store can determine the age rating fo
 
 ## Mentions
 
+- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
 - [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
 
 #### Discussion
@@ -20,11 +21,7 @@ Use this endpoint to indicate whether an app is Made for Kids.
 
 When calling this endpoint, only include the attributes that you’re modifying.
 
-> ❗ **Important**:  The `gamblingAndContests` property is deprecated. Use the `contests` or `gambling` properties instead.
-
- The `gamblingAndContests` property is deprecated. Use the `contests` or `gambling` properties instead.
-
-For example, in an app that has a `FREQUENT_OR_INTENSE` declaration for contests, the age rating for the `AppInfos` is 12+. If you declare a value of true for `gamblingAndContests` instead, the age rating for the `AppInfos` is 17+.
+For example, in an app that has a `FREQUENT_OR_INTENSE` declaration for contests, the age rating for the `AppInfos` is 12+. If you declare a value of true for `gambling`, the age rating for the `AppInfos` is 17+.
 
 ##### Modify an Age Rating Declaration
 
@@ -33,6 +30,12 @@ For example, in an app that has a `FREQUENT_OR_INTENSE` declaration for contests
 ## Request Body
 
 The request body you use to update an Age Rating Declaration.
+
+## See Also
+
+- [Read age rating declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
+  Get the age rating declaration for the app info.
+- [GET /v1/appInfos/{id}/relationships/ageRatingDeclaration](get-v1-appinfos-_id_-relationships-ageratingdeclaration.md)
 
 
 ---

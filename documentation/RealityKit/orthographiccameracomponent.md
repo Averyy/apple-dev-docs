@@ -10,6 +10,7 @@ A component that defines an orthographic virtual camera and its settings.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -28,7 +29,7 @@ To create an orthographic camera, add this component to an entity.
 | --- | --- |
 | ![An illustration of three cubes, one behind the other, rendered with a perspective camera. The cube farthest away appears smaller than the closest one.](https://docs-assets.developer.apple.com/published/ccf81006872074acd2f1735dc3a9ed96/orthocamera-perspective-cubes.png) | ![A screenshot of three cubes, one behind the other, rendered with a orthographic camera. The cubes appear the same size, regardless of their distance.](https://docs-assets.developer.apple.com/published/6a06251fd3a6fe3a7dca37a87da85cc4/orthocamera-orthographic-cubes.png) |
 
-You can add an `OrthographicCameraComponent` to an entity’s component set, and orient that entity so that it looks at a specific target using [`look(at:from:upVector:relativeTo:)`](entity/look(at:from:upvector:relativeto:).md).
+You can add an `OrthographicCameraComponent` to an entity’s component set, and orient that entity so that it looks at a specific target using `Entity/look(at:from:upVector:relativeTo:)`.
 
 ```swift
 // Create an entity to hold the camera component.
@@ -65,14 +66,6 @@ In AR scenarios, the system provides the camera automatically; however, in non-A
   A floating-point value the camera uses to scale entities.
 - [var scaleDirection: CameraFieldOfViewOrientation](orthographiccameracomponent/scaledirection.md)
   The direction in which the camera applies scaling.
-### Comparing orthographic camera components
-- [static func == (OrthographicCameraComponent, OrthographicCameraComponent) -> Bool](orthographiccameracomponent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](orthographiccameracomponent/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Component Implementations](orthographiccameracomponent/component-implementations.md)
-- [Equatable Implementations](orthographiccameracomponent/equatable-implementations.md)
 
 ## Relationships
 

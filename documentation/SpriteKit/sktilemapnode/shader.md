@@ -17,6 +17,7 @@ Defines a shader which is applied to each tile of the tile map.
 ## Declaration
 
 ```swift
+@MainActor
 var shader: SKShader? { get set }
 ```
 

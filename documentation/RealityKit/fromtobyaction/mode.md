@@ -1,6 +1,6 @@
 # mode
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: property
 
 Determines the entities transform [`from`](fromtobyaction/from.md) and [`to`](fromtobyaction/to.md) are relative to.
@@ -10,6 +10,7 @@ Determines the entities transform [`from`](fromtobyaction/from.md) and [`to`](fr
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

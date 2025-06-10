@@ -9,12 +9,14 @@ The action hint of the control described by the modified label.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
+- macOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
 @MainActor
-@preconcurrency func controlWidgetActionHint(_ hint: Text) -> some View
+@preconcurrency func controlWidgetActionHint(_ hint: LocalizedStringResource) -> some View
 ```
 
 #### Discussion
@@ -35,7 +37,7 @@ ControlWidgetButton(…) { Image(systemName: “note.text”) .controlWidgetActi
 
 ## Parameters
 
-- `hint`: The hint to display.
+- `hint`: The localized string resource to display.
 
 ## See Also
 

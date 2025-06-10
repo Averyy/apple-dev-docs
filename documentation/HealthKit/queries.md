@@ -104,6 +104,20 @@ You run a query by calling the HealthKit store’s [`execute(_:)`](hkhealthstore
   The type of record returned by a verifiable clinical record query.
 - [class HKDocumentQuery](hkdocumentquery.md)
   A query that returns a snapshot of all matching documents currently saved in the HealthKit store.
+### Medication queries
+- [class HKClinicalCoding](hkclinicalcoding.md)
+- [class HKHealthConceptIdentifier](hkhealthconceptidentifier.md)
+- [class HKMedicationConcept](hkmedicationconcept.md)
+- [class HKMedicationDoseEvent](hkmedicationdoseevent.md)
+- [class HKMedicationDoseEventType](hkmedicationdoseeventtype.md)
+- [class HKUserAnnotatedMedication](hkuserannotatedmedication.md)
+- [class HKUserAnnotatedMedicationQuery](hkuserannotatedmedicationquery.md)
+- [class HKUserAnnotatedMedicationType](hkuserannotatedmedicationtype.md)
+- [struct HKHealthConceptDomain](hkhealthconceptdomain.md)
+  Represents the domain of a HKHealthConceptIdentifier
+- [struct HKMedicationGeneralForm](hkmedicationgeneralform.md)
+  Represents a medications general form.
+- [struct HKUserAnnotatedMedicationQueryDescriptor](hkuserannotatedmedicationquerydescriptor.md)
 
 ## See Also
 
@@ -121,6 +135,8 @@ You run a query by calling the HealthKit store’s [`execute(_:)`](hkhealthstore
   Create and save health and fitness samples.
 - [Visualizing HealthKit State of Mind in visionOS](visualizing-healthkit-state-of-mind-in-visionos.md)
   Incorporate HealthKit State of Mind into your app and visualize the data in visionOS.
+- [Logging symptoms associated with a medication](logging-symptoms-associated-with-a-medication.md)
+  Fetch medications and dose events from the HealthKit store, and create symptom samples to associate with them.
 
 
 ---

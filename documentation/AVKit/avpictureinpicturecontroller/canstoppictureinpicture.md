@@ -20,7 +20,7 @@ var canStopPictureInPicture: Bool { get }
 
 #### Discussion
 
-When this value is [`true`](https://developer.apple.com/documentation/swift/true), calling [`stopPictureInPicture()`](avpictureinpicturecontroller/stoppictureinpicture().md) stops the active Picture in Picture session. Apps should update the state of UI that starts Picture in Picture when this property value changes.
+When this value is `true`, calling [`stopPictureInPicture()`](avpictureinpicturecontroller/stoppictureinpicture().md) stops the active Picture in Picture session. Apps should update the state of UI that starts Picture in Picture when this property value changes.
 
 Thie value is key-value observable.
 

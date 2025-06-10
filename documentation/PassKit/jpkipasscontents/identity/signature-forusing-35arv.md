@@ -1,6 +1,6 @@
 # signature(for:using:)
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: method  
 **Required**: Yes
 

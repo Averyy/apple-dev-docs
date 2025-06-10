@@ -36,6 +36,7 @@ protocol AVPlaybackCoordinatorPlaybackControlDelegate : NSObjectProtocol, Sendab
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

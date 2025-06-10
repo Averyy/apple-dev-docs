@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: init
 
-Creates a new `PlayToneAction`.
+Creates an action that plays a sequence of tones that indicate an interaction with the keypad.
 
 **Availability**:
 - iOS 17.4+
@@ -20,8 +20,8 @@ init(conversationUUID: UUID, digits: String, tone: PlayToneAction.Tone)
 
 ## Parameters
 
-- `conversationUUID`: The unique identfiier of the   to which this action will be applied.
-- `digits`: The digits tapped by the user into the in-call keypad or included in the dial string.
+- `conversationUUID`: The unique identifier of the conversation to which this action will be applied.
+- `digits`: The digits tapped by the user into the keypad or included in the dial string.
 - `tone`: The tone to play.
 
 

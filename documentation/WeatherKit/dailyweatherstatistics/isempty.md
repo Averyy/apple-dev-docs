@@ -1,6 +1,6 @@
 # isEmpty
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A Boolean value indicating whether the collection is empty.

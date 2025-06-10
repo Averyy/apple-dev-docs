@@ -30,6 +30,7 @@ protocol MusicDeveloperTokenProvider : Sendable
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [DefaultMusicTokenProvider](defaultmusictokenprovider.md)
 

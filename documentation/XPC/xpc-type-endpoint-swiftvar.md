@@ -1,6 +1,6 @@
 # XPC_TYPE_ENDPOINT
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents a connection in serialized form.

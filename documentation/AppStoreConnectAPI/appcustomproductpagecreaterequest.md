@@ -29,6 +29,7 @@ object AppCustomProductPageCreateRequest
   The request body you use to update an app custom product page.
 - [object AppCustomProductPagesResponse](appcustomproductpagesresponse.md)
   A response that contains a list of app custom product page resources.
+- [object AppCustomProductPageAppCustomProductPageVersionsLinkagesResponse](appcustomproductpageappcustomproductpageversionslinkagesresponse.md)
 
 
 ---

@@ -98,6 +98,20 @@ You can use types that conform to `RegexComponent` as parameters to string searc
   A type alias to use when matching date components in a regular expression.
 - [RegexComponent.TimeStyle](regexcomponent/timestyle.md)
   A type alias to use when matching time components in a regular expression.
+### Type Properties
+- [static var http: Date.HTTPFormatStyle](regexcomponent/http.md)
+  Creates a regex component to match an HTTP date and time, such as “2015-11-14’T’15:05:03’Z’”, and capture the string as a `Date` using the time zone as specified in the string.
+- [static var httpComponents: DateComponents.HTTPFormatStyle](regexcomponent/httpcomponents.md)
+  Creates a regex component to match an HTTP date and time, such as “2015-11-14’T’15:05:03’Z’”, and capture the string as a `DateComponents` using the time zone as specified in the string.
+- [static var iso8601Components: DateComponents.ISO8601FormatStyle](regexcomponent/iso8601components.md)
+  Creates a regex component to match an ISO 8601 date and time, such as “2015-11-14’T’15:05:03’Z’”, and capture the string as a `DateComponents` using the time zone as specified in the string.
+### Type Methods
+- [static func iso8601Components(timeZone: TimeZone, includingFractionalSeconds: Bool, dateSeparator: Date.ISO8601FormatStyle.DateSeparator, dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator, timeSeparator: Date.ISO8601FormatStyle.TimeSeparator) -> Self](regexcomponent/iso8601components(timezone:includingfractionalseconds:dateseparator:datetimeseparator:timeseparator:).md)
+  Creates a regex component to match an ISO 8601 date and time string without time zone, and capture the string as a `DateComponents` using the specified `timeZone`. If the string contains time zone designators, matches up until the start of time zone designators.
+- [static func iso8601ComponentsWithTimeZone(includingFractionalSeconds: Bool, dateSeparator: Date.ISO8601FormatStyle.DateSeparator, dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator, timeSeparator: Date.ISO8601FormatStyle.TimeSeparator, timeZoneSeparator: Date.ISO8601FormatStyle.TimeZoneSeparator) -> Self](regexcomponent/iso8601componentswithtimezone(includingfractionalseconds:dateseparator:datetimeseparator:timeseparator:timezoneseparator:).md)
+  Creates a regex component to match an ISO 8601 date and time string, including time zone, and capture the string as a `DateComponents` using the time zone as specified in the string.
+- [static func iso8601DateComponents(timeZone: TimeZone, dateSeparator: Date.ISO8601FormatStyle.DateSeparator) -> Self](regexcomponent/iso8601datecomponents(timezone:dateseparator:).md)
+  Creates a regex component to match an ISO 8601 date string, such as “2015-11-14”, and capture the string as a `DateComponents`. The captured `DateComponents` would be at midnight in the specified `timeZone`.
 
 ## Relationships
 

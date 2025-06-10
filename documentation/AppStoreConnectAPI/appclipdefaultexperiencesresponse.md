@@ -22,6 +22,8 @@ object AppClipDefaultExperiencesResponse
   A response that contains a single App Clips resource.
 - [object AppClipAdvancedExperiencesResponse](appclipadvancedexperiencesresponse.md)
   A response that contains a list of Advanced App Clip Experiences resources.
+- [object AppClipAppClipAdvancedExperiencesLinkagesResponse](appclipappclipadvancedexperienceslinkagesresponse.md)
+- [object AppClipAppClipDefaultExperiencesLinkagesResponse](appclipappclipdefaultexperienceslinkagesresponse.md)
 
 
 ---

@@ -31,6 +31,7 @@ struct LocalTestingDistributedActorSystemError
 - [DistributedActorSystemError](distributedactorsystemerror.md)
 - [Error](../swift/error.md)
 - [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

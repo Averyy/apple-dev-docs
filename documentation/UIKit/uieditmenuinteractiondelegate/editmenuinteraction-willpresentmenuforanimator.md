@@ -14,7 +14,6 @@ Informs the delegate when the interaction is about to present the menu.
 ## Declaration
 
 ```swift
-@MainActor
 optional func editMenuInteraction(_ interaction: UIEditMenuInteraction, willPresentMenuFor configuration: UIEditMenuConfiguration, animator: any UIEditMenuInteractionAnimating)
 ```
 

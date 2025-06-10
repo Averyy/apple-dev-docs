@@ -11,8 +11,8 @@ Posts an event to the system, which displays the information in the system UI.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- Unknown ?+ - Deprecated
 - visionOS 1.0+
+- Unknown ?+ - Deprecated
 
 ## Declaration
 

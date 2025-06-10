@@ -1,7 +1,9 @@
-# !=(_:_:)
+# *=(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
+
+Multiplies two values and stores the result in the left-hand-side variable.
 
 **Availability**:
 - iOS 18.0+
@@ -15,10 +17,10 @@
 ## Declaration
 
 ```swift
-static func != (lhs: UInt128, rhs: UInt128) -> Bool
+static func *= (a: inout UInt128, b: UInt128)
 ```
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/uint128/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/uint128/*=(_:_:))*

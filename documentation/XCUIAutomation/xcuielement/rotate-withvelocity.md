@@ -1,6 +1,6 @@
 # rotate(_:withVelocity:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a rotation gesture with two touches.

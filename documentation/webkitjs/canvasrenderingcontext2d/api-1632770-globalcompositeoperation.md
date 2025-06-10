@@ -1,6 +1,6 @@
 # globalCompositeOperation
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A string representing the compositing method for drawing operations.

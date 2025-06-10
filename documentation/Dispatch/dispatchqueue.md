@@ -28,8 +28,6 @@ You schedule work items synchronously or asynchronously. When you schedule a wor
 
 > ❗ **Important**:  Attempting to synchronously execute a work item on the main queue results in deadlock.
 
- Attempting to synchronously execute a work item on the main queue results in deadlock.
-
 ##### Avoiding Excessive Thread Creation
 
 When designing tasks for concurrent execution, do not call methods that block the current thread of execution. When a task scheduled by a concurrent dispatch queue blocks a thread, the system creates additional threads to run other queued concurrent tasks. If too many tasks block, the system may run out of threads for your app.
@@ -153,6 +151,7 @@ Another way that apps consume too many threads is by creating too many private c
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Scheduler](../Combine/Scheduler.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TaskExecutor](../Swift/TaskExecutor.md)
 
 ## See Also

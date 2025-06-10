@@ -11,6 +11,7 @@ An abstract class for representing task requests.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 
@@ -32,6 +33,7 @@ class BGTaskRequest
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
 - [BGAppRefreshTaskRequest](bgapprefreshtaskrequest.md)
+- [BGContinuedProcessingTaskRequest](bgcontinuedprocessingtaskrequest.md)
 - [BGProcessingTaskRequest](bgprocessingtaskrequest.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
@@ -50,6 +52,8 @@ class BGTaskRequest
   A request to launch your app in the background to execute a short refresh task.
 - [class BGHealthResearchTaskRequest](bghealthresearchtaskrequest.md)
   A request to launch your app in the background to execute processing for a health research study in which a user participates.
+- [class BGContinuedProcessingTaskRequest](bgcontinuedprocessingtaskrequest.md)
+  A request for a workload that the system continues processing even if a person backgrounds the app.
 
 
 ---

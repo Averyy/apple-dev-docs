@@ -1,6 +1,6 @@
 # Creating performant scrollable stacks
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Display large numbers of repeated views efficiently with scroll views, stack views, and lazy stacks.
 
@@ -107,4 +107,4 @@ For more information about using the Instruments tool, see doc://com.apple.docum
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/creating-performant-scrollable-stacks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/creating-performant-scrollable-stacks)*

@@ -13,7 +13,6 @@ A collection of all values of this type.
 ## Declaration
 
 ```swift
-nonisolated
 static var allCases: [RestrictedSandboxRevision] { get }
 ```
 

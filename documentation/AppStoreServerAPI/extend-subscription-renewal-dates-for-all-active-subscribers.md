@@ -1,6 +1,6 @@
 # Extend Subscription Renewal Dates for All Active Subscribers
 
-**Framework**: Appstoreserverapi  
+**Framework**: App Store Server API  
 **Kind**: httpRequest
 
 Uses a subscription’s product identifier to extend the renewal date for all of its eligible active subscribers.
@@ -54,4 +54,4 @@ The request body for extending a subscription renewal date for all of its active
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/extend-subscription-renewal-dates-for-all-active-subscribers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/extend-subscription-renewal-dates-for-all-active-subscribers)*

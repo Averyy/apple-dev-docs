@@ -1,6 +1,6 @@
 # init(cube:options:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: init
 
 Synchronously generates an environment resource from a cube texture resource.
@@ -10,6 +10,7 @@ Synchronously generates an environment resource from a cube texture resource.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -69,7 +70,7 @@ await MainActor.run {
 
 ## See Also
 
-- [convenience init(named: String, in: Bundle?) async throws](environmentresource/init(named:in:).md)
+- [convenience(named:in:)](environmentresource/init(named:in:).md)
   Asynchronously loads an environment resource from a bundle.
 - [convenience init(equirectangular: CGImage, withName: String?) throws](environmentresource/init(equirectangular:withname:)-9g602.md)
   Synchronously creates an environment resource from an equirectangular image.

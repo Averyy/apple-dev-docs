@@ -1,6 +1,6 @@
 # FRAMEBUFFER_INCOMPLETE_MULTISAMPLE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

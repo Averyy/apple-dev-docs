@@ -37,6 +37,7 @@ To create an update counter action, use the [`updateCounter(_:context:)`](tablet
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TabletopAction](tabletopaction.md)
 
 ## See Also

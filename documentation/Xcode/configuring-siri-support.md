@@ -44,4 +44,4 @@ In the same way you configure an Intents extension, you must specify the types o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-siri-support)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-siri-support)*

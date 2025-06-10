@@ -1,6 +1,6 @@
 # PushKit
 
-**Framework**: Pushkit  
+**Framework**: PushKit  
 **Kind**: module
 
 Respond to push notifications related to your app’s complications, file providers, and VoIP services.

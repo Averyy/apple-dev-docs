@@ -50,6 +50,8 @@ A [`CGSize`](cgsize.md) structure is sometimes used to represent a distance vect
 - [func CGSizeEqualToSize(_ size1: CGSize, _ size2: CGSize) -> Bool](../CoreGraphics/CGSizeEqualToSize(_:_:).md)
   Returns whether two sizes are equal.
 ### Initializers
+- [init(CVImageSize)](cgsize/init(_:).md)
+  Convert `CVImageSize` to [`CGSize`](cgsize.md)
 - [init?(dictionaryRepresentation: CFDictionary)](cgsize/init(dictionaryrepresentation:).md)
 - [init(width: Double, height: Double)](cgsize/init(width:height:)-2du3k.md)
 - [init(width: Double, height: Double)](cgsize/init(width:height:)-63ffm.md)

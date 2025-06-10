@@ -21,7 +21,7 @@
 - [Data Entry Types](data-entry-types.md)
   These constants specify how a cell formats numeric data.
 - [Additional Writing Directions](additional-writing-directions.md)
-  Additional values to be added to [`NSWritingDirection.leftToRight`](nswritingdirection/lefttoright.md) or [`NSWritingDirection.rightToLeft`](nswritingdirection/righttoleft.md), when used with [`writingDirection`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1524497-writingdirection).
+  Additional values to be added to [`NSWritingDirection.leftToRight`](nswritingdirection/lefttoright.md) or [`NSWritingDirection.rightToLeft`](nswritingdirection/righttoleft.md), when used with `NSAttributedString/Key/writingDirection`.
 - [Return values for modal operations](return-values-for-modal-operations.md)
   Historical return values for [`runModal(for:)`](nsapplication/runmodal(for:).md) and [`runModalSession(_:)`](nsapplication/runmodalsession(_:).md).
 - [Tags of Views in the FontPanel](tags-of-views-in-the-fontpanel.md)

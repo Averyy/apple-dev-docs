@@ -43,6 +43,7 @@ The [`recordPermission`](avaudiosession/recordpermission-swift.property.md) prop
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -33,7 +33,7 @@ init(_ titleKey: LocalizedStringKey, image: ImageResource, @ViewBuilder content:
   Creates a menu with a custom primary action that generates its label from a localized string key.
 - [init(content: () -> Content, label: () -> Label, primaryAction: () -> Void)](menu/init(content:label:primaryaction:).md)
   Creates a menu with a custom primary action and custom label.
-- [init(LocalizedStringKey, systemImage: String, content: () -> Content, primaryAction: () -> Void)](menu/init(_:systemimage:content:primaryaction:).md)
+- [init(_:systemImage:content:primaryAction:)](menu/init(_:systemimage:content:primaryaction:).md)
   Creates a menu with a custom primary action that generates its label from a localized string key and system image.
 
 

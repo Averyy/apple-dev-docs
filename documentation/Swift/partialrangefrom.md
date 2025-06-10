@@ -106,6 +106,7 @@ The behavior of incrementing indefinitely is determined by the type of `Bound`. 
 ## Relationships
 
 ### Conforms To
+- [BNNSGraph.Builder.SliceIndex](../Accelerate/BNNSGraph/Builder/SliceIndex.md)
 - [Copyable](copyable.md)
 - [CustomTestStringConvertible](../Testing/CustomTestStringConvertible.md)
 - [Decodable](decodable.md)
@@ -114,6 +115,7 @@ The behavior of incrementing indefinitely is determined by the type of `Bound`. 
 - [MLTensorRangeExpression](../CoreML/MLTensorRangeExpression.md)
 - [RangeExpression](rangeexpression.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

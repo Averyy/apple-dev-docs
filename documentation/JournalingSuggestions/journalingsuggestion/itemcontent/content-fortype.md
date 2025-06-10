@@ -1,6 +1,6 @@
 # content(forType:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Retrieves a suggestion’s contents by returning a structure specific to the given content type.

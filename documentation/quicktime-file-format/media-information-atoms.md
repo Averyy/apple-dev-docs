@@ -1,6 +1,6 @@
 # Media information atoms
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 An atom that contains a number of other atoms that define specific characteristics of the video media data.
 

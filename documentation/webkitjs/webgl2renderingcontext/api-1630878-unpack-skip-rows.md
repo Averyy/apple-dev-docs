@@ -1,6 +1,6 @@
 # UNPACK_SKIP_ROWS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

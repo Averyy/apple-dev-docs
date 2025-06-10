@@ -1,6 +1,6 @@
 # hasOnlySecureContent
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether the web view loaded all resources on the page through securely encrypted connections.

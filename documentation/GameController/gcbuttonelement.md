@@ -26,6 +26,9 @@ protocol GCButtonElement : GCPhysicalInputElement
   The input object that provides the touch state of the element.
 - [var pressedInput: any GCLinearInput & GCPressedStateInput](gcbuttonelement/pressedinput.md)
   The input object that provides the linear and press state of the element.
+### Instance Properties
+- [var forceInput: (any GCLinearInput)?](gcbuttonelement/forceinput.md)
+  Get the input containing the measured force applied to the button.
 
 ## Relationships
 

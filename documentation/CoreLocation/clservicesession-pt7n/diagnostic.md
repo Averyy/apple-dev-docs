@@ -20,6 +20,7 @@ struct Diagnostic
 ## Topics
 
 ### Instance Properties
+- [var accuracyLimited: Bool](clservicesession-pt7n/diagnostic/accuracylimited.md)
 - [var alwaysAuthorizationDenied: Bool](clservicesession-pt7n/diagnostic/alwaysauthorizationdenied.md)
 - [var authorizationDenied: Bool](clservicesession-pt7n/diagnostic/authorizationdenied.md)
 - [var authorizationDeniedGlobally: Bool](clservicesession-pt7n/diagnostic/authorizationdeniedglobally.md)

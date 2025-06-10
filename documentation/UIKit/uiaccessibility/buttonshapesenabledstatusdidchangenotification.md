@@ -1,6 +1,6 @@
 # buttonShapesEnabledStatusDidChangeNotification
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A notification that UIKit posts when the system’s Button Shapes setting changes.

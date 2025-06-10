@@ -1,6 +1,6 @@
 # monospacedSystemFont(ofSize:weight:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Returns the fixed-width font for standard interface text in the specified size.

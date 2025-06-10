@@ -9,8 +9,6 @@ The command to get a list of users with active accounts on a device.
 - iOS 9.3+
 - iPadOS 9.3+
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,14 +22,14 @@ object UserListCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object UserListCommand.Command](userlistcommand/command-data.dictionary.md)
-  The request dictionary to get a list of users with active accounts on a device.
+  The command to get a list of users with active accounts on a device.
 
 ## See Also
 
 - [object UserListResponse](userlistresponse.md)
-  A response from the device after it processes the command to get a list of users with active accounts.
+  A response from the device after it processes the command to get a list of users with active accounts on a device.
 
 
 ---

@@ -33,6 +33,8 @@ struct CameraVideoFormat
   Returns the video formats the provided camera type and camera position supports.
 - [var description: String](cameravideoformat/description.md)
   A textual representation of this camera video format.
+### Instance Properties
+- [var cameraRectification: CameraFrameProvider.CameraRectification](cameravideoformat/camerarectification.md)
 
 ## Relationships
 
@@ -41,6 +43,7 @@ struct CameraVideoFormat
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

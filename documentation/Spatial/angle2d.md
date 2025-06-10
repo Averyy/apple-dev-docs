@@ -25,8 +25,6 @@ struct Angle2D
 ### Creating an angle structure
 - [init()](angle2d/init.md)
   Creates an angle.
-- [init(Angle)](angle2d/init(_:).md)
-  Creates an angle from a SwiftUI angle.
 - [init(radians: Double)](angle2d/init(radians:)-3zcwo.md)
   Creates an angle with the specified double-precision radians.
 - [init(radians: Double)](angle2d/init(radians:)-6s7o6.md)
@@ -47,18 +45,6 @@ struct Angle2D
 - [var radians: Double](angle2d/radians.md)
   The angle in radians.
 ### Geometry functions
-- [func cos(Angle2D) -> Double](cos(_:).md)
-  Returns the cosine of the specified angle.
-- [func cosh(Angle2D) -> Double](cosh(_:).md)
-  Returns the hyperbolic cosine of the specified angle.
-- [func sin(Angle2D) -> Double](sin(_:).md)
-  Returns the sine of the specified angle.
-- [func sinh(Angle2D) -> Double](sinh(_:).md)
-  Returns the hyperbolic sine of the specified angle.
-- [func tan(Angle2D) -> Double](tan(_:).md)
-  Returns the tangent of the specified angle.
-- [func tanh(Angle2D) -> Double](tanh(_:).md)
-  Returns the hyperbolic tangent of the specified angle.
 - [static func acos(Double) -> Angle2D](angle2d/acos(_:).md)
   Returns the inverse cosine of the specified value.
 - [static func acosh(Double) -> Angle2D](angle2d/acosh(_:).md)
@@ -96,8 +82,13 @@ struct Angle2D
   Subtracts one angle from another and produces their difference.
 - [static func -= (inout Angle2D, Angle2D)](angle2d/-=(_:_:).md)
   Subtracts the second angle from the first and stores the difference in the left-hand-side variable.
+### Initializers
+- [init(Angle)](angle2d/init(_:)-44cs8.md)
+- [init(Angle2DFloat)](angle2d/init(_:)-7nf6j.md)
+  Returns a double-precision angle from a single-precision angle.
 ### Default Implementations
 - [AdditiveArithmetic Implementations](angle2d/additivearithmetic-implementations.md)
+- [Comparable Implementations](angle2d/comparable-implementations.md)
 - [CustomReflectable Implementations](angle2d/customreflectable-implementations.md)
 - [Decodable Implementations](angle2d/decodable-implementations.md)
 - [Encodable Implementations](angle2d/encodable-implementations.md)
@@ -110,6 +101,7 @@ struct Angle2D
 - [AdditiveArithmetic](../Swift/AdditiveArithmetic.md)
 - [Animatable](../SwiftUI/Animatable.md)
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Comparable](../Swift/Comparable.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
@@ -118,6 +110,12 @@ struct Angle2D
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [struct Angle2DFloat](angle2dfloat.md)
+  A single-precision geometric angle whose value you access in either radians or degrees.
 
 
 ---

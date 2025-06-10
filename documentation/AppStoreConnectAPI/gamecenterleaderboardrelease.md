@@ -28,6 +28,7 @@ object GameCenterLeaderboardRelease
   A response that contains a single leaderboard release resource.
 - [object GameCenterLeaderboardReleasesResponse](gamecenterleaderboardreleasesresponse.md)
   A response that contains multiple leaderboard release resource.
+- [object GameCenterLeaderboardReleasesLinkagesResponse](gamecenterleaderboardreleaseslinkagesresponse.md)
 
 
 ---

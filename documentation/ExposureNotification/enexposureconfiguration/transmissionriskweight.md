@@ -20,8 +20,6 @@ var transmissionRiskWeight: Double { get set }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 This weight parameter is not used.
 
 ## See Also

@@ -1,6 +1,6 @@
 # Customizing your long-look interface
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Create custom interfaces for your watchOS app’s notifications.
 

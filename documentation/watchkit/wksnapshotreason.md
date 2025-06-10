@@ -1,6 +1,6 @@
 # WKSnapshotReason
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 The reason for a background snapshot task.
@@ -38,6 +38,7 @@ enum WKSnapshotReason
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

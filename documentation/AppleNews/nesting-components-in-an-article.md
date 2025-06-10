@@ -10,8 +10,6 @@ A  component is a child of the parent component that contains it. The child comp
 
 > 💡 **Tip**:  If you use an anchor to attach multiple children to the same side of their parent component, the children “stack” to create a cleanly aligned header. For information about using container components and anchors, see [`Advanced Design Tutorial 2: Layout and Positioning`](apple-news-format-tutorials#Advanced-Design-Tutorial-2-Layout-and-Positioning.md).
 
- If you use an anchor to attach multiple children to the same side of their parent component, the children “stack” to create a cleanly aligned header. For information about using container components and anchors, see [`Advanced Design Tutorial 2: Layout and Positioning`](apple-news-format-tutorials#Advanced-Design-Tutorial-2-Layout-and-Positioning.md).
-
 Many design and layout effects require you to use hierarchies of nested components. For example, you can create a layering effect by nesting content (such as a `title`) inside a parent component that has a background [`Fill`](https://developer.apple.com/documentation/applenewsformat/fill). Any content displayed by the parent — as well as any content from its child components — is layered in front of the parent’s background fill, as shown in this example.
 
 ![Screenshot of an article with a header component that nests an image and a caption.](https://docs-assets.developer.apple.com/published/dd336c9e9ce58bfb015c98b9aadec812/media-4085703%402x.png)

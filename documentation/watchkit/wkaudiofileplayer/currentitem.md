@@ -1,6 +1,6 @@
 # currentItem
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The player’s current item.

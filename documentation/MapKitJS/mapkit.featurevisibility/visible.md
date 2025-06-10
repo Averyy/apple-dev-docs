@@ -22,7 +22,7 @@ The following example shows how to always show the compass and the user location
 
 ```javascript
 // Create a map.
-var map = new mapkit.Map("my-map-element-id");
+const map = new mapkit.Map("my-map-element-id");
 
 // Always show the compass, regardless of the map state. 
 map.showsCompass = mapkit.FeatureVisibility.Visible;

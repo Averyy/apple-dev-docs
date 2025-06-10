@@ -1,7 +1,7 @@
-# deviceOwnerAuthenticationWithBiometricsOrCompanion
+# LAPolicy.deviceOwnerAuthenticationWithBiometricsOrCompanion
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: case
 
 Device owner will be authenticated by biometry or a companion device e.g. Watch, Mac, etc.
 
@@ -14,7 +14,7 @@ Device owner will be authenticated by biometry or a companion device e.g. Wat
 ## Declaration
 
 ```swift
-static var deviceOwnerAuthenticationWithBiometricsOrCompanion: LAPolicy { get }
+case deviceOwnerAuthenticationWithBiometricsOrCompanion
 ```
 
 #### Discussion
@@ -22,8 +22,11 @@ static var deviceOwnerAuthenticationWithBiometricsOrCompanion: LAPolicy { get }
 Companion or biometric authentication is required. If no nearby paired companion device can be found, it behaves as LAPolicyDeviceOwnerAuthenticationWithBiometrics. Similarly, if biometry is unavailable it behaves as LAPolicyDeviceOwnerAuthenticationWithCompanion.
 
 ```None
-        When both mechanisms are available, user is asked to use biometry and companion authentication
-        will run in parallel. Users should follow instructions on the companion device to authenticate.
+        Depending on the companion type and biometry and companion availability,
+        either a user is asked to authenticate with biometry and on a companion device in parallel
+        or the companion authentication takes precedence
+        and a user is asked to authenticate exclusively on the companion device if available.
+        Users should follow instructions on the companion device to authenticate.
 ```
 
 

@@ -11,7 +11,7 @@ A 3D bounding box that encloses the equipment.
 ## Declaration
 
 ```swift
-var boundingBox: Rect3D
+var boundingBox: Rect3D { get set }
 ```
 
 #### Discussion

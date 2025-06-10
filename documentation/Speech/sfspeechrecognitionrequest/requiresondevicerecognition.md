@@ -20,9 +20,9 @@ var requiresOnDeviceRecognition: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to prevent an [`SFSpeechRecognitionRequest`](sfspeechrecognitionrequest.md) from sending audio over the network. However, on-device requests won’t be as accurate.
+Set this property to `true` to prevent an [`SFSpeechRecognitionRequest`](sfspeechrecognitionrequest.md) from sending audio over the network. However, on-device requests won’t be as accurate.
 
-> **Note**:  The request only honors this setting if the [`supportsOnDeviceRecognition`](sfspeechrecognizer/supportsondevicerecognition.md) ([`SFSpeechRecognizer`](sfspeechrecognizer.md)) property is also [`true`](https://developer.apple.com/documentation/swift/true).
+> **Note**:  The request only honors this setting if the [`supportsOnDeviceRecognition`](sfspeechrecognizer/supportsondevicerecognition.md) ([`SFSpeechRecognizer`](sfspeechrecognizer.md)) property is also `true`.
 
 ## See Also
 

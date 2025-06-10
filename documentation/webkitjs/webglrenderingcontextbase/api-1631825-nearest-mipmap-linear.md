@@ -1,6 +1,6 @@
 # NEAREST_MIPMAP_LINEAR
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

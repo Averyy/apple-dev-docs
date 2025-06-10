@@ -1,6 +1,6 @@
 # ==(_:_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: op
 
 **Availability**:

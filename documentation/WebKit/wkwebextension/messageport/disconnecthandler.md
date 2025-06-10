@@ -1,6 +1,6 @@
 # disconnectHandler
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The block to be executed when the port disconnects.

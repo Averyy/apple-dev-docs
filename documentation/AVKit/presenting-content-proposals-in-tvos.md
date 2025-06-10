@@ -1,6 +1,6 @@
 # Presenting Content Proposals in tvOS
 
-**Framework**: Avkit
+**Framework**: AVKit
 
 Display a preview of an upcoming media item at the conclusion of the currently playing media item.
 
@@ -181,4 +181,4 @@ func playerViewController(_ playerViewController: AVPlayerViewController, didAcc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/presenting-content-proposals-in-tvos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/presenting-content-proposals-in-tvos)*

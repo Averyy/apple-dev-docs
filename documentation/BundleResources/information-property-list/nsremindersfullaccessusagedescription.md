@@ -17,8 +17,6 @@ A message that tells people why the app is requesting access to read and write t
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the person’s reminder data.
 
- This key is required if your app uses APIs that access the person’s reminder data.
-
 ## See Also
 
 - [NSCalendarsFullAccessUsageDescription](information-property-list/nscalendarsfullaccessusagedescription.md)

@@ -1,6 +1,6 @@
 # VTRAWProcessingSession.Parameter.float(_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: case
 
 **Availability**:

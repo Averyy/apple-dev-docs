@@ -1,6 +1,6 @@
 # DataScannerViewControllerDelegate
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: protocol
 
 A delegate object that responds when people interact with items that the data scanner recognizes.

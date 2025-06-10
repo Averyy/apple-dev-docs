@@ -1,6 +1,6 @@
 # Happy Beam
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Leverage a Full Space to create a fun game using ARKit.
 
@@ -270,4 +270,4 @@ func sendBeamPositionUpdate(_ pose: Pose3D) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/happybeam)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/happybeam)*

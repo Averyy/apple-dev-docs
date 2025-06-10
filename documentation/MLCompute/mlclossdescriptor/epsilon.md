@@ -1,6 +1,6 @@
 # epsilon
 
-**Framework**: Mlcompute  
+**Framework**: ML Compute  
 **Kind**: property
 
 The epsilon value.
@@ -42,4 +42,4 @@ The default value is `1e-7`.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MLCompute/mlclossdescriptor/epsilon)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mlcompute/mlclossdescriptor/epsilon)*

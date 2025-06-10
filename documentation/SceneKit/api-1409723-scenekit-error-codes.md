@@ -4,7 +4,7 @@
 
 #### Discussion
 
-Constants for the [`code`](https://developer.apple.com/documentation/foundation/nserror/1409165-code) property of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) objects produced by the SceneKit framework.
+Constants for the [`code`](https://developer.apple.com/documentation/Foundation/NSError/code) property of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) objects produced by the SceneKit framework.
 
 ## Topics
 

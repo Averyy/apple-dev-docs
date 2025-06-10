@@ -1,6 +1,6 @@
 # indices(where:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns the indices of all the elements that match the given predicate.

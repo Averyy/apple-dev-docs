@@ -1,6 +1,6 @@
 # edgeMode
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: instp
 
 The edge mode to use when texture reads stray off the edge of an image.

@@ -1,6 +1,6 @@
 # getMatchedCSSRules(_:pseudoElement:authorOnly:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

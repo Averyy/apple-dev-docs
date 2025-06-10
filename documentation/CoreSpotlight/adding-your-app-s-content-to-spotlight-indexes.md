@@ -1,6 +1,6 @@
 # Adding your app’s content to Spotlight indexes
 
-**Framework**: Corespotlight
+**Framework**: Core Spotlight
 
 Create a description for your app’s content and add it to a Spotlight index to make it searchable.
 
@@ -10,7 +10,7 @@ Search makes your app’s content easier to find, and plays a role both inside y
 
 To help search find your content, create a private, on-device index using the Core Spotlight framework and add your app’s data to that index. Search works best when you index content that the person cares about or interacts with directly, such as favorites, items they purchased, messages they sent and received, and so on.
 
-In addition to the content people can see in your UI, enable the [`isEligibleForSearch`](https://developer.apple.com/documentation/foundation/nsuseractivity/1417761-iseligibleforsearch) property in relevant [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects that your app sends and receives. Enabling this property in user-initiated activities adds those activities to the on-device index and includes them in subsquent searches. For more information, see [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity).
+In addition to the content people can see in your UI, enable the [`isEligibleForSearch`](https://developer.apple.com/documentation/Foundation/NSUserActivity/isEligibleForSearch) property in relevant [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects that your app sends and receives. Enabling this property in user-initiated activities adds those activities to the on-device index and includes them in subsquent searches. For more information, see [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity).
 
 ##### Assemble the Item Attributes
 
@@ -130,4 +130,4 @@ func indexBatch(_ tems: [CSSearchableItem]) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreSpotlight/adding-your-app-s-content-to-spotlight-indexes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corespotlight/adding-your-app-s-content-to-spotlight-indexes)*

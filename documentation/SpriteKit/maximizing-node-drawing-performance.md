@@ -23,8 +23,6 @@ In general, all nodes can be rendered in a single draw call that came from the s
 
 > ❗ **Important**:  Node [`zPosition`](sknode/zposition.md) impacts draw call count because, generally, nodes at different `zPositions` must be rendered on a subsequent pass. For example, nodes that overlap each other must be done in separate draw calls. Overlapping nodes at the same `zPosition` can be rendered in the same draw call if you enable the `SKView` [`ignoresSiblingOrder`](skview/ignoressiblingorder.md) property.
 
- Node [`zPosition`](sknode/zposition.md) impacts draw call count because, generally, nodes at different `zPositions` must be rendered on a subsequent pass. For example, nodes that overlap each other must be done in separate draw calls. Overlapping nodes at the same `zPosition` can be rendered in the same draw call if you enable the `SKView` [`ignoresSiblingOrder`](skview/ignoressiblingorder.md) property.
-
 For all other SpriteKit nodes that draw, pay attention to the [`showsDrawCount`](skview/showsdrawcount.md) statistic  as you develop your app to gain an understanding of which configurations affect draw count.
 
 ##### Show Node Count

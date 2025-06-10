@@ -19,6 +19,11 @@ Metadata for transactions that use the Advanced Commerce API.
 let advancedCommerceInfo: Transaction.AdvancedCommerceInfo?
 ```
 
+## See Also
+
+- [var offerPeriodStringRepresentation: String?](transaction/offerperiodstringrepresentation.md)
+  The string representation of the offer period applied to the subscription offer for this transaction.
+
 
 ---
 

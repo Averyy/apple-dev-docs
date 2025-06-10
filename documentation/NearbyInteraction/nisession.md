@@ -19,9 +19,9 @@ class NISession
 
 ## Mentions
 
+- [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
 - [Extending advanced direction finding and ranging](extending-advanced-direction-finding-and-ranging.md)
 - [Discovering peers with Multipeer Connectivity](discovering-peers-with-multipeer-connectivity.md)
-- [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
 
 #### Overview
 

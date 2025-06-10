@@ -1,6 +1,6 @@
 # XPCListener.InitializationOptions
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: struct
 
 Options that control the listener’s configuration, such as if it’s inactive at creation.
@@ -18,9 +18,9 @@ struct InitializationOptions
 ## Topics
 
 ### Listener creation options
-- [static var inactive: XPCListener.InitializationOptions](xpclistener/initializationoptions/inactive.md)
+- [static let inactive: XPCListener.InitializationOptions](xpclistener/initializationoptions/inactive.md)
   Indicates that the listener isn’t activated during its creation.
-- [static var none: XPCListener.InitializationOptions](xpclistener/initializationoptions/none.md)
+- [static let none: XPCListener.InitializationOptions](xpclistener/initializationoptions/none.md)
   Indicates that the listener uses a default configuration during creation.
 
 ## Relationships
@@ -30,6 +30,8 @@ struct InitializationOptions
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

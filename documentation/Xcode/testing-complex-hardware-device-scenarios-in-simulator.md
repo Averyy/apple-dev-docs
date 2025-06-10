@@ -75,4 +75,4 @@ Use the system log to find errors, warnings, and other issues with your applicat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/testing-complex-hardware-device-scenarios-in-simulator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/testing-complex-hardware-device-scenarios-in-simulator)*

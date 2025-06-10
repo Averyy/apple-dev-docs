@@ -3,7 +3,7 @@
 **Framework**: TabletopKit  
 **Kind**: property
 
-The possible destinations of equipment in an interaction.
+The set of equipment that are allowed to be proposed as potential parents of the one being controlled.
 
 **Availability**:
 - visionOS 2.2+

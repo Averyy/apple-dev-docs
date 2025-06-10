@@ -31,8 +31,6 @@ Enabling this preference can improve the user experience of apps with audio sess
 
 > ❗ **Important**:  This preference has no effect if the device uses the full-screen display style—the system interrupts the audio session on incoming calls.
 
- This preference has no effect if the device uses the full-screen display style—the system interrupts the audio session on incoming calls.
-
 ## Parameters
 
 - `inValue`: The interruption preference value.

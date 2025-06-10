@@ -1,6 +1,6 @@
 # UVIndex.ExposureCategory.veryHigh
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 The UV index is very high.

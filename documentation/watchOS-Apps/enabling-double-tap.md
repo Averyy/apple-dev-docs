@@ -1,6 +1,6 @@
 # Enabling the double-tap gesture on Apple Watch
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Customize your app’s response to the double-tap gesture on Apple Watch.
 
@@ -33,8 +33,6 @@ You can add the primary action modifier to any buttonlike control, such as butto
 3. Vertical tab pagination
 
 > ❗ **Important**: Double tap only triggers your primary action if the control is on screen. Otherwise, the system scrolls towards the control one page at a time.
-
-Double tap only triggers your primary action if the control is on screen. Otherwise, the system scrolls towards the control one page at a time.
 
 The [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/gestures#watchOS) has additional design guidance.
 

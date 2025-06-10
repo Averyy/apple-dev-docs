@@ -30,10 +30,6 @@ For example:
 
 > ❗ **Important**: This preference will only apply if your app is using a shared volume or an immersive space with no shared window. If this preference is applied in an unsupported scenario, like when an app is sharing a window, the system will behave as if the [`none`](spatialtemplatepreference/none.md) preference was selected.
 
-This preference will only apply if your app is using a shared volume or an immersive space with no shared window.
-
-If this preference is applied in an unsupported scenario, like when an app is sharing a window, the system will behave as if the [`none`](spatialtemplatepreference/none.md) preference was selected.
-
 
 ---
 

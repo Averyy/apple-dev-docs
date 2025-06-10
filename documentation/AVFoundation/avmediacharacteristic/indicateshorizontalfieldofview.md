@@ -1,6 +1,6 @@
 # indicatesHorizontalFieldOfView
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A media characteristic that indicates the video track carries information related to the horizontal field of view.

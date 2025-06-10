@@ -1,6 +1,6 @@
 # ImageAnalyzer
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: class
 
 An object that finds items in images that people can interact with, such as subjects, text, and QR codes.
@@ -68,6 +68,7 @@ By default, the Live Text interface starts immediately when you show the view.
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

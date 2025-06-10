@@ -17,8 +17,7 @@ Returns a transition that moves the view away, towards the specified edge of the
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct MoveTransition
+struct MoveTransition
 ```
 
 ## Topics

@@ -22,8 +22,8 @@ var threadExecutionWidth: Int { get }
 
 ## Mentions
 
-- [Calculating Threadgroup and Grid Sizes](calculating-threadgroup-and-grid-sizes.md)
 - [Creating Threads and Threadgroups](creating-threads-and-threadgroups.md)
+- [Calculating Threadgroup and Grid Sizes](calculating-threadgroup-and-grid-sizes.md)
 
 #### Discussion
 

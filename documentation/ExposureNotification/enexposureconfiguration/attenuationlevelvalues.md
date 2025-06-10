@@ -1,6 +1,6 @@
 # attenuationLevelValues
 
-**Framework**: Exposurenotification  
+**Framework**: Exposure Notification  
 **Kind**: property
 
 The level values for attenuation.
@@ -49,4 +49,4 @@ This property contains eight risk-level values in the range 0-8, one for each ra
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposureconfiguration/attenuationlevelvalues)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposureconfiguration/attenuationlevelvalues)*

@@ -58,6 +58,8 @@ enum PluginUsage
   A Swift language build setting.
 - [struct LinkerSetting](linkersetting.md)
   A linker build setting.
+- [let packageAccess: Bool](target/packageaccess.md)
+  If true, access to package declarations from other targets in the package is allowed.
 
 
 ---

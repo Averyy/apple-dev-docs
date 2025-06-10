@@ -56,6 +56,7 @@ To apply tags to a test, use the [`tags(_:)`](trait/tags(_:).md) function.
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

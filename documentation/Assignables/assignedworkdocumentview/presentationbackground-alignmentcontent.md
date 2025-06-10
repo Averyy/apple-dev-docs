@@ -46,7 +46,9 @@ struct ContentView: View {
 The `presentationBackground(alignment:content:)` modifier differs from the `View/background(alignment:content:)` modifier in several key ways. A presentation background:
 
 - Automatically fills the entire presentation.
-- Allows views behind the presentation to show through translucent areas of the `content`.
+- Allows views behind the presentation to show through translucent areas of the `content` on supported platforms.
+
+> **Note**: Sheet presentations on macOS do not support translucency or transparency — the background is always opaque.
 
 ## Parameters
 

@@ -23,6 +23,7 @@ protocol CLCondition : Decodable, Encodable, Sendable
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [CLMonitor.BeaconIdentityCondition](clmonitor-2r51v/beaconidentitycondition.md)
 - [CLMonitor.CircularGeographicCondition](clmonitor-2r51v/circulargeographiccondition.md)

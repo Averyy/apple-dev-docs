@@ -20,8 +20,6 @@ class CPContactMessageButton
 
 > ❗ **Important**:  This subclass of [`CPButton`](cpbutton.md) doesn’t use a handler. Instead, tapping this button activates Siri and launches the compose message flow using the contact information in the [`phoneOrEmail`](cpcontactmessagebutton/phoneoremail.md) property.
 
- This subclass of [`CPButton`](cpbutton.md) doesn’t use a handler. Instead, tapping this button activates Siri and launches the compose message flow using the contact information in the [`phoneOrEmail`](cpcontactmessagebutton/phoneoremail.md) property.
-
 ## Topics
 
 ### Creating a Contact Message Button

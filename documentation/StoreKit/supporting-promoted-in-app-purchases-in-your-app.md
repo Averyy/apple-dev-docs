@@ -1,6 +1,6 @@
 # Supporting promoted In-App Purchases in your app
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Display promoted In-App Purchases on your product page and handle purchases that users initiate on the App Store.
 
@@ -146,4 +146,4 @@ Call [`currentOrder`](product/promotioninfo/currentorder.md) to get a list of yo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/supporting-promoted-in-app-purchases-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/supporting-promoted-in-app-purchases-in-your-app)*

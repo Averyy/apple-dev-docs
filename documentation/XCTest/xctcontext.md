@@ -1,6 +1,6 @@
 # XCTContext
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 A proxy for the current testing context.

@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to create and configure a local administrator account.
+A response from the device after it processes the command to create and configure a local administrator account on a device.
 
 **Availability**:
 - macOS 10.11+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,14 +16,14 @@ object AccountConfigurationResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object AccountConfigurationResponse.ErrorChainItem](accountconfigurationresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object AccountConfigurationCommand](accountconfigurationcommand.md)
-  The command to create a local administrator account on a device.
+  The command to create and configure a local administrator account on a device.
 
 
 ---

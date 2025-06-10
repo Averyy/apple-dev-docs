@@ -20,8 +20,6 @@ By default, activation deactivates the calling app (assuming it was active), and
 
 > ❗ **Important**:  You should  because stealing key focus produces a poor user experience.
 
- You should  because stealing key focus produces a poor user experience.
-
 
 ---
 

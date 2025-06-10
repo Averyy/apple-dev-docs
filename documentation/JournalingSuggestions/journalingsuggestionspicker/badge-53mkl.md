@@ -18,7 +18,7 @@ func badge(_ label: Text?) -> some View
 
 #### Discussion
 
-Use a badge to convey optional, supplementary information about a view. Keep the contents of the badge as short as possible. Badges appear only in list rows, tab bars, and menus.
+Use a badge to convey optional, supplementary information about a view. Keep the contents of the badge as short as possible. Badges appear in list rows, tab bars, toolbar items, and menus.
 
 Use this initializer when you want to style a `Text` view for use as a badge. The following example customizes the badge with the `Text/monospacedDigit()`, `Text/foregroundColor(_:)`, and `Text/bold()` modifiers.
 

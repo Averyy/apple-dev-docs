@@ -24,8 +24,6 @@ var operationGroup: CKOperationGroup { get set }
 
 > 💡 **Tip**:  Providing a specific operation group helps you to identify and analyze the telemetry of send operations in CloudKit Console.
 
- Providing a specific operation group helps you to identify and analyze the telemetry of send operations in CloudKit Console.
-
 The default value is `nil`.
 
 

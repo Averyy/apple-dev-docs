@@ -1,6 +1,6 @@
 # TEXTURE_MAX_LEVEL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

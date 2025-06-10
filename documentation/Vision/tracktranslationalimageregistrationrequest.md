@@ -62,6 +62,7 @@ This request generates an [`ImageTranslationAlignmentObservation`](imagetranslat
 - [Hashable](../Swift/Hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StatefulRequest](statefulrequest.md)
 - [TargetedRequest](targetedrequest.md)
 - [VisionRequest](visionrequest.md)

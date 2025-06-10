@@ -1,6 +1,6 @@
 # hanging
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 Aligns the y-coordinate of the bounding box just below the top of text glyphs.

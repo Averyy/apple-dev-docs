@@ -6,6 +6,7 @@
 An error that occurs when you try to enable temporal anti-aliasing but the current configuration parameters don’t support it.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

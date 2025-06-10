@@ -95,6 +95,9 @@ enum Code
   An error that occurs when the specified record zone doesn’t exist.
 - [CKError.Code.resultsTruncated](ckerror/code/resultstruncated.md)
   An error that occurs when CloudKit truncates a query’s results.
+### Enumeration Cases
+- [CKError.Code.participantAlreadyInvited](ckerror/code/participantalreadyinvited.md)
+  The user is already an invited participant on this share. They must accept the existing share invitation before continuing.
 ### Initializers
 - [init?(rawValue: Int)](ckerror/code/init(rawvalue:).md)
 
@@ -106,6 +109,7 @@ enum Code
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

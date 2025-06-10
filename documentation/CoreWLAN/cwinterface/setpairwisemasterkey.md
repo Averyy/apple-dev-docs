@@ -1,6 +1,6 @@
 # setPairwiseMasterKey(_:)
 
-**Framework**: Corewlan  
+**Framework**: Core WLAN  
 **Kind**: method
 
 Sets the interface pairwise primary key (PMK).

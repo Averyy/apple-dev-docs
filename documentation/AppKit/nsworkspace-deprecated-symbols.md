@@ -1,6 +1,6 @@
 # Deprecated Symbols
 
-**Framework**: Appkit
+**Framework**: AppKit
 
 Review unsupported symbols and their replacements.
 
@@ -75,4 +75,4 @@ Note that these constants are considered legacy.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsworkspace-deprecated-symbols)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsworkspace-deprecated-symbols)*

@@ -120,6 +120,8 @@ Note that you can safely set the root element of the XML document (using the `NS
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

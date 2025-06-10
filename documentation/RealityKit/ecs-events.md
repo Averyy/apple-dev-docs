@@ -26,10 +26,17 @@ For example, you can receive a notification:
   A type on which events can be published and subscribed.
 - [struct EventSubscription](eventsubscription.md)
   A subscription to an event.
+### Scene and entity lifecycle events
 - [enum SceneEvents](sceneevents.md)
   Events the scene invokes.
+- [enum AnchorStateEvents](anchorstateevents.md)
+  Events that trigger on an entity to indicate a change in anchor state.
 - [enum ComponentEvents](componentevents.md)
   Provides the events related to components.
+### Input and interaction events
+- [enum AccessibilityEvents](accessibilityevents.md)
+- [enum ManipulationEvents](manipulationevents.md)
+  Events that occur while a person manipulates an entity.
 ### Physics and motion events
 - [enum AnimationEvents](animationevents.md)
   Notable milestones that the framework signals during animation playback.
@@ -41,8 +48,7 @@ For example, you can receive a notification:
   Events associated with audio playback.
 - [enum VideoPlayerEvents](videoplayerevents.md)
   Events associated with video playback for VideoPlayerComponent.
-### Accessibility events
-- [enum AccessibilityEvents](accessibilityevents.md)
+- [enum ImagePresentationEvents](imagepresentationevents.md)
 ### Network synchronization events
 - [enum SynchronizationEvents](synchronizationevents.md)
   Events associated with network synchronization of scene information.

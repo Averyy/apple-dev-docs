@@ -1,6 +1,6 @@
 # Adding procedural assets to a scene
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Create procedurally generated shape primitives to your Reality Composer scene.
 
@@ -87,4 +87,4 @@ arView.scene.addAnchor(anchorEntity)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/adding-procedural-assets-to-a-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/adding-procedural-assets-to-a-scene)*

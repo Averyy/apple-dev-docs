@@ -31,7 +31,7 @@ An [`NSUserActivity`](nsuseractivity.md) object provides a lightweight way to ca
 
 ##### Siri
 
-If SiriKit needs to launch your app for any reason, it creates a user activity object and assigns an appropriate doc://com.apple.documentation/documentation/sirikit/ininteraction object to its [`interaction`](nsuseractivity/interaction.md) property. Your app can use the interaction information to configure itself and display information related to the interaction started by SiriKit. You can also provide SiriKit with a custom user activity object containing additional data that you want passed to your app.
+If SiriKit needs to launch your app for any reason, it creates a user activity object and assigns an appropriate [`INInteraction`](https://developer.apple.com/documentation/Intents/INInteraction) object to its [`interaction`](nsuseractivity/interaction.md) property. Your app can use the interaction information to configure itself and display information related to the interaction started by SiriKit. You can also provide SiriKit with a custom user activity object containing additional data that you want passed to your app.
 
 In iOS 15 and later, a person can share content they’re viewing by asking Siri to “share this”. Apps built with Mac Catalyst provide the same capability with an [`NSSharingServicePickerToolbarItem`](https://developer.apple.com/documentation/AppKit/NSSharingServicePickerToolbarItem) in the toolbar. You can use [`activityItemsConfiguration`](https://developer.apple.com/documentation/UIKit/UIActivityItemsConfigurationProviding/activityItemsConfiguration) or [`activityItemsConfigurationSource`](https://developer.apple.com/documentation/UIKit/UIWindowScene/activityItemsConfigurationSource) to provide shareable content. In iOS, if both of those properties are [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0), Siri uses the [`webpageURL`](nsuseractivity/webpageurl.md) property of your app’s current user activity as a fallback value.
 
@@ -54,8 +54,6 @@ If your [`NSUserActivity`](nsuseractivity.md) objects contain information that a
 In addition to on-device searches, you can contribute URLs accessed by your app with the global Spotlight search engine. Sharing a URL helps Spotlight improve its own search results for other people. To contribute a URL, put the URL in the [`webpageURL`](nsuseractivity/webpageurl.md) property of your activity object and set the [`isEligibleForPublicIndexing`](nsuseractivity/iseligibleforpublicindexing.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
 
 > ❗ **Important**:  Your app must maintain a strong reference to any activity objects that you use for search results.
-
- Your app must maintain a strong reference to any activity objects that you use for search results.
 
 Employ user activity objects to record user-initiated activities, not as a general-purpose indexing mechanism of your app’s data. To index all of your app’s content, and not just the content touched by people, use the APIs of the [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight) framework.
 

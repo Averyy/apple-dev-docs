@@ -36,6 +36,8 @@ If the array is empty, returns `nil`.
   The first object in the array.
 - [func object(at: Int) -> Any](nsarray/object(at:).md)
   Returns the object located at the specified index.
+- [subscript(Int) -> Any](nsarray/subscript(_:).md)
+  Returns the object at the specified index.
 - [func objects(at: IndexSet) -> [Any]](nsarray/objects(at:).md)
   Returns an array containing the objects in the array at the indexes specified by a given index set.
 - [func objectEnumerator() -> NSEnumerator](nsarray/objectenumerator.md)

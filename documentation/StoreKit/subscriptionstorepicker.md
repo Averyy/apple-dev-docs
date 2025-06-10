@@ -36,8 +36,6 @@ You can optionally provide a binding to a [`SubscriptionStoreControlStyleConfigu
 
 > ❗ **Important**:  Use the `SubscriptionStorePicker` only in the view you return from the required [`makeBody(configuration:)`](subscriptionstorecontrolstyle/makebody(configuration:).md) method of [`SubscriptionStoreControlStyle`](subscriptionstorecontrolstyle.md). Using `SubscriptionStorePicker` in other contexts is not supported.
 
- Use the `SubscriptionStorePicker` only in the view you return from the required [`makeBody(configuration:)`](subscriptionstorecontrolstyle/makebody(configuration:).md) method of [`SubscriptionStoreControlStyle`](subscriptionstorecontrolstyle.md). Using `SubscriptionStorePicker` in other contexts is not supported.
-
 ## Topics
 
 ### Creating a subscription store picker
@@ -51,6 +49,7 @@ You can optionally provide a binding to a [`SubscriptionStoreControlStyleConfigu
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

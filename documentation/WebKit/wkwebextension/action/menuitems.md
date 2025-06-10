@@ -1,6 +1,6 @@
 # menuItems
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The menu items provided by the extension for this action.
@@ -16,7 +16,7 @@ The menu items provided by the extension for this action.
 
 ```swift
 @MainActor
-var menuItems: [NSMenuItem] { get }
+var menuItems: [UIMenuElement] { get }
 ```
 
 #### Discussion

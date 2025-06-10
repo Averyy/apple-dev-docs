@@ -13,7 +13,7 @@ Delete a beta group and remove beta tester access to associated builds.
 - [Create a Beta Group](post-v1-betagroups.md)
   Create a beta group associated with an app, optionally enabling TestFlight public links.
 - [Modify a Beta Group](patch-v1-betagroups-_id_.md)
-  Modify a beta group’s metadata, including changing its Testflight public link status.
+  Modify a beta group’s metadata, including changing its TestFlight public link status.
 
 
 ---

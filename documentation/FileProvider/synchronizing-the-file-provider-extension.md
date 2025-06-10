@@ -1,6 +1,6 @@
 # Synchronizing the File Provider Extension
 
-**Framework**: Fileprovider
+**Framework**: File Provider
 
 Keep the local and remote copies of your File Provider extension’s content in sync.
 
@@ -73,4 +73,4 @@ Alternatively, instead of having your File Provider extension call [`signalEnume
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/synchronizing-the-file-provider-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/synchronizing-the-file-provider-extension)*

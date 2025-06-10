@@ -70,10 +70,11 @@ Create a comprehensive Python scraper to mirror Apple's entire developer documen
 - **Gap**: Hidden or newly added pages not linked from existing pages won't be found
 - **Fix**: Need periodic full re-discovery or monitoring of framework changes
 
-#### 2. **Page removed/deprecated** ❌ 
-- **Issue**: No mechanism to detect and clean up removed pages
-- **Gap**: Orphaned markdown files remain in documentation folder
-- **Fix**: Need to track all scraped files and compare with current discovery
+#### 2. **Page removed/deprecated** ✅ FIXED!
+- **Issue**: ~~No mechanism to detect and clean up removed pages~~
+- **Gap**: ~~Orphaned markdown files remain in documentation folder~~
+- **Fix**: **IMPLEMENTED** - OrphanDetector tracks all files and cleans up removed pages
+- **Details**: Manifest-based tracking, automatic cleanup after each framework scrape
 
 #### 3. **Cross-framework references** ⚠️
 - **Issue**: Currently filtered out (only same-framework refs processed)
@@ -140,7 +141,8 @@ Create a comprehensive Python scraper to mirror Apple's entire developer documen
 - Always validate scraped data before processing
 - Use proper logging (not print statements)
 - Run `mypy` for type checking before considering code complete
-- Optimize for performance (0.2s rate limits, 10 concurrent requests)
+- Optimize for performance (0.2s rate limits, 5 concurrent requests by default)
+  - Can be overridden with MAX_CONCURRENT_REQUESTS environment variable
 - Design for memory efficiency with URL cache cleanup
 - Design for multiple concurrent users from day one
 
@@ -209,7 +211,7 @@ if not api_key:
 2. **Implementation** ✅ COMPLETE!
    - ✅ Generic JSON scraper implemented for ALL frameworks
    - ✅ URL transformation and link fixing completed
-   - ✅ Optimized async HTTP (0.2s delays, 10 concurrent)
+   - ✅ Optimized async HTTP (0.2s delays, 5 concurrent by default)
    - ✅ JSON to Markdown conversion with proper formatting
    - ✅ Memory management and error handling implemented
    - ✅ ETag-based optimization for efficient incremental updates

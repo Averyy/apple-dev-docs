@@ -1,6 +1,6 @@
 # CSS_KHZ
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -30,8 +30,6 @@ Use [`CKModifyRecordsOperation`](ckmodifyrecordsoperation.md) to save the share 
 
 > ❗ **Important**:  You must add the [`CKSharingSupported`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CKSharingSupported) key to your app’s `Info.plist` file with a value of `true`. This allows the system to launch your app when a user taps or clicks the URL.
 
- You must add the [`CKSharingSupported`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CKSharingSupported) key to your app’s `Info.plist` file with a value of `true`. This allows the system to launch your app when a user taps or clicks the URL.
-
 After CloudKit saves the share, a participant can fetch its corresponding metadata, which includes a reference to the share, information about the user’s participation, and, for shared hierarchies, the root record’s record ID. Create an instance of [`CKFetchShareMetadataOperation`](ckfetchsharemetadataoperation.md) using the share’s URL and add it to the container’s queue to execute it. The operation returns an instance of [`CKShare.Metadata`](ckshare/metadata.md) for each URL you provide. This is only applicable if you manually process share acceptance. If a user receives the share URL and taps or clicks it, CloudKit automatically processes their participation.
 
 To determine the configuration of a fetched share, inspect the [`recordName`](ckrecord/id/recordname.md) property of its [`recordID`](ckrecord/recordid.md). If the value is [`CKRecordNameZoneWideShare`](ckrecordnamezonewideshare.md), the share is managing a shared record zone; otherwise, it’s managing a shared record hierarchy.
@@ -95,6 +93,24 @@ share[CKShare.SystemFieldKey.shareType] = "com.example.app.album"
 ### Subscripting
 - [CKShare.SystemFieldKey](ckshare/systemfieldkey.md)
   Constants that represent the system fields of a share.
+### Classes
+- [CKShare.AccessRequester](ckshare/accessrequester.md)
+- [CKShare.BlockedIdentity](ckshare/blockedidentity.md)
+### Instance Properties
+- [var allowsAccessRequests: Bool](ckshare/allowsaccessrequests.md)
+  Indicates whether uninvited users can request access to this share.
+- [var blockedIdentities: [CKShare.BlockedIdentity]](ckshare/blockedidentities.md)
+  A list of users blocked from requesting access to this share.
+- [var requesters: [CKShare.AccessRequester]](ckshare/requesters.md)
+  A list of all uninvited users who have requested access to this share.
+### Instance Methods
+- [func blockRequesters([CKShare.AccessRequester])](ckshare/blockrequesters(_:).md)
+  Blocks the specified requesters from requesting access to this share.
+- [func denyRequesters([CKShare.AccessRequester])](ckshare/denyrequesters(_:).md)
+  Denies share access to the specified requesters.
+- [func oneTimeURL(for: CKShare.Participant.ID) -> URL?](ckshare/onetimeurl(for:).md)
+- [func unblockIdentities([CKShare.BlockedIdentity])](ckshare/unblockidentities(_:).md)
+  Unblocks previously blocked identities, allowing them to request access again.
 
 ## Relationships
 
@@ -112,6 +128,7 @@ share[CKShare.SystemFieldKey.shareType] = "com.example.app.album"
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

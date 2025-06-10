@@ -65,4 +65,4 @@ Apple’s platforms support these background execution modes:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-background-execution-modes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-background-execution-modes)*

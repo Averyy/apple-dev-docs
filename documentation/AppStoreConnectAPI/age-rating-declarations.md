@@ -12,10 +12,13 @@ For more information about age ratings, see [`Set an app age rating`](https://de
 
 ## Topics
 
-### Modifying Declarations
+### Reading and modifying declarations
+- [Read age rating declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
+  Get the age rating declaration for the app info.
+- [GET /v1/appInfos/{id}/relationships/ageRatingDeclaration](get-v1-appinfos-_id_-relationships-ageratingdeclaration.md)
 - [Modify an Age Rating Declaration](patch-v1-ageratingdeclarations-_id_.md)
   Provide age-related information so the App Store can determine the age rating for your app.
-### Objects and Data Types
+### Objects and data types
 - [object AgeRatingDeclarationUpdateRequest](ageratingdeclarationupdaterequest.md)
   The request body you use to update an Age Rating Declaration.
 - [object AgeRatingDeclarationResponse](ageratingdeclarationresponse.md)
@@ -28,6 +31,7 @@ For more information about age ratings, see [`Set an app age rating`](https://de
   String that represents the app’s age rating as it appears on the App Store in Brazil for all platforms.
 - [type KidsAgeBand](kidsageband.md)
   String that represents a Made for Kids app’s age band.
+- [object AppInfoAgeRatingDeclarationLinkageResponse](appinfoageratingdeclarationlinkageresponse.md)
 
 ## See Also
 

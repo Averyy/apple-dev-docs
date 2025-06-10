@@ -25,8 +25,6 @@ Other Vision request handlers that perform image analysis inherit from this abst
 
 > ❗ **Important**:  A [`VNRequest`](vnrequest.md) discards the alpha channel of input images, so don’t rely on it.
 
- A [`VNRequest`](vnrequest.md) discards the alpha channel of input images, so don’t rely on it.
-
 ## Topics
 
 ### Initializing a Request

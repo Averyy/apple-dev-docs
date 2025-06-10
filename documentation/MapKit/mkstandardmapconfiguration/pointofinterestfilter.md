@@ -12,6 +12,7 @@ The filter used to determine the points of interest shown on the map.
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS 1.0+
+- watchOS 9.0+
 
 ## Declaration
 

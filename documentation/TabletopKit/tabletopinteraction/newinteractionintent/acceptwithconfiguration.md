@@ -3,8 +3,6 @@
 **Framework**: TabletopKit  
 **Kind**: case
 
-Accept the new interaction and provide the initial configuration.
-
 **Availability**:
 - visionOS 2.2+
 

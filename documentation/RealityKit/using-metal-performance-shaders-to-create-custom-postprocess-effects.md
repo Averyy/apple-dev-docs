@@ -1,6 +1,6 @@
 # Using Metal performance shaders to create custom postprocess effects
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Leverage the Metal Performance Shaders framework to create special rendering effects for your RealityKit scenes.
 
@@ -10,7 +10,7 @@ In iOS 15 and later, and macOS 12 and later, you can apply postprocess effects t
 
 One way to implement postprocess effects is to apply filters from the [`Metal Performance Shaders`](https://developer.apple.com/documentation/metalperformanceshaders) framework to the rendered scene. You can use apply these filters to an image without writing any custom shader code. Because these filters run on the GPU and operate directly on Metal textures, they’re a good choice for postprocessing effects.
 
-If the Metal Performance Shaders framework doesn’t provide an image filter that meets your needs, you can also use Core Image to postprocess frames. Core Image provides a greater selection of image filters, which also run on the GPU, but Core Image requires you to convert the rendered frame into a [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage). For more information, see [`Applying core image filters as a postprocess effect`](applying-core-image-filters-as-a-postprocess-effect.md).
+If the Metal Performance Shaders framework doesn’t provide an image filter that meets your needs, you can also use Core Image to postprocess frames. Core Image provides a greater selection of image filters, which also run on the GPU, but Core Image requires you to convert the rendered frame into a [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage). For more information, see [`Applying core image filters as a postprocess effect`](applying-core-image-filters-as-a-postprocess-effect.md).
 
 If neither the Metal Performance Shaders framework nor Core Image provide the effect you need, you can also write custom compute functions to implement postprocess effects. For more information, see [`Implementing postprocess effects using Metal compute functions`](implementing-postprocess-effects-using-metal-compute-functions.md).
 
@@ -56,4 +56,4 @@ arView.renderCallbacks.postProcess = postEffectMPSGaussianBlur
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/using-metal-performance-shaders-to-create-custom-postprocess-effects)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/using-metal-performance-shaders-to-create-custom-postprocess-effects)*

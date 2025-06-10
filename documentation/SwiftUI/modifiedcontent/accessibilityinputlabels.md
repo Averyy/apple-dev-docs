@@ -1,6 +1,6 @@
 # accessibilityInputLabels(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Sets alternate input labels with which users identify a view.

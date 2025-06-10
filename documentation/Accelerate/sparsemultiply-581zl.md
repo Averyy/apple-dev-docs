@@ -27,6 +27,21 @@ func SparseMultiply(_ Subfactor: SparseOpaqueSubfactor_Complex_Float, _ X: Dense
 - `Y`: (Output) The result vectors  . If   is  , and   is   , then   must have dimension  .
 - `workspace`: (Scratch) A workspace of size   .   This memory must be 16-byte aligned (any allocation returned   by   has this property).
 
+## See Also
+
+- [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:)-20xvs.md)
+  Performs the multiply operation  , in place on a dense matrix of double-precision values and without any internal memory allocations.
+- [func SparseMultiply(SparseOpaqueSubfactor_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:)-6thvw.md)
+  Performs the multiply operation  , in place on a dense matrix of single-precision values and without any internal memory allocations.
+- [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseMatrix_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:_:)-2osop.md)
+  Performs the multiply operation   on a dense matrix of double-precision values and without any internal memory allocations.
+- [func SparseMultiply(SparseOpaqueSubfactor_Float, DenseMatrix_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:_:)-9v8hk.md)
+  Performs the multiply operation   on a dense matrix of single-precision values and without any internal memory allocations.
+- [func SparseMultiply(SparseOpaqueSubfactor_Complex_Float, DenseMatrix_Complex_Float, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:)-6strd.md)
+  Perform the multiply operation `Y = Subfactor * X `for complex float values, in place.
+- [func SparseMultiply(SparseOpaqueSubfactor_Complex_Double, DenseMatrix_Complex_Double, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:)-7mdi8.md)
+  Perform the multiply operation `Y = Subfactor * X `for complex double values, in place.
+
 
 ---
 

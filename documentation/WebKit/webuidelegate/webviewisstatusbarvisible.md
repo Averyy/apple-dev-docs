@@ -1,6 +1,6 @@
 # webViewIsStatusBarVisible(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a Boolean value indicating whether the status bar in a web view’s window is visible.

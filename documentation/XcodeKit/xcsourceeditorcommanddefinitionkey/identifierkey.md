@@ -1,6 +1,6 @@
 # identifierKey
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The identifier of the source editor command in its attributes.

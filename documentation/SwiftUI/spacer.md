@@ -17,15 +17,15 @@ A flexible space that expands along the major axis of its containing stack layou
 ## Declaration
 
 ```swift
-@MainActor
-@frozen @preconcurrency struct Spacer
+@frozen
+struct Spacer
 ```
 
 ## Mentions
 
 - [Building layouts with stack views](building-layouts-with-stack-views.md)
-- [Picking container views for your content](picking-container-views-for-your-content.md)
 - [Adding a background to your view](adding-a-background-to-your-view.md)
+- [Picking container views for your content](picking-container-views-for-your-content.md)
 
 #### Overview
 
@@ -120,6 +120,7 @@ struct ChecklistRow: View {
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](view.md)
 
 ## See Also
