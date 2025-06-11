@@ -4,7 +4,7 @@
 Build the Model Context Protocol (MCP) server that exposes Apple documentation search capabilities to Claude via STDIO communication.
 
 ## Prerequisites
-- Task 3 completed (RAG engine implemented)
+- Task 3 completed (RAG engine implemented at `mcp-server/server/rag.py`)
 - Understanding of MCP protocol basics
 - Python async programming knowledge
 
@@ -50,7 +50,7 @@ from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 import os
 import uvicorn
 from typing import Optional
-from rag import SimpleRAG
+from server.rag import SimpleRAG
 
 app = FastAPI(title="Apple Docs MCP Server")
 security = HTTPBearer()  # API key required everywhere
@@ -143,7 +143,7 @@ import asyncio
 from mcp.server import Server
 import mcp.server.stdio
 from mcp.types import Tool
-from rag import SimpleRAG
+from server.rag import SimpleRAG
 
 # Create server instance
 server = Server("apple-docs")

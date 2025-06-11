@@ -40,6 +40,7 @@ def main():
         ("tests/test_hash_integration.py", "Hash Integration System"),
         ("tests/test_orphan_detection.py", "Orphan Detection & Cleanup"),
         ("tests/test_concurrent_scraping.py", "Concurrent Scraping with Semaphore"),
+        ("tests/test_rag_engine.py", "RAG Engine Core Functionality"),
     ]
     
     results = []
@@ -106,6 +107,7 @@ def main():
     print("   ✅ Health check and monitoring tools")
     print("   ✅ Orphan detection and cleanup (session tracking)")
     print("   ✅ Concurrent scraping (rolling concurrency, error handling)")
+    print("   ✅ RAG engine (search, filtering, performance, formatting)")
     
     # Production readiness assessment
     print(f"\n🚀 Production Readiness Assessment:")

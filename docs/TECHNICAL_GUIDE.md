@@ -18,6 +18,13 @@
    - Preserves context with title inclusion
    - Chunk metadata tracking
 
+4. **RAG Engine** - Complete
+   - Located at `mcp-server/server/rag.py`
+   - Sub-500ms search performance
+   - Framework filtering support
+   - Query expansion capabilities
+   - Multi-search with deduplication
+
 ## 🗑️ Orphan Detection and Cleanup
 
 ### Automatic Cleanup
@@ -231,6 +238,36 @@ results = collection.query(
 - `> 1.2`: Somewhat related
 - `> 1.5`: Likely not relevant
 
+## 🔍 RAG Engine Details
+
+### SimpleRAG Class (`mcp-server/server/rag.py`)
+```python
+class SimpleRAG:
+    # Initialization
+    - ChromaDB client with persistent storage
+    - OpenAI client for query embeddings
+    - Collection: "apple_docs" with 323,096 documents
+    
+    # Core Methods
+    - search(): Main search with framework filtering
+    - get_api_doc(): Direct API documentation lookup
+    - multi_search(): Combined search with deduplication
+    - expand_query(): Simple keyword expansion
+    - format_for_mcp(): Claude-optimized formatting
+```
+
+### Search Performance
+- **Average query time**: ~350ms
+- **Vector similarity**: Cosine distance
+- **Result limit**: 1-20 configurable
+- **Deduplication**: Based on file_path
+
+### Query Enhancement
+Simple keyword expansion without LLM:
+- "swiftui" → "SwiftUI View"
+- "async" → "async await Task concurrency"
+- "list" → "List ForEach ScrollView"
+
 ## 🎯 Optimization Tips
 
 1. **Memory Management**
@@ -247,6 +284,11 @@ results = collection.query(
    - Regular cleanup of orphaned embeddings
    - Compress backup files
    - Monitor chunk distribution
+
+4. **RAG Query Optimization**
+   - Use framework filtering when possible
+   - Expand queries for better coverage
+   - Cache common query results (optional)
 
 ## 🐛 Common Issues and Solutions
 

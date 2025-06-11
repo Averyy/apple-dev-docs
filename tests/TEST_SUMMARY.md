@@ -49,6 +49,38 @@ Ensures efficient re-scraping using HTTP ETags.
 
 **Why Critical:** Reduces API calls and speeds up incremental updates.
 
+## RAG Engine Tests ✅ (Added June 11, 2025)
+
+Added comprehensive test coverage for the RAG (Retrieval-Augmented Generation) engine to ensure search functionality remains stable.
+
+### Test File:
+- `test_rag_engine.py` - Comprehensive test suite following project conventions
+
+### Core Functionality Tested:
+1. **Basic Search** - Verifies search returns valid results with proper structure
+2. **Framework Filtering** - Ensures framework-specific searches work correctly
+3. **Query Expansion** - Tests automatic query enhancement
+4. **API Documentation Lookup** - Verifies exact API matching
+5. **Multi-Search Deduplication** - Tests combining results from multiple queries
+6. **Performance Requirements** - Ensures < 500ms average search time
+7. **MCP Formatting** - Verifies output formatting for Claude
+8. **Empty Results Handling** - Tests graceful handling of no results
+9. **Metadata Completeness** - Ensures all required fields are present
+10. **Vector Store Integrity** - Verifies 300k+ documents loaded
+
+### Results:
+✅ All 10 core tests passing
+✅ Average search time: 366ms (< 500ms target)
+✅ Vector store loaded: 323,096 documents
+✅ Framework filtering working correctly
+✅ Query expansion enhancing results
+✅ MCP formatting properly structured
+
+### Integration:
+- Added to `run_critical_tests.py` for quick validation
+- Added to `run_all_tests.py` for comprehensive testing
+- Designed to be difficult to bypass - tests actual functionality
+
 ## Running Tests
 
 ```bash

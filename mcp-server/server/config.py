@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Required settings
-VOYAGE_API_KEY = os.getenv("VOYAGE_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 MCP_API_KEY = os.getenv("MCP_API_KEY")
 
 # Legacy TEI URL (kept for backward compatibility)
@@ -22,9 +22,9 @@ KEEP_MARKDOWN_FILES = os.getenv("KEEP_MARKDOWN_FILES", "true").lower() == "true"
 MCP_PORT = int(os.getenv("MCP_PORT", "8080"))
 
 # Embedding settings
-EMBEDDING_BATCH_SIZE = 96  # Voyage AI supports up to 128
-EMBEDDING_MODEL = "voyage-3-lite"  # Voyage AI model
-EMBEDDING_DIMENSIONS = 512  # voyage-3-lite dimensions
+EMBEDDING_BATCH_SIZE = 96  # OpenAI supports large batches
+EMBEDDING_MODEL = "text-embedding-3-small"  # OpenAI model used for vectorstore
+EMBEDDING_DIMENSIONS = 1536  # text-embedding-3-small dimensions
 
 # Search settings
 DEFAULT_SEARCH_LIMIT = 5
