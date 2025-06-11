@@ -4,9 +4,9 @@
 Build a minimal retrieval engine that searches Apple docs and returns raw results to Claude (no GPT-4 needed).
 
 ## Prerequisites
-- Task 2 completed (vector index built)
+- ✅ Task 2 completed (vector index built with 322,104 embeddings)
 - Understanding of vector similarity search
-- TEI BGE-M3 server running (at 192.168.2.5)
+- OpenAI API key for query embeddings
 
 ## Why No GPT-4?
 Since Claude is already an LLM:
@@ -22,12 +22,13 @@ Since Claude is already an LLM:
 ```python
 # rag.py
 import chromadb
-import requests
+import openai
+import os
 from typing import List, Dict, Optional
 
 class SimpleRAG:
     def __init__(self):
-        self.tei_url = "http://192.168.2.5/embed"
+        self.client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         self.chroma = chromadb.PersistentClient(path="./vectorstore")
         self.collection = self.chroma.get_collection("apple_docs")
 ```
@@ -39,12 +40,12 @@ async def search(self,
                 framework: Optional[str] = None,
                 limit: int = 5) -> List[Dict]:
     
-    # 1. Embed the query using TEI
-    response = requests.post(
-        self.tei_url,
-        json={"inputs": [query]}
+    # 1. Embed the query using OpenAI
+    response = self.client.embeddings.create(
+        input=query,
+        model="text-embedding-3-small"
     )
-    embedding = response.json()[0]  # TEI returns nested array
+    embedding = response.data[0].embedding
     
     # 2. Search with optional filtering
     where_clause = {"framework": framework} if framework else None
@@ -175,15 +176,14 @@ def format_for_mcp(self, results: List[Dict]) -> str:
 ## Cost Analysis
 
 ### Per Query Costs
-- Query embedding: **$0** (using local TEI server)
+- Query embedding: **$0.000002** (text-embedding-3-small)
 - No generation costs!
-- Total: **$0 per query**
+- Total: **$0.000002 per query**
 
-### Monthly Costs
-- **$0** - All embeddings done locally via TEI
-- Compare to OpenAI approach: $0.06/month
+### Monthly Costs (assuming 10K queries/month)
+- **$0.02** - Just for query embeddings
 - Compare to GPT-4 approach: ~$150/month
-- **Savings: Infinite!**
+- **Savings: 7,500x cheaper!**
 
 ## Simple Enhancement Options
 
@@ -201,9 +201,8 @@ def format_for_mcp(self, results: List[Dict]) -> str:
 
 ## Important Links
 - [ChromaDB Query API](https://docs.trychroma.com/reference/Collection#query)
-- [TEI API Documentation](http://192.168.2.5/docs) - Local Swagger UI for BGE-M3 server
-- [TEI GitHub](https://github.com/huggingface/text-embeddings-inference)
-- [BGE-M3 Model](https://huggingface.co/BAAI/bge-m3)
+- [OpenAI Embeddings API](https://platform.openai.com/docs/guides/embeddings)
+- [text-embedding-3-small model](https://platform.openai.com/docs/models/embeddings)
 
 ## Success Criteria
 - [ ] Can search and retrieve relevant documents

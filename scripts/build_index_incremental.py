@@ -23,21 +23,24 @@ import tiktoken
 sys.path.append(str(Path(__file__).parent.parent))
 from scraper.utils.hash_manager import HashManager
 
+# Disable ChromaDB telemetry
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+
 # Setup logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Security Configuration (same as secure version)
 MAX_COST_LIMIT = float(os.getenv("MAX_EMBEDDING_COST", "10.00"))
-MAX_FILES_TO_PROCESS = int(os.getenv("MAX_FILES_TO_EMBED", "300000"))
+MAX_FILES_TO_PROCESS = int(os.getenv("MAX_FILES_TO_EMBED", "350000"))
 MAX_FILE_SIZE = int(os.getenv("MAX_FILE_SIZE_MB", "10")) * 1024 * 1024
 MAX_TOKENS_PER_DOC = int(os.getenv("MAX_TOKENS_PER_DOC", "8000"))
-REQUESTS_PER_MINUTE = int(os.getenv("OPENAI_RPM", "3000"))
-MIN_REQUEST_INTERVAL = 60.0 / REQUESTS_PER_MINUTE
+# Reduce request rate to avoid 429 errors
+REQUESTS_PER_MINUTE = int(os.getenv("OPENAI_RPM", "1000"))  # More conservative: 1000 RPM instead of 3000
+MIN_REQUEST_INTERVAL = 60.0 / REQUESTS_PER_MINUTE  # 0.06 seconds between requests
 
 # Load environment variables
 env_paths = [
-    Path(__file__).parent.parent / "mcp-server" / ".env",
     Path(__file__).parent.parent / ".env"
 ]
 
@@ -210,7 +213,7 @@ class IncrementalEmbeddingBuilder:
             return len(text) // 4
     
     def split_by_headers(self, content: str, max_tokens: int = 7000) -> List[str]:
-        """Split large markdown documents by ## headers to fit token limits
+        """Split large markdown documents by headers to fit token limits
         
         Args:
             content: Markdown content to split
@@ -223,18 +226,22 @@ class IncrementalEmbeddingBuilder:
         if self.count_tokens_safe(content) <= max_tokens:
             return [content]
         
-        # Extract title and intro (everything before first ##)
-        parts = content.split('\n## ', 1)
-        if len(parts) == 1:
-            # No headers to split by, truncate if needed
-            logger.warning("Large document with no ## headers, truncating")
-            return [content[:max_tokens * 4]]  # Rough char estimate
-        
-        title_section = parts[0]
-        remaining = '## ' + parts[1]
-        
-        # Split by ## headers
-        sections = re.split(r'\n(?=## )', remaining)
+        # Try different header levels in order
+        for header_level in ['## ', '### ', '#### ', '##### ']:
+            if f'\n{header_level}' in content:
+                parts = content.split(f'\n{header_level}', 1)
+                if len(parts) == 2:
+                    title_section = parts[0]
+                    remaining = header_level + parts[1]
+                    sections = re.split(rf'\n(?={re.escape(header_level)})', remaining)
+                    
+                    # If we got reasonable sections, use them
+                    if len(sections) > 1:
+                        break
+        else:
+            # No headers found, split by size
+            logger.warning(f"Large document with no headers, splitting by size")
+            return self._split_by_size(content, max_tokens)
         
         chunks = []
         current_chunk = title_section
@@ -256,6 +263,39 @@ class IncrementalEmbeddingBuilder:
         # Add final chunk
         if current_chunk and current_chunk != title_section:
             chunks.append(current_chunk)
+        
+        # Check if any chunks are still too big and split them further
+        final_chunks = []
+        for chunk in chunks:
+            if self.count_tokens_safe(chunk) > max_tokens:
+                logger.warning(f"Chunk still too large ({self.count_tokens_safe(chunk)} tokens), splitting by size")
+                final_chunks.extend(self._split_by_size(chunk, max_tokens))
+            else:
+                final_chunks.append(chunk)
+        
+        return final_chunks
+    
+    def _split_by_size(self, content: str, max_tokens: int) -> List[str]:
+        """Split content by size when no headers are available"""
+        chunks = []
+        lines = content.split('\n')
+        current_chunk = []
+        current_tokens = 0
+        
+        for line in lines:
+            line_tokens = self.count_tokens_safe(line)
+            if current_tokens + line_tokens > max_tokens and current_chunk:
+                # Save current chunk
+                chunks.append('\n'.join(current_chunk))
+                current_chunk = [line]
+                current_tokens = line_tokens
+            else:
+                current_chunk.append(line)
+                current_tokens += line_tokens
+        
+        # Add final chunk
+        if current_chunk:
+            chunks.append('\n'.join(current_chunk))
         
         return chunks
     
@@ -508,27 +548,60 @@ class IncrementalEmbeddingBuilder:
             actual_cost = 0
             verification_stats = {"verified": 0, "failed": 0}
             
-            # Process in batches
+            # Process in batches with token awareness
+            MAX_TOKENS_PER_REQUEST = 250000  # Conservative limit (OpenAI's is 300k)
             batch_size = min(100, int(os.getenv("EMBEDDING_BATCH_SIZE", "100")))
-            total_batches = (len(files_to_process) + batch_size - 1) // batch_size
             
-            for i in tqdm(range(start_batch * batch_size, len(files_to_process), batch_size), 
-                         desc="Creating embeddings", initial=start_batch):
-                batch_files = files_to_process[i:i+batch_size]
+            # Create token-aware batches
+            token_aware_batches = []
+            current_batch = []
+            current_batch_tokens = 0
+            
+            for idx in range(start_batch * batch_size, len(files_to_process)):
+                file_data = files_to_process[idx]
+                file_tokens = file_data["tokens"]
+                
+                # Check if adding this file would exceed token limit
+                if current_batch_tokens + file_tokens > MAX_TOKENS_PER_REQUEST and current_batch:
+                    token_aware_batches.append(current_batch)
+                    current_batch = [file_data]
+                    current_batch_tokens = file_tokens
+                elif len(current_batch) >= batch_size:
+                    # Also respect the file count batch size
+                    token_aware_batches.append(current_batch)
+                    current_batch = [file_data]
+                    current_batch_tokens = file_tokens
+                else:
+                    current_batch.append(file_data)
+                    current_batch_tokens += file_tokens
+            
+            # Add final batch
+            if current_batch:
+                token_aware_batches.append(current_batch)
+            
+            total_batches = len(token_aware_batches)
+            
+            for batch_idx, batch_files in enumerate(tqdm(token_aware_batches, 
+                                                        desc="Creating embeddings", 
+                                                        initial=start_batch)):
                 
                 # Prepare batch data
                 batch_texts = []
                 batch_metadata = []
                 batch_ids = []
                 
+                # Calculate actual tokens for this batch (accounting for splits)
+                batch_total_tokens = 0
+                
                 for file_data in batch_files:
                     md_file = file_data["path"]
                     content = file_data["content"]
                     file_key = file_data["key"]
                     
-                    # Check if document needs splitting (>30k chars ~ 7.5k tokens)
-                    if len(content) > 30000:
-                        chunks = self.split_by_headers(content, max_tokens=7000)
+                    # Check if document needs splitting based on actual token count
+                    token_count = self.count_tokens_safe(content)
+                    if token_count > 7000:
+                        chunks = self.split_by_headers(content, max_tokens=6000)
                         logger.info(f"Split large file {md_file.name} into {len(chunks)} chunks")
                         
                         for chunk_idx, chunk in enumerate(chunks):
@@ -550,6 +623,7 @@ class IncrementalEmbeddingBuilder:
                             batch_texts.append(chunk)
                             batch_metadata.append(metadata)
                             batch_ids.append(doc_id)
+                            batch_total_tokens += self.count_tokens_safe(chunk)
                     else:
                         # Normal processing for smaller files
                         doc_id = self.generate_doc_id(md_file, content)
@@ -564,6 +638,14 @@ class IncrementalEmbeddingBuilder:
                         batch_texts.append(content)
                         batch_metadata.append(metadata)
                         batch_ids.append(doc_id)
+                        batch_total_tokens += token_count
+                
+                # Safety check - verify batch won't exceed token limit
+                if batch_total_tokens > MAX_TOKENS_PER_REQUEST:
+                    logger.error(f"Batch exceeds token limit: {batch_total_tokens} > {MAX_TOKENS_PER_REQUEST}")
+                    logger.error(f"Batch had {len(batch_texts)} documents")
+                    # Skip this batch to avoid API error
+                    continue
                 
                 # Calculate batch cost
                 batch_tokens = sum(self.count_tokens_safe(text) for text in batch_texts)
@@ -627,20 +709,18 @@ class IncrementalEmbeddingBuilder:
                             self.hash_manager.update_hash(file_data["key"], file_data["content"])
                     
                     # Save checkpoint
-                    current_batch = i // batch_size
-                    processed_files = [fd["key"] for fd in batch_files[:batch_verified]]
-                    self.save_checkpoint(current_batch + 1, total_batches, 
+                    processed_files = [fd["key"] for fd in batch_files]
+                    self.save_checkpoint(batch_idx + 1, total_batches, 
                                        processed_files_from_checkpoint + processed_files)
                     
                     # Periodically save hash data
-                    if current_batch % 10 == 0:  # Every 10 batches
+                    if batch_idx % 10 == 0:  # Every 10 batches
                         self.hash_manager.save()
                     
                 except Exception as e:
                     logger.error(f"Failed to store batch: {e}")
                     # Save checkpoint even on failure to avoid redoing successful work
-                    current_batch = i // batch_size
-                    self.save_checkpoint(current_batch, total_batches, processed_files_from_checkpoint)
+                    self.save_checkpoint(batch_idx, total_batches, processed_files_from_checkpoint)
                     continue
             
             logger.info(f"\n✅ Incremental update complete!")

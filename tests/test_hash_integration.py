@@ -24,7 +24,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Load environment variables
-env_path = Path(__file__).parent.parent / "mcp-server" / ".env"
+env_path = Path(__file__).parent.parent / ".env"
 load_dotenv(env_path)
 
 # Configure OpenAI
