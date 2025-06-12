@@ -611,7 +611,7 @@ class IncrementalEmbeddingBuilder:
                             
                             # Extract metadata with chunk info
                             metadata = {
-                                "framework": md_file.parts[-2] if len(md_file.parts) > 1 else "unknown",
+                                "framework": md_file.parts[0] if len(md_file.parts) > 0 else "unknown",
                                 "api_name": md_file.stem,
                                 "file_path": str(md_file),
                                 "file_size": md_file.stat().st_size,
@@ -629,7 +629,7 @@ class IncrementalEmbeddingBuilder:
                         doc_id = self.generate_doc_id(md_file, content)
                         
                         metadata = {
-                            "framework": md_file.parts[-2] if len(md_file.parts) > 1 else "unknown",
+                            "framework": md_file.parts[0] if len(md_file.parts) > 0 else "unknown",
                             "api_name": md_file.stem,
                             "file_path": str(md_file),
                             "file_size": md_file.stat().st_size

@@ -1,11 +1,13 @@
 # Core dependencies only
-mcp                    # Model Context Protocol SDK
-fastmcp               # High-level MCP server framework (STDIO)
+chromadb>=0.4.0       # Vector database (REQUIRED for RAG)
+openai                # OpenAI API for embeddings (REQUIRED)
 fastapi               # HTTP server framework (remote access)
 uvicorn[standard]     # ASGI server for FastAPI
-chromadb>=0.4.0       # Vector database
-requests              # For API communication
 python-dotenv         # Environment management
+httpx                 # Async HTTP client
 tqdm                  # Progress bars for indexing
-httpx                 # Async HTTP client (for ETag collection)
-voyageai              # Voyage AI embeddings
+
+# Optional/unused - can be removed in future
+mcp                   # Model Context Protocol SDK (not used in HTTP implementation)
+fastmcp               # High-level MCP server framework (not used)
+requests              # For API communication (httpx is used instead)

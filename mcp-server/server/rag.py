@@ -55,6 +55,45 @@ class SimpleRAG:
         # Cache for embeddings (simple in-memory cache)
         self._embedding_cache = {}
         
+        # Load framework names dynamically
+        self._framework_names = self._load_framework_names()
+        
+    def _load_framework_names(self) -> set:
+        """Load all unique framework names from the entire collection"""
+        try:
+            logger.info("Loading all framework names from vectorstore (this may take a moment)...")
+            frameworks = set()
+            
+            # Scan ALL documents to get complete framework list
+            # This runs once at startup to ensure accuracy
+            batch_size = 10000
+            total = self.collection.count()
+            
+            for offset in range(0, total, batch_size):
+                limit = min(batch_size, total - offset)
+                results = self.collection.get(
+                    limit=limit,
+                    offset=offset,
+                    include=["metadatas"]
+                )
+                
+                for metadata in results["metadatas"]:
+                    framework = metadata.get("framework")
+                    if framework:
+                        # Add lowercase for case-insensitive matching
+                        frameworks.add(framework.lower())
+                
+                if offset % 50000 == 0:
+                    logger.debug(f"  Scanned {offset:,}/{total:,} documents...")
+            
+            logger.info(f"Loaded {len(frameworks)} unique framework names from {total:,} documents")
+            return frameworks
+            
+        except Exception as e:
+            logger.warning(f"Failed to load framework names: {e}")
+            # Return a default set if loading fails
+            return {"swiftui", "uikit", "foundation", "metal", "coredata", "combine"}
+        
     def _get_embedding(self, text: str) -> List[float]:
         """Get embedding for text with caching"""
         # Check cache first
@@ -80,53 +119,153 @@ class SimpleRAG:
             raise
     
     def expand_query(self, query: str) -> str:
-        """Simple query expansion without LLM"""
-        # Common Apple framework expansions
+        """Enhanced query expansion for better LLM-friendly search"""
+        # Start with base expansions for common patterns
         expansions = {
-            "swiftui": "SwiftUI View ViewModifier ViewBuilder",
-            "uikit": "UIKit UIViewController UIView",
-            "async": "async await Task concurrency AsyncSequence",
-            "list": "List ForEach ScrollView VStack",
-            "button": "Button ButtonStyle onTapGesture action",
-            "navigation": "NavigationView NavigationLink NavigationStack",
-            "state": "State StateObject ObservedObject Binding",
-            "animation": "animation withAnimation transition",
-            "gesture": "gesture onTapGesture DragGesture",
-            "metal": "Metal MTLDevice MTLCommandBuffer shader",
-            "combine": "Combine Publisher Subscriber PassthroughSubject",
-            "coredata": "CoreData NSManagedObject NSPersistentContainer",
-            "network": "URLSession URLRequest async await",
-            "json": "JSONEncoder JSONDecoder Codable",
-            "error": "Error throw try catch Result"
+            # Add framework names dynamically
+            **{fw: f"{fw} framework apple" for fw in self._framework_names},
+            # SwiftUI
+            "swiftui": "SwiftUI View ViewModifier ViewBuilder framework UI",
+            "view": "View ViewModifier ViewBuilder SwiftUI UIView",
+            "list": "List ForEach ScrollView VStack LazyVStack collection",
+            "button": "Button ButtonStyle onTapGesture action tap click press",
+            "navigation": "NavigationView NavigationLink NavigationStack navigate push",
+            "state": "State StateObject ObservedObject Binding Published property wrapper",
+            "binding": "Binding State two-way data flow property wrapper",
+            "animation": "animation withAnimation transition animate movement",
+            "gesture": "gesture onTapGesture DragGesture TapGesture interaction",
+            "text": "Text Label string font style attributed",
+            "image": "Image UIImage NSImage photo picture icon",
+            "shape": "Shape Path Circle Rectangle RoundedRectangle geometry",
+            "color": "Color UIColor NSColor foregroundColor backgroundColor",
+            
+            # UIKit
+            "uikit": "UIKit UIViewController UIView iOS framework",
+            "viewcontroller": "UIViewController ViewController controller screen",
+            "tableview": "UITableView TableView list collection cells",
+            "collectionview": "UICollectionView CollectionView grid layout",
+            
+            # Async/Concurrency
+            "async": "async await Task concurrency AsyncSequence asynchronous",
+            "await": "async await Task concurrency asynchronous",
+            "task": "Task async await concurrency thread",
+            "actor": "actor Actor concurrency thread-safe isolation",
+            
+            # Networking
+            "network": "URLSession URLRequest network HTTP API request",
+            "urlsession": "URLSession network HTTP API request download upload",
+            "api": "API URLSession network REST HTTP request",
+            
+            # Data
+            "json": "JSON JSONEncoder JSONDecoder Codable serialize parse",
+            "codable": "Codable JSONEncoder JSONDecoder encode decode",
+            "coredata": "CoreData NSManagedObject NSPersistentContainer database",
+            "userdefaults": "UserDefaults preferences settings storage",
+            
+            # Metal/Graphics
+            "metal": "Metal MTLDevice MTLCommandBuffer shader GPU graphics",
+            "shader": "shader Metal MTL GPU compute vertex fragment",
+            "graphics": "graphics Metal Core Graphics drawing render",
+            
+            # Common patterns
+            "singleton": "singleton shared instance pattern",
+            "delegate": "delegate protocol delegation pattern",
+            "notification": "notification NotificationCenter observer pattern",
+            "error": "Error throw try catch Result failure exception",
+            
+            # Common typos and variations
+            "colour": "color Color UIColor NSColor",
+            "centre": "center alignment position",
+            "initialise": "initialize init initializer"
         }
         
         query_lower = query.lower()
+        query_words = query_lower.split()
         expanded_terms = []
         
-        # Check each expansion
+        # Check each word in the query for possible expansions
+        for word in query_words:
+            # Direct match
+            if word in expansions:
+                expanded_terms.append(expansions[word])
+            # Partial match (e.g., "buttons" matches "button")
+            else:
+                for key, expansion in expansions.items():
+                    if key in word or word in key:
+                        expanded_terms.append(expansion)
+                        break
+        
+        # Also check the full query for multi-word matches
         for key, expansion in expansions.items():
-            if key in query_lower:
+            if key in query_lower and expansion not in expanded_terms:
                 expanded_terms.append(expansion)
         
         # Combine original query with expansions
         if expanded_terms:
-            expanded_query = f"{query} {' '.join(expanded_terms)}"
+            # Deduplicate while preserving order
+            seen = set()
+            unique_terms = []
+            for term in expanded_terms:
+                if term not in seen:
+                    seen.add(term)
+                    unique_terms.append(term)
+            
+            expanded_query = f"{query} {' '.join(unique_terms)}"
             logger.debug(f"Expanded query: {query} -> {expanded_query}")
             return expanded_query
         
         return query
     
+    def preprocess_query(self, query: str) -> str:
+        """Preprocess query to handle common LLM patterns"""
+        # Remove common LLM prefixes/suffixes
+        patterns_to_remove = [
+            "how to", "how do i", "how can i", "what is", "what are",
+            "show me", "find me", "search for", "look for", "get me",
+            "documentation for", "docs for", "info about", "information about",
+            "in swift", "in swiftui", "in ios", "in macos", "using swift",
+            "?", "please", "thanks"
+        ]
+        
+        processed = query.lower()
+        for pattern in patterns_to_remove:
+            processed = processed.replace(pattern, " ")
+        
+        # Clean up extra spaces and return
+        processed = " ".join(processed.split())
+        
+        # If we removed everything, return original
+        if not processed.strip():
+            return query
+        
+        # Capitalize proper nouns
+        proper_nouns = ["swiftui", "uikit", "ios", "macos", "metal", "coredata", 
+                       "urlsession", "json", "swift", "objc", "objective-c"]
+        
+        words = processed.split()
+        for i, word in enumerate(words):
+            if word.lower() in proper_nouns:
+                # Find the proper capitalization
+                for noun in proper_nouns:
+                    if word.lower() == noun.lower():
+                        words[i] = noun.replace("swiftui", "SwiftUI").replace("uikit", "UIKit").replace("ios", "iOS").replace("macos", "macOS").replace("coredata", "CoreData").replace("urlsession", "URLSession").replace("json", "JSON").replace("objc", "ObjC")
+                        break
+        
+        return " ".join(words)
+    
     async def search(self, 
                     query: str, 
                     framework: Optional[str] = None,
+                    platform: Optional[str] = None,
                     limit: int = DEFAULT_SEARCH_LIMIT,
                     expand_query: bool = True) -> List[Dict[str, Any]]:
         """
-        Search Apple documentation with optional framework filtering.
+        Search Apple documentation with optional framework and platform filtering.
         
         Args:
             query: Search query
             framework: Optional framework to filter by (e.g., 'SwiftUI', 'UIKit')
+            platform: Optional platform to filter by (e.g., 'ios', 'macos', 'tvos')
             limit: Maximum number of results to return
             expand_query: Whether to expand the query with related terms
             
@@ -134,6 +273,9 @@ class SimpleRAG:
             List of search results with content and metadata
         """
         start_time = time.time()
+        
+        # Preprocess query to handle LLM patterns
+        query = self.preprocess_query(query)
         
         # Expand query if requested
         if expand_query:
@@ -143,17 +285,25 @@ class SimpleRAG:
         embedding = self._get_embedding(query)
         
         # Build where clause for filtering
-        where_clause = None
+        where_clause = {}
         if framework:
-            where_clause = {"framework": framework}
+            where_clause["framework"] = framework.lower()
             logger.debug(f"Filtering by framework: {framework}")
+        
+        # ChromaDB doesn't support array contains operator for metadata arrays
+        # We need to do post-query filtering for platform
+        if platform and platform.lower() != "all":
+            logger.debug(f"Will filter by platform: {platform} (post-query)")
         
         # Search vector store
         try:
+            # Get more results if platform filtering (we'll filter after)
+            search_limit = limit * 3 if (platform and platform.lower() != "all") else limit
+            
             results = self.collection.query(
                 query_embeddings=[embedding],
-                n_results=limit,
-                where=where_clause,
+                n_results=search_limit,
+                where=where_clause if where_clause else None,
                 include=["documents", "metadatas", "distances"]
             )
             
@@ -165,12 +315,22 @@ class SimpleRAG:
                 distances = results['distances'][0] if 'distances' in results else [None] * len(documents)
                 
                 for i in range(len(documents)):
+                    # Platform filtering (post-query)
+                    if platform and platform.lower() != "all":
+                        doc_platforms = metadatas[i].get("platforms", [])
+                        if platform.lower() not in doc_platforms:
+                            continue  # Skip this result
+                    
                     formatted_results.append({
                         "content": documents[i],
                         "metadata": metadatas[i],
                         "distance": distances[i],
                         "relevance_score": 1 - (distances[i] if distances[i] else 0)  # Convert distance to relevance
                     })
+                    
+                    # Stop if we have enough results
+                    if len(formatted_results) >= limit:
+                        break
             
             elapsed = time.time() - start_time
             logger.info(f"Search completed in {elapsed:.3f}s, found {len(formatted_results)} results")
@@ -295,7 +455,120 @@ class SimpleRAG:
             "total_documents": self.collection.count(),
             "collection_name": "apple_docs",
             "embedding_model": "text-embedding-3-small",
-            "cache_size": len(self._embedding_cache)
+            "cache_size": len(self._embedding_cache),
+            "frameworks_loaded": len(self._framework_names)
+        }
+    
+    def list_frameworks(self) -> Dict[str, Any]:
+        """List all available frameworks in the vectorstore with enhanced metadata"""
+        try:
+            # Get framework metadata from main framework pages
+            framework_info = {}
+            
+            # Query for all framework main pages (limited batch for performance)
+            results = self.collection.get(
+                where={"is_framework_main": True},
+                limit=500,  # Should cover all ~341 frameworks
+                include=["metadatas"]
+            )
+            
+            for metadata in results["metadatas"]:
+                fw_name = metadata.get("framework", "").lower()
+                if fw_name:
+                    framework_info[fw_name] = {
+                        "name": fw_name,
+                        "platforms": metadata.get("platforms", []),
+                        "summary": metadata.get("summary"),
+                        "title": metadata.get("title", fw_name)
+                    }
+            
+            # Also include frameworks without main pages
+            for fw in self._framework_names:
+                if fw and fw not in framework_info:
+                    framework_info[fw] = {
+                        "name": fw,
+                        "platforms": [],  # Unknown platforms
+                        "summary": None,
+                        "title": fw
+                    }
+            
+            # Group by platform
+            by_platform = {}
+            for fw_data in framework_info.values():
+                for platform in fw_data["platforms"]:
+                    if platform not in by_platform:
+                        by_platform[platform] = []
+                    by_platform[platform].append(fw_data["name"])
+            
+            # Sort each platform's frameworks
+            for platform in by_platform:
+                by_platform[platform].sort()
+            
+            # Group alphabetically
+            grouped = {}
+            for fw_name in sorted(framework_info.keys()):
+                if fw_name:
+                    first_letter = fw_name[0].upper()
+                    if first_letter not in grouped:
+                        grouped[first_letter] = []
+                    grouped[first_letter].append(fw_name)
+            
+            return {
+                "total_frameworks": len(framework_info),
+                "frameworks": sorted(framework_info.keys()),
+                "framework_details": framework_info,
+                "grouped_frameworks": grouped,
+                "frameworks_by_platform": by_platform,
+                "popular_frameworks": [
+                    "swiftui", "uikit", "foundation", "metal", "coredata",
+                    "combine", "swift", "avfoundation", "coreml", "arkit"
+                ] if "swiftui" in framework_info else []
+            }
+            
+        except Exception as e:
+            logger.warning(f"Failed to load enhanced framework info: {e}")
+            # Fall back to simple list
+            frameworks = sorted(list(self._framework_names))
+            grouped = {}
+            for fw in frameworks:
+                if fw:
+                    first_letter = fw[0].upper()
+                    if first_letter not in grouped:
+                        grouped[first_letter] = []
+                    grouped[first_letter].append(fw)
+            
+            return {
+                "total_frameworks": len(frameworks),
+                "frameworks": frameworks,
+                "grouped_frameworks": grouped
+            }
+    
+    def verify_frameworks(self) -> Dict[str, Any]:
+        """Verify framework coverage against documentation folders"""
+        from pathlib import Path
+        
+        # Get documentation folders
+        docs_path = Path(__file__).parent.parent.parent / "documentation"
+        doc_folders = set()
+        if docs_path.exists():
+            for item in docs_path.iterdir():
+                if item.is_dir() and not item.name.startswith('.'):
+                    doc_folders.add(item.name.lower())
+        
+        # Get frameworks from vectorstore (sample-based for performance)
+        vs_frameworks = self._framework_names
+        
+        # Calculate coverage
+        matched = len(doc_folders & vs_frameworks)
+        total_folders = len(doc_folders)
+        coverage = (matched / total_folders * 100) if total_folders > 0 else 0
+        
+        return {
+            "documentation_folders": total_folders,
+            "vectorstore_frameworks": len(vs_frameworks),
+            "matched": matched,
+            "coverage_percentage": coverage,
+            "status": "✅ Good" if coverage > 80 else "⚠️ Low coverage"
         }
 
 

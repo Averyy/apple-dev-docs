@@ -1,8 +1,7 @@
-# Core dependencies
+# Core dependencies - Scraping
 httpx==0.27.0
 beautifulsoup4==4.12.3
 markdownify==0.12.1
-pyppeteer==2.0.0
 asyncio-throttle==1.0.2
 
 # Data handling

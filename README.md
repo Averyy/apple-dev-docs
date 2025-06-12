@@ -1,6 +1,6 @@
-# 🍏 Apple Developer Documentation Scraper & Embedding System
+# 🍏 Apple Developer Documentation Scraper & MCP Server
 
-A comprehensive Python tool that scrapes Apple's entire developer documentation ecosystem (341 frameworks, 278,778 pages) and converts it into searchable vector embeddings with production-ready incremental updates and health monitoring.
+A comprehensive Python tool that scrapes Apple's entire developer documentation ecosystem, converts it into searchable vector embeddings, and provides an MCP (Model Context Protocol) server for AI-powered documentation search with platform-aware filtering.
 
 > **Note**: This repository contains scraped documentation from Apple's developer website. All documentation content is property of Apple Inc. This tool is intended for personal use, offline access, and AI-assisted development workflows.
 
@@ -26,20 +26,7 @@ curl -I https://developer.apple.com/tutorials/data/documentation/swiftui/text.js
 curl -H 'If-None-Match: W/"399a0f24205d58c9443159732da8989a"' ...
 ```
 
-After initial ETag collection, checking 278K+ documents for changes takes only ~30 minutes using HEAD requests!
-
-## ✅ Production-Ready Embedding System
-
-### Current Status: PRODUCTION READY 🎉
-
-The system now includes:
-- ✅ **Enterprise-grade reliability** with automatic error recovery
-- ✅ **Incremental updates** preventing $1,365/year in wasted costs
-- ✅ **Resume capability** with automatic checkpointing
-- ✅ **Health monitoring** with comprehensive diagnostic tools
-- ✅ **100% test coverage** across all critical scenarios
-- ✅ **Cost protection** with multiple safety layers
-- ✅ **Smart document splitting** for large files (>30KB) to optimize search quality
+After initial ETag collection, checking many documents for changes takes only ~30 minutes using HEAD requests!
 
 ### Quick Start - Embedding Generation
 
@@ -61,14 +48,15 @@ python3 scripts/vectorstore_health_check.py
 python3 tests/run_all_tests.py
 ```
 
-**Cost**: $3.74 one-time for all 278,778 files, then $0-0.10 for updates.
 
 ## Purpose & Architecture
 
 Apple's Developer website is difficult for AI LLMs to browse and extremely challenging to bulk add context. Unlike the Swift Language guidelines hosted open source on Github, Apple hides developer guidelines behind virtualization, lazy loading, and Javascript requirements. This system addresses the need for offline, searchable access by:
 
 - **Scraping**: Converting Apple's documentation into clean, structured markdown files
-- **Embedding**: Creating vector embeddings for semantic search via local MCP server  
+- **Embedding**: Creating vector embeddings with platform metadata for intelligent search
+- **MCP Server**: HTTP-based API for AI assistants with platform-aware filtering
+- **Framework Discovery**: List all frameworks with summaries and platform availability
 - **Monitoring**: Providing health checks and maintenance tools
 - **Updating**: Efficient incremental updates with change detection
 
@@ -160,13 +148,24 @@ python3 tests/run_all_tests.py
 ### Production Deployment
 
 ```bash
-# Full production setup
-python3 scripts/build_index_incremental.py          # One-time: $3.74
-python3 scripts/vectorstore_health_check.py --fix   # Fix any issues
+# Full production setup with MCP server
+cd mcp-server
+python3 scripts/build_index.py --force              # Rebuild with platform metadata
+cd ..
+
+# Run MCP server for AI assistants
+cd mcp-server && make server                        # Starts on port 8080
 
 # Automated updates (safe for cron/scheduled runs)
-python3 scripts/build_index_incremental.py --force  # Daily/weekly: $0-0.10
+python3 scripts/build_index_incremental.py          # Daily/weekly: $0-0.10
 ```
+
+### MCP Server Features
+
+- **Platform-Aware Search**: Filter results by iOS, macOS, tvOS, etc.
+- **Framework Discovery**: List 341 frameworks with summaries
+- **Sub-500ms Response**: Optimized for real-time AI interactions
+- **Bearer Token Auth**: Secure API access
 
 ## Output Format
 
@@ -184,13 +183,13 @@ documentation/
 ├── metal/
 │   ├── mtldevice.md
 │   └── mtlcommandqueue.md
-└── [341 frameworks total]
+└── [remaining frameworks]
 ```
 
 ### Vector Database Structure
 ```
 vectorstore/
-├── chroma.sqlite3              # ChromaDB database (~1.1GB when complete)
+├── chroma.sqlite3              # ChromaDB database
 └── [metadata and indices]
 ```
 
@@ -286,7 +285,6 @@ Comprehensive documentation is organized in the `docs/` folder:
 - [`OPERATIONS_GUIDE.md`](docs/OPERATIONS_GUIDE.md) - Health monitoring, backups, maintenance procedures
 - [`SECURITY_GUIDE.md`](docs/SECURITY_GUIDE.md) - API key management, cost controls, security checklist
 
-*Note: Legacy documentation has been archived in `docs/archive/` for reference.*
 
 ## Performance Metrics
 
@@ -329,7 +327,7 @@ python3 tests/test_single_page.py           # Single page scraping
 mypy scraper/
 ```
 
-## Supported Frameworks (341 Total)
+## Supported Frameworks
 
 The system handles all Apple frameworks available on their documentation site, including:
 
@@ -364,7 +362,3 @@ The system handles all Apple frameworks available on their documentation site, i
 - Each markdown file includes a link back to the original Apple documentation page
 - Built for local semantic search with complete data privacy
 - Embedding system designed for production reliability and cost efficiency
-
----
-
-**🎉 READY FOR PRODUCTION: Enterprise-grade documentation scraping and embedding system with comprehensive monitoring, cost optimization, and 100% test coverage.**
