@@ -493,7 +493,7 @@ class SimpleRAG:
                 if fw_name:
                     # Convert comma-separated string back to list
                     platforms_str = metadata.get("platforms", "")
-                    platforms = platforms_str.split(",") if platforms_str else []
+                    platforms = [p.strip() for p in platforms_str.split(",") if p.strip()] if platforms_str else []
                     
                     framework_info[fw_name] = {
                         "name": fw_name,
@@ -515,7 +515,15 @@ class SimpleRAG:
             # Group by platform
             by_platform = {}
             for fw_data in framework_info.values():
-                for p in fw_data["platforms"]:
+                # Ensure platforms is a list
+                platforms = fw_data.get("platforms", [])
+                if isinstance(platforms, str):
+                    # Handle case where platforms might be a string
+                    logger.debug(f"Converting platforms string to list for {fw_data.get('name', 'unknown')}: {platforms}")
+                    platforms = [p.strip() for p in platforms.split(",") if p.strip()] if platforms else []
+                    fw_data["platforms"] = platforms
+                
+                for p in platforms:
                     if p not in by_platform:
                         by_platform[p] = []
                     by_platform[p].append(fw_data["name"])
@@ -531,7 +539,12 @@ class SimpleRAG:
                 
                 # Only include frameworks for the requested platform
                 for fw_name, fw_data in framework_info.items():
-                    platforms_lower = [p.lower() for p in fw_data["platforms"]]
+                    # Ensure platforms is a list
+                    platforms = fw_data.get("platforms", [])
+                    if isinstance(platforms, str):
+                        platforms = [p.strip() for p in platforms.split(",") if p.strip()] if platforms else []
+                        fw_data["platforms"] = platforms
+                    platforms_lower = [p.lower() for p in platforms]
                     if platform_lower in platforms_lower:
                         filtered_frameworks[fw_name] = fw_data
                 

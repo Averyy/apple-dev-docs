@@ -333,7 +333,14 @@ def format_concise_results(results: List[Dict[str, Any]]) -> str:
             title += f" ({meta['framework']})"
         # Add platforms if available
         if 'platforms' in meta and meta['platforms']:
-            title += f" [{', '.join(meta['platforms'])}]"
+            # Platforms are stored as comma-separated string in metadata
+            platforms_str = meta['platforms']
+            if isinstance(platforms_str, str):
+                platforms_list = [p.strip() for p in platforms_str.split(',') if p.strip()]
+            else:
+                platforms_list = platforms_str if isinstance(platforms_str, list) else []
+            if platforms_list:
+                title += f" [{', '.join(platforms_list)}]"
         lines.append(title)
         
         # File path for reference
@@ -394,7 +401,14 @@ def format_full_results(results: List[Dict[str, Any]]) -> str:
         if 'framework' in meta:
             lines.append(f"- **Framework**: {meta['framework']}")
         if 'platforms' in meta and meta['platforms']:
-            lines.append(f"- **Platforms**: {', '.join(meta['platforms'])}")
+            # Platforms are stored as comma-separated string in metadata
+            platforms_str = meta['platforms']
+            if isinstance(platforms_str, str):
+                platforms_list = [p.strip() for p in platforms_str.split(',') if p.strip()]
+            else:
+                platforms_list = platforms_str if isinstance(platforms_str, list) else []
+            if platforms_list:
+                lines.append(f"- **Platforms**: {', '.join(platforms_list)}")
         if 'file_path' in meta:
             lines.append(f"- **File Path**: `{meta['file_path']}`")
         if 'relevance_score' in result and result['relevance_score'] is not None:
