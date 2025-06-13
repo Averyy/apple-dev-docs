@@ -58,7 +58,7 @@ The MCP server reads from the scraped documentation in `../documentation/` but o
 2. **Build Vector Index** ✅
    ```bash
    python scripts/build_index.py --force  # Full rebuild with enhanced metadata
-   # Or incremental update:
+   # Or incremental update (will use existing metadata if available):
    python scripts/build_index.py
    ```
    
@@ -66,6 +66,7 @@ The MCP server reads from the scraped documentation in `../documentation/` but o
    - Correct framework names (bug fix for parts[0] vs parts[-2])
    - Platform metadata extraction (ios, macos, tvos, etc.)
    - Framework summaries from overview sections
+   - Enhanced metadata for platform-aware filtering
 
 3. **Run MCP Server** ✅
    ```bash
@@ -75,7 +76,7 @@ The MCP server reads from the scraped documentation in `../documentation/` but o
    ```
    
    The server now provides:
-   - `search_apple_docs`: Search with required platform filter (use "all" for cross-platform)
+   - `search_apple_docs`: Search with **required** platform filter (use "all" for cross-platform)
    - `list_frameworks`: Discover frameworks with summaries and platform availability
 
 ## Testing
@@ -90,7 +91,7 @@ python tests/test_list_frameworks.py  # Test framework listing
 
 ## API Examples
 
-### Search with Platform Filter
+### Search with Platform Filter (Required)
 ```bash
 curl -X POST http://localhost:8080/mcp/tools/call \
   -H "Authorization: Bearer YOUR_API_KEY" \
@@ -99,7 +100,7 @@ curl -X POST http://localhost:8080/mcp/tools/call \
     "name": "search_apple_docs",
     "arguments": {
       "query": "SwiftUI button tap handling",
-      "platform": "ios",
+      "platform": "ios",      # Required! Use "all" for cross-platform
       "limit": 5
     }
   }'

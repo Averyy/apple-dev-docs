@@ -15,14 +15,14 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 # Import components - handle different import styles
 try:
-    from scripts.build_index import VectorIndexBuilder
+    from scripts.build_index import IncrementalEmbeddingBuilder
     from server.config import VECTORSTORE_PATH
     from server.rag import SimpleRAG
 except ImportError:
     # Try without relative imports
     sys.path.append(str(Path(__file__).parent.parent / "server"))
     sys.path.append(str(Path(__file__).parent.parent / "scripts"))
-    from build_index import VectorIndexBuilder
+    from build_index import IncrementalEmbeddingBuilder
     from config import VECTORSTORE_PATH
     from rag import SimpleRAG
 
@@ -31,7 +31,11 @@ def test_sample_document_processing():
     """Test that we can process sample Apple documentation correctly"""
     print("\n🧪 Testing sample document processing...")
     
-    builder = VectorIndexBuilder()
+    # Get project root and set up paths
+    project_root = Path(__file__).parent.parent.parent
+    docs_path = project_root / "documentation"
+    vectorstore_path = project_root / "vectorstore"
+    builder = IncrementalEmbeddingBuilder(docs_path, vectorstore_path)
     
     # Test with a real Apple doc sample
     sample_content = """

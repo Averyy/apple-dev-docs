@@ -48,7 +48,7 @@ monitor:
 	python3 scripts/monitor_indexing.py
 
 server:
-	python server/mcp_server.py
+	python3 server/mcp_server.py
 
 clean:
 	find . -type d -name "__pycache__" -exec rm -rf {} +

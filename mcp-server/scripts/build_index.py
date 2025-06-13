@@ -1,141 +1,372 @@
 #!/usr/bin/env python3
 """
-Build vector index for Apple documentation with incremental update support.
-Uses OpenAI text-embedding-3-small model for consistency with RAG engine.
+Incremental embedding generation with hash-based change detection
+Only processes new or modified files, saving significant costs
 
-This script:
-1. Scans all markdown files in the documentation directory
-2. Tracks file hashes to detect changes
-3. Only re-embeds changed or new files
-4. Uses OpenAI API for embeddings (text-embedding-3-small)
-5. Stores in ChromaDB for fast retrieval
+Enhanced with:
+- Platform metadata extraction
+- Framework summary extraction  
+- Correct framework name extraction (parts[0] not parts[-2])
 """
 
-import hashlib
-import json
 import os
-import re
 import sys
+import re
 import time
+import json
+import hashlib
 from pathlib import Path
-from typing import Dict, List, Optional, Set, Tuple
-
-# Add parent directory to path
-sys.path.append(str(Path(__file__).parent.parent))
-
+from typing import List, Dict, Any, Optional, Set, Tuple
 import chromadb
 import openai
 from tqdm import tqdm
+import logging
+from dotenv import load_dotenv
+import tiktoken
 
-from server.config import (
-    COLLECTION_NAME,
-    DOCS_PATH,
-    EMBEDDING_BATCH_SIZE,
-    EMBEDDING_MODEL,
-    EMBEDDING_DIMENSIONS,
-    OPENAI_API_KEY,
-    VECTORSTORE_PATH,
-)
-from server.logger import get_logger
+# Add parent directory to path
+sys.path.append(str(Path(__file__).parent.parent))
+sys.path.append(str(Path(__file__).parent.parent.parent))
+from scraper.utils.hash_manager import HashManager
 
-logger = get_logger(__name__)
+# Disable ChromaDB telemetry
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
 
+# Setup logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-class VectorIndexBuilder:
-    """Builds and maintains vector index with incremental updates"""
+# Security Configuration (same as secure version)
+MAX_COST_LIMIT = float(os.getenv("MAX_EMBEDDING_COST", "10.00"))
+MAX_FILES_TO_PROCESS = int(os.getenv("MAX_FILES_TO_EMBED", "350000"))
+MAX_FILE_SIZE = int(os.getenv("MAX_FILE_SIZE_MB", "10")) * 1024 * 1024
+MAX_TOKENS_PER_DOC = int(os.getenv("MAX_TOKENS_PER_DOC", "8000"))
+# Reduce request rate to avoid 429 errors
+REQUESTS_PER_MINUTE = int(os.getenv("OPENAI_RPM", "500"))  # Even more conservative: 500 RPM (8.3/sec)
+MIN_REQUEST_INTERVAL = 60.0 / REQUESTS_PER_MINUTE  # 0.12 seconds between requests
+
+# Load environment variables
+env_paths = [
+    Path(__file__).parent.parent.parent / ".env",  # Project root
+    Path(__file__).parent.parent / ".env"  # mcp-server directory
+]
+
+for env_path in env_paths:
+    if env_path.exists():
+        load_dotenv(env_path)
+        logger.info(f"Loaded environment from {env_path}")
+        break
+
+class IncrementalEmbeddingBuilder:
+    """Manages incremental embedding generation with change detection"""
     
-    def __init__(self, docs_path: Optional[Path] = None):
-        self.docs_path = Path(docs_path) if docs_path else DOCS_PATH
-        self.hash_file = VECTORSTORE_PATH / "file_hashes.json"
+    def __init__(self, docs_path: Path, vectorstore_path: Path):
+        self.docs_path = docs_path
+        self.vectorstore_path = vectorstore_path
+        self.hash_file = Path(__file__).parent.parent.parent / ".hashes" / "embedding_hashes.json"
+        self.checkpoint_file = Path(__file__).parent.parent.parent / ".hashes" / "embedding_checkpoint.json"
+        self.hash_manager = HashManager(self.hash_file)
+        self.processed_ids = set()
         
-        # Initialize OpenAI client
-        if not OPENAI_API_KEY:
+    def save_checkpoint(self, processed_files: List[str]):
+        """Save checkpoint for resume capability"""
+        checkpoint_data = {
+            "timestamp": time.time(),
+            "processed_files": processed_files,
+            "last_hash_save": self.hash_manager.cache_file.stat().st_mtime if self.hash_manager.cache_file.exists() else 0
+        }
+        
+        try:
+            self.checkpoint_file.parent.mkdir(parents=True, exist_ok=True)
+            with open(self.checkpoint_file, 'w') as f:
+                json.dump(checkpoint_data, f, indent=2)
+            logger.debug(f"Checkpoint saved: {len(processed_files)} files processed")
+        except Exception as e:
+            logger.warning(f"Failed to save checkpoint: {e}")
+    
+    def load_checkpoint(self) -> Optional[Dict[str, Any]]:
+        """Load checkpoint if it exists and is recent"""
+        if not self.checkpoint_file.exists():
+            return None
+        
+        try:
+            with open(self.checkpoint_file, 'r') as f:
+                checkpoint = json.load(f)
+            
+            # Check if checkpoint is recent (within last hour)
+            age = time.time() - checkpoint.get("timestamp", 0)
+            if age > 3600:  # 1 hour
+                logger.info("Checkpoint is too old, starting fresh")
+                return None
+            
+            logger.info(f"Found checkpoint with {len(checkpoint.get('processed_files', []))} processed files")
+            return checkpoint
+        except Exception as e:
+            logger.warning(f"Failed to load checkpoint: {e}")
+            return None
+    
+    def clear_checkpoint(self):
+        """Clear checkpoint file after successful completion"""
+        if self.checkpoint_file.exists():
+            try:
+                self.checkpoint_file.unlink()
+                logger.debug("Checkpoint cleared")
+            except Exception as e:
+                logger.warning(f"Failed to clear checkpoint: {e}")
+    
+    def configure_openai(self) -> openai.OpenAI:
+        """Configure OpenAI client with security checks"""
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
             raise ValueError("OPENAI_API_KEY environment variable must be set")
         
-        self.openai_client = openai.OpenAI(api_key=OPENAI_API_KEY)
-        logger.info(f"OpenAI client initialized with model: {EMBEDDING_MODEL}")
+        # Validate API key format
+        if not api_key.startswith(("sk-", "sk-proj-")):
+            raise ValueError("Invalid OpenAI API key format")
         
-        # Initialize ChromaDB
-        self.client = chromadb.PersistentClient(path=str(VECTORSTORE_PATH))
-        self.collection = None
-        self.file_hashes = self._load_hashes()
+        return openai.OpenAI(api_key=api_key)
+    
+    def validate_collection_name(self, name: str) -> str:
+        """Validate and sanitize collection name"""
+        # ChromaDB collection name requirements
+        if not name:
+            raise ValueError("Collection name cannot be empty")
         
-    def _load_hashes(self) -> Dict[str, str]:
-        """Load existing file hashes"""
-        if self.hash_file.exists():
+        # Remove invalid characters and replace with underscore
+        sanitized = re.sub(r'[^a-zA-Z0-9_-]', '_', name)
+        
+        # Ensure it starts with alphanumeric
+        if not sanitized[0].isalnum():
+            sanitized = 'c_' + sanitized
+        
+        # Limit length
+        if len(sanitized) > 63:
+            sanitized = sanitized[:63]
+        
+        return sanitized
+    
+    def validate_framework_name(self, framework: str):
+        """Validate framework name against path traversal"""
+        if not framework:
+            raise ValueError("Framework name cannot be empty")
+        
+        # Check for path traversal attempts
+        if any(char in framework for char in ['..', '/', '\\', '~']):
+            raise ValueError(f"Invalid framework name: {framework}")
+        
+        # Check framework exists
+        framework_path = self.docs_path / framework
+        if not framework_path.exists() or not framework_path.is_dir():
+            raise ValueError(f"Framework directory not found: {framework}")
+    
+    def estimate_cost(self, files: List[Dict[str, Any]]) -> float:
+        """Estimate embedding cost for files"""
+        # text-embedding-3-small pricing: $0.020 per 1M tokens
+        total_tokens = sum(f["tokens"] for f in files)
+        return (total_tokens / 1_000_000) * 0.02
+    
+    def embed_batch_secure(self, client: openai.OpenAI, texts: List[str], 
+                          batch_size: int = 100, rate_limiter: Dict[str, float] = None) -> List[List[float]]:
+        """Embed texts with security and rate limiting"""
+        embeddings = []
+        
+        for i in range(0, len(texts), batch_size):
+            batch = texts[i:i + batch_size]
+            
+            # Rate limiting
+            if rate_limiter:
+                elapsed = time.time() - rate_limiter.get("last_request", 0)
+                if elapsed < MIN_REQUEST_INTERVAL:
+                    time.sleep(MIN_REQUEST_INTERVAL - elapsed)
+            
             try:
-                with open(self.hash_file, 'r') as f:
-                    return json.load(f)
+                response = client.embeddings.create(
+                    input=batch,
+                    model="text-embedding-3-small",
+                    dimensions=1536
+                )
+                
+                batch_embeddings = [item.embedding for item in response.data]
+                embeddings.extend(batch_embeddings)
+                
+                if rate_limiter:
+                    rate_limiter["last_request"] = time.time()
+                
             except Exception as e:
-                logger.warning(f"Failed to load hashes: {e}")
-        return {}
+                logger.error(f"Embedding error: {e}")
+                # Return zero embeddings for failed batch
+                embeddings.extend([[0.0] * 1536 for _ in batch])
+        
+        return embeddings
     
-    def _save_hashes(self):
-        """Save file hashes to disk"""
-        self.hash_file.parent.mkdir(parents=True, exist_ok=True)
-        with open(self.hash_file, 'w') as f:
-            json.dump(self.file_hashes, f, indent=2)
+    def get_existing_ids(self, collection) -> Set[str]:
+        """Get all existing document IDs from collection"""
+        try:
+            # Get IDs in batches
+            all_ids = set()
+            batch_size = 10000
+            offset = 0
+            
+            while True:
+                results = collection.get(
+                    limit=batch_size,
+                    offset=offset,
+                    include=[]  # Just need IDs
+                )
+                
+                if not results['ids']:
+                    break
+                
+                all_ids.update(results['ids'])
+                offset += batch_size
+                
+                if len(results['ids']) < batch_size:
+                    break
+            
+            return all_ids
+        except Exception as e:
+            logger.warning(f"Failed to get existing IDs: {e}")
+            return set()
     
-    def _calculate_file_hash(self, file_path: Path) -> str:
-        """Calculate SHA-256 hash of file content"""
-        content = file_path.read_text(encoding='utf-8')
-        return hashlib.sha256(content.encode()).hexdigest()
+    def verify_embeddings_batch(self, collection, ids: List[str], original_texts: List[str]) -> Tuple[int, int]:
+        """Verify embeddings were stored correctly"""
+        try:
+            # Query the stored documents
+            results = collection.get(ids=ids, include=["documents"])
+            
+            verified = 0
+            failed = 0
+            
+            stored_docs = {id: doc for id, doc in zip(results['ids'], results['documents'])}
+            
+            for id, original_text in zip(ids, original_texts):
+                if id in stored_docs:
+                    # Simple verification - check document exists and has content
+                    if stored_docs[id] and len(stored_docs[id]) > 0:
+                        verified += 1
+                    else:
+                        logger.warning(f"Document {id} stored but empty")
+                        failed += 1
+                else:
+                    logger.warning(f"Document {id} not found in collection")
+                    failed += 1
+            
+            return verified, failed
+            
+        except Exception as e:
+            logger.error(f"Verification failed: {e}")
+            return 0, len(ids)
     
-    def _extract_metadata(self, file_path: Path, content: str) -> Dict[str, str]:
-        """Extract metadata from markdown file"""
-        relative_path = file_path.relative_to(self.docs_path)
-        parts = relative_path.parts
+    def generate_doc_id(self, file_path: Path, content: str) -> str:
+        """Generate unique document ID including content hash"""
+        # Use path hash for uniqueness across similar filenames
+        path_hash = hashlib.md5(str(file_path).encode()).hexdigest()[:8]
+        # Include content hash to detect changes
+        content_hash = hashlib.md5(content.encode()).hexdigest()[:8]
+        return f"{file_path.stem}_{path_hash}_{content_hash}"
+    
+    def count_tokens_safe(self, text: str) -> int:
+        """Count tokens with error handling"""
+        try:
+            encoding = tiktoken.get_encoding("cl100k_base")
+            # Count all tokens, don't truncate for counting
+            return len(encoding.encode(text))
+        except Exception as e:
+            logger.warning(f"Token counting failed: {e}, estimating")
+            return len(text) // 4
+    
+    def split_by_headers(self, content: str, max_tokens: int = 7000) -> List[str]:
+        """Split large markdown documents by headers to fit token limits
         
-        # Extract framework name
-        framework = parts[0] if parts else "unknown"
+        Args:
+            content: Markdown content to split
+            max_tokens: Maximum tokens per chunk (default 7000)
+            
+        Returns:
+            List of content chunks, each with title context preserved
+        """
+        # If content is small enough, return as-is
+        if self.count_tokens_safe(content) <= max_tokens:
+            return [content]
         
-        # Extract API name from filename
-        api_name = file_path.stem
+        # Try different header levels in order
+        for header_level in ['## ', '### ', '#### ', '##### ']:
+            if f'\n{header_level}' in content:
+                parts = content.split(f'\n{header_level}', 1)
+                if len(parts) == 2:
+                    title_section = parts[0]
+                    remaining = header_level + parts[1]
+                    sections = re.split(rf'\n(?={re.escape(header_level)})', remaining)
+                    
+                    # If we got reasonable sections, use them
+                    if len(sections) > 1:
+                        break
+        else:
+            # No headers found, split by size
+            logger.warning(f"Large document with no headers, splitting by size")
+            return self._split_by_size(content, max_tokens)
         
-        # Check if this is the framework's main page
-        is_framework_main = len(parts) == 2 and api_name.lower() == framework.lower()
+        chunks = []
+        current_chunk = title_section
+        current_tokens = self.count_tokens_safe(current_chunk)
         
-        # Try to extract title from content
-        title = api_name
+        for section in sections:
+            section_tokens = self.count_tokens_safe(section)
+            
+            # If adding section would exceed limit, save current chunk
+            if current_tokens + section_tokens > max_tokens and current_chunk != title_section:
+                chunks.append(current_chunk)
+                # Start new chunk with title for context
+                current_chunk = title_section + '\n' + section
+                current_tokens = self.count_tokens_safe(current_chunk)
+            else:
+                current_chunk += '\n' + section
+                current_tokens += section_tokens
+        
+        # Add final chunk
+        if current_chunk and current_chunk != title_section:
+            chunks.append(current_chunk)
+        
+        # Check if any chunks are still too big and split them further
+        final_chunks = []
+        for chunk in chunks:
+            if self.count_tokens_safe(chunk) > max_tokens:
+                logger.warning(f"Chunk still too large ({self.count_tokens_safe(chunk)} tokens), splitting by size")
+                final_chunks.extend(self._split_by_size(chunk, max_tokens))
+            else:
+                final_chunks.append(chunk)
+        
+        return final_chunks
+    
+    def _split_by_size(self, content: str, max_tokens: int) -> List[str]:
+        """Split content by size when no headers are available"""
+        chunks = []
         lines = content.split('\n')
-        for line in lines[:10]:  # Check first 10 lines
-            if line.startswith('# '):
-                title = line[2:].strip()
-                break
+        current_chunk = []
+        current_tokens = 0
         
-        # Extract platforms
-        platforms = self._extract_platforms(content)
+        for line in lines:
+            line_tokens = self.count_tokens_safe(line)
+            if current_tokens + line_tokens > max_tokens and current_chunk:
+                # Save current chunk
+                chunks.append('\n'.join(current_chunk))
+                current_chunk = [line]
+                current_tokens = line_tokens
+            else:
+                current_chunk.append(line)
+                current_tokens += line_tokens
         
-        # Extract summary (try for all pages, not just main framework pages)
-        summary = None
-        if is_framework_main:
-            summary = self._extract_summary(content)
-            # If no overview, try to get first meaningful sentence
-            if not summary:
-                summary = self._extract_first_sentence(content)
+        # Add final chunk
+        if current_chunk:
+            chunks.append('\n'.join(current_chunk))
         
-        # Build URL (approximate - adjust based on actual URL structure)
-        url_parts = [p.lower() for p in parts[:-1]] + [file_path.stem]
-        url = f"https://developer.apple.com/documentation/{'/'.join(url_parts)}"
-        
-        return {
-            "framework": framework,
-            "api_name": api_name,
-            "title": title,
-            "file_path": str(file_path),
-            "relative_path": str(relative_path),
-            "url": url,
-            "platforms": platforms,
-            "summary": summary,
-            "is_framework_main": is_framework_main
-        }
+        return chunks
     
     def _extract_platforms(self, content: str) -> List[str]:
         """Extract platform availability from markdown content"""
         platforms = []
         
         # Common platform patterns in Apple docs
-        # Updated to handle both "13.0+" and "13.0-17.4 Deprecated" formats
         platform_patterns = [
             (r'iOS \d+\.\d+[\+\-–]', 'ios'),
             (r'iPadOS \d+\.\d+[\+\-–]', 'ipados'),
@@ -220,228 +451,512 @@ class VectorIndexBuilder:
         
         return None
     
-    def _embed_texts(self, texts: List[str]) -> List[List[float]]:
-        """Embed texts using OpenAI API"""
-        embeddings = []
+    def _extract_metadata(self, file_path: Path, content: str) -> Dict[str, Any]:
+        """Extract metadata from markdown file with enhanced features"""
+        relative_path = file_path.relative_to(self.docs_path)
+        parts = relative_path.parts
         
-        # Process in batches
-        for i in range(0, len(texts), EMBEDDING_BATCH_SIZE):
-            batch = texts[i:i + EMBEDDING_BATCH_SIZE]
-            
-            try:
-                response = self.openai_client.embeddings.create(
-                    input=batch,
-                    model=EMBEDDING_MODEL
-                )
-                
-                batch_embeddings = [item.embedding for item in response.data]
-                embeddings.extend(batch_embeddings)
-                
-                # Rate limiting (OpenAI has generous limits, but be respectful)
-                if i + EMBEDDING_BATCH_SIZE < len(texts):
-                    time.sleep(0.1)  # Small delay between batches
-                
-            except Exception as e:
-                logger.error(f"Embedding error: {e}")
-                # Return empty embeddings for failed batch
-                embeddings.extend([[0.0] * EMBEDDING_DIMENSIONS for _ in batch])
+        # Extract framework name - FIX THE BUG HERE
+        framework = parts[0] if parts else "unknown"
         
-        return embeddings
+        # Extract API name from filename
+        api_name = file_path.stem
+        
+        # Check if this is the framework's main page
+        is_framework_main = len(parts) == 2 and api_name.lower() == framework.lower()
+        
+        # Try to extract title from content
+        title = api_name
+        lines = content.split('\n')
+        for line in lines[:10]:  # Check first 10 lines
+            if line.startswith('# '):
+                title = line[2:].strip()
+                break
+        
+        # Extract platforms
+        platforms = self._extract_platforms(content)
+        
+        # Extract summary (only for main framework pages)
+        summary = None
+        if is_framework_main:
+            summary = self._extract_summary(content)
+            # If no overview, try to get first meaningful sentence
+            if not summary:
+                summary = self._extract_first_sentence(content)
+        
+        # Build URL (approximate - adjust based on actual URL structure)
+        url_parts = [p.lower() for p in parts[:-1]] + [file_path.stem]
+        url = f"https://developer.apple.com/documentation/{'/'.join(url_parts)}"
+        
+        return {
+            "framework": framework,
+            "api_name": api_name,
+            "title": title,
+            "file_path": str(file_path),
+            "relative_path": str(relative_path),
+            "url": url,
+            "platforms": ",".join(platforms) if platforms else "",  # Convert to string for ChromaDB
+            "summary": summary if summary else "",  # Ensure string, not None
+            "is_framework_main": is_framework_main,
+            "file_size": file_path.stat().st_size
+        }
     
-    def _find_changed_files(self) -> Tuple[List[Path], List[str]]:
-        """Find new or changed markdown files"""
-        all_files = []
-        changed_files = []
-        deleted_ids = []
+    def scan_for_changes(self, framework_filter: Optional[str] = None) -> Dict[str, Any]:
+        """Scan documents and identify which need embedding"""
+        stats = {
+            "total": 0,
+            "unchanged": 0,
+            "changed": 0,
+            "new": 0,
+            "deleted": 0,
+            "files_to_process": []
+        }
         
-        # Scan all markdown files
-        for md_file in self.docs_path.rglob("*.md"):
-            all_files.append(md_file)
+        if framework_filter:
+            self.validate_framework_name(framework_filter)
+        
+        pattern = f"{framework_filter}/**/*.md" if framework_filter else "**/*.md"
+        
+        logger.info("Scanning for changes...")
+        
+        # Track all current files
+        current_files = set()
+        
+        for md_file in self.docs_path.glob(pattern):
+            if stats["total"] >= MAX_FILES_TO_PROCESS:
+                logger.warning(f"Reached maximum file limit: {MAX_FILES_TO_PROCESS}")
+                break
             
-            # Calculate hash
+            stats["total"] += 1
+            current_files.add(str(md_file))
+            
             try:
-                current_hash = self._calculate_file_hash(md_file)
+                # Check file size
+                if md_file.stat().st_size > MAX_FILE_SIZE:
+                    logger.warning(f"Skipping large file: {md_file}")
+                    continue
+                
+                # Read content
+                content = md_file.read_text(encoding='utf-8')
+                
+                # Check if content has changed
                 file_key = str(md_file.relative_to(self.docs_path))
                 
-                # Check if file is new or changed
-                if file_key not in self.file_hashes or self.file_hashes[file_key] != current_hash:
-                    changed_files.append(md_file)
-                    self.file_hashes[file_key] = current_hash
+                if self.hash_manager.has_changed(file_key, content):
+                    if file_key in self.hash_manager.hashes:
+                        stats["changed"] += 1
+                        logger.debug(f"Changed: {file_key}")
+                    else:
+                        stats["new"] += 1
+                        logger.debug(f"New: {file_key}")
+                    
+                    # Count tokens
+                    token_count = self.count_tokens_safe(content)
+                    
+                    stats["files_to_process"].append({
+                        "path": md_file,
+                        "key": file_key,
+                        "content": content,
+                        "tokens": token_count
+                    })
+                else:
+                    stats["unchanged"] += 1
                     
             except Exception as e:
-                logger.warning(f"Error processing {md_file}: {e}")
+                logger.warning(f"Error scanning {md_file}: {e}")
         
         # Find deleted files
-        current_files = {str(f.relative_to(self.docs_path)) for f in all_files}
-        for file_key in list(self.file_hashes.keys()):
-            if file_key not in current_files:
-                deleted_ids.append(f"doc_{file_key}")
-                del self.file_hashes[file_key]
+        existing_keys = set(self.hash_manager.hashes.keys())
+        current_keys = {str(Path(f).relative_to(self.docs_path)) for f in current_files}
+        deleted_files = existing_keys - current_keys
         
-        return changed_files, deleted_ids
+        stats["deleted"] = len(deleted_files)
+        
+        return stats, deleted_files
     
-    def build_index(self, force_rebuild: bool = False):
-        """Build or update the vector index"""
-        logger.info("Starting vector index build...")
-        logger.info(f"Using OpenAI {EMBEDDING_MODEL} with {EMBEDDING_DIMENSIONS} dimensions")
+    def process_incremental(self, framework_filter: Optional[str] = None, 
+                          collection_name: Optional[str] = None,
+                          force: bool = False):
+        """Main processing function with all security and production features"""
+        # Scan for changes
+        stats, deleted_files = self.scan_for_changes(framework_filter)
         
-        # Get or create collection
+        # Display stats
+        logger.info(f"\nScan complete:")
+        logger.info(f"  Total files: {stats['total']}")
+        logger.info(f"  Unchanged: {stats['unchanged']} (will skip)")
+        logger.info(f"  Changed: {stats['changed']} (will re-embed)")
+        logger.info(f"  New: {stats['new']} (will embed)")
+        logger.info(f"  Deleted: {stats['deleted']} (will remove from index)")
+        
+        files_to_process = stats["files_to_process"]
+        
+        if not files_to_process and not deleted_files:
+            logger.info("\n✅ Everything is up to date! No embeddings needed.")
+            return
+        
+        # Estimate cost
+        if files_to_process:
+            estimated_cost = self.estimate_cost(files_to_process)
+            logger.info(f"\nEstimated cost for {len(files_to_process)} files: ${estimated_cost:.4f}")
+            
+            # Check cost limit
+            if estimated_cost > MAX_COST_LIMIT:
+                logger.error(f"ABORTED: Cost ${estimated_cost:.2f} exceeds limit ${MAX_COST_LIMIT}")
+                return
+            
+            # Confirm with user
+            if not force and estimated_cost > 0.01:
+                print(f"\n⚠️  This will cost approximately ${estimated_cost:.4f}")
+                print(f"   Files to process: {len(files_to_process)}")
+                response = input("\nProceed? (yes/N): ")
+                if response.lower() != 'yes':
+                    logger.info("Cancelled by user")
+                    return
+        
+        # Configure OpenAI
+        client = self.configure_openai()
+        
+        # Setup ChromaDB with OpenAI embeddings
+        if not collection_name:
+            collection_name = f"apple_docs_{framework_filter}" if framework_filter else "apple_docs"
+        
+        collection_name = self.validate_collection_name(collection_name)
+        chroma = chromadb.PersistentClient(path=str(self.vectorstore_path))
+        
+        # Configure OpenAI embedding function
+        from chromadb.utils import embedding_functions
+        embedding_function = embedding_functions.OpenAIEmbeddingFunction(
+            api_key=os.getenv("OPENAI_API_KEY"),
+            model_name="text-embedding-3-small",
+            dimensions=1536
+        )
+        
         try:
-            if force_rebuild:
-                logger.info("Force rebuild requested, deleting existing collection...")
-                try:
-                    self.client.delete_collection(COLLECTION_NAME)
-                except:
-                    pass
-                self.file_hashes = {}
-            
-            self.collection = self.client.get_or_create_collection(
-                name=COLLECTION_NAME,
-                metadata={
-                    "description": "Apple Developer Documentation",
-                    "embedding_model": EMBEDDING_MODEL,
-                    "embedding_dimensions": str(EMBEDDING_DIMENSIONS)
-                }
+            collection = chroma.get_collection(
+                collection_name,
+                embedding_function=embedding_function
             )
+            logger.info(f"Using existing collection: {collection_name}")
             
-        except Exception as e:
-            logger.error(f"Failed to create collection: {e}")
-            return
+            # Get existing IDs for deletion check
+            existing_ids = self.get_existing_ids(collection)
+            
+        except:
+            collection = chroma.create_collection(
+                collection_name,
+                embedding_function=embedding_function
+            )
+            logger.info(f"Created new collection: {collection_name}")
+            existing_ids = set()
         
-        # Find changed files
-        logger.info("Scanning for changes...")
-        changed_files, deleted_ids = self._find_changed_files()
+        # Process deletions first
+        if deleted_files:
+            logger.info(f"\nRemoving {len(deleted_files)} deleted files from index...")
+            for file_key in deleted_files:
+                # Find and delete all IDs for this file
+                ids_to_delete = [id for id in existing_ids if file_key.replace("/", "_") in id]
+                if ids_to_delete:
+                    try:
+                        collection.delete(ids=ids_to_delete)
+                        logger.debug(f"Deleted {len(ids_to_delete)} embeddings for {file_key}")
+                    except Exception as e:
+                        logger.warning(f"Failed to delete {file_key}: {e}")
+                
+                # Remove from hash manager
+                if file_key in self.hash_manager.hashes:
+                    del self.hash_manager.hashes[file_key]
         
-        # Delete removed documents
-        if deleted_ids:
-            logger.info(f"Deleting {len(deleted_ids)} removed documents...")
-            try:
-                self.collection.delete(ids=deleted_ids)
-            except Exception as e:
-                logger.warning(f"Error deleting documents: {e}")
-        
-        # Process changed files
-        if not changed_files:
-            logger.info("No changes detected. Index is up to date!")
-            return
-        
-        logger.info(f"Processing {len(changed_files)} changed/new files...")
-        
-        # Process in chunks to manage memory
-        chunk_size = 100
-        total_processed = 0
-        
-        with tqdm(total=len(changed_files), desc="Indexing files") as pbar:
-            for chunk_start in range(0, len(changed_files), chunk_size):
-                chunk_files = changed_files[chunk_start:chunk_start + chunk_size]
+        # Process new/changed files
+        if files_to_process:
+            logger.info(f"\nProcessing {len(files_to_process)} files...")
+            
+            # Check for checkpoint
+            checkpoint = self.load_checkpoint()
+            processed_files_from_checkpoint = []
+            
+            if checkpoint:
+                processed_files_from_checkpoint = checkpoint.get("processed_files", [])
+                logger.info(f"Found checkpoint with {len(processed_files_from_checkpoint)} processed files")
+                
+                # Filter out already processed files by their paths
+                processed_paths = set(processed_files_from_checkpoint)
+                original_count = len(files_to_process)
+                files_to_process = [f for f in files_to_process if f["path"] not in processed_paths]
+                skipped_count = original_count - len(files_to_process)
+                logger.info(f"Skipping {skipped_count} already processed files, {len(files_to_process)} remaining")
+            
+            rate_limiter = {"last_request": 0}
+            actual_cost = 0
+            verification_stats = {"verified": 0, "failed": 0}
+            
+            # Process in batches with token awareness
+            MAX_TOKENS_PER_REQUEST = 250000  # Conservative limit (OpenAI's is 300k)
+            batch_size = min(100, int(os.getenv("EMBEDDING_BATCH_SIZE", "100")))
+            
+            # Create token-aware batches
+            token_aware_batches = []
+            current_batch = []
+            current_batch_tokens = 0
+            
+            for idx in range(0, len(files_to_process)):
+                file_data = files_to_process[idx]
+                file_tokens = file_data["tokens"]
+                
+                # Check if adding this file would exceed token limit
+                if current_batch_tokens + file_tokens > MAX_TOKENS_PER_REQUEST and current_batch:
+                    token_aware_batches.append(current_batch)
+                    current_batch = [file_data]
+                    current_batch_tokens = file_tokens
+                elif len(current_batch) >= batch_size:
+                    # Also respect the file count batch size
+                    token_aware_batches.append(current_batch)
+                    current_batch = [file_data]
+                    current_batch_tokens = file_tokens
+                else:
+                    current_batch.append(file_data)
+                    current_batch_tokens += file_tokens
+            
+            # Add final batch
+            if current_batch:
+                token_aware_batches.append(current_batch)
+            
+            total_batches = len(token_aware_batches)
+            
+            for batch_idx, batch_files in enumerate(tqdm(token_aware_batches, 
+                                                        desc="Creating embeddings")):
                 
                 # Prepare batch data
-                contents = []
-                metadatas = []
-                ids = []
+                batch_texts = []
+                batch_metadata = []
+                batch_ids = []
                 
-                for file_path in chunk_files:
-                    try:
-                        content = file_path.read_text(encoding='utf-8')
-                        metadata = self._extract_metadata(file_path, content)
-                        
-                        # Use relative path as ID for easy updates
-                        doc_id = f"doc_{metadata['relative_path']}"
-                        
-                        contents.append(content)
-                        metadatas.append(metadata)
-                        ids.append(doc_id)
-                        
-                    except Exception as e:
-                        logger.warning(f"Error reading {file_path}: {e}")
-                        continue
+                # Calculate actual tokens for this batch (accounting for splits)
+                batch_total_tokens = 0
                 
-                # Embed batch
-                if contents:
-                    embeddings = self._embed_texts(contents)
+                for file_data in batch_files:
+                    md_file = file_data["path"]
+                    content = file_data["content"]
+                    file_key = file_data["key"]
                     
-                    # Add to collection
-                    try:
-                        self.collection.upsert(
-                            embeddings=embeddings,
-                            documents=contents,
-                            metadatas=metadatas,
-                            ids=ids
-                        )
-                        total_processed += len(contents)
+                    # Check if document needs splitting based on actual token count
+                    token_count = self.count_tokens_safe(content)
+                    if token_count > 7000:
+                        chunks = self.split_by_headers(content, max_tokens=6000)
+                        logger.info(f"Split large file {md_file.name} into {len(chunks)} chunks")
                         
+                        for chunk_idx, chunk in enumerate(chunks):
+                            # Generate ID with chunk suffix
+                            chunk_hash = hashlib.md5(chunk.encode()).hexdigest()[:8]
+                            doc_id = self.generate_doc_id(md_file, content) + f"_part{chunk_idx}"
+                            
+                            # Extract metadata with chunk info
+                            metadata = self._extract_metadata(md_file, content)
+                            metadata["chunk_index"] = chunk_idx
+                            metadata["total_chunks"] = len(chunks)
+                            metadata["chunk_hash"] = chunk_hash
+                            
+                            batch_texts.append(chunk)
+                            batch_metadata.append(metadata)
+                            batch_ids.append(doc_id)
+                            batch_total_tokens += self.count_tokens_safe(chunk)
+                    else:
+                        # Normal processing for smaller files
+                        doc_id = self.generate_doc_id(md_file, content)
+                        
+                        metadata = self._extract_metadata(md_file, content)
+                        
+                        batch_texts.append(content)
+                        batch_metadata.append(metadata)
+                        batch_ids.append(doc_id)
+                        batch_total_tokens += token_count
+                
+                # Safety check - verify batch won't exceed token limit
+                if batch_total_tokens > MAX_TOKENS_PER_REQUEST:
+                    logger.error(f"Batch exceeds token limit: {batch_total_tokens} > {MAX_TOKENS_PER_REQUEST}")
+                    logger.error(f"Batch had {len(batch_texts)} documents")
+                    # Skip this batch to avoid API error
+                    continue
+                
+                # Calculate batch cost
+                batch_tokens = sum(self.count_tokens_safe(text) for text in batch_texts)
+                batch_cost = (batch_tokens / 1_000_000) * 0.02
+                
+                # Check if we're about to exceed limit
+                if actual_cost + batch_cost > MAX_COST_LIMIT:
+                    logger.error(f"Stopping: Next batch would exceed cost limit")
+                    break
+                
+                # Generate embeddings
+                embeddings = self.embed_batch_secure(client, batch_texts, 
+                                                   batch_size=len(batch_texts), 
+                                                   rate_limiter=rate_limiter)
+                
+                actual_cost += batch_cost
+                
+                # Delete old versions if they exist
+                old_ids_to_delete = []
+                for file_data in batch_files:
+                    md_file = file_data["path"]
+                    # Create base pattern for this file (without content hash)
+                    path_hash = hashlib.md5(str(md_file).encode()).hexdigest()[:8]
+                    base_pattern = f"{md_file.stem}_{path_hash}_"
+                    
+                    # Find all IDs that start with this pattern (includes all chunks)
+                    # but exclude the ones we're about to add
+                    old_ids = [id for id in existing_ids 
+                              if id.startswith(base_pattern) and id not in batch_ids]
+                    old_ids_to_delete.extend(old_ids)
+                
+                if old_ids_to_delete:
+                    try:
+                        collection.delete(ids=old_ids_to_delete)
+                        logger.debug(f"Deleted {len(old_ids_to_delete)} old embeddings")
                     except Exception as e:
-                        logger.error(f"Error adding to collection: {e}")
+                        logger.warning(f"Failed to delete old embeddings: {e}")
                 
-                pbar.update(len(chunk_files))
-        
-        # Save updated hashes
-        self._save_hashes()
-        
-        # Print summary
-        logger.info("=" * 60)
-        logger.info(f"✅ Indexing complete!")
-        logger.info(f"   Total documents: {self.collection.count()}")
-        logger.info(f"   Processed this run: {total_processed}")
-        logger.info(f"   Deleted: {len(deleted_ids)}")
-        logger.info(f"   Embedding model: {EMBEDDING_MODEL}")
-        logger.info(f"   Embedding dimensions: {EMBEDDING_DIMENSIONS}")
-        
-        # Show sample frameworks
-        if metadatas:
-            frameworks = list(set(m['framework'] for m in metadatas[:100]))
-            logger.info(f"   Sample frameworks: {', '.join(frameworks[:5])}")
-    
-    def verify_index(self):
-        """Verify the index with a test query"""
-        logger.info("\nVerifying index with test query...")
-        
-        try:
-            # Test embedding
-            test_query = "SwiftUI Button view"
-            embeddings = self._embed_texts([test_query])
+                # Store new embeddings
+                try:
+                    collection.add(
+                        embeddings=embeddings,
+                        documents=batch_texts,
+                        metadatas=batch_metadata,
+                        ids=batch_ids
+                    )
+                    
+                    # Verify embeddings were stored correctly
+                    batch_verified, batch_failed = self.verify_embeddings_batch(
+                        collection, batch_ids, batch_texts
+                    )
+                    verification_stats["verified"] += batch_verified
+                    verification_stats["failed"] += batch_failed
+                    
+                    if batch_failed > 0:
+                        logger.warning(f"Failed to verify {batch_failed}/{len(batch_ids)} embeddings in batch")
+                    
+                    # Update hash manager only for successfully verified embeddings
+                    for j, file_data in enumerate(batch_files):
+                        if j < batch_verified:  # Only update hash for verified embeddings
+                            self.hash_manager.update_hash(file_data["key"], file_data["content"])
+                    
+                    # Save checkpoint
+                    processed_files = [fd["key"] for fd in batch_files]
+                    all_processed = processed_files_from_checkpoint + processed_files
+                    self.save_checkpoint(all_processed)
+                    
+                    # Periodically save hash data
+                    if batch_idx % 10 == 0:  # Every 10 batches
+                        self.hash_manager.save()
+                    
+                except Exception as e:
+                    logger.error(f"Failed to store batch: {e}")
+                    # Save checkpoint even on failure to avoid redoing successful work
+                    self.save_checkpoint(processed_files_from_checkpoint)
+                    continue
             
-            # Query collection
-            results = self.collection.query(
-                query_embeddings=embeddings,
-                n_results=3
-            )
+            logger.info(f"\n✅ Incremental update complete!")
+            logger.info(f"   Processed: {len(files_to_process)} files")
+            logger.info(f"   Actual cost: ${actual_cost:.4f}")
+            logger.info(f"   Verified: {verification_stats['verified']} embeddings")
+            if verification_stats['failed'] > 0:
+                logger.warning(f"   Failed verification: {verification_stats['failed']} embeddings")
             
-            if results['documents'][0]:
-                logger.info("✅ Index verification successful!")
-                logger.info(f"   Test query: '{test_query}'")
-                logger.info(f"   Top result: {results['metadatas'][0][0]['title']}")
-                logger.info(f"   Framework: {results['metadatas'][0][0]['framework']}")
-                logger.info(f"   Platforms: {results['metadatas'][0][0].get('platforms', [])}")
-            else:
-                logger.warning("⚠️  No results found in index")
-                
-        except Exception as e:
-            logger.error(f"❌ Index verification failed: {e}")
-
+            # Clear checkpoint on successful completion
+            self.clear_checkpoint()
+        
+        # Save hash data
+        self.hash_manager.save()
+        logger.info(f"   Hash data saved: {self.hash_file}")
+        
+        # Final stats
+        total_docs = collection.count()
+        logger.info(f"   Total documents in collection: {total_docs}")
 
 def main():
     """Main entry point"""
     import argparse
     
-    parser = argparse.ArgumentParser(description="Build vector index for Apple docs using OpenAI embeddings")
+    parser = argparse.ArgumentParser(description="Incremental embedding builder with change detection")
+    parser.add_argument("--framework", help="Filter to specific framework")
+    parser.add_argument("--collection", help="Custom collection name")
     parser.add_argument("--force", action="store_true", help="Force rebuild entire index")
+    parser.add_argument("--docs-path", help="Path to documentation (relative to project root)")
+    parser.add_argument("--vectorstore-path", help="Path to vector store (relative to project root)")
     parser.add_argument("--verify", action="store_true", help="Verify index after building")
+    
     args = parser.parse_args()
     
+    # Get project root
+    project_root = Path(__file__).parent.parent.parent
+    
+    # Set paths relative to project root
+    docs_path = project_root / (args.docs_path or "documentation")
+    vectorstore_path = project_root / (args.vectorstore_path or "vectorstore")
+    
+    # Validation
+    if not docs_path.exists():
+        print(f"❌ Documentation directory not found: {docs_path}")
+        sys.exit(1)
+    
+    # Ensure vectorstore directory exists
+    vectorstore_path.mkdir(exist_ok=True)
+    
     # Verify API key
-    if not OPENAI_API_KEY:
+    if not os.getenv("OPENAI_API_KEY"):
         print("❌ Error: OPENAI_API_KEY environment variable must be set")
         sys.exit(1)
     
-    # Build index
-    builder = VectorIndexBuilder()
-    builder.build_index(force_rebuild=args.force)
+    print("🚀 Incremental Embedding Builder")
+    print(f"📁 Documentation: {docs_path}")
+    print(f"💾 Vector store: {vectorstore_path}")
+    print(f"🔐 Hash storage: {project_root}/.hashes/embedding_hashes.json")
+    print(f"💰 Max cost limit: ${MAX_COST_LIMIT}")
     
-    # Optionally verify
-    if args.verify:
-        builder.verify_index()
-
+    if args.framework:
+        print(f"🎯 Framework filter: {args.framework}")
+    
+    print()
+    
+    try:
+        builder = IncrementalEmbeddingBuilder(docs_path, vectorstore_path)
+        
+        # Handle force rebuild
+        if args.force:
+            logger.info("Force rebuild requested, clearing collection and hashes...")
+            # Clear the collection
+            chroma = chromadb.PersistentClient(path=str(vectorstore_path))
+            collection_name = args.collection or "apple_docs"
+            try:
+                chroma.delete_collection(collection_name)
+                logger.info(f"Deleted collection: {collection_name}")
+            except:
+                pass
+            # Clear hashes
+            builder.hash_manager.hashes = {}
+            builder.hash_manager.save()
+        
+        builder.process_incremental(args.framework, args.collection, args.force or True)
+        
+        # Verify if requested
+        if args.verify:
+            logger.info("\nVerifying index...")
+            # Simple verification - check collection has documents
+            chroma = chromadb.PersistentClient(path=str(vectorstore_path))
+            collection_name = args.collection or "apple_docs"
+            try:
+                collection = chroma.get_collection(collection_name)
+                count = collection.count()
+                logger.info(f"✅ Verification complete: {count} documents in collection")
+            except Exception as e:
+                logger.error(f"❌ Verification failed: {e}")
+                
+    except KeyboardInterrupt:
+        print("\n⏹️ Interrupted by user")
+        sys.exit(1)
+    except Exception as e:
+        print(f"❌ Error: {e}")
+        logger.exception("Build failed")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()

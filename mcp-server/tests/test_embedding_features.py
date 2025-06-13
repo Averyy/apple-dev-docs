@@ -7,11 +7,14 @@ from pathlib import Path
 
 sys.path.append(str(Path(__file__).parent.parent))
 
-from scripts.build_index import VectorIndexBuilder
+from scripts.build_index import IncrementalEmbeddingBuilder
 
 def test_platform_extraction():
     """Test platform extraction from markdown content"""
-    builder = VectorIndexBuilder()
+    from pathlib import Path
+    docs_path = Path("/tmp/docs")
+    vectorstore_path = Path("/tmp/vectorstore")
+    builder = IncrementalEmbeddingBuilder(docs_path, vectorstore_path)
     
     # Test content with multiple platforms
     test_content = """
@@ -35,7 +38,10 @@ A control that initiates an action.
 
 def test_summary_extraction():
     """Test summary extraction from overview section"""
-    builder = VectorIndexBuilder()
+    from pathlib import Path
+    docs_path = Path("/tmp/docs")
+    vectorstore_path = Path("/tmp/vectorstore")
+    builder = IncrementalEmbeddingBuilder(docs_path, vectorstore_path)
     
     # Test content with overview
     test_content = """
@@ -61,7 +67,10 @@ SwiftUI is a modern way to declare user interfaces for any Apple platform. Creat
 
 def test_summary_fallback():
     """Test summary extraction fallback when no overview"""
-    builder = VectorIndexBuilder()
+    from pathlib import Path
+    docs_path = Path("/tmp/docs")
+    vectorstore_path = Path("/tmp/vectorstore")
+    builder = IncrementalEmbeddingBuilder(docs_path, vectorstore_path)
     
     # Test content without overview
     test_content = """
@@ -82,7 +91,10 @@ The Foundation framework provides a base layer of functionality for apps and fra
 
 def test_metadata_extraction():
     """Test complete metadata extraction"""
-    builder = VectorIndexBuilder()
+    from pathlib import Path
+    docs_path = Path("/tmp/docs")
+    vectorstore_path = Path("/tmp/vectorstore")
+    builder = IncrementalEmbeddingBuilder(docs_path, vectorstore_path)
     
     # Create a mock file path
     from unittest.mock import Mock
@@ -114,7 +126,7 @@ Use buttons to allow users to initiate actions. You create a button with a label
     
     assert metadata['framework'] == 'SwiftUI', f"Framework mismatch: {metadata['framework']}"
     assert metadata['api_name'] == 'Button', f"API name mismatch: {metadata['api_name']}"
-    assert set(metadata['platforms']) == {'ios', 'macos'}, f"Platform mismatch: {metadata['platforms']}"
+    assert metadata['platforms'] == 'ios,macos', f"Platform mismatch: {metadata['platforms']}"
     assert metadata['is_framework_main'] == False, f"Is framework main mismatch: {metadata['is_framework_main']}"
     
     print("   ✅ All metadata extraction working correctly!\n")

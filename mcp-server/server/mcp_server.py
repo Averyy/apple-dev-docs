@@ -125,6 +125,23 @@ async def health_check():
         )
 
 
+@app.get("/debug/list_frameworks")
+async def debug_list_frameworks(platform: Optional[str] = None):
+    """Debug endpoint to test list_frameworks directly (no auth for debugging)"""
+    result = await list_frameworks_handler(platform)
+    lines = result.split('\n')
+    header = next((l for l in lines if l.startswith('#')), "No header")
+    framework_count = len([l for l in lines if l.strip().startswith('- **')])
+    
+    return {
+        "platform_param": platform,
+        "header": header,
+        "framework_count": framework_count,
+        "first_10_lines": lines[:10],
+        "has_platform_specific_header": any("Frameworks" in l and l.startswith('#') and l != "# Available Apple Frameworks" for l in lines)
+    }
+
+
 @app.get("/mcp/tools/list")
 async def list_tools(authorized: bool = Depends(verify_api_key)):
     """
@@ -171,10 +188,16 @@ async def list_tools(authorized: bool = Depends(verify_api_key)):
             },
             {
                 "name": "list_frameworks",
-                "description": "List all available Apple frameworks in the documentation database",
+                "description": "List Apple frameworks. Without a platform parameter, shows all frameworks grouped by platform. With a platform parameter, shows only that platform's frameworks with full descriptions.",
                 "inputSchema": {
                     "type": "object",
-                    "properties": {},
+                    "properties": {
+                        "platform": {
+                            "type": "string",
+                            "description": "Optional platform filter: ios, ipados, macos, tvos, watchos, visionos, catalyst, or all. If not specified, shows all frameworks.",
+                            "enum": ["ios", "ipados", "macos", "tvos", "watchos", "visionos", "catalyst", "all"]
+                        }
+                    },
                     "required": []
                 }
             }
@@ -215,8 +238,12 @@ async def call_tool(request: Dict[str, Any], authorized: bool = Depends(verify_a
             )
     elif tool_name == "list_frameworks":
         try:
-            # Call the list frameworks function
-            result = await list_frameworks(**arguments)
+            # Call the list frameworks function with platform parameter
+            platform = arguments.get("platform", None)
+            # Handle empty strings as None
+            if platform == "":
+                platform = None
+            result = await list_frameworks_handler(platform)
             return {"result": result}
         except Exception as e:
             # Handle errors
@@ -387,47 +414,83 @@ def format_full_results(results: List[Dict[str, Any]]) -> str:
     return '\n'.join(formatted)
 
 
-async def list_frameworks() -> str:
+async def list_frameworks_handler(platform: Optional[str] = None) -> str:
     """
     List all available Apple frameworks in the documentation database.
     
+    Args:
+        platform: Optional platform filter (ios, macos, tvos, watchos, visionos, catalyst)
+                 If None or 'all', returns all frameworks with platform grouping
+    
     Returns:
-        Formatted list of frameworks grouped alphabetically
+        Formatted list of frameworks
     """
+    # Log the platform parameter for debugging
+    logger.info(f"list_frameworks_handler called with platform={repr(platform)}")
+    
     # Get RAG engine
     rag = get_rag_engine()
     
     # Get framework list
     try:
-        framework_data = rag.list_frameworks()
+        framework_data = rag.list_frameworks(platform)
         
         # Format the response
         lines = []
-        lines.append(f"# Available Apple Frameworks")
-        lines.append(f"\nTotal frameworks indexed: **{framework_data['total_frameworks']}**\n")
         
-        # Add frameworks by platform if available
-        if framework_data.get('frameworks_by_platform'):
-            lines.append("## Frameworks by Platform")
-            for platform, fw_list in sorted(framework_data['frameworks_by_platform'].items()):
-                lines.append(f"\n### {platform.upper()}")
-                lines.append(f"{len(fw_list)} frameworks available:")
-                # Show first 10 as examples
-                for fw in fw_list[:10]:
-                    fw_info = framework_data.get('framework_details', {}).get(fw, {})
-                    summary = fw_info.get('summary', '')
-                    if summary:
-                        # Truncate long summaries
-                        summary = summary[:80] + "..." if len(summary) > 80 else summary
-                        lines.append(f"- **{fw}**: {summary}")
-                    else:
-                        lines.append(f"- {fw}")
-                if len(fw_list) > 10:
-                    lines.append(f"- ...and {len(fw_list) - 10} more")
+        # Check if platform-specific or all frameworks
+        if framework_data.get('platform'):
+            # Platform-specific response
+            platform_display = framework_data['platform'].upper()
+            # Special case for iOS/iPadOS capitalization
+            if platform_display == "IOS":
+                platform_display = "iOS"
+            elif platform_display == "IPADOS":
+                platform_display = "iPadOS"
+            elif platform_display == "MACOS":
+                platform_display = "macOS"
+            elif platform_display == "TVOS":
+                platform_display = "tvOS"
+            elif platform_display == "WATCHOS":
+                platform_display = "watchOS"
+            elif platform_display == "VISIONOS":
+                platform_display = "visionOS"
+            lines.append(f"# {platform_display} Frameworks")
+            lines.append(f"\nTotal frameworks: **{framework_data['total_frameworks']}**\n")
+            
+            # List all frameworks with descriptions
+            for fw_name in framework_data['frameworks']:
+                fw_info = framework_data['framework_details'].get(fw_name, {})
+                summary = fw_info.get('summary', '')
+                if summary:
+                    # Show full summary for platform-specific queries
+                    lines.append(f"- **{fw_name}**: {summary}")
+                else:
+                    lines.append(f"- **{fw_name}**")
+            
+        else:
+            # All frameworks response (no grouping by platform - just list all)
+            lines.append(f"# Available Apple Frameworks")
+            lines.append(f"\nTotal frameworks indexed: **{framework_data['total_frameworks']}**\n")
+            
+            # List all frameworks with descriptions
+            for fw_name in framework_data['frameworks']:
+                fw_info = framework_data['framework_details'].get(fw_name, {})
+                summary = fw_info.get('summary', '')
+                platforms = fw_info.get('platforms', [])
+                
+                # Include platform info in description
+                platform_str = f" [{', '.join(platforms)}]" if platforms else ""
+                
+                if summary:
+                    lines.append(f"- **{fw_name}**{platform_str}: {summary}")
+                else:
+                    lines.append(f"- **{fw_name}**{platform_str}")
             lines.append("")
         
-        # Add popular frameworks section
-        if framework_data.get('popular_frameworks'):
+        # Skip popular frameworks when showing all frameworks
+        # Only show popular frameworks for platform-specific queries
+        if framework_data.get('platform') and framework_data.get('popular_frameworks'):
             lines.append("## Popular Frameworks")
             lines.append("The most commonly used frameworks:")
             for fw in framework_data['popular_frameworks']:

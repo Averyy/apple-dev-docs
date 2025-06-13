@@ -287,7 +287,8 @@ class SimpleRAG:
         # Build where clause for filtering
         where_clause = {}
         if framework:
-            where_clause["framework"] = framework.lower()
+            # Keep original case for framework names as they're stored with proper case
+            where_clause["framework"] = framework
             logger.debug(f"Filtering by framework: {framework}")
         
         # ChromaDB doesn't support array contains operator for metadata arrays
@@ -317,7 +318,9 @@ class SimpleRAG:
                 for i in range(len(documents)):
                     # Platform filtering (post-query)
                     if platform and platform.lower() != "all":
-                        doc_platforms = metadatas[i].get("platforms", [])
+                        # Platforms are stored as comma-separated string
+                        platforms_str = metadatas[i].get("platforms", "")
+                        doc_platforms = [p.strip() for p in platforms_str.split(",")] if platforms_str else []
                         if platform.lower() not in doc_platforms:
                             continue  # Skip this result
                     
@@ -459,8 +462,21 @@ class SimpleRAG:
             "frameworks_loaded": len(self._framework_names)
         }
     
-    def list_frameworks(self) -> Dict[str, Any]:
-        """List all available frameworks in the vectorstore with enhanced metadata"""
+    def list_frameworks(self, platform: Optional[str] = None) -> Dict[str, Any]:
+        """List all available frameworks in the vectorstore with enhanced metadata
+        
+        Args:
+            platform: Optional platform filter (ios, macos, tvos, watchos, visionos, catalyst)
+                     If None or 'all', returns all frameworks
+        """
+        logger.info(f"RAG list_frameworks called with platform={repr(platform)}")
+        
+        # Normalize platform parameter
+        if platform == "" or platform is None:
+            platform = None
+        elif isinstance(platform, str):
+            platform = platform.lower().strip()
+            
         try:
             # Get framework metadata from main framework pages
             framework_info = {}
@@ -475,9 +491,13 @@ class SimpleRAG:
             for metadata in results["metadatas"]:
                 fw_name = metadata.get("framework", "").lower()
                 if fw_name:
+                    # Convert comma-separated string back to list
+                    platforms_str = metadata.get("platforms", "")
+                    platforms = platforms_str.split(",") if platforms_str else []
+                    
                     framework_info[fw_name] = {
                         "name": fw_name,
-                        "platforms": metadata.get("platforms", []),
+                        "platforms": platforms,
                         "summary": metadata.get("summary"),
                         "title": metadata.get("title", fw_name)
                     }
@@ -495,16 +515,40 @@ class SimpleRAG:
             # Group by platform
             by_platform = {}
             for fw_data in framework_info.values():
-                for platform in fw_data["platforms"]:
-                    if platform not in by_platform:
-                        by_platform[platform] = []
-                    by_platform[platform].append(fw_data["name"])
+                for p in fw_data["platforms"]:
+                    if p not in by_platform:
+                        by_platform[p] = []
+                    by_platform[p].append(fw_data["name"])
             
             # Sort each platform's frameworks
-            for platform in by_platform:
-                by_platform[platform].sort()
+            for plat in by_platform:
+                by_platform[plat].sort()
             
-            # Group alphabetically
+            # Filter by platform if requested
+            if platform and platform.lower() != 'all':
+                platform_lower = platform.lower()
+                filtered_frameworks = {}
+                
+                # Only include frameworks for the requested platform
+                for fw_name, fw_data in framework_info.items():
+                    platforms_lower = [p.lower() for p in fw_data["platforms"]]
+                    if platform_lower in platforms_lower:
+                        filtered_frameworks[fw_name] = fw_data
+                
+                # Return platform-specific data
+                return {
+                    "total_frameworks": len(filtered_frameworks),
+                    "platform": platform,
+                    "frameworks": sorted(filtered_frameworks.keys()),
+                    "framework_details": filtered_frameworks,
+                    "popular_frameworks": [
+                        fw for fw in ["swiftui", "uikit", "foundation", "metal", "coredata",
+                                     "combine", "swift", "avfoundation", "coreml", "arkit"]
+                        if fw in filtered_frameworks
+                    ]
+                }
+            
+            # Return all frameworks (no platform filter)
             grouped = {}
             for fw_name in sorted(framework_info.keys()):
                 if fw_name:

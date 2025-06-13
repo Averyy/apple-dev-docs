@@ -17,7 +17,7 @@ def test_imports():
     print("🧪 Testing module imports...")
     
     modules_to_test = [
-        ("Build Index Script", "scripts.build_index", ["VectorIndexBuilder"]),
+        ("Build Index Script", "scripts.build_index", ["IncrementalEmbeddingBuilder"]),
         ("Config Module", "server.config", ["VECTORSTORE_PATH", "COLLECTION_NAME", "MCP_API_KEY"]),
         ("MCP Server", "server.mcp_server", ["app", "search_apple_docs", "list_frameworks"]),
         ("Logger", "server.logger", ["get_logger"]),
@@ -54,8 +54,12 @@ def test_platform_extraction():
     """Test platform extraction logic standalone"""
     print("\n🧪 Testing platform extraction logic...")
     
-    from scripts.build_index import VectorIndexBuilder
-    builder = VectorIndexBuilder()
+    from scripts.build_index import IncrementalEmbeddingBuilder
+    from pathlib import Path
+    # Create dummy paths for the builder
+    docs_path = Path("/tmp/docs")
+    vectorstore_path = Path("/tmp/vectorstore")
+    builder = IncrementalEmbeddingBuilder(docs_path, vectorstore_path)
     
     test_cases = [
         # (content, expected_platforms)
@@ -85,8 +89,12 @@ def test_summary_extraction():
     """Test summary extraction logic standalone"""
     print("\n🧪 Testing summary extraction logic...")
     
-    from scripts.build_index import VectorIndexBuilder
-    builder = VectorIndexBuilder()
+    from scripts.build_index import IncrementalEmbeddingBuilder
+    from pathlib import Path
+    # Create dummy paths for the builder
+    docs_path = Path("/tmp/docs")
+    vectorstore_path = Path("/tmp/vectorstore")
+    builder = IncrementalEmbeddingBuilder(docs_path, vectorstore_path)
     
     test_cases = [
         # (content, expected_summary_start)

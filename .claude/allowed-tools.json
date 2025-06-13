@@ -1,9 +1,0 @@
-{
-  "allowedTools": {
-    "Edit": true,
-    "Bash(gh:*)": true, 
-    "Bash(git:*)": true,
-    "mcp__context7__*": true,
-    "mcp__browsermcp__*": true
-  }
-}
