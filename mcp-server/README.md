@@ -123,4 +123,4 @@ Key environment variables:
 - `OPENAI_API_KEY`: Required for embeddings
 - `MCP_API_KEY`: Bearer token for API authentication
 - `VECTORSTORE_PATH`: ChromaDB location (default: `./vectorstore`)
-- `MCP_PORT`: Server port (default: 8080)
+- `MCP_PORT`: Server port (default: 8080)# Trigger build - Sat 14 Jun 2025 10:30:14 EDT
