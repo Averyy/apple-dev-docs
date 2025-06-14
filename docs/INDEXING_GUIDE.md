@@ -6,7 +6,7 @@ This guide explains how to build and maintain the vector index for Apple Develop
 
 1. **Environment Setup**: Complete Task 01 (environment setup)
 2. **Documentation Files**: Ensure the scraper has completed downloading documentation
-3. **Voyage AI API Key**: Get from https://www.voyageai.com/ and add to `.env`
+3. **OpenAI API Key**: Ensure `OPENAI_API_KEY` is set in `.env` file
 4. **Virtual Environment**: Always activate the venv before running commands
 
 ## Quick Start
@@ -44,12 +44,12 @@ Expected output:
 
 For initial indexing:
 ```bash
-make index
+python scripts/build_index.py
 ```
 
 For force rebuild (clears existing index):
 ```bash
-make index-force
+python scripts/build_index.py --force
 ```
 
 ### Step 3: Monitor Progress
@@ -79,16 +79,16 @@ The indexer automatically detects changes:
 - Modified files are re-indexed
 - Deleted files are removed from index
 
-Just run `make index` to update.
+Just run `python scripts/build_index.py` to update.
 
 ## Performance Expectations
 
-Using Voyage-3-lite API:
-- **Speed**: ~30-40 documents/second
-- **Total time**: 2-3 hours for 278K documents
-- **Memory usage**: ~100-200MB
-- **Vectorstore size**: ~0.6GB (512 dimensions)
-- **API cost**: ~$0.83 for full indexing
+Using OpenAI text-embedding-3-small:
+- **Speed**: ~100-200 documents/second (with batching)
+- **Total time**: 4-5 hours for 323K documents  
+- **Memory usage**: ~200-400MB
+- **Vectorstore size**: ~1.9GB (1536 dimensions)
+- **API cost**: ~$4 for initial full indexing
 
 ## Troubleshooting
 
@@ -99,9 +99,10 @@ source venv/bin/activate
 ```
 
 ### Slow Indexing
-- Check your internet connection (API calls to Voyage)
-- Ensure no rate limit errors in logs
+- Check your internet connection (API calls to OpenAI)
+- Ensure no rate limit errors in logs (1000 RPM limit)
 - Monitor with `make monitor` to track progress
+- Large files may be split into chunks for processing
 
 ### Recovery from Interruption
 The indexer automatically recovers from interruptions:
@@ -154,14 +155,13 @@ Alternatives:
 ### Regular Updates
 Run weekly or after major documentation updates:
 ```bash
-make index  # Only processes changes
+python scripts/build_index.py  # Only processes changes
 ```
 
 ### Full Rebuild
 Only needed if index corruption suspected:
 ```bash
-make clean
-make index-force
+python scripts/build_index.py --force
 ```
 
 ### Backup

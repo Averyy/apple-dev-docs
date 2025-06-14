@@ -17,11 +17,18 @@ The MCP (Model Context Protocol) server provides high-performance search across 
 
 ## Quick Start
 
-### 1. Running the Server
+### 1. Ensure Vectorstore is Built with Metadata
+
+If you haven't rebuilt the vectorstore with platform metadata:
+```bash
+cd mcp-server
+python scripts/build_index.py --force
+```
+
+### 2. Running the Server
 
 ```bash
 cd mcp-server
-source venv/bin/activate
 make server
 
 # Or directly:
@@ -66,6 +73,8 @@ For remote access, change `localhost` to your server's IP address.
 - `platform` (required, default: "all"): Platform filter ("ios", "macos", "tvos", "watchos", "visionos", "catalyst", "all")
 - `limit` (optional): Results count (1-20, default: 5)
 - `include_full_content` (optional): Return full documents (default: false)
+
+**Note**: Platform filtering is required to ensure relevant results. Use "all" to search across all platforms.
 
 **Example Request:**
 ```bash
@@ -128,7 +137,7 @@ Run the comprehensive test suite:
 
 ```bash
 cd mcp-server
-./venv/bin/python tests/test_mcp_server.py
+python tests/test_mcp_server.py
 ```
 
 Tests include:
@@ -152,6 +161,7 @@ Tests include:
 - Try broader search terms
 - Use framework filter for specific docs
 - Check server logs for errors
+- Ensure platform parameter is set correctly (use "all" if unsure)
 
 ### Framework Mismatch
 - Some frameworks may have no documents
@@ -160,11 +170,11 @@ Tests include:
 
 ## Performance
 
-- **Search Speed**: <500ms average
+- **Search Speed**: <500ms average with platform filtering
 - **Memory Usage**: ~200MB server process
-- **Vectorstore**: 3.2GB ChromaDB
-- **Frameworks**: ~361 indexed
-- **Documents**: 323,096 total
+- **Vectorstore**: 3.2GB ChromaDB with platform metadata
+- **Frameworks**: 341 indexed with platform availability
+- **Documents**: 323,096 total with enhanced metadata
 
 ## Security
 
@@ -172,6 +182,59 @@ Tests include:
 - Environment-based configuration
 - Ready for HTTPS via reverse proxy
 - No hardcoded credentials
+
+## RAG Engine Details
+
+The MCP server uses a sophisticated RAG (Retrieval-Augmented Generation) engine for fast, accurate search across Apple documentation.
+
+### RAG Architecture
+
+1. **Vector Store**: ChromaDB with OpenAI text-embedding-3-small embeddings
+2. **Query Processing**: Optional query expansion for better results
+3. **Search**: Similarity search with optional framework filtering
+4. **Results**: Raw documentation returned for Claude to process
+
+### RAG Performance
+
+- **Total documents**: 323,096
+- **Average search time**: ~350ms
+- **Query cost**: $0.000002 per query (OpenAI embeddings only)
+- **No GPT-4 needed**: Claude handles all reasoning
+
+### Using the RAG Engine Directly
+
+```python
+# When using from within the MCP server
+from rag import SimpleRAG
+
+# Initialize
+rag = SimpleRAG()
+
+# Search across all documentation
+results = await rag.search("SwiftUI Button", limit=5)
+
+# Search within a specific framework
+results = await rag.search("NavigationView", framework="SwiftUI", limit=3)
+
+# Find exact API documentation
+api_doc = await rag.get_api_doc("text", "SwiftUI")
+if api_doc:
+    print(api_doc['content'])
+
+# Multi-query search with deduplication
+results = await rag.multi_search([
+    "SwiftUI List",
+    "ForEach SwiftUI",
+    "ScrollView"
+], limit_per_query=3)
+```
+
+### Cost Analysis
+
+- Query embedding: $0.000002 per query
+- No LLM generation costs
+- 10,000 queries/month = $0.02
+- 7,500x cheaper than GPT-4 approach
 
 ## Future Enhancements
 

@@ -1,364 +1,181 @@
-# 🍏 Apple Developer Documentation Scraper & MCP Server
+# Apple Developer Documentation Scraper & MCP Server
 
-A comprehensive Python tool that scrapes Apple's entire developer documentation ecosystem, converts it into searchable vector embeddings, and provides an MCP (Model Context Protocol) server for AI-powered documentation search with platform-aware filtering.
+A comprehensive Python tool that scrapes Apple's entire developer documentation ecosystem (341 frameworks, 278K+ pages) and provides an MCP server for AI-powered documentation search with platform-aware filtering.
 
-> **Note**: This repository contains scraped documentation from Apple's developer website. All documentation content is property of Apple Inc. This tool is intended for personal use, offline access, and AI-assisted development workflows.
+## Features
 
-## 🎯 Apple JSON API Discovery
+- **Complete Coverage**: All 341 Apple frameworks automatically discovered and scraped
+- **Fast Scraping**: Uses Apple's internal JSON API (no HTML parsing needed)
+- **Vector Search**: OpenAI embeddings with ChromaDB for semantic search
+- **Platform Filtering**: Search by iOS, macOS, tvOS, watchOS, visionOS, or all platforms
+- **MCP Integration**: Model Context Protocol server for AI assistants like Claude
+- **Incremental Updates**: ETag-based efficient updates for changed content only
+- **Cost Optimized**: ~$4 initial setup, <$0.10 for typical updates
 
-Using Apple's internal JSON API endpoints that power their own documentation navigator, making it possible (and fast) to scrape their documentation. This approach provides extremely fast scraping with complete structured data - no HTML parsing or browser automation needed!
+## Quick Start
 
-```
-🎯 COMPLETE FRAMEWORK LIST: https://developer.apple.com/tutorials/data/documentation/technologies.json
-📊 Individual Pages: https://developer.apple.com/tutorials/data/documentation/{framework}/{page}.json
-```
-
-### 🚀 ETag Support for Efficient Updates
-
-Apple's JSON API supports HTTP ETags, enabling highly efficient incremental updates:
-
-```bash
-# First request returns an ETag
-curl -I https://developer.apple.com/tutorials/data/documentation/swiftui/text.json
-# ETag: W/"399a0f24205d58c9443159732da8989a"
-
-# Check if content changed (returns 304 Not Modified if unchanged)
-curl -H 'If-None-Match: W/"399a0f24205d58c9443159732da8989a"' ...
-```
-
-After initial ETag collection, checking many documents for changes takes only ~30 minutes using HEAD requests!
-
-### Quick Start - Embedding Generation
+### Option 1: Docker Deployment (Recommended)
 
 ```bash
+# Clone and setup
+git clone <repo-url>
+cd apple-developer-docs
+
+# Configure environment
+cp .env.example .env
+# Edit .env with:
+# - OPENAI_API_KEY=sk-proj-xxxxx
+# - MCP_API_KEY=$(openssl rand -hex 32)
+
+# Deploy with Docker
+cd mcp-server/deploy
+./quick-start.sh
+```
+
+Docker automatically handles:
+- Building vectorstore on first run (~4-6 hours)
+- Weekly updates (Sundays 1 AM)
+- Health monitoring and auto-restart
+- Process management with supervisor
+
+#### Docker Commands
+
+```bash
+# Check status
+docker logs -f apple-docs-mcp
+docker exec apple-docs-mcp supervisorctl status
+
+# Manual update
+docker exec apple-docs-mcp python /app/scraper/auto_scrape_and_embed.py --embed --yes
+
+# Test search
+curl -H "Authorization: Bearer $MCP_API_KEY" http://localhost:8080/health
+```
+
+### Option 2: Local Development
+
+```bash
+# Clone and setup
+git clone <repo-url>
+cd apple-developer-docs
+
 # Install dependencies
 pip install -r requirements.txt
 
-# Setup environment (copy from example)
-cp mcp-server/.env.example mcp-server/.env
-# Edit .env to add your OPENAI_API_KEY
+# Configure environment
+cp .env.example .env
+# Edit .env to add your keys
 
-# Generate embeddings (incremental, safe to re-run)
-python3 scripts/build_index_incremental.py
-
-# Check system health
-python3 scripts/vectorstore_health_check.py
-
-# Run comprehensive tests
-python3 tests/run_all_tests.py
-```
-
-
-## Purpose & Architecture
-
-Apple's Developer website is difficult for AI LLMs to browse and extremely challenging to bulk add context. Unlike the Swift Language guidelines hosted open source on Github, Apple hides developer guidelines behind virtualization, lazy loading, and Javascript requirements. This system addresses the need for offline, searchable access by:
-
-- **Scraping**: Converting Apple's documentation into clean, structured markdown files
-- **Embedding**: Creating vector embeddings with platform metadata for intelligent search
-- **MCP Server**: HTTP-based API for AI assistants with platform-aware filtering
-- **Framework Discovery**: List all frameworks with summaries and platform availability
-- **Monitoring**: Providing health checks and maintenance tools
-- **Updating**: Efficient incremental updates with change detection
-
-## Technical Approach
-
-### 1. Scraping Architecture
-
-The scraper leverages Apple's JSON API endpoints that power their documentation website:
-
-```
-Documentation URL: https://developer.apple.com/documentation/swiftui/text
-JSON API URL: https://developer.apple.com/tutorials/data/documentation/swiftui/text.json
-```
-
-This approach provides:
-- **100x faster scraping** - Direct HTTP requests instead of browser automation
-- **Complete structured data** - All content, code examples, and metadata in JSON format
-- **Scalable to 100,000+ pages** - Simple async HTTP requests with rate limiting
-- **Generic solution** - One scraper works for ALL frameworks
-- **No JavaScript rendering needed** - Pure API calls
-
-### 2. Embedding Architecture
-
-**Production-Ready Features:**
-- **Incremental Processing**: Only embeds new/changed files (hash-based detection)
-- **Resume Capability**: Automatic checkpointing enables recovery from failures
-- **Health Monitoring**: Comprehensive diagnostics and automatic issue fixing
-- **Cost Protection**: Multiple safety layers prevent overspending
-- **Verification**: Post-embedding integrity validation
-
-**Technical Stack:**
-- **Embedding Model**: OpenAI text-embedding-3-small (1536 dimensions)
-- **Vector Database**: ChromaDB (persistent, local storage)
-- **Change Detection**: SHA-256 hashing with ETag optimization
-- **Health Monitoring**: Automated orphan detection, duplicate cleanup
-
-## Usage
-
-### Scraping Documentation
-
-```bash
-# Interactive mode with prompts
-python3 scrape.py
-
-# Scrape all frameworks (production run)
-python3 scrape.py --all --yes
-
-# Scrape specific frameworks
-python3 scrape.py --frameworks SwiftUI UIKit Foundation --yes
-
-# Dry run to preview what will be scraped
-python3 scrape.py --frameworks SwiftUI --dry-run
-
-# Re-scrape existing frameworks (apply fixes)
-python3 scripts/utilities/rescrape_existing.py --clear-hashes
-
-# Resume interrupted scraping
-python3 scrape.py --resume --yes
-
-# Scrape with orphan cleanup (removes deleted pages)
-python3 scrape.py --all --yes --cleanup-orphans
-
-# Manual orphan cleanup for all frameworks
-python3 scripts/check_orphans.py --clean --no-dry-run
-```
-
-### Embedding Generation & Management
-
-```bash
-# Generate embeddings (safe to re-run, incremental)
-python3 scripts/build_index_incremental.py
-
-# Framework-specific embedding
-python3 scripts/build_index_incremental.py --framework SwiftUI
-
-# Health monitoring
-python3 scripts/vectorstore_health_check.py
-
-# Fix detected issues
-python3 scripts/vectorstore_health_check.py --fix
-
-# Generate health report
-python3 scripts/vectorstore_health_check.py --output health_report.json
-
-# Run comprehensive test suite
-python3 tests/run_all_tests.py
-```
-
-### Production Deployment
-
-```bash
-# Full production setup with MCP server
+# Build Vector Index (one-time)
 cd mcp-server
-python3 scripts/build_index.py --force              # Rebuild with platform metadata
-cd ..
+python scripts/build_index.py --force
 
-# Run MCP server for AI assistants
-cd mcp-server && make server                        # Starts on port 8080
-
-# Automated updates (safe for cron/scheduled runs)
-python3 scripts/build_index_incremental.py          # Daily/weekly: $0-0.10
+# Run MCP Server
+make server
 ```
 
-### MCP Server Features
+The server starts on port 8080 with:
+- Platform-aware search (iOS, macOS, tvOS, watchOS, visionOS)
+- Framework discovery (341 frameworks)
+- Sub-500ms response times
+- Bearer token authentication
 
-- **Platform-Aware Search**: Filter results by iOS, macOS, tvOS, etc.
-- **Framework Discovery**: List 341 frameworks with summaries
-- **Sub-500ms Response**: Optimized for real-time AI interactions
-- **Bearer Token Auth**: Secure API access
+### 4. Configure AI Assistant
 
-## Output Format
+For Claude Desktop, edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
 
-### Documentation Structure
-```
-documentation/
-├── swiftui/
-│   ├── text.md
-│   ├── button.md
-│   ├── view_frame(width:height:alignment:).md
-│   └── declaring-a-custom-view.md
-├── uikit/
-│   ├── uiview.md
-│   └── uiviewcontroller.md
-├── metal/
-│   ├── mtldevice.md
-│   └── mtlcommandqueue.md
-└── [remaining frameworks]
+```json
+{
+  "mcpServers": {
+    "apple-docs": {
+      "type": "sse", 
+      "url": "http://localhost:8080/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_MCP_API_KEY"
+      }
+    }
+  }
+}
 ```
 
-### Vector Database Structure
-```
-vectorstore/
-├── chroma.sqlite3              # ChromaDB database
-└── [metadata and indices]
-```
+Replace `YOUR_MCP_API_KEY` with the value from your `.env` file.
 
-### Hash & Checkpoint Data
+## Architecture
+
+**Scraping**: Uses Apple's internal JSON API endpoints (no HTML parsing needed)
 ```
-.hashes/
-├── embedding_hashes.json      # Content change tracking
-├── embedding_checkpoint.json  # Resume capability
-└── [framework]_hashes.json    # Individual framework hashes
+https://developer.apple.com/tutorials/data/documentation/{framework}/{page}.json
 ```
 
-Each markdown file contains:
-- API name and framework
-- Platform availability  
-- Swift/Objective-C declarations
-- Detailed descriptions
-- Code examples
-- Cross-references with dual linking (local .md files + Apple URLs)
-- Link to original Apple documentation page
+**Vector Search**: OpenAI text-embedding-3-small (1536 dimensions) + ChromaDB  
+**Platform Filtering**: Metadata extraction enables iOS/macOS/etc. specific search  
+**Incremental Updates**: ETag-based change detection for efficient updates
+**Docker Deployment**: Multi-process container with supervisor for reliability
 
-## Project Architecture
+## Key Commands
 
-### Project Structure
+```bash
+# Docker deployment
+cd mcp-server/deploy && ./quick-start.sh
+
+# Health check
+curl -H "Authorization: Bearer $MCP_API_KEY" http://localhost:8080/health
+
+# Update index (local)
+cd mcp-server && python scripts/build_index.py
+
+# Run tests
+cd mcp-server && python tests/test_mcp_server.py
+
+# View logs (Docker)
+docker logs -f apple-docs-mcp
+```
+
+## Project Structure
 
 ```
 apple-developer-docs/
-├── scrape.py                           # Main scraping entry point
-├── documentation/                      # Scraped markdown files (278,778 files, 1.17GB)
-├── vectorstore/                        # ChromaDB embeddings (~1.1GB when complete)
-├── .hashes/                           # Change tracking and checkpoints
-├── scraper/                           # Core scraping engine
-│   ├── json_scraper.py                # Apple JSON API client
-│   ├── utils/markdown_converter.py    # JSON to markdown conversion
-│   ├── utils/hash_manager.py          # Incremental update tracking
-│   └── base.py                        # Base scraper classes
-├── scripts/                           # Production embedding scripts
-│   ├── build_index_incremental.py     # ✅ MAIN: Incremental embedding system
-│   ├── vectorstore_health_check.py    # ✅ Health monitoring & fixing
-│   ├── test_hash_integration.py       # Integration testing
-│   └── utilities/                     # Scraping utilities
-├── tests/                             # Comprehensive test suite (100% pass)
-│   ├── run_all_tests.py               # ✅ Complete test runner
-│   ├── test_critical_sync.py          # Core functionality tests
-│   ├── test_new_features.py           # Checkpointing & verification
-│   ├── test_production_readiness.py   # Production scenario tests
-│   └── test_chromadb_edge_cases.py    # Database edge cases
-├── mcp-server/                        # MCP server integration
-└── [documentation & configuration files]
+├── documentation/           # Scraped Apple docs (278K+ files, 1.17GB)
+├── mcp-server/             # MCP server and vector indexing
+│   ├── scripts/build_index.py  # Main indexing script
+│   ├── server/mcp_server.py    # MCP HTTP server
+│   └── vectorstore/            # ChromaDB embeddings (~1.9GB)
+├── scraper/                # Scraping engine for Apple's JSON API
+└── docs/                   # Detailed documentation
 ```
 
-### Key Components
+## Documentation
 
-**Scraping System:**
-- **JSON Scraper** - Fetches and parses Apple's JSON API with rate limiting
-- **URL Discovery** - Traverses documentation graph to find all pages  
-- **Markdown Converter** - Transforms JSON to clean markdown with cross-framework links
-- **Hash Manager** - Tracks content changes for efficient incremental updates
-- **Concurrent Processing** - 10 parallel requests with 0.2s rate limiting
+### Core Guides
+- **[Docker Deployment Guide](docs/DOCKER_DEPLOYMENT.md)** - Complete deployment instructions
+- **[MCP Server Guide](docs/MCP_SERVER_GUIDE.md)** - MCP server setup and API reference
+- **[Indexing Guide](docs/INDEXING_GUIDE.md)** - Vector index building and maintenance
+- **[Project Status](docs/PROJECT_STATUS.md)** - Current system status and metrics
+- **[Deployment Checklist](docs/DEPLOYMENT_CHECKLIST.md)** - Pre-deployment verification
 
-**Embedding System:**
-- **Incremental Builder** - Only processes new/changed files to save costs
-- **Checkpoint Manager** - Enables resume from any failure point
-- **Verification System** - Validates embeddings match source content
-- **Health Monitor** - Detects and fixes vectorstore issues
-- **Cost Protection** - Multiple safety layers prevent overspending
+### API Tools Available in MCP
+- `search_apple_docs` - Search with platform filtering (required parameter)
+- `list_frameworks` - Discover all 341 Apple frameworks
 
-## Production Features
+## Performance
 
-### ✅ Enterprise-Grade Reliability
-- **Automatic Error Recovery**: Network, file system, and API error handling
-- **Resume Capability**: Checkpoint-based recovery from any failure point
-- **Health Monitoring**: Continuous monitoring with automatic issue fixing
-- **Test Coverage**: 100% pass rate across all critical scenarios
+- **Search Speed**: <500ms with platform filtering
+- **Index Size**: ~1.9GB ChromaDB for 323K+ documents  
+- **Update Cost**: ~$4 initial, <$0.10 for incremental updates
+- **Platform Coverage**: iOS, macOS, tvOS, watchOS, visionOS, Catalyst
 
-### ✅ Cost Optimization
-- **Incremental Updates**: Hash-based change detection prevents waste ($1,365/year savings)
-- **Multiple Cost Limits**: Hard limits, user confirmation, real-time monitoring
-- **Efficient Processing**: Only 0.015% currently embedded, 99.985% awaiting efficient processing
+## Troubleshooting
 
-### ✅ Operational Excellence
-- **Health Check Tools**: Automated issue detection and fixing
-- **Performance Monitoring**: Processing rates, memory usage, error tracking
-- **Comprehensive Logging**: Detailed error reporting and debugging
-- **Production Scripts**: Battle-tested scripts ready for automation
-
-## 📚 Documentation
-
-Comprehensive documentation is organized in the `docs/` folder:
-
-### Core Documentation
-- [`PROJECT_STATUS.md`](docs/PROJECT_STATUS.md) - Current system status, metrics, and deployment readiness
-- [`TECHNICAL_GUIDE.md`](docs/TECHNICAL_GUIDE.md) - Implementation details, ChromaDB configuration, best practices
-- [`OPERATIONS_GUIDE.md`](docs/OPERATIONS_GUIDE.md) - Health monitoring, backups, maintenance procedures
-- [`SECURITY_GUIDE.md`](docs/SECURITY_GUIDE.md) - API key management, cost controls, security checklist
-
-
-## Performance Metrics
-
-### Scraping Performance
-- **Rate Limiting**: 0.2s between requests, 20 concurrent connections
-- **Throughput**: ~300 pages/minute with full content processing
-- **Memory Usage**: ~100MB for concurrent processing
-- **Incremental Updates**: Hash-based change detection avoids re-scraping
-
-### Embedding Performance  
-- **Processing Rate**: 100-200 files/minute with verification
-- **Cost**: $3.74 one-time, $0-0.10 for typical updates
-- **Storage**: ~1.1GB ChromaDB database for complete dataset
-- **Verification**: 100% embedding integrity with post-storage validation
-
-### System Reliability
-- **Uptime**: 100% success rate in comprehensive testing
-- **Recovery Time**: Instant resume from checkpoints
-- **Error Rate**: <0.1% with automatic retry mechanisms
-- **Test Coverage**: 5 comprehensive test suites, 100% pass rate
-
-## Development & Testing
-
-```bash
-# Run comprehensive test suite (recommended)
-python3 tests/run_all_tests.py
-
-# Individual test suites
-python3 tests/test_critical_sync.py          # Core scraping functionality
-python3 tests/test_new_features.py           # Checkpointing & verification
-python3 tests/test_production_readiness.py   # Production scenarios
-python3 tests/test_chromadb_edge_cases.py    # Database edge cases
-python3 scripts/test_hash_integration.py     # Hash system integration
-
-# Legacy scraping tests
-python3 tests/run_critical_tests.py         # Legacy critical tests
-python3 tests/test_single_page.py           # Single page scraping
-
-# Type checking
-mypy scraper/
-```
-
-## Supported Frameworks
-
-The system handles all Apple frameworks available on their documentation site, including:
-
-**Major Frameworks**: SwiftUI, UIKit, Foundation, Core Data, CloudKit, Metal, ARKit, Core ML, AVFoundation, Core Graphics, Core Animation, MapKit, HealthKit, StoreKit, GameKit, Vision, Natural Language, Speech, Core Location, Core Bluetooth, Network, Security, CryptoKit, Combine, SwiftData, Charts, and many more.
-
-**Platform Coverage**: iOS, macOS, watchOS, tvOS, visionOS frameworks plus development tools, APIs, and services.
-
-**Complete List**: See the full framework list in the original README or at Apple's technologies.json endpoint.
-
-## Documentation & Configuration
-
-### Key Documentation Files
-- **[EMBEDDING_STATUS.md](EMBEDDING_STATUS.md)** - Current system status and metrics
-- **[EMBEDDING_IMPROVEMENTS.md](EMBEDDING_IMPROVEMENTS.md)** - Technical improvements summary
-- **[SECURITY_CHECKLIST.md](SECURITY_CHECKLIST.md)** - Security measures and validation
-- **[CHROMADB_BEST_PRACTICES.md](CHROMADB_BEST_PRACTICES.md)** - Database best practices
-- **[tasks/02-build-vector-index.md](tasks/02-build-vector-index.md)** - Complete implementation guide
-
-### Configuration Files
-- **[mcp-server/.env.example](mcp-server/.env.example)** - Environment configuration template
-- **[CLAUDE.md](CLAUDE.md)** - Development guidelines and project context
+**Environment Issues**: Ensure `OPENAI_API_KEY` is set in `.env`  
+**Build Errors**: Try `cd mcp-server && python scripts/build_index.py --force`  
+**Server Issues**: Check `curl http://localhost:8080/health`  
+**Search Problems**: Ensure platform parameter is set (use "all" if unsure)
 
 ## License & Legal
 
-**Scraper Code**: MIT License - The scraping and embedding tools are open source.
+**Code**: MIT License  
+**Documentation Content**: © Apple Inc. - This tool provides offline access to publicly available documentation for personal development use.
 
-**Documentation Content**: All scraped documentation content is © Apple Inc. and subject to Apple's terms of use. This tool downloads publicly available documentation for personal use and development purposes. Users are responsible for complying with Apple's terms of service.
+---
 
-## Acknowledgments
-
-- All documentation content is sourced from [Apple Developer Documentation](https://developer.apple.com/documentation/)
-- Each markdown file includes a link back to the original Apple documentation page
-- Built for local semantic search with complete data privacy
-- Embedding system designed for production reliability and cost efficiency
+For detailed technical information, see the [docs/](docs/) directory.

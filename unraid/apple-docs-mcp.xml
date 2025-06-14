@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>apple-docs-mcp</Name>
+  <Repository>ghcr.io/averyy/apple-dev-docs-mcp:latest</Repository>
+  <Registry>https://github.com/Averyy/apple-dev-docs/pkgs/container/apple-dev-docs-mcp</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Averyy/apple-dev-docs/issues</Support>
+  <Project>https://github.com/Averyy/apple-dev-docs</Project>
+  <Overview>Apple Developer Documentation MCP Server - Provides AI-powered search across 323,096 Apple developer documentation pages with platform-aware filtering. Features automatic weekly updates, sub-500ms search performance, and MCP (Model Context Protocol) integration for AI assistants like Claude.</Overview>
+  <Category>Tools: Network:Web Productivity: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8080]/health</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Averyy/apple-dev-docs/main/unraid/apple-docs-mcp.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Averyy/apple-dev-docs/main/docs/assets/icon.png</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText>If you find this useful, consider starring the GitHub repo!</DonateText>
+  <DonateLink>https://github.com/Averyy/apple-dev-docs</DonateLink>
+  <Description>Apple Developer Documentation MCP Server provides comprehensive search capabilities across all Apple frameworks and platforms (iOS, macOS, tvOS, watchOS, visionOS). Perfect for developers who need offline access to Apple's documentation with AI-powered search.</Description>
+  
+  <!-- Port Configuration -->
+  <Config Name="MCP Server Port" Target="8080" Default="8080" Mode="tcp" Description="Port for MCP server API endpoint" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  
+  <!-- Volume Mappings -->
+  <Config Name="Vectorstore Database" Target="/data/vectorstore" Default="/mnt/cache/appdata/apple-docs-mcp/vectorstore" Mode="rw" Description="ChromaDB vector database storage (contains embeddings)" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/apple-docs-mcp/vectorstore</Config>
+  
+  <Config Name="Hash Storage" Target="/data/hashes" Default="/mnt/cache/appdata/apple-docs-mcp/hashes" Mode="rw" Description="ETags and content hashes for incremental updates" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/apple-docs-mcp/hashes</Config>
+  
+  <Config Name="Documentation Storage" Target="/data/documentation" Default="/mnt/cache/appdata/apple-docs-mcp/documentation" Mode="rw" Description="Scraped markdown documentation (optional if KEEP_MARKDOWN_FILES=false)" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/cache/appdata/apple-docs-mcp/documentation</Config>
+  
+  <Config Name="Logs Directory" Target="/data/logs" Default="/mnt/cache/appdata/apple-docs-mcp/logs" Mode="rw" Description="Container logs for MCP server and scheduler" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/apple-docs-mcp/logs</Config>
+  
+  <!-- Environment Variables -->
+  <Config Name="OpenAI API Key" Target="OPENAI_API_KEY" Default="" Mode="" Description="OpenAI API key for text-embedding-3-small (required for embeddings generation)" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  
+  <Config Name="MCP API Key" Target="MCP_API_KEY" Default="" Mode="" Description="Bearer token for MCP authentication (generate with: openssl rand -hex 32)" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  
+  <Config Name="Keep Markdown Files" Target="KEEP_MARKDOWN_FILES" Default="false" Mode="" Description="Keep scraped markdown files after embedding (true = ~2GB extra disk usage)" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  
+  <Config Name="Timezone" Target="TZ" Default="America/New_York" Mode="" Description="Timezone for scheduled updates (weekly on Sundays at 1 AM)" Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
+  
+  <!-- Labels -->
+  <Config Name="Container ID" Target="container_id" Default="apple-docs-mcp" Mode="" Description="Internal container identifier" Type="Label" Display="advanced" Required="false" Mask="false">apple-docs-mcp</Config>
+  
+  <Config Name="Version" Target="version" Default="latest" Mode="" Description="Container version" Type="Label" Display="advanced" Required="false" Mask="false">latest</Config>
+</Container>

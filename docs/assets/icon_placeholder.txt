@@ -1,0 +1,15 @@
+# Icon Placeholder
+
+The icon.svg file has been created. To convert it to PNG for Unraid:
+
+1. Use an online converter like https://cloudconvert.com/svg-to-png
+2. Or use ImageMagick if installed:
+   ```bash
+   convert -background none -size 256x256 icon.svg icon.png
+   ```
+3. Or use rsvg-convert:
+   ```bash
+   rsvg-convert -w 256 -h 256 icon.svg > icon.png
+   ```
+
+The icon should be 256x256 pixels for best compatibility with Unraid Community Applications.

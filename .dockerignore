@@ -1,0 +1,71 @@
+# Git files
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info
+.pytest_cache
+.mypy_cache
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+documentation/
+vectorstore/
+.hashes/
+*.log
+.env
+.env.*
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Documentation (except what we need)
+docs/
+README.md
+LICENSE
+
+# Build artifacts
+dist/
+build/
+*.whl
+
+# Test files
+tests/
+test_*.py
+*_test.py
+
+# Temporary files
+temp/
+tmp/
+temp_*
+*.tmp
+
+# Archives
+*.zip
+*.tar
+*.gz
+
+# Keep only what's needed for Docker
+!mcp-server/
+!scraper/
+!requirements.txt

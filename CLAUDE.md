@@ -4,6 +4,8 @@
 
 A comprehensive Python tool that scrapes Apple's entire developer documentation ecosystem, converts it into searchable vector embeddings, and provides an MCP (Model Context Protocol) server for AI-powered documentation search with platform-aware filtering.
 
+**Main Problem**: Mirror Apple's complete developer documentation for offline semantic search via MCP server integration.
+
 ## Critical Rules - DO NOT VIOLATE
 
 - **NEVER create mock data or simplified components** unless explicitly told to do so
@@ -18,6 +20,7 @@ A comprehensive Python tool that scrapes Apple's entire developer documentation 
 - Don't update THIS file with project status, this is only for the rules you must follow
 - Always look up documentation (either via context7 mcp or web search) when unsure
 - One time use files for debugging should be put in a temp folder or labelled temp_ so we know later that they are safe to delete
+- **ALWAYS use relative paths in scripts** - never use absolute paths, use proper relative path resolution
 
 ### Python Development Standards
 
@@ -30,12 +33,6 @@ A comprehensive Python tool that scrapes Apple's entire developer documentation 
 - Optimize for performance
 - Design for memory efficiency with URL cache cleanup
 - Design for multiple concurrent users from day one
-
-### Scraping Best Practices
-
-- Add delays between requests
-- Use random User-Agent headers
-- Log all scraping activities for debugging
 
 ### Data Storage Principles
 
@@ -63,57 +60,54 @@ A comprehensive Python tool that scrapes Apple's entire developer documentation 
 4. **Hash Manager**: Track changes and avoid duplicate scraping
 5. **Progress Tracker**: Monitor completion across all frameworks
 
-### Key Technologies
+### Core Technologies
 
-- **Web Scraping**: httpx (async HTTP client) - that's it!
-- **JSON Processing**: Built-in json module
-- **Storage**: Local filesystem only (MVP)
-- **Deployment**: Docker, with environment-based configuration
+- **Apple JSON API**: Direct access to structured documentation data
+- **Embeddings**: OpenAI text-embedding-3-small (1536 dimensions)
+- **Vector Database**: ChromaDB (local storage)
+- **MCP Server**: FastAPI with Bearer token authentication
+- **Processing**: httpx async client, built-in JSON processing
 
-## Development Workflow
+## MCP Server Features
 
-1. **Research Phase**
-   - Analyze target website structure
-   - Identify content patterns and selectors
-   - Test scraping logic in Jupyter notebook first
-   - Document legal structure of content
+- **Platform Filtering**: Required parameter (ios, macos, tvos, watchos, visionos, catalyst, all)
+- **Framework Discovery**: `list_frameworks` tool with summaries and availability
+- **Sub-500ms Search**: Optimized ChromaDB queries with metadata filtering
+- **Bearer Authentication**: API key required for all endpoints
 
-2. **Implementation**
-   - Write scraper following base class pattern
-   - Add proper error handling and logging
-   - Test with small batches first
-   - Validate legal context preservation
+## Core Commands
 
-3. **Processing Setup**
-   - Scrape documents and create simple chunks
-   - Generate embeddings using Voyage-law-2
-   - Build Chroma vector store
-   - Contextual enrichment planned for future phase
+```bash
+# Environment setup
+cp .env.example .env  # Edit to add API keys
 
-3. **Testing**
-   - Unit tests for parsers and extractors
-   - Integration tests with real websites (sparingly)
-   - Validate markdown output manually
-   - Test SSE streaming with frontend
-   - Verify source attributions are accurate
+# Run scraper
+python scrape.py --all --yes
 
-4. **Documentation**
-   - Document CSS selectors and patterns for each source
-   - Note any special handling required
-   - Update source configuration
-   - Track scraping patterns for reuse
+# Rebuild vectorstore with metadata
+cd mcp-server && python scripts/build_index.py --force
 
-## Code Quality Checklist
+# Run MCP server  
+cd mcp-server && make server
 
-Before committing code:
+# Health check
+cd mcp-server && python tests/test_mcp_server.py
+```
 
-- Type hints added to all functions
-- Docstrings for all classes and public methods
-- Error handling for network requests
-- Logging instead of print statements
-- No hardcoded values or credentials
-- Tests written for new functionality
-- Markdown output manually reviewed
-- Source URLs preserved for all content
-- Platform availability metadata accurate
-- Cross-framework references validated
+## Project Structure
+
+```
+apple-developer-docs/
+├── .env                           # Environment variables (API keys)
+├── scrape.py                      # Main documentation scraper
+├── documentation/                 # Scraped markdown files
+├── vectorstore/                   # ChromaDB storage (main)
+├── tests/                         # Top-level test suite
+├── scripts/                       # Utility scripts
+└── mcp-server/                    # MCP server implementation
+    ├── scripts/build_index.py     # Embedding generation with metadata
+    ├── server/mcp_server.py       # FastAPI MCP server
+    ├── server/rag.py              # Search engine with platform filtering
+    ├── vectorstore/               # ChromaDB storage (MCP server)
+    └── tests/                     # MCP server tests
+```
