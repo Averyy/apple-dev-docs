@@ -4,8 +4,17 @@ openai                # OpenAI API for embeddings (REQUIRED)
 fastapi               # HTTP server framework (remote access)
 uvicorn[standard]     # ASGI server for FastAPI
 python-dotenv         # Environment management
-httpx                 # Async HTTP client
+httpx==0.27.0         # Async HTTP client
 tqdm                  # Progress bars for indexing
+
+# Scraper dependencies (for scheduled rescraping)
+beautifulsoup4==4.12.3
+markdownify==0.12.1
+asyncio-throttle==1.0.2
+jsonschema==4.21.1
+tiktoken>=0.5.0
+structlog==24.1.0
+rich==13.7.0
 
 # Optional/unused - can be removed in future
 mcp                   # Model Context Protocol SDK (not used in HTTP implementation)
