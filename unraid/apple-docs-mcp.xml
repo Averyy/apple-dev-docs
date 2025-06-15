@@ -35,13 +35,14 @@
   <Config Name="Logs Directory" Target="/data/logs" Default="/mnt/cache/appdata/apple-docs-mcp/logs" Mode="rw" Description="Container logs for MCP server and scheduler" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/apple-docs-mcp/logs</Config>
   
   <!-- Environment Variables -->
+  
   <Config Name="OpenAI API Key" Target="OPENAI_API_KEY" Default="" Mode="" Description="OpenAI API key for text-embedding-3-small (required for embeddings generation)" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   
   <Config Name="MCP API Key" Target="MCP_API_KEY" Default="" Mode="" Description="Bearer token for MCP authentication (generate with: openssl rand -hex 32)" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   
   <Config Name="Keep Markdown Files" Target="KEEP_MARKDOWN_FILES" Default="false" Mode="" Description="Keep scraped markdown files after embedding (true = ~2GB extra disk usage)" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
   
-  <Config Name="Timezone" Target="TZ" Default="America/New_York" Mode="" Description="Timezone for scheduled updates (weekly on Sundays at 1 AM)" Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
+  <Config Name="Timezone" Target="TZ" Default="America/New_York" Mode="" Description="Timezone for scheduled updates (default: Sundays at 1 AM EST/EDT)" Type="Variable" Display="advanced" Required="false" Mask="false">America/New_York</Config>
   
   <!-- Labels -->
   <Config Name="Container ID" Target="container_id" Default="apple-docs-mcp" Mode="" Description="Internal container identifier" Type="Label" Display="advanced" Required="false" Mask="false">apple-docs-mcp</Config>
