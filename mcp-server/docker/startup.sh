@@ -18,9 +18,13 @@ fi
 # Create necessary directories
 mkdir -p /data/vectorstore /data/hashes /data/documentation /data/logs
 
-# Check if vectorstore exists
-if [ -d "/data/vectorstore/chroma" ]; then
-    echo "✅ Found existing vectorstore"
+# Check if vectorstore exists - look for chroma.sqlite3
+if [ -f "/data/vectorstore/chroma.sqlite3" ]; then
+    echo "✅ Found existing vectorstore database"
+    
+    # Show what's in the vectorstore directory
+    echo "📁 Vectorstore contents:"
+    ls -lah /data/vectorstore/ | head -5
     
     # Get document count if possible
     if command -v python > /dev/null; then
@@ -31,13 +35,18 @@ try:
     collection = client.get_collection('apple_docs')
     print(collection.count())
 except:
-    print('unknown')
-" 2>/dev/null || echo "unknown")
-        echo "📊 Documents in vectorstore: $DOC_COUNT"
+    print('0')
+" 2>/dev/null || echo "0")
+        
+        if [ "$DOC_COUNT" -gt 0 ]; then
+            echo "📊 Documents in vectorstore: $(printf "%'d" $DOC_COUNT)"
+        else
+            echo "⚠️  Vectorstore exists but is empty"
+        fi
     fi
 else
     echo "⚠️  No vectorstore found. It will be built on first scrape."
-    echo "   This process will take 1-2 hours and cost ~$4-6 in OpenAI API fees."
+    echo "   This process will take 4-6 hours and cost ~$4-6 in OpenAI API fees."
 fi
 
 # Check last update time
