@@ -71,21 +71,25 @@ echo ""
 
 # Create a marker file for first run
 if [ ! -f "/data/hashes/.initialized" ]; then
-    echo "📝 First run detected. Marking as initialized."
+    echo "📝 Initial container setup completed."
     touch /data/hashes/.initialized
     
-    # Record initial setup time
-    date '+%Y-%m-%d %H:%M:%S' > /data/hashes/last_update.txt
+    # Record initial setup time if not already present
+    if [ ! -f "/data/hashes/last_update.txt" ]; then
+        date '+%Y-%m-%d %H:%M:%S' > /data/hashes/last_update.txt
+    fi
 fi
 
 echo "🎯 Starting services with supervisor..."
 echo ""
 
-# Check if we should run self-tests (on first startup)
+# Check if we should run self-tests (on first container deployment)
 if [ ! -f "/data/hashes/.self_test_completed" ]; then
-    echo "🧪 First startup detected. Self-tests will run after services start."
+    echo "🧪 Self-tests will run after services start."
     echo "   Check /data/logs/self-test.log for results."
     echo ""
+    # Create the marker file so we don't show this message repeatedly
+    touch /data/hashes/.self_test_completed
 fi
 
 # Start supervisor (runs both MCP server and scheduler)
