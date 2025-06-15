@@ -1,14 +1,17 @@
 # Apple Docs MCP Server
 
-This is the Model Context Protocol (MCP) server for Apple Developer Documentation. It provides semantic search capabilities over the scraped Apple documentation with platform-aware filtering and framework discovery.
+A high-performance Model Context Protocol (MCP) server providing semantic search over 341,207 Apple Developer Documentation pages with full MCP specification compliance.
 
 ## Features
 
-- **Semantic Search**: Query 323,000+ Apple documentation pages using natural language
-- **Platform Filtering**: Filter results by platform (iOS, macOS, tvOS, etc.)
-- **Framework Discovery**: List all available frameworks with summaries and platform availability
-- **Sub-500ms Response Time**: Optimized for fast, accurate results
-- **Enhanced Metadata**: Includes platform availability and framework summaries
+- **Streamable HTTP Transport**: Full MCP 2025-03-26 specification compliance
+- **341,207 Documents**: Complete Apple developer documentation coverage
+- **360 Frameworks**: All Apple frameworks indexed with metadata
+- **Sub-500ms Search**: Optimized ChromaDB vector search
+- **Platform Filtering**: iOS, macOS, tvOS, watchOS, visionOS, Catalyst
+- **MCP Resources**: Browse documentation structure
+- **MCP Prompts**: Pre-built templates for common queries
+- **Session Management**: Stateful connections with proper handshake
 
 ## Project Structure
 
@@ -48,74 +51,170 @@ The MCP server reads from the scraped documentation in `../documentation/` but o
 
 ## Quick Start
 
-1. **Environment Setup** (Task 01) ✅
+1. **Setup Environment**
    ```bash
+   cd mcp-server
    python3 -m venv venv
    source venv/bin/activate
    pip install -r requirements.txt
    ```
 
-2. **Build Vector Index** ✅
+2. **Configure API Keys**
    ```bash
-   python scripts/build_index.py --force  # Full rebuild with enhanced metadata
-   # Or incremental update (will use existing metadata if available):
-   python scripts/build_index.py
+   cp ../.env.example ../.env
+   # Edit ../.env and add:
+   # OPENAI_API_KEY=your-openai-key
+   # MCP_API_KEY=your-generated-key
    ```
-   
-   **Note**: After the recent fixes, use `--force` to rebuild with:
-   - Correct framework names (bug fix for parts[0] vs parts[-2])
-   - Platform metadata extraction (ios, macos, tvos, etc.)
-   - Framework summaries from overview sections
-   - Enhanced metadata for platform-aware filtering
 
-3. **Run MCP Server** ✅
+3. **Build Vector Index** (if not already built)
    ```bash
-   python server/mcp_server.py
-   # Or use make:
-   make server
+   python scripts/build_index.py --force
    ```
-   
-   The server now provides:
-   - `search_apple_docs`: Search with **required** platform filter (use "all" for cross-platform)
-   - `list_frameworks`: Discover frameworks with summaries and platform availability
+
+4. **Start Server**
+   ```bash
+   make server
+   # Or directly:
+   python server/mcp_server.py
+   ```
+
+   Server runs at `http://localhost:8080/mcp` with:
+   - Streamable HTTP transport
+   - Bearer token authentication
+   - Full MCP protocol support
 
 ## Testing
 
-Run comprehensive tests:
 ```bash
-make test  # Run all tests
-# Or individually:
-python tests/test_mcp_server.py      # Test MCP endpoints
-python tests/test_list_frameworks.py  # Test framework listing
+# Run comprehensive test suite
+python tests/test_streamable_http.py
+
+# Or legacy tests
+make test
 ```
 
-## API Examples
+Tests verify:
+- Initialize/initialized handshake
+- Session management
+- Tools (search_apple_docs, list_frameworks)
+- Resources (list, read)
+- Prompts (list, get)
+- Batch requests
+- SSE streaming
 
-### Search with Platform Filter (Required)
+## MCP Protocol Usage
+
+### 1. Initialize Connection
 ```bash
-curl -X POST http://localhost:8080/mcp/tools/call \
+curl -X POST http://localhost:8080/mcp \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "name": "search_apple_docs",
-    "arguments": {
-      "query": "SwiftUI button tap handling",
-      "platform": "ios",      # Required! Use "all" for cross-platform
-      "limit": 5
+    "jsonrpc": "2.0",
+    "id": "init-1",
+    "method": "initialize",
+    "params": {
+      "protocolVersion": "1.0.0",
+      "clientInfo": {
+        "name": "my-client",
+        "version": "1.0.0"
+      }
     }
   }'
 ```
 
-### List Available Frameworks
+### 2. Search Documentation
 ```bash
-curl -X POST http://localhost:8080/mcp/tools/call \
+curl -X POST http://localhost:8080/mcp \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "name": "list_frameworks",
-    "arguments": {}
+    "jsonrpc": "2.0",
+    "id": "search-1",
+    "method": "tools/call",
+    "params": {
+      "name": "search_apple_docs",
+      "arguments": {
+        "query": "SwiftUI Button",
+        "platform": "ios",
+        "limit": 5
+      }
+    }
   }'
 ```
+
+### 3. Browse Resources
+```bash
+# List available documentation
+curl -X POST http://localhost:8080/mcp \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -d '{"jsonrpc": "2.0", "id": 1, "method": "resources/list"}'
+
+# Read specific documentation
+curl -X POST http://localhost:8080/mcp \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -d '{
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "resources/read",
+    "params": {"uri": "docs://SwiftUI/Button"}
+  }'
+```
+
+### 4. Use Prompts
+```bash
+curl -X POST http://localhost:8080/mcp \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -d '{
+    "jsonrpc": "2.0",
+    "id": 3,
+    "method": "prompts/get",
+    "params": {
+      "name": "migration_guide",
+      "arguments": {
+        "from_framework": "UIKit",
+        "to_framework": "SwiftUI",
+        "component": "Button"
+      }
+    }
+  }'
+```
+
+## Client Integration
+
+### Claude CLI (Recommended)
+```bash
+# Add the MCP server to Claude
+claude mcp add --transport sse apple-docs http://localhost:8080/mcp \
+  -e AUTHORIZATION="Bearer YOUR_MCP_API_KEY"
+
+# For remote server
+claude mcp add --transport sse apple-docs http://YOUR_SERVER_IP:8080/mcp \
+  -e AUTHORIZATION="Bearer YOUR_MCP_API_KEY"
+```
+
+This adds the following to your Claude configuration:
+```json
+{
+  "mcpServers": {
+    "apple-docs": {
+      "type": "sse",
+      "url": "http://YOUR_SERVER_IP:8080/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_MCP_API_KEY"
+      }
+    }
+  }
+}
+```
+
+### Direct HTTP API
+Any HTTP client can connect:
+- Endpoint: `http://localhost:8080/mcp`
+- Authentication: `Authorization: Bearer YOUR_MCP_API_KEY`
+- Protocol: JSON-RPC 2.0 over HTTP POST
+- Transport: Streamable HTTP with SSE support
 
 ## Configuration
 
@@ -123,4 +222,4 @@ Key environment variables:
 - `OPENAI_API_KEY`: Required for embeddings
 - `MCP_API_KEY`: Bearer token for API authentication
 - `VECTORSTORE_PATH`: ChromaDB location (default: `./vectorstore`)
-- `MCP_PORT`: Server port (default: 8080)# Trigger build - Sat 14 Jun 2025 10:30:14 EDT
+- `MCP_PORT`: Server port (default: 8080)

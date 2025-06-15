@@ -6,6 +6,7 @@ uvicorn[standard]     # ASGI server for FastAPI
 python-dotenv         # Environment management
 httpx==0.27.0         # Async HTTP client
 tqdm                  # Progress bars for indexing
+sse-starlette         # Server-Sent Events for MCP protocol
 
 # Scraper dependencies (for scheduled rescraping)
 beautifulsoup4==4.12.3

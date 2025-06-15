@@ -1,31 +1,38 @@
 #!/usr/bin/env python3
 """
 MCP (Model Context Protocol) Server for Apple Documentation
-HTTP-based implementation for maximum compatibility with all MCP clients
+Streamable HTTP transport implementation following MCP specification
 """
 
 import os
 import sys
 import logging
+import json
+import uuid
+import asyncio
 from typing import Optional, Dict, Any, List
 from pathlib import Path
+from datetime import datetime, timezone
 
-from fastapi import FastAPI, HTTPException, Depends, Request
+from fastapi import FastAPI, HTTPException, Depends, Request, Response
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, StreamingResponse
+from sse_starlette.sse import EventSourceResponse
 import uvicorn
 
 # Import config and RAG engine
 try:
-    # Try relative imports first (when running as module)
     from .config import MCP_API_KEY, MCP_PORT, MAX_SEARCH_LIMIT, DEFAULT_SEARCH_LIMIT
     from .rag import SimpleRAG
     from .logger import get_logger
+    from .resources_handler import ResourcesHandler
+    from .prompts_handler import PromptsHandler
 except ImportError:
-    # Fall back to absolute imports (when running as script)
     from config import MCP_API_KEY, MCP_PORT, MAX_SEARCH_LIMIT, DEFAULT_SEARCH_LIMIT
     from rag import SimpleRAG
     from logger import get_logger
+    from resources_handler import ResourcesHandler
+    from prompts_handler import PromptsHandler
 
 # Setup logging
 logger = get_logger(__name__)
@@ -34,14 +41,19 @@ logger = get_logger(__name__)
 app = FastAPI(
     title="Apple Docs MCP Server",
     description="Model Context Protocol server for searching Apple developer documentation",
-    version="1.0.0"
+    version="2.0.0"  # Version 2.0 with Streamable HTTP
 )
 
 # Security setup
 security = HTTPBearer()
 
-# Initialize RAG engine (singleton)
+# Initialize components
 rag_engine = None
+resources_handler = None
+prompts_handler = None
+
+# Session management
+sessions: Dict[str, Dict[str, Any]] = {}
 
 def get_rag_engine() -> SimpleRAG:
     """Get or create RAG engine instance"""
@@ -55,12 +67,22 @@ def get_rag_engine() -> SimpleRAG:
             raise
     return rag_engine
 
+def get_resources_handler() -> ResourcesHandler:
+    """Get or create resources handler"""
+    global resources_handler
+    if resources_handler is None:
+        resources_handler = ResourcesHandler()
+    return resources_handler
+
+def get_prompts_handler() -> PromptsHandler:
+    """Get or create prompts handler"""
+    global prompts_handler
+    if prompts_handler is None:
+        prompts_handler = PromptsHandler(get_rag_engine())
+    return prompts_handler
 
 def verify_api_key(credentials: HTTPAuthorizationCredentials = Depends(security)) -> bool:
-    """
-    Verify API key for authentication.
-    API key is always required for security.
-    """
+    """Verify API key for authentication"""
     expected_key = MCP_API_KEY
     
     if not expected_key:
@@ -79,39 +101,53 @@ def verify_api_key(credentials: HTTPAuthorizationCredentials = Depends(security)
     
     return True
 
+def create_session() -> str:
+    """Create a new session"""
+    session_id = str(uuid.uuid4())
+    sessions[session_id] = {
+        "id": session_id,
+        "created": datetime.now(timezone.utc).isoformat(),
+        "initialized": False,
+        "client_info": {},
+        "capabilities": {}
+    }
+    return session_id
+
+def get_session(session_id: Optional[str]) -> Optional[Dict[str, Any]]:
+    """Get session by ID"""
+    if session_id:
+        return sessions.get(session_id)
+    return None
 
 @app.get("/")
 async def root():
     """Root endpoint with server info"""
     return {
         "service": "apple-docs-mcp",
-        "version": "1.0.0",
+        "version": "2.0.0",
+        "transport": "streamable-http",
         "description": "Model Context Protocol server for Apple developer documentation",
-        "endpoints": {
-            "health": "/health",
-            "tools_list": "/mcp/tools/list",
-            "tools_call": "/mcp/tools/call"
-        }
+        "endpoint": "/mcp"
     }
-
 
 @app.get("/health")
 async def health_check():
     """Health check endpoint (no auth required for monitoring)"""
     try:
-        # Try to get RAG engine stats
         rag = get_rag_engine()
         stats = rag.get_stats()
         
         return {
             "status": "healthy",
             "service": "apple-docs-mcp",
+            "transport": "streamable-http",
             "vectorstore": {
                 "status": "connected",
                 "documents": stats.get("total_documents", 0),
                 "collection": stats.get("collection_name"),
                 "frameworks_available": stats.get("frameworks_loaded", 0)
-            }
+            },
+            "sessions": len(sessions)
         }
     except Exception as e:
         logger.error(f"Health check failed: {e}")
@@ -124,141 +160,336 @@ async def health_check():
             }
         )
 
-
-@app.get("/debug/list_frameworks")
-async def debug_list_frameworks(platform: Optional[str] = None):
-    """Debug endpoint to test list_frameworks directly (no auth for debugging)"""
-    result = await list_frameworks_handler(platform)
-    lines = result.split('\n')
-    header = next((l for l in lines if l.startswith('#')), "No header")
-    framework_count = len([l for l in lines if l.strip().startswith('- **')])
+@app.post("/mcp")
+async def mcp_post(request: Request, response: Response, authorized: bool = Depends(verify_api_key)):
+    """
+    Handle MCP requests via POST.
+    Can return either JSON response or SSE stream based on Accept header.
+    """
+    # Check Accept header
+    accept_header = request.headers.get("accept", "")
+    wants_sse = "text/event-stream" in accept_header
     
-    return {
-        "platform_param": platform,
-        "header": header,
-        "framework_count": framework_count,
-        "first_10_lines": lines[:10],
-        "has_platform_specific_header": any("Frameworks" in l and l.startswith('#') and l != "# Available Apple Frameworks" for l in lines)
-    }
-
-
-@app.get("/mcp/tools/list")
-async def list_tools(authorized: bool = Depends(verify_api_key)):
-    """
-    List available MCP tools.
-    Returns the search_apple_docs tool definition.
-    """
-    return {
-        "tools": [
-            {
-                "name": "search_apple_docs",
-                "description": "Search Apple developer documentation across 340+ frameworks and 278K+ pages",
-                "inputSchema": {
-                    "type": "object",
-                    "properties": {
-                        "query": {
-                            "type": "string",
-                            "description": "Search query (e.g., 'SwiftUI Button', 'async await', 'Metal shader')"
-                        },
-                        "framework": {
-                            "type": "string",
-                            "description": "Optional framework filter (e.g., 'SwiftUI', 'UIKit', 'Metal', 'Foundation')"
-                        },
-                        "platform": {
-                            "type": "string",
-                            "description": "Platform filter - use 'all' for cross-platform results (e.g., 'ios', 'macos', 'tvos', 'watchos', 'visionos')",
-                            "enum": ["ios", "ipados", "macos", "tvos", "watchos", "visionos", "catalyst", "all"],
-                            "default": "all"
-                        },
-                        "limit": {
-                            "type": "integer",
-                            "description": f"Number of results to return (1-{MAX_SEARCH_LIMIT}, default: {DEFAULT_SEARCH_LIMIT})",
-                            "default": DEFAULT_SEARCH_LIMIT,
-                            "minimum": 1,
-                            "maximum": MAX_SEARCH_LIMIT
-                        },
-                        "include_full_content": {
-                            "type": "boolean",
-                            "description": "Return full document content instead of concise summaries (default: false)",
-                            "default": False
-                        }
-                    },
-                    "required": ["query"]
-                }
-            },
-            {
-                "name": "list_frameworks",
-                "description": "List Apple frameworks. Without a platform parameter, shows all frameworks grouped by platform. With a platform parameter, shows only that platform's frameworks with full descriptions.",
-                "inputSchema": {
-                    "type": "object",
-                    "properties": {
-                        "platform": {
-                            "type": "string",
-                            "description": "Optional platform filter: ios, ipados, macos, tvos, watchos, visionos, catalyst, or all. If not specified, shows all frameworks.",
-                            "enum": ["ios", "ipados", "macos", "tvos", "watchos", "visionos", "catalyst", "all"]
-                        }
-                    },
-                    "required": []
-                }
+    # Get session ID if provided
+    session_id = request.headers.get("x-session-id")
+    session = get_session(session_id)
+    
+    # Parse request
+    try:
+        body = await request.json()
+    except Exception as e:
+        return JSONResponse(
+            status_code=400,
+            content={
+                "jsonrpc": "2.0",
+                "error": {
+                    "code": -32700,
+                    "message": "Parse error",
+                    "data": str(e)
+                },
+                "id": None
             }
-        ]
+        )
+    
+    # Handle request based on whether it's a batch
+    if isinstance(body, list):
+        # Batch request
+        responses = []
+        for req in body:
+            resp = await handle_single_request(req, session)
+            if resp:
+                responses.append(resp)
+        
+        if wants_sse:
+            return create_sse_response(responses)
+        else:
+            return JSONResponse(content=responses)
+    else:
+        # Single request
+        response_data = await handle_single_request(body, session)
+        
+        # For notifications (no ID), return 202 Accepted
+        if "id" not in body:
+            return Response(status_code=202)
+        
+        if wants_sse:
+            return create_sse_response([response_data])
+        else:
+            # Set session header if new session created
+            if not session_id and session:
+                response.headers["x-session-id"] = session["id"]
+            return JSONResponse(content=response_data)
+
+@app.get("/mcp")
+async def mcp_get(request: Request, authorized: bool = Depends(verify_api_key)):
+    """
+    Open SSE stream for server-initiated messages.
+    This is optional but allows server to send requests/notifications to client.
+    """
+    # Get or create session
+    session_id = request.headers.get("x-session-id")
+    if not session_id:
+        session_id = create_session()
+    
+    session = sessions.get(session_id)
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found")
+    
+    async def event_generator():
+        """Generate SSE events"""
+        try:
+            # Send session info
+            yield {
+                "event": "session",
+                "data": json.dumps({
+                    "sessionId": session_id,
+                    "created": session["created"]
+                })
+            }
+            
+            # Keep connection alive
+            while True:
+                await asyncio.sleep(30)
+                yield {
+                    "event": "ping",
+                    "data": json.dumps({"timestamp": datetime.utcnow().isoformat()})
+                }
+                
+        except asyncio.CancelledError:
+            logger.info(f"SSE connection closed for session {session_id}")
+            raise
+    
+    return EventSourceResponse(event_generator())
+
+async def handle_single_request(request: Dict[str, Any], session: Optional[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+    """Handle a single JSON-RPC request"""
+    method = request.get("method")
+    params = request.get("params", {})
+    request_id = request.get("id")
+    
+    # Create session if needed
+    if not session and method == "initialize":
+        session_id = create_session()
+        session = sessions[session_id]
+    
+    try:
+        # Route to appropriate handler
+        if method == "initialize":
+            result = await handle_initialize(params, session)
+        elif method == "initialized":
+            result = await handle_initialized(session)
+        elif method == "tools/list":
+            result = await handle_tools_list()
+        elif method == "tools/call":
+            result = await handle_tools_call(params)
+        elif method == "resources/list":
+            result = await handle_resources_list()
+        elif method == "resources/read":
+            result = await handle_resources_read(params)
+        elif method == "prompts/list":
+            result = await handle_prompts_list()
+        elif method == "prompts/get":
+            result = await handle_prompts_get(params)
+        else:
+            # Unknown method
+            if request_id:
+                return {
+                    "jsonrpc": "2.0",
+                    "error": {
+                        "code": -32601,
+                        "message": f"Method not found: {method}"
+                    },
+                    "id": request_id
+                }
+            return None
+        
+        # Return response if request had an ID
+        if request_id:
+            response = {
+                "jsonrpc": "2.0",
+                "result": result,
+                "id": request_id
+            }
+            
+            # Add session ID to initialize response
+            if method == "initialize" and session:
+                response["result"]["sessionId"] = session["id"]
+            
+            return response
+        
+        # No response for notifications
+        return None
+        
+    except Exception as e:
+        logger.error(f"Error handling {method}: {e}")
+        if request_id:
+            return {
+                "jsonrpc": "2.0",
+                "error": {
+                    "code": -32603,
+                    "message": "Internal error",
+                    "data": str(e)
+                },
+                "id": request_id
+            }
+        return None
+
+async def handle_initialize(params: Dict[str, Any], session: Dict[str, Any]) -> Dict[str, Any]:
+    """Handle initialize request"""
+    # Store client info
+    session["client_info"] = params.get("clientInfo", {})
+    session["capabilities"] = params.get("capabilities", {})
+    session["initialized"] = True
+    
+    # Return server capabilities
+    return {
+        "protocolVersion": "1.0.0",
+        "serverInfo": {
+            "name": "apple-docs-mcp",
+            "version": "2.0.0"
+        },
+        "capabilities": {
+            "tools": {
+                "list": True,
+                "call": True
+            },
+            "resources": {
+                "list": True,
+                "read": True,
+                "templates": True
+            },
+            "prompts": {
+                "list": True,
+                "get": True
+            }
+        }
     }
 
+async def handle_initialized(session: Optional[Dict[str, Any]]) -> Dict[str, Any]:
+    """Handle initialized notification"""
+    if session:
+        session["initialized"] = True
+    return {}
 
-@app.post("/mcp/tools/call")
-async def call_tool(request: Dict[str, Any], authorized: bool = Depends(verify_api_key)):
-    """
-    Call an MCP tool.
-    Currently only supports search_apple_docs.
-    """
-    tool_name = request.get("name")
-    arguments = request.get("arguments", {})
+async def handle_tools_list() -> Dict[str, Any]:
+    """Handle tools/list request"""
+    tools = [
+        {
+            "name": "search_apple_docs",
+            "description": "Search Apple developer documentation across 341+ frameworks",
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "type": "string",
+                        "description": "Search query (e.g., 'SwiftUI Button', 'async await')"
+                    },
+                    "framework": {
+                        "type": "string", 
+                        "description": "Optional framework filter (e.g., 'SwiftUI', 'UIKit')"
+                    },
+                    "platform": {
+                        "type": "string",
+                        "description": "Platform filter - use 'all' for cross-platform results",
+                        "enum": ["ios", "ipados", "macos", "tvos", "watchos", "visionos", "catalyst", "all"],
+                        "default": "all"
+                    },
+                    "limit": {
+                        "type": "integer",
+                        "description": f"Number of results (1-{MAX_SEARCH_LIMIT}, default: {DEFAULT_SEARCH_LIMIT})",
+                        "default": DEFAULT_SEARCH_LIMIT,
+                        "minimum": 1,
+                        "maximum": MAX_SEARCH_LIMIT
+                    },
+                    "include_full_content": {
+                        "type": "boolean",
+                        "description": "Return full document content (default: false)",
+                        "default": False
+                    }
+                },
+                "required": ["query"]
+            }
+        },
+        {
+            "name": "list_frameworks",
+            "description": "List Apple frameworks with optional platform filter",
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "platform": {
+                        "type": "string",
+                        "description": "Optional platform filter",
+                        "enum": ["ios", "ipados", "macos", "tvos", "watchos", "visionos", "catalyst", "all"]
+                    }
+                },
+                "required": []
+            }
+        }
+    ]
     
-    if not tool_name:
-        raise HTTPException(status_code=400, detail="Tool name is required")
+    return {"tools": tools}
+
+async def handle_tools_call(params: Dict[str, Any]) -> Dict[str, Any]:
+    """Handle tools/call request"""
+    tool_name = params.get("name")
+    tool_args = params.get("arguments", {})
     
     if tool_name == "search_apple_docs":
-        try:
-            # Call the search function
-            result = await search_apple_docs(**arguments)
-            return {"result": result}
-        except TypeError as e:
-            # Handle invalid arguments
-            logger.error(f"Invalid arguments for search_apple_docs: {e}")
-            raise HTTPException(
-                status_code=400,
-                detail=f"Invalid arguments: {str(e)}"
-            )
-        except Exception as e:
-            # Handle other errors
-            logger.error(f"Error calling search_apple_docs: {e}")
-            raise HTTPException(
-                status_code=500,
-                detail=f"Error executing search: {str(e)}"
-            )
+        result = await search_apple_docs(**tool_args)
     elif tool_name == "list_frameworks":
-        try:
-            # Call the list frameworks function with platform parameter
-            platform = arguments.get("platform", None)
-            # Handle empty strings as None
-            if platform == "":
-                platform = None
-            result = await list_frameworks_handler(platform)
-            return {"result": result}
-        except Exception as e:
-            # Handle errors
-            logger.error(f"Error calling list_frameworks: {e}")
-            raise HTTPException(
-                status_code=500,
-                detail=f"Error listing frameworks: {str(e)}"
-            )
+        platform = tool_args.get("platform", None)
+        if platform == "":
+            platform = None
+        result = await list_frameworks_handler(platform)
     else:
-        raise HTTPException(
-            status_code=404,
-            detail=f"Tool '{tool_name}' not found. Available tools: search_apple_docs, list_frameworks"
-        )
+        raise ValueError(f"Unknown tool: {tool_name}")
+    
+    return {"content": result}
 
+async def handle_resources_list() -> Dict[str, Any]:
+    """Handle resources/list request"""
+    handler = get_resources_handler()
+    resources_data = await handler.list_resources(limit=50)
+    
+    # Add resource templates
+    resources_data["resourceTemplates"] = handler.get_resource_templates()
+    
+    return resources_data
 
+async def handle_resources_read(params: Dict[str, Any]) -> Dict[str, Any]:
+    """Handle resources/read request"""
+    uri = params.get("uri")
+    if not uri:
+        raise ValueError("URI is required")
+    
+    handler = get_resources_handler()
+    return await handler.read_resource(uri)
+
+async def handle_prompts_list() -> Dict[str, Any]:
+    """Handle prompts/list request"""
+    handler = get_prompts_handler()
+    return await handler.list_prompts()
+
+async def handle_prompts_get(params: Dict[str, Any]) -> Dict[str, Any]:
+    """Handle prompts/get request"""
+    name = params.get("name")
+    arguments = params.get("arguments", {})
+    
+    if not name:
+        raise ValueError("Prompt name is required")
+    
+    handler = get_prompts_handler()
+    return await handler.get_prompt(name, arguments)
+
+def create_sse_response(messages: List[Dict[str, Any]]) -> EventSourceResponse:
+    """Create SSE response from messages"""
+    async def generate():
+        for msg in messages:
+            yield {"data": json.dumps(msg)}
+    
+    return EventSourceResponse(generate())
+
+# Import search functions from original implementation
 async def search_apple_docs(
     query: str,
     framework: Optional[str] = None,
@@ -266,39 +497,22 @@ async def search_apple_docs(
     limit: int = DEFAULT_SEARCH_LIMIT,
     include_full_content: bool = False
 ) -> str:
-    """
-    Search Apple documentation and return formatted results.
-    
-    Args:
-        query: Search query
-        framework: Optional framework filter
-        platform: Optional platform filter
-        limit: Number of results (clamped to MAX_SEARCH_LIMIT)
-        include_full_content: Whether to return full content or summaries
-        
-    Returns:
-        Formatted search results as a string
-    """
-    # Validate and clamp limit
+    """Search Apple documentation and return formatted results"""
     limit = min(max(limit, 1), MAX_SEARCH_LIMIT)
     
-    # Log the search request
-    logger.info(f"Search request: query='{query}', framework={framework}, platform={platform}, limit={limit}, full_content={include_full_content}")
+    logger.info(f"Search request: query='{query}', framework={framework}, platform={platform}, limit={limit}")
     
-    # Get RAG engine
     rag = get_rag_engine()
     
-    # Perform search
     try:
         results = await rag.search(
             query=query,
             framework=framework,
             platform=platform,
             limit=limit,
-            expand_query=True  # Use query expansion for better results
+            expand_query=True
         )
         
-        # Format results based on include_full_content flag
         if include_full_content:
             return format_full_results(results)
         else:
@@ -308,12 +522,8 @@ async def search_apple_docs(
         logger.error(f"Search failed: {e}")
         raise
 
-
 def format_concise_results(results: List[Dict[str, Any]]) -> str:
-    """
-    Format search results concisely (500-1000 chars per result).
-    This is the default format to save tokens.
-    """
+    """Format search results concisely"""
     if not results:
         return "No results found for your query."
     
@@ -324,16 +534,13 @@ def format_concise_results(results: List[Dict[str, Any]]) -> str:
         meta = result['metadata']
         content = result['content']
         
-        # Build concise result
         lines = []
         
         # Title line
         title = f"{i}. **{meta.get('api_name', 'Unknown API')}**"
         if 'framework' in meta:
             title += f" ({meta['framework']})"
-        # Add platforms if available
         if 'platforms' in meta and meta['platforms']:
-            # Platforms are stored as comma-separated string in metadata
             platforms_str = meta['platforms']
             if isinstance(platforms_str, str):
                 platforms_list = [p.strip() for p in platforms_str.split(',') if p.strip()]
@@ -343,7 +550,7 @@ def format_concise_results(results: List[Dict[str, Any]]) -> str:
                 title += f" [{', '.join(platforms_list)}]"
         lines.append(title)
         
-        # File path for reference
+        # File path
         if 'file_path' in meta:
             lines.append(f"   📁 `{meta['file_path']}`")
         
@@ -351,10 +558,9 @@ def format_concise_results(results: List[Dict[str, Any]]) -> str:
         if 'relevance_score' in result and result['relevance_score'] is not None:
             lines.append(f"   📊 Relevance: {result['relevance_score']:.0%}")
         
-        # Content preview (first 500-800 chars)
+        # Content preview
         content_preview = content.strip()
         if len(content_preview) > 800:
-            # Find a good break point
             break_point = content_preview.rfind(' ', 500, 800)
             if break_point == -1:
                 break_point = 800
@@ -362,22 +568,18 @@ def format_concise_results(results: List[Dict[str, Any]]) -> str:
         
         # Indent content
         content_lines = content_preview.split('\n')
-        content_preview = '\n'.join(f"   {line}" for line in content_lines[:10])  # Max 10 lines
+        content_preview = '\n'.join(f"   {line}" for line in content_lines[:10])
         
         lines.append("   " + "-" * 50)
         lines.append(content_preview)
-        lines.append("")  # Empty line between results
+        lines.append("")
         
         formatted.append('\n'.join(lines))
     
     return '\n'.join(formatted)
 
-
 def format_full_results(results: List[Dict[str, Any]]) -> str:
-    """
-    Format search results with full content.
-    Used when include_full_content=true for deep dives.
-    """
+    """Format search results with full content"""
     if not results:
         return "No results found for your query."
     
@@ -390,18 +592,16 @@ def format_full_results(results: List[Dict[str, Any]]) -> str:
         meta = result['metadata']
         content = result['content']
         
-        # Build detailed result
         lines = []
         
         # Header
         lines.append(f"## Result {i}: {meta.get('api_name', 'Unknown API')}")
         
-        # Metadata section
+        # Metadata
         lines.append("\n### Metadata")
         if 'framework' in meta:
             lines.append(f"- **Framework**: {meta['framework']}")
         if 'platforms' in meta and meta['platforms']:
-            # Platforms are stored as comma-separated string in metadata
             platforms_str = meta['platforms']
             if isinstance(platforms_str, str):
                 platforms_list = [p.strip() for p in platforms_str.split(',') if p.strip()]
@@ -413,50 +613,30 @@ def format_full_results(results: List[Dict[str, Any]]) -> str:
             lines.append(f"- **File Path**: `{meta['file_path']}`")
         if 'relevance_score' in result and result['relevance_score'] is not None:
             lines.append(f"- **Relevance Score**: {result['relevance_score']:.0%}")
-        if meta.get('chunk_index') is not None:
-            lines.append(f"- **Document Part**: {meta['chunk_index'] + 1} of {meta.get('total_chunks', '?')}")
         
-        # Full content
+        # Content
         lines.append("\n### Content")
         lines.append(content)
-        
-        # Separator
         lines.append("\n---\n")
         
         formatted.append('\n'.join(lines))
     
     return '\n'.join(formatted)
 
-
 async def list_frameworks_handler(platform: Optional[str] = None) -> str:
-    """
-    List all available Apple frameworks in the documentation database.
-    
-    Args:
-        platform: Optional platform filter (ios, macos, tvos, watchos, visionos, catalyst)
-                 If None or 'all', returns all frameworks with platform grouping
-    
-    Returns:
-        Formatted list of frameworks
-    """
-    # Log the platform parameter for debugging
+    """List all available Apple frameworks"""
     logger.info(f"list_frameworks_handler called with platform={repr(platform)}")
     
-    # Get RAG engine
     rag = get_rag_engine()
     
-    # Get framework list
     try:
         framework_data = rag.list_frameworks(platform)
         
-        # Format the response
         lines = []
         
-        # Check if platform-specific or all frameworks
         if framework_data.get('platform'):
             # Platform-specific response
             platform_display = framework_data['platform'].upper()
-            # Special case for iOS/iPadOS capitalization
             if platform_display == "IOS":
                 platform_display = "iOS"
             elif platform_display == "IPADOS":
@@ -472,70 +652,39 @@ async def list_frameworks_handler(platform: Optional[str] = None) -> str:
             lines.append(f"# {platform_display} Frameworks")
             lines.append(f"\nTotal frameworks: **{framework_data['total_frameworks']}**\n")
             
-            # List all frameworks with descriptions
             for fw_name in framework_data['frameworks']:
                 fw_info = framework_data['framework_details'].get(fw_name, {})
                 summary = fw_info.get('summary', '')
                 if summary:
-                    # Show full summary for platform-specific queries
                     lines.append(f"- **{fw_name}**: {summary}")
                 else:
                     lines.append(f"- **{fw_name}**")
-            
+                    
         else:
-            # All frameworks response (no grouping by platform - just list all)
+            # All frameworks
             lines.append(f"# Available Apple Frameworks")
             lines.append(f"\nTotal frameworks indexed: **{framework_data['total_frameworks']}**\n")
             
-            # List all frameworks with descriptions
             for fw_name in framework_data['frameworks']:
                 fw_info = framework_data['framework_details'].get(fw_name, {})
                 summary = fw_info.get('summary', '')
                 platforms = fw_info.get('platforms', [])
                 
-                # Include platform info in description
                 platform_str = f" [{', '.join(platforms)}]" if platforms else ""
                 
                 if summary:
                     lines.append(f"- **{fw_name}**{platform_str}: {summary}")
                 else:
                     lines.append(f"- **{fw_name}**{platform_str}")
-            lines.append("")
         
-        # Skip popular frameworks when showing all frameworks
-        # Only show popular frameworks for platform-specific queries
-        if framework_data.get('platform') and framework_data.get('popular_frameworks'):
-            lines.append("## Popular Frameworks")
-            lines.append("The most commonly used frameworks:")
-            for fw in framework_data['popular_frameworks']:
-                fw_info = framework_data.get('framework_details', {}).get(fw, {})
-                summary = fw_info.get('summary', '')
-                platforms = fw_info.get('platforms', [])
-                
-                if summary or platforms:
-                    platform_str = f" [{', '.join(platforms)}]" if platforms else ""
-                    summary_str = f": {summary[:60]}..." if summary and len(summary) > 60 else f": {summary}" if summary else ""
-                    lines.append(f"- **{fw}**{platform_str}{summary_str}")
-                else:
-                    lines.append(f"- {fw}")
-            lines.append("")
-        
-        # Add alphabetically grouped frameworks (simplified)
-        lines.append("## All Frameworks (Alphabetically)")
-        lines.append(f"Total: {framework_data['total_frameworks']} frameworks")
-        lines.append("\nUse the platform filter in search_apple_docs to find frameworks for your target platform.")
-        
-        # Add usage hint
         lines.append("\n---")
-        lines.append("💡 **Usage Tip**: Use any of these framework names with the `framework` parameter in search_apple_docs to filter results to a specific framework.")
-        lines.append("\nExample: `search_apple_docs(query='Button', framework='swiftui')`")
+        lines.append("💡 **Usage Tip**: Use any framework name with the `framework` parameter in search_apple_docs.")
         
         return '\n'.join(lines)
         
     except Exception as e:
         logger.error(f"Failed to list frameworks: {e}")
         return f"Error listing frameworks: {str(e)}"
-
 
 @app.exception_handler(Exception)
 async def general_exception_handler(request: Request, exc: Exception):
@@ -549,29 +698,23 @@ async def general_exception_handler(request: Request, exc: Exception):
         }
     )
 
-
 def main():
     """Main entry point"""
-    # Verify API key is set
+    # Verify API key
     if not MCP_API_KEY:
         print("❌ Error: MCP_API_KEY environment variable required")
-        print("Generate one with: openssl rand -hex 32")
-        print("Then set it: export MCP_API_KEY=<your-key>")
         sys.exit(1)
     
-    # Verify OpenAI API key is set (needed for RAG)
     if not os.getenv("OPENAI_API_KEY"):
         print("❌ Error: OPENAI_API_KEY environment variable required")
-        print("This is needed for generating embeddings during search")
         sys.exit(1)
     
-    # Initialize RAG engine early to catch any issues
+    # Initialize components
     try:
         rag = get_rag_engine()
         stats = rag.get_stats()
         print(f"✅ RAG engine initialized: {stats['total_documents']:,} documents available")
         
-        # Show framework count
         framework_count = len(rag._framework_names)
         print(f"📊 Frameworks indexed: {framework_count}")
     except Exception as e:
@@ -580,24 +723,23 @@ def main():
     
     # Start server
     port = MCP_PORT
-    print(f"\n🚀 Starting Apple Docs MCP Server")
+    print(f"\n🚀 Starting Apple Docs MCP Server (Streamable HTTP)")
     print(f"🔒 API Key authentication enabled")
     print(f"📍 Server URL: http://0.0.0.0:{port}")
     print(f"📚 Documentation available: {stats['total_documents']:,} pages")
-    print(f"\n📡 Endpoints:")
-    print(f"   - Health: http://localhost:{port}/health")
-    print(f"   - Tools List: http://localhost:{port}/mcp/tools/list")
-    print(f"   - Tools Call: http://localhost:{port}/mcp/tools/call")
+    print(f"\n📡 Transport: Streamable HTTP (MCP Specification Compliant)")
+    print(f"   - Single endpoint: /mcp (GET and POST)")
+    print(f"   - Session management supported")
+    print(f"   - Resources and Prompts enabled")
     print(f"\n🔑 Include 'Authorization: Bearer <your-api-key>' header in all requests")
     
-    # Run the server
+    # Run server
     uvicorn.run(
         app,
         host="0.0.0.0",
         port=port,
         log_level="info"
     )
-
 
 if __name__ == "__main__":
     main()

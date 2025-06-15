@@ -12,7 +12,7 @@ This guide covers deploying the Apple Docs MCP Server using Docker.
 ### 1. Clone and Configure
 
 ```bash
-git clone https://github.com/yourusername/apple-developer-docs.git
+git clone https://github.com/Averyy/apple-dev-docs.git
 cd apple-developer-docs
 
 # Create .env file
@@ -276,11 +276,12 @@ services:
 ## 📊 Metrics
 
 The container tracks:
-- Total documents: ~340,000
-- Vector embeddings: ~322,000
-- Update frequency: Weekly
+- Total documents: 341,207 (deployed)
+- Vector embeddings: 323,118 (deployed)
+- Update frequency: Weekly (Sundays 1 AM)
 - Average update cost: $0.10-0.25
 - Disk usage: 2-3GB (with vectorstore)
+- Production deployment: 192.168.2.5
 
 ## 📤 Deploying with Pre-built Data
 
@@ -408,7 +409,7 @@ collection = client.get_collection('apple_docs')
 print(f'Documents in collection: {collection.count()}')
 "
 
-# Should show ~322,000 documents
+# Should show ~323,118 documents
 ```
 
 If count is 0, the vectorstore upload was incomplete. Re-upload ensuring the UUID folder is included.

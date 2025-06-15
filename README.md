@@ -16,8 +16,13 @@ A comprehensive Python tool that scrapes Apple's entire developer documentation 
 
 ### Option 1: Docker Deployment (Recommended)
 
+**Pre-built image available**: `ghcr.io/averyy/apple-dev-docs-mcp:latest`
+
 ```bash
-# Clone and setup
+# Quick start with pre-built image
+docker pull ghcr.io/averyy/apple-dev-docs-mcp:latest
+
+# Or clone and setup
 git clone <repo-url>
 cd apple-developer-docs
 
@@ -29,7 +34,7 @@ cp .env.example .env
 
 # Deploy with Docker
 cd mcp-server/deploy
-./quick-start.sh
+./quick-start.sh  # Automatically uses public image if available
 ```
 
 Docker automatically handles:
@@ -82,7 +87,12 @@ The server starts on port 8080 with:
 
 ### 4. Configure AI Assistant
 
-For Claude Desktop, edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
+For Claude Desktop or Claude Code, edit the configuration file:
+
+**Claude Desktop:**
+- macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- Windows: `%APPDATA%\Claude\claude_desktop_config.json`
+- Linux: `~/.config/Claude/claude_desktop_config.json`
 
 ```json
 {
@@ -98,7 +108,30 @@ For Claude Desktop, edit `~/Library/Application Support/Claude/claude_desktop_co
 }
 ```
 
+**For remote servers (e.g., Unraid at 192.168.2.5):**
+```json
+{
+  "mcpServers": {
+    "apple-docs": {
+      "type": "sse", 
+      "url": "http://192.168.2.5:8080/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_MCP_API_KEY"
+      }
+    }
+  }
+}
+```
+
 Replace `YOUR_MCP_API_KEY` with the value from your `.env` file.
+
+## Pre-built Docker Image
+
+A public Docker image is available with all dependencies:
+- **Registry**: GitHub Container Registry (ghcr.io)
+- **Image**: `ghcr.io/averyy/apple-dev-docs-mcp:latest`
+- **Platforms**: linux/amd64, linux/arm64
+- **Size**: ~500MB compressed
 
 ## Architecture
 

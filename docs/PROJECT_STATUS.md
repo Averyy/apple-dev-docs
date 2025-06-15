@@ -1,11 +1,11 @@
 # Project Status Dashboard
 
-**Last Updated**: June 12, 2025  
-**Status**: 🟢 **EMBEDDINGS COMPLETE**
+**Last Updated**: June 15, 2025  
+**Status**: 🟢 **DEPLOYED TO PRODUCTION**
 
 ## 🎯 Executive Summary
 
-The Apple Developer Documentation system has successfully scraped **340,604 documents** across **341 frameworks** and completed embedding generation with **322,104 embeddings** stored in ChromaDB. The system is now ready for RAG implementation and MCP server deployment.
+The Apple Developer Documentation system has successfully scraped **341,207 documents** across **341 frameworks** and completed embedding generation with **323,118 embeddings** stored in ChromaDB. The system is deployed to production at 192.168.2.5 with Docker and Unraid.
 
 ## 📊 Current Status
 
@@ -16,8 +16,8 @@ The Apple Developer Documentation system has successfully scraped **340,604 docu
 - **ETags Collected**: Yes, enabling efficient updates
 
 ### Embedding Status ✅ COMPLETE
-- **Total Embeddings**: 322,104 (includes chunks from large files)
-- **Unique Files Processed**: 322,104
+- **Total Embeddings**: 323,118 (includes chunks from large files)
+- **Unique Files Processed**: 323,118
 - **Vector Store Size**: 1.9GB (ChromaDB data_level0.bin)
 - **Actual Cost**: ~$6.44 (initial estimate was accurate)
 - **Processing Time**: ~4 hours (with rate limiting)
@@ -75,11 +75,15 @@ The Apple Developer Documentation system has successfully scraped **340,604 docu
 - FastAPI-based HTTP server with Bearer token auth
 - Platform-aware search and framework discovery
 - Sub-500ms response times achieved
+- **Updated**: Migrated to Streamable HTTP transport (MCP spec 2025-03-26)
+- **Features**: Tools, Resources, Prompts, Session management
+- **100% test coverage** with all tests passing
 
-### 3. ✅ Test Integration - COMPLETE  
-- Comprehensive test suite at `mcp-server/tests/test_mcp_server.py`
-- Claude Desktop integration verified
-- Search functionality tested end-to-end
+### 3. ✅ Deploy to Production - COMPLETE  
+- Docker image published to `ghcr.io/averyy/apple-dev-docs-mcp:latest`
+- Deployed to Unraid server at 192.168.2.5
+- Weekly automatic updates configured (Sundays 1 AM)
+- Claude Desktop integration verified with production server
 
 
 ## 📈 Key Metrics
@@ -109,6 +113,6 @@ The Apple Developer Documentation system has successfully scraped **340,604 docu
 - [x] Health monitoring operational
 - [x] Resume capability confirmed
 
-## 🎉 Ready to Deploy!
+## 🎉 Deployed to Production!
 
-The system is fully tested, optimized, and ready for production embedding generation. Expected runtime is 1-2 hours with automatic checkpointing ensuring safe interruption and resume capability.
+The system is live in production at 192.168.2.5 with 341,207 documents indexed. Docker deployment includes automatic weekly updates, health monitoring, and full MCP server integration with Claude Desktop.

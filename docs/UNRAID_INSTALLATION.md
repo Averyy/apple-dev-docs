@@ -127,6 +127,21 @@ scp -r .hashes/ root@UNRAID_IP:/mnt/cache/appdata/apple-docs-mcp/
      }
    }
    ```
+   
+   For deployed instance at 192.168.2.5:
+   ```json
+   {
+     "mcpServers": {
+       "apple-docs": {
+         "type": "sse",
+         "url": "http://192.168.2.5:8080/mcp",
+         "headers": {
+           "Authorization": "Bearer YOUR_MCP_API_KEY"
+         }
+       }
+     }
+   }
+   ```
 
 3. Restart Claude Desktop
 
@@ -250,3 +265,4 @@ location /apple-docs/ {
 - GitHub Issues: https://github.com/Averyy/apple-dev-docs/issues
 - Unraid Forum: Search for "Apple Docs MCP"
 - Documentation: Check `/docs` folder in repository
+- Production deployment example: 192.168.2.5 with 341,207 documents indexed

@@ -21,6 +21,7 @@ A comprehensive Python tool that scrapes Apple's entire developer documentation 
 - Always look up documentation (either via context7 mcp or web search) when unsure
 - One time use files for debugging should be put in a temp folder or labelled temp_ so we know later that they are safe to delete
 - **ALWAYS use relative paths in scripts** - never use absolute paths, use proper relative path resolution
+- MCP server setup should **always** follow the latest spec from https://modelcontextprotocol.io/specification/
 
 ### Python Development Standards
 
