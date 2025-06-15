@@ -49,14 +49,21 @@ class SimpleRAG:
         
         # Connect to ChromaDB
         self.chroma = chromadb.PersistentClient(path=path)
-        self.collection = self.chroma.get_collection(COLLECTION_NAME)
-        logger.info(f"Connected to ChromaDB collection '{COLLECTION_NAME}' with {self.collection.count()} documents")
+        
+        # Try to get existing collection, or return None if not found
+        try:
+            self.collection = self.chroma.get_collection(COLLECTION_NAME)
+            doc_count = self.collection.count()
+            logger.info(f"Connected to ChromaDB collection '{COLLECTION_NAME}' with {doc_count} documents")
+        except Exception as e:
+            logger.warning(f"Collection '{COLLECTION_NAME}' not found. Vector database needs to be built.")
+            self.collection = None
         
         # Cache for embeddings (simple in-memory cache)
         self._embedding_cache = {}
         
-        # Load framework names dynamically
-        self._framework_names = self._load_framework_names()
+        # Load framework names dynamically (only if collection exists)
+        self._framework_names = self._load_framework_names() if self.collection else set()
         
     def _load_framework_names(self) -> set:
         """Load all unique framework names from the entire collection"""
@@ -272,6 +279,11 @@ class SimpleRAG:
         Returns:
             List of search results with content and metadata
         """
+        # Check if collection exists
+        if self.collection is None:
+            logger.warning("No vector database available. Please build the index first.")
+            return []
+            
         start_time = time.time()
         
         # Preprocess query to handle LLM patterns
@@ -455,11 +467,12 @@ class SimpleRAG:
     def get_stats(self) -> Dict[str, Any]:
         """Get statistics about the vector store"""
         return {
-            "total_documents": self.collection.count(),
+            "total_documents": self.collection.count() if self.collection else 0,
             "collection_name": "apple_docs",
             "embedding_model": "text-embedding-3-small",
             "cache_size": len(self._embedding_cache),
-            "frameworks_loaded": len(self._framework_names)
+            "frameworks_loaded": len(self._framework_names),
+            "collection_exists": self.collection is not None
         }
     
     def list_frameworks(self, platform: Optional[str] = None) -> Dict[str, Any]:
@@ -476,6 +489,17 @@ class SimpleRAG:
             platform = None
         elif isinstance(platform, str):
             platform = platform.lower().strip()
+            
+        # Check if collection exists
+        if self.collection is None:
+            logger.warning("No vector database available for framework listing.")
+            return {
+                "frameworks": {},
+                "by_platform": {},
+                "total_count": 0,
+                "platform_filter": platform,
+                "error": "Vector database not initialized. Please build the index first."
+            }
             
         try:
             # Get framework metadata from main framework pages
