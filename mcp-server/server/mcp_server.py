@@ -571,9 +571,9 @@ def main():
         stats = rag.get_stats()
         print(f"✅ RAG engine initialized: {stats['total_documents']:,} documents available")
         
-        # Verify framework coverage
-        coverage = rag.verify_frameworks()
-        print(f"📊 Framework coverage: {coverage['coverage_percentage']:.1f}% ({coverage['matched']}/{coverage['documentation_folders']} folders)")
+        # Show framework count
+        framework_count = len(rag._framework_names)
+        print(f"📊 Frameworks indexed: {framework_count}")
     except Exception as e:
         print(f"❌ Failed to initialize RAG engine: {e}")
         sys.exit(1)
