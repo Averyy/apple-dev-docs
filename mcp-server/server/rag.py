@@ -16,13 +16,22 @@ import chromadb
 import openai
 
 # Import config from the same directory
-from config import (
-    OPENAI_API_KEY, 
-    VECTORSTORE_PATH, 
-    COLLECTION_NAME,
-    DEFAULT_SEARCH_LIMIT,
-    MAX_SEARCH_LIMIT
-)
+try:
+    from .config import (
+        OPENAI_API_KEY, 
+        VECTORSTORE_PATH, 
+        COLLECTION_NAME,
+        DEFAULT_SEARCH_LIMIT,
+        MAX_SEARCH_LIMIT
+    )
+except ImportError:
+    from config import (
+        OPENAI_API_KEY, 
+        VECTORSTORE_PATH, 
+        COLLECTION_NAME,
+        DEFAULT_SEARCH_LIMIT,
+        MAX_SEARCH_LIMIT
+    )
 
 # Disable ChromaDB telemetry
 os.environ["ANONYMIZED_TELEMETRY"] = "False"

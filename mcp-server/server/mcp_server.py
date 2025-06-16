@@ -9,8 +9,7 @@ import sys
 from typing import Optional, List, Dict, Any, Annotated
 from pathlib import Path
 
-from fastmcp import FastMCP
-from fastmcp.server.auth.auth import OAuthProvider, ClientRegistrationOptions
+from mcp.server.fastmcp import FastMCP
 from pydantic import Field
 from starlette.requests import Request
 from starlette.responses import JSONResponse
@@ -28,8 +27,8 @@ except ImportError:
 # Setup logging
 logger = get_logger(__name__)
 
-# Initialize FastMCP server WITHOUT OAuth to test basic connectivity
-mcp = FastMCP("apple-docs-mcp", stateless_http=True)
+# Initialize FastMCP server
+mcp = FastMCP("apple-docs-mcp")
 
 # Initialize RAG engine globally
 rag_engine: Optional[SimpleRAG] = None
@@ -447,4 +446,9 @@ if __name__ == "__main__":
     print(f"\n💡 Use stdio proxy: python3 mcp_stdio_proxy.py")
     
     # Run with HTTP transport for remote access
-    mcp.run(transport="streamable-http", port=MCP_PORT, host="0.0.0.0")
+    import uvicorn
+    uvicorn.run(
+        mcp.streamable_http_app(),
+        host="0.0.0.0",
+        port=MCP_PORT
+    )

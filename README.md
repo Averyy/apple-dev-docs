@@ -1,213 +1,214 @@
-# Apple Developer Documentation Scraper & MCP Server
+# Apple Developer Documentation MCP Server
 
-A comprehensive Python tool that scrapes Apple's entire developer documentation ecosystem (341 frameworks, 278K+ pages) and provides an MCP server for AI-powered documentation search with platform-aware filtering.
+A comprehensive MCP (Model Context Protocol) server providing AI-powered search across Apple's complete developer documentation ecosystem - 341+ frameworks with 340,000+ pages.
 
 ## Features
 
-- **Complete Coverage**: All 341 Apple frameworks automatically discovered and scraped
-- **Fast Scraping**: Uses Apple's internal JSON API (no HTML parsing needed)
-- **Vector Search**: OpenAI embeddings with ChromaDB for semantic search
+- **Complete Coverage**: All 341 Apple frameworks automatically discovered and indexed
+- **Vector Search**: OpenAI embeddings with ChromaDB for semantic documentation search
 - **Platform Filtering**: Search by iOS, macOS, tvOS, watchOS, visionOS, or all platforms
-- **MCP Integration**: Model Context Protocol server for AI assistants like Claude
-- **Incremental Updates**: ETag-based efficient updates for changed content only
-- **Cost Optimized**: ~$4 initial setup, <$0.10 for typical updates
+- **MCP Integration**: Works with Claude Code, Claude Desktop, and other MCP clients
+- **Dual Deployment**: Both local and remote server options
+- **Sub-500ms Search**: Optimized for fast responses with metadata filtering
 
 ## Quick Start
 
-### Option 1: Docker Deployment (Recommended)
+### Client Setup (Choose One)
 
-**Pre-built image available**: `ghcr.io/averyy/apple-dev-docs-mcp:latest`
+#### Option 1: Local Client (Runs server on your machine)
+1. **Download**: `curl -O https://raw.githubusercontent.com/averyy/apple-developer-docs/main/apple_docs_client.py`
+2. **Setup server**: Clone this repo and run `cd mcp-server && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt`
+3. **Add to Claude config**:
+   ```json
+   {
+     "mcpServers": {
+       "apple-docs": {
+         "type": "stdio",
+         "command": "python3",
+         "args": ["/path/to/apple_docs_client.py"]
+       }
+     }
+   }
+   ```
 
+#### Option 2: Remote Client (Connects to deployed server)
+1. **Download**: `curl -O https://raw.githubusercontent.com/averyy/apple-developer-docs/main/apple_docs_remote_client.py`
+2. **Edit server IP**: Change line 35 to your server's IP address
+3. **Add to Claude config**:
+   ```json
+   {
+     "mcpServers": {
+       "apple-docs": {
+         "type": "stdio", 
+         "command": "python3",
+         "args": ["/path/to/apple_docs_remote_client.py"]
+       }
+     }
+   }
+   ```
+
+### Server Deployment
+
+#### Docker Deployment (Recommended)
 ```bash
-# Quick start with pre-built image
-docker pull ghcr.io/averyy/apple-dev-docs-mcp:latest
-
-# Or clone and setup
-git clone <repo-url>
+git clone https://github.com/averyy/apple-developer-docs.git
 cd apple-developer-docs
 
 # Configure environment
 cp .env.example .env
-# Edit .env with:
-# - OPENAI_API_KEY=sk-proj-xxxxx
-# - MCP_API_KEY=$(openssl rand -hex 32)
+# Edit .env with your OPENAI_API_KEY
 
 # Deploy with Docker
 cd mcp-server/deploy
-./quick-start.sh  # Automatically uses public image if available
+./quick-start.sh
 ```
 
-Docker automatically handles:
-- Building vectorstore on first run (~4-6 hours)
-- Weekly updates (Sundays 1 AM)
-- Health monitoring and auto-restart
-- Process management with supervisor
-
-#### Docker Commands
-
-```bash
-# Check status
-docker logs -f apple-docs-mcp
-docker exec apple-docs-mcp supervisorctl status
-
-# Manual update
-docker exec apple-docs-mcp python /app/scraper/auto_scrape_and_embed.py --embed --yes
-
-# Test search
-curl -H "Authorization: Bearer $MCP_API_KEY" http://localhost:8080/health
-```
-
-### Option 2: Local Development
-
+#### Local Development
 ```bash
 # Clone and setup
-git clone <repo-url>
-cd apple-developer-docs
+git clone https://github.com/averyy/apple-developer-docs.git
+cd apple-developer-docs/mcp-server
 
 # Install dependencies
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 
 # Configure environment
-cp .env.example .env
-# Edit .env to add your keys
+cp ../.env.example ../.env
+# Edit .env to add your OPENAI_API_KEY
 
-# Build Vector Index (one-time)
-cd mcp-server
+# Build vector index (one-time, ~4-6 hours)
 python scripts/build_index.py --force
 
-# Run MCP Server
-make server
+# Run server
+python server/mcp_server.py
 ```
 
 The server starts on port 8080 with:
-- Platform-aware search (iOS, macOS, tvOS, watchOS, visionOS)
-- Framework discovery (341 frameworks)
-- Sub-500ms response times
-- Bearer token authentication
-
-### 4. Configure AI Assistant
-
-For Claude Desktop or Claude Code, edit the configuration file:
-
-**Claude Desktop:**
-- macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
-- Windows: `%APPDATA%\Claude\claude_desktop_config.json`
-- Linux: `~/.config/Claude/claude_desktop_config.json`
-
-```json
-{
-  "mcpServers": {
-    "apple-docs": {
-      "type": "sse", 
-      "url": "http://localhost:8080/mcp",
-      "headers": {
-        "Authorization": "Bearer YOUR_MCP_API_KEY"
-      }
-    }
-  }
-}
-```
-
-**For remote servers (e.g., Unraid at 192.168.2.5):**
-```json
-{
-  "mcpServers": {
-    "apple-docs": {
-      "type": "sse", 
-      "url": "http://192.168.2.5:8080/mcp",
-      "headers": {
-        "Authorization": "Bearer YOUR_MCP_API_KEY"
-      }
-    }
-  }
-}
-```
-
-Replace `YOUR_MCP_API_KEY` with the value from your `.env` file.
-
-## Pre-built Docker Image
-
-A public Docker image is available with all dependencies:
-- **Registry**: GitHub Container Registry (ghcr.io)
-- **Image**: `ghcr.io/averyy/apple-dev-docs-mcp:latest`
-- **Platforms**: linux/amd64, linux/arm64
-- **Size**: ~500MB compressed
+- Platform-aware search across all Apple platforms
+- 341+ frameworks with complete API documentation
+- Vector similarity search with metadata filtering
+- Health monitoring at `/health` endpoint
 
 ## Architecture
 
-**Scraping**: Uses Apple's internal JSON API endpoints (no HTML parsing needed)
-```
-https://developer.apple.com/tutorials/data/documentation/{framework}/{page}.json
-```
+**Two Client Options:**
+- **Local Client**: Downloads and runs the MCP server on your machine
+- **Remote Client**: Connects to a deployed server via HTTP proxy
 
-**Vector Search**: OpenAI text-embedding-3-small (1536 dimensions) + ChromaDB  
-**Platform Filtering**: Metadata extraction enables iOS/macOS/etc. specific search  
-**Incremental Updates**: ETag-based change detection for efficient updates
-**Docker Deployment**: Multi-process container with supervisor for reliability
+**Server Components:**
+- **Scraping**: Uses Apple's internal JSON API (no HTML parsing)
+- **Vector Search**: OpenAI text-embedding-3-small + ChromaDB
+- **MCP Server**: FastMCP framework with streamable HTTP transport
+- **Platform Filtering**: Metadata-based iOS/macOS/tvOS/watchOS/visionOS filtering
 
-## Key Commands
+## Configuration Files
 
-```bash
-# Docker deployment
-cd mcp-server/deploy && ./quick-start.sh
+### Claude Desktop Config Locations:
+- **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
+- **Linux**: `~/.config/Claude/claude_desktop_config.json`
 
-# Health check
-curl -H "Authorization: Bearer $MCP_API_KEY" http://localhost:8080/health
+### Claude Code Config:
+Usually stored in your project's `.claude/mcp_servers.json` or global config.
 
-# Update index (local)
-cd mcp-server && python scripts/build_index.py
+## Available Tools
 
-# Run tests
-cd mcp-server && python tests/test_mcp_server.py
+When connected, the MCP server provides:
 
-# View logs (Docker)
-docker logs -f apple-docs-mcp
-```
+- **`search_apple_docs`**: Search documentation with platform and framework filtering
+  - `query`: Search terms (e.g., "SwiftUI Button", "async await")
+  - `framework`: Optional framework filter (e.g., "SwiftUI", "UIKit")
+  - `platform`: Platform filter - ios, macos, tvos, watchos, visionos, catalyst, or "all"
+  - `limit`: Number of results (1-20, default: 5)
+
+- **`list_frameworks`**: List all available Apple frameworks
+  - `platform`: Optional platform filter
 
 ## Project Structure
 
 ```
 apple-developer-docs/
-├── documentation/           # Scraped Apple docs (278K+ files, 1.17GB)
-├── mcp-server/             # MCP server and vector indexing
-│   ├── scripts/build_index.py  # Main indexing script
-│   ├── server/mcp_server.py    # MCP HTTP server
-│   └── vectorstore/            # ChromaDB embeddings (~1.9GB)
-├── scraper/                # Scraping engine for Apple's JSON API
-└── docs/                   # Detailed documentation
+├── apple_docs_client.py          # Local client (all-in-one)
+├── apple_docs_remote_client.py   # Remote client (HTTP proxy)
+├── documentation/                # Scraped Apple docs (340K+ files)
+├── mcp-server/                   # Server implementation
+│   ├── server/mcp_server.py      # Main MCP HTTP server
+│   ├── server/rag.py             # Vector search engine
+│   ├── scripts/build_index.py    # Vector index builder
+│   └── vectorstore/              # ChromaDB embeddings (~1.9GB)
+├── scraper/                      # Apple JSON API scraper
+└── docs/                         # Documentation
 ```
-
-## Documentation
-
-### Core Guides
-- **[Docker Deployment Guide](docs/DOCKER_DEPLOYMENT.md)** - Complete deployment instructions
-- **[MCP Server Guide](docs/MCP_SERVER_GUIDE.md)** - MCP server setup and API reference
-- **[Indexing Guide](docs/INDEXING_GUIDE.md)** - Vector index building and maintenance
-- **[Project Status](docs/PROJECT_STATUS.md)** - Current system status and metrics
-- **[Deployment Checklist](docs/DEPLOYMENT_CHECKLIST.md)** - Pre-deployment verification
-
-### API Tools Available in MCP
-- `search_apple_docs` - Search with platform filtering (required parameter)
-- `list_frameworks` - Discover all 341 Apple frameworks
 
 ## Performance
 
 - **Search Speed**: <500ms with platform filtering
-- **Index Size**: ~1.9GB ChromaDB for 323K+ documents  
-- **Update Cost**: ~$4 initial, <$0.10 for incremental updates
-- **Platform Coverage**: iOS, macOS, tvOS, watchOS, visionOS, Catalyst
+- **Index Size**: ~1.9GB ChromaDB for 340K+ documents
+- **Memory Usage**: ~2GB RAM for full index
+- **Update Cost**: ~$4 initial indexing, <$0.10 for incremental updates
+
+## Environment Variables
+
+Create a `.env` file with:
+```bash
+# Required
+OPENAI_API_KEY=sk-proj-xxxxx
+
+# Optional
+MCP_PORT=8080
+VECTORSTORE_PATH=./vectorstore
+```
+
+## Health Check
+
+Test your deployment:
+```bash
+# Local server
+curl http://localhost:8080/health
+
+# Remote client test
+python3 apple_docs_remote_client.py --test
+```
 
 ## Troubleshooting
 
-**Environment Issues**: Ensure `OPENAI_API_KEY` is set in `.env`  
-**Build Errors**: Try `cd mcp-server && python scripts/build_index.py --force`  
-**Server Issues**: Check `curl http://localhost:8080/health`  
-**Search Problems**: Ensure platform parameter is set (use "all" if unsure)
+**Connection Issues**:
+- Ensure server is running on correct port (8080)
+- Check firewall settings for remote connections
+- Verify Claude config file syntax
 
-## License & Legal
+**Search Issues**:
+- Platform parameter is required (use "all" if unsure)
+- Check that vectorstore is properly built
+- Ensure OpenAI API key is valid
 
-**Code**: MIT License  
-**Documentation Content**: © Apple Inc. - This tool provides offline access to publicly available documentation for personal development use.
+**Performance Issues**:
+- Allocate at least 2GB RAM for full index
+- Use SSD storage for better search performance
+- Consider platform filtering to reduce search scope
+
+## Development
+
+To modify or extend the server:
+
+```bash
+# Run tests
+cd mcp-server
+python tests/test_mcp_server.py
+
+# Rebuild index
+python scripts/build_index.py --force
+
+# Check logs
+tail -f server/server.log
+```
+
+## License
+
+**Code**: MIT License
+**Documentation Content**: © Apple Inc. - This tool provides offline access to publicly available documentation for development use.
 
 ---
 
