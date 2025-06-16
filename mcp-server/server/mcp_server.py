@@ -223,8 +223,7 @@ async def mcp_post(request: Request, response: Response, authorized: bool = Depe
 @app.get("/mcp")
 async def mcp_get(request: Request, authorized: bool = Depends(verify_api_key)):
     """
-    Open SSE stream for server-initiated messages.
-    This is optional but allows server to send requests/notifications to client.
+    SSE endpoint for MCP protocol - handles streaming responses
     """
     # Get or create session
     session_id = request.headers.get("x-session-id")
@@ -233,12 +232,13 @@ async def mcp_get(request: Request, authorized: bool = Depends(verify_api_key)):
     
     session = sessions.get(session_id)
     if not session:
-        raise HTTPException(status_code=404, detail="Session not found")
+        session_id = create_session()
+        session = sessions[session_id]
     
     async def event_generator():
-        """Generate SSE events"""
+        """Generate SSE events for MCP protocol"""
         try:
-            # Send session info
+            # Send session establishment
             yield {
                 "event": "session",
                 "data": json.dumps({
@@ -247,12 +247,49 @@ async def mcp_get(request: Request, authorized: bool = Depends(verify_api_key)):
                 })
             }
             
-            # Keep connection alive
+            # Send server capabilities (initialize response)
+            if not session.get("initialized"):
+                init_response = {
+                    "jsonrpc": "2.0",
+                    "result": {
+                        "protocolVersion": "1.0.0",
+                        "serverInfo": {
+                            "name": "apple-docs-mcp",
+                            "version": "2.0.0"
+                        },
+                        "capabilities": {
+                            "tools": {
+                                "list": True,
+                                "call": True
+                            },
+                            "resources": {
+                                "list": True,
+                                "read": True,
+                                "templates": True
+                            },
+                            "prompts": {
+                                "list": True,
+                                "get": True
+                            }
+                        },
+                        "sessionId": session_id
+                    },
+                    "id": "server-init"
+                }
+                
+                yield {
+                    "event": "message",
+                    "data": json.dumps(init_response)
+                }
+                
+                session["initialized"] = True
+            
+            # Keep connection alive with periodic pings
             while True:
                 await asyncio.sleep(30)
                 yield {
                     "event": "ping",
-                    "data": json.dumps({"timestamp": datetime.utcnow().isoformat()})
+                    "data": json.dumps({"timestamp": datetime.now(timezone.utc).isoformat()})
                 }
                 
         except asyncio.CancelledError:
