@@ -284,12 +284,17 @@ async def mcp_get(request: Request, authorized: bool = Depends(verify_api_key)):
                 
                 session["initialized"] = True
             
-            # Connection established - close after initialization
+            # Send explicit close event to signal clean shutdown
+            yield {
+                "event": "close",
+                "data": "{}"
+            }
+            
             logger.info(f"MCP initialization complete for session {session_id}")
             return
                 
         except asyncio.CancelledError:
-            logger.info(f"SSE connection closed for session {session_id}")
+            logger.info(f"SSE connection cancelled for session {session_id}")
             raise
     
     return EventSourceResponse(event_generator())
