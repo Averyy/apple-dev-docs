@@ -284,13 +284,9 @@ async def mcp_get(request: Request, authorized: bool = Depends(verify_api_key)):
                 
                 session["initialized"] = True
             
-            # Keep connection alive with periodic pings
-            while True:
-                await asyncio.sleep(30)
-                yield {
-                    "event": "ping",
-                    "data": json.dumps({"timestamp": datetime.now(timezone.utc).isoformat()})
-                }
+            # Connection established - close after initialization
+            logger.info(f"MCP initialization complete for session {session_id}")
+            return
                 
         except asyncio.CancelledError:
             logger.info(f"SSE connection closed for session {session_id}")

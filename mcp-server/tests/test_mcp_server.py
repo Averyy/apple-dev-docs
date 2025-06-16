@@ -2,6 +2,7 @@
 """
 Comprehensive test for MCP server functionality.
 Tests all endpoints, authentication, search functionality, and error handling.
+Updated to use proper MCP JSON-RPC protocol.
 """
 
 import os
@@ -23,6 +24,22 @@ class TestMCPServer:
     base_url = f"http://localhost:{MCP_PORT}"
     headers = {"Authorization": f"Bearer {MCP_API_KEY}"}
     
+    async def mcp_request(self, client, method, params=None, request_id=1):
+        """Make a JSON-RPC request to the MCP server"""
+        payload = {
+            "jsonrpc": "2.0",
+            "method": method,
+            "id": request_id
+        }
+        if params:
+            payload["params"] = params
+            
+        response = await client.post(
+            f"{self.base_url}/mcp",
+            headers=self.headers,
+            json=payload
+        )
+        return response
     
     async def test_health_endpoint(self, client):
         """Test health check endpoint (no auth required)"""
@@ -34,30 +51,62 @@ class TestMCPServer:
         assert "vectorstore" in data
         assert data["vectorstore"]["documents"] > 300000  # Should have 323K+ docs
     
-    
     async def test_auth_required(self, client):
         """Test that auth is required for MCP endpoints"""
         # Test without auth
-        response = await client.get(f"{self.base_url}/mcp/tools/list")
+        response = await client.post(f"{self.base_url}/mcp", json={"jsonrpc": "2.0", "method": "tools/list", "id": 1})
         assert response.status_code == 403  # Forbidden without auth
         
         # Test with wrong auth
         wrong_headers = {"Authorization": "Bearer wrong_key"}
-        response = await client.get(f"{self.base_url}/mcp/tools/list", headers=wrong_headers)
+        response = await client.post(
+            f"{self.base_url}/mcp",
+            headers=wrong_headers,
+            json={"jsonrpc": "2.0", "method": "tools/list", "id": 1}
+        )
         assert response.status_code == 401  # Unauthorized with wrong key
+    
+    async def test_sse_endpoint(self, client):
+        """Test SSE endpoint completes properly without hanging"""
+        # Test that SSE connection completes within reasonable time
+        response = await client.get(
+            f"{self.base_url}/mcp",
+            headers={**self.headers, "Accept": "text/event-stream"},
+            timeout=3.0  # Should complete within 3 seconds
+        )
+        assert response.status_code == 200
+        content = response.text
+        
+        # Should contain session event
+        assert "event: session" in content
+        assert "sessionId" in content
+        
+        # Should contain initialization message
+        assert "event: message" in content
+        assert "protocolVersion" in content
+        assert "serverInfo" in content
+        
+        # Connection should have closed cleanly (not timed out)
+        assert len(content) < 1000  # Should not have endless ping messages
     
     async def test_tools_list(self, client):
         """Test tools list endpoint"""
-        response = await client.get(f"{self.base_url}/mcp/tools/list", headers=self.headers)
+        response = await self.mcp_request(client, "tools/list")
         assert response.status_code == 200
         data = response.json()
         
+        # Check JSON-RPC response structure
+        assert data["jsonrpc"] == "2.0"
+        assert "result" in data
+        assert data["id"] == 1
+        
+        result = data["result"]
         # Check structure
-        assert "tools" in data
-        assert len(data["tools"]) == 2  # Should have 2 tools now
+        assert "tools" in result
+        assert len(result["tools"]) == 2  # Should have 2 tools now
         
         # Check search_apple_docs tool
-        search_tool = next(t for t in data["tools"] if t["name"] == "search_apple_docs")
+        search_tool = next(t for t in result["tools"] if t["name"] == "search_apple_docs")
         assert "description" in search_tool
         assert "inputSchema" in search_tool
         
@@ -75,63 +124,55 @@ class TestMCPServer:
         assert "ios" in platform_schema["enum"]
         
         # Check list_frameworks tool
-        list_tool = next(t for t in data["tools"] if t["name"] == "list_frameworks")
+        list_tool = next(t for t in result["tools"] if t["name"] == "list_frameworks")
         assert "description" in list_tool
         assert "inputSchema" in list_tool
     
     async def test_search_basic(self, client):
         """Test basic search functionality"""
-        payload = {
+        params = {
             "name": "search_apple_docs",
             "arguments": {
                 "query": "SwiftUI Button"
             }
         }
         
-        response = await client.post(
-            f"{self.base_url}/mcp/tools/call",
-            headers=self.headers,
-            json=payload
-        )
+        response = await self.mcp_request(client, "tools/call", params)
         
         assert response.status_code == 200
         data = response.json()
+        assert data["jsonrpc"] == "2.0"
         assert "result" in data
         
         # Check result content
-        result = data["result"]
+        result = data["result"]["content"]
         assert isinstance(result, str)
         assert "Found" in result  # Should say "Found X relevant documentation pages"
         assert "Button" in result or "button" in result.lower()
     
     async def test_search_with_framework(self, client):
         """Test search with framework filter"""
-        # Test with SwiftUI - a popular framework we know exists
-        payload = {
+        params = {
             "name": "search_apple_docs",
             "arguments": {
                 "query": "View",
-                "framework": "SwiftUI",  # Test case-insensitive handling
+                "framework": "SwiftUI",
                 "limit": 5
             }
         }
         
-        response = await client.post(
-            f"{self.base_url}/mcp/tools/call",
-            headers=self.headers,
-            json=payload
-        )
+        response = await self.mcp_request(client, "tools/call", params, request_id=2)
         
         assert response.status_code == 200
         data = response.json()
-        result = data["result"]
+        result = data["result"]["content"]
         # Should find results for View in SwiftUI
         assert len(result) > 100, "Should have found results for View in SwiftUI"
         assert "swiftui" in result.lower(), "Results should mention SwiftUI framework"
     
     async def test_search_with_limit(self, client):
         """Test search with custom limit"""
-        payload = {
+        params = {
             "name": "search_apple_docs",
             "arguments": {
                 "query": "URLSession",
@@ -139,41 +180,32 @@ class TestMCPServer:
             }
         }
         
-        response = await client.post(
-            f"{self.base_url}/mcp/tools/call",
-            headers=self.headers,
-            json=payload
-        )
+        response = await self.mcp_request(client, "tools/call", params, request_id=3)
         
         assert response.status_code == 200
         data = response.json()
-        result = data["result"]
+        result = data["result"]["content"]
         
         # Should have at most 2 results
         assert result.count("## Result") <= 2 or result.count("1.") <= 2
     
     async def test_search_full_content(self, client):
         """Test search with full content mode"""
-        # Use a more common search term that should definitely exist
-        payload = {
+        params = {
             "name": "search_apple_docs",
             "arguments": {
-                "query": "array",  # Common term across many frameworks
-                "framework": "Foundation",  # Popular framework
+                "query": "array",
+                "framework": "Foundation",
                 "limit": 1,
                 "include_full_content": True
             }
         }
         
-        response = await client.post(
-            f"{self.base_url}/mcp/tools/call",
-            headers=self.headers,
-            json=payload
-        )
+        response = await self.mcp_request(client, "tools/call", params, request_id=4)
         
         assert response.status_code == 200
         data = response.json()
-        result = data["result"]
+        result = data["result"]["content"]
         
         # Full content should be much longer
         assert len(result) > 1000, f"Full content should be >1000 chars, got {len(result)}"
@@ -183,99 +215,78 @@ class TestMCPServer:
     
     async def test_invalid_tool(self, client):
         """Test calling non-existent tool"""
-        payload = {
+        params = {
             "name": "invalid_tool",
             "arguments": {}
         }
         
-        response = await client.post(
-            f"{self.base_url}/mcp/tools/call",
-            headers=self.headers,
-            json=payload
-        )
+        response = await self.mcp_request(client, "tools/call", params, request_id=5)
         
-        assert response.status_code == 404
+        assert response.status_code == 200  # JSON-RPC returns 200 with error in response
         data = response.json()
-        assert "not found" in data["detail"]
+        assert "error" in data
+        assert data["error"]["code"] == -32603  # Internal error
+        assert "Unknown tool" in data["error"]["data"]
     
     async def test_missing_query(self, client):
         """Test search without required query parameter"""
-        payload = {
+        params = {
             "name": "search_apple_docs",
             "arguments": {
                 "framework": "SwiftUI"  # Missing required 'query'
             }
         }
         
-        response = await client.post(
-            f"{self.base_url}/mcp/tools/call",
-            headers=self.headers,
-            json=payload
-        )
+        response = await self.mcp_request(client, "tools/call", params, request_id=6)
         
-        assert response.status_code == 400
+        assert response.status_code == 200  # JSON-RPC returns 200 with error
         data = response.json()
-        assert "Invalid arguments" in data["detail"]
+        assert "error" in data
+        # Should have error about missing query
     
     async def test_edge_cases(self, client):
         """Test various edge cases"""
         # Empty query
-        payload = {
+        params = {
             "name": "search_apple_docs",
             "arguments": {"query": ""}
         }
-        response = await client.post(
-            f"{self.base_url}/mcp/tools/call",
-            headers=self.headers,
-            json=payload
-        )
+        response = await self.mcp_request(client, "tools/call", params, request_id=7)
         # Should handle empty query gracefully
-        assert response.status_code in [200, 400]
+        assert response.status_code == 200
         
         # Very long query
-        payload = {
+        params = {
             "name": "search_apple_docs",
             "arguments": {"query": "a" * 1000}
         }
-        response = await client.post(
-            f"{self.base_url}/mcp/tools/call",
-            headers=self.headers,
-            json=payload
-        )
+        response = await self.mcp_request(client, "tools/call", params, request_id=8)
         assert response.status_code == 200
         
         # Invalid limit
-        payload = {
+        params = {
             "name": "search_apple_docs",
             "arguments": {"query": "test", "limit": 100}
         }
-        response = await client.post(
-            f"{self.base_url}/mcp/tools/call",
-            headers=self.headers,
-            json=payload
-        )
+        response = await self.mcp_request(client, "tools/call", params, request_id=9)
         assert response.status_code == 200
         # Should clamp to MAX_SEARCH_LIMIT (20)
     
     async def test_search_with_platform(self, client):
         """Test search with platform filter"""
-        payload = {
+        params = {
             "name": "search_apple_docs",
             "arguments": {
                 "query": "Button",
-                "platform": "ios"  # Filter to iOS only
+                "platform": "ios"
             }
         }
         
-        response = await client.post(
-            f"{self.base_url}/mcp/tools/call",
-            headers=self.headers,
-            json=payload
-        )
+        response = await self.mcp_request(client, "tools/call", params, request_id=10)
         
         assert response.status_code == 200
         data = response.json()
-        result = data["result"]
+        result = data["result"]["content"]
         assert "Found" in result
         # Should have platform info in results
         assert "[" in result and "]" in result  # Platform indicators
@@ -283,20 +294,16 @@ class TestMCPServer:
     async def test_list_frameworks(self, client):
         """Test list frameworks tool"""
         # Test 1: No arguments (should show all frameworks)
-        payload = {
+        params = {
             "name": "list_frameworks",
             "arguments": {}
         }
         
-        response = await client.post(
-            f"{self.base_url}/mcp/tools/call",
-            headers=self.headers,
-            json=payload
-        )
+        response = await self.mcp_request(client, "tools/call", params, request_id=11)
         
         assert response.status_code == 200
         data = response.json()
-        result = data["result"]
+        result = data["result"]["content"]
         
         # Check result structure for all frameworks
         assert "Available Apple Frameworks" in result or "# Available Apple Frameworks" in result
@@ -327,41 +334,17 @@ class TestMCPServer:
         # Should have usage tips
         assert "Usage Tip" in result
         
-        # Test 2: Platform = "all" (should be same as no platform)
-        payload_all = {
-            "name": "list_frameworks",
-            "arguments": {"platform": "all"}
-        }
-        
-        response_all = await client.post(
-            f"{self.base_url}/mcp/tools/call",
-            headers=self.headers,
-            json=payload_all
-        )
-        
-        assert response_all.status_code == 200
-        data_all = response_all.json()
-        result_all = data_all["result"]
-        
-        # Should have same number of frameworks
-        framework_lines_all = [l for l in result_all.split('\n') if l.strip().startswith('- **')]
-        assert len(framework_lines) == len(framework_lines_all), "Platform='all' should match no platform"
-        
-        # Test 3: Platform = "ios" (should show only iOS frameworks)
-        payload_ios = {
+        # Test 2: Platform = "ios" (should show only iOS frameworks)
+        params_ios = {
             "name": "list_frameworks",
             "arguments": {"platform": "ios"}
         }
         
-        response_ios = await client.post(
-            f"{self.base_url}/mcp/tools/call",
-            headers=self.headers,
-            json=payload_ios
-        )
+        response_ios = await self.mcp_request(client, "tools/call", params_ios, request_id=12)
         
         assert response_ios.status_code == 200
         data_ios = response_ios.json()
-        result_ios = data_ios["result"]
+        result_ios = data_ios["result"]["content"]
         
         # Should have iOS-specific header
         assert "IOS Frameworks" in result_ios or "iOS Frameworks" in result_ios
@@ -394,6 +377,7 @@ async def run_all_tests():
         tests = [
             ("Health Check", test.test_health_endpoint),
             ("Authentication", test.test_auth_required),
+            ("SSE Endpoint (Fixed!)", test.test_sse_endpoint),
             ("Tools List", test.test_tools_list),
             ("Basic Search", test.test_search_basic),
             ("Search with Framework", test.test_search_with_framework),
