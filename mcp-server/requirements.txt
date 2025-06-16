@@ -1,12 +1,14 @@
 # Core dependencies only
 chromadb>=0.4.0       # Vector database (REQUIRED for RAG)
 openai                # OpenAI API for embeddings (REQUIRED)
-fastapi               # HTTP server framework (remote access)
-uvicorn[standard]     # ASGI server for FastAPI
 python-dotenv         # Environment management
 httpx==0.27.0         # Async HTTP client
 tqdm                  # Progress bars for indexing
-sse-starlette         # Server-Sent Events for MCP protocol
+
+# MCP SDK (REQUIRED for server)
+mcp[fastmcp]>=1.3.0   # Model Context Protocol SDK with FastMCP framework
+uvicorn[standard]     # ASGI server for FastMCP
+pydantic>=2.0         # Data validation for FastMCP
 
 # Scraper dependencies (for scheduled rescraping)
 beautifulsoup4==4.12.3
@@ -16,8 +18,3 @@ jsonschema==4.21.1
 tiktoken>=0.5.0
 structlog==24.1.0
 rich==13.7.0
-
-# Optional/unused - can be removed in future
-mcp                   # Model Context Protocol SDK (not used in HTTP implementation)
-fastmcp               # High-level MCP server framework (not used)
-requests              # For API communication (httpx is used instead)
