@@ -1,0 +1,232 @@
+{
+  "timestamp": "2025-06-19 15:32:28",
+  "global_metrics": {
+    "mrr": 0.9545454545454546,
+    "precision_at_1": 0.9090909090909091,
+    "precision_at_3": 0.7878787878787878,
+    "precision_at_5": 0.7636363636363637,
+    "mean_search_time_ms": 867.9441660642624
+  },
+  "suite_results": {
+    "\ud83c\udfaf Exact API Name Searches": {
+      "total": 3,
+      "perfect": 3,
+      "good": 3,
+      "acceptable": 3,
+      "failed": 0,
+      "avg_mrr": 1.0,
+      "avg_p_at_1": 1.0
+    },
+    "\ud83d\udd0d MCP Pattern Searches": {
+      "total": 3,
+      "perfect": 3,
+      "good": 3,
+      "acceptable": 3,
+      "failed": 0,
+      "avg_mrr": 1.0,
+      "avg_p_at_1": 1.0
+    },
+    "\ud83c\udf0a Ambiguous Queries": {
+      "total": 3,
+      "perfect": 3,
+      "good": 3,
+      "acceptable": 3,
+      "failed": 0,
+      "avg_mrr": 1.0,
+      "avg_p_at_1": 1.0
+    },
+    "\u26a0\ufe0f Generic Terms": {
+      "total": 3,
+      "perfect": 0,
+      "good": 0,
+      "acceptable": 0,
+      "failed": 2,
+      "avg_mrr": 0,
+      "avg_p_at_1": 0.0
+    },
+    "\u274c Negative Tests": {
+      "total": 2,
+      "perfect": 0,
+      "good": 0,
+      "acceptable": 0,
+      "failed": 1,
+      "avg_mrr": 0,
+      "avg_p_at_1": 0.0
+    },
+    "\ud83d\udc1b Common Misspellings": {
+      "total": 2,
+      "perfect": 1,
+      "good": 2,
+      "acceptable": 2,
+      "failed": 0,
+      "avg_mrr": 0.75,
+      "avg_p_at_1": 0.5
+    }
+  },
+  "failure_analysis": {
+    "no_results": 2,
+    "irrelevant_results": 3
+  },
+  "detailed_results": [
+    {
+      "query": "UITableView",
+      "platform": "ios",
+      "first_relevant_position": 1,
+      "mrr": 1.0,
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "has_false_positives": true,
+      "failure_category": null
+    },
+    {
+      "query": "NavigationView",
+      "platform": "ios",
+      "first_relevant_position": 1,
+      "mrr": 1.0,
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "has_false_positives": true,
+      "failure_category": null
+    },
+    {
+      "query": "URLSession",
+      "platform": "all",
+      "first_relevant_position": 1,
+      "mrr": 1.0,
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "has_false_positives": true,
+      "failure_category": null
+    },
+    {
+      "query": "navigationview in swiftui",
+      "platform": "ios",
+      "first_relevant_position": 1,
+      "mrr": 1.0,
+      "precision_at_1": 1.0,
+      "precision_at_3": 0.3333333333333333,
+      "has_false_positives": true,
+      "failure_category": null
+    },
+    {
+      "query": "uitableviewcell in uikit",
+      "platform": "ios",
+      "first_relevant_position": 1,
+      "mrr": 1.0,
+      "precision_at_1": 1.0,
+      "precision_at_3": 0.3333333333333333,
+      "has_false_positives": true,
+      "failure_category": null
+    },
+    {
+      "query": "asyncimagephase failure in swiftui",
+      "platform": "ios",
+      "first_relevant_position": 1,
+      "mrr": 1.0,
+      "precision_at_1": 1.0,
+      "precision_at_3": 0.6666666666666666,
+      "has_false_positives": false,
+      "failure_category": null
+    },
+    {
+      "query": "View",
+      "platform": "ios",
+      "first_relevant_position": 1,
+      "mrr": 1.0,
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "has_false_positives": false,
+      "failure_category": null
+    },
+    {
+      "query": "Button",
+      "platform": "ios",
+      "first_relevant_position": 1,
+      "mrr": 1.0,
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "has_false_positives": false,
+      "failure_category": null
+    },
+    {
+      "query": "Text",
+      "platform": "ios",
+      "first_relevant_position": 1,
+      "mrr": 1.0,
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "has_false_positives": false,
+      "failure_category": null
+    },
+    {
+      "query": "frame",
+      "platform": "ios",
+      "first_relevant_position": null,
+      "mrr": 0.0,
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "has_false_positives": false,
+      "failure_category": "no_results"
+    },
+    {
+      "query": "frame modifier",
+      "platform": "ios",
+      "first_relevant_position": null,
+      "mrr": 0.0,
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "has_false_positives": false,
+      "failure_category": "irrelevant_results"
+    },
+    {
+      "query": "init",
+      "platform": "ios",
+      "first_relevant_position": null,
+      "mrr": 0.0,
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "has_false_positives": false,
+      "failure_category": "irrelevant_results"
+    },
+    {
+      "query": "AndroidFragment",
+      "platform": "ios",
+      "first_relevant_position": null,
+      "mrr": 0.0,
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "has_false_positives": false,
+      "failure_category": "irrelevant_results"
+    },
+    {
+      "query": "ReactNativeComponent",
+      "platform": "ios",
+      "first_relevant_position": null,
+      "mrr": 0.0,
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "has_false_positives": false,
+      "failure_category": "no_results"
+    },
+    {
+      "query": "tabel view",
+      "platform": "ios",
+      "first_relevant_position": 2,
+      "mrr": 0.5,
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.6666666666666666,
+      "has_false_positives": false,
+      "failure_category": null
+    },
+    {
+      "query": "navigtion controller",
+      "platform": "ios",
+      "first_relevant_position": 1,
+      "mrr": 1.0,
+      "precision_at_1": 1.0,
+      "precision_at_3": 0.6666666666666666,
+      "has_false_positives": false,
+      "failure_category": null
+    }
+  ]
+}

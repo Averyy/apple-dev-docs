@@ -322,7 +322,14 @@ Compare:
 def format_concise_results(results: List[Dict[str, Any]]) -> str:
     """Format search results concisely"""
     if not results:
-        return "No results found for your query."
+        return """No results found for your query.
+
+**Search Tips for Better Results:**
+- Use pattern: `api_name in framework` (e.g., `navigationview in swiftui`)
+- Add context to generic terms: `frame modifier` instead of just `frame`
+- Include framework: `button swiftui` or `uibutton uikit`
+- For nested APIs: `asyncimagephase failure in swiftui`
+- Always specify platform: `ios`, `macos`, `tvos`, etc."""
     
     formatted = []
     formatted.append(f"Found {len(results)} relevant documentation pages:\n")

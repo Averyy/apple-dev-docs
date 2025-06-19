@@ -71,8 +71,9 @@ class SimpleRAG:
         # Cache for embeddings (simple in-memory cache)
         self._embedding_cache = {}
         
-        # Load framework names dynamically (only if collection exists)
-        self._framework_names = self._load_framework_names() if self.collection else set()
+        # Don't load framework names at startup - too slow
+        self._framework_names = set()
+        self._frameworks_loaded = False
         
     def _load_framework_names(self) -> set:
         """Load all unique framework names from the entire collection"""
@@ -135,106 +136,69 @@ class SimpleRAG:
             raise
     
     def expand_query(self, query: str) -> str:
-        """Enhanced query expansion for better LLM-friendly search"""
-        # Start with base expansions for common patterns
-        expansions = {
-            # Add framework names dynamically
-            **{fw: f"{fw} framework apple" for fw in self._framework_names},
-            # SwiftUI
-            "swiftui": "SwiftUI View ViewModifier ViewBuilder framework UI",
-            "view": "View ViewModifier ViewBuilder SwiftUI UIView",
-            "list": "List ForEach ScrollView VStack LazyVStack collection",
-            "button": "Button ButtonStyle onTapGesture action tap click press",
-            "navigation": "NavigationView NavigationLink NavigationStack navigate push",
-            "state": "State StateObject ObservedObject Binding Published property wrapper",
-            "binding": "Binding State two-way data flow property wrapper",
-            "animation": "animation withAnimation transition animate movement",
-            "gesture": "gesture onTapGesture DragGesture TapGesture interaction",
-            "text": "Text Label string font style attributed",
-            "image": "Image UIImage NSImage photo picture icon",
-            "shape": "Shape Path Circle Rectangle RoundedRectangle geometry",
-            "color": "Color UIColor NSColor foregroundColor backgroundColor",
+        """Minimal query expansion - let vector similarity do the work"""
+        # Don't expand queries with "in" pattern - these are usually precise
+        if " in " in query.lower():
+            return query
+        
+        # Don't expand long queries - they already have context
+        if len(query.split()) > 3:
+            return query
             
-            
-            # UIKit
-            "uikit": "UIKit UIViewController UIView iOS framework",
-            "viewcontroller": "UIViewController ViewController controller screen",
-            "tableview": "UITableView TableView list collection cells",
-            "collectionview": "UICollectionView CollectionView grid layout",
-            
-            # Async/Concurrency
-            "async": "async await Task concurrency AsyncSequence asynchronous",
-            "await": "async await Task concurrency asynchronous",
-            "task": "Task async await concurrency thread",
-            "actor": "actor Actor concurrency thread-safe isolation",
-            
-            # Networking
-            "network": "URLSession URLRequest network HTTP API request",
-            "urlsession": "URLSession network HTTP API request download upload",
-            "api": "API URLSession network REST HTTP request",
-            
-            # Data
-            "json": "JSON JSONEncoder JSONDecoder Codable serialize parse",
-            "codable": "Codable JSONEncoder JSONDecoder encode decode",
-            "coredata": "CoreData NSManagedObject NSPersistentContainer database",
-            "userdefaults": "UserDefaults preferences settings storage",
-            
-            # Metal/Graphics
-            "metal": "Metal MTLDevice MTLCommandBuffer shader GPU graphics",
-            "shader": "shader Metal MTL GPU compute vertex fragment",
-            "graphics": "graphics Metal Core Graphics drawing render",
-            
-            # Common patterns
-            "singleton": "singleton shared instance pattern",
-            "delegate": "delegate protocol delegation pattern",
-            "notification": "notification NotificationCenter observer pattern",
-            "error": "Error throw try catch Result failure exception",
-            
-            # Common typos and variations
-            "colour": "color Color UIColor NSColor",
-            "centre": "center alignment position",
-            "initialise": "initialize init initializer"
+        # Only do minimal framework name normalization
+        query_lower = query.lower()
+        
+        # Common framework name variations that users might type
+        framework_normalizations = {
+            "swiftui": "SwiftUI",
+            "uikit": "UIKit",
+            "appkit": "AppKit",
+            "coredata": "CoreData",
+            "coregraphics": "Core Graphics",
+            "coreanimation": "Core Animation",
+            "corelocation": "Core Location",
+            "coreml": "CoreML",
+            "arkit": "ARKit",
+            "scenekit": "SceneKit",
+            "spritekit": "SpriteKit",
+            "watchkit": "WatchKit",
+            "cloudkit": "CloudKit",
+            "healthkit": "HealthKit",
+            "homekit": "HomeKit",
+            "mapkit": "MapKit",
+            "webkit": "WebKit",
+            "gamekit": "GameKit",
+            "photokit": "PhotoKit",
+            "storekit": "StoreKit",
+            "avfoundation": "AVFoundation",
+            "urlsession": "URLSession",
         }
         
-        query_lower = query.lower()
-        query_words = query_lower.split()
-        expanded_terms = []
-        
-        # Check each word in the query for possible expansions
-        for word in query_words:
-            # Direct match
-            if word in expansions:
-                expanded_terms.append(expansions[word])
-            # Partial match (e.g., "buttons" matches "button")
-            else:
-                for key, expansion in expansions.items():
-                    if key in word or word in key:
-                        expanded_terms.append(expansion)
-                        break
-        
-        # Also check the full query for multi-word matches
-        for key, expansion in expansions.items():
-            if key in query_lower and expansion not in expanded_terms:
-                expanded_terms.append(expansion)
-        
-        # Combine original query with expansions
-        if expanded_terms:
-            # Deduplicate while preserving order
-            seen = set()
-            unique_terms = []
-            for term in expanded_terms:
-                if term not in seen:
-                    seen.add(term)
-                    unique_terms.append(term)
-            
-            expanded_query = f"{query} {' '.join(unique_terms)}"
-            logger.debug(f"Expanded query: {query} -> {expanded_query}")
-            return expanded_query
-        
+        # Check if query is just a framework name that needs normalization
+        for variant, normalized in framework_normalizations.items():
+            if query_lower == variant:
+                return normalized
+                
+        # Otherwise return original query - let embeddings handle semantic similarity
         return query
     
     def preprocess_query(self, query: str) -> str:
-        """Preprocess query to handle common LLM patterns"""
+        """Preprocess query to handle common LLM patterns and camelCase"""
+        import re
+        
+        # Handle camelCase splitting for better embedding matches
+        # This helps with queries like "UILabel" -> "UI Label"
+        def split_camelcase(text):
+            # Add space before capital letters that follow lowercase letters
+            # UILabel -> UI Label, NSViewController -> NS View Controller
+            result = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)
+            # Handle consecutive capitals: UIKit -> UI Kit
+            result = re.sub(r'([A-Z]+)([A-Z][a-z])', r'\1 \2', result)
+            return result
+        
+        # Split camelCase in the original query
+        query_with_spaces = split_camelcase(query)
+        
         # Remove common LLM prefixes/suffixes
         patterns_to_remove = [
             "how to", "how do i", "how can i", "what is", "what are",
@@ -244,16 +208,16 @@ class SimpleRAG:
             "?", "please", "thanks"
         ]
         
-        processed = query.lower()
+        processed = query_with_spaces.lower()
         for pattern in patterns_to_remove:
             processed = processed.replace(pattern, " ")
         
         # Clean up extra spaces and return
         processed = " ".join(processed.split())
         
-        # If we removed everything, return original
+        # If we removed everything, return the camelCase-split version
         if not processed.strip():
-            return query
+            return query_with_spaces
         
         # Capitalize proper nouns
         proper_nouns = ["swiftui", "uikit", "ios", "macos", "metal", "coredata", 
@@ -268,7 +232,13 @@ class SimpleRAG:
                         words[i] = noun.replace("swiftui", "SwiftUI").replace("uikit", "UIKit").replace("ios", "iOS").replace("macos", "macOS").replace("coredata", "CoreData").replace("urlsession", "URLSession").replace("json", "JSON").replace("objc", "ObjC")
                         break
         
-        return " ".join(words)
+        processed = " ".join(words)
+        
+        # Log if we split camelCase
+        if query != query_with_spaces:
+            logger.debug(f"Split camelCase: {query} -> {query_with_spaces}")
+        
+        return processed
     
     async def search(self, 
                     query: str, 
@@ -296,15 +266,43 @@ class SimpleRAG:
             
         start_time = time.time()
         
+        # Store original query for filename matching
+        original_query = query
+        
+        # Check if query contains camelCase
+        has_camelcase = any(c.isupper() for c in query[1:]) and not query.isupper()
+        
         # Preprocess query to handle LLM patterns
-        query = self.preprocess_query(query)
+        processed_query = self.preprocess_query(query)
         
         # Expand query if requested
         if expand_query:
-            query = self.expand_query(query)
+            processed_query = self.expand_query(processed_query)
         
-        # Get embedding for query
-        embedding = self._get_embedding(query)
+        # Determine base search limit
+        query_words = processed_query.lower().split()
+        generic_terms = {"init", "frame", "body", "view", "center", "top", "bottom", 
+                       "leading", "trailing", "padding", "offset", "size", "position"}
+        
+        if len(query_words) == 1 and query_words[0] in generic_terms:
+            base_search_limit = min(limit * 10, 100)
+        elif platform and platform.lower() != "all":
+            base_search_limit = limit * 3
+        else:
+            base_search_limit = limit
+        
+        # For camelCase queries, search with both original and split versions
+        if has_camelcase and original_query != processed_query:
+            # Get embeddings for both versions
+            embedding_original = self._get_embedding(original_query)
+            embedding_processed = self._get_embedding(processed_query)
+            
+            # Use larger limit for dual search to ensure good coverage
+            search_limit = min(base_search_limit * 2, 100)
+        else:
+            # Just use the processed version
+            embedding = self._get_embedding(processed_query)
+            search_limit = base_search_limit
         
         # Build where clause for filtering
         where_clause = {}
@@ -313,22 +311,74 @@ class SimpleRAG:
             where_clause["framework"] = framework
             logger.debug(f"Filtering by framework: {framework}")
         
-        # ChromaDB doesn't support array contains operator for metadata arrays
+        # ChromaDB doesn't support complex operators for string fields
         # We need to do post-query filtering for platform
         if platform and platform.lower() != "all":
             logger.debug(f"Will filter by platform: {platform} (post-query)")
         
         # Search vector store
         try:
-            # Get more results if platform filtering (we'll filter after)
-            search_limit = limit * 3 if (platform and platform.lower() != "all") else limit
-            
-            results = self.collection.query(
-                query_embeddings=[embedding],
-                n_results=search_limit,
-                where=where_clause if where_clause else None,
-                include=["documents", "metadatas", "distances"]
-            )
+            # For camelCase queries, search with both versions
+            if has_camelcase and original_query != processed_query:
+                # Search with original camelCase
+                results_original = self.collection.query(
+                    query_embeddings=[embedding_original],
+                    n_results=search_limit,
+                    where=where_clause if where_clause else None,
+                    include=["documents", "metadatas", "distances"]
+                )
+                
+                # Search with split version
+                results_split = self.collection.query(
+                    query_embeddings=[embedding_processed],
+                    n_results=search_limit,
+                    where=where_clause if where_clause else None,
+                    include=["documents", "metadatas", "distances"]
+                )
+                
+                # Merge results, keeping unique documents
+                seen_paths = set()
+                merged_docs = []
+                merged_metas = []
+                merged_dists = []
+                
+                # Add results from both searches
+                for results in [results_original, results_split]:
+                    if results['documents'] and len(results['documents']) > 0:
+                        docs = results['documents'][0]
+                        metas = results['metadatas'][0]
+                        dists = results['distances'][0]
+                        
+                        for i in range(len(docs)):
+                            file_path = metas[i].get('file_path', '')
+                            if file_path not in seen_paths:
+                                seen_paths.add(file_path)
+                                merged_docs.append(docs[i])
+                                merged_metas.append(metas[i])
+                                merged_dists.append(dists[i])
+                
+                # Sort by distance
+                combined = list(zip(merged_dists, merged_docs, merged_metas))
+                combined.sort(key=lambda x: x[0])
+                
+                # Unzip and limit results
+                if combined:
+                    merged_dists, merged_docs, merged_metas = zip(*combined[:search_limit])
+                    results = {
+                        'documents': [list(merged_docs)],
+                        'metadatas': [list(merged_metas)],
+                        'distances': [list(merged_dists)]
+                    }
+                else:
+                    results = {'documents': [[]], 'metadatas': [[]], 'distances': [[]]}
+            else:
+                # Single search with processed query
+                results = self.collection.query(
+                    query_embeddings=[embedding],
+                    n_results=search_limit,
+                    where=where_clause if where_clause else None,
+                    include=["documents", "metadatas", "distances"]
+                )
             
             # Format results
             formatted_results = []
@@ -346,74 +396,138 @@ class SimpleRAG:
                         if platform.lower() not in doc_platforms:
                             continue  # Skip this result
                     
-                    # Calculate relevance score with exact match boost
+                    # Calculate relevance score
                     base_relevance = 1 - (distances[i] if distances[i] else 0)
                     
-                    # Boost score for exact title matches
+                    # Get metadata
                     title = metadatas[i].get("title", "").lower()
                     api_name = metadatas[i].get("api_name", "").lower()
                     file_path = metadatas[i].get("file_path", "").lower()
                     query_lower = query.lower()
                     
-                    # Extract potential API name from query (first word or last word typically)
-                    query_words = query_lower.split()
+                    # Smart relevance scoring
                     boost = 0.0
                     
-                    # HIGHEST PRIORITY: Check if this is an MCP suggested search pattern
-                    # Pattern: "parent api_name in framework" or "api_name in framework"
-                    if " in " in query_lower and file_path and file_path.strip():
-                        # Extract components from query
-                        parts = query_lower.split(" in ")
+                    # 1. MCP Pattern Detection: "api_name in framework"
+                    if " in " in query_lower:
+                        parts = query_lower.split(" in ", 1)
                         if len(parts) == 2:
-                            search_terms = parts[0].strip().split()
-                            search_framework = parts[1].strip()
+                            search_terms = parts[0].strip()
+                            search_framework = parts[1].strip().split()[0]  # Take first word after "in"
                             
-                            # Check if file path matches the search pattern
-                            # e.g., "asyncimagephase failure in swiftui" should match "documentation/swiftui/asyncimagephase/failure.md"
-                            path_parts = file_path.replace("documentation/", "").replace(".md", "").split("/")
-                            
-                            if len(path_parts) >= 2:
-                                path_framework = path_parts[0].lower()
-                                path_api = path_parts[-1].lower()
+                            # Extract framework and API from file path
+                            if file_path.startswith("documentation/"):
+                                path_clean = file_path.replace("documentation/", "").replace(".md", "")
+                                path_parts = path_clean.split("/")
                                 
-                                # Check if framework matches
-                                if path_framework == search_framework:
-                                    # Check if the API name is in search terms
-                                    if path_api in search_terms:
-                                        # Check if parent is also in search terms (for nested APIs)
-                                        if len(path_parts) > 2 and len(search_terms) > 1:
-                                            path_parent = path_parts[-2].lower()
-                                            if path_parent in search_terms:
-                                                boost = 0.5  # 50% boost for exact MCP pattern match with parent
-                                            else:
-                                                boost = 0.35  # 35% boost for API + framework match
-                                        else:
-                                            boost = 0.4  # 40% boost for exact MCP pattern match
+                                if len(path_parts) >= 2:
+                                    path_framework = path_parts[0].lower()
+                                    
+                                    # Check framework match
+                                    if path_framework == search_framework:
+                                        # Build full API path (e.g., "asyncimagephase/failure")
+                                        api_path = "/".join(path_parts[1:]).lower()
+                                        
+                                        # Check if search terms match the API path
+                                        search_words = search_terms.split()
+                                        
+                                        # Exact path match (highest priority)
+                                        if api_path == search_terms.replace(" ", "/"):
+                                            boost = 0.8
+                                        # All search words are in the path
+                                        elif all(word in api_path for word in search_words):
+                                            boost = 0.6
+                                        # Last component matches (API name)
+                                        elif path_parts[-1].lower() in search_words:
+                                            boost = 0.4
                     
-                    # If no MCP pattern boost, check for other matches
+                    # 2. Direct API/Title matching (if no MCP pattern)
                     if boost == 0.0:
-                        # Check for exact title match
-                        if title and any(word == title for word in query_words):
-                            boost = 0.3  # 30% boost for exact title match
-                        # Check for exact API name match
-                        elif api_name and any(word == api_name for word in query_words):
-                            boost = 0.25  # 25% boost for exact API name match
-                        # Check if title/api_name is in the query as a substring
-                        elif title and title in query_lower:
-                            boost = 0.15  # 15% boost for title substring match
-                        elif api_name and api_name in query_lower:
-                            boost = 0.1  # 10% boost for API name substring match
+                        query_words = query_lower.split()
                         
-                        # Special boost for generic terms with context
-                        generic_terms = ["init", "frame", "body", "view", "center", "top", "bottom"]
-                        for term in generic_terms:
-                            if term in query_lower and term in api_name.lower():
-                                # Check if query has additional context
-                                if len(query_words) > 2:  # Has context beyond just term + framework
-                                    boost = 0.2  # 20% boost for generic term with context
-                                    break
+                        # HIGHEST PRIORITY: Check file name match
+                        # Extract filename from path
+                        if file_path:
+                            filename = file_path.split('/')[-1].replace('.md', '').lower()
+                            
+                            # Also check against original query (before preprocessing)
+                            original_lower = original_query.lower()
+                            
+                            # Exact match with original query (highest priority for camelCase)
+                            if filename == original_lower:
+                                boost = 1.0  # Maximum boost for exact original query match
+                            # For multi-word queries, also check if query as one word matches filename
+                            elif filename == query_lower.replace(' ', ''):
+                                boost = 0.6  # Very high boost for exact filename match
+                            # Single word exact match
+                            elif len(query_words) == 1 and filename == query_words[0]:
+                                boost = 0.5  # Very high boost for exact filename match
+                            # All query words in filename
+                            elif all(word in filename for word in query_words):
+                                boost = 0.4  # High boost for filename containing all words
+                        
+                        # If no filename boost, check other matches
+                        if boost == 0.0:
+                            # For single-word queries
+                            if len(query_words) == 1:
+                                single_word = query_words[0]
+                                
+                                # Check API name
+                                if api_name and single_word in api_name:
+                                    # Penalize generic terms
+                                    generic_terms = {"init", "frame", "body", "view", "center", "top", "bottom", 
+                                                   "leading", "trailing", "padding", "offset", "size", "position"}
+                                    if single_word in generic_terms:
+                                        boost = 0.1  # Small boost for generic terms
+                                    else:
+                                        boost = 0.3  # Good boost for specific terms
+                                
+                                # Check title
+                                elif title and single_word in title:
+                                    boost = 0.25
+                                
+                                # Check if it's in the path at all
+                                elif file_path and f"/{single_word}" in file_path:
+                                    boost = 0.2
+                            
+                            else:
+                                # Multi-word queries
+                                # Check if the entire query matches API name (case insensitive)
+                                query_as_one = query_lower.replace(' ', '')
+                                if api_name and (api_name.replace(' ', '') == query_as_one or api_name == query_lower):
+                                    boost = 0.5  # High boost for exact match
+                                
+                                # Exact API name match (one of the words)
+                                elif api_name and api_name in query_words:
+                                    boost = 0.3
+                                
+                                # Title contains all query words
+                                elif title and all(word in title for word in query_words):
+                                    boost = 0.25
+                                
+                                # API name contains all query words
+                                elif api_name and all(word in api_name for word in query_words):
+                                    boost = 0.2
+                                
+                                # Special handling for queries where we want ALL words to match
+                                # This helps with queries like "View protocol"
+                                elif len(query_words) == 2 and api_name:
+                                    # Both words should be in API name or title
+                                    if all(word in api_name for word in query_words) or (title and all(word in title for word in query_words)):
+                                        boost = 0.3
+                                
+                                # Partial matches
+                                elif title and any(word in title for word in query_words if len(word) > 3):
+                                    boost = 0.1
                     
-                    # Apply boost (capped at 1.0)
+                    # 3. Apply distance-based decay to boost
+                    # Closer results get more of their boost preserved
+                    if boost > 0:
+                        # Distance factor: preserves more boost for closer matches
+                        distance_factor = base_relevance  # This is already 1 - distance
+                        boost = boost * (0.5 + 0.5 * distance_factor)
+                    
+                    # Final score combines base relevance and boost
                     final_relevance = min(1.0, base_relevance + boost)
                     
                     formatted_results.append({
@@ -541,64 +655,32 @@ class SimpleRAG:
             
             def replace_link(match):
                 """Convert relative file paths to MCP search instructions"""
-                full_match = match.group(0)
                 link_text = match.group(1)
                 file_path = match.group(2)
                 
-                # Extract framework and API from path like ../Framework/APIName.md or ../Framework/Parent/APIName.md
+                # Extract framework and API from path like ../Framework/APIName.md
                 path_parts = file_path.strip('../').replace('.md', '').split('/')
                 
                 if len(path_parts) >= 2:
                     framework = path_parts[0]
                     
-                    # For nested paths, include parent context
+                    # Build search query based on path structure
                     if len(path_parts) > 2:
-                        # e.g., SwiftUI/asyncimagephase/failure -> "asyncimagephase failure in SwiftUI"
-                        parent = path_parts[-2]
-                        api_name = path_parts[-1]
-                        
-                        # Clean up link text (remove parentheses for methods)
-                        clean_link_text = link_text.replace('()', '').replace('(_:)', '')
-                        
-                        # Include link text if it's different from api_name for better context
-                        if clean_link_text.lower() != api_name.lower() and clean_link_text.lower() != parent.lower():
-                            search_hint = f"{parent} {api_name} {clean_link_text} in {framework}"
-                        else:
-                            search_hint = f"{parent} {api_name} in {framework}"
+                        # Nested path: e.g., SwiftUI/AsyncImagePhase/Failure
+                        # Create search: "asyncimagephase failure in swiftui"
+                        api_components = [p.lower() for p in path_parts[1:]]
+                        search_hint = f"{' '.join(api_components)} in {framework.lower()}"
                     else:
-                        # e.g., SwiftUI/NavigationView -> "NavigationView in SwiftUI"
-                        api_name = path_parts[-1]
-                        
-                        # Include link text if it provides additional context
-                        if link_text.lower() != api_name.lower():
-                            search_hint = f"{api_name} {link_text} in {framework}"
-                        else:
-                            search_hint = f"{api_name} in {framework}"
+                        # Simple path: e.g., SwiftUI/NavigationView
+                        # Create search: "navigationview in swiftui"
+                        api_name = path_parts[1].lower()
+                        search_hint = f"{api_name} in {framework.lower()}"
                 else:
-                    # Fallback to just the filename
-                    search_hint = path_parts[-1] if path_parts else link_text
+                    # Fallback: just use the link text
+                    search_hint = link_text.lower()
                 
-                # Return transformed link with MCP search instruction
-                # Include framework and additional hints for better search accuracy
-                
-                # Add platform hint if it's a platform-specific framework
-                platform_hint = ""
-                platform_frameworks = {
-                    "UIKit": "ios",
-                    "AppKit": "macos",
-                    "WatchKit": "watchos",
-                    "TVUIKit": "tvos"
-                }
-                if framework in platform_frameworks:
-                    platform_hint = f" | Platform: {platform_frameworks[framework]}"
-                
-                # Add type hint for generic terms
-                type_hint = ""
-                generic_terms = ["init", "frame", "body", "view", "center", "top", "bottom", "leading", "trailing"]
-                if api_name.lower() in generic_terms and len(path_parts) > 2:
-                    type_hint = f" | Context: {path_parts[-2]}"
-                
-                return f"[{link_text}](💡 MCP Search: '{search_hint}' | Framework: {framework}{platform_hint}{type_hint})"
+                # Return simple, clean MCP search instruction
+                return f"[{link_text}](💡 Search: `{search_hint}`)"
             
             # Replace relative markdown links
             content = re.sub(r'\[([^\]]+)\]\((\.\./[^)]+\.md)\)', replace_link, content)
@@ -609,20 +691,14 @@ class SimpleRAG:
             formatted.append("\n---\n")
         
         # Add instruction for Claude at the end
-        formatted.append("\n<!-- MCP Search Instructions:\n"
-                        "Links marked with 💡 should be searched using the MCP search_apple_docs tool.\n"
+        formatted.append("\n<!-- Search Tips for Better Results:\n"
+                        "1. Use the pattern 'api_name in framework' for precise results (e.g., 'navigationview in swiftui')\n"
+                        "2. For nested APIs, include parent: 'asyncimagephase failure in swiftui'\n"
+                        "3. Add context to generic terms: 'frame modifier' instead of just 'frame'\n"
+                        "4. Specify framework when known: 'button swiftui' or 'uibutton uikit'\n"
+                        "5. Always include platform parameter (ios, macos, etc.) for better filtering\n"
                         "\n"
-                        "For best results:\n"
-                        "1. Use the exact search query provided first\n"
-                        "2. If searching for generic terms (init, frame, body), include more context like the parent type\n"
-                        "3. For properties, try searching both with and without parentheses (e.g., \"backgroundColor\" and \"backgroundColor()\")\n"
-                        "4. For nested types, search for the innermost type first (e.g., for Alignment.Vertical.center, search \"center Alignment\")\n"
-                        "5. For platform-specific APIs, always specify the platform parameter (ios, macos, tvos, etc.)\n"
-                        "\n"
-                        "If the first search doesn't find the exact match:\n"
-                        "- Try searching with just \"{api_name} in {framework}\"\n"
-                        "- Try searching with the parent type: \"{parent_type} {api_name} in {framework}\"\n"
-                        "- For very generic terms, add more context from the surrounding documentation\n"
+                        "Links marked with 💡 can be searched using the exact query shown in backticks.\n"
                         "-->")
         
         return "\n".join(formatted)
