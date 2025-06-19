@@ -155,6 +155,7 @@ class SimpleRAG:
             "shape": "Shape Path Circle Rectangle RoundedRectangle geometry",
             "color": "Color UIColor NSColor foregroundColor backgroundColor",
             
+            
             # UIKit
             "uikit": "UIKit UIViewController UIView iOS framework",
             "viewcontroller": "UIViewController ViewController controller screen",
@@ -345,16 +346,89 @@ class SimpleRAG:
                         if platform.lower() not in doc_platforms:
                             continue  # Skip this result
                     
+                    # Calculate relevance score with exact match boost
+                    base_relevance = 1 - (distances[i] if distances[i] else 0)
+                    
+                    # Boost score for exact title matches
+                    title = metadatas[i].get("title", "").lower()
+                    api_name = metadatas[i].get("api_name", "").lower()
+                    file_path = metadatas[i].get("file_path", "").lower()
+                    query_lower = query.lower()
+                    
+                    # Extract potential API name from query (first word or last word typically)
+                    query_words = query_lower.split()
+                    boost = 0.0
+                    
+                    # HIGHEST PRIORITY: Check if this is an MCP suggested search pattern
+                    # Pattern: "parent api_name in framework" or "api_name in framework"
+                    if " in " in query_lower and file_path and file_path.strip():
+                        # Extract components from query
+                        parts = query_lower.split(" in ")
+                        if len(parts) == 2:
+                            search_terms = parts[0].strip().split()
+                            search_framework = parts[1].strip()
+                            
+                            # Check if file path matches the search pattern
+                            # e.g., "asyncimagephase failure in swiftui" should match "documentation/swiftui/asyncimagephase/failure.md"
+                            path_parts = file_path.replace("documentation/", "").replace(".md", "").split("/")
+                            
+                            if len(path_parts) >= 2:
+                                path_framework = path_parts[0].lower()
+                                path_api = path_parts[-1].lower()
+                                
+                                # Check if framework matches
+                                if path_framework == search_framework:
+                                    # Check if the API name is in search terms
+                                    if path_api in search_terms:
+                                        # Check if parent is also in search terms (for nested APIs)
+                                        if len(path_parts) > 2 and len(search_terms) > 1:
+                                            path_parent = path_parts[-2].lower()
+                                            if path_parent in search_terms:
+                                                boost = 0.5  # 50% boost for exact MCP pattern match with parent
+                                            else:
+                                                boost = 0.35  # 35% boost for API + framework match
+                                        else:
+                                            boost = 0.4  # 40% boost for exact MCP pattern match
+                    
+                    # If no MCP pattern boost, check for other matches
+                    if boost == 0.0:
+                        # Check for exact title match
+                        if title and any(word == title for word in query_words):
+                            boost = 0.3  # 30% boost for exact title match
+                        # Check for exact API name match
+                        elif api_name and any(word == api_name for word in query_words):
+                            boost = 0.25  # 25% boost for exact API name match
+                        # Check if title/api_name is in the query as a substring
+                        elif title and title in query_lower:
+                            boost = 0.15  # 15% boost for title substring match
+                        elif api_name and api_name in query_lower:
+                            boost = 0.1  # 10% boost for API name substring match
+                        
+                        # Special boost for generic terms with context
+                        generic_terms = ["init", "frame", "body", "view", "center", "top", "bottom"]
+                        for term in generic_terms:
+                            if term in query_lower and term in api_name.lower():
+                                # Check if query has additional context
+                                if len(query_words) > 2:  # Has context beyond just term + framework
+                                    boost = 0.2  # 20% boost for generic term with context
+                                    break
+                    
+                    # Apply boost (capped at 1.0)
+                    final_relevance = min(1.0, base_relevance + boost)
+                    
                     formatted_results.append({
                         "content": documents[i],
                         "metadata": metadatas[i],
                         "distance": distances[i],
-                        "relevance_score": 1 - (distances[i] if distances[i] else 0)  # Convert distance to relevance
+                        "relevance_score": final_relevance,
+                        "boost_applied": boost > 0  # Track if boost was applied
                     })
-                    
-                    # Stop if we have enough results
-                    if len(formatted_results) >= limit:
-                        break
+                
+                # Re-sort by boosted relevance score
+                formatted_results.sort(key=lambda x: x.get('relevance_score', 0), reverse=True)
+                
+                # Trim to requested limit
+                formatted_results = formatted_results[:limit]
             
             elapsed = time.time() - start_time
             logger.info(f"Search completed in {elapsed:.3f}s, found {len(formatted_results)} results")
@@ -454,10 +528,6 @@ class SimpleRAG:
             # Add metadata
             metadata_lines = [header]
             
-            # Add file path as comment for reference
-            if 'file_path' in meta:
-                metadata_lines.append(f"<!-- File: {meta['file_path']} -->")
-            
             # Add relevance score if available
             if 'relevance_score' in result and result['relevance_score'] is not None:
                 metadata_lines.append(f"*Relevance: {result['relevance_score']:.2%}*")
@@ -466,10 +536,94 @@ class SimpleRAG:
             if meta.get('chunk_index') is not None:
                 metadata_lines.append(f"*Part {meta['chunk_index'] + 1} of {meta.get('total_chunks', '?')}*")
             
+            # Transform relative file links to MCP search instructions
+            import re
+            
+            def replace_link(match):
+                """Convert relative file paths to MCP search instructions"""
+                full_match = match.group(0)
+                link_text = match.group(1)
+                file_path = match.group(2)
+                
+                # Extract framework and API from path like ../Framework/APIName.md or ../Framework/Parent/APIName.md
+                path_parts = file_path.strip('../').replace('.md', '').split('/')
+                
+                if len(path_parts) >= 2:
+                    framework = path_parts[0]
+                    
+                    # For nested paths, include parent context
+                    if len(path_parts) > 2:
+                        # e.g., SwiftUI/asyncimagephase/failure -> "asyncimagephase failure in SwiftUI"
+                        parent = path_parts[-2]
+                        api_name = path_parts[-1]
+                        
+                        # Clean up link text (remove parentheses for methods)
+                        clean_link_text = link_text.replace('()', '').replace('(_:)', '')
+                        
+                        # Include link text if it's different from api_name for better context
+                        if clean_link_text.lower() != api_name.lower() and clean_link_text.lower() != parent.lower():
+                            search_hint = f"{parent} {api_name} {clean_link_text} in {framework}"
+                        else:
+                            search_hint = f"{parent} {api_name} in {framework}"
+                    else:
+                        # e.g., SwiftUI/NavigationView -> "NavigationView in SwiftUI"
+                        api_name = path_parts[-1]
+                        
+                        # Include link text if it provides additional context
+                        if link_text.lower() != api_name.lower():
+                            search_hint = f"{api_name} {link_text} in {framework}"
+                        else:
+                            search_hint = f"{api_name} in {framework}"
+                else:
+                    # Fallback to just the filename
+                    search_hint = path_parts[-1] if path_parts else link_text
+                
+                # Return transformed link with MCP search instruction
+                # Include framework and additional hints for better search accuracy
+                
+                # Add platform hint if it's a platform-specific framework
+                platform_hint = ""
+                platform_frameworks = {
+                    "UIKit": "ios",
+                    "AppKit": "macos",
+                    "WatchKit": "watchos",
+                    "TVUIKit": "tvos"
+                }
+                if framework in platform_frameworks:
+                    platform_hint = f" | Platform: {platform_frameworks[framework]}"
+                
+                # Add type hint for generic terms
+                type_hint = ""
+                generic_terms = ["init", "frame", "body", "view", "center", "top", "bottom", "leading", "trailing"]
+                if api_name.lower() in generic_terms and len(path_parts) > 2:
+                    type_hint = f" | Context: {path_parts[-2]}"
+                
+                return f"[{link_text}](💡 MCP Search: '{search_hint}' | Framework: {framework}{platform_hint}{type_hint})"
+            
+            # Replace relative markdown links
+            content = re.sub(r'\[([^\]]+)\]\((\.\./[^)]+\.md)\)', replace_link, content)
+            
             # Combine metadata and content
             formatted.append("\n".join(metadata_lines))
             formatted.append("\n" + content)
             formatted.append("\n---\n")
+        
+        # Add instruction for Claude at the end
+        formatted.append("\n<!-- MCP Search Instructions:\n"
+                        "Links marked with 💡 should be searched using the MCP search_apple_docs tool.\n"
+                        "\n"
+                        "For best results:\n"
+                        "1. Use the exact search query provided first\n"
+                        "2. If searching for generic terms (init, frame, body), include more context like the parent type\n"
+                        "3. For properties, try searching both with and without parentheses (e.g., \"backgroundColor\" and \"backgroundColor()\")\n"
+                        "4. For nested types, search for the innermost type first (e.g., for Alignment.Vertical.center, search \"center Alignment\")\n"
+                        "5. For platform-specific APIs, always specify the platform parameter (ios, macos, tvos, etc.)\n"
+                        "\n"
+                        "If the first search doesn't find the exact match:\n"
+                        "- Try searching with just \"{api_name} in {framework}\"\n"
+                        "- Try searching with the parent type: \"{parent_type} {api_name} in {framework}\"\n"
+                        "- For very generic terms, add more context from the surrounding documentation\n"
+                        "-->")
         
         return "\n".join(formatted)
     

@@ -25,15 +25,18 @@ Repository: https://github.com/averyy/apple-developer-docs
 
 import asyncio
 import json
+import os
 import sys
 import logging
 from typing import Dict, Any, Optional
+from datetime import datetime, timedelta
 import aiohttp
 
 # ============================================================================
 # CONFIGURATION - Change this to your deployed server
 # ============================================================================
-SERVER_URL = "http://192.168.2.5:8080/mcp/"  # Remote server URL
+# Check environment variable first (for local client override)
+SERVER_URL = os.getenv('MCP_SERVER_URL', "http://192.168.2.5:8080/mcp/")  # Remote server URL
 
 # Setup logging
 logging.basicConfig(
@@ -52,21 +55,107 @@ class MCPRemoteProxy:
             self.server_url += '/'
         self.session: Optional[aiohttp.ClientSession] = None
         self.session_id: Optional[str] = None
+        self.session_created_at: Optional[datetime] = None
+        self._reconnection_lock = asyncio.Lock()
+        self._last_activity = datetime.now()
         
     async def start(self):
         """Initialize the HTTP session"""
-        self.session = aiohttp.ClientSession()
+        # Create session with connection management
+        connector = aiohttp.TCPConnector(
+            limit=10,
+            limit_per_host=5,
+            ttl_dns_cache=300,
+            force_close=True
+        )
+        timeout = aiohttp.ClientTimeout(total=120, connect=10)
+        self.session = aiohttp.ClientSession(
+            connector=connector,
+            timeout=timeout
+        )
         logger.debug(f"Initialized session for {self.server_url}")
         
     async def stop(self):
         """Clean up resources"""
         if self.session:
             await self.session.close()
+            self.session = None
             
+    def _is_session_error(self, status: int, error_text: str) -> bool:
+        """Check if the error is session-related"""
+        # Common session error patterns
+        if status == 400 and "No valid session ID" in error_text:
+            return True
+        if status == 401:  # Unauthorized
+            return True
+        if status == 403 and "session" in error_text.lower():
+            return True
+        if "session expired" in error_text.lower():
+            return True
+        # Some servers return 500 for session errors during initialization
+        if status == 500 and self.session_id and self.session_id != "":
+            # If we have a session ID and get 500, it might be invalid
+            # Only treat as session error if we had a non-empty session
+            return True
+        return False
+    
+    def _should_refresh_session(self) -> bool:
+        """Check if session should be proactively refreshed"""
+        if not self.session_created_at:
+            return False
+        age = datetime.now() - self.session_created_at
+        return age > timedelta(hours=23)
+    
+    async def _reconnect_and_retry(self, original_request: Dict[str, Any]) -> None:
+        """Reconnect and retry the original request"""
+        logger.info("Reconnecting session...")
+        
+        # Clear session state
+        self.session_id = None
+        self.session_created_at = None
+        
+        # Recreate HTTP session to avoid stale connections
+        if self.session:
+            await self.session.close()
+            self.session = None
+        await self.start()
+        
+        # Send initialize request
+        logger.info("Sending automatic re-initialization")
+        init_request = {
+            "jsonrpc": "2.0",
+            "id": f"auto-init-{original_request.get('id', 'unknown')}",
+            "method": "initialize",
+            "params": {
+                "protocolVersion": "2024-11-05",
+                "capabilities": {"tools": {}},
+                "clientInfo": {
+                    "name": "apple-docs-remote",
+                    "version": "1.0.0"
+                }
+            }
+        }
+        
+        await self.send_request(init_request)
+        
+        # Retry original request
+        logger.info("Retrying original request after re-initialization")
+        await self.send_request(original_request)
+    
     async def send_request(self, request: Dict[str, Any]) -> None:
         """Send request to HTTP server and handle SSE response"""
         if not self.session:
             await self.start()
+        
+        # Check if session needs proactive refresh
+        if self._should_refresh_session() and request.get("method") != "initialize":
+            logger.info("Session is old, proactively refreshing")
+            async with self._reconnection_lock:
+                if self._should_refresh_session():
+                    await self._reconnect_and_retry(request)
+                    return
+        
+        self._last_activity = datetime.now()
             
         headers = {
             'Content-Type': 'application/json',
@@ -89,6 +178,7 @@ class MCPRemoteProxy:
                 # Store session ID
                 if 'mcp-session-id' in response.headers:
                     self.session_id = response.headers['mcp-session-id']
+                    self.session_created_at = datetime.now()
                     logger.debug(f"Got session ID: {self.session_id}")
                 
                 # Check content type
@@ -96,6 +186,32 @@ class MCPRemoteProxy:
                 
                 if response.status != 200:
                     error_text = await response.text()
+                    
+                    # Check if it's a session error
+                    if self._is_session_error(response.status, error_text):
+                        logger.info(f"Session error detected: {response.status} - {error_text[:100]}")
+                        
+                        # If this is an initialize request, don't retry
+                        if request.get("method") == "initialize":
+                            error_response = {
+                                "jsonrpc": "2.0",
+                                "id": request.get("id"),
+                                "error": {
+                                    "code": -32603,
+                                    "message": f"HTTP {response.status}: {error_text}"
+                                }
+                            }
+                            print(json.dumps(error_response, separators=(',', ':')))
+                            sys.stdout.flush()
+                            return
+                        
+                        # Handle reconnection with lock
+                        async with self._reconnection_lock:
+                            # Double-check we still need to reconnect
+                            if self._is_session_error(response.status, error_text):
+                                await self._reconnect_and_retry(request)
+                                return
+                    
                     error_response = {
                         "jsonrpc": "2.0",
                         "id": request.get("id"),
