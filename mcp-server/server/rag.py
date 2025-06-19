@@ -656,25 +656,40 @@ class SimpleRAG:
             def replace_link(match):
                 """Convert relative file paths to MCP search instructions"""
                 link_text = match.group(1)
-                file_path = match.group(2)
+                # Group 2 is the optional ../ prefix, group 3 is the actual path
+                file_path = match.group(3)
                 
-                # Extract framework and API from path like ../Framework/APIName.md
-                path_parts = file_path.strip('../').replace('.md', '').split('/')
+                # Get the current framework from metadata
+                current_framework = meta.get('framework', 'SwiftUI')
                 
-                if len(path_parts) >= 2:
-                    framework = path_parts[0]
+                # Extract framework and API from path like Framework/APIName.md
+                path_parts = file_path.replace('.md', '').split('/')
+                
+                if len(path_parts) == 1:
+                    # Single component: e.g., Button.md - same framework
+                    api_name = path_parts[0].lower()
+                    search_hint = f"{api_name} in {current_framework.lower()}"
+                elif len(path_parts) == 2:
+                    # Two components - could be Framework/API or Type/Property
+                    first_part = path_parts[0]
+                    second_part = path_parts[1]
                     
-                    # Build search query based on path structure
-                    if len(path_parts) > 2:
-                        # Nested path: e.g., SwiftUI/AsyncImagePhase/Failure
-                        # Create search: "asyncimagephase failure in swiftui"
-                        api_components = [p.lower() for p in path_parts[1:]]
-                        search_hint = f"{' '.join(api_components)} in {framework.lower()}"
-                    else:
-                        # Simple path: e.g., SwiftUI/NavigationView
-                        # Create search: "navigationview in swiftui"
-                        api_name = path_parts[1].lower()
+                    # Check if first part looks like a framework (capitalized)
+                    if first_part[0].isupper() and first_part not in ['AsyncImagePhase', 'AccessibilityTraits']:
+                        # Likely Framework/API: e.g., SwiftUI/NavigationView
+                        framework = first_part
+                        api_name = second_part.lower()
                         search_hint = f"{api_name} in {framework.lower()}"
+                    else:
+                        # Likely Type/Property in current framework: e.g., accessibilitytraits/isbutton
+                        parent_type = first_part.lower()
+                        property_name = second_part.lower()
+                        search_hint = f"{property_name} {parent_type} in {current_framework.lower()}"
+                elif len(path_parts) > 2:
+                    # Nested path: e.g., SwiftUI/AsyncImagePhase/Failure
+                    framework = path_parts[0]
+                    api_components = [p.lower() for p in path_parts[1:]]
+                    search_hint = f"{' '.join(api_components)} in {framework.lower()}"
                 else:
                     # Fallback: just use the link text
                     search_hint = link_text.lower()
@@ -682,8 +697,8 @@ class SimpleRAG:
                 # Return simple, clean MCP search instruction
                 return f"[{link_text}](💡 Search: `{search_hint}`)"
             
-            # Replace relative markdown links
-            content = re.sub(r'\[([^\]]+)\]\((\.\./[^)]+\.md)\)', replace_link, content)
+            # Replace relative markdown links (both with and without ../ prefix)
+            content = re.sub(r'\[([^\]]+)\]\((\.\.\/)?([^)]+\.md)\)', replace_link, content)
             
             # Combine metadata and content
             formatted.append("\n".join(metadata_lines))

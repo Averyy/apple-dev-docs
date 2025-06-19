@@ -9,6 +9,7 @@ This document consolidates all search improvements made to the MCP server's RAG 
 **Date**: June 19, 2025  
 **Initial Success Rate**: 84.6% (11/13 core tests passed)
 **After CamelCase Fix**: 90.9% precision@1, MRR 0.955 🌟
+**After Link Transformation**: All documentation links now show as actionable search suggestions ✅
 
 ## Key Improvements
 
@@ -259,8 +260,43 @@ python test_comprehensive_metrics.py
 5. **Failure Categorization**: Understands why searches fail
 6. **Ground Truth Testing**: Compares against expected results
 
+## Link Transformation to Search Suggestions ✅ NEW!
+
+**Problem**: Search results were showing local markdown file paths in "See Also" sections instead of actionable search suggestions.
+
+**Solution**: Implemented `transform_links_to_search()` function that converts all markdown links to MCP search suggestions.
+
+### Implementation Details
+
+The transformation handles various link patterns:
+
+1. **Simple links**: `[Button](Button.md)` → `[Button](💡 Search: 'button in swiftui')`
+
+2. **Two-level links**:
+   - Framework/API: `[NavigationView](../SwiftUI/NavigationView.md)` → `[NavigationView](💡 Search: 'navigationview in swiftui')`
+   - Type/Property: `[Color.RGBColorSpace](Color/RGBColorSpace.md)` → `[Color.RGBColorSpace](💡 Search: 'rgbcolorspace in color')`
+
+3. **Deep nested links**: `[View.Background.Style.Material](View/Background/Style/Material.md)` → `[View.Background.Style.Material](💡 Search: 'material style background view in swiftui')`
+
+4. **Entitlements pattern**: `[com.apple.developer.carplay-audio](entitlements/com.apple.developer.carplay-audio.md)` → `[com.apple.developer.carplay-audio](💡 Search: 'com.apple.developer.carplay-audio in entitlements')`
+
+### Key Features
+
+- **Context-aware**: Determines if path components are frameworks or types based on common framework names
+- **Handles all depths**: Works with paths of any depth (1 to N levels)
+- **Cross-framework support**: Properly handles `../Framework/API` patterns
+- **Optimized for search**: Generates queries that will find the target documentation
+
+### Integration
+
+The transformation is applied in both formatting functions:
+- `format_concise_results()` - For brief search results
+- `format_full_results()` - For detailed search results
+
+This ensures all documentation links in MCP responses are actionable search suggestions rather than unusable file paths.
+
 ## Conclusion
 
-The search improvements provide significantly better results without modifying user input. The system now includes helpful guidance for constructing better searches. MCP pattern matching works excellently, and platform filtering functions correctly. The improvements focus on better scoring and ranking rather than query modification, maintaining predictable behavior while enhancing accuracy.
+The search improvements provide significantly better results without modifying user input. The system now includes helpful guidance for constructing better searches, and all documentation links are transformed into actionable search suggestions. MCP pattern matching works excellently, and platform filtering functions correctly. The improvements focus on better scoring and ranking rather than query modification, maintaining predictable behavior while enhancing accuracy.
 
-With the new comprehensive metrics testing, we can confidently measure search quality and ensure improvements actually help users find what they're looking for.
+With the new comprehensive metrics testing and link transformation, we can confidently measure search quality and ensure users can easily navigate between related documentation pages.
