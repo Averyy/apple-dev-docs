@@ -7,7 +7,7 @@ Using the official MCP Python SDK with FastMCP framework
 import os
 import re
 import sys
-from typing import Annotated, Any
+from typing import Annotated, Any, Optional
 
 from mcp.server.fastmcp import FastMCP
 from pydantic import Field
@@ -82,7 +82,7 @@ async def search_apple_docs(
     query: Annotated[str, Field(
         description="Search query (e.g., 'SwiftUI Button', 'async await')"
     )],
-    framework: Annotated[str | None, Field(
+    framework: Annotated[Optional[str], Field(
         description="Optional framework filter (e.g., 'SwiftUI', 'UIKit') - defaults to all frameworks"
     )] = None,
     platform: Annotated[str, Field(
@@ -133,7 +133,7 @@ async def search_apple_docs(
 
 @mcp.tool()
 async def list_frameworks(
-    platform: Annotated[str | None, Field(
+    platform: Annotated[Optional[str], Field(
         description="Platform filter - defaults to 'all' to show frameworks for all platforms",
         json_schema_extra={
             "enum": ["ios", "ipados", "macos", "tvos", "watchos",
