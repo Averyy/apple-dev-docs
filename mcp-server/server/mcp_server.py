@@ -7,7 +7,7 @@ Using the official MCP Python SDK with FastMCP framework
 import os
 import re
 import sys
-from typing import Annotated, Any, Optional
+from typing import Annotated, Any, Optional, Union
 
 from mcp.server.fastmcp import FastMCP
 from pydantic import Field
@@ -82,9 +82,10 @@ async def search_apple_docs(
     query: Annotated[str, Field(
         description="Search query (e.g., 'SwiftUI Button', 'async await')"
     )],
-    framework: Annotated[Optional[str], Field(
-        description="Optional framework filter (e.g., 'SwiftUI', 'UIKit') - defaults to all frameworks"
-    )] = None,
+    framework: Annotated[str, Field(
+        description="Optional framework filter (e.g., 'SwiftUI', 'UIKit') - leave empty for all frameworks",
+        default=""
+    )] = "",
     platform: Annotated[str, Field(
         description="Platform filter - defaults to 'all' for cross-platform results",
         json_schema_extra={
@@ -116,7 +117,7 @@ async def search_apple_docs(
     try:
         results = await rag.search(
             query=query,
-            framework=framework,
+            framework=framework if framework else None,
             platform=platform,
             limit=limit,
             expand_query=True
@@ -133,12 +134,13 @@ async def search_apple_docs(
 
 @mcp.tool()
 async def list_frameworks(
-    platform: Annotated[Optional[str], Field(
+    platform: Annotated[str, Field(
         description="Platform filter - defaults to 'all' to show frameworks for all platforms",
         json_schema_extra={
             "enum": ["ios", "ipados", "macos", "tvos", "watchos",
-                     "visionos", "catalyst", "all", None]
-        }
+                     "visionos", "catalyst", "all"]
+        },
+        default="all"
     )] = "all"
 ) -> str:
     """List Apple frameworks with optional platform filter"""
@@ -148,7 +150,7 @@ async def list_frameworks(
     rag = get_rag_engine()
 
     try:
-        framework_data = rag.list_frameworks(platform)
+        framework_data = rag.list_frameworks(platform if platform != "all" else None)
 
         lines = []
 
