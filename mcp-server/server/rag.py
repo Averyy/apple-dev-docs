@@ -300,8 +300,14 @@ class SimpleRAG:
             # Use larger limit for dual search to ensure good coverage
             search_limit = min(base_search_limit * 2, 100)
         else:
-            # Just use the processed version
-            embedding = self._get_embedding(processed_query)
+            # For generic single terms, enhance the query context
+            if len(query_words) == 1 and query_words[0] in generic_terms:
+                # Add context to help embedding
+                enhanced_query = f"{processed_query} API method property modifier"
+                embedding = self._get_embedding(enhanced_query)
+            else:
+                # Just use the processed version
+                embedding = self._get_embedding(processed_query)
             search_limit = base_search_limit
         
         # Build where clause for filtering
@@ -398,6 +404,29 @@ class SimpleRAG:
                     
                     # Calculate relevance score
                     base_relevance = 1 - (distances[i] if distances[i] else 0)
+                    
+                    # Multi-term query boost
+                    multi_term_boost = 0.0
+                    query_terms = original_query.lower().split()
+                    if len(query_terms) > 1:
+                        # Combine searchable text
+                        searchable_text = f"{metadatas[i].get('title', '')} {metadatas[i].get('api_name', '')} {metadatas[i].get('file_path', '')} {documents[i][:500]}".lower()
+                        
+                        # Count how many query terms are present
+                        terms_found = sum(1 for term in query_terms if term in searchable_text)
+                        coverage_ratio = terms_found / len(query_terms)
+                        
+                        # Strong boost if ALL terms are found
+                        if coverage_ratio == 1.0:
+                            multi_term_boost = 0.4
+                            
+                            # Extra boost if all terms appear in title or API name
+                            title_api = f"{metadatas[i].get('title', '')} {metadatas[i].get('api_name', '')}".lower()
+                            if all(term in title_api for term in query_terms):
+                                multi_term_boost += 0.3
+                        # Partial boost for partial matches
+                        elif coverage_ratio >= 0.5:
+                            multi_term_boost = 0.2 * coverage_ratio
                     
                     # Get metadata
                     title = metadatas[i].get("title", "").lower()
@@ -527,8 +556,8 @@ class SimpleRAG:
                         distance_factor = base_relevance  # This is already 1 - distance
                         boost = boost * (0.5 + 0.5 * distance_factor)
                     
-                    # Final score combines base relevance and boost
-                    final_relevance = min(1.0, base_relevance + boost)
+                    # Final score combines base relevance, boost, and multi-term boost
+                    final_relevance = min(1.0, base_relevance + boost + multi_term_boost)
                     
                     formatted_results.append({
                         "content": documents[i],

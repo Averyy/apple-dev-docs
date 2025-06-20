@@ -1,5 +1,32 @@
 # Claude Guidelines
 
+## Deployment Testing Instructions
+
+**CRITICAL: How to test the deployed MCP server at 192.168.2.5**
+
+The deployed server requires specific parameters and flow:
+
+1. **Protocol Version**: Must use `"2024-11-05"` not `"1.0.0"`
+2. **Session Management**: Server returns session ID in `mcp-session-id` header after initialize
+3. **SSE Responses**: All responses are Server-Sent Events format: `data: {json}`
+4. **Link Transformation**: Only visible with `include_full_content: True` parameter
+5. **Required Headers**: 
+   - `Authorization: Bearer $MCP_API_KEY`
+   - `Accept: application/json, text/event-stream`
+   - `MCP-Session-Id: {session_id}` (after initialize)
+
+Correct test sequence:
+```bash
+# Test the deployed server
+cd mcp-server && python3 tests/test_deployed_server.py
+```
+
+Common mistakes to avoid:
+- Using wrong protocol version
+- Not including session ID in subsequent requests
+- Forgetting `include_full_content: True` when testing link transformation
+- Not parsing SSE responses correctly
+
 ## Project Overview
 
 A comprehensive Python tool that scrapes Apple's entire developer documentation ecosystem, converts it into searchable vector embeddings, and provides an MCP (Model Context Protocol) server for AI-powered documentation search with platform-aware filtering.
