@@ -83,10 +83,10 @@ async def search_apple_docs(
         description="Search query (e.g., 'SwiftUI Button', 'async await')"
     )],
     framework: Annotated[str | None, Field(
-        description="Optional framework filter (e.g., 'SwiftUI', 'UIKit')"
+        description="Optional framework filter (e.g., 'SwiftUI', 'UIKit') - defaults to all frameworks"
     )] = None,
     platform: Annotated[str, Field(
-        description="Platform filter - use 'all' for cross-platform results",
+        description="Platform filter - defaults to 'all' for cross-platform results",
         json_schema_extra={
             "enum": ["ios", "ipados", "macos", "tvos", "watchos",
                      "visionos", "catalyst", "all"]
@@ -101,8 +101,8 @@ async def search_apple_docs(
         le=MAX_SEARCH_LIMIT
     )] = DEFAULT_SEARCH_LIMIT,
     include_full_content: Annotated[bool, Field(
-        description="Return full document content (default: false)"
-    )] = False
+        description="Return full document content (default: true for better context)"
+    )] = True
 ) -> str:
     """Search Apple developer documentation across 341+ frameworks"""
 
@@ -134,12 +134,12 @@ async def search_apple_docs(
 @mcp.tool()
 async def list_frameworks(
     platform: Annotated[str | None, Field(
-        description="Optional platform filter",
+        description="Platform filter - defaults to 'all' to show frameworks for all platforms",
         json_schema_extra={
             "enum": ["ios", "ipados", "macos", "tvos", "watchos",
                      "visionos", "catalyst", "all", None]
         }
-    )] = None
+    )] = "all"
 ) -> str:
     """List Apple frameworks with optional platform filter"""
 
