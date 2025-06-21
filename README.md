@@ -33,7 +33,7 @@ A comprehensive MCP (Model Context Protocol) server providing AI-powered search 
 
 #### Option 2: Remote Client (Connects to deployed server)
 1. **Download**: `curl -O https://raw.githubusercontent.com/averyy/apple-developer-docs/main/apple_docs_remote_client.py`
-2. **Edit server IP**: Change line 35 to your server's IP address
+2. **Configure server URL**: Set `MCP_SERVER_URL` environment variable or edit the default
 3. **Add to Claude config**:
    ```json
    {
@@ -159,6 +159,7 @@ OPENAI_API_KEY=sk-proj-xxxxx
 # Optional
 MCP_PORT=8080
 VECTORSTORE_PATH=./vectorstore
+MCP_SERVER_URL=http://192.168.2.5:8080/mcp/  # For remote server tests/clients
 ```
 
 ## Health Check

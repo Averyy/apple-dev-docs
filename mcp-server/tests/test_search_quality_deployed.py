@@ -24,7 +24,7 @@ load_dotenv(env_path)
 
 # Configuration
 API_KEY = os.getenv("MCP_API_KEY")
-DEPLOYED_SERVER_URL = "http://192.168.2.5:8080/mcp/"
+DEPLOYED_SERVER_URL = os.getenv("MCP_SERVER_URL", "http://192.168.2.5:8080/mcp/")
 
 
 @dataclass
