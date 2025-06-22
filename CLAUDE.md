@@ -1,5 +1,9 @@
 # Claude Guidelines
 
+## Git Commit Rules
+
+**NEVER add Claude attribution to commits** - Do not include "Co-Authored-By: Claude" or any other attribution. Keep commits simple with just the message.
+
 ## Deployment Testing Instructions
 
 **CRITICAL: How to test the deployed MCP server at 192.168.2.5**
