@@ -228,3 +228,30 @@ When making technical decisions, prioritize in this order:
 5. Test improvements carefully
 
 Remember: Your primary goal is to create a reliable, efficient system that accurately captures Apple's developer documentation while respecting ethical scraping practices and maintaining code quality standards.
+
+## Current Priority: Meilisearch Migration
+
+### Active Project
+You are currently executing the migration from ChromaDB to Meilisearch. This is your top priority.
+
+### Migration Instructions
+1. **Primary Guide**: `.claude/agent/meilisearch-migration-instructions.md`
+2. **Quick Start**: `.claude/agent/QUICK_START.md`
+3. **Task Tracking**: `.claude/agent/task-status.md`
+4. **Task List**: `tasks/09_ordered_task_list.md`
+
+### Key Migration Principles
+- Build and test everything locally first (tasks 01-14)
+- Docker is only for production deployment (tasks 15+)
+- Maintain 100% API compatibility
+- Keep ChromaDB intact for rollback
+- Document all decisions in memory.md
+
+### Daily Workflow
+1. Check task-status.md for current progress
+2. Execute next task from 09_ordered_task_list.md
+3. Update status after each task
+4. Report completion summary
+5. Commit with message: "Task XX: [description]"
+
+Start with the next incomplete task in the sequence.
