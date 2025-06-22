@@ -30,24 +30,29 @@ Claude: Let me search the Apple documentation for SwiftUI Button styling...
 
 ## 🚀 Quick Start
 
-### Option 1: Connect to My Server (Easiest)
+### Option 1: Run Your Own Server (Docker)
 
 ```bash
-# Download the client
-curl -O https://raw.githubusercontent.com/averyy/apple-developer-docs/main/apple_docs_remote_client.py
-
-# Add to Claude (see Configuration section below)
+# Quick deployment with Docker
+docker run -d \
+  -p 8080:8080 \
+  -e OPENAI_API_KEY=your-key-here \
+  -e MCP_API_KEY=$(openssl rand -hex 32) \
+  ghcr.io/averyy/apple-dev-docs-mcp:latest
 ```
 
-### Option 2: Run Your Own Server
+**Note:** First-time setup requires building the vector index (~4-6 hours, ~$5 cost). See [Deployment Guide](docs/DEPLOYMENT_GUIDE.md) for details.
+
+### Option 2: Local Development Setup
 
 ```bash
-# Quick Docker deployment
+# Clone and setup
 git clone https://github.com/averyy/apple-developer-docs.git
-cd apple-developer-docs
-cp .env.example .env
-# Add your OPENAI_API_KEY to .env
-cd mcp-server/deploy && ./quick-start.sh
+cd apple-developer-docs/mcp-server
+python3 -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+# Build index: python scripts/build_index.py --force
+# Run: python server/mcp_server.py
 ```
 
 ## 📋 Configuration
@@ -60,7 +65,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
     "apple-docs": {
       "type": "stdio",
       "command": "python3",
-      "args": ["/path/to/apple_docs_remote_client.py"]
+      "args": ["/path/to/apple-developer-docs/apple_docs_client.py"]
     }
   }
 }
@@ -73,7 +78,7 @@ Add to `.claude/mcp_servers.json`:
   "apple-docs": {
     "type": "stdio",
     "command": "python3",
-    "args": ["/path/to/apple_docs_remote_client.py"]
+    "args": ["/path/to/apple-developer-docs/apple_docs_client.py"]
   }
 }
 ```
