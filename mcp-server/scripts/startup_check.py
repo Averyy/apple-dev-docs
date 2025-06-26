@@ -37,11 +37,26 @@ def wait_for_meilisearch(url: str, api_key: str, max_attempts: int = 30):
 def check_index_status(client: meilisearch.Client, index_name: str = "apple-docs") -> tuple[bool, int]:
     """Check if index exists and has documents."""
     try:
+        # Get all indexes to check if ours exists
+        indexes = client.get_indexes()
+        index_exists = False
+        
+        for idx in indexes.get('results', []):
+            if idx.uid == index_name:
+                index_exists = True
+                break
+        
+        if not index_exists:
+            return False, 0
+            
+        # Index exists, now get document count
         index = client.index(index_name)
         stats = index.get_stats()
         doc_count = stats.get('numberOfDocuments', 0)
         return True, doc_count
-    except Exception:
+    except Exception as e:
+        # Log the error for debugging
+        console.print(f"[yellow]Warning: Error checking index status: {e}[/yellow]")
         return False, 0
 
 def get_last_index_time() -> datetime | None:
@@ -157,6 +172,10 @@ def main():
     # Check if we need to re-index based on hash timestamps
     needs_index, reason = needs_reindexing()
     
+    # Debug logging
+    console.print(f"[dim]Index exists: {index_exists}, Doc count: {doc_count:,}, Needs reindex: {needs_index}[/dim]")
+    console.print(f"[dim]Reason: {reason}[/dim]")
+    
     if not index_exists or doc_count < 300000 or needs_index:
         if not index_exists:
             console.print("⚠️  Index does not exist", style="yellow")
@@ -176,19 +195,24 @@ def main():
         if run_indexing():
             # Wait a bit for Meilisearch to update stats
             time.sleep(2)
+            # Force save the index timestamp immediately after indexing
+            save_index_time()
+            console.print(f"💾 Saved index timestamp", style="dim")
             
             # Verify indexing worked with retries
-            for retry in range(5):
-                _, new_count = check_index_status(client)
-                if new_count >= 300000:
+            for retry in range(10):  # More retries
+                index_exists, new_count = check_index_status(client)
+                if index_exists and new_count >= 300000:
                     console.print(f"✅ Index ready with {new_count:,} documents!", style="green")
                     break
-                elif retry < 4:
-                    time.sleep(2)
+                elif retry < 9:
+                    time.sleep(3)  # Longer wait between retries
                 else:
-                    # Only show warning if it's still 0 after retries
-                    if new_count == 0:
-                        console.print(f"⚠️  Index stats not updated yet (Meilisearch may still be processing)", style="yellow")
+                    # After all retries
+                    if not index_exists:
+                        console.print(f"❌ Index creation may have failed", style="red")
+                    elif new_count == 0:
+                        console.print(f"⚠️  Index created but stats not updated yet (Meilisearch may still be processing)", style="yellow")
                     else:
                         console.print(f"✅ Index ready with {new_count:,} documents!", style="green")
         else:

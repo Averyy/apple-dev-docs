@@ -105,7 +105,7 @@ class MeilisearchIndexer:
         """Find all markdown files in documentation directory"""
         return list(self.docs_path.rglob("*.md"))
     
-    def ensure_index_exists(self, force_rebuild: bool = True):
+    def ensure_index_exists(self, force_rebuild: bool = False):
         """Create index if it doesn't exist and configure it"""
         try:
             index = self.client.index(self.index_name)
@@ -242,16 +242,21 @@ class MeilisearchIndexer:
             dry_run: If True, don't actually index documents
             force: If True, reindex all files regardless of hash
         """
-        console.print("\n[bold]Apple Documentation Meilisearch Indexer - Full Rebuild Mode[/bold]\n")
-        console.print("[yellow]⚠️  This will delete and rebuild the entire index from scratch[/yellow]")
+        if force:
+            console.print("\n[bold]Apple Documentation Meilisearch Indexer - Full Rebuild Mode[/bold]\n")
+            console.print("[yellow]⚠️  This will delete and rebuild the entire index from scratch[/yellow]")
+        else:
+            console.print("\n[bold]Apple Documentation Meilisearch Indexer[/bold]\n")
         
-        # Always do a clean rebuild - delete and recreate index
+        # Only rebuild if forced
         if not dry_run:
-            self.ensure_index_exists(force_rebuild=True)
+            self.ensure_index_exists(force_rebuild=force)
         
-        # Since we're doing a full rebuild, we always process all files
-        # But we still save hashes for future reference
-        existing_hashes = {}
+        # Load existing hashes unless force rebuild
+        if force:
+            existing_hashes = {}
+        else:
+            existing_hashes = self.load_hashes()
         new_hashes = {}
         
         # Discover files
@@ -274,7 +279,10 @@ class MeilisearchIndexer:
             all_files = all_files[:limit]
             console.print(f"[yellow]Limited to {limit} files[/yellow]")
         
-        console.print(f"\n🔄 Full rebuild mode - processing all {len(all_files)} files")
+        if force:
+            console.print(f"\n🔄 Full rebuild mode - processing all {len(all_files)} files")
+        else:
+            console.print(f"\n📋 Processing {len(all_files)} files (checking for changes)...")
         
         console.print(f"\n📋 Existing hashes: {len(existing_hashes)} files")
         
@@ -298,8 +306,12 @@ class MeilisearchIndexer:
                 file_hash = self.compute_file_hash(file_path)
                 relative_path = file_path.relative_to(self.docs_path)
                 
-                # Since we're doing a full rebuild, process all files
-                # (No skipping based on hashes)
+                # Check if file needs processing
+                if not force and str(relative_path) in existing_hashes:
+                    if existing_hashes[str(relative_path)] == file_hash:
+                        self.stats['skipped'] += 1
+                        progress.update(task, advance=1)
+                        continue
                 
                 # Process file
                 documents = self.process_file(file_path)
@@ -317,17 +329,20 @@ class MeilisearchIndexer:
         
         # Index documents
         if documents_to_index and not dry_run:
-            console.print(f"\n📤 Indexing {len(documents_to_index)} documents to fresh Meilisearch index...")
+            console.print(f"\n📤 Indexing {len(documents_to_index)} documents to Meilisearch...")
             self.index_documents(documents_to_index)
         elif dry_run:
-            console.print(f"\n[yellow]Dry run: Would index {len(documents_to_index)} documents to fresh index[/yellow]")
+            console.print(f"\n[yellow]Dry run: Would index {len(documents_to_index)} documents[/yellow]")
         else:
-            console.print("\n[red]Warning: No documents found to index![/red]")
+            console.print("\n[green]No new or changed documents to index[/green]")
         
         # Save hashes for next run
-        if not dry_run and new_hashes:
-            # Save all processed hashes
-            all_hashes = new_hashes
+        if not dry_run and (new_hashes or force):
+            # Merge with existing hashes unless force mode
+            if force:
+                all_hashes = new_hashes
+            else:
+                all_hashes = {**existing_hashes, **new_hashes}
             
             # Ensure hash directory exists
             self.hash_file.parent.mkdir(parents=True, exist_ok=True)
@@ -347,6 +362,7 @@ class MeilisearchIndexer:
         
         table.add_row("Total Files", str(self.stats['total_files']))
         table.add_row("Files Processed", str(self.stats['processed']))
+        table.add_row("Files Skipped", str(self.stats['skipped']))
         table.add_row("Documents Created", str(self.stats['chunks_created']))
         table.add_row("Errors", str(self.stats['errors']) if self.stats['errors'] == 0 else f"[red]{self.stats['errors']}[/red]")
         table.add_row("Duration", f"{duration:.2f} seconds")

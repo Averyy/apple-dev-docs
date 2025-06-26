@@ -68,6 +68,10 @@ docker-compose up -d --build
 # Check progress: docker logs -f apple-docs-mcp
 # (All documentation is already included and up to date)
 
+# ⚠️ INITIAL INDEXING: The first run will use significant CPU and memory
+# for 5-10 minutes while indexing 340,000+ documents. This is normal!
+# After indexing completes, resource usage drops to minimal levels.
+
 # Server is now accessible at http://YOUR_SERVER_IP:8080/mcp
 ```
 
@@ -233,8 +237,9 @@ Browse all 360 available frameworks with document counts.
 - Python 3.11+ or Docker
 - Meilisearch master key (for search engine)
 - MCP API key (for remote deployments only, not required for local)
-- 1.5GB RAM
+- 1.5GB RAM (4GB+ recommended during initial indexing)
 - 1GB disk space
+- CPU: High usage during indexing (5-10 min), minimal afterwards
 
 ## 🔧 Advanced Configuration
 
