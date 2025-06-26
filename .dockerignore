@@ -42,11 +42,7 @@ Thumbs.db
 .env.*
 !.env.example
 
-# Development files
-*.md
-!README.md
-!mcp-server/README.md
-!unraid/README.md
+# Development folders
 docs/
 tasks/
 tests/
@@ -58,6 +54,5 @@ mcp-server/vectorstore/
 scripts/data.ms/
 meilisearch/
 
-# Keep documentation and hashes for the build
-# !documentation/
-# !.hashes/
+# IMPORTANT: We need documentation/ and .hashes/ for the build
+# Do NOT exclude these!

@@ -20,6 +20,19 @@ fi
 # Create necessary directories
 mkdir -p /data/meilisearch /data/hashes /data/documentation /data/logs
 
+# Check if documentation volume is empty (mounted volume overrides image files)
+DOC_COUNT=$(find /data/documentation -name "*.md" 2>/dev/null | wc -l)
+if [ "$DOC_COUNT" -eq 0 ]; then
+    echo "📚 Documentation volume is empty. Copying pre-packaged files..."
+    # Check if we have documentation in the image
+    if [ -d "/app/documentation_backup" ]; then
+        cp -r /app/documentation_backup/* /data/documentation/
+        echo "✅ Copied documentation files to volume"
+    else
+        echo "⚠️  No backup documentation found in image!"
+    fi
+fi
+
 # Check if pre-indexed data exists
 if [ -f "/data/.indexed" ]; then
     echo "✅ Using pre-indexed documentation"

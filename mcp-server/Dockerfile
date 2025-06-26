@@ -59,6 +59,9 @@ COPY requirements.txt /app/
 COPY documentation/ /data/documentation/
 COPY .hashes/ /data/hashes/
 
+# Keep a backup copy for volume mounting scenarios
+COPY documentation/ /app/documentation_backup/
+
 # Copy supervisor configuration
 COPY mcp-server/docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 

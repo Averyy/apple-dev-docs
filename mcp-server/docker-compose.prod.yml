@@ -2,23 +2,25 @@ version: '3.8'
 
 services:
   apple-docs-mcp:
-    image: ghcr.io/averyy/apple-dev-docs-mcp:latest
+    image: ghcr.io/averyy/apple-dev-docs:latest
     container_name: apple-docs-mcp
     restart: unless-stopped
-    # STDIO MCP server doesn't use HTTP ports
-    # Communication happens via stdio when launched by Claude
+    ports:
+      - "8080:8080"  # HTTP wrapper for remote access
     environment:
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
       - MCP_API_KEY=${MCP_API_KEY}
       - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}
       - MEILI_SEARCH_KEY=${MEILI_SEARCH_KEY}
       - MEILI_ADMIN_KEY=${MEILI_ADMIN_KEY:-}
-      # MCP_PORT not needed for STDIO
-      # MCP_SERVER_URL not needed for STDIO
+      - HTTP_PORT=${HTTP_PORT:-8080}
+      - ENABLE_HTTP_WRAPPER=${ENABLE_HTTP_WRAPPER:-true}
       - MEILI_HTTP_ADDR=${MEILI_HTTP_ADDR:-http://localhost:7700}
       - KEEP_MARKDOWN_FILES=${KEEP_MARKDOWN_FILES:-true}
       - ENABLE_AUTO_RESCRAPE=${ENABLE_AUTO_RESCRAPE:-false}
       - PYTHONUNBUFFERED=1
+      - DOCUMENTATION_PATH=/data/documentation
+      - HASHES_PATH=/data/hashes
+      - MEILISEARCH_PATH=/data/meilisearch
     volumes:
       # Named volumes for persistence
       - meilisearch:/data/meilisearch
@@ -26,7 +28,7 @@ services:
       - documentation:/data/documentation
       - logs:/data/logs
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
       interval: 30s
       timeout: 10s
       retries: 3

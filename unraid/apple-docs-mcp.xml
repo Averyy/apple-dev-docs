@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>apple-docs-mcp</Name>
-  <Repository>ghcr.io/averyy/apple-developer-docs:latest</Repository>
-  <Registry>https://github.com/averyy/apple-developer-docs/pkgs/container/apple-developer-docs</Registry>
+  <Repository>ghcr.io/averyy/apple-dev-docs:latest</Repository>
+  <Registry>https://github.com/averyy/apple-dev-docs/pkgs/container/apple-dev-docs</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
