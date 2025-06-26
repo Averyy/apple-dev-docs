@@ -68,7 +68,8 @@ COPY mcp-server/docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # Copy startup script and helpers
 COPY mcp-server/docker/startup.sh /app/startup.sh
 COPY mcp-server/scripts/docker_index_helper.sh /app/scripts/
-RUN chmod +x /app/startup.sh /app/scripts/docker_index_helper.sh
+COPY mcp-server/scripts/debug_http_wrapper.sh /app/mcp-server/scripts/
+RUN chmod +x /app/startup.sh /app/scripts/docker_index_helper.sh /app/mcp-server/scripts/debug_http_wrapper.sh
 
 # Note: Indexing happens automatically on first run via startup_check.py
 # Meilisearch must be running, so we can't pre-index during build

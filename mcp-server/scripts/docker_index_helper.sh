@@ -33,7 +33,7 @@ fi
 
 # Check current document count
 DOC_COUNT=$(curl -s -H "Authorization: Bearer $MEILI_MASTER_KEY" \
-    http://localhost:7700/indexes/apple_docs/stats 2>/dev/null | \
+    http://localhost:7700/indexes/apple-docs/stats 2>/dev/null | \
     python3 -c "import sys, json; data=json.load(sys.stdin); print(data.get('numberOfDocuments', 0))" 2>/dev/null || echo "0")
 
 if [ "$DOC_COUNT" -gt 300000 ]; then
@@ -70,7 +70,7 @@ echo "✅ Indexing complete!"
 
 # Check final count
 FINAL_COUNT=$(curl -s -H "Authorization: Bearer $MEILI_MASTER_KEY" \
-    http://localhost:7700/indexes/apple_docs/stats 2>/dev/null | \
+    http://localhost:7700/indexes/apple-docs/stats 2>/dev/null | \
     python3 -c "import sys, json; data=json.load(sys.stdin); print(data.get('numberOfDocuments', 0))" 2>/dev/null || echo "0")
 
 echo "📊 Final document count: $(printf "%'d" $FINAL_COUNT)"

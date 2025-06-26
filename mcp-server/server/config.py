@@ -43,7 +43,7 @@ DEFAULT_SEARCH_LIMIT = 5
 MAX_SEARCH_LIMIT = 20
 
 # Collection name
-COLLECTION_NAME = "apple_docs"
+COLLECTION_NAME = "apple-docs"
 
 # Ensure directories exist
 VECTORSTORE_PATH.mkdir(parents=True, exist_ok=True)
