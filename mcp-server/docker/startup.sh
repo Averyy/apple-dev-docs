@@ -44,8 +44,14 @@ elif [ -d "/data/meilisearch/data.ms" ]; then
     echo "📁 Meilisearch data directory found"
     echo "   Document count will be verified after Meilisearch starts"
 else
-    echo "⚠️  No Meilisearch data found. This shouldn't happen!"
-    echo "   The Docker image should include pre-indexed data."
+    echo "📋 No Meilisearch database found yet"
+    DOC_COUNT=$(find /data/documentation -name "*.md" 2>/dev/null | wc -l)
+    if [ "$DOC_COUNT" -gt 0 ]; then
+        echo "📚 Found $DOC_COUNT pre-scraped documents ready for indexing"
+        echo "🔨 Automatic indexing will begin after Meilisearch starts (~4 minutes)"
+    else
+        echo "⚠️  No documentation found! Please check volume mounts."
+    fi
 fi
 
 # Check last update time

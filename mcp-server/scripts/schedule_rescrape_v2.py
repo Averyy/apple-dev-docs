@@ -167,7 +167,7 @@ def run_weekly_rescrape() -> bool:
             meili_key = os.getenv("MEILI_MASTER_KEY")
             if meili_key:
                 response = httpx.get(
-                    "http://localhost:7700/indexes/apple_docs/stats",
+                    "http://localhost:7700/indexes/apple-docs/stats",
                     headers={"Authorization": f"Bearer {meili_key}"}
                 )
                 if response.status_code == 200:

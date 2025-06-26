@@ -57,9 +57,22 @@ def run_indexing():
     
     if result.returncode == 0:
         console.print("✅ Indexing completed successfully!", style="green")
+        # Log stdout for debugging
+        if result.stdout:
+            for line in result.stdout.strip().split('\n')[-5:]:
+                if line.strip():
+                    console.print(f"   {line}", style="dim")
         return True
     else:
-        console.print(f"❌ Indexing failed: {result.stderr}", style="red")
+        console.print(f"❌ Indexing failed with return code {result.returncode}", style="red")
+        if result.stderr:
+            console.print("Error output:", style="red")
+            for line in result.stderr.strip().split('\n'):
+                console.print(f"   {line}", style="red")
+        if result.stdout:
+            console.print("Standard output:", style="yellow")
+            for line in result.stdout.strip().split('\n')[-10:]:
+                console.print(f"   {line}", style="yellow")
         return False
 
 def main():

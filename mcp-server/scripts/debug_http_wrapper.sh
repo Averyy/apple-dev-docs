@@ -12,7 +12,7 @@ echo "  MEILI_HTTP_ADDR=$MEILI_HTTP_ADDR" >&2
 echo "  PYTHONUNBUFFERED=$PYTHONUNBUFFERED" >&2
 echo "" >&2
 
-if [ "$ENABLE_HTTP_WRAPPER" = "true" ]; then
+if [ "$(echo $ENABLE_HTTP_WRAPPER | tr '[:upper:]' '[:lower:]')" = "true" ]; then
     echo "HTTP wrapper is enabled, starting..." >&2
     cd /app
     exec python -u /app/mcp-server/http_stdio_wrapper.py 2>&1
