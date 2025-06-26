@@ -245,8 +245,10 @@ class MeilisearchIndexer:
         if force:
             console.print("\n[bold]Apple Documentation Meilisearch Indexer - Full Rebuild Mode[/bold]\n")
             console.print("[yellow]⚠️  This will delete and rebuild the entire index from scratch[/yellow]")
+            print("\n🔄 Full index rebuild initiated")
         else:
             console.print("\n[bold]Apple Documentation Meilisearch Indexer[/bold]\n")
+            print("\n🔍 Checking for documentation updates...")
         
         # Only rebuild if forced
         if not dry_run:

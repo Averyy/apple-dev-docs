@@ -118,17 +118,25 @@ def needs_reindexing() -> tuple[bool, str]:
     
     return False, "Index is up to date with documentation"
 
-def run_indexing():
+def run_indexing(force_rebuild=False):
     """Run the indexing script."""
     console.print("🔨 Starting indexing process...", style="blue")
     
-    # Run the indexing script
-    import subprocess
-    result = subprocess.run([
+    # Build command
+    cmd = [
         sys.executable, 
         "/app/scripts/index_to_meilisearch.py",
         "--docs-path", "/data/documentation"
-    ], capture_output=True, text=True)
+    ]
+    
+    # Add force flag if documentation has changed
+    if force_rebuild:
+        cmd.append("--force")
+        console.print("[yellow]🔄 Full rebuild due to documentation changes[/yellow]")
+    
+    # Run the indexing script
+    import subprocess
+    result = subprocess.run(cmd, capture_output=True, text=True)
     
     if result.returncode == 0:
         console.print("✅ Indexing completed successfully!", style="green")
@@ -191,8 +199,8 @@ def main():
             console.print("Please ensure documentation is included in the Docker image.", style="red")
             sys.exit(1)
         
-        # Run indexing
-        if run_indexing():
+        # Run indexing (force rebuild if docs changed)
+        if run_indexing(force_rebuild=needs_index):
             # Wait a bit for Meilisearch to update stats
             time.sleep(2)
             # Force save the index timestamp immediately after indexing
@@ -219,10 +227,14 @@ def main():
             console.print("❌ Failed to index documents!", style="red")
             sys.exit(1)
     else:
-        console.print(f"✅ Index already initialized with {doc_count:,} documents!", style="green")
+        msg = f"✅ Index already initialized with {doc_count:,} documents!"
+        console.print(msg, style="green")
+        print(msg)  # Also to stdout for Docker logs
         console.print(f"   {reason}", style="dim")
     
-    console.print("\n✨ Startup check complete! Services can start.\n", style="bold green")
+    final_msg = "\n✨ Startup check complete! Services can start.\n"
+    console.print(final_msg, style="bold green")
+    print(final_msg)  # Also to stdout
 
 if __name__ == "__main__":
     main()

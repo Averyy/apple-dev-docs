@@ -2,6 +2,8 @@
 
 ## Git Commit Rules
 
+**NEVER commit without explicit written permission** - Only commit when the user explicitly asks with phrases like "commit this", "push these changes", or "git commit". Never assume permission to commit.
+
 **NEVER add Claude attribution to commits** - Do not include "Co-Authored-By: Claude" or any other attribution. Keep commits simple with just the message.
 
 ## Deployment Testing Instructions
