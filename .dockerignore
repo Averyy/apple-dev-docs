@@ -1,1 +1,63 @@
-# Test files
+# Git
+.git
+.gitignore
+.github
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.coverage
+.pytest_cache
+*.egg-info
+dist
+build
+
+# Virtual environments
+venv/
+env/
+ENV/
+*/venv/
+*/env/
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+*.log
+*.db
+*.sqlite
+.env
+.env.*
+!.env.example
+
+# Development files
+*.md
+!README.md
+!mcp-server/README.md
+!unraid/README.md
+docs/
+tasks/
+tests/
+**/tests/
+**/test_*
+
+# Build artifacts
+mcp-server/vectorstore/
+scripts/data.ms/
+meilisearch/
+
+# Keep documentation and hashes for the build
+# !documentation/
+# !.hashes/

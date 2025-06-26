@@ -2,7 +2,7 @@
 # All-in-one container with Meilisearch search engine and MCP server
 
 # Stage 1: Builder
-FROM python:3.11-slim as builder
+FROM python:3.11-slim AS builder
 
 # Install build dependencies
 RUN apt-get update && apt-get install -y \
@@ -67,13 +67,8 @@ COPY mcp-server/docker/startup.sh /app/startup.sh
 COPY mcp-server/scripts/docker_index_helper.sh /app/scripts/
 RUN chmod +x /app/startup.sh /app/scripts/docker_index_helper.sh
 
-# Pre-index the documentation during build
-RUN echo "Pre-indexing documentation..." && \
-    cd /app/scripts && \
-    python index_to_meilisearch.py --docs-path /data/documentation && \
-    echo "Documentation pre-indexed at $(date)" > /data/.indexed && \
-    DOC_COUNT=$(find /data/documentation -name "*.md" | wc -l) && \
-    echo "Indexed $DOC_COUNT documents"
+# Note: Indexing happens automatically on first run via startup_check.py
+# Meilisearch must be running, so we can't pre-index during build
 
 # Environment variables (can be overridden at runtime)
 ENV PYTHONUNBUFFERED=1
@@ -87,8 +82,8 @@ ENV KEEP_MARKDOWN_FILES=true
 # Meilisearch configuration
 ENV MEILI_HTTP_ADDR=http://localhost:7700
 ENV MEILI_DB_PATH=/data/meilisearch
-# HTTP wrapper disabled by default (enable for remote access)
-ENV ENABLE_HTTP_WRAPPER=false
+# HTTP wrapper enabled by default for remote access
+ENV ENABLE_HTTP_WRAPPER=true
 # Auto-rescraping (disabled by default)
 ENV ENABLE_AUTO_RESCRAPE=false
 # Default timezone to US Eastern (EST/EDT)

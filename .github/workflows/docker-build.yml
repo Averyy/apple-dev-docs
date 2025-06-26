@@ -9,7 +9,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}-mcp
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   build-and-push:
@@ -55,7 +55,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
       
       - name: Generate deployment instructions
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'

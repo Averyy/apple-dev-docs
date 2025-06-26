@@ -5,19 +5,16 @@ echo "🚀 Starting Apple Docs MCP Server V2 Container with Meilisearch"
 echo "============================================================="
 
 # Check required environment variables
-if [ -z "$OPENAI_API_KEY" ]; then
-    echo "❌ Error: OPENAI_API_KEY environment variable is required"
-    exit 1
-fi
-
-if [ -z "$MCP_API_KEY" ]; then
-    echo "❌ Error: MCP_API_KEY environment variable is required"
-    exit 1
-fi
-
 if [ -z "$MEILI_MASTER_KEY" ]; then
     echo "❌ Error: MEILI_MASTER_KEY environment variable is required"
+    echo "   Generate one with: openssl rand -hex 32"
     exit 1
+fi
+
+# Check optional but recommended variables
+if [ -z "$MCP_API_KEY" ] && [ "${ENABLE_HTTP_WRAPPER}" = "true" ]; then
+    echo "⚠️  Warning: MCP_API_KEY not set - HTTP endpoint will have no authentication!"
+    echo "   Generate one with: openssl rand -hex 32"
 fi
 
 # Create necessary directories

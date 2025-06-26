@@ -10,7 +10,6 @@ services:
     ports:
       - "8080:8080"  # HTTP wrapper for remote access
     environment:
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
       - MCP_API_KEY=${MCP_API_KEY}
       - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}
       - MEILI_SEARCH_KEY=${MEILI_SEARCH_KEY}

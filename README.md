@@ -1,6 +1,6 @@
 # 🍎 Apple Developer Documentation MCP Server
 
- Search across Apple's entire developer documentation - 360 frameworks, 340,000+ pages, <500ms latency.
+ An MCP (Model Context Protocol) server that gives Claude and other AI assistants access to Apple's complete developer documentation. Search across Apple's entire developer documentation - 360 frameworks, 340,000+ pages, <500ms latency.
 
 [![Frameworks](https://img.shields.io/badge/frameworks-360-blue)](docs/MCP_COMPLETE_GUIDE.md)
 [![Documents](https://img.shields.io/badge/documents-340K%2B-green)](docs/TECHNICAL_OPERATIONS_GUIDE.md)
@@ -12,11 +12,7 @@ Apple's developer documentation website poses significant challenges for AI assi
 
 To bridge this gap and enhance the developer experience, this project provides a complete, searchable mirror of Apple's documentation in a clean, AI-friendly format. All content remains unchanged from the original source - we've simply made it accessible for modern AI-powered development workflows.
 
-## 🚀 What is this?
-
-An MCP (Model Context Protocol) server that gives Claude and other AI assistants access to Apple's complete developer documentation. Ask questions in natural language and get instant, accurate answers from official Apple docs.
-
-**Last updated:** Thursday, June 26, 2025 (after the WWDC updates)
+**Documentation last scraped:** Thursday, June 26, 2025 (after the WWDC updates)
 
 ## ✨ Key Features
 
@@ -127,7 +123,7 @@ cd ../mcp-server && python3 apple_docs_stdio_mcp.py
         "--server-url", "http://192.168.2.5:8080/mcp"
       ],
       "env": {
-        "MCP_API_KEY": "your-mcp-api-key"  // Must match the api key on your server
+        "MCP_API_KEY": "your-mcp-api-key"
       }
     }
   }
