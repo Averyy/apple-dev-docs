@@ -17,7 +17,7 @@ Returns the standard color for green pins.
 
 ```swift
 @MainActor
-class func greenPinColor() -> NSColor
+class func greenPinColor() -> UIColor
 ```
 
 #### Return Value

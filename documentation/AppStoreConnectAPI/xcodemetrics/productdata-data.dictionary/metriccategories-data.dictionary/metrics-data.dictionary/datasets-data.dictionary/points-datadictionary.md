@@ -24,8 +24,6 @@ object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.Points
 
 - [object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.FilterCriteria](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary/datasets-data.dictionary/filtercriteria-data.dictionary.md)
   The device and percentile criteria by which the system filters a metrics dataset.
-- [object xcodeMetrics.ProductData.MetricCategories.Metrics](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary.md)
-  Data that relates to power and performance measurements for an app, including its datasets, goal keys, metrics identifier, and unit of measurement.
 
 
 ---

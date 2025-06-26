@@ -14,6 +14,11 @@ The end date of the event.
 var eventEnd: Date?
 ```
 
+## See Also
+
+- [var eventStart: Date?](journalingsuggestion/eventposter/eventstart.md)
+  The start date of the event.
+
 
 ---
 

@@ -182,7 +182,7 @@ When a device that represents an external GPU is added to the system, the `handl
 
 ##### Update Per Frame State and Data
 
-MetalKit calls the doc://com.apple.documentation/metalkit/mtkviewdelegate/1535942-drawinmtkview method for the sample to render each frame. Within this method, the sample calls the `handlePossibleHotPlugEvent` method to handle device additions or removals on the main thread. Such actions include updating UI related to these device events and completing any additional state changes that must be executed atomically on a single thread.
+MetalKit calls the [`draw(in:)`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate/draw(in:)) method for the sample to render each frame. Within this method, the sample calls the `handlePossibleHotPlugEvent` method to handle device additions or removals on the main thread. Such actions include updating UI related to these device events and completing any additional state changes that must be executed atomically on a single thread.
 
 The sample then calls the `drawFrameNumber:toView:` to begin rendering a new frame for the current renderer. To ensure continuous rendering that enables seamless switching between different renderers, the sample stores any nonrendering state separate from the renderers themselves. Then, for each frame, the sample passes any necessary nonrendering state to a specific `AAPLRenderer` instance. In this case, the sample passes the current frame number, `_frameNumber`, to the renderer so it can calculate the position and rotation of the sample’s 3D model.
 

@@ -1,4 +1,4 @@
 Completed scraping App Store Receipts!
-Total pages scraped: 25
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 26
 Pages failed: 0

@@ -14,6 +14,8 @@ Add this entitlement to your app with a value of `true` if you want to use the [
 
 ## See Also
 
+- [Audio Input Entitlement](entitlements/com.apple.security.device.audio-input.md)
+  A Boolean value that indicates whether the app may record audio using the built-in microphone and access audio input using Core Audio.
 - [Camera entitlement](entitlements/com.apple.security.device.camera.md)
   A Boolean value that indicates whether the app may interact with the built-in and external cameras, and capture movies and still images.
 - [com.apple.security.device.microphone](entitlements/com.apple.security.device.microphone.md)

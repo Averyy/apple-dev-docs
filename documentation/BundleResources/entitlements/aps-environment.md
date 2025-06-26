@@ -30,6 +30,8 @@ To add this entitlement to your app, enable the Push Notifications capability in
   Respond to push notifications related to your app’s complications, file providers, and VoIP services.
 - [APS Environment (macOS) Entitlement](entitlements/com.apple.developer.aps-environment.md)
   The environment for push notifications in macOS apps.
+- [Critical Alerts](entitlements/com.apple.developer.usernotifications.critical-alerts.md)
+  An entitlement that permits an app to receive critical alert notifications.
 - [com.apple.developer.usernotifications.filtering](entitlements/com.apple.developer.usernotifications.filtering.md)
   Enable receiving notifications without displaying the notification to the user.
 

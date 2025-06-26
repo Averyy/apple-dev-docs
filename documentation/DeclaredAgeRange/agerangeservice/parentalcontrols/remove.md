@@ -1,6 +1,6 @@
 # remove(_:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: method
 
 Removes the given element and all elements subsumed by it.

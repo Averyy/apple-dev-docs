@@ -17,17 +17,16 @@ The Euler rotation about the z axis (in radians).
 ## Declaration
 
 ```swift
-@MainActor
 var zRotation: CGFloat { get set }
 ```
 
 ## Mentions
 
+- [Getting Started with a Camera](getting-started-with-a-camera.md)
 - [Getting Started with Nodes](getting-started-with-nodes.md)
 - [About SpriteKit Coordinate Systems](about-spritekit-coordinate-systems.md)
-- [Getting Started with a Camera](getting-started-with-a-camera.md)
-- [About Node Property Propagation](about-node-property-propagation.md)
 - [Making Physics Bodies Move](making-physics-bodies-move.md)
+- [About Node Property Propagation](about-node-property-propagation.md)
 
 #### Discussion
 

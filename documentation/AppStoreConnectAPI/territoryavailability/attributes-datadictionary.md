@@ -16,8 +16,8 @@ object TerritoryAvailability.Attributes
 
 ## Mentions
 
-- [App Store Connect API 3.8 release notes](app-store-connect-api-3-8-release-notes.md)
 - [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
+- [App Store Connect API 3.8 release notes](app-store-connect-api-3-8-release-notes.md)
 
 #### Discussion
 

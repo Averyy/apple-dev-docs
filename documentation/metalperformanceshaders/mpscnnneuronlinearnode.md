@@ -1,7 +1,7 @@
 # MPSCNNNeuronLinearNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a linear neuron filter.
 
@@ -16,19 +16,26 @@ A representation of a linear neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronLinearNode : MPSCNNNeuronNode
+class MPSCNNNeuronLinearNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, a: Float, b: Float)](mpscnnneuronlinearnode/2866495-init.md)
-- [init(source: MPSNNImageNode)](mpscnnneuronlinearnode/2921456-init.md)
+- [init(source: MPSNNImageNode, a: Float, b: Float)](mpscnnneuronlinearnode/init(source:a:b:).md)
+- [init(source: MPSNNImageNode)](mpscnnneuronlinearnode/init(source:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuronNode](mpscnnneuronnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

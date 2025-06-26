@@ -23,15 +23,15 @@ A view that enables you to display an AR experience with RealityKit.
 
 - [Handling different-sized objects in physics simulations](handling-different-sized-objects-in-physics-simulations.md)
 - [Implementing postprocess effects using Metal compute functions](implementing-postprocess-effects-using-metal-compute-functions.md)
-- [Loading remote assets in multiplayer apps](loading-remote-assets.md)
-- [Taking Control of Scene Anchoring](taking-control-of-scene-anchoring.md)
-- [Loading Reality Composer files using generated code](loading-reality-composer-files-using-generated-code.md)
-- [Using Metal performance shaders to create custom postprocess effects](using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
 - [Selecting an anchor for a Reality Composer scene](selecting-an-anchor-for-a-reality-composer-scene.md)
-- [Designing scene hierarchies for efficient physics simulation](designing-scene-hierarchies-for-efficient-physics-simulation.md)
+- [Loading remote assets in multiplayer apps](loading-remote-assets.md)
+- [Loading Reality Composer files using generated code](loading-reality-composer-files-using-generated-code.md)
 - [Implementing systems for entities in a scene](implementing-systems-for-entities-in-a-scene.md)
+- [Taking Control of Scene Anchoring](taking-control-of-scene-anchoring.md)
 - [Applying core image filters as a postprocess effect](applying-core-image-filters-as-a-postprocess-effect.md)
 - [Manipulating Reality Composer scenes from code](manipulating-reality-composer-scenes-from-code.md)
+- [Designing scene hierarchies for efficient physics simulation](designing-scene-hierarchies-for-efficient-physics-simulation.md)
+- [Using Metal performance shaders to create custom postprocess effects](using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
 
 #### Overview
 

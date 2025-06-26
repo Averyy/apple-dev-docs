@@ -22,13 +22,13 @@ class UIView
 ## Mentions
 
 - [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
-- [Customizing drawings](customizing-drawings.md)
-- [Implementing a Multi-Touch app](implementing-a-multi-touch-app.md)
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
 - [About App Development with UIKit](about-app-development-with-uikit.md)
-- [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
+- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+- [Implementing a Multi-Touch app](implementing-a-multi-touch-app.md)
 - [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
+- [Customizing drawings](customizing-drawings.md)
+- [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
+- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
 
 #### Overview
 
@@ -95,21 +95,17 @@ For information about ways to avoid subclassing, see [`Alternatives to subclassi
 
 When subclassing [`UIView`](uiview.md), there are only a handful of methods you should override and many methods that you might override depending on your needs. Because [`UIView`](uiview.md) is a highly configurable class, there are also many ways to implement sophisticated view behaviors without overriding custom methods, which are discussed in the Alternatives to Subclassing section. In the meantime, the following list includes the methods you might consider overriding in your [`UIView`](uiview.md) subclasses:
 
-- Initialization:
-- [`init(frame:)`](uiview/init(frame:).md) - It is recommended that you implement this method. You can also implement custom initialization methods in addition to, or instead of, this method.
-- doc://com.apple.documentation/documentation/oslog/oslogentry/init(coder:) - Implement this method if you load your view from storyboards or nib files and your view requires custom initialization.
+- Initialization: - [`init(frame:)`](uiview/init(frame:).md) - It is recommended that you implement this method. You can also implement custom initialization methods in addition to, or instead of, this method.
+- [`init(coder:)`](uiview/init(coder:).md) - Implement this method if you load your view from storyboards or nib files and your view requires custom initialization.
 - [`layerClass`](uiview/layerclass.md) Use this property only if you want your view to use a different Core Animation layer for its backing store. For example, if your view uses tiling to display a large scrollable area, you might want to set the property to the [`CATiledLayer`](https://developer.apple.com/documentation/QuartzCore/CATiledLayer) class.
-- Drawing and printing:
-- [`draw(_:)`](uiview/draw(_:).md) - Implement this method if your view draws custom content. If your view does not do any custom drawing, avoid overriding this method.
+- Drawing and printing: - [`draw(_:)`](uiview/draw(_:).md) - Implement this method if your view draws custom content. If your view does not do any custom drawing, avoid overriding this method.
 - [`draw(_:for:)`](uiview/draw(_:for:).md) - Implement this method only if you want to draw your view’s content differently during printing.
-- Layout and Constraints:
-- [`requiresConstraintBasedLayout`](uiview/requiresconstraintbasedlayout.md) Use this property if your view class requires constraints to work properly.
+- Layout and Constraints: - [`requiresConstraintBasedLayout`](uiview/requiresconstraintbasedlayout.md) Use this property if your view class requires constraints to work properly.
 - [`updateConstraints()`](uiview/updateconstraints().md) - Implement this method if your view needs to create custom constraints between your subviews.
 - [`alignmentRect(forFrame:)`](uiview/alignmentrect(forframe:).md), [`frame(forAlignmentRect:)`](uiview/frame(foralignmentrect:).md) - Implement these methods to override how your views are aligned to other views.
 - [`didAddSubview(_:)`](uiview/didaddsubview(_:).md), [`willRemoveSubview(_:)`](uiview/willremovesubview(_:).md) - Implement these methods as needed to track the additions and removals of subviews.
 - [`willMove(toSuperview:)`](uiview/willmove(tosuperview:).md), [`didMoveToSuperview()`](uiview/didmovetosuperview().md) - Implement these methods as needed to track the movement of the current view in your view hierarchy.
-- Event Handling:
-- [`gestureRecognizerShouldBegin(_:)`](uiview/gesturerecognizershouldbegin(_:).md) - Implement this method if your view handles touch events directly and might want to prevent attached gesture recognizers from triggering additional actions.
+- Event Handling: - [`gestureRecognizerShouldBegin(_:)`](uiview/gesturerecognizershouldbegin(_:).md) - Implement this method if your view handles touch events directly and might want to prevent attached gesture recognizers from triggering additional actions.
 - [`touchesBegan(_:with:)`](uiresponder/touchesbegan(_:with:).md), [`touchesMoved(_:with:)`](uiresponder/touchesmoved(_:with:).md), [`touchesEnded(_:with:)`](uiresponder/touchesended(_:with:).md), [`touchesCancelled(_:with:)`](uiresponder/touchescancelled(_:with:).md) - Implement these methods if you need to handle touch events directly. (For gesture-based input, use gesture recognizers.)
 
 ###### Alternatives to Subclassing
@@ -613,8 +609,6 @@ Animations are another way to make visible changes to a view without requiring y
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

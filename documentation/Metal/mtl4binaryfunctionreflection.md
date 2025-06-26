@@ -6,11 +6,6 @@
 Represents reflection information for a binary function.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
 - visionOS 26.0+ (Beta)
 
 ## Declaration
@@ -52,8 +47,6 @@ class MTL4BinaryFunctionReflection
   Represents a binary function.
 - [class MTL4BinaryFunctionDescriptor](mtl4binaryfunctiondescriptor.md)
   Base interface for other function-derived interfaces.
-- [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
-  Options for configuring the creation of binary functions.
 - [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
   Options for configuring the creation of binary functions.
 - [class MTL4PipelineStageDynamicLinkingDescriptor](mtl4pipelinestagedynamiclinkingdescriptor.md)

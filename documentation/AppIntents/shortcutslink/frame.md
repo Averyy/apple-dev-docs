@@ -11,9 +11,9 @@ Positions this view within an invisible frame.
 - Mac Catalyst ?+
 - macOS 10.15+
 - tvOS 13.0+
+- visionOS ?+
 - watchOS 6.0+
 - Unknown ?+ - Deprecated
-- visionOS ?+
 
 ## Declaration
 

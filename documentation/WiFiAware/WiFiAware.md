@@ -21,6 +21,13 @@ The Wi-Fi Aware™ technology (also known as Neighbor Awareness Networking or NA
 
 The Wi-Fi Aware technology works without the need for Wi-Fi infrastructure networks, cellular links, internet connections, or cloud servers. Your app can pair Wi-Fi Aware devices using [`AccessorySetupKit`](https://developer.apple.comhttps://developer.apple.com/documentation/accessorysetupkit/) or [`DeviceDiscoveryUI`](https://developer.apple.comhttps://developer.apple.com/documentation/devicediscoveryui). When paired, your app can create secure, authenticated, and encrypted peer-to-peer connections between paired devices on-demand, using the Wi-Fi Aware and [`Network`](https://developer.apple.comhttps://developer.apple.com/documentation/Network) frameworks.
 
+> ❗ **Important**: The following Apple devices support the Wi-Fi Aware framework: - iPhone 12 and later
+- iPad (10th generation) and later
+- iPad Air (4th generation) and later
+- iPad Pro 11-inch (3rd generation) and later
+- iPad Pro 12.9-inch (5th generation) and later
+- iPad mini (6th generation) and later
+
 ## Topics
 
 ### Essentials

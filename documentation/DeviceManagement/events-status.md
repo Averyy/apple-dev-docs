@@ -11,8 +11,8 @@ Retrieve the status of an asynchronous event.
 
 ## Mentions
 
-- [Managing Assets](managing-assets.md)
 - [Managing Users](managing-users.md)
+- [Managing Assets](managing-assets.md)
 - [Handling Error Responses](handling-error-responses.md)
 
 #### Discussion

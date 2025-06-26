@@ -19,8 +19,8 @@ class func updatePostbackConversionValue(_ fineValue: Int, coarseValue: SKAdNetw
 ## Mentions
 
 - [SKAdNetwork 4 release notes](skadnetwork-4-release-notes.md)
-- [Configuring an advertised app](configuring-an-advertised-app.md)
 - [Receiving postbacks in multiple conversion windows](receiving-postbacks-in-multiple-conversion-windows.md)
+- [Configuring an advertised app](configuring-an-advertised-app.md)
 
 #### Discussion
 

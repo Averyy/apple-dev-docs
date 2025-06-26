@@ -17,6 +17,7 @@ A node that plays audio.
 ## Declaration
 
 ```swift
+@MainActor
 class SKAudioNode
 ```
 

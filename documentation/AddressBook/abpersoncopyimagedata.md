@@ -14,7 +14,7 @@ Returns data that contains a picture of a person.
 ## Declaration
 
 ```swift
-func ABPersonCopyImageData(_ person: ABRecord!) -> Unmanaged<CFData>!
+func ABPersonCopyImageData(_ person: ABPersonRef!) -> Unmanaged<CFData>!
 ```
 
 #### Return Value

@@ -1,7 +1,7 @@
 # MPSBinaryImageKernel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel that consumes two textures and produces one texture.
 
@@ -16,8 +16,12 @@ A kernel that consumes two textures and produces one texture.
 ## Declaration
 
 ```swift
-class MPSBinaryImageKernel : MPSKernel
+class MPSBinaryImageKernel
 ```
+
+## Mentions
+
+- [The MPSKernel Class](the-mpskernel-class.md)
 
 #### Overview
 
@@ -26,36 +30,48 @@ class MPSBinaryImageKernel : MPSKernel
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsbinaryimagekernel/2866333-init.md)
-- [init(device: any MTLDevice)](mpsbinaryimagekernel/2866331-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsbinaryimagekernel/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsbinaryimagekernel/init(device:).md)
 ### Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, primaryTexture: any MTLTexture, inPlaceSecondaryTexture: UnsafeMutablePointer<any MTLTexture>, fallbackCopyAllocator: MPSCopyAllocator?) -> Bool](mpsbinaryimagekernel/1618890-encode.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, primaryTexture: any MTLTexture, inPlaceSecondaryTexture: UnsafeMutablePointer<any MTLTexture>, fallbackCopyAllocator: MPSCopyAllocator?) -> Bool](mpsbinaryimagekernel/encode(commandbuffer:primarytexture:inplacesecondarytexture:fallbackcopyallocator:).md)
   This method attempts to apply a kernel in place on a texture.
-- [func encode(commandBuffer: any MTLCommandBuffer, inPlacePrimaryTexture: UnsafeMutablePointer<any MTLTexture>, secondaryTexture: any MTLTexture, fallbackCopyAllocator: MPSCopyAllocator?) -> Bool](mpsbinaryimagekernel/1618771-encode.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inPlacePrimaryTexture: UnsafeMutablePointer<any MTLTexture>, secondaryTexture: any MTLTexture, fallbackCopyAllocator: MPSCopyAllocator?) -> Bool](mpsbinaryimagekernel/encode(commandbuffer:inplaceprimarytexture:secondarytexture:fallbackcopyallocator:).md)
   This method attempts to apply a kernel in place on a texture.
-- [func encode(commandBuffer: any MTLCommandBuffer, primaryTexture: any MTLTexture, secondaryTexture: any MTLTexture, destinationTexture: any MTLTexture)](mpsbinaryimagekernel/1618871-encode.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, primaryTexture: any MTLTexture, secondaryTexture: any MTLTexture, destinationTexture: any MTLTexture)](mpsbinaryimagekernel/encode(commandbuffer:primarytexture:secondarytexture:destinationtexture:).md)
   Encodes a kernel into a command buffer, out-of-place.
-- [func encode(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage, destinationImage: MPSImage)](mpsbinaryimagekernel/2866330-encode.md)
-- [func primarySourceRegion(forDestinationSize: MTLSize) -> MPSRegion](mpsbinaryimagekernel/1618900-primarysourceregion.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage, destinationImage: MPSImage)](mpsbinaryimagekernel/encode(commandbuffer:primaryimage:secondaryimage:destinationimage:).md)
+- [func primarySourceRegion(forDestinationSize: MTLSize) -> MPSRegion](mpsbinaryimagekernel/primarysourceregion(fordestinationsize:).md)
   Determines the region of the primary source texture that will be read for an encode operation.
-- [func secondarySourceRegion(forDestinationSize: MTLSize) -> MPSRegion](mpsbinaryimagekernel/1618838-secondarysourceregion.md)
+- [func secondarySourceRegion(forDestinationSize: MTLSize) -> MPSRegion](mpsbinaryimagekernel/secondarysourceregion(fordestinationsize:).md)
   Determines the region of the secondary source texture that will be read for an encode operation.
 ### Properties
-- [var primaryOffset: MPSOffset](mpsbinaryimagekernel/1618880-primaryoffset.md)
+- [var primaryOffset: MPSOffset](mpsbinaryimagekernel/primaryoffset.md)
   The position of the destination clip rectangle origin relative to the primary source buffer.
-- [var secondaryOffset: MPSOffset](mpsbinaryimagekernel/1618755-secondaryoffset.md)
+- [var secondaryOffset: MPSOffset](mpsbinaryimagekernel/secondaryoffset.md)
   The position of the destination clip rectangle origin relative to the secondary source buffer.
-- [var primaryEdgeMode: MPSImageEdgeMode](mpsbinaryimagekernel/1618782-primaryedgemode.md)
+- [var primaryEdgeMode: MPSImageEdgeMode](mpsbinaryimagekernel/primaryedgemode.md)
   The edge mode to use when texture reads stray off the edge of the primary source image.
-- [var secondaryEdgeMode: MPSImageEdgeMode](mpsbinaryimagekernel/1618848-secondaryedgemode.md)
+- [var secondaryEdgeMode: MPSImageEdgeMode](mpsbinaryimagekernel/secondaryedgemode.md)
   The edge mode to use when texture reads stray off the edge of the secondary source image.
-- [var clipRect: MTLRegion](mpsbinaryimagekernel/1618879-cliprect.md)
+- [var clipRect: MTLRegion](mpsbinaryimagekernel/cliprect.md)
   An optional clip rectangle to use when writing data. Only the pixels in the rectangle will be overwritten.
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
+### Inherited By
+- [MPSImageArithmetic](mpsimagearithmetic.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

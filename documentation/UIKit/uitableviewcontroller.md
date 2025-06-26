@@ -22,8 +22,8 @@ class UITableViewController
 ## Mentions
 
 - [Filling a table with data](filling-a-table-with-data.md)
-- [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
 - [Handling row selection in a table view](handling-row-selection-in-a-table-view.md)
+- [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
 
 #### Overview
 

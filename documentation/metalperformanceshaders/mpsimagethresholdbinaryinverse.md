@@ -1,9 +1,9 @@
 # MPSImageThresholdBinaryInverse
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
-A filter that returns 0 for each pixel with a value greater than a specified threshold or a specified value otherwise. 
+A filter that returns 0 for each pixel with a value greater than a specified threshold or a specified value otherwise.
 
 **Availability**:
 - iOS 9.0+
@@ -16,12 +16,14 @@ A filter that returns 0 for each pixel with a value greater than a specified thr
 ## Declaration
 
 ```swift
-class MPSImageThresholdBinaryInverse : MPSUnaryImageKernel
+class MPSImageThresholdBinaryInverse
 ```
 
 #### Overview
 
-An [`MPSImageThresholdBinaryInverse`](mpsimagethresholdbinaryinverse.md) function converts a single channel image to a binary image. If the input image is not a single channel image, the function first converts the input image into a single channel luminance image using the linear gray color transform, and then it applies the threshold.[`Listing 1`](mpsimagethresholdbinaryinverse#2851305.md) shows the threshold binary inverse function.
+An [`MPSImageThresholdBinaryInverse`](mpsimagethresholdbinaryinverse.md) function converts a single channel image to a binary image. If the input image is not a single channel image, the function first converts the input image into a single channel luminance image using the linear gray color transform, and then it applies the threshold. The following listing shows the threshold binary inverse function.
+
+Listing 1. Threshold binary inverse function
 
 ```other
 destinationPixelValue = sourcePixelValue > thresholdValue ? 0 : maximumValue
@@ -30,31 +32,41 @@ destinationPixelValue = sourcePixelValue > thresholdValue ? 0 : maximumValue
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagethresholdbinaryinverse/2865666-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagethresholdbinaryinverse/init(coder:device:).md)
 ### Methods
-- [init(device: any MTLDevice, thresholdValue: Float, maximumValue: Float, linearGrayColorTransform: UnsafePointer<Float>?)](mpsimagethresholdbinaryinverse/1618903-init.md)
+- [init(device: any MTLDevice, thresholdValue: Float, maximumValue: Float, linearGrayColorTransform: UnsafePointer<Float>?)](mpsimagethresholdbinaryinverse/init(device:thresholdvalue:maximumvalue:lineargraycolortransform:).md)
   Initializes the kernel.
 ### Properties
-- [var thresholdValue: Float](mpsimagethresholdbinaryinverse/1618845-thresholdvalue.md)
+- [var thresholdValue: Float](mpsimagethresholdbinaryinverse/thresholdvalue.md)
   The threshold value used to initialize the threshold filter.
-- [var maximumValue: Float](mpsimagethresholdbinaryinverse/1618906-maximumvalue.md)
+- [var maximumValue: Float](mpsimagethresholdbinaryinverse/maximumvalue.md)
   The maximum value used to initialize the threshold filter.
-- [var transform: UnsafePointer<Float>](mpsimagethresholdbinaryinverse/1618904-transform.md)
+- [var transform: UnsafePointer<Float>](mpsimagethresholdbinaryinverse/transform.md)
   The color transform used to initialize the threshold filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
 - [class MPSImageThresholdBinary](mpsimagethresholdbinary.md)
-  A filter that returns a specified value for each pixel with a value greater than a specified threshold or 0 otherwise. 
+  A filter that returns a specified value for each pixel with a value greater than a specified threshold or 0 otherwise.
 - [class MPSImageThresholdToZero](mpsimagethresholdtozero.md)
-  A filter that returns the original value for each pixel with a value greater than a specified threshold or 0 otherwise. 
+  A filter that returns the original value for each pixel with a value greater than a specified threshold or 0 otherwise.
 - [class MPSImageThresholdToZeroInverse](mpsimagethresholdtozeroinverse.md)
-  A filter that returns 0 for each pixel with a value greater than a specified threshold or the original value otherwise. 
+  A filter that returns 0 for each pixel with a value greater than a specified threshold or the original value otherwise.
 - [class MPSImageThresholdTruncate](mpsimagethresholdtruncate.md)
   A filter that clamps the return value to an upper specified value.
 

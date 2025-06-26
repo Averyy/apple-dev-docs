@@ -19,6 +19,10 @@ The constant for hiking.
 case hiking
 ```
 
+#### Discussion
+
+HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
+
 ## See Also
 
 - [HKWorkoutActivityType.climbing](hkworkoutactivitytype/climbing.md)

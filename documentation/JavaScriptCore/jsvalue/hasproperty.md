@@ -16,7 +16,7 @@ Returns a Boolean value indicating whether the JavaScript value has a defined pr
 ## Declaration
 
 ```swift
-func hasProperty(_ property: String!) -> Bool
+func hasProperty(_ property: Any!) -> Bool
 ```
 
 #### Return Value

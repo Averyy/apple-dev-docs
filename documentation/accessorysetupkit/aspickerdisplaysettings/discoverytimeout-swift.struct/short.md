@@ -21,7 +21,7 @@ static let short: ASPickerDisplaySettings.DiscoveryTimeout
 - [class var `default`: ASPickerDisplaySettings](aspickerdisplaysettings/default.md)
   An empty settings object.
 - [static let medium: ASPickerDisplaySettings.DiscoveryTimeout](aspickerdisplaysettings/discoverytimeout-swift.struct/medium.md)
-  Picker discovery timeout for about 2 minutes.
+  A picker discovery timeout value that times out after about two minutes.
 - [static let long: ASPickerDisplaySettings.DiscoveryTimeout](aspickerdisplaysettings/discoverytimeout-swift.struct/long.md)
   A picker discovery timeout value that times out after about five minutes.
 

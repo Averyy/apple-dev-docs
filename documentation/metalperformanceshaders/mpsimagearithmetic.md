@@ -1,7 +1,7 @@
 # MPSImageArithmetic
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 Base class for basic arithmetic nodes
 
@@ -16,24 +16,39 @@ Base class for basic arithmetic nodes
 ## Declaration
 
 ```swift
-class MPSImageArithmetic : MPSBinaryImageKernel
+class MPSImageArithmetic
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var bias: Float](mpsimagearithmetic/2866609-bias.md)
-- [var primaryScale: Float](mpsimagearithmetic/2866602-primaryscale.md)
-- [var primaryStrideInPixels: MTLSize](mpsimagearithmetic/2889864-primarystrideinpixels.md)
-- [var secondaryScale: Float](mpsimagearithmetic/2866601-secondaryscale.md)
-- [var secondaryStrideInPixels: MTLSize](mpsimagearithmetic/2889865-secondarystrideinpixels.md)
-- [var maximumValue: Float](mpsimagearithmetic/2942356-maximumvalue.md)
-- [var minimumValue: Float](mpsimagearithmetic/2942357-minimumvalue.md)
+- [var bias: Float](mpsimagearithmetic/bias.md)
+- [var primaryScale: Float](mpsimagearithmetic/primaryscale.md)
+- [var primaryStrideInPixels: MTLSize](mpsimagearithmetic/primarystrideinpixels.md)
+- [var secondaryScale: Float](mpsimagearithmetic/secondaryscale.md)
+- [var secondaryStrideInPixels: MTLSize](mpsimagearithmetic/secondarystrideinpixels.md)
+- [var maximumValue: Float](mpsimagearithmetic/maximumvalue.md)
+- [var minimumValue: Float](mpsimagearithmetic/minimumvalue.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSBinaryImageKernel](mpsbinaryimagekernel.md)
+### Inherited By
+- [MPSImageAdd](mpsimageadd.md)
+- [MPSImageDivide](mpsimagedivide.md)
+- [MPSImageMultiply](mpsimagemultiply.md)
+- [MPSImageSubtract](mpsimagesubtract.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

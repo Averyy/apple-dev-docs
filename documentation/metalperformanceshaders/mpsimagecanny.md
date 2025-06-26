@@ -1,7 +1,7 @@
 # MPSImageCanny
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 14.0+
@@ -14,26 +14,36 @@
 ## Declaration
 
 ```swift
-class MPSImageCanny : MPSUnaryImageKernel
+class MPSImageCanny
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagecanny/3547971-init.md)
-- [init(device: any MTLDevice)](mpsimagecanny/3547972-init.md)
-- [init(device: any MTLDevice, linearToGrayScaleTransform: UnsafePointer<Float>, sigma: Float)](mpsimagecanny/3547973-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagecanny/init(coder:device:).md)
+- [convenience init(device: any MTLDevice)](mpsimagecanny/init(device:).md)
+- [init(device: any MTLDevice, linearToGrayScaleTransform: UnsafePointer<Float>, sigma: Float)](mpsimagecanny/init(device:lineartograyscaletransform:sigma:).md)
 ### Instance Properties
-- [var colorTransform: UnsafePointer<Float>](mpsimagecanny/3547969-colortransform.md)
-- [var highThreshold: Float](mpsimagecanny/3547970-highthreshold.md)
-- [var lowThreshold: Float](mpsimagecanny/3547974-lowthreshold.md)
-- [var sigma: Float](mpsimagecanny/3547975-sigma.md)
-- [var useFastMode: Bool](mpsimagecanny/3547976-usefastmode.md)
+- [var colorTransform: UnsafePointer<Float>](mpsimagecanny/colortransform.md)
+- [var highThreshold: Float](mpsimagecanny/highthreshold.md)
+- [var lowThreshold: Float](mpsimagecanny/lowthreshold.md)
+- [var sigma: Float](mpsimagecanny/sigma.md)
+- [var useFastMode: Bool](mpsimagecanny/usefastmode.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

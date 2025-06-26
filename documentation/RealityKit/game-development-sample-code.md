@@ -9,6 +9,8 @@ Explore a collection of projects relating to game development.
 ## Topics
 
 ### Sample code links
+- [Bringing your SceneKit projects to RealityKit](bringing-your-scenekit-projects-to-realitykit.md)
+  Adapt a platformer game for RealityKit’s powerful ECS and modularity.
 - [Creating a Spaceship game](creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
 - [BOT-anist](../visionOS/BOT-anist.md)

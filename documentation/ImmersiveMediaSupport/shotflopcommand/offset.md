@@ -18,13 +18,11 @@ var offset: CMTime?
 ## See Also
 
 - [var duration: CMTime](shotflopcommand/duration.md)
-  The duration of the command - this can be .zero if the command has no duration
+  The duration of the command - this can be .zero if the command has no duration.
 - [var id: Int](shotflopcommand/id.md)
-  An unique command id. Ids should be unique for the whole Immersive Media file.
+  A unique command id. Ids should be unique for the whole Immersive Media file.
 - [var time: CMTime](shotflopcommand/time.md)
   The time this command starts during playback.
-- [var type: PresentationCommandType](shotflopcommand/type.md)
-  The command type (.shotFlop).
 
 
 ---

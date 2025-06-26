@@ -16,7 +16,7 @@ The UIImage of the audio component’s icon.
 ## Declaration
 
 ```swift
-func AudioComponentGetIcon(_ comp: AudioComponent) -> NSImage?
+func AudioComponentGetIcon(_ comp: AudioComponent, _ desiredPointSize: Float) -> UIImage?
 ```
 
 ## See Also
@@ -31,4 +31,4 @@ func AudioComponentGetIcon(_ comp: AudioComponent) -> NSImage?
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox/audiocomponentgeticon(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox/audiocomponentgeticon(_:))*

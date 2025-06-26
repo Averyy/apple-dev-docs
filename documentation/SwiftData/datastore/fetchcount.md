@@ -20,6 +20,16 @@
 func fetchCount<T>(_ request: DataStoreFetchRequest<T>) throws -> Int where T : PersistentModel
 ```
 
+## See Also
+
+- [func fetch<T>(DataStoreFetchRequest<T>) throws -> DataStoreFetchResult<T, Self.Snapshot>](datastore/fetch(_:).md)
+- [struct DataStoreFetchRequest](datastorefetchrequest.md)
+- [struct DataStoreFetchResult](datastorefetchresult.md)
+- [associatedtype Snapshot : DataStoreSnapshot](datastore/snapshot.md)
+- [protocol DataStoreSnapshot](datastoresnapshot.md)
+- [typealias DataStoreSnapshotValue](datastoresnapshotvalue.md)
+- [func fetchIdentifiers<T>(DataStoreFetchRequest<T>) throws -> [PersistentIdentifier]](datastore/fetchidentifiers(_:).md)
+
 
 ---
 

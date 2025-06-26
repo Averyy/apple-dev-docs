@@ -8,6 +8,49 @@ Learn about important changes in RealityKit.
 
 Browse notable changes in [`RealityKit`](https://developer.apple.com/documentation/RealityKit).
 
+#### June 2025
+
+##### General
+
+- Create hover effect groups to indicate entities that need to highlight together using [`HoverEffectComponent.GroupID`](https://developer.apple.com/documentation/RealityKit/HoverEffectComponent/GroupID).
+- Present popovers from volumes using [`PresentationComponent`](https://developer.apple.com/documentation/RealityKit/PresentationComponent).
+- Manually create instances of entities using [`MeshInstancesComponent`](https://developer.apple.com/documentation/RealityKit/MeshInstancesComponent).
+- Animate entity properties using [`animate(_:body:completion:)`](https://developer.apple.com/documentation/RealityKit/Entity/animate(_:body:completion:)).
+- Create and modify attachments in a more streamlined fashion using [`ViewAttachmentComponent`](https://developer.apple.com/documentation/RealityKit/ViewAttachmentComponent).
+- Make entities render behind real-world objects based on depth using [`EnvironmentBlendingComponent`](https://developer.apple.com/documentation/RealityKit/EnvironmentBlendingComponent).
+- Implement post-processing effects using [`RealityViewPostProcessEffect`](https://developer.apple.com/documentation/RealityKit/RealityViewPostProcessEffect) and [`PostProcessEffectContext`](https://developer.apple.com/documentation/RealityKit/PostProcessEffectContext).
+- Attach models together using [`attach(_:to:)`](https://developer.apple.com/documentation/RealityKit/Entity/attach(_:to:)).
+- [`TextureResource`](https://developer.apple.com/documentation/RealityKit/TextureResource) now supports AVIF textures. Imported USDZ files created using [`init(named:in:)`](https://developer.apple.com/documentation/RealityKit/Entity/init(named:in:)) create materials from AVIF textures.
+- Load entities from Data objects using [`init(from:named:)`](https://developer.apple.com/documentation/RealityKit/Entity/init(from:named:)).
+
+##### Image Presentation
+
+- Generate spatial scenes using [`ImagePresentationComponent.Spatial3DImage`](https://developer.apple.com/documentation/RealityKit/ImagePresentationComponent/Spatial3DImage) and present them (along with 2D images and spatial photos) using [`ImagePresentationComponent`](https://developer.apple.com/documentation/RealityKit/ImagePresentationComponent).
+- Receive notifications related to presenting images using [`ImagePresentationEvents`](https://developer.apple.com/documentation/RealityKit/ImagePresentationEvents).
+- Use [`Model3DAsset`](https://developer.apple.com/documentation/RealityKit/Model3DAsset) with [`Model3D`](https://developer.apple.com/documentation/RealityKit/Model3D) to play animations in Model3D Views.
+
+##### Arkit Integration
+
+- Receive updates about ARKit anchors directly in RealityKit using [`AnchorStateEvents`](https://developer.apple.com/documentation/RealityKit/AnchorStateEvents) and [`Scene.AnchoringTrackingState`](https://developer.apple.com/documentation/RealityKit/Scene/AnchoringTrackingState-wu3p).
+- Access ARKit anchors from RealityKit entities using [`ARKitAnchorComponent`](https://developer.apple.com/documentation/RealityKit/ARKitAnchorComponent).
+
+##### Swiftui Integration
+
+- Keep SwiftUI state in sync with RealityKit state using [`Entity.Observable`](https://developer.apple.com/documentation/RealityKit/Entity/Observable-7cnpn).
+- Present USD variants in [`Model3D`](https://developer.apple.com/documentation/RealityKit/Model3D) using [`Entity.ConfigurationCatalog`](https://developer.apple.com/documentation/RealityKit/Entity/ConfigurationCatalog-1b69q).
+- Specify the frame sizing and alignment option for RealityView using [`RealityViewLayoutOption`](https://developer.apple.com/documentation/RealityKit/RealityViewLayoutOption).
+
+##### Video Presentation
+
+- Play spatial video, 180°, 360°, wide-FOV APMP video, and Apple Immersive Video in  [`VideoPlayerComponent`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent).
+- Retrieve the loading status when playing video using [`VideoPlayerComponent`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent) with [`currentRenderingStatus`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/currentRenderingStatus).
+- Receive notifications when a video stops playing due to a comfort violation using [`VideoPlayerEvents.VideoComfortMitigationDidOccur`](https://developer.apple.com/documentation/RealityKit/VideoPlayerEvents/VideoComfortMitigationDidOccur).
+
+##### Gestures and Entity Interaction
+
+- Implement six degree of freedom (6DOF) gestures for manipulating entities using [`ManipulationComponent`](https://developer.apple.com/documentation/RealityKit/ManipulationComponent).
+- Leverage [`GestureComponent`](https://developer.apple.com/documentation/RealityKit/GestureComponent) to support gestures on individual entities.
+
 #### June 2024
 
 ##### General

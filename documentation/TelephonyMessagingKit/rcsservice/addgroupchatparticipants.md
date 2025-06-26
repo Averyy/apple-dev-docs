@@ -18,7 +18,7 @@ final func addGroupChatParticipants(_ request: RCSService.AddGroupChatParticipan
 
 #### Discussion
 
-> **Note**: `RCSService.Error` if there was an error while performing the operation.
+> **Note**: [`RCSService.Error`](rcsservice/error.md) if there was an error while performing the operation.
 
 ## Parameters
 

@@ -17,6 +17,7 @@ A Boolean value that determines whether Scene Kit automatically adds lights to a
 ## Declaration
 
 ```swift
+@MainActor
 var autoenablesDefaultLighting: Bool { get set }
 ```
 

@@ -19,6 +19,10 @@ Stops the workout session activity, and sets the end date.
 func stopActivity(with date: Date?)
 ```
 
+## Mentions
+
+- [Running workout sessions](running-workout-sessions.md)
+
 ## Parameters
 
 - `date`: The end date for the workout session. This must be equal to or after the start date.

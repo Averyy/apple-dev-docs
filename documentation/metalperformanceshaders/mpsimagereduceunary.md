@@ -1,7 +1,7 @@
 # MPSImageReduceUnary
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 The base class for reduction filters that take a single source as input.
 
@@ -16,18 +16,37 @@ The base class for reduction filters that take a single source as input.
 ## Declaration
 
 ```swift
-class MPSImageReduceUnary : MPSUnaryImageKernel
+class MPSImageReduceUnary
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var clipRectSource: MTLRegion](mpsimagereduceunary/2942332-cliprectsource.md)
+- [var clipRectSource: MTLRegion](mpsimagereduceunary/cliprectsource.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Inherited By
+- [MPSImageReduceColumnMax](mpsimagereducecolumnmax.md)
+- [MPSImageReduceColumnMean](mpsimagereducecolumnmean.md)
+- [MPSImageReduceColumnMin](mpsimagereducecolumnmin.md)
+- [MPSImageReduceColumnSum](mpsimagereducecolumnsum.md)
+- [MPSImageReduceRowMax](mpsimagereducerowmax.md)
+- [MPSImageReduceRowMean](mpsimagereducerowmean.md)
+- [MPSImageReduceRowMin](mpsimagereducerowmin.md)
+- [MPSImageReduceRowSum](mpsimagereducerowsum.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

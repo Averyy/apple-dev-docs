@@ -25,7 +25,7 @@ The view controller corresponding to the specified identifier string. If no view
 
 #### Discussion
 
-Use this method to create a view controller object to present programmatically. Each time you call this method, it creates a new instance of the view controller using the doc://com.apple.documentation/documentation/oslog/oslogentry/init(coder:) method.
+Use this method to create a view controller object to present programmatically. Each time you call this method, it creates a new instance of the view controller using the [`init(coder:)`](uiviewcontroller/init(coder:).md) method.
 
 ## Parameters
 

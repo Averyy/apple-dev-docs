@@ -24,8 +24,8 @@ func ABGroupAddMember(_ group: ABRecord!, _ person: ABRecord!, _ error: UnsafeMu
 ## Parameters
 
 - `group`: The group you wish to add   to.
-- `personToAdd`: The person to add to  . If   is  , this function raises an exception.
 - `person`: The person to add to  . If   is  , this function raises an exception.
+- `personToAdd`: The person to add to  . If   is  , this function raises an exception.
 
 ## See Also
 

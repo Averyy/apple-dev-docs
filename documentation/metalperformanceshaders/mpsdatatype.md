@@ -6,17 +6,17 @@
 A value to specify a type of data.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-enum MPSDataType : UInt32, @unchecked Sendable
+enum MPSDataType
 ```
 
 ## Topics
@@ -44,33 +44,40 @@ enum MPSDataType : UInt32, @unchecked Sendable
 - [MPSDataType.complexBit](mpsdatatype/complexbit.md)
 - [MPSDataType.complexFloat16](mpsdatatype/complexfloat16.md)
 - [MPSDataType.complexFloat32](mpsdatatype/complexfloat32.md)
-- [MPSDataType.int2](mpsdatatype/int2.md)
 - [MPSDataType.int32](mpsdatatype/int32.md)
 - [MPSDataType.int4](mpsdatatype/int4.md)
 - [MPSDataType.int64](mpsdatatype/int64.md)
-- [MPSDataType.uInt2](mpsdatatype/uint2.md)
 - [MPSDataType.uInt4](mpsdatatype/uint4.md)
 - [MPSDataType.uInt64](mpsdatatype/uint64.md)
+- [MPSDataType.int2](mpsdatatype/int2.md)
+- [MPSDataType.uInt2](mpsdatatype/uint2.md)
 ### Type Properties
-- [static var intBit: MPSDataType](mpsdatatype/2866103-intbit.md)
+- [static var intBit: MPSDataType](mpsdatatype/intbit.md)
+### Initializers
+- [init?(rawValue: UInt32)](mpsdatatype/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [var rows: Int](mpsmatrixdescriptor/2143203-rows.md)
+- [var rows: Int](mpsmatrixdescriptor/rows.md)
   The number of rows in the matrix.
-- [var columns: Int](mpsmatrixdescriptor/2143196-columns.md)
+- [var columns: Int](mpsmatrixdescriptor/columns.md)
   The number of columns in the matrix.
-- [var dataType: MPSDataType](mpsmatrixdescriptor/2143202-datatype.md)
+- [var dataType: MPSDataType](mpsmatrixdescriptor/datatype.md)
   The type of the values in the matrix.
-- [var rowBytes: Int](mpsmatrixdescriptor/2143199-rowbytes.md)
+- [var rowBytes: Int](mpsmatrixdescriptor/rowbytes.md)
   The stride, in bytes, between corresponding elements of consecutive rows in the matrix.
-- [var matrices: Int](mpsmatrixdescriptor/2873351-matrices.md)
-- [var matrixBytes: Int](mpsmatrixdescriptor/2873387-matrixbytes.md)
+- [var matrices: Int](mpsmatrixdescriptor/matrices.md)
+- [var matrixBytes: Int](mpsmatrixdescriptor/matrixbytes.md)
 
 
 ---

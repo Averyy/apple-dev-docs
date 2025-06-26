@@ -18,6 +18,11 @@ init(imageSource: CGImageSource) async throws
 
 > **Note**: The newly created spatial 3D image is not yet in a generated state.
 
+## See Also
+
+- [convenience init(contentsOf: URL) async throws](imagepresentationcomponent/spatial3dimage/init(contentsof:).md)
+  Initializes a spatial 3D image from the contents of an image file.
+
 
 ---
 

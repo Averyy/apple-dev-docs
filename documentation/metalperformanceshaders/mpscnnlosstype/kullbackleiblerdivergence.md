@@ -1,7 +1,7 @@
 # MPSCNNLossType.kullbackLeiblerDivergence
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.3+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case kullbackLeiblerDivergence = 9
+case kullbackLeiblerDivergence
 ```
 
 

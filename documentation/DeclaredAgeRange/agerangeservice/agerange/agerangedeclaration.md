@@ -1,6 +1,6 @@
 # ageRangeDeclaration
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: property
 
 The sharer of the age range.

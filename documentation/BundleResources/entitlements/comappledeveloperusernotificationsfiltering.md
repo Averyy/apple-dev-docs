@@ -51,6 +51,8 @@ override func didReceive(_ request: UNNotificationRequest, withContentHandler co
   The environment for push notifications.
 - [APS Environment (macOS) Entitlement](entitlements/com.apple.developer.aps-environment.md)
   The environment for push notifications in macOS apps.
+- [Critical Alerts](entitlements/com.apple.developer.usernotifications.critical-alerts.md)
+  An entitlement that permits an app to receive critical alert notifications.
 
 
 ---

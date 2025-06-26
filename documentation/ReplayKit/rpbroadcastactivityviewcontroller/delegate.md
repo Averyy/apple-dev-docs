@@ -15,6 +15,7 @@ The delegate for the broadcast activity view controller.
 ## Declaration
 
 ```swift
+@MainActor
 weak var delegate: (any RPBroadcastActivityViewControllerDelegate)? { get set }
 ```
 

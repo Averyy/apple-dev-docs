@@ -1,7 +1,7 @@
 # MPSCNNLocalContrastNormalizationNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a local-contrast normalization kernel.
 
@@ -16,25 +16,32 @@ A representation of a local-contrast normalization kernel.
 ## Declaration
 
 ```swift
-class MPSCNNLocalContrastNormalizationNode : MPSCNNNormalizationNode
+class MPSCNNLocalContrastNormalizationNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnnlocalcontrastnormalizationnode/2866454-init.md)
-- [init(source: MPSNNImageNode, kernelSize: Int)](mpscnnlocalcontrastnormalizationnode/2866473-init.md)
+- [init(source: MPSNNImageNode)](mpscnnlocalcontrastnormalizationnode/init(source:).md)
+- [init(source: MPSNNImageNode, kernelSize: Int)](mpscnnlocalcontrastnormalizationnode/init(source:kernelsize:).md)
 ### Instance Properties
-- [var kernelHeight: Int](mpscnnlocalcontrastnormalizationnode/2866485-kernelheight.md)
-- [var kernelWidth: Int](mpscnnlocalcontrastnormalizationnode/2866441-kernelwidth.md)
-- [var p0: Float](mpscnnlocalcontrastnormalizationnode/2866510-p0.md)
-- [var pm: Float](mpscnnlocalcontrastnormalizationnode/2866404-pm.md)
-- [var ps: Float](mpscnnlocalcontrastnormalizationnode/2866500-ps.md)
+- [var kernelHeight: Int](mpscnnlocalcontrastnormalizationnode/kernelheight.md)
+- [var kernelWidth: Int](mpscnnlocalcontrastnormalizationnode/kernelwidth.md)
+- [var p0: Float](mpscnnlocalcontrastnormalizationnode/p0.md)
+- [var pm: Float](mpscnnlocalcontrastnormalizationnode/pm.md)
+- [var ps: Float](mpscnnlocalcontrastnormalizationnode/ps.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNormalizationNode](mpscnnnormalizationnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

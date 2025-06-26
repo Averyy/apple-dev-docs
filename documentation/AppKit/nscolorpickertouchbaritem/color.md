@@ -15,7 +15,7 @@ The picker’s currently selected color.
 
 ```swift
 @NSCopying
-@MainActor var color: NSColor { get set }
+@MainActor var color: UIColor { get set }
 ```
 
 ## See Also

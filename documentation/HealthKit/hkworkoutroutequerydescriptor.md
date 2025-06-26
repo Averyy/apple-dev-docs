@@ -21,7 +21,7 @@ struct HKWorkoutRouteQueryDescriptor
 
 #### Overview
 
-Use [`HKWorkoutRouteQueryDescriptor`](hkworkoutroutequerydescriptor.md) to access the individual doc://com.apple.documentation/documentation/corelocation/cllocation objects stored in an [`HKWorkoutRoute`](hkworkoutroute.md) sample. To read the individual locations, create a workout route query descriptor using the desired route, and then call the descriptor’s [`results(for:)`](hkworkoutroutequerydescriptor/results(for:).md) method.
+Use [`HKWorkoutRouteQueryDescriptor`](hkworkoutroutequerydescriptor.md) to access the individual [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) objects stored in an [`HKWorkoutRoute`](hkworkoutroute.md) sample. To read the individual locations, create a workout route query descriptor using the desired route, and then call the descriptor’s [`results(for:)`](hkworkoutroutequerydescriptor/results(for:).md) method.
 
 ```swift
 // Create the descriptor.
@@ -79,6 +79,8 @@ While this method returns an [`AsyncSequence`](https://developer.apple.com/docum
   A query interface that reads the underlying voltage measurements for an electrocardiogram sample using Swift concurrency.
 - [class HKElectrocardiogramQuery](hkelectrocardiogramquery.md)
   A query that returns the underlying voltage measurements for an electrocardiogram sample.
+- [class HKWorkoutEffortRelationship](hkworkouteffortrelationship.md)
+- [class HKWorkoutEffortRelationshipQuery](hkworkouteffortrelationshipquery.md)
 
 
 ---

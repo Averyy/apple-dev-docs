@@ -1,7 +1,7 @@
 # MPSRNNMatrixId.lstmMemoryGateBiasTerms
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case lstmMemoryGateBiasTerms = 14
+case lstmMemoryGateBiasTerms
 ```
 
 

@@ -25,7 +25,7 @@ var requestedTimeToleranceAfter: CMTime { get set }
 
 #### Discussion
 
-The default value is [`positiveInfinity`](https://developer.apple.com/documentation/CoreMedia/CMTime/positiveInfinity). Set the values of [`requestedTimeToleranceBefore`](avassetimagegenerator/requestedtimetolerancebefore.md) and [`requestedTimeToleranceAfter`](avassetimagegenerator/requestedtimetoleranceafter.md) to [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero) to request frame-accurate image generation; this may incur additional decoding delay.
+The default value is [`positiveInfinity`](https://developer.apple.com/documentation/coremedia/cmtime/1400789-positiveinfinity). Set the values of [`requestedTimeToleranceBefore`](avassetimagegenerator/requestedtimetolerancebefore.md) and [`requestedTimeToleranceAfter`](avassetimagegenerator/requestedtimetoleranceafter.md) to [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero) to request frame-accurate image generation; this may incur additional decoding delay.
 
 ## See Also
 

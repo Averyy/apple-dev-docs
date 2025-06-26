@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-Ordered prompt segments, often interleaved text and images.
+Ordered prompt segments.
 
 **Availability**:
 - iOS 26.0+ (Beta)

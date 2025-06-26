@@ -17,6 +17,7 @@ A custom shader used to determine the color of the stroked portion of the shape 
 ## Declaration
 
 ```swift
+@MainActor
 var strokeShader: SKShader? { get set }
 ```
 

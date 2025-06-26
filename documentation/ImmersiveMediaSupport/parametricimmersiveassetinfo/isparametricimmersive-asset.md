@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: method
 
-Checks asynchronously if the asset is already in the ParametricImmersive format.
+Checks asynchronously if the asset is already in the parametric immersive format or not.
 
 **Availability**:
 - macOS 26.0+ (Beta)

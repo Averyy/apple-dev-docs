@@ -1,7 +1,7 @@
 # MPSCNNDilatedPoolingMaxNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a dilated max pooling filter.
 
@@ -16,23 +16,30 @@ A representation of a dilated max pooling filter.
 ## Declaration
 
 ```swift
-class MPSCNNDilatedPoolingMaxNode : MPSNNFilterNode
+class MPSCNNDilatedPoolingMaxNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, filterSize: Int)](mpscnndilatedpoolingmaxnode/2873240-init.md)
-- [init(source: MPSNNImageNode, filterSize: Int, stride: Int, dilationRate: Int)](mpscnndilatedpoolingmaxnode/2887340-init.md)
-- [init(source: MPSNNImageNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int, dilationRateX: Int, dilationRateY: Int)](mpscnndilatedpoolingmaxnode/2887339-init.md)
+- [init(source: MPSNNImageNode, filterSize: Int)](mpscnndilatedpoolingmaxnode/init(source:filtersize:).md)
+- [init(source: MPSNNImageNode, filterSize: Int, stride: Int, dilationRate: Int)](mpscnndilatedpoolingmaxnode/init(source:filtersize:stride:dilationrate:).md)
+- [init(source: MPSNNImageNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int, dilationRateX: Int, dilationRateY: Int)](mpscnndilatedpoolingmaxnode/init(source:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:dilationratex:dilationratey:).md)
 ### Instance Properties
-- [var dilationRateX: Int](mpscnndilatedpoolingmaxnode/2887341-dilationratex.md)
-- [var dilationRateY: Int](mpscnndilatedpoolingmaxnode/2887342-dilationratey.md)
+- [var dilationRateX: Int](mpscnndilatedpoolingmaxnode/dilationratex.md)
+- [var dilationRateY: Int](mpscnndilatedpoolingmaxnode/dilationratey.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

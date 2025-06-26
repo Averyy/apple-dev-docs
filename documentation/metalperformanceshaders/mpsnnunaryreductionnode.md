@@ -1,7 +1,7 @@
 # MPSNNUnaryReductionNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 12.1+
@@ -14,20 +14,43 @@
 ## Declaration
 
 ```swift
-class MPSNNUnaryReductionNode : MPSNNFilterNode
+class MPSNNUnaryReductionNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpsnnunaryreductionnode/3037424-init.md)
+- [init(source: MPSNNImageNode)](mpsnnunaryreductionnode/init(source:).md)
 ### Instance Properties
-- [var clipRectSource: MTLRegion](mpsnnunaryreductionnode/3037423-cliprectsource.md)
+- [var clipRectSource: MTLRegion](mpsnnunaryreductionnode/cliprectsource.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Inherited By
+- [MPSNNReductionColumnMaxNode](mpsnnreductioncolumnmaxnode.md)
+- [MPSNNReductionColumnMeanNode](mpsnnreductioncolumnmeannode.md)
+- [MPSNNReductionColumnMinNode](mpsnnreductioncolumnminnode.md)
+- [MPSNNReductionColumnSumNode](mpsnnreductioncolumnsumnode.md)
+- [MPSNNReductionFeatureChannelsArgumentMaxNode](mpsnnreductionfeaturechannelsargumentmaxnode.md)
+- [MPSNNReductionFeatureChannelsArgumentMinNode](mpsnnreductionfeaturechannelsargumentminnode.md)
+- [MPSNNReductionFeatureChannelsMaxNode](mpsnnreductionfeaturechannelsmaxnode.md)
+- [MPSNNReductionFeatureChannelsMeanNode](mpsnnreductionfeaturechannelsmeannode.md)
+- [MPSNNReductionFeatureChannelsMinNode](mpsnnreductionfeaturechannelsminnode.md)
+- [MPSNNReductionFeatureChannelsSumNode](mpsnnreductionfeaturechannelssumnode.md)
+- [MPSNNReductionRowMaxNode](mpsnnreductionrowmaxnode.md)
+- [MPSNNReductionRowMeanNode](mpsnnreductionrowmeannode.md)
+- [MPSNNReductionRowMinNode](mpsnnreductionrowminnode.md)
+- [MPSNNReductionRowSumNode](mpsnnreductionrowsumnode.md)
+- [MPSNNReductionSpatialMeanNode](mpsnnreductionspatialmeannode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

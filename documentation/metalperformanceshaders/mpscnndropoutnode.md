@@ -1,7 +1,7 @@
 # MPSCNNDropoutNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a dropout filter.
 
@@ -16,24 +16,31 @@ A representation of a dropout filter.
 ## Declaration
 
 ```swift
-class MPSCNNDropoutNode : MPSNNFilterNode
+class MPSCNNDropoutNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnndropoutnode/2947969-init.md)
-- [init(source: MPSNNImageNode, keepProbability: Float)](mpscnndropoutnode/2948000-init.md)
-- [init(source: MPSNNImageNode, keepProbability: Float, seed: Int, maskStrideInPixels: MTLSize)](mpscnndropoutnode/2947990-init.md)
+- [convenience init(source: MPSNNImageNode)](mpscnndropoutnode/init(source:).md)
+- [convenience init(source: MPSNNImageNode, keepProbability: Float)](mpscnndropoutnode/init(source:keepprobability:).md)
+- [init(source: MPSNNImageNode, keepProbability: Float, seed: Int, maskStrideInPixels: MTLSize)](mpscnndropoutnode/init(source:keepprobability:seed:maskstrideinpixels:).md)
 ### Instance Properties
-- [var keepProbability: Float](mpscnndropoutnode/2947982-keepprobability.md)
-- [var maskStrideInPixels: MTLSize](mpscnndropoutnode/2947998-maskstrideinpixels.md)
-- [var seed: Int](mpscnndropoutnode/2948030-seed.md)
+- [var keepProbability: Float](mpscnndropoutnode/keepprobability.md)
+- [var maskStrideInPixels: MTLSize](mpscnndropoutnode/maskstrideinpixels.md)
+- [var seed: Int](mpscnndropoutnode/seed.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

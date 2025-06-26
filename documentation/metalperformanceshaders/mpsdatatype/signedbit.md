@@ -1,7 +1,7 @@
 # MPSDataType.signedBit
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 10.0+
@@ -14,8 +14,26 @@
 ## Declaration
 
 ```swift
-case signedBit = 536870912
+case signedBit
 ```
+
+## See Also
+
+- [MPSDataType.invalid](mpsdatatype/invalid.md)
+- [MPSDataType.float16](mpsdatatype/float16.md)
+- [MPSDataType.int16](mpsdatatype/int16.md)
+- [MPSDataType.int8](mpsdatatype/int8.md)
+- [MPSDataType.normalizedBit](mpsdatatype/normalizedbit.md)
+- [MPSDataType.uInt16](mpsdatatype/uint16.md)
+- [MPSDataType.uInt32](mpsdatatype/uint32.md)
+- [MPSDataType.uInt8](mpsdatatype/uint8.md)
+- [MPSDataType.unorm1](mpsdatatype/unorm1.md)
+- [MPSDataType.unorm8](mpsdatatype/unorm8.md)
+- [MPSDataType.alternateEncodingBit](mpsdatatype/alternateencodingbit.md)
+- [MPSDataType.bFloat16](mpsdatatype/bfloat16.md)
+- [MPSDataType.bool](mpsdatatype/bool.md)
+- [MPSDataType.complexBit](mpsdatatype/complexbit.md)
+- [MPSDataType.complexFloat16](mpsdatatype/complexfloat16.md)
 
 
 ---

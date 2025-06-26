@@ -19,8 +19,8 @@ let MarketplaceKitURIScheme: String
 
 - [Installing your app from your website](installing-your-app-from-your-website.md)
 - [Enabling alternative distribution app installation in a browser](enabling-alternative-distribution-app-installation-in-a-browser.md)
-- [Distributing your app from your website](distributing-your-app-from-your-website.md)
 - [Installing apps from an alternative marketplace](installing-apps-from-an-alternative-marketplace.md)
+- [Distributing your app from your website](distributing-your-app-from-your-website.md)
 - [Ingesting an alternative distribution package](ingesting-an-alternative-distribution-package.md)
 
 #### Discussion

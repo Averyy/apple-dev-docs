@@ -47,8 +47,8 @@ protocol MeshBufferContainer
 
 ### Conforming Types
 - [MeshDescriptor](meshdescriptor.md)
-- [MeshResource.Part](meshresource/part-3q1vw.md)
 - [MeshResource.Part](meshresource/part-4ge48.md)
+- [MeshResource.Part](meshresource/part-3q1vw.md)
 
 ## See Also
 

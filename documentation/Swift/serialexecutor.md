@@ -79,7 +79,8 @@ Alternatively, you can also use existing serial executor implementations, such a
 - [func enqueue(UnownedJob)](serialexecutor/enqueue(_:)-229km.md)
 - [func enqueue(consuming Job)](serialexecutor/enqueue(_:)-2xi5n.md)
 - [func enqueue(consuming ExecutorJob)](serialexecutor/enqueue(_:)-7sypu.md)
-- [func isIsolatingCurrentContext() -> Bool](serialexecutor/isisolatingcurrentcontext.md)
+- [func isIsolatingCurrentContext() -> Bool?](serialexecutor/isisolatingcurrentcontext.md)
+  Checks if the current execution context is isolated by this executor.
 - [func isSameExclusiveExecutionContext(other: Self) -> Bool](serialexecutor/issameexclusiveexecutioncontext(other:).md)
   If this executor has complex equality semantics, and the runtime needs to compare two executors, it will first attempt the usual pointer-based equality / check, / and if it fails it will compare the types of both executors, if they are the same, / it will finally invoke this method, in an attempt to let the executor itself decide / if this and the `other` executor represent the same serial, exclusive, isolation context.
 - [func preconditionIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](serialexecutor/preconditionisolated(_:file:line:).md)

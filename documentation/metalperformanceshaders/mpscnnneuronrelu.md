@@ -1,7 +1,7 @@
 # MPSCNNNeuronReLU
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A ReLU (Rectified Linear Unit) neuron filter.
 
@@ -16,27 +16,37 @@ A ReLU (Rectified Linear Unit) neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronReLU : MPSCNNNeuron
+class MPSCNNNeuronReLU
 ```
 
 #### Overview
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = x if x &gt;= 0 | a * x if x &lt; 0](https://docs-assets.developer.apple.com/published/866dd98e74/1acbd354-6339-41fc-a1df-5f3d6b0c1fd3.png)
+![f(x) = x if x >= 0 | a * x if x < 0](https://docs-assets.developer.apple.com/published/3594c12f5cf297de5d13dd1755397c23/media-2903544%402x.png)
 
-This filter is called  in CNN literature. Some CNN literature defines  as `max(0, x)`. If you want this behavior, simply set the `a` property to` 0`.
+This filter is called  in CNN literature. Some CNN literature defines   as `max(0, x)`. If you want this behavior, simply set the `a` property to `0`.
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, a: Float)](mpscnnneuronrelu/1648926-init.md)
+- [init(device: any MTLDevice, a: Float)](mpscnnneuronrelu/init(device:a:).md)
   Initializes a ReLU neuron filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -70,8 +80,6 @@ This filter is called  in CNN literature. Some CNN literature defines  as `max(0
   A logarithm neuron filter.
 - [class MPSCNNNeuronPower](mpscnnneuronpower.md)
   A power neuron filter.
-- [class MPSNNNeuronDescriptor](mpsnnneurondescriptor.md)
-  An object that specifies properties used by a neuron kernel.
 
 
 ---

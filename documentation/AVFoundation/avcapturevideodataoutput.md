@@ -73,6 +73,7 @@ This object supports compressed video data output for macOS only. It can output 
   Creates a new video file output.
 ### Instance Properties
 - [var preparesCellularRadioForNetworkConnection: Bool](avcapturevideodataoutput/preparescellularradiofornetworkconnection.md)
+- [var preservesDynamicHDRMetadata: Bool](avcapturevideodataoutput/preservesdynamichdrmetadata.md)
 - [var recommendedMediaTimeScaleForAssetWriter: CMTimeScale](avcapturevideodataoutput/recommendedmediatimescaleforassetwriter.md)
 
 ## Relationships

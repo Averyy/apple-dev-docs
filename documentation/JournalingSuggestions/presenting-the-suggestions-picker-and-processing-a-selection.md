@@ -72,6 +72,7 @@ The picker fills with suggestions that include various types of personal experie
 | [`JournalingSuggestion.GenericMedia`](journalingsuggestion/genericmedia.md) | The media content a person listens to, including the information describing the media. |
 | [`JournalingSuggestion.Reflection`](journalingsuggestion/reflection.md) | A reflection prompt that a person chooses. |
 | [`JournalingSuggestion.StateOfMind`](journalingsuggestion/stateofmind.md) | The state of mind reflection in the Health app that describes a persons emotions and moods. |
+| [`JournalingSuggestion.EventPoster`](journalingsuggestion/eventposter.md) | Details about a planned or attented event in Apple Invites. |
 
 The following example demonstrates parsing a photo suggestion:
 

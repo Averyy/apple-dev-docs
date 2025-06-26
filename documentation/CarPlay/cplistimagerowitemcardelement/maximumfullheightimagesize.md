@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: property
 
-The expected image size for the image in your @c CPListImageRowItemCardElement when @c showImageFullHeight is  true. Images provided will be resized to this size.
+The expected image size for the image in your @c CPListImageRowItemCardElement when @c showsImageFullHeight is  true. Images provided will be resized to this size.
 
 **Availability**:
 - iOS 26.0+ (Beta)

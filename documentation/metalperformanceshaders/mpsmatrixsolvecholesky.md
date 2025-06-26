@@ -1,7 +1,7 @@
 # MPSMatrixSolveCholesky
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel for computing the solution of a linear system of equations using a Cholesky factorization.
 
@@ -16,7 +16,7 @@ A kernel for computing the solution of a linear system of equations using a Chol
 ## Declaration
 
 ```swift
-class MPSMatrixSolveCholesky : MPSMatrixBinaryKernel
+class MPSMatrixSolveCholesky
 ```
 
 #### Overview
@@ -30,14 +30,24 @@ This kernel finds the solution matrix to the system , where:
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, upper: Bool, order: Int, numberOfRightHandSides: Int)](mpsmatrixsolvecholesky/2873006-init.md)
+- [init(device: any MTLDevice, upper: Bool, order: Int, numberOfRightHandSides: Int)](mpsmatrixsolvecholesky/init(device:upper:order:numberofrighthandsides:).md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, rightHandSideMatrix: MPSMatrix, solutionMatrix: MPSMatrix)](mpsmatrixsolvecholesky/2866957-encode.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, rightHandSideMatrix: MPSMatrix, solutionMatrix: MPSMatrix)](mpsmatrixsolvecholesky/encode(commandbuffer:sourcematrix:righthandsidematrix:solutionmatrix:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrixBinaryKernel](mpsmatrixbinarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

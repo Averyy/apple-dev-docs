@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: property
 
-Whether this session is able to present UI to request downloading languages if they’re not already installed.
+A boolean value that indicates whether a translation session can request language downloads.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -19,7 +19,16 @@ var canRequestDownloads: Bool { get }
 
 #### Discussion
 
-Sessions created using `.translationTask()` can always request downloads, but sessions created directly cannot request downloads, and will throw an error if the languages aren’t installed.
+If this property is true, then the system prompts the person to authorize downloading additional languages if they aren’t already installed.
+
+If this property is false, then the session cannot request language downloads and will throw the error [`notInstalled`](translationerror/notinstalled.md) if you attempt to translate and the languages aren’t installed.
+
+> **Note**: A session created using `.translationTask()` can always request downloads, however when it’s created directly using [`init(installedSource:target:)`](translationsession/init(installedsource:target:).md) it cannot request downloads. The system only throws an error when attempting to translate and the languages aren’t installed.
+
+## See Also
+
+- [var isReady: Bool](translationsession/isready.md)
+  A boolean value that indicates whether the system has installed the source and target languages of the session and is ready to begin translation.
 
 
 ---

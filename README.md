@@ -38,7 +38,6 @@ To bridge this gap and enhance the developer experience, this project provides a
 | `MCP_API_KEY` | Authentication for remote HTTP access (recommended) | None |
 | `ENABLE_HTTP_WRAPPER` | Enable HTTP endpoint for remote access | `true` (Docker) |
 | `ENABLE_AUTO_RESCRAPE` | Enable weekly documentation updates | `false` |
-| `KEEP_MARKDOWN_FILES` | Keep source markdown files (uses 2GB extra) | `false` |
 | `HTTP_PORT` | Port for HTTP wrapper | `8080` |
 | `MEILI_SEARCH_KEY` | Read-only search key (auto-generated from `MEILI_MASTER_KEY`) | None |
 | `MEILI_ADMIN_KEY` | Admin operations key (auto-generated from `MEILI_MASTER_KEY`) | None |
@@ -117,14 +116,15 @@ cd ../mcp-server && python3 apple_docs_stdio_mcp.py
 {
   "mcpServers": {
     "apple-docs": {
+      "type": "stdio",
       "command": "python3",
       "args": [
         "/path/to/apple-developer-docs/mcp-server/apple_docs_stdio_http_bridge.py",
-        "--server-url", "http://192.168.2.5:8080/mcp"
-      ],
-      "env": {
-        "MCP_API_KEY": "your-mcp-api-key"
-      }
+        "--server-url",
+        "http://192.168.2.5:8080/mcp",
+        "--api-key",
+        "your-mcp-api-key"
+      ]
     }
   }
 }
@@ -132,8 +132,71 @@ cd ../mcp-server && python3 apple_docs_stdio_mcp.py
 
 **Note:** 
 - Claude Code only supports STDIO transport. The bridge script enables communication with remote HTTP servers while maintaining STDIO compatibility.
-- MCP_API_KEY is ONLY required for remote deployments. Local STDIO mode does not require it.
-- For Claude Code add to `../mcp_servers.json`:
+- For remote connections, the API key is passed as a command-line argument, not as an environment variable.
+- The "type": "stdio" field is required for Claude Code compatibility.
+- Initial connection to remote servers may take 10-30 seconds - this is normal.
+- For Claude Code, add the configuration to your MCP settings (location varies by OS).
+
+## 🔄 Manual Operations
+
+### Updating Documentation
+
+The Docker container automatically indexes pre-scraped documentation. To manually update:
+
+**Update all frameworks:**
+```bash
+python3 scrape.py --all --yes
+```
+
+**Update specific frameworks:**
+```bash
+python3 scrape.py --frameworks SwiftUI UIKit Foundation --yes
+```
+
+**Update with higher concurrency (default is 20):**
+```bash
+python3 scrape.py --all --yes --concurrent 30
+```
+
+**Update and automatically re-index Meilisearch:**
+```bash
+python3 scrape.py --all --yes --trigger-reindex
+```
+
+### Managing Orphaned Documentation
+
+When Apple removes documentation pages, you can clean them up:
+
+**Check and manually approve deletions (recommended):**
+```bash
+# After scraping completes, prompts once for all orphans
+python3 scrape.py --all --yes --cleanup-orphans
+```
+
+**Auto-delete orphaned files (no prompts):**
+```bash
+python3 scrape.py --all --yes --cleanup-orphans --auto-cleanup
+```
+
+**Complete update with cleanup and re-indexing:**
+```bash
+python3 scrape.py --all --yes --cleanup-orphans --auto-cleanup --trigger-reindex
+```
+
+**Check orphans without scraping:**
+```bash
+python3 scripts/utilities/check_all_orphans.py
+```
+
+### Re-indexing to Meilisearch
+
+After updating documentation, re-index to Meilisearch:
+
+```bash
+cd scripts && python3 index_to_meilisearch.py
+```
+
+**Note:** The Docker container handles indexing automatically during scheduled updates.
 
 ## 🛠 Available Tools
 

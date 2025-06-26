@@ -21,7 +21,7 @@ var activeVideoMinFrameDuration: CMTime { get set }
 
 #### Discussion
 
-A device’s minimum frame duration is the reciprocal of its maximum frame rate. You can set the value of this property to limit the maximum frame rate during a capture session. The capture device automatically chooses a default minimum frame duration based on its active format. After changing the value of this property, you can return to the default minimum frame duration by setting this property’s value to [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid). Choosing a new preset for the capture session also resets this property to its default value.
+A device’s minimum frame duration is the reciprocal of its maximum frame rate. You can set the value of this property to limit the maximum frame rate during a capture session. The capture device automatically chooses a default minimum frame duration based on its active format. After changing the value of this property, you can return to the default minimum frame duration by setting this property’s value to [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid). Choosing a new preset for the capture session also resets this property to its default value.
 
 Attempting to set this property to a value not found in the active format’s [`videoSupportedFrameRateRanges`](avcapturedevice/format/videosupportedframerateranges.md) array raises an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
 

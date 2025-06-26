@@ -1,7 +1,7 @@
 # MPSCNNNormalizationNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 Virtual base class for CNN normalization nodes.
 
@@ -16,22 +16,33 @@ Virtual base class for CNN normalization nodes.
 ## Declaration
 
 ```swift
-class MPSCNNNormalizationNode : MPSNNFilterNode
+class MPSCNNNormalizationNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnnnormalizationnode/2866425-init.md)
+- [init(source: MPSNNImageNode)](mpscnnnormalizationnode/init(source:).md)
 ### Instance Properties
-- [var alpha: Float](mpscnnnormalizationnode/2866474-alpha.md)
-- [var beta: Float](mpscnnnormalizationnode/2866497-beta.md)
-- [var delta: Float](mpscnnnormalizationnode/2866482-delta.md)
+- [var alpha: Float](mpscnnnormalizationnode/alpha.md)
+- [var beta: Float](mpscnnnormalizationnode/beta.md)
+- [var delta: Float](mpscnnnormalizationnode/delta.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Inherited By
+- [MPSCNNCrossChannelNormalizationNode](mpscnncrosschannelnormalizationnode.md)
+- [MPSCNNLocalContrastNormalizationNode](mpscnnlocalcontrastnormalizationnode.md)
+- [MPSCNNSpatialNormalizationNode](mpscnnspatialnormalizationnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

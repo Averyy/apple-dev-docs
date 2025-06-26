@@ -23,7 +23,7 @@ The wrapped key, or `NULL` on error. In Objective-C, call the [`CFRelease`](http
 - `keyToWrap`: The key to wrap.
 - `wrappingKey`: The key to use when wrapping  .
 - `parameters`: A parameter list for the unwrapping process. This is usually either an empty dictionary or a dictionary containing a value for  .
-- `error`: A pointer to a  doc://com.apple.documentation/documentation/corefoundation/cferror-ru8  variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `error`: A pointer to a   variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

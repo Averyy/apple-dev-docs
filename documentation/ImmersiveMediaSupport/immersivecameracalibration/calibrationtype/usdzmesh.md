@@ -1,9 +1,9 @@
-# ImmersiveCameraCalibration.CalibrationType.usdzMesh
+# ImmersiveCameraCalibration.CalibrationType.usdzMesh(_:)
 
 **Framework**: Immersive Media Support  
 **Kind**: case
 
-USDZ mesh calibration: uses a calibration mesh containing the calibration for each lens represented as a mesh inside a USDZ file.
+A value representing calibration type that uses a calibration mesh containing the calibration for each lens represented as a mesh inside a USDZ file.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -12,15 +12,10 @@ USDZ mesh calibration: uses a calibration mesh containing the calibration for ea
 ## Declaration
 
 ```swift
-case usdzMesh
+case usdzMesh(ImmersiveCameraMeshCalibration)
 ```
-
-## See Also
-
-- [ImmersiveCameraCalibration.CalibrationType.meiRives](immersivecameracalibration/calibrationtype/meirives.md)
-  Calibrations that use coefficients to present each camera lens.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/immersivemediasupport/immersivecameracalibration/calibrationtype/usdzmesh)*
+*[View on Apple Developer](https://developer.apple.com/documentation/immersivemediasupport/immersivecameracalibration/calibrationtype/usdzmesh(_:))*

@@ -1,7 +1,7 @@
 # MPSNNComparisonNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 12.1+
@@ -14,18 +14,25 @@
 ## Declaration
 
 ```swift
-class MPSNNComparisonNode : MPSNNBinaryArithmeticNode
+class MPSNNComparisonNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var comparisonType: MPSNNComparisonType](mpsnncomparisonnode/3037389-comparisontype.md)
+- [var comparisonType: MPSNNComparisonType](mpsnncomparisonnode/comparisontype.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNBinaryArithmeticNode](mpsnnbinaryarithmeticnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

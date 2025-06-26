@@ -22,8 +22,8 @@ class func preload(_ textures: [SKTexture]) async
 
 ## Mentions
 
-- [Maximizing Texture Performance](maximizing-texture-performance.md)
 - [Preloading Textures into Memory](preloading-textures-into-memory.md)
+- [Maximizing Texture Performance](maximizing-texture-performance.md)
 
 #### Discussion
 

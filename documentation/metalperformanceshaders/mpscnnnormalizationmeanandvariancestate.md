@@ -1,7 +1,7 @@
 # MPSCNNNormalizationMeanAndVarianceState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An object that stores mean and variance terms used to execute batch normalization.
 
@@ -16,23 +16,30 @@ An object that stores mean and variance terms used to execute batch normalizatio
 ## Declaration
 
 ```swift
-class MPSCNNNormalizationMeanAndVarianceState : MPSState
+class MPSCNNNormalizationMeanAndVarianceState
 ```
 
 ## Topics
 
 ### Initializers
-- [init(mean: any MTLBuffer, variance: any MTLBuffer)](mpscnnnormalizationmeanandvariancestate/3002363-init.md)
+- [init(mean: any MTLBuffer, variance: any MTLBuffer)](mpscnnnormalizationmeanandvariancestate/init(mean:variance:).md)
 ### Instance Properties
-- [var mean: any MTLBuffer](mpscnnnormalizationmeanandvariancestate/3002364-mean.md)
-- [var variance: any MTLBuffer](mpscnnnormalizationmeanandvariancestate/3002366-variance.md)
+- [var mean: any MTLBuffer](mpscnnnormalizationmeanandvariancestate/mean.md)
+- [var variance: any MTLBuffer](mpscnnnormalizationmeanandvariancestate/variance.md)
 ### Type Methods
-- [class func temporaryState(with: any MTLCommandBuffer, numberOfFeatureChannels: Int) -> Self](mpscnnnormalizationmeanandvariancestate/3002365-temporarystate.md)
+- [class func temporaryState(with: any MTLCommandBuffer, numberOfFeatureChannels: Int) -> Self](mpscnnnormalizationmeanandvariancestate/temporarystate(with:numberoffeaturechannels:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSState](mpsstate.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

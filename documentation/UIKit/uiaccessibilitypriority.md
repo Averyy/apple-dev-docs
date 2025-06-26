@@ -21,7 +21,7 @@ struct UIAccessibilityPriority
 
 #### Overview
 
-Use these constants either with the [`accessibilitySpeechAnnouncementPriority`](https://developer.apple.com/documentation/Foundation/AttributeScopes/AccessibilityAttributes/accessibilitySpeechAnnouncementPriority) property of [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString), or with the [`accessibilitySpeechAnnouncementPriority`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/accessibilitySpeechAnnouncementPriority) (Swift) or [`UIAccessibilitySpeechAttributeAnnouncementPriority`](uiaccessibilityspeechattributeannouncementpriority.md) (Objective-C) attributed key. For example, the following code shows how to create an announcement with a [`high`](uiaccessibilitypriority/high.md) announcement priority:
+Use these constants either with the [`accessibilitySpeechAnnouncementPriority`](https://developer.apple.com/documentation/Foundation/AttributeScopes/AccessibilityAttributes/accessibilitySpeechAnnouncementPriority) property of [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString), or with the [`UIAccessibilitySpeechAttributeAnnouncementPriority`](uiaccessibilityspeechattributeannouncementpriority.md) attributed key. For example, the following code shows how to create an announcement with a [`high`](uiaccessibilitypriority/high.md) announcement priority:
 
 ```swift
 let highPriorityAnnouncement = NSAttributedString(string: "Camera active", attributes:

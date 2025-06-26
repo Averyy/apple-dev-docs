@@ -22,8 +22,8 @@ struct LazyHStack<Content> where Content : View
 
 ## Mentions
 
-- [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
 - [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
+- [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
 - [Picking container views for your content](picking-container-views-for-your-content.md)
 
 #### Overview

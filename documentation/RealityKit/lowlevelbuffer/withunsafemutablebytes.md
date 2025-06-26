@@ -8,7 +8,7 @@ Update the buffer’s contents synchronously on the CPU. The buffer provided is 
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
 - visionOS 26.0+ (Beta)
@@ -16,7 +16,7 @@ Update the buffer’s contents synchronously on the CPU. The buffer provided is 
 ## Declaration
 
 ```swift
-func withUnsafeMutableBytes(_ callback: (UnsafeMutableRawBufferPointer) -> Void)
+final func withUnsafeMutableBytes(_ callback: (UnsafeMutableRawBufferPointer) -> Void)
 ```
 
 

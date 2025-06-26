@@ -3,7 +3,7 @@
 **Framework**: FinanceKit  
 **Kind**: struct
 
-The type that allows iteration over an array’s elements
+The type that allows iteration over an array’s elements.
 
 **Availability**:
 - iOS 17.4+

@@ -33,6 +33,11 @@ struct DataStoreSaveChangesRequest<SnapshotType> where SnapshotType : DataStoreS
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [func save(DataStoreSaveChangesRequest<Self.Snapshot>) throws -> DataStoreSaveChangesResult<Self.Snapshot>](datastore/save(_:).md)
+- [class DataStoreSaveChangesResult](datastoresavechangesresult.md)
+
 
 ---
 

@@ -1,7 +1,7 @@
 # MPSTemporaryMatrix
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A matrix allocated on GPU private memory.
 
@@ -16,27 +16,34 @@ A matrix allocated on GPU private memory.
 ## Declaration
 
 ```swift
-class MPSTemporaryMatrix : MPSMatrix
+class MPSTemporaryMatrix
 ```
 
 ## Topics
 
 ### Initializers
-- [init(commandBuffer: any MTLCommandBuffer, matrixDescriptor: MPSMatrixDescriptor)](mpstemporarymatrix/2867180-init.md)
+- [convenience init(commandBuffer: any MTLCommandBuffer, matrixDescriptor: MPSMatrixDescriptor)](mpstemporarymatrix/init(commandbuffer:matrixdescriptor:).md)
 ### Instance Properties
-- [var readCount: Int](mpstemporarymatrix/2867151-readcount.md)
+- [var readCount: Int](mpstemporarymatrix/readcount.md)
 ### Type Methods
-- [class func prefetchStorage(with: any MTLCommandBuffer, matrixDescriptorList: [MPSMatrixDescriptor])](mpstemporarymatrix/2867073-prefetchstorage.md)
+- [class func prefetchStorage(with: any MTLCommandBuffer, matrixDescriptorList: [MPSMatrixDescriptor])](mpstemporarymatrix/prefetchstorage(with:matrixdescriptorlist:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrix](mpsmatrix.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
 - [class MPSMatrix](mpsmatrix.md)
-  A 2D array of data that stores the data's values.
+  A 2D array of data that stores the data’s values.
 - [class MPSMatrixDescriptor](mpsmatrixdescriptor.md)
   A description of attributes used to create an MPS matrix.
 

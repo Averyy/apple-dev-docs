@@ -16,7 +16,7 @@ Returns the specified selection based on starting and ending points.
 ## Declaration
 
 ```swift
-func selection(from startPage: PDFPage, at startPoint: CGPoint, to endPage: PDFPage, at endPoint: CGPoint) -> PDFSelection?
+func selection(from startPage: PDFPage, at startPoint: NSPoint, to endPage: PDFPage, at endPoint: NSPoint) -> PDFSelection?
 ```
 
 #### Discussion

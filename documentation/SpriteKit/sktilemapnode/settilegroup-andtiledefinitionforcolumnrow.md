@@ -17,7 +17,6 @@ Set the tile group and tile definition at the specified tile index.
 ## Declaration
 
 ```swift
-@MainActor
 func setTileGroup(_ tileGroup: SKTileGroup, andTileDefinition tileDefinition: SKTileDefinition, forColumn column: Int, row: Int)
 ```
 

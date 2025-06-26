@@ -47,6 +47,8 @@ protocol MTL4CommandBuffer : NSObjectProtocol
   Pops the latest string from the stack of debug groups for this command buffer.
 - [func pushDebugGroup(String)](mtl4commandbuffer/pushdebuggroup(_:).md)
   Pushes a string onto a stack of debug groups for this command buffer.
+- [func resolveCounterHeap(any MTL4CounterHeap, range: Range<Int>, buffer: MTL4BufferRange, fenceToWait: (any MTLFence)?, fenceToUpdate: (any MTLFence)?)](mtl4commandbuffer/resolvecounterheap(_:range:buffer:fencetowait:fencetoupdate:).md)
+  Encodes a command that resolves an opaque counter heap into a buffer.
 - [func resolveCounterHeap(any MTL4CounterHeap, range: Range<Int>, buffer: any MTLBuffer, offset: Int, fenceToWait: (any MTLFence)?, fenceToUpdate: (any MTLFence)?)](mtl4commandbuffer/resolvecounterheap(_:range:buffer:offset:fencetowait:fencetoupdate:).md)
   Encodes a command that resolves an opaque counter heap into a buffer.
 - [func useResidencySet(any MTLResidencySet)](mtl4commandbuffer/useresidencyset(_:).md)

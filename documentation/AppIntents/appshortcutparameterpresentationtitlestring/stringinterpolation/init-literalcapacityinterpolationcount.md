@@ -10,10 +10,10 @@ Creates an empty instance ready to be filled with string literal content.
 - iPadOS 17.0+
 - Mac Catalyst ?+
 - macOS 14.0+
-- visionOS ?+
+- tvOS 17.0+
 - watchOS 10.0+
 - Unknown ?+ - Deprecated
-- tvOS 17.0+
+- visionOS ?+
 
 ## Declaration
 

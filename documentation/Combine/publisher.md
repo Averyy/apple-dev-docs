@@ -22,9 +22,9 @@ protocol Publisher<Output, Failure>
 
 ## Mentions
 
+- [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
 - [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
 - [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
-- [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
 
 #### Overview
 

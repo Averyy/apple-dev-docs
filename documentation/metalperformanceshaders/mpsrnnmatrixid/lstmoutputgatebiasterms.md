@@ -1,7 +1,7 @@
 # MPSRNNMatrixId.lstmOutputGateBiasTerms
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case lstmOutputGateBiasTerms = 18
+case lstmOutputGateBiasTerms
 ```
 
 

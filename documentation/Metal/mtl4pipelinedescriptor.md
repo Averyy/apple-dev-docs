@@ -52,8 +52,6 @@ class MTL4PipelineDescriptor
   A fast-addition container for collecting data during pipeline state creation.
 - [struct MTL4PipelineDataSetSerializerConfiguration](mtl4pipelinedatasetserializerconfiguration.md)
   Configuration options for pipeline dataset serializer objects.
-- [struct MTL4PipelineDataSetSerializerConfiguration](mtl4pipelinedatasetserializerconfiguration.md)
-  Configuration options for pipeline dataset serializer objects.
 - [class MTL4PipelineDataSetSerializerDescriptor](mtl4pipelinedatasetserializerdescriptor.md)
   Groups together properties to create a pipeline data set serializer.
 - [class MTL4PipelineOptions](mtl4pipelineoptions.md)

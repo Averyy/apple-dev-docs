@@ -19,7 +19,7 @@ var target: Locale.Language?
 
 #### Discussion
 
-If left to its default value of `nil`, the session picks a target language according to the user’s `Locale/preferredLanguages`, and the `source`. Changing this value cancels the previous tasks and creates a new one.
+If left to its default value of `nil`, the session picks a target language according to the `source` and the person’s [`preferredLanguages`](https://developer.apple.com/documentation/Foundation/Locale/preferredLanguages). Changing this value cancels the previous tasks and creates a new one.
 
 
 ---

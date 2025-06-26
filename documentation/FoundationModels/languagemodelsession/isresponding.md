@@ -30,8 +30,6 @@ final var isResponding: Bool { get }
 
 - [var transcript: Transcript](languagemodelsession/transcript.md)
   A full history of interactions, including user inputs and model responses.
-- [var transcript: Transcript](languagemodelsession/transcript.md)
-  A full history of interactions, including user inputs and model responses.
 
 
 ---

@@ -59,8 +59,6 @@ class HKWheelchairUseObject
 - [class HKScoredAssessmentType](hkscoredassessmenttype.md)
 - [class HKStateOfMind](hkstateofmind.md)
 - [class HKStateOfMindType](hkstateofmindtype.md)
-- [class HKWorkoutEffortRelationship](hkworkouteffortrelationship.md)
-- [class HKWorkoutEffortRelationshipQuery](hkworkouteffortrelationshipquery.md)
 
 
 ---

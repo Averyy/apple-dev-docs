@@ -49,6 +49,7 @@ For example, you can receive a notification:
 - [enum VideoPlayerEvents](videoplayerevents.md)
   Events associated with video playback for VideoPlayerComponent.
 - [enum ImagePresentationEvents](imagepresentationevents.md)
+  Events associated with viewing mode transitions for image presentation components.
 ### Network synchronization events
 - [enum SynchronizationEvents](synchronizationevents.md)
   Events associated with network synchronization of scene information.

@@ -17,15 +17,14 @@ A mathematical shape that can be stroked or filled.
 ## Declaration
 
 ```swift
-@MainActor
 class SKShapeNode
 ```
 
 ## Mentions
 
-- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
 - [Getting Started with Shape Nodes](getting-started-with-shape-nodes.md)
 - [Creating a Shape Node from an Array of Points](creating-a-shape-node-from-an-array-of-points.md)
+- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
 
 #### Overview
 

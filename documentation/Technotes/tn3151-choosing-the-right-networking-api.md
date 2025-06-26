@@ -216,9 +216,9 @@ Use it when your requirements are aligned with those features.  Don’t use it i
 
 Foundation also has peer-to-peer Wi-Fi support:
 
-- When advertising a service using `NSNetService`, set the [`includesPeerToPeer`](https://developer.apple.com/documentation/Foundation/NetService/includesPeerToPeer) property.
+- When advertising a service using `NSNetService`, set the `includesPeerToPeer` property.
 - To accept connections, set the [`listenForConnections`](https://developer.apple.com/documentation/Foundation/NetService/Options/listenForConnections) flag and implement the [`netService(_:didAcceptConnectionWith:outputStream:)`](https://developer.apple.com/documentation/Foundation/NetServiceDelegate/netService(_:didAcceptConnectionWith:outputStream:)) delegate callback.
-- When browsing for services using `NSNetServiceBrowser`, set the [`includesPeerToPeer`](https://developer.apple.com/documentation/Foundation/NetServiceBrowser/includesPeerToPeer) property.
+- When browsing for services using `NSNetServiceBrowser`, set the `includesPeerToPeer` property.
 - After discovering a service with a peer-to-peer enabled browser, connect to that service using [`getInputStream(_:outputStream:)`](https://developer.apple.com/documentation/Foundation/NetService/getInputStream(_:outputStream:)).
 
 These APIs were marked as to-be-deprecated in 2021 (see [`Versions`](tn3151-choosing-the-right-networking-api#Versions.md)).  If you have existing code that uses them, make a plan to migrate to [`Network`](https://developer.apple.com/documentation/Network) framework.

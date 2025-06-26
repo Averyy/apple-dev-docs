@@ -16,12 +16,12 @@ struct JournalingSuggestionPresentationToken
 
 ## Topics
 
-### Operators
-- [static func == (JournalingSuggestionPresentationToken, JournalingSuggestionPresentationToken) -> Bool](journalingsuggestionpresentationtoken/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
+### Initializing a presentation token
 - [init(suggestionIdentifier: UUID?)](journalingsuggestionpresentationtoken/init(suggestionidentifier:).md)
   Creates a token used to modify the content of JournalingSuggestionsPicker presentation.
+### Comparing tokens
+- [static func == (JournalingSuggestionPresentationToken, JournalingSuggestionPresentationToken) -> Bool](journalingsuggestionpresentationtoken/==(_:_:).md)
+  Returns a Boolean value indicating whether two values are equal.
 ### Default Implementations
 - [Equatable Implementations](journalingsuggestionpresentationtoken/equatable-implementations.md)
 

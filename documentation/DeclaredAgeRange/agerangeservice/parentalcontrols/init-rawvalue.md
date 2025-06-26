@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: init
 
 Creates an option set with the specified raw value.

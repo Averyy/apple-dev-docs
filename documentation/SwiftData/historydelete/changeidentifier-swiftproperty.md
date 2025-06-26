@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+The change identifier of the delete operation.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -19,6 +21,15 @@
 ```swift
 var changeIdentifier: Self.ChangeIdentifier { get }
 ```
+
+## See Also
+
+- [var changedPersistentIdentifier: PersistentIdentifier](historydelete/changedpersistentidentifier.md)
+  The changed persistent identifier of the delete operation.
+- [var tombstone: HistoryTombstone<Self.Model>](historydelete/tombstone.md)
+  The value the framework uses to represent information about data the Swift Data previously deleted from a model.
+- [var transactionIdentifier: Self.TransactionIdentifier](historydelete/transactionidentifier-swift.property.md)
+  The delete operation’s transaction identifier.
 
 
 ---

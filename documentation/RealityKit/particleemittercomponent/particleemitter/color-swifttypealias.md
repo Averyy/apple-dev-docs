@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-typealias Color = NSColor
+typealias Color = UIColor
 ```
 
 

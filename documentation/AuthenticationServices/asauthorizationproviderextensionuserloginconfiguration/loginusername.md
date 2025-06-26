@@ -18,8 +18,8 @@ var loginUserName: String { get set }
 - [Creating and validating a login request](creating-and-validating-a-login-request.md)
 - [Creating an encrypted embedded assertion](creating-an-encrypted-embedded-assertion.md)
 - [Creating an embedded assertion](creating-an-embedded-assertion.md)
-- [Registering devices and users](registering-devices-and-users.md)
 - [Performing a preauthentication request](performing-a-preauthentication-request.md)
+- [Registering devices and users](registering-devices-and-users.md)
 
 
 ---

@@ -74,8 +74,8 @@ def should_run_now(last_run_file: Path) -> bool:
 
 
 def run_weekly_rescrape() -> bool:
-    """Run the weekly rescrape and reindex process"""
-    logger.info("🔄 Starting weekly rescrape process...")
+    """Run the weekly rescrape, cleanup orphans, and full reindex process"""
+    logger.info("🔄 Starting weekly rescrape process (with orphan cleanup and full reindex)...")
     start_time = datetime.now()
     
     # Ensure hash directory exists
@@ -101,9 +101,9 @@ def run_weekly_rescrape() -> bool:
         
         os.chdir(scraper_path)
         
-        # Run scraper
+        # Run scraper with orphan cleanup
         env = os.environ.copy()
-        cmd = [sys.executable, "scrape.py", "--all", "--yes"]
+        cmd = [sys.executable, "scrape.py", "--all", "--yes", "--cleanup-orphans", "--auto-cleanup"]
         
         result = subprocess.run(cmd, env=env, capture_output=True, text=True)
         
@@ -121,8 +121,8 @@ def run_weekly_rescrape() -> bool:
                 if line.strip():
                     logger.info(f"Scraper: {line}")
         
-        # Step 2: Run Meilisearch indexing
-        logger.info("📥 Step 2: Indexing documents to Meilisearch...")
+        # Step 2: Run Meilisearch indexing (full delete and rebuild)
+        logger.info("📥 Step 2: Full re-indexing to Meilisearch (delete and rebuild)...")
         
         # Find scripts directory
         if Path("/app/scripts").exists():
@@ -146,7 +146,7 @@ def run_weekly_rescrape() -> bool:
                 logger.error(f"Error output: {result.stderr}")
             return False
             
-        logger.info("✅ Indexing completed successfully")
+        logger.info("✅ Full re-indexing completed successfully")
         
         # Log indexer output
         if result.stdout:

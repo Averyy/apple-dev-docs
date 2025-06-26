@@ -1,7 +1,7 @@
 # MPSTemporaryVector
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A vector allocated on GPU private memory.
 
@@ -16,27 +16,34 @@ A vector allocated on GPU private memory.
 ## Declaration
 
 ```swift
-class MPSTemporaryVector : MPSVector
+class MPSTemporaryVector
 ```
 
 ## Topics
 
 ### Initializers
-- [init(commandBuffer: any MTLCommandBuffer, descriptor: MPSVectorDescriptor)](mpstemporaryvector/2935550-init.md)
+- [convenience init(commandBuffer: any MTLCommandBuffer, descriptor: MPSVectorDescriptor)](mpstemporaryvector/init(commandbuffer:descriptor:).md)
 ### Instance Properties
-- [var readCount: Int](mpstemporaryvector/2935547-readcount.md)
+- [var readCount: Int](mpstemporaryvector/readcount.md)
 ### Type Methods
-- [class func prefetchStorage(with: any MTLCommandBuffer, descriptorList: [MPSVectorDescriptor])](mpstemporaryvector/2935544-prefetchstorage.md)
+- [class func prefetchStorage(with: any MTLCommandBuffer, descriptorList: [MPSVectorDescriptor])](mpstemporaryvector/prefetchstorage(with:descriptorlist:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSVector](mpsvector.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
 - [class MPSVector](mpsvector.md)
-  A 1D array of data that stores the data's values.
+  A 1D array of data that stores the data’s values.
 - [class MPSVectorDescriptor](mpsvectordescriptor.md)
   A description of the length and data type of a vector.
 

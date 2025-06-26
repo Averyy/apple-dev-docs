@@ -14,7 +14,7 @@ The array of elements used to draw visible elements.
 
 ```swift
 @MainActor
-var elements: [CPListImageRowItemElement] { get }
+var elements: [CPListImageRowItemElement] { get set }
 ```
 
 

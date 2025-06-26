@@ -22,7 +22,7 @@ static var metadata: AVAsyncProperty<Root, [AVMetadataItem]> { get }
 
 #### Discussion
 
-Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
+Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
 You can filter the array of metadata items according to language using the [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](avmetadataitem/metadataitems(from:filteredandsortedaccordingtopreferredlanguages:).md) method. Filter the results by identifier using the [`metadataItems(from:filteredByIdentifier:)`](avmetadataitem/metadataitems(from:filteredbyidentifier:).md) method.
 

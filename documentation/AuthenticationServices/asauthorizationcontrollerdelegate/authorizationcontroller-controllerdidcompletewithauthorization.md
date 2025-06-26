@@ -23,8 +23,8 @@ optional func authorizationController(controller: ASAuthorizationController, did
 
 ## Mentions
 
-- [Supporting Security Key Authentication Using Physical Keys](supporting-security-key-authentication-using-physical-keys.md)
 - [Supporting passkeys](supporting-passkeys.md)
+- [Supporting Security Key Authentication Using Physical Keys](supporting-security-key-authentication-using-physical-keys.md)
 
 ## Parameters
 

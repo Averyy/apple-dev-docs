@@ -19,6 +19,10 @@ An abstract superclass for all classes that identify a specific type of sample w
 class HKSampleType
 ```
 
+## Mentions
+
+- [Saving data to HealthKit](saving-data-to-healthkit.md)
+
 #### Overview
 
 The [`HKSampleType`](hksampletype.md) class is an abstract subclass of the [`HKObjectType`](hkobjecttype.md) class, used to represent data samples. Never instantiate an [`HKSampleType`](hksampletype.md) object directly. Instead, work with one of its concrete subclasses: [`HKCategoryType`](hkcategorytype.md), [`HKCorrelationType`](hkcorrelationtype.md), [`HKQuantityType`](hkquantitytype.md), or [`HKWorkoutType`](hkworkouttype.md) classes.

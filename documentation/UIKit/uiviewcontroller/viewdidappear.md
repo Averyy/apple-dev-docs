@@ -21,8 +21,8 @@ func viewDidAppear(_ animated: Bool)
 
 ## Mentions
 
-- [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
 - [Positioning content relative to the safe area](positioning-content-relative-to-the-safe-area.md)
+- [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
 
 #### Discussion
 

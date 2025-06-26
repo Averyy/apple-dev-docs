@@ -16,8 +16,8 @@ object RateLimitExceededError
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
 - [Identifying rate limits](identifying-rate-limits.md)
+- [App Store Server API changelog](app-store-server-api-changelog.md)
 
 #### Discussion
 

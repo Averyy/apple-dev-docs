@@ -15,7 +15,7 @@ Messages that describe a content blocker or Safari app extension error.
 ## Declaration
 
 ```swift
-enum SFErrorCode
+enum Code
 ```
 
 ## Topics

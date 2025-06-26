@@ -1,7 +1,7 @@
 # MPSCNNLossType.log
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.3+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case log = 8
+case log
 ```
 
 

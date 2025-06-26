@@ -23,7 +23,7 @@ struct ToolCalls
 ### Creating a tool calls
 - [init(from: any Decoder) throws](transcript/init(from:).md)
   Creates a new instance by decoding from the given decoder.
-- [init<C>(id: String, C)](transcript/toolcalls/init(id:_:).md)
+- [init<S>(id: String, S)](transcript/toolcalls/init(id:_:).md)
 ### Inspecting a tool calls
 - [var endIndex: Int](transcript/toolcalls/endindex.md)
   The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.

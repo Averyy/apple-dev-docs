@@ -64,6 +64,8 @@ substr.link = url
   A type to support dynamic member lookup of attributes and containers.
 - [struct ScopedAttributeContainer](scopedattributecontainer.md)
   An attribute container that allows dynamic member lookup of its contents within the specified attribute scope.
+### Default Implementations
+- [AttributedStringProtocol Implementations](attributedsubstring/attributedstringprotocol-implementations.md)
 
 ## Relationships
 

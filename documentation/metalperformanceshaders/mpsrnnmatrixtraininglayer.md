@@ -1,7 +1,7 @@
 # MPSRNNMatrixTrainingLayer
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A layer for training recurrent neural networks on Metal Performance Shaders matrices.
 
@@ -16,36 +16,46 @@ A layer for training recurrent neural networks on Metal Performance Shaders matr
 ## Declaration
 
 ```swift
-class MPSRNNMatrixTrainingLayer : MPSKernel
+class MPSRNNMatrixTrainingLayer
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsrnnmatrixtraininglayer/2966793-init.md)
-- [init(device: any MTLDevice, rnnDescriptor: MPSRNNDescriptor, trainableWeights: NSMutableArray)](mpsrnnmatrixtraininglayer/2966794-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsrnnmatrixtraininglayer/init(coder:device:).md)
+- [init(device: any MTLDevice, rnnDescriptor: MPSRNNDescriptor, trainableWeights: NSMutableArray)](mpsrnnmatrixtraininglayer/init(device:rnndescriptor:trainableweights:).md)
 ### Instance Properties
-- [var accumulateWeightGradients: Bool](mpsrnnmatrixtraininglayer/2966783-accumulateweightgradients.md)
-- [var inputFeatureChannels: Int](mpsrnnmatrixtraininglayer/2966795-inputfeaturechannels.md)
-- [var outputFeatureChannels: Int](mpsrnnmatrixtraininglayer/2966796-outputfeaturechannels.md)
-- [var recurrentOutputIsTemporary: Bool](mpsrnnmatrixtraininglayer/2966797-recurrentoutputistemporary.md)
-- [var storeAllIntermediateStates: Bool](mpsrnnmatrixtraininglayer/2966798-storeallintermediatestates.md)
-- [var trainingStateIsTemporary: Bool](mpsrnnmatrixtraininglayer/2966799-trainingstateistemporary.md)
+- [var accumulateWeightGradients: Bool](mpsrnnmatrixtraininglayer/accumulateweightgradients.md)
+- [var inputFeatureChannels: Int](mpsrnnmatrixtraininglayer/inputfeaturechannels.md)
+- [var outputFeatureChannels: Int](mpsrnnmatrixtraininglayer/outputfeaturechannels.md)
+- [var recurrentOutputIsTemporary: Bool](mpsrnnmatrixtraininglayer/recurrentoutputistemporary.md)
+- [var storeAllIntermediateStates: Bool](mpsrnnmatrixtraininglayer/storeallintermediatestates.md)
+- [var trainingStateIsTemporary: Bool](mpsrnnmatrixtraininglayer/trainingstateistemporary.md)
 ### Instance Methods
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsrnnmatrixtraininglayer/2966784-copy.md)
-- [func createTemporaryWeightGradientMatrices(NSMutableArray, dataType: MPSDataType, commandBuffer: any MTLCommandBuffer)](mpsrnnmatrixtraininglayer/2966785-createtemporaryweightgradientmat.md)
-- [func createWeightGradientMatrices(NSMutableArray, dataType: MPSDataType)](mpsrnnmatrixtraininglayer/2966786-createweightgradientmatrices.md)
-- [func createWeightMatrices(NSMutableArray)](mpsrnnmatrixtraininglayer/2966787-createweightmatrices.md)
-- [func encodeCopyWeights(commandBuffer: any MTLCommandBuffer, weights: [MPSMatrix], matrixId: MPSRNNMatrixId, matrix: MPSMatrix, copyFromWeightsToMatrix: Bool, matrixOffset: MTLOrigin)](mpsrnnmatrixtraininglayer/2966788-encodecopyweights.md)
-- [func encodeForwardSequence(commandBuffer: any MTLCommandBuffer, sourceMatrices: [MPSMatrix], destinationMatrices: [MPSMatrix], trainingStates: NSMutableArray, weights: [MPSMatrix])](mpsrnnmatrixtraininglayer/2966789-encodeforwardsequence.md)
-- [func encodeForwardSequence(commandBuffer: any MTLCommandBuffer, sourceMatrices: [MPSMatrix], sourceOffsets: UnsafeMutablePointer<Int>?, destinationMatrices: [MPSMatrix], destinationOffsets: UnsafeMutablePointer<Int>?, trainingStates: NSMutableArray, recurrentInputState: MPSRNNRecurrentMatrixState?, recurrentOutputStates: NSMutableArray?, weights: [MPSMatrix])](mpsrnnmatrixtraininglayer/2966790-encodeforwardsequence.md)
-- [func encodeGradientSequence(commandBuffer: any MTLCommandBuffer, forwardSources: [MPSMatrix], forwardSourceOffsets: UnsafeMutablePointer<Int>?, sourceGradients: [MPSMatrix], sourceOffsets: UnsafeMutablePointer<Int>?, destinationGradients: [MPSMatrix]?, destinationOffsets: UnsafeMutablePointer<Int>?, weightGradients: [MPSMatrix]?, trainingStates: [MPSRNNMatrixTrainingState], recurrentInputState: MPSRNNRecurrentMatrixState?, recurrentOutputStates: NSMutableArray?, weights: [MPSMatrix])](mpsrnnmatrixtraininglayer/2966791-encodegradientsequence.md)
-- [func encodeGradientSequence(commandBuffer: any MTLCommandBuffer, forwardSources: [MPSMatrix], sourceGradients: [MPSMatrix], destinationGradients: [MPSMatrix]?, weightGradients: [MPSMatrix]?, trainingStates: [MPSRNNMatrixTrainingState], weights: [MPSMatrix])](mpsrnnmatrixtraininglayer/2966792-encodegradientsequence.md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsrnnmatrixtraininglayer/copy(with:device:).md)
+- [func createTemporaryWeightGradientMatrices(NSMutableArray, dataType: MPSDataType, commandBuffer: any MTLCommandBuffer)](mpsrnnmatrixtraininglayer/createtemporaryweightgradientmatrices(_:datatype:commandbuffer:).md)
+- [func createWeightGradientMatrices(NSMutableArray, dataType: MPSDataType)](mpsrnnmatrixtraininglayer/createweightgradientmatrices(_:datatype:).md)
+- [func createWeightMatrices(NSMutableArray)](mpsrnnmatrixtraininglayer/createweightmatrices(_:).md)
+- [func encodeCopyWeights(commandBuffer: any MTLCommandBuffer, weights: [MPSMatrix], matrixId: MPSRNNMatrixId, matrix: MPSMatrix, copyFromWeightsToMatrix: Bool, matrixOffset: MTLOrigin)](mpsrnnmatrixtraininglayer/encodecopyweights(commandbuffer:weights:matrixid:matrix:copyfromweightstomatrix:matrixoffset:).md)
+- [func encodeForwardSequence(commandBuffer: any MTLCommandBuffer, sourceMatrices: [MPSMatrix], destinationMatrices: [MPSMatrix], trainingStates: NSMutableArray, weights: [MPSMatrix])](mpsrnnmatrixtraininglayer/encodeforwardsequence(commandbuffer:sourcematrices:destinationmatrices:trainingstates:weights:).md)
+- [func encodeForwardSequence(commandBuffer: any MTLCommandBuffer, sourceMatrices: [MPSMatrix], sourceOffsets: UnsafeMutablePointer<Int>?, destinationMatrices: [MPSMatrix], destinationOffsets: UnsafeMutablePointer<Int>?, trainingStates: NSMutableArray, recurrentInputState: MPSRNNRecurrentMatrixState?, recurrentOutputStates: NSMutableArray?, weights: [MPSMatrix])](mpsrnnmatrixtraininglayer/encodeforwardsequence(commandbuffer:sourcematrices:sourceoffsets:destinationmatrices:destinationoffsets:trainingstates:recurrentinputstate:recurrentoutputstates:weights:).md)
+- [func encodeGradientSequence(commandBuffer: any MTLCommandBuffer, forwardSources: [MPSMatrix], forwardSourceOffsets: UnsafeMutablePointer<Int>?, sourceGradients: [MPSMatrix], sourceOffsets: UnsafeMutablePointer<Int>?, destinationGradients: [MPSMatrix]?, destinationOffsets: UnsafeMutablePointer<Int>?, weightGradients: [MPSMatrix]?, trainingStates: [MPSRNNMatrixTrainingState], recurrentInputState: MPSRNNRecurrentMatrixState?, recurrentOutputStates: NSMutableArray?, weights: [MPSMatrix])](mpsrnnmatrixtraininglayer/encodegradientsequence(commandbuffer:forwardsources:forwardsourceoffsets:sourcegradients:sourceoffsets:destinationgradients:destinationoffsets:weightgradients:trainingstates:recurrentinputstate:recurrentoutputstates:weights:).md)
+- [func encodeGradientSequence(commandBuffer: any MTLCommandBuffer, forwardSources: [MPSMatrix], sourceGradients: [MPSMatrix], destinationGradients: [MPSMatrix]?, weightGradients: [MPSMatrix]?, trainingStates: [MPSRNNMatrixTrainingState], weights: [MPSMatrix])](mpsrnnmatrixtraininglayer/encodegradientsequence(commandbuffer:forwardsources:sourcegradients:destinationgradients:weightgradients:trainingstates:weights:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

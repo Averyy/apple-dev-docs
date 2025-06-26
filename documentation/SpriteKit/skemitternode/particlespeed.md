@@ -17,7 +17,6 @@ The average initial speed of a new particle, in points per second.
 ## Declaration
 
 ```swift
-@MainActor
 var particleSpeed: CGFloat { get set }
 ```
 

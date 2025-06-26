@@ -1,7 +1,7 @@
 # MPSMatrixLogSoftMaxGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A logarithmic gradient softmax kernel that operates on matrices.
 
@@ -16,13 +16,23 @@ A logarithmic gradient softmax kernel that operates on matrices.
 ## Declaration
 
 ```swift
-class MPSMatrixLogSoftMaxGradient : MPSMatrixSoftMaxGradient
+class MPSMatrixLogSoftMaxGradient
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrixSoftMaxGradient](mpsmatrixsoftmaxgradient.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

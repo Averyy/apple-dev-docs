@@ -1,6 +1,6 @@
 # helpAnchor
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: property
 
 A localized message providing “help” text if the user requests help.

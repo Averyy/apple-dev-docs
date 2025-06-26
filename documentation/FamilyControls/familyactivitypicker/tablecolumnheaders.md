@@ -8,7 +8,6 @@ Controls the visibility of a `Table`’s column header views.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 
 ## Declaration

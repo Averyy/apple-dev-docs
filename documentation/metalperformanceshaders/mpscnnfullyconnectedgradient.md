@@ -1,7 +1,7 @@
 # MPSCNNFullyConnectedGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient fully connected convolution layer.
 
@@ -16,19 +16,29 @@ A gradient fully connected convolution layer.
 ## Declaration
 
 ```swift
-class MPSCNNFullyConnectedGradient : MPSCNNConvolutionGradient
+class MPSCNNFullyConnectedGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnfullyconnectedgradient/2951923-init.md)
-- [init(device: any MTLDevice, weights: any MPSCNNConvolutionDataSource)](mpscnnfullyconnectedgradient/2951921-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnfullyconnectedgradient/init(coder:device:).md)
+- [init(device: any MTLDevice, weights: any MPSCNNConvolutionDataSource)](mpscnnfullyconnectedgradient/init(device:weights:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNConvolutionGradient](mpscnnconvolutiongradient.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

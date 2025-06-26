@@ -17,7 +17,6 @@ Enable nine-part stretching of the sprite’s texture.
 ## Declaration
 
 ```swift
-@MainActor
 var centerRect: CGRect { get set }
 ```
 

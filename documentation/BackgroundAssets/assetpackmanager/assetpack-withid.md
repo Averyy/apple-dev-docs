@@ -8,7 +8,7 @@ Gets a representation of an asset pack.
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
 - visionOS 26.0+ (Beta)
@@ -18,6 +18,10 @@ Gets a representation of an asset pack.
 ```swift
 func assetPack(withID assetPackID: String) async throws -> AssetPack
 ```
+
+## Mentions
+
+- [Downloading asset packs hosted by Apple](downloading-asset-packs-hosted-by-apple.md)
 
 #### Return Value
 

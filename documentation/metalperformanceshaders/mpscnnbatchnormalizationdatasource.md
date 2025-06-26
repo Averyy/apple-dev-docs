@@ -1,7 +1,7 @@
 # MPSCNNBatchNormalizationDataSource
 
 **Framework**: Metal Performance Shaders  
-**Kind**: intf
+**Kind**: protocol
 
 A protocol that defines methods that a batch normalization state uses to initialize scale factors, bias terms, and batch statistics.
 
@@ -16,37 +16,37 @@ A protocol that defines methods that a batch normalization state uses to initial
 ## Declaration
 
 ```swift
-protocol MPSCNNBatchNormalizationDataSource
+protocol MPSCNNBatchNormalizationDataSource : NSCopying, NSObjectProtocol
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](mpscnnbatchnormalizationdatasource/2951886-init.md)
-### Type Properties
-- [static var supportsSecureCoding: Bool](mpscnnbatchnormalizationdatasource/2951887-supportssecurecoding.md)
+- [init?(coder: NSCoder)](mpscnnbatchnormalizationdatasource/init(coder:).md)
 ### Instance Methods
-- [func beta() -> UnsafeMutablePointer<Float>?](mpscnnbatchnormalizationdatasource/2942586-beta.md)
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpscnnbatchnormalizationdatasource/3013773-copy.md)
-- [func encode(with: NSCoder)](mpscnnbatchnormalizationdatasource/2951882-encode.md)
-- [func epsilon() -> Float](mpscnnbatchnormalizationdatasource/2947917-epsilon.md)
-- [func gamma() -> UnsafeMutablePointer<Float>?](mpscnnbatchnormalizationdatasource/2942605-gamma.md)
-- [func label() -> String?](mpscnnbatchnormalizationdatasource/2953128-label.md)
-- [func load() -> Bool](mpscnnbatchnormalizationdatasource/2942579-load.md)
-- [func mean() -> UnsafeMutablePointer<Float>?](mpscnnbatchnormalizationdatasource/2942589-mean.md)
-- [func numberOfFeatureChannels() -> Int](mpscnnbatchnormalizationdatasource/2942596-numberoffeaturechannels.md)
-- [func purge()](mpscnnbatchnormalizationdatasource/2942607-purge.md)
-- [func updateGammaAndBeta(with: MPSCNNBatchNormalizationState) -> Bool](mpscnnbatchnormalizationdatasource/2953129-updategammaandbeta.md)
-- [func updateGammaAndBeta(with: any MTLCommandBuffer, batchNormalizationState: MPSCNNBatchNormalizationState) -> MPSCNNNormalizationGammaAndBetaState?](mpscnnbatchnormalizationdatasource/2951891-updategammaandbeta.md)
-- [func updateMeanAndVariance(with: MPSCNNBatchNormalizationState) -> Bool](mpscnnbatchnormalizationdatasource/3002360-updatemeanandvariance.md)
-- [func updateMeanAndVariance(with: any MTLCommandBuffer, batchNormalizationState: MPSCNNBatchNormalizationState) -> MPSCNNNormalizationMeanAndVarianceState?](mpscnnbatchnormalizationdatasource/3002361-updatemeanandvariance.md)
-- [func variance() -> UnsafeMutablePointer<Float>?](mpscnnbatchnormalizationdatasource/2942592-variance.md)
+- [func beta() -> UnsafeMutablePointer<Float>?](mpscnnbatchnormalizationdatasource/beta.md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpscnnbatchnormalizationdatasource/copy(with:device:).md)
+- [func encode(with: NSCoder)](mpscnnbatchnormalizationdatasource/encode(with:).md)
+- [func epsilon() -> Float](mpscnnbatchnormalizationdatasource/epsilon.md)
+- [func gamma() -> UnsafeMutablePointer<Float>?](mpscnnbatchnormalizationdatasource/gamma.md)
+- [func label() -> String?](mpscnnbatchnormalizationdatasource/label.md)
+- [func load() -> Bool](mpscnnbatchnormalizationdatasource/load.md)
+- [func mean() -> UnsafeMutablePointer<Float>?](mpscnnbatchnormalizationdatasource/mean.md)
+- [func numberOfFeatureChannels() -> Int](mpscnnbatchnormalizationdatasource/numberoffeaturechannels.md)
+- [func purge()](mpscnnbatchnormalizationdatasource/purge.md)
+- [func updateGammaAndBeta(with: MPSCNNBatchNormalizationState) -> Bool](mpscnnbatchnormalizationdatasource/updategammaandbeta(with:).md)
+- [func updateGammaAndBeta(with: any MTLCommandBuffer, batchNormalizationState: MPSCNNBatchNormalizationState) -> MPSCNNNormalizationGammaAndBetaState?](mpscnnbatchnormalizationdatasource/updategammaandbeta(with:batchnormalizationstate:).md)
+- [func updateMeanAndVariance(with: MPSCNNBatchNormalizationState) -> Bool](mpscnnbatchnormalizationdatasource/updatemeanandvariance(with:).md)
+- [func updateMeanAndVariance(with: any MTLCommandBuffer, batchNormalizationState: MPSCNNBatchNormalizationState) -> MPSCNNNormalizationMeanAndVarianceState?](mpscnnbatchnormalizationdatasource/updatemeanandvariance(with:batchnormalizationstate:).md)
+- [func variance() -> UnsafeMutablePointer<Float>?](mpscnnbatchnormalizationdatasource/variance.md)
+### Type Properties
+- [static var supportsSecureCoding: Bool](mpscnnbatchnormalizationdatasource/supportssecurecoding.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

@@ -24,10 +24,10 @@ struct vImage_CGImageFormat
 
 - [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
 - [Optimizing image-processing performance](optimizing-image-processing-performance.md)
-- [Applying flood fills to an image](applying-flood-fills-to-an-image.md)
 - [Transforming an image in three dimensions](transforming-an-image-in-three-dimensions.md)
-- [Converting chroma-subsampled images](converting-chroma-subsampled-images.md)
 - [Building a basic image conversion workflow](building-a-basic-image-conversion-workflow.md)
+- [Converting chroma-subsampled images](converting-chroma-subsampled-images.md)
+- [Applying flood fills to an image](applying-flood-fills-to-an-image.md)
 
 #### Overview
 

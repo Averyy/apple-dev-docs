@@ -23,14 +23,14 @@ protocol SKSceneDelegate : NSObjectProtocol
 ## Mentions
 
 - [Getting Started with Nodes](getting-started-with-nodes.md)
-- [Use SpriteKit Objects within Scene Delegate Callbacks](use-spritekit-objects-within-scene-delegate-callbacks.md)
-- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
-- [Displaying 3D Content in a SpriteKit Scene](displaying-3d-content-in-a-spritekit-scene.md)
-- [Getting Started with Actions](getting-started-with-actions.md)
-- [Disconnecting Bodies from Joints](disconnecting-bodies-from-joints.md)
 - [Detecting Changes at Each Step of an Animation](detecting-changes-at-each-step-of-an-animation.md)
+- [Getting Started with Actions](getting-started-with-actions.md)
+- [Displaying 3D Content in a SpriteKit Scene](displaying-3d-content-in-a-spritekit-scene.md)
 - [Subclassing Scenes Versus Assigning a Delegate](subclassing-scenes-versus-assigning-a-delegate.md)
+- [Use SpriteKit Objects within Scene Delegate Callbacks](use-spritekit-objects-within-scene-delegate-callbacks.md)
+- [Disconnecting Bodies from Joints](disconnecting-bodies-from-joints.md)
 - [Configuring a Physics Body](configuring-a-physics-body.md)
+- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
 
 #### Overview
 

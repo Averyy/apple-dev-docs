@@ -16,7 +16,7 @@ A platform-specific type that represents a font for use in generating a text mes
 ## Declaration
 
 ```swift
-typealias Font = UIFont
+typealias Font = NSFont
 ```
 
 

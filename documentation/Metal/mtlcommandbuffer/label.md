@@ -22,7 +22,7 @@ var label: String? { get set }
 
 #### Discussion
 
-Set labels to help you quickly identify a command buffer at runtime in the Metal debugging and profiling tools. See `Enhancing Frame Capture by Using Labels`.
+Set labels to help you quickly identify a command buffer at runtime in the Metal debugging and profiling tools. See [`Naming resources and commands`](https://developer.apple.com/documentation/Xcode/Naming-resources-and-commands).
 
 ## See Also
 

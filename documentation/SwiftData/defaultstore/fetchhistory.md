@@ -19,6 +19,12 @@
 final func fetchHistory(_ descriptor: HistoryDescriptor<DefaultHistoryTransaction>) throws -> [DefaultHistoryTransaction]
 ```
 
+## See Also
+
+- [func deleteHistory(HistoryDescriptor<DefaultHistoryTransaction>) throws](defaultstore/deletehistory(_:).md)
+- [DefaultStore.HistoryType](defaultstore/historytype-swift.typealias.md)
+- [DefaultStore.TokenType](defaultstore/tokentype.md)
+
 
 ---
 

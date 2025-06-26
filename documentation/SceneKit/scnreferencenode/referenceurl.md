@@ -17,7 +17,6 @@ The URL to a scene file from which to load content for the reference node.
 ## Declaration
 
 ```swift
-@MainActor
 var referenceURL: URL { get set }
 ```
 

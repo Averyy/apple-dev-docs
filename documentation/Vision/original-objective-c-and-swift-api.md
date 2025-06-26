@@ -185,7 +185,7 @@
 ### Object recognition
 - [Recognizing Objects in Live Capture](recognizing-objects-in-live-capture.md)
   Apply Vision algorithms to identify objects in real-time video.
-- [Understanding a Dice Roll with Vision and Object Detection](../coreml/model_integration_samples/understanding_a_dice_roll_with_vision_and_object_detection.md)
+- [Understanding a Dice Roll with Vision and Object Detection](../CoreML/understanding-a-dice-roll-with-vision-and-object-detection.md)
   Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
 - [class VNRecognizedObjectObservation](vnrecognizedobjectobservation.md)
   A detected object observation with an array of classification labels that classify the recognized object.
@@ -230,7 +230,7 @@
 - [let VNGenerateForegroundInstanceMaskRequestRevision1: Int](vngenerateforegroundinstancemaskrequestrevision1.md)
   A constant for specifying the first revision of the foreground instance mask request.
 ### Machine learning image analysis
-- [Classifying Images with Vision and Core ML](../coreml/model_integration_samples/classifying_images_with_vision_and_core_ml.md)
+- [Classifying Images with Vision and Core ML](../CoreML/classifying-images-with-vision-and-core-ml.md)
   Crop and scale photos using the Vision framework and classify them with a Core ML model.
 - [Training a Create ML Model to Classify Flowers](training-a-create-ml-model-to-classify-flowers.md)
   Train a flower classifier using Create ML in Swift Playgrounds, and apply the resulting model to real-time image classification using Vision.
@@ -320,16 +320,8 @@
 ### Macros
 - [Macros](vision-macros.md)
 ### Structures
-- [struct ImageCoordinateConversionHelpers](imagecoordinateconversionhelpers.md)
-- [struct ImagePixelDimensions](imagepixeldimensions.md)
-- [struct ResourceVersion](resourceversion.md)
 - [struct VNVideoProcessingOption](vnvideoprocessingoption.md)
   Options to pass to the video processor when adding requests.
-### Type aliases
-- [typealias DetectorKey](detectorkey.md)
-- [typealias NamedMultipleObjectDataAccessBlock](namedmultipleobjectdataaccessblock.md)
-- [typealias NamedObjectDataAccessBlock](namedobjectdataaccessblock.md)
-- [typealias NamedObjectsDictionary](namedobjectsdictionary.md)
 
 
 ---

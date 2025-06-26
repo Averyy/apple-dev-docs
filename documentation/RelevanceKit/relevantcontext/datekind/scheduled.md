@@ -25,7 +25,7 @@ static var scheduled: RelevantContext.DateKind { get }
 - [static var `default`: RelevantContext.DateKind](relevantcontext/datekind/default.md)
   A hint that tells the system to treat a widget with default priority.
 - [static var informational: RelevantContext.DateKind](relevantcontext/datekind/informational.md)
-  Informative content that can be passively consumed.
+  A hint that tells the system to treat a widget with slightly lower priority because it displays content and doesn’t require an action.
 
 
 ---

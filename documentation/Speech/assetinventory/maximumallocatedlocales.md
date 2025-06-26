@@ -3,7 +3,7 @@
 **Framework**: Speech  
 **Kind**: property
 
-The largest allowed count for `allocatedLocales`.
+The number of locale allocations permitted to an application.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -17,6 +17,10 @@ The largest allowed count for `allocatedLocales`.
 ```swift
 static var maximumAllocatedLocales: Int { get }
 ```
+
+#### Discussion
+
+This value is the largest allowed count of [`allocatedLocales`](assetinventory/allocatedlocales.md). The value may vary between devices according to storage space.
 
 ## See Also
 

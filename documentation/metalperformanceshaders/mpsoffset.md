@@ -6,12 +6,12 @@
 A signed coordinate with x, y, and z components.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -21,29 +21,47 @@ struct MPSOffset
 
 ## Topics
 
-### Initializers
-- [init()](mpsoffset/1618896-init.md)
-- [init(x: Int, y: Int, z: Int)](mpsoffset/1618740-init.md)
-### Instance Properties
-- [var x: Int](mpsoffset/1618861-x.md)
+### Fields
+- [var x: Int](mpsoffset/x.md)
   The horizontal component of the offset, in pixels.
-- [var y: Int](mpsoffset/1618846-y.md)
+- [var y: Int](mpsoffset/y.md)
   The vertical component of the offset, in pixels.
-- [var z: Int](mpsoffset/1618881-z.md)
+- [var z: Int](mpsoffset/z.md)
   The depth component of the offset, in pixels.
+### Initializers
+- [init()](mpsoffset/init.md)
+- [init(x: Int, y: Int, z: Int)](mpsoffset/init(x:y:z:).md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 
-- [var offset: MPSOffset](mpsunaryimagekernel/1618884-offset.md)
-  The position of the destination clip rectangle origin relative to the source buffer.
-- [var clipRect: MTLRegion](mpsunaryimagekernel/1618859-cliprect.md)
-  An optional clip rectangle to use when writing data. Only the pixels in the rectangle will be overwritten.
-- [struct MPSRegion](mpsregion.md)
-  A region of an image.
-- [var edgeMode: MPSImageEdgeMode](mpsunaryimagekernel/1618812-edgemode.md)
+- [var offset: MPSOffset](mpscnnkernel/offset.md)
+  The position of the destination image’s clip rectangle origin, relative to the source image.
+- [var clipRect: MTLRegion](mpscnnkernel/cliprect.md)
+  An optional clip rectangle to use when writing data. Only the pixels in the clip rectangle will be overwritten.
+- [struct MTLRegion](../Metal/MTLRegion.md)
+  The bounds for a subset of an object’s elements.
+- [var destinationFeatureChannelOffset: Int](mpscnnkernel/destinationfeaturechanneloffset.md)
+  The number of channels in the destination image to skip before writing output data.
+- [var edgeMode: MPSImageEdgeMode](mpscnnkernel/edgemode.md)
   The edge mode to use when texture reads stray off the edge of an image.
 - [enum MPSImageEdgeMode](mpsimageedgemode.md)
   The options used to control the edge behavior of an image filter when it reads outside the bounds of a source texture.
+- [var kernelHeight: Int](mpscnnkernel/kernelheight.md)
+- [var kernelWidth: Int](mpscnnkernel/kernelwidth.md)
+- [var strideInPixelsX: Int](mpscnnkernel/strideinpixelsx.md)
+- [var strideInPixelsY: Int](mpscnnkernel/strideinpixelsy.md)
+- [var isBackwards: Bool](mpscnnkernel/isbackwards.md)
+- [var padding: any MPSNNPadding](mpscnnkernel/padding.md)
+- [protocol MPSNNPadding](mpsnnpadding.md)
+  The protocol that provides a description of how kernels should pad images.
+- [var destinationImageAllocator: any MPSImageAllocator](mpscnnkernel/destinationimageallocator.md)
+- [protocol MPSImageAllocator](mpsimageallocator.md)
 
 
 ---

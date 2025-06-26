@@ -78,8 +78,6 @@ In Mac apps built with Mac Catalyst, this instance doesn’t emit purchase inten
 ### Identifying the offer
 - [let offer: Product.SubscriptionOffer?](purchaseintent/offer.md)
   The subscription offer that the customer redeems outside of your app.
-### Default Implementations
-- [Identifiable Implementations](purchaseintent/identifiable-implementations.md)
 
 ## Relationships
 

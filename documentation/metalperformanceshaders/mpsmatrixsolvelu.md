@@ -1,7 +1,7 @@
 # MPSMatrixSolveLU
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel for computing the solution of a linear system of equations using an LU factorization.
 
@@ -16,7 +16,7 @@ A kernel for computing the solution of a linear system of equations using an LU 
 ## Declaration
 
 ```swift
-class MPSMatrixSolveLU : MPSMatrixBinaryKernel
+class MPSMatrixSolveLU
 ```
 
 #### Overview
@@ -30,14 +30,24 @@ This kernel finds the solution matrix to the system , where:
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, transpose: Bool, order: Int, numberOfRightHandSides: Int)](mpsmatrixsolvelu/2873005-init.md)
+- [init(device: any MTLDevice, transpose: Bool, order: Int, numberOfRightHandSides: Int)](mpsmatrixsolvelu/init(device:transpose:order:numberofrighthandsides:).md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, rightHandSideMatrix: MPSMatrix, pivotIndices: MPSMatrix, solutionMatrix: MPSMatrix)](mpsmatrixsolvelu/2867074-encode.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, rightHandSideMatrix: MPSMatrix, pivotIndices: MPSMatrix, solutionMatrix: MPSMatrix)](mpsmatrixsolvelu/encode(commandbuffer:sourcematrix:righthandsidematrix:pivotindices:solutionmatrix:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrixBinaryKernel](mpsmatrixbinarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

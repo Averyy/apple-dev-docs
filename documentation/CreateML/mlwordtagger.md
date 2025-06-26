@@ -100,6 +100,8 @@ To use your custom word tagger in the [`Natural Language`](https://developer.app
 
 - [Creating a text classifier model](creating-a-text-classifier-model.md)
   Train a machine learning model to classify natural language text.
+- [Creating a word tagger model](../NaturalLanguage/creating-a-word-tagger-model.md)
+  Train a machine learning model to tag individual words in natural language text.
 - [struct MLTextClassifier](mltextclassifier.md)
   A model you train to classify natural language text.
 - [struct MLGazetteer](mlgazetteer.md)

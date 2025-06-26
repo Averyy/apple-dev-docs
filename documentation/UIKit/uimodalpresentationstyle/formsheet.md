@@ -9,6 +9,7 @@ A presentation style that displays the content centered in the screen.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

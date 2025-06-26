@@ -55,6 +55,8 @@ Listing 1. Sample implementation using ABAddressBookRequestAccessCompletionHandl
 
 ## See Also
 
+- [typealias ABRecord](abrecord-swift.typealias.md)
+  A reference to an ABRecord object or any of its derivedopaque types.
 - [typealias ABExternalChangeCallback](abexternalchangecallback.md)
   Prototype for a function callback invoked on an address book when the Address Book database is modified by another address book instance.
 - [typealias ABMultiValueIdentifier](abmultivalueidentifier.md)

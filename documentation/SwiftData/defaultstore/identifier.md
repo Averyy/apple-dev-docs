@@ -19,6 +19,13 @@
 final var identifier: String { get }
 ```
 
+## See Also
+
+- [let configuration: ModelConfiguration](defaultstore/configuration-swift.property.md)
+- [DefaultStore.Configuration](defaultstore/configuration-swift.typealias.md)
+- [let name: String](defaultstore/name.md)
+- [let schema: Schema](defaultstore/schema.md)
+
 
 ---
 

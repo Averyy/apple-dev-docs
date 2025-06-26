@@ -1,9 +1,9 @@
 # MPSAlphaType.alphaIsOne
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
-Alpha is guaranteed to be 1, even if it is not encoded as 1 or not encoded at all. ([`CGImageAlphaInfo.noneSkipFirst`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/noneskipfirst)`/`[`CGImageAlphaInfo.noneSkipLast`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/noneskiplast)`, `[`CGImageAlphaInfo.none`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/none))
+Alpha is guaranteed to be 1.
 
 **Availability**:
 - iOS 10.0+
@@ -16,8 +16,19 @@ Alpha is guaranteed to be 1, even if it is not encoded as 1 or not encoded at al
 ## Declaration
 
 ```swift
-case alphaIsOne = 1
+case alphaIsOne
 ```
+
+#### Overview
+
+The alpha value is guaranteed to be `1` even if it is not encoded as `1` or even not encoded at all.
+
+## See Also
+
+- [MPSAlphaType.nonPremultiplied](mpsalphatype/nonpremultiplied.md)
+  The image is not premultiplied by alpha.
+- [MPSAlphaType.premultiplied](mpsalphatype/premultiplied.md)
+  The image is premultiplied by alpha.
 
 
 ---

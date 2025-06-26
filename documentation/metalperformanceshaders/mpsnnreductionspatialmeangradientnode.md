@@ -1,7 +1,7 @@
 # MPSNNReductionSpatialMeanGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 12.1+
@@ -14,18 +14,25 @@
 ## Declaration
 
 ```swift
-class MPSNNReductionSpatialMeanGradientNode : MPSNNGradientFilterNode
+class MPSNNReductionSpatialMeanGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](mpsnnreductionspatialmeangradientnode/3037413-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](mpsnnreductionspatialmeangradientnode/init(sourcegradient:sourceimage:gradientstate:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

@@ -1281,6 +1281,8 @@
   Configures the search scopes for this view with the specified activation strategy.
 - [func searchScopes<V, S>(Binding<V>, scopes: () -> S) -> some View](familyactivitypicker/searchscopes(_:scopes:).md)
   Configures the search scopes for this view.
+- [func searchSelection(Binding<TextSelection?>) -> some View](familyactivitypicker/searchselection(_:).md)
+  Binds the selection of the search field associated with the nearest searchable modifier to the given `TextSelection` value.
 - [func searchSuggestions<S>(() -> S) -> some View](familyactivitypicker/searchsuggestions(_:).md)
   Configures the search suggestions for this view.
 - [func searchSuggestions(Visibility, for: SearchSuggestionsPlacement.Set) -> some View](familyactivitypicker/searchsuggestions(_:for:).md)

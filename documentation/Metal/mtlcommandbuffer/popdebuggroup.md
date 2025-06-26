@@ -24,7 +24,7 @@ func popDebugGroup()
 
 Use [`pushDebugGroup(_:)`](mtlcommandbuffer/pushdebuggroup(_:).md) to group commands within the command buffer, which adds a new group to a stack, effectively nesting a group within any previous group. Call [`popDebugGroup()`](mtlcommandbuffer/popdebuggroup().md) to mark the end of a group of commands within the command buffer, and restore the previous group, if applicable. You can inspect the group and the commands it contains when viewing the contents of a frame capture with Metal Debugger.
 
-Labels can help you profile and debug your app at runtime with Metal Debugger and other tools. See `Enhancing Frame Capture by Using Labels` for more information about using labels and other debugging techniques.
+Labels can help you profile and debug your app at runtime with Metal Debugger and other tools. See [`Naming resources and commands`](https://developer.apple.com/documentation/Xcode/Naming-resources-and-commands) for more information about using labels and other debugging techniques.
 
 ## See Also
 

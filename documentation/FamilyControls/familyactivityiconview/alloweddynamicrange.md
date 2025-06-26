@@ -8,7 +8,6 @@ Returns a new view configured with the specified allowed dynamic range.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 

@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: init
 
-Creates an instance containing the commands specified in the array
+Creates an instance containing the commands specified in the given array
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -12,19 +12,17 @@ Creates an instance containing the commands specified in the array
 ## Declaration
 
 ```swift
-init(commands: [any PresentationCommand] = [])
+init(commands: [PresentationCommand] = [])
 ```
 
 ## Parameters
 
-- `commands`: An array of presentation commands (e.g. SetCameraCommand, FadeCommand)
+- `commands`: An array of presentation commands (e.g.  ,  )
 
 ## See Also
 
-- [init(duration: CMTime?, commands: [any PresentationCommand])](presentationdescriptor/init(duration:commands:).md)
+- [init(duration: CMTime?, commands: [PresentationCommand])](presentationdescriptor/init(duration:commands:).md)
   Creates an instance containing the commands specified in the array
-- [init(from: any Decoder) throws](presentationdescriptor/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 
 
 ---

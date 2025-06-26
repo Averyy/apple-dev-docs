@@ -15,9 +15,9 @@ object StatusResponse
 
 ## Mentions
 
+- [Handling Error Responses](handling-error-responses.md)
 - [Managing Assets](managing-assets.md)
 - [Managing Users](managing-users.md)
-- [Handling Error Responses](handling-error-responses.md)
 
 ## See Also
 

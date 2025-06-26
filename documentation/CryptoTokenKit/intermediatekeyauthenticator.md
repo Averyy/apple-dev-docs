@@ -4,7 +4,6 @@
 **Kind**: typealias
 
 **Availability**:
-- Mac Catalyst ?+
 - macOS ?+
 
 ## Declaration

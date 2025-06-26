@@ -10,10 +10,10 @@ Positions this view within an invisible frame.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 13.0+
 - visionOS 1.0+
 - watchOS 6.0+
 - Unknown ?+ - Deprecated
+- tvOS 13.0+
 
 ## Declaration
 

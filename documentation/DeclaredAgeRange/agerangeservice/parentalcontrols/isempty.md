@@ -1,6 +1,6 @@
 # isEmpty
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: property
 
 A Boolean value that indicates whether the set has no elements.

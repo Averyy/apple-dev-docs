@@ -21,8 +21,8 @@ object MDM
 
 ## Mentions
 
-- [Implementing the simple authentication account-driven enrollment flow](implementing-the-simple-authentication-user-enrollment-flow.md)
 - [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
+- [Implementing the simple authentication account-driven enrollment flow](implementing-the-simple-authentication-user-enrollment-flow.md)
 - [Managing MDM Devices and Users in macOS](managing-mdm-devices-and-users-in-macos.md)
 
 #### Discussion

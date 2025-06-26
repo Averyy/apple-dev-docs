@@ -1,9 +1,9 @@
 # MPSCNNSubPixelConvolutionDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
-A description of a convolution object that does subpixel upsampling and reshaping. 
+A description of a convolution object that does subpixel upsampling and reshaping.
 
 **Availability**:
 - iOS 11.0+
@@ -16,18 +16,28 @@ A description of a convolution object that does subpixel upsampling and reshapin
 ## Declaration
 
 ```swift
-class MPSCNNSubPixelConvolutionDescriptor : MPSCNNConvolutionDescriptor
+class MPSCNNSubPixelConvolutionDescriptor
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var subPixelScaleFactor: Int](mpscnnsubpixelconvolutiondescriptor/2875156-subpixelscalefactor.md)
+- [var subPixelScaleFactor: Int](mpscnnsubpixelconvolutiondescriptor/subpixelscalefactor.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNConvolutionDescriptor](mpscnnconvolutiondescriptor.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -42,7 +52,7 @@ class MPSCNNSubPixelConvolutionDescriptor : MPSCNNConvolutionDescriptor
 - [class MPSCNNConvolutionGradient](mpscnnconvolutiongradient.md)
   A gradient convolution kernel.
 - [class MPSCNNConvolutionGradientState](mpscnnconvolutiongradientstate.md)
-  An object that exposes a gradient convolution kernel's gradient with respect to weights and biases.
+  An object that exposes a gradient convolution kernel’s gradient with respect to weights and biases.
 - [protocol MPSImageSizeEncodingState](mpsimagesizeencodingstate.md)
   A protocol for objects that contain information about an image size elsewhere in the graph.
 - [class MPSCNNConvolutionWeightsAndBiasesState](mpscnnconvolutionweightsandbiasesstate.md)

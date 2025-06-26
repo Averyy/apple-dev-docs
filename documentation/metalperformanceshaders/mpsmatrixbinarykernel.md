@@ -1,7 +1,7 @@
 # MPSMatrixBinaryKernel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel that consumes two matrices and produces one matrix.
 
@@ -16,22 +16,42 @@ A kernel that consumes two matrices and produces one matrix.
 ## Declaration
 
 ```swift
-class MPSMatrixBinaryKernel : MPSKernel
+class MPSMatrixBinaryKernel
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var batchSize: Int](mpsmatrixbinarykernel/2867089-batchsize.md)
-- [var batchStart: Int](mpsmatrixbinarykernel/2867152-batchstart.md)
-- [var primarySourceMatrixOrigin: MTLOrigin](mpsmatrixbinarykernel/2867182-primarysourcematrixorigin.md)
-- [var resultMatrixOrigin: MTLOrigin](mpsmatrixbinarykernel/2867193-resultmatrixorigin.md)
-- [var secondarySourceMatrixOrigin: MTLOrigin](mpsmatrixbinarykernel/2867096-secondarysourcematrixorigin.md)
+- [var batchSize: Int](mpsmatrixbinarykernel/batchsize.md)
+- [var batchStart: Int](mpsmatrixbinarykernel/batchstart.md)
+- [var primarySourceMatrixOrigin: MTLOrigin](mpsmatrixbinarykernel/primarysourcematrixorigin.md)
+- [var resultMatrixOrigin: MTLOrigin](mpsmatrixbinarykernel/resultmatrixorigin.md)
+- [var secondarySourceMatrixOrigin: MTLOrigin](mpsmatrixbinarykernel/secondarysourcematrixorigin.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
+### Inherited By
+- [MPSMatrixBatchNormalizationGradient](mpsmatrixbatchnormalizationgradient.md)
+- [MPSMatrixFullyConnected](mpsmatrixfullyconnected.md)
+- [MPSMatrixFullyConnectedGradient](mpsmatrixfullyconnectedgradient.md)
+- [MPSMatrixNeuronGradient](mpsmatrixneurongradient.md)
+- [MPSMatrixSoftMaxGradient](mpsmatrixsoftmaxgradient.md)
+- [MPSMatrixSolveCholesky](mpsmatrixsolvecholesky.md)
+- [MPSMatrixSolveLU](mpsmatrixsolvelu.md)
+- [MPSMatrixSolveTriangular](mpsmatrixsolvetriangular.md)
+- [MPSMatrixVectorMultiplication](mpsmatrixvectormultiplication.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

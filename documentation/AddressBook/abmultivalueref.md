@@ -14,7 +14,7 @@ A reference to an `ABMultiValue` or `ABMutableMultiValueobject`.
 ## Declaration
 
 ```swift
-typealias ABMultiValue = CFTypeRef
+class ABMultiValueRef
 ```
 
 ## Relationships

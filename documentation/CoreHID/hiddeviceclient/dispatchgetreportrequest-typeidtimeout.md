@@ -16,8 +16,8 @@ func dispatchGetReportRequest(type: HIDReportType, id: HIDReportID? = nil, timeo
 
 ## Mentions
 
-- [Creating virtual devices](creatingvirtualdevices.md)
 - [Communicating with human interface devices](communicatingwithhiddevices.md)
+- [Creating virtual devices](creatingvirtualdevices.md)
 
 #### Return Value
 

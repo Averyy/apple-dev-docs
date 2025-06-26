@@ -18,7 +18,7 @@ A path that determines the cross-sectional contour of each chamfered edge.
 
 ```swift
 @NSCopying
-var chamferProfile: UIBezierPath? { get set }
+var chamferProfile: NSBezierPath? { get set }
 ```
 
 #### Discussion

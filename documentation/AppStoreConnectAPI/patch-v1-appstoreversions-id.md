@@ -10,8 +10,8 @@ Update the app store version for a specific app.
 
 ## Mentions
 
-- [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
 - [App Store Connect API 3.3 release notes](app-store-connect-api-3-3-release-notes.md)
+- [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
 
 ## See Also
 

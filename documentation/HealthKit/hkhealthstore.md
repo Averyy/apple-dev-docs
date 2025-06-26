@@ -89,6 +89,8 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
 ### Accessing the preferred units
 - [func preferredUnits(for: Set<HKQuantityType>, completion: ([HKQuantityType : HKUnit], (any Error)?) -> Void)](hkhealthstore/preferredunits(for:completion:).md)
   Returns the user’s preferred units for the given quantity types.
+- [static let HKUserPreferencesDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/HKUserPreferencesDidChange.md)
+  Notifies observers whenever the user changes his or her preferred units.
 ### Managing background delivery
 - [func enableBackgroundDelivery(for: HKObjectType, frequency: HKUpdateFrequency, withCompletion: (Bool, (any Error)?) -> Void)](hkhealthstore/enablebackgrounddelivery(for:frequency:withcompletion:).md)
   Enables the delivery of updates to an app running in the background.
@@ -120,6 +122,8 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
 ### Accessing the move mode
 - [func activityMoveMode() throws -> HKActivityMoveModeObject](hkhealthstore/activitymovemode.md)
   Returns the activity move mode for the current user.
+- [static let HKUserPreferencesDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/HKUserPreferencesDidChange.md)
+  Notifies observers whenever the user changes his or her preferred units.
 ### Deprecated symbols
 - [func add([HKSample], to: HKWorkout, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/add(_:to:completion:).md)
   Associates the provided samples with the specified workout.

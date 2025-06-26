@@ -27,6 +27,7 @@ The result of handling the invocation; if the result is affirmative, the respons
 ## Parameters
 
 - `parameters`: The options to use for the file dialog.
+- `frame`: Information about the frame whose JavaScript process initiated this call.
 
 
 ---

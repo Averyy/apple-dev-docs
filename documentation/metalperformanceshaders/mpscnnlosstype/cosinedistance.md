@@ -1,7 +1,7 @@
 # MPSCNNLossType.cosineDistance
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.3+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case cosineDistance = 7
+case cosineDistance
 ```
 
 

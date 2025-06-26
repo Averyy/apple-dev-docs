@@ -17,6 +17,7 @@ The rate at which new particles are created.
 ## Declaration
 
 ```swift
+@MainActor
 var particleBirthRate: CGFloat { get set }
 ```
 

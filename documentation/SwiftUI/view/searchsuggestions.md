@@ -23,8 +23,8 @@ func searchSuggestions<S>(@ViewBuilder _ suggestions: () -> S) -> some View wher
 
 ## Mentions
 
-- [Scoping a search operation](scoping-a-search-operation.md)
 - [Suggesting search terms](suggesting-search-terms.md)
+- [Scoping a search operation](scoping-a-search-operation.md)
 
 #### Discussion
 

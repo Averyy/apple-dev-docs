@@ -14,6 +14,11 @@ The notification schedule configured by the person using your app.
 var notificationSchedule: JournalingSuggestionsConfiguration.NotificationSchedule? { get }
 ```
 
+## See Also
+
+- [JournalingSuggestionsConfiguration.NotificationSchedule](journalingsuggestionsconfiguration/notificationschedule-swift.enum.md)
+  The schedule configuration of Journaling Suggestions notifications.
+
 
 ---
 

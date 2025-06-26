@@ -1,7 +1,7 @@
 # MPSImagePyramid
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A base class for creating different kinds of pyramid images.
 
@@ -16,30 +16,43 @@ A base class for creating different kinds of pyramid images.
 ## Declaration
 
 ```swift
-class MPSImagePyramid : MPSUnaryImageKernel
+class MPSImagePyramid
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagepyramid/2866151-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagepyramid/init(coder:device:).md)
 ### Methods
-- [init(device: any MTLDevice)](mpsimagepyramid/1648935-init.md)
+- [convenience init(device: any MTLDevice)](mpsimagepyramid/init(device:).md)
   Initializes a downwards 5-tap image pyramid with the default filter kernel and device.
-- [init(device: any MTLDevice, centerWeight: Float)](mpsimagepyramid/1648889-init.md)
+- [convenience init(device: any MTLDevice, centerWeight: Float)](mpsimagepyramid/init(device:centerweight:).md)
   Initialize a downwards 5-tap image pyramid with a central weight parameter and device.
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, weights: UnsafePointer<Float>)](mpsimagepyramid/1648821-init.md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, weights: UnsafePointer<Float>)](mpsimagepyramid/init(device:kernelwidth:kernelheight:weights:).md)
   Initialize a downwards n-tap image pyramid with a custom filter kernel and device.
 ### Properties
-- [var kernelWidth: Int](mpsimagepyramid/1648842-kernelwidth.md)
+- [var kernelWidth: Int](mpsimagepyramid/kernelwidth.md)
   The width of the filter window. Must be an odd number.
-- [var kernelHeight: Int](mpsimagepyramid/1648863-kernelheight.md)
+- [var kernelHeight: Int](mpsimagepyramid/kernelheight.md)
   The height of the filter window. Must be an odd number.
 
 ## Relationships
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Inherited By
+- [MPSImageGaussianPyramid](mpsimagegaussianpyramid.md)
+- [MPSImageLaplacianPyramid](mpsimagelaplacianpyramid.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

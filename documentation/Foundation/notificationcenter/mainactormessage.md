@@ -15,13 +15,23 @@
 ## Declaration
 
 ```swift
-protocol MainActorMessage : NotificationCenter.Message
+protocol MainActorMessage : SendableMetatype
 ```
+
+## Topics
+
+### Associated Types
+- [associatedtype Subject](notificationcenter/mainactormessage/subject.md)
+### Type Properties
+- [static var name: Notification.Name](notificationcenter/mainactormessage/name.md)
+### Type Methods
+- [static func makeMessage(Notification) -> Self?](notificationcenter/mainactormessage/makemessage(_:).md)
+- [static func makeNotification(Self, object: Self.Subject?) -> Notification](notificationcenter/mainactormessage/makenotification(_:object:).md)
 
 ## Relationships
 
 ### Inherits From
-- [NotificationCenter.Message](notificationcenter/message.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [Date.SystemClockDidChangeMessage](date/systemclockdidchangemessage.md)
 - [FileManager.UbiquityIdentityDidChangeMessage](filemanager/ubiquityidentitydidchangemessage.md)

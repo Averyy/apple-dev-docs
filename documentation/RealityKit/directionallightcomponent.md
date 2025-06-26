@@ -85,6 +85,7 @@ The directional light illuminates entities evenly in the direction it derives fr
 
 ### Conforms To
 - [Component](component.md)
+- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 
 ## See Also

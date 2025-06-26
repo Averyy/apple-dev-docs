@@ -17,6 +17,7 @@ Initializes a textured sprite with a normal map to simulate 3D lighting.
 ## Declaration
 
 ```swift
+@MainActor
 convenience init(texture: SKTexture?, normalMap: SKTexture?)
 ```
 

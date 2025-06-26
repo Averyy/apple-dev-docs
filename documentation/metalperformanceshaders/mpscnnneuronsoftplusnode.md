@@ -1,7 +1,7 @@
 # MPSCNNNeuronSoftPlusNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a parametric softplus neuron filter.
 
@@ -16,19 +16,26 @@ A representation of a parametric softplus neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronSoftPlusNode : MPSCNNNeuronNode
+class MPSCNNNeuronSoftPlusNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, a: Float, b: Float)](mpscnnneuronsoftplusnode/2866413-init.md)
-- [init(source: MPSNNImageNode)](mpscnnneuronsoftplusnode/2921457-init.md)
+- [init(source: MPSNNImageNode, a: Float, b: Float)](mpscnnneuronsoftplusnode/init(source:a:b:).md)
+- [init(source: MPSNNImageNode)](mpscnnneuronsoftplusnode/init(source:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuronNode](mpscnnneuronnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

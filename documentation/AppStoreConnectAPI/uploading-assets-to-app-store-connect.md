@@ -24,6 +24,8 @@ This workflow is the same for every asset type you manage and upload using the f
 | App previews | [`App Preview Sets`](app-preview-sets.md)   [`App Previews`](app-previews.md) |
 | App Clip card images | [`App Clip Header Images`](app-clip-header-images.md)   [`Advanced App Clip Experience Images`](advanced-app-clip-experience-images.md) |
 | Attachments for the App Review team | [`App Store review attachments`](app-store-review-attachments.md) |
+| Game center activity images | [`Game Center activity images`](game-center-activity-images.md) |
+| Game center challenge images | [`Game Center challenge images`](game-center-challenge-images.md) |
 | In-App purchase App Store review screenshots | [`In-App Purchase App Store Review Screenshots`](in-app-purchase-app-store-review-screenshots.md) |
 | In-app purchase images | [`In-app purchase images`](in-app-purchase-images.md) |
 | Subscription App Store review screenshots | [`Subscription App Store Review Screenshots`](subscription-app-store-review-screenshots.md) |
@@ -136,7 +138,15 @@ The next step in delivering an asset to App Store Connect is uploading the binar
 
 > ❗ **Important**:  You have limited time to complete the upload. In general, plan to finish an upload within a week of creating the asset reservation. See `Resolve failures due to an expired reservation` for more information.
 
-If your asset is large enough, you will receive multiple upload operations, each specifying the length in bytes and the byte offset into the file. Divide the large asset into binary data parts as specified by those instructions, and then:
+If your asset is large enough, you will receive multiple upload operations, each specifying the length in bytes and the byte offset into the file. Divide the large asset into binary data parts as specified by those instructions. One option, using the `length` 11097, is:
+
+```None
+split -b 11097 sample_image.png
+```
+
+The resulting split files are have a sequential naming convention, you need to upload all splits of the original file. The system will combine the splits into one image.
+
+Next you:
 
 - Make an HTTP request using the method, URL, and request headers specified in the operation.
 - In the body of the request, include the binary data from the given byte range of the original file.

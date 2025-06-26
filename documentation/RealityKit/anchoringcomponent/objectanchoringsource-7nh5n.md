@@ -22,7 +22,7 @@ struct ObjectAnchoringSource
 ## Topics
 
 ### Initializers
-- [init(group:name:)](anchoringcomponent/objectanchoringsource-7nh5n/init(group:name:).md)
+- [init(group:name:)](anchoringcomponent/objectanchoringsource-3ickh/init(group:name:).md)
   Creates the object anchoring source by group and name in AR Resources.
 
 ## Relationships

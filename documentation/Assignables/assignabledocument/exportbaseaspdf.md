@@ -23,6 +23,8 @@ The base part of this document as a `PDFDocument`.
 
 ## See Also
 
+- [func exportParts(identifiedBy: [AssignableDocument.PartID]) async throws -> [AssignableDocument.PartID : MergeablePartData]](assignabledocument/exportparts(identifiedby:).md)
+  Given a set of part identifiers, return a dictionary of part ID to part data.
 - [func export(partIDs: [AssignableDocument.PartID]) async throws -> [AssignableDocument.PartID : URL]](assignabledocument/export(partids:).md)
   Given a set of part identifiers, return a dictionary of part ID to data objects for the requested layers.
 

@@ -33,6 +33,8 @@ For example, `AVTimedMetadataGroups` are used to represent chapters, optionally 
 ### Creating a Timed Metadata Group
 - [init(items: [AVMetadataItem], timeRange: CMTimeRange)](avtimedmetadatagroup/init(items:timerange:).md)
   Creates a timed metadata group initialized with the given metadata items.
+- [convenience init?(sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>)](avtimedmetadatagroup/init(samplebuffer:)-6atlv.md)
+  Creates a timed metadata group with a sample buffer.
 ### Accessing Group Attributes
 - [var items: [AVMetadataItem]](avtimedmetadatagroup/items.md)
   An array of metadata items in the timed metadata group.
@@ -42,8 +44,6 @@ For example, `AVTimedMetadataGroups` are used to represent chapters, optionally 
 - [func copyFormatDescription() -> CMMetadataFormatDescription?](avtimedmetadatagroup/copyformatdescription.md)
   Creates a format description based on the receiver’s items.
 ### Initializers
-- [convenience init?(sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>)](avtimedmetadatagroup/init(samplebuffer:)-6atlv.md)
-  Initializes an instance of AVTimedMetadataGroup with a ready sample buffer.
 - [init?(sampleBuffer: CMSampleBuffer)](avtimedmetadatagroup/init(samplebuffer:)-bjuo.md)
 
 ## Relationships

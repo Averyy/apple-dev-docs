@@ -28,11 +28,11 @@ A language must download and install before you can use it in a translation.
   Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [LanguageAvailability.Status.installed](languageavailability/status/installed.md)
-  A language or language pairing the framework supports, has downloaded and made ready for use in a translation.
+  The framework supports the language or language pairing and has it downloaded and ready for use in a translation.
 - [LanguageAvailability.Status.supported](languageavailability/status/supported.md)
-  A language or language pairing the framework supports but can’t yet use.
+  The framework supports the language or language pairing, but can’t yet use it.
 - [LanguageAvailability.Status.unsupported](languageavailability/status/unsupported.md)
-  A language or language pairing the framework doesn’t support.
+  The framework doesn’t support the language or language pairing.
 ### Instance Properties
 - [var hashValue: Int](languageavailability/status/hashvalue.md)
   The hash value.
@@ -54,9 +54,9 @@ A language must download and install before you can use it in a translation.
 ## See Also
 
 - [func status(from: Locale.Language, to: Locale.Language?) async -> LanguageAvailability.Status](languageavailability/status(from:to:).md)
-  Checks to see if a specific language pairing is installed and ready for translation.
+  Checks for the installation of a specific language pairing and whether it’s ready for translation.
 - [func status(for: String, to: Locale.Language?) async throws -> LanguageAvailability.Status](languageavailability/status(for:to:).md)
-  Checks to see if a language pairing is supported based off a string of sample text.
+  Checks to see if the framework supports the language pairing based off a string of sample text.
 
 
 ---

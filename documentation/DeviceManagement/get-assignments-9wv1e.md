@@ -12,8 +12,8 @@ Get the set of current assignments for users or devices.
 ## Mentions
 
 - [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
-- [Using Paginated Endpoints](using-paginated-endpoints.md)
 - [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
+- [Using Paginated Endpoints](using-paginated-endpoints.md)
 - [Managing Assets](managing-assets.md)
 
 #### Discussion

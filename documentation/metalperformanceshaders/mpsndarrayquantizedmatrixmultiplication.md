@@ -1,7 +1,7 @@
 # MPSNDArrayQuantizedMatrixMultiplication
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 18.0+
@@ -14,18 +14,28 @@
 ## Declaration
 
 ```swift
-class MPSNDArrayQuantizedMatrixMultiplication : MPSNDArrayMatrixMultiplication
+class MPSNDArrayQuantizedMatrixMultiplication
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, leftQuantizationDescriptor: MPSNDArrayQuantizationDescriptor?, rightQuantizationDescriptor: MPSNDArrayQuantizationDescriptor?)](mpsndarrayquantizedmatrixmultiplication/4446153-init.md)
+- [init(device: any MTLDevice, leftQuantizationDescriptor: MPSNDArrayQuantizationDescriptor?, rightQuantizationDescriptor: MPSNDArrayQuantizationDescriptor?)](mpsndarrayquantizedmatrixmultiplication/init(device:leftquantizationdescriptor:rightquantizationdescriptor:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNDArrayMatrixMultiplication](mpsndarraymatrixmultiplication.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

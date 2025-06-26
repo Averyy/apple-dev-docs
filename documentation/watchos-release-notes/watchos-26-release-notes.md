@@ -1,4 +1,4 @@
-# watchOS 26 Beta Release Notes
+# watchOS 26 Beta 2 Release Notes
 
 **Framework**: watchOS Release Notes
 
@@ -6,7 +6,13 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 26 beta. The SDK comes bundled with Xcode 26, available from the Mac App Store. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
+The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 26 beta 2. The SDK comes bundled with Xcode 26, available from the Mac App Store. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
+
+##### Apple Watch Herm%c3%a8s
+
+###### Known Issues
+
+- Apple Watch Hermès crashes continuously if updated to watchOS 26 beta 2. It is advised that these users do not update to beta 2. (152604139)
 
 ##### App Store
 
@@ -16,21 +22,21 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ##### Apple Intelligence
 
-###### Known Issues
+###### Resolved Issues
 
-- Model quality output degrades after extended, repeated inferences of the same adapter.  (152468267)
+- Fixed: Model quality output degrades after extended, repeated inferences of the same adapter.  (152468267)
 
 ##### Assistantschemas
 
-###### Known Issues
+###### Resolved Issues
 
-- If you have adopted any of the following email AssistantSchemas, you will experience a compilation error due to a parameter type change: `createDraft`, `updateDraft`, `replyMail`, `forwardMail`, `message`, and `draft`.  (148633307)  Revise the relevant schema implementations to accept an optional `AttributedString` instead of an optional `String` for the body parameter or property, and rebuild your app.
+- Fixed: If you have adopted any of the following email AssistantSchemas, you will experience a compilation error due to a parameter type change: `createDraft`, `updateDraft`, `replyMail`, `forwardMail`, `message`, and `draft`.  (148633307)
 
 ##### Cloudkit
 
-###### Known Issues
+###### Resolved Issues
 
-- CloudKit sharing URLs do not launch third-party apps.  (151778655)
+- Fixed: CloudKit sharing URLs do not launch third-party apps.  (151778655)
 
 ##### Control Center
 
@@ -49,6 +55,12 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 - Fixed: Functions that initialize a string from a C-string pointer do not validate that the provided encoding is a valid encoding for C-strings.  (143756086) (FB16417968)
 - Fixed: `Locale.preferredLocale` API availability for tvOS and watchOS is specified incorrectly.  (151205096)
 
+##### Healthkit
+
+###### Resolved Issues
+
+- Fixed: An app that was granted Read-only authorization for certain data types (e.g. workout routes) might lose its ability to read the data type without the user explicitly turning it off in Settings > Health.  (149024236)
+
 ##### Nslog
 
 ###### New Features
@@ -57,15 +69,15 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ##### Phone
 
-###### Known Issues
+###### Resolved Issues
 
-- Users are not able to send custom or default Live Replies from Apple Watch when the companion iPhone sends an unknown call to Call Screening.  (151414166)  Users are still able to send Live Replies on the iPhone which is screening the call.
+- Fixed: Users are not able to send custom or default Live Replies from Apple Watch when the companion iPhone sends an unknown call to Call Screening.  (151414166)
 
 ##### Security
 
 ###### Deprecations
 
-- For apps linked on or after iOS 19 and macOS 16, the default minimum TLS version of `URLSession` and Network frameworks has changed from 1.0 to 1.2. If your process connects only to your servers, verify that they support TLS 1.3 or TLS 1.2. If your process needs to connect to 3rd-party servers which cannot be updated to support newer versions of TLS, restore the previous behavior through `URLSession` and Security framework APIs: `URLSessionConfiguration.tlsMinimumSupportedProtocolVersion` and `sec_protocol_options_set_min_tls_protocol_version`.  (135996267)
+- For apps linked on or after iOS 26 and macOS 26, the default minimum TLS version of `URLSession` and Network frameworks has changed from 1.0 to 1.2. If your process connects only to your servers, verify that they support TLS 1.3 or TLS 1.2. If your process needs to connect to 3rd-party servers which cannot be updated to support newer versions of TLS, restore the previous behavior through `URLSession` and Security framework APIs: `URLSessionConfiguration.tlsMinimumSupportedProtocolVersion` and `sec_protocol_options_set_min_tls_protocol_version`.  (135996267)
 
 ##### Speech
 
@@ -86,11 +98,14 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 - Fixed: Price of offers is not displayed in the payment sheet when making a purchase to a subscription with a higher level of service in StoreKit Testing in Xcode.  (140635780) (FB15980635)
 - Fixed: Renewal transactions might be created regardless of the Ask to Buy status of the purchase request in StoreKit Testing in Xcode.  (145242611)
 
+###### Known Issues
+
+- If an [`accentColor`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/color/accentcolor) is not set, there is an issue on watchOS causing the buy button label in StoreKit views to appear the same, whether the component is enabled or disabled.  (153218311)  Set an `accentColor` in your app Asset catalog or via the SwiftUI API [`.tint()`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/tint(_:)-93mfq).
+
 ##### Swiftui
 
 ###### New Features
 
-- You can now use `View/findNavigator(isPresented:)`, `View/findDisabled(_:)`, and `View/replaceDisabled(_:)` to control the presentation of the Find Bar in `TextEditor` on macOS 16.  (85308161)
 - `ControlSize` now conforms to `Comparable`, and `View/controlSize(_:)` can now be used to clamp the environment’s `controlSize` to a given range.  (99633360) (FB11465757)
 - Text, TextEditor, and TextField now by default use string contents to determine the appropriate base writing direction for each paragraph, instead of relying on layout directionality. To specify the writing direction explicitly on a per-paragraph basis, use Foundation’s `AttributedString.writingDirection` attribute. To make the base writing direction follow the layout direction for an entire view, apply the view modifier `.writingDirection(strategy: .layoutBased)`.  (134821288)
 - When linking news SDKs, `NavigationLink`s produce a single view, rather than a list of views in view list contexts. This change improves performance of many `NavigationLink`s in lazy containers like `List`. However, if you are relying on `ContainerValues` propagating out of the `label` view of a `NavigationLink`, or similarly relying on `ContainerValues` of a `ButtonStyle` used to style a link, the `containerValue(_:,_:)` modifier should be moved outside of the link. Below is a minimal example that demonstrates the behavior difference: ```swift
@@ -161,16 +176,22 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
      .presentationSizing(.page)
      .presentationCompactAdaptation(.fullScreen)
 ``` (150455117)
+- Fixed: If Default Actor Isolation is set to `MainActor`, `@Animatable` macro emits concurrency warnings in Swift 5 language mode and does not compile in Swift 6 language mode.  (152524435)
 
 ###### Known Issues
 
 - `toolbarForegroundStyle` no longer tints toolbar button labels on watchOS.  (151487439)  Tint the button label directly, using `Text("foo").foregroundStyle(...)`.
 - `.toolbarVisibility(_:for:)` does not hide the navigation bar on watchOS.  (152326250)
-- If Default Actor Isolation is set to `MainActor`, `@Animatable` macro emits concurrency warnings in Swift 5 language mode and does not compile in Swift 6 language mode.  (152524435)  Use Swift 5 language mode or set Default Actor Isolation to `nonisolated` in project’s build settings.
 
 ###### Deprecations
 
 - `Text` concatenation using the `+` operator is deprecated because it makes it hard to create localized strings that are correct across all languages. Use `Text` interpolation instead. See documentation on `Text` for more info on how to produce localized strings.  (128144043)
+
+##### Textkit
+
+###### New Features
+
+- iOS 26, tvOS 26, visionOS 26, watchOS 26, and macOS Tahoe 26 have two methods for resolving the natural alignment `NSTextAlignment.natural` and the last line of `NSTextAlignment.justified` into concrete alignments, `left` and `right`. The first approach utilizes the UI language, which is determined by passing nil-language to `NSParagraphStyle.defaultWritingDirection(forLanguage: )`. This behavior was employed in releases prior to OS 26. The second method is new and dynamically utilizes the base writing direction for the paragraph. When the base writing direction is set to `NSWritingDirection.rightToLeft`, the text is aligned to `right`, and vice versa. The behavior is selected by API introduced in OS 26: `NSTextLayoutManager.resolvesNaturalAlignmentWithBaseWritingDirection`, `NSStringDrawingOptionsResolvesNaturalAlignmentWithBaseWritingDirection`, `UITraitCollection.resolvesNaturalAlignmentWithBaseWritingDirection`, and `NSTextField.resolvesNaturalAlignmentWithBaseWritingDirection`.  (152045248)
 
 ##### Translation
 
@@ -183,7 +204,7 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 ###### Known Issues
 
 - Workout Buddy announcements play only on AirPods with H1 or later when connected to Apple Watch or iPhone, and on third-party bluetooth headphones when connected to iPhone.  (152316444)
-- Workout Buddy may appear as unavailable in the watchOS Workout app after installing beta 1.  (152691503)  Toggle Apple Intelligence off and on again on your paired iPhone to re-sync the state to Watch and show Workout Buddy as available.
+- Workout Buddy might appear as unavailable in the watchOS Workout app after installing beta 1.  (152691503)  Toggle Apple Intelligence off and on again on your paired iPhone to re-sync the state to Apple Watch and show Workout Buddy as available.
 
 
 ---

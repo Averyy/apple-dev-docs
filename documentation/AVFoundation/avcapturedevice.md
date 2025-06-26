@@ -21,9 +21,9 @@ class AVCaptureDevice
 
 ## Mentions
 
-- [Enhancing your app experience with the Camera Control](enhancing-your-app-experience-with-the-camera-control.md)
-- [Choosing a Capture Device](choosing-a-capture-device.md)
 - [Setting Up a Capture Session](setting-up-a-capture-session.md)
+- [Choosing a Capture Device](choosing-a-capture-device.md)
+- [Enhancing your app experience with the Camera Control](enhancing-your-app-experience-with-the-camera-control.md)
 - [Requesting authorization to capture and save media](requesting-authorization-to-capture-and-save-media.md)
 
 #### Overview

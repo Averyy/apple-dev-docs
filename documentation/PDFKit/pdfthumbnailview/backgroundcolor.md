@@ -17,7 +17,7 @@ Returns the color used in the background of the thumbnail view.
 
 ```swift
 @NSCopying
-@MainActor var backgroundColor: UIColor? { get set }
+@MainActor var backgroundColor: NSColor? { get set }
 ```
 
 #### Return Value

@@ -6,12 +6,12 @@
 A transform matrix for explicit resampling control with a Lanczos kernel.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -21,23 +21,29 @@ struct MPSScaleTransform
 
 ## Topics
 
-### Initializers
-- [init()](mpsscaletransform/1618820-init.md)
-- [init(scaleX: Double, scaleY: Double, translateX: Double, translateY: Double)](mpsscaletransform/1618862-init.md)
-### Instance Properties
-- [var scaleX: Double](mpsscaletransform/1618773-scalex.md)
+### Fields
+- [var scaleX: Double](mpsscaletransform/scalex.md)
   The horizontal scale factor.
-- [var scaleY: Double](mpsscaletransform/1618785-scaley.md)
+- [var scaleY: Double](mpsscaletransform/scaley.md)
   The vertical scale factor.
-- [var translateX: Double](mpsscaletransform/1618795-translatex.md)
+- [var translateX: Double](mpsscaletransform/translatex.md)
   The horizontal translation factor.
-- [var translateY: Double](mpsscaletransform/1618872-translatey.md)
+- [var translateY: Double](mpsscaletransform/translatey.md)
   The vertical translation factor.
+### Initializers
+- [init()](mpsscaletransform/init.md)
+- [init(scaleX: Double, scaleY: Double, translateX: Double, translateY: Double)](mpsscaletransform/init(scalex:scaley:translatex:translatey:).md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 
 - [class MPSImageLanczosScale](mpsimagelanczosscale.md)
-  A filter that resizes and changes the aspect ratio of an image using Lanczos resampling. 
+  A filter that resizes and changes the aspect ratio of an image using Lanczos resampling.
 
 
 ---

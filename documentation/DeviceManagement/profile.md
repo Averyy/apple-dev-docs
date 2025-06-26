@@ -17,8 +17,8 @@ object Profile
 
 ## Mentions
 
-- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
 - [Authenticating Through Web Views](authenticating-through-web-views.md)
+- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
 - [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
 
 ## Topics

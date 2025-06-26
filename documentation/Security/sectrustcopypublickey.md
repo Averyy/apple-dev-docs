@@ -22,8 +22,8 @@ func SecTrustCopyPublicKey(_ trust: SecTrust) -> SecKey?
 
 ## Mentions
 
-- [Evaluating a Trust and Parsing the Result](evaluating-a-trust-and-parsing-the-result.md)
 - [Getting an Existing Key](getting-an-existing-key.md)
+- [Evaluating a Trust and Parsing the Result](evaluating-a-trust-and-parsing-the-result.md)
 
 #### Return Value
 

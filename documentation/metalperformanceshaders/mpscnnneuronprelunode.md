@@ -1,7 +1,7 @@
 # MPSCNNNeuronPReLUNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation a PReLU neuron filter.
 
@@ -16,18 +16,25 @@ A representation a PReLU neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronPReLUNode : MPSCNNNeuronNode
+class MPSCNNNeuronPReLUNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, aData: Data)](mpscnnneuronprelunode/2921595-init.md)
+- [init(source: MPSNNImageNode, aData: Data)](mpscnnneuronprelunode/init(source:adata:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuronNode](mpscnnneuronnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

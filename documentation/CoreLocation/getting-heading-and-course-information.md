@@ -22,7 +22,7 @@ After determining whether heading information is available, call the [`startUpda
 
 Course information reflects the speed and direction in which a device is moving and is available only on devices with GPS hardware. Don’t confuse course information with heading information. Course direction reflects the direction in which the device is moving and is independent of the device’s physical orientation. The most common use of course information is in navigation apps.
 
-Course information is included automatically in `CLLocation` objects delivered to your app as part of its location updates. When enough location data has been gathered to compute a course, the location manager fills in the `CLLocation/speed` and `CLLocation/course` properties of the location object with the appropriate values.
+Course information is included automatically in [`CLLocation`](cllocation.md) objects delivered to your app as part of its location updates. When enough location data has been gathered to compute a course, the location manager fills in the [`speed`](cllocation/speed.md) and [`course`](cllocation/course.md) properties of the location object with the appropriate values.
 
 ## See Also
 

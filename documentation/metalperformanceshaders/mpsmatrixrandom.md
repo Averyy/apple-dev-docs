@@ -1,7 +1,7 @@
 # MPSMatrixRandom
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,24 +14,37 @@
 ## Declaration
 
 ```swift
-class MPSMatrixRandom : MPSKernel
+class MPSMatrixRandom
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var batchSize: Int](mpsmatrixrandom/3242847-batchsize.md)
-- [var batchStart: Int](mpsmatrixrandom/3242848-batchstart.md)
-- [var destinationDataType: MPSDataType](mpsmatrixrandom/3242849-destinationdatatype.md)
-- [var distributionType: MPSMatrixRandomDistribution](mpsmatrixrandom/3242850-distributiontype.md)
+- [var batchSize: Int](mpsmatrixrandom/batchsize.md)
+- [var batchStart: Int](mpsmatrixrandom/batchstart.md)
+- [var destinationDataType: MPSDataType](mpsmatrixrandom/destinationdatatype.md)
+- [var distributionType: MPSMatrixRandomDistribution](mpsmatrixrandom/distributiontype.md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, destinationMatrix: MPSMatrix)](mpsmatrixrandom/3325839-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, destinationVector: MPSVector)](mpsmatrixrandom/3242851-encode.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, destinationMatrix: MPSMatrix)](mpsmatrixrandom/encode(commandbuffer:destinationmatrix:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, destinationVector: MPSVector)](mpsmatrixrandom/encode(commandbuffer:destinationvector:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
+### Inherited By
+- [MPSMatrixRandomMTGP32](mpsmatrixrandommtgp32.md)
+- [MPSMatrixRandomPhilox](mpsmatrixrandomphilox.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

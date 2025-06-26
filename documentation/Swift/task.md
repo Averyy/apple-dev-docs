@@ -192,10 +192,12 @@ deinit actor
   Runs the given throwing operation asynchronously as part of a new top-level task.
 - [static func detached(name: String?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Failure>](task/detached(name:priority:operation:)-9xki7.md)
   Runs the given nonthrowing operation asynchronously as part of a new top-level task.
-- [static func startSynchronously(name: String?, priority: TaskPriority?, sending () async throws -> Success) -> Task<Success, Never>](task/startsynchronously(name:priority:_:)-3kl43.md)
+- [static func immediate(name: String?, priority: TaskPriority?, () async throws -> Success) -> Task<Success, any Error>](task/immediate(name:priority:_:)-3fa9e.md)
   Create and immediately start running a new task in the context of the calling thread/task.
-- [static func startSynchronously(name: String?, priority: TaskPriority?, sending () async throws -> Success) -> Task<Success, any Error>](task/startsynchronously(name:priority:_:)-6szf8.md)
+- [static func immediate(name: String?, priority: TaskPriority?, () async throws -> Success) -> Task<Success, Never>](task/immediate(name:priority:_:)-5zhbl.md)
   Create and immediately start running a new task in the context of the calling thread/task.
+- [static func startSynchronously(name: String?, priority: TaskPriority?, () async throws -> Success) -> Task<Success, any Error>](task/startsynchronously(name:priority:_:)-47sar.md)
+- [static func startSynchronously(name: String?, priority: TaskPriority?, () async throws -> Success) -> Task<Success, Never>](task/startsynchronously(name:priority:_:)-6d3ys.md)
 - [static func withGroup<TaskResult, BodyResult>(resultType: TaskResult.Type, returning: BodyResult.Type, body: (inout Task<Success, Failure>.Group<TaskResult>) async throws -> BodyResult) async rethrows -> BodyResult](task/withgroup(resulttype:returning:body:).md)
 ### Default Implementations
 - [Equatable Implementations](task/equatable-implementations.md)

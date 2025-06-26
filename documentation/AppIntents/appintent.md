@@ -23,11 +23,11 @@ protocol AppIntent : PersistentlyIdentifiable, _SupportsAppDependencies, Sendabl
 ## Mentions
 
 - [Making actions and content discoverable and widely available](making-actions-and-content-discoverable-and-widely-available.md)
+- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
 - [Creating your first app intent](creating-your-first-app-intent.md)
 - [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
-- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
 - [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
+- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
 
 #### Overview
 

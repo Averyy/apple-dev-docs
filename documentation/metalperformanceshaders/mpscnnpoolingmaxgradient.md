@@ -1,7 +1,7 @@
 # MPSCNNPoolingMaxGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient max pooling filter.
 
@@ -16,19 +16,29 @@ A gradient max pooling filter.
 ## Declaration
 
 ```swift
-class MPSCNNPoolingMaxGradient : MPSCNNPoolingGradient
+class MPSCNNPoolingMaxGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolingmaxgradient/2942342-init.md)
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingmaxgradient/2942348-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolingmaxgradient/init(coder:device:).md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingmaxgradient/init(device:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNPoolingGradient](mpscnnpoolinggradient.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

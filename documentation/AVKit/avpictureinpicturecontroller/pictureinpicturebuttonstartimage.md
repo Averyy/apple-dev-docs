@@ -16,7 +16,7 @@ A system-default template image for the button that starts Picture in Picture in
 ## Declaration
 
 ```swift
-class var pictureInPictureButtonStartImage: NSImage { get }
+class var pictureInPictureButtonStartImage: UIImage { get }
 ```
 
 ## Mentions

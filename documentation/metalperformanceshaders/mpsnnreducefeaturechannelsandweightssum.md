@@ -1,7 +1,7 @@
 # MPSNNReduceFeatureChannelsAndWeightsSum
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A reduction filter that returns the weighted sum of all values for each feature channel in an image.
 
@@ -16,22 +16,32 @@ A reduction filter that returns the weighted sum of all values for each feature 
 ## Declaration
 
 ```swift
-class MPSNNReduceFeatureChannelsAndWeightsSum : MPSNNReduceBinary
+class MPSNNReduceFeatureChannelsAndWeightsSum
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnreducefeaturechannelsandweightssum/3197835-init.md)
-- [init(device: any MTLDevice)](mpsnnreducefeaturechannelsandweightssum/2942562-init.md)
-- [init(device: any MTLDevice, doWeightedSumByNonZeroWeights: Bool)](mpsnnreducefeaturechannelsandweightssum/2942551-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnreducefeaturechannelsandweightssum/init(coder:device:).md)
+- [convenience init(device: any MTLDevice)](mpsnnreducefeaturechannelsandweightssum/init(device:).md)
+- [init(device: any MTLDevice, doWeightedSumByNonZeroWeights: Bool)](mpsnnreducefeaturechannelsandweightssum/init(device:doweightedsumbynonzeroweights:).md)
 ### Instance Properties
-- [var doWeightedSumByNonZeroWeights: Bool](mpsnnreducefeaturechannelsandweightssum/2942543-doweightedsumbynonzeroweights.md)
+- [var doWeightedSumByNonZeroWeights: Bool](mpsnnreducefeaturechannelsandweightssum/doweightedsumbynonzeroweights.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNReduceBinary](mpsnnreducebinary.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -65,10 +75,6 @@ class MPSNNReduceFeatureChannelsAndWeightsSum : MPSNNReduceBinary
   A reduction filter that returns the index of the location of the minimum value for each feature channel in an image.
 - [class MPSNNReduceFeatureChannelsAndWeightsMean](mpsnnreducefeaturechannelsandweightsmean.md)
   A reduction filter that returns the weighted sum for each feature channel in an image.
-- [class MPSNNReduceUnary](mpsnnreduceunary.md)
-  The base class for unary reduction filters.
-- [class MPSNNReduceBinary](mpsnnreducebinary.md)
-  The base class for binary reduction filters.
 
 
 ---

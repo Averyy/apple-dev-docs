@@ -81,7 +81,7 @@ The descriptor also allows you to set the [`bluetoothRange`](asdiscoverydescript
 - [var wifiAwareModelNameMatch: ASPropertyCompareString?](asdiscoverydescriptor/wifiawaremodelnamematch.md)
   The accessory’s Wi-Fi Aware model name and matching options.
 - [var wifiAwareVendorNameMatch: ASPropertyCompareString?](asdiscoverydescriptor/wifiawarevendornamematch.md)
-  The accessory’s Wi-Fi Aware vendor name  and matching options.
+  The accessory’s Wi-Fi Aware vendor name and matching options.
 - [class ASPropertyCompareString](aspropertycomparestring.md)
   A type that specifies how to filter a property against a given string and comparison options.
 

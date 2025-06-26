@@ -1,6 +1,6 @@
 # !=(_:_:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: op
 
 Returns a Boolean value indicating whether two values are not equal.

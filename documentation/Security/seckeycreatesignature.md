@@ -37,7 +37,7 @@ You later evaluate the combined data and signature with the corresponding public
 - `key`: The private key to use in creating the signature.
 - `algorithm`: The signing algorithm to use. Use one of the signing algorithms listed in  . You can use the   function to test that the key is suitable for the algorithm.
 - `dataToSign`: The data whose signature you want.
-- `error`: The address of a  doc://com.apple.documentation/documentation/corefoundation/cferror-ru8  object. If an error occurs, this is set to point at an error instance that describes the failure.
+- `error`: The address of a   object. If an error occurs, this is set to point at an error instance that describes the failure.
 
 
 ---

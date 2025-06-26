@@ -3,6 +3,8 @@
 **Framework**: Speech  
 **Kind**: protocol
 
+Protocol that all module results conform to.
+
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)

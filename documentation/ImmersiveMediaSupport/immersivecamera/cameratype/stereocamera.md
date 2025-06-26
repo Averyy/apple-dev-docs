@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: case
 
-Camera rig made up of 2 cameras
+A value representing a camera rig made up of 2 cameras
 
 **Availability**:
 - macOS 26.0+ (Beta)

@@ -24,8 +24,8 @@ class GKMatchmakerViewController
 
 - [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
 - [Exchanging data between players in real-time games](exchanging-data-between-players-in-real-time-games.md)
-- [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
 - [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
+- [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
 
 #### Overview
 

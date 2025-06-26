@@ -118,10 +118,20 @@ Specifying `none` overrides any automatically discovered identifiers and disable
 
 ## See Also
 
-- [Preserving your app’s model data across launches](preserving-your-apps-model-data-across-launches.md)
-  Describe your model classes to SwiftData using the framework’s macros, and store instances of those models so they exist beyond the app’s runtime.
-- [Building a document-based app using SwiftData](../SwiftUI/Building-a-document-based-app-using-SwiftData.md)
-  Code along with the WWDC presenter to transform an app with SwiftData.
+- [class ModelContainer](modelcontainer.md)
+  An object that manages an app’s schema and model storage configuration.
+- [class ModelContext](modelcontext.md)
+  An object that enables you to fetch, insert, and delete models, and save any changes to disk.
+- [Fetching and filtering time-based model changes](fetching-and-filtering-time-based-model-changes.md)
+  Track all inserts, updates, and deletes that occur in a data store and process them as a series of chronological transactions.
+- [struct HistoryDescriptor](historydescriptor.md)
+  A type that describes the criteria, and, optionally, sort order, to use when fetching history data
+- [Deleting persistent data from your app](deleting-persistent-data-from-your-app.md)
+  Explore different ways to use SwiftData to delete persistent data.
+- [Reverting data changes using the undo manager](reverting-data-changes-using-the-undo-manager.md)
+  Automatically record data change operations that people perform in your SwiftUI app, and let them undo and redo those changes.
+- [Concurrency support](concurrencysupport.md)
+  Types you use to access model attributes and perform storage-related tasks in a safe and isolated way.
 
 
 ---

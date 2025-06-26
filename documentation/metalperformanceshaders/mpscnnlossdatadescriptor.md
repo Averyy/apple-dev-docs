@@ -1,7 +1,7 @@
 # MPSCNNLossDataDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An object that specifies properties used by a loss data descriptor.
 
@@ -16,25 +16,31 @@ An object that specifies properties used by a loss data descriptor.
 ## Declaration
 
 ```swift
-class MPSCNNLossDataDescriptor : NSObject
+class MPSCNNLossDataDescriptor
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(data: Data, layout: MPSDataLayout, size: MTLSize)](mpscnnlossdatadescriptor/2951840-init.md)
+- [init?(data: Data, layout: MPSDataLayout, size: MTLSize)](mpscnnlossdatadescriptor/init(data:layout:size:).md)
 ### Instance Properties
-- [var bytesPerImage: Int](mpscnnlossdatadescriptor/2951847-bytesperimage.md)
-- [var bytesPerRow: Int](mpscnnlossdatadescriptor/2951849-bytesperrow.md)
-- [var layout: MPSDataLayout](mpscnnlossdatadescriptor/2951842-layout.md)
-- [var size: MTLSize](mpscnnlossdatadescriptor/2951848-size.md)
+- [var bytesPerImage: Int](mpscnnlossdatadescriptor/bytesperimage.md)
+- [var bytesPerRow: Int](mpscnnlossdatadescriptor/bytesperrow.md)
+- [var layout: MPSDataLayout](mpscnnlossdatadescriptor/layout.md)
+- [var size: MTLSize](mpscnnlossdatadescriptor/size.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
-- [NSCopying](../foundation/nscopying.md)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

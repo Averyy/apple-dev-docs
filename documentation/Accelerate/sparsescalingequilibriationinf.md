@@ -26,8 +26,6 @@ var SparseScalingEquilibriationInf: SparseScaling_t { get }
   Default scaling.
 - [var SparseScalingUser: SparseScaling_t](sparsescalinguser.md)
   User scaling.
-- [var SparseOrderMTMetis: SparseOrder_t](sparseordermtmetis.md)
-  Specifies type of fill-reducing ordering.
 - [var SparseScalingHungarianScalingOnly: SparseScaling_t](sparsescalinghungarianscalingonly.md)
   Specifies type of scaling to be performed.
 - [var SparseScalingHungarianScalingAndOrdering: SparseScaling_t](sparsescalinghungarianscalingandordering.md)

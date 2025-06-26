@@ -25,7 +25,7 @@ This property supports file types that support media chunk alignment, such as Qu
 
 A chunk contains one or more samples. The total duration of the samples in a chunk is no greater than the preferred chunk duration, or the duration of a single sample if the sample’s duration is greater than this preferred chunk duration.
 
-The default value is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid), which means that the input chooses an appropriate default value. It’s an error to set a chunk duration that’s negative or nonnumeric.
+The default value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid), which means that the input chooses an appropriate default value. It’s an error to set a chunk duration that’s negative or nonnumeric.
 
 You can’t set this value after writing starts.
 

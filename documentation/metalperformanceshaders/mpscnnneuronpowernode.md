@@ -1,7 +1,7 @@
 # MPSCNNNeuronPowerNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a power neuron filter.
 
@@ -16,19 +16,26 @@ A representation of a power neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronPowerNode : MPSCNNNeuronNode
+class MPSCNNNeuronPowerNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnnneuronpowernode/2951937-init.md)
-- [init(source: MPSNNImageNode, a: Float, b: Float, c: Float)](mpscnnneuronpowernode/2951946-init.md)
+- [init(source: MPSNNImageNode)](mpscnnneuronpowernode/init(source:).md)
+- [init(source: MPSNNImageNode, a: Float, b: Float, c: Float)](mpscnnneuronpowernode/init(source:a:b:c:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuronNode](mpscnnneuronnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

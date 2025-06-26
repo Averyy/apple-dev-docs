@@ -1,6 +1,6 @@
 # contains(_:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: method
 
 Returns a Boolean value that indicates whether a given element is a member of the option set.

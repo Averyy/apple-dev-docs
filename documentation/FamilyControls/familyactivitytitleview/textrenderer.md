@@ -8,7 +8,6 @@ Returns a new view such that any text views within it will use `renderer` to dra
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+

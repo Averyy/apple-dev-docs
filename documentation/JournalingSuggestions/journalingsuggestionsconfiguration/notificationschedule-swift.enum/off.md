@@ -14,6 +14,13 @@ The notifications aren’t enabled or authorized for this app.
 case off
 ```
 
+## See Also
+
+- [JournalingSuggestionsConfiguration.NotificationSchedule.custom](journalingsuggestionsconfiguration/notificationschedule-swift.enum/custom.md)
+  The notifications are enabled and configured to a custom schedule.
+- [JournalingSuggestionsConfiguration.NotificationSchedule.smart](journalingsuggestionsconfiguration/notificationschedule-swift.enum/smart.md)
+  The notifications are enabled and configured to a Smart schedule.
+
 
 ---
 

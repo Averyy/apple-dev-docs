@@ -15,7 +15,7 @@ Requests an audio unit’s custom view controller.
 ## Declaration
 
 ```swift
-func requestViewController() async -> NSViewController?
+func requestViewController() async -> UIViewController?
 ```
 
 ## Mentions

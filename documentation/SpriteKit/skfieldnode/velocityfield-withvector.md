@@ -17,6 +17,7 @@ Creates a field node that gives physics bodies a constant velocity.
 ## Declaration
 
 ```swift
+@MainActor
 class func velocityField(withVector direction: vector_float3) -> SKFieldNode
 ```
 

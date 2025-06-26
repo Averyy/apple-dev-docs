@@ -23,8 +23,8 @@ func provideImageData(_ data: UnsafeMutableRawPointer, bytesPerRow rowbytes: Int
 
 You can supply the image provider to these methods of the `CIImage` class:
 
-- [`imageWithImageProvider:size::format:colorSpace:options:`](https://developer.apple.com/documentation/coreimage/ciimage/1579115-imagewithimageprovider) to create a CIImage object from image data
-- [`init(imageProvider:size:_:format:colorSpace:options:)`](https://developer.apple.com/documentation/coreimage/ciimage/1437868-init) to initialize an existing CIImage with data
+- [`imageWithImageProvider:size::format:colorSpace:options:`](https://developer.apple.com/documentation/CoreImage/CIImage/imageWithImageProvider:size::format:colorSpace:options:) to create a CIImage object from image data
+- [`init(imageProvider:size:_:format:colorSpace:options:)`](https://developer.apple.com/documentation/CoreImage/CIImage/init(imageProvider:size:_:format:colorSpace:options:)) to initialize an existing CIImage with data
 
 You initialize the given bitmap with the subregion specified by the arguments `x`, `y`, `width`, and `height`. The subregion uses the local coordinate space of the image, with the origin at the upper-left corner of the image. If you change the virtual memory mapping of the buffer specified by the `data` argument (such as by using `vm_copy` to modify it), the behavior is undefined.
 

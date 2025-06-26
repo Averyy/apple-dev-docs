@@ -32,7 +32,7 @@ struct KeyboardWillHideMessage
 
 ### Conforms To
 - [NotificationCenter.MainActorMessage](../Foundation/NotificationCenter/MainActorMessage.md)
-- [NotificationCenter.Message](../Foundation/NotificationCenter/Message.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

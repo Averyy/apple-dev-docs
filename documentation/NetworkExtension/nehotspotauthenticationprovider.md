@@ -14,7 +14,7 @@ A protocol that defines methods that your extension adopts to start and stop the
 ## Declaration
 
 ```swift
-protocol NEHotspotAuthenticationProvider : NEAppExtension
+protocol NEHotspotAuthenticationProvider : AppExtension
 ```
 
 #### Overview
@@ -40,7 +40,6 @@ Conform to this protocol in your hotspot helper app extension to handle the hots
 
 ### Inherits From
 - [AppExtension](../ExtensionFoundation/AppExtension.md)
-- [NEAppExtension](neappextension.md)
 
 ## See Also
 

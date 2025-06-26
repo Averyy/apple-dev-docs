@@ -21,8 +21,8 @@ let AVVideoColorPropertiesKey: String
 
 ## Mentions
 
-- [Setting Color Properties for a Specific Resolution](setting-color-properties-for-a-specific-resolution.md)
 - [Tagging Media with Video Color Information](tagging-media-with-video-color-information.md)
+- [Setting Color Properties for a Specific Resolution](setting-color-properties-for-a-specific-resolution.md)
 
 #### Discussion
 

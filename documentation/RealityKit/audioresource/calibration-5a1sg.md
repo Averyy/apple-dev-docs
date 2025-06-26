@@ -22,9 +22,9 @@ struct Calibration
 ## Topics
 
 ### Type Methods
-- [static absolute(dBSPL:)](audioresource/calibration-5a1sg/absolute(dbspl:).md)
+- [static absolute(dBSPL:)](audioresource/calibration-89r8s/absolute(dbspl:).md)
   The reference level (-12dBLUFS) of the audio source material will be reproduced at the given `dBSPL` level on known audio output hardware.
-- [static relative(dBSPL:)](audioresource/calibration-5a1sg/relative(dbspl:).md)
+- [static relative(dBSPL:)](audioresource/calibration-89r8s/relative(dbspl:).md)
   Relative adjustment of the resource from the default level of the audio output hardware.
 
 ## Relationships

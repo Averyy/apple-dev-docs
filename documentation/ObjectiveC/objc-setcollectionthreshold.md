@@ -4,14 +4,14 @@
 **Kind**: func
 
 **Availability**:
+- iOS ?+
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
-- tvOS ?+
 - visionOS ?+
 - watchOS ?+
 - Unknown ?+ - Deprecated
-- iOS ?+
+- tvOS ?+
 
 ## Declaration
 

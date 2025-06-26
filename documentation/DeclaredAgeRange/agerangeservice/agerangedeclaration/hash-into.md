@@ -1,6 +1,6 @@
 # hash(into:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: method
 
 Hashes the essential components of this value by feeding them into the given hasher.
@@ -26,6 +26,13 @@ Implement this method to conform to the `Hashable` protocol. The components used
 ## Parameters
 
 - `hasher`: The hasher to use when combining the components   of this instance.
+
+## See Also
+
+- [static func == (AgeRangeService.AgeRangeDeclaration, AgeRangeService.AgeRangeDeclaration) -> Bool](agerangeservice/agerangedeclaration/==(_:_:).md)
+  Returns a Boolean value indicating whether two values are equal.
+- [var hashValue: Int](agerangeservice/agerangedeclaration/hashvalue.md)
+  The hash value.
 
 
 ---

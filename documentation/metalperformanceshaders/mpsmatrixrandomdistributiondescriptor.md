@@ -1,7 +1,7 @@
 # MPSMatrixRandomDistributionDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,29 +14,35 @@
 ## Declaration
 
 ```swift
-class MPSMatrixRandomDistributionDescriptor : NSObject
+class MPSMatrixRandomDistributionDescriptor
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var distributionType: MPSMatrixRandomDistribution](mpsmatrixrandomdistributiondescriptor/3242857-distributiontype.md)
-- [var maximum: Float](mpsmatrixrandomdistributiondescriptor/3242858-maximum.md)
-- [var mean: Float](mpsmatrixrandomdistributiondescriptor/3242859-mean.md)
-- [var minimum: Float](mpsmatrixrandomdistributiondescriptor/3242860-minimum.md)
-- [var standardDeviation: Float](mpsmatrixrandomdistributiondescriptor/3242861-standarddeviation.md)
+- [var distributionType: MPSMatrixRandomDistribution](mpsmatrixrandomdistributiondescriptor/distributiontype.md)
+- [var maximum: Float](mpsmatrixrandomdistributiondescriptor/maximum.md)
+- [var mean: Float](mpsmatrixrandomdistributiondescriptor/mean.md)
+- [var minimum: Float](mpsmatrixrandomdistributiondescriptor/minimum.md)
+- [var standardDeviation: Float](mpsmatrixrandomdistributiondescriptor/standarddeviation.md)
 ### Type Methods
-- [class func `default`() -> MPSMatrixRandomDistributionDescriptor](mpsmatrixrandomdistributiondescriptor/3242856-default.md)
-- [class func normalDistributionDescriptor(withMean: Float, standardDeviation: Float) -> MPSMatrixRandomDistributionDescriptor](mpsmatrixrandomdistributiondescriptor/3547979-normaldistributiondescriptor.md)
-- [class func normalDistributionDescriptor(withMean: Float, standardDeviation: Float, minimum: Float, maximum: Float) -> MPSMatrixRandomDistributionDescriptor](mpsmatrixrandomdistributiondescriptor/3547980-normaldistributiondescriptor.md)
-- [class func uniformDistributionDescriptor(withMinimum: Float, maximum: Float) -> MPSMatrixRandomDistributionDescriptor](mpsmatrixrandomdistributiondescriptor/3242862-uniformdistributiondescriptor.md)
+- [class func `default`() -> MPSMatrixRandomDistributionDescriptor](mpsmatrixrandomdistributiondescriptor/default.md)
+- [class func normalDistributionDescriptor(withMean: Float, standardDeviation: Float) -> MPSMatrixRandomDistributionDescriptor](mpsmatrixrandomdistributiondescriptor/normaldistributiondescriptor(withmean:standarddeviation:).md)
+- [class func normalDistributionDescriptor(withMean: Float, standardDeviation: Float, minimum: Float, maximum: Float) -> MPSMatrixRandomDistributionDescriptor](mpsmatrixrandomdistributiondescriptor/normaldistributiondescriptor(withmean:standarddeviation:minimum:maximum:).md)
+- [class func uniformDistributionDescriptor(withMinimum: Float, maximum: Float) -> MPSMatrixRandomDistributionDescriptor](mpsmatrixrandomdistributiondescriptor/uniformdistributiondescriptor(withminimum:maximum:).md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
-- [NSCopying](../foundation/nscopying.md)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

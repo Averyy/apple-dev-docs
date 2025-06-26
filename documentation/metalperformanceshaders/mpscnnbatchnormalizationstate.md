@@ -1,7 +1,7 @@
 # MPSCNNBatchNormalizationState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An object that stores data required to execute batch normalization.
 
@@ -16,26 +16,33 @@ An object that stores data required to execute batch normalization.
 ## Declaration
 
 ```swift
-class MPSCNNBatchNormalizationState : MPSNNGradientState
+class MPSCNNBatchNormalizationState
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var batchNormalization: MPSCNNBatchNormalization](mpscnnbatchnormalizationstate/2953969-batchnormalization.md)
+- [var batchNormalization: MPSCNNBatchNormalization](mpscnnbatchnormalizationstate/batchnormalization.md)
 ### Instance Methods
-- [func beta() -> (any MTLBuffer)?](mpscnnbatchnormalizationstate/2951888-beta.md)
-- [func gamma() -> (any MTLBuffer)?](mpscnnbatchnormalizationstate/2951892-gamma.md)
-- [func gradientForBeta() -> (any MTLBuffer)?](mpscnnbatchnormalizationstate/2951890-gradientforbeta.md)
-- [func gradientForGamma() -> (any MTLBuffer)?](mpscnnbatchnormalizationstate/2951893-gradientforgamma.md)
-- [func mean() -> (any MTLBuffer)?](mpscnnbatchnormalizationstate/2942612-mean.md)
-- [func reset()](mpscnnbatchnormalizationstate/2942587-reset.md)
-- [func variance() -> (any MTLBuffer)?](mpscnnbatchnormalizationstate/2942603-variance.md)
+- [func beta() -> (any MTLBuffer)?](mpscnnbatchnormalizationstate/beta.md)
+- [func gamma() -> (any MTLBuffer)?](mpscnnbatchnormalizationstate/gamma.md)
+- [func gradientForBeta() -> (any MTLBuffer)?](mpscnnbatchnormalizationstate/gradientforbeta.md)
+- [func gradientForGamma() -> (any MTLBuffer)?](mpscnnbatchnormalizationstate/gradientforgamma.md)
+- [func mean() -> (any MTLBuffer)?](mpscnnbatchnormalizationstate/mean.md)
+- [func reset()](mpscnnbatchnormalizationstate/reset.md)
+- [func variance() -> (any MTLBuffer)?](mpscnnbatchnormalizationstate/variance.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientState](mpsnngradientstate.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

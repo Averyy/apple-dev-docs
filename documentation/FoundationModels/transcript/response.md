@@ -30,7 +30,7 @@ struct Response
 - [Transcript.Response.ID](transcript/response/id-swift.typealias.md)
   A type representing the stable identity of the entity associated with an instance.
 - [var segments: [Transcript.Segment]](transcript/response/segments.md)
-  Ordered prompt segments, often interleaved text and images.
+  Ordered prompt segments.
 - [var assetIDs: [String]](transcript/response/assetids.md)
   Version aware identifiers for all assets used to generate this response.
 ### Encoding a response

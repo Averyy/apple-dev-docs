@@ -98,7 +98,7 @@ A pipeline descriptor provides information necessary for creating an [`MTLComput
 ## See Also
 
 - [class MTL4ComputePipelineDescriptor](mtl4computepipelinedescriptor.md)
-  Descriptor defining how a compute pipeline state would be created.
+  Describes a compute pipeline state.
 - [protocol MTLComputePipelineState](mtlcomputepipelinestate.md)
   An interface that represents a GPU pipeline configuration for running kernels in a compute pass.
 - [class MTLStageInputOutputDescriptor](mtlstageinputoutputdescriptor.md)

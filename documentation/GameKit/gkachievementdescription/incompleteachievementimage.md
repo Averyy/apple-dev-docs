@@ -16,7 +16,7 @@ A common image that you can display when the player hasn’t completed the achie
 ## Declaration
 
 ```swift
-class func incompleteAchievementImage() -> UIImage
+class func incompleteAchievementImage() -> NSImage
 ```
 
 #### Return Value

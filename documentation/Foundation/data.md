@@ -234,7 +234,11 @@ The [`Data`](data.md) value type allows simple byte buffers to take on the behav
 - [init(referencing: NSData)](data/init(referencing:).md)
 - [init(repeating: UInt8, count: Int)](data/init(repeating:count:).md)
 ### Instance Properties
+- [var bytes: RawSpan](data/bytes.md)
 - [var count: Int](data/count.md)
+- [var mutableBytes: MutableRawSpan](data/mutablebytes.md)
+- [var mutableSpan: MutableSpan<UInt8>](data/mutablespan.md)
+- [var span: Span<UInt8>](data/span.md)
 ### Instance Methods
 - [func hash(into: inout Hasher)](data/hash(into:).md)
   The hash value for the data.

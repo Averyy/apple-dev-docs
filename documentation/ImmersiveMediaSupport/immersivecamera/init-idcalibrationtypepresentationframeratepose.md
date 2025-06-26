@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-init(id: String, calibration: ImmersiveCameraCalibration, type: ImmersiveCamera.CameraType = .stereoCamera, presentationFrameRate: Float = defaultPresentationFrameRate, pose: ImmersiveCamera.CameraPose = .zero)
+init(id: String, calibration: ImmersiveCameraCalibration, type: ImmersiveCamera.CameraType = .stereoCamera, presentationFrameRate: Int = defaultPresentationFrameRate, pose: Pose3DFloat = .identity)
 ```
 
 ## See Also

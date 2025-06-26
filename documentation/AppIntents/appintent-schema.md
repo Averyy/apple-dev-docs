@@ -18,7 +18,7 @@ A Swift macro you use to make sure your app intent conforms to an schema.
 
 ```swift
 @attached
-(memberAttribute) @attached(extension, conformances: AssistantSchemaIntent, ShowInAppSearchResultsIntent, names: named(__assistantSchemaIntent)) macro AppIntent<T>(schema: T) where T : AssistantSchemas.Intent
+(memberAttribute) @attached(extension, conformances: AppIntent, AssistantSchemaIntent, ShowInAppSearchResultsIntent, names: named(__assistantSchemaIntent)) macro AppIntent<T>(schema: T) where T : AssistantSchemas.Intent
 ```
 
 ## See Also

@@ -3,6 +3,8 @@
 **Framework**: WebKit  
 **Kind**: property
 
+The automatic behavior.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -15,6 +17,10 @@
 ```swift
 static let automatic: WebView.ElementFullscreenBehavior
 ```
+
+#### Discussion
+
+The web view automatically chooses whether content can be displayed in full screen. By default, web views use the [`disabled`](webview-swift.struct/elementfullscreenbehavior/disabled.md) behavior.
 
 
 ---

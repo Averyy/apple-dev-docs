@@ -14,6 +14,11 @@ Displays the image’s spatial 3D representation (if generated) with an immersiv
 static let spatial3DImmersive: ImagePresentationComponent.ViewingMode
 ```
 
+## See Also
+
+- [static let spatial3D: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/spatial3d.md)
+  Displays the image’s spatial 3D representation (if generated) with a windowed presentation style.
+
 
 ---
 

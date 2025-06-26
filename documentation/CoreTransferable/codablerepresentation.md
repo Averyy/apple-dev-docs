@@ -17,7 +17,8 @@ A transfer representation for types that participate in Swift’s protocols for 
 ## Declaration
 
 ```swift
-struct CodableRepresentation<Item, Encoder, Decoder> where Item : Transferable, Item : Decodable, Item : Encodable, Encoder : TopLevelEncoder, Decoder : TopLevelDecoder, Encoder.Output == Data, Decoder.Input == Data
+@preconcurrency
+struct CodableRepresentation<Item, Encoder, Decoder> where Item : Transferable, Item : Decodable, Item : Encodable, Encoder : TopLevelEncoder, Encoder : Sendable, Decoder : TopLevelDecoder, Decoder : Sendable, Encoder.Output == Data, Decoder.Input == Data
 ```
 
 ## Mentions

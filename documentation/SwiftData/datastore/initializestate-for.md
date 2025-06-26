@@ -20,6 +20,12 @@
 func initializeState(for editingState: EditingState)
 ```
 
+## See Also
+
+- [struct EditingState](editingstate.md)
+- [func cachedSnapshots(for: [PersistentIdentifier], editingState: EditingState) throws -> [PersistentIdentifier : Self.Snapshot]](datastore/cachedsnapshots(for:editingstate:).md)
+- [func invalidateState(for: EditingState)](datastore/invalidatestate(for:).md)
+
 
 ---
 

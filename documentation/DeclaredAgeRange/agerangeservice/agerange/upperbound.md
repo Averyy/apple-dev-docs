@@ -1,6 +1,6 @@
 # upperBound
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: property
 
 The upper limit of the person’s age range.

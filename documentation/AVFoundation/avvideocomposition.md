@@ -83,10 +83,10 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
 - [AVVideoComposition.Configuration](avvideocomposition/configuration.md)
   Configurable properties for initializing a new AVVideoComposition instance.
 ### Initializers
+- [convenience init(applyingFiltersTo: AVAsset, applier: (AVCIImageFilteringParameters) async throws -> AVCIImageFilteringResult, isolation: isolated (any Actor)?) async throws](avvideocomposition/init(applyingfiltersto:applier:isolation:).md)
+  Creates a video composition configured to apply Core Image filters to each video frame of the specified asset.
 - [convenience init(configuration: AVVideoComposition.Configuration)](avvideocomposition/init(configuration:).md)
   Initialize an AVVideoComposition with a configuration.
-- [convenience init(for: AVAsset, applyingCIFiltersWithHandler: (AVCIImageFilteringParameters) async throws -> AVCIImageFilteringResult, isolation: isolated (any Actor)?) async throws](avvideocomposition/init(for:applyingcifilterswithhandler:isolation:).md)
-  Creates a video composition configured to apply Core Image filters to each video frame of the specified asset.
 ### Instance Methods
 - [func outputBufferDescription() -> [[CMTag]]?](avvideocomposition/outputbufferdescription.md)
   The output buffers of the video composition can be specified with the outputBufferDescription. The value is an array of an array of CMTag objects that describes the output buffers.

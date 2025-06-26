@@ -25,7 +25,7 @@ This initializer throws an error if reading from the decoder fails, or if the da
 
 ## See Also
 
-- [init(left: simd_float3, right: simd_float3)](immersivecameracalibration/cameraorigin/init(left:right:).md)
+- [init(left: Point3DFloat, right: Point3DFloat)](immersivecameracalibration/cameraorigin/init(left:right:).md)
 
 
 ---

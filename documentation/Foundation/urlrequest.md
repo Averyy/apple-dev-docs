@@ -23,11 +23,11 @@ struct URLRequest
 ## Mentions
 
 - [Uploading data to a website](uploading-data-to-a-website.md)
-- [Downloading files from websites](downloading-files-from-websites.md)
-- [Accessing cached data](accessing-cached-data.md)
-- [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
-- [Uploading streams of data](uploading-streams-of-data.md)
 - [Downloading files in the background](downloading-files-in-the-background.md)
+- [Downloading files from websites](downloading-files-from-websites.md)
+- [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
+- [Accessing cached data](accessing-cached-data.md)
+- [Uploading streams of data](uploading-streams-of-data.md)
 
 #### Overview
 

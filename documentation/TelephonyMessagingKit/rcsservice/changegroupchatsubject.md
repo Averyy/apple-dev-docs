@@ -18,7 +18,7 @@ final func changeGroupChatSubject(_ request: RCSService.ChangeGroupChatSubjectRe
 
 #### Discussion
 
-> **Note**: `RCSService.Error` if there was an error while performing the operation.
+> **Note**: [`RCSService.Error`](rcsservice/error.md) if there was an error while performing the operation.
 
 ## Parameters
 

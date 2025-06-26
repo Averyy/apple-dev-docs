@@ -21,7 +21,7 @@ The [`NSSwitch`](nsswitch.md) class provides a simple interface for displaying a
 
 Use a switch to toggle significant preferences, or preferences that provide access to other controls. Avoid creating lists or tables of switches; instead, for general-purpose toggles, use an instance of [`NSButton`](nsbutton.md) to display a checkbox.
 
-[`NSSwitch`](nsswitch.md) doesn’t use an instance of [`NSCell`](nscell.md) to provide its functionality. The [`cellClass`](nscontrol/cellclass.md) class property and [`cell`](nscontrol/cell.md) instance property both return [`nil`](https://developer.apple.com/documentation/objectivec/nil), and they ignore attempts to set a non-[`nil`](https://developer.apple.com/documentation/objectivec/nil) value.
+[`NSSwitch`](nsswitch.md) doesn’t use an instance of [`NSCell`](nscell.md) to provide its functionality. The [`cellClass`](nscontrol/cellclass.md) class property and [`cell`](nscontrol/cell.md) instance property both return [`Nil`](https://developer.apple.com/documentation/objectivec/nil), and they ignore attempts to set a non-[`Nil`](https://developer.apple.com/documentation/objectivec/nil) value.
 
 ## Topics
 

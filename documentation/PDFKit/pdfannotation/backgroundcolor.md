@@ -17,7 +17,7 @@ The color of the widget’s background.
 
 ```swift
 @NSCopying
-var backgroundColor: UIColor? { get set }
+var backgroundColor: NSColor? { get set }
 ```
 
 ## See Also

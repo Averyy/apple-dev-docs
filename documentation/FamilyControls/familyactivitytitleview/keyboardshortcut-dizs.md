@@ -8,7 +8,6 @@ Assigns an optional keyboard shortcut to the modified control.
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
-- Mac Catalyst 15.4+
 - macOS 12.3+
 
 ## Declaration

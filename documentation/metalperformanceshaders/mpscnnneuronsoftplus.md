@@ -1,7 +1,7 @@
 # MPSCNNNeuronSoftPlus
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A parametric softplus neuron filter.
 
@@ -16,25 +16,35 @@ A parametric softplus neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronSoftPlus : MPSCNNNeuron
+class MPSCNNNeuronSoftPlus
 ```
 
 #### Overview
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = a * log(1 + e^(b * x))](https://docs-assets.developer.apple.com/published/866dd98e74/c9381f69-a0d3-4100-a952-8fd6a04a5030.png)
+![f(x) = a * log(1 + e^(b * x))](https://docs-assets.developer.apple.com/published/2d44780bc7adfe922470d03b38d4ccf3/media-2903546%402x.png)
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, a: Float, b: Float)](mpscnnneuronsoftplus/2866983-init.md)
+- [init(device: any MTLDevice, a: Float, b: Float)](mpscnnneuronsoftplus/init(device:a:b:).md)
   Initializes a parametric softplus neuron filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -68,8 +78,6 @@ For each pixel in an image, the filter applies the following function:
   A logarithm neuron filter.
 - [class MPSCNNNeuronPower](mpscnnneuronpower.md)
   A power neuron filter.
-- [class MPSNNNeuronDescriptor](mpsnnneurondescriptor.md)
-  An object that specifies properties used by a neuron kernel.
 
 
 ---

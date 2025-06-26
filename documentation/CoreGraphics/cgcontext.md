@@ -333,7 +333,7 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
 - [func draw(CGImage, in: CGRect, by: CGToneMapping, options: CFDictionary?) -> Bool](cgcontext/draw(_:in:by:options:).md)
 - [func resetClip()](cgcontext/resetclip.md)
 - [func setEDRTargetHeadroom(Float) -> Bool](cgcontext/setedrtargetheadroom(_:).md)
-- [func setContentToneMappingInfo(CGContentToneMappingInfo)](cgcontext/setcontenttonemappinginfo(_:).md)
+- [func synchronizeAttributes()](cgcontext/synchronizeattributes.md)
 ### Structures
 - [CGContext.AuxiliaryInfo](cgcontext/auxiliaryinfo.md)
 ### Initializers
@@ -341,6 +341,8 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
 - [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: UInt32)](cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:)-4fkaf.md)
 - [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace?, bitmapInfo: CGBitmapInfo, releaseCallback: CGBitmapContextReleaseDataCallback?, releaseInfo: UnsafeMutableRawPointer?)](cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:releasecallback:releaseinfo:)-4yzt5.md)
 - [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: UInt32, releaseCallback: CGBitmapContextReleaseDataCallback?, releaseInfo: UnsafeMutableRawPointer?)](cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:releasecallback:releaseinfo:)-71ea9.md)
+### Instance Properties
+- [var contentToneMappingInfo: CGContentToneMappingInfo](cgcontext/contenttonemappinginfo.md)
 
 ## Relationships
 

@@ -3,7 +3,7 @@
 **Framework**: Compositor Services  
 **Kind**: property
 
-Returns the color format at the specified index in the layer capabilities.
+An array of stencil formats that the layer supports with its drawable render context.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -15,18 +15,9 @@ Returns the color format at the specified index in the layer capabilities.
 var drawableRenderContextSupportedStencilFormats: [MTLPixelFormat] { get }
 ```
 
-#### Return Value
-
-The color format at the specified index.
-
 #### Discussion
 
-Use this function to determine the pixel arrangements and characteristics you can apply to the layer.
-
-## Parameters
-
-- `layer_capabilities`: The layer capabilities to query.
-- `index`: A zero-based index into the list of color formats.
+The pixel formats in this property tell you which pixel arrangements and characteristics the layer supports for its stencil textures with the `LayerRenderer.Drawable.RenderContext`.
 
 
 ---

@@ -6,17 +6,17 @@
 Premultiplication description for the color channels of an image.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-enum MPSAlphaType : UInt, @unchecked Sendable
+enum MPSAlphaType
 ```
 
 #### Overview
@@ -41,20 +41,27 @@ Most [`MPSKernel`](mpskernel.md) objects require non-premultiplied or completely
 
 ### Constants
 - [MPSAlphaType.nonPremultiplied](mpsalphatype/nonpremultiplied.md)
-  The image is not premultiplied by alpha. Alpha is not guaranteed to be 1. ([`CGImageAlphaInfo.first`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/first)`/`[`CGImageAlphaInfo.last`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/last))
+  The image is not premultiplied by alpha.
 - [MPSAlphaType.alphaIsOne](mpsalphatype/alphaisone.md)
-  Alpha is guaranteed to be 1, even if it is not encoded as 1 or not encoded at all. ([`CGImageAlphaInfo.noneSkipFirst`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/noneskipfirst)`/`[`CGImageAlphaInfo.noneSkipLast`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/noneskiplast)`, `[`CGImageAlphaInfo.none`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/none))
+  Alpha is guaranteed to be 1.
 - [MPSAlphaType.premultiplied](mpsalphatype/premultiplied.md)
-  The image is premultiplied by alpha. Alpha is not guaranteed to be 1. ([`CGImageAlphaInfo.premultipliedFirst`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/premultipliedfirst)`/`[`CGImageAlphaInfo.premultipliedLast`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/premultipliedlast))
+  The image is premultiplied by alpha.
+### Initializers
+- [init?(rawValue: UInt)](mpsalphatype/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [init(device: any MTLDevice, srcAlpha: MPSAlphaType, destAlpha: MPSAlphaType, backgroundColor: UnsafeMutablePointer<CGFloat>?, conversionInfo: CGColorConversionInfo?)](mpsimageconversion/2206722-init.md)
+- [init(device: any MTLDevice, srcAlpha: MPSAlphaType, destAlpha: MPSAlphaType, backgroundColor: UnsafeMutablePointer<CGFloat>?, conversionInfo: CGColorConversionInfo?)](mpsimageconversion/init(device:srcalpha:destalpha:backgroundcolor:conversioninfo:).md)
   Initializes a filter that can convert texture color space, alpha, and pixel format.
 
 

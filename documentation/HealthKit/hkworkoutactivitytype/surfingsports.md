@@ -29,6 +29,8 @@ case surfingSports
   The constant for sailing.
 - [HKWorkoutActivityType.swimming](hkworkoutactivitytype/swimming.md)
   The constant for swimming.
+- [HKWorkoutActivityType.underwaterDiving](hkworkoutactivitytype/underwaterdiving.md)
+  The constant for underwater diving.
 - [HKWorkoutActivityType.waterFitness](hkworkoutactivitytype/waterfitness.md)
   The constant for aerobic exercise performed in shallow water.
 - [HKWorkoutActivityType.waterPolo](hkworkoutactivitytype/waterpolo.md)

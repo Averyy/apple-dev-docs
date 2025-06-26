@@ -68,6 +68,11 @@ struct SwiftDataError
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [enum DataStoreError](datastoreerror.md)
+  A type that describes a data store error.
+
 
 ---
 

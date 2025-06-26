@@ -16,7 +16,7 @@ For more information on designing generative AI experiences, see Human Interface
 
 #### Handle Guardrail Errors
 
-When you send a prompt to the model, the `Guardrails` check the input prompt and the model’s output. If either fails the guardrail’s safety check, the model session throws a [`LanguageModelSession.GenerationError.guardrailViolation(_:)`](languagemodelsession/generationerror/guardrailviolation(_:).md) error:
+When you send a prompt to the model, [`LanguageModelSession.Guardrails`](languagemodelsession/guardrails.md) check the input prompt and the model’s output. If either fails the guardrail’s safety check, the model session throws a [`LanguageModelSession.GenerationError.guardrailViolation(_:)`](languagemodelsession/generationerror/guardrailviolation(_:).md) error:
 
 ```swift
 do {
@@ -159,7 +159,7 @@ Although most people will interact with your app in respectful ways, it’s impo
 
 Create a list of potentially harmful prompt inputs that you can run as part of your app’s tests. Include every prompt in your app — even safe ones — as part of your app testing. For each prompt test, log the timestamp, full input prompt, the model’s response, and whether it activates any built-in safety or mitigations you’ve included in your app. When starting out, manually read the model’s response on all tests to ensure it meets your design and safety goals. To scale your tests, consider using a frontier LLM to auto-grade the safety of each prompt. Building a test pipeline for prompts and safety is a worthwhile investment for tracking changes in how your app responds over time.
 
-Someone might purposefully attempt to break your feature or produce bad output — especially someone who won’t be harmed by their actions. It’s more important to identify cases where someone could accidentally cause harm to self or others during normal app use.
+Someone might purposefully attempt to break your feature or produce bad output — especially someone who won’t be harmed by their actions. But keep in mind that it’s very important to identify cases where someone could accidentally cause harm to self or others during normal app use.
 
 > 💡 **Tip**: Prioritize protecting people using your app with good intentions. Accidental safety failures often only occur in specific contexts, which make them hard to identify during testing. Test for a longer series of interactions, and test for inputs that could become sensitive only when combined with other aspects of your app.
 

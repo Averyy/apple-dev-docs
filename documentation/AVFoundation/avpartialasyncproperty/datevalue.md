@@ -26,7 +26,7 @@ static var dateValue: AVAsyncProperty<Root, Date?> { get }
 
 #### Discussion
 
-Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
+Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
 This value is `nil` if the system can’t represent the value as a date.
 

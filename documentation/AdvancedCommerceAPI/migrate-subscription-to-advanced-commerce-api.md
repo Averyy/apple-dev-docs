@@ -10,9 +10,9 @@ Migrate a subscription that a customer purchased through In-App Purchase to a su
 
 ## Mentions
 
+- [Authorizing API requests from your server](authorizing-server-calls.md)
 - [Advanced Commerce API changelog](changelog.md)
 - [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
-- [Authorizing API requests from your server](authorizing-server-calls.md)
 
 #### Discussion
 

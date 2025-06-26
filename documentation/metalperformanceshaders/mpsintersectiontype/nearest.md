@@ -1,7 +1,7 @@
 # MPSIntersectionType.nearest
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case nearest = 0
+case nearest
 ```
 
 

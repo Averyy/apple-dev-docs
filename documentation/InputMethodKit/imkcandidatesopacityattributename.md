@@ -1,20 +1,27 @@
 # IMKCandidatesOpacityAttributeName
 
-**Framework**: InputMethodKit
+**Framework**: InputMethodKit  
+**Kind**: var
 
-The opacity level for a candidates window.
+**Availability**:
+- macOS 10.5+
 
-## Topics
+## Declaration
 
-### Constants
-- [let IMKCandidatesOpacityAttributeName: String](imkcandidatesopacityattributename.md)
+```swift
+let IMKCandidatesOpacityAttributeName: String
+```
+
+#### Discussion
+
+The opacity attribute for a candidates window. The associated value must be an `NSNumber` object that represents a value from 0 to 1.
 
 ## See Also
 
-- [typealias IMKCandidatePanelType](imkcandidatepaneltype.md)
-  Types of candidates windows provide by the Input Method Kit.
-- [typealias IMKCandidatesLocationHint](imkcandidateslocationhint.md)
-  Hints that suggest where to place the candidates window.
+- [let IMKCandidatesSendServerKeyEventFirst: String](imkcandidatessendserverkeyeventfirst.md)
+- [let IMKControllerClass: String](imkcontrollerclass.md)
+- [let IMKDelegateClass: String](imkdelegateclass.md)
+- [let IMKModeDictionary: String](imkmodedictionary.md)
 
 
 ---

@@ -31,6 +31,7 @@ Use this method to navigate to a webpage that you loaded yourself and saved in a
 
 - `data`: The data to use as the contents of the webpage.
 - `mimeType`: The MIME type of the information in the data parameter. This parameter must not contain an empty string.
+- `characterEncoding`: The data’s character encoding.
 - `baseURL`: A URL that you use to resolve relative URLs within the document.
 
 ## See Also

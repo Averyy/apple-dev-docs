@@ -19,6 +19,10 @@ The constant for playing American football.
 case americanFootball
 ```
 
+#### Discussion
+
+HealthKit estimates calories for this activity based on the data from Apple Watch’s sensors. This rate is never lower than the brisk walk burn rate when moving.
+
 ## See Also
 
 - [HKWorkoutActivityType.australianFootball](hkworkoutactivitytype/australianfootball.md)

@@ -19,8 +19,8 @@ optional func enumerateChanges(for observer: any NSFileProviderChangeObserver, f
 
 ## Mentions
 
-- [Tracking Changes to Documents](tracking-changes-to-documents.md)
 - [Signaling Changes for User-Driven Actions](signaling-changes-for-user-driven-actions.md)
+- [Tracking Changes to Documents](tracking-changes-to-documents.md)
 
 #### Discussion
 

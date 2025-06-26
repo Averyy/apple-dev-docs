@@ -1,7 +1,7 @@
 # MPSNDArrayDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,33 +14,40 @@
 ## Declaration
 
 ```swift
-class MPSNDArrayDescriptor : NSObject
+class MPSNDArrayDescriptor
 ```
 
 ## Topics
 
 ### Initializers
-- [init(dataType: MPSDataType, dimensionCount: Int, dimensionSizes: UnsafeMutablePointer<Int>)](mpsndarraydescriptor/3114063-init.md)
-- [init(dataType: MPSDataType, shape: [NSNumber])](mpsndarraydescriptor/3143491-init.md)
+- [convenience init(dataType: MPSDataType, dimensionCount: Int, dimensionSizes: UnsafeMutablePointer<Int>)](mpsndarraydescriptor/init(datatype:dimensioncount:dimensionsizes:).md)
+- [convenience init(dataType: MPSDataType, shape: [NSNumber])](mpsndarraydescriptor/init(datatype:shape:).md)
 ### Instance Properties
-- [var dataType: MPSDataType](mpsndarraydescriptor/3114062-datatype.md)
-- [var numberOfDimensions: Int](mpsndarraydescriptor/3114067-numberofdimensions.md)
-- [var preferPackedRows: Bool](mpsndarraydescriptor/4423114-preferpackedrows.md)
+- [var dataType: MPSDataType](mpsndarraydescriptor/datatype.md)
+- [var numberOfDimensions: Int](mpsndarraydescriptor/numberofdimensions.md)
+- [var preferPackedRows: Bool](mpsndarraydescriptor/preferpackedrows.md)
 ### Instance Methods
-- [func dimensionOrder() -> vector_uchar16](mpsndarraydescriptor/3114065-dimensionorder.md)
-- [func getShape() -> [NSNumber]](mpsndarraydescriptor/4423112-getshape.md)
-- [func length(ofDimension: Int) -> Int](mpsndarraydescriptor/3114066-length.md)
-- [func permute(withDimensionOrder: UnsafeMutablePointer<Int>)](mpsndarraydescriptor/4423113-permute.md)
-- [func reshape(withDimensionCount: Int, dimensionSizes: UnsafeMutablePointer<Int>)](mpsndarraydescriptor/3143492-reshape.md)
-- [func reshape(withShape: [NSNumber])](mpsndarraydescriptor/3143493-reshape.md)
-- [func sliceDimension(Int, withSubrange: MPSDimensionSlice)](mpsndarraydescriptor/3114069-slicedimension.md)
-- [func sliceRange(forDimension: Int) -> MPSDimensionSlice](mpsndarraydescriptor/3114070-slicerange.md)
-- [func transposeDimension(Int, withDimension: Int)](mpsndarraydescriptor/3114071-transposedimension.md)
+- [func dimensionOrder() -> vector_uchar16](mpsndarraydescriptor/dimensionorder.md)
+- [func getShape() -> [NSNumber]](mpsndarraydescriptor/getshape.md)
+- [func length(ofDimension: Int) -> Int](mpsndarraydescriptor/length(ofdimension:).md)
+- [func permute(withDimensionOrder: UnsafeMutablePointer<Int>)](mpsndarraydescriptor/permute(withdimensionorder:).md)
+- [func reshape(withDimensionCount: Int, dimensionSizes: UnsafeMutablePointer<Int>)](mpsndarraydescriptor/reshape(withdimensioncount:dimensionsizes:).md)
+- [func reshape(withShape: [NSNumber])](mpsndarraydescriptor/reshape(withshape:).md)
+- [func sliceDimension(Int, withSubrange: MPSDimensionSlice)](mpsndarraydescriptor/slicedimension(_:withsubrange:).md)
+- [func sliceRange(forDimension: Int) -> MPSDimensionSlice](mpsndarraydescriptor/slicerange(fordimension:).md)
+- [func transposeDimension(Int, withDimension: Int)](mpsndarraydescriptor/transposedimension(_:withdimension:).md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

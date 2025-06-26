@@ -31,7 +31,6 @@ struct ReadToEndOfFileCompletionMessage
 
 ### Conforms To
 - [NotificationCenter.AsyncMessage](notificationcenter/asyncmessage.md)
-- [NotificationCenter.Message](notificationcenter/message.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

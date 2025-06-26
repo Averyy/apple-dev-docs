@@ -22,21 +22,12 @@ A class that defines app extension configurations for the URL Filter control pro
 
 [`NEURLFilterControlProvider`](neurlfiltercontrolprovider.md) uses this class to conform to the [`ExtensionKit`](https://developer.apple.com/documentation/ExtensionKit) framework. Your extension doesn’t need to use this class directly.
 
-## Topics
-
-### Creating a provider configuration
-- [init(appex: any NEURLFilterControlProvider)](neurlfiltercontrolproviderconfiguration/init(appex:).md)
-  Creates a configuration for a given app extension.
-
 ## Relationships
 
 ### Inherits From
 - [NEAppExtensionConfiguration](neappextensionconfiguration.md)
 ### Conforms To
 - [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
-- [NEAppExtensionConfigurationProtocol](neappextensionconfigurationprotocol.md)
-- [NEAppExtensionXPCProtocol](neappextensionxpcprotocol.md)
-- [NEURLFilterControlProviderXPCProtocol](neurlfiltercontrolproviderxpcprotocol.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

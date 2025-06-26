@@ -38,6 +38,7 @@ let b = a + CollectionOfOne(toAdd)
 - [init(Element)](collectionofone/init(_:).md)
   Creates an instance containing just the given element.
 ### Instance Properties
+- [var mutableSpan: MutableSpan<Element>](collectionofone/mutablespan.md)
 - [var span: Span<Element>](collectionofone/span.md)
 ### Default Implementations
 - [BidirectionalCollection Implementations](collectionofone/bidirectionalcollection-implementations.md)

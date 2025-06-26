@@ -21,7 +21,7 @@ let HKMetadataKeyVO2MaxValue: String
 
 #### Discussion
 
-The system sets this key on [`lowCardioFitnessEvent`](hkcategorytypeidentifier/lowcardiofitnessevent.md) samples. It contains the value of the VO2 max measurement that triggered the event. The value of this key is an [`HKQuantity`](hkquantity.md) object with a unit of `ml/(kg*min)`. For more information on working with complex units, see [`unitMultiplied(by:)`](hkunit/unitmultiplied(by:).md), [`unitDivided(by:)`](hkunit/unitdivided(by:).md), and [`init(from:)`](hkunit/init(from:)-9qont.md).
+The system sets this key on [`lowCardioFitnessEvent`](hkcategorytypeidentifier/lowcardiofitnessevent.md) samples. It contains the value of the VO2 max measurement that triggered the event. The value of this key is an [`HKQuantity`](hkquantity.md) object with a unit of `ml/kg/min`. For more information on working with complex units, see [`unitMultiplied(by:)`](hkunit/unitmultiplied(by:).md), [`unitDivided(by:)`](hkunit/unitdivided(by:).md), and [`init(from:)`](hkunit/init(from:)-9qont.md).
 
 ## See Also
 

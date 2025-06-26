@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: class
 
-Descriptor defining how a compute pipeline state would be created.
+Describes a compute pipeline state.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -23,17 +23,17 @@ class MTL4ComputePipelineDescriptor
 
 ### Instance Properties
 - [var computeFunctionDescriptor: MTL4FunctionDescriptor?](mtl4computepipelinedescriptor/computefunctiondescriptor.md)
-  A function descriptor representing the function that will be executed by the compute pipeline.
+  A descriptor representing the compute pipeline’s function.
 - [var maxTotalThreadsPerThreadgroup: Int](mtl4computepipelinedescriptor/maxtotalthreadsperthreadgroup.md)
   The maximum total number of threads that can be executing in a single threadgroup for the compute function.
 - [var requiredThreadsPerThreadgroup: MTLSize](mtl4computepipelinedescriptor/requiredthreadsperthreadgroup.md)
-  Sets the required threads-per-threadgroup during dispatches. The `threadsPerThreadgroup` argument of any dispatch must match this value if it is set. Optional, unless the pipeline is going to use CooperativeTensors in which case this must be set. Setting this to a size of 0 in every dimension disables this property
+  The required number of threads per threadgroup for compute dispatches.
 - [var staticLinkingDescriptor: MTL4StaticLinkingDescriptor?](mtl4computepipelinedescriptor/staticlinkingdescriptor.md)
-  An object that contains information about functions that are linked to the compute pipeline during creation.
+  An object that contains information about functions to link to the compute pipeline.
 - [var supportBinaryLinking: Bool](mtl4computepipelinedescriptor/supportbinarylinking.md)
-  A boolean value indicating whether the compute pipeline should support adding binary functions.
+  A boolean value indicating whether the compute pipeline supports linking binary functions.
 - [var supportIndirectCommandBuffers: MTL4IndirectCommandBufferSupportState](mtl4computepipelinedescriptor/supportindirectcommandbuffers.md)
-  A value indicating whether the pipeline should support indirect command buffers.
+  A value indicating whether the pipeline supports Metal indirect command buffers.
 - [var threadGroupSizeIsMultipleOfThreadExecutionWidth: Bool](mtl4computepipelinedescriptor/threadgroupsizeismultipleofthreadexecutionwidth.md)
   A boolean value indicating whether each dimension of the threadgroup size is a multiple of its corresponding thread execution width.
 ### Instance Methods

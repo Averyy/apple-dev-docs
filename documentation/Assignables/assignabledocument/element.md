@@ -37,6 +37,7 @@ typealias Element = AssignableDocumentElement
   A box on a page for a question.
 - [var questions: [AssignableDocument.Question]](assignabledocument/questions.md)
   A collection of questions defined for this assignable.
+- [var pagesDebugDescription: String](assignabledocument/pagesdebugdescription.md)
 - [AssignableDocument.Error](assignabledocument/error.md)
   Errors for this document type.
 

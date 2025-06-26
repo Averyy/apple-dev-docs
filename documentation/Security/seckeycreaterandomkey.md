@@ -22,8 +22,8 @@ func SecKeyCreateRandomKey(_ parameters: CFDictionary, _ error: UnsafeMutablePoi
 
 ## Mentions
 
-- [Protecting keys with the Secure Enclave](protecting-keys-with-the-secure-enclave.md)
 - [Generating New Cryptographic Keys](generating-new-cryptographic-keys.md)
+- [Protecting keys with the Secure Enclave](protecting-keys-with-the-secure-enclave.md)
 
 #### Return Value
 

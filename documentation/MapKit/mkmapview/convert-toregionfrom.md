@@ -17,7 +17,7 @@ Converts a rectangle in the specified view’s coordinate system to a map region
 
 ```swift
 @MainActor
-func convert(_ rect: CGRect, toRegionFrom view: UIView?) -> MKCoordinateRegion
+func convert(_ rect: CGRect, toRegionFrom view: NSView?) -> MKCoordinateRegion
 ```
 
 #### Return Value

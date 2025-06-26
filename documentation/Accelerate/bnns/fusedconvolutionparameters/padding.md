@@ -11,9 +11,9 @@ The number of zeros that the operation virtually adds to the edges of the input.
 - Mac Catalyst ?+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
 - watchOS 8.0+
 - Unknown ?+ - Deprecated
+- visionOS ?+
 
 ## Declaration
 

@@ -1,7 +1,7 @@
 # MPSCNNUpsamplingBilinearGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient bilinear spatial upsampling filter.
 
@@ -16,18 +16,28 @@ A gradient bilinear spatial upsampling filter.
 ## Declaration
 
 ```swift
-class MPSCNNUpsamplingBilinearGradient : MPSCNNUpsamplingGradient
+class MPSCNNUpsamplingBilinearGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingbilineargradient/2947918-init.md)
+- [init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingbilineargradient/init(device:integerscalefactorx:integerscalefactory:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNUpsamplingGradient](mpscnnupsamplinggradient.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

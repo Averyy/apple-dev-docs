@@ -1,7 +1,7 @@
 # MPSCNNNeuronTanH
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A hyperbolic tangent neuron filter.
 
@@ -16,25 +16,35 @@ A hyperbolic tangent neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronTanH : MPSCNNNeuron
+class MPSCNNNeuronTanH
 ```
 
 #### Overview
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = a * tanh(b * x)](https://docs-assets.developer.apple.com/published/866dd98e74/f9993ce8-2f74-4df6-bb43-f7adc213b209.png)
+![f(x) = a * tanh(b * x)](https://docs-assets.developer.apple.com/published/b88b212a126a6043e53bd34fe1846fd9/media-2903548%402x.png)
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, a: Float, b: Float)](mpscnnneurontanh/1648815-init.md)
+- [init(device: any MTLDevice, a: Float, b: Float)](mpscnnneurontanh/init(device:a:b:).md)
   Initializes a hyperbolic tangent neuron filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -68,8 +78,6 @@ For each pixel in an image, the filter applies the following function:
   A logarithm neuron filter.
 - [class MPSCNNNeuronPower](mpscnnneuronpower.md)
   A power neuron filter.
-- [class MPSNNNeuronDescriptor](mpsnnneurondescriptor.md)
-  An object that specifies properties used by a neuron kernel.
 
 
 ---

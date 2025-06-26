@@ -1,9 +1,9 @@
 # AgeRangeService.AgeRange
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: struct
 
-A person’s age range is based on the information they provided in response to the age range request.
+A person’s age range is based on the age they provided in response to the age range request.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -19,7 +19,7 @@ struct AgeRange
 
 #### Overview
 
-For more information, refer to `requestAgeRange(ageGates:_:_:in:)`
+For more information, refer to [`requestAgeRange(ageGates:_:_:in:)`](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)
 
 ## Topics
 
@@ -37,6 +37,10 @@ For more information, refer to `requestAgeRange(ageGates:_:_:in:)`
 
 - [AgeRangeService.AgeRangeDeclaration](agerangeservice/agerangedeclaration.md)
   An enumeration that describes the declared age range.
+- [func requestAgeRange(ageGates: Int, Int?, Int?, in: UIViewController) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)
+  Determines an age range for the person logged onto iCloud on the device.
+- [func requestAgeRange(ageGates: Int, Int?, Int?, in: NSWindow) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-4yo3r.md)
+  Determines an age range for the person logged onto iCloud on the device.
 - [AgeRangeService.Response](agerangeservice/response.md)
   A response indicating either a person shared their age range or declined to share it.
 - [AgeRangeService.ParentalControls](agerangeservice/parentalcontrols.md)

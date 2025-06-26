@@ -17,7 +17,6 @@ Creates and initializes a tile map node using the provided tile set with a speci
 ## Declaration
 
 ```swift
-@MainActor
 init(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, fillWith tileGroup: SKTileGroup)
 ```
 

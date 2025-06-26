@@ -8,6 +8,10 @@ Add a localization for a specific Game Center activity.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Mentions
+
+- [Configuring Game center activities](configuring-game-center-activities.md)
+
 ## See Also
 
 - [Read activity localization information](get-v1-gamecenteractivitylocalizations-_id_.md)

@@ -22,8 +22,8 @@ var string: String? { get set }
 
 ## Mentions
 
-- [Identifying People, Places, and Organizations](identifying-people-places-and-organizations.md)
 - [Identifying Parts of Speech](identifying-parts-of-speech.md)
+- [Identifying People, Places, and Organizations](identifying-people-places-and-organizations.md)
 - [Tokenizing Natural Language Text](tokenizing-natural-language-text.md)
 
 ## See Also

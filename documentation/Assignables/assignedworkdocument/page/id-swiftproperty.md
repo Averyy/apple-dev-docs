@@ -25,8 +25,6 @@ var id: AssignedWorkDocument.Page.ID { get }
   A type representing the stable identity of this page.
 - [AssignedWorkDocument.Page.Document](assignedworkdocument/page/document.md)
   The document type this element is for.
-- [AssignedWorkDocument.Page.Document](assignedworkdocument/page/document.md)
-  The document type this element is for.
 
 
 ---

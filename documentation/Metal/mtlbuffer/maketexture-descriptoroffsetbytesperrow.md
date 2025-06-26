@@ -22,8 +22,8 @@ func makeTexture(descriptor: MTLTextureDescriptor, offset: Int, bytesPerRow: Int
 
 ## Mentions
 
-- [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
 - [Optimizing Texture Data](optimizing-texture-data.md)
+- [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
 
 #### Return Value
 

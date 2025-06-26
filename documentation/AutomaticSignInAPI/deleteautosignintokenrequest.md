@@ -5,6 +5,9 @@
 
 The request body that contains the sign-in token to be deleted.
 
+**Availability**:
+- Automatic Sign-In API 1.0+
+
 ## Declaration
 
 ```swift
@@ -13,11 +16,11 @@ object DeleteAutoSignInTokenRequest
 
 #### Overview
 
-This is the request object for the [`Delete sign-in token`](delete-this-token-for-all-associated-users.md) endpoint.
+This is the request object for the [`Delete Sign-In Token`](delete-this-token-for-all-associated-users.md) endpoint.
 
 ## See Also
 
-- [Delete sign-in token](delete-this-token-for-all-associated-users.md)
+- [Delete Sign-In Token](delete-this-token-for-all-associated-users.md)
   Deletes a specific sign-in token.
 
 

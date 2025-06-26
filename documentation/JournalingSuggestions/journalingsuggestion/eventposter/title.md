@@ -14,6 +14,13 @@ The title of the event.
 var title: AttributedString
 ```
 
+## See Also
+
+- [var placeName: String?](journalingsuggestion/eventposter/placename.md)
+  Location displayed name on the poster.
+- [var image: URL?](journalingsuggestion/eventposter/image.md)
+  A poster image URL.
+
 
 ---
 

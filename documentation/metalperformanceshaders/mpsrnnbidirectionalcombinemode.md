@@ -3,20 +3,20 @@
 **Framework**: Metal Performance Shaders  
 **Kind**: enum
 
-Modes that define how two images or matrices are combined. 
+Modes that define how two images or matrices are combined.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-enum MPSRNNBidirectionalCombineMode : UInt, @unchecked Sendable
+enum MPSRNNBidirectionalCombineMode
 ```
 
 ## Topics
@@ -28,11 +28,27 @@ enum MPSRNNBidirectionalCombineMode : UInt, @unchecked Sendable
   A mode in which two sequences are concatenated along the feature channels to form a single output.
 - [MPSRNNBidirectionalCombineMode.none](mpsrnnbidirectionalcombinemode/none.md)
   A mode in which two sequences are kept separate.
+### Initializers
+- [init?(rawValue: UInt)](mpsrnnbidirectionalcombinemode/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var bidirectionalCombineMode: MPSRNNBidirectionalCombineMode](mpsrnnimageinferencelayer/bidirectionalcombinemode.md)
+- [var numberOfLayers: Int](mpsrnnimageinferencelayer/numberoflayers.md)
+- [var recurrentOutputIsTemporary: Bool](mpsrnnimageinferencelayer/recurrentoutputistemporary.md)
+- [var storeAllIntermediateStates: Bool](mpsrnnimageinferencelayer/storeallintermediatestates.md)
+- [var inputFeatureChannels: Int](mpsrnnimageinferencelayer/inputfeaturechannels.md)
+- [var outputFeatureChannels: Int](mpsrnnimageinferencelayer/outputfeaturechannels.md)
 
 
 ---

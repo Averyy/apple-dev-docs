@@ -20,6 +20,13 @@
 var schema: Schema { get }
 ```
 
+## See Also
+
+- [var configuration: Self.Configuration](datastore/configuration-swift.property.md)
+- [associatedtype Configuration : DataStoreConfiguration](datastore/configuration-swift.associatedtype.md)
+- [protocol DataStoreConfiguration](datastoreconfiguration.md)
+- [var identifier: String](datastore/identifier.md)
+
 
 ---
 

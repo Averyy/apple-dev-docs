@@ -8,7 +8,6 @@ Adds an action to perform when this view recognizes a tap gesture.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 16.0+
 - watchOS 6.0+

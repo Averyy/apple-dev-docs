@@ -37,8 +37,8 @@ For audio and communication apps, CarPlay provides an  to let users interact wit
 
 To enable the assistant cell, your app must support specific Siri intents:
 
-- To play audio, audio apps must support [`INPlayMediaIntent`](https://developer.apple.com/documentation/Intents/INPlayMediaIntent).
-- To make phone calls, communication apps must support [`INStartCallIntent`](https://developer.apple.com/documentation/Intents/INStartCallIntent).
+- To play audio, audio apps must support doc://com.apple.documentation/documentation/sirikit/inplaymediaintent.
+- To make phone calls, communication apps must support doc://com.apple.documentation/documentation/sirikit/instartcallintent.
 
 To enable the assistant cell in your list template, use [`init(title:sections:assistantCellConfiguration:)`](cplisttemplate/init(title:sections:assistantcellconfiguration:).md) and provide the required configuration. For more information, see [`CPAssistantCellConfiguration`](cpassistantcellconfiguration.md). CarPlay automatically updates your app’s interface if you change the template’s [`assistantCellConfiguration`](cplisttemplate/assistantcellconfiguration.md) property.
 

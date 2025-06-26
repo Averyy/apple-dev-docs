@@ -196,7 +196,7 @@ On gesture end, `updateGestureInteraction` calculates the change in gesture posi
 }
 ```
 
-Next, `PlayerInterction.updateProgrammaticInteraction` handles the programmatic interactions of automated equipment. At the beginning of the interaction, it provides the set of available interaction destinations — the stones, lily pads, and logs.
+Next, `PlayerInteraction.updateProgrammaticInteraction` handles the programmatic interactions of automated equipment. At the beginning of the interaction, it provides the set of available interaction destinations — the stones, lily pads, and logs.
 
 ```swift
 func updateProgrammaticInteraction(interaction: TabletopInteraction) {

@@ -1,7 +1,7 @@
 # MPSCNNSubtract
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A subtraction operator.
 
@@ -16,18 +16,28 @@ A subtraction operator.
 ## Declaration
 
 ```swift
-class MPSCNNSubtract : MPSCNNArithmetic
+class MPSCNNSubtract
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpscnnsubtract/2942503-init.md)
+- [init(device: any MTLDevice)](mpscnnsubtract/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNArithmetic](mpscnnarithmetic.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

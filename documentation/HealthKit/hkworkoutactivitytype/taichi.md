@@ -19,6 +19,10 @@ The constant for tai chi.
 case taiChi
 ```
 
+#### Discussion
+
+HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
+
 ## See Also
 
 - [HKWorkoutActivityType.boxing](hkworkoutactivitytype/boxing.md)

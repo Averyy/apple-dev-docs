@@ -44,6 +44,7 @@ This allows callers to use a syntax like `myAttributedString.foregroundColor = .
   The configuration for decoding the attribute scope.
 ### Type Properties
 - [static var attributeKeys: some Sequence<any AttributedStringKey.Type>](attributescope/attributekeys.md)
+  A list of all attribute keys contained within this scope and any sub-scopes.
 
 ## Relationships
 

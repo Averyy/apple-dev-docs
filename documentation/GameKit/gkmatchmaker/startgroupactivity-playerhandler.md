@@ -20,8 +20,8 @@ func startGroupActivity(playerHandler handler: @escaping (GKPlayer) -> Void)
 
 ## Mentions
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
 - [Adding voice chat to multiplayer games](adding-voice-chat-to-multiplayer-games.md)
+- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
 
 #### Discussion
 

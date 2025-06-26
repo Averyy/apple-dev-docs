@@ -1,6 +1,6 @@
 # insert(_:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: method
 
 Adds the given element to the option set if it is not already a member.

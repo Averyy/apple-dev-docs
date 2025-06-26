@@ -44,10 +44,6 @@ class DefaultSerialModelExecutor
 
 ## See Also
 
-- [macro ModelActor()](modelactor().md)
-  Converts a Swift actor into a model actor by generating boilerplate code that fulfills the requirements of the associated protocol.
-- [protocol ModelActor](modelactor.md)
-  An interface for providing mutually-exclusive access to the attributes of a conforming model.
 - [protocol SerialModelExecutor](serialmodelexecutor.md)
   An interface for performing serial storage-related tasks using an isolated model context.
 - [protocol ModelExecutor](modelexecutor.md)

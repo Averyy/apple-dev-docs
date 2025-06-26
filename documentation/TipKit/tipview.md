@@ -72,6 +72,10 @@ struct SampleView: View {
 ### Creating a tip view
 - [init((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void)](tipview/init(_:arrowedge:action:).md)
   Creates a tip view with an optional arrow.
+- [init((any Tip)?, isPresented: Binding<Bool>?, arrowEdge: Edge?, action: (Tips.Action) -> Void)](tipview/init(_:ispresented:arrowedge:action:).md)
+  Creates a tip view with an optional arrow.
+- [init<AnchorID>((any Tip)?, isPresented: Binding<Bool>?, arrowEdge: Edge?, anchorID: AnchorID, action: (Tips.Action) -> Void)](tipview/init(_:ispresented:arrowedge:anchorid:action:).md)
+  Creates a tip view with an optional arrow.
 
 ## Relationships
 

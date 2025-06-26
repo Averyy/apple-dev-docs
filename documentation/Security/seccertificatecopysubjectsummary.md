@@ -22,8 +22,8 @@ func SecCertificateCopySubjectSummary(_ certificate: SecCertificate) -> CFString
 
 ## Mentions
 
-- [Examining a Certificate](examining-a-certificate.md)
 - [Importing an Identity](importing-an-identity.md)
+- [Examining a Certificate](examining-a-certificate.md)
 
 #### Return Value
 

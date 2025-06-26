@@ -16,8 +16,8 @@ struct Settings<Content> where Content : View
 
 ## Mentions
 
-- [Declaring a custom view](declaring-a-custom-view.md)
 - [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Declaring a custom view](declaring-a-custom-view.md)
 
 #### Overview
 

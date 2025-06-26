@@ -72,6 +72,7 @@ struct NFCReaderError
   The domain for errors associated with Core NFC APIs.
 ### Type Properties
 - [static var errorDomain: String](nfcreadererror-swift.struct/errordomain.md)
+- [static var readerErrorAccessNotAccepted: NFCReaderError.Code](nfcreadererror-swift.struct/readererroraccessnotaccepted.md)
 - [static var readerErrorIneligible: NFCReaderError.Code](nfcreadererror-swift.struct/readererrorineligible.md)
 
 ## Relationships

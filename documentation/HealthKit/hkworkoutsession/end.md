@@ -21,6 +21,7 @@ func end()
 
 ## Mentions
 
+- [Running workout sessions](running-workout-sessions.md)
 - [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
 
 ## See Also

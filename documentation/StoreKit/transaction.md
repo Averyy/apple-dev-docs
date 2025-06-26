@@ -23,12 +23,12 @@ struct Transaction
 
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 - [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
-- [Testing win-back offers in the sandbox environment](testing-win-back-offers-in-the-sandbox-environment.md)
 - [Testing purchases made outside your app](testing-purchases-made-outside-your-app.md)
+- [Testing win-back offers in the sandbox environment](testing-win-back-offers-in-the-sandbox-environment.md)
 - [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
-- [Testing refund requests](testing-refund-requests.md)
 - [Choosing a StoreKit API for In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
 - [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
+- [Testing refund requests](testing-refund-requests.md)
 
 #### Overview
 

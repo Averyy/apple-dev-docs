@@ -23,8 +23,8 @@ protocol MTLCommandBuffer : NSObjectProtocol
 
 - [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 - [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
-- [Tracking the Resource Residency of Argument Buffers](tracking-the-resource-residency-of-argument-buffers.md)
 - [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Tracking the Resource Residency of Argument Buffers](tracking-the-resource-residency-of-argument-buffers.md)
 
 #### Overview
 

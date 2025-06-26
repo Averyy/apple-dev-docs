@@ -3,6 +3,8 @@
 **Framework**: WebKit  
 **Kind**: property
 
+Magnify gestures are disabled.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -15,6 +17,10 @@
 ```swift
 static let disabled: WebView.MagnificationGesturesBehavior
 ```
+
+#### Discussion
+
+The web view prevents magnify gestures from changing its magnification.
 
 
 ---

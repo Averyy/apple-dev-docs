@@ -16,8 +16,8 @@ interface mapkit.PlaceDetail
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
 - [Displaying place information using the Maps Embed API](displaying-place-information-using-the-maps-embed-api.md)
+- [MapKit JS 5](mapkit-js-5.md)
 
 #### Overview
 

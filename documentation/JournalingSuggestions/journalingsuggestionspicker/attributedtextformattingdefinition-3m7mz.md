@@ -15,8 +15,8 @@ Apply an attribute-only text formatting definition to all nested editor views.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func attributedTextFormattingDefinition<S>(_ scope: S.Type) -> some View where S : AttributeScope
+nonisolated
+func attributedTextFormattingDefinition<S>(_ scope: S.Type) -> some View where S : AttributeScope
 ```
 
 #### Discussion

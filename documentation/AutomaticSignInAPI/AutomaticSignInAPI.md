@@ -5,6 +5,9 @@
 
 Manage sign-in tokens that facilitate single sign-on across the devices of your media streaming service customers from your web server.
 
+**Availability**:
+- Automatic Sign-In API 1.0+
+
 ## Mentions
 
 - [Signing people in to their media accounts automatically](../videosubscriberaccount/signing-people-in-to-media-apps-automatically.md)
@@ -22,12 +25,12 @@ The Automatic Sign-In API shares authentication and testing steps with the [`App
 ## Topics
 
 ### Token updates
-- [Update sign-in token](update-this-token-for-all-associated-users.md)
+- [Update Sign-In Token](update-this-token-for-all-associated-users.md)
   Updates a specific sign-in token to a new value.
 - [object UpdateAutoSignInTokenRequest](updateautosignintokenrequest.md)
   The request body that contains the old sign-in token and the new sign-in token.
 ### Token deletion
-- [Delete sign-in token](delete-this-token-for-all-associated-users.md)
+- [Delete Sign-In Token](delete-this-token-for-all-associated-users.md)
   Deletes a specific sign-in token.
 - [object DeleteAutoSignInTokenRequest](deleteautosignintokenrequest.md)
   The request body that contains the sign-in token to be deleted.

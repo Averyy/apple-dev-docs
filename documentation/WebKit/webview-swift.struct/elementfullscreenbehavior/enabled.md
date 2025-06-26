@@ -3,6 +3,8 @@
 **Framework**: WebKit  
 **Kind**: property
 
+Element full screen is enabled.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -15,6 +17,10 @@
 ```swift
 static let enabled: WebView.ElementFullscreenBehavior
 ```
+
+#### Discussion
+
+The web view allows content to be displayed in full screen.
 
 
 ---

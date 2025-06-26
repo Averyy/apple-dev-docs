@@ -1,7 +1,7 @@
 # MPSMatrixRandomPhilox
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,21 +14,31 @@
 ## Declaration
 
 ```swift
-class MPSMatrixRandomPhilox : MPSMatrixRandom
+class MPSMatrixRandomPhilox
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixrandomphilox/3242870-init.md)
-- [init(device: any MTLDevice)](mpsmatrixrandomphilox/3242871-init.md)
-- [init(device: any MTLDevice, destinationDataType: MPSDataType, seed: Int)](mpsmatrixrandomphilox/3242872-init.md)
-- [init(device: any MTLDevice, destinationDataType: MPSDataType, seed: Int, distributionDescriptor: MPSMatrixRandomDistributionDescriptor)](mpsmatrixrandomphilox/3242873-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixrandomphilox/init(coder:device:).md)
+- [convenience init(device: any MTLDevice)](mpsmatrixrandomphilox/init(device:).md)
+- [convenience init(device: any MTLDevice, destinationDataType: MPSDataType, seed: Int)](mpsmatrixrandomphilox/init(device:destinationdatatype:seed:).md)
+- [init(device: any MTLDevice, destinationDataType: MPSDataType, seed: Int, distributionDescriptor: MPSMatrixRandomDistributionDescriptor)](mpsmatrixrandomphilox/init(device:destinationdatatype:seed:distributiondescriptor:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrixRandom](mpsmatrixrandom.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

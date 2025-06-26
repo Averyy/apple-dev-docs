@@ -1,7 +1,7 @@
 # MPSCNNNeuronLogarithmNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a logarithm neuron filter.
 
@@ -16,19 +16,26 @@ A representation of a logarithm neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronLogarithmNode : MPSCNNNeuronNode
+class MPSCNNNeuronLogarithmNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnnneuronlogarithmnode/2951949-init.md)
-- [init(source: MPSNNImageNode, a: Float, b: Float, c: Float)](mpscnnneuronlogarithmnode/2951939-init.md)
+- [init(source: MPSNNImageNode)](mpscnnneuronlogarithmnode/init(source:).md)
+- [init(source: MPSNNImageNode, a: Float, b: Float, c: Float)](mpscnnneuronlogarithmnode/init(source:a:b:c:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuronNode](mpscnnneuronnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

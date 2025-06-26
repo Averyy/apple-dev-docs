@@ -20,8 +20,8 @@ struct CommandMenu<Content> where Content : View
 
 ## Mentions
 
-- [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
 - [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
 
 #### Overview
 

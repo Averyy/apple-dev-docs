@@ -21,16 +21,12 @@ var time: CMTime
   Fade direction for this command instance.
 - [var duration: CMTime](fadeenvironmentcommand/duration.md)
   The duration of the command - this can be .zero if the command has no duration
-- [var fadeType: FadeEnvironmentCommand.FadeType](fadeenvironmentcommand/fadetype-swift.property.md)
-  Fade type for this command instance.
 - [var id: Int](fadeenvironmentcommand/id.md)
-  An unique command id. Ids should be unique for the whole Immersive Media file.
+  A unique command id. Ids should be unique for the whole Immersive Media file.
 - [var offset: CMTime?](fadeenvironmentcommand/offset.md)
   Some commands control animations by repeating the command for the whole duration, and specifying the offset of the animation from the start time of this presentation command.
 - [var opacity: Float](fadeenvironmentcommand/opacity.md)
-  Holds the fade opacity value between 0.0 to 1.0, if the fade type is ‘opacity’. This value represents the target opacity of the environment backdrops during playback after fading completes.
-- [var type: PresentationCommandType](fadeenvironmentcommand/type.md)
-  The command type (.fadeEnvironment).
+  The fade opacity value between 0.0 to 1.0. This value represents the target opacity of the environment backdrops during playback after fading completes.
 
 
 ---

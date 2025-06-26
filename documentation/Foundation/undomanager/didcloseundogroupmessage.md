@@ -31,7 +31,6 @@ struct DidCloseUndoGroupMessage
 
 ### Conforms To
 - [NotificationCenter.MainActorMessage](notificationcenter/mainactormessage.md)
-- [NotificationCenter.Message](notificationcenter/message.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

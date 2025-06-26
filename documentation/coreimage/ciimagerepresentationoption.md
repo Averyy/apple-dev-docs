@@ -37,6 +37,8 @@ struct CIImageRepresentationOption
 - [static let semanticSegmentationSkyMatteImage: CIImageRepresentationOption](ciimagerepresentationoption/semanticsegmentationskymatteimage.md)
 - [static let semanticSegmentationTeethMatteImage: CIImageRepresentationOption](ciimagerepresentationoption/semanticsegmentationteethmatteimage.md)
 - [static let hdrImage: CIImageRepresentationOption](ciimagerepresentationoption/hdrimage.md)
+- [static let hdrGainMapAsRGB: CIImageRepresentationOption](ciimagerepresentationoption/hdrgainmapasrgb.md)
+  An optional key and value to request the gain map channel to be color instead of monochrome.
 - [static let hdrGainMapImage: CIImageRepresentationOption](ciimagerepresentationoption/hdrgainmapimage.md)
   An optional key and value to save a gain map channel to a JPEG or HEIF.
 

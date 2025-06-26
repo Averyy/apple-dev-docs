@@ -1,7 +1,7 @@
 # MPSCNNNeuronTanHNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a hyperbolic tangent neuron filter.
 
@@ -16,19 +16,26 @@ A representation of a hyperbolic tangent neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronTanHNode : MPSCNNNeuronNode
+class MPSCNNNeuronTanHNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, a: Float, b: Float)](mpscnnneurontanhnode/2866481-init.md)
-- [init(source: MPSNNImageNode)](mpscnnneurontanhnode/2921465-init.md)
+- [init(source: MPSNNImageNode, a: Float, b: Float)](mpscnnneurontanhnode/init(source:a:b:).md)
+- [init(source: MPSNNImageNode)](mpscnnneurontanhnode/init(source:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuronNode](mpscnnneuronnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

@@ -18,22 +18,22 @@ class CPListImageRowItemCardElement
 ## Topics
 
 ### Initializers
-- [init(image: UIImage, showImageFullHeight: Bool, title: String?, subtitle: String?, tintColor: UIColor?)](cplistimagerowitemcardelement/init(image:showimagefullheight:title:subtitle:tintcolor:).md)
+- [init(image: UIImage, showsImageFullHeight: Bool, title: String?, subtitle: String?, tintColor: UIColor?)](cplistimagerowitemcardelement/init(image:showsimagefullheight:title:subtitle:tintcolor:).md)
   Initialize an element that is constituted of an image, boolean to entierely cover the element with the image, title, subtitle and a tint color.
 ### Instance Properties
-- [var showImageFullHeight: Bool](cplistimagerowitemcardelement/showimagefullheight.md)
+- [var showsImageFullHeight: Bool](cplistimagerowitemcardelement/showsimagefullheight.md)
   A Boolean value indicating whether the element should be fill with the image.
 - [var subtitle: String?](cplistimagerowitemcardelement/subtitle.md)
   The subtitle associated with this element.
 - [var tintColor: UIColor?](cplistimagerowitemcardelement/tintcolor.md)
-  A UIColor used to tint the element. When @c showImageFullHeight is true, the tint color is applied behind the labels at the bottom of the card. Otherwise, this color is part of the gradient color at the bottom of the card.
-- [var title: String?](cplistimagerowitemcardelement/title.md)
+  A UIColor used to tint the element. When @c showsImageFullHeight is true, the tint color is applied behind the labels at the bottom of the card. Otherwise, this color is part of the gradient color at the bottom of the card.
+- [var title: String](cplistimagerowitemcardelement/title.md)
   The title associated with this element.
 ### Type Properties
 - [class var maximumFullHeightImageSize: CGSize](cplistimagerowitemcardelement/maximumfullheightimagesize.md)
-  The expected image size for the image in your @c CPListImageRowItemCardElement when @c showImageFullHeight is  true. Images provided will be resized to this size.
+  The expected image size for the image in your @c CPListImageRowItemCardElement when @c showsImageFullHeight is  true. Images provided will be resized to this size.
 - [class var maximumImageSize: CGSize](cplistimagerowitemcardelement/maximumimagesize.md)
-  The expected image size for the image in your @c CPListImageRowItemCardElement when @c showImageFullHeight is false. Images provided will be resized to this size.
+  The expected image size for the image in your @c CPListImageRowItemCardElement when @c showsImageFullHeight is false. Images provided will be resized to this size.
 
 ## Relationships
 

@@ -14,7 +14,7 @@ Metal 4 introduces new types for , which are multidimensional-data arrays that s
 
 ##### Convert a Core Ml Model Into a Metal Package
 
-Convert a Core ML model by creating a Metal machine-learning (ML) package from it with the `metal-package-builder` tool — which is part of the tools bundled in Xcode 19 and later — and then add the Metal ML package to your Xcode project. When you build the project, Xcode compiles the model in the Metal ML package to a Metal library that your app can load at runtime.
+Convert a Core ML model by creating a Metal machine-learning (ML) package from it with the `metal-package-builder` tool — which is part of the tools bundled in Xcode 26 and later — and then add the Metal ML package to your Xcode project. When you build the project, Xcode compiles the model in the Metal ML package to a Metal library that your app can load at runtime.
 
 ##### Apply the Model From Your Apps Gpu Workflow By Encoding Machine Learning Commands
 
@@ -26,13 +26,13 @@ The system automatically chooses an inference engine, such as a device’s GPU o
 
 ##### Provide Model Inputs and Retrieve Outputs with Tensors
 
-Metal 4 introduces [`MTLTensor`](mtltensor.md) a resource type that stores multi-dimensional data arrays for machine-learning models. The tensor types works with the common weight and input data types, such as `int8` and `fp8`. You create input and ouptut tensors to provide data to, and retrieve data from, a model, respectively, by passing those tensors to a machine-learning encoder when encoding a pass that invokes the model on the GPU timeline.
+Metal 4 introduces [`MTLTensor`](mtltensor.md) a resource type that stores multi-dimensional data arrays for machine-learning models. The tensor types works with the common weight and input data types, such as `int8` and `fp16`. You create input and output tensors to provide data to, and retrieve data from, a model, respectively, by passing those tensors to a machine-learning encoder when encoding a pass that invokes the model on the GPU timeline.
 
-> 💡 **Tip**: You can inspect a tensor’s underlying data with the Metal debugger in Xcode 17.
+> 💡 **Tip**: You can inspect a tensor’s underlying data with the Metal debugger in Xcode 26.
 
 ##### Work with Tensors on the Gpu Timeline
 
-Metal 4 also adds tensor types and basic tensor operators to the Metal Shading Language (MSL), which include convolution, matrix multiplication, and reduction. You can use these operators in your MSL code that runs during the machine-learning GPU stage, and all other stages, such as blit, dispatch, vertex, fragment, and so on. This functionilty gives you the option to work with tensor data in your app’s various GPU functions, such as modifying weights in an intermediate tensor between model inference invocations.
+Metal 4 also adds tensor types and basic tensor operators to the Metal Shading Language (MSL), which include convolution, matrix multiplication, and reduction. You can use these operators in your MSL code that runs during the machine-learning GPU stage, and all other stages, such as blit, dispatch, vertex, fragment, and so on. This functionality gives you the option to work with tensor data in your app’s various GPU functions, such as modifying weights in an intermediate tensor between model inference invocations.
 
 The MSL tensor types include:
 
@@ -54,7 +54,7 @@ For more information about stages and barriers, see [`MTLStages`](mtlstages.md) 
 
 ### Encoding a Machine-Learning Pass
 - [protocol MTL4MachineLearningCommandEncoder](mtl4machinelearningcommandencoder.md)
-  Encodes commands for dispatching machine learning networks on the GPU.
+  Encodes dispatch commands that run machine-learning model inference on Apple silicon.
 - [protocol MTL4MachineLearningPipelineState](mtl4machinelearningpipelinestate.md)
   A pipeline state that you can use with machine-learning encoder instances.
 ### Configuring a Machine-Learning Pipeline

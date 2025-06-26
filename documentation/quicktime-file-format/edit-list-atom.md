@@ -7,8 +7,8 @@ An atom that maps from a time in a movie to a time in a media, and ultimately to
 
 ## Mentions
 
-- [Representing encoder delay explicitly](example_representing_encoder_delay_explicitly.md)
 - [Historical solution for implicit encoder delay](historical_solution_implicit_encoder_delay.md)
+- [Representing encoder delay explicitly](example_representing_encoder_delay_explicitly.md)
 
 #### Overview
 

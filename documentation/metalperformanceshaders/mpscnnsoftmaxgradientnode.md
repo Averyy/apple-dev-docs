@@ -1,7 +1,7 @@
 # MPSCNNSoftMaxGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient softmax filter.
 
@@ -16,18 +16,25 @@ A representation of a gradient softmax filter.
 ## Declaration
 
 ```swift
-class MPSCNNSoftMaxGradientNode : MPSNNGradientFilterNode
+class MPSCNNSoftMaxGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](mpscnnsoftmaxgradientnode/2948039-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](mpscnnsoftmaxgradientnode/init(sourcegradient:sourceimage:gradientstate:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

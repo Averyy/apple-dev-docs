@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-Sets the required threads-per-threadgroup during dispatches. The `threadsPerThreadgroup` argument of any dispatch must match this value if it is set. Optional, unless the pipeline is going to use CooperativeTensors in which case this must be set. Setting this to a size of 0 in every dimension disables this property
+The required number of threads per threadgroup for compute dispatches.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -18,6 +18,14 @@ Sets the required threads-per-threadgroup during dispatches. The `threadsPerThre
 ```swift
 var requiredThreadsPerThreadgroup: MTLSize { get set }
 ```
+
+#### Discussion
+
+When you set this value, you are responsible for ensuring that the `threadsPerThreadgroup` argument of any compute dispatch matches it.
+
+Setting this property is optional, except in cases where the pipeline uses .
+
+This property’s default value is `0`, which disables its effect.
 
 
 ---

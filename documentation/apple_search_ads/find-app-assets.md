@@ -10,8 +10,8 @@ Fetches app asset metadata by adam ID.
 
 ## Mentions
 
-- [Apple Search Ads Campaign Management API 4](apple-search-ads-campaign-management-api-4.md)
 - [Apple Search Ads Campaign Management API 5](apple-search-ads-campaign-management-api-5.md)
+- [Apple Search Ads Campaign Management API 4](apple-search-ads-campaign-management-api-4.md)
 
 #### Discussion
 

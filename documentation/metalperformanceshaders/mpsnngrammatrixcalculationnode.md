@@ -1,7 +1,7 @@
 # MPSNNGramMatrixCalculationNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,22 +14,29 @@
 ## Declaration
 
 ```swift
-class MPSNNGramMatrixCalculationNode : MPSNNFilterNode
+class MPSNNGramMatrixCalculationNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpsnngrammatrixcalculationnode/3114095-init.md)
-- [init(source: MPSNNImageNode, alpha: Float)](mpsnngrammatrixcalculationnode/3114096-init.md)
+- [init(source: MPSNNImageNode)](mpsnngrammatrixcalculationnode/init(source:).md)
+- [init(source: MPSNNImageNode, alpha: Float)](mpsnngrammatrixcalculationnode/init(source:alpha:).md)
 ### Instance Properties
-- [var alpha: Float](mpsnngrammatrixcalculationnode/3114094-alpha.md)
-- [var propertyCallBack: (any MPSNNGramMatrixCallback)?](mpsnngrammatrixcalculationnode/3131844-propertycallback.md)
+- [var alpha: Float](mpsnngrammatrixcalculationnode/alpha.md)
+- [var propertyCallBack: (any MPSNNGramMatrixCallback)?](mpsnngrammatrixcalculationnode/propertycallback.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

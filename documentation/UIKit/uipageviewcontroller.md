@@ -21,8 +21,8 @@ class UIPageViewController
 
 ## Mentions
 
-- [Managing content in your app’s windows](managing-content-in-your-app-s-windows.md)
 - [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
+- [Managing content in your app’s windows](managing-content-in-your-app-s-windows.md)
 
 #### Overview
 

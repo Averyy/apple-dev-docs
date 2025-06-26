@@ -16,16 +16,16 @@ enum NotificationSchedule
 
 ## Topics
 
-### Operators
-- [static func == (JournalingSuggestionsConfiguration.NotificationSchedule, JournalingSuggestionsConfiguration.NotificationSchedule) -> Bool](journalingsuggestionsconfiguration/notificationschedule-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Enumeration Cases
+### Identifying a notification schedule
 - [JournalingSuggestionsConfiguration.NotificationSchedule.custom](journalingsuggestionsconfiguration/notificationschedule-swift.enum/custom.md)
   The notifications are enabled and configured to a custom schedule.
 - [JournalingSuggestionsConfiguration.NotificationSchedule.off](journalingsuggestionsconfiguration/notificationschedule-swift.enum/off.md)
   The notifications aren’t enabled or authorized for this app.
 - [JournalingSuggestionsConfiguration.NotificationSchedule.smart](journalingsuggestionsconfiguration/notificationschedule-swift.enum/smart.md)
   The notifications are enabled and configured to a Smart schedule.
+### Comparing schedule settings
+- [static func == (JournalingSuggestionsConfiguration.NotificationSchedule, JournalingSuggestionsConfiguration.NotificationSchedule) -> Bool](journalingsuggestionsconfiguration/notificationschedule-swift.enum/==(_:_:).md)
+  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var hashValue: Int](journalingsuggestionsconfiguration/notificationschedule-swift.enum/hashvalue.md)
   The hash value.
@@ -41,6 +41,11 @@ enum NotificationSchedule
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [var notificationSchedule: JournalingSuggestionsConfiguration.NotificationSchedule?](journalingsuggestionsconfiguration/notificationschedule-swift.property.md)
+  The notification schedule configured by the person using your app.
 
 
 ---

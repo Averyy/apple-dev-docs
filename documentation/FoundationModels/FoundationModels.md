@@ -24,6 +24,8 @@ To expand what the on-device foundation model can do, use [`Tool`](tool.md) to c
 
 To use the on-device language model, people need to turn on Apple Intelligence on their device. For a list of supported devices, see [`Apple Intelligence`](https://developer.apple.comhttps://www.apple.com/apple-intelligence/).
 
+For more information about acceptable usage of the Foundation Models framework, see [`Acceptable use requirements for the Foundation Models framework`](https://developer.apple.comhttps://developer.apple.com/apple-intelligence/acceptable-use-requirements-for-the-foundation-models-framework).
+
 ## Topics
 
 ### Essentials
@@ -45,7 +47,7 @@ To use the on-device language model, people need to turn on Apple Intelligence o
 - [struct Prompt](prompt.md)
   A prompt from a person to the model.
 - [struct Transcript](transcript.md)
-  A transcript that documents interactions with a language model.
+  A transcript that documents interactions with a language model. Transcripts contain an ordered list of entries, representing inputs to and outputs from the model.
 - [struct GenerationOptions](generationoptions.md)
   Options that control how the model generates its response to a prompt.
 ### Guided generation

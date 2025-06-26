@@ -20,7 +20,7 @@ let rawValue: Int
 ## See Also
 
 - [init(rawValue: Int)](roombuilder/configurationoptions/init(rawvalue:).md)
-  Creates a configuration option with the specified raw value.
+  Creates a new option set from the given raw value.
 
 
 ---

@@ -19,6 +19,9 @@ class NSFileProviderStringSearchRequest
 ### Working with request properties
 - [var query: String](nsfileproviderstringsearchrequest/query.md)
   A plaintext string, representing the query a person entered into the system search UI.
+### Instance Properties
+- [var desiredNumberOfResults: Int](nsfileproviderstringsearchrequest/desirednumberofresults.md)
+  How many results the system is requesting. This is a hint to the extension, to help avoid unnecessary work. The extension may return more results than this.
 
 ## Relationships
 

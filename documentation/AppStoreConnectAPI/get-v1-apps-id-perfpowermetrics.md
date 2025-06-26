@@ -10,8 +10,8 @@ Get the performance and power metrics data for the most recent version of an app
 
 ## Mentions
 
-- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
 - [App Store Connect API 1.4 release notes](app-store-connect-api-1-4-release-notes.md)
+- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
 
 #### Discussion
 

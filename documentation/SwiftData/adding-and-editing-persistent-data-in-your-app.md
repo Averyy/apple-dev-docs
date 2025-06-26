@@ -200,22 +200,14 @@ When a person clicks the Cancel button, the editor discards any changes made to 
 
 ## See Also
 
-- [Deleting persistent data from your app](deleting-persistent-data-from-your-app.md)
-  Explore different ways to use SwiftData to delete persistent data.
-- [Defining data relationships with enumerations and model classes](defining-data-relationships-with-enumerations-and-model-classes.md)
-  Create relationships for static and dynamic data stored in your app.
-- [Maintaining a local copy of server data](maintaining-a-local-copy-of-server-data.md)
-  Create and update a persistent store to cache read-only network data.
-- [macro Model()](model().md)
-  Converts a Swift class into a stored model that’s managed by SwiftData.
-- [macro Attribute(Schema.Attribute.Option..., originalName: String?, hashModifier: String?)](attribute(_:originalname:hashmodifier:).md)
-  Specifies the custom behavior that SwiftData applies to the annotated property when managing the owning class.
-- [macro Transient()](transient().md)
-  Tells SwiftData not to persist the annotated property when managing the owning class.
-- [macro Relationship(Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule, minimumModelCount: Int?, maximumModelCount: Int?, originalName: String?, inverse: AnyKeyPath?, hashModifier: String?)](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md)
-  Specifies the options that SwiftData needs to manage the annotated property as a relationship between two models.
-- [protocol PersistentModel](persistentmodel.md)
-  An interface that enables SwiftData to manage a Swift class as a stored model.
+- [Preserving your app’s model data across launches](preserving-your-apps-model-data-across-launches.md)
+  Describe your model classes to SwiftData using the framework’s macros, and store instances of those models so they exist beyond the app’s runtime.
+- [Adopting SwiftData for a Core Data app](../CoreData/adopting-swiftdata-for-a-core-data-app.md)
+  Persist data in your app intuitively with the Swift native persistence framework.
+- [SwiftData updates](../Updates/SwiftData.md)
+  Learn about important changes to SwiftData.
+- [Adopting inheritance in SwiftData](adopting-inheritance-in-swiftdata.md)
+  Add flexibility to your models using class inheritance.
 
 
 ---

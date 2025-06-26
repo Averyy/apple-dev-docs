@@ -6,17 +6,17 @@
 Constants that indicate supported loss filter types.
 
 **Availability**:
-- iOS 11.3+
-- iPadOS 11.3+
-- Mac Catalyst 13.0+
-- macOS 10.13.4+
-- tvOS 11.3+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-enum MPSCNNLossType : UInt32, @unchecked Sendable
+enum MPSCNNLossType
 ```
 
 ## Topics
@@ -33,11 +33,18 @@ enum MPSCNNLossType : UInt32, @unchecked Sendable
 - [MPSCNNLossType.meanSquaredError](mpscnnlosstype/meansquarederror.md)
 - [MPSCNNLossType.sigmoidCrossEntropy](mpscnnlosstype/sigmoidcrossentropy.md)
 - [MPSCNNLossType.softMaxCrossEntropy](mpscnnlosstype/softmaxcrossentropy.md)
+### Initializers
+- [init?(rawValue: UInt32)](mpscnnlosstype/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -65,8 +65,6 @@ class MTL4PipelineStageDynamicLinkingDescriptor
   Base interface for other function-derived interfaces.
 - [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
   Options for configuring the creation of binary functions.
-- [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
-  Options for configuring the creation of binary functions.
 - [class MTL4BinaryFunctionReflection](mtl4binaryfunctionreflection.md)
   Represents reflection information for a binary function.
 

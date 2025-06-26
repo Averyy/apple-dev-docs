@@ -21,8 +21,8 @@ class CHHapticEngine
 
 ## Mentions
 
-- [Preparing your app to play haptics](preparing-your-app-to-play-haptics.md)
 - [Playing a single-tap haptic pattern](playing-a-single-tap-haptic-pattern.md)
+- [Preparing your app to play haptics](preparing-your-app-to-play-haptics.md)
 
 #### Overview
 

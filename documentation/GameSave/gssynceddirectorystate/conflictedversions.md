@@ -20,7 +20,7 @@ var conflictedVersions: [GSSyncedDirectoryVersion]? { get }
 
 #### Discussion
 
-If you’re implementing your own conflict resolution, read all of the conflicting versions, and modify one of them to incorporate the state and changes from the others. Then call [`resolveConflicts(with:)`](gssynceddirectory/resolveconflicts(with:).md), passing that version.
+If you’re implementing your own conflict resolution, read all of the conflicting versions, and modify one of them to incorporate the state and changes from the others. Then call `GSGameSaveSyncedDirectory/resolveConflictsWithVersion:`, passing that version.
 
 This property’s value is `nil` unless the state is `GSSyncStateConflicted`.
 

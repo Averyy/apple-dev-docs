@@ -15,7 +15,7 @@ Create a new ink, specifying its type, color.
 ## Declaration
 
 ```swift
-init(inkType type: __PKInkType, color: UIColor)
+init(inkType type: __PKInkType, color: NSColor)
 ```
 
 ## Parameters

@@ -46,6 +46,7 @@ The audio format may differ from one `AnalyzerInput` object to the next. The mod
 ## See Also
 
 - [protocol SpeechModuleResult](speechmoduleresult.md)
+  Protocol that all module results conform to.
 
 
 ---

@@ -23,8 +23,8 @@ class GKLocalPlayer
 ## Mentions
 
 - [Authenticating a player](authenticating-a-player.md)
-- [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
 - [Protecting the player’s privacy using scoped identifiers](protecting-the-player-s-privacy-using-scoped-identifiers.md)
+- [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
 
 #### Overview
 

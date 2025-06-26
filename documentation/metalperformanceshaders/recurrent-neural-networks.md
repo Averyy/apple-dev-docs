@@ -26,18 +26,18 @@ Create recurrent neural networks.
 
 ## See Also
 
-- [Training a Neural Network with Metal Performance Shaders](training_a_neural_network_with_metal_performance_shaders.md)
+- [Training a Neural Network with Metal Performance Shaders](training-a-neural-network-with-metal-performance-shaders.md)
   Use an MPS neural network graph to train a simple neural network digit classifier.
 - [class MPSImage](mpsimage.md)
   A texture that may have more than four channels for use in convolutional neural networks.
 - [class MPSTemporaryImage](mpstemporaryimage.md)
   A texture for use in convolutional neural networks that stores transient data to be used and discarded promptly.
-- [Objects that Simplify the Creation of Neural Networks](objects_that_simplify_the_creation_of_neural_networks.md)
+- [Objects that Simplify the Creation of Neural Networks](objects-that-simplify-the-creation-of-neural-networks.md)
   Simplify the creation of neural networks using networks of filter, image, and state nodes.
-- [Convolutional Neural Network Kernels](convolutional_neural_network_kernels.md)
+- [Convolutional Neural Network Kernels](convolutional-neural-network-kernels.md)
   Build neural networks with layers.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/recurrent_neural_networks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/recurrent-neural-networks)*

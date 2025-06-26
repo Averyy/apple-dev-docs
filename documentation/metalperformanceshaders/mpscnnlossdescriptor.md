@@ -1,7 +1,7 @@
 # MPSCNNLossDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An object that specifies properties used by a loss kernel.
 
@@ -16,29 +16,35 @@ An object that specifies properties used by a loss kernel.
 ## Declaration
 
 ```swift
-class MPSCNNLossDescriptor : NSObject
+class MPSCNNLossDescriptor
 ```
 
 ## Topics
 
 ### Initializers
-- [init(type: MPSCNNLossType, reductionType: MPSCNNReductionType)](mpscnnlossdescriptor/2942373-init.md)
+- [init(type: MPSCNNLossType, reductionType: MPSCNNReductionType)](mpscnnlossdescriptor/init(type:reductiontype:).md)
 ### Instance Properties
-- [var delta: Float](mpscnnlossdescriptor/2942378-delta.md)
-- [var epsilon: Float](mpscnnlossdescriptor/2942362-epsilon.md)
-- [var labelSmoothing: Float](mpscnnlossdescriptor/2942369-labelsmoothing.md)
-- [var lossType: MPSCNNLossType](mpscnnlossdescriptor/2942381-losstype.md)
-- [var numberOfClasses: Int](mpscnnlossdescriptor/2942382-numberofclasses.md)
-- [var reduceAcrossBatch: Bool](mpscnnlossdescriptor/3547982-reduceacrossbatch.md)
-- [var reductionType: MPSCNNReductionType](mpscnnlossdescriptor/2942388-reductiontype.md)
-- [var weight: Float](mpscnnlossdescriptor/2942367-weight.md)
+- [var delta: Float](mpscnnlossdescriptor/delta.md)
+- [var epsilon: Float](mpscnnlossdescriptor/epsilon.md)
+- [var labelSmoothing: Float](mpscnnlossdescriptor/labelsmoothing.md)
+- [var lossType: MPSCNNLossType](mpscnnlossdescriptor/losstype.md)
+- [var numberOfClasses: Int](mpscnnlossdescriptor/numberofclasses.md)
+- [var reduceAcrossBatch: Bool](mpscnnlossdescriptor/reduceacrossbatch.md)
+- [var reductionType: MPSCNNReductionType](mpscnnlossdescriptor/reductiontype.md)
+- [var weight: Float](mpscnnlossdescriptor/weight.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
-- [NSCopying](../foundation/nscopying.md)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

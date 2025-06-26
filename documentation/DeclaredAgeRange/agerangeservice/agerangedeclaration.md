@@ -1,6 +1,6 @@
 # AgeRangeService.AgeRangeDeclaration
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: enum
 
 An enumeration that describes the declared age range.
@@ -19,22 +19,20 @@ enum AgeRangeDeclaration
 
 #### Overview
 
-The system specifies whether the person declared the age range or an adult made the determination.
+The system specifies whether the age was self declared or declared by a Family Organizer in an Family Sharing group.
 
 ## Topics
 
 ### Determining the age range
 - [AgeRangeService.AgeRangeDeclaration.selfDeclared](agerangeservice/agerangedeclaration/selfdeclared.md)
-  The age range was declared by the person.
+  The age was declared by the person signed in to iCloud.
 - [AgeRangeService.AgeRangeDeclaration.guardianDeclared](agerangeservice/agerangedeclaration/guardiandeclared.md)
-  The age range was declared by a parent or guardian.
-### Operators
+  The age of the person was declared by a Family Organizer in a Family Sharing group.
+### Comparing values
 - [static func == (AgeRangeService.AgeRangeDeclaration, AgeRangeService.AgeRangeDeclaration) -> Bool](agerangeservice/agerangedeclaration/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
 - [var hashValue: Int](agerangeservice/agerangedeclaration/hashvalue.md)
   The hash value.
-### Instance Methods
 - [func hash(into: inout Hasher)](agerangeservice/agerangedeclaration/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
@@ -50,7 +48,11 @@ The system specifies whether the person declared the age range or an adult made 
 ## See Also
 
 - [AgeRangeService.AgeRange](agerangeservice/agerange.md)
-  A person’s age range is based on the information they provided in response to the age range request.
+  A person’s age range is based on the age they provided in response to the age range request.
+- [func requestAgeRange(ageGates: Int, Int?, Int?, in: UIViewController) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)
+  Determines an age range for the person logged onto iCloud on the device.
+- [func requestAgeRange(ageGates: Int, Int?, Int?, in: NSWindow) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-4yo3r.md)
+  Determines an age range for the person logged onto iCloud on the device.
 - [AgeRangeService.Response](agerangeservice/response.md)
   A response indicating either a person shared their age range or declined to share it.
 - [AgeRangeService.ParentalControls](agerangeservice/parentalcontrols.md)

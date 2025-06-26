@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: enum
 
-The indicies of the current selection.
+The indices of the current selection.
 
 **Availability**:
 - iOS 18.0+

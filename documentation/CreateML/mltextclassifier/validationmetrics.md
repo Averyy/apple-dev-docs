@@ -20,8 +20,8 @@ let validationMetrics: MLClassifierMetrics
 
 ## Mentions
 
-- [Creating a text classifier model](creating-a-text-classifier-model.md)
 - [Creating a Text Classifier Model](creating-a-classification-model-for-natural-language.md)
+- [Creating a text classifier model](creating-a-text-classifier-model.md)
 
 ## See Also
 

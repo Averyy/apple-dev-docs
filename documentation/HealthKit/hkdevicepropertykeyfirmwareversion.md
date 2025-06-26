@@ -22,7 +22,9 @@ let HKDevicePropertyKeyFirmwareVersion: String
 ## See Also
 
 - [static let bleedingAfterPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingafterpregnancy.md)
+  A category type that records bleeding after pregnancy as a symptom.
 - [static let bleedingDuringPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingduringpregnancy.md)
+  A category type that records bleeding during pregnancy as a symptom.
 - [static let sleepApneaEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/sleepapneaevent.md)
 - [let HKDevicePropertyKeyHardwareVersion: String](hkdevicepropertykeyhardwareversion.md)
   The device’s hardware version.
@@ -43,7 +45,9 @@ let HKDevicePropertyKeyFirmwareVersion: String
 - [static let appleSleepingBreathingDisturbances: HKQuantityTypeIdentifier](hkquantitytypeidentifier/applesleepingbreathingdisturbances.md)
 - [static let crossCountrySkiingSpeed: HKQuantityTypeIdentifier](hkquantitytypeidentifier/crosscountryskiingspeed.md)
 - [static let cyclingCadence: HKQuantityTypeIdentifier](hkquantitytypeidentifier/cyclingcadence.md)
+  A quantity sample type that represents the rate at which the user is pedaling.
 - [static let cyclingFunctionalThresholdPower: HKQuantityTypeIdentifier](hkquantitytypeidentifier/cyclingfunctionalthresholdpower.md)
+  A quantity sample type that measures the estimated maximum average power sustained while riding a bike for 60 minutes.
 
 
 ---

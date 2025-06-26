@@ -16,7 +16,7 @@ Marks the start of a task with a custom name that should continue if the app ent
 
 ```swift
 nonisolated
-func beginBackgroundTask(withName taskName: String?, expirationHandler handler: (() -> Void)? = nil) -> UIBackgroundTaskIdentifier
+func beginBackgroundTask(withName taskName: String?, expirationHandler handler: (@MainActor () -> Void)? = nil) -> UIBackgroundTaskIdentifier
 ```
 
 ## Mentions

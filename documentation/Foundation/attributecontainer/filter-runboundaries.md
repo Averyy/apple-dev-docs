@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Returns an attribute container storing only the attributes in `self` with a matching run boundary property
+Returns a copy of the attribute container with only attributes that have the provided run boundaries.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -11,7 +11,7 @@ Returns an attribute container storing only the attributes in `self` with a matc
 - Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
-- visionOS 1.0+
+- visionOS 26.0+ (Beta)
 - watchOS 26.0+ (Beta)
 
 ## Declaration
@@ -20,9 +20,13 @@ Returns an attribute container storing only the attributes in `self` with a matc
 func filter(runBoundaries: AttributedString.AttributeRunBoundaries?) -> AttributeContainer
 ```
 
-#### Discussion
+#### Return Value
 
-Note: if `nil` is provided then only attributes not bound to any particular boundary will be returned
+A copy of the attribute container with only attributes whose `runBoundaries` property matches the provided value.
+
+## Parameters
+
+- `runBoundaries`: The required   value of the filtered attributes. If   is provided, only attributes not bound to any specific boundary will be returned.
 
 
 ---

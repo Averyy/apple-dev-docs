@@ -1,7 +1,7 @@
 # MPSNNReduceRowSum
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A reduction filter that returns the sum of all values for each row in an image.
 
@@ -16,19 +16,29 @@ A reduction filter that returns the sum of all values for each row in an image.
 ## Declaration
 
 ```swift
-class MPSNNReduceRowSum : MPSNNReduceUnary
+class MPSNNReduceRowSum
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnreducerowsum/3197845-init.md)
-- [init(device: any MTLDevice)](mpsnnreducerowsum/2942536-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnreducerowsum/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsnnreducerowsum/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNReduceUnary](mpsnnreduceunary.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -62,10 +72,6 @@ class MPSNNReduceRowSum : MPSNNReduceUnary
   A reduction filter that returns the weighted sum of all values for each feature channel in an image.
 - [class MPSNNReduceFeatureChannelsAndWeightsMean](mpsnnreducefeaturechannelsandweightsmean.md)
   A reduction filter that returns the weighted sum for each feature channel in an image.
-- [class MPSNNReduceUnary](mpsnnreduceunary.md)
-  The base class for unary reduction filters.
-- [class MPSNNReduceBinary](mpsnnreducebinary.md)
-  The base class for binary reduction filters.
 
 
 ---

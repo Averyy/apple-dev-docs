@@ -23,47 +23,38 @@ Opacity fade is used to apply requested opacity to the AIV environment backdrops
 
 ### Initializers
 - [init(from: any Decoder) throws](fadeenvironmentcommand/init(from:).md)
-  Creates a FadeEnvironmentCommand from the specified decoder.
-- [init(time: CMTime, duration: CMTime, direction: FadeEnvironmentCommand.FadeDirection, opacity: Float, offset: CMTime?)](fadeenvironmentcommand/init(time:duration:direction:opacity:offset:).md)
+  Creates a `FadeEnvironmentCommand` instance from the specified decoder.
+- [init(id: Int, time: CMTime, duration: CMTime, direction: FadeEnvironmentCommand.FadeDirection, opacity: Float, offset: CMTime?)](fadeenvironmentcommand/init(id:time:duration:direction:opacity:offset:).md)
   Initializes an opacity fade command.
 ### Instance Properties
 - [var direction: FadeEnvironmentCommand.FadeDirection](fadeenvironmentcommand/direction.md)
   Fade direction for this command instance.
 - [var duration: CMTime](fadeenvironmentcommand/duration.md)
   The duration of the command - this can be .zero if the command has no duration
-- [var fadeType: FadeEnvironmentCommand.FadeType](fadeenvironmentcommand/fadetype-swift.property.md)
-  Fade type for this command instance.
 - [var id: Int](fadeenvironmentcommand/id.md)
-  An unique command id. Ids should be unique for the whole Immersive Media file.
+  A unique command id. Ids should be unique for the whole Immersive Media file.
 - [var offset: CMTime?](fadeenvironmentcommand/offset.md)
   Some commands control animations by repeating the command for the whole duration, and specifying the offset of the animation from the start time of this presentation command.
 - [var opacity: Float](fadeenvironmentcommand/opacity.md)
-  Holds the fade opacity value between 0.0 to 1.0, if the fade type is ‘opacity’. This value represents the target opacity of the environment backdrops during playback after fading completes.
+  The fade opacity value between 0.0 to 1.0. This value represents the target opacity of the environment backdrops during playback after fading completes.
 - [var time: CMTime](fadeenvironmentcommand/time.md)
   The time this command starts during playback.
-- [var type: PresentationCommandType](fadeenvironmentcommand/type.md)
-  The command type (.fadeEnvironment).
 ### Instance Methods
 - [func encode(to: any Encoder) throws](fadeenvironmentcommand/encode(to:).md)
-  Encodes an instance of FadeEnvironmentCommand.
+  Encodes an instance of `FadeEnvironmentCommand`.
 ### Enumerations
 - [FadeEnvironmentCommand.FadeDirection](fadeenvironmentcommand/fadedirection.md)
-  The direction of the fade command.
-- [FadeEnvironmentCommand.FadeType](fadeenvironmentcommand/fadetype-swift.enum.md)
-  An enum listing the available fade types.
+  A value representing the direction of the fade environment command.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [PresentationCommand](presentationcommand.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [protocol PresentationCommand](presentationcommand.md)
+- [enum PresentationCommand](presentationcommand.md)
   A set of properties that define the interface for a presentation command.
 - [struct FadeCommand](fadecommand.md)
   A command type for color fading during immersive media playback.
@@ -71,8 +62,6 @@ Opacity fade is used to apply requested opacity to the AIV environment backdrops
   A command type for immersive camera switching during playback.
 - [struct ShotFlopCommand](shotflopcommand.md)
   A command type to flip the video frames horizontally (mirrored horizontally) during playback for the duration of the command.
-- [enum PresentationCommandType](presentationcommandtype.md)
-  Values that represent the type of presentation command.
 - [struct PresentationDescriptor](presentationdescriptor.md)
   A structure that represents dynamic metadata used during playback or when outputting the metadata track for an immersive video file.
 - [class PresentationDescriptorReader](presentationdescriptorreader.md)

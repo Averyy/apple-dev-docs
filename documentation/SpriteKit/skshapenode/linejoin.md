@@ -17,7 +17,6 @@ The junction type used when the stroked portion of the shape node is rendered.
 ## Declaration
 
 ```swift
-@MainActor
 var lineJoin: CGLineJoin { get set }
 ```
 

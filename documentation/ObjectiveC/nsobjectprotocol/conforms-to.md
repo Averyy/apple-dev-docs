@@ -9,8 +9,8 @@ Returns a Boolean value that indicates whether the receiver conforms to a given 
 **Availability**:
 - iOS ?+
 - iPadOS ?+
-- Mac Catalyst 13.1+
-- macOS 10.0+
+- Mac Catalyst ?+
+- macOS ?+
 - tvOS ?+
 - visionOS ?+
 - watchOS ?+

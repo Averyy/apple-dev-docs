@@ -12,7 +12,7 @@ Many of the actions you make available to the system as app intents are simple, 
 
 For example, the [`Adopting App Intents to support system experiences`](adopting-app-intents-to-support-system-experiences.md) sample app offers an app intent to view details about the landmarks nearby. People might use it to create shortcuts and perform its action from Spotlight or the Action button. When the app intent finds information about a nearby landmark, it displays an interactive snippet with the most important information, a button to add it to a list favorites, and a button to search for available tickets if the landmark requires people to pay an entrance fee.
 
-> **Note**: App intents that people trigger from a control in Control Center can’t display snippets.
+> **Note**: App intents that people perform from a control in Control Center can’t display snippets.
 
 ##### Show a Static Snippet
 
@@ -110,13 +110,13 @@ Note the `isFavorite` parameter in the view’s initializer. The `LandmarkView` 
 
 A snippet remains visible until a person dismisses it, and, similar to SwiftUI views, the system and a person’s actions might result in your [`SnippetIntent`](snippetintent.md) being created and performed multiple times during its lifecycle.
 
-For example, the landmarks sample code project’s snippet includes a Favorites button to add or remove a nearby landmark from a list of favorites. When a person taps the Favorites button, the system performs the `FavoriteLandmarkIntent` to make the change. It discards the snippet’s old SwiftUI views, and triggers the [`SnippetIntent`](snippetintent.md) again to provide a new version of the snippet to show that the person added or removed the landmark from the list of favorites.
+For example, the landmarks sample code project’s snippet includes a Favorites button to add or remove a nearby landmark from a list of favorites. When a person taps the Favorites button, the system performs the `FavoriteLandmarkIntent` to make the change. It discards the snippet’s old SwiftUI views, and performs the [`SnippetIntent`](snippetintent.md) again to provide a new version of the snippet to show that the person added or removed the landmark from the list of favorites.
 
 > **Note**: Treat intents that conform to [`SnippetIntent`](snippetintent.md) like any other intent; they aren’t limited to displaying a snippet. People can use them in their custom shortcuts, and you can reuse them. For example, the sample app might use `FavoriteLandmarkIntent` in an App Shortcut or interactive widget.
 
 In the snippet intent’s `perform()` function, retrieve app state - for example, whether a current landmark is a favorite - and return an updated snippet as shown in the `LandmarkSnippetIntent ` example code above.
 
-Because the system creates and triggers your [`SnippetIntent`](snippetintent.md) repeatedly, make sure calling its `perform()` method doesn’t produce side effects:
+Because the system creates and performs your [`SnippetIntent`](snippetintent.md) repeatedly, make sure calling its `perform()` method doesn’t produce side effects:
 
 - If you pass data between intents, pass a minimum amount of immutable data.
 - Avoiding long-running tasks to ensure the snippet appears responsive.
@@ -128,7 +128,7 @@ Because the system creates and triggers your [`SnippetIntent`](snippetintent.md)
 
 With interactive snippets, you can create quick, fast-flowing interactions, allowing people to view content and perform a series of actions without leaving their current context. For example, the landmark example might display a sequence of three snippets:
 
-1. When a person triggers the “Find Closest” App Shortcut, the landmarks snippet described above appears. It includes a button to search for tickets for the nearby landmark.
+1. When a person performs the “Find Closest” App Shortcut, the landmarks snippet described above appears. It includes a button to search for tickets for the nearby landmark.
 2. When a person taps the button to search for tickets, a second snippet appears, requesting confirmation of the total number of tickets. When they’ve adjusted the number of tickets and confirmed the number of tickets, the search starts.
 3. When the search finishes, a third snippet appears to display the total amount for the number of tickets and a buy button.
 

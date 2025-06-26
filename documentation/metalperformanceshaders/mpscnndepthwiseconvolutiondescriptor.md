@@ -1,7 +1,7 @@
 # MPSCNNDepthWiseConvolutionDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A description of a convolution object that does depthwise convolution.
 
@@ -16,18 +16,28 @@ A description of a convolution object that does depthwise convolution.
 ## Declaration
 
 ```swift
-class MPSCNNDepthWiseConvolutionDescriptor : MPSCNNConvolutionDescriptor
+class MPSCNNDepthWiseConvolutionDescriptor
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var channelMultiplier: Int](mpscnndepthwiseconvolutiondescriptor/2919731-channelmultiplier.md)
+- [var channelMultiplier: Int](mpscnndepthwiseconvolutiondescriptor/channelmultiplier.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNConvolutionDescriptor](mpscnnconvolutiondescriptor.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -36,13 +46,13 @@ class MPSCNNDepthWiseConvolutionDescriptor : MPSCNNConvolutionDescriptor
 - [class MPSCNNConvolution](mpscnnconvolution.md)
   A convolution kernel that convolves the input image with a set of filters, with each producing one feature map in the output image.
 - [class MPSCNNSubPixelConvolutionDescriptor](mpscnnsubpixelconvolutiondescriptor.md)
-  A description of a convolution object that does subpixel upsampling and reshaping. 
+  A description of a convolution object that does subpixel upsampling and reshaping.
 - [class MPSCNNConvolutionTranspose](mpscnnconvolutiontranspose.md)
   A transposed convolution kernel.
 - [class MPSCNNConvolutionGradient](mpscnnconvolutiongradient.md)
   A gradient convolution kernel.
 - [class MPSCNNConvolutionGradientState](mpscnnconvolutiongradientstate.md)
-  An object that exposes a gradient convolution kernel's gradient with respect to weights and biases.
+  An object that exposes a gradient convolution kernel’s gradient with respect to weights and biases.
 - [protocol MPSImageSizeEncodingState](mpsimagesizeencodingstate.md)
   A protocol for objects that contain information about an image size elsewhere in the graph.
 - [class MPSCNNConvolutionWeightsAndBiasesState](mpscnnconvolutionweightsandbiasesstate.md)

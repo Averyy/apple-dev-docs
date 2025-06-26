@@ -3,7 +3,7 @@
 **Framework**: FinanceKit  
 **Kind**: typealias
 
-The type of asynchronous iterator that produces elements of this asynchronous sequence
+The type of asynchronous iterator that produces elements of this asynchronous sequence.
 
 **Availability**:
 - iOS 17.4+

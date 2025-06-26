@@ -19,6 +19,10 @@ The constant for practicing yoga.
 case yoga
 ```
 
+#### Discussion
+
+HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
+
 ## See Also
 
 - [HKWorkoutActivityType.barre](hkworkoutactivitytype/barre.md)

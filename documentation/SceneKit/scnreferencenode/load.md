@@ -17,6 +17,7 @@ Loads content into the node from its referenced external scene file.
 ## Declaration
 
 ```swift
+@MainActor
 func load()
 ```
 

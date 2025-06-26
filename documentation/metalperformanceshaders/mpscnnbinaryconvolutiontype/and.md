@@ -1,7 +1,7 @@
 # MPSCNNBinaryConvolutionType.AND
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 A convolution type that uses input image binarization and the AND-operation.
 
@@ -16,8 +16,15 @@ A convolution type that uses input image binarization and the AND-operation.
 ## Declaration
 
 ```swift
-case AND = 2
+case AND
 ```
+
+## See Also
+
+- [MPSCNNBinaryConvolutionType.XNOR](mpscnnbinaryconvolutiontype/xnor.md)
+  A convolution type that uses input image binarization and the XNOR-operation.
+- [MPSCNNBinaryConvolutionType.binaryWeights](mpscnnbinaryconvolutiontype/binaryweights.md)
+  A convolution type that operates as a normal convolution, except that the weights are binary values.
 
 
 ---

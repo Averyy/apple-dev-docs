@@ -1,4 +1,4 @@
 Completed scraping vmnet!
-Total pages scraped: 97
+Total pages scraped: 98
 Pages skipped (unchanged): 1
 Pages failed: 0

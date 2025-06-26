@@ -22,10 +22,10 @@ class SKProductsRequest
 
 ## Mentions
 
-- [Fetching product information from the App Store](fetching-product-information-from-the-app-store.md)
-- [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
-- [Implementing introductory offers in your app](implementing-introductory-offers-in-your-app.md)
 - [Testing a product request](testing-a-product-request.md)
+- [Fetching product information from the App Store](fetching-product-information-from-the-app-store.md)
+- [Implementing introductory offers in your app](implementing-introductory-offers-in-your-app.md)
+- [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
 
 #### Overview
 

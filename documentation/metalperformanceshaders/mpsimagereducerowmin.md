@@ -1,7 +1,7 @@
 # MPSImageReduceRowMin
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that returns the minimum value for each row in an image.
 
@@ -16,18 +16,28 @@ A filter that returns the minimum value for each row in an image.
 ## Declaration
 
 ```swift
-class MPSImageReduceRowMin : MPSImageReduceUnary
+class MPSImageReduceRowMin
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpsimagereducerowmin/2942325-init.md)
+- [init(device: any MTLDevice)](mpsimagereducerowmin/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSImageReduceUnary](mpsimagereduceunary.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

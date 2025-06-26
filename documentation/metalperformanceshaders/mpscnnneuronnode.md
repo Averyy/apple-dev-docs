@@ -1,7 +1,7 @@
 # MPSCNNNeuronNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 The virtual base class for MPS CNN neuron nodes.
 
@@ -16,7 +16,7 @@ The virtual base class for MPS CNN neuron nodes.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronNode : MPSNNFilterNode
+class MPSCNNNeuronNode
 ```
 
 ## Topics
@@ -25,16 +25,39 @@ class MPSCNNNeuronNode : MPSNNFilterNode
 - [enum MPSCNNNeuronType](mpscnnneurontype.md)
   The types of neuron filter to append to a convolution.
 ### Initializers
-- [init(source: MPSNNImageNode, descriptor: MPSNNNeuronDescriptor)](mpscnnneuronnode/3019333-init.md)
+- [convenience init(source: MPSNNImageNode, descriptor: MPSNNNeuronDescriptor)](mpscnnneuronnode/init(source:descriptor:).md)
 ### Instance Properties
-- [var a: Float](mpscnnneuronnode/2921459-a.md)
-- [var b: Float](mpscnnneuronnode/2921461-b.md)
-- [var c: Float](mpscnnneuronnode/2935553-c.md)
+- [var a: Float](mpscnnneuronnode/a.md)
+- [var b: Float](mpscnnneuronnode/b.md)
+- [var c: Float](mpscnnneuronnode/c.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Inherited By
+- [MPSCNNNeuronAbsoluteNode](mpscnnneuronabsolutenode.md)
+- [MPSCNNNeuronELUNode](mpscnnneuronelunode.md)
+- [MPSCNNNeuronExponentialNode](mpscnnneuronexponentialnode.md)
+- [MPSCNNNeuronGeLUNode](mpscnnneurongelunode.md)
+- [MPSCNNNeuronHardSigmoidNode](mpscnnneuronhardsigmoidnode.md)
+- [MPSCNNNeuronLinearNode](mpscnnneuronlinearnode.md)
+- [MPSCNNNeuronLogarithmNode](mpscnnneuronlogarithmnode.md)
+- [MPSCNNNeuronPReLUNode](mpscnnneuronprelunode.md)
+- [MPSCNNNeuronPowerNode](mpscnnneuronpowernode.md)
+- [MPSCNNNeuronReLUNNode](mpscnnneuronrelunnode.md)
+- [MPSCNNNeuronReLUNode](mpscnnneuronrelunode.md)
+- [MPSCNNNeuronSigmoidNode](mpscnnneuronsigmoidnode.md)
+- [MPSCNNNeuronSoftPlusNode](mpscnnneuronsoftplusnode.md)
+- [MPSCNNNeuronSoftSignNode](mpscnnneuronsoftsignnode.md)
+- [MPSCNNNeuronTanHNode](mpscnnneurontanhnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

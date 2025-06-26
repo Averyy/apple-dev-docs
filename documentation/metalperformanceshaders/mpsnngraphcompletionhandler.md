@@ -1,23 +1,40 @@
 # MPSNNGraphCompletionHandler
 
 **Framework**: Metal Performance Shaders  
-**Kind**: tdef
+**Kind**: typealias
 
 A notification when an asynchronous graph execution has finished.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
 typealias MPSNNGraphCompletionHandler = (MPSImage?, (any Error)?) -> Void
 ```
+
+## See Also
+
+- [func encode(to: any MTLCommandBuffer, sourceImages: [MPSImage]) -> MPSImage?](mpsnngraph/encode(to:sourceimages:).md)
+- [func encode(to: any MTLCommandBuffer, sourceImages: [MPSImage], sourceStates: [MPSState]?, intermediateImages: NSMutableArray?, destinationStates: NSMutableArray?) -> MPSImage?](mpsnngraph/encode(to:sourceimages:sourcestates:intermediateimages:destinationstates:).md)
+- [class MPSState](mpsstate.md)
+  An opaque data container for large storage in MPS CNN filters.
+- [class MPSNNBinaryGradientState](mpsnnbinarygradientstate.md)
+  A class representing the state of a gradient binary kernel when it was encoded.
+- [class MPSNNGradientState](mpsnngradientstate.md)
+  A class representing the state of a gradient kernel when it was encoded.
+- [func executeAsync(withSourceImages: [MPSImage], completionHandler: MPSNNGraphCompletionHandler) -> MPSImage](mpsnngraph/executeasync(withsourceimages:completionhandler:).md)
+- [func encodeBatch(to: any MTLCommandBuffer, sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?) -> [MPSImage]?](mpsnngraph/encodebatch(to:sourceimages:sourcestates:).md)
+- [func encodeBatch(to: any MTLCommandBuffer, sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?, intermediateImages: NSMutableArray?, destinationStates: NSMutableArray?) -> [MPSImage]?](mpsnngraph/encodebatch(to:sourceimages:sourcestates:intermediateimages:destinationstates:).md)
+- [func readCountForSourceImage(at: Int) -> Int](mpsnngraph/readcountforsourceimage(at:).md)
+- [func readCountForSourceState(at: Int) -> Int](mpsnngraph/readcountforsourcestate(at:).md)
+- [func reloadFromDataSources()](mpsnngraph/reloadfromdatasources.md)
 
 
 ---

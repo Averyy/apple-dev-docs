@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: property
 
-A UIColor used to tint the element. When @c showImageFullHeight is true, the tint color is applied behind the labels at the bottom of the card. Otherwise, this color is part of the gradient color at the bottom of the card.
+A UIColor used to tint the element. When @c showsImageFullHeight is true, the tint color is applied behind the labels at the bottom of the card. Otherwise, this color is part of the gradient color at the bottom of the card.
 
 **Availability**:
 - iOS 26.0+ (Beta)

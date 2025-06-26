@@ -21,8 +21,8 @@ var input: GCControllerLiveInput { get }
 
 ## Mentions
 
-- [Handling input events](handling-input-events.md)
 - [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
+- [Handling input events](handling-input-events.md)
 
 ## See Also
 

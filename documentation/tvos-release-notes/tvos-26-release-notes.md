@@ -1,4 +1,4 @@
-# tvOS 26 Beta Release Notes
+# tvOS 26 Beta 2 Release Notes
 
 **Framework**: tvOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 26 beta. The SDK comes bundled with Xcode 26, available from the Mac App Store. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
+The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 26 beta 2. The SDK comes bundled with Xcode 26, available from the Mac App Store. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
 
 ##### App Store
 
@@ -16,15 +16,15 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ##### Apple Intelligence
 
-###### Known Issues
+###### Resolved Issues
 
-- Model quality output degrades after extended, repeated inferences of the same adapter.  (152468267)
+- Fixed: Model quality output degrades after extended, repeated inferences of the same adapter.  (152468267)
 
 ##### Assistantschemas
 
-###### Known Issues
+###### Resolved Issues
 
-- If you have adopted any of the following email AssistantSchemas, you will experience a compilation error due to a parameter type change: `createDraft`, `updateDraft`, `replyMail`, `forwardMail`, `message`, and `draft`.  (148633307)  Revise the relevant schema implementations to accept an optional `AttributedString` instead of an optional `String` for the body parameter or property, and rebuild your app.
+- Fixed: If you have adopted any of the following email AssistantSchemas, you will experience a compilation error due to a parameter type change: `createDraft`, `updateDraft`, `replyMail`, `forwardMail`, `message`, and `draft`.  (148633307)
 
 ##### Avfoundation
 
@@ -34,13 +34,17 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ##### Background Assets
 
+###### Resolved Issues
+
+- Fixed: The system might not update downloaded asset packs as frequently as is expected for apps that internal testers install from TestFlight.  (143281558)
+- Fixed: Asset pack downloads might fail unexpectedly or stall indefinitely, including across reboots.  (151498902)
+- Fixed: The system might not deliver status updates to your app for ongoing asset pack downloads.  (151647839)
+- Fixed: Pausing and resuming an app installation or update while the system is downloading essential asset packs might cause the installation or update to stall indefinitely.  (151942388)
+- Fixed: Settings for Development Overrides are unavailable on tvOS.  (152131750)
+
 ###### Known Issues
 
-- The system might not update downloaded asset packs as frequently as is expected for apps that internal testers install from TestFlight.   (143281558)  Call `checkForUpdates()` on the shared asset pack manager in your app’s code.
-- Asset pack downloads might fail unexpectedly or stall indefinitely, including across reboots.   (151498902)  If your app receives a download status update for a stalled asset pack with a `Progress` object, then call `cancel()` on that object before rescheduling the download. Alternatively, you can fetch and cancel the object that represents the stalled download by calling `currentDownloads` on the shared download manager, extracting the relevant download object from the returned array, and passing the object to a call to `cancel(_:)` on the shared download manager.
-- The system might not deliver status updates to your app for ongoing asset pack downloads.   (151647839)  Force Quit and restart your app while testing it.
-- Pausing and resuming an app installation or update while the system is downloading essential asset packs might cause the installation or update to stall indefinitely.  (151942388)  Delete the stalled app from the Home Screen (on iOS, iPadOS, or tvOS), from the Home View (on visionOS), or from the Finder (on macOS) and reinstall it.
-- Settings for Development Overrides are unavailable on tvOS.  (152131750)
+- The installation of large asset packs might fail.  (153128086)
 
 ##### Foundation
 
@@ -59,10 +63,13 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 - Metal 4 is now supported. See [`Metal`](https://developer.apple.comhttps://developer.apple.com/metal/) for additional details.  (113781091)
 
+###### Resolved Issues
+
+- Fixed: Metal Shader Validation might not work with shaders that use Metal Performance Primitives.  (149263281)
+
 ###### Known Issues
 
 - If you’re using Metal 4 command encoders, you should add render and compute pipelines that support indirect command buffers to your residency sets. The Metal device driver currently does not enforce this requirement.  (145066238)
-- Metal Shader Validation might not work with shaders that use Metal Performance Primitives.  (149263281)
 - Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367)  Selectively disable Shader Validation for pipelines using ray tracing. See [`documentation`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage/#Selectively-enable-Shader-Validation).
 
 ##### Metalfx
@@ -85,6 +92,11 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ##### Realitykit
 
+###### Resolved Issues
+
+- Fixed: `ParticleEmitterComponent` does not render properly on iOS, macOS, and tvOS.  (152201501)
+- Fixed: The `animate` functions on `Entity` and `RealityViewContent` do not start animations.  (152456435)
+
 ###### Known Issues
 
 - Some properties and components do not update SwiftUI Views when accessed through the `.observable` property on Entity.  (147063698)
@@ -106,8 +118,6 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 - RealityKitTexture3DPixelGradient
 - RealityKitTexture3DPixelLOD
 - RealityKitTexture3DRead  (151498365)  Make a dedicated ShaderGraph material for these devices.
-- `ParticleEmitterComponent` does not render properly on iOS, macOS, and tvOS.  (152201501)
-- The `animate` functions on `Entity` and `RealityViewContent` do not start animations.  (152456435)
 
 ##### Security
 
@@ -138,7 +148,6 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ###### New Features
 
-- You can now use `View/findNavigator(isPresented:)`, `View/findDisabled(_:)`, and `View/replaceDisabled(_:)` to control the presentation of the Find Bar in `TextEditor` on macOS 16.  (85308161)
 - `ControlSize` now conforms to `Comparable`, and `View/controlSize(_:)` can now be used to clamp the environment’s `controlSize` to a given range.  (99633360) (FB11465757)
 - Text, TextEditor, and TextField now by default use string contents to determine the appropriate base writing direction for each paragraph, instead of relying on layout directionality. To specify the writing direction explicitly on a per-paragraph basis, use Foundation’s `AttributedString.writingDirection` attribute. To make the base writing direction follow the layout direction for an entire view, apply the view modifier `.writingDirection(strategy: .layoutBased)`.  (134821288)
 - When linking news SDKs, `NavigationLink`s produce a single view, rather than a list of views in view list contexts. This change improves performance of many `NavigationLink`s in lazy containers like `List`. However, if you are relying on `ContainerValues` propagating out of the `label` view of a `NavigationLink`, or similarly relying on `ContainerValues` of a `ButtonStyle` used to style a link, the `containerValue(_:,_:)` modifier should be moved outside of the link. Below is a minimal example that demonstrates the behavior difference: ```swift
@@ -211,10 +220,7 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
      .presentationSizing(.page)
      .presentationCompactAdaptation(.fullScreen)
 ``` (150455117)
-
-###### Known Issues
-
-- If Default Actor Isolation is set to `MainActor`, `@Animatable` macro emits concurrency warnings in Swift 5 language mode and does not compile in Swift 6 language mode.  (152524435)  Use Swift 5 language mode or set Default Actor Isolation to `nonisolated` in project’s build settings.
+- Fixed: If Default Actor Isolation is set to `MainActor`, `@Animatable` macro emits concurrency warnings in Swift 5 language mode and does not compile in Swift 6 language mode.  (152524435)
 
 ###### Deprecations
 
@@ -224,7 +230,13 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ###### Known Issues
 
-- Design updates in tvOS 26 are not carried forward to Apple TV 4K (1st generation) and older models. The updates are only testable on Apple TV 4K 2nd and 3rd generation models.  (152111626)
+- Design updates in tvOS 19 are not carried forward to Apple TV 4K (1st generation) and older models. The updates are only testable on Apple TV 4K 2nd and 3rd generation models.  (152111626)
+
+##### Textkit
+
+###### New Features
+
+- iOS 26, tvOS 26, visionOS 26, watchOS 26, and macOS Tahoe 26 have two methods for resolving the natural alignment `NSTextAlignment.natural` and the last line of `NSTextAlignment.justified` into concrete alignments, `left` and `right`. The first approach utilizes the UI language, which is determined by passing nil-language to `NSParagraphStyle.defaultWritingDirection(forLanguage: )`. This behavior was employed in releases prior to OS 26. The second method is new and dynamically utilizes the base writing direction for the paragraph. When the base writing direction is set to `NSWritingDirection.rightToLeft`, the text is aligned to `right`, and vice versa. The behavior is selected by API introduced in OS 26: `NSTextLayoutManager.resolvesNaturalAlignmentWithBaseWritingDirection`, `NSStringDrawingOptionsResolvesNaturalAlignmentWithBaseWritingDirection`, `UITraitCollection.resolvesNaturalAlignmentWithBaseWritingDirection`, and `NSTextField.resolvesNaturalAlignmentWithBaseWritingDirection`.  (152045248)
 
 ##### Virtualization
 

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "last_updated": "2025-06-10T21:58:47.327880",
+    "last_updated": "2025-06-26T19:08:14.087589",
     "total_pages": 1,
-    "session_id": "2025-06-10T21:57:49.637043"
+    "session_id": "2025-06-26T19:07:15.911743"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SharedWithYou-technology.json": {
       "hash": "",
-      "last_checked": "2025-06-10T21:58:47.323613",
+      "last_checked": "2025-06-26T19:08:14.086970",
       "status": "error",
       "error": "Exceeded maximum allowed redirects."
     }

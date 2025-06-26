@@ -18,6 +18,11 @@ func aspectRatio(for viewingMode: ImagePresentationComponent.ViewingMode) -> Flo
 
 Returns `nil` if the requested viewing mode is not in the component’s `availableViewingModes` set.
 
+## See Also
+
+- [var screenImageDimension: SIMD2<Float>](imagepresentationcomponent/screenimagedimension.md)
+  The image resolution of the currently presented image, in pixels.
+
 
 ---
 

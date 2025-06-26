@@ -1,6 +1,6 @@
 # lowerBound
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: property
 
 The lower limit of the person’s age range.

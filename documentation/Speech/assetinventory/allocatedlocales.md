@@ -21,7 +21,7 @@ static var allocatedLocales: [Locale] { get async }
 ## See Also
 
 - [static var maximumAllocatedLocales: Int](assetinventory/maximumallocatedlocales.md)
-  The largest allowed count for `allocatedLocales`.
+  The number of locale allocations permitted to an application.
 
 
 ---

@@ -17,7 +17,7 @@ Creates an image by drawing the renderer’s content at the specified system tim
 ## Declaration
 
 ```swift
-func snapshot(atTime time: CFTimeInterval, with size: CGSize, antialiasingMode: SCNAntialiasingMode) -> NSImage
+func snapshot(atTime time: CFTimeInterval, with size: CGSize, antialiasingMode: SCNAntialiasingMode) -> UIImage
 ```
 
 #### Return Value

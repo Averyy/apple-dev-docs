@@ -189,22 +189,20 @@ To delete all persistent data from your app and not just data of a certain model
 
 ## See Also
 
-- [Adding and editing persistent data in your app](adding-and-editing-persistent-data-in-your-app.md)
-  Create a data entry form for collecting and changing data managed by SwiftData.
-- [Defining data relationships with enumerations and model classes](defining-data-relationships-with-enumerations-and-model-classes.md)
-  Create relationships for static and dynamic data stored in your app.
-- [Maintaining a local copy of server data](maintaining-a-local-copy-of-server-data.md)
-  Create and update a persistent store to cache read-only network data.
-- [macro Model()](model().md)
-  Converts a Swift class into a stored model that’s managed by SwiftData.
-- [macro Attribute(Schema.Attribute.Option..., originalName: String?, hashModifier: String?)](attribute(_:originalname:hashmodifier:).md)
-  Specifies the custom behavior that SwiftData applies to the annotated property when managing the owning class.
-- [macro Transient()](transient().md)
-  Tells SwiftData not to persist the annotated property when managing the owning class.
-- [macro Relationship(Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule, minimumModelCount: Int?, maximumModelCount: Int?, originalName: String?, inverse: AnyKeyPath?, hashModifier: String?)](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md)
-  Specifies the options that SwiftData needs to manage the annotated property as a relationship between two models.
-- [protocol PersistentModel](persistentmodel.md)
-  An interface that enables SwiftData to manage a Swift class as a stored model.
+- [class ModelContainer](modelcontainer.md)
+  An object that manages an app’s schema and model storage configuration.
+- [class ModelContext](modelcontext.md)
+  An object that enables you to fetch, insert, and delete models, and save any changes to disk.
+- [Fetching and filtering time-based model changes](fetching-and-filtering-time-based-model-changes.md)
+  Track all inserts, updates, and deletes that occur in a data store and process them as a series of chronological transactions.
+- [struct HistoryDescriptor](historydescriptor.md)
+  A type that describes the criteria, and, optionally, sort order, to use when fetching history data
+- [Reverting data changes using the undo manager](reverting-data-changes-using-the-undo-manager.md)
+  Automatically record data change operations that people perform in your SwiftUI app, and let them undo and redo those changes.
+- [Syncing model data across a person’s devices](syncing-model-data-across-a-persons-devices.md)
+  Add the required capabilities and define a compatible schema to enable SwiftData to automatically sync your app’s model data using iCloud.
+- [Concurrency support](concurrencysupport.md)
+  Types you use to access model attributes and perform storage-related tasks in a safe and isolated way.
 
 
 ---

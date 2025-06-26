@@ -21,7 +21,7 @@ subscript<T>(key: String, as type: T.Type = T.self, default defaultValue: @autoc
 
 #### Return Value
 
-The value associated with key in the dictionary; otherwise, [`nil`](https://developer.apple.com/documentation/objectivec/nil).
+The value associated with key in the dictionary; otherwise, [`Nil`](https://developer.apple.com/documentation/objectivec/nil).
 
 ## Parameters
 

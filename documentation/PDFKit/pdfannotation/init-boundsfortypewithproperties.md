@@ -16,7 +16,7 @@ Creates a PDF annotation with the specified bounds, type, and optional propertie
 ## Declaration
 
 ```swift
-init(bounds: CGRect, forType annotationType: PDFAnnotationSubtype, withProperties properties: [AnyHashable : Any]?)
+init(bounds: NSRect, forType annotationType: PDFAnnotationSubtype, withProperties properties: [AnyHashable : Any]?)
 ```
 
 ## Parameters

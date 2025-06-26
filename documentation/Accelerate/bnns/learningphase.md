@@ -11,9 +11,9 @@ Constants that describe the learning phase of a normalization operation.
 - Mac Catalyst ?+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
+- visionOS ?+
 
 ## Declaration
 

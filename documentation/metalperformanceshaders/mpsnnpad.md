@@ -1,7 +1,7 @@
 # MPSNNPad
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 12.1+
@@ -14,25 +14,35 @@
 ## Declaration
 
 ```swift
-class MPSNNPad : MPSCNNKernel
+class MPSNNPad
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnpad/3037428-init.md)
-- [init(device: any MTLDevice)](mpsnnpad/3037429-init.md)
-- [init(device: any MTLDevice, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate)](mpsnnpad/3037430-init.md)
-- [init(device: any MTLDevice, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate, fillValueArray: Data?)](mpsnnpad/3037431-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnpad/init(coder:device:).md)
+- [convenience init(device: any MTLDevice)](mpsnnpad/init(device:).md)
+- [convenience init(device: any MTLDevice, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate)](mpsnnpad/init(device:paddingsizebefore:paddingsizeafter:).md)
+- [init(device: any MTLDevice, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate, fillValueArray: Data?)](mpsnnpad/init(device:paddingsizebefore:paddingsizeafter:fillvaluearray:).md)
 ### Instance Properties
-- [var fillValue: Float](mpsnnpad/3037427-fillvalue.md)
-- [var paddingSizeAfter: MPSImageCoordinate](mpsnnpad/3037432-paddingsizeafter.md)
-- [var paddingSizeBefore: MPSImageCoordinate](mpsnnpad/3037433-paddingsizebefore.md)
+- [var fillValue: Float](mpsnnpad/fillvalue.md)
+- [var paddingSizeAfter: MPSImageCoordinate](mpsnnpad/paddingsizeafter.md)
+- [var paddingSizeBefore: MPSImageCoordinate](mpsnnpad/paddingsizebefore.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

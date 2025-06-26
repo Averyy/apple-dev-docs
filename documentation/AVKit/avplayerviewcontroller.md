@@ -24,8 +24,8 @@ class AVPlayerViewController
 - [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
 - [Customizing the tvOS Playback Experience](customizing-the-tvos-playback-experience.md)
 - [Working with Interstitial Content](working-with-interstitial-content.md)
-- [Trimming and exporting media in visionOS](trimming-and-exporting-media-in-visionos.md)
 - [Adopting Picture in Picture in a Custom Player](adopting-picture-in-picture-in-a-custom-player.md)
+- [Trimming and exporting media in visionOS](trimming-and-exporting-media-in-visionos.md)
 - [Adopting Picture in Picture in a Standard Player](adopting-picture-in-picture-in-a-standard-player.md)
 
 #### Overview

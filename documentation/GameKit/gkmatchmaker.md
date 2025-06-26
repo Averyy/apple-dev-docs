@@ -21,8 +21,8 @@ class GKMatchmaker
 
 ## Mentions
 
-- [Creating activities for your game](creating-activities-for-your-game.md)
 - [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
+- [Creating activities for your game](creating-activities-for-your-game.md)
 - [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
 
 #### Overview

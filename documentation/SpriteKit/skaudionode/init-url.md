@@ -17,6 +17,7 @@ Initializes an audio node from an audio asset with the specified URL.
 ## Declaration
 
 ```swift
+@MainActor
 convenience init(url: URL)
 ```
 

@@ -19,7 +19,7 @@ var source: Locale.Language?
 
 #### Discussion
 
-If left to its default value of `nil`, the session tries to identify the source language automatically, and prompts the user to choose a source language if it’s unclear. Changing this value cancels the previous task and creates a new one.
+If left to its default value of `nil`, the session tries to identify the source language automatically, and prompts the person to choose a source language if it’s unclear. Changing this value cancels the previous task and creates a new one.
 
 
 ---

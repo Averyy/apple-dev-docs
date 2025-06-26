@@ -14,7 +14,7 @@ Initialize a list image row condensed element with an image, an image shape, a t
 
 ```swift
 @MainActor
-init(image: UIImage, imageShape: CPListImageRowItemCondensedElementShape, title: String, subtitle: String?, accessorySymbolName: String?)
+init(image: UIImage, imageShape: CPListImageRowItemCondensedElement.Shape, title: String, subtitle: String?, accessorySymbolName: String?)
 ```
 
 ## Parameters

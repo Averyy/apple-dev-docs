@@ -11,6 +11,7 @@ Load a restore image from a file on the local file system.
 ## Declaration
 
 ```swift
+@preconcurrency
 class func load(from fileURL: URL, completionHandler: @escaping (Result<VZMacOSRestoreImage, any Error>) -> Void)
 ```
 

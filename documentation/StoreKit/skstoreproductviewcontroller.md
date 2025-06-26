@@ -20,8 +20,8 @@ class SKStoreProductViewController
 
 ## Mentions
 
-- [Receiving ad attributions and postbacks](receiving-ad-attributions-and-postbacks.md)
 - [Signing and providing ads](signing-and-providing-ads.md)
+- [Receiving ad attributions and postbacks](receiving-ad-attributions-and-postbacks.md)
 
 #### Overview
 

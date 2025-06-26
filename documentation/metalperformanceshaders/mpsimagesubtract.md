@@ -1,7 +1,7 @@
 # MPSImageSubtract
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that returns the element-wise difference of its two input images.
 
@@ -16,18 +16,28 @@ A filter that returns the element-wise difference of its two input images.
 ## Declaration
 
 ```swift
-class MPSImageSubtract : MPSImageArithmetic
+class MPSImageSubtract
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpsimagesubtract/2866613-init.md)
+- [init(device: any MTLDevice)](mpsimagesubtract/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSImageArithmetic](mpsimagearithmetic.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

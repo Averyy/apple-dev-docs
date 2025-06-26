@@ -1,30 +1,31 @@
 # kODMatchAny
 
-**Framework**: Open Directory  
-**Kind**: var
+**Framework**: Open Directory
 
-**Availability**:
-- Mac Catalyst ?+
-- macOS ?+
-
-## Declaration
-
-```swift
-var kODMatchAny: Int { get }
-```
+A match that returns all records.
 
 ## See Also
 
-- [var kODMatchBeginsWith: Int](kodmatchbeginswith.md)
-- [var kODMatchContains: Int](kodmatchcontains.md)
-- [var kODMatchEndsWith: Int](kodmatchendswith.md)
-- [var kODMatchEqualTo: Int](kodmatchequalto.md)
-- [var kODMatchGreaterThan: Int](kodmatchgreaterthan.md)
-- [var kODMatchInsensitiveBeginsWith: Int](kodmatchinsensitivebeginswith.md)
-- [var kODMatchInsensitiveContains: Int](kodmatchinsensitivecontains.md)
-- [var kODMatchInsensitiveEndsWith: Int](kodmatchinsensitiveendswith.md)
-- [var kODMatchInsensitiveEqualTo: Int](kodmatchinsensitiveequalto.md)
-- [var kODMatchLessThan: Int](kodmatchlessthan.md)
+- [kODMatchEqualTo](kodmatchequalto.md)
+  A match that returns records that are equal to a certain value. This match is case sensitive.
+- [kODMatchBeginsWith](kodmatchbeginswith.md)
+  A match that returns records that begin with a certain value. This match is case sensitive.
+- [kODMatchEndsWith](kodmatchendswith.md)
+  A match that returns records that end with a certain value. This match is case sensitive.
+- [kODMatchContains](kodmatchcontains.md)
+  A match that returns records that contain a certain value. This match is case sensitive.
+- [kODMatchGreaterThan](kodmatchgreaterthan.md)
+  A match that returns records that are greater than a certain value.
+- [kODMatchLessThan](kodmatchlessthan.md)
+  A match that returns records that are less than a certain value.
+- [kODMatchInsensitiveEqualTo](kodmatchinsensitiveequalto.md)
+  A match that returns records that are equal to a certain value. This match is case insensitive.
+- [kODMatchInsensitiveBeginsWith](kodmatchinsensitivebeginswith.md)
+  A match that returns records that begin with a certain value. This match is case insensitive.
+- [kODMatchInsensitiveEndsWith](kodmatchinsensitiveendswith.md)
+  A match that returns records that end with a certain value. This match is case insensitive.
+- [kODMatchInsensitiveContains](kodmatchinsensitivecontains.md)
+  A match that returns records that contain a certain value. This match is case insensitive.
 
 
 ---

@@ -6,12 +6,12 @@
 Options that control which gradient to compute during backward propagation.
 
 **Availability**:
-- iOS 11.3+
-- iPadOS 11.3+
-- Mac Catalyst 13.0+
-- macOS 10.13.4+
-- tvOS 11.3+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -22,17 +22,23 @@ struct MPSCNNConvolutionGradientOption
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mpscnnconvolutiongradientoption/2942694-init.md)
+- [init(rawValue: UInt)](mpscnnconvolutiongradientoption/init(rawvalue:).md)
 ### Type Properties
-- [static var all: MPSCNNConvolutionGradientOption](mpscnnconvolutiongradientoption/2942431-all.md)
-- [static var gradientWithData: MPSCNNConvolutionGradientOption](mpscnnconvolutiongradientoption/2942426-gradientwithdata.md)
-- [static var gradientWithWeightsAndBias: MPSCNNConvolutionGradientOption](mpscnnconvolutiongradientoption/2942422-gradientwithweightsandbias.md)
+- [static var all: MPSCNNConvolutionGradientOption](mpscnnconvolutiongradientoption/all.md)
+- [static var gradientWithData: MPSCNNConvolutionGradientOption](mpscnnconvolutiongradientoption/gradientwithdata.md)
+- [static var gradientWithWeightsAndBias: MPSCNNConvolutionGradientOption](mpscnnconvolutiongradientoption/gradientwithweightsandbias.md)
 
 ## Relationships
 
 ### Conforms To
-- [OptionSet](../swift/optionset.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [OptionSet](../Swift/OptionSet.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SetAlgebra](../Swift/SetAlgebra.md)
 
 
 ---

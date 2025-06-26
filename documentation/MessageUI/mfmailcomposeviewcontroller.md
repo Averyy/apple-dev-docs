@@ -49,7 +49,7 @@ For more information on how to present and dismiss view controllers, see [`View 
 ## Topics
 
 ### Responding to the view controller dismissal
-- [var mailComposeDelegate: MFMailComposeViewControllerDelegate?](mfmailcomposeviewcontroller/mailcomposedelegate.md)
+- [var mailComposeDelegate: (any MFMailComposeViewControllerDelegate)?](mfmailcomposeviewcontroller/mailcomposedelegate.md)
   The mail composition view controller’s delegate.
 - [protocol MFMailComposeViewControllerDelegate](mfmailcomposeviewcontrollerdelegate.md)
   An interface for responding to user interactions with a mail compose view controller.

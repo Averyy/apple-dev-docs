@@ -34,9 +34,6 @@ class HKLiveWorkoutDataSource
   Begins automatically calculating statistics for samples that match the quantity type and predicate.
 - [func disableCollection(for: HKQuantityType)](hkliveworkoutdatasource/disablecollection(for:).md)
   Stops automatically calculating statistics for the quantity type.
-### Instance Properties
-- [var collectsGeneratedTypes: Bool](hkliveworkoutdatasource/collectsgeneratedtypes.md)
-- [var currentCollectedTypes: Set<HKQuantityType>](hkliveworkoutdatasource/currentcollectedtypes.md)
 
 ## Relationships
 

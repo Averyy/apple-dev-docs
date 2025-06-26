@@ -1,34 +1,35 @@
 # MPSImageTransformProvider
 
 **Framework**: Metal Performance Shaders  
-**Kind**: intf
+**Kind**: protocol
 
-A general interface for objects that provide image resampling. 
+A general interface for objects that provide image resampling.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-protocol MPSImageTransformProvider
+protocol MPSImageTransformProvider : NSSecureCoding, NSObjectProtocol
 ```
 
 ## Topics
 
 ### Instance Methods
-- [func transform(forSourceImage: MPSImage, handle: (any MPSHandle)?) -> MPSScaleTransform](mpsimagetransformprovider/2915282-transform.md)
+- [func transform(forSourceImage: MPSImage, handle: (any MPSHandle)?) -> MPSScaleTransform](mpsimagetransformprovider/transform(forsourceimage:handle:).md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

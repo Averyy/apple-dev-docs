@@ -21,8 +21,8 @@ class CIFilter
 
 ## Mentions
 
-- [Selectively Focusing on an Image](selectively-focusing-on-an-image.md)
 - [Processing an Image Using Built-in Filters](processing-an-image-using-built-in-filters.md)
+- [Selectively Focusing on an Image](selectively-focusing-on-an-image.md)
 - [Customizing Image Transitions](customizing-image-transitions.md)
 
 #### Overview

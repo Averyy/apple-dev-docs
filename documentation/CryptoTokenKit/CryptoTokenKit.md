@@ -70,9 +70,6 @@ Starting in macOS 10.15.4, the CryptoTokenKit framework includes support for alw
 ### Type Aliases
 - [typealias IntermediateKeyAuthenticator](intermediatekeyauthenticator.md)
 - [typealias TKTokenObjectID](tktokenobjectid-8mo7f.md)
-### Enumerations
-- [enum IKeyAuthenticator](ikeyauthenticator.md)
-- [enum IKeyErrorCodes](ikeyerrorcodes.md)
 
 
 ---

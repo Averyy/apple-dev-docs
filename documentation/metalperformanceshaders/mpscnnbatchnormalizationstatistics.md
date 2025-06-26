@@ -1,7 +1,7 @@
 # MPSCNNBatchNormalizationStatistics
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An object that stores statistics required to execute batch normalization.
 
@@ -16,21 +16,31 @@ An object that stores statistics required to execute batch normalization.
 ## Declaration
 
 ```swift
-class MPSCNNBatchNormalizationStatistics : MPSCNNKernel
+class MPSCNNBatchNormalizationStatistics
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnbatchnormalizationstatistics/2942578-init.md)
-- [init(device: any MTLDevice)](mpscnnbatchnormalizationstatistics/2953968-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnbatchnormalizationstatistics/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpscnnbatchnormalizationstatistics/init(device:).md)
 ### Instance Methods
-- [func encodeBatch(to: any MTLCommandBuffer, sourceImages: [MPSImage], batchNormalizationState: MPSCNNBatchNormalizationState)](mpscnnbatchnormalizationstatistics/2942584-encodebatch.md)
+- [func encodeBatch(to: any MTLCommandBuffer, sourceImages: [MPSImage], batchNormalizationState: MPSCNNBatchNormalizationState)](mpscnnbatchnormalizationstatistics/encodebatch(to:sourceimages:batchnormalizationstate:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

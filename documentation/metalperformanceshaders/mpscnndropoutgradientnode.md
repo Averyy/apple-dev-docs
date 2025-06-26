@@ -1,7 +1,7 @@
 # MPSCNNDropoutGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient dropout filter.
 
@@ -16,22 +16,29 @@ A representation of a gradient dropout filter.
 ## Declaration
 
 ```swift
-class MPSCNNDropoutGradientNode : MPSNNGradientFilterNode
+class MPSCNNDropoutGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, keepProbability: Float, seed: Int, maskStrideInPixels: MTLSize)](mpscnndropoutgradientnode/2948001-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, keepProbability: Float, seed: Int, maskStrideInPixels: MTLSize)](mpscnndropoutgradientnode/init(sourcegradient:sourceimage:gradientstate:keepprobability:seed:maskstrideinpixels:).md)
 ### Instance Properties
-- [var keepProbability: Float](mpscnndropoutgradientnode/2947988-keepprobability.md)
-- [var maskStrideInPixels: MTLSize](mpscnndropoutgradientnode/2947972-maskstrideinpixels.md)
-- [var seed: Int](mpscnndropoutgradientnode/2948003-seed.md)
+- [var keepProbability: Float](mpscnndropoutgradientnode/keepprobability.md)
+- [var maskStrideInPixels: MTLSize](mpscnndropoutgradientnode/maskstrideinpixels.md)
+- [var seed: Int](mpscnndropoutgradientnode/seed.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

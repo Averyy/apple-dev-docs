@@ -1,7 +1,7 @@
 # MPSImageEdgeMode.constant
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.1+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case constant = 4
+case constant
 ```
 
 

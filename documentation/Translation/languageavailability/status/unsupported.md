@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: case
 
-A language or language pairing the framework doesn’t support.
+The framework doesn’t support the language or language pairing.
 
 **Availability**:
 - iOS 18.0+

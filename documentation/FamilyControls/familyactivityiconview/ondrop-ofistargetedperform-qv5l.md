@@ -8,7 +8,6 @@ Defines the destination for a drag and drop operation, using the same size and p
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
 - macOS 10.15+
 - visionOS 1.0+
 

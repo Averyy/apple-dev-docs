@@ -136,6 +136,8 @@ For more information, see [`Image I/O Programming Guide`](https://developer.appl
 - [let kCGImagePropertyEncoder: CFString](kcgimagepropertyencoder.md)
 - [let kCGImagePropertyOpenEXRCompression: CFString](kcgimagepropertyopenexrcompression.md)
 - [let kCGImagePropertyPVREncoder: CFString](kcgimagepropertypvrencoder.md)
+- [let kCGImageProviderPreferredTileHeight: CFString](kcgimageproviderpreferredtileheight.md)
+- [let kCGImageProviderPreferredTileWidth: CFString](kcgimageproviderpreferredtilewidth.md)
 - [let kCGImageSourceGenerateImageSpecificLumaScaling: CFString](kcgimagesourcegenerateimagespecificlumascaling.md)
 
 

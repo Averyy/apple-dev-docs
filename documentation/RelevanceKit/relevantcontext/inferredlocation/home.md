@@ -23,7 +23,7 @@ static var home: RelevantContext.InferredLocation { get }
 ## See Also
 
 - [static var commute: RelevantContext.InferredLocation](relevantcontext/inferredlocation/commute.md)
-  The route during the user’s commute, for example between “home” and “work”.
+  A person’s commute between two inferred locations.
 - [static var school: RelevantContext.InferredLocation](relevantcontext/inferredlocation/school.md)
   A person’s inferred school location.
 - [static var work: RelevantContext.InferredLocation](relevantcontext/inferredlocation/work.md)

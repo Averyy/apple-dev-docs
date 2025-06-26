@@ -85,6 +85,7 @@ AVFoundation combines several major technology areas that together encompass a w
 - [class AVMetadataDogHeadObject](avmetadatadogheadobject.md)
 - [class AVMetricDownloadSummaryEvent](avmetricdownloadsummaryevent.md)
   Represents a summary metric event with aggregated metrics for the entire download task.
+- [class AVMetricMediaRendition](avmetricmediarendition.md)
 - [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
 ### Structures
 - [struct AVCIImageFilteringParameters](avciimagefilteringparameters.md)
@@ -99,28 +100,8 @@ AVFoundation combines several major technology areas that together encompass a w
   Value is an NSData containing a 16-byte seed to randomize the user’s deviceID contained in the SPC blob during FairPlay key exchange
 - [let AVContentKeyRequestShouldRandomizeDeviceIdentifierKey: String](avcontentkeyrequestshouldrandomizedeviceidentifierkey.md)
   Value is an Boolean indicating whether the user’s deviceID contained in the SPC blob during FairPlay key exchange should be randomized using a system generated seed
-- [let AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeEventKey: String](avplayerinterstitialeventmonitorcurrenteventskippablestatedidchangeeventkey.md)
-  The dictionary key for the AVPlayerInterstitial event that had its skippable event state changed in the payload of the AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeNotification.
-- [let AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeSkipControlLabelKey: String](avplayerinterstitialeventmonitorcurrenteventskippablestatedidchangeskipcontrollabelkey.md)
-  The dictionary key for the skip label of the event in the payload of the AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeNotification.
-- [let AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeStateKey: String](avplayerinterstitialeventmonitorcurrenteventskippablestatedidchangestatekey.md)
-  The dictionary key for the skippable event state in the payload of the AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeNotification.
-- [let AVPlayerInterstitialEventMonitorCurrentEventSkippedEventKey: String](avplayerinterstitialeventmonitorcurrenteventskippedeventkey.md)
-  The dictionary key for the AVPlayerInterstitialEvent that was skipped in the payload of the AVPlayerInterstitialEventMonitorCurrentEventSkippedNotification.
-- [let AVPlayerInterstitialEventMonitorInterstitialEventDidFinishDidPlayEntireEventKey: String](avplayerinterstitialeventmonitorinterstitialeventdidfinishdidplayentireeventkey.md)
-  The dictionary key to indicate whether the event that finished playing was fully played out in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventDidFinishNotification.
-- [let AVPlayerInterstitialEventMonitorInterstitialEventDidFinishEventKey: String](avplayerinterstitialeventmonitorinterstitialeventdidfinisheventkey.md)
-  The dictionary key for the AVPlayerInterstitialEvent that finished playing in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventDidFinishNotification.
-- [let AVPlayerInterstitialEventMonitorInterstitialEventDidFinishPlayoutTimeKey: String](avplayerinterstitialeventmonitorinterstitialeventdidfinishplayouttimekey.md)
-  The dictionary key for the playout time of the event that finished playing in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventDidFinishNotification.
-- [let AVPlayerInterstitialEventMonitorInterstitialEventWasUnscheduledErrorKey: String](avplayerinterstitialeventmonitorinterstitialeventwasunschedulederrorkey.md)
-  The dictionary key to indicate whether the event that was unscheduled was due to an error.
-- [let AVPlayerInterstitialEventMonitorInterstitialEventWasUnscheduledEventKey: String](avplayerinterstitialeventmonitorinterstitialeventwasunscheduledeventkey.md)
-  The dictionary key for the AVPlayerInterstitialEvent that was unscheduled in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventWasUnscheduledNotification.
 - [let AVURLAssetShouldParseExternalSphericalTagsKey: String](avurlassetshouldparseexternalsphericaltagskey.md)
   Indicates whether additional projected media signaling in the asset should be parsed and resolved as format description extensions.
-### Type Aliases
-- [typealias AVURLAssetTrack](avurlassettrack-4rdw0.md)
 ### Enumerations
 - [enum AVCaptureCameraLensSmudgeDetectionStatus](avcapturecameralenssmudgedetectionstatus.md)
 

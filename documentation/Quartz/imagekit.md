@@ -54,7 +54,7 @@
 - [struct IKImageBrowserDropOperation](ikimagebrowserdropoperation.md)
   These constants specify the locations for dropping items onto the browser view. Used by the method [`setDrop(_:dropOperation:)`](ikimagebrowserview/setdrop(_:dropoperation:).md).
 ### Extended Types
-- [class CIFilter](../coreimage/cifilter.md)
+- [class CIFilter](../CoreImage/CIFilter-swift.class.md)
   An image processor that produces an image by manipulating one or more input images or by generating new image data.
 ### Reference
 - [ImageKit Constants](imagekit-quartz-constants.md)

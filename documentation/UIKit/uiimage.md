@@ -21,8 +21,8 @@ class UIImage
 
 ## Mentions
 
-- [Configuring and displaying symbol images in your UI](configuring-and-displaying-symbol-images-in-your-ui.md)
 - [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
+- [Configuring and displaying symbol images in your UI](configuring-and-displaying-symbol-images-in-your-ui.md)
 - [Understanding a drag item as a promise](understanding-a-drag-item-as-a-promise.md)
 
 #### Overview

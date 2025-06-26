@@ -26,7 +26,9 @@ struct Index
 - [init?<S>(String.Index, within: S)](attributedstring/index/init(_:within:).md)
 ### Instance Methods
 - [func isValid(within: DiscontiguousAttributedSubstring) -> Bool](attributedstring/index/isvalid(within:)-6wjr6.md)
+  Indicates whether the index is valid for use with the provided discontiguous attributed string.
 - [func isValid(within: some AttributedStringProtocol) -> Bool](attributedstring/index/isvalid(within:)-8fw50.md)
+  Indicates whether the index is valid for use with the provided attributed string.
 
 ## Relationships
 

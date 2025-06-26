@@ -1,7 +1,7 @@
 # MPSCNNBatchNormalizationNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a batch normalization kernel.
 
@@ -16,23 +16,29 @@ A representation of a batch normalization kernel.
 ## Declaration
 
 ```swift
-class MPSCNNBatchNormalizationNode : MPSNNFilterNode
+class MPSCNNBatchNormalizationNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, dataSource: any MPSCNNBatchNormalizationDataSource)](mpscnnbatchnormalizationnode/2948004-init.md)
+- [init(source: MPSNNImageNode, dataSource: any MPSCNNBatchNormalizationDataSource)](mpscnnbatchnormalizationnode/init(source:datasource:).md)
 ### Instance Properties
-- [var flags: MPSCNNBatchNormalizationFlags](mpscnnbatchnormalizationnode/2953940-flags.md)
-- [var trainingStyle: MPSNNTrainingStyle](mpscnnbatchnormalizationnode/3197821-trainingstyle.md)
+- [var flags: MPSCNNBatchNormalizationFlags](mpscnnbatchnormalizationnode/flags.md)
+- [var trainingStyle: MPSNNTrainingStyle](mpscnnbatchnormalizationnode/trainingstyle.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
 ### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
 - [MPSNNTrainableNode](mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

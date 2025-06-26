@@ -1,7 +1,7 @@
 # MPSNNGradientFilterNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient filter.
 
@@ -16,13 +16,42 @@ A representation of a gradient filter.
 ## Declaration
 
 ```swift
-class MPSNNGradientFilterNode : MPSNNFilterNode
+class MPSNNGradientFilterNode
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Inherited By
+- [MPSCNNBatchNormalizationGradientNode](mpscnnbatchnormalizationgradientnode.md)
+- [MPSCNNConvolutionGradientNode](mpscnnconvolutiongradientnode.md)
+- [MPSCNNCrossChannelNormalizationGradientNode](mpscnncrosschannelnormalizationgradientnode.md)
+- [MPSCNNDropoutGradientNode](mpscnndropoutgradientnode.md)
+- [MPSCNNGroupNormalizationGradientNode](mpscnngroupnormalizationgradientnode.md)
+- [MPSCNNInstanceNormalizationGradientNode](mpscnninstancenormalizationgradientnode.md)
+- [MPSCNNLocalContrastNormalizationGradientNode](mpscnnlocalcontrastnormalizationgradientnode.md)
+- [MPSCNNLogSoftMaxGradientNode](mpscnnlogsoftmaxgradientnode.md)
+- [MPSCNNNeuronGradientNode](mpscnnneurongradientnode.md)
+- [MPSCNNPoolingGradientNode](mpscnnpoolinggradientnode.md)
+- [MPSCNNSoftMaxGradientNode](mpscnnsoftmaxgradientnode.md)
+- [MPSCNNSpatialNormalizationGradientNode](mpscnnspatialnormalizationgradientnode.md)
+- [MPSCNNUpsamplingBilinearGradientNode](mpscnnupsamplingbilineargradientnode.md)
+- [MPSCNNUpsamplingNearestGradientNode](mpscnnupsamplingnearestgradientnode.md)
+- [MPSNNArithmeticGradientNode](mpsnnarithmeticgradientnode.md)
+- [MPSNNConcatenationGradientNode](mpsnnconcatenationgradientnode.md)
+- [MPSNNGramMatrixCalculationGradientNode](mpsnngrammatrixcalculationgradientnode.md)
+- [MPSNNLossGradientNode](mpsnnlossgradientnode.md)
+- [MPSNNPadGradientNode](mpsnnpadgradientnode.md)
+- [MPSNNReductionSpatialMeanGradientNode](mpsnnreductionspatialmeangradientnode.md)
+- [MPSNNReshapeGradientNode](mpsnnreshapegradientnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

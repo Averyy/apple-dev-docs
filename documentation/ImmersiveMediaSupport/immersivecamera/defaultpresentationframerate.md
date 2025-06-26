@@ -12,7 +12,7 @@ Default presentation frame rate for any immersive camera.
 ## Declaration
 
 ```swift
-static let defaultPresentationFrameRate: Float
+static let defaultPresentationFrameRate: Int
 ```
 
 

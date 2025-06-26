@@ -1,7 +1,7 @@
 # MPSCNNNeuronSigmoid
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A sigmoid neuron filter.
 
@@ -16,25 +16,35 @@ A sigmoid neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronSigmoid : MPSCNNNeuron
+class MPSCNNNeuronSigmoid
 ```
 
 #### Overview
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = 1 / (1 + e^-x)](https://docs-assets.developer.apple.com/published/866dd98e74/bfc8cecc-004a-4921-8802-e6d15c7b4148.png)
+![f(x) = 1 / (1 + e^-x)](https://docs-assets.developer.apple.com/published/65487cbdd9b7706b4caf87008947837d/media-2903545%402x.png)
 
 ## Topics
 
-### Initializers
-- [init(device: any MTLDevice)](mpscnnneuronsigmoid/1648890-init.md)
+### Instance Methods
+- [init(device: any MTLDevice)](mpscnnneuronsigmoid/init(device:).md)
   Initializes a sigmoid neuron filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -68,8 +78,6 @@ For each pixel in an image, the filter applies the following function:
   A logarithm neuron filter.
 - [class MPSCNNNeuronPower](mpscnnneuronpower.md)
   A power neuron filter.
-- [class MPSNNNeuronDescriptor](mpsnnneurondescriptor.md)
-  An object that specifies properties used by a neuron kernel.
 
 
 ---

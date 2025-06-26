@@ -3,7 +3,7 @@
 **Framework**: Assignables  
 **Kind**: module
 
-A framework that contain wrappers to a PDF to allow creation of an assessment and student work on that assessment.
+A framework that contains wrappers for a PDF to allow creation of an assessment and student work on that assessment.
 
 **Availability**:
 - iOS 15.4+
@@ -76,8 +76,6 @@ Since teachers may collaborate on making an assignable or scoring student works,
   A registry for user identity types. Assignable documents and document elements store user identity data as `Data` objects. In order for that data to be deserialized, the type to deserialize it as needs to be known to [`UserIdentityTypeRegistry`](useridentitytyperegistry.md). Without registration of the user identity, custom types won’t be deserializable.
 - [enum UserIdentityFactory](useridentityfactory.md)
   A type that contains helpers for creating user identity objects.
-### Enumerations
-- [enum MergeablePartData](mergeablepartdata.md)
 
 
 ---

@@ -11,9 +11,9 @@ A function for reduction that computes the index of the maximum value.
 - Mac Catalyst ?+
 - macOS 11.0+ - Deprecated
 - tvOS 14.0+ - Deprecated
-- visionOS ?+
 - watchOS 7.0+ - Deprecated
 - Unknown ?+ - Deprecated
+- visionOS ?+
 
 ## Declaration
 

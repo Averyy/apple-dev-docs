@@ -1,7 +1,7 @@
 # MPSCNNBinaryFullyConnected
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A fully connected convolution layer with binary weights and optionally binarized input image.
 
@@ -16,17 +16,17 @@ A fully connected convolution layer with binary weights and optionally binarized
 ## Declaration
 
 ```swift
-class MPSCNNBinaryFullyConnected : MPSCNNBinaryConvolution
+class MPSCNNBinaryFullyConnected
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnbinaryfullyconnected/2867052-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnbinaryfullyconnected/init(coder:device:).md)
   Initializes a fully connected convolution layer with binary weights.
-- [init(device: any MTLDevice, convolutionData: any MPSCNNConvolutionDataSource, outputBiasTerms: UnsafePointer<Float>?, outputScaleTerms: UnsafePointer<Float>?, inputBiasTerms: UnsafePointer<Float>?, inputScaleTerms: UnsafePointer<Float>?, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](mpscnnbinaryfullyconnected/2867059-init.md)
+- [convenience init(device: any MTLDevice, convolutionData: any MPSCNNConvolutionDataSource, outputBiasTerms: UnsafePointer<Float>?, outputScaleTerms: UnsafePointer<Float>?, inputBiasTerms: UnsafePointer<Float>?, inputScaleTerms: UnsafePointer<Float>?, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](mpscnnbinaryfullyconnected/init(device:convolutiondata:outputbiasterms:outputscaleterms:inputbiasterms:inputscaleterms:type:flags:).md)
   Initializes a fully connected convolution layer with binary weights.
-- [init(device: any MTLDevice, convolutionData: any MPSCNNConvolutionDataSource, scaleValue: Float, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](mpscnnbinaryfullyconnected/2867196-init.md)
+- [convenience init(device: any MTLDevice, convolutionData: any MPSCNNConvolutionDataSource, scaleValue: Float, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](mpscnnbinaryfullyconnected/init(device:convolutiondata:scalevalue:type:flags:).md)
   Initializes a fully connected convolution layer with binary weights.
 - [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
@@ -39,6 +39,16 @@ class MPSCNNBinaryFullyConnected : MPSCNNBinaryConvolution
 
 ### Inherits From
 - [MPSCNNBinaryConvolution](mpscnnbinaryconvolution.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

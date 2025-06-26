@@ -1,7 +1,7 @@
 # MPSNNGramMatrixCalculationGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,21 +14,28 @@
 ## Declaration
 
 ```swift
-class MPSNNGramMatrixCalculationGradientNode : MPSNNGradientFilterNode
+class MPSNNGramMatrixCalculationGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](mpsnngrammatrixcalculationgradientnode/3114089-init.md)
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, alpha: Float)](mpsnngrammatrixcalculationgradientnode/3114090-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](mpsnngrammatrixcalculationgradientnode/init(sourcegradient:sourceimage:gradientstate:).md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, alpha: Float)](mpsnngrammatrixcalculationgradientnode/init(sourcegradient:sourceimage:gradientstate:alpha:).md)
 ### Instance Properties
-- [var alpha: Float](mpsnngrammatrixcalculationgradientnode/3114088-alpha.md)
+- [var alpha: Float](mpsnngrammatrixcalculationgradientnode/alpha.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

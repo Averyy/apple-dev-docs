@@ -1,0 +1,42 @@
+# init(device:srcAlpha:destAlpha:backgroundColor:conversionInfo:)
+
+**Framework**: Metal Performance Shaders  
+**Kind**: init
+
+Initializes a filter that can convert texture color space, alpha, and pixel format.
+
+**Availability**:
+- iOS 10.0+
+- iPadOS 10.0+
+- Mac Catalyst 13.0+
+- macOS 10.13+
+- tvOS 10.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+init(device: any MTLDevice, srcAlpha: MPSAlphaType, destAlpha: MPSAlphaType, backgroundColor: UnsafeMutablePointer<CGFloat>?, conversionInfo: CGColorConversionInfo?)
+```
+
+#### Return Value
+
+An [`MPSImageConversion`](mpsimageconversion.md) object.
+
+## Parameters
+
+- `device`: The device that the filter will run on.
+- `srcAlpha`: The alpha encoding for the source texture.
+- `destAlpha`: The alpha encoding for the destination texture.
+- `backgroundColor`: The color is in the source color space. The length of the array is the number of color channels in the source color space. If this parameter is not applicable to your desired conversion, use  .
+- `conversionInfo`: The color space conversion to use. This value may be  , indicating that no color space conversions need to be done.
+
+## See Also
+
+- [enum MPSAlphaType](mpsalphatype.md)
+  Premultiplication description for the color channels of an image.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/mpsimageconversion/init(device:srcalpha:destalpha:backgroundcolor:conversioninfo:))*

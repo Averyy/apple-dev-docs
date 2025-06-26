@@ -29,6 +29,11 @@ A metadata group initialized with `items`.
 - `items`: An array of   objects.
 - `timeRange`: The time range of the metadata contained in  .
 
+## See Also
+
+- [convenience init?(sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>)](avtimedmetadatagroup/init(samplebuffer:)-6atlv.md)
+  Creates a timed metadata group with a sample buffer.
+
 
 ---
 

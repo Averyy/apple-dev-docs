@@ -3,6 +3,8 @@
 **Framework**: SwiftData  
 **Kind**: init
 
+Initializes a new history descriptor with the provided predicate.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -18,6 +20,11 @@
 ```swift
 init(predicate: Predicate<TransactionType>? = nil)
 ```
+
+## See Also
+
+- [init(predicate: Predicate<TransactionType>?, sortBy: [SortDescriptor<TransactionType>])](historydescriptor/init(predicate:sortby:).md)
+  Initializes a new history descriptor with the provided predicate and sort descriptor.
 
 
 ---

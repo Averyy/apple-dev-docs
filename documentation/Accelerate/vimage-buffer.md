@@ -23,11 +23,11 @@ struct vImage_Buffer
 ## Mentions
 
 - [Enhancing image contrast with histogram manipulation](enhancing-image-contrast-with-histogram-manipulation.md)
-- [Creating and Populating Buffers from Core Graphics Images](creating-and-populating-buffers-from-core-graphics-images.md)
 - [Applying vImage operations to regions of interest](applying-vimage-operations-to-regions-of-interest.md)
-- [Building a basic image conversion workflow](building-a-basic-image-conversion-workflow.md)
-- [Building a Basic Image-Processing Workflow](building-a-basic-image-processing-workflow.md)
+- [Creating and Populating Buffers from Core Graphics Images](creating-and-populating-buffers-from-core-graphics-images.md)
 - [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
+- [Building a Basic Image-Processing Workflow](building-a-basic-image-processing-workflow.md)
+- [Building a basic image conversion workflow](building-a-basic-image-conversion-workflow.md)
 - [Compositing images with vImage blend modes](compositing-images-with-vimage-blend-modes.md)
 
 #### Overview

@@ -1,7 +1,7 @@
 # MPSStateResourceType.texture
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.3+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case texture = 2
+case texture
 ```
 
 

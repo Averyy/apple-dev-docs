@@ -18,7 +18,7 @@ init(position: CPListItem.AssistantCellPosition, visibility: CPListItem.Assistan
 
 #### Discussion
 
-Your app doesn’t receive a callback when the user selects the assistant cell. Instead, you configure an Intents Extension to handle the type of intent you specify in `assistantAction`; audio apps must support [`INPlayMediaIntent`](https://developer.apple.com/documentation/Intents/INPlayMediaIntent) and communication apps must support [`INStartCallIntent`](https://developer.apple.com/documentation/Intents/INStartCallIntent). The assistant cell is unavailable in all other app categories.
+Your app doesn’t receive a callback when the user selects the assistant cell. Instead, you configure an Intents Extension to handle the type of intent you specify in `assistantAction`; audio apps must support doc://com.apple.documentation/documentation/sirikit/inplaymediaintent and communication apps must support doc://com.apple.documentation/documentation/sirikit/instartcallintent. The assistant cell is unavailable in all other app categories.
 
 ## Parameters
 

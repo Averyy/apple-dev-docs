@@ -1,7 +1,7 @@
 # MPSCNNDivide
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A division operator.
 
@@ -16,18 +16,28 @@ A division operator.
 ## Declaration
 
 ```swift
-class MPSCNNDivide : MPSCNNArithmetic
+class MPSCNNDivide
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpscnndivide/2942508-init.md)
+- [init(device: any MTLDevice)](mpscnndivide/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNArithmetic](mpscnnarithmetic.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

@@ -24,6 +24,10 @@ case running
 - [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
 - [Receiving Downhill Skiing and Snowboarding Data](receiving-downhill-skiing-and-snowboarding-data.md)
 
+#### Discussion
+
+HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
+
 ## See Also
 
 - [HKWorkoutActivityType.preparationAndRecovery](hkworkoutactivitytype/preparationandrecovery.md)

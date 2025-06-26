@@ -1,7 +1,7 @@
 # MPSCNNNeuronSoftSignNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a softsign neuron filter.
 
@@ -16,18 +16,25 @@ A representation of a softsign neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronSoftSignNode : MPSCNNNeuronNode
+class MPSCNNNeuronSoftSignNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnnneuronsoftsignnode/2921463-init.md)
+- [init(source: MPSNNImageNode)](mpscnnneuronsoftsignnode/init(source:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuronNode](mpscnnneuronnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

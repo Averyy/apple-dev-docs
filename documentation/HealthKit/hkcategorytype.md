@@ -21,13 +21,19 @@ class HKCategoryType
 
 #### Overview
 
-The [`HKCategoryType`](hkcategorytype.md) class is a concrete subclass of the HKObjectType class. To create a category type instance, use the object type’s [`categoryType(forIdentifier:)`](hkobjecttype/categorytype(foridentifier:).md) convenience method.
+The [`HKCategoryType`](hkcategorytype.md) class is a concrete subclass of the HKObjectType class. To create a category type instance, use the [`init(_:)`](hkcategorytype/init(_:).md) convenience method.  For example, the following code creates a category sample type for handwashing events.
+
+```swift
+let handwashingCategoryType = HKCategoryType(.handwashingEvent)
+```
 
 Use category types to:
 
-- Request permission to read or write matching quantity samples.
-- Create and share matching quantity samples.
-- Query for matching quantity samples.
+- Request permission to read or write matching category samples.
+- Create and share matching category samples.
+- Query for matching category samples.
+
+For a complete list of category types, refer to [`HKCategoryTypeIdentifier`](hkcategorytypeidentifier.md).
 
 ## Topics
 

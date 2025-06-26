@@ -8,7 +8,6 @@ Requests authorization to provide parental controls for a child or individual.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

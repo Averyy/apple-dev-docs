@@ -21,6 +21,7 @@ let HKDataTypeIdentifierStateOfMind: String
 
 - [let HKMetadataKeyAppleFitnessPlusCatalogIdentifier: String](hkmetadatakeyapplefitnesspluscatalogidentifier.md)
 - [let HKMetadataKeyMaximumLightIntensity: String](hkmetadatakeymaximumlightintensity.md)
+  A key that indicates the maximum intensity of light for an outdoor time sample.
 - [let HKPredicateKeyPathWorkoutEffortRelationship: String](hkpredicatekeypathworkouteffortrelationship.md)
 
 

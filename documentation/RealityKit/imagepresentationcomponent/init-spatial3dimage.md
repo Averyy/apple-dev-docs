@@ -14,6 +14,11 @@ Creates a new image presentation component to present a spatial 3D image.
 init(spatial3DImage: ImagePresentationComponent.Spatial3DImage)
 ```
 
+## See Also
+
+- [ImagePresentationComponent.Spatial3DImage](imagepresentationcomponent/spatial3dimage.md)
+  A 3D spatial scene created from a 2D image.
+
 
 ---
 

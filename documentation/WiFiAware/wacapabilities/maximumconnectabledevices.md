@@ -17,8 +17,6 @@ static var maximumConnectableDevices: Int { get }
 
 ## See Also
 
-- [static var maximumConnections: Int](wacapabilities/maximumconnections.md)
-  The maximum number of unique data path connections your app can use simultaneously.
 - [static var maximumPublishableServices: Int](wacapabilities/maximumpublishableservices.md)
   The maximum number of unique services your app can publish simultaneously.
 - [static var maximumSubscribableServices: Int](wacapabilities/maximumsubscribableservices.md)

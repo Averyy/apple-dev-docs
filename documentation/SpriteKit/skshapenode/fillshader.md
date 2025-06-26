@@ -17,6 +17,7 @@ A custom shader used to determine the color of the filled portion of the shape n
 ## Declaration
 
 ```swift
+@MainActor
 var fillShader: SKShader? { get set }
 ```
 

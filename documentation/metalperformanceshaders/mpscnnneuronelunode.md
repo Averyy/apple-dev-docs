@@ -1,7 +1,7 @@
 # MPSCNNNeuronELUNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a parametric ELU neuron filter.
 
@@ -16,19 +16,26 @@ A representation of a parametric ELU neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronELUNode : MPSCNNNeuronNode
+class MPSCNNNeuronELUNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnnneuronelunode/2921447-init.md)
-- [init(source: MPSNNImageNode, a: Float)](mpscnnneuronelunode/2921454-init.md)
+- [init(source: MPSNNImageNode)](mpscnnneuronelunode/init(source:).md)
+- [init(source: MPSNNImageNode, a: Float)](mpscnnneuronelunode/init(source:a:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuronNode](mpscnnneuronnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

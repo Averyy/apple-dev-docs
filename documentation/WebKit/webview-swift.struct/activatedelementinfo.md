@@ -3,7 +3,7 @@
 **Framework**: WebKit  
 **Kind**: struct
 
-Contains information about an element the user activated in a webpage, which may be used to configure a context menu for that element. For links, the information contains the URL that is linked to.
+Contains information about an element the user activated in a webpage, which may be used to configure a context menu for that element.
 
 **Availability**:
 - iOS 18.4+
@@ -17,6 +17,10 @@ Contains information about an element the user activated in a webpage, which may
 ```swift
 struct ActivatedElementInfo
 ```
+
+#### Overview
+
+For links, the information contains the URL that is linked to.
 
 ## Topics
 

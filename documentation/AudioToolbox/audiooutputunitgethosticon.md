@@ -26,7 +26,7 @@ The [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) of the 
 
 - [func AudioOutputUnitPublish(UnsafePointer<AudioComponentDescription>, CFString, UInt32, AudioUnit) -> OSStatus](audiooutputunitpublish(_:_:_:_:).md)
   Registers an audio output unit for use by other applications.
-- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:_:).md)
+- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:).md)
   The UIImage of the audio component’s icon.
 - [func AudioComponentGetLastActiveTime(AudioComponent) -> CFAbsoluteTime](audiocomponentgetlastactivetime(_:).md)
   The time at which the application publishing the component was last active.

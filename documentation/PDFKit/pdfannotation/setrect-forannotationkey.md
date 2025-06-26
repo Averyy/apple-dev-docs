@@ -16,7 +16,7 @@ Sets a rectangle value in the annotation’s dictionary.
 ## Declaration
 
 ```swift
-func setRect(_ value: NSRect, forAnnotationKey key: PDFAnnotationKey) -> Bool
+func setRect(_ value: CGRect, forAnnotationKey key: PDFAnnotationKey) -> Bool
 ```
 
 #### Return Value

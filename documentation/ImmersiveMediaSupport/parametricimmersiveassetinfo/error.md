@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: struct
 
-ParametricImmersiveAssetInfo error struct.
+An error that occurs during the conversion process of the ParametricImmersive asset.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -19,12 +19,12 @@ struct Error
 
 ### Instance Properties
 - [var errorDescription: String?](parametricimmersiveassetinfo/error/errordescription.md)
-  ParametricImmersiveAssetInfo error description.
+  A description of what went wrong, for debugging purposes.
 - [let errorType: ParametricImmersiveAssetInfo.Error.ErrorType](parametricimmersiveassetinfo/error/errortype-swift.property.md)
-  ParametricImmersiveAssetInfo error type.
+  An error type describing this error.
 ### Enumerations
 - [ParametricImmersiveAssetInfo.Error.ErrorType](parametricimmersiveassetinfo/error/errortype-swift.enum.md)
-  ParametricImmersiveAssetInfo error type enum. If any error is thrown, please continue play the original AVAsset as is.
+  A type of an error that occurs during the conversion of the original wide field of view video asset to ParametricImmersive asset.
 ### Default Implementations
 - [Error Implementations](parametricimmersiveassetinfo/error/error-implementations.md)
 - [LocalizedError Implementations](parametricimmersiveassetinfo/error/localizederror-implementations.md)

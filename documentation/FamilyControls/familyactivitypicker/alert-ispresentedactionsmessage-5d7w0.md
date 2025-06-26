@@ -8,7 +8,6 @@ Presents an alert with a message when a given condition is true using a string v
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - watchOS 8.0+

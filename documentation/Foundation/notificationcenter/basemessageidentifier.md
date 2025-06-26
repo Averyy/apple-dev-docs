@@ -15,13 +15,14 @@
 ## Declaration
 
 ```swift
-struct BaseMessageIdentifier<M> where M : NotificationCenter.Message
+struct BaseMessageIdentifier<MessageType>
 ```
 
 ## Topics
 
 ### Initializers
-- [init()](notificationcenter/basemessageidentifier/init.md)
+- [init()](notificationcenter/basemessageidentifier/init-2yi72.md)
+- [init()](notificationcenter/basemessageidentifier/init-66tt2.md)
 
 ## Relationships
 

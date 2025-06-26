@@ -1,7 +1,7 @@
 # MPSCNNInstanceNormalizationGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient instance normalization kernel.
 
@@ -16,20 +16,26 @@ A representation of a gradient instance normalization kernel.
 ## Declaration
 
 ```swift
-class MPSCNNInstanceNormalizationGradientNode : MPSNNGradientFilterNode
+class MPSCNNInstanceNormalizationGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](mpscnninstancenormalizationgradientnode/2951954-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](mpscnninstancenormalizationgradientnode/init(sourcegradient:sourceimage:gradientstate:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
 ### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
 - [MPSNNTrainableNode](mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

@@ -79,6 +79,8 @@ While this method returns an [`AsyncSequence`](https://developer.apple.com/docum
   A query that returns the heartbeat data contained in a heartbeat series sample.
 - [class HKElectrocardiogramQuery](hkelectrocardiogramquery.md)
   A query that returns the underlying voltage measurements for an electrocardiogram sample.
+- [class HKWorkoutEffortRelationship](hkworkouteffortrelationship.md)
+- [class HKWorkoutEffortRelationshipQuery](hkworkouteffortrelationshipquery.md)
 
 
 ---

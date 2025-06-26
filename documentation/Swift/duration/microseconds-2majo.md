@@ -44,8 +44,6 @@ A `Duration` representing a given number of microseconds.
   Construct a `Duration` given a number of seconds milliseconds as a `Double` by converting the value into the closest attosecond scale value.
 - [static func microseconds(Double) -> Duration](duration/microseconds(_:)-1zzcc.md)
   Construct a `Duration` given a number of seconds microseconds as a `Double` by converting the value into the closest attosecond scale value.
-- [static func nanoseconds<T>(T) -> Duration](duration/nanoseconds(_:).md)
-  Construct a `Duration` given a number of nanoseconds represented as a `BinaryInteger`.
 
 
 ---

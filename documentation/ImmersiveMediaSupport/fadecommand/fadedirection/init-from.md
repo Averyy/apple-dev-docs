@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: init
 
-Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `String`.
+Creates a new instance by decoding from the given decoder.
 
 **Availability**:
-- macOS ?+
-- visionOS ?+
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 

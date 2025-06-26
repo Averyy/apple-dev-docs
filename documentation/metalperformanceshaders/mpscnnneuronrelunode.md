@@ -1,7 +1,7 @@
 # MPSCNNNeuronReLUNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation a ReLU neuron filter.
 
@@ -16,19 +16,26 @@ A representation a ReLU neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronReLUNode : MPSCNNNeuronNode
+class MPSCNNNeuronReLUNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnnneuronrelunode/2921464-init.md)
-- [init(source: MPSNNImageNode, a: Float)](mpscnnneuronrelunode/2921462-init.md)
+- [init(source: MPSNNImageNode)](mpscnnneuronrelunode/init(source:).md)
+- [init(source: MPSNNImageNode, a: Float)](mpscnnneuronrelunode/init(source:a:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuronNode](mpscnnneuronnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

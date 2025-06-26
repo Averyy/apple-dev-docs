@@ -17,6 +17,7 @@ Removes the receiving node from its parent.
 ## Declaration
 
 ```swift
+@MainActor
 func removeFromParent()
 ```
 

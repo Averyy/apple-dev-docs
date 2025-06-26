@@ -23,8 +23,8 @@ class UIViewController
 
 - [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
 - [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
-- [Responding to memory warnings](responding-to-memory-warnings.md)
 - [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
+- [Responding to memory warnings](responding-to-memory-warnings.md)
 
 #### Overview
 
@@ -457,7 +457,6 @@ For more information about how the system determines which view controllers to p
 - [var preferredContainerBackgroundStyle: UIContainerBackgroundStyle](uiviewcontroller/preferredcontainerbackgroundstyle.md)
 - [var tab: UITab?](uiviewcontroller/tab.md)
 ### Instance Methods
-- [func findView(withAccessibilityIdentifier: String) -> UIView?](uiviewcontroller/findview(withaccessibilityidentifier:).md)
 - [func setNeedsUpdateOfPreferredContainerBackgroundStyle()](uiviewcontroller/setneedsupdateofpreferredcontainerbackgroundstyle.md)
 - [func setNeedsUpdateProperties()](uiviewcontroller/setneedsupdateproperties.md)
   Call to manually request a properties update for the view controller. Multiple requests may be coalesced into a single update alongside the next layout pass.

@@ -1,7 +1,7 @@
 # MPSCNNSoftMax
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A neural transfer function that is useful for classification tasks.
 
@@ -16,7 +16,7 @@ A neural transfer function that is useful for classification tasks.
 ## Declaration
 
 ```swift
-class MPSCNNSoftMax : MPSCNNKernel
+class MPSCNNSoftMax
 ```
 
 #### Overview
@@ -25,7 +25,7 @@ The softmax filter is applied across feature channels in a convolutional manner 
 
 For each feature channel per pixel in an image in a feature map, the softmax filter computes the following:
 
-![pixel = exp(pixel(x,y,k))/sum(exp(pixel(x,y,0)) ... exp(pixel(x,y,N-1))](https://docs-assets.developer.apple.com/published/866dd98e74/059f1bf5-2d73-46ae-9162-89419ef01e99.png)
+![pixel = exp(pixel(x,y,k))/sum(exp(pixel(x,y,0)) … exp(pixel(x,y,N-1))](https://docs-assets.developer.apple.com/published/46f2f324f577960e552d1a59114e482d/media-2903559%402x.png)
 
 Where `R` is the result channel in the pixel and `N` is the number of feature channels.
 
@@ -33,6 +33,16 @@ Where `R` is the result channel in the pixel and `N` is the number of feature ch
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

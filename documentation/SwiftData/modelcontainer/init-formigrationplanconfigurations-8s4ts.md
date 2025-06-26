@@ -37,6 +37,8 @@ convenience init(for forTypes: any PersistentModel.Type..., migrationPlan: (any 
   Creates a model container using the specified schema, migration plan, and configurations.
 - [convenience init(for: Schema, migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: ModelConfiguration...) throws](modelcontainer/init(for:migrationplan:configurations:)-qof9.md)
   Creates a model container using the specified schema, migration plan, and zero or more configurations.
+- [protocol PersistentModel](persistentmodel.md)
+  An interface that enables SwiftData to manage a Swift class as a stored model.
 - [struct ModelConfiguration](modelconfiguration.md)
   A type that describes the configuration of an app’s schema or specific group of models.
 - [class Schema](schema.md)

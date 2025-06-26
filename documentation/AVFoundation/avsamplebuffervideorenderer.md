@@ -40,6 +40,8 @@ class AVSampleBufferVideoRenderer
   A key to retrieve an error object that provides the details of the failure.
 ### Instance Properties
 - [var presentationTimeExpectation: AVSampleBufferVideoRenderer.PresentationTimeExpectation](avsamplebuffervideorenderer/presentationtimeexpectation-swift.property.md)
+- [var recommededPixelBufferAttributes: CVPixelBufferAttributes](avsamplebuffervideorenderer/recommededpixelbufferattributes.md)
+  Recommended pixel buffer attributes for optimal performance when using CMSampleBuffers containing CVPixelbuffers.
 ### Instance Methods
 - [func displayedPixelBuffer() -> CVPixelBuffer?](avsamplebuffervideorenderer/displayedpixelbuffer.md)
 - [func loadVideoPerformanceMetrics(completionHandler: (AVVideoPerformanceMetrics?) -> Void)](avsamplebuffervideorenderer/loadvideoperformancemetrics(completionhandler:).md)

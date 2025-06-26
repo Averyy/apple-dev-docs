@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-func vmnet_network_configuration_disable_nat66(_ network: vmnet_network_configuration_ref)
+func vmnet_network_configuration_disable_nat66(_ config: vmnet_network_configuration_ref)
 ```
 
 #### Discussion
@@ -19,7 +19,7 @@ Disables NAT66 on a network.
 
 ## Parameters
 
-- `network`: The network object to be modified.
+- `config`: The network configuration object to be modified.
 
 
 ---

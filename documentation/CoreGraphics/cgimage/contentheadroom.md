@@ -20,11 +20,11 @@ var contentHeadroom: Float { get }
 
 ## See Also
 
-- [func CGImageCalculateContentHeadroom(CGImage) -> Float](cgimagecalculatecontentheadroom(_:).md)
-- [func CGImageGetContentAverageLightLevel(CGImage) -> Float](cgimagegetcontentaveragelightlevel(_:).md)
-- [func CGImageCalculateContentAverageLightLevel(CGImage) -> Float](cgimagecalculatecontentaveragelightlevel(_:).md)
-- [func CGImageCreateCopyWithContentAverageLightLevel(Float, CGImage) -> CGImage?](cgimagecreatecopywithcontentaveragelightlevel(_:_:).md)
-- [func CGImageCreateCopyWithCalculatedHDRStats(CGImage) -> CGImage?](cgimagecreatecopywithcalculatedhdrstats(_:).md)
+- [var calculatedContentHeadroom: Float](cgimage/calculatedcontentheadroom.md)
+- [var contentAverageLightLevel: Float](cgimage/contentaveragelightlevel.md)
+- [var calculatedContentAverageLightLevel: Float](cgimage/calculatedcontentaveragelightlevel.md)
+- [func copy(contentAverageLightLevel: Float) -> CGImage?](cgimage/copy(contentaveragelightlevel:).md)
+- [func copyWithCalculatedHDRStats() -> CGImage?](cgimage/copywithcalculatedhdrstats.md)
 
 
 ---

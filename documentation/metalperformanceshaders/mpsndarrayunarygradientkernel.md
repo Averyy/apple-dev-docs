@@ -1,7 +1,7 @@
 # MPSNDArrayUnaryGradientKernel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,22 +14,34 @@
 ## Declaration
 
 ```swift
-class MPSNDArrayUnaryGradientKernel : MPSNDArrayMultiaryGradientKernel
+class MPSNDArrayUnaryGradientKernel
 ```
 
 ## Topics
 
 ### Initializers
-- [init(coder: NSCoder, device: any MTLDevice)](mpsndarrayunarygradientkernel/3175011-init.md)
-- [init(device: any MTLDevice)](mpsndarrayunarygradientkernel/3143532-init.md)
+- [init(coder: NSCoder, device: any MTLDevice)](mpsndarrayunarygradientkernel/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsndarrayunarygradientkernel/init(device:).md)
 ### Instance Methods
-- [func encode(to: any MTLCommandBuffer, sourceArray: MPSNDArray, sourceGradient: MPSNDArray, gradientState: MPSState) -> MPSNDArray](mpsndarrayunarygradientkernel/3143530-encode.md)
-- [func encode(to: any MTLCommandBuffer, sourceArray: MPSNDArray, sourceGradient: MPSNDArray, gradientState: MPSState, destinationArray: MPSNDArray)](mpsndarrayunarygradientkernel/3143531-encode.md)
+- [func encode(to: any MTLCommandBuffer, sourceArray: MPSNDArray, sourceGradient: MPSNDArray, gradientState: MPSState) -> MPSNDArray](mpsndarrayunarygradientkernel/encode(to:sourcearray:sourcegradient:gradientstate:).md)
+- [func encode(to: any MTLCommandBuffer, sourceArray: MPSNDArray, sourceGradient: MPSNDArray, gradientState: MPSState, destinationArray: MPSNDArray)](mpsndarrayunarygradientkernel/encode(to:sourcearray:sourcegradient:gradientstate:destinationarray:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNDArrayMultiaryGradientKernel](mpsndarraymultiarygradientkernel.md)
+### Inherited By
+- [MPSNDArrayStridedSliceGradient](mpsndarraystridedslicegradient.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

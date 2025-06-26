@@ -1,7 +1,7 @@
 # MPSRectNoClip
 
 **Framework**: Metal Performance Shaders  
-**Kind**: data
+**Kind**: var
 
 **Availability**:
 - iOS 11.0+

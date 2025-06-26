@@ -91,18 +91,9 @@ In macOS, Core Graphics also includes services for working with display hardware
 - [struct CGBitmapParameters](cgbitmapparameters-4v8wo.md)
 - [struct CGColorModel](cgcolormodel.md)
 - [struct CGContentInfo](cgcontentinfo.md)
-- [struct CGContentToneMappingInfo](cgcontenttonemappinginfo.md)
-### Variables
-- [let kCGContentAverageLightLevel: CFString](kcgcontentaveragelightlevel.md)
-- [let kCGContentAverageLightLevelNits: CFString](kcgcontentaveragelightlevelnits.md)
-- [let kCGDynamicRangeConstrained: CFString](kcgdynamicrangeconstrained.md)
-- [let kCGDynamicRangeHigh: CFString](kcgdynamicrangehigh.md)
-- [let kCGDynamicRangeStandard: CFString](kcgdynamicrangestandard.md)
-- [let kCGPreferredDynamicRange: CFString](kcgpreferreddynamicrange.md)
 ### Functions
-- [func CGContextGetContentToneMappingInfo(CGContext) -> CGContentToneMappingInfo](cgcontextgetcontenttonemappinginfo(_:).md)
-- [func CGContextSynchronizeAttributes(CGContext)](cgcontextsynchronizeattributes(_:).md)
-- [func CGEXRToneMappingGammaGetDefaultOptions() -> CFDictionary](cgexrtonemappinggammagetdefaultoptions().md)
+- [func CGGradientCreateWithContentHeadroom(Float, CGColorSpace, UnsafePointer<CGFloat>, UnsafePointer<CGFloat>?, Int) -> CGGradient?](cggradientcreatewithcontentheadroom(_:_:_:_:_:).md)
+- [func CGGradientGetContentHeadroom(CGGradient) -> Float](cggradientgetcontentheadroom(_:).md)
 - [func CGPDFWrappedObjectCreateWithArray(CGPDFArrayRef) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewitharray(_:).md)
 - [func CGPDFWrappedObjectCreateWithBoolean(CGPDFBoolean) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithboolean(_:).md)
 - [func CGPDFWrappedObjectCreateWithDictionary(CGPDFDictionaryRef) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithdictionary(_:).md)
@@ -111,9 +102,13 @@ In macOS, Core Graphics also includes services for working with display hardware
 - [func CGPDFWrappedObjectCreateWithReal(CGPDFReal) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithreal(_:).md)
 - [func CGPDFWrappedObjectCreateWithStream(CGPDFStreamRef) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithstream(_:).md)
 - [func CGPDFWrappedObjectCreateWithString(CGPDFStringRef) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithstring(_:).md)
+- [func CGShadingCreateAxialWithContentHeadroom(Float, CGColorSpace, CGPoint, CGPoint, CGFunction, Bool, Bool) -> CGShading?](cgshadingcreateaxialwithcontentheadroom(_:_:_:_:_:_:_:).md)
+- [func CGShadingCreateRadialWithContentHeadroom(Float, CGColorSpace, CGPoint, CGFloat, CGPoint, CGFloat, CGFunction, Bool, Bool) -> CGShading?](cgshadingcreateradialwithcontentheadroom(_:_:_:_:_:_:_:_:_:).md)
+- [func CGShadingGetContentHeadroom(CGShading) -> Float](cgshadinggetcontentheadroom(_:).md)
 ### Enumerations
 - [enum CGBitmapLayout](cgbitmaplayout.md)
 - [enum CGComponent](cgcomponent.md)
+- [enum CGContentToneMappingInfo](cgcontenttonemappinginfo-swift.enum.md)
 - [enum CGImageComponentInfo](cgimagecomponentinfo.md)
 
 ## See Also

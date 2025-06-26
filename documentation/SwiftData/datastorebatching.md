@@ -3,6 +3,8 @@
 **Framework**: SwiftData  
 **Kind**: protocol
 
+An interface that enables a custom data store to support batch requests.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -21,8 +23,9 @@ protocol DataStoreBatching : DataStore
 
 ## Topics
 
-### Instance Methods
+### Deleting persisted model data
 - [func delete<T>(DataStoreBatchDeleteRequest<T>) throws](datastorebatching/delete(_:).md)
+- [struct DataStoreBatchDeleteRequest](datastorebatchdeleterequest.md)
 
 ## Relationships
 
@@ -30,6 +33,21 @@ protocol DataStoreBatching : DataStore
 - [DataStore](datastore.md)
 ### Conforming Types
 - [DefaultStore](defaultstore.md)
+
+## See Also
+
+- [Maintaining a local copy of server data](maintaining-a-local-copy-of-server-data.md)
+  Create and update a persistent store to cache read-only network data.
+- [class DefaultStore](defaultstore.md)
+  A data store that uses Core Data as its undelying storage mechanism.
+- [protocol DataStore](datastore.md)
+  An interface that enables SwiftData to read and write model data without knowledge of the underlying storage mechanism.
+- [protocol HistoryProviding](historyproviding.md)
+  An interface that enables a custom data store to provide the history of changes for its persisted models.
+- [Building a document-based app using SwiftData](../SwiftUI/Building-a-document-based-app-using-SwiftData.md)
+  Code along with the WWDC presenter to transform an app with SwiftData.
+- [struct ModelDocument](modeldocument.md)
+  A document type that uses SwiftData to manage its storage.
 
 
 ---

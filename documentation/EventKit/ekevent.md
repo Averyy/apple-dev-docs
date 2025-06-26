@@ -21,8 +21,8 @@ class EKEvent
 
 ## Mentions
 
-- [Creating events and reminders](creating-events-and-reminders.md)
 - [Retrieving events and reminders](retrieving-events-and-reminders.md)
+- [Creating events and reminders](creating-events-and-reminders.md)
 
 #### Overview
 

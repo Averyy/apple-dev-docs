@@ -25,7 +25,7 @@ var responseFormat: Transcript.ResponseFormat?
 - [Transcript.Prompt.ID](transcript/prompt/id-swift.typealias.md)
   A type representing the stable identity of the entity associated with an instance.
 - [var segments: [Transcript.Segment]](transcript/prompt/segments.md)
-  Ordered prompt segments, often interleaved text and images.
+  Ordered prompt segments.
 - [var options: GenerationOptions](transcript/prompt/options.md)
   Generation options associated with the prompt.
 

@@ -6,12 +6,12 @@
 Options for ray intersector mask options.
 
 **Availability**:
-- iOS 12.0+ - Deprecated in 17.0
-- iPadOS 12.0+ - Deprecated in 17.0
-- Mac Catalyst 13.0+ - Deprecated in 17.0
-- macOS 10.14+ - Deprecated in 14.0
-- tvOS 12.0+ - Deprecated in 17.0
-- visionOS 1.0+ - Deprecated in 1.0
+- iOS 12.0+
+- iPadOS 12.0+
+- Mac Catalyst 13.0+
+- macOS 10.14+
+- tvOS 12.0+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -22,16 +22,22 @@ struct MPSRayMaskOptions
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mpsraymaskoptions/2998477-init.md)
+- [init(rawValue: UInt)](mpsraymaskoptions/init(rawvalue:).md)
 ### Type Properties
-- [static var instance: MPSRayMaskOptions](mpsraymaskoptions/2980817-instance.md)
-- [static var primitive: MPSRayMaskOptions](mpsraymaskoptions/2980819-primitive.md)
+- [static var instance: MPSRayMaskOptions](mpsraymaskoptions/instance.md)
+- [static var primitive: MPSRayMaskOptions](mpsraymaskoptions/primitive.md)
 
 ## Relationships
 
 ### Conforms To
-- [OptionSet](../swift/optionset.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [OptionSet](../Swift/OptionSet.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SetAlgebra](../Swift/SetAlgebra.md)
 
 
 ---

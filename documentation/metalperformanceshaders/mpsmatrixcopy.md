@@ -1,9 +1,9 @@
 # MPSMatrixCopy
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
-A class that can perform multiple matrix copy operations. 
+A class that can perform multiple matrix copy operations.
 
 **Availability**:
 - iOS 11.0+
@@ -16,27 +16,37 @@ A class that can perform multiple matrix copy operations.
 ## Declaration
 
 ```swift
-class MPSMatrixCopy : MPSKernel
+class MPSMatrixCopy
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixcopy/2915334-init.md)
-- [init(device: any MTLDevice, copyRows: Int, copyColumns: Int, sourcesAreTransposed: Bool, destinationsAreTransposed: Bool)](mpsmatrixcopy/2915345-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixcopy/init(coder:device:).md)
+- [init(device: any MTLDevice, copyRows: Int, copyColumns: Int, sourcesAreTransposed: Bool, destinationsAreTransposed: Bool)](mpsmatrixcopy/init(device:copyrows:copycolumns:sourcesaretransposed:destinationsaretransposed:).md)
 ### Instance Properties
-- [var copyColumns: Int](mpsmatrixcopy/2915325-copycolumns.md)
-- [var copyRows: Int](mpsmatrixcopy/2915342-copyrows.md)
-- [var destinationsAreTransposed: Bool](mpsmatrixcopy/2915326-destinationsaretransposed.md)
-- [var sourcesAreTransposed: Bool](mpsmatrixcopy/2915340-sourcesaretransposed.md)
+- [var copyColumns: Int](mpsmatrixcopy/copycolumns.md)
+- [var copyRows: Int](mpsmatrixcopy/copyrows.md)
+- [var destinationsAreTransposed: Bool](mpsmatrixcopy/destinationsaretransposed.md)
+- [var sourcesAreTransposed: Bool](mpsmatrixcopy/sourcesaretransposed.md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, copyDescriptor: MPSMatrixCopyDescriptor)](mpsmatrixcopy/2915341-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, copyDescriptor: MPSMatrixCopyDescriptor, rowPermuteIndices: MPSVector?, rowPermuteOffset: Int, columnPermuteIndices: MPSVector?, columnPermuteOffset: Int)](mpsmatrixcopy/2935558-encode.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, copyDescriptor: MPSMatrixCopyDescriptor)](mpsmatrixcopy/encode(commandbuffer:copydescriptor:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, copyDescriptor: MPSMatrixCopyDescriptor, rowPermuteIndices: MPSVector?, rowPermuteOffset: Int, columnPermuteIndices: MPSVector?, columnPermuteOffset: Int)](mpsmatrixcopy/encode(commandbuffer:copydescriptor:rowpermuteindices:rowpermuteoffset:columnpermuteindices:columnpermuteoffset:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -45,7 +55,7 @@ class MPSMatrixCopy : MPSKernel
 - [class MPSMatrixCopyDescriptor](mpsmatrixcopydescriptor.md)
   A description of multiple matrix copy operations.
 - [class MPSImageCopyToMatrix](mpsimagecopytomatrix.md)
-  A class that copies image data to a matrix. 
+  A class that copies image data to a matrix.
 
 
 ---

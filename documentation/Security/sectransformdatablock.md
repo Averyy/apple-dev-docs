@@ -17,7 +17,7 @@ typealias SecTransformDataBlock = (CFTypeRef) -> Unmanaged<CFTypeRef>?
 
 #### Return Value
 
-`NULL` for the [`kSecTransformActionInternalizeExtraData`](ksectransformactioninternalizeextradata.md) action, the data to be passed to the output attribute for any other action, or a doc://com.apple.documentation/documentation/corefoundation/cferror-ru8 instance on failure.
+`NULL` for the [`kSecTransformActionInternalizeExtraData`](ksectransformactioninternalizeextradata.md) action, the data to be passed to the output attribute for any other action, or a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) instance on failure.
 
 ## Parameters
 

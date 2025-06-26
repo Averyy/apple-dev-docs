@@ -14,7 +14,7 @@ Shape used to draw the image of the element.
 
 ```swift
 @MainActor
-var imageShape: CPListImageRowItemImageGridElementShape { get }
+var imageShape: CPListImageRowItemImageGridElement.Shape { get }
 ```
 
 

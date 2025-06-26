@@ -15,13 +15,22 @@
 ## Declaration
 
 ```swift
-protocol AsyncMessage : Sendable, NotificationCenter.Message
+protocol AsyncMessage : Sendable
 ```
+
+## Topics
+
+### Associated Types
+- [associatedtype Subject](notificationcenter/asyncmessage/subject.md)
+### Type Properties
+- [static var name: Notification.Name](notificationcenter/asyncmessage/name.md)
+### Type Methods
+- [static func makeMessage(Notification) -> Self?](notificationcenter/asyncmessage/makemessage(_:).md)
+- [static func makeNotification(Self, object: Self.Subject?) -> Notification](notificationcenter/asyncmessage/makenotification(_:object:).md)
 
 ## Relationships
 
 ### Inherits From
-- [NotificationCenter.Message](notificationcenter/message.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types

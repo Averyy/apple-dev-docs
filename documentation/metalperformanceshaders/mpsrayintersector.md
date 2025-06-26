@@ -1,64 +1,71 @@
 # MPSRayIntersector
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel that performs intersection tests between rays and geometry.
 
 **Availability**:
-- iOS 12.0+ - Deprecated in 17.0
-- iPadOS 12.0+ - Deprecated in 17.0
-- Mac Catalyst 13.0+ - Deprecated in 17.0
-- macOS 10.14+ - Deprecated in 14.0
-- tvOS 12.0+ - Deprecated in 17.0
-- visionOS 1.0+ - Deprecated in 1.0
+- iOS 12.0+
+- iPadOS 12.0+
+- Mac Catalyst 13.0+
+- macOS 10.14+
+- tvOS 12.0+
+- visionOS 1.0+
 
 ## Declaration
 
 ```swift
-class MPSRayIntersector : MPSKernel
+class MPSRayIntersector
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsrayintersector/2998438-init.md)
-- [init(device: any MTLDevice)](mpsrayintersector/2998439-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsrayintersector/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsrayintersector/init(device:).md)
 ### Instance Properties
-- [var boundingBoxIntersectionTestType: MPSBoundingBoxIntersectionTestType](mpsrayintersector/3013799-boundingboxintersectiontesttype.md)
-- [var cullMode: MTLCullMode](mpsrayintersector/2998433-cullmode.md)
-- [var frontFacingWinding: MTLWinding](mpsrayintersector/2998437-frontfacingwinding.md)
-- [var intersectionDataType: MPSIntersectionDataType](mpsrayintersector/2998440-intersectiondatatype.md)
-- [var intersectionStride: Int](mpsrayintersector/2998441-intersectionstride.md)
-- [var rayDataType: MPSRayDataType](mpsrayintersector/2998443-raydatatype.md)
-- [var rayIndexDataType: MPSDataType](mpsrayintersector/3131884-rayindexdatatype.md)
-- [var rayMask: UInt32](mpsrayintersector/3152591-raymask.md)
-- [var rayMaskOperator: MPSRayMaskOperator](mpsrayintersector/3242876-raymaskoperator.md)
-- [var rayMaskOptions: MPSRayMaskOptions](mpsrayintersector/2998444-raymaskoptions.md)
-- [var rayStride: Int](mpsrayintersector/2998445-raystride.md)
-- [var triangleIntersectionTestType: MPSTriangleIntersectionTestType](mpsrayintersector/3013800-triangleintersectiontesttype.md)
+- [var boundingBoxIntersectionTestType: MPSBoundingBoxIntersectionTestType](mpsrayintersector/boundingboxintersectiontesttype.md)
+- [var cullMode: MTLCullMode](mpsrayintersector/cullmode.md)
+- [var frontFacingWinding: MTLWinding](mpsrayintersector/frontfacingwinding.md)
+- [var intersectionDataType: MPSIntersectionDataType](mpsrayintersector/intersectiondatatype.md)
+- [var intersectionStride: Int](mpsrayintersector/intersectionstride.md)
+- [var rayDataType: MPSRayDataType](mpsrayintersector/raydatatype.md)
+- [var rayIndexDataType: MPSDataType](mpsrayintersector/rayindexdatatype.md)
+- [var rayMask: UInt32](mpsrayintersector/raymask.md)
+- [var rayMaskOperator: MPSRayMaskOperator](mpsrayintersector/raymaskoperator.md)
+- [var rayMaskOptions: MPSRayMaskOptions](mpsrayintersector/raymaskoptions.md)
+- [var rayStride: Int](mpsrayintersector/raystride.md)
+- [var triangleIntersectionTestType: MPSTriangleIntersectionTestType](mpsrayintersector/triangleintersectiontesttype.md)
 ### Instance Methods
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsrayintersector/2998432-copy.md)
-- [func encode(with: NSCoder)](mpsrayintersector/2998436-encode.md)
-- [func encodeIntersection(commandBuffer: any MTLCommandBuffer, intersectionType: MPSIntersectionType, rayBuffer: any MTLBuffer, rayBufferOffset: Int, intersectionBuffer: any MTLBuffer, intersectionBufferOffset: Int, rayCount: Int, accelerationStructure: MPSAccelerationStructure)](mpsrayintersector/2998434-encodeintersection.md)
-- [func encodeIntersection(commandBuffer: any MTLCommandBuffer, intersectionType: MPSIntersectionType, rayBuffer: any MTLBuffer, rayBufferOffset: Int, intersectionBuffer: any MTLBuffer, intersectionBufferOffset: Int, rayCountBuffer: any MTLBuffer, rayCountBufferOffset: Int, accelerationStructure: MPSAccelerationStructure)](mpsrayintersector/2998435-encodeintersection.md)
-- [func encodeIntersection(commandBuffer: any MTLCommandBuffer, intersectionType: MPSIntersectionType, rayBuffer: any MTLBuffer, rayBufferOffset: Int, rayIndexBuffer: any MTLBuffer, rayIndexBufferOffset: Int, intersectionBuffer: any MTLBuffer, intersectionBufferOffset: Int, rayIndexCount: Int, accelerationStructure: MPSAccelerationStructure)](mpsrayintersector/3131882-encodeintersection.md)
-- [func encodeIntersection(commandBuffer: any MTLCommandBuffer, intersectionType: MPSIntersectionType, rayBuffer: any MTLBuffer, rayBufferOffset: Int, rayIndexBuffer: any MTLBuffer, rayIndexBufferOffset: Int, intersectionBuffer: any MTLBuffer, intersectionBufferOffset: Int, rayIndexCountBuffer: any MTLBuffer, rayIndexCountBufferOffset: Int, accelerationStructure: MPSAccelerationStructure)](mpsrayintersector/3131883-encodeintersection.md)
-- [func encodeIntersection(commandBuffer: any MTLCommandBuffer, intersectionType: MPSIntersectionType, rayTexture: any MTLTexture, intersectionTexture: any MTLTexture, accelerationStructure: MPSAccelerationStructure)](mpsrayintersector/3143553-encodeintersection.md)
-- [func recommendedMinimumRayBatchSize(rayCount: Int) -> Int](mpsrayintersector/2998446-recommendedminimumraybatchsize.md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsrayintersector/copy(with:device:).md)
+- [func encode(with: NSCoder)](mpsrayintersector/encode(with:).md)
+- [func encodeIntersection(commandBuffer: any MTLCommandBuffer, intersectionType: MPSIntersectionType, rayBuffer: any MTLBuffer, rayBufferOffset: Int, intersectionBuffer: any MTLBuffer, intersectionBufferOffset: Int, rayCount: Int, accelerationStructure: MPSAccelerationStructure)](mpsrayintersector/encodeintersection(commandbuffer:intersectiontype:raybuffer:raybufferoffset:intersectionbuffer:intersectionbufferoffset:raycount:accelerationstructure:).md)
+- [func encodeIntersection(commandBuffer: any MTLCommandBuffer, intersectionType: MPSIntersectionType, rayBuffer: any MTLBuffer, rayBufferOffset: Int, intersectionBuffer: any MTLBuffer, intersectionBufferOffset: Int, rayCountBuffer: any MTLBuffer, rayCountBufferOffset: Int, accelerationStructure: MPSAccelerationStructure)](mpsrayintersector/encodeintersection(commandbuffer:intersectiontype:raybuffer:raybufferoffset:intersectionbuffer:intersectionbufferoffset:raycountbuffer:raycountbufferoffset:accelerationstructure:).md)
+- [func encodeIntersection(commandBuffer: any MTLCommandBuffer, intersectionType: MPSIntersectionType, rayBuffer: any MTLBuffer, rayBufferOffset: Int, rayIndexBuffer: any MTLBuffer, rayIndexBufferOffset: Int, intersectionBuffer: any MTLBuffer, intersectionBufferOffset: Int, rayIndexCount: Int, accelerationStructure: MPSAccelerationStructure)](mpsrayintersector/encodeintersection(commandbuffer:intersectiontype:raybuffer:raybufferoffset:rayindexbuffer:rayindexbufferoffset:intersectionbuffer:intersectionbufferoffset:rayindexcount:accelerationstructure:).md)
+- [func encodeIntersection(commandBuffer: any MTLCommandBuffer, intersectionType: MPSIntersectionType, rayBuffer: any MTLBuffer, rayBufferOffset: Int, rayIndexBuffer: any MTLBuffer, rayIndexBufferOffset: Int, intersectionBuffer: any MTLBuffer, intersectionBufferOffset: Int, rayIndexCountBuffer: any MTLBuffer, rayIndexCountBufferOffset: Int, accelerationStructure: MPSAccelerationStructure)](mpsrayintersector/encodeintersection(commandbuffer:intersectiontype:raybuffer:raybufferoffset:rayindexbuffer:rayindexbufferoffset:intersectionbuffer:intersectionbufferoffset:rayindexcountbuffer:rayindexcountbufferoffset:accelerationstructure:).md)
+- [func encodeIntersection(commandBuffer: any MTLCommandBuffer, intersectionType: MPSIntersectionType, rayTexture: any MTLTexture, intersectionTexture: any MTLTexture, accelerationStructure: MPSAccelerationStructure)](mpsrayintersector/encodeintersection(commandbuffer:intersectiontype:raytexture:intersectiontexture:accelerationstructure:).md)
+- [func recommendedMinimumRayBatchSize(rayCount: Int) -> Int](mpsrayintersector/recommendedminimumraybatchsize(raycount:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
 ### Conforms To
-- [NSCopying](../foundation/nscopying.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
-- [Animating and Denoising a Raytraced Scene](animating_and_denoising_a_raytraced_scene.md)
-  Support dynamic scenes and denoising by extending your ray tracer with Metal Performance Shaders.
+- [Accelerating ray tracing and motion blur using Metal](../Metal/accelerating-ray-tracing-and-motion-blur-using-metal.md)
+  Generate ray-traced images with motion blur using GPU-based parallel processing.
 - [class MPSAccelerationStructureGroup](mpsaccelerationstructuregroup.md)
   A group of acceleration structures.
 - [class MPSInstanceAccelerationStructure](mpsinstanceaccelerationstructure.md)

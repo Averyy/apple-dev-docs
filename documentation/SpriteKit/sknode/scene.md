@@ -17,7 +17,6 @@ The scene node that contains this node.
 ## Declaration
 
 ```swift
-@MainActor
 var scene: SKScene? { get }
 ```
 

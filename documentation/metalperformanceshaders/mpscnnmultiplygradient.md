@@ -1,7 +1,7 @@
 # MPSCNNMultiplyGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient multiply operator.
 
@@ -16,18 +16,28 @@ A gradient multiply operator.
 ## Declaration
 
 ```swift
-class MPSCNNMultiplyGradient : MPSCNNArithmeticGradient
+class MPSCNNMultiplyGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, isSecondarySourceFilter: Bool)](mpscnnmultiplygradient/2956164-init.md)
+- [init(device: any MTLDevice, isSecondarySourceFilter: Bool)](mpscnnmultiplygradient/init(device:issecondarysourcefilter:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNArithmeticGradient](mpscnnarithmeticgradient.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

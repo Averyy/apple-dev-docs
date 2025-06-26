@@ -23,7 +23,7 @@ var minFrameDuration: CMTime { get }
 
 A track’s minimum frame duration is the reciprocal of its maximum frame rate. For example, a video track with a maximum frame rate of 30 frames per second has a minimum frame duration of 1/30, or 0.033 seconds.
 
-The value of this property is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid) if the track can’t calculate its minimum frame duration, or if it’s unknown.
+The value of this property is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid) if the track can’t calculate its minimum frame duration, or if it’s unknown.
 
 
 ---

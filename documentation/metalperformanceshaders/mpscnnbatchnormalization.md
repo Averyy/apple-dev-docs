@@ -1,7 +1,7 @@
 # MPSCNNBatchNormalization
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A batch normalization kernel.
 
@@ -16,34 +16,44 @@ A batch normalization kernel.
 ## Declaration
 
 ```swift
-class MPSCNNBatchNormalization : MPSCNNKernel
+class MPSCNNBatchNormalization
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnbatchnormalization/2942602-init.md)
-- [init(device: any MTLDevice, dataSource: any MPSCNNBatchNormalizationDataSource)](mpscnnbatchnormalization/2942600-init.md)
-- [init(device: any MTLDevice, dataSource: any MPSCNNBatchNormalizationDataSource, fusedNeuronDescriptor: MPSNNNeuronDescriptor?)](mpscnnbatchnormalization/3013771-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnbatchnormalization/init(coder:device:).md)
+- [convenience init(device: any MTLDevice, dataSource: any MPSCNNBatchNormalizationDataSource)](mpscnnbatchnormalization/init(device:datasource:).md)
+- [init(device: any MTLDevice, dataSource: any MPSCNNBatchNormalizationDataSource, fusedNeuronDescriptor: MPSNNNeuronDescriptor?)](mpscnnbatchnormalization/init(device:datasource:fusedneurondescriptor:).md)
 ### Instance Properties
-- [var dataSource: any MPSCNNBatchNormalizationDataSource](mpscnnbatchnormalization/2953967-datasource.md)
-- [var epsilon: Float](mpscnnbatchnormalization/2942599-epsilon.md)
-- [var numberOfFeatureChannels: Int](mpscnnbatchnormalization/2942604-numberoffeaturechannels.md)
+- [var dataSource: any MPSCNNBatchNormalizationDataSource](mpscnnbatchnormalization/datasource.md)
+- [var epsilon: Float](mpscnnbatchnormalization/epsilon.md)
+- [var numberOfFeatureChannels: Int](mpscnnbatchnormalization/numberoffeaturechannels.md)
 ### Instance Methods
-- [func encode(to: any MTLCommandBuffer, sourceImage: MPSImage, batchNormalizationState: MPSCNNBatchNormalizationState, destinationImage: MPSImage)](mpscnnbatchnormalization/2942591-encode.md)
-- [func encodeBatch(to: any MTLCommandBuffer, sourceImages: [MPSImage], batchNormalizationState: MPSCNNBatchNormalizationState, destinationImages: [MPSImage])](mpscnnbatchnormalization/2942610-encodebatch.md)
-- [func reloadDataSource(any MPSCNNBatchNormalizationDataSource)](mpscnnbatchnormalization/2942609-reloaddatasource.md)
-- [func reloadGammaAndBeta(with: any MTLCommandBuffer, gammaAndBetaState: MPSCNNNormalizationGammaAndBetaState)](mpscnnbatchnormalization/2953965-reloadgammaandbeta.md)
-- [func reloadGammaAndBetaFromDataSource()](mpscnnbatchnormalization/2976464-reloadgammaandbetafromdatasource.md)
-- [func reloadMeanAndVariance(with: any MTLCommandBuffer, meanAndVarianceState: MPSCNNNormalizationMeanAndVarianceState)](mpscnnbatchnormalization/3002359-reloadmeanandvariance.md)
-- [func reloadMeanAndVarianceFromDataSource()](mpscnnbatchnormalization/3002358-reloadmeanandvariancefromdatasou.md)
-- [func resultState(sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNBatchNormalizationState?](mpscnnbatchnormalization/2954874-resultstate.md)
-- [func temporaryResultState(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNBatchNormalizationState?](mpscnnbatchnormalization/2954875-temporaryresultstate.md)
+- [func encode(to: any MTLCommandBuffer, sourceImage: MPSImage, batchNormalizationState: MPSCNNBatchNormalizationState, destinationImage: MPSImage)](mpscnnbatchnormalization/encode(to:sourceimage:batchnormalizationstate:destinationimage:).md)
+- [func encodeBatch(to: any MTLCommandBuffer, sourceImages: [MPSImage], batchNormalizationState: MPSCNNBatchNormalizationState, destinationImages: [MPSImage])](mpscnnbatchnormalization/encodebatch(to:sourceimages:batchnormalizationstate:destinationimages:).md)
+- [func reloadDataSource(any MPSCNNBatchNormalizationDataSource)](mpscnnbatchnormalization/reloaddatasource(_:).md)
+- [func reloadGammaAndBeta(with: any MTLCommandBuffer, gammaAndBetaState: MPSCNNNormalizationGammaAndBetaState)](mpscnnbatchnormalization/reloadgammaandbeta(with:gammaandbetastate:).md)
+- [func reloadGammaAndBetaFromDataSource()](mpscnnbatchnormalization/reloadgammaandbetafromdatasource.md)
+- [func reloadMeanAndVariance(with: any MTLCommandBuffer, meanAndVarianceState: MPSCNNNormalizationMeanAndVarianceState)](mpscnnbatchnormalization/reloadmeanandvariance(with:meanandvariancestate:).md)
+- [func reloadMeanAndVarianceFromDataSource()](mpscnnbatchnormalization/reloadmeanandvariancefromdatasource.md)
+- [func resultState(sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNBatchNormalizationState?](mpscnnbatchnormalization/resultstate(sourceimage:sourcestates:destinationimage:).md)
+- [func temporaryResultState(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNBatchNormalizationState?](mpscnnbatchnormalization/temporaryresultstate(commandbuffer:sourceimage:sourcestates:destinationimage:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

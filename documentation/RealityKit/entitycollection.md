@@ -66,7 +66,7 @@ protocol EntityCollection : Collection where Self.Element == Entity, Self.Index 
 - [struct RealityViewEntityCollection](realityviewentitycollection.md)
   A collection of entities in a RealityView.
 - [struct RealityViewLayoutOption](realityviewlayoutoption.md)
-  Specifies the frame sizing and content alignment option for`RealityView`.
+  Options that specify the frame sizing and content alignment option for `RealityView`.
 
 
 ---

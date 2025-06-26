@@ -28,7 +28,7 @@ This initializer throws an error if reading from the decoder fails, or if the da
 
 ## See Also
 
-- [init(entries: [Transcript.Entry])](transcript/init(entries:).md)
+- [init(entries: some Sequence<Transcript.Entry>)](transcript/init(entries:).md)
   Creates a transcript.
 - [Transcript.Entry](transcript/entry.md)
   An entry in a transcript.

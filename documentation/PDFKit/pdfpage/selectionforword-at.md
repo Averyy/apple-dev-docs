@@ -16,7 +16,7 @@ Returns the whole word that includes the specified point.
 ## Declaration
 
 ```swift
-func selectionForWord(at point: NSPoint) -> PDFSelection?
+func selectionForWord(at point: CGPoint) -> PDFSelection?
 ```
 
 #### Discussion

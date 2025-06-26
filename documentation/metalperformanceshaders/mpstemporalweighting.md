@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-enum MPSTemporalWeighting : UInt, @unchecked Sendable
+enum MPSTemporalWeighting
 ```
 
 ## Topics
@@ -22,11 +22,18 @@ enum MPSTemporalWeighting : UInt, @unchecked Sendable
 ### Enumeration Cases
 - [MPSTemporalWeighting.average](mpstemporalweighting/average.md)
 - [MPSTemporalWeighting.exponentialMovingAverage](mpstemporalweighting/exponentialmovingaverage.md)
+### Initializers
+- [init?(rawValue: UInt)](mpstemporalweighting/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: method
 
+Returns a HealthKit unit for measuring illuminance, using lux units with the provided prefix.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,6 +18,10 @@
 ```swift
 class func luxUnit(with prefix: HKMetricPrefix) -> Self
 ```
+
+## Parameters
+
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see  .
 
 
 ---

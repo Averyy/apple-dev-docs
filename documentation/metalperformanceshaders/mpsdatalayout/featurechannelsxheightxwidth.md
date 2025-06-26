@@ -1,7 +1,7 @@
 # MPSDataLayout.featureChannelsxHeightxWidth
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.0+
@@ -14,8 +14,12 @@
 ## Declaration
 
 ```swift
-case featureChannelsxHeightxWidth = 1
+case featureChannelsxHeightxWidth
 ```
+
+## See Also
+
+- [MPSDataLayout.HeightxWidthxFeatureChannels](mpsdatalayout/heightxwidthxfeaturechannels.md)
 
 
 ---

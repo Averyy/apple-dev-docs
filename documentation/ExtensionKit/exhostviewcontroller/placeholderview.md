@@ -15,7 +15,7 @@ A view that’s used when the view controller has no content to display.
 
 ```swift
 @MainActor
-var placeholderView: UIView { get set }
+var placeholderView: NSView { get set }
 ```
 
 ## See Also

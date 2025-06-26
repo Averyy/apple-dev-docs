@@ -17,7 +17,6 @@ The range of allowed random values for a particle’s initial scale.
 ## Declaration
 
 ```swift
-@MainActor
 var particleScaleRange: CGFloat { get set }
 ```
 

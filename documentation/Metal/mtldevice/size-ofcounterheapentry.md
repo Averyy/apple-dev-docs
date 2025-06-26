@@ -26,7 +26,7 @@ The size of the post-transformation entry from a [`MTL4CounterHeap`](mtl4counter
 
 #### Discussion
 
-In order to use the data available in a [`MTL4CounterHeap`](mtl4counterheap.md), your app first resolves it either in the CPU timeline or in the GPU timeline. When your app calls [`resolveCounterHeap:withRange:intoBuffer:atOffset:waitFence:updateFence:`](mtl4commandbuffer/resolvecounterheap:withrange:intobuffer:atoffset:waitfence:updatefence:.md) to resolve counter data in the GPU timeline, Metal writes the data into a [`MTLBuffer`](mtlbuffer.md).
+In order to use the data available in a [`MTL4CounterHeap`](mtl4counterheap.md), your app first resolves it either in the CPU timeline or in the GPU timeline. When your app calls [`resolveCounterHeap:withRange:intoBuffer:waitFence:updateFence:`](mtl4commandbuffer/resolvecounterheap:withrange:intobuffer:waitfence:updatefence:.md) to resolve counter data in the GPU timeline, Metal writes the data into a [`MTLBuffer`](mtlbuffer.md).
 
 During this process, Metal transform the data in the heap into a format consisting of entries of the size that this method advertises, based on the [`MTL4CounterHeapType`](mtl4counterheaptype.md).
 

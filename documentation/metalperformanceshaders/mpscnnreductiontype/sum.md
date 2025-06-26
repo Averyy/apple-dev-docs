@@ -1,7 +1,7 @@
 # MPSCNNReductionType.sum
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.3+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case sum = 1
+case sum
 ```
 
 

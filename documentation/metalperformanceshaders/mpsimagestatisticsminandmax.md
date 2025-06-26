@@ -1,7 +1,7 @@
 # MPSImageStatisticsMinAndMax
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel that computes the minimum and maximum pixel values for a given region of an image.
 
@@ -16,28 +16,38 @@ A kernel that computes the minimum and maximum pixel values for a given region o
 ## Declaration
 
 ```swift
-class MPSImageStatisticsMinAndMax : MPSUnaryImageKernel
+class MPSImageStatisticsMinAndMax
 ```
 
 #### Overview
 
 The minimum and maximum values are written to the destination image at the following pixel locations:
 
-- Minimum value is written at pixel location` (0, 0)`
+- Minimum value is written at pixel location `(0, 0)`
 - Maximum value is written at pixel location `(1, 0)`
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagestatisticsminandmax/2867026-init.md)
-- [init(device: any MTLDevice)](mpsimagestatisticsminandmax/2867125-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagestatisticsminandmax/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsimagestatisticsminandmax/init(device:).md)
 ### Instance Properties
-- [var clipRectSource: MTLRegion](mpsimagestatisticsminandmax/2867045-cliprectsource.md)
+- [var clipRectSource: MTLRegion](mpsimagestatisticsminandmax/cliprectsource.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

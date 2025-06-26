@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 12.1+
-- iPadOS 12.1+
-- Mac Catalyst 13.0+
-- macOS 10.14.1+
-- tvOS 12.1+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,11 +20,17 @@ struct MPSImageRegion
 ## Topics
 
 ### Initializers
-- [init()](mpsimageregion/3037442-init.md)
-- [init(offset: MPSImageCoordinate, size: MPSImageCoordinate)](mpsimageregion/3037443-init.md)
+- [init()](mpsimageregion/init.md)
+- [init(offset: MPSImageCoordinate, size: MPSImageCoordinate)](mpsimageregion/init(offset:size:).md)
 ### Instance Properties
-- [var offset: MPSImageCoordinate](mpsimageregion/3037371-offset.md)
-- [var size: MPSImageCoordinate](mpsimageregion/3037372-size.md)
+- [var offset: MPSImageCoordinate](mpsimageregion/offset.md)
+- [var size: MPSImageCoordinate](mpsimageregion/size.md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

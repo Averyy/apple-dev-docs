@@ -1,7 +1,7 @@
 # MPSRNNSingleGateDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A description of a simple recurrent block or layer.
 
@@ -16,16 +16,16 @@ A description of a simple recurrent block or layer.
 ## Declaration
 
 ```swift
-class MPSRNNSingleGateDescriptor : MPSRNNDescriptor
+class MPSRNNSingleGateDescriptor
 ```
 
 #### Overview
 
-The recurrent neural network (RNN) layer initialized with a [`MPSRNNSingleGateDescriptor`](mpsrnnsinglegatedescriptor.md) transforms the input data (image or matrix) and previous output with a set of filters. Each produces one feature map in the new output data. 
+The recurrent neural network (RNN) layer initialized with a [`MPSRNNSingleGateDescriptor`](mpsrnnsinglegatedescriptor.md) transforms the input data (image or matrix) and previous output with a set of filters. Each produces one feature map in the new output data.
 
 You may provide the RNN unit with a single input or a sequence of inputs.
 
-##### 2888084
+##### Description of Operation
 
 1. Let `x_j` be the input data (at time index `t` of sequence, `j` index containing quadruplet: batch index, `x,y` and feature index (`x = y = 0` for matrices)).
 2. Let `h0_j` be the recurrent input (previous output) data from previous time step (at time index `t-1` of sequence).
@@ -42,24 +42,31 @@ h1_i = gi( W_ij * x_j + U_ij * h0_j  + b_i )
 
 The `*` stands for convolution (see [`MPSRNNImageInferenceLayer`](mpsrnnimageinferencelayer.md)) or matrix-vector/matrix multiplication (see [`MPSRNNMatrixInferenceLayer`](mpsrnnmatrixinferencelayer.md)).
 
-Summation is over index `j` (except for the batch index), but there's no summation over repeated index `i` (the output index).
+Summation is over index `j` (except for the batch index), but there’s no summation over repeated index `i` (the output index).
 
-Note that for validity, all intermediate images must be of same size, and the `U` matrix must be square (that is, [`outputFeatureChannels`](mpsrnndescriptor/2865702-outputfeaturechannels.md) `==` [`inputFeatureChannels`](mpsrnndescriptor/2865707-inputfeaturechannels.md)). Also, the bias terms are scalars with regard to spatial dimensions.
+Note that for validity, all intermediate images must be of same size, and the `U` matrix must be square (that is, [`outputFeatureChannels`](mpsrnndescriptor/outputfeaturechannels.md) `==` [`inputFeatureChannels`](mpsrnndescriptor/inputfeaturechannels.md)). Also, the bias terms are scalars with regard to spatial dimensions.
 
 ## Topics
 
 ### Instance Properties
-- [var inputWeights: (any MPSCNNConvolutionDataSource)?](mpsrnnsinglegatedescriptor/2865723-inputweights.md)
-- [var recurrentWeights: (any MPSCNNConvolutionDataSource)?](mpsrnnsinglegatedescriptor/2865686-recurrentweights.md)
+- [var inputWeights: (any MPSCNNConvolutionDataSource)?](mpsrnnsinglegatedescriptor/inputweights.md)
+- [var recurrentWeights: (any MPSCNNConvolutionDataSource)?](mpsrnnsinglegatedescriptor/recurrentweights.md)
 - [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
 ### Type Methods
-- [class func createRNNSingleGateDescriptor(withInputFeatureChannels: Int, outputFeatureChannels: Int) -> Self](mpsrnnsinglegatedescriptor/2865703-creaternnsinglegatedescriptor.md)
+- [class func createRNNSingleGateDescriptor(withInputFeatureChannels: Int, outputFeatureChannels: Int) -> Self](mpsrnnsinglegatedescriptor/creaternnsinglegatedescriptor(withinputfeaturechannels:outputfeaturechannels:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSRNNDescriptor](mpsrnndescriptor.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

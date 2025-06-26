@@ -1,34 +1,35 @@
 # MPSHandle
 
 **Framework**: Metal Performance Shaders  
-**Kind**: intf
+**Kind**: protocol
 
 The protocol that provides resource identification.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-protocol MPSHandle
+protocol MPSHandle : NSSecureCoding, NSObjectProtocol
 ```
 
 ## Topics
 
 ### Instance Methods
-- [func label() -> String?](mpshandle/2866414-label.md)
+- [func label() -> String?](mpshandle/label.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

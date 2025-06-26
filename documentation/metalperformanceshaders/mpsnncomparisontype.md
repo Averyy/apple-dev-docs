@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 12.1+
-- iPadOS 12.1+
-- Mac Catalyst 13.0+
-- macOS 10.14.1+
-- tvOS 12.1+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,20 +20,26 @@ struct MPSNNComparisonType
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mpsnncomparisontype/3037444-init.md)
+- [init(rawValue: UInt)](mpsnncomparisontype/init(rawvalue:).md)
 ### Type Properties
-- [static var equal: MPSNNComparisonType](mpsnncomparisontype/3037378-equal.md)
-- [static var greater: MPSNNComparisonType](mpsnncomparisontype/3037379-greater.md)
-- [static var greaterOrEqual: MPSNNComparisonType](mpsnncomparisontype/3037380-greaterorequal.md)
-- [static var less: MPSNNComparisonType](mpsnncomparisontype/3037381-less.md)
-- [static var lessOrEqual: MPSNNComparisonType](mpsnncomparisontype/3037382-lessorequal.md)
-- [static var notEqual: MPSNNComparisonType](mpsnncomparisontype/3037383-notequal.md)
+- [static var equal: MPSNNComparisonType](mpsnncomparisontype/equal.md)
+- [static var greater: MPSNNComparisonType](mpsnncomparisontype/greater.md)
+- [static var greaterOrEqual: MPSNNComparisonType](mpsnncomparisontype/greaterorequal.md)
+- [static var less: MPSNNComparisonType](mpsnncomparisontype/less.md)
+- [static var lessOrEqual: MPSNNComparisonType](mpsnncomparisontype/lessorequal.md)
+- [static var notEqual: MPSNNComparisonType](mpsnncomparisontype/notequal.md)
 
 ## Relationships
 
 ### Conforms To
-- [OptionSet](../swift/optionset.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [OptionSet](../Swift/OptionSet.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SetAlgebra](../Swift/SetAlgebra.md)
 
 
 ---

@@ -8,14 +8,14 @@ Solve systems of equations, factorize matrices and multiply matrices and vectors
 
 ### Matrices
 - [class MPSMatrix](mpsmatrix.md)
-  A 2D array of data that stores the data's values.
+  A 2D array of data that stores the data’s values.
 - [class MPSMatrixDescriptor](mpsmatrixdescriptor.md)
   A description of attributes used to create an MPS matrix.
 - [class MPSTemporaryMatrix](mpstemporarymatrix.md)
   A matrix allocated on GPU private memory.
 ### Vectors
 - [class MPSVector](mpsvector.md)
-  A 1D array of data that stores the data's values.
+  A 1D array of data that stores the data’s values.
 - [class MPSVectorDescriptor](mpsvectordescriptor.md)
   A description of the length and data type of a vector.
 - [class MPSTemporaryVector](mpstemporaryvector.md)
@@ -47,13 +47,13 @@ Solve systems of equations, factorize matrices and multiply matrices and vectors
   A kernel for computing the top-K values and their corresponding indices in a matrix.
 ### Matrix Copying Operations
 - [class MPSMatrixCopy](mpsmatrixcopy.md)
-  A class that can perform multiple matrix copy operations. 
+  A class that can perform multiple matrix copy operations.
 - [class MPSMatrixCopyToImage](mpsmatrixcopytoimage.md)
   A kernel that copies matrix data to a Metal Performance Shaders image.
 - [class MPSMatrixCopyDescriptor](mpsmatrixcopydescriptor.md)
   A description of multiple matrix copy operations.
 - [class MPSImageCopyToMatrix](mpsimagecopytomatrix.md)
-  A class that copies image data to a matrix. 
+  A class that copies image data to a matrix.
 ### Matrix Neural Network Operations
 - [class MPSMatrixFullyConnected](mpsmatrixfullyconnected.md)
   A kernel for applying a fully connected neural network layer.
@@ -81,4 +81,4 @@ Solve systems of equations, factorize matrices and multiply matrices and vectors
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/matrices_and_vectors)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/matrices-and-vectors)*

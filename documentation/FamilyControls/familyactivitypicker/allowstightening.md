@@ -8,7 +8,6 @@ Sets whether text in this view can compress the space between characters when ne
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+

@@ -161,12 +161,20 @@ struct LastModifiedView: View {
 
 ## See Also
 
-- [Reverting data changes using the undo manager](reverting-data-changes-using-the-undo-manager.md)
-  Automatically record data change operations that people perform in your SwiftUI app, and let them undo and redo those changes.
 - [class ModelContainer](modelcontainer.md)
   An object that manages an app’s schema and model storage configuration.
-- [struct ModelDocument](modeldocument.md)
-  A document type that uses SwiftData to manage its storage.
+- [Fetching and filtering time-based model changes](fetching-and-filtering-time-based-model-changes.md)
+  Track all inserts, updates, and deletes that occur in a data store and process them as a series of chronological transactions.
+- [struct HistoryDescriptor](historydescriptor.md)
+  A type that describes the criteria, and, optionally, sort order, to use when fetching history data
+- [Deleting persistent data from your app](deleting-persistent-data-from-your-app.md)
+  Explore different ways to use SwiftData to delete persistent data.
+- [Reverting data changes using the undo manager](reverting-data-changes-using-the-undo-manager.md)
+  Automatically record data change operations that people perform in your SwiftUI app, and let them undo and redo those changes.
+- [Syncing model data across a person’s devices](syncing-model-data-across-a-persons-devices.md)
+  Add the required capabilities and define a compatible schema to enable SwiftData to automatically sync your app’s model data using iCloud.
+- [Concurrency support](concurrencysupport.md)
+  Types you use to access model attributes and perform storage-related tasks in a safe and isolated way.
 
 
 ---

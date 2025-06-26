@@ -21,8 +21,8 @@ class HKStatisticsQuery
 
 ## Mentions
 
-- [Executing Statistics Collection Queries](executing-statistics-collection-queries.md)
 - [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
+- [Executing Statistics Collection Queries](executing-statistics-collection-queries.md)
 
 #### Overview
 

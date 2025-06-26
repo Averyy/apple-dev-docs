@@ -11,7 +11,7 @@ Creates a new `URL` by expanding the RFC 6570 template and variables.
 - Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
-- visionOS 1.0+
+- visionOS 26.0+ (Beta)
 - watchOS 26.0+ (Beta)
 
 ## Declaration

@@ -8,7 +8,6 @@ Associates a search token with the value of this view when used as a search sugg
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - macOS 13.0+
 
 ## Declaration

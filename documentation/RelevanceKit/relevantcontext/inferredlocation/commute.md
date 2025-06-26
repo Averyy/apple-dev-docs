@@ -3,7 +3,7 @@
 **Framework**: RelevanceKit  
 **Kind**: property
 
-The route during the user’s commute, for example between “home” and “work”.
+A person’s commute between two inferred locations.
 
 **Availability**:
 - iOS 17.0+

@@ -21,8 +21,8 @@ struct Product
 
 ## Mentions
 
-- [Supporting promoted In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
 - [Supporting Family Sharing in your app](supporting-family-sharing-in-your-app.md)
+- [Supporting promoted In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
 
 #### Overview
 
@@ -117,6 +117,8 @@ For information about configuring In-App Purchases in App Store Connect, see [`O
   The JSON representation of the product information.
 ### Getting subscription relationship
 - [Product.SubscriptionRelationship](product/subscriptionrelationship.md)
+### Instance Properties
+- [var currentEntitlements: Transaction.Transactions](product/currententitlements.md)
 
 ## Relationships
 

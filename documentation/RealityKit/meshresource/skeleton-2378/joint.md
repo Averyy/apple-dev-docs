@@ -22,7 +22,7 @@ struct Joint
 ## Topics
 
 ### Initializers
-- [init(name:parentIndex:inverseBindPoseMatrix:restPoseTransform:)](meshresource/skeleton-2om5m/joint/init(name:parentindex:inversebindposematrix:restposetransform:).md)
+- [init(name:parentIndex:inverseBindPoseMatrix:restPoseTransform:)](meshresource/skeleton-2378/joint/init(name:parentindex:inversebindposematrix:restposetransform:).md)
   Creates a single joint in a skeleton.
 ### Instance Properties
 - [var inverseBindPoseMatrix: simd_float4x4](meshresource/skeleton-2378/joint/inversebindposematrix.md)

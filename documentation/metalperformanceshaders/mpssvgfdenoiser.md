@@ -1,7 +1,7 @@
 # MPSSVGFDenoiser
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,28 +14,35 @@
 ## Declaration
 
 ```swift
-class MPSSVGFDenoiser : NSObject
+class MPSSVGFDenoiser
 ```
 
 ## Topics
 
 ### Initializers
-- [init(SVGF: MPSSVGF, textureAllocator: any MPSSVGFTextureAllocator)](mpssvgfdenoiser/3242908-init.md)
-- [init(device: any MTLDevice)](mpssvgfdenoiser/3353094-init.md)
+- [init(SVGF: MPSSVGF, textureAllocator: any MPSSVGFTextureAllocator)](mpssvgfdenoiser/init(svgf:textureallocator:).md)
+- [init(device: any MTLDevice)](mpssvgfdenoiser/init(device:).md)
 ### Instance Properties
-- [var bilateralFilterIterations: Int](mpssvgfdenoiser/3242902-bilateralfilteriterations.md)
-- [var svgf: MPSSVGF](mpssvgfdenoiser/3242914-svgf.md)
-- [var textureAllocator: any MPSSVGFTextureAllocator](mpssvgfdenoiser/3242915-textureallocator.md)
+- [var bilateralFilterIterations: Int](mpssvgfdenoiser/bilateralfilteriterations.md)
+- [var svgf: MPSSVGF](mpssvgfdenoiser/svgf.md)
+- [var textureAllocator: any MPSSVGFTextureAllocator](mpssvgfdenoiser/textureallocator.md)
 ### Instance Methods
-- [func clearTemporalHistory()](mpssvgfdenoiser/3242903-cleartemporalhistory.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceTexture: any MTLTexture, destinationTexture: AutoreleasingUnsafeMutablePointer<any MTLTexture>, sourceTexture2: (any MTLTexture)?, destinationTexture2: AutoreleasingUnsafeMutablePointer<any MTLTexture>?, motionVectorTexture: (any MTLTexture)?, depthNormalTexture: any MTLTexture, previousDepthNormalTexture: (any MTLTexture)?)](mpssvgfdenoiser/3353092-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceTexture: any MTLTexture, motionVectorTexture: (any MTLTexture)?, depthNormalTexture: any MTLTexture, previousDepthNormalTexture: (any MTLTexture)?) -> any MTLTexture](mpssvgfdenoiser/3353093-encode.md)
-- [func releaseTemporaryTextures()](mpssvgfdenoiser/3242911-releasetemporarytextures.md)
+- [func clearTemporalHistory()](mpssvgfdenoiser/cleartemporalhistory.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceTexture: any MTLTexture, destinationTexture: AutoreleasingUnsafeMutablePointer<any MTLTexture>, sourceTexture2: (any MTLTexture)?, destinationTexture2: AutoreleasingUnsafeMutablePointer<any MTLTexture>?, motionVectorTexture: (any MTLTexture)?, depthNormalTexture: any MTLTexture, previousDepthNormalTexture: (any MTLTexture)?)](mpssvgfdenoiser/encode(commandbuffer:sourcetexture:destinationtexture:sourcetexture2:destinationtexture2:motionvectortexture:depthnormaltexture:previousdepthnormaltexture:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceTexture: any MTLTexture, motionVectorTexture: (any MTLTexture)?, depthNormalTexture: any MTLTexture, previousDepthNormalTexture: (any MTLTexture)?) -> any MTLTexture](mpssvgfdenoiser/encode(commandbuffer:sourcetexture:motionvectortexture:depthnormaltexture:previousdepthnormaltexture:).md)
+- [func releaseTemporaryTextures()](mpssvgfdenoiser/releasetemporarytextures.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

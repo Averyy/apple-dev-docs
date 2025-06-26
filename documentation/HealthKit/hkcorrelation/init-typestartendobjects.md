@@ -31,7 +31,7 @@ Use this method when you do not need to include additional metadata and the data
 
 ## Parameters
 
-- `correlationType`: The type for this correlation. For a complete list of correlation types, see Correlation Identifiers in  .
+- `correlationType`: The type for this correlation. For a complete list of correlation type identifiers, see  .
 - `startDate`: The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ( ).
 - `endDate`: The end date for the sample. This date must be equal to or later than the start date; otherwise, this method throws an exception ( ).
 - `objects`: A set of   objects. Specifically, this set contains the quantity and category samples to be grouped into this correlation.

@@ -24,6 +24,8 @@ To add items to the library, create a structure that conforms to the [`LibraryCo
 
 - [Previews in Xcode](previews-in-xcode.md)
   Generate dynamic, interactive previews of your custom views.
+- [Performance analysis](performance-analysis.md)
+  Measure and improve your app’s responsiveness.
 
 
 ---

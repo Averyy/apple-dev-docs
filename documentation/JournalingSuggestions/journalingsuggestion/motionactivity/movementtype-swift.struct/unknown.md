@@ -6,7 +6,7 @@
 Returns a Boolean value indicating whether two values are not equal.
 
 **Availability**:
-- iOS 17.2+
+- iOS ?+
 
 ## Declaration
 

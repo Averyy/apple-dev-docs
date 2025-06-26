@@ -10,10 +10,10 @@ Requests user confirmation before performing the app intent.
 - iPadOS 16.0+
 - Mac Catalyst ?+
 - macOS 13.0+
-- visionOS ?+
+- tvOS 16.0+
 - watchOS 9.0+
 - Unknown ?+ - Deprecated
-- tvOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

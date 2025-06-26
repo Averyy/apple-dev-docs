@@ -175,11 +175,11 @@ func renderMask() throws -> CGImage? {
 
 ## See Also
 
-- [Classifying Images with Vision and Core ML](model_integration_samples/classifying_images_with_vision_and_core_ml.md)
+- [Classifying Images with Vision and Core ML](classifying-images-with-vision-and-core-ml.md)
   Crop and scale photos using the Vision framework and classify them with a Core ML model.
 - [Detecting human body poses in an image](detecting-human-body-poses-in-an-image.md)
   Locate people and the stance of their bodies by analyzing an image with a PoseNet model.
-- [Understanding a Dice Roll with Vision and Object Detection](model_integration_samples/understanding_a_dice_roll_with_vision_and_object_detection.md)
+- [Understanding a Dice Roll with Vision and Object Detection](understanding-a-dice-roll-with-vision-and-object-detection.md)
   Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
 
 

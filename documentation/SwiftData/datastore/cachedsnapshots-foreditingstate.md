@@ -20,6 +20,12 @@
 func cachedSnapshots(for persistentIdentifiers: [PersistentIdentifier], editingState: EditingState) throws -> [PersistentIdentifier : Self.Snapshot]
 ```
 
+## See Also
+
+- [func initializeState(for: EditingState)](datastore/initializestate(for:).md)
+- [struct EditingState](editingstate.md)
+- [func invalidateState(for: EditingState)](datastore/invalidatestate(for:).md)
+
 
 ---
 

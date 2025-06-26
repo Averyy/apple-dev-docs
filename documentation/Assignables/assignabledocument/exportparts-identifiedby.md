@@ -25,6 +25,13 @@ A dictionary of part ID to part data file for the requested parts.
 
 - `partIDs`: An array of part IDs to export. This is treated as a set.
 
+## See Also
+
+- [func exportBaseAsPDF() async -> PDFDocument](assignabledocument/exportbaseaspdf.md)
+  Exports the base part of this document to a `PDFDocument`.
+- [func export(partIDs: [AssignableDocument.PartID]) async throws -> [AssignableDocument.PartID : URL]](assignabledocument/export(partids:).md)
+  Given a set of part identifiers, return a dictionary of part ID to data objects for the requested layers.
+
 
 ---
 

@@ -23,6 +23,8 @@ To add this entitlement to your app, enable the Near Field Communication Tag Rea
   A Boolean value indicating whether your app may use Multipath protocols to seamlessly transition between Wi-Fi and cellular networks.
 - [Hotspot Configuration Entitlement](entitlements/com.apple.developer.networking.hotspotconfiguration.md)
   A Boolean value indicating whether your app can use the hotspot manager to configure Wi-Fi networks.
+- [HotSpot Helper](entitlements/com.apple.developer.networking.hotspothelper.md)
+  An entitlement that permits an app to participate in navigating Wi-Fi network hotspots.
 - [com.apple.developer.nfc.hce](entitlements/com.apple.developer.nfc.hce.md)
   A Boolean value indicating whether your app can use the card session API.
 - [com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes](entitlements/com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes.md)

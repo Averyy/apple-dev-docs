@@ -40,10 +40,10 @@ protocol CVPixelBufferRepresentable : CVImageBufferRepresentable, ~Copyable
 ### Instance Methods
 - [func accessUnsafeRawPlaneBytes<R>(([(properties: CVPixelBufferPlaneProperties, bytes: UnsafeRawBufferPointer)]) throws -> sending R) rethrows -> sending R](cvpixelbufferrepresentable/accessunsaferawplanebytes(_:).md)
   Access the pixels in the planes contained within this buffer. The base address is locked for reading during the execution of the block.
-- [func isCompatible(with: CVPixelBufferCreationAttributes) -> Bool](cvpixelbufferrepresentable/iscompatible(with:)-2j5ec.md)
-  Returns `true` if the pixel buffer is compatible with the specified creation attributes.
-- [func isCompatible(with: CVPixelBufferAttributes) -> Bool](cvpixelbufferrepresentable/iscompatible(with:)-6e97c.md)
+- [func isCompatibleWith(CVPixelBufferAttributes) -> Bool](cvpixelbufferrepresentable/iscompatiblewith(_:)-9fsoy.md)
   Returns `true` if the pixel buffer is compatible with the specified attributes.
+- [func isCompatibleWith(CVPixelBufferCreationAttributes) -> Bool](cvpixelbufferrepresentable/iscompatiblewith(_:)-b775.md)
+  Returns `true` if the pixel buffer is compatible with the specified creation attributes.
 - [func withUnsafeBackingIOSurfaceIfPresent<R>((IOSurface) throws -> sending R) rethrows -> sending R?](cvpixelbufferrepresentable/withunsafebackingiosurfaceifpresent(_:).md)
   Access the IOSurface backing the pixel buffer if present.
 

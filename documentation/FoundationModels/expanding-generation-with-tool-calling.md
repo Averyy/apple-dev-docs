@@ -50,7 +50,9 @@ struct BreadDatabaseTool: Tool {
     
     func call(arguments: Arguments) async throws -> ToolOutput {
         var recipes: [Recipe] = []
-        // Get a list of recipes from your local database.
+        
+        // Put your code here to retrieve a list of recipes from your database.
+        
         let formattedRecipes = recipes.map {
             "Recipe for '\($0.name)': \($0.description) Link: \($0.link)"
         }

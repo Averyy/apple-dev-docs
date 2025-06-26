@@ -17,7 +17,6 @@ The range of allowed random values for the alpha component of a particle’s ini
 ## Declaration
 
 ```swift
-@MainActor
 var particleColorAlphaRange: CGFloat { get set }
 ```
 

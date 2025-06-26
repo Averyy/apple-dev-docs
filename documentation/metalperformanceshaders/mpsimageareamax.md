@@ -1,9 +1,9 @@
 # MPSImageAreaMax
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
-A filter that finds the maximum pixel value in a rectangular region centered around each pixel in the source image. 
+A filter that finds the maximum pixel value in a rectangular region centered around each pixel in the source image.
 
 **Availability**:
 - iOS 9.0+
@@ -16,37 +16,49 @@ A filter that finds the maximum pixel value in a rectangular region centered aro
 ## Declaration
 
 ```swift
-class MPSImageAreaMax : MPSUnaryImageKernel
+class MPSImageAreaMax
 ```
 
 #### Overview
 
-If there are multiple channels in the source image, each channel is processed independently. The [`edgeMode`](mpsunaryimagekernel/1618812-edgemode.md) property value is assumed to always be [`MPSImageEdgeMode.clamp`](mpsimageedgemode/clamp.md) for this filter.
+If there are multiple channels in the source image, each channel is processed independently. The [`edgeMode`](mpsunaryimagekernel/edgemode.md) property value is assumed to always be [`MPSImageEdgeMode.clamp`](mpsimageedgemode/clamp.md) for this filter.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimageareamax/2866327-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimageareamax/init(coder:device:).md)
 ### Methods
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpsimageareamax/1618281-init.md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpsimageareamax/init(device:kernelwidth:kernelheight:).md)
   Initializes the kernel with a specified width and height.
 ### Properties
-- [var kernelHeight: Int](mpsimageareamax/1618277-kernelheight.md)
+- [var kernelHeight: Int](mpsimageareamax/kernelheight.md)
   The height of the filter window. Must be an odd number.
-- [var kernelWidth: Int](mpsimageareamax/1618282-kernelwidth.md)
+- [var kernelWidth: Int](mpsimageareamax/kernelwidth.md)
   The width of the filter window. Must be an odd number.
 
 ## Relationships
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Inherited By
+- [MPSImageAreaMin](mpsimageareamin.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
 - [class MPSImageDilate](mpsimagedilate.md)
-  A filter that finds the maximum pixel value in a rectangular region by applying a dilation function. 
+  A filter that finds the maximum pixel value in a rectangular region by applying a dilation function.
 - [class MPSImageAreaMin](mpsimageareamin.md)
-  A filter that finds the minimum pixel value in a rectangular region centered around each pixel in the source image. 
+  A filter that finds the minimum pixel value in a rectangular region centered around each pixel in the source image.
 - [class MPSImageErode](mpsimageerode.md)
   A filter that finds the minimum pixel value in a rectangular region by applying an erosion function.
 

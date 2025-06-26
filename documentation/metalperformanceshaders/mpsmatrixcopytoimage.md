@@ -1,7 +1,7 @@
 # MPSMatrixCopyToImage
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel that copies matrix data to a Metal Performance Shaders image.
 
@@ -16,35 +16,45 @@ A kernel that copies matrix data to a Metal Performance Shaders image.
 ## Declaration
 
 ```swift
-class MPSMatrixCopyToImage : MPSKernel
+class MPSMatrixCopyToImage
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixcopytoimage/2976459-init.md)
-- [init(device: any MTLDevice, dataLayout: MPSDataLayout)](mpsmatrixcopytoimage/2976460-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixcopytoimage/init(coder:device:).md)
+- [init(device: any MTLDevice, dataLayout: MPSDataLayout)](mpsmatrixcopytoimage/init(device:datalayout:).md)
 ### Instance Properties
-- [var dataLayout: MPSDataLayout](mpsmatrixcopytoimage/2976457-datalayout.md)
-- [var sourceMatrixBatchIndex: Int](mpsmatrixcopytoimage/2976461-sourcematrixbatchindex.md)
-- [var sourceMatrixOrigin: MTLOrigin](mpsmatrixcopytoimage/2976462-sourcematrixorigin.md)
+- [var dataLayout: MPSDataLayout](mpsmatrixcopytoimage/datalayout.md)
+- [var sourceMatrixBatchIndex: Int](mpsmatrixcopytoimage/sourcematrixbatchindex.md)
+- [var sourceMatrixOrigin: MTLOrigin](mpsmatrixcopytoimage/sourcematrixorigin.md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, destinationImage: MPSImage)](mpsmatrixcopytoimage/2976458-encode.md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, destinationImages: [MPSImage])](mpsmatrixcopytoimage/3013770-encodebatch.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, destinationImage: MPSImage)](mpsmatrixcopytoimage/encode(commandbuffer:sourcematrix:destinationimage:).md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, destinationImages: [MPSImage])](mpsmatrixcopytoimage/encodebatch(commandbuffer:sourcematrix:destinationimages:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
 - [class MPSMatrixCopy](mpsmatrixcopy.md)
-  A class that can perform multiple matrix copy operations. 
+  A class that can perform multiple matrix copy operations.
 - [class MPSMatrixCopyDescriptor](mpsmatrixcopydescriptor.md)
   A description of multiple matrix copy operations.
 - [class MPSImageCopyToMatrix](mpsimagecopytomatrix.md)
-  A class that copies image data to a matrix. 
+  A class that copies image data to a matrix.
 
 
 ---

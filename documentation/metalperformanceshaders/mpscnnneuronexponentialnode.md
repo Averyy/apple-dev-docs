@@ -1,7 +1,7 @@
 # MPSCNNNeuronExponentialNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of an exponential neuron filter.
 
@@ -16,19 +16,26 @@ A representation of an exponential neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronExponentialNode : MPSCNNNeuronNode
+class MPSCNNNeuronExponentialNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnnneuronexponentialnode/2951936-init.md)
-- [init(source: MPSNNImageNode, a: Float, b: Float, c: Float)](mpscnnneuronexponentialnode/2951933-init.md)
+- [init(source: MPSNNImageNode)](mpscnnneuronexponentialnode/init(source:).md)
+- [init(source: MPSNNImageNode, a: Float, b: Float, c: Float)](mpscnnneuronexponentialnode/init(source:a:b:c:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuronNode](mpscnnneuronnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

@@ -1,7 +1,7 @@
 # MPSNNAdditionNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of an addition operator.
 
@@ -16,13 +16,20 @@ A representation of an addition operator.
 ## Declaration
 
 ```swift
-class MPSNNAdditionNode : MPSNNBinaryArithmeticNode
+class MPSNNAdditionNode
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNBinaryArithmeticNode](mpsnnbinaryarithmeticnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

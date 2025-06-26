@@ -1,7 +1,7 @@
 # MPSNNReduceUnary
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 The base class for unary reduction filters.
 
@@ -16,19 +16,44 @@ The base class for unary reduction filters.
 ## Declaration
 
 ```swift
-class MPSNNReduceUnary : MPSCNNKernel
+class MPSNNReduceUnary
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var clipRectSource: MTLRegion](mpsnnreduceunary/2942547-cliprectsource.md)
-- [var offset: MPSOffset](mpsnnreduceunary/3750642-offset.md)
+- [var clipRectSource: MTLRegion](mpsnnreduceunary/cliprectsource.md)
+- [var offset: MPSOffset](mpsnnreduceunary/offset.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Inherited By
+- [MPSNNReduceColumnMax](mpsnnreducecolumnmax.md)
+- [MPSNNReduceColumnMean](mpsnnreducecolumnmean.md)
+- [MPSNNReduceColumnMin](mpsnnreducecolumnmin.md)
+- [MPSNNReduceColumnSum](mpsnnreducecolumnsum.md)
+- [MPSNNReduceFeatureChannelsArgumentMax](mpsnnreducefeaturechannelsargumentmax.md)
+- [MPSNNReduceFeatureChannelsArgumentMin](mpsnnreducefeaturechannelsargumentmin.md)
+- [MPSNNReduceFeatureChannelsMax](mpsnnreducefeaturechannelsmax.md)
+- [MPSNNReduceFeatureChannelsMean](mpsnnreducefeaturechannelsmean.md)
+- [MPSNNReduceFeatureChannelsMin](mpsnnreducefeaturechannelsmin.md)
+- [MPSNNReduceFeatureChannelsSum](mpsnnreducefeaturechannelssum.md)
+- [MPSNNReduceRowMax](mpsnnreducerowmax.md)
+- [MPSNNReduceRowMean](mpsnnreducerowmean.md)
+- [MPSNNReduceRowMin](mpsnnreducerowmin.md)
+- [MPSNNReduceRowSum](mpsnnreducerowsum.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -62,10 +87,6 @@ class MPSNNReduceUnary : MPSCNNKernel
   A reduction filter that returns the index of the location of the minimum value for each feature channel in an image.
 - [class MPSNNReduceFeatureChannelsAndWeightsSum](mpsnnreducefeaturechannelsandweightssum.md)
   A reduction filter that returns the weighted sum of all values for each feature channel in an image.
-- [class MPSNNReduceFeatureChannelsAndWeightsMean](mpsnnreducefeaturechannelsandweightsmean.md)
-  A reduction filter that returns the weighted sum for each feature channel in an image.
-- [class MPSNNReduceBinary](mpsnnreducebinary.md)
-  The base class for binary reduction filters.
 
 
 ---

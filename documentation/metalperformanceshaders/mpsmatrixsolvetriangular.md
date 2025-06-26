@@ -1,7 +1,7 @@
 # MPSMatrixSolveTriangular
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel for computing the solution of a linear system of equations using a triangular coefficient matrix.
 
@@ -16,29 +16,39 @@ A kernel for computing the solution of a linear system of equations using a tria
 ## Declaration
 
 ```swift
-class MPSMatrixSolveTriangular : MPSMatrixBinaryKernel
+class MPSMatrixSolveTriangular
 ```
 
 #### Overview
 
-This kernel finds the solution matrix to the system or , where:
+This kernel finds the solution matrix to the system  or , where:
 
 - A is either an upper or lower triangular matrix
 -  is either  or 
-- is the resulting matrix of solutions
+-  is the resulting matrix of solutions
 -  is the array of right hand sides for which the equations are to be solved
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, right: Bool, upper: Bool, transpose: Bool, unit: Bool, order: Int, numberOfRightHandSides: Int, alpha: Double)](mpsmatrixsolvetriangular/2873007-init.md)
+- [init(device: any MTLDevice, right: Bool, upper: Bool, transpose: Bool, unit: Bool, order: Int, numberOfRightHandSides: Int, alpha: Double)](mpsmatrixsolvetriangular/init(device:right:upper:transpose:unit:order:numberofrighthandsides:alpha:).md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, rightHandSideMatrix: MPSMatrix, solutionMatrix: MPSMatrix)](mpsmatrixsolvetriangular/2867027-encode.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, rightHandSideMatrix: MPSMatrix, solutionMatrix: MPSMatrix)](mpsmatrixsolvetriangular/encode(commandbuffer:sourcematrix:righthandsidematrix:solutionmatrix:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrixBinaryKernel](mpsmatrixbinarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

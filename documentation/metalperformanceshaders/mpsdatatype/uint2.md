@@ -1,7 +1,7 @@
 # MPSDataType.uInt2
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 18.4+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case uInt2 = 2
+case uInt2
 ```
 
 

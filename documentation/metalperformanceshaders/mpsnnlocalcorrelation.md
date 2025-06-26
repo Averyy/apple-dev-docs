@@ -1,7 +1,7 @@
 # MPSNNLocalCorrelation
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,25 +14,35 @@
 ## Declaration
 
 ```swift
-class MPSNNLocalCorrelation : MPSNNReduceBinary
+class MPSNNLocalCorrelation
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnlocalcorrelation/3197829-init.md)
-- [init(device: any MTLDevice)](mpsnnlocalcorrelation/3131875-init.md)
-- [init(device: any MTLDevice, windowInX: Int, windowInY: Int, strideInX: Int, strideInY: Int)](mpsnnlocalcorrelation/3131876-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnlocalcorrelation/init(coder:device:).md)
+- [convenience init(device: any MTLDevice)](mpsnnlocalcorrelation/init(device:).md)
+- [init(device: any MTLDevice, windowInX: Int, windowInY: Int, strideInX: Int, strideInY: Int)](mpsnnlocalcorrelation/init(device:windowinx:windowiny:strideinx:strideiny:).md)
 ### Instance Properties
-- [var strideInX: Int](mpsnnlocalcorrelation/3131877-strideinx.md)
-- [var strideInY: Int](mpsnnlocalcorrelation/3131878-strideiny.md)
-- [var windowInX: Int](mpsnnlocalcorrelation/3131879-windowinx.md)
-- [var windowInY: Int](mpsnnlocalcorrelation/3131880-windowiny.md)
+- [var strideInX: Int](mpsnnlocalcorrelation/strideinx.md)
+- [var strideInY: Int](mpsnnlocalcorrelation/strideiny.md)
+- [var windowInX: Int](mpsnnlocalcorrelation/windowinx.md)
+- [var windowInY: Int](mpsnnlocalcorrelation/windowiny.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNReduceBinary](mpsnnreducebinary.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

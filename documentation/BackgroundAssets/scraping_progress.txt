@@ -1,4 +1,4 @@
 Completed scraping Background Assets!
-Total pages scraped: 137
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 140
 Pages failed: 0

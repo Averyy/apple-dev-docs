@@ -12,7 +12,7 @@ Creates an instance containing the commands specified in the array
 ## Declaration
 
 ```swift
-init(duration: CMTime? = nil, commands: [any PresentationCommand] = [])
+init(duration: CMTime? = nil, commands: [PresentationCommand] = [])
 ```
 
 ## Parameters
@@ -22,10 +22,8 @@ init(duration: CMTime? = nil, commands: [any PresentationCommand] = [])
 
 ## See Also
 
-- [init(commands: [any PresentationCommand])](presentationdescriptor/init(commands:).md)
-  Creates an instance containing the commands specified in the array
-- [init(from: any Decoder) throws](presentationdescriptor/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
+- [init(commands: [PresentationCommand])](presentationdescriptor/init(commands:).md)
+  Creates an instance containing the commands specified in the given array
 
 
 ---

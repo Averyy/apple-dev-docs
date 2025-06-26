@@ -14,8 +14,8 @@ Create an alternative app marketplace, distribute your app on an alternative app
 - [Enabling alternative distribution app installation in a browser](enabling-alternative-distribution-app-installation-in-a-browser.md)
 - [Installing apps from an alternative marketplace](installing-apps-from-an-alternative-marketplace.md)
 - [Installing your app from your website](installing-your-app-from-your-website.md)
-- [Reauthenticating a person to manage apps](reauthenticating-a-person-to-manage-apps.md)
 - [Creating an alternative app marketplace](creating-an-alternative-app-marketplace.md)
+- [Reauthenticating a person to manage apps](reauthenticating-a-person-to-manage-apps.md)
 
 #### Overview
 

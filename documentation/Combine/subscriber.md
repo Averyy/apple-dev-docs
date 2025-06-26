@@ -24,8 +24,8 @@ protocol Subscriber<Input, Failure> : CustomCombineIdentifierConvertible
 
 - [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
 - [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
-- [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
 - [Controlling Publishing with Connectable Publishers](controlling-publishing-with-connectable-publishers.md)
+- [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
 
 #### Overview
 

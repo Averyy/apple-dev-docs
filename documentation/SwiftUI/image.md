@@ -25,9 +25,9 @@ struct Image
 
 - [Building layouts with stack views](building-layouts-with-stack-views.md)
 - [Configuring views](configuring-views.md)
-- [Displaying data in lists](displaying-data-in-lists.md)
 - [Fitting images into available space](fitting-images-into-available-space.md)
 - [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
+- [Displaying data in lists](displaying-data-in-lists.md)
 
 #### Overview
 

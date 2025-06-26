@@ -133,6 +133,7 @@ Finally, pass an object to the [`addObserver(_:)`](tabletopgame/addobserver(_:).
   An object that handles players joining multiplayer games.
 ### Enabling group activities
 - [func coordinateWithSession(GroupSession<some GroupActivity>)](tabletopgame/coordinatewithsession(_:).md)
+  Begins coordination of the game with a group session
 ### Drawing debug representations
 - [func debugDraw(options: DebugDrawOptions)](tabletopgame/debugdraw(options:).md)
   Enable or disable debug visualizations

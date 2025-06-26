@@ -1,7 +1,7 @@
 # MPSCNNLogSoftMaxGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient logarithmic softmax filter kernel.
 
@@ -16,18 +16,25 @@ A representation of a gradient logarithmic softmax filter kernel.
 ## Declaration
 
 ```swift
-class MPSCNNLogSoftMaxGradientNode : MPSNNGradientFilterNode
+class MPSCNNLogSoftMaxGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](mpscnnlogsoftmaxgradientnode/2947971-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](mpscnnlogsoftmaxgradientnode/init(sourcegradient:sourceimage:gradientstate:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

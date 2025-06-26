@@ -1,7 +1,7 @@
 # MPSImageReduceRowSum
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that returns the sum of all values for a row in an image.
 
@@ -16,18 +16,28 @@ A filter that returns the sum of all values for a row in an image.
 ## Declaration
 
 ```swift
-class MPSImageReduceRowSum : MPSImageReduceUnary
+class MPSImageReduceRowSum
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpsimagereducerowsum/2942334-init.md)
+- [init(device: any MTLDevice)](mpsimagereducerowsum/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSImageReduceUnary](mpsimagereduceunary.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

@@ -18,8 +18,8 @@ class func updatePostbackConversionValue(_ conversionValue: Int) async throws
 
 ## Mentions
 
-- [Receiving ad attributions and postbacks](receiving-ad-attributions-and-postbacks.md)
 - [Configuring an advertised app](configuring-an-advertised-app.md)
+- [Receiving ad attributions and postbacks](receiving-ad-attributions-and-postbacks.md)
 
 #### Discussion
 

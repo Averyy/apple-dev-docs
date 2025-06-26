@@ -10,10 +10,10 @@ A function for pooling that computes the maximum of each element in the pooling 
 - iPadOS 10.0+
 - Mac Catalyst ?+
 - macOS 10.12+
-- visionOS ?+
+- tvOS 10.0+
 - watchOS 3.0+
 - Unknown ?+ - Deprecated
-- tvOS 10.0+
+- visionOS ?+
 
 ## Declaration
 

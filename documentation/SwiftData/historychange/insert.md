@@ -3,6 +3,8 @@
 **Framework**: SwiftData  
 **Kind**: case
 
+A value that indicates an insertion operation.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -18,6 +20,13 @@
 ```swift
 case insert(any HistoryInsert)
 ```
+
+## See Also
+
+- [case delete(any HistoryDelete)](historychange/delete(_:).md)
+  A value that indicates a delete operation.
+- [case update(any HistoryUpdate)](historychange/update(_:).md)
+  A value that indicates an update operation.
 
 
 ---

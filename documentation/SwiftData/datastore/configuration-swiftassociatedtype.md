@@ -20,6 +20,13 @@
 associatedtype Configuration : DataStoreConfiguration where Self == Self.Configuration.Store
 ```
 
+## See Also
+
+- [var configuration: Self.Configuration](datastore/configuration-swift.property.md)
+- [protocol DataStoreConfiguration](datastoreconfiguration.md)
+- [var identifier: String](datastore/identifier.md)
+- [var schema: Schema](datastore/schema.md)
+
 
 ---
 

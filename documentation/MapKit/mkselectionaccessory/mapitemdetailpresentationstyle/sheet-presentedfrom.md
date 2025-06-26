@@ -15,7 +15,7 @@ Show map item detail by presenting a sheet.
 ## Declaration
 
 ```swift
-class func sheet(presentedFrom viewController: NSViewController) -> MKSelectionAccessory.MapItemDetailPresentationStyle
+class func sheet(presentedFrom viewController: UIViewController) -> MKSelectionAccessory.MapItemDetailPresentationStyle
 ```
 
 ## Parameters

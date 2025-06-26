@@ -17,7 +17,6 @@ The width, in screen points, after which line-break mode should be applied.
 ## Declaration
 
 ```swift
-@MainActor
 var preferredMaxLayoutWidth: CGFloat { get set }
 ```
 

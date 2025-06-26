@@ -30,12 +30,6 @@ As such, seeing this type in traces and the view debugger is expected when build
 
 This type acts similarly to an `AnyView` in that it type-erases its content, however it depends on the underlying type of the value not actually changing as it is in place of an opaque result type. As such, it .
 
-## Topics
-
-### Initializers
-- [init<V>(erasing: V)](debugreplaceableview/init(erasing:).md)
-  Creates a debug replaceable view erasing the given view.
-
 ## Relationships
 
 ### Conforms To

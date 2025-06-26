@@ -50,9 +50,6 @@ struct PrivateKey
   Computes a shared secret with the provided public key from another party.
 - [struct SharedSecret](sharedsecret.md)
   A key agreement result from which you can derive a symmetric cryptographic key.
-### Initializers
-- [init(ikm: SymmetricKey) throws](p384/keyagreement/privatekey/init(ikm:).md)
-  Create a P384 curve key from input keying material via the DeriveKeyPair functionality from RFC9180. The minimum length of the input keying material is determined by the curve; see Nsk from https://datatracker.ietf.org/doc/html/rfc9180#name-key-encapsulation-mechanism.
 ### Default Implementations
 - [DiffieHellmanKeyAgreement Implementations](p384/keyagreement/privatekey/diffiehellmankeyagreement-implementations.md)
 - [HPKEDiffieHellmanPrivateKeyGeneration Implementations](p384/keyagreement/privatekey/hpkediffiehellmanprivatekeygeneration-implementations.md)

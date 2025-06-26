@@ -21,8 +21,8 @@ struct AppIntentRecommendation<Intent> where Intent : WidgetConfigurationIntent
 
 ## Mentions
 
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
 - [Making a configurable widget](making-a-configurable-widget.md)
+- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
 
 #### Overview
 

@@ -18,8 +18,8 @@ var sourceAppStoreItemIdentifier: NSNumber { get set }
 
 ## Mentions
 
-- [Identifying the parameters in install-validation postbacks](identifying-the-parameters-in-install-validation-postbacks.md)
 - [Generating the signature to validate view-through ads](generating-the-signature-to-validate-view-through-ads.md)
+- [Identifying the parameters in install-validation postbacks](identifying-the-parameters-in-install-validation-postbacks.md)
 
 #### Discussion
 

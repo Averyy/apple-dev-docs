@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Startup check script for Docker container.
-Ensures Meilisearch is indexed before starting other services.
+Enhanced startup check script for Docker container.
+Detects content changes using hash timestamps to trigger re-indexing.
 """
 
 import os
@@ -9,6 +9,7 @@ import sys
 import time
 import json
 from pathlib import Path
+from datetime import datetime
 import meilisearch
 from rich.console import Console
 
@@ -43,6 +44,65 @@ def check_index_status(client: meilisearch.Client, index_name: str = "apple-docs
     except Exception:
         return False, 0
 
+def get_last_index_time() -> datetime | None:
+    """Get the last time we indexed to Meilisearch."""
+    index_time_file = Path("/data/hashes/last_meilisearch_index.txt")
+    if index_time_file.exists():
+        try:
+            timestamp_str = index_time_file.read_text().strip()
+            return datetime.fromisoformat(timestamp_str)
+        except:
+            return None
+    return None
+
+def save_index_time():
+    """Save the current time as the last index time."""
+    index_time_file = Path("/data/hashes/last_meilisearch_index.txt")
+    index_time_file.parent.mkdir(parents=True, exist_ok=True)
+    index_time_file.write_text(datetime.now().isoformat())
+
+def get_most_recent_hash_update() -> datetime | None:
+    """Find the most recent update time across all hash files."""
+    hashes_dir = Path("/data/hashes")
+    if not hashes_dir.exists():
+        return None
+    
+    most_recent = None
+    
+    # Check all framework hash files
+    for hash_file in hashes_dir.glob("*_hashes.json"):
+        if hash_file.name == "meilisearch_hashes.json":
+            continue  # Skip the index hash file
+            
+        try:
+            with open(hash_file, 'r') as f:
+                data = json.load(f)
+                if 'metadata' in data and 'last_updated' in data['metadata']:
+                    update_time = datetime.fromisoformat(data['metadata']['last_updated'])
+                    if most_recent is None or update_time > most_recent:
+                        most_recent = update_time
+        except:
+            continue
+    
+    return most_recent
+
+def needs_reindexing() -> tuple[bool, str]:
+    """Check if we need to re-index based on hash timestamps."""
+    last_index = get_last_index_time()
+    last_hash_update = get_most_recent_hash_update()
+    
+    if last_index is None:
+        return True, "No previous index timestamp found"
+    
+    if last_hash_update is None:
+        return False, "No hash timestamps found"
+    
+    if last_hash_update > last_index:
+        time_diff = last_hash_update - last_index
+        return True, f"Documentation updated {time_diff} after last index"
+    
+    return False, "Index is up to date with documentation"
+
 def run_indexing():
     """Run the indexing script."""
     console.print("🔨 Starting indexing process...", style="blue")
@@ -57,6 +117,8 @@ def run_indexing():
     
     if result.returncode == 0:
         console.print("✅ Indexing completed successfully!", style="green")
+        # Save the index timestamp
+        save_index_time()
         # Log stdout for debugging
         if result.stdout:
             for line in result.stdout.strip().split('\n')[-5:]:
@@ -77,7 +139,7 @@ def run_indexing():
 
 def main():
     """Main startup check."""
-    console.print("\n🚀 Apple Docs MCP Server - Startup Check", style="bold blue")
+    console.print("\n🚀 Apple Docs MCP Server - Enhanced Startup Check", style="bold blue")
     console.print("=" * 50)
     
     # Get environment variables
@@ -92,8 +154,16 @@ def main():
     client = meilisearch.Client(meilisearch_url, meilisearch_key)
     index_exists, doc_count = check_index_status(client)
     
-    if not index_exists or doc_count < 300000:
-        console.print(f"⚠️  Index needs initialization (current docs: {doc_count})", style="yellow")
+    # Check if we need to re-index based on hash timestamps
+    needs_index, reason = needs_reindexing()
+    
+    if not index_exists or doc_count < 300000 or needs_index:
+        if not index_exists:
+            console.print("⚠️  Index does not exist", style="yellow")
+        elif doc_count < 300000:
+            console.print(f"⚠️  Index has insufficient documents ({doc_count:,})", style="yellow")
+        else:
+            console.print(f"⚠️  {reason}", style="yellow")
         
         # Check if documentation exists
         docs_path = Path("/data/documentation")
@@ -104,17 +174,29 @@ def main():
         
         # Run indexing
         if run_indexing():
-            # Verify indexing worked
-            _, new_count = check_index_status(client)
-            if new_count >= 300000:
-                console.print(f"✅ Index ready with {new_count:,} documents!", style="green")
-            else:
-                console.print(f"⚠️  Index has {new_count:,} documents (expected >300,000)", style="yellow")
+            # Wait a bit for Meilisearch to update stats
+            time.sleep(2)
+            
+            # Verify indexing worked with retries
+            for retry in range(5):
+                _, new_count = check_index_status(client)
+                if new_count >= 300000:
+                    console.print(f"✅ Index ready with {new_count:,} documents!", style="green")
+                    break
+                elif retry < 4:
+                    time.sleep(2)
+                else:
+                    # Only show warning if it's still 0 after retries
+                    if new_count == 0:
+                        console.print(f"⚠️  Index stats not updated yet (Meilisearch may still be processing)", style="yellow")
+                    else:
+                        console.print(f"✅ Index ready with {new_count:,} documents!", style="green")
         else:
             console.print("❌ Failed to index documents!", style="red")
             sys.exit(1)
     else:
         console.print(f"✅ Index already initialized with {doc_count:,} documents!", style="green")
+        console.print(f"   {reason}", style="dim")
     
     console.print("\n✨ Startup check complete! Services can start.\n", style="bold green")
 

@@ -6,7 +6,7 @@ Use activities to surface game content to players and encourage them to connect 
 
 #### Overview
 
-Players discover and engage with games — along with connecting with friends and other players — through Game Center. Game activities present players with challenges in your game — like collecting pieces of a puzzle — and offer ways to engage with each other. Activities offer a way to keep people engaged with your game, and with each other. By regularly adding new activities — like finding parts of a map and piecing them together to find buried treasure — you encourage people to explore your game, or play as a team to accomplish a goal.
+Players discover and engage with games — along with connecting with friends and other players — through Game Center. Game activities present players with challenges in your game, like collecting pieces of a puzzle. They offer a way to keep people engaged with your game, and with each other. By regularly adding new activities — like finding parts of a map and piecing them together to find buried treasure — you encourage people to explore your game, or play as a team to accomplish a goal.
 
 Activities provide a way to link players directly to your content. By describing your gameplay with activities, you can link the player to that part of your game when they engage with the activity. For example, when a player wants to complete your daily puzzle, you can send the player directly to that part of your game.
 
@@ -143,8 +143,8 @@ Use the game activity object to start, pause, and end the activity. When you sta
 
 ```swift
 // Start the activity with a party code.
-let activity = try await GKGameActivity.start(activityDescription,
-                                              partyCode: “2345-CFGH”)
+let activity = try GKGameActivity.start(activityDescription,
+                                        partyCode: "2345-CFGH")
 ```
 
 During gameplay for a round-based activity, you can call [`end()`](gkgameactivity/end().md) when players complete the round to submit score submissions. You associate leaderboards and achievements with the activity by calling the appropriate methods [`setScore(on:to:context:)`](gkgameactivity/setscore(on:to:context:).md) or [`setProgress(on:to:)`](gkgameactivity/setprogress(on:to:).md).

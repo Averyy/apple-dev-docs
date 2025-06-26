@@ -97,6 +97,8 @@ struct ModelConfiguration
   Creates a model container using the specified model types, migration plan, and zero or more configurations.
 - [convenience init(for: Schema, migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: ModelConfiguration...) throws](modelcontainer/init(for:migrationplan:configurations:)-qof9.md)
   Creates a model container using the specified schema, migration plan, and zero or more configurations.
+- [protocol PersistentModel](persistentmodel.md)
+  An interface that enables SwiftData to manage a Swift class as a stored model.
 - [class Schema](schema.md)
   An object that maps model classes to data in the model store, and helps with the migration of that data between releases.
 - [protocol SchemaMigrationPlan](schemamigrationplan.md)

@@ -17,7 +17,7 @@ Creates an animated artwork.
 ## Declaration
 
 ```swift
-init(artworkID: String, previewImageRequestHandler: @escaping (CGSize, @escaping (UIImage?) -> Void) -> Void, videoAssetFileURLRequestHandler: @escaping (CGSize, @escaping (URL?) -> Void) -> Void)
+init(artworkID: String, previewImageRequestHandler: @escaping (CGSize, @escaping (NSImage?) -> Void) -> Void, videoAssetFileURLRequestHandler: @escaping (CGSize, @escaping (URL?) -> Void) -> Void)
 ```
 
 ## Parameters

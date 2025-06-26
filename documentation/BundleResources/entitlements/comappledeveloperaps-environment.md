@@ -22,6 +22,8 @@ To add this entitlement to your app, enable the Push Notifications capability in
   Communicate with Apple Push Notification service (APNs) and receive a unique device token that identifies your app.
 - [APS Environment Entitlement](entitlements/aps-environment.md)
   The environment for push notifications.
+- [Critical Alerts](entitlements/com.apple.developer.usernotifications.critical-alerts.md)
+  An entitlement that permits an app to receive critical alert notifications.
 - [com.apple.developer.usernotifications.filtering](entitlements/com.apple.developer.usernotifications.filtering.md)
   Enable receiving notifications without displaying the notification to the user.
 

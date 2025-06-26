@@ -1,9 +1,9 @@
 # MPSAlphaType.premultiplied
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
-The image is premultiplied by alpha. Alpha is not guaranteed to be 1. ([`CGImageAlphaInfo.premultipliedFirst`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/premultipliedfirst)`/`[`CGImageAlphaInfo.premultipliedLast`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/premultipliedlast))
+The image is premultiplied by alpha.
 
 **Availability**:
 - iOS 10.0+
@@ -16,8 +16,19 @@ The image is premultiplied by alpha. Alpha is not guaranteed to be 1. ([`CGImage
 ## Declaration
 
 ```swift
-case premultiplied = 2
+case premultiplied
 ```
+
+#### Discussion
+
+The image uses premultiplied alpha. Alpha is not guaranteed to be 1.
+
+## See Also
+
+- [MPSAlphaType.nonPremultiplied](mpsalphatype/nonpremultiplied.md)
+  The image is not premultiplied by alpha.
+- [MPSAlphaType.alphaIsOne](mpsalphatype/alphaisone.md)
+  Alpha is guaranteed to be 1.
 
 
 ---

@@ -23,9 +23,9 @@ class NSManagedObject
 ## Mentions
 
 - [Syncing a Core Data Store with CloudKit](syncing-a-core-data-store-with-cloudkit.md)
-- [Using Core Data in the background](using-core-data-in-the-background.md)
-- [Generating code](generating-code.md)
 - [Modeling data](modeling-data.md)
+- [Generating code](generating-code.md)
+- [Using Core Data in the background](using-core-data-in-the-background.md)
 
 #### Overview
 

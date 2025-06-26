@@ -1,7 +1,7 @@
 # MPSCNNAdd
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An addition operator.
 
@@ -16,18 +16,28 @@ An addition operator.
 ## Declaration
 
 ```swift
-class MPSCNNAdd : MPSCNNArithmetic
+class MPSCNNAdd
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpscnnadd/2942501-init.md)
+- [init(device: any MTLDevice)](mpscnnadd/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNArithmetic](mpscnnarithmetic.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

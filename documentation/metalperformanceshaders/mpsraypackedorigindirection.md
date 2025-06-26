@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,11 +20,16 @@ struct MPSRayPackedOriginDirection
 ## Topics
 
 ### Initializers
-- [init()](mpsraypackedorigindirection/3243124-init.md)
-- [init(origin: MPSPackedFloat3, direction: MPSPackedFloat3)](mpsraypackedorigindirection/3243125-init.md)
+- [init()](mpsraypackedorigindirection/init.md)
+- [init(origin: MPSPackedFloat3, direction: MPSPackedFloat3)](mpsraypackedorigindirection/init(origin:direction:).md)
 ### Instance Properties
-- [var direction: MPSPackedFloat3](mpsraypackedorigindirection/3242889-direction.md)
-- [var origin: MPSPackedFloat3](mpsraypackedorigindirection/3242890-origin.md)
+- [var direction: MPSPackedFloat3](mpsraypackedorigindirection/direction.md)
+- [var origin: MPSPackedFloat3](mpsraypackedorigindirection/origin.md)
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

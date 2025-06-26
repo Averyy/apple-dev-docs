@@ -57,15 +57,13 @@ The framework records each call to the model in a [`Transcript`](transcript.md) 
 - [convenience init(model: SystemLanguageModel, guardrails: LanguageModelSession.Guardrails, tools: [any Tool], transcript: Transcript)](languagemodelsession/init(model:guardrails:tools:transcript:).md)
   Start a session by rehydrating from a transcript.
 - [struct Transcript](transcript.md)
-  A transcript that documents interactions with a language model.
+  A transcript that documents interactions with a language model. Transcripts contain an ordered list of entries, representing inputs to and outputs from the model.
 ### Preloading the model
 - [func prewarm()](languagemodelsession/prewarm.md)
   Requests that the system eagerly load the resources required for this session into memory.
 ### Inspecting session properties
 - [var isResponding: Bool](languagemodelsession/isresponding.md)
   A Boolean value that indicates a response is being generated.
-- [var transcript: Transcript](languagemodelsession/transcript.md)
-  A full history of interactions, including user inputs and model responses.
 - [var transcript: Transcript](languagemodelsession/transcript.md)
   A full history of interactions, including user inputs and model responses.
 ### Generating a request
@@ -129,7 +127,7 @@ The framework records each call to the model in a [`Transcript`](transcript.md) 
 - [struct Prompt](prompt.md)
   A prompt from a person to the model.
 - [struct Transcript](transcript.md)
-  A transcript that documents interactions with a language model.
+  A transcript that documents interactions with a language model. Transcripts contain an ordered list of entries, representing inputs to and outputs from the model.
 - [struct GenerationOptions](generationoptions.md)
   Options that control how the model generates its response to a prompt.
 

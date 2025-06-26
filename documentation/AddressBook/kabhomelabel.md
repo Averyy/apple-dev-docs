@@ -14,7 +14,7 @@ All Home labels match this label.
 ## Declaration
 
 ```swift
-let kABHomeLabel: String
+let kABHomeLabel: CFString!
 ```
 
 ## See Also

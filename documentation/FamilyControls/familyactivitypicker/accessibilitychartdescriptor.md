@@ -8,7 +8,6 @@ Adds a descriptor to a View that represents a chart to make the chart’s conten
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - watchOS 8.0+

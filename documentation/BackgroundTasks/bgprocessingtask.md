@@ -11,7 +11,6 @@ A time-consuming processing task that runs while the app is in the background.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
-- watchOS 6.0+
 
 ## Declaration
 

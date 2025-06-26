@@ -41,6 +41,8 @@ struct CIContextOption
   A key for the color space to use for image operations.
 - [static let workingFormat: CIContextOption](cicontextoption/workingformat.md)
   An option for the color format to use for intermediate results when rendering with the context.
+- [static let cvMetalTextureCache: CIContextOption](cicontextoption/cvmetaltexturecache.md)
+  A Core Video Metal texture cache object to improve the performance of Core Image context renders that use Core Video pixel buffers.
 
 ## Relationships
 

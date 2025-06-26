@@ -26,6 +26,15 @@ mutating func merge(_ other: AssignedWorkDocument) async throws -> Bool
 
 - `other`: The other object to merge into this one.
 
+## See Also
+
+- [func merge(partData: MergeablePartData, into: AssignedWorkDocument.PartID) async throws -> Bool](assignedworkdocument/merge(partdata:into:).md)
+  Merges an individual part into the specified part of this object.
+- [func merge(other: AssignedWorkDocument) throws -> Bool](assignedworkdocument/merge(other:).md)
+  Merge another object of this type into this object.
+- [func merge(partID: AssignedWorkDocument.PartID, partDataURL: URL) throws -> Bool](assignedworkdocument/merge(partid:partdataurl:).md)
+  Merges an individual part’s data into the specified part of this object.
+
 
 ---
 

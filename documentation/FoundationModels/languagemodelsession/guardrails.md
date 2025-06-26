@@ -18,6 +18,10 @@ Guardrails flag sensitive content from model input and output.
 struct Guardrails
 ```
 
+## Mentions
+
+- [Improving safety from generative model output](improving-safety-from-generative-model-output.md)
+
 ## Topics
 
 ### Getting the guardrail types

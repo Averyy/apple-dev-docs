@@ -32,6 +32,8 @@ Core Location uses the heading calibration alert to calibrate the available head
   The minimum angular change in degrees required to generate new heading events.
 - [let kCLHeadingFilterNone: CLLocationDegrees](kclheadingfilternone.md)
   A constant indicating that all header values should be reported.
+- [typealias CLLocationDegrees](cllocationdegrees.md)
+  A latitude or longitude value specified in degrees.
 - [var headingOrientation: CLDeviceOrientation](cllocationmanager/headingorientation.md)
   The device orientation to use when computing heading values.
 - [enum CLDeviceOrientation](cldeviceorientation.md)

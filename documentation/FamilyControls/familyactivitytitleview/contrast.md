@@ -8,7 +8,6 @@ Sets the contrast and separation between similar colors in this view.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+

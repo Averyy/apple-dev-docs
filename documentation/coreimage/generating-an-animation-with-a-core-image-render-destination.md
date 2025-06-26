@@ -23,7 +23,7 @@ The sample combines view update and state changes to produce the animation:
 
 ##### Generate an Animation
 
-The `Renderer` class generates an image for an animation frame by conforming to the MetalKit [`MTKViewDelegate`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate) delegate protocol. The protocol’s draw(in:) function commits render destination work to the GPU using a render task in a Metal command buffer.
+The `Renderer` class generates an image for an animation frame by conforming to the MetalKit [`MTKViewDelegate`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate) delegate protocol. The protocol’s [`draw(in:)`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate/draw(in:)) function commits render destination work to the GPU using a render task in a Metal command buffer.
 
 For more information about drawing with MetalKit see [`Using a Render Pipeline to Render Primitives`](https://developer.apple.com/documentation/Metal/using-a-render-pipeline-to-render-primitives).
 
@@ -57,7 +57,7 @@ let renderer = Renderer(imageProvider: { (time: CFTimeInterval, scaleFactor: CGF
     image = colorFilter.outputImage ?? CIImage.empty()
 ```
 
-After the sample initializes the `Renderer`, the `Renderer` makes a command buffer and gets the currentDrawable.
+After the sample initializes the `Renderer`, the `Renderer` makes a command buffer and gets the [`currentDrawable`](https://developer.apple.com/documentation/MetalKit/MTKView/currentDrawable).
 
 ```swift
 if let commandBuffer = commandQueue.makeCommandBuffer() {

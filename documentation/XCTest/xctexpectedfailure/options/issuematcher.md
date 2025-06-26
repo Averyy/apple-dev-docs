@@ -8,7 +8,7 @@ A block of code that determines whether the test issue fulfills the expected fai
 ## Declaration
 
 ```swift
-var issueMatcher: (XCTIssue) -> Bool { get set }
+var issueMatcher: (XCTIssueReference) -> Bool { get set }
 ```
 
 #### Discussion

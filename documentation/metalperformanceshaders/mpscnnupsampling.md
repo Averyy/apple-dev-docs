@@ -1,7 +1,7 @@
 # MPSCNNUpsampling
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that resamples an existing MPS image.
 
@@ -16,7 +16,7 @@ A filter that resamples an existing MPS image.
 ## Declaration
 
 ```swift
-class MPSCNNUpsampling : MPSCNNKernel
+class MPSCNNUpsampling
 ```
 
 #### Overview
@@ -32,14 +32,27 @@ Nearest and bilinear variants are supported.
 ## Topics
 
 ### Instance Properties
-- [var scaleFactorX: Double](mpscnnupsampling/2875206-scalefactorx.md)
-- [var scaleFactorY: Double](mpscnnupsampling/2875154-scalefactory.md)
-- [var alignCorners: Bool](mpscnnupsampling/2966660-aligncorners.md)
+- [var scaleFactorX: Double](mpscnnupsampling/scalefactorx.md)
+- [var scaleFactorY: Double](mpscnnupsampling/scalefactory.md)
+- [var alignCorners: Bool](mpscnnupsampling/aligncorners.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Inherited By
+- [MPSCNNUpsamplingBilinear](mpscnnupsamplingbilinear.md)
+- [MPSCNNUpsamplingNearest](mpscnnupsamplingnearest.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

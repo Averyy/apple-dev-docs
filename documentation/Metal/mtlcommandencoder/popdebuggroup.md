@@ -22,7 +22,7 @@ func popDebugGroup()
 
 #### Discussion
 
-For more information, see `Enhancing Frame Capture by Using Labels`.
+For more information, see [`Naming resources and commands`](https://developer.apple.com/documentation/Xcode/Naming-resources-and-commands).
 
 ## See Also
 

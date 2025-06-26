@@ -62,7 +62,7 @@ do {
 
 To request access from SwiftUI, use the [`healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)`](https://developer.apple.com/documentation/SwiftUI/View/healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)) `modifier.`
 
-> ❗ **Important**:  The [`healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)`](https://developer.apple.com/documentation/SwiftUI/View/healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:))` `modifier is only available if you import both SwiftUI and HealtKitUI.
+> ❗ **Important**:  The [`healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)`](https://developer.apple.com/documentation/SwiftUI/View/healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:))` `modifier is only available if you import both SwiftUI and HealthKitUI.
 
 ```swift
 import SwiftUI

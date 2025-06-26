@@ -17,6 +17,7 @@ A text file that defines code that does custom per-pixel drawing or colorization
 ## Declaration
 
 ```swift
+@MainActor
 var shader: SKShader? { get set }
 ```
 

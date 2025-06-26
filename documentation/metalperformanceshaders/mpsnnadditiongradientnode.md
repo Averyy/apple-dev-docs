@@ -1,7 +1,7 @@
 # MPSNNAdditionGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient addition operator.
 
@@ -16,13 +16,20 @@ A representation of a gradient addition operator.
 ## Declaration
 
 ```swift
-class MPSNNAdditionGradientNode : MPSNNArithmeticGradientNode
+class MPSNNAdditionGradientNode
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNArithmeticGradientNode](mpsnnarithmeticgradientnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

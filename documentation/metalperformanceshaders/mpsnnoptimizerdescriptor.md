@@ -1,7 +1,7 @@
 # MPSNNOptimizerDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An object that specifies properties used by an optimizer kernel.
 
@@ -16,27 +16,34 @@ An object that specifies properties used by an optimizer kernel.
 ## Declaration
 
 ```swift
-class MPSNNOptimizerDescriptor : NSObject
+class MPSNNOptimizerDescriptor
 ```
 
 ## Topics
 
 ### Initializers
-- [init(learningRate: Float, gradientRescale: Float, applyGradientClipping: Bool, gradientClipMax: Float, gradientClipMin: Float, regularizationType: MPSNNRegularizationType, regularizationScale: Float)](mpsnnoptimizerdescriptor/2966726-init.md)
-- [init(learningRate: Float, gradientRescale: Float, regularizationType: MPSNNRegularizationType, regularizationScale: Float)](mpsnnoptimizerdescriptor/2966727-init.md)
+- [init(learningRate: Float, gradientRescale: Float, applyGradientClipping: Bool, gradientClipMax: Float, gradientClipMin: Float, regularizationType: MPSNNRegularizationType, regularizationScale: Float)](mpsnnoptimizerdescriptor/init(learningrate:gradientrescale:applygradientclipping:gradientclipmax:gradientclipmin:regularizationtype:regularizationscale:).md)
+- [init(learningRate: Float, gradientRescale: Float, regularizationType: MPSNNRegularizationType, regularizationScale: Float)](mpsnnoptimizerdescriptor/init(learningrate:gradientrescale:regularizationtype:regularizationscale:).md)
 ### Instance Properties
-- [var applyGradientClipping: Bool](mpsnnoptimizerdescriptor/2966722-applygradientclipping.md)
-- [var gradientClipMax: Float](mpsnnoptimizerdescriptor/2966723-gradientclipmax.md)
-- [var gradientClipMin: Float](mpsnnoptimizerdescriptor/2966724-gradientclipmin.md)
-- [var gradientRescale: Float](mpsnnoptimizerdescriptor/2966725-gradientrescale.md)
-- [var learningRate: Float](mpsnnoptimizerdescriptor/2966728-learningrate.md)
-- [var regularizationScale: Float](mpsnnoptimizerdescriptor/2966731-regularizationscale.md)
-- [var regularizationType: MPSNNRegularizationType](mpsnnoptimizerdescriptor/2966732-regularizationtype.md)
+- [var applyGradientClipping: Bool](mpsnnoptimizerdescriptor/applygradientclipping.md)
+- [var gradientClipMax: Float](mpsnnoptimizerdescriptor/gradientclipmax.md)
+- [var gradientClipMin: Float](mpsnnoptimizerdescriptor/gradientclipmin.md)
+- [var gradientRescale: Float](mpsnnoptimizerdescriptor/gradientrescale.md)
+- [var learningRate: Float](mpsnnoptimizerdescriptor/learningrate.md)
+- [var regularizationScale: Float](mpsnnoptimizerdescriptor/regularizationscale.md)
+- [var regularizationType: MPSNNRegularizationType](mpsnnoptimizerdescriptor/regularizationtype.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

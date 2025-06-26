@@ -16,9 +16,6 @@ protocol NSFileProviderSearchEnumerationObserver : NSObjectProtocol
 
 ## Topics
 
-### Specifying search behavior
-- [var maxNumberOfResults: Int](nsfileprovidersearchenumerationobserver/maxnumberofresults.md)
-  The maximum number of results to return in a single page enumeration.
 ### Providing search results
 - [func didEnumerate([any NSFileProviderSearchResult])](nsfileprovidersearchenumerationobserver/didenumerate(_:).md)
   Delivers an array of search results to the observer.
@@ -29,6 +26,9 @@ protocol NSFileProviderSearchEnumerationObserver : NSObjectProtocol
   Finish enumerating a page of results, and optionally provide a location within the results to continue the enumeration.
 - [func finishEnumeratingWithError(any Error)](nsfileprovidersearchenumerationobserver/finishenumeratingwitherror(_:).md)
   Finishes a search enumeration by sending an error to the framework.
+### Instance Properties
+- [var maximumNumberOfResultsPerPage: Int](nsfileprovidersearchenumerationobserver/maximumnumberofresultsperpage.md)
+  The maximum number of results to return in a single page enumeration.
 
 ## Relationships
 

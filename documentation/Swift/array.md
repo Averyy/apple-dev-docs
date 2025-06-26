@@ -548,9 +548,7 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [var mutableSpan: MutableSpan<Element>](array/mutablespan.md)
 - [var span: Span<Element>](array/span.md)
 ### Instance Methods
-- [func withUnsafeTaggedBuffers<R>(([CMTaggedBuffer]) throws -> sending R) rethrows -> sending R](array/withunsafetaggedbuffers(_:)-2jc9o.md)
-  Access the underlying CMTaggedBuffers.
-- [func withUnsafeTaggedBuffers<R>(([CMTaggedBuffer]) throws -> sending R) rethrows -> sending R](array/withunsafetaggedbuffers(_:)-2nycx.md)
+- [func withUnsafeTaggedBuffers<R>(([CMTaggedBuffer]) throws -> sending R) rethrows -> sending R](array/withunsafetaggedbuffers(_:).md)
   Access the underlying CMTaggedBuffers.
 ### Type Aliases
 - [typealias Specification](array/specification.md)

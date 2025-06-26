@@ -39,7 +39,7 @@ To use this framework, create an [`ITLibrary`](itlibrary.md) object by calling t
 - [class ITLibMediaItemVideoInfo](itlibmediaitemvideoinfo.md)
   This class encapsulates the video information of a video media item.
 ### Structures
-- [struct LibraryDidChangeMessage](librarydidchangemessage.md)
+- [struct DidChangeLibraryMessage](didchangelibrarymessage.md)
 
 
 ---

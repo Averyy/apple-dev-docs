@@ -52,6 +52,11 @@ The flow for periodic content requests is identical to the app install and updat
   The combined, maximum size of the essential assets that the system downloads before it launches your app in bytes.
 - [BAMaxInstallSize](../BundleResources/Information-Property-List/BAMaxInstallSize.md)
   The combined, maximum size, in bytes, of the non-essential assets that download immediately after app installation.
+### Apple-Hosted Background Assets
+- [Downloading asset packs hosted by Apple](downloading-asset-packs-hosted-by-apple.md)
+  Create asset packs, upload them to App Store Connect, and download them in your app.
+- [Testing your asset packs locally](testing-asset-packs-locally.md)
+  Test your asset packs using a local mock server.
 ### Asset download management
 - [class BADownloadManager](badownloadmanager.md)
   An object that manages the queue of scheduled asset downloads.

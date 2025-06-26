@@ -19,6 +19,10 @@ The constant for low intensity stretching and mobility exercises following a mor
 case cooldown
 ```
 
+#### Discussion
+
+HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
+
 ## See Also
 
 - [HKWorkoutActivityType.preparationAndRecovery](hkworkoutactivitytype/preparationandrecovery.md)

@@ -3,6 +3,8 @@
 **Framework**: WebKit  
 **Kind**: property
 
+The automatic behavior.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -15,6 +17,10 @@
 ```swift
 static let automatic: WebView.BackForwardNavigationGesturesBehavior
 ```
+
+#### Discussion
+
+The web view automatically chooses whether horizontal swipe gestures trigger backward and forward page navigation. By default, web views use the [`enabled`](webview-swift.struct/backforwardnavigationgesturesbehavior/enabled.md) behavior.
 
 
 ---

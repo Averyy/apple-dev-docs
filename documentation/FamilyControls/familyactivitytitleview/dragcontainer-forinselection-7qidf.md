@@ -8,7 +8,6 @@ A container with multiple selection and draggable views. The drag payload is ide
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - visionOS 26.0+ (Beta)
 

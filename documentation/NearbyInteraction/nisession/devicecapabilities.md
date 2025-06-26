@@ -19,8 +19,8 @@ class var deviceCapabilities: any NIDeviceCapability { get }
 
 ## Mentions
 
-- [Extending advanced direction finding and ranging](extending-advanced-direction-finding-and-ranging.md)
 - [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
+- [Extending advanced direction finding and ranging](extending-advanced-direction-finding-and-ranging.md)
 
 #### Discussion
 

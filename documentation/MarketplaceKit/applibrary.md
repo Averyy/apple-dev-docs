@@ -18,8 +18,8 @@ final class AppLibrary
 
 ## Mentions
 
-- [Installing apps from an alternative marketplace](installing-apps-from-an-alternative-marketplace.md)
 - [Supplying an install verification token](supplying-an-install-verification-token.md)
+- [Installing apps from an alternative marketplace](installing-apps-from-an-alternative-marketplace.md)
 
 #### Overview
 

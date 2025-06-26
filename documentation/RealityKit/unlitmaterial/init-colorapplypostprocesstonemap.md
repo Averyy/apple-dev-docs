@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: init
 
+Creates an UnlitMaterial with the given color and tone mapping setting
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

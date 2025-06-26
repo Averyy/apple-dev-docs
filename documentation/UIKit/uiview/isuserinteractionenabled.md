@@ -21,12 +21,12 @@ var isUserInteractionEnabled: Bool { get set }
 
 ## Mentions
 
-- [Handling tap gestures](handling-tap-gestures.md)
-- [Handling pan gestures](handling-pan-gestures.md)
-- [Handling rotation gestures](handling-rotation-gestures.md)
 - [Handling long-press gestures](handling-long-press-gestures.md)
 - [Handling swipe gestures](handling-swipe-gestures.md)
+- [Handling pan gestures](handling-pan-gestures.md)
+- [Handling tap gestures](handling-tap-gestures.md)
 - [Handling pinch gestures](handling-pinch-gestures.md)
+- [Handling rotation gestures](handling-rotation-gestures.md)
 
 #### Discussion
 

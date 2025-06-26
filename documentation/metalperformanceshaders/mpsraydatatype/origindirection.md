@@ -1,7 +1,7 @@
 # MPSRayDataType.originDirection
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case originDirection = 0
+case originDirection
 ```
 
 

@@ -3,6 +3,8 @@
 **Framework**: WebKit  
 **Kind**: enum
 
+A value used as part of a sequence of results from a [`URLSchemeHandler`](urlschemehandler.md), which can either be a `Data` or a `URLResponse`.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -33,6 +35,7 @@ enum URLSchemeTaskResult
 ## See Also
 
 - [WebPage.Configuration](webpage/configuration.md)
+  A configuration type that specifies the preferences and behaviors of a webpage.
 - [WebPage.DeviceSensorAuthorization](webpage/devicesensorauthorization.md)
   A type that describes the authorization permissions policy for the device’s sensors a web resource may access.
 - [struct URLScheme](urlscheme.md)

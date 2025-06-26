@@ -6,12 +6,12 @@
 A description of matrix copy operations.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -22,13 +22,19 @@ struct MPSMatrixCopyOffsets
 ## Topics
 
 ### Initializers
-- [init()](mpsmatrixcopyoffsets/2915323-init.md)
-- [init(sourceRowOffset: UInt32, sourceColumnOffset: UInt32, destinationRowOffset: UInt32, destinationColumnOffset: UInt32)](mpsmatrixcopyoffsets/2915339-init.md)
+- [init()](mpsmatrixcopyoffsets/init.md)
+- [init(sourceRowOffset: UInt32, sourceColumnOffset: UInt32, destinationRowOffset: UInt32, destinationColumnOffset: UInt32)](mpsmatrixcopyoffsets/init(sourcerowoffset:sourcecolumnoffset:destinationrowoffset:destinationcolumnoffset:).md)
 ### Instance Properties
-- [var destinationColumnOffset: UInt32](mpsmatrixcopyoffsets/2915328-destinationcolumnoffset.md)
-- [var destinationRowOffset: UInt32](mpsmatrixcopyoffsets/2915338-destinationrowoffset.md)
-- [var sourceColumnOffset: UInt32](mpsmatrixcopyoffsets/2915327-sourcecolumnoffset.md)
-- [var sourceRowOffset: UInt32](mpsmatrixcopyoffsets/2915337-sourcerowoffset.md)
+- [var destinationColumnOffset: UInt32](mpsmatrixcopyoffsets/destinationcolumnoffset.md)
+- [var destinationRowOffset: UInt32](mpsmatrixcopyoffsets/destinationrowoffset.md)
+- [var sourceColumnOffset: UInt32](mpsmatrixcopyoffsets/sourcecolumnoffset.md)
+- [var sourceRowOffset: UInt32](mpsmatrixcopyoffsets/sourcerowoffset.md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

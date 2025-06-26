@@ -60,7 +60,6 @@ A notification center can deliver notifications only within a single program; if
 ### Protocols
 - [NotificationCenter.AsyncMessage](notificationcenter/asyncmessage.md)
 - [NotificationCenter.MainActorMessage](notificationcenter/mainactormessage.md)
-- [NotificationCenter.Message](notificationcenter/message.md)
 - [NotificationCenter.MessageIdentifier](notificationcenter/messageidentifier.md)
 ### Structures
 - [NotificationCenter.BaseMessageIdentifier](notificationcenter/basemessageidentifier.md)
@@ -68,18 +67,18 @@ A notification center can deliver notifications only within a single program; if
 ### Instance Methods
 - [func addObserver<Identifier, Message>(of: Message.Subject, for: Identifier, using: (Message) -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-4d19x.md)
 - [func addObserver<Message>(of: Message.Subject?, for: Message.Type, using: (Message) -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-56bn4.md)
-- [func addObserver<Message>(of: Message.Subject?, for: Message.Type, using: (Message) async -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-5yr5p.md)
 - [func addObserver<Message>(of: Message.Subject?, for: Message.Type, using: (Message) async -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-64uw3.md)
-- [func addObserver<Identifier, Message>(of: Message.Subject, for: Identifier, using: (Message) -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-6oxxr.md)
 - [func addObserver<Identifier, Message>(of: Message.Subject.Type, for: Identifier, using: (Message) -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-90os.md)
-- [func addObserver<Message>(of: Message.Subject?, for: Message.Type, using: (Message) -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-980q2.md)
-- [func addObserver<Identifier, Message>(of: Message.Subject, for: Identifier, using: (Message) async -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-9omr9.md)
 - [func addObserver<Identifier, Message>(of: Message.Subject.Type, for: Identifier, using: (Message) async -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-t1wr.md)
 - [func addObserver<Identifier, Message>(of: Message.Subject, for: Identifier, using: (Message) async -> Void) -> NotificationCenter.ObservationToken](notificationcenter/addobserver(of:for:using:)-twm3.md)
+- [func messages<Identifier, Message>(of: Message.Subject.Type, for: Identifier, bufferSize: Int) -> some AsyncSequence<Message, Never>
+](notificationcenter/messages(of:for:buffersize:)-1ub69.md)
+- [func messages<Identifier, Message>(of: Message.Subject, for: Identifier, bufferSize: Int) -> some AsyncSequence<Message, Never>
+](notificationcenter/messages(of:for:buffersize:)-4tof0.md)
+- [func messages<Message>(of: Message.Subject?, for: Message.Type, bufferSize: Int) -> some AsyncSequence<Message, Never>
+](notificationcenter/messages(of:for:buffersize:)-623kg.md)
 - [func post<Message>(Message, subject: Message.Subject.Type)](notificationcenter/post(_:subject:)-3eb69.md)
 - [func post<Message>(Message, subject: Message.Subject)](notificationcenter/post(_:subject:)-5271w.md)
-- [func post<Message>(Message, subject: Message.Subject)](notificationcenter/post(_:subject:)-528yf.md)
-- [func post<Message>(Message, subject: Message.Subject)](notificationcenter/post(_:subject:)-58un0.md)
 - [func post<Message>(Message, subject: Message.Subject)](notificationcenter/post(_:subject:)-87dbk.md)
 - [func post<Message>(Message, subject: Message.Subject.Type)](notificationcenter/post(_:subject:)-9qynd.md)
 - [func removeObserver(NotificationCenter.ObservationToken)](notificationcenter/removeobserver(_:)-2gmm0.md)

@@ -44,7 +44,7 @@ The predicates you create for your query objects must follow these rules:
 - [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)
 - [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray)
 - [`CKRecord.Reference`](ckrecord/reference.md)
-- doc://com.apple.documentation/documentation/corelocation/cllocation
+- [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation)
 - Key names in predicates correspond to fields in the currently evaluated record. Key names can include the names of the record’s metadata properties, such as `creationDate`, or any data fields you add to the record. You can’t use key paths to specify fields in related records.
 - Predicates support the following variable substitution strings:
 - Use `%@` for value objects, such as strings, numbers, and dates.
@@ -138,7 +138,7 @@ NSPredicate predicate = nil;
 predicate = [NSPredicate predicateWithFormat:@"self contains 'bob' AND self contains __'__smith__'__"];
 ```
 
-To test whether two locations are near each other, create a predicate using the `distanceToLocation:fromLocation:` function as Listing 7 shows. Predicates that use this function must have the structure in the listing. In your code, replace the `location` variable with a field name from one of your records. This data type for the field must be a doc://com.apple.documentation/documentation/corelocation/cllocation object. Similarly, replace the `fixedLoc` and `radius` values with appropriate values from your app. The `fixedLoc` value is the geographic coordinate that marks the center of a circle with the specified radius. In this example, the predicate returns a match if the location in the record is within 10 kilometers of the specified latitude and longitude.
+To test whether two locations are near each other, create a predicate using the `distanceToLocation:fromLocation:` function as Listing 7 shows. Predicates that use this function must have the structure in the listing. In your code, replace the `location` variable with a field name from one of your records. This data type for the field must be a [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) object. Similarly, replace the `fixedLoc` and `radius` values with appropriate values from your app. The `fixedLoc` value is the geographic coordinate that marks the center of a circle with the specified radius. In this example, the predicate returns a match if the location in the record is within 10 kilometers of the specified latitude and longitude.
 
 Listing 7. Matching by distance from a location
 

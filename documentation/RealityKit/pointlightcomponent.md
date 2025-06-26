@@ -99,6 +99,7 @@ The point light illuminates entities based on its distance from them. Here is a 
 
 ### Conforms To
 - [Component](component.md)
+- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 
 

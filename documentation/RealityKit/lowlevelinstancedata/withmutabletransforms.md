@@ -8,7 +8,7 @@ Update the per instance transform data synchronously on the CPU. The transform b
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
 - visionOS 26.0+ (Beta)
@@ -16,7 +16,7 @@ Update the per instance transform data synchronously on the CPU. The transform b
 ## Declaration
 
 ```swift
-func withMutableTransforms(_ callback: (UnsafeMutableBufferPointer<float4x4>) -> Void)
+final func withMutableTransforms(_ callback: (UnsafeMutableBufferPointer<float4x4>) -> Void)
 ```
 
 

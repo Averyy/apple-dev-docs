@@ -1,6 +1,6 @@
 # recoverySuggestion
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: property
 
 A localized message describing how one might recover from the failure.

@@ -22,8 +22,8 @@ class EKEventStore
 ## Mentions
 
 - [Retrieving events and reminders](retrieving-events-and-reminders.md)
-- [Creating events and reminders](creating-events-and-reminders.md)
 - [Accessing the event store](accessing-the-event-store.md)
+- [Creating events and reminders](creating-events-and-reminders.md)
 
 #### Overview
 

@@ -30,8 +30,6 @@ var SparseScalingHungarianScalingAndOrdering: SparseScaling_t { get }
   User scaling.
 - [var SparseScalingEquilibriationInf: SparseScaling_t](sparsescalingequilibriationinf.md)
   The norm equilibration scaling using infinity norm.
-- [var SparseOrderMTMetis: SparseOrder_t](sparseordermtmetis.md)
-  Specifies type of fill-reducing ordering.
 - [var SparseScalingHungarianScalingOnly: SparseScaling_t](sparsescalinghungarianscalingonly.md)
   Specifies type of scaling to be performed.
 

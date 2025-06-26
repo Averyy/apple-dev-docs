@@ -17,7 +17,6 @@ The length of the line defined by the shape node.
 ## Declaration
 
 ```swift
-@MainActor
 var lineLength: CGFloat { get }
 ```
 

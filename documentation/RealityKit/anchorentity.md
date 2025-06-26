@@ -22,10 +22,10 @@ An anchor that tethers entities to a scene.
 
 ## Mentions
 
-- [Taking Control of Scene Anchoring](taking-control-of-scene-anchoring.md)
 - [Handling different-sized objects in physics simulations](handling-different-sized-objects-in-physics-simulations.md)
-- [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
+- [Taking Control of Scene Anchoring](taking-control-of-scene-anchoring.md)
 - [Loading entities from a file](loading-entities-from-a-file.md)
+- [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
 
 #### Overview
 

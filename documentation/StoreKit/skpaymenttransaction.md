@@ -22,8 +22,8 @@ class SKPaymentTransaction
 
 ## Mentions
 
-- [Restoring purchased products](restoring-purchased-products.md)
 - [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
+- [Restoring purchased products](restoring-purchased-products.md)
 
 #### Overview
 

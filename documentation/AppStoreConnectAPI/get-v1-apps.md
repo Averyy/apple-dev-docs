@@ -11,11 +11,11 @@ Find and list apps in App Store Connect.
 ## Mentions
 
 - [Creating alternative distribution packages](creating-alternative-distribution-packages.md)
+- [Generating Tokens for API Requests](generating-tokens-for-api-requests.md)
 - [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
 - [Creating auto-renewable subscription groups](creating-auto-renewable-subscription-groups.md)
-- [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
 - [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
-- [Generating Tokens for API Requests](generating-tokens-for-api-requests.md)
+- [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
 
 #### Discussion
 

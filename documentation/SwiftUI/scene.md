@@ -23,8 +23,8 @@ A part of an app’s user interface with a life cycle managed by the system.
 
 ## Mentions
 
-- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
 - [Migrating to the SwiftUI life cycle](migrating-to-the-swiftui-life-cycle.md)
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
 
 #### Overview
 

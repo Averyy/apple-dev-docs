@@ -1,7 +1,7 @@
 # MPSCNNLossType.categoricalCrossEntropy
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.3+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case categoricalCrossEntropy = 4
+case categoricalCrossEntropy
 ```
 
 

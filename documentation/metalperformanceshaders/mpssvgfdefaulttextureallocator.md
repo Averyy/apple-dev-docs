@@ -1,7 +1,7 @@
 # MPSSVGFDefaultTextureAllocator
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,27 +14,33 @@
 ## Declaration
 
 ```swift
-class MPSSVGFDefaultTextureAllocator : NSObject
+class MPSSVGFDefaultTextureAllocator
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpssvgfdefaulttextureallocator/3242897-init.md)
+- [init(device: any MTLDevice)](mpssvgfdefaulttextureallocator/init(device:).md)
 ### Instance Properties
-- [var allocatedTextureCount: Int](mpssvgfdefaulttextureallocator/3242895-allocatedtexturecount.md)
-- [var device: any MTLDevice](mpssvgfdefaulttextureallocator/3242896-device.md)
+- [var allocatedTextureCount: Int](mpssvgfdefaulttextureallocator/allocatedtexturecount.md)
+- [var device: any MTLDevice](mpssvgfdefaulttextureallocator/device.md)
 ### Instance Methods
-- [func reset()](mpssvgfdefaulttextureallocator/3242898-reset.md)
-- [func `return`(any MTLTexture)](mpssvgfdefaulttextureallocator/3242899-return.md)
-- [func texture(with: MTLPixelFormat, width: Int, height: Int) -> (any MTLTexture)?](mpssvgfdefaulttextureallocator/3242900-texture.md)
+- [func reset()](mpssvgfdefaulttextureallocator/reset.md)
+- [func `return`(any MTLTexture)](mpssvgfdefaulttextureallocator/return(_:).md)
+- [func texture(with: MTLPixelFormat, width: Int, height: Int) -> (any MTLTexture)?](mpssvgfdefaulttextureallocator/texture(with:width:height:).md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
 - [MPSSVGFTextureAllocator](mpssvgftextureallocator.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

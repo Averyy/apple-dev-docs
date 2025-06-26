@@ -9,8 +9,8 @@ A function the key path expectation uses to test the value of an observed proper
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- tvOS 13.0+
 - Unknown ?+ - Deprecated
+- tvOS 13.0+
 
 ## Declaration
 

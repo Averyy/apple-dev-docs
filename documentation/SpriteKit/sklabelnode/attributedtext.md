@@ -18,7 +18,7 @@ The attributed string displayed by the label.
 
 ```swift
 @NSCopying
-@MainActor var attributedText: NSAttributedString? { get set }
+var attributedText: NSAttributedString? { get set }
 ```
 
 #### Discussion

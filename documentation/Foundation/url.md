@@ -22,10 +22,10 @@ struct URL
 
 ## Mentions
 
-- [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
-- [Checking Volume Storage Capacity](checking-volume-storage-capacity.md)
 - [Encoding and Decoding Custom Types](encoding-and-decoding-custom-types.md)
+- [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
 - [Downloading files from websites](downloading-files-from-websites.md)
+- [Checking Volume Storage Capacity](checking-volume-storage-capacity.md)
 
 #### Overview
 

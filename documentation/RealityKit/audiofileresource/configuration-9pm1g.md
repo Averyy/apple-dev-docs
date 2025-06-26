@@ -22,7 +22,7 @@ struct Configuration
 ## Topics
 
 ### Initializers
-- [init(loadingStrategy:shouldLoop:shouldRandomizeStartTime:normalization:calibration:mixGroupName:)](audiofileresource/configuration-461s2/init(loadingstrategy:shouldloop:shouldrandomizestarttime:normalization:calibration:mixgroupname:).md)
+- [init(loadingStrategy:shouldLoop:shouldRandomizeStartTime:normalization:calibration:mixGroupName:)](audiofileresource/configuration-9pm1g/init(loadingstrategy:shouldloop:shouldrandomizestarttime:normalization:calibration:mixgroupname:).md)
   Initializes a new audio file resource configuration.
 ### Instance Properties
 - [var calibration: AudioResource.Calibration?](audiofileresource/configuration-9pm1g/calibration.md)

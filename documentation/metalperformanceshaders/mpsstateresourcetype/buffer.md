@@ -1,7 +1,7 @@
 # MPSStateResourceType.buffer
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.3+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case buffer = 1
+case buffer
 ```
 
 

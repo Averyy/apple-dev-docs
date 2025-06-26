@@ -24,8 +24,8 @@ struct Confirmation
 
 ## Mentions
 
-- [Testing asynchronous code](testing-asynchronous-code.md)
 - [Migrating a test from XCTest](migratingfromxctest.md)
+- [Testing asynchronous code](testing-asynchronous-code.md)
 
 ## Topics
 

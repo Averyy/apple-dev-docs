@@ -23,8 +23,8 @@ func supportsFamily(_ gpuFamily: MTLGPUFamily) -> Bool
 ## Mentions
 
 - [Improving your game’s graphics performance and settings](improving-your-games-graphics-performance-and-settings.md)
-- [Choosing a Resource Storage Mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
 - [Setting Resource Storage Modes](setting-resource-storage-modes.md)
+- [Choosing a Resource Storage Mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
 
 ## Parameters
 

@@ -212,7 +212,9 @@ Additionally, the unit class uses a single unit instance to represent all copies
 ### Type Methods
 - [class func appleEffortScore() -> Self](hkunit/appleeffortscore.md)
 - [class func lux() -> Self](hkunit/lux.md)
+  Returns a HealthKit unit for measuring illuminance in lux.
 - [class func luxUnit(with: HKMetricPrefix) -> Self](hkunit/luxunit(with:).md)
+  Returns a HealthKit unit for measuring illuminance, using lux units with the provided prefix.
 
 ## Relationships
 

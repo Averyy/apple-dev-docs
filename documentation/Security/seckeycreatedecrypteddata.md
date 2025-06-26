@@ -34,7 +34,7 @@ The decrypted data or `NULL` on failure. In Objective-C, call the [`CFRelease`](
 - `key`: The private key to use to perform the decryption.
 - `algorithm`: The algorithm that was used to encrypt the data in the first place. Use one of the encryption algorithms listed in  . You can use the   function to test that the key is suitable for the algorithm.
 - `ciphertext`: The data, produced with the corresponding public key and a call to the   function, that you want to decrypt.
-- `error`: The address of a  doc://com.apple.documentation/documentation/corefoundation/cferror-ru8  object. If an error occurs, this is set to point at an error instance that describes the failure.
+- `error`: The address of a   object. If an error occurs, this is set to point at an error instance that describes the failure.
 
 
 ---

@@ -28,8 +28,6 @@ struct Page
   The stable identity of this page.
 - [AssignedWorkDocument.Page.Document](assignedworkdocument/page/document.md)
   The document type this element is for.
-- [AssignedWorkDocument.Page.Document](assignedworkdocument/page/document.md)
-  The document type this element is for.
 ### Hashing the page
 - [func hash(into: inout Hasher)](assignedworkdocument/page/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.

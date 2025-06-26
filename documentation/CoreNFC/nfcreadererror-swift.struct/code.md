@@ -112,6 +112,7 @@ enum Code
 - [NFCReaderError.Code.readerErrorSecurityViolation](nfcreadererror-swift.struct/code/readererrorsecurityviolation.md)
   A security violation associated with the reader session has occurred.
 ### Enumeration Cases
+- [NFCReaderError.Code.readerErrorAccessNotAccepted](nfcreadererror-swift.struct/code/readererroraccessnotaccepted.md)
 - [NFCReaderError.Code.readerErrorIneligible](nfcreadererror-swift.struct/code/readererrorineligible.md)
 ### Initializers
 - [init?(rawValue: Int)](nfcreadererror-swift.struct/code/init(rawvalue:).md)

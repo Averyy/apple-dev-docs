@@ -17,7 +17,6 @@ Returns an action associated with a specific key.
 ## Declaration
 
 ```swift
-@MainActor
 func action(forKey key: String) -> SKAction?
 ```
 

@@ -1,7 +1,7 @@
 # MPSRNNDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A description of a recursive neural network block or layer.
 
@@ -16,22 +16,39 @@ A description of a recursive neural network block or layer.
 ## Declaration
 
 ```swift
-class MPSRNNDescriptor : NSObject
+class MPSRNNDescriptor
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var inputFeatureChannels: Int](mpsrnndescriptor/2865707-inputfeaturechannels.md)
-- [var layerSequenceDirection: MPSRNNSequenceDirection](mpsrnndescriptor/2865730-layersequencedirection.md)
-- [var outputFeatureChannels: Int](mpsrnndescriptor/2865702-outputfeaturechannels.md)
-- [var useFloat32Weights: Bool](mpsrnndescriptor/2881202-usefloat32weights.md)
-- [var useLayerInputUnitTransformMode: Bool](mpsrnndescriptor/2865687-uselayerinputunittransformmode.md)
+- [var inputFeatureChannels: Int](mpsrnndescriptor/inputfeaturechannels.md)
+- [var layerSequenceDirection: MPSRNNSequenceDirection](mpsrnndescriptor/layersequencedirection.md)
+- [var outputFeatureChannels: Int](mpsrnndescriptor/outputfeaturechannels.md)
+- [var useFloat32Weights: Bool](mpsrnndescriptor/usefloat32weights.md)
+- [var useLayerInputUnitTransformMode: Bool](mpsrnndescriptor/uselayerinputunittransformmode.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Inherited By
+- [MPSGRUDescriptor](mpsgrudescriptor.md)
+- [MPSLSTMDescriptor](mpslstmdescriptor.md)
+- [MPSRNNSingleGateDescriptor](mpsrnnsinglegatedescriptor.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsrnnimageinferencelayer/init(coder:device:).md)
+- [init(device: any MTLDevice, rnnDescriptor: MPSRNNDescriptor)](mpsrnnimageinferencelayer/init(device:rnndescriptor:).md)
+- [init(device: any MTLDevice, rnnDescriptors: [MPSRNNDescriptor])](mpsrnnimageinferencelayer/init(device:rnndescriptors:).md)
 
 
 ---

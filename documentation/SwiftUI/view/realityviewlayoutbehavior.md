@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Controls the frame sizing and content alignment behavior for `RealityView`
+A view modifier that controls the frame sizing and content alignment behavior for `RealityView`
 
 **Availability**:
 - iOS 26.0+ (Beta)

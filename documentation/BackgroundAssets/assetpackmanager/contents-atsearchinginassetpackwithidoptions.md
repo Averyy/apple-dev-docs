@@ -8,7 +8,7 @@ Gets the contents of an asset file at the specified relative path.
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
 - visionOS 26.0+ (Beta)
@@ -19,6 +19,10 @@ Gets the contents of an asset file at the specified relative path.
 nonisolated
 func contents(at path: FilePath, searchingInAssetPackWithID assetPackID: String? = nil, options: Data.ReadingOptions = .mappedIfSafe) throws -> Data
 ```
+
+## Mentions
+
+- [Downloading asset packs hosted by Apple](downloading-asset-packs-hosted-by-apple.md)
 
 #### Return Value
 

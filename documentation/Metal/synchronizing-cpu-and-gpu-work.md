@@ -112,7 +112,7 @@ Upon initialization, the contents of the buffer instances in the `_vertexBuffers
 
 ##### Update Data with the Cpu
 
-In each frame, at the start of the `drawInMTKView:` render loop, use the CPU to update the contents of one buffer instance in the `updateState` method:
+In each frame, at the start of the [`draw(in:)`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate/draw(in:)) render loop, use the CPU to update the contents of one buffer instance in the `updateState` method:
 
 ```objective-c
 // Vertex data for the current triangles.

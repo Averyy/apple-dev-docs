@@ -63,9 +63,9 @@ struct AttributeContainer
   A protocol that defines Objective-C interoperability with an attribute key’s value type.
 ### Instance Methods
 - [func filter(inheritedByAddedText: Bool) -> AttributeContainer](attributecontainer/filter(inheritedbyaddedtext:).md)
-  Returns an attribute container storing only the attributes in `self` with the `inheritedByAddedText` property set to `true`
+  Returns a copy of the attribute container with only attributes that specify the provided inheritance behavior.
 - [func filter(runBoundaries: AttributedString.AttributeRunBoundaries?) -> AttributeContainer](attributecontainer/filter(runboundaries:).md)
-  Returns an attribute container storing only the attributes in `self` with a matching run boundary property
+  Returns a copy of the attribute container with only attributes that have the provided run boundaries.
 
 ## Relationships
 

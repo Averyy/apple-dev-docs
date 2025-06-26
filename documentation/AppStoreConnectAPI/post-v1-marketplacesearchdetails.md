@@ -11,8 +11,8 @@ Add a search detail URL for the alternative marketplace.
 ## Mentions
 
 - [Building a searchable catalog for your marketplace app for inclusion in Spotlight](building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight.md)
-- [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
 - [App Store Connect API 3.3 release notes](app-store-connect-api-3-3-release-notes.md)
+- [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
 
 #### Discussion
 

@@ -6,12 +6,12 @@
 A structure that specifies keypoint information.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -21,12 +21,18 @@ struct MPSImageKeypointData
 
 ## Topics
 
-### Initializers
-- [init()](mpsimagekeypointdata/2873395-init.md)
-- [init(keypointCoordinate: vector_ushort2, keypointColorValue: Float)](mpsimagekeypointdata/3204129-init.md)
 ### Instance Properties
-- [var keypointColorValue: Float](mpsimagekeypointdata/2873303-keypointcolorvalue.md)
-- [var keypointCoordinate: vector_ushort2](mpsimagekeypointdata/2873311-keypointcoordinate.md)
+- [var keypointColorValue: Float](mpsimagekeypointdata/keypointcolorvalue.md)
+- [var keypointCoordinate: vector_ushort2](mpsimagekeypointdata/keypointcoordinate.md)
+### Initializers
+- [init()](mpsimagekeypointdata/init.md)
+- [init(keypointCoordinate: vector_ushort2, keypointColorValue: Float)](mpsimagekeypointdata/init(keypointcoordinate:keypointcolorvalue:).md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

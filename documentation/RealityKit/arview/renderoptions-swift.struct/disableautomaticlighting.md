@@ -6,11 +6,10 @@
 Disable automatic updates of the scene lighting.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 14.0+
-- macOS 10.15+
-- Unknown ?+ - Deprecated
+- iOS 13.0+ - Deprecated
+- iPadOS 13.0+ - Deprecated
+- Mac Catalyst 14.0+ - Deprecated
+- macOS 10.15+ - Deprecated
 
 ## Declaration
 

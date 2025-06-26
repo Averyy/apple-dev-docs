@@ -1,7 +1,7 @@
 # MPSIntersectionDataType.distancePrimitiveIndexInstanceIndex
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case distancePrimitiveIndexInstanceIndex = 3
+case distancePrimitiveIndexInstanceIndex
 ```
 
 

@@ -1,6 +1,6 @@
 # AgeRangeService.Error.invalidRequest
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: case
 
 The request is invalid.

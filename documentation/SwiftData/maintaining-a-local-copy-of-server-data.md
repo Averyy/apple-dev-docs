@@ -152,22 +152,18 @@ The insert method works for both creating and updating earthquake model instance
 
 ## See Also
 
-- [Adding and editing persistent data in your app](adding-and-editing-persistent-data-in-your-app.md)
-  Create a data entry form for collecting and changing data managed by SwiftData.
-- [Deleting persistent data from your app](deleting-persistent-data-from-your-app.md)
-  Explore different ways to use SwiftData to delete persistent data.
-- [Defining data relationships with enumerations and model classes](defining-data-relationships-with-enumerations-and-model-classes.md)
-  Create relationships for static and dynamic data stored in your app.
-- [macro Model()](model().md)
-  Converts a Swift class into a stored model that’s managed by SwiftData.
-- [macro Attribute(Schema.Attribute.Option..., originalName: String?, hashModifier: String?)](attribute(_:originalname:hashmodifier:).md)
-  Specifies the custom behavior that SwiftData applies to the annotated property when managing the owning class.
-- [macro Transient()](transient().md)
-  Tells SwiftData not to persist the annotated property when managing the owning class.
-- [macro Relationship(Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule, minimumModelCount: Int?, maximumModelCount: Int?, originalName: String?, inverse: AnyKeyPath?, hashModifier: String?)](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md)
-  Specifies the options that SwiftData needs to manage the annotated property as a relationship between two models.
-- [protocol PersistentModel](persistentmodel.md)
-  An interface that enables SwiftData to manage a Swift class as a stored model.
+- [class DefaultStore](defaultstore.md)
+  A data store that uses Core Data as its undelying storage mechanism.
+- [protocol DataStore](datastore.md)
+  An interface that enables SwiftData to read and write model data without knowledge of the underlying storage mechanism.
+- [protocol DataStoreBatching](datastorebatching.md)
+  An interface that enables a custom data store to support batch requests.
+- [protocol HistoryProviding](historyproviding.md)
+  An interface that enables a custom data store to provide the history of changes for its persisted models.
+- [Building a document-based app using SwiftData](../SwiftUI/Building-a-document-based-app-using-SwiftData.md)
+  Code along with the WWDC presenter to transform an app with SwiftData.
+- [struct ModelDocument](modeldocument.md)
+  A document type that uses SwiftData to manage its storage.
 
 
 ---

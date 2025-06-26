@@ -21,8 +21,8 @@ optional func userNotificationCenter(_ center: UNUserNotificationCenter, didRece
 
 ## Mentions
 
-- [Declaring your actionable notification types](declaring-your-actionable-notification-types.md)
 - [Handling notifications and notification-related actions](handling-notifications-and-notification-related-actions.md)
+- [Declaring your actionable notification types](declaring-your-actionable-notification-types.md)
 
 #### Discussion
 

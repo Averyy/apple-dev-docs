@@ -8,6 +8,10 @@ Add a version release for a specific Game Center challenge version.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Mentions
+
+- [Configuring Game Center challenges](configuring-game-center-challenges.md)
+
 ## See Also
 
 - [Read challenge version release information](get-v1-gamecenterchallengeversionreleases-_id_.md)

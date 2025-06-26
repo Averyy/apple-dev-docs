@@ -19,6 +19,16 @@
 typealias DataStoreSnapshotValue = Codable & Sendable
 ```
 
+## See Also
+
+- [func fetch<T>(DataStoreFetchRequest<T>) throws -> DataStoreFetchResult<T, Self.Snapshot>](datastore/fetch(_:).md)
+- [struct DataStoreFetchRequest](datastorefetchrequest.md)
+- [struct DataStoreFetchResult](datastorefetchresult.md)
+- [associatedtype Snapshot : DataStoreSnapshot](datastore/snapshot.md)
+- [protocol DataStoreSnapshot](datastoresnapshot.md)
+- [func fetchCount<T>(DataStoreFetchRequest<T>) throws -> Int](datastore/fetchcount(_:).md)
+- [func fetchIdentifiers<T>(DataStoreFetchRequest<T>) throws -> [PersistentIdentifier]](datastore/fetchidentifiers(_:).md)
+
 
 ---
 

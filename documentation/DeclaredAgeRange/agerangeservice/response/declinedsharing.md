@@ -1,6 +1,6 @@
 # AgeRangeService.Response.declinedSharing
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: case
 
 The person declined to share their age range.

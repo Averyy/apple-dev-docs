@@ -4,17 +4,17 @@
 **Kind**: enum
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-enum MPSMatrixDecompositionStatus : Int32, @unchecked Sendable
+enum MPSMatrixDecompositionStatus
 ```
 
 ## Topics
@@ -28,11 +28,18 @@ enum MPSMatrixDecompositionStatus : Int32, @unchecked Sendable
   A status indicating the resulting decomposition is not suitable for use in a subsequent system solve.
 - [MPSMatrixDecompositionStatus.success](mpsmatrixdecompositionstatus/success.md)
   A status indicating the decomposition was performed successfully.
+### Initializers
+- [init?(rawValue: Int32)](mpsmatrixdecompositionstatus/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

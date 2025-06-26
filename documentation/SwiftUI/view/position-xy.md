@@ -23,8 +23,8 @@ func position(x: CGFloat = 0, y: CGFloat = 0) -> some View
 
 ## Mentions
 
-- [Making fine adjustments to a view’s position](making-fine-adjustments-to-a-view-s-position.md)
 - [Building layouts with stack views](building-layouts-with-stack-views.md)
+- [Making fine adjustments to a view’s position](making-fine-adjustments-to-a-view-s-position.md)
 
 #### Return Value
 

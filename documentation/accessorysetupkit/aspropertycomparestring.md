@@ -36,10 +36,7 @@ class ASPropertyCompareString
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
@@ -54,7 +51,7 @@ class ASPropertyCompareString
 - [var wifiAwareModelNameMatch: ASPropertyCompareString?](asdiscoverydescriptor/wifiawaremodelnamematch.md)
   The accessory’s Wi-Fi Aware model name and matching options.
 - [var wifiAwareVendorNameMatch: ASPropertyCompareString?](asdiscoverydescriptor/wifiawarevendornamematch.md)
-  The accessory’s Wi-Fi Aware vendor name  and matching options.
+  The accessory’s Wi-Fi Aware vendor name and matching options.
 
 
 ---

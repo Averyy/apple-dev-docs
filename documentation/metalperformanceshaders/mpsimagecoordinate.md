@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 12.1+
-- iPadOS 12.1+
-- Mac Catalyst 13.0+
-- macOS 10.14.1+
-- tvOS 12.1+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,12 +20,18 @@ struct MPSImageCoordinate
 ## Topics
 
 ### Initializers
-- [init()](mpsimagecoordinate/3037440-init.md)
-- [init(x: Int, y: Int, channel: Int)](mpsimagecoordinate/3037441-init.md)
+- [init()](mpsimagecoordinate/init.md)
+- [init(x: Int, y: Int, channel: Int)](mpsimagecoordinate/init(x:y:channel:).md)
 ### Instance Properties
-- [var channel: Int](mpsimagecoordinate/3037364-channel.md)
-- [var x: Int](mpsimagecoordinate/3037365-x.md)
-- [var y: Int](mpsimagecoordinate/3037366-y.md)
+- [var channel: Int](mpsimagecoordinate/channel.md)
+- [var x: Int](mpsimagecoordinate/x.md)
+- [var y: Int](mpsimagecoordinate/y.md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

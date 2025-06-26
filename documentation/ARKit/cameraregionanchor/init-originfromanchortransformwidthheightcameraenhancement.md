@@ -17,9 +17,9 @@ init(originFromAnchorTransform: simd_float4x4, width: Float, height: Float, came
 ## Parameters
 
 - `originFromAnchorTransform`: The transform from the anchor to the origin coordinate system.
-- `width`: The width of the anchor in meters.
-- `height`: The height of the anchor in meters.
-- `cameraEnhancement`: The camera enhancement used with this anchor.
+- `width`: The width of the region, in meters.
+- `height`: The height of the region, in meters.
+- `cameraEnhancement`: The camera enhancement used with this anchor. This will affect the frame rate of the output.
 
 
 ---

@@ -17,6 +17,7 @@ Creates a shape node with a rectangular path.
 ## Declaration
 
 ```swift
+@MainActor
 convenience init(rect: CGRect)
 ```
 

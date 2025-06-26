@@ -16,6 +16,8 @@ In macOS 10.14 and later, the user must explicitly grant permission for each app
 
 ## See Also
 
+- [Audio Input Entitlement](entitlements/com.apple.security.device.audio-input.md)
+  A Boolean value that indicates whether the app may record audio using the built-in microphone and access audio input using Core Audio.
 - [com.apple.security.device.microphone](entitlements/com.apple.security.device.microphone.md)
   A Boolean value that indicates whether the app may use the microphone.
 - [com.apple.security.device.usb](entitlements/com.apple.security.device.usb.md)

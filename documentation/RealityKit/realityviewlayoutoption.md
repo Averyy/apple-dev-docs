@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-Specifies the frame sizing and content alignment option for`RealityView`.
+Options that specify the frame sizing and content alignment option for `RealityView`.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -23,11 +23,11 @@ struct RealityViewLayoutOption
 
 ### Type Properties
 - [static let centered: RealityViewLayoutOption](realityviewlayoutoption/centered.md)
-  Centers the visual content within a flexible frame.
+  The option that centers the visual content within a flexible frame.
 - [static let fixedSize: RealityViewLayoutOption](realityviewlayoutoption/fixedsize.md)
-  Fixes the size of the frame to equal the size of the visual content and centers the content within the new frame size.
+  The option that fixes the size of the frame to equal the size of the visual content and centers the content within the new frame size.
 - [static let flexible: RealityViewLayoutOption](realityviewlayoutoption/flexible.md)
-  Applies the default layout behavior of `RealityView`, where the content is not centered and the frame is flexible (takes up as much space as the SwiftUI layout provides).
+  The option that applies the default layout behavior of `RealityView`, where the content is not centered and the frame is flexible (takes up as much space as the SwiftUI layout provides).
 
 ## Relationships
 

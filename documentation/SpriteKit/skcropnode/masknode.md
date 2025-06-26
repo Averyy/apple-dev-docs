@@ -17,6 +17,7 @@ The node used to determine the crop node’s mask.
 ## Declaration
 
 ```swift
+@MainActor
 var maskNode: SKNode? { get set }
 ```
 

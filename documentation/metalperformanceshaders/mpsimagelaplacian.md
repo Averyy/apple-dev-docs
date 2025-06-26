@@ -1,7 +1,7 @@
 # MPSImageLaplacian
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An optimized Laplacian filter, provided for ease of use.
 
@@ -16,27 +16,37 @@ An optimized Laplacian filter, provided for ease of use.
 ## Declaration
 
 ```swift
-class MPSImageLaplacian : MPSUnaryImageKernel
+class MPSImageLaplacian
 ```
 
 #### Overview
 
 This filter uses an optimized convolution filter with a 3x3 kernel with the following weights:
 
-![](https://docs-assets.developer.apple.com/published/14b057e164/7ed47c4c-c5fa-4b07-b639-47dbf5e55da5.png)
+![None](https://docs-assets.developer.apple.com/published/920e9120976a74b0e57c7fcc80e963aa/media-2556916%402x.png)
 
-> **Note**: The optimized convolution filter used by the [`MPSImageLaplacian`](mpsimagelaplacian.md) class could also be created by initializing an [`MPSImageConvolution`](mpsimageconvolution.md) object with `kernelWidth=3`, `kernelHeight=3`, and the weights specified above.
+> **Note**:  The optimized convolution filter used by the [`MPSImageLaplacian`](mpsimagelaplacian.md) class could also be created by initializing an [`MPSImageConvolution`](mpsimageconvolution.md) object with `kernelWidth=3`, `kernelHeight=3`, and the weights specified above.
 
 ## Topics
 
 ### Properties
-- [var bias: Float](mpsimagelaplacian/1648929-bias.md)
+- [var bias: Float](mpsimagelaplacian/bias.md)
   The value added to a convolved pixel before it is converted back to its intended storage format.
 
 ## Relationships
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

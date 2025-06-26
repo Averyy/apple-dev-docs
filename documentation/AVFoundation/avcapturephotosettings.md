@@ -22,11 +22,11 @@ class AVCapturePhotoSettings
 
 - [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
 - [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
-- [Saving Captured Photos](saving-captured-photos.md)
 - [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
+- [Saving Captured Photos](saving-captured-photos.md)
+- [Capturing Photos with Depth](capturing-photos-with-depth.md)
 - [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
 - [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
 
 #### Overview
 

@@ -126,9 +126,6 @@ The Core Media framework defines the media pipeline used by AVFoundation and oth
 - [let kCMMetadataIdentifier_QuickTimeMetadataDisplayMaskRectangleStereoRight: CFString](kcmmetadataidentifier_quicktimemetadatadisplaymaskrectanglestereoright.md)
 - [let kCMMetadataIdentifier_QuickTimeMetadataPresentationImmersiveMedia: CFString](kcmmetadataidentifier_quicktimemetadatapresentationimmersivemedia.md)
 - [let kCMMetadataIdentifier_QuickTimeMetadataSpatialAudioMix: CFString](kcmmetadataidentifier_quicktimemetadataspatialaudiomix.md)
-### Enumerations
-- [enum CMTagged](cmtagged.md)
-  Namespace for tagged CoreMedia objects.
 
 
 ---

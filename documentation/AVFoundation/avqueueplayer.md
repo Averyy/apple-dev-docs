@@ -23,9 +23,9 @@ class AVQueuePlayer
 
 ## Mentions
 
+- [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
 - [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
 - [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
-- [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
 
 #### Overview
 

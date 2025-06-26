@@ -20,8 +20,8 @@ struct MLTextClassifier
 
 ## Mentions
 
-- [Creating a Text Classifier Model](creating-a-classification-model-for-natural-language.md)
 - [Creating a text classifier model](creating-a-text-classifier-model.md)
+- [Creating a Text Classifier Model](creating-a-classification-model-for-natural-language.md)
 
 #### Overview
 
@@ -111,6 +111,8 @@ After you train a text classifier, you save it to a Core ML model file. You then
 
 - [Creating a text classifier model](creating-a-text-classifier-model.md)
   Train a machine learning model to classify natural language text.
+- [Creating a word tagger model](../NaturalLanguage/creating-a-word-tagger-model.md)
+  Train a machine learning model to tag individual words in natural language text.
 - [struct MLWordTagger](mlwordtagger.md)
   A word-tagging model you train to classify natural language text at the word level.
 - [struct MLGazetteer](mlgazetteer.md)

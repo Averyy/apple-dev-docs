@@ -24,12 +24,12 @@ protocol SKPaymentTransactionObserver : NSObjectProtocol
 
 - [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 - [Promoting In-App Purchases](promoting-in-app-purchases.md)
-- [Processing a transaction](processing-a-transaction.md)
 - [Testing transaction observer code](testing-transaction-observer-code.md)
+- [Processing a transaction](processing-a-transaction.md)
 - [Setting up the transaction observer for the payment queue](setting-up-the-transaction-observer-for-the-payment-queue.md)
 - [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
-- [Supporting Family Sharing in your app](supporting-family-sharing-in-your-app.md)
 - [Testing resubscribing from the subscriptions page](testing-resubscribing-from-the-subscriptions-page.md)
+- [Supporting Family Sharing in your app](supporting-family-sharing-in-your-app.md)
 
 #### Overview
 

@@ -24,8 +24,6 @@ Quick Look recomputes the display regardless of whether the current preview item
 
 ## See Also
 
-- [class func canPreview(any QLPreviewItem) -> Bool](qlpreviewcontroller/canpreview(_:).md)
-  Returns a Boolean value that indicates whether the preview controller can display an item.
 - [var currentPreviewItem: (any QLPreviewItem)?](qlpreviewcontroller/currentpreviewitem.md)
   The item displaying in the Quick Look preview controller.
 - [var currentPreviewItemIndex: Int](qlpreviewcontroller/currentpreviewitemindex.md)

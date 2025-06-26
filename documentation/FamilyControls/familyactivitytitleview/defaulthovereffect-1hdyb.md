@@ -8,7 +8,6 @@ Sets the default hover effect to use for views within this view.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - tvOS 17.0+
 - visionOS 1.0+
 

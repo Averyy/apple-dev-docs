@@ -119,6 +119,9 @@ For most types of buttons, the value of the button matches its state—the value
 ### Handling Keyboard Events
 - [func performKeyEquivalent(with: NSEvent) -> Bool](nsbutton/performkeyequivalent(with:).md)
   Checks the button’s key equivalent against the specified event and, if they match, simulates the button being clicked.
+### Instance Properties
+- [var tintProminence: NSTintProminence](nsbutton/tintprominence.md)
+  The tint prominence of the button. Use tint prominence to gently suggest a hierarchy when multiple buttons perform similar actions. A button with primary tint prominence suggests the most preferred option, while secondary prominence indicates a reasonable alternative. See [`NSTintProminence`](nstintprominence.md) for a list of possible values.
 
 ## Relationships
 

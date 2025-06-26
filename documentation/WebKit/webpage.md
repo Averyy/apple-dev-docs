@@ -69,10 +69,15 @@ Use [`WebPage`](webpage.md) to programmatically navigate to various types of res
 
 ### Creating a WebPage
 - [WebPage.Configuration](webpage/configuration.md)
+  A configuration type that specifies the preferences and behaviors of a webpage.
 - [convenience init(configuration: WebPage.Configuration)](webpage/init(configuration:).md)
+  Create a new WebPage.
 - [convenience init(configuration: WebPage.Configuration, dialogPresenter: some WebPage.DialogPresenting)](webpage/init(configuration:dialogpresenter:).md)
+  Create a new WebPage.
 - [convenience init(configuration: WebPage.Configuration, navigationDecider: some WebPage.NavigationDeciding)](webpage/init(configuration:navigationdecider:).md)
+  Create a new WebPage.
 - [convenience init(configuration: WebPage.Configuration, navigationDecider: some WebPage.NavigationDeciding, dialogPresenter: some WebPage.DialogPresenting)](webpage/init(configuration:navigationdecider:dialogpresenter:).md)
+  Create a new WebPage.
 ### Managing navigation between webpages
 - [protocol NavigationDeciding](webpage/navigationdeciding.md)
   Allows providing custom behavior to handle navigation changes and to coordinate these changes for the web page’s main page.
@@ -97,6 +102,7 @@ Use [`WebPage`](webpage.md) to programmatically navigate to various types of res
   The current navigation event, or `nil` if there have been no navigations so far.
 ### Configuring a WebPage
 - [WebPage.Configuration](webpage/configuration.md)
+  A configuration type that specifies the preferences and behaviors of a webpage.
 - [WebPage.DeviceSensorAuthorization](webpage/devicesensorauthorization.md)
   A type that describes the authorization permissions policy for the device’s sensors a web resource may access.
 - [struct URLScheme](urlscheme.md)
@@ -104,6 +110,7 @@ Use [`WebPage`](webpage.md) to programmatically navigate to various types of res
 - [protocol URLSchemeHandler](urlschemehandler.md)
   A protocol for loading resources with URL schemes that WebKit doesn’t handle.
 - [enum URLSchemeTaskResult](urlschemetaskresult.md)
+  A value used as part of a sequence of results from a [`URLSchemeHandler`](urlschemehandler.md), which can either be a `Data` or a `URLResponse`.
 ### Loading web content
 - [func load(WebPage.BackForwardList.Item) -> WebPage.NavigationID?](webpage/load(_:)-78prx.md)
   Navigates to an item from the back-forward list and sets it as the current item.
@@ -187,7 +194,7 @@ Use [`WebPage`](webpage.md) to programmatically navigate to various types of res
 - [func snapshot(WKSnapshotConfiguration) async throws -> Image?](webpage/snapshot(_:).md)
   Generates an image from the web view’s contents.
 - [func pdf(configuration: WKPDFConfiguration) async throws -> Data](webpage/pdf(configuration:).md)
-  Generates PDF data from the webpage’s contents
+  Generates PDF data from the webpage’s contents.
 - [func webArchiveData() async throws -> Data](webpage/webarchivedata.md)
   Creates a web archive of the webpage’s current contents.
 

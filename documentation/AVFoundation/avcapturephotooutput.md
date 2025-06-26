@@ -22,12 +22,12 @@ class AVCapturePhotoOutput
 
 - [Configuring Camera Capture to Collect a Portrait Effects Matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
 - [Setting Up a Capture Session](setting-up-a-capture-session.md)
-- [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
 - [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
-- [Requesting authorization to capture and save media](requesting-authorization-to-capture-and-save-media.md)
+- [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
 - [Capturing Photos with Depth](capturing-photos-with-depth.md)
-- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
+- [Requesting authorization to capture and save media](requesting-authorization-to-capture-and-save-media.md)
 - [Saving Captured Photos](saving-captured-photos.md)
+- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
 
 #### Overview
 

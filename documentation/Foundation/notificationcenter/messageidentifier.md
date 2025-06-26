@@ -21,7 +21,7 @@ protocol MessageIdentifier
 ## Topics
 
 ### Associated Types
-- [associatedtype MessageType : NotificationCenter.Message](notificationcenter/messageidentifier/messagetype.md)
+- [associatedtype MessageType](notificationcenter/messageidentifier/messagetype.md)
 ### Type Properties
 - [static var accessibilityDisplayOptionsDidChange: NotificationCenter.BaseMessageIdentifier<NSWorkspace.AccessibilityDisplayOptionsDidChangeMessage>](notificationcenter/messageidentifier/accessibilitydisplayoptionsdidchange.md)
 - [static var activeSpaceDidChange: NotificationCenter.BaseMessageIdentifier<NSWorkspace.ActiveSpaceDidChangeMessage>](notificationcenter/messageidentifier/activespacedidchange.md)
@@ -56,6 +56,7 @@ protocol MessageIdentifier
 - [static var didChange: NotificationCenter.BaseMessageIdentifier<UserDefaults.DidChangeMessage>](notificationcenter/messageidentifier/didchange-187tw.md)
 - [static var didChange: NotificationCenter.BaseMessageIdentifier<UIPointerLockState.DidChangeMessage>](notificationcenter/messageidentifier/didchange-7wty5.md)
 - [static var didChangeFileLabels: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidChangeFileLabelsMessage>](notificationcenter/messageidentifier/didchangefilelabels.md)
+- [static var didChangeLibrary: NotificationCenter.BaseMessageIdentifier<DidChangeLibraryMessage>](notificationcenter/messageidentifier/didchangelibrary.md)
 - [static var didCloseUndoGroup: NotificationCenter.BaseMessageIdentifier<UndoManager.DidCloseUndoGroupMessage>](notificationcenter/messageidentifier/didcloseundogroup.md)
 - [static var didDeactivateApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidDeactivateApplicationMessage>](notificationcenter/messageidentifier/diddeactivateapplication.md)
 - [static var didEnterBackground: NotificationCenter.BaseMessageIdentifier<UIApplication.DidEnterBackgroundMessage>](notificationcenter/messageidentifier/didenterbackground-1u5sm.md)
@@ -91,7 +92,6 @@ protocol MessageIdentifier
 - [static var keyboardWillChangeFrame: NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardWillChangeFrameMessage>](notificationcenter/messageidentifier/keyboardwillchangeframe.md)
 - [static var keyboardWillHide: NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardWillHideMessage>](notificationcenter/messageidentifier/keyboardwillhide.md)
 - [static var keyboardWillShow: NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardWillShowMessage>](notificationcenter/messageidentifier/keyboardwillshow.md)
-- [static var libraryDidChangeMessage: NotificationCenter.BaseMessageIdentifier<LibraryDidChangeMessage>](notificationcenter/messageidentifier/librarydidchangemessage.md)
 - [static var lowDiskSpace: NotificationCenter.BaseMessageIdentifier<NSBundleResourceRequest.LowDiskSpaceMessage>](notificationcenter/messageidentifier/lowdiskspace.md)
 - [static var modeDidChange: NotificationCenter.BaseMessageIdentifier<UIScreen.ModeDidChangeMessage>](notificationcenter/messageidentifier/modedidchange.md)
 - [static var monoAudioStatusDidChange: NotificationCenter.BaseMessageIdentifier<UIAccessibility.MonoAudioStatusDidChangeMessage>](notificationcenter/messageidentifier/monoaudiostatusdidchange.md)

@@ -1,9 +1,9 @@
 # AgeRangeService
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: struct
 
-A request for the age range of a person logged onto the current device.
+A request for the age range of a person logged onto iCloud on the device.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -50,7 +50,11 @@ do {
 - [AgeRangeService.AgeRangeDeclaration](agerangeservice/agerangedeclaration.md)
   An enumeration that describes the declared age range.
 - [AgeRangeService.AgeRange](agerangeservice/agerange.md)
-  A person’s age range is based on the information they provided in response to the age range request.
+  A person’s age range is based on the age they provided in response to the age range request.
+- [func requestAgeRange(ageGates: Int, Int?, Int?, in: UIViewController) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)
+  Determines an age range for the person logged onto iCloud on the device.
+- [func requestAgeRange(ageGates: Int, Int?, Int?, in: NSWindow) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-4yo3r.md)
+  Determines an age range for the person logged onto iCloud on the device.
 - [AgeRangeService.Response](agerangeservice/response.md)
   A response indicating either a person shared their age range or declined to share it.
 - [AgeRangeService.ParentalControls](agerangeservice/parentalcontrols.md)
@@ -58,11 +62,6 @@ do {
 ### Handling errors
 - [AgeRangeService.Error](agerangeservice/error.md)
   An error that occurs when an age range request fails.
-### Instance Methods
-- [func requestAgeRange(ageGates: Int, Int?, Int?, in: UIViewController) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)
-  Determines an age range for the person logged onto the device.
-- [func requestAgeRange(ageGates: Int, Int?, Int?, in: NSWindow) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-4yo3r.md)
-  Determines an age range for the person using the device.
 
 ## See Also
 

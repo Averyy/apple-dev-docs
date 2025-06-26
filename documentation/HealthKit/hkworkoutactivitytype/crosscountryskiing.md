@@ -19,6 +19,10 @@ The constant for cross country skiing.
 case crossCountrySkiing
 ```
 
+#### Discussion
+
+HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
+
 ## See Also
 
 - [HKWorkoutActivityType.curling](hkworkoutactivitytype/curling.md)

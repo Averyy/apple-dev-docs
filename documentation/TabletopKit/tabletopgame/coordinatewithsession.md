@@ -3,6 +3,8 @@
 **Framework**: TabletopKit  
 **Kind**: method
 
+Begins coordination of the game with a group session
+
 **Availability**:
 - visionOS 2.0+
 

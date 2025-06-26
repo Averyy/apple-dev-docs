@@ -20,12 +20,12 @@ func capturePhoto(with settings: AVCapturePhotoSettings, delegate: any AVCapture
 
 ## Mentions
 
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
-- [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
 - [Setting Up a Capture Session](setting-up-a-capture-session.md)
 - [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
 - [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
 - [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing Photos with Depth](capturing-photos-with-depth.md)
+- [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
 
 #### Discussion
 

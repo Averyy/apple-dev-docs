@@ -17,6 +17,7 @@ The range of allowed random values for a particle’s initial speed.
 ## Declaration
 
 ```swift
+@MainActor
 var particleSpeedRange: CGFloat { get set }
 ```
 

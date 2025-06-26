@@ -24,11 +24,11 @@ var properties: [String : Any]? { get set }
 
 - [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
 - [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
-- [Letting players join matches using party codes](letting-players-join-matches-using-party-codes.md)
-- [Creating matchmaking rules for backward compatibility](creating-matchmaking-rules-for-backward-compatibility.md)
 - [Troubleshooting matchmaking rules using metrics](troubleshooting-matchmaking-rules-using-metrics.md)
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
 - [Assigning players to teams using rules](assigning-players-to-teams-using-rules.md)
+- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Creating matchmaking rules for backward compatibility](creating-matchmaking-rules-for-backward-compatibility.md)
+- [Letting players join matches using party codes](letting-players-join-matches-using-party-codes.md)
 
 #### Discussion
 

@@ -3,6 +3,8 @@
 **Framework**: WebKit  
 **Kind**: property
 
+Link previews are disabled.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -15,6 +17,10 @@
 ```swift
 static let disabled: WebView.LinkPreviewBehavior
 ```
+
+#### Discussion
+
+The web view prevents pressing a link from displaying a preview of the destination for the link.
 
 
 ---

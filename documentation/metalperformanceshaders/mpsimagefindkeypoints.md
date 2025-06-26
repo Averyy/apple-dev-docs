@@ -1,7 +1,7 @@
 # MPSImageFindKeypoints
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel that is used to find a list of keypoints.
 
@@ -16,27 +16,37 @@ A kernel that is used to find a list of keypoints.
 ## Declaration
 
 ```swift
-class MPSImageFindKeypoints : MPSKernel
+class MPSImageFindKeypoints
 ```
 
 #### Overview
 
-This kernel is used to find a list of keypoints whose values are greater than the [`minimumThresholdValue`](mpsimagekeypointrangeinfo/2873302-minimumthresholdvalue.md) in [`MPSImageKeypointRangeInfo`](mpsimagekeypointrangeinfo.md). The keypoints are generated for a specified region in the image. The pixel format of the source image must be [`MTLPixelFormat.r8Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/r8unorm).
+This kernel is used to find a list of keypoints whose values are greater than the [`minimumThresholdValue`](mpsimagekeypointrangeinfo/minimumthresholdvalue.md) in [`MPSImageKeypointRangeInfo`](mpsimagekeypointrangeinfo.md). The keypoints are generated for a specified region in the image. The pixel format of the source image must be [`MTLPixelFormat.r8Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r8Unorm).
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagefindkeypoints/2873306-init.md)
-- [init(device: any MTLDevice, info: UnsafePointer<MPSImageKeypointRangeInfo>)](mpsimagefindkeypoints/2873309-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagefindkeypoints/init(coder:device:).md)
+- [init(device: any MTLDevice, info: UnsafePointer<MPSImageKeypointRangeInfo>)](mpsimagefindkeypoints/init(device:info:).md)
 ### Instance Properties
-- [var keypointRangeInfo: MPSImageKeypointRangeInfo](mpsimagefindkeypoints/2873310-keypointrangeinfo.md)
+- [var keypointRangeInfo: MPSImageKeypointRangeInfo](mpsimagefindkeypoints/keypointrangeinfo.md)
 ### Instance Methods
-- [func encode(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, regions: UnsafePointer<MTLRegion>, numberOfRegions: Int, keypointCount: any MTLBuffer, keypointCountBufferOffset: Int, keypointDataBuffer: any MTLBuffer, keypointDataBufferOffset: Int)](mpsimagefindkeypoints/2873307-encode.md)
+- [func encode(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, regions: UnsafePointer<MTLRegion>, numberOfRegions: Int, keypointCount: any MTLBuffer, keypointCountBufferOffset: Int, keypointDataBuffer: any MTLBuffer, keypointDataBufferOffset: Int)](mpsimagefindkeypoints/encode(to:sourcetexture:regions:numberofregions:keypointcount:keypointcountbufferoffset:keypointdatabuffer:keypointdatabufferoffset:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

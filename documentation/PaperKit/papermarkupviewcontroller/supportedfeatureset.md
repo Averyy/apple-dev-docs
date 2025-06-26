@@ -15,7 +15,7 @@ The supported PaperKIt features on this canvas.
 
 ```swift
 @MainActor
-@preconcurrency final let supportedFeatureSet: FeatureSet
+@preconcurrency var supportedFeatureSet: FeatureSet { get }
 ```
 
 

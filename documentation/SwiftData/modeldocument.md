@@ -24,12 +24,18 @@ struct ModelDocument
 
 ## See Also
 
-- [Reverting data changes using the undo manager](reverting-data-changes-using-the-undo-manager.md)
-  Automatically record data change operations that people perform in your SwiftUI app, and let them undo and redo those changes.
-- [class ModelContainer](modelcontainer.md)
-  An object that manages an app’s schema and model storage configuration.
-- [class ModelContext](modelcontext.md)
-  An object that enables you to fetch, insert, and delete models, and save any changes to disk.
+- [Maintaining a local copy of server data](maintaining-a-local-copy-of-server-data.md)
+  Create and update a persistent store to cache read-only network data.
+- [class DefaultStore](defaultstore.md)
+  A data store that uses Core Data as its undelying storage mechanism.
+- [protocol DataStore](datastore.md)
+  An interface that enables SwiftData to read and write model data without knowledge of the underlying storage mechanism.
+- [protocol DataStoreBatching](datastorebatching.md)
+  An interface that enables a custom data store to support batch requests.
+- [protocol HistoryProviding](historyproviding.md)
+  An interface that enables a custom data store to provide the history of changes for its persisted models.
+- [Building a document-based app using SwiftData](../SwiftUI/Building-a-document-based-app-using-SwiftData.md)
+  Code along with the WWDC presenter to transform an app with SwiftData.
 
 
 ---

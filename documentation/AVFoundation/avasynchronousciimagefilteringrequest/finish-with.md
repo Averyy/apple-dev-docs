@@ -21,7 +21,7 @@ func finish(with error: any Error)
 
 #### Discussion
 
-Call this method if you cannot process the input image and wish to abort playback as a result—for example, if the [`outputImage`](https://developer.apple.com/documentation/coreimage/cifilter/1438169-outputimage) object from your filter chain is nil. (If instead you want to fall back to rendering an unfiltered image, call the [`finish(with:context:)`](avasynchronousciimagefilteringrequest/finish(with:context:).md) and pass the [`sourceImage`](avasynchronousciimagefilteringrequest/sourceimage.md) object to the `filteredImage` parameter.)
+Call this method if you cannot process the input image and wish to abort playback as a result—for example, if the [`outputImage`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class/outputImage) object from your filter chain is nil. (If instead you want to fall back to rendering an unfiltered image, call the [`finish(with:context:)`](avasynchronousciimagefilteringrequest/finish(with:context:).md) and pass the [`sourceImage`](avasynchronousciimagefilteringrequest/sourceimage.md) object to the `filteredImage` parameter.)
 
 Calling this method causes AVFoundation to post a notification named [`failedToPlayToEndTimeNotification`](avplayeritem/failedtoplaytoendtimenotification.md). Observers of this notification can use the [`AVPlayerItemFailedToPlayToEndTimeErrorKey`](avplayeritemfailedtoplaytoendtimeerrorkey.md) key to examine the error you provide.
 

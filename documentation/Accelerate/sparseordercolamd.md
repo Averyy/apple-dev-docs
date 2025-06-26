@@ -34,6 +34,8 @@ This ordering isn’t valid for symmetric factorizations (use [`SparseOrderAMD`]
   Approximate minimum degree (AMD) ordering.
 - [var SparseOrderMetis: SparseOrder_t](sparseordermetis.md)
   METIS nested dissection ordering.
+- [var SparseOrderMTMetis: SparseOrder_t](sparseordermtmetis.md)
+  Specifies type of fill-reducing ordering.
 
 
 ---

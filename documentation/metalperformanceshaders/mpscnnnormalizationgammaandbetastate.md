@@ -1,7 +1,7 @@
 # MPSCNNNormalizationGammaAndBetaState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An object that stores gamma and beta terms used to apply a scale and bias in instance- or batch-normalization operations.
 
@@ -16,23 +16,30 @@ An object that stores gamma and beta terms used to apply a scale and bias in ins
 ## Declaration
 
 ```swift
-class MPSCNNNormalizationGammaAndBetaState : MPSState
+class MPSCNNNormalizationGammaAndBetaState
 ```
 
 ## Topics
 
 ### Initializers
-- [init(gamma: any MTLBuffer, beta: any MTLBuffer)](mpscnnnormalizationgammaandbetastate/2953936-init.md)
+- [init(gamma: any MTLBuffer, beta: any MTLBuffer)](mpscnnnormalizationgammaandbetastate/init(gamma:beta:).md)
 ### Instance Properties
-- [var beta: any MTLBuffer](mpscnnnormalizationgammaandbetastate/2953938-beta.md)
-- [var gamma: any MTLBuffer](mpscnnnormalizationgammaandbetastate/2953934-gamma.md)
+- [var beta: any MTLBuffer](mpscnnnormalizationgammaandbetastate/beta.md)
+- [var gamma: any MTLBuffer](mpscnnnormalizationgammaandbetastate/gamma.md)
 ### Type Methods
-- [class func temporaryState(with: any MTLCommandBuffer, numberOfFeatureChannels: Int) -> Self](mpscnnnormalizationgammaandbetastate/2953937-temporarystate.md)
+- [class func temporaryState(with: any MTLCommandBuffer, numberOfFeatureChannels: Int) -> Self](mpscnnnormalizationgammaandbetastate/temporarystate(with:numberoffeaturechannels:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSState](mpsstate.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

@@ -18,8 +18,6 @@ object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.FilterCriteria
 
 - [object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.Points](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary/datasets-data.dictionary/points-data.dictionary.md)
   A metric value of a goal for a specific app version, with a breakdown by metric subtypes.
-- [object xcodeMetrics.ProductData.MetricCategories.Metrics](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary.md)
-  Data that relates to power and performance measurements for an app, including its datasets, goal keys, metrics identifier, and unit of measurement.
 
 
 ---

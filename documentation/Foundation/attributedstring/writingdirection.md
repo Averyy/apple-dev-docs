@@ -11,7 +11,7 @@ The writing direction of a piece of text.
 - Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
-- visionOS 1.0+
+- visionOS 26.0+ (Beta)
 - watchOS 26.0+ (Beta)
 
 ## Declaration

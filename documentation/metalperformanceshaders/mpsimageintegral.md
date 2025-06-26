@@ -1,7 +1,7 @@
 # MPSImageIntegral
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that calculates the sum of pixels over a specified region in an image.
 
@@ -16,14 +16,16 @@ A filter that calculates the sum of pixels over a specified region in an image.
 ## Declaration
 
 ```swift
-class MPSImageIntegral : MPSUnaryImageKernel
+class MPSImageIntegral
 ```
 
 #### Overview
 
- The value at each position is the sum of all pixels in a source image rectangle, `sumRect. `[`Listing 1`](mpsimageintegral#2556914.md) shows the pseudocode used to calculate `sumRect`.
+The value at each position is the sum of all pixels in a source image rectangle, `sumRect.` The following listing shows the pseudocode used to calculate `sumRect`.
 
-```occ
+Listing 1. Pseudocode for sumRect
+
+```objc
 sumRect.origin = filter.offset
 sumRect.size = dest_position - filter.clipRect.origin
 ```
@@ -34,6 +36,16 @@ If the channels in the source image are normalized, half-float or floating value
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

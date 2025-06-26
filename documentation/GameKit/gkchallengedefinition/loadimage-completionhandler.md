@@ -16,7 +16,7 @@ Loads the image set on the challenge definition, which may be `nil` if none was 
 ## Declaration
 
 ```swift
-var image: UIImage? { get async throws }
+var image: NSImage? { get async throws }
 ```
 
 ## See Also

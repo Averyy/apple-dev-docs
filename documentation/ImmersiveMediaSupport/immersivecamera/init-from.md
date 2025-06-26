@@ -25,7 +25,7 @@ This initializer throws an error if reading from the decoder fails, or if the da
 
 ## See Also
 
-- [init(id: String, calibration: ImmersiveCameraCalibration, type: ImmersiveCamera.CameraType, presentationFrameRate: Float, pose: ImmersiveCamera.CameraPose)](immersivecamera/init(id:calibration:type:presentationframerate:pose:).md)
+- [init(id: String, calibration: ImmersiveCameraCalibration, type: ImmersiveCamera.CameraType, presentationFrameRate: Int, pose: Pose3DFloat)](immersivecamera/init(id:calibration:type:presentationframerate:pose:).md)
 
 
 ---

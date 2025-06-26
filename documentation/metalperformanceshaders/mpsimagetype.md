@@ -6,12 +6,12 @@
 Options that define a Metal Performance Shaders image type.
 
 **Availability**:
-- iOS 11.3+
-- iPadOS 11.3+
-- Mac Catalyst 13.0+
-- macOS 10.13.4+
-- tvOS 11.3+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -22,16 +22,19 @@ struct MPSImageType
 ## Topics
 
 ### Initializers
-- [init(UInt32)](mpsimagetype/2967128-init.md)
-- [init(rawValue: UInt32)](mpsimagetype/2967129-init.md)
+- [init(UInt32)](mpsimagetype/init(_:).md)
+- [init(rawValue: UInt32)](mpsimagetype/init(rawvalue:).md)
 ### Instance Properties
-- [var rawValue: UInt32](mpsimagetype/2967130-rawvalue.md)
+- [var rawValue: UInt32](mpsimagetype/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

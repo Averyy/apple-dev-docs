@@ -8,7 +8,9 @@ Create screenshots and record high-quality video of your visionOS app and its su
 
 Use screenshots and short videos of your visionOS app to showcase your user interface, highlight functionality, and demonstrate usage. Help people understand what to expect from an immersive experience by recording content from Apple Vision Pro that includes your app and its surroundings.
 
-The system renders content with spatial effects and optimizations for viewing during immersive experiences. One optimization, , displays higher resolution where an enrolled person is looking, while reducing image resolution in their periphery. The system only applies foveated rendering for enrolled users who calibrate the device for their eyes and hands. Techniques that improve rendering performance during normal operation are intended to be unnoticeable for enrolled people wearing Apple Vision Pro; however, they don’t translate well to 2D displays. To produce high-resolution content for people to view on 2D displays, the system needs to render without these effects and drop some optimizations. Use Developer Capture in Reality Composer Pro to notify the system to reconfigure rendering, and capture screenshots or high-resolution video, including sound, for up to 60 seconds from Apple Vision Pro.
+The system renders content with spatial effects and optimizations for viewing during immersive experiences. One optimization, , displays higher resolution where an enrolled person is looking, while reducing image resolution in their periphery. The system only applies foveated rendering for enrolled users who calibrate the device for their eyes and hands. Techniques that improve rendering performance during normal operation are intended to be unnoticeable for enrolled people wearing Apple Vision Pro; however, they don’t translate well to 2D displays.
+
+To produce high-resolution content for people to view on 2D displays, the system needs to render without these effects and drop some optimizations. Use Developer Capture in Reality Composer Pro to notify the system to reconfigure rendering, and capture screenshots or high-resolution video, including sound, from Apple Vision Pro. Because capturing high-resolution video from device is resource intensive, Reality Composer Pro limits the duration of device video capture.
 
 > **Note**: For guidance on the screenshots and previews you include in your app’s product page, see [`Submit your apps to the App Store for Apple Vision Pro`](https://developer.apple.comhttps://developer.apple.com/visionos/submit/).
 
@@ -66,6 +68,8 @@ Use additional video-editing tools to trim, edit, and apply post-processing, suc
 
 - [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
+- [Enhancing the audio experience for Petite Asteroids](enhancing-the-audio-experience-for-petite-asteroids.md)
+  Elevate the game’s immersive experience using RealityKit audio.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)

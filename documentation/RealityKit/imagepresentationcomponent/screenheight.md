@@ -14,6 +14,11 @@ The height of the screen mesh, in meters, when the image is presented in a non-i
 var screenHeight: Float
 ```
 
+## See Also
+
+- [var presentationScreenSize: SIMD2<Float>](imagepresentationcomponent/presentationscreensize.md)
+  The size of the screen presenting the image, with the format [width, height] in meters.
+
 
 ---
 

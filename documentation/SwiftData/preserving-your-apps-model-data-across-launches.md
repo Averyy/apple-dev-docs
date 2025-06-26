@@ -188,10 +188,14 @@ For more information about predicates, see [`Predicate`](https://developer.apple
 
 ## See Also
 
-- [Syncing model data across a person’s devices](syncing-model-data-across-a-persons-devices.md)
-  Add the required capabilities and define a compatible schema to enable SwiftData to automatically sync your app’s model data using iCloud.
-- [Building a document-based app using SwiftData](../SwiftUI/Building-a-document-based-app-using-SwiftData.md)
-  Code along with the WWDC presenter to transform an app with SwiftData.
+- [Adding and editing persistent data in your app](adding-and-editing-persistent-data-in-your-app.md)
+  Create a data entry form for collecting and changing data managed by SwiftData.
+- [Adopting SwiftData for a Core Data app](../CoreData/adopting-swiftdata-for-a-core-data-app.md)
+  Persist data in your app intuitively with the Swift native persistence framework.
+- [SwiftData updates](../Updates/SwiftData.md)
+  Learn about important changes to SwiftData.
+- [Adopting inheritance in SwiftData](adopting-inheritance-in-swiftdata.md)
+  Add flexibility to your models using class inheritance.
 
 
 ---

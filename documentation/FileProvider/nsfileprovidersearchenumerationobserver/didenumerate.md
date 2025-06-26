@@ -19,7 +19,7 @@ func didEnumerate(_ searchResults: [any NSFileProviderSearchResult])
 
 For files stored on your server, consult search indexes on the server and use them to create an array of [`NSFileProviderSearchResult`](nsfileprovidersearchresult.md) instances that you provide to this method.
 
-You can call this method multiple times prior to calling [`finishEnumerating(upTo:)`](nsfileprovidersearchenumerationobserver/finishenumerating(upto:).md) or [`finishEnumeratingWithError(_:)`](nsfileprovidersearchenumerationobserver/finishenumeratingwitherror(_:).md), as long as the total number of results doesn’t exceed [`maxNumberOfResults`](nsfileprovidersearchenumerationobserver/maxnumberofresults.md).
+You can call this method multiple times prior to calling [`finishEnumerating(upTo:)`](nsfileprovidersearchenumerationobserver/finishenumerating(upto:).md) or [`finishEnumeratingWithError(_:)`](nsfileprovidersearchenumerationobserver/finishenumeratingwitherror(_:).md), as long as the total number of results doesn’t exceed `NSFileProviderSearchEnumerationObserver/maxNumberOfResults`.
 
 ## See Also
 

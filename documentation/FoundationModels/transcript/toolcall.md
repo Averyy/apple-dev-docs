@@ -38,6 +38,8 @@ struct ToolCall
 ### Comparing tool call
 - [static func == (Transcript.ToolCall, Transcript.ToolCall) -> Bool](transcript/toolcall/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
+### Initializers
+- [init(id: String, toolName: String, arguments: GeneratedContent)](transcript/toolcall/init(id:toolname:arguments:).md)
 ### Default Implementations
 - [CustomStringConvertible Implementations](transcript/toolcall/customstringconvertible-implementations.md)
 - [Equatable Implementations](transcript/toolcall/equatable-implementations.md)

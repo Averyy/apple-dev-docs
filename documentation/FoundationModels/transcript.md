@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
-A transcript that documents interactions with a language model.
+A transcript that documents interactions with a language model. Transcripts contain an ordered list of entries, representing inputs to and outputs from the model.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -25,7 +25,7 @@ struct Transcript
 ## Topics
 
 ### Creating a transcript
-- [init(entries: [Transcript.Entry])](transcript/init(entries:).md)
+- [init(entries: some Sequence<Transcript.Entry>)](transcript/init(entries:).md)
   Creates a transcript.
 - [init(from: any Decoder) throws](transcript/init(from:).md)
   Creates a new instance by decoding from the given decoder.
@@ -33,9 +33,6 @@ struct Transcript
   An entry in a transcript.
 - [Transcript.Segment](transcript/segment.md)
   The types of segments that may be included in a transcript entry.
-### Getting the transcript entries
-- [var entries: [Transcript.Entry]](transcript/entries.md)
-  A ordered list of entries, representing inputs to and outputs from the model.
 ### Getting the transcript types
 - [Transcript.Instructions](transcript/instructions.md)
   Instructions you provide to the model that define its behavior.
@@ -63,20 +60,47 @@ struct Transcript
 ### Comparing a transcript
 - [static func == (Transcript, Transcript) -> Bool](transcript/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
+### Instance Properties
+- [var endIndex: Int](transcript/endindex.md)
+  The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
+- [var startIndex: Int](transcript/startindex.md)
+  The position of the first element in a nonempty collection.
+### Subscripts
+- [subscript(Transcript.Index) -> Transcript.Entry](transcript/subscript(_:).md)
+  Accesses the element at the specified position.
+### Type Aliases
+- [Transcript.Element](transcript/element.md)
+  A type representing the sequence’s elements.
+- [Transcript.Index](transcript/index.md)
+  A type that represents a position in the collection.
+- [Transcript.Indices](transcript/indices.md)
+  A type that represents the indices that are valid for subscripting the collection, in ascending order.
+- [Transcript.Iterator](transcript/iterator.md)
+  A type that provides the collection’s iteration interface and encapsulates its iteration state.
+- [Transcript.SubSequence](transcript/subsequence.md)
+  A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 ### Default Implementations
+- [BidirectionalCollection Implementations](transcript/bidirectionalcollection-implementations.md)
+- [Collection Implementations](transcript/collection-implementations.md)
 - [Decodable Implementations](transcript/decodable-implementations.md)
 - [Encodable Implementations](transcript/encodable-implementations.md)
 - [Equatable Implementations](transcript/equatable-implementations.md)
+- [RandomAccessCollection Implementations](transcript/randomaccesscollection-implementations.md)
+- [Sequence Implementations](transcript/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
+- [Collection](../Swift/Collection.md)
 - [Copyable](../Swift/Copyable.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sequence](../Swift/Sequence.md)
 
 ## See Also
 

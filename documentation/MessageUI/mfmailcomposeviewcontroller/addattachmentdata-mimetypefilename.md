@@ -14,6 +14,7 @@ Adds the specified data as an attachment to the message.
 ## Declaration
 
 ```swift
+@MainActor
 func addAttachmentData(_ attachment: Data, mimeType: String, fileName filename: String)
 ```
 

@@ -58,6 +58,8 @@ For example, a red `SimpleMaterial` that is not metallic, and one that is metall
 ### Characterizing a material
 - [var color: SimpleMaterial.BaseColor](simplematerial/color.md)
   The material’s color.
+- [var baseColor: MaterialColorParameter](simplematerial/basecolor-swift.property.md)
+  The base color of the material.
 - [var tintColor: UIColor](simplematerial/tintcolor-18qur.md)
   A tint color applied to the base color in macOS.
 - [var tintColor: NSColor](simplematerial/tintcolor-6aik0.md)
@@ -70,10 +72,6 @@ For example, a red `SimpleMaterial` that is not metallic, and one that is metall
 - [init(color:roughness:isMetallic:)](simplematerial/init(color:roughness:ismetallic:).md)
   Creates a simple material with specific characteristics in macOS.
 ### Instance Properties
-- [var baseColor: MaterialColorParameter](simplematerial/basecolor-7x8l0.md)
-  The base color of the material.
-- [var baseColor: MaterialColorParameter](simplematerial/basecolor-na5q.md)
-  The base color of the material.
 - [var faceCulling: SimpleMaterial.FaceCulling](simplematerial/faceculling-6lmly.md)
   A process in which the system specifies polygons to remove before rendering a mesh using this material.
 - [var faceCulling: SimpleMaterial.FaceCulling](simplematerial/faceculling-9izub.md)
@@ -82,8 +80,6 @@ For example, a red `SimpleMaterial` that is not metallic, and one that is metall
   A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
 - [var readsDepth: Bool](simplematerial/readsdepth-l9cl.md)
   A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
-- [var tintColor: UIColor](simplematerial/tintcolor-74a0x.md)
-  A tint color applied to the base color in macOS.
 - [var triangleFillMode: SimpleMaterial.TriangleFillMode](simplematerial/trianglefillmode-swift.property.md)
   The object that controls how RealityKit draws triangles.
 - [var writesDepth: Bool](simplematerial/writesdepth-4nh0k.md)

@@ -16,7 +16,7 @@ The color the web view displays behind the active page, visible when the user sc
 
 ```swift
 @NSCopying
-@MainActor var underPageBackgroundColor: NSColor! { get set }
+@MainActor var underPageBackgroundColor: UIColor! { get set }
 ```
 
 #### Discussion

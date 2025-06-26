@@ -1,7 +1,7 @@
 # MPSNNPadGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 12.1+
@@ -14,19 +14,29 @@
 ## Declaration
 
 ```swift
-class MPSNNPadGradient : MPSCNNGradientKernel
+class MPSNNPadGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnpadgradient/3037435-init.md)
-- [init(device: any MTLDevice)](mpsnnpadgradient/3037436-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnpadgradient/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsnnpadgradient/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNGradientKernel](mpscnngradientkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

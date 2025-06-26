@@ -8,7 +8,6 @@ Adds an action to perform when this view detects data emitted by the given publi
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+

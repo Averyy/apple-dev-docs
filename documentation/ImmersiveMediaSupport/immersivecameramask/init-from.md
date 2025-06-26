@@ -23,13 +23,6 @@ This initializer throws an error if reading from the decoder fails, or if the da
 
 - `decoder`: The decoder to read data from.
 
-## See Also
-
-- [init(dynamicMaskName: String)](immersivecameramask/init(dynamicmaskname:).md)
-  Initializes a mask using a dynamic mask.
-- [init(filename: String)](immersivecameramask/init(filename:).md)
-  Initializes a mask using an image file.
-
 
 ---
 

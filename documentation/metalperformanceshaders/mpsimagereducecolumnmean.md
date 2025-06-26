@@ -1,7 +1,7 @@
 # MPSImageReduceColumnMean
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that returns the mean value for each column in an image.
 
@@ -16,18 +16,28 @@ A filter that returns the mean value for each column in an image.
 ## Declaration
 
 ```swift
-class MPSImageReduceColumnMean : MPSImageReduceUnary
+class MPSImageReduceColumnMean
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpsimagereducecolumnmean/2942331-init.md)
+- [init(device: any MTLDevice)](mpsimagereducecolumnmean/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSImageReduceUnary](mpsimagereduceunary.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

@@ -1,8 +1,7 @@
 # broadcastController(_:didUpdateServiceInfo:)
 
 **Framework**: ReplayKit  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Tells the delegate the broadcast service has data to pass back to the broadcasting app.
 

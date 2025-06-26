@@ -12,8 +12,8 @@ Read contactless physical and digital wallet cards using your iPhone.
 
 ## Mentions
 
-- [Adopting the Verifier API in your iPhone app](adopting-the-verifier-api-in-your-iphone-app.md)
 - [Adding support for Tap to Pay on iPhone to your app](adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
+- [Adopting the Verifier API in your iPhone app](adopting-the-verifier-api-in-your-iphone-app.md)
 
 #### Overview
 

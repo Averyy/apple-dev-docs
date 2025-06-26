@@ -1,7 +1,7 @@
 # MPSCNNPoolingL2NormGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient L2-norm pooling filter.
 
@@ -16,19 +16,29 @@ A gradient L2-norm pooling filter.
 ## Declaration
 
 ```swift
-class MPSCNNPoolingL2NormGradient : MPSCNNPoolingGradient
+class MPSCNNPoolingL2NormGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolingl2normgradient/2942352-init.md)
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingl2normgradient/2942355-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolingl2normgradient/init(coder:device:).md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingl2normgradient/init(device:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNPoolingGradient](mpscnnpoolinggradient.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

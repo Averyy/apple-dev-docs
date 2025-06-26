@@ -23,16 +23,16 @@ class URLSession
 ## Mentions
 
 - [Pausing and resuming uploads](pausing-and-resuming-uploads.md)
-- [Analyzing HTTP traffic with Instruments](analyzing-http-traffic-with-instruments.md)
 - [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
+- [Analyzing HTTP traffic with Instruments](analyzing-http-traffic-with-instruments.md)
 - [Downloading files in the background](downloading-files-in-the-background.md)
 - [Downloading files from websites](downloading-files-from-websites.md)
-- [Uploading data to a website](uploading-data-to-a-website.md)
 - [Fetching website data into memory](fetching-website-data-into-memory.md)
-- [Improving network reliability using Multipath TCP](improving-network-reliability-using-multipath-tcp.md)
+- [Uploading data to a website](uploading-data-to-a-website.md)
 - [Uploading streams of data](uploading-streams-of-data.md)
-- [Pausing and resuming downloads](pausing-and-resuming-downloads.md)
+- [Improving network reliability using Multipath TCP](improving-network-reliability-using-multipath-tcp.md)
 - [Performing manual server trust authentication](performing-manual-server-trust-authentication.md)
+- [Pausing and resuming downloads](pausing-and-resuming-downloads.md)
 
 #### Overview
 

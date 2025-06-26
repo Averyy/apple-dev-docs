@@ -19,10 +19,10 @@ case managed
 
 - [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
 - [Optimizing Texture Data](optimizing-texture-data.md)
-- [Adjusting for GPU Memory Bandwidth Tradeoffs](adjusting-for-gpu-memory-bandwidth-tradeoffs.md)
 - [Setting Resource Storage Modes](setting-resource-storage-modes.md)
-- [Choosing a Resource Storage Mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
+- [Adjusting for GPU Memory Bandwidth Tradeoffs](adjusting-for-gpu-memory-bandwidth-tradeoffs.md)
 - [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Choosing a Resource Storage Mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
 
 #### Discussion
 

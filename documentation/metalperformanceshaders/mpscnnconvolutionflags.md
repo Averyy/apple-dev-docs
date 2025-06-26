@@ -6,28 +6,46 @@
 Options used to control how kernel weights are stored and used in the CNN kernels
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-enum MPSCNNConvolutionFlags : UInt, @unchecked Sendable
+enum MPSCNNConvolutionFlags
 ```
 
 ## Topics
 
 ### Enumeration Cases
 - [MPSCNNConvolutionFlags.none](mpscnnconvolutionflags/none.md)
+### Initializers
+- [init?(rawValue: UInt)](mpscnnconvolutionflags/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnconvolution/init(coder:device:).md)
+- [init(device: any MTLDevice, convolutionDescriptor: MPSCNNConvolutionDescriptor, kernelWeights: UnsafePointer<Float>, biasTerms: UnsafePointer<Float>?, flags: MPSCNNConvolutionFlags)](mpscnnconvolution/init(device:convolutiondescriptor:kernelweights:biasterms:flags:).md)
+  Initializes a convolution kernel.
+- [class MPSCNNConvolutionDescriptor](mpscnnconvolutiondescriptor.md)
+  A description of the attributes of a convolution kernel.
+- [init(device: any MTLDevice, weights: any MPSCNNConvolutionDataSource)](mpscnnconvolution/init(device:weights:).md)
+- [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
+  The protocol that provides convolution filter weights and bias terms.
 
 
 ---

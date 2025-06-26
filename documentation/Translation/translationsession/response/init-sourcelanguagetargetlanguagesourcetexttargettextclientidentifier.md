@@ -19,7 +19,7 @@ init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceTex
 
 #### Discussion
 
-You don’t normally use this initializer directly. Instead, let the translation functions create instances of this type for you. Do use this initializer when you want to create sample response for a test, for example in a SwiftUI preview.
+You don’t normally use this initializer directly. Instead, let the translation functions create instances of this type for you. Use this initializer when you want to create sample response for a test, for example in a SwiftUI preview.
 
 
 ---

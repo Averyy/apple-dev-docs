@@ -103,8 +103,6 @@ For simple display and navigation of PDF documents within your application, you 
 - [func thumbnail(of: CGSize, for: PDFDisplayBox) -> UIImage](pdfpage/thumbnail(of:for:).md)
 - [func transform(CGContext, for: PDFDisplayBox)](pdfpage/transform(_:for:).md)
 - [func transform(for: PDFDisplayBox) -> CGAffineTransform](pdfpage/transform(for:).md)
-- [func selection(forTableRect: CGRect) -> PDFSelection?](pdfpage/selection(fortablerect:).md)
-- [func tableSelection(from: CGPoint, to: CGPoint) -> PDFSelection?](pdfpage/tableselection(from:to:).md)
 
 ## Relationships
 

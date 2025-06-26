@@ -33,9 +33,13 @@ The data instances that this type stores correspond to the [`MTL4CounterHeapType
 - [var type: MTL4CounterHeapType](mtl4counterheap/type.md)
   Queries the type of the heap.
 ### Instance Methods
-- [func invalidateCounterRange(NSRange)](mtl4counterheap/invalidatecounterrange(_:).md)
+- [func invalidateCounterRange(NSRange)](mtl4counterheap/invalidatecounterrange(_:)-7e3rx.md)
   Invalidates a range of entries in this counter heap.
-- [func resolveCounterRange(NSRange) -> Data?](mtl4counterheap/resolvecounterrange(_:).md)
+- [func invalidateCounterRange(Range<Int>)](mtl4counterheap/invalidatecounterrange(_:)-cyoh.md)
+  Invalidates a range of entries in this counter heap.
+- [func resolveCounterRange(NSRange) -> Data?](mtl4counterheap/resolvecounterrange(_:)-49tmw.md)
+  Resolves heap data on the CPU timeline.
+- [func resolveCounterRange(Range<Int>) throws -> Data?](mtl4counterheap/resolvecounterrange(_:)-8y97c.md)
   Resolves heap data on the CPU timeline.
 
 ## Relationships

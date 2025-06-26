@@ -38,7 +38,7 @@ The `error` argument of a room-capture session delgate’s  [`captureSession(_:d
   An error that indicates when the framework encounters an unexpected error case.
 ### Inspecting error information
 - [var errorDescription: String?](roomcapturesession/captureerror/errordescription.md)
-  A human-readable explanation for the error.
+  A localized message describing what error occurred.
 - [var failureReason: String?](roomcapturesession/captureerror/failurereason.md)
   A localized message describing the reason for the failure.
 - [var helpAnchor: String?](roomcapturesession/captureerror/helpanchor.md)

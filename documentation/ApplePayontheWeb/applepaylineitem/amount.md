@@ -29,6 +29,8 @@ If the payment request is for an automatic reload payment, the `amount` indicate
   A required value that’s a short, localized description of the line item.
 - [type](applepaylineitem/type.md)
   A value that indicates whether the line item is final or pending.
+- [ApplePayLineItemType](applepaylineitemtype.md)
+  A type that indicates whether a line item is final or pending.
 
 
 ---

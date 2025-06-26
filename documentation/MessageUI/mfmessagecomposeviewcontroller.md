@@ -49,7 +49,7 @@ Add an observer to the [`MFMessageComposeViewControllerTextMessageAvailabilityDi
 ## Topics
 
 ### Responding to the view controller dismissal
-- [var messageComposeDelegate: MFMessageComposeViewControllerDelegate?](mfmessagecomposeviewcontroller/messagecomposedelegate.md)
+- [var messageComposeDelegate: (any MFMessageComposeViewControllerDelegate)?](mfmessagecomposeviewcontroller/messagecomposedelegate.md)
   The delegate to which message-related notifications should be sent.
 - [protocol MFMessageComposeViewControllerDelegate](mfmessagecomposeviewcontrollerdelegate.md)
   An interface for responding to user interactions with a message compose view controller.

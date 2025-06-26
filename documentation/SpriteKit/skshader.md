@@ -23,12 +23,12 @@ class SKShader
 ## Mentions
 
 - [Controlling Shape Drawing with Shaders](controlling-shape-drawing-with-shaders.md)
-- [Executing Shaders in Metal and OpenGL](executing-shaders-in-metal-and-opengl.md)
 - [Applying Shaders to a Sprite](applying-shaders-to-a-sprite.md)
-- [Creating a New Node By Rendering To a Texture](creating-a-new-node-by-rendering-to-a-texture.md)
-- [Getting Started with Particle Shaders](getting-started-with-particle-shaders.md)
+- [Executing Shaders in Metal and OpenGL](executing-shaders-in-metal-and-opengl.md)
 - [Creating a Custom Fragment Shader](creating-a-custom-fragment-shader.md)
 - [Customizing the Behavior of a Node](customizing-the-behavior-of-a-node.md)
+- [Creating a New Node By Rendering To a Texture](creating-a-new-node-by-rendering-to-a-texture.md)
+- [Getting Started with Particle Shaders](getting-started-with-particle-shaders.md)
 
 #### Overview
 

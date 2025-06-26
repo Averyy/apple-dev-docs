@@ -6,17 +6,17 @@
 Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
 
 ```swift
-typealias MTL4CommitFeedbackHandler = ((any MTL4CommitFeedback)?) -> Void
+typealias MTL4CommitFeedbackHandler = (any MTL4CommitFeedback) -> Void
 ```
 
 #### Discussion

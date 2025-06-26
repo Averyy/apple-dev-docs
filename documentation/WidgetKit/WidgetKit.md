@@ -10,7 +10,7 @@ Extend the reach of your app by creating widgets, watch complications, Live Acti
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
-- visionOS 3.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 #### Overview

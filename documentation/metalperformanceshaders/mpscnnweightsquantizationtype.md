@@ -6,28 +6,37 @@
 Options that specify the type of quantization used to generate unsigned integer weights.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.0+
-- macOS 10.14+
-- tvOS 12.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-enum MPSCNNWeightsQuantizationType : UInt32, @unchecked Sendable
+enum MPSCNNWeightsQuantizationType
 ```
 
 ## Topics
 
 ### Enumeration Cases
-- [MPSCNNWeightsQuantizationType.none](mpscnnweightsquantizationtype/none.md)
+- [MPSCNNWeightsQuantizationType.none](mpscnnweightsquantizationtype/none-29myw.md)
+- [MPSCNNWeightsQuantizationType.none](mpscnnweightsquantizationtype/none-3wocm.md)
+- [MPSCNNWeightsQuantizationType.none](mpscnnweightsquantizationtype/none-41te1.md)
+### Initializers
+- [init?(rawValue: UInt32)](mpscnnweightsquantizationtype/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

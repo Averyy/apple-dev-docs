@@ -20,6 +20,13 @@
 var identifier: String { get }
 ```
 
+## See Also
+
+- [var configuration: Self.Configuration](datastore/configuration-swift.property.md)
+- [associatedtype Configuration : DataStoreConfiguration](datastore/configuration-swift.associatedtype.md)
+- [protocol DataStoreConfiguration](datastoreconfiguration.md)
+- [var schema: Schema](datastore/schema.md)
+
 
 ---
 

@@ -1,7 +1,7 @@
 # MPSStateResourceList
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An interface for objects that define resources for Metal Performance Shaders state containers.
 
@@ -16,21 +16,28 @@ An interface for objects that define resources for Metal Performance Shaders sta
 ## Declaration
 
 ```swift
-class MPSStateResourceList : NSObject
+class MPSStateResourceList
 ```
 
 ## Topics
 
 ### Initializers
-- [init()](mpsstateresourcelist/2947897-init.md)
+- [init()](mpsstateresourcelist/init.md)
 ### Instance Methods
-- [func appendBuffer(Int)](mpsstateresourcelist/2947905-appendbuffer.md)
-- [func appendTexture(MTLTextureDescriptor)](mpsstateresourcelist/2947894-appendtexture.md)
+- [func appendBuffer(Int)](mpsstateresourcelist/appendbuffer(_:).md)
+- [func appendTexture(MTLTextureDescriptor)](mpsstateresourcelist/appendtexture(_:).md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

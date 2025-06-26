@@ -1,7 +1,7 @@
 # MPSMatrixUnaryKernel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel that consumes one matrix and produces one matrix.
 
@@ -16,21 +16,38 @@ A kernel that consumes one matrix and produces one matrix.
 ## Declaration
 
 ```swift
-class MPSMatrixUnaryKernel : MPSKernel
+class MPSMatrixUnaryKernel
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var batchSize: Int](mpsmatrixunarykernel/2867118-batchsize.md)
-- [var batchStart: Int](mpsmatrixunarykernel/2866990-batchstart.md)
-- [var resultMatrixOrigin: MTLOrigin](mpsmatrixunarykernel/2867150-resultmatrixorigin.md)
-- [var sourceMatrixOrigin: MTLOrigin](mpsmatrixunarykernel/2867053-sourcematrixorigin.md)
+- [var batchSize: Int](mpsmatrixunarykernel/batchsize.md)
+- [var batchStart: Int](mpsmatrixunarykernel/batchstart.md)
+- [var resultMatrixOrigin: MTLOrigin](mpsmatrixunarykernel/resultmatrixorigin.md)
+- [var sourceMatrixOrigin: MTLOrigin](mpsmatrixunarykernel/sourcematrixorigin.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
+### Inherited By
+- [MPSMatrixBatchNormalization](mpsmatrixbatchnormalization.md)
+- [MPSMatrixDecompositionCholesky](mpsmatrixdecompositioncholesky.md)
+- [MPSMatrixDecompositionLU](mpsmatrixdecompositionlu.md)
+- [MPSMatrixFindTopK](mpsmatrixfindtopk.md)
+- [MPSMatrixNeuron](mpsmatrixneuron.md)
+- [MPSMatrixSoftMax](mpsmatrixsoftmax.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

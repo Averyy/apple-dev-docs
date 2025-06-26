@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: enum
 
-The interpolation methods used while processing control points.
+A value that represents the interpolation method used while processing the control points.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -23,20 +23,19 @@ enum ControlPointInterpolation
 ### Initializers
 - [init(from: any Decoder) throws](immersivedynamicmask/controlpointinterpolation-swift.enum/init(from:).md)
   Creates a new instance by decoding from the given decoder.
-- [init?(rawValue: Int)](immersivedynamicmask/controlpointinterpolation-swift.enum/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int](immersivedynamicmask/controlpointinterpolation-swift.enum/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 ### Instance Methods
 - [func encode(to: any Encoder) throws](immersivedynamicmask/controlpointinterpolation-swift.enum/encode(to:).md)
   Encodes this value into the given encoder.
-### Type Aliases
-- [ImmersiveDynamicMask.ControlPointInterpolation.RawValue](immersivedynamicmask/controlpointinterpolation-swift.enum/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
+- [func hash(into: inout Hasher)](immersivedynamicmask/controlpointinterpolation-swift.enum/hash(into:).md)
+  Hashes the essential components of this value by feeding them into the given hasher.
+### Operators
+- [static func == (ImmersiveDynamicMask.ControlPointInterpolation, ImmersiveDynamicMask.ControlPointInterpolation) -> Bool](immersivedynamicmask/controlpointinterpolation-swift.enum/==(_:_:).md)
+  Returns a Boolean value indicating whether two values are equal.
+### Instance Properties
+- [var hashValue: Int](immersivedynamicmask/controlpointinterpolation-swift.enum/hashvalue.md)
+  The hash value.
 ### Default Implementations
 - [Equatable Implementations](immersivedynamicmask/controlpointinterpolation-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](immersivedynamicmask/controlpointinterpolation-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 
@@ -46,16 +45,8 @@ enum ControlPointInterpolation
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [ImmersiveDynamicMask.MaskEdgeTreatment](immersivedynamicmask/maskedgetreatment.md)
-  Represents edge treatment types for the immersive media mask.
-- [ImmersiveDynamicMask.MaskStereoRelation](immersivedynamicmask/maskstereorelation-swift.enum.md)
-  An enumeration of the stereo relation of a mask. It determines how left mask relates to the right or vice versa.
 
 
 ---

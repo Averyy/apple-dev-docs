@@ -42,7 +42,7 @@ If `W` and `H` are the width and height of image, respectively, then the point `
 
 The resulting image retains a reference to the original image, which means you may release the original image after calling this function.  In Swift, you do not need to release the original image reference explicitly.
 
-If you already use [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage), or if you are post-processing images as [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) data in Core Image, such as chaining together multiple filters to the cropped result, it may be more efficient to crop [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) directly in the Core Image framework using the `CICrop` filter; in this case, use the convenience function [`cropped(to:)`](https://developer.apple.com/documentation/coreimage/ciimage/1437833-cropped).
+If you already use [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage), or if you are post-processing images as [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) data in Core Image, such as chaining together multiple filters to the cropped result, it may be more efficient to crop [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) directly in the Core Image framework using the `CICrop` filter; in this case, use the convenience function [`cropped(to:)`](https://developer.apple.com/documentation/CoreImage/CIImage/cropped(to:)).
 
 ## Parameters
 

@@ -27,7 +27,7 @@ Use this method to seek to a specified time for the item.
 
 The time seeked to will be within the range `[time-toleranceBefore, time+toleranceAfter]` and may differ from `time` for efficiency.
 
-Invoking this method with [`positiveInfinity`](https://developer.apple.com/documentation/CoreMedia/CMTime/positiveInfinity) for `toleranceBefore` and `toleranceAfter` is the same as invoking [`seek(to:completionHandler:)`](avplayeritem/seek(to:completionhandler:)-91gnw.md) directly.
+Invoking this method with [`positiveInfinity`](https://developer.apple.com/documentation/coremedia/cmtime/1400789-positiveinfinity) for `toleranceBefore` and `toleranceAfter` is the same as invoking [`seek(to:completionHandler:)`](avplayeritem/seek(to:completionhandler:)-91gnw.md) directly.
 
 Seeking is constrained by the collection of seekable time ranges. If you seek to a time outside all of the seekable ranges, the seek will result in a current time within the seekable ranges.
 

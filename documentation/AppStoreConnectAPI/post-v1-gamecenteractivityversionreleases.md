@@ -8,6 +8,10 @@ Add a version release for a specific Game Center activity.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Mentions
+
+- [Configuring Game center activities](configuring-game-center-activities.md)
+
 ## See Also
 
 - [Read activity version release information](get-v1-gamecenteractivityversionreleases-_id_.md)

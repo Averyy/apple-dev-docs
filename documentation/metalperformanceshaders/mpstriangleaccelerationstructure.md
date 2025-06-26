@@ -1,38 +1,48 @@
 # MPSTriangleAccelerationStructure
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An acceleration structure built over triangles.
 
 **Availability**:
-- iOS 12.0+ - Deprecated in 17.0
-- iPadOS 12.0+ - Deprecated in 17.0
-- Mac Catalyst 13.0+ - Deprecated in 17.0
-- macOS 10.14+ - Deprecated in 14.0
-- tvOS 12.0+ - Deprecated in 17.0
-- visionOS 1.0+ - Deprecated in 1.0
+- iOS 12.0+
+- iPadOS 12.0+
+- Mac Catalyst 13.0+
+- macOS 10.14+
+- tvOS 12.0+
+- visionOS 1.0+
 
 ## Declaration
 
 ```swift
-class MPSTriangleAccelerationStructure : MPSPolygonAccelerationStructure
+class MPSTriangleAccelerationStructure
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var triangleCount: Int](mpstriangleaccelerationstructure/2980881-trianglecount.md)
+- [var triangleCount: Int](mpstriangleaccelerationstructure/trianglecount.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSPolygonAccelerationStructure](mpspolygonaccelerationstructure.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
-- [Animating and Denoising a Raytraced Scene](animating_and_denoising_a_raytraced_scene.md)
-  Support dynamic scenes and denoising by extending your ray tracer with Metal Performance Shaders.
+- [Accelerating ray tracing and motion blur using Metal](../Metal/accelerating-ray-tracing-and-motion-blur-using-metal.md)
+  Generate ray-traced images with motion blur using GPU-based parallel processing.
 - [class MPSRayIntersector](mpsrayintersector.md)
   A kernel that performs intersection tests between rays and geometry.
 - [class MPSAccelerationStructureGroup](mpsaccelerationstructuregroup.md)

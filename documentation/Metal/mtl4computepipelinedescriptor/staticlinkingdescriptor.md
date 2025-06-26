@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-An object that contains information about functions that are linked to the compute pipeline during creation.
+An object that contains information about functions to link to the compute pipeline.
 
 **Availability**:
 - iOS 26.0+ (Beta)

@@ -22,8 +22,8 @@ An adaptive background view that provides a standard appearance based on the the
 
 ## Mentions
 
-- [Displaying the right widget background](displaying-the-right-widget-background.md)
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+- [Displaying the right widget background](displaying-the-right-widget-background.md)
 
 #### Overview
 

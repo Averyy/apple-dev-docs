@@ -27,7 +27,7 @@ Use this method to seek to a specified time for the current player item and to b
 
 The time seeked to will be within the range `[time-beforeTolerance, time+afterTolerance]`, and may differ from the specified time for efficiency. You can request sample accurate seeking by passing a time value of`kCMTimeZero` for both `toleranceBefore` and `toleranceAfter`. Sample accurate seeking may incur additional decoding delay which can impact seeking performance.
 
-Invoking this method with `toleranceBefore` set to [`positiveInfinity`](https://developer.apple.com/documentation/CoreMedia/CMTime/positiveInfinity) and `toleranceAfter` set to [`positiveInfinity`](https://developer.apple.com/documentation/CoreMedia/CMTime/positiveInfinity) is the same as invoking [`seek(to:)`](avplayer/seek(to:)-87h2r.md).
+Invoking this method with `toleranceBefore` set to [`positiveInfinity`](https://developer.apple.com/documentation/coremedia/cmtime/1400789-positiveinfinity) and `toleranceAfter` set to [`positiveInfinity`](https://developer.apple.com/documentation/coremedia/cmtime/1400789-positiveinfinity) is the same as invoking [`seek(to:)`](avplayer/seek(to:)-87h2r.md).
 
 The completion handler for any prior seek request that is still in process will be invoked immediately with the `finished` parameter set to [`false`](https://developer.apple.com/documentation/swift/false). If the new request completes without being interrupted by another seek request or by any other operation the specified completion handler will be invoked with the `finished` parameter set to [`true`](https://developer.apple.com/documentation/swift/true).
 

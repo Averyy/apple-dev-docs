@@ -19,13 +19,13 @@ struct History<Model> where Model : Identifiable
 
 ### Structures
 - [FinanceStore.History.Iterator](financestore/history/iterator.md)
-  The type that allows iteration over an array’s elements
+  The type that allows iteration over an array’s elements.
 ### Instance Methods
 - [func makeAsyncIterator() -> FinanceStore.History<Model>.Iterator](financestore/history/makeasynciterator.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 ### Type Aliases
 - [FinanceStore.History.AsyncIterator](financestore/history/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence
+  The type of asynchronous iterator that produces elements of this asynchronous sequence.
 - [FinanceStore.History.Element](financestore/history/element.md)
   An alias for the type that this asynchronous sequence holds.
 ### Default Implementations

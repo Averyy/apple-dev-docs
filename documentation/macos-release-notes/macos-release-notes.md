@@ -17,9 +17,11 @@ When writing your report, please include the full version number in the title an
 ## Topics
 
 ### macOS 26
-- [macOS Tahoe 26 Beta Release Notes](macos-26-release-notes.md)
+- [macOS Tahoe 26 Beta 2 Release Notes](macos-26-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 ### macOS 15
+- [macOS Sequoia 15.6 Beta Release Notes](macos-15_6-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [macOS Sequoia 15.5 Release Notes](macos-15_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [macOS Sequoia 15.4 Release Notes](macos-15_4-release-notes.md)

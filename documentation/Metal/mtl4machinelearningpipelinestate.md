@@ -46,7 +46,7 @@ See [`MTL4MachineLearningCommandEncoder`](mtl4machinelearningcommandencoder.md) 
 ## See Also
 
 - [protocol MTL4MachineLearningCommandEncoder](mtl4machinelearningcommandencoder.md)
-  Encodes commands for dispatching machine learning networks on the GPU.
+  Encodes dispatch commands that run machine-learning model inference on Apple silicon.
 
 
 ---

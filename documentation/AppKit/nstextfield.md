@@ -17,8 +17,8 @@ class NSTextField
 
 ## Mentions
 
-- [Customizing Writing Tools behavior for AppKit views](customizing-writing-tools-behavior-for-system-views.md)
 - [Adopting the system text cursor in custom text views](adopting-the-system-text-cursor-in-custom-text-views.md)
+- [Customizing Writing Tools behavior for AppKit views](customizing-writing-tools-behavior-for-system-views.md)
 - [Adding Writing Tools support to a custom AppKit view](adding-writing-tools-support-to-a-custom-nsview.md)
 
 #### Overview
@@ -123,6 +123,8 @@ In macOS 12 and later, if you explicitly call the `layoutManager` property on yo
 - [var allowsWritingToolsAffordance: Bool](nstextfield/allowswritingtoolsaffordance.md)
 - [var placeholderAttributedStrings: [NSAttributedString]](nstextfield/placeholderattributedstrings.md)
 - [var placeholderStrings: [String]](nstextfield/placeholderstrings.md)
+- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](nstextfield/resolvesnaturalalignmentwithbasewritingdirection.md)
+  Specifies the behavior for resolving `NSTextAlignment.natural` to the visual alignment.
 - [var suggestionsDelegate: (any NSTextSuggestionsDelegate)?](nstextfield/suggestionsdelegate.md)
   The delegate that provides text suggestions for the receiving text field and responds to the user highlighting and selecting items.
 

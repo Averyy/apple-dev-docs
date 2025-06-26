@@ -96,6 +96,8 @@ If you want to play the system beep sound, use the [`beep()`](nssound/beep().md)
 - [NSPasteboardReading](nspasteboardreading.md)
 - [NSPasteboardWriting](nspasteboardwriting.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transferable](../CoreTransferable/Transferable.md)
 
 

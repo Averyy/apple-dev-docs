@@ -24,8 +24,6 @@ If the preview controller isn’t displaying an item, this property’s value is
 
 ## See Also
 
-- [class func canPreview(any QLPreviewItem) -> Bool](qlpreviewcontroller/canpreview(_:).md)
-  Returns a Boolean value that indicates whether the preview controller can display an item.
 - [var currentPreviewItemIndex: Int](qlpreviewcontroller/currentpreviewitemindex.md)
   The index within the preview item navigation list of the item displaying in the Quick Look preview controller.
 - [func refreshCurrentPreviewItem()](qlpreviewcontroller/refreshcurrentpreviewitem.md)

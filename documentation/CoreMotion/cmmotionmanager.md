@@ -20,8 +20,8 @@ class CMMotionManager
 
 ## Mentions
 
-- [Getting raw gyroscope events](getting-raw-gyroscope-events.md)
 - [Getting raw accelerometer events](getting-raw-accelerometer-events.md)
+- [Getting raw gyroscope events](getting-raw-gyroscope-events.md)
 - [Getting processed device-motion data](getting-processed-device-motion-data.md)
 
 #### Overview

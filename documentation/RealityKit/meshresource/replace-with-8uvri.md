@@ -30,7 +30,7 @@ func replace(with content: MeshResource.Contents) async throws
   The number of material entries required to render the mesh resource.
 - [func replace(with: MeshResource.Contents) throws](meshresource/replace(with:)-4msjx.md)
   Replace the contents of this mesh resource.
-- [func replaceAsync(with:)](meshresource/replaceasync(with:).md)
+- [func replaceAsync(with: MeshResource.Contents) -> LoadRequest<MeshResource>](meshresource/replaceasync(with:).md)
   Replace the contents of this mesh resource asynchronously.
 
 

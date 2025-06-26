@@ -1,4 +1,4 @@
 Completed scraping Core Image!
-Total pages scraped: 850
+Total pages scraped: 853
 Pages skipped (unchanged): 1
 Pages failed: 0

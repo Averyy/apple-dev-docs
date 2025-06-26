@@ -7,7 +7,7 @@
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst ?+
+- Mac Catalyst 16.1+
 - macOS 13.0+
 - tvOS 18.4+
 - visionOS 2.4+

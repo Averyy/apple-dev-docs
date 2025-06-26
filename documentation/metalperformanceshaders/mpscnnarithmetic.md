@@ -1,7 +1,7 @@
 # MPSCNNArithmetic
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 The base class for arithmetic operators.
 
@@ -16,27 +16,43 @@ The base class for arithmetic operators.
 ## Declaration
 
 ```swift
-class MPSCNNArithmetic : MPSCNNBinaryKernel
+class MPSCNNArithmetic
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var bias: Float](mpscnnarithmetic/2942499-bias.md)
-- [var maximumValue: Float](mpscnnarithmetic/2942498-maximumvalue.md)
-- [var minimumValue: Float](mpscnnarithmetic/2942502-minimumvalue.md)
-- [var primaryScale: Float](mpscnnarithmetic/2942509-primaryscale.md)
-- [var primaryStrideInFeatureChannels: Int](mpscnnarithmetic/2947963-primarystrideinfeaturechannels.md)
-- [var secondaryScale: Float](mpscnnarithmetic/2942497-secondaryscale.md)
-- [var secondaryStrideInFeatureChannels: Int](mpscnnarithmetic/2947964-secondarystrideinfeaturechannels.md)
+- [var bias: Float](mpscnnarithmetic/bias.md)
+- [var maximumValue: Float](mpscnnarithmetic/maximumvalue.md)
+- [var minimumValue: Float](mpscnnarithmetic/minimumvalue.md)
+- [var primaryScale: Float](mpscnnarithmetic/primaryscale.md)
+- [var primaryStrideInFeatureChannels: Int](mpscnnarithmetic/primarystrideinfeaturechannels.md)
+- [var secondaryScale: Float](mpscnnarithmetic/secondaryscale.md)
+- [var secondaryStrideInFeatureChannels: Int](mpscnnarithmetic/secondarystrideinfeaturechannels.md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage, destinationState: MPSCNNArithmeticGradientState, destinationImage: MPSImage)](mpscnnarithmetic/2954876-encode.md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, primaryImages: [MPSImage], secondaryImages: [MPSImage], destinationStates: [MPSCNNArithmeticGradientState], destinationImages: [MPSImage])](mpscnnarithmetic/2954877-encodebatch.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage, destinationState: MPSCNNArithmeticGradientState, destinationImage: MPSImage)](mpscnnarithmetic/encode(commandbuffer:primaryimage:secondaryimage:destinationstate:destinationimage:).md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, primaryImages: [MPSImage], secondaryImages: [MPSImage], destinationStates: [MPSCNNArithmeticGradientState], destinationImages: [MPSImage])](mpscnnarithmetic/encodebatch(commandbuffer:primaryimages:secondaryimages:destinationstates:destinationimages:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNBinaryKernel](mpscnnbinarykernel.md)
+### Inherited By
+- [MPSCNNAdd](mpscnnadd.md)
+- [MPSCNNDivide](mpscnndivide.md)
+- [MPSCNNMultiply](mpscnnmultiply.md)
+- [MPSCNNSubtract](mpscnnsubtract.md)
+- [MPSNNCompare](mpsnncompare.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

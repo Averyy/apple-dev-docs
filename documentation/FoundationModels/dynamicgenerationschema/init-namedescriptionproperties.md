@@ -28,8 +28,6 @@ init(name: String, description: String? = nil, properties: [DynamicGenerationSch
 
 - [init(arrayOf: DynamicGenerationSchema, minimumElements: Int?, maximumElements: Int?)](dynamicgenerationschema/init(arrayof:minimumelements:maximumelements:).md)
   Creates an array schema.
-- [init(dictionaryOf: DynamicGenerationSchema)](dynamicgenerationschema/init(dictionaryof:).md)
-  Creates a dictionary schema.
 - [init(name:description:anyOf:)](dynamicgenerationschema/init(name:description:anyof:).md)
   Creates an any-of schema.
 - [init(referenceTo: String)](dynamicgenerationschema/init(referenceto:).md)

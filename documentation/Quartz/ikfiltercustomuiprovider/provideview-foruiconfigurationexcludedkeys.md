@@ -21,7 +21,7 @@ An [`IKFilterUIView`](ikfilteruiview.md) object or `nil` if the filter is unable
 
 #### Discussion
 
-This method overrides the method [`view(forUIConfiguration:excludedKeys:)`](https://developer.apple.com/documentation/coreimage/cifilter/1427521-view).
+This method overrides the method [`view(forUIConfiguration:excludedKeys:)`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class/view(forUIConfiguration:excludedKeys:)).
 
 ## Parameters
 

@@ -18,6 +18,13 @@ case custom
 
 An example of a custom schedule could be Mon, Wed, Fri at 7pm.
 
+## See Also
+
+- [JournalingSuggestionsConfiguration.NotificationSchedule.off](journalingsuggestionsconfiguration/notificationschedule-swift.enum/off.md)
+  The notifications aren’t enabled or authorized for this app.
+- [JournalingSuggestionsConfiguration.NotificationSchedule.smart](journalingsuggestionsconfiguration/notificationschedule-swift.enum/smart.md)
+  The notifications are enabled and configured to a Smart schedule.
+
 
 ---
 

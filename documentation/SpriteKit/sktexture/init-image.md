@@ -17,7 +17,7 @@ Create a new texture object from an image object.
 ## Declaration
 
 ```swift
-convenience init(image: NSImage)
+convenience init(image: UIImage)
 ```
 
 #### Return Value

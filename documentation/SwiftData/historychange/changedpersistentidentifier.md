@@ -3,6 +3,8 @@
 **Framework**: SwiftData  
 **Kind**: property
 
+The persistent identifier of the change.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

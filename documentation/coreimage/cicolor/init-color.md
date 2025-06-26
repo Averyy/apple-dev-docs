@@ -16,7 +16,7 @@ Initializes a Core Image color object using a UIKit (or AppKit) color object.
 ## Declaration
 
 ```swift
-convenience init(color: UIColor)
+convenience init?(color: NSColor)
 ```
 
 #### Discussion

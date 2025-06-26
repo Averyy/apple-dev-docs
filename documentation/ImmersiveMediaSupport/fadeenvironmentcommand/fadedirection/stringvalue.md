@@ -19,8 +19,6 @@ var stringValue: String { get }
 
 - [var intValue: Int?](fadeenvironmentcommand/fadedirection/intvalue.md)
   The value to use in an integer-indexed collection (e.g. an int-keyed dictionary).
-- [var rawValue: String](fadeenvironmentcommand/fadedirection/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 
 
 ---

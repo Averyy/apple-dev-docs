@@ -22,6 +22,8 @@ protocol MergeablePartsContainer : Hashable
 ### Merging the parts
 - [func merge(other: Self) throws -> Bool](mergeablepartscontainer/merge(other:).md)
   Merge another object of this type into this object.
+- [func merge(partID: Self.PartID, partDataURL: URL) throws -> Bool](mergeablepartscontainer/merge(partid:partdataurl:).md)
+  Merges an individual part into the specified part of this object.
 ### Exporting the parts
 - [func export(partIDs: [Self.PartID]) async throws -> [Self.PartID : URL]](mergeablepartscontainer/export(partids:).md)
   Given a set of part identifiers, return a dictionary of part ID to URL to the part data file for the requested parts.
@@ -41,8 +43,6 @@ protocol MergeablePartsContainer : Hashable
 - [func merge(Self) async throws -> Bool](mergeablepartscontainer/merge(_:).md)
   Merge another object of this type into this object.
 - [func merge(partData: MergeablePartData, into: Self.PartID) async throws -> Bool](mergeablepartscontainer/merge(partdata:into:).md)
-  Merges an individual part into the specified part of this object.
-- [func merge(partID: Self.PartID, partDataURL: URL) throws -> Bool](mergeablepartscontainer/merge(partid:partdataurl:).md)
   Merges an individual part into the specified part of this object.
 
 ## Relationships

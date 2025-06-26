@@ -11,9 +11,9 @@ An operation that calculates the element-wise reciprocal square root of its inpu
 - Mac Catalyst ?+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
+- visionOS ?+
 
 ## Declaration
 

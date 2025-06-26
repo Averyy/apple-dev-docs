@@ -1,9 +1,9 @@
 # MPSPurgeableState.volatile
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
-Equivalent to the [`MTLPurgeableState.volatile`](https://developer.apple.com/documentation/metal/mtlpurgeablestate/volatile) value.
+The system is allowed to discard the resource to free up memory.
 
 **Availability**:
 - iOS 10.0+
@@ -16,8 +16,23 @@ Equivalent to the [`MTLPurgeableState.volatile`](https://developer.apple.com/doc
 ## Declaration
 
 ```swift
-case volatile = 3
+case volatile
 ```
+
+#### Overview
+
+Use this value to indicate that a resource is volatile and, therefore, the system may purge the data if it needs to make more memory available. This value is equivalent to [`MTLPurgeableState.volatile`](https://developer.apple.com/documentation/Metal/MTLPurgeableState/volatile).
+
+## See Also
+
+- [MPSPurgeableState.allocationDeferred](mpspurgeablestate/allocationdeferred.md)
+  The image’s underlying texture hasn’t been allocated yet. Attempts to set another purgeable state using the [`setPurgeableState(_:)`](mpsimage/setpurgeablestate(_:).md) method will be ignored.
+- [MPSPurgeableState.keepCurrent](mpspurgeablestate/keepcurrent.md)
+  The current state is queried but doesn’t change.
+- [MPSPurgeableState.nonVolatile](mpspurgeablestate/nonvolatile.md)
+  The contents of the resource aren’t allowed to be discarded.
+- [MPSPurgeableState.empty](mpspurgeablestate/empty.md)
+  The contents of the resource are or will be discarded.
 
 
 ---

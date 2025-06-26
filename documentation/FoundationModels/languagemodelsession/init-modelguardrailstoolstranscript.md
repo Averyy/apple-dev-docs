@@ -28,7 +28,7 @@ convenience init(model: SystemLanguageModel = .default, guardrails: LanguageMode
 ## See Also
 
 - [struct Transcript](transcript.md)
-  A transcript that documents interactions with a language model.
+  A transcript that documents interactions with a language model. Transcripts contain an ordered list of entries, representing inputs to and outputs from the model.
 
 
 ---

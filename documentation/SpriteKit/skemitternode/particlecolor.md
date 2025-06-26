@@ -17,7 +17,8 @@ The average initial color for a particle.
 ## Declaration
 
 ```swift
-var particleColor: UIColor { get set }
+@MainActor
+var particleColor: NSColor { get set }
 ```
 
 #### Discussion

@@ -24,7 +24,7 @@ struct NavigationEvent
 - [let kind: WebPage.NavigationEvent.Kind](webpage/navigationevent/kind-swift.property.md)
   The type of this navigation event.
 - [let navigationID: WebPage.NavigationID](webpage/navigationevent/navigationid.md)
-  The ID of the navigation that triggered this event. Multiple sequential events will have the same navigation identifier.
+  The ID of the navigation that triggered this event.
 ### Enumerations
 - [WebPage.NavigationEvent.Kind](webpage/navigationevent/kind-swift.enum.md)
   A set of values representing the possible types a NavigationEvent can represent.

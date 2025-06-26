@@ -95,7 +95,7 @@ struct SuggestionsView: View { ... }
   Return `true` if the selection is an insertion point.
 ### Enumerations
 - [TextSelection.Indices](textselection/indices-swift.enum.md)
-  The indicies of the current selection.
+  The indices of the current selection.
 
 ## Relationships
 

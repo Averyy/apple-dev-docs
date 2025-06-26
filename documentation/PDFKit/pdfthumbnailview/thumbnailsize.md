@@ -17,7 +17,7 @@ Returns the maximum width and height of the thumbnails in the thumbnail view.
 
 ```swift
 @MainActor
-var thumbnailSize: CGSize { get set }
+var thumbnailSize: NSSize { get set }
 ```
 
 #### Return Value

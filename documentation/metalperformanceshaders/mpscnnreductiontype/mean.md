@@ -1,7 +1,7 @@
 # MPSCNNReductionType.mean
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.3+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case mean = 2
+case mean
 ```
 
 

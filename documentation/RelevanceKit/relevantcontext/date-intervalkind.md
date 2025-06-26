@@ -3,7 +3,7 @@
 **Framework**: RelevanceKit  
 **Kind**: method
 
-An exact range in time: similar uses as `date()`, but with a known endpoint, such as a calendar event.
+Tells the system a widget is relevant for a time interval and provides an additional contextual hint.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -20,6 +20,19 @@ An exact range in time: similar uses as `date()`, but with a known endpoint, suc
 static func date(interval: DateInterval, kind: RelevantContext.DateKind) -> RelevantContext
 ```
 
+#### Return Value
+
+A contextual clue that the system uses to determine the relevance of a widget in the Smart Stack on Apple Watch.
+
+#### Discussion
+
+> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/WidgetKit/Widget-Suggestions-In-Smart-Stacks).
+
+## Parameters
+
+- `interval`: The exact time and duration a widget is most relevant.
+- `kind`: An additional contextual hint that helps the system determine the widget’s relevance.
+
 ## See Also
 
 - [static func date(Date) -> RelevantContext](relevantcontext/date(_:).md)
@@ -27,11 +40,11 @@ static func date(interval: DateInterval, kind: RelevantContext.DateKind) -> Rele
 - [static func date(Date, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(_:kind:).md)
   Tells the system a widget is relevant at a specific date and provides an additional contextual hint.
 - [static func date(range: ClosedRange<Date>, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(range:kind:).md)
-  An exact range in time: similar uses as `date()`, but with a known endpoint, such as a calendar event.
+  Tells the system a widget is relevant for a known date range and provides an additional contextual hint.
 - [RelevantContext.DateKind](relevantcontext/datekind.md)
   Values the system uses as additional context for time-based relevance clues.
 - [static func date(from: Date, to: Date) -> RelevantContext](relevantcontext/date(from:to:).md)
-  An exact range in time: similar uses as `date()`, but with a known endpoint.
+  Tells the system a widget is relevant between two dates.
 
 
 ---

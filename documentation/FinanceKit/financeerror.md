@@ -35,7 +35,7 @@ enum FinanceError
 - [var errorUserInfo: [String : Any]](financeerror/erroruserinfo.md)
   The user-info dictionary that contains additional information about the error.
 - [var failureReason: String?](financeerror/failurereason.md)
-  A localized message that describes the reason for the failure
+  A localized message that describes the reason for the failure.
 ### Type Properties
 - [static var errorDomain: String](financeerror/errordomain.md)
   The domain of the error.

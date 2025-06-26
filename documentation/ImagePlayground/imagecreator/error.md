@@ -45,6 +45,9 @@ enum Error
 ### Operators
 - [static func == (ImageCreator.Error, ImageCreator.Error) -> Bool](imagecreator/error/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
+### Enumeration Cases
+- [ImageCreator.Error.promptRequiresPersonIdentity](imagecreator/error/promptrequirespersonidentity.md)
+  An error that indicates that a source image containing a person’s face needs to be added in order to complete the request.
 ### Instance Properties
 - [var hashValue: Int](imagecreator/error/hashvalue.md)
   The hash value.

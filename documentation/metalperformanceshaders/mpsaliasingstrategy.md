@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,20 +20,26 @@ struct MPSAliasingStrategy
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mpsaliasingstrategy/3114269-init.md)
+- [init(rawValue: UInt)](mpsaliasingstrategy/init(rawvalue:).md)
 ### Type Properties
-- [static var aliasingReserved: MPSAliasingStrategy](mpsaliasingstrategy/3114017-aliasingreserved.md)
-- [static var `default`: MPSAliasingStrategy](mpsaliasingstrategy/3114018-default.md)
-- [static var preferNonTemporaryMemory: MPSAliasingStrategy](mpsaliasingstrategy/3114020-prefernontemporarymemory.md)
-- [static var preferTemporaryMemory: MPSAliasingStrategy](mpsaliasingstrategy/3114021-prefertemporarymemory.md)
-- [static var shallAlias: MPSAliasingStrategy](mpsaliasingstrategy/3114022-shallalias.md)
-- [static var shallNotAlias: MPSAliasingStrategy](mpsaliasingstrategy/3114023-shallnotalias.md)
+- [static var aliasingReserved: MPSAliasingStrategy](mpsaliasingstrategy/aliasingreserved.md)
+- [static var `default`: MPSAliasingStrategy](mpsaliasingstrategy/default.md)
+- [static var preferNonTemporaryMemory: MPSAliasingStrategy](mpsaliasingstrategy/prefernontemporarymemory.md)
+- [static var preferTemporaryMemory: MPSAliasingStrategy](mpsaliasingstrategy/prefertemporarymemory.md)
+- [static var shallAlias: MPSAliasingStrategy](mpsaliasingstrategy/shallalias.md)
+- [static var shallNotAlias: MPSAliasingStrategy](mpsaliasingstrategy/shallnotalias.md)
 
 ## Relationships
 
 ### Conforms To
-- [OptionSet](../swift/optionset.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [OptionSet](../Swift/OptionSet.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SetAlgebra](../Swift/SetAlgebra.md)
 
 
 ---

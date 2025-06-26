@@ -22,7 +22,7 @@ struct Contents
 ## Topics
 
 ### Initializers
-- [init()](meshresource/contents-6qlpp/init.md)
+- [init()](meshresource/contents-8xls5/init.md)
 ### Instance Properties
 - [var instances: MeshInstanceCollection](meshresource/contents-8xls5/instances.md)
   Table of instances.

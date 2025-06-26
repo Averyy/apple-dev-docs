@@ -1,7 +1,7 @@
 # MPSCNNUpsamplingNearestGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient upsampling filter that samples the pixel nearest to the source when upsampling to the destination pixel.
 
@@ -16,18 +16,28 @@ A gradient upsampling filter that samples the pixel nearest to the source when u
 ## Declaration
 
 ```swift
-class MPSCNNUpsamplingNearestGradient : MPSCNNUpsamplingGradient
+class MPSCNNUpsamplingNearestGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingnearestgradient/2947920-init.md)
+- [init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingnearestgradient/init(device:integerscalefactorx:integerscalefactory:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNUpsamplingGradient](mpscnnupsamplinggradient.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

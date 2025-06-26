@@ -23,8 +23,8 @@ class NSPersistentCloudKitContainer
 ## Mentions
 
 - [Setting Up Core Data with CloudKit](setting-up-core-data-with-cloudkit.md)
-- [Reading CloudKit Records for Core Data](reading-cloudkit-records-for-core-data.md)
 - [Mirroring a Core Data store with CloudKit](mirroring-a-core-data-store-with-cloudkit.md)
+- [Reading CloudKit Records for Core Data](reading-cloudkit-records-for-core-data.md)
 
 #### Overview
 

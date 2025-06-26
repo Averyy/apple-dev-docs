@@ -1,7 +1,7 @@
 # MPSTemporalAA
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,28 +14,35 @@
 ## Declaration
 
 ```swift
-class MPSTemporalAA : MPSKernel
+class MPSTemporalAA
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpstemporalaa/3143586-init.md)
-- [init(device: any MTLDevice)](mpstemporalaa/3143587-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpstemporalaa/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpstemporalaa/init(device:).md)
 ### Instance Properties
-- [var blendFactor: Float](mpstemporalaa/3143582-blendfactor.md)
+- [var blendFactor: Float](mpstemporalaa/blendfactor.md)
 ### Instance Methods
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpstemporalaa/3143583-copy.md)
-- [func encode(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, previousTexture: any MTLTexture, destinationTexture: any MTLTexture, motionVectorTexture: (any MTLTexture)?, depthTexture: (any MTLTexture)?)](mpstemporalaa/3143584-encode.md)
-- [func encode(with: NSCoder)](mpstemporalaa/3143585-encode.md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpstemporalaa/copy(with:device:).md)
+- [func encode(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, previousTexture: any MTLTexture, destinationTexture: any MTLTexture, motionVectorTexture: (any MTLTexture)?, depthTexture: (any MTLTexture)?)](mpstemporalaa/encode(to:sourcetexture:previoustexture:destinationtexture:motionvectortexture:depthtexture:).md)
+- [func encode(with: NSCoder)](mpstemporalaa/encode(with:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
 ### Conforms To
-- [NSCopying](../foundation/nscopying.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

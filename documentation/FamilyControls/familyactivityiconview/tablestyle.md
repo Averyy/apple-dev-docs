@@ -8,7 +8,6 @@ Sets the style for tables within this view.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - macOS 12.0+
 
 ## Declaration

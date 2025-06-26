@@ -19,9 +19,9 @@ final let sourceLanguage: Locale.Language?
 
 #### Discussion
 
-If this value is set to `nil` the session tries to identify the source language automatically. If it can’t, it prompts the user to choose the source language to use for the translation.
+If this value is set to `nil`, the session tries to identify the source language automatically. If it can’t identify the language, it prompts the person to choose the source language to use for the translation.
 
-> **Note**: This value doesn’t update after translation; to see what source language the session uses for a particular translation, check the response [`sourceLanguage`](translationsession/response/sourcelanguage.md).
+> **Note**: This value doesn’t update after translation. To see what source language the session uses for a particular translation, check the response [`sourceLanguage`](translationsession/response/sourcelanguage.md).
 
 ## See Also
 

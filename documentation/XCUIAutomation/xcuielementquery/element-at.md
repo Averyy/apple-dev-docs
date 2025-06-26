@@ -6,15 +6,15 @@
 Returns an element that resolves to the index into the query’s result set.
 
 **Availability**:
+- iOS ?+
 - iPadOS ?+
 - Mac Catalyst ?+
-- macOS ?+
 - tvOS ?+
 - visionOS ?+
 - watchOS ?+
 - Xcode 16.3+
 - Unknown ?+ - Deprecated
-- iOS ?+
+- macOS ?+
 
 ## Declaration
 

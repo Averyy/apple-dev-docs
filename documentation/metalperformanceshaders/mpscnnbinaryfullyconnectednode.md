@@ -1,7 +1,7 @@
 # MPSCNNBinaryFullyConnectedNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a fully connected convolution layer with binary weights and optionally binarized input image.
 
@@ -16,21 +16,29 @@ A representation of a fully connected convolution layer with binary weights and 
 ## Declaration
 
 ```swift
-class MPSCNNBinaryFullyConnectedNode : MPSCNNBinaryConvolutionNode
+class MPSCNNBinaryFullyConnectedNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource, scaleValue: Float, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](mpscnnbinaryfullyconnectednode/2866443-init.md)
+- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource, scaleValue: Float, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](mpscnnbinaryfullyconnectednode/init(source:weights:scalevalue:type:flags:).md)
 - [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
-- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource, outputBiasTerms: UnsafePointer<Float>?, outputScaleTerms: UnsafePointer<Float>?, inputBiasTerms: UnsafePointer<Float>?, inputScaleTerms: UnsafePointer<Float>?, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](mpscnnbinaryfullyconnectednode/2942637-init.md)
+- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource, outputBiasTerms: UnsafePointer<Float>?, outputScaleTerms: UnsafePointer<Float>?, inputBiasTerms: UnsafePointer<Float>?, inputScaleTerms: UnsafePointer<Float>?, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](mpscnnbinaryfullyconnectednode/init(source:weights:outputbiasterms:outputscaleterms:inputbiasterms:inputscaleterms:type:flags:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNBinaryConvolutionNode](mpscnnbinaryconvolutionnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [MPSNNTrainableNode](mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

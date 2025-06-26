@@ -73,12 +73,12 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 
 ###### New Features
 
-- The [`init(imageURL:options:)`](https://developer.apple.com/documentation/coreimage/cifilter/1438096-init) and [`init(imageData:options:)`](https://developer.apple.com/documentation/coreimage/cifilter/1437879-init) initializers no longer support RAW decoder versions earlier than 6. Version 6 and later remain supported. (50911303)
+- The [`init(imageURL:options:)`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class/init(imageURL:options:)) and [`init(imageData:options:)`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class/init(imageData:options:)) initializers no longer support RAW decoder versions earlier than 6. Version 6 and later remain supported. (50911303)
 - Added new APIs for instantiating and modifying the built-in Core Image filters.
 - The [`CICoreMLModel`](https://developer.apple.com/documentation/CoreImage/CICoreMLModel) filter is enhanced to support models with an input or output of type [`MLFeatureType.multiArray`](https://developer.apple.com/documentation/CoreML/MLFeatureType/multiArray).
 - Metal [`CIKernel`](https://developer.apple.com/documentation/CoreImage/CIKernel) instances now support arguments with arbitrarily structured data.
 - Metal [`CIKernel`](https://developer.apple.com/documentation/CoreImage/CIKernel) instances now support returning a group of two by two pixels.
-- The integer values of [`CIFormat`](https://developer.apple.com/documentation/CoreImage/CIFormat) symbols, such as [`ARGB8`](https://developer.apple.com/documentation/coreimage/ciformat/1437883-argb8), have changed to a new set of values which are consistent across platforms. The former values remain supported for backward compatibility; however, you should avoid dependancies on specific numerical values.
+- The integer values of [`CIFormat`](https://developer.apple.com/documentation/CoreImage/CIFormat) symbols, such as [`ARGB8`](https://developer.apple.com/documentation/CoreImage/CIFormat/ARGB8), have changed to a new set of values which are consistent across platforms. The former values remain supported for backward compatibility; however, you should avoid dependancies on specific numerical values.
 
 ##### Endpointsecurity
 

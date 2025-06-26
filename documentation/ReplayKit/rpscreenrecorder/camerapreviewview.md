@@ -15,7 +15,7 @@ A view containing the contents of the front-facing camera.
 ## Declaration
 
 ```swift
-var cameraPreviewView: NSView? { get }
+var cameraPreviewView: UIView? { get }
 ```
 
 #### Discussion

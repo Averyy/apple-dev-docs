@@ -208,6 +208,8 @@ Following table provides a possible bit rate recommendations for AIV.
 
 1.38. All APMP monoscopic videos MUST be encoded using HEVC/H.265.
 
+1.39. The container format for AV1 video MUST be fMP4.
+
 ###### Audio
 
 2. 
@@ -775,7 +777,7 @@ The following general rules regarding compatibility aren’t applicable in visio
 | 3840 x 2160 | 19720 | 23630 | Same as source |
 | 3840 x 2160 | 28560 | 34000 | Same as source |
 
-1.39. + Stereo video MUST be encoded using Dolby Vision Profile 20 (MV-HEVC).
+1.40. + Stereo video MUST be encoded using Dolby Vision Profile 20 (MV-HEVC).
 
 ###### Trick Play
 
@@ -847,7 +849,7 @@ All general rules apply except as expressly modified by a rule with the same num
 
 1.23. If multiple video streams are provided (H.264, HEVC, HDR), each stream MUST provide all anticipated bandwidths.
 
-1.39. + Encrypted fMP4 content MUST contain either a Sample Encryption Box (`'senc'`), or both a Sample Auxiliary Information Sizes Box (`'saiz'`) and a Sample Auxiliary Information Offsets Box (`'saio'`).
+1.41. + Encrypted fMP4 content MUST contain either a Sample Encryption Box (`'senc'`), or both a Sample Auxiliary Information Sizes Box (`'saiz'`) and a Sample Auxiliary Information Offsets Box (`'saio'`).
 
 ###### Audio
 
@@ -897,6 +899,7 @@ The following table describes the changes to this document.
 
 | Date | Notes |
 | --- | --- |
+| 2025-06-24 | Added container format rule for AV1. |
 | 2025-05-08 | Added AIV bit-rate tiers. |
 | 2025-05-02 | Added Offline download guidelines. |
 | 2025-04-30 | Added APAC authoring guidelines. |

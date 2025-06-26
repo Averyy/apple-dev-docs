@@ -3,7 +3,7 @@
 **Framework**: WebKit  
 **Kind**: method
 
-Generates PDF data from the webpage’s contents
+Generates PDF data from the webpage’s contents.
 
 **Availability**:
 - iOS 18.4+
@@ -22,6 +22,10 @@ final func pdf(configuration: WKPDFConfiguration = .init()) async throws -> Data
 #### Return Value
 
 A data object that contains the PDF data to use for rendering the contents of the webpage.
+
+#### Discussion
+
+> **Note**: An error if a problem occurred.
 
 ## Parameters
 

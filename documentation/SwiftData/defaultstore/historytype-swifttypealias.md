@@ -19,6 +19,12 @@
 typealias HistoryType = DefaultHistoryTransaction
 ```
 
+## See Also
+
+- [func fetchHistory(HistoryDescriptor<DefaultHistoryTransaction>) throws -> [DefaultHistoryTransaction]](defaultstore/fetchhistory(_:).md)
+- [func deleteHistory(HistoryDescriptor<DefaultHistoryTransaction>) throws](defaultstore/deletehistory(_:).md)
+- [DefaultStore.TokenType](defaultstore/tokentype.md)
+
 
 ---
 

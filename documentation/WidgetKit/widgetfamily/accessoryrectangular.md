@@ -19,10 +19,10 @@ case accessoryRectangular
 
 ## Mentions
 
-- [Adding interactivity to widgets and Live Activities](adding-interactivity-to-widgets-and-live-activities.md)
 - [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
 - [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+- [Adding interactivity to widgets and Live Activities](adding-interactivity-to-widgets-and-live-activities.md)
 
 #### Discussion
 

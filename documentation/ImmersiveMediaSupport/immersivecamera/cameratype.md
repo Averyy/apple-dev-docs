@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: enum
 
-Represents the type of immersive camera.
+A value representing the type of immersive camera.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -19,19 +19,23 @@ enum CameraType
 
 ### Enumeration Cases
 - [ImmersiveCamera.CameraType.stereoCamera](immersivecamera/cameratype/stereocamera.md)
-  Camera rig made up of 2 cameras
+  A value representing a camera rig made up of 2 cameras
+### Operators
+- [static func == (ImmersiveCamera.CameraType, ImmersiveCamera.CameraType) -> Bool](immersivecamera/cameratype/==(_:_:).md)
+  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
-- [init?(rawValue: String)](immersivecamera/cameratype/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
+- [init(from: any Decoder) throws](immersivecamera/cameratype/init(from:).md)
+  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
-- [var rawValue: String](immersivecamera/cameratype/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [ImmersiveCamera.CameraType.RawValue](immersivecamera/cameratype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
+- [var hashValue: Int](immersivecamera/cameratype/hashvalue.md)
+  The hash value.
+### Instance Methods
+- [func encode(to: any Encoder) throws](immersivecamera/cameratype/encode(to:).md)
+  Encodes this value into the given encoder.
+- [func hash(into: inout Hasher)](immersivecamera/cameratype/hash(into:).md)
+  Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
 - [Equatable Implementations](immersivecamera/cameratype/equatable-implementations.md)
-- [RawRepresentable Implementations](immersivecamera/cameratype/rawrepresentable-implementations.md)
 
 ## Relationships
 
@@ -41,7 +45,6 @@ enum CameraType
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

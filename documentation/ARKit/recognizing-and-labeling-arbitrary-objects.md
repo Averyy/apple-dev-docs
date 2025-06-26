@@ -22,7 +22,7 @@ The sample code’s `classificationRequest` property, `classifyCurrentImage() me
 - A Core ML image-classifier model, loaded from an `mlmodel` file bundled with the app using the Swift API that Core ML generates for the model
 - [`VNCoreMLRequest`](https://developer.apple.com/documentation/Vision/VNCoreMLRequest) and [`VNImageRequestHandler`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler) objects for passing image data to the model for evaluation
 
-For more details on using [`VNImageRequestHandler`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler),[`VNCoreMLRequest`](https://developer.apple.com/documentation/Vision/VNCoreMLRequest), and image classifier models, see the [`Classifying Images with Vision and Core ML`](https://developer.apple.com/documentation/coreml/model_integration_samples/classifying_images_with_vision_and_core_ml) sample-code project.
+For more details on using [`VNImageRequestHandler`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler),[`VNCoreMLRequest`](https://developer.apple.com/documentation/Vision/VNCoreMLRequest), and image classifier models, see the [`Classifying Images with Vision and Core ML`](https://developer.apple.com/documentation/CoreML/classifying-images-with-vision-and-core-ml) sample-code project.
 
 #### Run the Ar Session and Process Camera Images
 

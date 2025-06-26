@@ -23,8 +23,8 @@ var isHidden: Bool { get set }
 
 ## Mentions
 
-- [About Node Property Propagation](about-node-property-propagation.md)
 - [Getting Started with Nodes](getting-started-with-nodes.md)
+- [About Node Property Propagation](about-node-property-propagation.md)
 
 #### Discussion
 

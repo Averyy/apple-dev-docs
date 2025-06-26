@@ -4,17 +4,17 @@
 **Kind**: enum
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst 17.0+
-- macOS 14.0+
-- tvOS 17.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-enum MPSFloatDataTypeShift : UInt32, @unchecked Sendable
+enum MPSFloatDataTypeShift
 ```
 
 ## Topics
@@ -23,11 +23,18 @@ enum MPSFloatDataTypeShift : UInt32, @unchecked Sendable
 - [MPSFloatDataTypeShift.exponentShift](mpsfloatdatatypeshift/exponentshift.md)
 - [MPSFloatDataTypeShift.mantissaShift](mpsfloatdatatypeshift/mantissashift.md)
 - [MPSFloatDataTypeShift.signShift](mpsfloatdatatypeshift/signshift.md)
+### Initializers
+- [init?(rawValue: UInt32)](mpsfloatdatatypeshift/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

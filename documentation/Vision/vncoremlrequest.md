@@ -64,7 +64,7 @@ The results array of a Core ML-based image analysis request contains a different
 
 ## See Also
 
-- [Classifying Images with Vision and Core ML](../coreml/model_integration_samples/classifying_images_with_vision_and_core_ml.md)
+- [Classifying Images with Vision and Core ML](../CoreML/classifying-images-with-vision-and-core-ml.md)
   Crop and scale photos using the Vision framework and classify them with a Core ML model.
 - [Training a Create ML Model to Classify Flowers](training-a-create-ml-model-to-classify-flowers.md)
   Train a flower classifier using Create ML in Swift Playgrounds, and apply the resulting model to real-time image classification using Vision.

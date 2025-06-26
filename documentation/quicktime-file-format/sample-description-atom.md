@@ -7,10 +7,10 @@ An atom that stores information that allows you to decode samples in the media.
 
 ## Mentions
 
-- [Sprite media](sprite_media.md)
-- [QuickTime File Format change log](revision_history.md)
-- [Music media](music_media.md)
 - [MPEG-1 media](mpeg-1_media.md)
+- [Music media](music_media.md)
+- [QuickTime File Format change log](revision_history.md)
+- [Sprite media](sprite_media.md)
 
 #### Overview
 

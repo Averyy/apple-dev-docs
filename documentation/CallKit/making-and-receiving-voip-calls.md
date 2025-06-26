@@ -16,7 +16,7 @@ Initiate an outgoing call with a VoIP app in any of the following ways:
 - Open a link with a supported custom URL scheme.
 - Begin a VoIP call using Siri.
 
-For more information about registering and handling URLs, see [`Defining a custom URL scheme for your app`](https://developer.apple.com/documentation/Xcode/defining-a-custom-url-scheme-for-your-app). For more information about initiating a call using Siri, see the [`INStartCallIntentHandling`](https://developer.apple.com/documentation/Intents/INStartCallIntentHandling) protocol.
+For more information about registering and handling URLs, see [`Defining a custom URL scheme for your app`](https://developer.apple.com/documentation/Xcode/defining-a-custom-url-scheme-for-your-app). For more information about initiating a call using Siri, see the doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling protocol.
 
 To make an outgoing call, an app requests a [`CXStartCallAction`](cxstartcallaction.md) object from its [`CXCallController`](cxcallcontroller.md) object. The action consists of a UUID to uniquely identify the call and a [`CXHandle`](cxhandle.md) object to specify the recipient, as the following code example shows:
 

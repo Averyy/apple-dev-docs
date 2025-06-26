@@ -29,7 +29,7 @@ The [`HKActivitySummaryType`](hkactivitysummarytype.md) class is a concrete subc
 
 ##### Access and Modify Activity Summaries
 
-Any workouts that you save to the HealthKit store may affect that day’s summary. For more information, see `Using Workout Samples`.
+Any workouts that you save to the HealthKit store may affect that day’s summary. For more information, see [`HKWorkout`](hkworkout.md).
 
 To query for activity summary objects, use an [`HKActivitySummaryQuery`](hkactivitysummaryquery.md). You can also create your own [`HKActivitySummary`](hkactivitysummary.md) objects (for example, to display in an [`HKActivityRingView`](https://developer.apple.com/documentation/healthkitui/hkactivityringview)), but you can’t save them to the HealthKit store.
 

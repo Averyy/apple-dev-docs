@@ -14,7 +14,7 @@ Removes the value of the given property.
 ## Declaration
 
 ```swift
-func ABRecordRemoveValue(_ record: ABRecordRef!, _ property: CFString!) -> Bool
+func ABRecordRemoveValue(_ record: ABRecord!, _ property: ABPropertyID, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
 ```
 
 #### Return Value

@@ -1,7 +1,7 @@
 # MPSCNNBinaryConvolutionFlags.none
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.0+
@@ -14,8 +14,12 @@
 ## Declaration
 
 ```swift
-case none = 0
+case none
 ```
+
+## See Also
+
+- [MPSCNNBinaryConvolutionFlags.useBetaScaling](mpscnnbinaryconvolutionflags/usebetascaling.md)
 
 
 ---

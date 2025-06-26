@@ -20,7 +20,7 @@ var duration: CMTime { get }
 
 #### Discussion
 
-For metadata originating from a sample buffer ([`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer)), the duration reflects the duration of the sample buffer. If there is no valid duration value associated with the metadata, this property should contain [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid).
+For metadata originating from a sample buffer ([`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer)), the duration reflects the duration of the sample buffer. If there is no valid duration value associated with the metadata, this property should contain [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid).
 
 ## See Also
 

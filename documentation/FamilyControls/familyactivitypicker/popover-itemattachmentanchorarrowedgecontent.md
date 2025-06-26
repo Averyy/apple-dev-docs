@@ -8,7 +8,6 @@ Presents a popover using the given item as a data source for the popover’s con
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 10.15+
 
 ## Declaration

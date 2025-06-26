@@ -67,7 +67,7 @@ tagger.enumerateTags(in: rawString.startIndex..<rawString.endIndex,
 return wordTokens
 ```
 
-The sample app leverages the tagger to split each string into tokens by using its enumerateTags(in:unit:scheme:options:using:) method with the .tokenType tagging scheme and the [`NLTokenUnit.word`](https://developer.apple.com/documentation/NaturalLanguage/NLTokenUnit/word) token unit.
+The sample app leverages the tagger to split each string into tokens by using its [`enumerateTags(in:unit:scheme:options:using:)`](https://developer.apple.com/documentation/NaturalLanguage/NLTagger/enumerateTags(in:unit:scheme:options:using:)) method with the [`tokenType`](https://developer.apple.com/documentation/NaturalLanguage/NLTagScheme/tokenType) tagging scheme and the [`NLTokenUnit.word`](https://developer.apple.com/documentation/NaturalLanguage/NLTokenUnit/word) token unit.
 
 ##### Convert Word or Wordpiece Tokens Into Their Ids
 

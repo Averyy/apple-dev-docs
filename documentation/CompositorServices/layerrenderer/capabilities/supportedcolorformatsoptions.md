@@ -3,7 +3,7 @@
 **Framework**: Compositor Services  
 **Kind**: struct
 
-The options to provide when calling `LayerRenderer.Capabilities.supportedColorFormats`
+Options you can use to filter the supported color formats for a layer textures.
 
 **Availability**:
 - macOS 26.0+ (Beta)

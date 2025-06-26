@@ -4,17 +4,17 @@
 **Kind**: enum
 
 **Availability**:
-- iOS 13.0+ - Deprecated in 17.0
-- iPadOS 13.0+ - Deprecated in 17.0
-- Mac Catalyst 13.0+ - Deprecated in 17.0
-- macOS 10.15+ - Deprecated in 14.0
-- tvOS 13.0+ - Deprecated in 17.0
-- visionOS 1.0+ - Deprecated in 1.0
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
+- macOS 10.15+
+- tvOS 13.0+
+- visionOS 1.0+
 
 ## Declaration
 
 ```swift
-enum MPSRayMaskOperator : UInt, @unchecked Sendable
+enum MPSRayMaskOperator
 ```
 
 ## Topics
@@ -32,11 +32,18 @@ enum MPSRayMaskOperator : UInt, @unchecked Sendable
 - [MPSRayMaskOperator.notXor](mpsraymaskoperator/notxor.md)
 - [MPSRayMaskOperator.or](mpsraymaskoperator/or.md)
 - [MPSRayMaskOperator.xor](mpsraymaskoperator/xor.md)
+### Initializers
+- [init?(rawValue: UInt)](mpsraymaskoperator/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

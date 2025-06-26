@@ -43,9 +43,7 @@ For more information on subscribing to scene events, see `RealityKit/Scene/Event
   Raised after an entity has been reparented within the same scene.
 - [SceneEvents.DidReparentEntity](sceneevents/didreparententity-8xr41.md)
   Raised after an entity has been reparented within the same scene.
-- [SceneEvents.TrackingStateUpdate](sceneevents/trackingstateupdate-59q6r.md)
-  Event that triggers on a change of device tracking state
-- [SceneEvents.TrackingStateUpdate](sceneevents/trackingstateupdate-9q21e.md)
+- [SceneEvents.TrackingStateUpdate](sceneevents/trackingstateupdate.md)
   Event that triggers on a change of device tracking state
 - [SceneEvents.WillDeactivateEntity](sceneevents/willdeactivateentity-3mahl.md)
   Raised before an entity becomes inactive.

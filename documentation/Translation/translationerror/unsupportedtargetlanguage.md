@@ -22,7 +22,7 @@ static let unsupportedTargetLanguage: TranslationError
 - [static let unsupportedSourceLanguage: TranslationError](translationerror/unsupportedsourcelanguage.md)
   The framework doesn’t support the specified or detected source language.
 - [static let unsupportedLanguagePairing: TranslationError](translationerror/unsupportedlanguagepairing.md)
-  The framework doesn’t support the the specified source and target language pairing.
+  The framework doesn’t support the specified source and target language pairing.
 
 
 ---

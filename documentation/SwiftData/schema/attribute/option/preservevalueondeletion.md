@@ -21,6 +21,10 @@ Preserves the property’s value in the persistent history when the context dele
 static var preserveValueOnDeletion: Schema.Attribute.Option { get }
 ```
 
+## Mentions
+
+- [Fetching and filtering time-based model changes](fetching-and-filtering-time-based-model-changes.md)
+
 ## See Also
 
 - [static var allowsCloudEncryption: Schema.Attribute.Option](schema/attribute/option/allowscloudencryption.md)

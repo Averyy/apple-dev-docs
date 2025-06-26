@@ -15,9 +15,11 @@ For issues not mentioned in release notes, file bugs through [`Feedback Assistan
 ## Topics
 
 ### watchOS 26
-- [watchOS 26 Beta Release Notes](watchos-26-release-notes.md)
+- [watchOS 26 Beta 2 Release Notes](watchos-26-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 ### watchOS 11
+- [watchOS 11.6 Beta Release Notes](watchos-11_6-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [watchOS 11.5 Release Notes](watchos-11_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [watchOS 11.4 Release Notes](watchos-11_4-release-notes.md)

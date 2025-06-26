@@ -1,7 +1,7 @@
 # MPSCNNDropoutGradientState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A class that stores the mask used by dropout and gradient dropout filters.
 
@@ -16,18 +16,25 @@ A class that stores the mask used by dropout and gradient dropout filters.
 ## Declaration
 
 ```swift
-class MPSCNNDropoutGradientState : MPSNNGradientState
+class MPSCNNDropoutGradientState
 ```
 
 ## Topics
 
 ### Instance Methods
-- [func maskData() -> Data](mpscnndropoutgradientstate/2942527-maskdata.md)
+- [func maskData() -> Data](mpscnndropoutgradientstate/maskdata.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientState](mpsnngradientstate.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

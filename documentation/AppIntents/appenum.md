@@ -23,9 +23,9 @@ protocol AppEnum : AppValue, StaticDisplayRepresentable, RawRepresentable where 
 ## Mentions
 
 - [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
 - [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
 
 #### Overview
 

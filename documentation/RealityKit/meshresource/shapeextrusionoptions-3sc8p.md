@@ -25,7 +25,7 @@ struct ShapeExtrusionOptions
 - [MeshResource.ShapeExtrusionOptions.MaterialAssignment](meshresource/shapeextrusionoptions-3sc8p/materialassignment-swift.struct.md)
   A type that determines the material assignments for each part of an extruded shape.
 ### Initializers
-- [init()](meshresource/shapeextrusionoptions-84mf2/init.md)
+- [init()](meshresource/shapeextrusionoptions-3sc8p/init.md)
   Creates the shape extrusion options with default values.
 ### Instance Properties
 - [var boundaryResolution: MeshResource.ShapeExtrusionOptions.CurveStrokeResolution](meshresource/shapeextrusionoptions-3sc8p/boundaryresolution.md)

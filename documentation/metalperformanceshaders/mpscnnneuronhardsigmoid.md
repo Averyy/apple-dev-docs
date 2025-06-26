@@ -1,7 +1,7 @@
 # MPSCNNNeuronHardSigmoid
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A hard sigmoid neuron filter.
 
@@ -16,25 +16,35 @@ A hard sigmoid neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronHardSigmoid : MPSCNNNeuron
+class MPSCNNNeuronHardSigmoid
 ```
 
 #### Overview
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = clamp((a * x) + b, 0, 1)](https://docs-assets.developer.apple.com/published/866dd98e74/54e6a77d-83ca-4697-964e-82f5ddf34b75.png)
+![f(x) = clamp((a * x) + b, 0, 1)](https://docs-assets.developer.apple.com/published/4205d99219acb5a3f88a4bb486e7de2b/media-2903540%402x.png)
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, a: Float, b: Float)](mpscnnneuronhardsigmoid/2875217-init.md)
+- [init(device: any MTLDevice, a: Float, b: Float)](mpscnnneuronhardsigmoid/init(device:a:b:).md)
   Initializes a hard sigmoid neuron filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -68,8 +78,6 @@ For each pixel in an image, the filter applies the following function:
   A logarithm neuron filter.
 - [class MPSCNNNeuronPower](mpscnnneuronpower.md)
   A power neuron filter.
-- [class MPSNNNeuronDescriptor](mpsnnneurondescriptor.md)
-  An object that specifies properties used by a neuron kernel.
 
 
 ---

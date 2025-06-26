@@ -3,7 +3,7 @@
 **Framework**: FinanceKit  
 **Kind**: property
 
-A localized message that describes the reason for the failure
+A localized message that describes the reason for the failure.
 
 **Availability**:
 - iOS 17.0+

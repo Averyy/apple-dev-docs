@@ -1,7 +1,7 @@
 # MPSCNNUpsamplingBilinearNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a bilinear spatial upsampling filter.
 
@@ -16,23 +16,30 @@ A representation of a bilinear spatial upsampling filter.
 ## Declaration
 
 ```swift
-class MPSCNNUpsamplingBilinearNode : MPSNNFilterNode
+class MPSCNNUpsamplingBilinearNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingbilinearnode/2875152-init.md)
-- [init(source: MPSNNImageNode, integerScaleFactorX: Int, integerScaleFactorY: Int, alignCorners: Bool)](mpscnnupsamplingbilinearnode/2966688-init.md)
+- [init(source: MPSNNImageNode, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingbilinearnode/init(source:integerscalefactorx:integerscalefactory:).md)
+- [init(source: MPSNNImageNode, integerScaleFactorX: Int, integerScaleFactorY: Int, alignCorners: Bool)](mpscnnupsamplingbilinearnode/init(source:integerscalefactorx:integerscalefactory:aligncorners:).md)
 ### Instance Properties
-- [var scaleFactorX: Double](mpscnnupsamplingbilinearnode/2875153-scalefactorx.md)
-- [var scaleFactorY: Double](mpscnnupsamplingbilinearnode/2875150-scalefactory.md)
-- [var alignCorners: Bool](mpscnnupsamplingbilinearnode/2966687-aligncorners.md)
+- [var scaleFactorX: Double](mpscnnupsamplingbilinearnode/scalefactorx.md)
+- [var scaleFactorY: Double](mpscnnupsamplingbilinearnode/scalefactory.md)
+- [var alignCorners: Bool](mpscnnupsamplingbilinearnode/aligncorners.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

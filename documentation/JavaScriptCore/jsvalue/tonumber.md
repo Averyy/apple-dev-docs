@@ -25,7 +25,7 @@ A [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) ob
 
 #### Discussion
 
-If the value represents a Boolean value, the resulting [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object is created as with the [`numberWithBool:`](https://developer.apple.com/documentation/Foundation/NSNumber/numberWithBool:) method. Otherwise, this method uses JavaScript type coercion to convert the value to a JavaScript numeric value and creates a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object wrapping the result.
+If the value represents a Boolean value, the resulting [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object is created as with the doc://com.apple.documentation/documentation/foundation/nsnumber/1551475-numberwithbool method. Otherwise, this method uses JavaScript type coercion to convert the value to a JavaScript numeric value and creates a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object wrapping the result.
 
 ## See Also
 

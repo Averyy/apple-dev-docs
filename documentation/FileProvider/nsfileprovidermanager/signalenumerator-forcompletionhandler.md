@@ -20,8 +20,8 @@ func signalEnumerator(for containerItemIdentifier: NSFileProviderItemIdentifier)
 ## Mentions
 
 - [Synchronizing the File Provider Extension](synchronizing-the-file-provider-extension.md)
-- [Signaling Changes for User-Driven Actions](signaling-changes-for-user-driven-actions.md)
 - [Using push notifications to signal changes](using-push-notifications-to-signal-changes.md)
+- [Signaling Changes for User-Driven Actions](signaling-changes-for-user-driven-actions.md)
 
 #### Discussion
 

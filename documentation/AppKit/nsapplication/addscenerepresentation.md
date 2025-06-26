@@ -40,7 +40,7 @@ class ApplicationDelegate: NSApplicationDelegate {
     }
 
     @IBAction func showAppSettings(_ sender: NSMenuItem) {
-        scene.openSettings()
+        scene.environment.openSettings()
     }
 }
 ```

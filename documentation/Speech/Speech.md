@@ -100,7 +100,7 @@ if let lastSampleTime {
 The framework includes powerful features not illustrated above. Here are some of them.
 
 - [`analyzeSequence(from:)`](speechanalyzer/analyzesequence(from:).md)
-- Get a timestamp for each word
+- [`AttributeScopes.SpeechAttributes.TimeRangeAttribute`](https://developer.apple.com/documentation/Foundation/AttributeScopes/SpeechAttributes/TimeRangeAttribute)
 - [`setModules(_:)`](speechanalyzer/setmodules(_:).md)
 - [`prepareToAnalyze(in:withProgressReadyHandler:)`](speechanalyzer/preparetoanalyze(in:withprogressreadyhandler:).md)
 - [`init(buffer:bufferStartTime:)`](analyzerinput/init(buffer:bufferstarttime:).md)
@@ -131,13 +131,14 @@ The system makes a certain number of asset allocations available to your applica
 - [class SpeechTranscriber](speechtranscriber.md)
   A module that transcribes speech to text. This transcriber is appropriate for normal conversation and general purposes.
 - [class DictationTranscriber](dictationtranscriber.md)
-  A module that transcribes speech to text. This transcriber is used by [`SFSpeechRecognizer`](sfspeechrecognizer.md) and system dictation features.
+  A module that transcribes speech to text. This transcriber is used by `SFSpeechRecognizer` and system dictation features.
 - [class SpeechDetector](speechdetector.md)
   A module that performs a voice activity detection (VAD) analysis.
 ### Input and output
 - [struct AnalyzerInput](analyzerinput.md)
   Time-coded audio data.
 - [protocol SpeechModuleResult](speechmoduleresult.md)
+  Protocol that all module results conform to.
 ### Custom vocabulary
 - [class AnalysisContext](analysiscontext.md)
   Contextual information that may be shared among analyzers.
@@ -155,6 +156,7 @@ The system makes a certain number of asset allocations available to your applica
 - [enum SpeechModels](speechmodels.md)
   Namespace for methods related to model management.
 - [class AssetInstallationRequest](assetinstallationrequest.md)
+  An object that describes, downloads, and installs a selection of assets.
 ### Legacy API
 - [Speech Recognition in Objective-C](speech-recognition-in-objc.md)
   Use these classes to perform speech recognition in Objective-C code.

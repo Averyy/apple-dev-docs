@@ -32,7 +32,7 @@ If you pass in a [`CIImage`](https://developer.apple.com/documentation/CoreImage
 
 ## See Also
 
-- [init?(bitmapImageRep: NSBitmapImageRep)](../coreimage/ciimage/1535335-init.md)
+- [init?(bitmapImageRep: NSBitmapImageRep)](../CoreImage/CIImage/init(bitmapImageRep:).md)
   Initializes an image object with the specified bitmap image representation.
 - [class func imageReps(with: Data) -> [NSImageRep]](nsbitmapimagerep/imagereps(with:).md)
   Creates and returns an array of bitmap image representation objects that correspond to the images in the specified data.

@@ -1,7 +1,7 @@
 # MPSCNNPoolingGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient pooling kernel.
 
@@ -16,23 +16,35 @@ A representation of a gradient pooling kernel.
 ## Declaration
 
 ```swift
-class MPSCNNPoolingGradientNode : MPSNNGradientFilterNode
+class MPSCNNPoolingGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int, paddingPolicy: (any MPSNNPadding)?)](mpscnnpoolinggradientnode/2948011-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int, paddingPolicy: (any MPSNNPadding)?)](mpscnnpoolinggradientnode/init(sourcegradient:sourceimage:gradientstate:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:paddingpolicy:).md)
 ### Instance Properties
-- [var kernelHeight: Int](mpscnnpoolinggradientnode/2947992-kernelheight.md)
-- [var kernelWidth: Int](mpscnnpoolinggradientnode/2948034-kernelwidth.md)
-- [var strideInPixelsX: Int](mpscnnpoolinggradientnode/2948018-strideinpixelsx.md)
-- [var strideInPixelsY: Int](mpscnnpoolinggradientnode/2948048-strideinpixelsy.md)
+- [var kernelHeight: Int](mpscnnpoolinggradientnode/kernelheight.md)
+- [var kernelWidth: Int](mpscnnpoolinggradientnode/kernelwidth.md)
+- [var strideInPixelsX: Int](mpscnnpoolinggradientnode/strideinpixelsx.md)
+- [var strideInPixelsY: Int](mpscnnpoolinggradientnode/strideinpixelsy.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+### Inherited By
+- [MPSCNNDilatedPoolingMaxGradientNode](mpscnndilatedpoolingmaxgradientnode.md)
+- [MPSCNNPoolingAverageGradientNode](mpscnnpoolingaveragegradientnode.md)
+- [MPSCNNPoolingL2NormGradientNode](mpscnnpoolingl2normgradientnode.md)
+- [MPSCNNPoolingMaxGradientNode](mpscnnpoolingmaxgradientnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

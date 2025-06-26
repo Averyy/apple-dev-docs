@@ -17,8 +17,6 @@ var intValue: Int? { get }
 
 ## See Also
 
-- [var rawValue: String](fadeenvironmentcommand/fadedirection/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 - [var stringValue: String](fadeenvironmentcommand/fadedirection/stringvalue.md)
   The string to use in a named collection (e.g. a string-keyed dictionary).
 

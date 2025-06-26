@@ -15,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 var yRotation: CGFloat { get set }
 ```
 

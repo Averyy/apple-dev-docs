@@ -21,6 +21,11 @@ The string to use in a named collection (e.g. a string-keyed dictionary).
 var stringValue: String { get }
 ```
 
+## See Also
+
+- [var intValue: Int?](datastoresnapshotcodingkey/intvalue.md)
+  The value to use in an integer-indexed collection, such as an integer-keyed dictionary.
+
 
 ---
 

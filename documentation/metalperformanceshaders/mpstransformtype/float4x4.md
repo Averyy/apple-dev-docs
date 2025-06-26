@@ -1,7 +1,7 @@
 # MPSTransformType.float4x4
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case float4x4 = 0
+case float4x4
 ```
 
 

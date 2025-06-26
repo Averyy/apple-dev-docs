@@ -19,7 +19,7 @@ func finishEnumerating(upTo nextPage: NSFileProviderPage?)
 
 Call this method after you make one or more calls to [`didEnumerate(_:)`](nsfileprovidersearchenumerationobserver/didenumerate(_:).md) to provide results to the observer. The collective results you provide in these calls constitues a “page” of results.
 
-Finish your page before sending [`maxNumberOfResults`](nsfileprovidersearchenumerationobserver/maxnumberofresults.md). If you have more results to provide, use the `nextPage` parameter to indicate where to continue in your result set. The system sends the `nextPage` parameter the next time it calls your [`enumerateSearchResults(for:startingAt:)`](nsfileprovidersearchenumerator/enumeratesearchresults(for:startingat:).md) method.
+Finish your page before sending `NSFileProviderSearchEnumerationObserver/maxNumberOfResults`. If you have more results to provide, use the `nextPage` parameter to indicate where to continue in your result set. The system sends the `nextPage` parameter the next time it calls your [`enumerateSearchResults(for:startingAt:)`](nsfileprovidersearchenumerator/enumeratesearchresults(for:startingat:).md) method.
 
 > **Note**: The [`NSFileProviderPage`](nsfileproviderpage.md) data payload is limited to 500 bytes. Sending a `nextPage` larger than this interrupts the enumeration.
 

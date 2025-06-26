@@ -1,30 +1,17 @@
-# ODAttributeType
+# _ODAttributeType
 
-**Framework**: Open Directory  
-**Kind**: typealias
+**Framework**: Open Directory
 
 An Open Directory attribute type.
 
-**Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+#### Overview
 
-## Declaration
-
-```swift
-typealias ODAttributeType = NSString
-```
-
-## Mentions
-
-- [_ODAttributeType](odattributetype.md)
-
-#### Discussion
-
-See [`General Attribute Types`](general-attribute-types.md) and [`Configuration Attribute Types`](configuration-attribute-types.md) for recognized attribute type values.
+This is an intermediary type. Use [`ODAttributeType`](odattributetype.md) instead.
 
 ## See Also
 
+- [typealias ODAttributeType](odattributetype.md)
+  An Open Directory attribute type.
 - [typealias ODAuthenticationType](odauthenticationtype.md)
   An Open Directory authentication type.
 - [class ODContext](odcontext.md)
@@ -45,8 +32,6 @@ See [`General Attribute Types`](general-attribute-types.md) and [`Configuration 
   A callback function called as results from a scheduled query are returned.
 - [typealias ODRecordType](odrecordtype.md)
   An Open Directory record type.
-- [_ODAttributeType](odattributetype.md)
-  An Open Directory attribute type.
 - [_ODAuthenticationType](odauthenticationtype.md)
   An Open Directory authentication type.
 - [_ODRecordType](odrecordtype.md)

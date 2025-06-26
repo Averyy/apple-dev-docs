@@ -1,7 +1,7 @@
 # MPSNNCropAndResizeBilinear
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A cropping and bilinear resizing filter.
 
@@ -16,24 +16,34 @@ A cropping and bilinear resizing filter.
 ## Declaration
 
 ```swift
-class MPSNNCropAndResizeBilinear : MPSCNNKernel
+class MPSNNCropAndResizeBilinear
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnncropandresizebilinear/3013788-init.md)
-- [init(device: any MTLDevice, resizeWidth: Int, resizeHeight: Int, numberOfRegions: Int, regions: UnsafePointer<MPSRegion>)](mpsnncropandresizebilinear/3013789-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsnncropandresizebilinear/init(coder:device:).md)
+- [init(device: any MTLDevice, resizeWidth: Int, resizeHeight: Int, numberOfRegions: Int, regions: UnsafePointer<MPSRegion>)](mpsnncropandresizebilinear/init(device:resizewidth:resizeheight:numberofregions:regions:).md)
 ### Instance Properties
-- [var numberOfRegions: Int](mpsnncropandresizebilinear/3013790-numberofregions.md)
-- [var regions: UnsafePointer<MPSRegion>](mpsnncropandresizebilinear/3013791-regions.md)
-- [var resizeHeight: Int](mpsnncropandresizebilinear/3013792-resizeheight.md)
-- [var resizeWidth: Int](mpsnncropandresizebilinear/3013793-resizewidth.md)
+- [var numberOfRegions: Int](mpsnncropandresizebilinear/numberofregions.md)
+- [var regions: UnsafePointer<MPSRegion>](mpsnncropandresizebilinear/regions.md)
+- [var resizeHeight: Int](mpsnncropandresizebilinear/resizeheight.md)
+- [var resizeWidth: Int](mpsnncropandresizebilinear/resizewidth.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

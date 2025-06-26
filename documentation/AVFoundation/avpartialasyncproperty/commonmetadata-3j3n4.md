@@ -26,7 +26,7 @@ static var commonMetadata: AVAsyncProperty<Root, [AVMetadataItem]> { get }
 
 #### Discussion
 
-Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
+Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
 The value contains an array of metadata items that contain an [`identifier`](avmetadataitem/identifier.md) value from the set of Common Metadata Identifiers.
 

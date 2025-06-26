@@ -4,28 +4,35 @@
 **Kind**: enum
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-enum MPSCNNConvolutionWeightsLayout : UInt32, @unchecked Sendable
+enum MPSCNNConvolutionWeightsLayout
 ```
 
 ## Topics
 
 ### Enumeration Cases
 - [MPSCNNConvolutionWeightsLayout.OHWI](mpscnnconvolutionweightslayout/ohwi.md)
+### Initializers
+- [init?(rawValue: UInt32)](mpscnnconvolutionweightslayout/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

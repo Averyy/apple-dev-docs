@@ -1,7 +1,7 @@
 # MPSCNNConvolutionTransposeGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,18 +14,26 @@
 ## Declaration
 
 ```swift
-class MPSCNNConvolutionTransposeGradientNode : MPSCNNConvolutionGradientNode
+class MPSCNNConvolutionTransposeGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, convolutionTransposeGradientState: MPSCNNConvolutionTransposeGradientStateNode, weights: (any MPSCNNConvolutionDataSource)?)](mpscnnconvolutiontransposegradientnode/3143550-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, convolutionTransposeGradientState: MPSCNNConvolutionTransposeGradientStateNode, weights: (any MPSCNNConvolutionDataSource)?)](mpscnnconvolutiontransposegradientnode/init(sourcegradient:sourceimage:convolutiontransposegradientstate:weights:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNConvolutionGradientNode](mpscnnconvolutiongradientnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [MPSNNTrainableNode](mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

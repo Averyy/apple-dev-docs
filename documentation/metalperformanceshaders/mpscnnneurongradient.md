@@ -1,7 +1,7 @@
 # MPSCNNNeuronGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient neuron filter.
 
@@ -16,25 +16,35 @@ A gradient neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronGradient : MPSCNNGradientKernel
+class MPSCNNNeuronGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnneurongradient/2942304-init.md)
-- [init(device: any MTLDevice, neuronDescriptor: MPSNNNeuronDescriptor)](mpscnnneurongradient/2942293-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnneurongradient/init(coder:device:).md)
+- [init(device: any MTLDevice, neuronDescriptor: MPSNNNeuronDescriptor)](mpscnnneurongradient/init(device:neurondescriptor:).md)
 ### Instance Properties
-- [var a: Float](mpscnnneurongradient/2942312-a.md)
-- [var b: Float](mpscnnneurongradient/2942313-b.md)
-- [var c: Float](mpscnnneurongradient/2942310-c.md)
-- [var data: Data?](mpscnnneurongradient/2942314-data.md)
-- [var neuronType: MPSCNNNeuronType](mpscnnneurongradient/2942300-neurontype.md)
+- [var a: Float](mpscnnneurongradient/a.md)
+- [var b: Float](mpscnnneurongradient/b.md)
+- [var c: Float](mpscnnneurongradient/c.md)
+- [var data: Data?](mpscnnneurongradient/data.md)
+- [var neuronType: MPSCNNNeuronType](mpscnnneurongradient/neurontype.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNGradientKernel](mpscnngradientkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -68,8 +78,6 @@ class MPSCNNNeuronGradient : MPSCNNGradientKernel
   A logarithm neuron filter.
 - [class MPSCNNNeuronPower](mpscnnneuronpower.md)
   A power neuron filter.
-- [class MPSNNNeuronDescriptor](mpsnnneurondescriptor.md)
-  An object that specifies properties used by a neuron kernel.
 
 
 ---

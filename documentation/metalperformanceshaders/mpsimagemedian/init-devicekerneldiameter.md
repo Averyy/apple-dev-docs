@@ -1,0 +1,41 @@
+# init(device:kernelDiameter:)
+
+**Framework**: Metal Performance Shaders  
+**Kind**: init
+
+Initializes a filter for a particular kernel size and device.
+
+**Availability**:
+- iOS 9.0+
+- iPadOS 9.0+
+- Mac Catalyst 13.0+
+- macOS 10.13+
+- tvOS 9.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+init(device: any MTLDevice, kernelDiameter: Int)
+```
+
+#### Return Value
+
+An initialized median filter object.
+
+## Parameters
+
+- `device`: The Metal device the filter will run on.
+- `kernelDiameter`: The diameter of the median filter, in pixels. Must be an odd number.
+
+## See Also
+
+- [class func maxKernelDiameter() -> Int](mpsimagemedian/maxkerneldiameter.md)
+  Queries the maximum diameter, in pixels, of the filter window supported by the median filter.
+- [class func minKernelDiameter() -> Int](mpsimagemedian/minkerneldiameter.md)
+  Queries the minimum diameter, in pixels, of the filter window supported by the median filter.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/mpsimagemedian/init(device:kerneldiameter:))*

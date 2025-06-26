@@ -3,7 +3,7 @@
 **Framework**: AccessorySetupKit  
 **Kind**: property
 
-Picker discovery timeout for about 2 minutes.
+A picker discovery timeout value that times out after about two minutes.
 
 **Availability**:
 - iOS 26.0+ (Beta)

@@ -26,11 +26,11 @@ ImmersiveCameraViewModel describing the geometries, mask and other information t
 ## See Also
 
 - [var cameras: [ImmersiveCamera]](venuedescriptor/cameras.md)
-  Property contains information about all the ImmersiveCameras contained in this VenueDescriptor.
+  Property contains information about all the ImmersiveCameras contained in this `VenueDescriptor`.
 - [func addCamera(ImmersiveCamera) throws](venuedescriptor/addcamera(_:).md)
-  Adds a new ImmersiveCamera definition to this VenueDescriptor.
+  Adds a new `ImmersiveCamera` definition to this `VenueDescriptor`.
 - [func removeCamera(id: String) throws](venuedescriptor/removecamera(id:).md)
-  Removes an ImmersiveCamera definition from this VenueDescriptor.
+  Removes an `ImmersiveCamera` definition from this `VenueDescriptor`.
 
 
 ---

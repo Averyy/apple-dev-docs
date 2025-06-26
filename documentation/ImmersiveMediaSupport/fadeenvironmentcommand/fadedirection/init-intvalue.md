@@ -25,8 +25,6 @@ If the value passed as `intValue` does not correspond to any instance of this ty
 
 ## See Also
 
-- [init?(rawValue: String)](fadeenvironmentcommand/fadedirection/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 - [init?(stringValue: String)](fadeenvironmentcommand/fadedirection/init(stringvalue:).md)
   Creates a new instance from the given string.
 

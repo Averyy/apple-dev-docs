@@ -6,7 +6,7 @@ Review unsupported symbols and their replacements.
 
 #### Overview
 
-[`AVAssetTrack`](avassettrack.md) doesn’t support using its synchronous property accessors that can block the calling thread. Instead, use the `AVAsynchronousKeyValueLoading/load(_:)` method to load [`AVAsyncProperty`](avasyncproperty.md) values asynchronously.
+[`AVAssetTrack`](avassettrack.md) doesn’t support using its synchronous property accessors that can block the calling thread. Instead, use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to load [`AVAsyncProperty`](avasyncproperty.md) values asynchronously.
 
 ## Topics
 

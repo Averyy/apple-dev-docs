@@ -23,8 +23,6 @@ struct PrivateKey
 ## Topics
 
 ### Creating a private key
-- [init(ikm: SymmetricKey) throws](curve25519/keyagreement/privatekey/init(ikm:).md)
-  Creates a Curve25519 private key for key agreement from input keying material.
 - [init()](curve25519/keyagreement/privatekey/init.md)
   Creates a random Curve25519 private key for key agreement.
 - [init<D>(rawRepresentation: D) throws](curve25519/keyagreement/privatekey/init(rawrepresentation:).md)

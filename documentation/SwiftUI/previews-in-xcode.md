@@ -74,6 +74,8 @@ You typically rely on preview macros to create previews in your code. However, i
 
 - [Xcode library customization](xcode-library-customization.md)
   Expose custom views and modifiers in the Xcode library.
+- [Performance analysis](performance-analysis.md)
+  Measure and improve your app’s responsiveness.
 
 
 ---

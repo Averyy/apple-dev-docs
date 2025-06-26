@@ -25,7 +25,7 @@ The date representation of the value.
 
 #### Discussion
 
-If the value contains a JavaScript `Date` object, this method returns an equivalent [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) representation. Otherwise, this method uses JavaScript type coercion to interpret the value as a number of seconds and creates an [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) object with the [`dateWithTimeIntervalSince1970:`](https://developer.apple.com/documentation/Foundation/NSDate/dateWithTimeIntervalSince1970:) method.
+If the value contains a JavaScript `Date` object, this method returns an equivalent [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) representation. Otherwise, this method uses JavaScript type coercion to interpret the value as a number of seconds and creates an [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) object with the doc://com.apple.documentation/documentation/foundation/nsdate/1591576-datewithtimeintervalsince1970 method.
 
 ## See Also
 

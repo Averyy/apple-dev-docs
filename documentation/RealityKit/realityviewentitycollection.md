@@ -43,7 +43,7 @@ This collection is used by `RealityViewContent/entities`.
 - [struct RealityViewDefaultPlaceholder](realityviewdefaultplaceholder.md)
   A view that represents the default placeholder for a RealityView.
 - [struct RealityViewLayoutOption](realityviewlayoutoption.md)
-  Specifies the frame sizing and content alignment option for`RealityView`.
+  Options that specify the frame sizing and content alignment option for `RealityView`.
 - [protocol EntityCollection](entitycollection.md)
   An ordered, mutable collection of entities.
 

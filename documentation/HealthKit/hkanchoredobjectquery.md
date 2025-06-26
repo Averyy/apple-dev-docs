@@ -21,9 +21,9 @@ class HKAnchoredObjectQuery
 
 ## Mentions
 
+- [About the HealthKit framework](about-the-healthkit-framework.md)
 - [Executing Observer Queries](executing-observer-queries.md)
 - [Receiving Downhill Skiing and Snowboarding Data](receiving-downhill-skiing-and-snowboarding-data.md)
-- [About the HealthKit framework](about-the-healthkit-framework.md)
 
 #### Overview
 

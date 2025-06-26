@@ -1,7 +1,7 @@
 # MPSNNReshapeNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 12.1+
@@ -14,18 +14,25 @@
 ## Declaration
 
 ```swift
-class MPSNNReshapeNode : MPSNNFilterNode
+class MPSNNReshapeNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, resultWidth: Int, resultHeight: Int, resultFeatureChannels: Int)](mpsnnreshapenode/3037420-init.md)
+- [init(source: MPSNNImageNode, resultWidth: Int, resultHeight: Int, resultFeatureChannels: Int)](mpsnnreshapenode/init(source:resultwidth:resultheight:resultfeaturechannels:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

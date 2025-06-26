@@ -9,8 +9,8 @@ Creates an expectation that the system fulfills when the value of the observed p
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- Unknown ?+ - Deprecated
 - tvOS 13.0+
+- Unknown ?+ - Deprecated
 
 ## Declaration
 

@@ -22,8 +22,8 @@ func makeBinaryArchive(descriptor: MTLBinaryArchiveDescriptor) throws -> any MTL
 
 ## Mentions
 
-- [Compiling Binary Archives from a Custom Configuration Script](compiling-binary-archives-from-a-custom-configuration-script.md)
 - [Creating Binary Archives from Device-Built Pipeline State Objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
+- [Compiling Binary Archives from a Custom Configuration Script](compiling-binary-archives-from-a-custom-configuration-script.md)
 
 ## Parameters
 

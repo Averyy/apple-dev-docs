@@ -1,7 +1,7 @@
 # MPSCNNLossType.huber
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.3+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case huber = 6
+case huber
 ```
 
 

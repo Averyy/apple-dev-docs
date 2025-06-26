@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-func vmnet_network_configuration_set_external_interface(_ network: vmnet_network_configuration_ref, _ interface_name: UnsafePointer<CChar>) -> vmnet_return_t
+func vmnet_network_configuration_set_external_interface(_ config: vmnet_network_configuration_ref, _ interface_name: UnsafePointer<CChar>) -> vmnet_return_t
 ```
 
 #### Return Value
@@ -25,7 +25,7 @@ This is only applicable to networks of `VMNET_SHARED_MODE`.
 
 ## Parameters
 
-- `network`: The network object to be modified.
+- `config`: The network configuration object to be modified.
 - `interface_name`: The name of the external interface
 
 

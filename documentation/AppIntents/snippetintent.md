@@ -53,7 +53,7 @@ struct ShowTodoListIntent: SnippetIntent {
 }
 ```
 
-When someone interacts with a snippet’s button or a toggle, the system first triggers its associated app intent. When the button or toggle’s intent completes, the system calls the snippet intent’s `perform()` method again. In your snippet intent’s `perform()` implementation, make sure to handle multiple calls of `perform()`. For example, the example above would need to fetch the list of tasks to make sure it displays the most recent data. If a user completes a task from a snippet, the snippet needs to reflect this change and show the task as completed or remove it from the list of tasks.
+When someone interacts with a snippet’s button or a toggle, the system first performs its associated app intent. When the button or toggle’s intent completes, the system calls the snippet intent’s `perform()` method again. In your snippet intent’s `perform()` implementation, make sure to handle multiple calls of `perform()`. For example, the example above would need to fetch the list of tasks to make sure it displays the most recent data. If a user completes a task from a snippet, the snippet needs to reflect this change and show the task as completed or remove it from the list of tasks.
 
 > ❗ **Important**: Only app intents that conform to this protocol can present views with interactive elements, like buttons and toggles, that work. Additionally, make sure to conform your intent to this protocol so that the system knows to call again your `perform` function to render the new state of the snippet after it performed the action of a button or toggle.
 

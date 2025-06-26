@@ -1,7 +1,7 @@
 # MPSCNNNeuronReLUN
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A ReLUN neuron filter.
 
@@ -16,26 +16,36 @@ A ReLUN neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronReLUN : MPSCNNNeuron
+class MPSCNNNeuronReLUN
 ```
 
 #### Overview
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = [ x    , x &gt;= 0 | [ a * x, x &lt;  0 | [ b    , x &gt;= b](https://docs-assets.developer.apple.com/published/be7b094244/2d112f57-fa29-4c83-b351-1800e2570527.png)
+![f(x) = x , x >= 0 |  a * x, x <  0 |  b , x >= b](https://docs-assets.developer.apple.com/published/e6dedfb2f9e4f6bf206255a219d3da48/media-2923195%402x.png)
 
-The default value of `a` is 1.0 and the default value of `b` is 6.0. 
+The default value of `a` is 1.0 and the default value of `b` is 6.0.
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, a: Float, b: Float)](mpscnnneuronrelun/2921658-init.md)
+- [init(device: any MTLDevice, a: Float, b: Float)](mpscnnneuronrelun/init(device:a:b:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -69,8 +79,6 @@ The default value of `a` is 1.0 and the default value of `b` is 6.0.
   A logarithm neuron filter.
 - [class MPSCNNNeuronPower](mpscnnneuronpower.md)
   A power neuron filter.
-- [class MPSNNNeuronDescriptor](mpsnnneurondescriptor.md)
-  An object that specifies properties used by a neuron kernel.
 
 
 ---

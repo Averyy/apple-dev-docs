@@ -1,15 +1,15 @@
 # MPSNDArrayConstantMultiDestIndex
 
 **Framework**: Metal Performance Shaders  
-**Kind**: data
+**Kind**: var
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 

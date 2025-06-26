@@ -15,7 +15,7 @@ An alias for the color type that’s appropriate for the current platform.
 ## Declaration
 
 ```swift
-typealias Color = NSColor
+typealias Color = UIColor
 ```
 
 

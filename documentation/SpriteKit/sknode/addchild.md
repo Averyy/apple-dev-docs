@@ -17,6 +17,7 @@ Adds a node to the end of the receiver’s list of child nodes.
 ## Declaration
 
 ```swift
+@MainActor
 func addChild(_ node: SKNode)
 ```
 

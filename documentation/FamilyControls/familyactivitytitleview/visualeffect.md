@@ -8,7 +8,6 @@ Applies effects to this view, while providing access to layout information throu
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - watchOS 10.0+

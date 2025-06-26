@@ -13,7 +13,7 @@
 
 ```swift
 @MainActor
-var writingToolsBehavior: UIWritingToolsBehavior { get set }
+var writingToolsBehavior: NSWritingToolsBehavior { get set }
 ```
 
 

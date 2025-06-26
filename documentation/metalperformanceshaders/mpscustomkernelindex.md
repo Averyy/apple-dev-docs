@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 11.3+
-- iPadOS 11.3+
-- Mac Catalyst 13.0+
-- macOS 10.13.4+
-- tvOS 11.3+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,16 +20,19 @@ struct MPSCustomKernelIndex
 ## Topics
 
 ### Initializers
-- [init(UInt32)](mpscustomkernelindex/2967123-init.md)
-- [init(rawValue: UInt32)](mpscustomkernelindex/2967124-init.md)
+- [init(UInt32)](mpscustomkernelindex/init(_:).md)
+- [init(rawValue: UInt32)](mpscustomkernelindex/init(rawvalue:).md)
 ### Instance Properties
-- [var rawValue: UInt32](mpscustomkernelindex/2967125-rawvalue.md)
+- [var rawValue: UInt32](mpscustomkernelindex/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

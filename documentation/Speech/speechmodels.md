@@ -27,6 +27,7 @@ enum SpeechModels
 ## See Also
 
 - [class AssetInstallationRequest](assetinstallationrequest.md)
+  An object that describes, downloads, and installs a selection of assets.
 
 
 ---

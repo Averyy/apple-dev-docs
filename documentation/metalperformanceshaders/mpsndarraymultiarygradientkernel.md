@@ -1,7 +1,7 @@
 # MPSNDArrayMultiaryGradientKernel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,22 +14,36 @@
 ## Declaration
 
 ```swift
-class MPSNDArrayMultiaryGradientKernel : MPSNDArrayMultiaryBase
+class MPSNDArrayMultiaryGradientKernel
 ```
 
 ## Topics
 
 ### Initializers
-- [init(coder: NSCoder, device: any MTLDevice)](mpsndarraymultiarygradientkernel/3175008-init.md)
-- [init(device: any MTLDevice, sourceCount: Int, sourceGradientIndex: Int)](mpsndarraymultiarygradientkernel/3143524-init.md)
+- [init(coder: NSCoder, device: any MTLDevice)](mpsndarraymultiarygradientkernel/init(coder:device:).md)
+- [init(device: any MTLDevice, sourceCount: Int, sourceGradientIndex: Int)](mpsndarraymultiarygradientkernel/init(device:sourcecount:sourcegradientindex:).md)
 ### Instance Methods
-- [func encode(to: any MTLCommandBuffer, sourceArrays: [MPSNDArray], sourceGradient: MPSNDArray, gradientState: MPSState) -> MPSNDArray](mpsndarraymultiarygradientkernel/3143522-encode.md)
-- [func encode(to: any MTLCommandBuffer, sourceArrays: [MPSNDArray], sourceGradient: MPSNDArray, gradientState: MPSState, destinationArray: MPSNDArray)](mpsndarraymultiarygradientkernel/3143523-encode.md)
+- [func encode(to: any MTLCommandBuffer, sourceArrays: [MPSNDArray], sourceGradient: MPSNDArray, gradientState: MPSState) -> MPSNDArray](mpsndarraymultiarygradientkernel/encode(to:sourcearrays:sourcegradient:gradientstate:).md)
+- [func encode(to: any MTLCommandBuffer, sourceArrays: [MPSNDArray], sourceGradient: MPSNDArray, gradientState: MPSState, destinationArray: MPSNDArray)](mpsndarraymultiarygradientkernel/encode(to:sourcearrays:sourcegradient:gradientstate:destinationarray:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNDArrayMultiaryBase](mpsndarraymultiarybase.md)
+### Inherited By
+- [MPSNDArrayBinaryPrimaryGradientKernel](mpsndarraybinaryprimarygradientkernel.md)
+- [MPSNDArrayBinarySecondaryGradientKernel](mpsndarraybinarysecondarygradientkernel.md)
+- [MPSNDArrayUnaryGradientKernel](mpsndarrayunarygradientkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

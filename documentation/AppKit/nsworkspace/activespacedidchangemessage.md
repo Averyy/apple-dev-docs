@@ -23,7 +23,6 @@ struct ActiveSpaceDidChangeMessage
 
 ### Conforms To
 - [NotificationCenter.AsyncMessage](../Foundation/NotificationCenter/AsyncMessage.md)
-- [NotificationCenter.Message](../Foundation/NotificationCenter/Message.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

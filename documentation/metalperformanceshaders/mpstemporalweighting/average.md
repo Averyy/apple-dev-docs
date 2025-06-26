@@ -1,7 +1,7 @@
 # MPSTemporalWeighting.average
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 13.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case average = 0
+case average
 ```
 
 

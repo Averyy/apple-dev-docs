@@ -1,7 +1,7 @@
 # MPSImageFeatureChannelFormat.count
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case count = 6
+case count
 ```
 
 

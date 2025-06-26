@@ -16,7 +16,7 @@ typealias SecTransformActionBlock = () -> Unmanaged<CFTypeRef>?
 
 #### Return Value
 
-A dictionary of the custom items to be exported if this block is used to override the [`kSecTransformActionExternalizeExtraData`](ksectransformactionexternalizeextradata.md) action or  `NULL` for any other action. Alternatively, the block returns a doc://com.apple.documentation/documentation/corefoundation/cferror-ru8 object if an error occurs.
+A dictionary of the custom items to be exported if this block is used to override the [`kSecTransformActionExternalizeExtraData`](ksectransformactionexternalizeextradata.md) action or  `NULL` for any other action. Alternatively, the block returns a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) object if an error occurs.
 
 #### Discussion
 

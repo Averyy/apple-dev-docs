@@ -18,21 +18,12 @@ A class that defines configuration options for use in NetworkExtension authentic
 @preconcurrency class NEHotspotAuthenticationProviderConfiguration
 ```
 
-## Topics
-
-### Initializers
-- [init(appex: any NEHotspotAuthenticationProvider)](nehotspotauthenticationproviderconfiguration/init(appex:).md)
-  Creates a configuration for a given app extension.
-
 ## Relationships
 
 ### Inherits From
 - [NEAppExtensionConfiguration](neappextensionconfiguration.md)
 ### Conforms To
 - [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
-- [NEAppExtensionConfigurationProtocol](neappextensionconfigurationprotocol.md)
-- [NEAppExtensionXPCProtocol](neappextensionxpcprotocol.md)
-- [NEHotspotAuthenticationProviderXPCProtocol](nehotspotauthenticationproviderxpcprotocol.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

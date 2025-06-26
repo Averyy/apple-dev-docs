@@ -23,8 +23,8 @@ dictionary ApplePayPaymentMethod {
 
 ## Mentions
 
-- [Apple Pay on the Web Version 10 Release Notes](apple-pay-on-the-web-version-10-release-notes.md)
 - [Setting up the payment request API to accept Apple Pay](setting-up-the-payment-request-api-to-accept-apple-pay.md)
+- [Apple Pay on the Web Version 10 Release Notes](apple-pay-on-the-web-version-10-release-notes.md)
 
 ## Topics
 

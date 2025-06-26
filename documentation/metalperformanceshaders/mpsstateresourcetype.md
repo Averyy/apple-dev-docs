@@ -6,17 +6,17 @@
 Options for the underlying resource type for a state object.
 
 **Availability**:
-- iOS 11.3+
-- iPadOS 11.3+
-- Mac Catalyst 13.0+
-- macOS 10.13.4+
-- tvOS 11.3+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-enum MPSStateResourceType : UInt, @unchecked Sendable
+enum MPSStateResourceType
 ```
 
 ## Topics
@@ -25,11 +25,18 @@ enum MPSStateResourceType : UInt, @unchecked Sendable
 - [MPSStateResourceType.buffer](mpsstateresourcetype/buffer.md)
 - [MPSStateResourceType.none](mpsstateresourcetype/none.md)
 - [MPSStateResourceType.texture](mpsstateresourcetype/texture.md)
+### Initializers
+- [init?(rawValue: UInt)](mpsstateresourcetype/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -24,7 +24,7 @@ func typingAttributes(in text: AttributedString) -> AttributeContainer
 
 The typing attributes are the attributes that will be applied to any new characters typed out by the user.
 
-> **Note**: The returned container may contain values for attributes that specify `runBoundaries` and thus might not actually get applied to new content.
+> **Note**: The returned container may contain values for attributes that specify [`runBoundaries`](https://developer.apple.com/documentation/Foundation/AttributedStringKey/runBoundaries) and thus might not actually get applied to new content.
 
 
 ---

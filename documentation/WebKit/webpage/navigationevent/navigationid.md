@@ -3,7 +3,7 @@
 **Framework**: WebKit  
 **Kind**: property
 
-The ID of the navigation that triggered this event. Multiple sequential events will have the same navigation identifier.
+The ID of the navigation that triggered this event.
 
 **Availability**:
 - iOS 18.4+
@@ -17,6 +17,10 @@ The ID of the navigation that triggered this event. Multiple sequential events w
 ```swift
 let navigationID: WebPage.NavigationID
 ```
+
+#### Discussion
+
+Multiple sequential events will have the same navigation identifier.
 
 
 ---

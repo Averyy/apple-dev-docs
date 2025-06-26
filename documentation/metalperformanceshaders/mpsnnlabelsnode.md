@@ -1,7 +1,7 @@
 # MPSNNLabelsNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A placeholder node denoting the per-element weight buffer used by loss and gradient loss kernels.
 
@@ -16,13 +16,20 @@ A placeholder node denoting the per-element weight buffer used by loss and gradi
 ## Declaration
 
 ```swift
-class MPSNNLabelsNode : MPSNNStateNode
+class MPSNNLabelsNode
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNStateNode](mpsnnstatenode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

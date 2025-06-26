@@ -99,6 +99,9 @@ You can display your toolbar item’s content using a custom view if you prefer,
   The toolbar item’s minimum size.
 - [var maxSize: NSSize](nstoolbaritem/maxsize.md)
   The toolbar item’s maximum size.
+### Instance Properties
+- [var badge: NSItemBadge?](nstoolbaritem/badge-17r3r.md)
+  A badge that can be attached to an NSToolbarItem. This provides a way to display small visual indicators that can be used to highlight important information, such as unread notifications or status indicators.
 
 ## Relationships
 

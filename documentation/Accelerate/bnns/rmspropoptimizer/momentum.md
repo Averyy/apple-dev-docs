@@ -10,10 +10,10 @@ The rate of momentum decay.
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
+- tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
-- tvOS 14.0+
 
 ## Declaration
 

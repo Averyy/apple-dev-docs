@@ -181,8 +181,6 @@ RealityKit includes a few material types to help you get started, including [`Si
 
 - [Hello World](../visionOS/World.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
-  Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
 - [Generating interactive geometry with RealityKit](generating-interactive-geometry-with-realitykit.md)
@@ -191,8 +189,6 @@ RealityKit includes a few material types to help you get started, including [`Si
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
-- [Presenting images in RealityKit](presenting-images-in-realitykit.md)
-  Create and display spatial scenes in RealityKit.
 - [Models and meshes](scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
 - [Anchors](scene-content-anchors.md)
@@ -205,6 +201,8 @@ RealityKit includes a few material types to help you get started, including [`Si
   Create personalized and realistic spatial audio experiences.
 - [Videos](scene-content-videos.md)
   Present videos in your RealityKit experiences.
+- [Images](scene-content-images.md)
+  Present images and spatial scenes in your RealityKit experiences.
 
 
 ---

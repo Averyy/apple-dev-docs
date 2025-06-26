@@ -27,6 +27,15 @@ mutating func merge(partData: MergeablePartData, into partID: AssignedWorkDocume
 - `partData`: The part data to merge into this object.
 - `partID`: The part ID of the part that the incoming data should be merged in.
 
+## See Also
+
+- [func merge(AssignedWorkDocument) async throws -> Bool](assignedworkdocument/merge(_:).md)
+  Merge another object of this type into this object.
+- [func merge(other: AssignedWorkDocument) throws -> Bool](assignedworkdocument/merge(other:).md)
+  Merge another object of this type into this object.
+- [func merge(partID: AssignedWorkDocument.PartID, partDataURL: URL) throws -> Bool](assignedworkdocument/merge(partid:partdataurl:).md)
+  Merges an individual part’s data into the specified part of this object.
+
 
 ---
 

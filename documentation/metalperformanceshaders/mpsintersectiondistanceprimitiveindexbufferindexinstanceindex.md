@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,13 +20,19 @@ struct MPSIntersectionDistancePrimitiveIndexBufferIndexInstanceIndex
 ## Topics
 
 ### Initializers
-- [init()](mpsintersectiondistanceprimitiveindexbufferindexinstanceindex/3751703-init.md)
-- [init(distance: Float, primitiveIndex: UInt32, bufferIndex: UInt32, instanceIndex: UInt32)](mpsintersectiondistanceprimitiveindexbufferindexinstanceindex/3751704-init.md)
+- [init()](mpsintersectiondistanceprimitiveindexbufferindexinstanceindex/init.md)
+- [init(distance: Float, primitiveIndex: UInt32, bufferIndex: UInt32, instanceIndex: UInt32)](mpsintersectiondistanceprimitiveindexbufferindexinstanceindex/init(distance:primitiveindex:bufferindex:instanceindex:).md)
 ### Instance Properties
-- [var bufferIndex: UInt32](mpsintersectiondistanceprimitiveindexbufferindexinstanceindex/3750657-bufferindex.md)
-- [var distance: Float](mpsintersectiondistanceprimitiveindexbufferindexinstanceindex/3750658-distance.md)
-- [var instanceIndex: UInt32](mpsintersectiondistanceprimitiveindexbufferindexinstanceindex/3750659-instanceindex.md)
-- [var primitiveIndex: UInt32](mpsintersectiondistanceprimitiveindexbufferindexinstanceindex/3750660-primitiveindex.md)
+- [var bufferIndex: UInt32](mpsintersectiondistanceprimitiveindexbufferindexinstanceindex/bufferindex.md)
+- [var distance: Float](mpsintersectiondistanceprimitiveindexbufferindexinstanceindex/distance.md)
+- [var instanceIndex: UInt32](mpsintersectiondistanceprimitiveindexbufferindexinstanceindex/instanceindex.md)
+- [var primitiveIndex: UInt32](mpsintersectiondistanceprimitiveindexbufferindexinstanceindex/primitiveindex.md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

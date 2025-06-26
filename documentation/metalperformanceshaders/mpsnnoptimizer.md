@@ -1,7 +1,7 @@
 # MPSNNOptimizer
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 The base class for optimization layers.
 
@@ -16,26 +16,40 @@ The base class for optimization layers.
 ## Declaration
 
 ```swift
-class MPSNNOptimizer : MPSKernel
+class MPSNNOptimizer
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var applyGradientClipping: Bool](mpsnnoptimizer/2966705-applygradientclipping.md)
-- [var gradientClipMax: Float](mpsnnoptimizer/2966706-gradientclipmax.md)
-- [var gradientClipMin: Float](mpsnnoptimizer/2966707-gradientclipmin.md)
-- [var gradientRescale: Float](mpsnnoptimizer/2966708-gradientrescale.md)
-- [var learningRate: Float](mpsnnoptimizer/2966709-learningrate.md)
-- [var regularizationScale: Float](mpsnnoptimizer/2966710-regularizationscale.md)
-- [var regularizationType: MPSNNRegularizationType](mpsnnoptimizer/2966711-regularizationtype.md)
+- [var applyGradientClipping: Bool](mpsnnoptimizer/applygradientclipping.md)
+- [var gradientClipMax: Float](mpsnnoptimizer/gradientclipmax.md)
+- [var gradientClipMin: Float](mpsnnoptimizer/gradientclipmin.md)
+- [var gradientRescale: Float](mpsnnoptimizer/gradientrescale.md)
+- [var learningRate: Float](mpsnnoptimizer/learningrate.md)
+- [var regularizationScale: Float](mpsnnoptimizer/regularizationscale.md)
+- [var regularizationType: MPSNNRegularizationType](mpsnnoptimizer/regularizationtype.md)
 ### Instance Methods
-- [func setLearningRate(Float)](mpsnnoptimizer/2966712-setlearningrate.md)
+- [func setLearningRate(Float)](mpsnnoptimizer/setlearningrate(_:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
+### Inherited By
+- [MPSNNOptimizerAdam](mpsnnoptimizeradam.md)
+- [MPSNNOptimizerRMSProp](mpsnnoptimizerrmsprop.md)
+- [MPSNNOptimizerStochasticGradientDescent](mpsnnoptimizerstochasticgradientdescent.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

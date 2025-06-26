@@ -59,7 +59,7 @@ configuration.locationType = .outdoor
 
 Use the configuration to set the type of activity and the location for the workout. Apple Watch optimizes both the sensors and the calorimetry based on the configuration.
 
-For example, while the session runs, Apple Watch automatically saves active energy-burned samples to the HealthKit store. HealthKit provides optimized calorie calculations for run, walk, cycle, stair-climbing, elliptical, and rowing activities. Furthermore, the calculations for run, walk, and cycle activities differ between indoor and outdoor locations. For all other activities, the system estimates calories based on the data from Apple Watch’s sensors. This rate is never lower than the brisk walk burn rate.
+For example, while the session runs, Apple Watch automatically saves active energy-burned samples to the HealthKit store. HealthKit provides optimized calorie calculations for some activities. These include, but are not limited to, run, walk, cycle, stair-climbing, elliptical, and rowing activities. Furthermore, the calculations for activities may differ between indoor and outdoor locations. For all other activities, the system estimates calories based on the data from Apple Watch’s sensors. Depending on the activity, this rate is either never lower than the brisk walk burn rate or never lower than the brisk walk burn rate when moving.
 
 Next, use the configuration to create your workout session and get a reference to the session’s [`HKLiveWorkoutBuilder`](hkliveworkoutbuilder.md) object.
 
@@ -173,24 +173,39 @@ If the watchOS app has an iOS companion, be sure to keep both apps in sync. This
 
 ##### End a Session
 
-After the user finishes the workout, end the session and call the builder’s [`endCollection(withEnd:completion:)`](hkworkoutbuilder/endcollection(withend:completion:).md) and [`finishWorkout(completion:)`](hkworkoutbuilder/finishworkout(completion:).md) methods.
+After the user finishes the workout, stop the session by calling [`stopActivity(with:)`](hkworkoutsession/stopactivity(with:).md).
 
 ```swift
-session.end()
-builder.endCollection(withEnd: Date()) { (success, error) in
-    
-    guard success else {
-        // Handle errors.
-    }
-    
-    builder.finishWorkout { (workout, error) in
-        
-        guard workout != nil else {
-            // Handle errors.
-        }
-        
-        DispatchQueue.main.async() {
-            // Update the user interface.
+session.stopActivity(with: Date())
+```
+
+After the session has transitioned to the `.stopped` state, call the builder’s [`endCollection(withEnd:completion:)`](hkworkoutbuilder/endcollection(withend:completion:).md) and [`finishWorkout(completion:)`](hkworkoutbuilder/finishworkout(completion:).md) methods. Finally, call [`end()`](hkworkoutsession/end().md) to end the session.
+
+```swift
+func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKWorkoutSessionState,
+                    from fromState: HKWorkoutSessionState, date: Date) {
+
+    // Wait for the session to transition states before ending the builder.
+    if toState == .stopped {
+
+        builder.endCollection(withEnd: date) { (success, error) in
+
+            guard success else {
+                // Handle errors.
+            }
+
+            builder.finishWorkout { (workout, error) in
+                
+                guard workout != nil else {
+                    // Handle errors.
+                }
+
+                session.end()
+                
+                DispatchQueue.main.async() {
+                    // Update the user interface.
+                }
+            }
         }
     }
 }

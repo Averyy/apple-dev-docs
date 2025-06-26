@@ -25,7 +25,7 @@ Background filters affect the content behind the layer that shows through into t
 
 The default value of this property is `nil`.
 
-Changing the inputs of the [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter) object directly after it is attached to the layer causes undefined behavior. In macOS, it is possible to modify filter parameters after attaching them to the layer but you must use the layer’s doc://com.apple.documentation/documentation/objectivec/nsobject/1418139-setvalue method to do so. In addition, you must assign a name to the filter so that you can identify it in the array. For example, to change the `inputRadius` parameter of the filter, you could use code similar to the following:
+Changing the inputs of the [`CIFilter`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class) object directly after it is attached to the layer causes undefined behavior. In macOS, it is possible to modify filter parameters after attaching them to the layer but you must use the layer’s doc://com.apple.documentation/documentation/objectivec/nsobject/1418139-setvalue method to do so. In addition, you must assign a name to the filter so that you can identify it in the array. For example, to change the `inputRadius` parameter of the filter, you could use code similar to the following:
 
 You use the layer’s [`masksToBounds`](calayer/maskstobounds.md) to control the extent of its background filter’s effect.
 

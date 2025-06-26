@@ -14,6 +14,7 @@ Sets the initial recipients to include in the email’s To field.
 ## Declaration
 
 ```swift
+@MainActor
 func setToRecipients(_ toRecipients: [String]?)
 ```
 

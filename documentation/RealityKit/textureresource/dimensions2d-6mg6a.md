@@ -26,7 +26,7 @@ This specifies the width and height of a 2D texture.
 ## Topics
 
 ### Type Methods
-- [static dimensions(width:height:)](textureresource/dimensions2d-6mg6a/dimensions(width:height:).md)
+- [static dimensions(width:height:)](textureresource/dimensions2d-57uyl/dimensions(width:height:).md)
   Specifies the dimensions of the 2D texture.
 
 ## Relationships

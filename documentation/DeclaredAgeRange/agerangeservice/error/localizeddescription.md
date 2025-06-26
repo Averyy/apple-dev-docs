@@ -1,6 +1,6 @@
 # localizedDescription
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: property
 
 Retrieve the localized description for this error.

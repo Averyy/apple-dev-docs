@@ -35,7 +35,7 @@ These values default to `true` if no value is specified.
 
 - `parameters`: A parameter dictionary that describes the key. See the discussion for details.
 - `keyData`: A   object that contains the raw key data.
-- `error`: A pointer to a  doc://com.apple.documentation/documentation/corefoundation/cferror-ru8  variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `error`: A pointer to a   variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

@@ -17,7 +17,6 @@ Creates a field node that accelerates physics bodies in a specific direction.
 ## Declaration
 
 ```swift
-@MainActor
 class func linearGravityField(withVector direction: vector_float3) -> SKFieldNode
 ```
 

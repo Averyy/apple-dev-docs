@@ -63,8 +63,6 @@ class HKStateOfMind
 - [class HKStateOfMindType](hkstateofmindtype.md)
 - [class HKWheelchairUseObject](hkwheelchairuseobject.md)
   This class acts as a wrapper for the wheelchair use enumeration.
-- [class HKWorkoutEffortRelationship](hkworkouteffortrelationship.md)
-- [class HKWorkoutEffortRelationshipQuery](hkworkouteffortrelationshipquery.md)
 
 
 ---

@@ -1,7 +1,7 @@
 # MPSCNNUpsamplingNearestNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a nearest spatial upsampling filter.
 
@@ -16,21 +16,28 @@ A representation of a nearest spatial upsampling filter.
 ## Declaration
 
 ```swift
-class MPSCNNUpsamplingNearestNode : MPSNNFilterNode
+class MPSCNNUpsamplingNearestNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingnearestnode/2875222-init.md)
+- [init(source: MPSNNImageNode, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingnearestnode/init(source:integerscalefactorx:integerscalefactory:).md)
 ### Instance Properties
-- [var scaleFactorX: Double](mpscnnupsamplingnearestnode/2875209-scalefactorx.md)
-- [var scaleFactorY: Double](mpscnnupsamplingnearestnode/2875155-scalefactory.md)
+- [var scaleFactorX: Double](mpscnnupsamplingnearestnode/scalefactorx.md)
+- [var scaleFactorY: Double](mpscnnupsamplingnearestnode/scalefactory.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

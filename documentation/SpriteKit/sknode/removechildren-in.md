@@ -17,7 +17,6 @@ Removes a list of children from the receiving node.
 ## Declaration
 
 ```swift
-@MainActor
 func removeChildren(in nodes: [SKNode])
 ```
 

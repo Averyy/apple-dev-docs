@@ -33,6 +33,7 @@ var scoreAnnotations: [AssignedWorkDocument.ScoreAnnotation] { get set }
   Returns a collection of identifiers reflecting the manifest of parts available in the document.
 - [var scorers: [AnyUserIdentity]](assignedworkdocument/scorers.md)
   The identities of users scoring this assigned work. Treated as a set.
+- [var pagesDebugDescription: String](assignedworkdocument/pagesdebugdescription.md)
 - [AssignedWorkDocument.Error](assignedworkdocument/error.md)
   Errors for this document type.
 

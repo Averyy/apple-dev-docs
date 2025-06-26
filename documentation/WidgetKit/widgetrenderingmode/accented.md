@@ -21,11 +21,11 @@ static let accented: WidgetRenderingMode
 
 ## Mentions
 
-- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
 - [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
+- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
 - [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
-- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
 
 #### Discussion
 

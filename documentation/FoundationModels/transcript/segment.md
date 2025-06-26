@@ -54,7 +54,7 @@ enum Segment
 
 ## See Also
 
-- [init(entries: [Transcript.Entry])](transcript/init(entries:).md)
+- [init(entries: some Sequence<Transcript.Entry>)](transcript/init(entries:).md)
   Creates a transcript.
 - [init(from: any Decoder) throws](transcript/init(from:).md)
   Creates a new instance by decoding from the given decoder.

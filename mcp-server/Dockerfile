@@ -82,7 +82,6 @@ ENV MEILISEARCH_PATH=/data/meilisearch
 ENV HASHES_PATH=/data/hashes
 ENV DOCUMENTATION_PATH=/data/documentation
 ENV LOG_PATH=/data/logs
-ENV KEEP_MARKDOWN_FILES=true
 # Meilisearch configuration
 ENV MEILI_HTTP_ADDR=http://localhost:7700
 ENV MEILI_DB_PATH=/data/meilisearch

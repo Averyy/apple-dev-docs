@@ -14,7 +14,7 @@ A protocol that defines methods and properties your extension implements to hand
 ## Declaration
 
 ```swift
-protocol NEHotspotEvaluationProvider : NEAppExtension
+protocol NEHotspotEvaluationProvider : AppExtension
 ```
 
 #### Overview
@@ -43,7 +43,6 @@ Conform to this protocol in your hotspot helper app extension.
 
 ### Inherits From
 - [AppExtension](../ExtensionFoundation/AppExtension.md)
-- [NEAppExtension](neappextension.md)
 
 ## See Also
 

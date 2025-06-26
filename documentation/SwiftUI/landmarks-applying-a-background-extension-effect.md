@@ -26,7 +26,7 @@ To apply the background extension effect, the sample:
 
 ##### Align the View to the Leading and Trailing Edges
 
-To apply the [`backgroundExtensionEffect()`](view/backgroundextensioneffect().md) to a view, align the leading edge of the view needs next to the sidebar, and align the trailing edge of the view to the trailing edge of the containing view.
+To apply the [`backgroundExtensionEffect()`](view/backgroundextensioneffect().md) to a view, align the leading edge of the view next to the sidebar, and align the trailing edge of the view to the trailing edge of the containing view.
 
 In `LandmarksView`, the `LandmarkFeaturedItemView` and the containing [`LazyVStack`](lazyvstack.md) and [`ScrollView`](scrollview.md) don’t have padding. This allows the `LandmarkFeaturedItemView` to align with the leading edge of the view next to the sidebar.
 
@@ -68,7 +68,7 @@ When the inspector is open, the system extends the image in the trailing directi
 
 In `LandmarksView`, the `LandmarkFeaturedItemView` has an image from the featured landmark, and includes a title for the landmark and a button you can click or tap to learn more about that location.
 
-To avoid having the landmark’s’ title and button appear under the sidebar on macOS, the sample applies the [`backgroundExtensionEffect()`](view/backgroundextensioneffect().md) modifier to the image before adding the overlay that includes the title and button:
+To avoid having the landmark’s title and button appear under the sidebar in macOS, the sample applies the [`backgroundExtensionEffect()`](view/backgroundextensioneffect().md) modifier to the image before adding the overlay that includes the title and button:
 
 ```swift
 Image(decorative: landmark.backgroundImageName)
@@ -94,8 +94,8 @@ Image(decorative: landmark.backgroundImageName)
 
 - [Landmarks: Extending horizontal scrolling under a sidebar or inspector](landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector.md)
   Improve your horizontal scrollbar’s appearance by extending it under a sidebar or inspector.
-- [Landmarks: Refining the system provided glass effect in toolbars](landmarks-refining-the-system-provided-glass-effect-in-toolbars.md)
-  Organize toolbars into related groups to improve their appearance and utility.
+- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](landmarks-refining-the-system-provided-glass-effect-in-toolbars.md)
+  Organize toolbars into related groupings to improve their appearance and utility.
 - [Landmarks: Displaying custom activity badges](landmarks-displaying-custom-activity-badges.md)
   Provide people with a way to mark their adventures by displaying animated custom activity badges.
 

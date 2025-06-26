@@ -1,9 +1,12 @@
-# Delete sign-in token
+# Delete Sign-In Token
 
 **Framework**: Automatic Sign-In API  
 **Kind**: httpRequest
 
 Deletes a specific sign-in token.
+
+**Availability**:
+- Automatic Sign-In API 1.0+
 
 ## Mentions
 

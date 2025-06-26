@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-A boolean value indicating whether the compute pipeline should support adding binary functions.
+A boolean value indicating whether the compute pipeline supports linking binary functions.
 
 **Availability**:
 - iOS 26.0+ (Beta)

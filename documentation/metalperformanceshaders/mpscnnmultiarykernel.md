@@ -1,7 +1,7 @@
 # MPSCNNMultiaryKernel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,61 +14,71 @@
 ## Declaration
 
 ```swift
-class MPSCNNMultiaryKernel : MPSKernel
+class MPSCNNMultiaryKernel
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnmultiarykernel/3043425-init.md)
-- [init(device: any MTLDevice, sourceCount: Int)](mpscnnmultiarykernel/3043426-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnmultiarykernel/init(coder:device:).md)
+- [init(device: any MTLDevice, sourceCount: Int)](mpscnnmultiarykernel/init(device:sourcecount:).md)
 ### Instance Properties
-- [var clipRect: MTLRegion](mpscnnmultiarykernel/3043412-cliprect.md)
-- [var destinationFeatureChannelOffset: Int](mpscnnmultiarykernel/3043413-destinationfeaturechanneloffset.md)
-- [var destinationImageAllocator: any MPSImageAllocator](mpscnnmultiarykernel/3043414-destinationimageallocator.md)
-- [var isBackwards: Bool](mpscnnmultiarykernel/3043427-isbackwards.md)
-- [var isStateModified: Bool](mpscnnmultiarykernel/3043429-isstatemodified.md)
-- [var padding: any MPSNNPadding](mpscnnmultiarykernel/3043433-padding.md)
-- [var sourceCount: Int](mpscnnmultiarykernel/3043446-sourcecount.md)
+- [var clipRect: MTLRegion](mpscnnmultiarykernel/cliprect.md)
+- [var destinationFeatureChannelOffset: Int](mpscnnmultiarykernel/destinationfeaturechanneloffset.md)
+- [var destinationImageAllocator: any MPSImageAllocator](mpscnnmultiarykernel/destinationimageallocator.md)
+- [var isBackwards: Bool](mpscnnmultiarykernel/isbackwards.md)
+- [var isStateModified: Bool](mpscnnmultiarykernel/isstatemodified.md)
+- [var padding: any MPSNNPadding](mpscnnmultiarykernel/padding.md)
+- [var sourceCount: Int](mpscnnmultiarykernel/sourcecount.md)
 ### Instance Methods
-- [func appendBatchBarrier() -> Bool](mpscnnmultiarykernel/3043411-appendbatchbarrier.md)
-- [func destinationImageDescriptor(sourceImages: [MPSImage], sourceStates: [MPSState]?) -> MPSImageDescriptor](mpscnnmultiarykernel/3043415-destinationimagedescriptor.md)
-- [func dilationRateXatIndex(Int) -> Int](mpscnnmultiarykernel/3043416-dilationratexatindex.md)
-- [func dilationRateYatIndex(Int) -> Int](mpscnnmultiarykernel/3043417-dilationrateyatindex.md)
-- [func edgeMode(at: Int) -> MPSImageEdgeMode](mpscnnmultiarykernel/3043418-edgemode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage]) -> MPSImage](mpscnnmultiarykernel/3043422-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], destinationImage: MPSImage)](mpscnnmultiarykernel/3043423-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], destinationState: AutoreleasingUnsafeMutablePointer<MPSState?>, destinationStateIsTemporary: Bool) -> MPSImage](mpscnnmultiarykernel/3043424-encode.md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [[MPSImage]]) -> [MPSImage]](mpscnnmultiarykernel/3043419-encodebatch.md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [[MPSImage]], destinationImages: [MPSImage])](mpscnnmultiarykernel/3043420-encodebatch.md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [[MPSImage]], destinationStates: AutoreleasingUnsafeMutablePointer<NSArray?>, destinationStateIsTemporary: Bool) -> [MPSImage]](mpscnnmultiarykernel/3043421-encodebatch.md)
-- [func isResultStateReusedAcrossBatch() -> Bool](mpscnnmultiarykernel/3043428-isresultstatereusedacrossbatch.md)
-- [func kernelHeight(at: Int) -> Int](mpscnnmultiarykernel/3043430-kernelheight.md)
-- [func kernelWidth(at: Int) -> Int](mpscnnmultiarykernel/3043431-kernelwidth.md)
-- [func offset(at: Int) -> MPSOffset](mpscnnmultiarykernel/3043432-offset.md)
-- [func resultState(sourceImages: [MPSImage], sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSState?](mpscnnmultiarykernel/3043435-resultstate.md)
-- [func resultStateBatch(sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSState]?](mpscnnmultiarykernel/3043434-resultstatebatch.md)
-- [func setDilationRateX(Int, at: Int)](mpscnnmultiarykernel/3043436-setdilationratex.md)
-- [func setDilationRateY(Int, at: Int)](mpscnnmultiarykernel/3043437-setdilationratey.md)
-- [func setEdgeMode(MPSImageEdgeMode, at: Int)](mpscnnmultiarykernel/3043438-setedgemode.md)
-- [func setKernelHeight(Int, at: Int)](mpscnnmultiarykernel/3043439-setkernelheight.md)
-- [func setKernelWidth(Int, at: Int)](mpscnnmultiarykernel/3043440-setkernelwidth.md)
-- [func setOffset(MPSOffset, at: Int)](mpscnnmultiarykernel/3043441-setoffset.md)
-- [func setSourceFeatureChannelMaxCount(Int, at: Int)](mpscnnmultiarykernel/3043442-setsourcefeaturechannelmaxcount.md)
-- [func setSourceFeatureChannelOffset(Int, at: Int)](mpscnnmultiarykernel/3043443-setsourcefeaturechanneloffset.md)
-- [func setStrideInPixelsX(Int, at: Int)](mpscnnmultiarykernel/3043444-setstrideinpixelsx.md)
-- [func setStrideInPixelsY(Int, at: Int)](mpscnnmultiarykernel/3043445-setstrideinpixelsy.md)
-- [func sourceFeatureChannelMaxCount(at: Int) -> Int](mpscnnmultiarykernel/3043447-sourcefeaturechannelmaxcount.md)
-- [func sourceFeatureChannelOffset(at: Int) -> Int](mpscnnmultiarykernel/3043448-sourcefeaturechanneloffset.md)
-- [func stride(inPixelsXatIndex: Int) -> Int](mpscnnmultiarykernel/3043449-stride.md)
-- [func stride(inPixelsYatIndex: Int) -> Int](mpscnnmultiarykernel/3043450-stride.md)
-- [func temporaryResultState(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSState?](mpscnnmultiarykernel/3043452-temporaryresultstate.md)
-- [func temporaryResultStateBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSState]?](mpscnnmultiarykernel/3043451-temporaryresultstatebatch.md)
+- [func appendBatchBarrier() -> Bool](mpscnnmultiarykernel/appendbatchbarrier.md)
+- [func destinationImageDescriptor(sourceImages: [MPSImage], sourceStates: [MPSState]?) -> MPSImageDescriptor](mpscnnmultiarykernel/destinationimagedescriptor(sourceimages:sourcestates:).md)
+- [func dilationRateXatIndex(Int) -> Int](mpscnnmultiarykernel/dilationratexatindex(_:).md)
+- [func dilationRateYatIndex(Int) -> Int](mpscnnmultiarykernel/dilationrateyatindex(_:).md)
+- [func edgeMode(at: Int) -> MPSImageEdgeMode](mpscnnmultiarykernel/edgemode(at:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage]) -> MPSImage](mpscnnmultiarykernel/encode(commandbuffer:sourceimages:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], destinationImage: MPSImage)](mpscnnmultiarykernel/encode(commandbuffer:sourceimages:destinationimage:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], destinationState: AutoreleasingUnsafeMutablePointer<MPSState?>, destinationStateIsTemporary: Bool) -> MPSImage](mpscnnmultiarykernel/encode(commandbuffer:sourceimages:destinationstate:destinationstateistemporary:).md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [[MPSImage]]) -> [MPSImage]](mpscnnmultiarykernel/encodebatch(commandbuffer:sourceimages:).md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [[MPSImage]], destinationImages: [MPSImage])](mpscnnmultiarykernel/encodebatch(commandbuffer:sourceimages:destinationimages:).md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [[MPSImage]], destinationStates: AutoreleasingUnsafeMutablePointer<NSArray?>, destinationStateIsTemporary: Bool) -> [MPSImage]](mpscnnmultiarykernel/encodebatch(commandbuffer:sourceimages:destinationstates:destinationstateistemporary:).md)
+- [func isResultStateReusedAcrossBatch() -> Bool](mpscnnmultiarykernel/isresultstatereusedacrossbatch.md)
+- [func kernelHeight(at: Int) -> Int](mpscnnmultiarykernel/kernelheight(at:).md)
+- [func kernelWidth(at: Int) -> Int](mpscnnmultiarykernel/kernelwidth(at:).md)
+- [func offset(at: Int) -> MPSOffset](mpscnnmultiarykernel/offset(at:).md)
+- [func resultState(sourceImages: [MPSImage], sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSState?](mpscnnmultiarykernel/resultstate(sourceimages:sourcestates:destinationimage:).md)
+- [func resultStateBatch(sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSState]?](mpscnnmultiarykernel/resultstatebatch(sourceimages:sourcestates:destinationimage:).md)
+- [func setDilationRateX(Int, at: Int)](mpscnnmultiarykernel/setdilationratex(_:at:).md)
+- [func setDilationRateY(Int, at: Int)](mpscnnmultiarykernel/setdilationratey(_:at:).md)
+- [func setEdgeMode(MPSImageEdgeMode, at: Int)](mpscnnmultiarykernel/setedgemode(_:at:).md)
+- [func setKernelHeight(Int, at: Int)](mpscnnmultiarykernel/setkernelheight(_:at:).md)
+- [func setKernelWidth(Int, at: Int)](mpscnnmultiarykernel/setkernelwidth(_:at:).md)
+- [func setOffset(MPSOffset, at: Int)](mpscnnmultiarykernel/setoffset(_:at:).md)
+- [func setSourceFeatureChannelMaxCount(Int, at: Int)](mpscnnmultiarykernel/setsourcefeaturechannelmaxcount(_:at:).md)
+- [func setSourceFeatureChannelOffset(Int, at: Int)](mpscnnmultiarykernel/setsourcefeaturechanneloffset(_:at:).md)
+- [func setStrideInPixelsX(Int, at: Int)](mpscnnmultiarykernel/setstrideinpixelsx(_:at:).md)
+- [func setStrideInPixelsY(Int, at: Int)](mpscnnmultiarykernel/setstrideinpixelsy(_:at:).md)
+- [func sourceFeatureChannelMaxCount(at: Int) -> Int](mpscnnmultiarykernel/sourcefeaturechannelmaxcount(at:).md)
+- [func sourceFeatureChannelOffset(at: Int) -> Int](mpscnnmultiarykernel/sourcefeaturechanneloffset(at:).md)
+- [func stride(inPixelsXatIndex: Int) -> Int](mpscnnmultiarykernel/stride(inpixelsxatindex:).md)
+- [func stride(inPixelsYatIndex: Int) -> Int](mpscnnmultiarykernel/stride(inpixelsyatindex:).md)
+- [func temporaryResultState(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSState?](mpscnnmultiarykernel/temporaryresultstate(commandbuffer:sourceimages:sourcestates:destinationimage:).md)
+- [func temporaryResultStateBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSState]?](mpscnnmultiarykernel/temporaryresultstatebatch(commandbuffer:sourceimages:sourcestates:destinationimage:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

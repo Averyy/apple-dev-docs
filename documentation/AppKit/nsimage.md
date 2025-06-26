@@ -236,6 +236,8 @@ static void updateLayerWithImageInWindow1(NSImage *image, CALayer *layer, NSWind
 - [NSPasteboardReading](nspasteboardreading.md)
 - [NSPasteboardWriting](nspasteboardwriting.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transferable](../CoreTransferable/Transferable.md)
 
 ## See Also

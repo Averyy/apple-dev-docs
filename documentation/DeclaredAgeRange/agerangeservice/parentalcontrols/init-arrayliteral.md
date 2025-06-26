@@ -1,6 +1,6 @@
 # init(arrayLiteral:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: init
 
 Creates a set containing the elements of the given array literal.

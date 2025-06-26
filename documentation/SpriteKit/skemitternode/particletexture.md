@@ -17,7 +17,6 @@ The texture to use to render a particle.
 ## Declaration
 
 ```swift
-@MainActor
 var particleTexture: SKTexture? { get set }
 ```
 

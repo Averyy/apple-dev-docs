@@ -1,7 +1,7 @@
 # MPSCNNLossType.meanSquaredError
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.3+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case meanSquaredError = 1
+case meanSquaredError
 ```
 
 

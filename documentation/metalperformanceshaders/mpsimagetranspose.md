@@ -1,7 +1,7 @@
 # MPSImageTranspose
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that transposes an image.
 
@@ -16,7 +16,7 @@ A filter that transposes an image.
 ## Declaration
 
 ```swift
-class MPSImageTranspose : MPSUnaryImageKernel
+class MPSImageTranspose
 ```
 
 #### Overview
@@ -27,6 +27,16 @@ An [`MPSImageTranspose`](mpsimagetranspose.md) filter applies a matrix transposi
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -35,7 +45,7 @@ An [`MPSImageTranspose`](mpsimagetranspose.md) filter applies a matrix transposi
 - [class MPSImageScale](mpsimagescale.md)
   A filter that resizes and changes the aspect ratio of an image.
 - [class MPSImageLanczosScale](mpsimagelanczosscale.md)
-  A filter that resizes and changes the aspect ratio of an image using Lanczos resampling. 
+  A filter that resizes and changes the aspect ratio of an image using Lanczos resampling.
 - [class MPSImageBilinearScale](mpsimagebilinearscale.md)
   A filter that resizes and changes the aspect ratio of an image using Bilinear resampling.
 

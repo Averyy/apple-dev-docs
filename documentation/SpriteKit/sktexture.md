@@ -24,10 +24,10 @@ class SKTexture
 
 - [Loading and Using Textures](loading-and-using-textures.md)
 - [Getting Started with Sprite Nodes](getting-started-with-sprite-nodes.md)
-- [Maximizing Node Drawing Performance](maximizing-node-drawing-performance.md)
-- [Maximizing Texture Performance](maximizing-texture-performance.md)
-- [About Texture Atlases](about-texture-atlases.md)
 - [Preloading Textures into Memory](preloading-textures-into-memory.md)
+- [Maximizing Node Drawing Performance](maximizing-node-drawing-performance.md)
+- [About Texture Atlases](about-texture-atlases.md)
+- [Maximizing Texture Performance](maximizing-texture-performance.md)
 
 #### Overview
 

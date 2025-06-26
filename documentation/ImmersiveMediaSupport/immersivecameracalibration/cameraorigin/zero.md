@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-Holds the default value of (0, 0, 0) for the immersive camera origin i.e zero vector for the left camera and zero vector for the right camera
+The default immersive camera origin.
 
 **Availability**:
 - macOS 26.0+ (Beta)

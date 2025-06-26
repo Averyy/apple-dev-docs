@@ -1,7 +1,7 @@
 # MPSCNNPoolingNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a MPS CNN pooling kernel.
 
@@ -16,25 +16,36 @@ A representation of a MPS CNN pooling kernel.
 ## Declaration
 
 ```swift
-class MPSCNNPoolingNode : MPSNNFilterNode
+class MPSCNNPoolingNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, filterSize: Int)](mpscnnpoolingnode/2866488-init.md)
-- [init(source: MPSNNImageNode, filterSize: Int, stride: Int)](mpscnnpoolingnode/2866444-init.md)
-- [init(source: MPSNNImageNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingnode/2866471-init.md)
+- [init(source: MPSNNImageNode, filterSize: Int)](mpscnnpoolingnode/init(source:filtersize:).md)
+- [init(source: MPSNNImageNode, filterSize: Int, stride: Int)](mpscnnpoolingnode/init(source:filtersize:stride:).md)
+- [init(source: MPSNNImageNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingnode/init(source:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:).md)
 ### Instance Properties
-- [var kernelHeight: Int](mpscnnpoolingnode/2993001-kernelheight.md)
-- [var kernelWidth: Int](mpscnnpoolingnode/2993002-kernelwidth.md)
-- [var strideInPixelsX: Int](mpscnnpoolingnode/2993003-strideinpixelsx.md)
-- [var strideInPixelsY: Int](mpscnnpoolingnode/2993004-strideinpixelsy.md)
+- [var kernelHeight: Int](mpscnnpoolingnode/kernelheight.md)
+- [var kernelWidth: Int](mpscnnpoolingnode/kernelwidth.md)
+- [var strideInPixelsX: Int](mpscnnpoolingnode/strideinpixelsx.md)
+- [var strideInPixelsY: Int](mpscnnpoolingnode/strideinpixelsy.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Inherited By
+- [MPSCNNPoolingAverageNode](mpscnnpoolingaveragenode.md)
+- [MPSCNNPoolingL2NormNode](mpscnnpoolingl2normnode.md)
+- [MPSCNNPoolingMaxNode](mpscnnpoolingmaxnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

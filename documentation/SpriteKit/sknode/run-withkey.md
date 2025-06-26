@@ -17,7 +17,6 @@ Adds an identifiable action to the list of actions executed by the node.
 ## Declaration
 
 ```swift
-@MainActor
 func run(_ action: SKAction, withKey key: String)
 ```
 

@@ -21,8 +21,8 @@ func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, suggestedTok
 
 ## Mentions
 
-- [Performing a search operation](performing-a-search-operation.md)
 - [Suggesting search terms](suggesting-search-terms.md)
+- [Performing a search operation](performing-a-search-operation.md)
 
 #### Discussion
 

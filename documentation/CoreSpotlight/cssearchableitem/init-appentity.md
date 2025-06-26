@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: init
 
-Intializes a new searchable item with the relevant fields populated from the provided app entity.
+Initializes a new searchable item with the relevant fields populated from the provided app entity.
 
 **Availability**:
 - iOS 18.0+

@@ -8,7 +8,6 @@ Sets a selection identifier for this view’s accessibility element.
 **Availability**:
 - iOS 13.0+ - Deprecated
 - iPadOS 13.0+ - Deprecated
-- Mac Catalyst 13.0+ - Deprecated
 - macOS 10.15+ - Deprecated
 - tvOS 13.0+ - Deprecated
 - visionOS 1.0+

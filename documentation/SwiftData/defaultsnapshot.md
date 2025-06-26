@@ -41,6 +41,13 @@ struct DefaultSnapshot
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [func fetch<T>(DataStoreFetchRequest<T>) throws -> DataStoreFetchResult<T, DefaultStore.Snapshot>](defaultstore/fetch(_:).md)
+- [DefaultStore.Snapshot](defaultstore/snapshot.md)
+- [func fetchCount<T>(DataStoreFetchRequest<T>) throws -> Int](defaultstore/fetchcount(_:).md)
+- [func fetchIdentifiers<T>(DataStoreFetchRequest<T>) throws -> [PersistentIdentifier]](defaultstore/fetchidentifiers(_:).md)
+
 
 ---
 

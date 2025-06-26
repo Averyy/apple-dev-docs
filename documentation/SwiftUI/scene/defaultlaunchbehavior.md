@@ -24,6 +24,8 @@ On platforms that do not support multiple windows, this value is ignored.
 
 On platforms other than macOS, there must be at least one scene that presents itself. If no scenes are defined to present, the first scene will be presented, regardless of the value provided to this modifier.
 
+> **Note**: During app launch, on platforms other than macOS, the system will only consider scenes whose role matches the [`UIApplicationPreferredDefaultSceneSessionRole`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationPreferredDefaultSceneSessionRole) key in the application scene manifest of the `Info.plist` file. For instance, a volumetric window would need the `UIWindowSceneSessionRoleVolumetricApplication` role.
+
 On macOS, this behavior will also be used to determine which scene is presented when clicking on the icon of a running application with no visible windows.
 
 On visionOS, the system may background the last dismissed scene instead of closing it. Thus, the suppressed behavior additionally specifies that the scene should not be presented when tapping on the application icon with no visible windows.

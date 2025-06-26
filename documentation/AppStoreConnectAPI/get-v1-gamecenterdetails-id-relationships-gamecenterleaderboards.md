@@ -8,6 +8,10 @@
 **Availability**:
 - App Store Connect API 3.0+
 
+## Mentions
+
+- [Configuring Game Center challenges](configuring-game-center-challenges.md)
+
 ## See Also
 
 - [Read leaderboard releases](get-v1-gamecenterdetails-_id_-leaderboardreleases.md)

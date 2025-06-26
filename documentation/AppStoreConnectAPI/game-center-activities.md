@@ -6,7 +6,11 @@ Manage Game Center activities for your apps.
 
 #### Overview
 
-To manage Game Center activities, be sure you have one of the following user roles:
+Use the activities API to create and configure ways to link players directly to your content in your game. Once you create an activity you can link it to a challenge and a leaderboard. To learn more about challenges, see [`Configuring Game Center challenges`](configuring-game-center-challenges.md).
+
+Activities provide a way to link players directly to your content. By describing your gameplay with activities, you can link the player to that part of your game when they engage with the activity. For example, when a player wants to complete your daily puzzle, you can send the player directly to that part of your game. To learn more about deep links and integrating activites in your game, see [Creating activities for your game] (https://developer.apple.com/documentation/gamekit/creating-activities-for-your-game).
+
+To manage activities, be sure you have one of the following user roles:
 
 - `ADMIN`
 - `APP MANAGER`
@@ -63,6 +67,8 @@ To manage Game Center activities, be sure you have one of the following user rol
 
 ## See Also
 
+- [Configuring Game center activities](configuring-game-center-activities.md)
+  Setup and configure a way for players to compete on a specific task or part of your game.
 - [Game Center activity versions](game-center-activity-versions.md)
   Manage versions for your Game Center activities.
 - [Game Center activity version releases](game-center-activity-version-releases.md)

@@ -6,6 +6,9 @@ Key-value pairs that grant an executable access to secure resources, or enable h
 
 ## Topics
 
+### Automation
+- [Apple Events Entitlement](entitlements/com.apple.security.automation.apple-events.md)
+  A Boolean value that indicates whether the app may prompt the user for permission to send Apple events to other apps.
 ### Networking
 - [com.apple.security.network.server](entitlements/com.apple.security.network.server.md)
   A Boolean value indicating whether your app may listen for incoming network connections.
@@ -14,6 +17,8 @@ Key-value pairs that grant an executable access to secure resources, or enable h
 - [App Attest Environment](entitlements/com.apple.developer.devicecheck.appattest-environment.md)
   The environment for an app that uses the App Attest service to validate itself.
 ### Device access
+- [Audio Input Entitlement](entitlements/com.apple.security.device.audio-input.md)
+  A Boolean value that indicates whether the app may record audio using the built-in microphone and access audio input using Core Audio.
 - [Camera entitlement](entitlements/com.apple.security.device.camera.md)
   A Boolean value that indicates whether the app may interact with the built-in and external cameras, and capture movies and still images.
 - [com.apple.security.device.microphone](entitlements/com.apple.security.device.microphone.md)
@@ -33,7 +38,11 @@ Key-value pairs that grant an executable access to secure resources, or enable h
   A Boolean value that indicates whether the app may access location information from Location Services.
 - [Calendars entitlement](entitlements/com.apple.security.personal-information.calendars.md)
   A Boolean value that indicates whether the app may have read-write access to the user’s calendar.
+- [Photos Library Entitlement](entitlements/com.apple.security.personal-information.photos-library.md)
+  A Boolean value that indicates whether the app has read-write access to the user’s Photos library.
 ### Files and media
+- [App Sandbox Entitlement](entitlements/com.apple.security.app-sandbox.md)
+  A Boolean value that indicates whether the app may use access control technology to contain damage to the system and user data if an app is compromised.
 - [com.apple.security.files.user-selected.read-only](entitlements/com.apple.security.files.user-selected.read-only.md)
   A Boolean value that indicates whether the app may have read-only access to files the user has selected using an Open or Save dialog.
 - [com.apple.security.files.user-selected.read-write](entitlements/com.apple.security.files.user-selected.read-write.md)
@@ -42,8 +51,12 @@ Key-value pairs that grant an executable access to secure resources, or enable h
   A Boolean value that indicates whether the app may have read-only access to the Downloads folder.
 - [com.apple.security.files.downloads.read-write](entitlements/com.apple.security.files.downloads.read-write.md)
   A Boolean value that indicates whether the app may have read-write access to the Downloads folder.
+- [Privileged File Operations](entitlements/com.apple.developer.security.privileged-file-operations.md)
+  An entitlement that permits apps to create symbolic links, replace files, and set file attributes.
 - [com.apple.security.assets.pictures.read-only](entitlements/com.apple.security.assets.pictures.read-only.md)
   A Boolean value that indicates whether the app may have read-only access to the Pictures folder.
+- [com.apple.security.assets.pictures.read-write](entitlements/com.apple.security.assets.pictures.read-write.md)
+  A Boolean value that indicates whether the app may have read-write access to the Pictures folder.
 - [com.apple.security.assets.music.read-only](entitlements/com.apple.security.assets.music.read-only.md)
   A Boolean value that indicates whether the app may have read-only access to the Music folder.
 - [com.apple.security.assets.music.read-write](entitlements/com.apple.security.assets.music.read-write.md)

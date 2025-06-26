@@ -22,10 +22,10 @@ class UIApplication
 ## Mentions
 
 - [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
-- [About the app launch sequence](about-the-app-launch-sequence.md)
-- [About App Development with UIKit](about-app-development-with-uikit.md)
 - [Handling key presses made on a physical keyboard](handling-key-presses-made-on-a-physical-keyboard.md)
 - [About the UI preservation process](about-the-ui-preservation-process.md)
+- [About the app launch sequence](about-the-app-launch-sequence.md)
+- [About App Development with UIKit](about-app-development-with-uikit.md)
 
 #### Overview
 

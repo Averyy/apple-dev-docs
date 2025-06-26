@@ -69,6 +69,8 @@ The `NSSlider` class uses the [`NSSliderCell`](nsslidercell.md) class to impleme
 ### Instance Properties
 - [var neutralValue: Double](nsslider/neutralvalue.md)
   The value this slider will be filled from. This slider will be filled from its `neutralValue` to its current value. If `neutralValue` has not been explicitly set before, access to `neutralValue` will return `minValue`.
+- [var tintProminence: NSTintProminence](nsslider/tintprominence.md)
+  The tint prominence of the slider. The automatic behavior for a regular slider tints its track fill, while a slider with tick marks is untinted. Setting the tint prominence will override this default behavior and choose an explicit track fill tint behavior. See [`NSTintProminence`](nstintprominence.md) for a list of possible values.
 
 ## Relationships
 

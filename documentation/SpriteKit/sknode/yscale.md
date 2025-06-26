@@ -23,10 +23,10 @@ var yScale: CGFloat { get set }
 
 ## Mentions
 
-- [Getting Started with a Camera](getting-started-with-a-camera.md)
 - [Resizing a Sprite in Nine Parts](resizing-a-sprite-in-nine-parts.md)
-- [Getting Started with Nodes](getting-started-with-nodes.md)
+- [Getting Started with a Camera](getting-started-with-a-camera.md)
 - [About Node Property Propagation](about-node-property-propagation.md)
+- [Getting Started with Nodes](getting-started-with-nodes.md)
 
 #### Discussion
 

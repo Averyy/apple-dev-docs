@@ -1,7 +1,7 @@
 # MPSNNOptimizerRMSProp
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An optimization layer that performs a root mean square propagation update.
 
@@ -16,28 +16,38 @@ An optimization layer that performs a root mean square propagation update.
 ## Declaration
 
 ```swift
-class MPSNNOptimizerRMSProp : MPSNNOptimizer
+class MPSNNOptimizerRMSProp
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, decay: Double, epsilon: Float, optimizerDescriptor: MPSNNOptimizerDescriptor)](mpsnnoptimizerrmsprop/2966737-init.md)
-- [init(device: any MTLDevice, learningRate: Float)](mpsnnoptimizerrmsprop/2966738-init.md)
+- [init(device: any MTLDevice, decay: Double, epsilon: Float, optimizerDescriptor: MPSNNOptimizerDescriptor)](mpsnnoptimizerrmsprop/init(device:decay:epsilon:optimizerdescriptor:).md)
+- [init(device: any MTLDevice, learningRate: Float)](mpsnnoptimizerrmsprop/init(device:learningrate:).md)
 ### Instance Properties
-- [var decay: Double](mpsnnoptimizerrmsprop/2966734-decay.md)
-- [var epsilon: Float](mpsnnoptimizerrmsprop/2966736-epsilon.md)
+- [var decay: Double](mpsnnoptimizerrmsprop/decay.md)
+- [var epsilon: Float](mpsnnoptimizerrmsprop/epsilon.md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, batchNormalizationGradientState: MPSCNNBatchNormalizationState, batchNormalizationSourceState: MPSCNNBatchNormalizationState, inputSumOfSquaresVectors: [MPSVector]?, resultState: MPSCNNNormalizationGammaAndBetaState)](mpsnnoptimizerrmsprop/3013783-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, batchNormalizationState: MPSCNNBatchNormalizationState, inputSumOfSquaresVectors: [MPSVector]?, resultState: MPSCNNNormalizationGammaAndBetaState)](mpsnnoptimizerrmsprop/3019335-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, convolutionGradientState: MPSCNNConvolutionGradientState, convolutionSourceState: MPSCNNConvolutionWeightsAndBiasesState, inputSumOfSquaresVectors: [MPSVector]?, resultState: MPSCNNConvolutionWeightsAndBiasesState)](mpsnnoptimizerrmsprop/3013784-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, inputGradientMatrix: MPSMatrix, inputValuesMatrix: MPSMatrix, inputSumOfSquaresMatrix: MPSMatrix, resultValuesMatrix: MPSMatrix)](mpsnnoptimizerrmsprop/3197827-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, inputGradientVector: MPSVector, inputValuesVector: MPSVector, inputSumOfSquaresVector: MPSVector, resultValuesVector: MPSVector)](mpsnnoptimizerrmsprop/2966735-encode.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, batchNormalizationGradientState: MPSCNNBatchNormalizationState, batchNormalizationSourceState: MPSCNNBatchNormalizationState, inputSumOfSquaresVectors: [MPSVector]?, resultState: MPSCNNNormalizationGammaAndBetaState)](mpsnnoptimizerrmsprop/encode(commandbuffer:batchnormalizationgradientstate:batchnormalizationsourcestate:inputsumofsquaresvectors:resultstate:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, batchNormalizationState: MPSCNNBatchNormalizationState, inputSumOfSquaresVectors: [MPSVector]?, resultState: MPSCNNNormalizationGammaAndBetaState)](mpsnnoptimizerrmsprop/encode(commandbuffer:batchnormalizationstate:inputsumofsquaresvectors:resultstate:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, convolutionGradientState: MPSCNNConvolutionGradientState, convolutionSourceState: MPSCNNConvolutionWeightsAndBiasesState, inputSumOfSquaresVectors: [MPSVector]?, resultState: MPSCNNConvolutionWeightsAndBiasesState)](mpsnnoptimizerrmsprop/encode(commandbuffer:convolutiongradientstate:convolutionsourcestate:inputsumofsquaresvectors:resultstate:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inputGradientMatrix: MPSMatrix, inputValuesMatrix: MPSMatrix, inputSumOfSquaresMatrix: MPSMatrix, resultValuesMatrix: MPSMatrix)](mpsnnoptimizerrmsprop/encode(commandbuffer:inputgradientmatrix:inputvaluesmatrix:inputsumofsquaresmatrix:resultvaluesmatrix:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inputGradientVector: MPSVector, inputValuesVector: MPSVector, inputSumOfSquaresVector: MPSVector, resultValuesVector: MPSVector)](mpsnnoptimizerrmsprop/encode(commandbuffer:inputgradientvector:inputvaluesvector:inputsumofsquaresvector:resultvaluesvector:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNOptimizer](mpsnnoptimizer.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

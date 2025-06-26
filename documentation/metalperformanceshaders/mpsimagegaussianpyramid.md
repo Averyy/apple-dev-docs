@@ -1,7 +1,7 @@
 # MPSImageGaussianPyramid
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that convolves an image with a Gaussian pyramid.
 
@@ -16,12 +16,12 @@ A filter that convolves an image with a Gaussian pyramid.
 ## Declaration
 
 ```swift
-class MPSImageGaussianPyramid : MPSImagePyramid
+class MPSImageGaussianPyramid
 ```
 
 #### Overview
 
-The Gaussian image pyramid kernel is enqueued as an in-place operation using the [`encode(commandBuffer:inPlaceTexture:fallbackCopyAllocator:)`](mpsunaryimagekernel/1618873-encode.md) method. All mip-map levels (after level 1) present in the provided image are filled using the provided filter kernel. The `fallbackCopyAllocator` parameter is not used. The Gaussian image pyramid kernel ignores the [`clipRect`](mpsunaryimagekernel/1618859-cliprect.md) and [`offset`](mpsunaryimagekernel/1618884-offset.md) properties, and fills the entirety of the mip-map levels. Recall the size of the nth mip-map level as:
+The Gaussian image pyramid kernel is enqueued as an in-place operation using the [`encode(commandBuffer:inPlaceTexture:fallbackCopyAllocator:)`](mpsunaryimagekernel/encode(commandbuffer:inplacetexture:fallbackcopyallocator:).md) method. All mip-map levels (after level 1) present in the provided image are filled using the provided filter kernel. The `fallbackCopyAllocator` parameter is not used. The Gaussian image pyramid kernel ignores the [`clipRect`](mpsunaryimagekernel/cliprect.md) and [`offset`](mpsunaryimagekernel/offset.md) properties, and fills the entirety of the mip-map levels. Recall the size of the nth mip-map level as:
 
 - `w_n = max(1, floor(w_0 / 2^n))`
 - `h_n = max(1, floor(h_0 / 2^n))`
@@ -34,12 +34,22 @@ The Gaussian image pyramid is constructed as follows:
 - Afterwards, the image is down-sampled by removing all odd rows and columns, which defines the next level in the Gaussian image pyramid.
 - This procedure is continued until every mip-map level present in the image is filled with all the pyramid levels.
 
-> **Note**: Make sure your chosen texture type is compatible with mip-mapping and also supports texture views (i.e. the texture’s usage includes the [`pixelFormatView`](https://developer.apple.com/documentation/metal/mtltextureusage/pixelformatview) option).
+> **Note**:  Make sure your chosen texture type is compatible with mip-mapping and also supports texture views (i.e. the texture’s usage includes the [`pixelFormatView`](https://developer.apple.com/documentation/Metal/MTLTextureUsage/pixelFormatView) option).
 
 ## Relationships
 
 ### Inherits From
 - [MPSImagePyramid](mpsimagepyramid.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

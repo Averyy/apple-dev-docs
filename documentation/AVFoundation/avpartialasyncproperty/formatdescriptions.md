@@ -22,7 +22,7 @@ static var formatDescriptions: AVAsyncProperty<Root, [CMFormatDescription]> { ge
 
 #### Discussion
 
-Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
+Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
 The array contains [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription) objects that indicate the format of media samples the track references.
 

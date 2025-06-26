@@ -5,8 +5,8 @@
 Add camera-based features to enterprise apps.
 
 **Availability**:
-- visionOS 2.0+
-- Xcode 16.0+
+- visionOS 26.0+ (Beta)
+- Xcode 26.0+ (Beta)
 
 #### Overview
 
@@ -22,7 +22,7 @@ Main camera access is a part of enterprise APIs for visionOS, a collection of AP
 
 ##### Add Usage Descriptions for Arkit Data Access
 
-To help protect people’s privacy, visionOS limits app access to cameras and other sensors in Apple Vision Pro. You need to add an `NSEnterpriseMCAMUsageDescription` to your app’s information property list to provide a usage description that explains how your app uses the data these sensors provide. People see this description when your app prompts for access to camera data.
+To help protect people’s privacy, visionOS limits app access to cameras and other sensors in Apple Vision Pro. You need to add an [`NSMainCameraUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMainCameraUsageDescription) to your app’s information property list to provide a usage description that explains how your app uses the data these sensors provide. People see this description when your app prompts for access to camera data.
 
 > **Note**: In visionOS, ARKit is only available in an immersive space. See [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](adopting-best-practices-for-privacy.md).
 

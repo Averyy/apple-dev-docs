@@ -23,8 +23,8 @@ static let fullColor: WidgetRenderingMode
 
 - [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
 - [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
-- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
 - [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
+- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
 
 #### Discussion
 

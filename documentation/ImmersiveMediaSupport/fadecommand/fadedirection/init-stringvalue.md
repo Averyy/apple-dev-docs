@@ -27,8 +27,6 @@ If the string passed as `stringValue` does not correspond to any instance of thi
 
 - [init?(intValue: Int)](fadecommand/fadedirection/init(intvalue:).md)
   Creates a new instance from the specified integer.
-- [init?(rawValue: String)](fadecommand/fadedirection/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 
 
 ---

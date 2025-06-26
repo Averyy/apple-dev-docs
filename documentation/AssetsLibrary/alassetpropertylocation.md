@@ -18,7 +18,7 @@ let ALAssetPropertyLocation: String
 
 #### Discussion
 
-The corresponding value is a doc://com.apple.documentation/documentation/corelocation/cllocation object. This is only available if location services are enabled for the caller.
+The corresponding value is a [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) object. This is only available if location services are enabled for the caller.
 
 ## See Also
 

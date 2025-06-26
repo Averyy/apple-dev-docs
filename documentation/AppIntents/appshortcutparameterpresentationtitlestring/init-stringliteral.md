@@ -11,9 +11,9 @@ Creates an instance initialized to the given string value.
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
 - watchOS 10.0+
 - Unknown ?+ - Deprecated
+- visionOS ?+
 
 ## Declaration
 

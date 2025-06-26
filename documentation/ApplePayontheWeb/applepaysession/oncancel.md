@@ -15,6 +15,10 @@ An event handler that is automatically called when the payment UI is dismissed.
 attribute EventHandler oncancel;
 ```
 
+## Mentions
+
+- [Apple Pay JS change log](apple-pay-js-change-log.md)
+
 #### Discussion
 
 This function can be called even after an [`onpaymentauthorized`](applepaysession/onpaymentauthorized.md) event has been dispatched. Both the user and the web page can dismiss the payment sheet and abandon the transaction.

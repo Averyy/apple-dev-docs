@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-func vmnet_network_configuration_set_ipv4_subnet(_ network: vmnet_network_configuration_ref, _ subnet_addr: UnsafePointer<in_addr>, _ subnet_mask: UnsafePointer<in_addr>) -> vmnet_return_t
+func vmnet_network_configuration_set_ipv4_subnet(_ config: vmnet_network_configuration_ref, _ subnet_addr: UnsafePointer<in_addr>, _ subnet_mask: UnsafePointer<in_addr>) -> vmnet_return_t
 ```
 
 #### Return Value
@@ -23,7 +23,7 @@ Configures the IPv4 addresses for a vmnet network. Note that the first, second, 
 
 ## Parameters
 
-- `network`: The network object to be modified.
+- `config`: The network configuration object to be modified.
 - `subnet_addr`: The subnet address.
 - `subnet_mask`: The subnet mask.
 

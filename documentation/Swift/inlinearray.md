@@ -66,6 +66,7 @@ let d: InlineArray         = [1, 2, 4, 8]
   The indices that are valid for subscripting the array, in ascending order.
 - [var isEmpty: Bool](inlinearray/isempty.md)
   A Boolean value indicating whether the array is empty.
+- [var mutableSpan: MutableSpan<Element>](inlinearray/mutablespan.md)
 - [var span: Span<Element>](inlinearray/span.md)
 - [var startIndex: InlineArray<count, Element>.Index](inlinearray/startindex.md)
   The position of the first element in a nonempty array.

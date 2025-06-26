@@ -22,8 +22,8 @@ static let distanceWalkingRunning: HKQuantityTypeIdentifier
 ## Mentions
 
 - [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
-- [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
 - [Running workout sessions](running-workout-sessions.md)
+- [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
 
 #### Discussion
 

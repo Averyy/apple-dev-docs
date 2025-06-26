@@ -1,6 +1,6 @@
 # rawValue
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: property
 
 The raw value of the option set.

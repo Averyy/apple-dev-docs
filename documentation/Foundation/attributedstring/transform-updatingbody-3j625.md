@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Tracks the location of the provided ranges throughout the mutation closure, updating them to new ranges that represent the same effective locations after the mutation. If updating the provided ranges is not possible (tracking failed) then this function will fatal error. Use the Optional-returning variants to provide custom fallback behavior.
+Tracks the location of the provided ranges throughout the mutation closure, updating them to new ranges that represent the same effective locations after the mutation.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -11,7 +11,7 @@ Tracks the location of the provided ranges throughout the mutation closure, upda
 - Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
-- visionOS 1.0+
+- visionOS 26.0+ (Beta)
 - watchOS 26.0+ (Beta)
 
 ## Declaration
@@ -19,6 +19,10 @@ Tracks the location of the provided ranges throughout the mutation closure, upda
 ```swift
 mutating func transform<E>(updating ranges: inout [Range<AttributedString.Index>], body: (inout AttributedString) throws(E) -> Void) throws(E) where E : Error
 ```
+
+#### Discussion
+
+If updating the provided ranges is not possible (tracking failed) then this function will fatal error. Use the `Optional`-returning variants to provide custom fallback behavior.
 
 ## Parameters
 

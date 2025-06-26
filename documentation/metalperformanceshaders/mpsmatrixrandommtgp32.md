@@ -1,7 +1,7 @@
 # MPSMatrixRandomMTGP32
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,23 +14,33 @@
 ## Declaration
 
 ```swift
-class MPSMatrixRandomMTGP32 : MPSMatrixRandom
+class MPSMatrixRandomMTGP32
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixrandommtgp32/3242864-init.md)
-- [init(device: any MTLDevice)](mpsmatrixrandommtgp32/3242865-init.md)
-- [init(device: any MTLDevice, destinationDataType: MPSDataType, seed: Int)](mpsmatrixrandommtgp32/3242866-init.md)
-- [init(device: any MTLDevice, destinationDataType: MPSDataType, seed: Int, distributionDescriptor: MPSMatrixRandomDistributionDescriptor)](mpsmatrixrandommtgp32/3242867-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixrandommtgp32/init(coder:device:).md)
+- [convenience init(device: any MTLDevice)](mpsmatrixrandommtgp32/init(device:).md)
+- [convenience init(device: any MTLDevice, destinationDataType: MPSDataType, seed: Int)](mpsmatrixrandommtgp32/init(device:destinationdatatype:seed:).md)
+- [init(device: any MTLDevice, destinationDataType: MPSDataType, seed: Int, distributionDescriptor: MPSMatrixRandomDistributionDescriptor)](mpsmatrixrandommtgp32/init(device:destinationdatatype:seed:distributiondescriptor:).md)
 ### Instance Methods
-- [func synchronizeState(on: any MTLCommandBuffer)](mpsmatrixrandommtgp32/3242868-synchronizestate.md)
+- [func synchronizeState(on: any MTLCommandBuffer)](mpsmatrixrandommtgp32/synchronizestate(on:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrixRandom](mpsmatrixrandom.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

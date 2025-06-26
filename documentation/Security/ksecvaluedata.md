@@ -22,8 +22,8 @@ let kSecValueData: CFString
 
 ## Mentions
 
-- [Updating and deleting keychain items](updating-and-deleting-keychain-items.md)
 - [Searching for keychain items](searching-for-keychain-items.md)
+- [Updating and deleting keychain items](updating-and-deleting-keychain-items.md)
 
 #### Discussion
 

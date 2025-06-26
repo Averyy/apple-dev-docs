@@ -6,7 +6,7 @@ Create shared experiences for people wearing Vision Pro in the same room and tho
 
 #### Overview
 
-SharePlay in visionOS helps people share activities together — for example, viewing a movie, listening to music, playing a game, or sketching ideas on a whiteboard. Starting in visionOS 3, SharePlay supports inviting nearby people who are wearing Apple Vision Pro to join a group activity. The system presents participants differently based on how they join the activity:
+SharePlay in visionOS helps people share activities together — for example, viewing a movie, listening to music, playing a game, or sketching ideas on a whiteboard. Starting in visionOS 26, SharePlay supports inviting nearby people who are wearing Apple Vision Pro to join a group activity. The system presents participants differently based on how they join the activity:
 
 - Nearby participants appear naturally via passthrough.
 - FaceTime participants who are wearing Apple Vision Pro appear as spatial Personas.

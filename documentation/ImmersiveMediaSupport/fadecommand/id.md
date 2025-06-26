@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-An unique command id. Ids should be unique for the whole Immersive Media file.
+A unique command id. Ids should be unique for the whole Immersive Media file.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -12,25 +12,21 @@ An unique command id. Ids should be unique for the whole Immersive Media file.
 ## Declaration
 
 ```swift
-var id: Int
+var id: Int { get }
 ```
 
 ## See Also
 
 - [var color: simd_float3?](fadecommand/color.md)
-  Represents the fade color value between 0.0 to 1.0 for each color channel, if the fade type is ‘color’. If color set to ‘black’, and the direction is ‘in’, then it fades from black color to the video frame.
+  The fade color value between 0.0 to 1.0 for each color channel. If color is set to black, and the direction is `in`, then it fades from black color to the video frame.
 - [var direction: FadeCommand.FadeDirection](fadecommand/direction.md)
   Fade direction for this command instance.
 - [var duration: CMTime](fadecommand/duration.md)
   The duration of the command - this can be .zero if the command has no duration
-- [var fadeType: FadeCommand.FadeType](fadecommand/fadetype-swift.property.md)
-  Fade type for this command instance.
 - [var offset: CMTime?](fadecommand/offset.md)
   Some commands control animations by repeating the command for the whole duration, and specifying the offset of the animation from the start time of this presentation command.
 - [var time: CMTime](fadecommand/time.md)
   The time this command starts during playback.
-- [var type: PresentationCommandType](fadecommand/type.md)
-  The command type (.fade).
 
 
 ---

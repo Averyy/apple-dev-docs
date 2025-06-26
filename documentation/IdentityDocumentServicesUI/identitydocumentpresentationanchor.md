@@ -14,7 +14,7 @@ The presentation anchor the system uses to present your app UI.
 ## Declaration
 
 ```swift
-typealias IdentityDocumentPresentationAnchor = UIWindow
+typealias IdentityDocumentPresentationAnchor = NSWindow
 ```
 
 ## See Also

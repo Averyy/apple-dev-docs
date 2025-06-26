@@ -22,8 +22,8 @@ func SecItemDelete(_ query: CFDictionary) -> OSStatus
 
 ## Mentions
 
-- [Updating and deleting keychain items](updating-and-deleting-keychain-items.md)
 - [Generating New Cryptographic Keys](generating-new-cryptographic-keys.md)
+- [Updating and deleting keychain items](updating-and-deleting-keychain-items.md)
 - [Storing Keys in the Keychain](storing-keys-in-the-keychain.md)
 
 #### Return Value

@@ -49,6 +49,8 @@ class XCTClockMetric
   A protocol that defines the methods that objects must provide when gathering metrics during performance tests.
 - [class XCTCPUMetric](xctcpumetric.md)
   A metric to record information about CPU activity during a performance test.
+- [class XCTHitchMetric](xcthitchmetric.md)
+  A metric to measure the number of hitches your UI encounters in a performance test.
 - [class XCTMemoryMetric](xctmemorymetric.md)
   A metric to record the physical memory that a performance test uses.
 - [class XCTOSSignpostMetric](xctossignpostmetric.md)

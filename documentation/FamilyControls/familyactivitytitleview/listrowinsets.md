@@ -8,7 +8,6 @@ Sets the insets of rows in a list on the specified edges.
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
 - visionOS 26.0+ (Beta)

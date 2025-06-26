@@ -22,8 +22,8 @@ protocol Subscription : Cancellable, CustomCombineIdentifierConvertible
 
 ## Mentions
 
-- [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
 - [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
+- [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
 
 #### Overview
 

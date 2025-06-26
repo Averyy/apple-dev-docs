@@ -1,7 +1,7 @@
 # MPSCNNFullyConnectedNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a fully connected convolution layer, also known as an inner product layer.
 
@@ -16,18 +16,26 @@ A representation of a fully connected convolution layer, also known as an inner 
 ## Declaration
 
 ```swift
-class MPSCNNFullyConnectedNode : MPSCNNConvolutionNode
+class MPSCNNFullyConnectedNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource)](mpscnnfullyconnectednode/2866412-init.md)
+- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource)](mpscnnfullyconnectednode/init(source:weights:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNConvolutionNode](mpscnnconvolutionnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [MPSNNTrainableNode](mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

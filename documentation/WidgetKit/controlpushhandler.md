@@ -20,7 +20,7 @@ protocol ControlPushHandler
 
 #### Overview
 
-Register a type conforming to this protocol to receive push information using the `ControlWidgetConfiguration/pushHandler(_:)` modifier on your controls’ configurations.
+Register a type conforming to this protocol to receive push information using the [`pushHandler(_:)`](https://developer.apple.com/documentation/SwiftUI/ControlWidgetConfiguration/pushHandler(_:)) modifier on your controls’ configurations.
 
 ## Topics
 

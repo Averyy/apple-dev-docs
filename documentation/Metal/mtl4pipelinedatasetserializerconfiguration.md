@@ -32,6 +32,8 @@ You can combine these values via a logical `OR` and set it to [`configuration`](
 ### Type Properties
 - [static var captureBinaries: MTL4PipelineDataSetSerializerConfiguration](mtl4pipelinedatasetserializerconfiguration/capturebinaries.md)
   Enables serializing pipeline binary functions.
+- [static var captureDescriptors: MTL4PipelineDataSetSerializerConfiguration](mtl4pipelinedatasetserializerconfiguration/capturedescriptors.md)
+  Enables serializing pipeline scripts.
 
 ## Relationships
 

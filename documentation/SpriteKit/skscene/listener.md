@@ -17,7 +17,6 @@ A node used to determine the position of the listener for positional audio in th
 ## Declaration
 
 ```swift
-@MainActor
 weak var listener: SKNode? { get set }
 ```
 

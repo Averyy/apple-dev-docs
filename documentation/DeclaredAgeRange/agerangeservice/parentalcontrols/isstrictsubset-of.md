@@ -1,6 +1,6 @@
 # isStrictSubset(of:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: method
 
 Returns a Boolean value that indicates whether this set is a strict subset of the given set.

@@ -81,6 +81,7 @@ The Foundation framework provides a base layer of functionality for apps and fra
   This document describes the data types and constants found in the Foundation framework.
 ### Structures
 - [struct DiscontiguousAttributedSubstring](discontiguousattributedsubstring.md)
+  A discontiguous portion of an attributed string.
 - [struct NSFileManagerSupportedSyncControls](nsfilemanagersupportedsynccontrols.md)
 ### Macros
 - [macro bundle() -> Bundle](bundle().md)

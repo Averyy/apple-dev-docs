@@ -21,9 +21,9 @@ func fileDataRepresentation() -> Data?
 ## Mentions
 
 - [Saving Captured Photos](saving-captured-photos.md)
-- [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
-- [Capturing Uncompressed Image Data](capturing-uncompressed-image-data.md)
 - [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Capturing Uncompressed Image Data](capturing-uncompressed-image-data.md)
+- [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
 - [Configuring Camera Capture to Collect a Portrait Effects Matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
 - [Capturing Photos with Depth](capturing-photos-with-depth.md)
 

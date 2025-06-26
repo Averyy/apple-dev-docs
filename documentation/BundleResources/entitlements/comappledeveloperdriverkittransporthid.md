@@ -18,6 +18,8 @@ This entitlement gives your driver permission to interact with the hardware for 
   A Boolean value that indicates whether the driver provides a HID-related service to the system.
 - [com.apple.developer.driverkit.family.hid.eventservice](entitlements/com.apple.developer.driverkit.family.hid.eventservice.md)
   A Boolean value that indicates whether the driver provides a HID-related event service to the system.
+- [DriverKit Family virtual HID](entitlements/com.apple.developer.driverkit.family.hid.virtual.device.md)
+  An entitlement that lets an app create and manage virtual HID devices.
 - [com.apple.developer.hid.virtual.device](entitlements/com.apple.developer.hid.virtual.device.md)
   A Boolean value that indicates whether the driver creates a virtual HID device.
 

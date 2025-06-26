@@ -14,11 +14,10 @@ The JSON stanza your servers receive resembles the following:
 
 ```json
 {
+  "jws-string": "eyJraWQiOiJhcHBsZS1kZXZlbG9wbWVudC1pZGVudGlmaWVyXC8xIiwiYWxnIjoiRVMyNTYifQ.eyJwb3N0YmFjay1pZGVudGlmaWVyIjoiODU1NDZFQjctRkQzOS00NEJDLTg5OTAtQzk4QTRBQzM2QTQ5IiwicHVibGlzaGVyLWl0ZW0taWRlbnRpZmllciI6MCwibWFya2V0cGxhY2UtaWRlbnRpZmllciI6ImNvbS5hcHBsZS5BcHBTdG9yZSIsImltcHJlc3Npb24tdHlwZSI6ImFwcC1pbXByZXNzaW9uIiwiYWQtbmV0d29yay1pZGVudGlmaWVyIjoiZGV2ZWxvcG1lbnQuYWRhdHRyaWJ1dGlvbmtpdCIsImRpZC13aW4iOnRydWUsInBvc3RiYWNrLXNlcXVlbmNlLWluZGV4IjowLCJjb252ZXJzaW9uLXR5cGUiOiJyZS1lbmdhZ2VtZW50Iiwic291cmNlLWlkZW50aWZpZXIiOiIxMjM0IiwiYWR2ZXJ0aXNlZC1pdGVtLWlkZW50aWZpZXIiOjEwNzM4MDI3NzU2fQ.bAdNwKd6OfHK9tofvjjua4X_JPcFTxXPQSspD9gZkinw97pY7R1aI-LSjl-oxZZF3_K2H5JK5TSEBee4_1U4oQ",
+  "conversion-value": 24,
   "ad-interaction-type": "click",
-  "jws-string": "eyJraWQiOiJhcHBsZS1jYXMtaWRlbnRpZmllci8wIiwiYWxnIjoiRVMyNTYifQ.eyJhZHZlcnRpc2VkLWl0ZW0taWRlbnRpZmllciI6Njg0OTM5LCJjb252ZXJzaW9uLXR5cGUiOiJyZS1lbmdhZ2VtZW50IiwibWFya2V0cGxhY2UtaWRlbnRpZmllciI6ImNvbS5hcHBsZS5BcHBTdG9yZSIsImFkLW5ldHdvcmstaWRlbnRpZmllciI6InRlc3QuYWRhdHRyaWJ1dGlvbmtpdCIsImltcHJlc3Npb24tdHlwZSI6ImFwcC1pbXByZXNzaW9uIiwicG9zdGJhY2stc2VxdWVuY2UtaW5kZXgiOjAsInNvdXJjZS1pZGVudGlmaWVyIjoiODM0NCIsImRpZC13aW4iOnRydWUsInBvc3RiYWNrLWlkZW50aWZpZXIiOiIzZjUwZmU1Ny0yOWFlLTQ4NjEtOGMwYi1hYzZhZGRkZmY3MmMiLCJwdWJsaXNoZXItaXRlbS1pZGVudGlmaWVyIjo1ODM4NDkyfQ.AemK1x2ahIPKOnFEEscG4wvipRtR1G6DzpNF4M4joPb8POIH4FJjm4VvcNgLXc9rWBrEDQPvDblduoc7MFcK5w",
-  "coarse-conversion-value": "medium",
   "country-code": "US"
-
 }
 ```
 
@@ -30,7 +29,7 @@ The JWS header of the postback consists of two parameters and resembles the foll
 
 ```json
 {
-  "kid": "apple-cas-identifier/0",
+  "kid": "apple-development-identifier/1",
   "alg": "ES256"
 }
 ```
@@ -43,16 +42,16 @@ The JWS decoded payload of the postback resembles the following structure:
 
 ```json
 {
-  "advertised-item-identifier": 684939,
-  "conversion-type": "re-engagement",
+  "postback-identifier": "85546EB7-FD39-44BC-8990-C98A4AC36A49",
+  "publisher-item-identifier": 0,
   "marketplace-identifier": "com.apple.AppStore",
-  "ad-network-identifier": "test.adattributionkit",
   "impression-type": "app-impression",
-  "postback-sequence-index": 0,
-  "source-identifier": "8344",
+  "ad-network-identifier": "development.adattributionkit",
   "did-win": true,
-  "postback-identifier": "3f50fe57-29ae-4861-8c0b-ac6adddff72c",
-  "publisher-item-identifier": 5838492
+  "postback-sequence-index": 0,
+  "conversion-type": "re-engagement",
+  "source-identifier": "1234",
+  "advertised-item-identifier": 10738027756
 }
 ```
 

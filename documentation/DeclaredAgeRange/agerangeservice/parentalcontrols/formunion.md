@@ -1,6 +1,6 @@
 # formUnion(_:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: method
 
 Inserts the elements of another set into this option set.

@@ -24,6 +24,11 @@ The meaning of this resolution depends on the current viewing mode:
 
 This property has the format `[width, height]` in pixels.
 
+## See Also
+
+- [func aspectRatio(for: ImagePresentationComponent.ViewingMode) -> Float?](imagepresentationcomponent/aspectratio(for:).md)
+  The aspect ratio of the image this component will present for the requested viewing mode.
+
 
 ---
 

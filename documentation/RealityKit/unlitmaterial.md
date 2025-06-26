@@ -56,14 +56,19 @@ For example, a [`SimpleMaterial`](simplematerial.md) on the left, and an `UnlitM
 - [init(color: NSColor)](unlitmaterial/init(color:)-1sk7r.md)
   Creates an unlit material with the given base color.
 - [init(applyPostProcessToneMap:)](unlitmaterial/init(applypostprocesstonemap:).md)
+  Creates an UnlitMaterial with the given tone mapping setting
 - [init(color: NSColor, applyPostProcessToneMap: Bool)](unlitmaterial/init(color:applypostprocesstonemap:)-2cszc.md)
+  Creates an UnlitMaterial with the given color and tone mapping setting
 - [init(color: UIColor, applyPostProcessToneMap: Bool)](unlitmaterial/init(color:applypostprocesstonemap:)-9pbcy.md)
+  Creates an UnlitMaterial with the given color and tone mapping setting
 - [init(program:)](unlitmaterial/init(program:).md)
 - [init(texture:)](unlitmaterial/init(texture:).md)
   Creates a new unlit material with the provided color texture.
 ### Configuring base color
 - [var color: UnlitMaterial.BaseColor](unlitmaterial/color.md)
   The material’s base color.
+- [var baseColor: MaterialColorParameter](unlitmaterial/basecolor-swift.property.md)
+  The base color of the material.
 ### Tinting an unlit material
 - [var tintColor: NSColor](unlitmaterial/tintcolor-5k3sj.md)
   A tint color applied to the base color.
@@ -83,11 +88,8 @@ For example, a [`SimpleMaterial`](simplematerial.md) on the left, and an `UnlitM
 - [init(color:)](unlitmaterial/init(color:).md)
   Creates an unlit material with the given base color.
 - [init(color:applyPostProcessToneMap:)](unlitmaterial/init(color:applypostprocesstonemap:).md)
+  Creates an UnlitMaterial with the given color and tone mapping setting
 ### Instance Properties
-- [var baseColor: MaterialColorParameter](unlitmaterial/basecolor-2nks9.md)
-  The base color of the material.
-- [var baseColor: MaterialColorParameter](unlitmaterial/basecolor-9cd6z.md)
-  The base color of the material.
 - [var faceCulling: UnlitMaterial.FaceCulling](unlitmaterial/faceculling-2vyua.md)
 - [var faceCulling: UnlitMaterial.FaceCulling](unlitmaterial/faceculling-6h4qh.md)
 - [var program: UnlitMaterial.Program](unlitmaterial/program-68r53.md)
@@ -104,8 +106,6 @@ For example, a [`SimpleMaterial`](simplematerial.md) on the left, and an `UnlitM
   A two-dimensional transformation to apply to the entity’s primary texture coordinates.
 - [var textureCoordinateTransform: UnlitMaterial.TextureCoordinateTransform](unlitmaterial/texturecoordinatetransform-3583e.md)
   A two-dimensional transformation to apply to the entity’s primary texture coordinates.
-- [var tintColor: UIColor](unlitmaterial/tintcolor-k1do.md)
-  A tint color applied to the base color.
 - [var triangleFillMode: UnlitMaterial.TriangleFillMode](unlitmaterial/trianglefillmode-9i4bf.md)
   The object that controls how RealityKit draws triangles.
 - [var triangleFillMode: UnlitMaterial.TriangleFillMode](unlitmaterial/trianglefillmode-i1j1.md)

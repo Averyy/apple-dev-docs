@@ -21,9 +21,9 @@ class MTLSamplerDescriptor
 
 ## Mentions
 
-- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
 - [Adding Mipmap Filtering to Samplers](adding-mipmap-filtering-to-samplers.md)
 - [Restricting Access to Specific Mipmaps](restricting-access-to-specific-mipmaps.md)
+- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
 
 #### Overview
 

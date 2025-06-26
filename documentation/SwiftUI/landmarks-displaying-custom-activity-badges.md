@@ -128,8 +128,8 @@ GlassEffectContainer(spacing: Constants.badgeGlassSpacing) {
   Configure an image to blur and extend under a sidebar or inspector panel.
 - [Landmarks: Extending horizontal scrolling under a sidebar or inspector](landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector.md)
   Improve your horizontal scrollbar’s appearance by extending it under a sidebar or inspector.
-- [Landmarks: Refining the system provided glass effect in toolbars](landmarks-refining-the-system-provided-glass-effect-in-toolbars.md)
-  Organize toolbars into related groups to improve their appearance and utility.
+- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](landmarks-refining-the-system-provided-glass-effect-in-toolbars.md)
+  Organize toolbars into related groupings to improve their appearance and utility.
 
 
 ---

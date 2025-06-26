@@ -21,6 +21,8 @@ var color: SimpleMaterial.BaseColor { get set }
 
 ## See Also
 
+- [var baseColor: MaterialColorParameter](simplematerial/basecolor-swift.property.md)
+  The base color of the material.
 - [var tintColor: UIColor](simplematerial/tintcolor-18qur.md)
   A tint color applied to the base color in macOS.
 - [var tintColor: NSColor](simplematerial/tintcolor-6aik0.md)

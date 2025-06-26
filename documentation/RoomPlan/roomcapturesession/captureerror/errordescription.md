@@ -3,7 +3,7 @@
 **Framework**: RoomPlan  
 **Kind**: property
 
-A human-readable explanation for the error.
+A localized message describing what error occurred.
 
 **Availability**:
 - iOS 16.0+

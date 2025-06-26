@@ -6,7 +6,6 @@
 
 ### Macros
 - [var PLATFORM_SUPPORTS_AVKITCORE: Bool](platform_supports_avkitcore.md)
-- [struct InterstitialEvent](interstitialevent.md)
 
 
 ---

@@ -1,7 +1,7 @@
 # MPSNNCompare
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 12.1+
@@ -14,21 +14,31 @@
 ## Declaration
 
 ```swift
-class MPSNNCompare : MPSCNNArithmetic
+class MPSNNCompare
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpsnncompare/3037375-init.md)
+- [init(device: any MTLDevice)](mpsnncompare/init(device:).md)
 ### Instance Properties
-- [var comparisonType: MPSNNComparisonType](mpsnncompare/3037374-comparisontype.md)
-- [var threshold: Float](mpsnncompare/3037376-threshold.md)
+- [var comparisonType: MPSNNComparisonType](mpsnncompare/comparisontype.md)
+- [var threshold: Float](mpsnncompare/threshold.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNArithmetic](mpscnnarithmetic.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

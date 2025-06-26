@@ -27,7 +27,7 @@ var options: GenerationOptions
 - [var responseFormat: Transcript.ResponseFormat?](transcript/prompt/responseformat.md)
   An optional response format that describes the desired output structure.
 - [var segments: [Transcript.Segment]](transcript/prompt/segments.md)
-  Ordered prompt segments, often interleaved text and images.
+  Ordered prompt segments.
 
 
 ---

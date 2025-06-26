@@ -1,7 +1,7 @@
 # MPSCNNInstanceNormalizationNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of an instance normalization kernel.
 
@@ -16,22 +16,28 @@ A representation of an instance normalization kernel.
 ## Declaration
 
 ```swift
-class MPSCNNInstanceNormalizationNode : MPSNNFilterNode
+class MPSCNNInstanceNormalizationNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, dataSource: any MPSCNNInstanceNormalizationDataSource)](mpscnninstancenormalizationnode/2951940-init.md)
+- [init(source: MPSNNImageNode, dataSource: any MPSCNNInstanceNormalizationDataSource)](mpscnninstancenormalizationnode/init(source:datasource:).md)
 ### Instance Properties
-- [var trainingStyle: MPSNNTrainingStyle](mpscnninstancenormalizationnode/3197824-trainingstyle.md)
+- [var trainingStyle: MPSNNTrainingStyle](mpscnninstancenormalizationnode/trainingstyle.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
 ### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
 - [MPSNNTrainableNode](mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

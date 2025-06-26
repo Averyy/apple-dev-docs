@@ -1,7 +1,7 @@
 # MPSCNNLocalContrastNormalizationGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient local-contrast normalization kernel.
 
@@ -16,27 +16,34 @@ A representation of a gradient local-contrast normalization kernel.
 ## Declaration
 
 ```swift
-class MPSCNNLocalContrastNormalizationGradientNode : MPSNNGradientFilterNode
+class MPSCNNLocalContrastNormalizationGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, kernelWidth: Int, kernelHeight: Int)](mpscnnlocalcontrastnormalizationgradientnode/2948016-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, kernelWidth: Int, kernelHeight: Int)](mpscnnlocalcontrastnormalizationgradientnode/init(sourcegradient:sourceimage:gradientstate:kernelwidth:kernelheight:).md)
 ### Instance Properties
-- [var alpha: Float](mpscnnlocalcontrastnormalizationgradientnode/2947973-alpha.md)
-- [var beta: Float](mpscnnlocalcontrastnormalizationgradientnode/2947977-beta.md)
-- [var delta: Float](mpscnnlocalcontrastnormalizationgradientnode/2948014-delta.md)
-- [var kernelHeight: Int](mpscnnlocalcontrastnormalizationgradientnode/2948019-kernelheight.md)
-- [var kernelWidth: Int](mpscnnlocalcontrastnormalizationgradientnode/2947965-kernelwidth.md)
-- [var p0: Float](mpscnnlocalcontrastnormalizationgradientnode/2948017-p0.md)
-- [var pm: Float](mpscnnlocalcontrastnormalizationgradientnode/2948053-pm.md)
-- [var ps: Float](mpscnnlocalcontrastnormalizationgradientnode/2948008-ps.md)
+- [var alpha: Float](mpscnnlocalcontrastnormalizationgradientnode/alpha.md)
+- [var beta: Float](mpscnnlocalcontrastnormalizationgradientnode/beta.md)
+- [var delta: Float](mpscnnlocalcontrastnormalizationgradientnode/delta.md)
+- [var kernelHeight: Int](mpscnnlocalcontrastnormalizationgradientnode/kernelheight.md)
+- [var kernelWidth: Int](mpscnnlocalcontrastnormalizationgradientnode/kernelwidth.md)
+- [var p0: Float](mpscnnlocalcontrastnormalizationgradientnode/p0.md)
+- [var pm: Float](mpscnnlocalcontrastnormalizationgradientnode/pm.md)
+- [var ps: Float](mpscnnlocalcontrastnormalizationgradientnode/ps.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

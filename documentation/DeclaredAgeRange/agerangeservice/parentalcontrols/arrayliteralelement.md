@@ -1,6 +1,6 @@
 # AgeRangeService.ParentalControls.ArrayLiteralElement
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: typealias
 
 The type of the elements of an array literal.
@@ -16,6 +16,13 @@ The type of the elements of an array literal.
 ```swift
 typealias ArrayLiteralElement = AgeRangeService.ParentalControls
 ```
+
+## See Also
+
+- [AgeRangeService.ParentalControls.Element](agerangeservice/parentalcontrols/element.md)
+  The element type of the option set.
+- [AgeRangeService.ParentalControls.RawValue](agerangeservice/parentalcontrols/rawvalue-swift.typealias.md)
+  The raw type that can be used to represent all values of the conforming type.
 
 
 ---

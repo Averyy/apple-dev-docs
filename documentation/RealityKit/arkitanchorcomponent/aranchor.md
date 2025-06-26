@@ -6,7 +6,6 @@
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
 
 ## Declaration
 

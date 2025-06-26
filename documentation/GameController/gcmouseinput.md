@@ -27,7 +27,7 @@ This profile supports a mouse with the following features:
 - A left button
 - An optional right button
 - An optional middle button
-- An optional set of auxiliarly buttons
+- An optional set of auxiliary buttons
 
 This profile provides only raw mouse movement delta values. For the cursor position at a specific time, use the [`UIHoverGestureRecognizer`](https://developer.apple.com/documentation/UIKit/UIHoverGestureRecognizer) class and the `NSEvent` [`mouseLocation`](https://developer.apple.com/documentation/AppKit/NSEvent/mouseLocation) method.
 

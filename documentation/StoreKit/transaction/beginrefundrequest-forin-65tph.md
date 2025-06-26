@@ -21,8 +21,8 @@ static func beginRefundRequest(for transactionID: UInt64, in scene: UIWindowScen
 
 ## Mentions
 
-- [Testing refund requests](testing-refund-requests.md)
 - [Choosing a StoreKit API for In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
+- [Testing refund requests](testing-refund-requests.md)
 
 #### Return Value
 

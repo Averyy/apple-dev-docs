@@ -1,7 +1,7 @@
 # MPSCNNNeuronAbsoluteNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of an absolute neuron filter.
 
@@ -16,18 +16,25 @@ A representation of an absolute neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronAbsoluteNode : MPSCNNNeuronNode
+class MPSCNNNeuronAbsoluteNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnnneuronabsolutenode/2921448-init.md)
+- [init(source: MPSNNImageNode)](mpscnnneuronabsolutenode/init(source:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuronNode](mpscnnneuronnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

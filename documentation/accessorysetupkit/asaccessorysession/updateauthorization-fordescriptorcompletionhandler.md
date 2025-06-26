@@ -15,11 +15,15 @@ Displays a view to upgrade an accessory with additional technology permissions.
 func updateAuthorization(for accessory: ASAccessory, descriptor: ASDiscoveryDescriptor) async throws
 ```
 
+#### Discussion
+
+Call this method to upgrade previously-added SSID-based accessories to use WiFi Aware.
+
 ## Parameters
 
-- `accessory`: The accessory to be updated
-- `descriptor`: An updated descriptor that the picker uses to add new technology authorization for provided accessory.
-- `completionHandler`: A block or closure that executes after the picker is shown. The completion handler receives an   instance if the upgrade operation encounters an error.
+- `accessory`: The accessory to update.
+- `descriptor`: An updated descriptor that the picker uses to add new technology authorization for the provided accessory.
+- `completionHandler`: A block or closure that executes after the picker is shown. The completion handler receives an   instance if the upgrade operation encounters an error. In Swift, you can omit the completion handler by calling the method asynchronously and catching any error thrown by the method.
 
 ## See Also
 

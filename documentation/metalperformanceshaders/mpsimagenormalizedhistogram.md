@@ -1,7 +1,7 @@
 # MPSImageNormalizedHistogram
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that computes the normalized histogram of an image.
 
@@ -16,26 +16,36 @@ A filter that computes the normalized histogram of an image.
 ## Declaration
 
 ```swift
-class MPSImageNormalizedHistogram : MPSKernel
+class MPSImageNormalizedHistogram
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagenormalizedhistogram/3019325-init.md)
-- [init(device: any MTLDevice, histogramInfo: UnsafePointer<MPSImageHistogramInfo>)](mpsimagenormalizedhistogram/3019326-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagenormalizedhistogram/init(coder:device:).md)
+- [init(device: any MTLDevice, histogramInfo: UnsafePointer<MPSImageHistogramInfo>)](mpsimagenormalizedhistogram/init(device:histograminfo:).md)
 ### Instance Properties
-- [var clipRectSource: MTLRegion](mpsimagenormalizedhistogram/3019321-cliprectsource.md)
-- [var histogramInfo: MPSImageHistogramInfo](mpsimagenormalizedhistogram/3019323-histograminfo.md)
-- [var zeroHistogram: Bool](mpsimagenormalizedhistogram/3019327-zerohistogram.md)
+- [var clipRectSource: MTLRegion](mpsimagenormalizedhistogram/cliprectsource.md)
+- [var histogramInfo: MPSImageHistogramInfo](mpsimagenormalizedhistogram/histograminfo.md)
+- [var zeroHistogram: Bool](mpsimagenormalizedhistogram/zerohistogram.md)
 ### Instance Methods
-- [func encode(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, minmaxTexture: any MTLTexture, histogram: any MTLBuffer, histogramOffset: Int)](mpsimagenormalizedhistogram/3019322-encode.md)
-- [func histogramSize(forSourceFormat: MTLPixelFormat) -> Int](mpsimagenormalizedhistogram/3019324-histogramsize.md)
+- [func encode(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, minmaxTexture: any MTLTexture, histogram: any MTLBuffer, histogramOffset: Int)](mpsimagenormalizedhistogram/encode(to:sourcetexture:minmaxtexture:histogram:histogramoffset:).md)
+- [func histogramSize(forSourceFormat: MTLPixelFormat) -> Int](mpsimagenormalizedhistogram/histogramsize(forsourceformat:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

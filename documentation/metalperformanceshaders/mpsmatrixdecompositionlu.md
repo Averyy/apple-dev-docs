@@ -1,7 +1,7 @@
 # MPSMatrixDecompositionLU
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel for computing the LU factorization of a matrix using partial pivoting with row interchanges.
 
@@ -16,7 +16,7 @@ A kernel for computing the LU factorization of a matrix using partial pivoting w
 ## Declaration
 
 ```swift
-class MPSMatrixDecompositionLU : MPSMatrixUnaryKernel
+class MPSMatrixDecompositionLU
 ```
 
 #### Overview
@@ -31,14 +31,24 @@ This kernel object computes an LU factorization, , where:
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, rows: Int, columns: Int)](mpsmatrixdecompositionlu/2866960-init.md)
+- [init(device: any MTLDevice, rows: Int, columns: Int)](mpsmatrixdecompositionlu/init(device:rows:columns:).md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, resultMatrix: MPSMatrix, pivotIndices: MPSMatrix, info: (any MTLBuffer)?)](mpsmatrixdecompositionlu/2867184-encode.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, resultMatrix: MPSMatrix, pivotIndices: MPSMatrix, info: (any MTLBuffer)?)](mpsmatrixdecompositionlu/encode(commandbuffer:sourcematrix:resultmatrix:pivotindices:info:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrixUnaryKernel](mpsmatrixunarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

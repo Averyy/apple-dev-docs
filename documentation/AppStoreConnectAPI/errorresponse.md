@@ -17,9 +17,9 @@ object ErrorResponse
 ## Mentions
 
 - [Parsing the Error Response Code](parsing-the-error-response-code.md)
+- [Uploading Assets to App Store Connect](uploading-assets-to-app-store-connect.md)
 - [Pinpointing the Location of Errors](pinpointing-the-location-of-errors.md)
 - [About the HTTP Status Code](about-the-http-status-code.md)
-- [Uploading Assets to App Store Connect](uploading-assets-to-app-store-connect.md)
 
 ## Topics
 

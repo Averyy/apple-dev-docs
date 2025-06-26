@@ -3,7 +3,7 @@
 **Framework**: AccessorySetupKit  
 **Kind**: property
 
-The accessory’s Wi-Fi Aware vendor name  and matching options.
+The accessory’s Wi-Fi Aware vendor name and matching options.
 
 **Availability**:
 - iOS 26.0+ (Beta)

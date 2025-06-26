@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: protocol
 
-Encodes commands for dispatching machine learning networks on the GPU.
+Encodes dispatch commands that run machine-learning model inference on Apple silicon.
 
 **Availability**:
 - iOS 26.0+ (Beta)

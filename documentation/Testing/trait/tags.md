@@ -25,8 +25,8 @@ static func tags(_ tags: Tag...) -> Self
 ## Mentions
 
 - [Organizing test functions with suite types](organizingtests.md)
-- [Defining test functions](definingtests.md)
 - [Adding tags to tests](addingtags.md)
+- [Defining test functions](definingtests.md)
 
 #### Return Value
 

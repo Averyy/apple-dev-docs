@@ -1,7 +1,7 @@
 # MPSMatrixDecompositionCholesky
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel for computing the Cholesky factorization of a matrix.
 
@@ -16,7 +16,7 @@ A kernel for computing the Cholesky factorization of a matrix.
 ## Declaration
 
 ```swift
-class MPSMatrixDecompositionCholesky : MPSMatrixUnaryKernel
+class MPSMatrixDecompositionCholesky
 ```
 
 #### Overview
@@ -32,14 +32,24 @@ where:
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, lower: Bool, order: Int)](mpsmatrixdecompositioncholesky/2867119-init.md)
+- [init(device: any MTLDevice, lower: Bool, order: Int)](mpsmatrixdecompositioncholesky/init(device:lower:order:).md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, resultMatrix: MPSMatrix, status: (any MTLBuffer)?)](mpsmatrixdecompositioncholesky/2867004-encode.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, resultMatrix: MPSMatrix, status: (any MTLBuffer)?)](mpsmatrixdecompositioncholesky/encode(commandbuffer:sourcematrix:resultmatrix:status:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrixUnaryKernel](mpsmatrixunarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-func vmnet_network_configuration_set_ipv6_prefix(_ network: vmnet_network_configuration_ref, _ prefix: UnsafePointer<in6_addr>, _ len: UInt8) -> vmnet_return_t
+func vmnet_network_configuration_set_ipv6_prefix(_ config: vmnet_network_configuration_ref, _ prefix: UnsafePointer<in6_addr>, _ len: UInt8) -> vmnet_return_t
 ```
 
 #### Return Value
@@ -23,7 +23,7 @@ Configures the IPv6 prefix for a vmnet network object.
 
 ## Parameters
 
-- `network`: The network object to be modified.
+- `config`: The network configuration object to be modified.
 - `prefix`: The IPv6 prefix.
 - `len`: The IPv6 prefix length.
 

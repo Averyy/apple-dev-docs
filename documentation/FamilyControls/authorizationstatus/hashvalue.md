@@ -8,7 +8,6 @@ The hashed value of the authorization status.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 
 ## Declaration
 

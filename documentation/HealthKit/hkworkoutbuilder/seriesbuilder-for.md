@@ -19,6 +19,10 @@ Returns the series builder for the specified type, creating a new builder, if ne
 func seriesBuilder(for seriesType: HKSeriesType) -> HKSeriesBuilder?
 ```
 
+## Mentions
+
+- [Creating a workout route](creating-a-workout-route.md)
+
 ## See Also
 
 - [func add([HKSample], completion: (Bool, (any Error)?) -> Void)](hkworkoutbuilder/add(_:completion:).md)

@@ -20,8 +20,8 @@ var localObject: Any? { get set }
 
 ## Mentions
 
-- [Supporting Drag and Drop in Collection Views](supporting-drag-and-drop-in-collection-views.md)
 - [Supporting drag and drop in table views](supporting-drag-and-drop-in-table-views.md)
+- [Supporting Drag and Drop in Collection Views](supporting-drag-and-drop-in-collection-views.md)
 
 #### Discussion
 

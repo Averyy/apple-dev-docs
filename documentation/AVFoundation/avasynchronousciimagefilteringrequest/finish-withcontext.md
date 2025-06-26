@@ -21,7 +21,7 @@ func finish(with filteredImage: CIImage, context: CIContext?)
 
 #### Discussion
 
-Call this method when your handler block has finished applying filters, passing the [`outputImage`](https://developer.apple.com/documentation/coreimage/cifilter/1438169-outputimage) object from the final filter in your filter chain for the `filteredImage` parameter. The pixel format for this image must be the [`BGRA8`](https://developer.apple.com/documentation/coreimage/ciformat/1438064-bgra8) format (of the [`kCVPixelFormatType_32BGRA`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_32BGRA) type).
+Call this method when your handler block has finished applying filters, passing the [`outputImage`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class/outputImage) object from the final filter in your filter chain for the `filteredImage` parameter. The pixel format for this image must be the [`BGRA8`](https://developer.apple.com/documentation/CoreImage/CIFormat/BGRA8) format (of the [`kCVPixelFormatType_32BGRA`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_32BGRA) type).
 
 You can pass the [`sourceImage`](avasynchronousciimagefilteringrequest/sourceimage.md) object to the `filteredImage` parameter to disable filtering for the current frame.
 

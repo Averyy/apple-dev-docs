@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: op
 
-You can use `switch` and `case` to check for a given value of `TranslationError` if you want to handle each error case separately.
+This operator allows you to check for a given value of a translation error and handle each error case.
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +16,10 @@ You can use `switch` and `case` to check for a given value of `TranslationError`
 ```swift
 static func ~= (match: TranslationError, error: any Error) -> Bool
 ```
+
+#### Discussion
+
+You can use `switch` and `case` to check for a given value of `TranslationError`, if you want to handle each error case separately.
 
 
 ---

@@ -8,7 +8,6 @@ Scales images within the view according to one of the relative sizes available i
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 11.0+
 - tvOS 13.0+
 - watchOS 6.0+

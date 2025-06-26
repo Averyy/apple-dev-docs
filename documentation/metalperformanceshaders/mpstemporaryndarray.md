@@ -1,7 +1,7 @@
 # MPSTemporaryNDArray
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,22 +14,29 @@
 ## Declaration
 
 ```swift
-class MPSTemporaryNDArray : MPSNDArray
+class MPSTemporaryNDArray
 ```
 
 ## Topics
 
 ### Initializers
-- [init(commandBuffer: any MTLCommandBuffer, descriptor: MPSNDArrayDescriptor)](mpstemporaryndarray/3114075-init.md)
+- [convenience init(commandBuffer: any MTLCommandBuffer, descriptor: MPSNDArrayDescriptor)](mpstemporaryndarray/init(commandbuffer:descriptor:).md)
 ### Instance Properties
-- [var readCount: Int](mpstemporaryndarray/3114074-readcount.md)
+- [var readCount: Int](mpstemporaryndarray/readcount.md)
 ### Type Methods
-- [class func defaultAllocator() -> any MPSNDArrayAllocator](mpstemporaryndarray/3131732-defaultallocator.md)
+- [class func defaultAllocator() -> any MPSNDArrayAllocator](mpstemporaryndarray/defaultallocator.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNDArray](mpsndarray.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

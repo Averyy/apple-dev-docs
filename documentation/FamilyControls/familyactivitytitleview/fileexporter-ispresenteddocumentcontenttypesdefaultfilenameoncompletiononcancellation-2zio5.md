@@ -8,7 +8,6 @@ Presents a system dialog for allowing the user to export a `ReferenceFileDocumen
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 
 ## Declaration

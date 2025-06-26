@@ -22,8 +22,8 @@ func nw_parameters_set_attribution(_ parameters: nw_parameters_t, _ attribution:
 
 ## Mentions
 
-- [Inspecting app activity data](inspecting-app-activity-data.md)
 - [Indicating the source of network activity](indicating-the-source-of-network-activity.md)
+- [Inspecting app activity data](inspecting-app-activity-data.md)
 
 #### Discussion
 

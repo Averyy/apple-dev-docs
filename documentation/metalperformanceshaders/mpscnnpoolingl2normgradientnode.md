@@ -1,7 +1,7 @@
 # MPSCNNPoolingL2NormGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient L2-norm pooling filter.
 
@@ -16,13 +16,20 @@ A representation of a gradient L2-norm pooling filter.
 ## Declaration
 
 ```swift
-class MPSCNNPoolingL2NormGradientNode : MPSCNNPoolingGradientNode
+class MPSCNNPoolingL2NormGradientNode
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNPoolingGradientNode](mpscnnpoolinggradientnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

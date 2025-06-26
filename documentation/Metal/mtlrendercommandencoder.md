@@ -22,12 +22,12 @@ protocol MTLRenderCommandEncoder : MTLCommandEncoder
 ## Mentions
 
 - [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
-- [Tracking the Resource Residency of Argument Buffers](tracking-the-resource-residency-of-argument-buffers.md)
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
-- [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 - [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Tracking the Resource Residency of Argument Buffers](tracking-the-resource-residency-of-argument-buffers.md)
+- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
 
 #### Overview
 
@@ -92,6 +92,8 @@ When you finish encoding the render pass’s commands, finalize it into the comm
 - [Deprecated Symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Instance Methods
+- [func setColorAttachmentMap(MTLLogicalToPhysicalColorAttachmentMap?)](mtlrendercommandencoder/setcolorattachmentmap(_:).md)
+  Sets the mapping from logical shader color output to physical render pass color attachments.
 - [func setVertexBuffer((any MTLBuffer)?, offset: Int, attributeStride: Int, index: Int)](mtlrendercommandencoder/setvertexbuffer(_:offset:attributestride:index:).md)
 - [func setVertexBufferOffset(offset: Int, attributeStride: Int, index: Int)](mtlrendercommandencoder/setvertexbufferoffset(offset:attributestride:index:).md)
 - [func setVertexBuffers([(any MTLBuffer)?], offsets: [Int], attributeStrides: [Int], range: Range<Int>)](mtlrendercommandencoder/setvertexbuffers(_:offsets:attributestrides:range:).md)

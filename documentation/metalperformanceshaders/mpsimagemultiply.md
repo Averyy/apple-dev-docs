@@ -1,7 +1,7 @@
 # MPSImageMultiply
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that returns the element-wise product of its two input images.
 
@@ -16,18 +16,28 @@ A filter that returns the element-wise product of its two input images.
 ## Declaration
 
 ```swift
-class MPSImageMultiply : MPSImageArithmetic
+class MPSImageMultiply
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpsimagemultiply/2866600-init.md)
+- [init(device: any MTLDevice)](mpsimagemultiply/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSImageArithmetic](mpsimagearithmetic.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

@@ -17,7 +17,7 @@ The fourth component in the vector.
 ## Declaration
 
 ```swift
-var w: Float
+var w: CGFloat
 ```
 
 ## See Also

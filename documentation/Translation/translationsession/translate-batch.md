@@ -23,28 +23,28 @@ An `AsyncSequence` of responses containing the text translations.
 
 #### Discussion
 
-This function translates multiple strings of text incrementally and might display different UI depending on the state of the translation. The languages the framework requires for the translation don’t have to be installed before calling this method.
+This function translates multiple strings of text incrementally and might display different UI depending on the state of the translation. The required languages for translation don’t have to be installed before calling this method.
 
-Pass in the strings of text you want to translate as an array of type [`TranslationSession.Request`](translationsession/request.md). Set the [`clientIdentifier`](translationsession/request/clientidentifier.md) on each request so you can match the request with the response as the translations incrementally return.
+Pass in the strings of text you want to translate as an array of the [`TranslationSession.Request`](translationsession/request.md) type. Set the [`clientIdentifier`](translationsession/request/clientidentifier.md) on each request so you can match the request with the response as the translations incrementally return.
 
-If the required languages for translation have already downloaded and the source language is clear, this function returns results without showing any UI to the user.
+If the required languages for translation have already downloaded and the source language is clear, this function returns results without showing any UI to the person.
 
-If the source or target language aren’t installed, the framework asks the user for permission to download the languages. During download a progress indicator displays. After the download completes, the framework performs the translation.
+If the source or target language aren’t installed, the framework asks the person for permission to download the languages. During the download a progress indicator displays. After it completes, the framework performs the translation.
 
-If the `sourceLanguage` is `nil` and the framework can’t detect the source language from the content, the framework prompts the user to choose the source language.
+If the `sourceLanguage` is `nil` and the framework can’t detect the source language from the content, the framework prompts the person to choose the source language.
 
 The framework only supports string translations of the same language. The strings must either match the `sourceLanguage` you set in the configuration, or if the `sourceLanguage` is `nil`, be of the same language.
 
 This function throws an `Error` if:
 
-- the user doesn’t agree to downloading the languages
-- the user dismisses the progress UI while the languages download,
-- the [`TranslationSession`](translationsession.md) fails to validate,
-- the languages aren’t installed when the session can’t request downloads,
-- the session was already cancelled, or
-- something goes wrong while performing the translation.
+- The person doesn’t agree to downloading the languages
+- The person dismisses the progress view during language downloads
+- [`TranslationSession`](translationsession.md)  fails system validation
+- The session doesn’t allow requesting downloads and languages aren’t installed
+- You already cancelled the session
+- Something goes wrong during translation
 
-If someone dismisses the progress UI while the languages download, the system throws a `CocoaError/userCancelled` error, and the languages continue to download in the background.
+If a person dismisses the progress view while the languages download, the system throws a [`userCancelled`](https://developer.apple.com/documentation/Foundation/CocoaError/Code/userCancelled) error, and the languages continue to download in the background.
 
 > **Note**: Calls to this function can take several minutes while languages download.
 

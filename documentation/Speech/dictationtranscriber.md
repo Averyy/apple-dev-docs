@@ -3,7 +3,7 @@
 **Framework**: Speech  
 **Kind**: class
 
-A module that transcribes speech to text. This transcriber is used by [`SFSpeechRecognizer`](sfspeechrecognizer.md) and system dictation features.
+A module that transcribes speech to text. This transcriber is used by `SFSpeechRecognizer` and system dictation features.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -20,7 +20,13 @@ final class DictationTranscriber
 
 #### Overview
 
+This transcriber uses the same speech-to-text machine learning models as [`SFSpeechRecognizer`](sfspeechrecognizer.md) does when it is configured for on-device operation. This transcriber does not support languages or locales that `SFSpeechRecognizer` only supports via network access.
+
 Several transcriber instances can share the same backing engine instances and models, so long as the transcribers are configured similarly in certain respects.
+
+##### Performance on Devices
+
+On Apple Watch devices, this module may exhibit long startup times the first time it is used in a particular configuration, though later uses will be faster. That startup time could delay transcription results by many seconds. To avoid a delay in results, call [`prepareToAnalyze(in:)`](speechanalyzer/preparetoanalyze(in:).md) some time before starting analysis.
 
 ## Topics
 
@@ -48,6 +54,9 @@ Several transcriber instances can share the same backing engine instances and mo
   Options relating to the attributes of the transcription.
 - [DictationTranscriber.TranscriptionOption](dictationtranscriber/transcriptionoption.md)
   Options relating to the text of the transcription.
+### Type Methods
+- [static func supportedLocale(equivalentTo: Locale) async -> Locale?](dictationtranscriber/supportedlocale(equivalentto:).md)
+  A locale from the module’s supported locales equivalent to the given locale.
 
 ## Relationships
 

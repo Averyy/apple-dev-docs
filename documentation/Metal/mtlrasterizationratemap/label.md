@@ -22,7 +22,7 @@ var label: String? { get }
 
 #### Discussion
 
-Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. For more information, see `Enhancing Frame Capture by Using Labels`.
+Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. For more information, see [`Naming resources and commands`](https://developer.apple.com/documentation/Xcode/Naming-resources-and-commands).
 
 ## See Also
 

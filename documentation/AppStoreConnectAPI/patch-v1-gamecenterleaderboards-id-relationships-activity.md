@@ -6,6 +6,10 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Mentions
+
+- [Configuring Game center activities](configuring-game-center-activities.md)
+
 ## See Also
 
 - [Create a leaderboard](post-v1-gamecenterleaderboards.md)

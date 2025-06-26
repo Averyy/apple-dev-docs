@@ -18,8 +18,8 @@ struct AppImpression
 
 ## Mentions
 
-- [Presenting ads in your app](presenting-ads-in-your-app.md)
 - [Generating JWS impressions](generating-jws-impressions.md)
+- [Presenting ads in your app](presenting-ads-in-your-app.md)
 
 #### Overview
 

@@ -30,16 +30,16 @@ The AMD and MeTiS orderings provide good orderings for symmetric (Hermitian) mat
 
 ## See Also
 
-- [var SparseScalingDefault: SparseScaling_t](sparsescalingdefault.md)
-  Default scaling.
-- [var SparseScalingUser: SparseScaling_t](sparsescalinguser.md)
-  User scaling.
-- [var SparseScalingEquilibriationInf: SparseScaling_t](sparsescalingequilibriationinf.md)
-  The norm equilibration scaling using infinity norm.
-- [var SparseScalingHungarianScalingOnly: SparseScaling_t](sparsescalinghungarianscalingonly.md)
-  Specifies type of scaling to be performed.
-- [var SparseScalingHungarianScalingAndOrdering: SparseScaling_t](sparsescalinghungarianscalingandordering.md)
-  Specifies type of scaling to be performed.
+- [var SparseOrderDefault: SparseOrder_t](sparseorderdefault.md)
+  The default ordering.
+- [var SparseOrderUser: SparseOrder_t](sparseorderuser.md)
+  The user-supplied ordering, or identity if the order parameter is null.
+- [var SparseOrderAMD: SparseOrder_t](sparseorderamd.md)
+  Approximate minimum degree (AMD) ordering.
+- [var SparseOrderMetis: SparseOrder_t](sparseordermetis.md)
+  METIS nested dissection ordering.
+- [var SparseOrderCOLAMD: SparseOrder_t](sparseordercolamd.md)
+  The column AMD ordering for .
 
 
 ---

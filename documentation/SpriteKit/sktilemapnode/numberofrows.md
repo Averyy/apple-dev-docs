@@ -17,7 +17,6 @@ The number of rows in the tile map.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfRows: Int { get set }
 ```
 

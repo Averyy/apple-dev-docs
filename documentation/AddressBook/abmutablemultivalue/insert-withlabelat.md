@@ -22,7 +22,7 @@ The identifier of the inserted value and label if they are added successfully; o
 
 If either the value or the label is `nil` or if the index is out of bounds, this method raises an exception
 
-This method performs no type checking and will let you add a value whose type does not match the types of the other values in the list. However, if you try to use a multivalue list whose values are not all of the same type, other methods, such as the `ABRecord`  [`setValue(_:forProperty:)`](abrecord/setvalue(_:forproperty:).md) method, will return [`false`](https://developer.apple.com/documentation/swift/false) or `kABErrorInProperty`.
+This method performs no type checking and will let you add a value whose type does not match the types of the other values in the list. However, if you try to use a multivalue list whose values are not all of the same type, other methods, such as the `ABRecord`  [`setValue(_:forProperty:)`](abrecord-swift.class/setvalue(_:forproperty:).md) method, will return [`false`](https://developer.apple.com/documentation/swift/false) or `kABErrorInProperty`.
 
 ## Parameters
 

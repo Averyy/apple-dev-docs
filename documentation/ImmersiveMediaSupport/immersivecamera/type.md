@@ -21,9 +21,9 @@ var type: ImmersiveCamera.CameraType
   Calibration details for this camera.
 - [var id: String](immersivecamera/id-swift.property.md)
   An identifier string for this immersive camera. Must be unique for each immersive camera and cannot be blank.
-- [var pose: ImmersiveCamera.CameraPose](immersivecamera/pose.md)
-  The pose of this immersive camera..
-- [var presentationFrameRate: Float](immersivecamera/presentationframerate.md)
+- [var pose: Pose3DFloat](immersivecamera/pose.md)
+  The pose of this immersive camera.
+- [var presentationFrameRate: Int](immersivecamera/presentationframerate.md)
   Presentation frame rate suited for this immersive camera.
 
 

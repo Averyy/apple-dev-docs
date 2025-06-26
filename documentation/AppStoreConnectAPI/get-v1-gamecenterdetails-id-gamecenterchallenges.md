@@ -8,6 +8,10 @@ Get challenge information for a specific Game Center detail.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Mentions
+
+- [Configuring Game Center challenges](configuring-game-center-challenges.md)
+
 ## See Also
 
 - [Read challenge information](get-v1-gamecenterchallenges-_id_.md)

@@ -17,8 +17,6 @@ var layout: ImmersiveVideoMask.Layout { get }
 
 ## See Also
 
-- [var isDynamic: Bool](immersivevideomask/isdynamic.md)
-  Flag to indicate if this mask was generated from a [`ImmersiveDynamicMask`](immersivedynamicmask.md).
 - [var texture: any MTLTexture](immersivevideomask/texture.md)
   The mask texture ready to be used for rendering.
 

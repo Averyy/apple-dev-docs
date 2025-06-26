@@ -11,9 +11,9 @@ An optimizer that uses the AdamW optimization algorithm.
 - Mac Catalyst ?+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
 - watchOS 8.0+
 - Unknown ?+ - Deprecated
+- visionOS ?+
 
 ## Declaration
 

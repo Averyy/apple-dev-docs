@@ -1,7 +1,7 @@
 # MPSCNNSpatialNormalizationGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient spatial normalization kernel.
 
@@ -16,23 +16,33 @@ A gradient spatial normalization kernel.
 ## Declaration
 
 ```swift
-class MPSCNNSpatialNormalizationGradient : MPSCNNGradientKernel
+class MPSCNNSpatialNormalizationGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnspatialnormalizationgradient/2942473-init.md)
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnspatialnormalizationgradient/2942461-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnspatialnormalizationgradient/init(coder:device:).md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnspatialnormalizationgradient/init(device:kernelwidth:kernelheight:).md)
 ### Instance Properties
-- [var alpha: Float](mpscnnspatialnormalizationgradient/2942478-alpha.md)
-- [var beta: Float](mpscnnspatialnormalizationgradient/2942470-beta.md)
-- [var delta: Float](mpscnnspatialnormalizationgradient/2942486-delta.md)
+- [var alpha: Float](mpscnnspatialnormalizationgradient/alpha.md)
+- [var beta: Float](mpscnnspatialnormalizationgradient/beta.md)
+- [var delta: Float](mpscnnspatialnormalizationgradient/delta.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNGradientKernel](mpscnngradientkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

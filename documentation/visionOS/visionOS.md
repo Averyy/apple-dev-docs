@@ -59,6 +59,8 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
 ### RealityKit and Reality Composer Pro
 - [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
+- [Enhancing the audio experience for Petite Asteroids](enhancing-the-audio-experience-for-petite-asteroids.md)
+  Elevate the game’s immersive experience using RealityKit audio.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -161,6 +163,9 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Show video from devices connected with the Developer Strap in your visionOS app.
 - [Locating and decoding barcodes in 3D space](locating-and-decoding-barcodes-in-3d-space.md)
   Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
+### Articles
+- [Creating 3D entities with RealityKit](creating-3d-entities-with-realitykit.md)
+  Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
 
 
 ---

@@ -81,7 +81,9 @@ numbers.moveSubranges(negativeSubranges, to: 0)
 - [func isSuperset(of: RangeSet<Bound>) -> Bool](rangeset/issuperset(of:).md)
   Returns a Boolean value that indicates whether this range set is a superset of the given set.
 - [func isValid(within: DiscontiguousAttributedSubstring) -> Bool](rangeset/isvalid(within:)-38qb9.md)
+  Indicates whether the range set is valid for use with the provided discontiguous attributed string.
 - [func isValid(within: some AttributedStringProtocol) -> Bool](rangeset/isvalid(within:)-6u17e.md)
+  Indicates whether the range set is valid for use with the provided attributed string.
 - [func remove<C>(Bound, within: C)](rangeset/remove(_:within:).md)
   Removes the range that contains only the specified index from the range set.
 - [func remove(contentsOf: Range<Bound>)](rangeset/remove(contentsof:).md)

@@ -1,6 +1,6 @@
 # shared
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: property
 
 The singleton app instance.

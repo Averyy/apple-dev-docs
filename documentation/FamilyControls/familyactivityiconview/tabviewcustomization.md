@@ -8,7 +8,6 @@ Specifies the customizations to apply to the sidebar representation of the tab v
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
 

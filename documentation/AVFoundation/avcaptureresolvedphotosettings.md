@@ -20,8 +20,8 @@ class AVCaptureResolvedPhotoSettings
 
 ## Mentions
 
-- [Configuring Camera Capture to Collect a Portrait Effects Matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
 - [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
+- [Configuring Camera Capture to Collect a Portrait Effects Matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
 
 #### Overview
 

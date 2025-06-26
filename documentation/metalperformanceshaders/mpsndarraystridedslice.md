@@ -1,7 +1,7 @@
 # MPSNDArrayStridedSlice
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,18 +14,28 @@
 ## Declaration
 
 ```swift
-class MPSNDArrayStridedSlice : MPSNDArrayUnaryKernel
+class MPSNDArrayStridedSlice
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var strides: MPSNDArrayOffsets](mpsndarraystridedslice/3143546-strides.md)
+- [var strides: MPSNDArrayOffsets](mpsndarraystridedslice/strides.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNDArrayUnaryKernel](mpsndarrayunarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

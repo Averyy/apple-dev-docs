@@ -30,7 +30,7 @@ Each entry in this dictionary is itself a dictionary with the keys described in 
 
 - `certificate`: The certificate from which values should be copied.
 - `keys`: Only OIDs that represent top-level keys in the returned dictionary can be specified. Unknown OIDs are ignored. See   for the list of known OIDs.
-- `error`: A pointer to a  doc://com.apple.documentation/documentation/corefoundation/cferror-ru8  variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `error`: A pointer to a   variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

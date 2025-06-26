@@ -16,8 +16,8 @@ Apply a text formatting definition to all nested editor views.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func attributedTextFormattingDefinition<D>(_ definition: D) -> some View where D : AttributedTextFormattingDefinition
+nonisolated
+func attributedTextFormattingDefinition<D>(_ definition: D) -> some View where D : AttributedTextFormattingDefinition
 ```
 
 #### Discussion
@@ -49,7 +49,7 @@ TextEditor(text: $text)
 
 > **Note**: A `Binding` to the text of a view with an `AttributedTextFormattingDefinition` may still contain values that do not adhere to text formatting definition. E.g., a `TextEditor` may choose to not apply constraints in the text formatting definition to parts of a bound attributed string that are not visible on screen.
 
-To manually enforce constraints, e.g. before serializing text contents, use the `AttributedTextValueConstraint/constrain(_:)-6cp64` method.
+To manually enforce constraints, e.g. before serializing text contents, use the `AttributedTextValueConstraint/constrain(_:)-(AttributedString)` method.
 
 
 ---

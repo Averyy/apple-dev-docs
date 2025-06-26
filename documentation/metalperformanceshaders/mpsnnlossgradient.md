@@ -1,7 +1,7 @@
 # MPSNNLossGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,32 +14,42 @@
 ## Declaration
 
 ```swift
-class MPSNNLossGradient : MPSCNNBinaryKernel
+class MPSNNLossGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnlossgradient/3131816-init.md)
-- [init(device: any MTLDevice, lossDescriptor: MPSCNNLossDescriptor)](mpsnnlossgradient/3131817-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnlossgradient/init(coder:device:).md)
+- [init(device: any MTLDevice, lossDescriptor: MPSCNNLossDescriptor)](mpsnnlossgradient/init(device:lossdescriptor:).md)
 ### Instance Properties
-- [var computeLabelGradients: Bool](mpsnnlossgradient/3131811-computelabelgradients.md)
-- [var delta: Float](mpsnnlossgradient/3131812-delta.md)
-- [var epsilon: Float](mpsnnlossgradient/3131815-epsilon.md)
-- [var labelSmoothing: Float](mpsnnlossgradient/3131818-labelsmoothing.md)
-- [var lossType: MPSCNNLossType](mpsnnlossgradient/3131819-losstype.md)
-- [var numberOfClasses: Int](mpsnnlossgradient/3131820-numberofclasses.md)
-- [var reduceAcrossBatch: Bool](mpsnnlossgradient/3547986-reduceacrossbatch.md)
-- [var reductionType: MPSCNNReductionType](mpsnnlossgradient/3131821-reductiontype.md)
-- [var weight: Float](mpsnnlossgradient/3131822-weight.md)
+- [var computeLabelGradients: Bool](mpsnnlossgradient/computelabelgradients.md)
+- [var delta: Float](mpsnnlossgradient/delta.md)
+- [var epsilon: Float](mpsnnlossgradient/epsilon.md)
+- [var labelSmoothing: Float](mpsnnlossgradient/labelsmoothing.md)
+- [var lossType: MPSCNNLossType](mpsnnlossgradient/losstype.md)
+- [var numberOfClasses: Int](mpsnnlossgradient/numberofclasses.md)
+- [var reduceAcrossBatch: Bool](mpsnnlossgradient/reduceacrossbatch.md)
+- [var reductionType: MPSCNNReductionType](mpsnnlossgradient/reductiontype.md)
+- [var weight: Float](mpsnnlossgradient/weight.md)
 ### Instance Methods
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], labels: [MPSImage], weights: [MPSImage]?, sourceStates: [MPSState]?) -> [MPSImage]](mpsnnlossgradient/3131813-encodebatch.md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], labels: [MPSImage], weights: [MPSImage]?, sourceStates: [MPSState]?, destinationGradients: [MPSImage])](mpsnnlossgradient/3131814-encodebatch.md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], labels: [MPSImage], weights: [MPSImage]?, sourceStates: [MPSState]?) -> [MPSImage]](mpsnnlossgradient/encodebatch(commandbuffer:sourcegradients:sourceimages:labels:weights:sourcestates:).md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], labels: [MPSImage], weights: [MPSImage]?, sourceStates: [MPSState]?, destinationGradients: [MPSImage])](mpsnnlossgradient/encodebatch(commandbuffer:sourcegradients:sourceimages:labels:weights:sourcestates:destinationgradients:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNBinaryKernel](mpscnnbinarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

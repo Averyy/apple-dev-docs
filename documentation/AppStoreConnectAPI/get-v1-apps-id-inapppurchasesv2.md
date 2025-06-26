@@ -10,9 +10,9 @@ Get a list of the in-app purchases for a specific app.
 
 ## Mentions
 
+- [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
 - [App Store Connect API 2.2 release notes](app-store-connect-api-2-2-release-notes.md)
 - [App Store Connect API 2.0 release notes](app-store-connect-api-2-0-release-notes.md)
-- [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
 
 ## See Also
 

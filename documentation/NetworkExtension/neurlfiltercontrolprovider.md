@@ -14,7 +14,7 @@ A protocol that defines an object that’s responsible for fetching pre-filter d
 ## Declaration
 
 ```swift
-protocol NEURLFilterControlProvider : NEAppExtension
+protocol NEURLFilterControlProvider : AppExtension
 ```
 
 #### Overview
@@ -38,7 +38,6 @@ Create a class that conforms to this protocol in your app extension, then provid
 
 ### Inherits From
 - [AppExtension](../ExtensionFoundation/AppExtension.md)
-- [NEAppExtension](neappextension.md)
 
 ## See Also
 

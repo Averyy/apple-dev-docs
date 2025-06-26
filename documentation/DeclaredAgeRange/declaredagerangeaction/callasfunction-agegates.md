@@ -1,9 +1,9 @@
 # callAsFunction(ageGates:_:_:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: method
 
-Returns an response indicating whether the person has declared their age range.
+Returns a response indicating whether the person has declared their age range.
 
 **Availability**:
 - iOS 26.0+ (Beta)

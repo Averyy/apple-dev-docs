@@ -3,8 +3,6 @@
 **Framework**: Metal Performance Shaders  
 **Kind**: enum
 
-Options that define the regularization type.
-
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
@@ -16,7 +14,7 @@ Options that define the regularization type.
 ## Declaration
 
 ```swift
-enum MPSNNRegularizationType : UInt, @unchecked Sendable
+enum MPSNNRegularizationType
 ```
 
 ## Topics
@@ -25,11 +23,18 @@ enum MPSNNRegularizationType : UInt, @unchecked Sendable
 - [MPSNNRegularizationType.L1](mpsnnregularizationtype/l1.md)
 - [MPSNNRegularizationType.L2](mpsnnregularizationtype/l2.md)
 - [MPSNNRegularizationType.None](mpsnnregularizationtype/none.md)
+### Initializers
+- [init?(rawValue: UInt)](mpsnnregularizationtype/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

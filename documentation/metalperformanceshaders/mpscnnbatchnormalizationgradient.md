@@ -1,7 +1,7 @@
 # MPSCNNBatchNormalizationGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient batch normalization kernel.
 
@@ -16,24 +16,34 @@ A gradient batch normalization kernel.
 ## Declaration
 
 ```swift
-class MPSCNNBatchNormalizationGradient : MPSCNNGradientKernel
+class MPSCNNBatchNormalizationGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnbatchnormalizationgradient/3019331-init.md)
-- [init(device: any MTLDevice, fusedNeuronDescriptor: MPSNNNeuronDescriptor?)](mpscnnbatchnormalizationgradient/3019332-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnbatchnormalizationgradient/init(coder:device:).md)
+- [init(device: any MTLDevice, fusedNeuronDescriptor: MPSNNNeuronDescriptor?)](mpscnnbatchnormalizationgradient/init(device:fusedneurondescriptor:).md)
 ### Instance Methods
-- [func encode(to: any MTLCommandBuffer, sourceGradient: MPSImage, sourceImage: MPSImage, batchNormalizationState: MPSCNNBatchNormalizationState) -> MPSImage](mpscnnbatchnormalizationgradient/2951885-encode.md)
-- [func encode(to: any MTLCommandBuffer, sourceGradient: MPSImage, sourceImage: MPSImage, batchNormalizationState: MPSCNNBatchNormalizationState, destinationGradient: MPSImage)](mpscnnbatchnormalizationgradient/2951895-encode.md)
-- [func encodeBatch(to: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], batchNormalizationState: MPSCNNBatchNormalizationState) -> [MPSImage]](mpscnnbatchnormalizationgradient/2942590-encodebatch.md)
-- [func encodeBatch(to: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], batchNormalizationState: MPSCNNBatchNormalizationState, destinationGradients: [MPSImage])](mpscnnbatchnormalizationgradient/2942608-encodebatch.md)
+- [func encode(to: any MTLCommandBuffer, sourceGradient: MPSImage, sourceImage: MPSImage, batchNormalizationState: MPSCNNBatchNormalizationState) -> MPSImage](mpscnnbatchnormalizationgradient/encode(to:sourcegradient:sourceimage:batchnormalizationstate:).md)
+- [func encode(to: any MTLCommandBuffer, sourceGradient: MPSImage, sourceImage: MPSImage, batchNormalizationState: MPSCNNBatchNormalizationState, destinationGradient: MPSImage)](mpscnnbatchnormalizationgradient/encode(to:sourcegradient:sourceimage:batchnormalizationstate:destinationgradient:).md)
+- [func encodeBatch(to: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], batchNormalizationState: MPSCNNBatchNormalizationState) -> [MPSImage]](mpscnnbatchnormalizationgradient/encodebatch(to:sourcegradients:sourceimages:batchnormalizationstate:).md)
+- [func encodeBatch(to: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], batchNormalizationState: MPSCNNBatchNormalizationState, destinationGradients: [MPSImage])](mpscnnbatchnormalizationgradient/encodebatch(to:sourcegradients:sourceimages:batchnormalizationstate:destinationgradients:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNGradientKernel](mpscnngradientkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

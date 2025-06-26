@@ -1,7 +1,7 @@
 # MPSNNArithmeticGradientStateNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of the clamp mask used by gradient arithmetic operators.
 
@@ -16,13 +16,20 @@ A representation of the clamp mask used by gradient arithmetic operators.
 ## Declaration
 
 ```swift
-class MPSNNArithmeticGradientStateNode : MPSNNBinaryGradientStateNode
+class MPSNNArithmeticGradientStateNode
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNBinaryGradientStateNode](mpsnnbinarygradientstatenode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

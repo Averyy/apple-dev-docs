@@ -17,6 +17,7 @@ Moves the node to a new parent node in the scene.
 ## Declaration
 
 ```swift
+@MainActor
 func move(toParent parent: SKNode)
 ```
 

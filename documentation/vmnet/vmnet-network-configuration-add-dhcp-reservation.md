@@ -5,12 +5,12 @@
 
 **Availability**:
 - Mac Catalyst 13.0+
-- macOS 10.10+
+- macOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
-func vmnet_network_configuration_add_dhcp_reservation(_ network: vmnet_network_configuration_ref, _ client: UnsafePointer<ether_addr_t>, _ reservation: UnsafePointer<in_addr>) -> vmnet_return_t
+func vmnet_network_configuration_add_dhcp_reservation(_ config: vmnet_network_configuration_ref, _ client: UnsafePointer<ether_addr_t>, _ reservation: UnsafePointer<in_addr>) -> vmnet_return_t
 ```
 
 #### Return Value
@@ -25,7 +25,7 @@ Reserve a DHCP address for a client with certain MAC address. Note that modifyin
 
 ## Parameters
 
-- `network`: The network object to be modified.
+- `config`: The network configuration object to be modified.
 - `client`: The mac address for which the DHCP address is reserved.
 - `reservation`: The DHCP address to be reserved.
 

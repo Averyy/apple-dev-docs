@@ -26,9 +26,9 @@ A type that represents part of your app’s user interface and provides modifier
 - [Declaring a custom view](declaring-a-custom-view.md)
 - [Configuring views](configuring-views.md)
 - [Reducing view modifier maintenance](reducing-view-modifier-maintenance.md)
-- [Performing a search operation](performing-a-search-operation.md)
 - [Displaying data in lists](displaying-data-in-lists.md)
 - [Migrating to the SwiftUI life cycle](migrating-to-the-swiftui-life-cycle.md)
+- [Performing a search operation](performing-a-search-operation.md)
 
 #### Overview
 
@@ -131,7 +131,6 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Displays a certificate sheet using the provided certificate trust.
 - [func chart3DCameraProjection(Chart3DCameraProjection) -> some View](view/chart3dcameraprojection(_:).md)
 - [func chart3DPose(_:)](view/chart3dpose(_:).md)
-- [func chart3DRenderingStyle(Chart3DRenderingStyle) -> some View](view/chart3drenderingstyle(_:).md)
 - [func chartZAxis(Visibility) -> some View](view/chartzaxis(_:).md)
   Sets the visibility of the z axis.
 - [func chartZAxis<Content>(content: () -> Content) -> some View](view/chartzaxis(content:).md)
@@ -190,7 +189,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Describes the way previews for a drop are composed.
 - [func formStyle<S>(S) -> some View](view/formstyle(_:).md)
   Sets the style for forms in a view hierarchy.
-- [func gameSyncedDirectoryLoadingView(directory: Binding<GameSyncedDirectory?>, finishedLoading: () -> Void) -> some View](view/gamesynceddirectoryloadingview(directory:finishedloading:).md)
+- [func gameSaveSyncingAlert(directory: Binding<GameSaveSyncedDirectory?>, finishedLoading: () -> Void) -> some View](view/gamesavesyncingalert(directory:finishedloading:).md)
   Presents a modal view while the game synced directory loads.
 - [func glassBackgroundEffect<S>(S, displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(_:displaymode:).md)
   Fills the view’s background with a custom glass background effect and container-relative rounded rectangle shape.
@@ -349,6 +348,10 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Sets the style to be used by the button. (see `PayWithApplePayButtonStyle`).
 - [func popoverTip((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View](view/popovertip(_:arrowedge:action:).md)
   Presents a popover tip on the modified view.
+- [func popoverTip((any Tip)?, isPresented: Binding<Bool>?, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View](view/popovertip(_:ispresented:attachmentanchor:arrowedge:action:).md)
+  Presents a popover tip on the modified view.
+- [func popoverTip((any Tip)?, isPresented: Binding<Bool>?, attachmentAnchor: PopoverAttachmentAnchor, arrowEdges: Edge.Set, action: (Tips.Action) -> Void) -> some View](view/popovertip(_:ispresented:attachmentanchor:arrowedges:action:).md)
+  Presents a popover tip on the modified view.
 - [func postToPhotosSharedAlbumSheet(isPresented:items:photoLibrary:defaultAlbumIdentifier:completion:)](view/posttophotossharedalbumsheet(ispresented:items:photolibrary:defaultalbumidentifier:completion:).md)
   Presents an “Add to Shared Album” sheet that allows the user to post the given items to a shared album.
 - [func preferredSubscriptionOffer((Product, Product.SubscriptionInfo, [Product.SubscriptionOffer]) -> Product.SubscriptionOffer?) -> some View](view/preferredsubscriptionoffer(_:).md)
@@ -368,7 +371,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [func realityViewCameraControls(CameraControls) -> some View](view/realityviewcameracontrols(_:).md)
   Adds gestures that control the position and direction of a virtual camera.
 - [func realityViewLayoutBehavior(RealityViewLayoutOption) -> some View](view/realityviewlayoutbehavior(_:).md)
-  Controls the frame sizing and content alignment behavior for `RealityView`
+  A view modifier that controls the frame sizing and content alignment behavior for `RealityView`
 - [func rotation3DLayout(Rotation3D) -> some View](view/rotation3dlayout(_:).md)
   Rotates a view with impacts to its frame in a containing layout
 - [func rotation3DLayout(_:axis:)](view/rotation3dlayout(_:axis:).md)
@@ -385,6 +388,8 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Configures the scroll edge effect style for scroll views within this hierarchy.
 - [func scrollInputBehavior(ScrollInputBehavior, for: ScrollInputKind) -> some View](view/scrollinputbehavior(_:for:).md)
   Enables or disables scrolling in scrollable views when using particular inputs.
+- [func searchSelection(Binding<TextSelection?>) -> some View](view/searchselection(_:).md)
+  Binds the selection of the search field associated with the nearest searchable modifier to the given [`TextSelection`](textselection.md) value.
 - [func searchToolbarBehavior(SearchToolbarBehavior) -> some View](view/searchtoolbarbehavior(_:).md)
   Configures the behavior for search in the toolbar.
 - [func sectionIndexLabel(_:)](view/sectionindexlabel(_:).md)
@@ -457,8 +462,12 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Returns a new view such that any text views within it will use `renderer` to draw themselves.
 - [func textSelectionAffinity(TextSelectionAffinity) -> some View](view/textselectionaffinity(_:).md)
   Sets the direction of a selection or cursor relative to a text character.
+- [func tipAnchor<AnchorID>(AnchorID) -> some View](view/tipanchor(_:).md)
+  Sets a value for the specified tip anchor to be used to anchor a tip view to the `.bounds` of the view.
 - [func tipBackground<S>(S) -> some View](view/tipbackground(_:).md)
   Sets the tip’s view background to a style. Currently this only applies to inline tips, not popover tips.
+- [func tipBackgroundInteraction(PresentationBackgroundInteraction) -> some View](view/tipbackgroundinteraction(_:).md)
+  Controls whether people can interact with the view behind a presented tip.
 - [func tipCornerRadius(CGFloat, antialiased: Bool) -> some View](view/tipcornerradius(_:antialiased:).md)
   Sets the corner radius for an inline tip view.
 - [func tipImageSize(CGSize) -> some View](view/tipimagesize(_:).md)

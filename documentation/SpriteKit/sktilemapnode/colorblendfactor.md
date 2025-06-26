@@ -17,7 +17,6 @@ Controls the blending between the texture and the tile map object’s [`color`](
 ## Declaration
 
 ```swift
-@MainActor
 var colorBlendFactor: CGFloat { get set }
 ```
 

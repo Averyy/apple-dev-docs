@@ -22,9 +22,9 @@ struct ImageAnchoringSource
 ## Topics
 
 ### Initializers
-- [init(_:physicalSize:)](anchoringcomponent/imageanchoringsource-9pvaw/init(_:physicalsize:).md)
+- [init(_:physicalSize:)](anchoringcomponent/imageanchoringsource-9gd9m/init(_:physicalsize:).md)
   Creates the image anchoring source from image file URL.
-- [init(group:name:)](anchoringcomponent/imageanchoringsource-9pvaw/init(group:name:).md)
+- [init(group:name:)](anchoringcomponent/imageanchoringsource-9gd9m/init(group:name:).md)
   Creates the image anchoring source by group and name in AR Resources.
 
 ## Relationships

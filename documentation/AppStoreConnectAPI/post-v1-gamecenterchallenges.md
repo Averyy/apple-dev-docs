@@ -8,6 +8,10 @@ Add a challenge to a Game Center detail or group by referencing an existing lead
 **Availability**:
 - App Store Connect API 4.0+
 
+## Mentions
+
+- [Configuring Game Center challenges](configuring-game-center-challenges.md)
+
 ## See Also
 
 - [Read challenge information](get-v1-gamecenterchallenges-_id_.md)

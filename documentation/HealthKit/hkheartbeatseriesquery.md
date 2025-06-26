@@ -55,6 +55,8 @@ class HKHeartbeatSeriesQuery
   A query interface that reads the underlying voltage measurements for an electrocardiogram sample using Swift concurrency.
 - [class HKElectrocardiogramQuery](hkelectrocardiogramquery.md)
   A query that returns the underlying voltage measurements for an electrocardiogram sample.
+- [class HKWorkoutEffortRelationship](hkworkouteffortrelationship.md)
+- [class HKWorkoutEffortRelationshipQuery](hkworkouteffortrelationshipquery.md)
 
 
 ---

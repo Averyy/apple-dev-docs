@@ -1,0 +1,44 @@
+# init(device:)
+
+**Framework**: Metal Performance Shaders  
+**Kind**: init
+
+Initializes a downwards 5-tap image pyramid with the default filter kernel and device.
+
+**Availability**:
+- iOS 10.0+
+- iPadOS 10.0+
+- Mac Catalyst 13.0+
+- macOS 10.13+
+- tvOS 10.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+convenience init(device: any MTLDevice)
+```
+
+#### Return Value
+
+A valid [`MPSImagePyramid`](mpsimagepyramid.md) object or `nil`, if failure.
+
+#### Discussion
+
+The filter kernel is the outer product of `w = [1/16, 1/4, 3/8, 1/4, 1/16]^T`, with itself.
+
+## Parameters
+
+- `device`: The device the filter will run on.
+
+## See Also
+
+- [convenience init(device: any MTLDevice, centerWeight: Float)](mpsimagepyramid/init(device:centerweight:).md)
+  Initialize a downwards 5-tap image pyramid with a central weight parameter and device.
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, weights: UnsafePointer<Float>)](mpsimagepyramid/init(device:kernelwidth:kernelheight:weights:).md)
+  Initialize a downwards n-tap image pyramid with a custom filter kernel and device.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/mpsimagepyramid/init(device:))*

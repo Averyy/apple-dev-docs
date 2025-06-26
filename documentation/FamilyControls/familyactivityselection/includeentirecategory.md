@@ -8,7 +8,6 @@ A Boolean value that indicates whether the selection should include applications
 **Availability**:
 - iOS 15.2+
 - iPadOS 15.2+
-- Mac Catalyst 15.2+
 
 ## Declaration
 

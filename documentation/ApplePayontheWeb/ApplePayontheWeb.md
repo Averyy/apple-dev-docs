@@ -50,8 +50,8 @@ For design guidance, see [`Human Interface Guidelines > Apple Pay`](https://deve
 ## Topics
 
 ### Essentials
-- [Using the Apple Pay JS SDK for iOS 18](using-the-apple-pay-js-sdk-for-ios-18.md)
-  Add the latest Apple Pay JS SDK.
+- [Loading the latest version of the Apple Pay JS SDK](loading-the-latest-version-of-apple-pay-js.md)
+  Link to the most recent autoupdating version of the Apple Pay JS SDK or a version of your choice.
 ### Apple Pay setup
 - [Setting Up Your Server](setting-up-your-server.md)
   Set up your server for secure communications with Apple Pay.
@@ -81,6 +81,9 @@ For design guidance, see [`Human Interface Guidelines > Apple Pay`](https://deve
   Implement Apple Pay on the web using Apple’s JavaScript API.
 - [Payment Request API](payment-request-api.md)
   Accept payments on your website with Apple Pay using the Payment Request API.
+### Apple Pay JS SDK change log
+- [Apple Pay JS change log](apple-pay-js-change-log.md)
+  Learn about new features and updates in the Apple Pay JS SDK.
 
 
 ---

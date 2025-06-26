@@ -8,12 +8,12 @@ An activation function that returns the sigmoid function of its input.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst ?+
 - macOS 10.12+
-- tvOS 10.0+
 - visionOS ?+
 - watchOS 3.0+
 - Unknown ?+ - Deprecated
-- Mac Catalyst ?+
+- tvOS 10.0+
 
 ## Declaration
 

@@ -49,7 +49,7 @@ A render context provides size and scaling information and offers a service for 
 - [struct AVPixelAspectRatio](avpixelaspectratio.md)
   A structure that defines a pixel aspect ratio for a rendering context.
 ### Instance Methods
-- [func mutablePixelBuffer() -> CVMutablePixelBuffer?](avvideocompositionrendercontext/mutablepixelbuffer.md)
+- [func makeMutablePixelBuffer() throws -> CVMutablePixelBuffer](avvideocompositionrendercontext/makemutablepixelbuffer.md)
   Vends a CVMutablePixelBuffer to use for rendering. The buffer will have its kCVImageBufferCleanApertureKey and kCVImageBufferPixelAspectRatioKey attachments set to match the current composition processor properties.
 
 ## Relationships

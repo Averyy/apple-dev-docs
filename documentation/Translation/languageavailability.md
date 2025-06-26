@@ -42,11 +42,11 @@ func translationIsSupported(from source: Locale.Language, to target: Locale.Lang
 ### Getting supported languages
 - [var supportedLanguages: [Locale.Language]](languageavailability/supportedlanguages.md)
   A list of translation languages the framework supports.
-### Checking availability
+### Checking language availability
 - [func status(from: Locale.Language, to: Locale.Language?) async -> LanguageAvailability.Status](languageavailability/status(from:to:).md)
-  Checks to see if a specific language pairing is installed and ready for translation.
+  Checks for the installation of a specific language pairing and whether it’s ready for translation.
 - [func status(for: String, to: Locale.Language?) async throws -> LanguageAvailability.Status](languageavailability/status(for:to:).md)
-  Checks to see if a language pairing is supported based off a string of sample text.
+  Checks to see if the framework supports the language pairing based off a string of sample text.
 - [LanguageAvailability.Status](languageavailability/status.md)
   The availability status for a language or language pairing.
 

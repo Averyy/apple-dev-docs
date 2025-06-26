@@ -8,7 +8,7 @@ Notifies the observer when a test suite reports an issue.
 ## Declaration
 
 ```swift
-optional func testSuite(_ testSuite: XCTestSuite, didRecord issue: XCTIssueReference)
+optional func testSuite(_ testSuite: XCTestSuite, didRecord issue: XCTIssue)
 ```
 
 ## Parameters

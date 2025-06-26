@@ -11,7 +11,6 @@ A class for scheduling tasks that add background support to your app’s most cr
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
-- watchOS 6.0+
 
 ## Declaration
 
@@ -73,6 +72,8 @@ Background tasks give your app a way to run code even when the app is suspended:
 
 ## See Also
 
+- [Background Tasks updates](../Updates/BackgroundTasks.md)
+  Learn about important changes in Background Tasks.
 - [class BGTask](bgtask.md)
   An abstract class for the framework’s tasks.
 

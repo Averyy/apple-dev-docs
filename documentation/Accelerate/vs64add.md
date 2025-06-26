@@ -17,7 +17,7 @@ Signed 64-bit addition (modular arithmetic).
 ## Declaration
 
 ```swift
-static vSInt32 vS64Add(vSInt32 __vbasicops_vA, vSInt32 __vbasicops_vB);
+static vUInt32 vS64Add(vSInt32 __vbasicops_vA, vSInt32 __vbasicops_vB);
 ```
 
 ## See Also

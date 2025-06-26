@@ -18,6 +18,9 @@ Support TV provider and Apple TV app functionality.
 
 ## Topics
 
+### Essentials
+- [Video Subscriber Account updates](../Updates/VideoSubscriberAccount.md)
+  Learn about important changes in Video Subscriber Account.
 ### TV provider authentication
 - [class VSAccountManager](vsaccountmanager.md)
   The object that coordinates your app’s authentication requests with a TV provider’s authentication service.

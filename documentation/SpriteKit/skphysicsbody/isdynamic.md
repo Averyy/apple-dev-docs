@@ -22,8 +22,8 @@ var isDynamic: Bool { get set }
 
 ## Mentions
 
-- [Getting Started with Physics Bodies](getting-started-with-physics-bodies.md)
 - [Getting Started with Spring Joints](getting-started-with-spring-joints.md)
+- [Getting Started with Physics Bodies](getting-started-with-physics-bodies.md)
 
 #### Discussion
 

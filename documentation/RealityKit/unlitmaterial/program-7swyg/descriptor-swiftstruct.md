@@ -21,7 +21,7 @@ struct Descriptor
 ## Topics
 
 ### Initializers
-- [init()](unlitmaterial/program-7swyg/descriptor-swift.struct/init.md)
+- [init()](unlitmaterial/program-9tv7i/descriptor-swift.struct/init.md)
 ### Instance Properties
 - [var applyPostProcessToneMap: Bool](unlitmaterial/program-7swyg/descriptor-swift.struct/applypostprocesstonemap.md)
   A Boolean value that determines whether RealityKit will tonemap the output of this material.

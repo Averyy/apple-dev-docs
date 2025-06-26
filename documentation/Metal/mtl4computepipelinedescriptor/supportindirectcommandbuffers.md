@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-A value indicating whether the pipeline should support indirect command buffers.
+A value indicating whether the pipeline supports Metal indirect command buffers.
 
 **Availability**:
 - iOS 26.0+ (Beta)

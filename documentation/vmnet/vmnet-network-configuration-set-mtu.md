@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-func vmnet_network_configuration_set_mtu(_ network: vmnet_network_configuration_ref, _ mtu: UInt32) -> vmnet_return_t
+func vmnet_network_configuration_set_mtu(_ config: vmnet_network_configuration_ref, _ mtu: UInt32) -> vmnet_return_t
 ```
 
 #### Return Value
@@ -23,7 +23,7 @@ Configures the maximum transmission unit (MTU) for a vmnet network.
 
 ## Parameters
 
-- `network`: The network object to be modified.
+- `config`: The network configuration object to be modified.
 - `mtu`: The MTU.
 
 

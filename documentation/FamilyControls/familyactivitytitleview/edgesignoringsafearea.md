@@ -8,7 +8,6 @@ Changes the view’s proposed area to extend outside the screen’s safe areas.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+

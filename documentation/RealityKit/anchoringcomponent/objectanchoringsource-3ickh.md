@@ -24,10 +24,10 @@ struct ObjectAnchoringSource
 ### Initializers
 - [init(URL)](anchoringcomponent/objectanchoringsource-3ickh/init(_:).md)
   Creates the object anchoring source by reference object file URL.
+- [init(group:name:)](anchoringcomponent/objectanchoringsource-3ickh/init(group:name:).md)
+  Creates the object anchoring source by group and name in AR Resources.
 - [init(name: String, in: Bundle)](anchoringcomponent/objectanchoringsource-3ickh/init(name:in:).md)
   Creates the object anchoring source by reference object file asset with provided name and bundle.
-- [init(group:name:)](anchoringcomponent/objectanchoringsource-7nh5n/init(group:name:).md)
-  Creates the object anchoring source by group and name in AR Resources.
 
 ## Relationships
 

@@ -11,7 +11,6 @@ A time-consuming, necessary processing task that runs while the app is in the ba
 - Mac Catalyst 17.0+
 - tvOS ?+
 - visionOS 1.0+
-- watchOS 10.0+
 
 ## Declaration
 

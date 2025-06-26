@@ -1,7 +1,7 @@
 # MPSNNReduceFeatureChannelsSum
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A reduction filter that returns the sum of all values for each feature channel in an image.
 
@@ -16,21 +16,31 @@ A reduction filter that returns the sum of all values for each feature channel i
 ## Declaration
 
 ```swift
-class MPSNNReduceFeatureChannelsSum : MPSNNReduceUnary
+class MPSNNReduceFeatureChannelsSum
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnreducefeaturechannelssum/3197841-init.md)
-- [init(device: any MTLDevice)](mpsnnreducefeaturechannelssum/2942538-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnreducefeaturechannelssum/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsnnreducefeaturechannelssum/init(device:).md)
 ### Instance Properties
-- [var weight: Float](mpsnnreducefeaturechannelssum/2942545-weight.md)
+- [var weight: Float](mpsnnreducefeaturechannelssum/weight.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNReduceUnary](mpsnnreduceunary.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -64,10 +74,6 @@ class MPSNNReduceFeatureChannelsSum : MPSNNReduceUnary
   A reduction filter that returns the weighted sum of all values for each feature channel in an image.
 - [class MPSNNReduceFeatureChannelsAndWeightsMean](mpsnnreducefeaturechannelsandweightsmean.md)
   A reduction filter that returns the weighted sum for each feature channel in an image.
-- [class MPSNNReduceUnary](mpsnnreduceunary.md)
-  The base class for unary reduction filters.
-- [class MPSNNReduceBinary](mpsnnreducebinary.md)
-  The base class for binary reduction filters.
 
 
 ---

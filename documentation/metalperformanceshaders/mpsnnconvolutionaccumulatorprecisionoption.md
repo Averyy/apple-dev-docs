@@ -6,12 +6,12 @@
 Options that specify convolution accumulator precision.
 
 **Availability**:
-- iOS 11.3+
-- iPadOS 11.3+
-- Mac Catalyst 13.0+
-- macOS 10.13.4+
-- tvOS 11.3+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -22,16 +22,22 @@ struct MPSNNConvolutionAccumulatorPrecisionOption
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mpsnnconvolutionaccumulatorprecisionoption/2942695-init.md)
+- [init(rawValue: UInt)](mpsnnconvolutionaccumulatorprecisionoption/init(rawvalue:).md)
 ### Type Properties
-- [static var float: MPSNNConvolutionAccumulatorPrecisionOption](mpsnnconvolutionaccumulatorprecisionoption/2942457-float.md)
-- [static var half: MPSNNConvolutionAccumulatorPrecisionOption](mpsnnconvolutionaccumulatorprecisionoption/2942458-half.md)
+- [static var float: MPSNNConvolutionAccumulatorPrecisionOption](mpsnnconvolutionaccumulatorprecisionoption/float.md)
+- [static var half: MPSNNConvolutionAccumulatorPrecisionOption](mpsnnconvolutionaccumulatorprecisionoption/half.md)
 
 ## Relationships
 
 ### Conforms To
-- [OptionSet](../swift/optionset.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [OptionSet](../Swift/OptionSet.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SetAlgebra](../Swift/SetAlgebra.md)
 
 
 ---

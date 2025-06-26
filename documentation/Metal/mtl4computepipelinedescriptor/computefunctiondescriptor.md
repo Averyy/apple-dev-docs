@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-A function descriptor representing the function that will be executed by the compute pipeline.
+A descriptor representing the compute pipeline’s function.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -19,6 +19,10 @@ A function descriptor representing the function that will be executed by the com
 @NSCopying
 var computeFunctionDescriptor: MTL4FunctionDescriptor? { get set }
 ```
+
+#### Discussion
+
+You don’t assign instances of [`MTL4FunctionDescriptor`](mtl4functiondescriptor.md) to this property directly, instead assign an instance of one of its subclasses, such as [`MTL4LibraryFunctionDescriptor`](mtl4libraryfunctiondescriptor.md), which represents a function from a Metal library.
 
 
 ---

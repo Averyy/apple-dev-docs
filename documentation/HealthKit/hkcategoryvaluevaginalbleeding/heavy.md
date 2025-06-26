@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: case
 
+Heavy vaginal bleeding.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

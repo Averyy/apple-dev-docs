@@ -1,4 +1,4 @@
 Completed scraping Speech!
-Total pages scraped: 348
+Total pages scraped: 352
 Pages skipped (unchanged): 1
 Pages failed: 0

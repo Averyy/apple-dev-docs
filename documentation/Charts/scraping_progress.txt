@@ -1,4 +1,4 @@
 Completed scraping Swift Charts!
-Total pages scraped: 601
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 602
 Pages failed: 0

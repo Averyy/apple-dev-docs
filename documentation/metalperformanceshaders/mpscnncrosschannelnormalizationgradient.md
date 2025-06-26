@@ -1,7 +1,7 @@
 # MPSCNNCrossChannelNormalizationGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient normalization kernel applied across feature channels.
 
@@ -16,24 +16,34 @@ A gradient normalization kernel applied across feature channels.
 ## Declaration
 
 ```swift
-class MPSCNNCrossChannelNormalizationGradient : MPSCNNGradientKernel
+class MPSCNNCrossChannelNormalizationGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnncrosschannelnormalizationgradient/2942476-init.md)
-- [init(device: any MTLDevice, kernelSize: Int)](mpscnncrosschannelnormalizationgradient/2942463-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnncrosschannelnormalizationgradient/init(coder:device:).md)
+- [init(device: any MTLDevice, kernelSize: Int)](mpscnncrosschannelnormalizationgradient/init(device:kernelsize:).md)
 ### Instance Properties
-- [var alpha: Float](mpscnncrosschannelnormalizationgradient/2942464-alpha.md)
-- [var beta: Float](mpscnncrosschannelnormalizationgradient/2942477-beta.md)
-- [var delta: Float](mpscnncrosschannelnormalizationgradient/2942465-delta.md)
-- [var kernelSize: Int](mpscnncrosschannelnormalizationgradient/2942468-kernelsize.md)
+- [var alpha: Float](mpscnncrosschannelnormalizationgradient/alpha.md)
+- [var beta: Float](mpscnncrosschannelnormalizationgradient/beta.md)
+- [var delta: Float](mpscnncrosschannelnormalizationgradient/delta.md)
+- [var kernelSize: Int](mpscnncrosschannelnormalizationgradient/kernelsize.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNGradientKernel](mpscnngradientkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

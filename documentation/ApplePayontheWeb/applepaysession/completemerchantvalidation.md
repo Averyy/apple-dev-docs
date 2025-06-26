@@ -19,8 +19,8 @@ undefined completeMerchantValidation(
 
 ## Mentions
 
-- [Requesting an Apple Pay payment session](requesting-an-apple-pay-payment-session.md)
 - [Providing Merchant Validation](providing-merchant-validation.md)
+- [Requesting an Apple Pay payment session](requesting-an-apple-pay-payment-session.md)
 
 #### Discussion
 

@@ -23,8 +23,8 @@ class NLTagger
 ## Mentions
 
 - [Identifying people, places, and organizations](identifying-people-places-and-organizations.md)
-- [Identifying parts of speech](identifying-parts-of-speech.md)
 - [Creating a word tagger model](creating-a-word-tagger-model.md)
+- [Identifying parts of speech](identifying-parts-of-speech.md)
 
 #### Overview
 

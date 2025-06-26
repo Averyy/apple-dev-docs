@@ -25,7 +25,7 @@ func requestAuthorization(toShare typesToShare: Set<HKSampleType>, read typesToR
 
 #### Discussion
 
-HealthKit performs these requests asynchronously. If you call this method with a new data type (a type of data that the user hasn’t previously granted or denied permission for in this app), the system automatically displays the permission form, listing all the requested permissions. After the user has finished responding, this method calls its completion block on a background queue. If the user has already chosen to grant or prohibit access to all of the types specified, HealthKit calls the completion without prompting the user.
+HealthKit performs these requests asynchronously. If you call this method with a new data type (a type of data that the user hasn’t previously granted or denied permission for in this app), the system automatically displays the permission form, listing all the requested permissions. If the user has already chosen to grant or prohibit access to all of the types specified, HealthKit returns the request without prompting the user.
 
 > ❗ **Important**:  In watchOS 6 and later, this method displays the permission form on Apple Watch, enabling independent HealthKit apps. In watchOS 5 and earlier, this method prompts the user to authorize the app on their paired iPhone. For more information, see `Creating Independent watchOS Apps`.
 

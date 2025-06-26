@@ -16,9 +16,9 @@ string ScreenshotDisplayType
 
 ## Mentions
 
-- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
 - [App Store Connect API 2.1 release notes](app-store-connect-api-2-1-release-notes.md)
 - [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
+- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
 
 #### Possible Values
 

@@ -17,7 +17,6 @@ The acceleration to apply to a particle’s horizontal velocity.
 ## Declaration
 
 ```swift
-@MainActor
 var xAcceleration: CGFloat { get set }
 ```
 

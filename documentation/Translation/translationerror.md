@@ -26,26 +26,25 @@ struct TranslationError
   The framework can’t identify the source language automatically.
 - [static let internalError: TranslationError](translationerror/internalerror.md)
   An error occurred internal to the translation engine.
+- [static let alreadyCancelled: TranslationError](translationerror/alreadycancelled.md)
+  An error describing a translation session that you’ve cancelled before, which prevents the session from producing additional results.
+- [static let notInstalled: TranslationError](translationerror/notinstalled.md)
+  The device doesn’t have the necessary languages downloaded to perform a translation and the session can’t request the person to download them.
 ### Handling unsupported errors
 - [static let unsupportedSourceLanguage: TranslationError](translationerror/unsupportedsourcelanguage.md)
   The framework doesn’t support the specified or detected source language.
 - [static let unsupportedTargetLanguage: TranslationError](translationerror/unsupportedtargetlanguage.md)
   The framework doesn’t support the specified or chosen target language.
 - [static let unsupportedLanguagePairing: TranslationError](translationerror/unsupportedlanguagepairing.md)
-  The framework doesn’t support the the specified source and target language pairing.
-### Operators
-- [static func ~= (TranslationError, any Error) -> Bool](translationerror/~=(_:_:).md)
-  You can use `switch` and `case` to check for a given value of `TranslationError` if you want to handle each error case separately.
-### Instance Properties
+  The framework doesn’t support the specified source and target language pairing.
+### Describing errors
 - [var errorDescription: String?](translationerror/errordescription.md)
-  A localized message describing what error occurred.
+  A localized message describing the error.
 - [var failureReason: String?](translationerror/failurereason.md)
   A localized message describing the reason for the failure.
-### Type Properties
-- [static let alreadyCancelled: TranslationError](translationerror/alreadycancelled.md)
-  The session was already cancelled, so can’t produce more results.
-- [static let notInstalled: TranslationError](translationerror/notinstalled.md)
-  The device doesn’t have the necessary languages downloaded to perform a translation, and this session can’t request the user download them. This error can be thrown if the languages are supported but not approved, or if they’re approved but not finished downloading yet.
+### Comparing errors
+- [static func ~= (TranslationError, any Error) -> Bool](translationerror/~=(_:_:).md)
+  This operator allows you to check for a given value of a translation error and handle each error case.
 ### Default Implementations
 - [Error Implementations](translationerror/error-implementations.md)
 - [LocalizedError Implementations](translationerror/localizederror-implementations.md)

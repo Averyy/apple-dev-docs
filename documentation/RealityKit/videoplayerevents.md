@@ -43,6 +43,7 @@ For more information on subscribing to scene events, see `RealityKit/Scene/Event
 - [enum AudioEvents](audioevents.md)
   Events associated with audio playback.
 - [enum ImagePresentationEvents](imagepresentationevents.md)
+  Events associated with viewing mode transitions for image presentation components.
 
 
 ---

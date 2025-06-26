@@ -1,7 +1,7 @@
 # MPSImageLaplacianPyramid
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that convolves an image with a Laplacian filter.
 
@@ -16,19 +16,32 @@ A filter that convolves an image with a Laplacian filter.
 ## Declaration
 
 ```swift
-class MPSImageLaplacianPyramid : MPSImagePyramid
+class MPSImageLaplacianPyramid
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var laplacianBias: Float](mpsimagelaplacianpyramid/2966645-laplacianbias.md)
-- [var laplacianScale: Float](mpsimagelaplacianpyramid/2966646-laplacianscale.md)
+- [var laplacianBias: Float](mpsimagelaplacianpyramid/laplacianbias.md)
+- [var laplacianScale: Float](mpsimagelaplacianpyramid/laplacianscale.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSImagePyramid](mpsimagepyramid.md)
+### Inherited By
+- [MPSImageLaplacianPyramidAdd](mpsimagelaplacianpyramidadd.md)
+- [MPSImageLaplacianPyramidSubtract](mpsimagelaplacianpyramidsubtract.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

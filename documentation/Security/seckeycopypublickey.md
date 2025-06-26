@@ -22,9 +22,9 @@ func SecKeyCopyPublicKey(_ key: SecKey) -> SecKey?
 
 ## Mentions
 
-- [Getting an Existing Key](getting-an-existing-key.md)
-- [Generating New Cryptographic Keys](generating-new-cryptographic-keys.md)
 - [Protecting keys with the Secure Enclave](protecting-keys-with-the-secure-enclave.md)
+- [Generating New Cryptographic Keys](generating-new-cryptographic-keys.md)
+- [Getting an Existing Key](getting-an-existing-key.md)
 
 #### Return Value
 

@@ -8,9 +8,11 @@ Edit your app and extension targets in your Xcode project to use Background Asse
 
 Before you can use the Background Assets framework, you need to add an extension target to your project, configure the App Groups capability for both the app and extension target, and add some Background Asset keys to the app’s information property list. Then the system notifies your extension when system events occur so that it can initiate downloads.
 
+> **Note**: This article applies to apps that use unmanaged Background Assets with your own hosting server. For information about Apple-Hosted Background Assets, see [`Downloading asset packs hosted by Apple`](downloading-asset-packs-hosted-by-apple.md).
+
 ##### Add an App Extension to Your Project
 
-Add an extension target to your new or existing Xcode project. Choose New > Target and, in the sheet that appears, choose the Background Download template under Application Extension, and click Next. In the next dialog that appears, click Activate to use the extension scheme Xcode creates.
+Add an extension target to your new or existing Xcode project. Choose New > Target and, in the sheet that appears, choose the Background Download template under Application Extension, and click Next. In the dialog, enter a target name, choose an extension type, and click Finish. In the next dialog, click Activate to use the extension scheme Xcode creates.
 
 If you don’t have an Xcode project for your app, first create one from an Application template under the platform you support, such as iOS or macOS. For more information, see [`Creating an Xcode project for an app`](https://developer.apple.com/documentation/Xcode/creating-an-xcode-project-for-an-app).
 

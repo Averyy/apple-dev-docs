@@ -64,7 +64,6 @@ All three renderers support using attributes specified in the USD file, but Real
 - Primitive Shapes are basic geometry types such as cubes, cones, and spheres. The plane type is not supported.
 - Alembic supports requires files written using the Ogawa format. The Legacy HDF5 format is not supported.
 - The Preview purpose is used by all three renderers.
-- Storm supports materials on geometry subset, beginning with macOS 14.
 - RealityKit supports subdivision on objects using a USD preview surface shader, starting with visionOS 2, macOS 15, iOS 18, and iPadOS 18. Objects with custom MaterialX materials use standard polygonal meshes.
 
 #### Review Lighting Support
@@ -116,17 +115,20 @@ The USD specification includes a number of features for use by shaders and even 
 | USD preview surface shader | ✔ | ✔ | ✔ |
 | MaterialX | ✔ |  | ✔ |
 | Textures | ✔ | ✔ | ✔ |
+| AVIF Textures | ✔ | ✔ | ✔ |
 | Texture wrap modes | ✔ | ✔ | ✔ |
 | Texture channel references | partial | ✔ | ✔ |
 | Texture transforms | partial | ✔ | ✔ |
 | Specular workflow |  |  | ✔ |
 | Multiple UV sets | partial | ✔ | ✔ |
-| Scale | partial | ✔ |  |
-| Bias |  | ✔ |  |
-| ColorSpace | ✔ |  |  |
+| Scale | partial | ✔ | ✔ |
+| Bias |  | ✔ | ✔ |
+| ColorSpace | ✔ |  | ✔ |
 | Displacement |  |  |  |
 
 MaterialX support is available on Reality Composer Pro, visionOS, visionOS Simulator, macOS 15, iOS 18, iPadOS 18 and later.
+
+Textures in the AVIF format are supported in visionOS 2.4, visionOS Simulator 2.4, macOS 15.4, iOS 18.4, iPadOS 18.4 and later.
 
 RealityKit has partial support for some shader features:
 

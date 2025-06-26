@@ -23,8 +23,8 @@ protocol URLSessionTaskDelegate : URLSessionDelegate
 ## Mentions
 
 - [Uploading streams of data](uploading-streams-of-data.md)
-- [Downloading files from websites](downloading-files-from-websites.md)
 - [Fetching website data into memory](fetching-website-data-into-memory.md)
+- [Downloading files from websites](downloading-files-from-websites.md)
 - [Uploading data to a website](uploading-data-to-a-website.md)
 
 #### Overview

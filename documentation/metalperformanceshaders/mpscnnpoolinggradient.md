@@ -1,7 +1,7 @@
 # MPSCNNPoolingGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient pooling kernel.
 
@@ -16,22 +16,37 @@ A gradient pooling kernel.
 ## Declaration
 
 ```swift
-class MPSCNNPoolingGradient : MPSCNNGradientKernel
+class MPSCNNPoolingGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolinggradient/2942350-init.md)
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnpoolinggradient/2942337-init.md)
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolinggradient/2942347-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolinggradient/init(coder:device:).md)
+- [convenience init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnpoolinggradient/init(device:kernelwidth:kernelheight:).md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolinggradient/init(device:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:).md)
 ### Instance Properties
-- [var sourceSize: MTLSize](mpscnnpoolinggradient/2942343-sourcesize.md)
+- [var sourceSize: MTLSize](mpscnnpoolinggradient/sourcesize.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNGradientKernel](mpscnngradientkernel.md)
+### Inherited By
+- [MPSCNNDilatedPoolingMaxGradient](mpscnndilatedpoolingmaxgradient.md)
+- [MPSCNNPoolingAverageGradient](mpscnnpoolingaveragegradient.md)
+- [MPSCNNPoolingL2NormGradient](mpscnnpoolingl2normgradient.md)
+- [MPSCNNPoolingMaxGradient](mpscnnpoolingmaxgradient.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

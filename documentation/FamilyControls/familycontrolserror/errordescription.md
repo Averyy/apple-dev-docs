@@ -8,7 +8,6 @@ A nonlocalized description of the error, suitable for debugging.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 - macOS 13.0+
 
 ## Declaration

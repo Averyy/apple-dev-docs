@@ -27,11 +27,6 @@ The framework calls this method. You don’t need to call it in your app extensi
 
 - `connection`: The incoming XPC connection.
 
-## See Also
-
-- [var xpcConnection: NSXPCConnection?](neappextensionconfiguration/xpcconnection.md)
-  The XPC connection to the host process.
-
 
 ---
 

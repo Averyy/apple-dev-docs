@@ -3,6 +3,8 @@
 **Framework**: Speech  
 **Kind**: class
 
+An object that describes, downloads, and installs a selection of assets.
+
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
@@ -16,6 +18,12 @@
 @objc
 final class AssetInstallationRequest
 ```
+
+#### Overview
+
+You do not create instances of this type directly; obtain them from [`assetInstallationRequest(supporting:)`](assetinventory/assetinstallationrequest(supporting:).md).
+
+The system consolidates download and installation requests; you may obtain several of these instances and call [`downloadAndInstall()`](assetinstallationrequest/downloadandinstall().md) several times without causing redundant downloads.
 
 ## Topics
 

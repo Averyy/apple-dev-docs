@@ -46,6 +46,9 @@ Several transcriber instances can share the same backing engine instances and mo
   Options relating to the attributes of the transcription.
 - [SpeechTranscriber.TranscriptionOption](speechtranscriber/transcriptionoption.md)
   Options relating to the text of the transcription.
+### Type Methods
+- [static func supportedLocale(equivalentTo: Locale) async -> Locale?](speechtranscriber/supportedlocale(equivalentto:).md)
+  A locale from the module’s supported locales equivalent to the given locale.
 
 ## Relationships
 
@@ -62,7 +65,7 @@ Several transcriber instances can share the same backing engine instances and mo
 - [protocol LocaleDependentSpeechModule](localedependentspeechmodule.md)
   If a module conforms to this protocol, then its assets depend on the locale setting.
 - [class DictationTranscriber](dictationtranscriber.md)
-  A module that transcribes speech to text. This transcriber is used by [`SFSpeechRecognizer`](sfspeechrecognizer.md) and system dictation features.
+  A module that transcribes speech to text. This transcriber is used by `SFSpeechRecognizer` and system dictation features.
 - [class SpeechDetector](speechdetector.md)
   A module that performs a voice activity detection (VAD) analysis.
 

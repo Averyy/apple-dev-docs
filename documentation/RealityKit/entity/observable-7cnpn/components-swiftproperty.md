@@ -10,6 +10,7 @@ A “pass through” to the underlying ComponentSet but with the added effect of
 - iPadOS 26.0+ (Beta)
 - Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
 - visionOS 26.0+ (Beta)
 
 ## Declaration

@@ -115,13 +115,13 @@ The iOS & iPadOS 14 SDK provides support to develop apps for iPhone, iPad, and i
 
 ###### New Features
 
-- To properly render an augmented reality [`Scene`](https://developer.apple.com/documentation/RealityKit/Scene) with the post-processing effects available in [`RealityKit`](https://developer.apple.com/documentation/RealityKit), the pipeline now writes depth information when rendering translucent materials. This makes the order that meshes are drawn more impactful for the final image. To properly author content for this pipeline, break up big meshes into smaller parts, especially when the meshes are intertwined. (66535399)
+- To properly render an augmented reality [`scene`](https://developer.apple.com/documentation/RealityKit/scene) with the post-processing effects available in [`RealityKit`](https://developer.apple.com/documentation/RealityKit), the pipeline now writes depth information when rendering translucent materials. This makes the order that meshes are drawn more impactful for the final image. To properly author content for this pipeline, break up big meshes into smaller parts, especially when the meshes are intertwined. (66535399)
 
 ##### Siri
 
 ###### New Features
 
-You can use [`INMediaUserContext`](https://developer.apple.com/documentation/Intents/INMediaUserContext), [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight), and Intents to improve media interactions and App Selection. For more information, see [`Improving Siri Media Interactions and App Selection`](https://developer.apple.com/documentation/SiriKit/improving-siri-media-interactions-and-app-selection). (67026608)
+You can use doc://com.apple.documentation/documentation/sirikit/inmediausercontext, [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight), and Intents to improve media interactions and App Selection. For more information, see [`Improving Siri Media Interactions and App Selection`](https://developer.apple.com/documentation/SiriKit/improving-siri-media-interactions-and-app-selection). (67026608)
 
 ##### Safari and Webkit
 
@@ -259,7 +259,7 @@ struct QuickNoteDocument : FileDocument {
 
 - Apps using JSONKit might quit unexpectedly on launch. Some forks of JSONKit hardcode private, pointer-representation details, which are subject to change. (60290929)  Use [`JSONSerialization`](https://developer.apple.com/documentation/Foundation/JSONSerialization) instead.
 - `fstab` has been removed. You can no longer use Filesystem contents outside of an app’s sandbox for validation. (61098152)
-- Apps using the NativeScript framework might quit unexpectedly on launch. NativeScript performs an unsafe operation to determine if an arbitrary pointer is an Objective-C object pointer. You can temporarily resolve this issue by using [`object_getClass(_:)`](https://developer.apple.com/documentation/ObjectiveC/object_getClass(_:)) instead of reading the `isa` directly; however, update this code to avoid checking whether arbitrary pointers are Objective-C object pointers. (62913064)
+- Apps using the NativeScript framework might quit unexpectedly on launch. NativeScript performs an unsafe operation to determine if an arbitrary pointer is an Objective-C object pointer. You can temporarily resolve this issue by using doc://com.apple.documentation/documentation/objectivec/1418629-object_getclass instead of reading the `isa` directly; however, update this code to avoid checking whether arbitrary pointers are Objective-C object pointers. (62913064)
 
 ##### Vision
 

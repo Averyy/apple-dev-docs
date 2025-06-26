@@ -32,6 +32,10 @@ struct DataStoreBatchDeleteRequest<T> where T : PersistentModel
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [func delete<T>(DataStoreBatchDeleteRequest<T>) throws](datastorebatching/delete(_:).md)
+
 
 ---
 

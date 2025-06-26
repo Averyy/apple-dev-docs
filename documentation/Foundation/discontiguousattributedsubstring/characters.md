@@ -3,13 +3,15 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The characters of the discontiguous attributed string, as a view into the underlying string.
+
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
 - Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
-- visionOS 1.0+
+- visionOS 26.0+ (Beta)
 - watchOS 26.0+ (Beta)
 
 ## Declaration

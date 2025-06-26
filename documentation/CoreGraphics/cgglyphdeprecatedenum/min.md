@@ -11,9 +11,9 @@ Minimum font index value.
 - Mac Catalyst ?+
 - macOS ?+
 - tvOS ?+
-- visionOS ?+
-- Unknown ?+ - Deprecated
 - watchOS ?+
+- Unknown ?+ - Deprecated
+- visionOS ?+
 
 ## Declaration
 

@@ -102,6 +102,16 @@ The bottom section shows the shader execution history of GPU threads on a timeli
 
 For more information, see [`Analyzing Apple GPU performance with performance heat maps`](analyzing-apple-gpu-performance-using-performance-heatmaps-a17-m3.md).
 
+##### Save the Performance Data to Your Development System
+
+You can save your app’s Metal workload performance data as a GPU trace for later analysis by choosing File > Export, and selecting the Embed performance data checkbox in the dialog. This allows you to view just the performance data instead of replaying the GPU trace on a device.
+
+![A screenshot of a Metal debugger save dialog in Xcode for a performance data-trace file. The dialog has the name Deferred Lighting in the Export as field and a single checkbox with the label, Embed performance data, which a person selected.](https://docs-assets.developer.apple.com/published/6aa2aeea7c3374e61a958e54a4ced338/gputools-metal-debugger-essentials-embed-performance-data%402x.png)
+
+You can open the GPU trace on any Mac — not just your development system — because it doesn’t require a compatible device to replay the trace. Optionally, you can replay the GPU trace by selecting a compatible device.
+
+For more information, see [`Replaying a GPU trace file`](replaying-a-gpu-trace-file.md).
+
 ## See Also
 
 - [Capturing a Metal workload in Xcode](capturing-a-metal-workload-in-xcode.md)

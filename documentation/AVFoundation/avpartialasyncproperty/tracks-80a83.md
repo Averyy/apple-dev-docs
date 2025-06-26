@@ -21,7 +21,7 @@ static var tracks: AVAsyncProperty<Root, [AVMovieTrack]> { get }
 
 #### Discussion
 
-Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
+Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
 ## See Also
 

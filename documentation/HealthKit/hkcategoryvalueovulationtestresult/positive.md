@@ -24,11 +24,11 @@ static var positive: HKCategoryValueOvulationTestResult { get }
 - [HKCategoryValueOvulationTestResult.negative](hkcategoryvalueovulationtestresult/negative.md)
   The ovulation test is negative.
 - [HKCategoryValueOvulationTestResult.luteinizingHormoneSurge](hkcategoryvalueovulationtestresult/luteinizinghormonesurge.md)
-  The ovulation test detected a surge in the luteinizing hormone.
+  The ovulation test detected a surge in the luteinizing hormone. This value often refers to a `Positive` or `Peak` result.
 - [HKCategoryValueOvulationTestResult.indeterminate](hkcategoryvalueovulationtestresult/indeterminate.md)
   The ovulation test is inconclusive.
 - [HKCategoryValueOvulationTestResult.estrogenSurge](hkcategoryvalueovulationtestresult/estrogensurge.md)
-  The ovulation test detected a surge in estrogen.
+  The ovulation test detected a surge in estrogen. This value often refers to a `High` result.
 
 
 ---

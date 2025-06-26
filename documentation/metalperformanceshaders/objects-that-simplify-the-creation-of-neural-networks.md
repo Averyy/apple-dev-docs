@@ -6,7 +6,7 @@ Simplify the creation of neural networks using networks of filter, image, and st
 
 #### Overview
 
-Graphs in Metal Performance Shaders offer a higher level graph API, intended to simplify the creation of neural networks. The graph is a network of [`MPSNNFilterNode`](mpsnnfilternode.md), [`MPSNNImageNode`](mpsnnimagenode.md) and [`MPSNNStateNode`](mpsnnstatenode.md) objects. 
+Graphs in Metal Performance Shaders offer a higher level graph API, intended to simplify the creation of neural networks. The graph is a network of [`MPSNNFilterNode`](mpsnnfilternode.md), [`MPSNNImageNode`](mpsnnimagenode.md) and [`MPSNNStateNode`](mpsnnstatenode.md) objects.
 
 - [`MPSNNImageNode`](mpsnnimagenode.md) represents [`MPSImage`](mpsimage.md) or [`MPSTemporaryImage`](mpstemporaryimage.md) objects
 - [`MPSNNFilterNode`](mpsnnfilternode.md) represents [`MPSCNNKernel`](mpscnnkernel.md) objects—each of the lower level [`MPSCNNKernel`](mpscnnkernel.md) subclasses has an associated object that is a subclass of the [`MPSNNFilterNode`](mpsnnfilternode.md)
@@ -165,7 +165,7 @@ Graphs in Metal Performance Shaders offer a higher level graph API, intended to 
 - [class MPSNNScaleNode](mpsnnscalenode.md)
   Abstract node representing an image resampling filter.
 - [protocol MPSImageTransformProvider](mpsimagetransformprovider.md)
-  A general interface for objects that provide image resampling. 
+  A general interface for objects that provide image resampling.
 ### Dropout Layer Nodes
 - [class MPSCNNDropoutNode](mpscnndropoutnode.md)
   A representation of a dropout filter.
@@ -173,7 +173,7 @@ Graphs in Metal Performance Shaders offer a higher level graph API, intended to 
   A representation of a gradient dropout filter.
 ### Kernel Concatenation Nodes
 - [class MPSNNConcatenationNode](mpsnnconcatenationnode.md)
-  A representation of the results from one or more kernels. 
+  A representation of the results from one or more kernels.
 - [class MPSNNConcatenationGradientNode](mpsnnconcatenationgradientnode.md)
   A representation of the results from one or more gradient kernels.
 ### Loss Layer Nodes
@@ -194,18 +194,18 @@ Graphs in Metal Performance Shaders offer a higher level graph API, intended to 
 
 ## See Also
 
-- [Training a Neural Network with Metal Performance Shaders](training_a_neural_network_with_metal_performance_shaders.md)
+- [Training a Neural Network with Metal Performance Shaders](training-a-neural-network-with-metal-performance-shaders.md)
   Use an MPS neural network graph to train a simple neural network digit classifier.
 - [class MPSImage](mpsimage.md)
   A texture that may have more than four channels for use in convolutional neural networks.
 - [class MPSTemporaryImage](mpstemporaryimage.md)
   A texture for use in convolutional neural networks that stores transient data to be used and discarded promptly.
-- [Convolutional Neural Network Kernels](convolutional_neural_network_kernels.md)
+- [Convolutional Neural Network Kernels](convolutional-neural-network-kernels.md)
   Build neural networks with layers.
-- [Recurrent Neural Networks](recurrent_neural_networks.md)
+- [Recurrent Neural Networks](recurrent-neural-networks.md)
   Create recurrent neural networks.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/objects_that_simplify_the_creation_of_neural_networks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/objects-that-simplify-the-creation-of-neural-networks)*

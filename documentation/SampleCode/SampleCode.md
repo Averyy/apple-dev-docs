@@ -25,7 +25,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Learn how to incorporate live speech-to-text transcription into your app with SpeechAnalyzer.
 - [Building a workout app for iPhone and iPad](../HealthKit/building-a-workout-app-for-iphone-and-ipad.md)
   Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
-- [Building peer-to-peer apps](../Wi-Fi-Aware/Building-peer-to-peer-apps.md)
+- [Building peer-to-peer apps](../WiFiAware/Building-peer-to-peer-apps.md)
   Communicate with nearby devices over a secure, high-throughput, low-latency connection by using Wi-Fi Aware.
 - [Building rich SwiftUI text experiences](../SwiftUI/building-rich-swiftui-text-experiences.md)
   Build an editor for formatted text using SwiftUI text editor views and attributed strings.
@@ -55,8 +55,16 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Receive up-to-date financial data in your app and its extensions by adding a background delivery extension.
 - [Implementing a store in your app using the StoreKit API](../StoreKit/implementing-a-store-in-your-app-using-the-storekit-api.md)
   Offer In-App Purchases and manage entitlements using signed transactions and status information.
+- [Landmarks: Applying a background extension effect](../SwiftUI/Landmarks-Applying-a-background-extension-effect.md)
+  Configure an image to blur and extend under a sidebar or inspector panel.
 - [Landmarks: Building an app with Liquid Glass](../SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass.md)
   Enhance your app experience with system-provided and custom Liquid Glass.
+- [Landmarks: Displaying custom activity badges](../SwiftUI/Landmarks-Displaying-custom-activity-badges.md)
+  Provide people with a way to mark their adventures by displaying animated custom activity badges.
+- [Landmarks: Extending horizontal scrolling under a sidebar or inspector](../SwiftUI/Landmarks-Extending-horizontal-scrolling-under-a-sidebar-or-inspector.md)
+  Improve your horizontal scrollbar’s appearance by extending it under a sidebar or inspector.
+- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](../SwiftUI/Landmarks-Refining-the-system-provided-glass-effect-in-toolbars.md)
+  Organize toolbars into related groupings to improve their appearance and utility.
 - [Language Introspector](../Foundation/language-introspector.md)
   Converts data into human-readable text using formatters and locales.
 - [Localizing Landmarks](../Xcode/localizing-landmarks.md)
@@ -76,7 +84,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Playing immersive media with RealityKit](../visionOS/playing-immersive-media-with-realitykit.md)
   Create an immersive video playback experience with RealityKit.
 - [Presenting images in RealityKit](../RealityKit/presenting-images-in-realitykit.md)
-  Create and display spatial scenes in RealityKit.
+  Create and display spatial scenes in RealityKit
 - [Processing a texture in a compute function](../Metal/processing-a-texture-in-a-compute-function.md)
   Create textures by running copy and dispatch commands in a compute pass on a GPU.
 - [Recognizing tables within a document](../Vision/recognize-tables-within-a-document.md)
@@ -780,6 +788,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
 ### RealityKit and Reality Composer Pro
 - [Altering RealityKit Rendering with Shader Functions](../realitykit/altering_realitykit_rendering_with_shader_functions.md)
   Create rendering effects by writing surface shaders and geometry modifiers.
+- [Animating entity rotation with a system](../RealityKit/animated-rotation-with-a-system.md)
+  Rotate an entity around an axis using a Component and a System.
 - [Building an Immersive Experience with RealityKit](../realitykit/building_an_immersive_experience_with_realitykit.md)
   Use systems and postprocessing effects to create a realistic underwater scene.
 - [Building an object reconstruction app](../RealityKit/building-an-object-reconstruction-app.md)
@@ -814,6 +824,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Display a scene from Reality Composer Pro in visionOS.
 - [Rendering a windowed game in stereo](../RealityKit/rendering-a-windowed-game-in-stereo.md)
   Bring an iOS or iPadOS game to visionOS and enhance it.
+- [Responding to gestures on an entity](../RealityKit/responding-to-gestures-on-an-entity.md)
+  Respond to gestures performed on RealityKit entities using input target and collision components.
 - [Scanning objects using Object Capture](../RealityKit/scanning-objects-using-object-capture.md)
   Implement a full scanning workflow for capturing objects on iOS devices.
 - [Schema definitions for third-party DCCs](../RealityKit/schema-definitions-for-third-party-dccs.md)

@@ -8,7 +8,6 @@ Returns a Boolean value that indicates whether two authorization statuses arenâ€
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 
 ## Declaration
 

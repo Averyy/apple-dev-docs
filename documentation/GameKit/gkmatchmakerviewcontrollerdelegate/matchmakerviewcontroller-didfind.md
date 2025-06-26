@@ -22,10 +22,10 @@ optional func matchmakerViewController(_ viewController: GKMatchmakerViewControl
 ## Mentions
 
 - [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
+- [Assigning players to teams using rules](assigning-players-to-teams-using-rules.md)
 - [Exchanging data between players in real-time games](exchanging-data-between-players-in-real-time-games.md)
 - [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
-- [Assigning players to teams using rules](assigning-players-to-teams-using-rules.md)
-- [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
 
 #### Discussion
 

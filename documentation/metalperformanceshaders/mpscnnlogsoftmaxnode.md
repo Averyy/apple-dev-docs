@@ -1,7 +1,7 @@
 # MPSCNNLogSoftMaxNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a logarithmic softmax filter kernel.
 
@@ -16,18 +16,25 @@ A representation of a logarithmic softmax filter kernel.
 ## Declaration
 
 ```swift
-class MPSCNNLogSoftMaxNode : MPSNNFilterNode
+class MPSCNNLogSoftMaxNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnnlogsoftmaxnode/2866457-init.md)
+- [init(source: MPSNNImageNode)](mpscnnlogsoftmaxnode/init(source:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

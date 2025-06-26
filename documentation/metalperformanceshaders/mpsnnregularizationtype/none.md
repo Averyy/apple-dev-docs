@@ -1,7 +1,7 @@
 # MPSNNRegularizationType.None
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case None = 0
+case None
 ```
 
 

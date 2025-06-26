@@ -1,7 +1,7 @@
 # MPSCNNNeuronHardSigmoidNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a hard sigmoid neuron filter.
 
@@ -16,19 +16,26 @@ A representation of a hard sigmoid neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronHardSigmoidNode : MPSCNNNeuronNode
+class MPSCNNNeuronHardSigmoidNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, a: Float, b: Float)](mpscnnneuronhardsigmoidnode/2875181-init.md)
-- [init(source: MPSNNImageNode)](mpscnnneuronhardsigmoidnode/2921455-init.md)
+- [init(source: MPSNNImageNode, a: Float, b: Float)](mpscnnneuronhardsigmoidnode/init(source:a:b:).md)
+- [init(source: MPSNNImageNode)](mpscnnneuronhardsigmoidnode/init(source:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuronNode](mpscnnneuronnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

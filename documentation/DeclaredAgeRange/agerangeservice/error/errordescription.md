@@ -1,6 +1,6 @@
 # errorDescription
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: property
 
 A localized message describing what error occurred.

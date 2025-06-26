@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-An array of presentation commands that needs to be processed for the ‘duration’ time.
+An array of presentation commands that needs to be processed for the `duration` time.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -12,13 +12,13 @@ An array of presentation commands that needs to be processed for the ‘duration
 ## Declaration
 
 ```swift
-var commands: [any PresentationCommand]
+var commands: [PresentationCommand]
 ```
 
 ## See Also
 
 - [var duration: CMTime?](presentationdescriptor/duration.md)
-  Represents the total duration for which the presentation commands needs to be processed.
+  The total duration for which the presentation commands needs to be processed.
 
 
 ---

@@ -24,12 +24,12 @@ class CLLocationManager
 
 - [Determining the proximity to an iBeacon device](determining-the-proximity-to-an-ibeacon-device.md)
 - [Getting the current location of a device](getting-the-current-location-of-a-device.md)
-- [Getting heading and course information](getting-heading-and-course-information.md)
 - [Configuring your app to use location services](configuring-your-app-to-use-location-services.md)
-- [Converting between coordinates and user-friendly place names](converting-between-coordinates-and-user-friendly-place-names.md)
 - [Requesting authorization to use location services](requesting-authorization-to-use-location-services.md)
-- [Supporting live updates in SwiftUI and Mac Catalyst apps](supporting-live-updates-in-swiftui-and-mac-catalyst-apps.md)
+- [Getting heading and course information](getting-heading-and-course-information.md)
+- [Converting between coordinates and user-friendly place names](converting-between-coordinates-and-user-friendly-place-names.md)
 - [Monitoring the user’s proximity to geographic regions](monitoring-the-user-s-proximity-to-geographic-regions.md)
+- [Supporting live updates in SwiftUI and Mac Catalyst apps](supporting-live-updates-in-swiftui-and-mac-catalyst-apps.md)
 
 #### Overview
 
@@ -88,8 +88,16 @@ For more information, see [`Configuring your app to use location services`](conf
 ### Specifying distance and accuracy
 - [var distanceFilter: CLLocationDistance](cllocationmanager/distancefilter.md)
   The minimum distance in meters the device must move horizontally before an update event is generated.
+- [let CLLocationDistanceMax: CLLocationDistance](cllocationdistancemax.md)
+  A constant indicating the maximum distance.
+- [let kCLDistanceFilterNone: CLLocationDistance](kcldistancefilternone.md)
+  A constant indicating that all movement should be reported.
+- [typealias CLLocationDistance](cllocationdistance.md)
+  A distance in meters from an existing location.
 - [var desiredAccuracy: CLLocationAccuracy](cllocationmanager/desiredaccuracy.md)
   The accuracy of the location data that your app wants to receive.
+- [typealias CLLocationAccuracy](cllocationaccuracy.md)
+  The accuracy of a geographical coordinate.
 ### Running the standard location service
 - [func startUpdatingLocation()](cllocationmanager/startupdatinglocation.md)
   Starts the generation of updates that report the user’s current location.
@@ -128,6 +136,8 @@ For more information, see [`Configuring your app to use location services`](conf
   The minimum angular change in degrees required to generate new heading events.
 - [let kCLHeadingFilterNone: CLLocationDegrees](kclheadingfilternone.md)
   A constant indicating that all header values should be reported.
+- [typealias CLLocationDegrees](cllocationdegrees.md)
+  A latitude or longitude value specified in degrees.
 - [var headingOrientation: CLDeviceOrientation](cllocationmanager/headingorientation.md)
   The device orientation to use when computing heading values.
 - [enum CLDeviceOrientation](cldeviceorientation.md)
@@ -154,6 +164,9 @@ For more information, see [`Configuring your app to use location services`](conf
   The most recently retrieved user location.
 - [var heading: CLHeading?](cllocationmanager/heading.md)
   The most recently reported heading.
+### Deferring location updates
+- [let CLTimeIntervalMax: TimeInterval](cltimeintervalmax.md)
+  A value representing an unlimited amount of time.
 ### Deprecated
 - [Deprecated symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.

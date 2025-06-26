@@ -22,8 +22,8 @@ protocol GKTurnBasedEventListener
 
 ## Mentions
 
-- [Exchanging data between players in turn-based games](exchanging-data-between-players-in-turn-based-games.md)
 - [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Exchanging data between players in turn-based games](exchanging-data-between-players-in-turn-based-games.md)
 
 #### Overview
 

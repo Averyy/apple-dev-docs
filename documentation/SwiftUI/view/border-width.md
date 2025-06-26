@@ -23,8 +23,8 @@ func border<S>(_ content: S, width: CGFloat = 1) -> some View where S : ShapeSty
 
 ## Mentions
 
-- [Inspecting view layout](inspecting-view-layout.md)
 - [Configuring views](configuring-views.md)
+- [Inspecting view layout](inspecting-view-layout.md)
 
 #### Return Value
 

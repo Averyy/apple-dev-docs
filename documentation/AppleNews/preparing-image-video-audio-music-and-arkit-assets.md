@@ -72,7 +72,7 @@ For images that span the full width of the document or the device, the recommend
 
 ##### Prepare a Thumbnail Image Asset
 
-For each article you publish, Apple News Format automatically creates an . An article tile provides information about the article. It uses information from the article’s [`Metadata`](https://developer.apple.com/documentation/applenewsformat/metadata) object and appears in the topic and channel feeds and in the user’s For You feed. Use `thumbnailURL` in your article metadata to specify the image you want to use in the article tile.
+For each article you publish, Apple News Format automatically creates an . An article tile provides information about the article. It uses information from the article’s [`Metadata`](https://developer.apple.com/documentation/applenewsformat/metadata) object and appears in feeds, such as the Today feed, channel feeds, and topic feeds. Use `thumbnailURL` in your article metadata to specify the image you want to use in the article tile.
 
 . JPEG (`.jpg` or `.jpeg` extension), WebP, PNG, and GIF are all supported, but JPEG with high-quality compression setting is preferred. Use PNG only if you need transparency. Note that animations are removed from WebP and GIF images.
 
@@ -98,7 +98,7 @@ Follow the steps below to include a [`Video`](https://developer.apple.com/docume
 
 ##### Prepare a Video for Feeds
 
-To add a video to your article, specify the `videoURL` property to the [`Metadata`](https://developer.apple.com/documentation/applenewsformat/metadata) object. You can also specify an image to use as the thumbnail image (`thumbnailURL`) when the video hasn’t played yet. A glyph appears on the thumbnail image, allowing users to play the video in the For You, topic, and channel feeds.
+To add a video to your article, specify the `videoURL` property to the [`Metadata`](https://developer.apple.com/documentation/applenewsformat/metadata) object. You can also specify an image to use as the thumbnail image (`thumbnailURL`) when the video hasn’t played yet. A glyph appears on the thumbnail image, allowing people to play the video in feeds, such as the Today feed, channel feeds, and topic feeds.
 
 . Apple News Format supports the following prefixes for video URLs:
 

@@ -26,11 +26,11 @@ The texture’s format controls the sampling and conversions (if any) to use whe
 ## Topics
 
 ### Type Methods
-- [static color(_:pixelFormat:)](textureresource/format-6twzy/color(_:pixelformat:).md)
+- [static color(_:pixelFormat:)](textureresource/format-745e3/color(_:pixelformat:).md)
   Indicates that a texture contains color data to interpret in a specific color space.
-- [static normal(_:pixelFormat:)](textureresource/format-6twzy/normal(_:pixelformat:).md)
+- [static normal(_:pixelFormat:)](textureresource/format-745e3/normal(_:pixelformat:).md)
   Indicates that a texture is a normal map.
-- [static raw(pixelFormat:)](textureresource/format-6twzy/raw(pixelformat:).md)
+- [static raw(pixelFormat:)](textureresource/format-745e3/raw(pixelformat:).md)
   Indicates a texture for unmodified use by a shader.
 ### Enumerations
 - [TextureResource.Format.ColorSpace](textureresource/format-6twzy/colorspace.md)

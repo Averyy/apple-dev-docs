@@ -17,7 +17,6 @@ Creates a field node that applies a force that resists the motion of physics bod
 ## Declaration
 
 ```swift
-@MainActor
 class func dragField() -> SKFieldNode
 ```
 

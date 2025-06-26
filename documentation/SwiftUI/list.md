@@ -25,9 +25,9 @@ A container that presents rows of data arranged in a single column, optionally p
 
 - [Picking container views for your content](picking-container-views-for-your-content.md)
 - [Displaying data in lists](displaying-data-in-lists.md)
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
 - [Performing a search operation](performing-a-search-operation.md)
 - [Migrating to new navigation types](migrating-to-new-navigation-types.md)
+- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
 - [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
 
 #### Overview

@@ -15,7 +15,7 @@ Creates a transcript.
 ## Declaration
 
 ```swift
-init(entries: [Transcript.Entry] = [])
+init(entries: some Sequence<Transcript.Entry> = [])
 ```
 
 ## Parameters

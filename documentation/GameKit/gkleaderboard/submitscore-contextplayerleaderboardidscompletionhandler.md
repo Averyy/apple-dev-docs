@@ -22,8 +22,8 @@ class func submitScore(_ score: Int, context: Int, player: GKPlayer, leaderboard
 
 ## Mentions
 
-- [Encourage progress and competition with leaderboards](encourage-progress-and-competition-with-leaderboards.md)
 - [Creating recurring leaderboards](creating-recurring-leaderboards.md)
+- [Encourage progress and competition with leaderboards](encourage-progress-and-competition-with-leaderboards.md)
 
 ## Parameters
 

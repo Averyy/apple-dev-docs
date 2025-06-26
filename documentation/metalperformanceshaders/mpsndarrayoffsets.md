@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,10 +20,16 @@ struct MPSNDArrayOffsets
 ## Topics
 
 ### Initializers
-- [init()](mpsndarrayoffsets/3131950-init.md)
-- [init(dimensions: (Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int))](mpsndarrayoffsets/3131951-init.md)
+- [init()](mpsndarrayoffsets/init.md)
+- [init(dimensions: (Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int))](mpsndarrayoffsets/init(dimensions:).md)
 ### Instance Properties
-- [var dimensions: (Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int)](mpsndarrayoffsets/3131765-dimensions.md)
+- [var dimensions: (Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int)](mpsndarrayoffsets/dimensions.md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

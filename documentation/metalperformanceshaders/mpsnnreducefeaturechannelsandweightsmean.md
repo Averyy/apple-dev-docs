@@ -1,7 +1,7 @@
 # MPSNNReduceFeatureChannelsAndWeightsMean
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A reduction filter that returns the weighted sum for each feature channel in an image.
 
@@ -16,19 +16,29 @@ A reduction filter that returns the weighted sum for each feature channel in an 
 ## Declaration
 
 ```swift
-class MPSNNReduceFeatureChannelsAndWeightsMean : MPSNNReduceBinary
+class MPSNNReduceFeatureChannelsAndWeightsMean
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnreducefeaturechannelsandweightsmean/3197834-init.md)
-- [init(device: any MTLDevice)](mpsnnreducefeaturechannelsandweightsmean/2942537-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnreducefeaturechannelsandweightsmean/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsnnreducefeaturechannelsandweightsmean/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNReduceBinary](mpsnnreducebinary.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -62,10 +72,6 @@ class MPSNNReduceFeatureChannelsAndWeightsMean : MPSNNReduceBinary
   A reduction filter that returns the index of the location of the minimum value for each feature channel in an image.
 - [class MPSNNReduceFeatureChannelsAndWeightsSum](mpsnnreducefeaturechannelsandweightssum.md)
   A reduction filter that returns the weighted sum of all values for each feature channel in an image.
-- [class MPSNNReduceUnary](mpsnnreduceunary.md)
-  The base class for unary reduction filters.
-- [class MPSNNReduceBinary](mpsnnreducebinary.md)
-  The base class for binary reduction filters.
 
 
 ---

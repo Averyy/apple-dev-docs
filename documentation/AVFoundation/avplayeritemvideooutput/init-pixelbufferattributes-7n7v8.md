@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: init
 
+Creates a video output object using the specified pixel buffer attributes.
+
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
@@ -19,11 +21,16 @@ init(pixelBufferAttributes: [String : any Sendable]? = nil)
 
 #### Return Value
 
-An instance of AVPlayerItemVideoOutput.
+An initialized video output object.
 
 ## Parameters
 
-- `pixelBufferAttributes`: The client requirements for output CVPixelBuffers, expressed using the constants in <CoreVideo/CVPixelBuffer.h>.
+- `pixelBufferAttributes`: The pixel buffer attributes required for video output. For a list of pixel buffer attributes you can include in this dictionary, see the   header file in the Core Video framework.
+
+## See Also
+
+- [init(outputSettings: [String : any Sendable]?)](avplayeritemvideooutput/init(outputsettings:).md)
+  Creates a video output object initialized with the specified output settings.
 
 
 ---

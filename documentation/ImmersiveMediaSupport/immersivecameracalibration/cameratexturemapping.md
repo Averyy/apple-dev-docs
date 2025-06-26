@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: struct
 
-Represents the matrices used for video frame texture mapping on the camera lens geometry.
+A type that holds the matrices used for video frame texture mapping on the camera lens geometry.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -26,7 +26,7 @@ struct CameraTextureMapping
   Encodes this value into the given encoder.
 ### Type Properties
 - [static let identity: ImmersiveCameraCalibration.CameraTextureMapping](immersivecameracalibration/cameratexturemapping/identity.md)
-  Holds the default value of identity matrix for the immersive camera i.e identity matrix for the left camera and identity matrix for the right camera.
+  The default camera texture matrix for the immersive camera.
 
 ## Relationships
 
@@ -39,7 +39,7 @@ struct CameraTextureMapping
 ## See Also
 
 - [ImmersiveCameraCalibration.CameraOrigin](immersivecameracalibration/cameraorigin.md)
-  Position information that represents the origin from which to render the calibration in 3D space relative to the user’s eye
+  A type that holds the position information representing the origin from which to render the calibration in 3D space relative to the user’s eye
 
 
 ---

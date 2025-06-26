@@ -22,9 +22,9 @@ case restored
 
 ## Mentions
 
+- [Supporting Family Sharing in your app](supporting-family-sharing-in-your-app.md)
 - [Processing a transaction](processing-a-transaction.md)
 - [Restoring purchased products](restoring-purchased-products.md)
-- [Supporting Family Sharing in your app](supporting-family-sharing-in-your-app.md)
 
 #### Discussion
 

@@ -26,26 +26,26 @@ Immersive commands are packed as an array of [`PresentationCommand`](presentatio
   Initializes an instance containing the specified presentation descriptor.
 ### Instance Properties
 - [var cameraID: String?](presentationdescriptorreader/cameraid.md)
-  The current camera ID string of the ImmersiveCamera that needs to be rendered during playback for the PTS specified in the last call to [`update(presentationTimeStamp:)`](presentationdescriptorreader/update(presentationtimestamp:).md)
+  The current camera ID string of the ImmersiveCamera that needs to be rendered during playback for the PTS specified in the last call to `update(presentationTimeStamp:)`
 - [var colorFade: simd_float3](presentationdescriptorreader/colorfade.md)
-  The current fade color for color fading of the video frames during playback for the PTS specified in the last call to [`update(presentationTimeStamp:)`](presentationdescriptorreader/update(presentationtimestamp:).md)
+  The current fade color for color fading of the video frames during playback for the PTS specified in the last call to `update(presentationTimeStamp:)`
 - [var colorFadeOpacity: Float](presentationdescriptorreader/colorfadeopacity.md)
-  The current color fade opacity of the video frames during playback for the PTS specified in the last call to [`update(presentationTimeStamp:)`](presentationdescriptorreader/update(presentationtimestamp:).md)
+  The current color fade opacity of the video frames during playback for the PTS specified in the last call to `update(presentationTimeStamp:)`
 - [var environmentFadeOpacity: Float](presentationdescriptorreader/environmentfadeopacity.md)
-  The current opacity of the environment backdrops during playback for the PTS specified in the last call to [`update(presentationTimeStamp:)`](presentationdescriptorreader/update(presentationtimestamp:).md)
+  The current opacity of the environment backdrops during playback for the PTS specified in the last call to `update(presentationTimeStamp:)`
 - [var isShotFlopped: Bool](presentationdescriptorreader/isshotflopped.md)
-  The flag to indicate if the video frame needs to be shot flopped (Horizontally flipped) or not for the PTS specified in the last call to [`update(presentationTimeStamp:)`](presentationdescriptorreader/update(presentationtimestamp:).md)
+  A Boolean value that indicates whether the video frame needs to be shot flopped (Horizontally flipped) for the PTS specified in the last call to `update(presentationTimeStamp:)`
 - [var isSideloaded: Bool](presentationdescriptorreader/issideloaded.md)
-  The flag to indicate if the reader input is sideloaded or is it set during playback.
-- [var presentationCommands: [any PresentationCommand]](presentationdescriptorreader/presentationcommands.md)
-  All the presentationCommands active for the PTS specified in the last call to [`update(presentationTimeStamp:)`](presentationdescriptorreader/update(presentationtimestamp:).md)
+  A Boolean value that indicates whether the reader input is sideloaded or is it set during playback.
+- [var presentationCommands: [PresentationCommand]](presentationdescriptorreader/presentationcommands.md)
+  All the presentationCommands active for the PTS specified in the last call to `update(presentationTimeStamp:)`
 - [var presentationDescriptor: PresentationDescriptor](presentationdescriptorreader/presentationdescriptor.md)
   The presentationDescriptor containing all the presentation commands that need to be processed.
 ### Instance Methods
-- [func outputPresentationCommands(for: CMTime, including: [PresentationCommandType]) -> [any PresentationCommand]?](presentationdescriptorreader/outputpresentationcommands(for:including:).md)
-  This function returns all presentation commands to be muxed into an MOV during an AVAssetWriter session. It’s not supposed to be used for playback rendering.
-- [func update(presentationTimeStamp: CMTime)](presentationdescriptorreader/update(presentationtimestamp:).md)
-  Update is called by the application (e.g. render/playback loop) to update the publishers exported by PresentationDescriptorReader
+- [func outputPresentationCommands(for: CMTime) -> [PresentationCommand]?](presentationdescriptorreader/outputpresentationcommands(for:).md)
+  This function returns all presentation commands to be muxed into an MOV during an `AVAssetWriter` session. It’s not supposed to be used for playback rendering.
+- [func processPresentationCommands(for: CMTime)](presentationdescriptorreader/processpresentationcommands(for:).md)
+  Processes the commands and updates the publishers exported by this reader when called by the application (e.g. render/playback loop)
 
 ## Relationships
 
@@ -57,7 +57,7 @@ Immersive commands are packed as an array of [`PresentationCommand`](presentatio
 
 ## See Also
 
-- [protocol PresentationCommand](presentationcommand.md)
+- [enum PresentationCommand](presentationcommand.md)
   A set of properties that define the interface for a presentation command.
 - [struct FadeCommand](fadecommand.md)
   A command type for color fading during immersive media playback.
@@ -67,8 +67,6 @@ Immersive commands are packed as an array of [`PresentationCommand`](presentatio
   A command type for immersive camera switching during playback.
 - [struct ShotFlopCommand](shotflopcommand.md)
   A command type to flip the video frames horizontally (mirrored horizontally) during playback for the duration of the command.
-- [enum PresentationCommandType](presentationcommandtype.md)
-  Values that represent the type of presentation command.
 - [struct PresentationDescriptor](presentationdescriptor.md)
   A structure that represents dynamic metadata used during playback or when outputting the metadata track for an immersive video file.
 

@@ -19,6 +19,7 @@ struct DrawingOptions
 ### Type Properties
 - [static var disableScreenFontSubstitution: NSString.DrawingOptions](nsstring/drawingoptions/disablescreenfontsubstitution.md)
 - [static var oneShot: NSString.DrawingOptions](nsstring/drawingoptions/oneshot.md)
+- [static var optionsResolvesNaturalAlignmentWithBaseWritingDirection: NSString.DrawingOptions](nsstring/drawingoptions/optionsresolvesnaturalalignmentwithbasewritingdirection.md)
 - [static var truncatesLastVisibleLine: NSString.DrawingOptions](nsstring/drawingoptions/truncateslastvisibleline.md)
 - [static var usesDeviceMetrics: NSString.DrawingOptions](nsstring/drawingoptions/usesdevicemetrics.md)
 - [static var usesFontLeading: NSString.DrawingOptions](nsstring/drawingoptions/usesfontleading.md)

@@ -3,6 +3,8 @@
 **Framework**: WebKit  
 **Kind**: struct
 
+The options for controlling the behavior for how magnification gestures interact with web views.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -20,8 +22,11 @@ struct MagnificationGesturesBehavior
 
 ### Type Properties
 - [static let automatic: WebView.MagnificationGesturesBehavior](webview-swift.struct/magnificationgesturesbehavior/automatic.md)
+  The automatic behavior.
 - [static let disabled: WebView.MagnificationGesturesBehavior](webview-swift.struct/magnificationgesturesbehavior/disabled.md)
+  Magnify gestures are disabled.
 - [static let enabled: WebView.MagnificationGesturesBehavior](webview-swift.struct/magnificationgesturesbehavior/enabled.md)
+  Magnify gestures are enabled.
 
 ## Relationships
 

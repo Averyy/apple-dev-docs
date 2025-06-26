@@ -65,8 +65,6 @@ At times, it may be required to indicate that a sensitivity point has been clamp
 - [class HKStateOfMindType](hkstateofmindtype.md)
 - [class HKWheelchairUseObject](hkwheelchairuseobject.md)
   This class acts as a wrapper for the wheelchair use enumeration.
-- [class HKWorkoutEffortRelationship](hkworkouteffortrelationship.md)
-- [class HKWorkoutEffortRelationshipQuery](hkworkouteffortrelationshipquery.md)
 
 
 ---

@@ -1,15 +1,15 @@
 # MPSImageType_ArrayMask
 
 **Framework**: Metal Performance Shaders  
-**Kind**: data
+**Kind**: var
 
 **Availability**:
-- iOS 11.3+
-- iPadOS 11.3+
-- Mac Catalyst 13.0+
-- macOS 10.13.4+
-- tvOS 11.3+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 

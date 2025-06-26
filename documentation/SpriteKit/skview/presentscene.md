@@ -22,8 +22,8 @@ func presentScene(_ scene: SKScene?)
 
 ## Mentions
 
-- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
 - [Drawing SpriteKit Content in a View](drawing-spritekit-content-in-a-view.md)
+- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
 
 #### Discussion
 

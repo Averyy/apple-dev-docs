@@ -19,9 +19,9 @@ let SKStoreProductParameterAdNetworkSourceAppStoreIdentifier: String
 
 ## Mentions
 
+- [Verifying an install-validation postback](verifying-an-install-validation-postback.md)
 - [Generating the signature to validate StoreKit-rendered ads](generating-the-signature-to-validate-storekit-rendered-ads.md)
 - [Identifying the parameters in install-validation postbacks](identifying-the-parameters-in-install-validation-postbacks.md)
-- [Verifying an install-validation postback](verifying-an-install-validation-postback.md)
 
 #### Discussion
 

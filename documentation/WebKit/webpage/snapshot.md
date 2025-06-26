@@ -23,6 +23,10 @@ final func snapshot(_ configuration: WKSnapshotConfiguration = .init()) async th
 
 An image that contains the specified portion of the webpage.
 
+#### Discussion
+
+> **Note**: An error if a problem occurred when generating the snapshot.
+
 ## Parameters
 
 - `configuration`: The object that specifies the portion of the web page to capture, and other capture-related behaviors.
@@ -30,7 +34,7 @@ An image that contains the specified portion of the webpage.
 ## See Also
 
 - [func pdf(configuration: WKPDFConfiguration) async throws -> Data](webpage/pdf(configuration:).md)
-  Generates PDF data from the webpage’s contents
+  Generates PDF data from the webpage’s contents.
 - [func webArchiveData() async throws -> Data](webpage/webarchivedata.md)
   Creates a web archive of the webpage’s current contents.
 

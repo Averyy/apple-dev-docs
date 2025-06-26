@@ -31,6 +31,11 @@ Implement this method to conform to the `Hashable` protocol. The components used
 
 - `hasher`: The hasher to use when combining the components   of this instance.
 
+## See Also
+
+- [var hashValue: Int](datastoreerror/hashvalue.md)
+  The hash value.
+
 
 ---
 

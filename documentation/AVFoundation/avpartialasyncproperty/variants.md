@@ -22,7 +22,7 @@ static var variants: AVAsyncProperty<Root, [AVAssetVariant]> { get }
 
 #### Discussion
 
-Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
+Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
 Some variants may not be playable according to the current device configuration.
 

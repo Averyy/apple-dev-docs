@@ -1,7 +1,7 @@
 # MPSImageScale
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that resizes and changes the aspect ratio of an image.
 
@@ -16,28 +16,41 @@ A filter that resizes and changes the aspect ratio of an image.
 ## Declaration
 
 ```swift
-class MPSImageScale : MPSUnaryImageKernel
+class MPSImageScale
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagescale/2881187-init.md)
-- [init(device: any MTLDevice)](mpsimagescale/2881186-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagescale/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsimagescale/init(device:).md)
 ### Instance Properties
-- [var scaleTransform: UnsafePointer<MPSScaleTransform>?](mpsimagescale/2881183-scaletransform.md)
+- [var scaleTransform: UnsafePointer<MPSScaleTransform>?](mpsimagescale/scaletransform.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Inherited By
+- [MPSImageBilinearScale](mpsimagebilinearscale.md)
+- [MPSImageLanczosScale](mpsimagelanczosscale.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
 - [class MPSImageConversion](mpsimageconversion.md)
   A filter that performs a conversion of color space, alpha, or pixel format.
 - [class MPSImageLanczosScale](mpsimagelanczosscale.md)
-  A filter that resizes and changes the aspect ratio of an image using Lanczos resampling. 
+  A filter that resizes and changes the aspect ratio of an image using Lanczos resampling.
 - [class MPSImageBilinearScale](mpsimagebilinearscale.md)
   A filter that resizes and changes the aspect ratio of an image using Bilinear resampling.
 - [class MPSImageTranspose](mpsimagetranspose.md)

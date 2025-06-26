@@ -1,7 +1,7 @@
 # MPSCNNNeuronPReLU
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A parametric ReLU (Rectified Linear Unit) neuron filter.
 
@@ -16,26 +16,36 @@ A parametric ReLU (Rectified Linear Unit) neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronPReLU : MPSCNNNeuron
+class MPSCNNNeuronPReLU
 ```
 
 #### Overview
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x_i) = x_i, if x_i &gt;= 0 | a_i * x_i if x_i &lt; 0](https://docs-assets.developer.apple.com/published/7bf64e09ae/6a48ed04-382c-4b68-9ea0-1f726e9fef05.png)
+![f(x_i) = x_i, if x_i >= 0 | a_i * x_i if x_i < 0](https://docs-assets.developer.apple.com/published/95c19cdea26a32c5047215a3d05cd831/media-2923194%402x.png)
 
 Where `i` in `[0 ... channels - 1]`. That is, parameters `a``ᵢ` are learned and applied to each channel separately. Compare this to [`MPSCNNNeuronReLU`](mpscnnneuronrelu.md) where parameter `a` is shared across all channels.
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, a: UnsafePointer<Float>, count: Int)](mpscnnneuronprelu/2921661-init.md)
+- [init(device: any MTLDevice, a: UnsafePointer<Float>, count: Int)](mpscnnneuronprelu/init(device:a:count:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -69,8 +79,6 @@ Where `i` in `[0 ... channels - 1]`. That is, parameters `a``ᵢ` are learned an
   A logarithm neuron filter.
 - [class MPSCNNNeuronPower](mpscnnneuronpower.md)
   A power neuron filter.
-- [class MPSNNNeuronDescriptor](mpsnnneurondescriptor.md)
-  An object that specifies properties used by a neuron kernel.
 
 
 ---

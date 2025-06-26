@@ -17,6 +17,7 @@ The blend mode used to draw the node’s contents into its parent’s framebuffe
 ## Declaration
 
 ```swift
+@MainActor
 var blendMode: SKBlendMode { get set }
 ```
 

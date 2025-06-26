@@ -21,7 +21,7 @@ A newly generated symmetric key, or `NULL` on failure. In Objective-C, call the 
 ## Parameters
 
 - `parameters`: When used as a replacement for  , set the   key to the keychain ( ) into which the key should be stored,   to a user-visible label for the key, and   to an identifier defined by your application, for subsequent use in calls to  . Additionally, you can specify keychain access controls for the key by setting   to a   object.
-- `error`: A pointer to a  doc://com.apple.documentation/documentation/corefoundation/cferror-ru8  variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `error`: A pointer to a   variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

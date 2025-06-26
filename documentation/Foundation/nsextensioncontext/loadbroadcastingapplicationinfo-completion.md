@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-func loadBroadcastingApplicationInfo() async -> (String, String, UIImage?)
+func loadBroadcastingApplicationInfo() async -> (String, String, NSImage?)
 ```
 
 #### Discussion

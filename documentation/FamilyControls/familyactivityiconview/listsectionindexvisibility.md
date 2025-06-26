@@ -8,7 +8,6 @@ Changes the visibility of the list section index.
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
 - visionOS 26.0+ (Beta)
 - watchOS 26.0+ (Beta)
 

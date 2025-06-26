@@ -36,11 +36,6 @@ With a person’s permission, an installed health research app that uses [`Senso
   Let people configure their device to set your app as the default dialer app.
 - [LiveCommunicationKit updates](../Updates/LiveCommunicationKit.md)
   Learn about important changes to LiveCommunicationKit.
-### Cellular network conversations
-- [class TelephonyManager](telephonymanager.md)
-  An interface for initiating cellular network or VoIP conversations.
-- [struct DialRequest](dialrequest.md)
-  A request to start a conversation using the default calling app.
 ### VoIP conversation management
 - [class ConversationManager](conversationmanager.md)
   An interface for managing and observing VoIP conversations.
@@ -70,8 +65,6 @@ With a person’s permission, an installed health research app that uses [`Senso
 - [class UnmergeConversationAction](unmergeconversationaction.md)
   An action that separates two previosuly merged conversations.
 ### Participant information
-- [struct Account](account.md)
-  A structure that represents a SIM or eSIM for dialing into a conversation.
 - [struct Handle](handle.md)
   A way to reach a participant, such as a phone number or email address.
 ### Conversation history
@@ -79,6 +72,13 @@ With a person’s permission, an installed health research app that uses [`Senso
   An interface for managing and providing conversation history.
 - [protocol ConversationHistoryManagerDelegate](conversationhistorymanagerdelegate.md)
   Methods for receiving updates to the conversation history.
+### Classes
+- [class TelephonyConversationManager](telephonyconversationmanager.md)
+### Structures
+- [struct CellularService](cellularservice.md)
+  Struct representing an account which can be used to dial a call
+- [struct StartCellularConversationAction](startcellularconversationaction.md)
+  Struct representing a request to dial a conversation using the default calling application
 
 
 ---

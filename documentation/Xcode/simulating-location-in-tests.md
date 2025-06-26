@@ -37,7 +37,7 @@ Xcode uses the added GPX file to simulate locations in tests. You can add multip
 
 ##### Construct Locations for Unit Tests
 
-When testing your app’s location-handling logic, you don’t need to use [`CLLocationManager`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager) or get the device’s location. You can construct instances of doc://com.apple.documentation/documentation/corelocation/cllocationcoordinate2d with known values for the coordinate’s latitude and longitude in the test. Pass these instances to the code under test, and validate that your code behaves as expected for the given values.
+When testing your app’s location-handling logic, you don’t need to use [`CLLocationManager`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager) or get the device’s location. You can construct instances of [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/CoreLocation/CLLocationCoordinate2D) with known values for the coordinate’s latitude and longitude in the test. Pass these instances to the code under test, and validate that your code behaves as expected for the given values.
 
 ##### Set a Simulated Location for Ui Automation
 

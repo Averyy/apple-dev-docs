@@ -207,7 +207,7 @@ try decodeStream.readBlob(key: ArchiveHeader.FieldKey("DAT"),
 
 ##### Initialize a String From the Raw Buffer Pointer
 
-The sample creates a string from the raw buffer pointer by creating a typed pointer that’s bound to [`CChar`](https://developer.apple.com/documentation/Swift/CChar), and calls `init(cString:)` to initialize the new string.
+The sample creates a string from the raw buffer pointer by creating a typed pointer that’s bound to [`CChar`](https://developer.apple.com/documentation/Swift/CChar), and calls [`init(cString:)`](https://developer.apple.com/documentation/Swift/String/init(cString:)-2p84k) to initialize the new string.
 
 ```swift
 let typedPtr = rawBufferPtr.bindMemory(to: CChar.self)

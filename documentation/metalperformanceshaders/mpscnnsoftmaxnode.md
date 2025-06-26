@@ -1,7 +1,7 @@
 # MPSCNNSoftMaxNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a softmax filter.
 
@@ -16,18 +16,25 @@ A representation of a softmax filter.
 ## Declaration
 
 ```swift
-class MPSCNNSoftMaxNode : MPSNNFilterNode
+class MPSCNNSoftMaxNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnnsoftmaxnode/2866408-init.md)
+- [init(source: MPSNNImageNode)](mpscnnsoftmaxnode/init(source:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

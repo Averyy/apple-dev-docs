@@ -24,9 +24,9 @@ An element of a RealityKit scene to which you attach components that provide app
 
 - [Loading Reality Composer files manually without generated code](loading-reality-composer-files-manually-without-generated-code.md)
 - [Improving the Accessibility of RealityKit Apps](improving-the-accessibility-of-realitykit-apps.md)
-- [Adding interactivity to behaviors](adding-interactivity-to-behaviors.md)
 - [Arranging elements in a scene](arranging-elements-in-a-scene.md)
 - [Manipulating Reality Composer scenes from code](manipulating-reality-composer-scenes-from-code.md)
+- [Adding interactivity to behaviors](adding-interactivity-to-behaviors.md)
 
 #### Overview
 
@@ -176,7 +176,9 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
 - [Entity.ConfigurationCatalog](entity/configurationcatalog-2tett.md)
   A collection of alternative representations of an entity you can choose from.
 - [Entity.Observable](entity/observable-7cnpn.md)
+  When properties in `Entity.Observable` are accessed, they participate in Observation. This means that when they change, any observers will be notified. Each of its properties passes through to the underlying Entity’s corresponding properties, so modifications of them will modify the underlying Entity’s corresponding property.
 - [Entity.Observable](entity/observable-7ksgz.md)
+  When properties in `Entity.Observable` are accessed, they participate in Observation. This means that when they change, any observers will be notified. Each of its properties passes through to the underlying Entity’s corresponding properties, so modifications of them will modify the underlying Entity’s corresponding property.
 - [Entity.ParameterSet](entity/parameterset-3cp4c.md)
   Represents a reference to the parameters for a particular entity.
 - [Entity.ParameterSet](entity/parameterset-49a5j.md)
@@ -255,7 +257,7 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
 - [func applyTapForBehaviors()](entity/applytapforbehaviors.md)
   Apply a tap to an Entity or one of its ancestors to trigger a RealityComposer behavior if one is present.
 - [func attach(_:to:)](entity/attach(_:to:).md)
-  Attach an entity to a target pin owned by another entity with an optional specified source pin This utility function has the same effect of adding an AttachedTransformComponent created witht the same parameter to the entity you are calling upon
+  Attach an entity to a target pin owned by another entity with an optional specified source pin This utility function has the same effect of adding an AttachedTransformComponent created with the same parameter to the entity you are calling upon
 ### Type Methods
 - [static func animate(Animation, body: () -> Void, completion: (() -> Void)?)](entity/animate(_:body:completion:).md)
 ### Enumerations

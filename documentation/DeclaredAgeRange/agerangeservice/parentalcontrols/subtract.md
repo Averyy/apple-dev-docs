@@ -1,6 +1,6 @@
 # subtract(_:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: method
 
 Removes the elements of the given set from this set.

@@ -23,8 +23,6 @@ struct WACapabilities
 - [static var supportedFeatures: Set<WACapabilities.Feature>](wacapabilities/supportedfeatures.md)
   A property that returns a set of supported features, or an empty set if the current platform doesn’t support Wi-Fi Aware.
 ### Checking for the maximum devices and services
-- [static var maximumConnections: Int](wacapabilities/maximumconnections.md)
-  The maximum number of unique data path connections your app can use simultaneously.
 - [static var maximumConnectableDevices: Int](wacapabilities/maximumconnectabledevices.md)
   The maximum number of unique devices your app can connect to simultaneously.
 - [static var maximumPublishableServices: Int](wacapabilities/maximumpublishableservices.md)

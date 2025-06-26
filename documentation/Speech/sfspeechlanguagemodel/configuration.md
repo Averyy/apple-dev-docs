@@ -29,11 +29,15 @@ Pass this object to [`prepareCustomLanguageModel(for:configuration:completion:)`
   Creates a configuration with the location of a language model file.
 - [init(languageModel: URL, vocabulary: URL?)](sfspeechlanguagemodel/configuration/init(languagemodel:vocabulary:).md)
   Creates a configuration with the locations of language model and vocabulary files.
+- [init(languageModel: URL, vocabulary: URL?, weight: NSNumber?)](sfspeechlanguagemodel/configuration/init(languagemodel:vocabulary:weight:).md)
+  Creates a configuration with the locations of language model and vocabulary files, and custom weight.
 ### Instance Properties
 - [var languageModel: URL](sfspeechlanguagemodel/configuration/languagemodel.md)
   The location of a compiled language model file.
 - [var vocabulary: URL?](sfspeechlanguagemodel/configuration/vocabulary.md)
   The location of a compiled vocabulary file.
+- [var weight: NSNumber?](sfspeechlanguagemodel/configuration/weight.md)
+  The relative weight of the language model customization. Value must be between 0.0 and 1.0 inclusive.
 
 ## Relationships
 

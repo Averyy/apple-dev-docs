@@ -1,7 +1,7 @@
 # MPSRNNMatrixId.gruOutputGateInputGateWeights
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case gruOutputGateInputGateWeights = 27
+case gruOutputGateInputGateWeights
 ```
 
 

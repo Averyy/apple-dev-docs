@@ -25,14 +25,14 @@ struct VStack<Content> where Content : View
 
 - [Building layouts with stack views](building-layouts-with-stack-views.md)
 - [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
-- [Inspecting view layout](inspecting-view-layout.md)
 - [Adding a background to your view](adding-a-background-to-your-view.md)
+- [Inspecting view layout](inspecting-view-layout.md)
 - [Picking container views for your content](picking-container-views-for-your-content.md)
+- [Aligning views across stacks](aligning-views-across-stacks.md)
 - [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
-- [Configuring views](configuring-views.md)
 - [Declaring a custom view](declaring-a-custom-view.md)
 - [Aligning views within a stack](aligning-views-within-a-stack.md)
-- [Aligning views across stacks](aligning-views-across-stacks.md)
+- [Configuring views](configuring-views.md)
 
 #### Overview
 

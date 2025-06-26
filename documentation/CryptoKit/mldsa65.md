@@ -27,9 +27,6 @@ enum MLDSA65
   The private key for MLDSA65.
 - [MLDSA65.PublicKey](mldsa65/publickey.md)
   The public key for MLDSA65.
-### Errors
-- [MLDSA65.Errors](mldsa65/errors.md)
-  Errors that CryptoKit encounters in using module lattice digital signature algorithms.
 
 ## Relationships
 

@@ -25,7 +25,7 @@ Unlike the [`CIKernel`](cikernel.md) class and its other subclasses that allow y
 
 Your custom image processing operation is invoked by your subclassed image processor kernel’s [`process(with:arguments:output:)`](ciimageprocessorkernel/process(with:arguments:output:).md) method. The method can accept zero, one or more inputs: kernels that generate imagery (such as a noise or pattern generator) need no inputs, while kernels that composite source images together require multiple inputs. The `arguments` dictionary allows the caller to pass in additional parameter values (such as the radius of a blur) and the `output` contains the destination for your image processing code to write to.
 
-The following code shows how you can subclass `CIImageProcessorKernel` to apply the Metal Performance Shader [`MPSImageThresholdBinary`](https://developer.apple.com/documentation/metalperformanceshaders/mpsimagethresholdbinary) kernel to a [`CIImage`](ciimage.md):
+The following code shows how you can subclass `CIImageProcessorKernel` to apply the Metal Performance Shader [`MPSImageThresholdBinary`](https://developer.apple.com/documentation/MetalPerformanceShaders/MPSImageThresholdBinary) kernel to a [`CIImage`](ciimage.md):
 
 ```objc
 class ThresholdImageProcessorKernel: CIImageProcessorKernel {

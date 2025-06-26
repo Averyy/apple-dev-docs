@@ -17,7 +17,6 @@ The average initial rotation of a particle, expressed as an angle in radians.
 ## Declaration
 
 ```swift
-@MainActor
 var particleRotation: CGFloat { get set }
 ```
 

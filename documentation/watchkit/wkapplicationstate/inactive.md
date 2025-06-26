@@ -16,8 +16,8 @@ case inactive
 
 ## Mentions
 
-- [Handling Common State Transitions](handling-common-state-transitions.md)
 - [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
+- [Handling Common State Transitions](handling-common-state-transitions.md)
 
 #### Discussion
 

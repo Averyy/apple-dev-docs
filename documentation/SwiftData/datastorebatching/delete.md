@@ -20,6 +20,10 @@
 func delete<T>(_ request: DataStoreBatchDeleteRequest<T>) throws where T : PersistentModel
 ```
 
+## See Also
+
+- [struct DataStoreBatchDeleteRequest](datastorebatchdeleterequest.md)
+
 
 ---
 

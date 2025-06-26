@@ -17,6 +17,7 @@ Creates a shape node with an elliptical path centered on the node’s origin.
 ## Declaration
 
 ```swift
+@MainActor
 convenience init(ellipseOf size: CGSize)
 ```
 

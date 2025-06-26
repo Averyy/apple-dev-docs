@@ -22,7 +22,7 @@ protocol AttributedTextValueConstraint : Hashable, Sendable, AttributedTextForma
 
 #### Overview
 
-Used as an [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md), this constrains the [`AttributeKey`](attributedtextvalueconstraint/attributekey.md)’s value using the `constrain(_:)-1tjpn` function.
+Used as an [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md), this constrains the [`AttributeKey`](attributedtextvalueconstraint/attributekey.md)’s value using the `constrain(_:)-(Attributes)` function.
 
 A simple constraint only accesses a single attribute. It can be made generic over the attribute scope so it can be reused in different [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md)s.
 

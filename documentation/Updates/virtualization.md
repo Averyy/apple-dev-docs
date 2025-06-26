@@ -13,7 +13,6 @@ Browse notable changes in [`Virtualization`](https://developer.apple.com/documen
 - Take advantage of more efficient storage utilization in virtual machine (VM) images using the Apple Sparse Image Format (ASIF). Its space-saving allocation results in a smaller disk footprint and optimized transfer for VM disk images with [`VZDiskImageStorageDeviceAttachment`](https://developer.apple.com/documentation/Virtualization/VZDiskImageStorageDeviceAttachment).
 - Support vmnet custom network topologies to enable VM-to-VM communications based on a logical network with customized configuration.
 - Easily discover a VM’s on-process [`queue`](https://developer.apple.com/documentation/Virtualization/VZVirtualMachine/queue) using this new property on  [`VZVirtualMachine`](https://developer.apple.com/documentation/Virtualization/VZVirtualMachine).
-- Access rights-protected content in VMs and add support for DRM content in macOS VMs.
 
 #### June 2024
 

@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,17 +20,23 @@ struct MPSDeviceOptions
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mpsdeviceoptions/3088935-init.md)
+- [init(rawValue: UInt)](mpsdeviceoptions/init(rawvalue:).md)
 ### Type Properties
-- [static var Default: MPSDeviceOptions](mpsdeviceoptions/3088915-default.md)
-- [static var lowPower: MPSDeviceOptions](mpsdeviceoptions/3088916-lowpower.md)
-- [static var skipRemovable: MPSDeviceOptions](mpsdeviceoptions/3088917-skipremovable.md)
+- [static var Default: MPSDeviceOptions](mpsdeviceoptions/default.md)
+- [static var lowPower: MPSDeviceOptions](mpsdeviceoptions/lowpower.md)
+- [static var skipRemovable: MPSDeviceOptions](mpsdeviceoptions/skipremovable.md)
 
 ## Relationships
 
 ### Conforms To
-- [OptionSet](../swift/optionset.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [OptionSet](../Swift/OptionSet.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SetAlgebra](../Swift/SetAlgebra.md)
 
 
 ---

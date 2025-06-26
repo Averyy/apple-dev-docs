@@ -30,6 +30,8 @@ class AVMetricHLSMediaSegmentRequestEvent
 - [var url: URL?](avmetrichlsmediasegmentrequestevent/url.md)
 ### Instance Properties
 - [var indexFileURL: URL](avmetrichlsmediasegmentrequestevent/indexfileurl.md)
+- [var segmentDuration: TimeInterval](avmetrichlsmediasegmentrequestevent/segmentduration.md)
+  Returns the duration of segment in seconds.
 
 ## Relationships
 

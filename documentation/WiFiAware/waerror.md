@@ -31,21 +31,6 @@ Wi-Fi Aware APIs may throw a [`WAError`](waerror.md) to indicate when an underly
   An error that occurs if Wi-Fi Aware isn’t supported on the device.
 - [WAError.WiFiAwareUnsupportedDetails](waerror/wifiawareunsupporteddetails.md)
   The optional details describing the unavailability of Wi-Fi Aware on the device.
-### Checking for unsupported requested functions
-- [case functionUnsupported(WAError.FunctionUnsupportedDetails)](waerror/functionunsupported(_:).md)
-  An error that occurs if the system doesn’t support a function.
-- [WAError.FunctionUnsupportedDetails](waerror/functionunsupporteddetails.md)
-  The optional details describing what’s unsupported.
-### Checking for unpermitted operations
-- [case operationNotPermitted(WAError.OperationNotPermittedDetails)](waerror/operationnotpermitted(_:).md)
-  An error that occurs if an operation isn’t permitted by the system.
-- [WAError.OperationNotPermittedDetails](waerror/operationnotpermitteddetails.md)
-  The optional details describing what isn’t permitted.
-### Checking for prohibited operations
-- [case operationRejectedByUser(WAError.OperationRejectedByUserDetails)](waerror/operationrejectedbyuser(_:).md)
-  An error that occurs if a person denies the operation.
-- [WAError.OperationRejectedByUserDetails](waerror/operationrejectedbyuserdetails.md)
-  The optional details describing the reason a person rejected the operation.
 ### Checking for insufficient radio resources
 - [case noRadioResources(WAError.NoRadioResourcesDetails)](waerror/noradioresources(_:).md)
   An error that occurs if the radio lacks resources.
@@ -85,11 +70,6 @@ Wi-Fi Aware APIs may throw a [`WAError`](waerror.md) to indicate when an underly
   An error that occurs if the service is unable to connect.
 - [WAError.ConnectionFailedDetails](waerror/connectionfaileddetails.md)
   The optional details describing the failed connection.
-### Checking for connection requirements
-- [case connectionRequirementsNotMet(WAError.ConnectionRequirementsNotMetDetails)](waerror/connectionrequirementsnotmet(_:).md)
-  An error that occurs because of missing requirements.
-- [WAError.ConnectionRequirementsNotMetDetails](waerror/connectionrequirementsnotmetdetails.md)
-  The optional details describing the missing requirements that failed the connection.
 ### Checking for connection timeouts
 - [case connectionIdleTimeout(WAError.ConnectionIdleTimeoutDetails)](waerror/connectionidletimeout(_:).md)
   An error that occurs due to an idle or unused connection.
@@ -112,6 +92,12 @@ Wi-Fi Aware APIs may throw a [`WAError`](waerror.md) to indicate when an underly
   An error that occurs due to publisher timeout.
 - [case subscriberTimeout(WAError.SubscriberTimeoutDetails)](waerror/subscribertimeout(_:).md)
   An error that occurs due to subscriber timeout.
+### Structures
+- [WAError.EntitlementMissingDetails](waerror/entitlementmissingdetails.md)
+  The optional details describing the missing entitlement.
+### Enumeration Cases
+- [case entitlementMissing(WAError.EntitlementMissingDetails)](waerror/entitlementmissing(_:).md)
+  An error that occurs if your App is missing the entitlement needed for the requested operation.
 ### Instance Methods
 - [func encode(to: any Encoder) throws](waerror/encode(to:).md)
   Encodes this value into the given encoder.

@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,17 +20,23 @@ struct MPSMatrixRandomDistribution
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mpsmatrixrandomdistribution/3243123-init.md)
+- [init(rawValue: UInt)](mpsmatrixrandomdistribution/init(rawvalue:).md)
 ### Type Properties
-- [static var `default`: MPSMatrixRandomDistribution](mpsmatrixrandomdistribution/3242853-default.md)
-- [static var normal: MPSMatrixRandomDistribution](mpsmatrixrandomdistribution/3547978-normal.md)
-- [static var uniform: MPSMatrixRandomDistribution](mpsmatrixrandomdistribution/3242854-uniform.md)
+- [static var `default`: MPSMatrixRandomDistribution](mpsmatrixrandomdistribution/default.md)
+- [static var normal: MPSMatrixRandomDistribution](mpsmatrixrandomdistribution/normal.md)
+- [static var uniform: MPSMatrixRandomDistribution](mpsmatrixrandomdistribution/uniform.md)
 
 ## Relationships
 
 ### Conforms To
-- [OptionSet](../swift/optionset.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [OptionSet](../Swift/OptionSet.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SetAlgebra](../Swift/SetAlgebra.md)
 
 
 ---

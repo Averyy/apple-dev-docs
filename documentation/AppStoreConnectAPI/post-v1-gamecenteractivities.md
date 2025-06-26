@@ -8,6 +8,10 @@ Create an activity for your Game Center detail or Game Center group.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Mentions
+
+- [Configuring Game center activities](configuring-game-center-activities.md)
+
 ## See Also
 
 - [Modify the achievements for a Game Center activity](post-v1-gamecenteractivities-_id_-relationships-achievements.md)

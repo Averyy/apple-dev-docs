@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-init(left: simd_float3 = .zero, right: simd_float3 = .zero)
+init(left: Point3DFloat = .zero, right: Point3DFloat = .zero)
 ```
 
 ## See Also

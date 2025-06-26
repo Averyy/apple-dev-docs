@@ -23,8 +23,8 @@ class UNUserNotificationCenter
 ## Mentions
 
 - [Handling notifications and notification-related actions](handling-notifications-and-notification-related-actions.md)
-- [Declaring your actionable notification types](declaring-your-actionable-notification-types.md)
 - [Asking permission to use notifications](asking-permission-to-use-notifications.md)
+- [Declaring your actionable notification types](declaring-your-actionable-notification-types.md)
 
 #### Overview
 

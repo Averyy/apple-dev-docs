@@ -41,9 +41,9 @@ When unanimated, the pose of a skinned model is defined by the rest pose of each
 - [MeshResource.Skeleton.Joint](meshresource/skeleton-2om5m/joint.md)
   A named joint in a [`MeshResource.Skeleton`](meshresource/skeleton-2om5m.md).
 ### Initializers
-- [init(id:jointNames:inverseBindPoseMatrices:restPoseTransforms:parentIndices:)](meshresource/skeleton-2om5m/init(id:jointnames:inversebindposematrices:restposetransforms:parentindices:).md)
+- [init(id:jointNames:inverseBindPoseMatrices:restPoseTransforms:parentIndices:)](meshresource/skeleton-2378/init(id:jointnames:inversebindposematrices:restposetransforms:parentindices:).md)
   Creates a skeleton from arrays which define its joints. Returns `nil` if there was an issue converting the parameters to a valid skeleton.
-- [init(id:joints:)](meshresource/skeleton-2om5m/init(id:joints:).md)
+- [init(id:joints:)](meshresource/skeleton-2378/init(id:joints:).md)
   Creates a skeleton from an array of joints.
 ### Instance Properties
 - [var id: String](meshresource/skeleton-2om5m/id.md)

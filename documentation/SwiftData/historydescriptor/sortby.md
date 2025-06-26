@@ -3,6 +3,8 @@
 **Framework**: SwiftData  
 **Kind**: property
 
+The sort descriptor to use to sort the returned history data.
+
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
@@ -18,6 +20,13 @@
 ```swift
 var sortBy: [SortDescriptor<TransactionType>]
 ```
+
+## See Also
+
+- [var fetchLimit: UInt64](historydescriptor/fetchlimit.md)
+  The maximum number of transactions to retrieve from the model store’s history.
+- [var predicate: Predicate<TransactionType>?](historydescriptor/predicate.md)
+  The predicate used to initialize the history descriptor.
 
 
 ---

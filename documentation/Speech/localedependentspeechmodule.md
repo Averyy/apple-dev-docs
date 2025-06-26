@@ -26,6 +26,9 @@ protocol LocaleDependentSpeechModule : SpeechModule
 ### Type Properties
 - [static var supportedLocales: [Locale]](localedependentspeechmodule/supportedlocales.md)
   A set of all possible locales that can be used by the module class.
+### Type Methods
+- [static func supportedLocale(equivalentTo: Locale) async -> Locale?](localedependentspeechmodule/supportedlocale(equivalentto:).md)
+  A locale from the module’s supported locales equivalent to the given locale.
 
 ## Relationships
 
@@ -44,7 +47,7 @@ protocol LocaleDependentSpeechModule : SpeechModule
 - [class SpeechTranscriber](speechtranscriber.md)
   A module that transcribes speech to text. This transcriber is appropriate for normal conversation and general purposes.
 - [class DictationTranscriber](dictationtranscriber.md)
-  A module that transcribes speech to text. This transcriber is used by [`SFSpeechRecognizer`](sfspeechrecognizer.md) and system dictation features.
+  A module that transcribes speech to text. This transcriber is used by `SFSpeechRecognizer` and system dictation features.
 - [class SpeechDetector](speechdetector.md)
   A module that performs a voice activity detection (VAD) analysis.
 

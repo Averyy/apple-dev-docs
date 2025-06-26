@@ -1,7 +1,7 @@
 # MPSRNNMatrixId.SingleGateInputWeights
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case SingleGateInputWeights = 0
+case SingleGateInputWeights
 ```
 
 

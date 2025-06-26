@@ -44,7 +44,6 @@ This structure holds the value of an animatable property ([`animatedValue`](bind
   A reference to a particular scene, entity, or property that animates.
 - [struct BindableValuesReference](bindablevaluesreference.md)
   A reference to a bindable value of an animation.
-- [struct ComponentAnimatableData](componentanimatabledata.md)
 - [struct ParameterSet](parameterset.md)
   A reference to general-purpose entity parameters for animations.
 - [struct InternalBindPath](internalbindpath.md)

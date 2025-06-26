@@ -8,7 +8,6 @@ Specifies the preferred color scheme of a bar managed by SwiftUI.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - watchOS 9.0+

@@ -11,6 +11,7 @@ Start installing macOS.
 ## Declaration
 
 ```swift
+@preconcurrency
 func install(completionHandler: @escaping (Result<Void, any Error>) -> Void)
 ```
 

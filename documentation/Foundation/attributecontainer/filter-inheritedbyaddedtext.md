@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Returns an attribute container storing only the attributes in `self` with the `inheritedByAddedText` property set to `true`
+Returns a copy of the attribute container with only attributes that specify the provided inheritance behavior.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -11,7 +11,7 @@ Returns an attribute container storing only the attributes in `self` with the `i
 - Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
-- visionOS 1.0+
+- visionOS 26.0+ (Beta)
 - watchOS 26.0+ (Beta)
 
 ## Declaration
@@ -19,6 +19,14 @@ Returns an attribute container storing only the attributes in `self` with the `i
 ```swift
 func filter(inheritedByAddedText: Bool) -> AttributeContainer
 ```
+
+#### Return Value
+
+A copy of the attribute container with only attributes whose `inheritedByAddedText` property matches the provided value.
+
+## Parameters
+
+- `inheritedByAddedText`: An   value to filter. Attributes matching this value are included in the returned container.
 
 
 ---

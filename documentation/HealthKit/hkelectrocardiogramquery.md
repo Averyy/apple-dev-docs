@@ -92,6 +92,8 @@ Electrocardiogram queries are immutable: You set query’s properties when you c
   A query that returns the heartbeat data contained in a heartbeat series sample.
 - [struct HKElectrocardiogramQueryDescriptor](hkelectrocardiogramquerydescriptor.md)
   A query interface that reads the underlying voltage measurements for an electrocardiogram sample using Swift concurrency.
+- [class HKWorkoutEffortRelationship](hkworkouteffortrelationship.md)
+- [class HKWorkoutEffortRelationshipQuery](hkworkouteffortrelationshipquery.md)
 
 
 ---

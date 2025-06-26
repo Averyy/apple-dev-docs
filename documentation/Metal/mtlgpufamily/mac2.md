@@ -21,8 +21,8 @@ case mac2
 
 ## Mentions
 
-- [Predicting Which Mips the GPU Samples with Level-of-Detail Queries](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md)
 - [Restricting Access to Specific Mipmaps](restricting-access-to-specific-mipmaps.md)
+- [Predicting Which Mips the GPU Samples with Level-of-Detail Queries](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md)
 
 ## See Also
 

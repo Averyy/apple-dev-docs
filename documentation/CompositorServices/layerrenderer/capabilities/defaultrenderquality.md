@@ -3,7 +3,7 @@
 **Framework**: Compositor Services  
 **Kind**: property
 
-Returns default render quality allowed for drawing on this platform.
+The default render quality used on this platform.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -17,9 +17,9 @@ var defaultRenderQuality: LayerRenderer.RenderQuality { get }
 
 #### Discussion
 
-This should be used as a base value for the platform quality for drawing.
+This should be used as the base render quality value for the platform.
 
-Use to set max render quality, see `LayerRenderer.Configuration.maxRenderQuality`.
+Use it to decide your maximum render quality, see `LayerRenderer.Configuration.maxRenderQuality`.
 
 
 ---

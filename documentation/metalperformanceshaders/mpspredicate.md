@@ -1,7 +1,7 @@
 # MPSPredicate
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,22 +14,29 @@
 ## Declaration
 
 ```swift
-class MPSPredicate : NSObject
+class MPSPredicate
 ```
 
 ## Topics
 
 ### Initializers
-- [init(buffer: any MTLBuffer, offset: Int)](mpspredicate/3114034-init.md)
-- [init(device: any MTLDevice)](mpspredicate/3114035-init.md)
+- [init(buffer: any MTLBuffer, offset: Int)](mpspredicate/init(buffer:offset:).md)
+- [init(device: any MTLDevice)](mpspredicate/init(device:).md)
 ### Instance Properties
-- [var predicateBuffer: any MTLBuffer](mpspredicate/3114036-predicatebuffer.md)
-- [var predicateOffset: Int](mpspredicate/3114037-predicateoffset.md)
+- [var predicateBuffer: any MTLBuffer](mpspredicate/predicatebuffer.md)
+- [var predicateOffset: Int](mpspredicate/predicateoffset.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

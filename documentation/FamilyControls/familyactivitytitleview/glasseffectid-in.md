@@ -8,7 +8,6 @@ Associates an identity value to glass effects defined within this view.
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
 - watchOS 26.0+ (Beta)

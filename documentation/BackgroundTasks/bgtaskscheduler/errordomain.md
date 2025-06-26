@@ -11,7 +11,6 @@ The background tasks error domain as a string.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
-- watchOS 6.0+
 
 ## Declaration
 

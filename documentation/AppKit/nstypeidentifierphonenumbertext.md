@@ -17,7 +17,7 @@ let NSTypeIdentifierPhoneNumberText: String
 
 #### Discussion
 
-UTI subtype for [`phoneNumber`](https://developer.apple.com/documentation/Foundation/NSTextCheckingResult/CheckingType/phoneNumber), `com.apple.structured-text.telephone-number`.
+UTI subtype for doc://com.apple.documentation/documentation/foundation/nstextcheckingresult/checkingtype/1407929-phonenumber, `com.apple.structured-text.telephone-number`.
 
 ## See Also
 

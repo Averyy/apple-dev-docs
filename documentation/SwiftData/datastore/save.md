@@ -20,6 +20,11 @@
 func save(_ request: DataStoreSaveChangesRequest<Self.Snapshot>) throws -> DataStoreSaveChangesResult<Self.Snapshot>
 ```
 
+## See Also
+
+- [struct DataStoreSaveChangesRequest](datastoresavechangesrequest.md)
+- [class DataStoreSaveChangesResult](datastoresavechangesresult.md)
+
 
 ---
 

@@ -143,7 +143,7 @@ Assign texture resources to material parameters to provide color and fine surfac
   Asynchronously generates a texture resource from an in-memory Core Graphics image.
 - [func replaceAsync(withImage: CGImage, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](textureresource/replaceasync(withimage:options:).md)
   Asynchronously replaces the texture with a Core Graphics image.
-- [static generate(from:named:options:)](textureresource/generate(from:named:options:).md)
+- [static func generate(from: CGImage, named: String?, options: TextureResource.CreateOptions) async throws -> TextureResource](textureresource/generate(from:named:options:).md)
   Asynchronously generates a texture resource from an in-memory Core Graphics image.
 - [static func loadAsync(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](textureresource/loadasync(contentsof:withname:options:).md)
   Asynchronously loads a texture resource from a URL with options.

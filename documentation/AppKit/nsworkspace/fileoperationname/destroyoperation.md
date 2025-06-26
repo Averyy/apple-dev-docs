@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-Destroy file. Behaves the same as  [`removeFileAtPath:handler:`](https://developer.apple.com/documentation/Foundation/NSFileManager/removeFileAtPath:handler:).
+Destroy file. Behaves the same as  doc://com.apple.documentation/documentation/foundation/nsfilemanager/1556998-removefileatpath.
 
 **Availability**:
 - macOS 10.0+
@@ -19,7 +19,7 @@ static let destroyOperation: NSWorkspace.FileOperationName
 - [static let compressOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/compressoperation.md)
   Compress file. This operation always returns an error.
 - [static let copyOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/copyoperation.md)
-  Copy file to destination. Behaves the same as [`copyPath:toPath:handler:`](https://developer.apple.com/documentation/Foundation/NSFileManager/copyPath:toPath:handler:).
+  Copy file to destination. Behaves the same as doc://com.apple.documentation/documentation/foundation/nsfilemanager/1557010-copypath.
 - [static let decompressOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/decompressoperation.md)
   Decompress file. This operation always returns an error.
 - [static let decryptOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/decryptoperation.md)
@@ -29,9 +29,9 @@ static let destroyOperation: NSWorkspace.FileOperationName
 - [static let encryptOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/encryptoperation.md)
   Encrypt file. This operation always returns an error.
 - [static let linkOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/linkoperation.md)
-  Create hard link to file in destination. Behaves the same as [`linkPath:toPath:handler:`](https://developer.apple.com/documentation/Foundation/NSFileManager/linkPath:toPath:handler:).
+  Create hard link to file in destination. Behaves the same as doc://com.apple.documentation/documentation/foundation/nsfilemanager/1557003-linkpath.
 - [static let moveOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/moveoperation.md)
-  Move file to destination. Behaves the same as [`movePath:toPath:handler:`](https://developer.apple.com/documentation/Foundation/NSFileManager/movePath:toPath:handler:).
+  Move file to destination. Behaves the same as doc://com.apple.documentation/documentation/foundation/nsfilemanager/1556999-movepath.
 - [static let recycleOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/recycleoperation.md)
   Move file to trash. The file is moved to the trash folder on the volume containing the file using the same semantics as `NSWorkspaceMoveOperation`. If a file with the same name currently exists in the trash folder, the new file is renamed. If no trash folder exists on the volume containing the file, the operation fails.
 

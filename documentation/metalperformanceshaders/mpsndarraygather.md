@@ -1,7 +1,7 @@
 # MPSNDArrayGather
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,18 +14,28 @@
 ## Declaration
 
 ```swift
-class MPSNDArrayGather : MPSNDArrayBinaryKernel
+class MPSNDArrayGather
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var axis: Int](mpsndarraygather/3152529-axis.md)
+- [var axis: Int](mpsndarraygather/axis.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNDArrayBinaryKernel](mpsndarraybinarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

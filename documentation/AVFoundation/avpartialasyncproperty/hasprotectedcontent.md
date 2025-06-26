@@ -21,7 +21,7 @@ static var hasProtectedContent: AVAsyncProperty<Root, Bool> { get }
 
 #### Discussion
 
-Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
+Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
 Assets that contain protected content may not be playable without successful authorization, even if the value of its [`isPlayable`](avasset/isplayable.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
 

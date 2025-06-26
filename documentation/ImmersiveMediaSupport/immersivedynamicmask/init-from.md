@@ -23,10 +23,6 @@ This initializer throws an error if reading from the decoder fails, or if the da
 
 - `decoder`: The decoder to read data from.
 
-## See Also
-
-- [init(name: String, maskStereoRelation: ImmersiveDynamicMask.MaskStereoRelation, edgeTreatment: ImmersiveDynamicMask.MaskEdgeTreatment, controlPointInterpolation: ImmersiveDynamicMask.ControlPointInterpolation, leftControlPoints: [simd_float3], rightControlPoints: [simd_float3], edgeWidthInDegrees: Float)](immersivedynamicmask/init(name:maskstereorelation:edgetreatment:controlpointinterpolation:leftcontrolpoints:rightcontrolpoints:edgewidthindegrees:).md)
-
 
 ---
 

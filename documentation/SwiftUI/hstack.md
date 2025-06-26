@@ -23,9 +23,9 @@ struct HStack<Content> where Content : View
 
 ## Mentions
 
-- [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
-- [Laying out a simple view](laying-out-a-simple-view.md)
 - [Building layouts with stack views](building-layouts-with-stack-views.md)
+- [Laying out a simple view](laying-out-a-simple-view.md)
+- [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
 - [Picking container views for your content](picking-container-views-for-your-content.md)
 - [Aligning views across stacks](aligning-views-across-stacks.md)
 - [Aligning views within a stack](aligning-views-within-a-stack.md)

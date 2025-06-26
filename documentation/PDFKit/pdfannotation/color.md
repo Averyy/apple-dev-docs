@@ -17,7 +17,7 @@ Sets the stroke color for the annotation.
 
 ```swift
 @NSCopying
-var color: NSColor { get set }
+var color: UIColor { get set }
 ```
 
 #### Discussion

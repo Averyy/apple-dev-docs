@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-Holds the default value of identity matrix for the immersive camera i.e identity matrix for the left camera and identity matrix for the right camera.
+The default camera texture matrix for the immersive camera.
 
 **Availability**:
 - macOS 26.0+ (Beta)

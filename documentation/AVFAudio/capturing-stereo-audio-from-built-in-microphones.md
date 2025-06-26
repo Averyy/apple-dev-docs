@@ -20,7 +20,7 @@ Because a user can hold an iOS device in a variety of ways, you need to specify 
 
 This sample app shows how to configure your app to record stereo audio, and helps you visualize changes to the input orientation and data-source selection.
 
-> **Note**: You must run the sample on a supported physical device running iOS 14, or later. To determine whether a device supports stereo recording, query the audio session’s selected data source to see if its supportedPolarPatterns array contains the stereo polar pattern.
+> **Note**: You must run the sample on a supported physical device running iOS 14, or later. To determine whether a device supports stereo recording, query the audio session’s selected data source to see if its [`supportedPolarPatterns`](AVAudioSessionDataSourceDescription/supportedPolarPatterns.md) array contains the [`stereo`](AVAudioSession/PolarPattern/stereo.md) polar pattern.
 
 ##### Configure the Audio Session Category
 

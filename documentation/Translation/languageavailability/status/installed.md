@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: case
 
-A language or language pairing the framework supports, has downloaded and made ready for use in a translation.
+The framework supports the language or language pairing and has it downloaded and ready for use in a translation.
 
 **Availability**:
 - iOS 18.0+

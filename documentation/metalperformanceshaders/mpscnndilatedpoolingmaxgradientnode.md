@@ -1,7 +1,7 @@
 # MPSCNNDilatedPoolingMaxGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient dilated max pooling filter.
 
@@ -16,21 +16,28 @@ A representation of a gradient dilated max pooling filter.
 ## Declaration
 
 ```swift
-class MPSCNNDilatedPoolingMaxGradientNode : MPSCNNPoolingGradientNode
+class MPSCNNDilatedPoolingMaxGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int, dilationRateX: Int, dilationRateY: Int)](mpscnndilatedpoolingmaxgradientnode/2948026-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int, dilationRateX: Int, dilationRateY: Int)](mpscnndilatedpoolingmaxgradientnode/init(sourcegradient:sourceimage:gradientstate:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:dilationratex:dilationratey:).md)
 ### Instance Properties
-- [var dilationRateX: Int](mpscnndilatedpoolingmaxgradientnode/2947996-dilationratex.md)
-- [var dilationRateY: Int](mpscnndilatedpoolingmaxgradientnode/2948037-dilationratey.md)
+- [var dilationRateX: Int](mpscnndilatedpoolingmaxgradientnode/dilationratex.md)
+- [var dilationRateY: Int](mpscnndilatedpoolingmaxgradientnode/dilationratey.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNPoolingGradientNode](mpscnnpoolinggradientnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

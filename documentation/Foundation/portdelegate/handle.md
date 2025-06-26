@@ -17,7 +17,7 @@ Processes a given incoming message on the port.
 ## Declaration
 
 ```swift
-optional func handle(_ message: NSPortMessage)
+optional func handle(_ message: PortMessage)
 ```
 
 #### Discussion

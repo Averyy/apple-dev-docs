@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,11 +20,17 @@ struct MPSDimensionSlice
 ## Topics
 
 ### Initializers
-- [init()](mpsdimensionslice/3114270-init.md)
-- [init(start: Int, length: Int)](mpsdimensionslice/3114271-init.md)
+- [init()](mpsdimensionslice/init.md)
+- [init(start: Int, length: Int)](mpsdimensionslice/init(start:length:).md)
 ### Instance Properties
-- [var length: Int](mpsdimensionslice/3114025-length.md)
-- [var start: Int](mpsdimensionslice/3114026-start.md)
+- [var length: Int](mpsdimensionslice/length.md)
+- [var start: Int](mpsdimensionslice/start.md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

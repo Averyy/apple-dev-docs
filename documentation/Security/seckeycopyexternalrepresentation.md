@@ -37,7 +37,7 @@ The method returns data in the PKCS #1 format for an RSA key. For an elliptic c
 ## Parameters
 
 - `key`: The key to export.
-- `error`: The address of a  doc://com.apple.documentation/documentation/corefoundation/cferror-ru8  object. If an error occurs, this is set to point at an error instance that describes the failure.
+- `error`: The address of a   object. If an error occurs, this is set to point at an error instance that describes the failure.
 
 
 ---

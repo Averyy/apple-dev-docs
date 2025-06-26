@@ -54,6 +54,8 @@ To manage Game Center activity versions, be sure you have one of the following u
 
 ## See Also
 
+- [Configuring Game center activities](configuring-game-center-activities.md)
+  Setup and configure a way for players to compete on a specific task or part of your game.
 - [Game Center activities](game-center-activities.md)
   Manage Game Center activities for your apps.
 - [Game Center activity version releases](game-center-activity-version-releases.md)

@@ -27,9 +27,6 @@ enum MLDSA87
   The private key for MLDSA87.
 - [MLDSA87.PublicKey](mldsa87/publickey.md)
   The public key for MLDSA87.
-### Errors
-- [MLDSA87.Errors](mldsa87/errors.md)
-  Errors that CryptoKit encounters in using module lattice digital signature algorithms.
 
 ## Relationships
 

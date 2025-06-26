@@ -22,8 +22,8 @@ func SecAccessControlCreateWithFlags(_ allocator: CFAllocator?, _ protection: CF
 
 ## Mentions
 
-- [Protecting keys with the Secure Enclave](protecting-keys-with-the-secure-enclave.md)
 - [Restricting keychain item accessibility](restricting-keychain-item-accessibility.md)
+- [Protecting keys with the Secure Enclave](protecting-keys-with-the-secure-enclave.md)
 
 #### Return Value
 

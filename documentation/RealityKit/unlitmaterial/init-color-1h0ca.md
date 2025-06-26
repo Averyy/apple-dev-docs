@@ -34,8 +34,11 @@ init(color: UIColor)
 - [init(color: NSColor)](unlitmaterial/init(color:)-1sk7r.md)
   Creates an unlit material with the given base color.
 - [init(applyPostProcessToneMap:)](unlitmaterial/init(applypostprocesstonemap:).md)
+  Creates an UnlitMaterial with the given tone mapping setting
 - [init(color: NSColor, applyPostProcessToneMap: Bool)](unlitmaterial/init(color:applypostprocesstonemap:)-2cszc.md)
+  Creates an UnlitMaterial with the given color and tone mapping setting
 - [init(color: UIColor, applyPostProcessToneMap: Bool)](unlitmaterial/init(color:applypostprocesstonemap:)-9pbcy.md)
+  Creates an UnlitMaterial with the given color and tone mapping setting
 - [init(program:)](unlitmaterial/init(program:).md)
 - [init(texture:)](unlitmaterial/init(texture:).md)
   Creates a new unlit material with the provided color texture.

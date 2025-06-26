@@ -1,7 +1,7 @@
 # MPSLSTMDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A description of a long short-term memory block or layer.
 
@@ -16,7 +16,7 @@ A description of a long short-term memory block or layer.
 ## Declaration
 
 ```swift
-class MPSLSTMDescriptor : MPSRNNDescriptor
+class MPSLSTMDescriptor
 ```
 
 #### Overview
@@ -25,7 +25,7 @@ The recurrent neural network (RNN) layer initialized with [`MPSLSTMDescriptor`](
 
 You may provide the LSTM unit with a single input or a sequence of inputs.
 
-##### 2888088
+##### Description of Operation
 
 1. Let `x_j` be the input data (at time index `t` of sequence, `j` index containing quadruplet: batch index, `x`,`y` and feature index (`x = y = 0` for matrices)).
 2. Let `h0_j` be the recurrent input (previous output) data from previous time step (at time index `t-1` of sequence).
@@ -58,41 +58,48 @@ h1_i = O_i gh( c1_i )
 
 The `*` stands for convolution (see [`MPSRNNImageInferenceLayer`](mpsrnnimageinferencelayer.md)) or matrix-vector/matrix multiplication (see [`MPSRNNMatrixInferenceLayer`](mpsrnnmatrixinferencelayer.md)).
 
-Summation is over index `j` (except for the batch index), but there's no summation over repeated index `i` (the output index).
+Summation is over index `j` (except for the batch index), but there’s no summation over repeated index `i` (the output index).
 
-Note that for validity, all intermediate images must be of same size, and all `U` and `V` matrices must be square (that is, [`outputFeatureChannels`](mpsrnndescriptor/2865702-outputfeaturechannels.md) == [`inputFeatureChannels`](mpsrnndescriptor/2865707-inputfeaturechannels.md)). Also, the bias terms are scalars with regard to spatial dimensions.
+Note that for validity, all intermediate images must be of same size, and all `U` and `V` matrices must be square (that is, [`outputFeatureChannels`](mpsrnndescriptor/outputfeaturechannels.md) == [`inputFeatureChannels`](mpsrnndescriptor/inputfeaturechannels.md)). Also, the bias terms are scalars with regard to spatial dimensions.
 
 ## Topics
 
 ### Instance Properties
-- [var cellGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/2865741-cellgateinputweights.md)
-- [var cellGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/2865683-cellgatememoryweights.md)
-- [var cellGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/2865679-cellgaterecurrentweights.md)
-- [var cellToOutputNeuronParamA: Float](mpslstmdescriptor/2865744-celltooutputneuronparama.md)
-- [var cellToOutputNeuronParamB: Float](mpslstmdescriptor/2865694-celltooutputneuronparamb.md)
-- [var cellToOutputNeuronType: MPSCNNNeuronType](mpslstmdescriptor/2865736-celltooutputneurontype.md)
+- [var cellGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/cellgateinputweights.md)
+- [var cellGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/cellgatememoryweights.md)
+- [var cellGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/cellgaterecurrentweights.md)
+- [var cellToOutputNeuronParamA: Float](mpslstmdescriptor/celltooutputneuronparama.md)
+- [var cellToOutputNeuronParamB: Float](mpslstmdescriptor/celltooutputneuronparamb.md)
+- [var cellToOutputNeuronType: MPSCNNNeuronType](mpslstmdescriptor/celltooutputneurontype.md)
 - [enum MPSCNNNeuronType](mpscnnneurontype.md)
   The types of neuron filter to append to a convolution.
-- [var forgetGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/2865734-forgetgateinputweights.md)
-- [var forgetGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/2865689-forgetgatememoryweights.md)
-- [var forgetGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/2865735-forgetgaterecurrentweights.md)
-- [var inputGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/2865684-inputgateinputweights.md)
-- [var inputGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/2865731-inputgatememoryweights.md)
-- [var inputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/2865747-inputgaterecurrentweights.md)
-- [var memoryWeightsAreDiagonal: Bool](mpslstmdescriptor/2865712-memoryweightsarediagonal.md)
-- [var outputGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/2865701-outputgateinputweights.md)
-- [var outputGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/2865688-outputgatememoryweights.md)
-- [var outputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/2865750-outputgaterecurrentweights.md)
+- [var forgetGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/forgetgateinputweights.md)
+- [var forgetGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/forgetgatememoryweights.md)
+- [var forgetGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/forgetgaterecurrentweights.md)
+- [var inputGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/inputgateinputweights.md)
+- [var inputGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/inputgatememoryweights.md)
+- [var inputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/inputgaterecurrentweights.md)
+- [var memoryWeightsAreDiagonal: Bool](mpslstmdescriptor/memoryweightsarediagonal.md)
+- [var outputGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/outputgateinputweights.md)
+- [var outputGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/outputgatememoryweights.md)
+- [var outputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/outputgaterecurrentweights.md)
 - [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
-- [var cellToOutputNeuronParamC: Float](mpslstmdescriptor/2935551-celltooutputneuronparamc.md)
+- [var cellToOutputNeuronParamC: Float](mpslstmdescriptor/celltooutputneuronparamc.md)
 ### Type Methods
-- [class func createLSTMDescriptor(withInputFeatureChannels: Int, outputFeatureChannels: Int) -> Self](mpslstmdescriptor/2865681-createlstmdescriptor.md)
+- [class func createLSTMDescriptor(withInputFeatureChannels: Int, outputFeatureChannels: Int) -> Self](mpslstmdescriptor/createlstmdescriptor(withinputfeaturechannels:outputfeaturechannels:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSRNNDescriptor](mpsrnndescriptor.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

@@ -23,8 +23,8 @@ optional func urlSession(_ session: URLSession, task: URLSessionTask, didComplet
 ## Mentions
 
 - [Pausing and resuming downloads](pausing-and-resuming-downloads.md)
-- [Fetching website data into memory](fetching-website-data-into-memory.md)
 - [Pausing and resuming uploads](pausing-and-resuming-uploads.md)
+- [Fetching website data into memory](fetching-website-data-into-memory.md)
 - [Downloading files from websites](downloading-files-from-websites.md)
 
 #### Discussion

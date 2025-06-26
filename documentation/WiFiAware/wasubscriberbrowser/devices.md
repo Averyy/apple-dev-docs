@@ -42,6 +42,9 @@ NetworkBrowser(for: .wifiAware( .connecting(to:.selected(devices),  from:service
 ### Connecting to all paired devices
 - [static let allPairedDevices: WASubscriberBrowser.Devices](wasubscriberbrowser/devices/allpaireddevices.md)
   The property that includes all paired devices that your app has access to.
+### Type Properties
+- [static let userSpecifiedDevices: WASubscriberBrowser.Devices](wasubscriberbrowser/devices/userspecifieddevices.md)
+  Includes only devices the user selects or pairs in DeviceDiscoveryUI’s `DevicePicker()`.
 
 ## Relationships
 

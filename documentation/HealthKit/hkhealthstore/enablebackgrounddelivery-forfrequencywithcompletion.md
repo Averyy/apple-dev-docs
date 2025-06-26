@@ -60,7 +60,7 @@ For more information on the background delivery completion handler, see [`HKObse
 
 ## Parameters
 
-- `type`: The type of data to observe. This object can be any concrete subclass of the   class (such as   ,  ,  ,  , or  ).
+- `type`: The type of data to observe. This object can be a   ,  ,  , or  .   is not a supported type for background delivery.
 - `frequency`: The maximum frequency of the updates. The system wakes your app from the background at most once per time period specified. For a complete list of valid frequencies, see  .
 - `completion`: A block that this method calls as soon as it enables background delivery. It passes the following parameters:
 

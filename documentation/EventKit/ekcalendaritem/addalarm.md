@@ -21,8 +21,8 @@ func addAlarm(_ alarm: EKAlarm)
 
 ## Mentions
 
-- [Setting an alarm](setting-an-alarm.md)
 - [Creating events and reminders](creating-events-and-reminders.md)
+- [Setting an alarm](setting-an-alarm.md)
 
 ## Parameters
 

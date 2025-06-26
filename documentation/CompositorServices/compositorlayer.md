@@ -12,7 +12,8 @@ A type that you use with an immersive space to display fully immersive content u
 ## Declaration
 
 ```swift
-struct CompositorLayer
+@MainActor
+@preconcurrency struct CompositorLayer
 ```
 
 ## Mentions

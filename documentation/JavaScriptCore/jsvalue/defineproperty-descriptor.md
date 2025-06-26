@@ -16,7 +16,7 @@ Defines a property on the JavaScript object value or modifies a property’s def
 ## Declaration
 
 ```swift
-func defineProperty(_ property: Any!, descriptor: Any!)
+func defineProperty(_ property: String!, descriptor: Any!)
 ```
 
 #### Discussion

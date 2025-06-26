@@ -1,7 +1,7 @@
 # MPSNDArrayQuantizationDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 18.0+
@@ -14,21 +14,30 @@
 ## Declaration
 
 ```swift
-class MPSNDArrayQuantizationDescriptor : NSObject
+class MPSNDArrayQuantizationDescriptor
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var quantizationDataType: MPSDataType](mpsndarrayquantizationdescriptor/4446142-quantizationdatatype.md)
-- [var quantizationScheme: MPSNDArrayQuantizationScheme](mpsndarrayquantizationdescriptor/4446143-quantizationscheme.md)
+- [var quantizationDataType: MPSDataType](mpsndarrayquantizationdescriptor/quantizationdatatype.md)
+- [var quantizationScheme: MPSNDArrayQuantizationScheme](mpsndarrayquantizationdescriptor/quantizationscheme.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Inherited By
+- [MPSNDArrayAffineQuantizationDescriptor](mpsndarrayaffinequantizationdescriptor.md)
+- [MPSNDArrayLUTQuantizationDescriptor](mpsndarraylutquantizationdescriptor.md)
 ### Conforms To
-- [NSCopying](../foundation/nscopying.md)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

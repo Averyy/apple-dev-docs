@@ -17,8 +17,6 @@ The samples on this page are a starting point for developers new to visionOS. Ea
 ### Building shapes
 - [Creating 2D shapes with SwiftUI](creating-2d-shapes-in-visionos-with-swiftui.md)
   Draw two-dimensional shapes in your visionOS app with SwiftUI shapes or with your custom shapes.
-- [Creating 3D entities with RealityKit](creating-3d-shapes-in-visionos-with-realitykit.md)
-  Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
 ### Working with windows
 - [Creating SwiftUI windows in visionOS](creating-a-new-swiftui-window-in-visionos.md)
   Display and manage multiple SwiftUI windows in your visionOS app.

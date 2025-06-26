@@ -20,8 +20,8 @@ class BETextInteraction
 
 ## Mentions
 
-- [Supporting extended text interactions](support-extended-text-interactions.md)
 - [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Supporting extended text interactions](support-extended-text-interactions.md)
 
 #### Overview
 

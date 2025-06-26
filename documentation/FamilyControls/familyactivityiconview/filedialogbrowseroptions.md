@@ -8,7 +8,6 @@ On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to provi
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 
 ## Declaration

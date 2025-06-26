@@ -3,6 +3,8 @@
 **Framework**: SwiftData  
 **Kind**: case
 
+A value that represents the name of the modeled property.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

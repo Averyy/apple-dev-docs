@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+A quantity sample type that measures amount of time the user spent in daylight.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -17,10 +19,16 @@
 static let timeInDaylight: HKQuantityTypeIdentifier
 ```
 
+#### Discussion
+
+These samples use time units (described in [`HKUnit`](hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+
 ## See Also
 
 - [static let bleedingAfterPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingafterpregnancy.md)
+  A category type that records bleeding after pregnancy as a symptom.
 - [static let bleedingDuringPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingduringpregnancy.md)
+  A category type that records bleeding during pregnancy as a symptom.
 - [static let sleepApneaEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/sleepapneaevent.md)
 - [let HKDevicePropertyKeyFirmwareVersion: String](hkdevicepropertykeyfirmwareversion.md)
   The device’s firmware version.
@@ -43,6 +51,7 @@ static let timeInDaylight: HKQuantityTypeIdentifier
 - [static let appleSleepingBreathingDisturbances: HKQuantityTypeIdentifier](hkquantitytypeidentifier/applesleepingbreathingdisturbances.md)
 - [static let crossCountrySkiingSpeed: HKQuantityTypeIdentifier](hkquantitytypeidentifier/crosscountryskiingspeed.md)
 - [static let cyclingCadence: HKQuantityTypeIdentifier](hkquantitytypeidentifier/cyclingcadence.md)
+  A quantity sample type that represents the rate at which the user is pedaling.
 
 
 ---

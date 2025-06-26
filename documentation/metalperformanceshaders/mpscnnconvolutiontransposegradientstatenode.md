@@ -1,7 +1,7 @@
 # MPSCNNConvolutionTransposeGradientStateNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,13 +14,20 @@
 ## Declaration
 
 ```swift
-class MPSCNNConvolutionTransposeGradientStateNode : MPSCNNConvolutionGradientStateNode
+class MPSCNNConvolutionTransposeGradientStateNode
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNConvolutionGradientStateNode](mpscnnconvolutiongradientstatenode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

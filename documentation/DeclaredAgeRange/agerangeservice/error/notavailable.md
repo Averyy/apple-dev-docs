@@ -1,6 +1,6 @@
 # AgeRangeService.Error.notAvailable
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: case
 
 The system was unable to share the person’s age.

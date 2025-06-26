@@ -1,7 +1,7 @@
 # MPSCNNGroupNormalizationNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,22 +14,28 @@
 ## Declaration
 
 ```swift
-class MPSCNNGroupNormalizationNode : MPSNNFilterNode
+class MPSCNNGroupNormalizationNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, dataSource: any MPSCNNGroupNormalizationDataSource)](mpscnngroupnormalizationnode/3152572-init.md)
+- [init(source: MPSNNImageNode, dataSource: any MPSCNNGroupNormalizationDataSource)](mpscnngroupnormalizationnode/init(source:datasource:).md)
 ### Instance Properties
-- [var trainingStyle: MPSNNTrainingStyle](mpscnngroupnormalizationnode/3197823-trainingstyle.md)
+- [var trainingStyle: MPSNNTrainingStyle](mpscnngroupnormalizationnode/trainingstyle.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
 ### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
 - [MPSNNTrainableNode](mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

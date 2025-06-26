@@ -17,7 +17,8 @@ A protocol that describes how a type interacts with transport APIs such as drag 
 ## Declaration
 
 ```swift
-protocol Transferable
+@preconcurrency
+protocol Transferable : Sendable
 ```
 
 #### Overview
@@ -120,6 +121,12 @@ The order of the representations in the transfer representation matters; place t
   The types that the instance of a `Transferable` is able to provide a representation for.
 - [static func importedContentTypes() -> [UTType]](transferable/importedcontenttypes-swift.type.method.md)
   Content types statically supported by the `Transferable` conformance of the type for import (like drop or paste).
+
+## Relationships
+
+### Inherits From
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

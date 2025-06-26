@@ -4,8 +4,8 @@
 **Kind**: struct
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst 16.1+
+- macOS 13.0+
 
 ## Declaration
 

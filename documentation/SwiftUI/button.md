@@ -22,9 +22,9 @@ struct Button<Label> where Label : View
 
 ## Mentions
 
-- [Configuring views](configuring-views.md)
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
 - [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Configuring views](configuring-views.md)
 - [Managing search interface activation](managing-search-interface-activation.md)
 
 #### Overview

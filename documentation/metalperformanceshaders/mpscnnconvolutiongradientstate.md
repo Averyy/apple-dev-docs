@@ -1,9 +1,9 @@
 # MPSCNNConvolutionGradientState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
-An object that exposes a gradient convolution kernel's gradient with respect to weights and biases.
+An object that exposes a gradient convolution kernel’s gradient with respect to weights and biases.
 
 **Availability**:
 - iOS 11.3+
@@ -16,23 +16,31 @@ An object that exposes a gradient convolution kernel's gradient with respect to 
 ## Declaration
 
 ```swift
-class MPSCNNConvolutionGradientState : MPSNNGradientState
+class MPSCNNConvolutionGradientState
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var convolution: MPSCNNConvolution](mpscnnconvolutiongradientstate/2953958-convolution.md)
-- [var gradientForBiases: any MTLBuffer](mpscnnconvolutiongradientstate/2947887-gradientforbiases.md)
-- [var gradientForWeights: any MTLBuffer](mpscnnconvolutiongradientstate/2947889-gradientforweights.md)
-- [var gradientForWeightsLayout: MPSCNNConvolutionWeightsLayout](mpscnnconvolutiongradientstate/3325841-gradientforweightslayout.md)
+- [var convolution: MPSCNNConvolution](mpscnnconvolutiongradientstate/convolution.md)
+- [var gradientForBiases: any MTLBuffer](mpscnnconvolutiongradientstate/gradientforbiases.md)
+- [var gradientForWeights: any MTLBuffer](mpscnnconvolutiongradientstate/gradientforweights.md)
+- [var gradientForWeightsLayout: MPSCNNConvolutionWeightsLayout](mpscnnconvolutiongradientstate/gradientforweightslayout.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientState](mpsnngradientstate.md)
+### Inherited By
+- [MPSCNNConvolutionTransposeGradientState](mpscnnconvolutiontransposegradientstate.md)
 ### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
 - [MPSImageSizeEncodingState](mpsimagesizeencodingstate.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
@@ -43,7 +51,7 @@ class MPSCNNConvolutionGradientState : MPSNNGradientState
 - [class MPSCNNDepthWiseConvolutionDescriptor](mpscnndepthwiseconvolutiondescriptor.md)
   A description of a convolution object that does depthwise convolution.
 - [class MPSCNNSubPixelConvolutionDescriptor](mpscnnsubpixelconvolutiondescriptor.md)
-  A description of a convolution object that does subpixel upsampling and reshaping. 
+  A description of a convolution object that does subpixel upsampling and reshaping.
 - [class MPSCNNConvolutionTranspose](mpscnnconvolutiontranspose.md)
   A transposed convolution kernel.
 - [class MPSCNNConvolutionGradient](mpscnnconvolutiongradient.md)

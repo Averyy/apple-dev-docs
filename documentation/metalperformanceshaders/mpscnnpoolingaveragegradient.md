@@ -1,7 +1,7 @@
 # MPSCNNPoolingAverageGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient average pooling filter.
 
@@ -16,22 +16,32 @@ A gradient average pooling filter.
 ## Declaration
 
 ```swift
-class MPSCNNPoolingAverageGradient : MPSCNNPoolingGradient
+class MPSCNNPoolingAverageGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolingaveragegradient/2942345-init.md)
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingaveragegradient/2942339-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolingaveragegradient/init(coder:device:).md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingaveragegradient/init(device:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:).md)
 ### Instance Properties
-- [var zeroPadSizeX: Int](mpscnnpoolingaveragegradient/2942341-zeropadsizex.md)
-- [var zeroPadSizeY: Int](mpscnnpoolingaveragegradient/2942354-zeropadsizey.md)
+- [var zeroPadSizeX: Int](mpscnnpoolingaveragegradient/zeropadsizex.md)
+- [var zeroPadSizeY: Int](mpscnnpoolingaveragegradient/zeropadsizey.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNPoolingGradient](mpscnnpoolinggradient.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

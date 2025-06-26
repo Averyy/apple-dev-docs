@@ -1,7 +1,7 @@
 # MPSCNNLossType.meanAbsoluteError
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.3+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case meanAbsoluteError = 0
+case meanAbsoluteError
 ```
 
 

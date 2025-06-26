@@ -8,12 +8,20 @@ Build neural networks with layers.
 
 - Think carefully about the edge mode requested for pooling layers. The default value is [`MPSImageEdgeMode.zero`](mpsimageedgemode/zero.md), but there are times when a [`MPSImageEdgeMode.clamp`](mpsimageedgemode/clamp.md) value may be better.
 - To avoid reading off the edge of an image for filters that have a filter area (convolution, pooling), set `MPSCNNKernel.offset = (MPSOffset){ .x = kernelWidth/2, .y = kernelHeight/2, .z = 0}` and reduce the size of the output image by `{kernelWidth-1, kernelHeight-1, 0}`. The filter area stretches up and to the left of the kernel offset by `{kernelWidth/2, kernelHeight/2}`.
-- Always remember the following distinction: - The [`MPSCNNConvolution`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnconvolution) class takes weights in the order `weight[outputChannels][kernelHeight][kernelWidth][inputChannels/groups]`.
+- Always remember the following distinction:
+- The [`MPSCNNConvolution`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnconvolution) class takes weights in the order `weight[outputChannels][kernelHeight][kernelWidth][inputChannels/groups]`.
 - The [`MPSCNNFullyConnected`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnfullyconnected) class takes weights in the order `weight[outputChannels][sourceWidth][sourceHeight][inputChannels]`.
 - Initialize [`MPSCNNKernel`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnkernel) objects once and reuse them.
 - You can use [`MPSCNNNeuron`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnneuron) objects and similar to perform pre-processing of images, such as scaling and resizing.
 - Specify a neuron filter with an [`MPSCNNConvolutionDescriptor`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnconvolutiondescriptor) object to combine the convolution and neuron operations.
-- Use [`MPSTemporaryImage`](mpstemporaryimage.md) objects for intermediate images that live for a short period of time (one [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object). [`MPSTemporaryImage`](mpstemporaryimage.md) objects can reduce the amount of memory used by the CNN by several folds, and similarly reduce the amount of CPU time spent allocating storage and latency between the time a command buffer is committed and when it is actually executed on the GPU. You cannot read or write to a [`MPSTemporaryImage`](mpstemporaryimage.md) object using the CPU. Generally, [`MPSTemporaryImage`](mpstemporaryimage.md) objects should be created as needed and thrown away promptly. Persistent objects should not retain them. Please be sure to understand the purpose of the [`readCount`](mpstemporaryimage/2097546-readcount.md) property.
+- Use [`MPSTemporaryImage`](mpstemporaryimage.md) objects for intermediate images that live for a short period of time (one [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) object).
+
+[`MPSTemporaryImage`](mpstemporaryimage.md) objects can reduce the amount of memory used by the CNN by several folds, and similarly reduce the amount of CPU time spent allocating storage and latency between the time a command buffer is committed and when it is actually executed on the GPU.
+
+You cannot read or write to a [`MPSTemporaryImage`](mpstemporaryimage.md) object using the CPU. Generally, [`MPSTemporaryImage`](mpstemporaryimage.md) objects should be created as needed and thrown away promptly. Persistent objects should not retain them.
+
+Please be sure to understand the purpose of the [`readCount`](mpstemporaryimage/readcount.md) property.
+
 - Because the Metal Performance Shaders framework encodes its work in place in your command buffer, you always have the option to insert your own code in between [`MPSCNNKernel`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnkernel) encodings as a Metal function for tasks not covered by the framework. You do not need to use the Metal Performance Shaders framework for everything.
 
 ## Topics
@@ -47,13 +55,13 @@ Build neural networks with layers.
 - [class MPSCNNDepthWiseConvolutionDescriptor](mpscnndepthwiseconvolutiondescriptor.md)
   A description of a convolution object that does depthwise convolution.
 - [class MPSCNNSubPixelConvolutionDescriptor](mpscnnsubpixelconvolutiondescriptor.md)
-  A description of a convolution object that does subpixel upsampling and reshaping. 
+  A description of a convolution object that does subpixel upsampling and reshaping.
 - [class MPSCNNConvolutionTranspose](mpscnnconvolutiontranspose.md)
   A transposed convolution kernel.
 - [class MPSCNNConvolutionGradient](mpscnnconvolutiongradient.md)
   A gradient convolution kernel.
 - [class MPSCNNConvolutionGradientState](mpscnnconvolutiongradientstate.md)
-  An object that exposes a gradient convolution kernel's gradient with respect to weights and biases.
+  An object that exposes a gradient convolution kernel’s gradient with respect to weights and biases.
 - [protocol MPSImageSizeEncodingState](mpsimagesizeencodingstate.md)
   A protocol for objects that contain information about an image size elsewhere in the graph.
 - [class MPSCNNConvolutionWeightsAndBiasesState](mpscnnconvolutionweightsandbiasesstate.md)
@@ -259,22 +267,22 @@ Build neural networks with layers.
   The base class for gradient layers.
 ### Predefined Padding Policies
 - [class MPSNNDefaultPadding](mpsnndefaultpadding.md)
-  A class that provides predefined padding policies for common tasks.    
+  A class that provides predefined padding policies for common tasks.
 
 ## See Also
 
-- [Training a Neural Network with Metal Performance Shaders](training_a_neural_network_with_metal_performance_shaders.md)
+- [Training a Neural Network with Metal Performance Shaders](training-a-neural-network-with-metal-performance-shaders.md)
   Use an MPS neural network graph to train a simple neural network digit classifier.
 - [class MPSImage](mpsimage.md)
   A texture that may have more than four channels for use in convolutional neural networks.
 - [class MPSTemporaryImage](mpstemporaryimage.md)
   A texture for use in convolutional neural networks that stores transient data to be used and discarded promptly.
-- [Objects that Simplify the Creation of Neural Networks](objects_that_simplify_the_creation_of_neural_networks.md)
+- [Objects that Simplify the Creation of Neural Networks](objects-that-simplify-the-creation-of-neural-networks.md)
   Simplify the creation of neural networks using networks of filter, image, and state nodes.
-- [Recurrent Neural Networks](recurrent_neural_networks.md)
+- [Recurrent Neural Networks](recurrent-neural-networks.md)
   Create recurrent neural networks.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/convolutional_neural_network_kernels)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/convolutional-neural-network-kernels)*

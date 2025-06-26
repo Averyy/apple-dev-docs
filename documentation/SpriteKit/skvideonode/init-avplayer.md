@@ -17,7 +17,6 @@ Initializes a video node using an existing [`AVPlayer`](https://developer.apple.
 ## Declaration
 
 ```swift
-@MainActor
 init(avPlayer player: AVPlayer)
 ```
 

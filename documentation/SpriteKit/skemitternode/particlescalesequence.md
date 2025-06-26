@@ -17,6 +17,7 @@ The sequence used to specify the scale factor of a particle over its lifetime.
 ## Declaration
 
 ```swift
+@MainActor
 var particleScaleSequence: SKKeyframeSequence? { get set }
 ```
 

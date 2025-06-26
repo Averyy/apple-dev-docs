@@ -17,7 +17,7 @@ Returns the window in which to present a payment authorization sheet.
 ## Declaration
 
 ```swift
-optional func presentationWindow(for controller: PKPaymentAuthorizationController) -> UIWindow?
+func presentationWindow(for controller: PKPaymentAuthorizationController) -> NSWindow?
 ```
 
 #### Return Value

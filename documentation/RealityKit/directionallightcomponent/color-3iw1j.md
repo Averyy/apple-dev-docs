@@ -16,7 +16,7 @@ A platform-specific type used to define color for a directional light.
 ## Declaration
 
 ```swift
-typealias Color = NSColor
+typealias Color = UIColor
 ```
 
 

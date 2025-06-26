@@ -22,7 +22,7 @@ static var creationDate: AVAsyncProperty<Root, AVMetadataItem?> { get }
 
 #### Discussion
 
-Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
+Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
 If the asset stores a creation date in a form the system can convert to an [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate), the metadata item’s [`dateValue`](avmetadataitem/datevalue.md) property contains a valid date. Otherwise, the creation date is available only as a string that you retrieve by calling the metadata item’s [`stringValue`](avmetadataitem/stringvalue.md) property.
 

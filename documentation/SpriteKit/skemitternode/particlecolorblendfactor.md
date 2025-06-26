@@ -17,6 +17,7 @@ The average starting value for the color blend factor.
 ## Declaration
 
 ```swift
+@MainActor
 var particleColorBlendFactor: CGFloat { get set }
 ```
 

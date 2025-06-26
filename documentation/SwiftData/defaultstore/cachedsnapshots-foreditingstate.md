@@ -19,6 +19,11 @@
 final func cachedSnapshots(for persistentIdentifiers: [PersistentIdentifier], editingState: EditingState) throws -> [PersistentIdentifier : DefaultStore.Snapshot]
 ```
 
+## See Also
+
+- [func initializeState(for: EditingState)](defaultstore/initializestate(for:).md)
+- [func invalidateState(for: EditingState)](defaultstore/invalidatestate(for:).md)
+
 
 ---
 

@@ -14,7 +14,7 @@ These are the possible types of ABRecord properties.
 ## Declaration
 
 ```swift
-typealias ABPropertyType = UInt32
+typealias ABPropertyType = CFIndex
 ```
 
 ## Topics

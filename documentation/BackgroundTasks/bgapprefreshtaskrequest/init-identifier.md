@@ -11,7 +11,6 @@ Return a new refresh task request for the specified identifier.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
-- watchOS 6.0+
 
 ## Declaration
 

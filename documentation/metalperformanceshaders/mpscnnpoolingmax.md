@@ -1,7 +1,7 @@
 # MPSCNNPoolingMax
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A max pooling filter.
 
@@ -16,7 +16,7 @@ A max pooling filter.
 ## Declaration
 
 ```swift
-class MPSCNNPoolingMax : MPSCNNPooling
+class MPSCNNPoolingMax
 ```
 
 #### Overview
@@ -26,15 +26,25 @@ For each pixel in an image, the filter returns the maximum value of the pixels i
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolingmax/2867097-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolingmax/init(coder:device:).md)
   Initializes a max pooling filter.
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingmax/2875151-init.md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingmax/init(device:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:).md)
   Initializes a max pooling filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNPooling](mpscnnpooling.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

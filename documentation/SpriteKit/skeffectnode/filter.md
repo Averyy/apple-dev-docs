@@ -24,7 +24,7 @@ var filter: CIFilter? { get set }
 
 The Core Image filter must have a single `inputImage` parameter and produce a single `outputImage` parameter. The default value is `nil`. If the value is `nil` and the effect node is enabled, no filtering takes place. However, its children are still rendered in a separate pass and blended to the parent’s framebuffer.
 
-If you wish to use a Core Image filter that doesn’t have an `inputImage` parameter, such as a sunbeams generator, you can subclass [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter) and add an `inputImage` property. The input image’s extent can be used to define properties such as radius on the filter. The following code creates a filter based on [`CISunbeamsGenerator`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CISunbeamsGenerator) which can be used as an effect node’s filter:
+If you wish to use a Core Image filter that doesn’t have an `inputImage` parameter, such as a sunbeams generator, you can subclass [`CIFilter`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class) and add an `inputImage` property. The input image’s extent can be used to define properties such as radius on the filter. The following code creates a filter based on [`CISunbeamsGenerator`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CISunbeamsGenerator) which can be used as an effect node’s filter:
 
 ```objc
 class StarGenerator: CIFilter {    

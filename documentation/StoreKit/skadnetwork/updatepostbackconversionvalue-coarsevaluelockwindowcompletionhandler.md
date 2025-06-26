@@ -21,8 +21,8 @@ class func updatePostbackConversionValue(_ fineValue: Int, coarseValue: SKAdNetw
 - [Receiving postbacks in multiple conversion windows](receiving-postbacks-in-multiple-conversion-windows.md)
 - [SKAdNetwork 4 release notes](skadnetwork-4-release-notes.md)
 - [Identifying the parameters in install-validation postbacks](identifying-the-parameters-in-install-validation-postbacks.md)
-- [Receiving ad attributions and postbacks](receiving-ad-attributions-and-postbacks.md)
 - [Configuring an advertised app](configuring-an-advertised-app.md)
+- [Receiving ad attributions and postbacks](receiving-ad-attributions-and-postbacks.md)
 
 #### Discussion
 

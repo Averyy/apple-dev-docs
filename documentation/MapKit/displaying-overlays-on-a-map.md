@@ -15,7 +15,7 @@ Overlays offer a way to layer content over regions of a map and have that conten
 
 ##### Define Overlays with Geographic Coordinates
 
-Overlays are data objects that represent geographic information. Most overlays use geographic coordinates to create contiguous or noncontiguous sets of lines, rectangles, circles, and other shapes. For example, this sample app defines a rectangular area enclosing San Francisco as an array of `CLLocationCoordinate2D` coordinates.
+Overlays are data objects that represent geographic information. Most overlays use geographic coordinates to create contiguous or noncontiguous sets of lines, rectangles, circles, and other shapes. For example, this sample app defines a rectangular area enclosing San Francisco as an array of [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/CoreLocation/CLLocationCoordinate2D) coordinates.
 
 ```swift
 /// A rectangular area containing San Francisco.

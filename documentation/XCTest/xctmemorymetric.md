@@ -53,6 +53,8 @@ class XCTMemoryMetric
   A metric to record information about CPU activity during a performance test.
 - [class XCTClockMetric](xctclockmetric.md)
   A metric to record the time that elapses during a performance test.
+- [class XCTHitchMetric](xcthitchmetric.md)
+  A metric to measure the number of hitches your UI encounters in a performance test.
 - [class XCTOSSignpostMetric](xctossignpostmetric.md)
   A metric to record the time that a performance test spends executing a signposted region of code.
 - [class XCTStorageMetric](xctstoragemetric.md)

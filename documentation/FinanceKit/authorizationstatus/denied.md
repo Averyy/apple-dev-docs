@@ -3,7 +3,7 @@
 **Framework**: FinanceKit  
 **Kind**: case
 
-A person denied the use of FinanceKit services for the app
+A person denied the use of FinanceKit services for the app.
 
 **Availability**:
 - iOS 17.4+

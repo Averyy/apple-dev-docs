@@ -11,7 +11,6 @@ A Boolean specifying if the processing task requires network connectivity.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
-- watchOS 6.0+
 
 ## Declaration
 

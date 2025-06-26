@@ -1,7 +1,7 @@
 # MPSCommandBuffer
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,29 +14,35 @@
 ## Declaration
 
 ```swift
-class MPSCommandBuffer : NSObject
+class MPSCommandBuffer
 ```
 
 ## Topics
 
 ### Initializers
-- [init(commandBuffer: any MTLCommandBuffer)](mpscommandbuffer/3114031-init.md)
-- [init(from: any MTLCommandQueue)](mpscommandbuffer/3114029-init.md)
+- [init(commandBuffer: any MTLCommandBuffer)](mpscommandbuffer/init(commandbuffer:).md)
+- [convenience init(from: any MTLCommandQueue)](mpscommandbuffer/init(from:).md)
 ### Instance Properties
-- [var commandBuffer: any MTLCommandBuffer](mpscommandbuffer/3114028-commandbuffer.md)
-- [var heapProvider: (any MPSHeapProvider)?](mpscommandbuffer/3229857-heapprovider.md)
-- [var predicate: MPSPredicate?](mpscommandbuffer/3114032-predicate.md)
-- [var rootCommandBuffer: any MTLCommandBuffer](mpscommandbuffer/3166772-rootcommandbuffer.md)
+- [var commandBuffer: any MTLCommandBuffer](mpscommandbuffer/commandbuffer.md)
+- [var heapProvider: (any MPSHeapProvider)?](mpscommandbuffer/heapprovider.md)
+- [var predicate: MPSPredicate?](mpscommandbuffer/predicate.md)
+- [var rootCommandBuffer: any MTLCommandBuffer](mpscommandbuffer/rootcommandbuffer.md)
 ### Instance Methods
-- [func commitAndContinue()](mpscommandbuffer/3152524-commitandcontinue.md)
-- [func prefetchHeap(forWorkloadSize: Int)](mpscommandbuffer/3229858-prefetchheap.md)
+- [func commitAndContinue()](mpscommandbuffer/commitandcontinue.md)
+- [func prefetchHeap(forWorkloadSize: Int)](mpscommandbuffer/prefetchheap(forworkloadsize:).md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
-- [MTLCommandBuffer](../metal/mtlcommandbuffer.md)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [MTLCommandBuffer](../Metal/MTLCommandBuffer.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

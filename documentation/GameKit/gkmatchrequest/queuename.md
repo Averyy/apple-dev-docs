@@ -22,10 +22,10 @@ var queueName: String? { get set }
 
 ## Mentions
 
-- [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
 - [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
 - [Assigning players to teams using rules](assigning-players-to-teams-using-rules.md)
+- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
 - [Troubleshooting matchmaking rules using metrics](troubleshooting-matchmaking-rules-using-metrics.md)
 
 #### Discussion

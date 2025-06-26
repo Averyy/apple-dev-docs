@@ -26,7 +26,7 @@ The format of this string is not guaranteed to be consistent across different op
 
 - `alloc`: The allocator that should be used. Pass   or   to use the default allocator.
 - `certificate`: The certificate from which the long description should be copied.
-- `error`: A pointer to a  doc://com.apple.documentation/documentation/corefoundation/cferror-ru8  variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `error`: A pointer to a   variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

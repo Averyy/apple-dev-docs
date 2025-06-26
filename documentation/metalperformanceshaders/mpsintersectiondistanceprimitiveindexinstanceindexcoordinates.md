@@ -6,12 +6,12 @@
 An intersection result that contains the origin-intersection distance, intersected primitive and instance indices, and intersection point coordinates.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.0+
-- macOS 10.14+
-- tvOS 12.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -22,13 +22,19 @@ struct MPSIntersectionDistancePrimitiveIndexInstanceIndexCoordinates
 ## Topics
 
 ### Initializers
-- [init()](mpsintersectiondistanceprimitiveindexinstanceindexcoordinates/2980951-init.md)
-- [init(distance: Float, primitiveIndex: UInt32, instanceIndex: UInt32, coordinates: vector_float2)](mpsintersectiondistanceprimitiveindexinstanceindexcoordinates/3019347-init.md)
+- [init()](mpsintersectiondistanceprimitiveindexinstanceindexcoordinates/init.md)
+- [init(distance: Float, primitiveIndex: UInt32, instanceIndex: UInt32, coordinates: vector_float2)](mpsintersectiondistanceprimitiveindexinstanceindexcoordinates/init(distance:primitiveindex:instanceindex:coordinates:).md)
 ### Instance Properties
-- [var coordinates: vector_float2](mpsintersectiondistanceprimitiveindexinstanceindexcoordinates/2980854-coordinates.md)
-- [var distance: Float](mpsintersectiondistanceprimitiveindexinstanceindexcoordinates/2980855-distance.md)
-- [var instanceIndex: UInt32](mpsintersectiondistanceprimitiveindexinstanceindexcoordinates/2980856-instanceindex.md)
-- [var primitiveIndex: UInt32](mpsintersectiondistanceprimitiveindexinstanceindexcoordinates/2980857-primitiveindex.md)
+- [var coordinates: vector_float2](mpsintersectiondistanceprimitiveindexinstanceindexcoordinates/coordinates.md)
+- [var distance: Float](mpsintersectiondistanceprimitiveindexinstanceindexcoordinates/distance.md)
+- [var instanceIndex: UInt32](mpsintersectiondistanceprimitiveindexinstanceindexcoordinates/instanceindex.md)
+- [var primitiveIndex: UInt32](mpsintersectiondistanceprimitiveindexinstanceindexcoordinates/primitiveindex.md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

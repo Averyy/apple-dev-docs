@@ -84,7 +84,7 @@ Xcode 16.1 includes SDKs for iOS 18.1, iPadOS 18.1, tvOS 18.1, watchOS 11.1, mac
 
 ## See Also
 
-- [Xcode 16.4 Beta Release Notes](xcode-16_4-release-notes.md)
+- [Xcode 16.4 Release Notes](xcode-16_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 16.3 Release Notes](xcode-16_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

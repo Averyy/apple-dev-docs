@@ -10,7 +10,7 @@ Request the system to dial a voice call on behalf of someone involved in a crash
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- watchOS 9.0+
+- watchOS 10.1+
 
 ## Declaration
 

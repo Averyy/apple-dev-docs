@@ -8,7 +8,6 @@ Configures whether navigation links show a disclosure indicator.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS 1.0+
@@ -42,7 +41,7 @@ struct NoIndicatorLink: View {
 }
 ```
 
-> ❗ **Important**: Prior to iOS 19 and aligned releases, setting the link indicator visibility to `.visible` is only supported for navigation links contained in a `List`. iOS 19 and later supports setting the indicator visibility to `.visible` regardless of whether the link is within a list.
+> ❗ **Important**: Setting the link indicator visibility to `.visible` is only supported for navigation links contained in a `List` built with the Xcode 16 SDKs and earlier. Current releases support setting the indicator visibility to `.visible` regardless of whether the link is within a list.
 
 
 ---

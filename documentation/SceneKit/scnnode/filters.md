@@ -22,7 +22,7 @@ var filters: [CIFilter]? { get set }
 
 #### Discussion
 
-An array of [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter) objects.
+An array of [`CIFilter`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class) objects.
 
 When this array is nonempty, SceneKit renders the node (and its child node hierarchy) into an image buffer and then applies the filters before compositing the filters’ output into the rendered scene. The order of the array determines the order of the Core Image filter chain. For example, the following code applies a pixellate filter to the rendered node and then a blur filter to the output of the pixellate filter:
 

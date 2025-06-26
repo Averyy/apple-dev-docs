@@ -15,7 +15,7 @@ A type that can be initialized from generated content.
 ## Declaration
 
 ```swift
-protocol ConvertibleFromGeneratedContent
+protocol ConvertibleFromGeneratedContent : SendableMetatype
 ```
 
 ## Topics
@@ -26,6 +26,8 @@ protocol ConvertibleFromGeneratedContent
 
 ## Relationships
 
+### Inherits From
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Inherited By
 - [Generable](generable.md)
 ### Conforming Types

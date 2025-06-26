@@ -16,9 +16,9 @@ Key-value pairs that grant an executable permission to use a service or technolo
 
 #### Discussion
 
-An  is a right or privilege that grants an executable particular capabilities. For example, an app needs the [`HomeKit Entitlement`](entitlements/com.apple.developer.homekit.md) — along with explicit user consent — to access a user’s home automation network. An app stores its entitlements as key-value pairs embedded in the code signature of its binary executable.
+An  is a right or privilege that grants particular capabilities to an executable. For example, an app needs the [`HomeKit Entitlement`](entitlements/com.apple.developer.homekit.md) — along with explicit user consent — to access a user’s home automation network. An app stores its entitlements as key-value pairs embedded in the code signature of its binary executable.
 
-You configure entitlements for your app by declaring capabilities for a target in Xcode, see [`Capabilities`](https://developer.apple.com/documentation/Xcode/capabilities). Xcode records capabilities that you add in a property list file with the `.entitlements` extension. You can also edit the entitlements file directly. When code signing your app, Xcode combines the entitlements file, information from your developer account, and other project information to apply a final set of entitlements to your app.
+You configure entitlements for your app by declaring capabilities for a target in Xcode; see [`Capabilities`](https://developer.apple.com/documentation/Xcode/capabilities). Xcode records capabilities that you add in a property list file with the `.entitlements` extension. You can also edit the entitlements file directly. When code signing your app, Xcode combines the entitlements file, information from your developer account, and other project information to apply a final set of entitlements to your app.
 
 ## Topics
 
@@ -27,6 +27,8 @@ You configure entitlements for your app by declaring capabilities for a target i
   Verify your app’s entitlements at every stage of development to track down errors during distribution.
 - [Signing a daemon with a restricted entitlement](../Xcode/signing-a-daemon-with-a-restricted-entitlement.md)
   Wrap a daemon in an app-like structure to use an entitlement thatʼs authorized by a provisioning profile.
+### Accessibility
+- [com.apple.developer.accessibility.merchant-api-control](entitlements/com.apple.developer.accessibility.merchant-api-control.md)
 ### AccessorySetupKit
 - [com.apple.developer.accessory-setup-discovery-extension](entitlements/com.apple.developer.accessory-setup-discovery-extension.md)
   An entitlement that lets an app extension discover and set up accessories.
@@ -63,9 +65,17 @@ You configure entitlements for your app by declaring capabilities for a target i
 ### Contacts
 - [com.apple.developer.contacts.notes](entitlements/com.apple.developer.contacts.notes.md)
   A Boolean value that indicates whether the app may access the notes in contact entries.
+### CoreTelephony
+- [com.apple.CommCenter.fine-grained](entitlements/com.apple.commcenter.fine-grained.md)
+  An entitlement that grants access to CoreTelephony services.
+### Declared Age Range
+- [com.apple.developer.declared-age-range](entitlements/com.apple.developer.declared-age-range.md)
+  A Boolean value indicating whether your app may request a person’s age range.
 ### Device Management
 - [com.apple.developer.automated-device-enrollment.add-devices](entitlements/com.apple.developer.automated-device-enrollment.add-devices.md)
   A Boolean value that indicates whether an app may add a device to Automated Device Enrollment.
+- [Enrollment Single Sign On](entitlements/com.apple.developer.enrollment-sso-capable.md)
+  An entitlement that indicates the app participates in single sign-on (SSO) during enrollment into device management.
 ### Education
 - [ClassKit Environment Entitlement](entitlements/com.apple.developer.classkit-environment.md)
   The ClassKit development or production environment for an education app that works with the Schoolwork app.
@@ -109,6 +119,9 @@ You configure entitlements for your app by declaring capabilities for a target i
 ### File provider
 - [com.apple.developer.fileprovider.testing-mode](entitlements/com.apple.developer.fileprovider.testing-mode.md)
   A Boolean value that indicates whether you can place domains in testing mode.
+### FinanceKit
+- [FinanceKit](entitlements/com.apple.developer.financekit.md)
+  An entitlement that allows an app to access financial data in FinanceKit.
 ### Foundation Models
 - [com.apple.developer.foundation-model-adapter](entitlements/com.apple.developer.foundation-model-adapter.md)
   A Boolean value that indicates whether the app can enable custom adapters for the Foundation Models framework.
@@ -125,6 +138,8 @@ You configure entitlements for your app by declaring capabilities for a target i
   Health data types that require additional permission.
 - [com.apple.developer.healthkit.background-delivery](entitlements/com.apple.developer.healthkit.background-delivery.md)
   A Boolean value that indicates whether observer queries receive updates while running in the background.
+- [Fall Detection Notifications](entitlements/com.apple.developer.health.fall-detection.md)
+  An entitlement that permits an app to receive fall-detection notifications from Apple Watch.
 - [com.apple.developer.healthkit.recalibrate-estimates](entitlements/com.apple.developer.healthkit.recalibrate-estimates.md)
   A Boolean value that determines whether your app can recalibrate the prediction algorithm used to calculate supported sample types.
 ### Home automation
@@ -166,7 +181,7 @@ You configure entitlements for your app by declaring capabilities for a target i
 - [Default Dialer App](entitlements/com.apple.developer.dialing-app.md)
   A Boolean value that indicates whether an app can be the default dialer app on someone’s device.
 ### Location
-- [com.apple.developer.location.push](entitlements/com.apple.developer.location.push.md)
+- [Location Push Service Extension](entitlements/com.apple.developer.location.push.md)
   An entitlement to enable a location-sharing app to query someone’s location in response to a push notification.
 ### Managed App Distribution
 - [Managed App Installation UI](entitlements/com.apple.developer.managed-app-distribution.install-ui.md)
@@ -226,12 +241,17 @@ You configure entitlements for your app by declaring capabilities for a target i
   The environment for push notifications.
 - [APS Environment (macOS) Entitlement](entitlements/com.apple.developer.aps-environment.md)
   The environment for push notifications in macOS apps.
+- [Critical Alerts](entitlements/com.apple.developer.usernotifications.critical-alerts.md)
+  An entitlement that permits an app to receive critical alert notifications.
 - [com.apple.developer.usernotifications.filtering](entitlements/com.apple.developer.usernotifications.filtering.md)
   Enable receiving notifications without displaying the notification to the user.
+### PassKit
+- [Pass Presentation Suppression](entitlements/com.apple.developer.passkit.pass-presentation-suppression.md)
+  An entitlement that prevents the system from initiating Apple Pay while the app is in the foreground.
 ### Privacy
 - [com.apple.developer.device-information.user-assigned-device-name](entitlements/com.apple.developer.device-information.user-assigned-device-name.md)
   The entitlement for accessing the user-assigned device name instead of a generic device name.
-### Push to talk
+### Push to Talk
 - [Push to Talk Entitlement](entitlements/com.apple.developer.push-to-talk.md)
 ### SafetyKit
 - [com.apple.developer.severe-vehicular-crash-event](entitlements/com.apple.developer.severe-vehicular-crash-event.md)
@@ -250,7 +270,7 @@ You configure entitlements for your app by declaring capabilities for a target i
   Manage security protections and resource access for your macOS apps.
 - [Enabling enhanced security for your app](../Xcode/enabling-enhanced-security-for-your-app.md)
   Detect out-of-bounds memory access, use of freed memory, and other potential vulnerabilities.
-### Sensitive content analysis
+### Sensitive Content Analysis
 - [com.apple.developer.sensitivecontentanalysis.client](entitlements/com.apple.developer.sensitivecontentanalysis.client.md)
   A code-signing entitlement that enables an app to detect nudity in images and video.
 ### Sensors
@@ -315,6 +335,8 @@ You configure entitlements for your app by declaring capabilities for a target i
   A Boolean value indicating whether your app may use Multipath protocols to seamlessly transition between Wi-Fi and cellular networks.
 - [Hotspot Configuration Entitlement](entitlements/com.apple.developer.networking.hotspotconfiguration.md)
   A Boolean value indicating whether your app can use the hotspot manager to configure Wi-Fi networks.
+- [HotSpot Helper](entitlements/com.apple.developer.networking.hotspothelper.md)
+  An entitlement that permits an app to participate in navigating Wi-Fi network hotspots.
 - [Near Field Communication Tag Reader Session Formats Entitlement](entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
 - [com.apple.developer.nfc.hce](entitlements/com.apple.developer.nfc.hce.md)
@@ -347,18 +369,6 @@ You configure entitlements for your app by declaring capabilities for a target i
 ### Wi-Fi Aware
 - [com.apple.developer.wifi-aware](entitlements/com.apple.developer.wifi-aware.md)
   The entitlement the system requires for an app to use the Wi-Fi Aware framework.
-### Type Aliases
-- [com.apple.developer.accessibility.merchant-api-control](entitlements/com.apple.developer.accessibility.merchant-api-control.md)
-- [App Sandbox Entitlement](entitlements/com.apple.security.app-sandbox.md)
-  A Boolean value that indicates whether the app may use access control technology to contain damage to the system and user data if an app is compromised.
-- [com.apple.security.assets.pictures.read-write](entitlements/com.apple.security.assets.pictures.read-write.md)
-  A Boolean value that indicates whether the app may have read-write access to the Pictures folder.
-- [Apple Events Entitlement](entitlements/com.apple.security.automation.apple-events.md)
-  A Boolean value that indicates whether the app may prompt the user for permission to send Apple events to other apps.
-- [Audio Input Entitlement](entitlements/com.apple.security.device.audio-input.md)
-  A Boolean value that indicates whether the app may record audio using the built-in microphone and access audio input using Core Audio.
-- [Photos Library Entitlement](entitlements/com.apple.security.personal-information.photos-library.md)
-  A Boolean value that indicates whether the app has read-write access to the user’s Photos library.
 
 ## See Also
 

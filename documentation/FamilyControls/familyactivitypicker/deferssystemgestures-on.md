@@ -8,7 +8,6 @@ Sets the screen edge from which you want your gesture to take precedence over th
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

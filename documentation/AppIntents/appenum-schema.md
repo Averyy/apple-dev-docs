@@ -18,7 +18,7 @@ A Swift macro you use to make sure your app enum conforms to a schema.
 
 ```swift
 @attached
-(extension, conformances: AssistantSchemaEnum, names: named(__assistantSchemaEnum)) macro AppEnum<T>(schema: T) where T : AssistantSchemas.Enum
+(extension, conformances: AppEnum, AssistantSchemaEnum, names: named(__assistantSchemaEnum)) macro AppEnum<T>(schema: T) where T : AssistantSchemas.Enum
 ```
 
 ## See Also

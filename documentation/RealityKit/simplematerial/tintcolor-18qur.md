@@ -10,7 +10,6 @@ A tint color applied to the base color in macOS.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -23,6 +22,8 @@ var tintColor: UIColor { get set }
 
 - [var color: SimpleMaterial.BaseColor](simplematerial/color.md)
   The material’s color.
+- [var baseColor: MaterialColorParameter](simplematerial/basecolor-swift.property.md)
+  The base color of the material.
 - [var tintColor: NSColor](simplematerial/tintcolor-6aik0.md)
   A tint color applied to the base color in macOS.
 - [var metallic: MaterialScalarParameter](simplematerial/metallic.md)

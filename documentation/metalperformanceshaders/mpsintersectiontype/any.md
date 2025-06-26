@@ -1,7 +1,7 @@
 # MPSIntersectionType.any
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case any = 1
+case any
 ```
 
 

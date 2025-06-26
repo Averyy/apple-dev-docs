@@ -1,7 +1,7 @@
 # MPSCNNPoolingAverage
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An average pooling filter.
 
@@ -16,30 +16,40 @@ An average pooling filter.
 ## Declaration
 
 ```swift
-class MPSCNNPoolingAverage : MPSCNNPooling
+class MPSCNNPoolingAverage
 ```
 
 #### Overview
 
-For each pixel in an image, the filter returns the average value of the pixels in the filter region defined by `kernelWidth`` x ``kernelHeight`.
+For each pixel in an image, the filter returns the average value of the pixels in the filter region defined by `kernelWidth` `x` `kernelHeight`.
 
-When the value of the [`edgeMode`](mpscnnkernel/1648826-edgemode.md) property is set to [`MPSImageEdgeMode.clamp`](mpsimageedgemode/clamp.md), the filtering window is shrunk to remain within the source image borders. For pixels close to the image borders, the filtering window will be smaller in order to fit inside the source image and less values will be used to compute the average value. In case the filtering window is entirely outside the source image border, the output value will be `0`.
+When the value of the [`edgeMode`](mpscnnkernel/edgemode.md) property is set to [`MPSImageEdgeMode.clamp`](mpsimageedgemode/clamp.md), the filtering window is shrunk to remain within the source image borders. For pixels close to the image borders, the filtering window will be smaller in order to fit inside the source image and less values will be used to compute the average value. In case the filtering window is entirely outside the source image border, the output value will be `0`.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolingaverage/2866999-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolingaverage/init(coder:device:).md)
   Initializes an average pooling filter.
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingaverage/2875216-init.md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingaverage/init(device:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:).md)
   Initializes an average pooling filter.
 ### Instance Properties
-- [var zeroPadSizeX: Int](mpscnnpoolingaverage/2875207-zeropadsizex.md)
-- [var zeroPadSizeY: Int](mpscnnpoolingaverage/2875221-zeropadsizey.md)
+- [var zeroPadSizeX: Int](mpscnnpoolingaverage/zeropadsizex.md)
+- [var zeroPadSizeY: Int](mpscnnpoolingaverage/zeropadsizey.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNPooling](mpscnnpooling.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

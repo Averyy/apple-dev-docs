@@ -1,7 +1,7 @@
 # MPSCNNBatchNormalizationStatisticsGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An object that stores the gradient of the loss function with respect to the batch statistics and batch normalization weights.
 
@@ -16,21 +16,31 @@ An object that stores the gradient of the loss function with respect to the batc
 ## Declaration
 
 ```swift
-class MPSCNNBatchNormalizationStatisticsGradient : MPSCNNGradientKernel
+class MPSCNNBatchNormalizationStatisticsGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnbatchnormalizationstatisticsgradient/3013774-init.md)
-- [init(device: any MTLDevice, fusedNeuronDescriptor: MPSNNNeuronDescriptor?)](mpscnnbatchnormalizationstatisticsgradient/3013775-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnbatchnormalizationstatisticsgradient/init(coder:device:).md)
+- [init(device: any MTLDevice, fusedNeuronDescriptor: MPSNNNeuronDescriptor?)](mpscnnbatchnormalizationstatisticsgradient/init(device:fusedneurondescriptor:).md)
 ### Instance Methods
-- [func encodeBatch(to: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], batchNormalizationState: MPSCNNBatchNormalizationState)](mpscnnbatchnormalizationstatisticsgradient/2953964-encodebatch.md)
+- [func encodeBatch(to: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], batchNormalizationState: MPSCNNBatchNormalizationState)](mpscnnbatchnormalizationstatisticsgradient/encodebatch(to:sourcegradients:sourceimages:batchnormalizationstate:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNGradientKernel](mpscnngradientkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

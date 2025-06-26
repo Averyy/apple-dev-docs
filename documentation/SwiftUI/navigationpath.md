@@ -22,8 +22,8 @@ struct NavigationPath
 
 ## Mentions
 
-- [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
 - [Migrating to new navigation types](migrating-to-new-navigation-types.md)
+- [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
 
 #### Overview
 

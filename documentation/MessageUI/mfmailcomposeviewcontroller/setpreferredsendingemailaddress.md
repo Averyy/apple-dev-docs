@@ -14,6 +14,7 @@ Sets the preferred email address to use in the From field, if such an address is
 ## Declaration
 
 ```swift
+@MainActor
 func setPreferredSendingEmailAddress(_ emailAddress: String)
 ```
 

@@ -36,6 +36,12 @@ struct EditingState
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [func initializeState(for: EditingState)](datastore/initializestate(for:).md)
+- [func cachedSnapshots(for: [PersistentIdentifier], editingState: EditingState) throws -> [PersistentIdentifier : Self.Snapshot]](datastore/cachedsnapshots(for:editingstate:).md)
+- [func invalidateState(for: EditingState)](datastore/invalidatestate(for:).md)
+
 
 ---
 

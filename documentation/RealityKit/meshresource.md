@@ -23,8 +23,8 @@ A high-level representation of a collection of vertices and edges that define a 
 ## Mentions
 
 - [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
-- [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
 - [Creating a plane with low-level mesh](creating-a-plane-with-low-level-mesh.md)
+- [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
 
 ## Topics
 
@@ -57,7 +57,7 @@ A high-level representation of a collection of vertices and edges that define a 
   Replace the contents of this mesh resource.
 - [func replace(with: MeshResource.Contents) async throws](meshresource/replace(with:)-8uvri.md)
   Replace the contents of this mesh resource asynchronously.
-- [func replaceAsync(with:)](meshresource/replaceasync(with:).md)
+- [func replaceAsync(with: MeshResource.Contents) -> LoadRequest<MeshResource>](meshresource/replaceasync(with:).md)
   Replace the contents of this mesh resource asynchronously.
 ### Getting a bounding box
 - [var bounds: BoundingBox](meshresource/bounds.md)
@@ -153,7 +153,7 @@ A high-level representation of a collection of vertices and edges that define a 
 - [var lowLevelMesh: LowLevelMesh?](meshresource/lowlevelmesh-9lmql.md)
   The low-level mesh that this mesh is built from, if any.
 ### Instance Methods
-- [func getMeshPartIndex(modelID:partID:)](meshresource/getmeshpartindex(modelid:partid:).md)
+- [func meshPartIndex(modelID:partID:)](meshresource/meshpartindex(modelid:partid:).md)
   Get the MeshPartIndex for a given model and part identifier.
 - [func replace(with:)](meshresource/replace(with:).md)
   Replace the contents of this mesh resource.

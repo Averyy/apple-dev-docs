@@ -18,7 +18,7 @@ A button on a physical remote control.
 ## Declaration
 
 ```swift
-enum XCUIRemoteButton
+enum Button
 ```
 
 ## Topics

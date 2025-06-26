@@ -6,7 +6,7 @@ Install and run macOS in a virtual machine using the Virtualization framework.
 
 **Availability**:
 - macOS 14.0+
-- Xcode 15.0+
+- Xcode 26.0+ (Beta)
 
 #### Overview
 

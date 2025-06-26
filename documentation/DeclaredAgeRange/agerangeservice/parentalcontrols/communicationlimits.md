@@ -1,6 +1,6 @@
 # communicationLimits
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: property
 
 The system limits communication with the person.

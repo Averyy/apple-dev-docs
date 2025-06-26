@@ -3,7 +3,7 @@
 **Framework**: SwiftData  
 **Kind**: property
 
-The value to use in an integer-indexed collection (e.g. an int-keyed dictionary).
+The value to use in an integer-indexed collection, such as an integer-keyed dictionary.
 
 **Availability**:
 - iOS 18.0+
@@ -20,6 +20,11 @@ The value to use in an integer-indexed collection (e.g. an int-keyed dictionary)
 ```swift
 var intValue: Int? { get }
 ```
+
+## See Also
+
+- [var stringValue: String](datastoresnapshotcodingkey/stringvalue.md)
+  The string to use in a named collection (e.g. a string-keyed dictionary).
 
 
 ---

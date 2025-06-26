@@ -6,7 +6,7 @@ Use exit tests to test functionality that might cause a test process to exit.
 
 **Availability**:
 - Swift 6.2+
-- Xcode 17.0+
+- Xcode 26.0+ (Beta)
 
 #### Overview
 
@@ -102,7 +102,7 @@ extension Customer {
 
 > **Note**: The content of the standard output and standard error streams can contain any arbitrary sequence of bytes, including sequences that aren’t valid UTF-8 and can’t be decoded by [`String.init(cString:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/string/init(cstring:)-6kr8s). These streams are globally accessible within the child process, and any code running in an exit test may write to it including the operating system and any third-party dependencies you declare in your package description or Xcode project.
 
-The testing library always sets [`exitStatus`](exittest/result/exitstatus.md) to the actual exit status of the child process (as reported by the system) even if you do not pass it.
+The testing library always sets [`exitStatus`](exittest/result/exitstatus.md) to the actual exit status of the child process (as reported by the system) even if you do not observe `\.exitStatus`.
 
 ## See Also
 

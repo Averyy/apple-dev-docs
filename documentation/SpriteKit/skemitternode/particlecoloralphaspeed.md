@@ -17,7 +17,6 @@ The rate at which the alpha component of a particle’s color changes per second
 ## Declaration
 
 ```swift
-@MainActor
 var particleColorAlphaSpeed: CGFloat { get set }
 ```
 

@@ -15,7 +15,7 @@ The current screen mode associated with the screen.
 
 ```swift
 @MainActor
-var currentMode: UIScreenMode? { get }
+var currentMode: UIScreenMode? { get set }
 ```
 
 #### Discussion

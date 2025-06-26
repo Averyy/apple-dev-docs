@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Attach an entity to a target pin owned by another entity with an optional specified source pin This utility function has the same effect of adding an AttachedTransformComponent created witht the same parameter to the entity you are calling upon
+Attach an entity to a target pin owned by another entity with an optional specified source pin This utility function has the same effect of adding an AttachedTransformComponent created with the same parameter to the entity you are calling upon
 
 **Availability**:
 - iOS 26.0+ (Beta)

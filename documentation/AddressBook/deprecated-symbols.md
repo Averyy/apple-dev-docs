@@ -25,7 +25,7 @@ Review unsupported symbols and their replacements.
   A reference to an `ABMultiValue` or `ABMutableMultiValueobject`.
 - [typealias ABMutableMultiValue](abmutablemultivalueref.md)
   A reference to an ABMutableMultiValue object.
-- [typealias ABRecord](abrecordref.md)
+- [typealias ABRecord](abrecord-swift.typealias.md)
   A reference to an ABRecord object or any of its derivedopaque types.
 
 

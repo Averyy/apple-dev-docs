@@ -15,7 +15,7 @@ This key works with the [`Wi-Fi Aware`](https://developer.apple.com/documentatio
 
 The system requires your app to have the [`com.apple.developer.wifi-aware`](entitlements/com.apple.developer.wifi-aware.md) entitlement, configured according to services you specify in this key to interact with the specified services at runtime.
 
-For information on defining the services, see doc://com.apple.documentation/documentation/wi-fiaware/adopting-wi-fi-aware.
+For information on defining the services, see [`Adopting Wi-Fi Aware`](https://developer.apple.com/documentation/WiFiAware/Adopting-Wi-Fi-Aware).
 
 
 ---

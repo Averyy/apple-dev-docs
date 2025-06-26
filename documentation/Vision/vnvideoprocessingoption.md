@@ -39,12 +39,6 @@ struct VNVideoProcessingOption
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
-## See Also
-
-- [struct ImageCoordinateConversionHelpers](imagecoordinateconversionhelpers.md)
-- [struct ImagePixelDimensions](imagepixeldimensions.md)
-- [struct ResourceVersion](resourceversion.md)
-
 
 ---
 

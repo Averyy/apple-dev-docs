@@ -17,6 +17,7 @@ The physics simulation associated with the scene.
 ## Declaration
 
 ```swift
+@MainActor
 var physicsWorld: SKPhysicsWorld { get }
 ```
 

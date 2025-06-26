@@ -1,7 +1,7 @@
 # MPSNNGramMatrixCalculation
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,22 +14,32 @@
 ## Declaration
 
 ```swift
-class MPSNNGramMatrixCalculation : MPSCNNKernel
+class MPSNNGramMatrixCalculation
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnngrammatrixcalculation/3114078-init.md)
-- [init(device: any MTLDevice)](mpsnngrammatrixcalculation/3114079-init.md)
-- [init(device: any MTLDevice, alpha: Float)](mpsnngrammatrixcalculation/3114080-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsnngrammatrixcalculation/init(coder:device:).md)
+- [convenience init(device: any MTLDevice)](mpsnngrammatrixcalculation/init(device:).md)
+- [init(device: any MTLDevice, alpha: Float)](mpsnngrammatrixcalculation/init(device:alpha:).md)
 ### Instance Properties
-- [var alpha: Float](mpsnngrammatrixcalculation/3114077-alpha.md)
+- [var alpha: Float](mpsnngrammatrixcalculation/alpha.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

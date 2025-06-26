@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: case
 
-Represents fading out of the video frames to a ‘color’ requested.
+A value representing fading out of the video frames to a ‘color’ requested.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -18,7 +18,7 @@ case out
 ## See Also
 
 - [FadeCommand.FadeDirection.in](fadecommand/fadedirection/in.md)
-  Represents fading in of the video frames from a ‘color’ requested.
+  A value representing fading in of the video frames from a ‘color’ requested.
 
 
 ---

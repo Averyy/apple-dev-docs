@@ -22,9 +22,9 @@ func purchase(options: Set<Product.PurchaseOption> = []) async throws -> Product
 ## Mentions
 
 - [Supporting promoted In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
 - [Sending Advanced Commerce API requests from your app](sending-advanced-commerce-api-requests-from-your-app.md)
-- [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
 
 #### Return Value
 

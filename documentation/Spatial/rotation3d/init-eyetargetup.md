@@ -11,9 +11,9 @@ Creates a rotation structure that’s the look-at direction from a position to a
 - Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
 - watchOS 9.0+
 - Unknown ?+ - Deprecated
+- visionOS ?+
 
 ## Declaration
 

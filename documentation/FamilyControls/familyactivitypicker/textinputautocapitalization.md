@@ -8,7 +8,6 @@ Sets how often the shift key in the keyboard is automatically enabled.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 - tvOS 15.0+
 - watchOS 8.0+
 

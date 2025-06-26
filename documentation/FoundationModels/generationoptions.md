@@ -64,7 +64,7 @@ Create a [`GenerationOptions`](generationoptions.md) structure when you want to 
 - [struct Prompt](prompt.md)
   A prompt from a person to the model.
 - [struct Transcript](transcript.md)
-  A transcript that documents interactions with a language model.
+  A transcript that documents interactions with a language model. Transcripts contain an ordered list of entries, representing inputs to and outputs from the model.
 
 
 ---

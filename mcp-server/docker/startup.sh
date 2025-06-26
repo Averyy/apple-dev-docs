@@ -78,7 +78,6 @@ if [ "${ENABLE_HTTP_WRAPPER}" = "true" ]; then
     echo "  - Remote Access: Enabled at http://<server-ip>:${HTTP_PORT:-8080}/mcp"
 fi
 echo "  - Meilisearch URL: ${MEILI_HTTP_ADDR:-http://localhost:7700}"
-echo "  - Keep Markdown Files: ${KEEP_MARKDOWN_FILES:-true}"
 echo "  - Auto-Rescrape Enabled: ${ENABLE_AUTO_RESCRAPE:-false}"
 if [ "${ENABLE_AUTO_RESCRAPE}" = "true" ]; then
     echo "  - Rescrape Schedule: Weekly on Sundays at 1:00 AM"

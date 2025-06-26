@@ -63,8 +63,6 @@ class MTL4BinaryFunctionDescriptor
   Represents a binary function.
 - [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
   Options for configuring the creation of binary functions.
-- [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
-  Options for configuring the creation of binary functions.
 - [class MTL4BinaryFunctionReflection](mtl4binaryfunctionreflection.md)
   Represents reflection information for a binary function.
 - [class MTL4PipelineStageDynamicLinkingDescriptor](mtl4pipelinestagedynamiclinkingdescriptor.md)

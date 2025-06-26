@@ -1,7 +1,7 @@
 # MPSNNForwardLoss
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,31 +14,41 @@
 ## Declaration
 
 ```swift
-class MPSNNForwardLoss : MPSCNNKernel
+class MPSNNForwardLoss
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnforwardloss/3131801-init.md)
-- [init(device: any MTLDevice, lossDescriptor: MPSCNNLossDescriptor)](mpsnnforwardloss/3131802-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnforwardloss/init(coder:device:).md)
+- [init(device: any MTLDevice, lossDescriptor: MPSCNNLossDescriptor)](mpsnnforwardloss/init(device:lossdescriptor:).md)
 ### Instance Properties
-- [var delta: Float](mpsnnforwardloss/3131797-delta.md)
-- [var epsilon: Float](mpsnnforwardloss/3131800-epsilon.md)
-- [var labelSmoothing: Float](mpsnnforwardloss/3131803-labelsmoothing.md)
-- [var lossType: MPSCNNLossType](mpsnnforwardloss/3131804-losstype.md)
-- [var numberOfClasses: Int](mpsnnforwardloss/3131805-numberofclasses.md)
-- [var reduceAcrossBatch: Bool](mpsnnforwardloss/3547985-reduceacrossbatch.md)
-- [var reductionType: MPSCNNReductionType](mpsnnforwardloss/3131806-reductiontype.md)
-- [var weight: Float](mpsnnforwardloss/3131807-weight.md)
+- [var delta: Float](mpsnnforwardloss/delta.md)
+- [var epsilon: Float](mpsnnforwardloss/epsilon.md)
+- [var labelSmoothing: Float](mpsnnforwardloss/labelsmoothing.md)
+- [var lossType: MPSCNNLossType](mpsnnforwardloss/losstype.md)
+- [var numberOfClasses: Int](mpsnnforwardloss/numberofclasses.md)
+- [var reduceAcrossBatch: Bool](mpsnnforwardloss/reduceacrossbatch.md)
+- [var reductionType: MPSCNNReductionType](mpsnnforwardloss/reductiontype.md)
+- [var weight: Float](mpsnnforwardloss/weight.md)
 ### Instance Methods
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], labels: [MPSImage], weights: [MPSImage]?, destinationStates: [MPSState]?, destinationImages: [MPSImage])](mpsnnforwardloss/3131798-encodebatch.md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], labels: [MPSImage], weights: [MPSImage]?, outStates: AutoreleasingUnsafeMutablePointer<NSArray?>?, isTemporary: Bool) -> [MPSImage]](mpsnnforwardloss/3131799-encodebatch.md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], labels: [MPSImage], weights: [MPSImage]?, destinationStates: [MPSState]?, destinationImages: [MPSImage])](mpsnnforwardloss/encodebatch(commandbuffer:sourceimages:labels:weights:destinationstates:destinationimages:).md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], labels: [MPSImage], weights: [MPSImage]?, outStates: AutoreleasingUnsafeMutablePointer<NSArray?>?, isTemporary: Bool) -> [MPSImage]](mpsnnforwardloss/encodebatch(commandbuffer:sourceimages:labels:weights:outstates:istemporary:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

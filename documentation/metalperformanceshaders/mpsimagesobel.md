@@ -1,7 +1,7 @@
 # MPSImageSobel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that convolves an image with the Sobel operator.
 
@@ -16,34 +16,44 @@ A filter that convolves an image with the Sobel operator.
 ## Declaration
 
 ```swift
-class MPSImageSobel : MPSUnaryImageKernel
+class MPSImageSobel
 ```
 
 #### Overview
 
-When the color model (e.g. RGB, two-channel, grayscale, etc.) of the source and destination textures match, the filter is applied to each color channel separately. If the destination is single-channel (i.e. monochrome) but the source is multi-channel, the pixel values are converted to grayscale before applying the Sobel operator by using the linear gray color transform vector `v `shown in the code listing below.
+When the color model (e.g. RGB, two-channel, grayscale, etc.) of the source and destination textures match, the filter is applied to each color channel separately. If the destination is single-channel (i.e. monochrome) but the source is multi-channel, the pixel values are converted to grayscale before applying the Sobel operator by using the linear gray color transform vector `v` shown in the code listing below.
 
-```occ
+```objc
 Luminance = v[0] * pixel.x + v[1] * pixel.y + v[2] * pixel.z
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagesobel/2866152-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagesobel/init(coder:device:).md)
 ### Methods
-- [init(device: any MTLDevice)](mpsimagesobel/1618843-init.md)
+- [convenience init(device: any MTLDevice)](mpsimagesobel/init(device:).md)
   Initializes a Sobel filter on a given device using the default color transform.
-- [init(device: any MTLDevice, linearGrayColorTransform: UnsafePointer<Float>)](mpsimagesobel/1618899-init.md)
+- [init(device: any MTLDevice, linearGrayColorTransform: UnsafePointer<Float>)](mpsimagesobel/init(device:lineargraycolortransform:).md)
   Initializes a Sobel filter on a given device using a specific color transform.
 ### Properties
-- [var colorTransform: UnsafePointer<Float>](mpsimagesobel/1618777-colortransform.md)
+- [var colorTransform: UnsafePointer<Float>](mpsimagesobel/colortransform.md)
   The color transform used to initialize the Sobel filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

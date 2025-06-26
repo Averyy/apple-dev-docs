@@ -21,8 +21,8 @@ Init will return nil if dimensions are out of range or revision is unsupported.
 
 ## Parameters
 
-- `frameWidth`: Width of source frame in pixels. Maximum value is 8192 for macOS, and 4096 for iOS.
-- `frameHeight`: Height of source frame in pixels. Maximum value is 4320 for macOS, and 2160 for iOS.
+- `frameWidth`: Width of source frame in pixels. With VTSuperResolutionScalerConfigurationInputTypeVideo, maximum width is 1920 on macOS and 1440 on iOS. With VTSuperResolutionScalerConfigurationInputTypeImage, maximum width is 1920.
+- `frameHeight`: Height of source frame in pixels. With VTSuperResolutionScalerConfigurationInputTypeVideo, maximum height is 1080. With VTSuperResolutionScalerConfigurationInputTypeImage, maximum height is 1920.
 - `scaleFactor`: Indicates the scale factor between input and output.
 - `inputType`: Indicates the type of input (video / image ).
 - `usePrecomputedFlow`: Boolean value to indicate that Optical Flow will be provided by the user, if false this configuration will compute the optical flow on the fly.

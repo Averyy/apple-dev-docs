@@ -16,7 +16,7 @@ Encodes a command to update a texture’s memory mappings, specifying the parame
 ## Declaration
 
 ```swift
-func updateTextureMapping(_ texture: any MTLTexture, mode: MTLSparseTextureMappingMode, indirectBuffer: any MTLBuffer, indirectBufferOffset: Int)
+optional func updateTextureMapping(_ texture: any MTLTexture, mode: MTLSparseTextureMappingMode, indirectBuffer: any MTLBuffer, indirectBufferOffset: Int)
 ```
 
 #### Discussion

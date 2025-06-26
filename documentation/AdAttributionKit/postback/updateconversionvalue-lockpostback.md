@@ -18,10 +18,10 @@ static func updateConversionValue(_ fineConversionValue: Int, lockPostback: Bool
 
 ## Mentions
 
-- [Understanding AdAttributionKit and SKAdNetwork interoperability](adattributionkit-skadnetwork-interoperability.md)
-- [Receiving postbacks in multiple conversion windows](receiving-postbacks-in-multiple-conversion-windows.md)
 - [Configuring an advertised app](configuring-an-advertised-app.md)
 - [Identifying the parameters in a postback](identifying-the-parameters-in-a-postback.md)
+- [Receiving postbacks in multiple conversion windows](receiving-postbacks-in-multiple-conversion-windows.md)
+- [Understanding AdAttributionKit and SKAdNetwork interoperability](adattributionkit-skadnetwork-interoperability.md)
 
 ## Parameters
 

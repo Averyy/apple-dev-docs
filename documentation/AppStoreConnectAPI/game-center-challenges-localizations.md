@@ -39,6 +39,8 @@ Manage compatible Game Center-enabled versions.
 
 ## See Also
 
+- [Configuring Game Center challenges](configuring-game-center-challenges.md)
+  Setup and configure social experiences around leaderboards for friendly competition.
 - [Game Center challenges](game-center-challenges.md)
   Manage Game Center challenges for your apps.
 - [Game Center challenge versions](game-center-challenges-versions.md)

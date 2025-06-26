@@ -52,8 +52,6 @@ Typical construction of `Duration` values should be created via the static metho
   Construct a `Duration` given a number of seconds microseconds as a `Double` by converting the value into the closest attosecond scale value.
 - [static func microseconds<T>(T) -> Duration](duration/microseconds(_:)-2majo.md)
   Construct a `Duration` given a number of microseconds represented as a `BinaryInteger`.
-- [static func nanoseconds<T>(T) -> Duration](duration/nanoseconds(_:).md)
-  Construct a `Duration` given a number of nanoseconds represented as a `BinaryInteger`.
 ### Accessing a duration’s components
 - [var components: (seconds: Int64, attoseconds: Int64)](duration/components.md)
   The composite components of the `Duration`.
@@ -78,6 +76,11 @@ Typical construction of `Duration` values should be created via the static metho
 ### Instance Properties
 - [var attoseconds: Int128](duration/attoseconds.md)
   The number of attoseconds represented by this `Duration`.
+### Type Methods
+- [static func nanoseconds(Double) -> Duration](duration/nanoseconds(_:)-1cg32.md)
+  Construct a `Duration` given a number of seconds nanoseconds as a `Double` by converting the value into the closest attosecond scale value.
+- [static func nanoseconds<T>(T) -> Duration](duration/nanoseconds(_:)-8nsaz.md)
+  Construct a `Duration` given a number of nanoseconds represented as a `BinaryInteger`.
 ### Default Implementations
 - [AdditiveArithmetic Implementations](duration/additivearithmetic-implementations.md)
 - [AtomicRepresentable Implementations](duration/atomicrepresentable-implementations.md)

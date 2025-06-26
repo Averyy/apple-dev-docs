@@ -11,7 +11,6 @@ Informs the background task scheduler that the task is complete.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
-- watchOS 6.0+
 
 ## Declaration
 

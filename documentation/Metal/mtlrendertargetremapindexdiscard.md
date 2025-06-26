@@ -6,11 +6,6 @@
 Constant to specify discarding a color attachment’s index in a remap operation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
 - visionOS ?+
 
 ## Declaration

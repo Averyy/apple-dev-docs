@@ -70,7 +70,7 @@ If your prompt includes input from people, consider wrapping the input in a stri
 - [struct Instructions](instructions.md)
   Instructions define the model’s intended behavior on prompts.
 - [struct Transcript](transcript.md)
-  A transcript that documents interactions with a language model.
+  A transcript that documents interactions with a language model. Transcripts contain an ordered list of entries, representing inputs to and outputs from the model.
 - [struct GenerationOptions](generationoptions.md)
   Options that control how the model generates its response to a prompt.
 

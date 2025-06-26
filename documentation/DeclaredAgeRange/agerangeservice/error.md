@@ -1,6 +1,6 @@
 # AgeRangeService.Error
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: enum
 
 An error that occurs when an age range request fails.
@@ -24,13 +24,11 @@ enum Error
   The system was unable to share the person’s age.
 - [AgeRangeService.Error.invalidRequest](agerangeservice/error/invalidrequest.md)
   The request is invalid.
-### Operators
+### Comparing values
 - [static func == (AgeRangeService.Error, AgeRangeService.Error) -> Bool](agerangeservice/error/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
 - [var hashValue: Int](agerangeservice/error/hashvalue.md)
   The hash value.
-### Instance Methods
 - [func hash(into: inout Hasher)](agerangeservice/error/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations

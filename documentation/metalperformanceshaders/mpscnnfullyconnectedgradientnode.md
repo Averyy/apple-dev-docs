@@ -1,7 +1,7 @@
 # MPSCNNFullyConnectedGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,18 +14,26 @@
 ## Declaration
 
 ```swift
-class MPSCNNFullyConnectedGradientNode : MPSCNNConvolutionGradientNode
+class MPSCNNFullyConnectedGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, convolutionGradientState: MPSCNNConvolutionGradientStateNode, weights: (any MPSCNNConvolutionDataSource)?)](mpscnnfullyconnectedgradientnode/3152566-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, convolutionGradientState: MPSCNNConvolutionGradientStateNode, weights: (any MPSCNNConvolutionDataSource)?)](mpscnnfullyconnectedgradientnode/init(sourcegradient:sourceimage:convolutiongradientstate:weights:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNConvolutionGradientNode](mpscnnconvolutiongradientnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [MPSNNTrainableNode](mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

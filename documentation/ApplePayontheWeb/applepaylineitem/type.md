@@ -37,6 +37,8 @@ If a line item’s [`type`](applepaylineitem/type.md) is `final`, the payment sh
   A required value that’s a short, localized description of the line item.
 - [amount](applepaylineitem/amount.md)
   A required value that’s the monetary amount of the line item.
+- [ApplePayLineItemType](applepaylineitemtype.md)
+  A type that indicates whether a line item is final or pending.
 
 
 ---

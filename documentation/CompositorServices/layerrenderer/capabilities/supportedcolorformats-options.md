@@ -3,7 +3,7 @@
 **Framework**: Compositor Services  
 **Kind**: method
 
-The list of color formats that the layer renderer supports
+Returns an array of formats that the layer supports for its color textures
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -14,6 +14,14 @@ The list of color formats that the layer renderer supports
 ```swift
 func supportedColorFormats(options: LayerRenderer.Capabilities.SupportedColorFormatsOptions) -> [MTLPixelFormat]
 ```
+
+#### Discussion
+
+Call this function to determine which pixel arrangements and characteristics the layer supports for its color textures.
+
+## Parameters
+
+- `options`: Specific options you want the formats of the color textures to be supported with.   The function returns only color formats that are supported with the specified options.
 
 
 ---

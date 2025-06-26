@@ -1,7 +1,7 @@
 # MPSCNNYOLOLoss
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel that computes the YOLO loss and loss gradient between specified predictions and labels.
 
@@ -16,40 +16,50 @@ A kernel that computes the YOLO loss and loss gradient between specified predict
 ## Declaration
 
 ```swift
-class MPSCNNYOLOLoss : MPSCNNKernel
+class MPSCNNYOLOLoss
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnyololoss/2976480-init.md)
-- [init(device: any MTLDevice, lossDescriptor: MPSCNNYOLOLossDescriptor)](mpscnnyololoss/2976481-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnyololoss/init(coder:device:).md)
+- [init(device: any MTLDevice, lossDescriptor: MPSCNNYOLOLossDescriptor)](mpscnnyololoss/init(device:lossdescriptor:).md)
 ### Instance Properties
-- [var anchorBoxes: Data](mpscnnyololoss/2976475-anchorboxes.md)
-- [var lossClasses: MPSCNNLoss](mpscnnyololoss/2976482-lossclasses.md)
-- [var lossConfidence: MPSCNNLoss](mpscnnyololoss/2976483-lossconfidence.md)
-- [var lossWH: MPSCNNLoss](mpscnnyololoss/2976484-losswh.md)
-- [var lossXY: MPSCNNLoss](mpscnnyololoss/2976485-lossxy.md)
-- [var maxIOUForObjectAbsence: Float](mpscnnyololoss/2976486-maxiouforobjectabsence.md)
-- [var minIOUForObjectPresence: Float](mpscnnyololoss/2976487-miniouforobjectpresence.md)
-- [var numberOfAnchorBoxes: Int](mpscnnyololoss/2976488-numberofanchorboxes.md)
-- [var reduceAcrossBatch: Bool](mpscnnyololoss/3547983-reduceacrossbatch.md)
-- [var reductionType: MPSCNNReductionType](mpscnnyololoss/2976489-reductiontype.md)
-- [var scaleClass: Float](mpscnnyololoss/2976490-scaleclass.md)
-- [var scaleNoObject: Float](mpscnnyololoss/2976491-scalenoobject.md)
-- [var scaleObject: Float](mpscnnyololoss/2976492-scaleobject.md)
-- [var scaleWH: Float](mpscnnyololoss/2976493-scalewh.md)
-- [var scaleXY: Float](mpscnnyololoss/2976494-scalexy.md)
+- [var anchorBoxes: Data](mpscnnyololoss/anchorboxes.md)
+- [var lossClasses: MPSCNNLoss](mpscnnyololoss/lossclasses.md)
+- [var lossConfidence: MPSCNNLoss](mpscnnyololoss/lossconfidence.md)
+- [var lossWH: MPSCNNLoss](mpscnnyololoss/losswh.md)
+- [var lossXY: MPSCNNLoss](mpscnnyololoss/lossxy.md)
+- [var maxIOUForObjectAbsence: Float](mpscnnyololoss/maxiouforobjectabsence.md)
+- [var minIOUForObjectPresence: Float](mpscnnyololoss/miniouforobjectpresence.md)
+- [var numberOfAnchorBoxes: Int](mpscnnyololoss/numberofanchorboxes.md)
+- [var reduceAcrossBatch: Bool](mpscnnyololoss/reduceacrossbatch.md)
+- [var reductionType: MPSCNNReductionType](mpscnnyololoss/reductiontype.md)
+- [var scaleClass: Float](mpscnnyololoss/scaleclass.md)
+- [var scaleNoObject: Float](mpscnnyololoss/scalenoobject.md)
+- [var scaleObject: Float](mpscnnyololoss/scaleobject.md)
+- [var scaleWH: Float](mpscnnyololoss/scalewh.md)
+- [var scaleXY: Float](mpscnnyololoss/scalexy.md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, labels: MPSCNNLossLabels) -> MPSImage](mpscnnyololoss/2976478-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, labels: MPSCNNLossLabels, destinationImage: MPSImage)](mpscnnyololoss/2976479-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], labels: [MPSCNNLossLabels]) -> [MPSImage]](mpscnnyololoss/2976476-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], labels: [MPSCNNLossLabels], destinationImages: [MPSImage])](mpscnnyololoss/2976477-encode.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, labels: MPSCNNLossLabels) -> MPSImage](mpscnnyololoss/encode(commandbuffer:sourceimage:labels:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, labels: MPSCNNLossLabels, destinationImage: MPSImage)](mpscnnyololoss/encode(commandbuffer:sourceimage:labels:destinationimage:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], labels: [MPSCNNLossLabels]) -> [MPSImage]](mpscnnyololoss/encode(commandbuffer:sourceimages:labels:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], labels: [MPSCNNLossLabels], destinationImages: [MPSImage])](mpscnnyololoss/encode(commandbuffer:sourceimages:labels:destinationimages:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

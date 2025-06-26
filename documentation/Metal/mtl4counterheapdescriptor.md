@@ -22,6 +22,8 @@ class MTL4CounterHeapDescriptor
 ## Topics
 
 ### Instance Properties
+- [var count: Int](mtl4counterheapdescriptor/count.md)
+  Assigns the number of entries in the heap.
 - [var entryCount: Int](mtl4counterheapdescriptor/entrycount.md)
   Assigns the number of entries in the heap.
 - [var type: MTL4CounterHeapType](mtl4counterheapdescriptor/type.md)

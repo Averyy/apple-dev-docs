@@ -90,12 +90,16 @@ You can only bind a [`WebPage`](webpage.md) to a single [`WebView`](webview-swif
   Create a new WebView with the specified URL.
 ### Modifying web interactions
 - [WebView.BackForwardNavigationGesturesBehavior](webview-swift.struct/backforwardnavigationgesturesbehavior.md)
+  A type that defines the behavior of how horizontal swipe gestures trigger backward and forward page navigation.
 - [WebView.LinkPreviewBehavior](webview-swift.struct/linkpreviewbehavior.md)
+  A type specifying the behavior for the presentation of link previews when pressing a link.
 ### Structures
 - [WebView.ActivatedElementInfo](webview-swift.struct/activatedelementinfo.md)
-  Contains information about an element the user activated in a webpage, which may be used to configure a context menu for that element. For links, the information contains the URL that is linked to.
+  Contains information about an element the user activated in a webpage, which may be used to configure a context menu for that element.
 - [WebView.ElementFullscreenBehavior](webview-swift.struct/elementfullscreenbehavior.md)
+  The behavior that determines whether a web view can display content full screen.
 - [WebView.MagnificationGesturesBehavior](webview-swift.struct/magnificationgesturesbehavior.md)
+  The options for controlling the behavior for how magnification gestures interact with web views.
 
 ## Relationships
 

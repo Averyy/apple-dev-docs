@@ -17,7 +17,6 @@ A Boolean value that indicates whether the reference node has already loaded its
 ## Declaration
 
 ```swift
-@MainActor
 var isLoaded: Bool { get }
 ```
 

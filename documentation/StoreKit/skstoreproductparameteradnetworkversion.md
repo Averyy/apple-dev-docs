@@ -19,8 +19,8 @@ let SKStoreProductParameterAdNetworkVersion: String
 
 ## Mentions
 
-- [Generating the signature to validate StoreKit-rendered ads](generating-the-signature-to-validate-storekit-rendered-ads.md)
 - [Identifying the parameters in install-validation postbacks](identifying-the-parameters-in-install-validation-postbacks.md)
+- [Generating the signature to validate StoreKit-rendered ads](generating-the-signature-to-validate-storekit-rendered-ads.md)
 
 #### Discussion
 

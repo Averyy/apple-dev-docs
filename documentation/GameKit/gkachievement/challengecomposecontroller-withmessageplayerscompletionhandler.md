@@ -16,7 +16,7 @@ Provides a view controller that you present to the player to issue an achievemen
 ## Declaration
 
 ```swift
-func challengeComposeController(withMessage message: String?, players: [GKPlayer], completionHandler: GKChallengeComposeCompletionBlock? = nil) -> UIViewController
+func challengeComposeController(withMessage message: String?, players: [GKPlayer], completionHandler: GKChallengeComposeCompletionBlock? = nil) -> NSViewController
 ```
 
 #### Return Value

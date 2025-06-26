@@ -31,6 +31,16 @@ struct DataStoreFetchRequest<T> where T : PersistentModel
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [func fetch<T>(DataStoreFetchRequest<T>) throws -> DataStoreFetchResult<T, Self.Snapshot>](datastore/fetch(_:).md)
+- [struct DataStoreFetchResult](datastorefetchresult.md)
+- [associatedtype Snapshot : DataStoreSnapshot](datastore/snapshot.md)
+- [protocol DataStoreSnapshot](datastoresnapshot.md)
+- [typealias DataStoreSnapshotValue](datastoresnapshotvalue.md)
+- [func fetchCount<T>(DataStoreFetchRequest<T>) throws -> Int](datastore/fetchcount(_:).md)
+- [func fetchIdentifiers<T>(DataStoreFetchRequest<T>) throws -> [PersistentIdentifier]](datastore/fetchidentifiers(_:).md)
+
 
 ---
 

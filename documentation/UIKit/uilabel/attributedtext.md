@@ -25,7 +25,7 @@ This property is `nil` by default.
 
 Assigning a new value to this property also replaces the value of the [`text`](uilabel/text.md) property with the same string data, although without any formatting information. In addition, assigning a new value updates the values in the [`font`](uilabel/font.md), [`textColor`](uilabel/textcolor.md), and other style-related properties so that they reflect the style information starting at location `0` in the attributed string.
 
-Turn autokerning on for the label by setting the [`kern`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/kern) (Swift) or [`NSKernAttributeName`](nskernattributename.md) (Objective-C) of the string to [`null`](https://developer.apple.com/documentation/Foundation/NSNull/null).
+Turn autokerning on for the label by setting the [`NSKernAttributeName`](nskernattributename.md) of the string to [`null`](https://developer.apple.com/documentation/Foundation/NSNull/null).
 
 ## See Also
 

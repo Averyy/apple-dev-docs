@@ -144,11 +144,6 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
 ### Variables
 - [let CPMaximumMessageItemLeadingDetailTextImageSize: CGSize](cpmaximummessageitemleadingdetailtextimagesize.md)
   Maximum size of an image for the detailed text leading image.
-### Enumerations
-- [enum CPListImageRowItemCondensedElementShape](cplistimagerowitemcondensedelementshape.md)
-  Types of shape used to draw a condensed row element.
-- [enum CPListImageRowItemImageGridElementShape](cplistimagerowitemimagegridelementshape.md)
-  Types of shape used to draw a list item.
 
 
 ---

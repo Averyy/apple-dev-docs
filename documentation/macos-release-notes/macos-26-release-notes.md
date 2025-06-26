@@ -1,4 +1,4 @@
-# macOS Tahoe 26 Beta Release Notes
+# macOS Tahoe 26 Beta 2 Release Notes
 
 **Framework**: macOS Release Notes
 
@@ -6,13 +6,29 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 26 SDK provides support to develop apps for Mac computers running Tahoe 26 beta. The SDK comes bundled with Xcode 26, available from the Mac App Store. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
+The macOS 26 SDK provides support to develop apps for Mac computers running Tahoe 26 beta 2. The SDK comes bundled with Xcode 26, available from the Mac App Store. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
+
+##### General
+
+###### New Features
+
+- Recovery Assistant is a new way to recover your device if it doesn’t start up normally. It can look for problems and attempt to resolve them if found.  (151856202)
+
+##### Agl
+
+###### Deprecations
+
+- AGL is no longer available in the macOS SDK. AGL was previously used to present OpenGL content in Carbon apps, and Carbon no longer exists in the SDK. AGL symbols now do nothing on 64-bit systems, including Intel x86_64 and Apple Silicon Macs. It is safe to remove any AGL usage and stop linking AGL. OpenGL still remains in the SDK.  (153913819)
 
 ##### App Store
 
 ###### New Features
 
 - A new Accessibility section has been added to the App Store product pages that highlights accessibility features within apps and games. These Accessibility Nutrition Labels give users a new way to learn if an app will be accessible to them before they download it, and give developers the opportunity to better inform and educate their users on features their app supports.  (138344118)
+
+###### Known Issues
+
+- Updating iOS or iPadOS apps on macOS from the App Store might hang with a spinning progress indicator or with the progress partially complete.  (152878930)
 
 ##### Appkit
 
@@ -26,17 +42,32 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 - The Foundation Models framework provides you with direct access to the on-device large language model at the core of Apple Intelligence.  (139996377)
 
+###### Resolved Issues
+
+- Fixed: In Image Playground and Genmoji, the new modifiers to customize appearance do not work for Japanese-language users. Generation is blocked when attempting to add modifiers to their appearance.  (151833204)
+- Fixed: Model quality output degrades after extended, repeated inferences of the same adapter.  (152468267)
+
 ###### Known Issues
 
 - Xcode features like Predictive Code Completion and the coding assistant might require Apple Intelligence to be enabled.   (150889516)  Enable Apple Intelligence in System Settings.
-- In Image Playground and Genmoji, the new modifiers to customize appearance do not work for Japanese-language users. Generation is blocked when attempting to add modifiers to their appearance.  (151833204)  Removing any modifiers from the dropdowns in Customize Appearance options will allow generations. Users can also use the “Additional description” text field for modifications.
-- Model quality output degrades after extended, repeated inferences of the same adapter.  (152468267)
 
-##### Assistantschemas
+##### Apple Music
 
 ###### Known Issues
 
-- If you have adopted any of the following email AssistantSchemas, you will experience a compilation error due to a parameter type change: `createDraft`, `updateDraft`, `replyMail`, `forwardMail`, `message`, and `draft`.  (148633307)  Revise the relevant schema implementations to accept an optional `AttributedString` instead of an optional `String` for the body parameter or property, and rebuild your app.
+- AutoMix does not work if you override the sample rate in Audio Midi Setup.  (151399727)
+
+##### Assistantschemas
+
+###### Resolved Issues
+
+- Fixed: If you have adopted any of the following email AssistantSchemas, you will experience a compilation error due to a parameter type change: `createDraft`, `updateDraft`, `replyMail`, `forwardMail`, `message`, and `draft`.  (148633307)
+
+##### Authenticationservices
+
+###### New Features
+
+- `ASAuthorizationControllerRequestOptions.preferImmediatelyAvailableCredentials` now works for passkey registration requests. This request only shows UI when the device is immediately able to create a passkey; otherwise, no UI is shown.  (150688929)
 
 ##### Avfoundation
 
@@ -46,13 +77,17 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ##### Background Assets
 
+###### Resolved Issues
+
+- Fixed: The system might not update downloaded asset packs as frequently as is expected for apps that internal testers install from TestFlight.  (143281558)
+- Fixed: Asset pack downloads might fail unexpectedly or stall indefinitely, including across reboots.  (151498902)
+- Fixed: The system might not deliver status updates to your app for ongoing asset pack downloads.  (151647839)
+- Fixed: Pausing and resuming an app installation or update while the system is downloading essential asset packs might cause the installation or update to stall indefinitely.  (151942388)
+
 ###### Known Issues
 
-- The system might not update downloaded asset packs as frequently as is expected for apps that internal testers install from TestFlight.   (143281558)  Call `checkForUpdates()` on the shared asset pack manager in your app’s code.
-- Asset pack downloads might fail unexpectedly or stall indefinitely, including across reboots.   (151498902)  If your app receives a download status update for a stalled asset pack with a `Progress` object, then call `cancel()` on that object before rescheduling the download. Alternatively, you can fetch and cancel the object that represents the stalled download by calling `currentDownloads` on the shared download manager, extracting the relevant download object from the returned array, and passing the object to a call to `cancel(_:)` on the shared download manager.
-- The system might not deliver status updates to your app for ongoing asset pack downloads.   (151647839)  Force Quit and restart your app while testing it.
 - An iOS or iPadOS app on an Apple silicon Mac might appear openable in TestFlight even while its essential assets are still being downloaded.  (151709449)  Wait a few minutes to give time for the essential assets to finish being downloaded before attempting to open the app.
-- Pausing and resuming an app installation or update while the system is downloading essential asset packs might cause the installation or update to stall indefinitely.  (151942388)  Delete the stalled app from the Home Screen (on iOS, iPadOS, or tvOS), from the Home View (on visionOS), or from the Finder (on macOS) and reinstall it.
+- The installation of large asset packs might fail.  (153128086)
 
 ##### Catalyst
 
@@ -63,9 +98,9 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ##### Cloudkit
 
-###### Known Issues
+###### Resolved Issues
 
-- CloudKit sharing URLs do not launch third-party apps.  (151778655)
+- Fixed: CloudKit sharing URLs do not launch third-party apps.  (151778655)
 
 ##### Disk Images
 
@@ -75,10 +110,13 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ##### Finder
 
+###### Resolved Issues
+
+- Fixed: Finder does not display Dark Mode app icons or tinted folder colors when the Folder Color setting in System Settings > Appearance is set to Automatic.  (152193702)
+
 ###### Known Issues
 
 - Users who enable path bar or status bar in Finder and use list view might be unable to access the last item in the list.  (151917092)  Disable path bar or status bar temporarily.
-- Finder does not display Dark Mode app icons or tinted folder colors when the Folder Color setting in System Settings > Appearance is set to Automatic.  (152193702)
 
 ##### Foundation
 
@@ -93,25 +131,45 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ##### Foundation Models Framework
 
+###### Resolved Issues
+
+- Fixed: When you pass `includeSchemaInPrompt: false` to `respond` or `streamResponse`, it is not respected.  (151926006)
+- Fixed: In an Xcode Playground, requests made to the model might receive a “rate limit exceeded” error.  (152325506)
+- Fixed: The Foundation Models framework cannot be imported when building for Mac Catalyst.  (153255533) (FB18004324)
+
 ###### Known Issues
 
-- When you pass `includeSchemaInPrompt: false` to `respond` or `streamResponse`, it is not respected.  (151926006)
 - Custom `@Generable` types named `Number` or `Boolean` might not function reliably in guided generation.  (152280144)  Use a different type name.
 - Some instructions and prompts to the model might not lead to expected responses. Use Feedback Assistant to report satisfactory or unsatisfactory cases. When applicable, you can use the `LanguageModelFeedbackAttachment` API to serialize the feedback to a file and attach it to Feedback Assistant.  (152318091)  Refine your instructions and prompts using `#Playground` in Xcode. When applying guided generation with a `@Generable` type, add `@Guide` with a custom description on properties to steer the model’s responses.
 - Tool calling might not function properly if primitive types such as `Int`, `String`, or `Bool` are used as the argument.  (152318534)  Define a custom `@Generable` type.
-- In an Xcode Playground, requests made to the model might receive a “rate limit exceeded” error.  (152325506)  Close and reopen the playground tab in the canvas.
+- Model requests in macOS command line tools might experience rate limiting.  (152681332)  When you need to make many requests to the model, use a UI app instead.
+- `Generable` types cannot be made public due to a bug in the `Generable` macro.  (153216183) (FB17990794)  When you intend to expose a `Generable` type in your library, expand the macro using Xcode, insert the macro expansion content into your code, and make the `id` property public.
+- Requests to the model might experience rate limiting, even when the device is connected to power.  (153216632)
 
 ##### Full Screen
 
-###### Known Issues
+###### Resolved Issues
 
-- You might experience layout issues when going full screen with certain apps on a Mac.  (151266898)
+- Fixed: You might experience layout issues when going full screen with certain apps on a Mac.  (151266898)
 
 ##### Game Controller
 
 ###### New Features
 
 - For supported game controllers, pressing the Home button once opens the Game Overlay. Set `preferredSystemGestureState` to receive additional Home button press events.  (137780853)
+
+##### Game Mode
+
+###### Known Issues
+
+- The LSSupportsGameMode `Info.plist` key is currently ignored on macOS.  (153125166)
+- Game Mode will not activate for application binaries spawned directly from Terminal.  (153127050)  Use the `open` command to launch your game from Terminal. You can pass arguments, change environment variables, and redirect standard output/error when using this command, such as `open MyGame.app --stdout /tmp/mygame.out --stderr /tmp/mygame.err --env MTL_HUD_ENABLED=1 --args -MyGameArgument -AnotherArgument`. See `man open` for more information.
+
+##### Image Playground
+
+###### Known Issues
+
+- The Create Image action fails to appear in Shortcuts app and Spotlight.  (153235442)
 
 ##### Intel Macs
 
@@ -127,9 +185,12 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ##### Maps
 
+###### Resolved Issues
+
+- Fixed: Users cannot plan a route that leaves at or arrives by a future time.  (150947515)
+
 ###### Known Issues
 
-- Users cannot plan a route that leaves at or arrives by a future time.  (150947515)
 - If you tap to expand the “Recents” section and there are more recent places than can fit in the view, the Terms & Conditions link will disappear, making it inaccessible.  (152197565)  Tap again on “Recents”. The recents list will fold and the Terms & Conditions link will be displayed.
 
 ##### Menu Customization
@@ -140,12 +201,16 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ##### Messages
 
+###### Resolved Issues
+
+- Fixed: Sent translated messages do not get re-translated after editing.  (149401758)
+- Fixed: In regions where Screen Unknown Senders is on by default, notifications for message categories are erroneously off by default.  (149450560)
+
 ###### Known Issues
 
 - Users on older devices won’t see compatibility messages for polls, so they might be unaware a poll was sent.  (148545742)
-- Sent translated messages do not get re-translated after editing.  (149401758)  Send the message again instead of editing the original.
 - Expanding Conversation Details causes the list of conversations to collapse.  (149436051)  Closing Conversation Details will bring back the list.
-- In regions where Screen Unknown Senders is on by default, notifications for message categories are erroneously off by default.  (149450560)  In Messages settings, manually enable notifications for the categories with the Allow Notifications setting of the Unknown Senders section.
+- In one-to-one conversations, background changes might be attributed incorrectly after quitting and re-opening the Messages app.  (150548773)
 - Transaction or Promotion messages filtered by a Message Filter App Extension might be badged as “Unknown” in the conversation list rather than “Transaction” or “Promotion”.  (151869409)
 - Scrolling through a Messages conversation might be sluggish.  (152453655)  Quit and relaunch Messages.
 
@@ -155,10 +220,13 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 - Metal 4 is now supported. See [`Metal`](https://developer.apple.comhttps://developer.apple.com/metal/) for additional details.  (113781091)
 
+###### Resolved Issues
+
+- Fixed: Metal Shader Validation might not work with shaders that use Metal Performance Primitives.  (149263281)
+
 ###### Known Issues
 
 - If you’re using Metal 4 command encoders, you should add render and compute pipelines that support indirect command buffers to your residency sets. The Metal device driver currently does not enforce this requirement.  (145066238)
-- Metal Shader Validation might not work with shaders that use Metal Performance Primitives.  (149263281)
 - Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367)  Selectively disable Shader Validation for pipelines using ray tracing. See [`documentation`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage/#Selectively-enable-Shader-Validation).
 
 ##### Metalfx
@@ -209,12 +277,18 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 ###### Resolved Issues
 
 - Fixed: Entities with a PortalComponent ignore any ModelSortGroupComponent and instead use a fixed rendering order. In case of sorting rendering issues with portal surface, explicitly add a ModelSortGroupComponent using a `.planarUIAlwaysBehind` sort group.  (149899345)
+- Fixed: `ParticleEmitterComponent` does not render properly on iOS, macOS, and tvOS.  (152201501)
+- Fixed: The `animate` functions on `Entity` and `RealityViewContent` do not start animations.  (152456435)
 
 ###### Known Issues
 
 - Some properties and components do not update SwiftUI Views when accessed through the `.observable` property on Entity.  (147063698)
-- `ParticleEmitterComponent` does not render properly on iOS, macOS, and tvOS.  (152201501)
-- The `animate` functions on `Entity` and `RealityViewContent` do not start animations.  (152456435)
+
+##### Rosetta
+
+###### New Features
+
+- You can test that your apps no longer depend on Rosetta by setting the boot-arg `nox86exec=1`. When this boot-arg is set, any process that would normally run through Rosetta will immediately crash on launch and generate a crash report. This can by set by running `sudo nvram boot-args="nox86exec=1"` and then rebooting the system.  (136764433)
 
 ##### Rtl
 
@@ -222,11 +296,17 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 - You might experience layout issues with RTL languages.  (151009428)
 
-##### Secure Text Fields
+##### Safari
 
 ###### Known Issues
 
-- On a Mac with a Touch Bar, a secure text field swallows keyboard events in some contexts. For example, this might occur when creating a new user in the Users & Groups settings pane.  (151268030)  Click a window in another app, then go back to the original window.
+- Black lines appear at the bottom of inactive tabs in Safari.  (153681371)
+
+##### Secure Text Fields
+
+###### Resolved Issues
+
+- Fixed: On a Mac with a Touch Bar, a secure text field swallows keyboard events in some contexts. For example, this might occur when creating a new user in the Users & Groups settings pane.  (151268030)
 
 ##### Security
 
@@ -239,21 +319,31 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 ###### Known Issues
 
 - Users who enable Reduce Transparency might encounter flickering in background windows or the Dock.  (152060485)
+- If System Settings > Desktop & Dock > Displays have separate Spaces is disabled, WindowServer will crash at login time.  (153570422)  Boot into Recovery, then mount the Data volume on your partition. Launch Terminal and run `rm /Volumes/<Partition Name "Macintosh HD">/Users/<user name>/Library/Preferences/com.apple.Spaces.plist`.
 
 ##### Setup Assistant
 
+###### Resolved Issues
+
+- Fixed: 802.1X Wi-Fi networks are not saved during initial device setup.  (147787689)
+
 ###### Known Issues
 
-- 802.1X Wi-Fi networks are not saved during initial device setup.  (147787689)
 - On Intel Macs, the background on the Hello or Welcome screens might be black.  (152107967)  Click Get Started or anywhere on the screen to proceed to the next step.
 - Visual pairing for Quickly Set Up Mac does not work.  (152326903)  Use manual pairing.
 - On the 13” MacBook Air, Hello might be offset from the wallpaper during initial device setup.  (152447100)  Click Get Started or anywhere on the screen to proceed to the next step.
 
-##### Siri
+##### Shortcuts
 
 ###### Known Issues
 
-- Siri Visual Responses might be illegible behind certain backgrounds.  (151682699)
+- Titles for some Messages actions and filter properties display incorrectly.  (153740390)
+
+##### Siri
+
+###### Resolved Issues
+
+- Fixed: Siri Visual Responses might be illegible behind certain backgrounds.  (151682699)
 
 ##### Storekit
 
@@ -268,6 +358,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 - Fixed: Price of offers is not displayed in the payment sheet when making a purchase to a subscription with a higher level of service in StoreKit Testing in Xcode.  (140635780) (FB15980635)
 - Fixed: Renewal transactions might be created regardless of the Ask to Buy status of the purchase request in StoreKit Testing in Xcode.  (145242611)
 - Resolved an issue with the `Identifiable` conformance of the `PurchaseIntent` API. Conformance to this protocol now begins starting with iOS 18.0 and macOS 15.0.  (148751460) (FB17151889)
+- Resolved an issue where the `id` member of the PurchaseIntent API was only available starting with iOS 18.0 and macOS 15.0, and no longer available for Mac Catalyst. It is now available starting with iOS 16.4, macOS 14.4, and Mac Catalyst 16.4. The `PurchaseIntent` conformance to `Identifiable` remains unchanged.  (152858281) (FB17829716)
 
 ##### Swift Compiler
 
@@ -369,14 +460,17 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
      .presentationSizing(.page)
      .presentationCompactAdaptation(.fullScreen)
 ``` (150455117)
-
-###### Known Issues
-
-- If Default Actor Isolation is set to `MainActor`, `@Animatable` macro emits concurrency warnings in Swift 5 language mode and does not compile in Swift 6 language mode.  (152524435)  Use Swift 5 language mode or set Default Actor Isolation to `nonisolated` in project’s build settings.
+- Fixed: If Default Actor Isolation is set to `MainActor`, `@Animatable` macro emits concurrency warnings in Swift 5 language mode and does not compile in Swift 6 language mode.  (152524435)
 
 ###### Deprecations
 
 - `Text` concatenation using the `+` operator is deprecated because it makes it hard to create localized strings that are correct across all languages. Use `Text` interpolation instead. See documentation on `Text` for more info on how to produce localized strings.  (128144043)
+
+##### Textkit
+
+###### New Features
+
+- iOS 26, tvOS 26, visionOS 26, watchOS 26, and macOS Tahoe 26 have two methods for resolving the natural alignment `NSTextAlignment.natural` and the last line of `NSTextAlignment.justified` into concrete alignments, `left` and `right`. The first approach utilizes the UI language, which is determined by passing nil-language to `NSParagraphStyle.defaultWritingDirection(forLanguage: )`. This behavior was employed in releases prior to OS 26. The second method is new and dynamically utilizes the base writing direction for the paragraph. When the base writing direction is set to `NSWritingDirection.rightToLeft`, the text is aligned to `right`, and vice versa. The behavior is selected by API introduced in OS 26: `NSTextLayoutManager.resolvesNaturalAlignmentWithBaseWritingDirection`, `NSStringDrawingOptionsResolvesNaturalAlignmentWithBaseWritingDirection`, `UITraitCollection.resolvesNaturalAlignmentWithBaseWritingDirection`, and `NSTextField.resolvesNaturalAlignmentWithBaseWritingDirection`.  (152045248)
 
 ##### Textkit 2
 
@@ -400,15 +494,13 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- When playing Apple TV+ content from the beginning in VMs, users will see a black video during the recap portion.   (151316651)  Wait until the recap portion is done, or scrub to the point where the recap is done.
 - Virtual machine networking fails if you start a bridge mode VM while a shared or host mode VM is running, and vice versa. The networking of the existing VM is not affected.  (151477625)  Do not use shared or host mode VM and bridge mode VM at the same time.
-- When playing protected content in a VM in Safari or Apple TV+, the app will hang and UI might flicker.  (151945328)  Skip playing protected content in a VM. If you encounter a hang, restart the VM.
 
 ##### Weather
 
-###### Known Issues
+###### Resolved Issues
 
-- Users might see a blank white button on some tips for Weather features. The button will be operable.  (152088799)
+- Fixed: Users might see a blank white button on some tips for Weather features. The button will be operable.  (152088799)
 
 ##### Webkit Api
 

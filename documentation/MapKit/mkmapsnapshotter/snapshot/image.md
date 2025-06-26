@@ -17,7 +17,7 @@ The image of the map’s content.
 ## Declaration
 
 ```swift
-var image: UIImage { get }
+var image: NSImage { get }
 ```
 
 #### Discussion

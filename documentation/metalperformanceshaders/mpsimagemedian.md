@@ -1,7 +1,7 @@
 # MPSImageMedian
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that applies a median filter in a square region centered around each pixel in the source image.
 
@@ -16,34 +16,44 @@ A filter that applies a median filter in a square region centered around each pi
 ## Declaration
 
 ```swift
-class MPSImageMedian : MPSUnaryImageKernel
+class MPSImageMedian
 ```
 
 #### Overview
 
 An [`MPSImageMedian`](mpsimagemedian.md) filter finds the median color value for each channel within a `kernelDiameter * kernelDiameter` window surrounding the pixel of interest.  It is a common means of noise reduction and also as a smoothing filter with edge preserving qualities.
 
-> **Note**: The [`MPSImageMedian`](mpsimagemedian.md) filter supports only images with 8 or less bits per channel.
+> **Note**:  The [`MPSImageMedian`](mpsimagemedian.md) filter supports only images with 8 or less bits per channel.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagemedian/2865529-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagemedian/init(coder:device:).md)
 ### Methods
-- [init(device: any MTLDevice, kernelDiameter: Int)](mpsimagemedian/1618837-init.md)
+- [init(device: any MTLDevice, kernelDiameter: Int)](mpsimagemedian/init(device:kerneldiameter:).md)
   Initializes a filter for a particular kernel size and device.
-- [class func maxKernelDiameter() -> Int](mpsimagemedian/1618830-maxkerneldiameter.md)
+- [class func maxKernelDiameter() -> Int](mpsimagemedian/maxkerneldiameter.md)
   Queries the maximum diameter, in pixels, of the filter window supported by the median filter.
-- [class func minKernelDiameter() -> Int](mpsimagemedian/1618864-minkerneldiameter.md)
+- [class func minKernelDiameter() -> Int](mpsimagemedian/minkerneldiameter.md)
   Queries the minimum diameter, in pixels, of the filter window supported by the median filter.
 ### Properties
-- [var kernelDiameter: Int](mpsimagemedian/1618909-kerneldiameter.md)
+- [var kernelDiameter: Int](mpsimagemedian/kerneldiameter.md)
   The diameter, in pixels, of the filter window.
 
 ## Relationships
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

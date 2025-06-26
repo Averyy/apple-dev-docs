@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Fixes the size of the frame to equal the size of the visual content and centers the content within the new frame size.
+The option that fixes the size of the frame to equal the size of the visual content and centers the content within the new frame size.
 
 **Availability**:
 - iOS 26.0+ (Beta)

@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: enum
 
+Events associated with viewing mode transitions for image presentation components.
+
 **Availability**:
 - visionOS 26.0+ (Beta)
 
@@ -14,10 +16,11 @@ enum ImagePresentationEvents
 
 ## Topics
 
-### Structures
-- [ImagePresentationEvents.TransitionCompleted](imagepresentationevents/transitioncompleted.md)
+### Viewing mode transitions
 - [ImagePresentationEvents.TransitionStarted](imagepresentationevents/transitionstarted.md)
-  A transition between two viewing modes is starting on the ImagePresentationComponent
+  A transition between two viewing modes has started for an image presentation component.
+- [ImagePresentationEvents.TransitionCompleted](imagepresentationevents/transitioncompleted.md)
+  A transition between two viewing modes has completed for an image presentation component.
 
 ## See Also
 

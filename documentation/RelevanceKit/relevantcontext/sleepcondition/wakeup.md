@@ -3,7 +3,7 @@
 **Framework**: RelevanceKit  
 **Kind**: property
 
-A time period around when the user typically wakes up.
+A timespan close to when a person typically wakes up.
 
 **Availability**:
 - iOS 17.0+
@@ -23,7 +23,7 @@ static var wakeup: RelevantContext.SleepCondition { get }
 ## See Also
 
 - [static var bedtime: RelevantContext.SleepCondition](relevantcontext/sleepcondition/bedtime.md)
-  A time period around when the user typically goes to bed.
+  A timespan close to when a person typically goes to bed.
 
 
 ---

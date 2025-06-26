@@ -22,8 +22,8 @@ func withUnsafeRegionOfInterest<R>(_ regionOfInterest: CGRect, _ body: (vImage.P
 
 ## Mentions
 
-- [Converting chroma-subsampled images](converting-chroma-subsampled-images.md)
 - [Applying vImage operations to regions of interest](applying-vimage-operations-to-regions-of-interest.md)
+- [Converting chroma-subsampled images](converting-chroma-subsampled-images.md)
 
 #### Discussion
 

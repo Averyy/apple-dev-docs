@@ -21,8 +21,8 @@ class AVCaptureSession
 
 ## Mentions
 
-- [Enhancing your app experience with the Camera Control](enhancing-your-app-experience-with-the-camera-control.md)
 - [Setting Up a Capture Session](setting-up-a-capture-session.md)
+- [Enhancing your app experience with the Camera Control](enhancing-your-app-experience-with-the-camera-control.md)
 
 #### Overview
 

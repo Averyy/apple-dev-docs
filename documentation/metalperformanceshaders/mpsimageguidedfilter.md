@@ -1,7 +1,7 @@
 # MPSImageGuidedFilter
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that performs edge-aware filtering on an image.
 
@@ -16,29 +16,39 @@ A filter that performs edge-aware filtering on an image.
 ## Declaration
 
 ```swift
-class MPSImageGuidedFilter : MPSKernel
+class MPSImageGuidedFilter
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimageguidedfilter/2951903-init.md)
-- [init(device: any MTLDevice, kernelDiameter: Int)](mpsimageguidedfilter/2951910-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimageguidedfilter/init(coder:device:).md)
+- [init(device: any MTLDevice, kernelDiameter: Int)](mpsimageguidedfilter/init(device:kerneldiameter:).md)
 ### Instance Properties
-- [var epsilon: Float](mpsimageguidedfilter/2951908-epsilon.md)
-- [var kernelDiameter: Int](mpsimageguidedfilter/2951909-kerneldiameter.md)
-- [var reconstructOffset: Float](mpsimageguidedfilter/2953079-reconstructoffset.md)
-- [var reconstructScale: Float](mpsimageguidedfilter/2953078-reconstructscale.md)
+- [var epsilon: Float](mpsimageguidedfilter/epsilon.md)
+- [var kernelDiameter: Int](mpsimageguidedfilter/kerneldiameter.md)
+- [var reconstructOffset: Float](mpsimageguidedfilter/reconstructoffset.md)
+- [var reconstructScale: Float](mpsimageguidedfilter/reconstructscale.md)
 ### Instance Methods
-- [func encodeReconstruction(commandBuffer: any MTLCommandBuffer, guidance: any MTLTexture, coefficientsA: any MTLTexture, coefficientsB: any MTLTexture, destination: any MTLTexture)](mpsimageguidedfilter/3516398-encodereconstruction.md)
-- [func encodeReconstruction(to: any MTLCommandBuffer, guidanceTexture: any MTLTexture, coefficientsTexture: any MTLTexture, destinationTexture: any MTLTexture)](mpsimageguidedfilter/2951906-encodereconstruction.md)
-- [func encodeRegression(commandBuffer: any MTLCommandBuffer, source: any MTLTexture, guidance: any MTLTexture, weights: (any MTLTexture)?, destinationCoefficientsA: any MTLTexture, destinationCoefficientsB: any MTLTexture)](mpsimageguidedfilter/3516399-encoderegression.md)
-- [func encodeRegression(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, guidanceTexture: any MTLTexture, weightsTexture: (any MTLTexture)?, destinationCoefficientsTexture: any MTLTexture)](mpsimageguidedfilter/2951907-encoderegression.md)
+- [func encodeReconstruction(commandBuffer: any MTLCommandBuffer, guidance: any MTLTexture, coefficientsA: any MTLTexture, coefficientsB: any MTLTexture, destination: any MTLTexture)](mpsimageguidedfilter/encodereconstruction(commandbuffer:guidance:coefficientsa:coefficientsb:destination:).md)
+- [func encodeReconstruction(to: any MTLCommandBuffer, guidanceTexture: any MTLTexture, coefficientsTexture: any MTLTexture, destinationTexture: any MTLTexture)](mpsimageguidedfilter/encodereconstruction(to:guidancetexture:coefficientstexture:destinationtexture:).md)
+- [func encodeRegression(commandBuffer: any MTLCommandBuffer, source: any MTLTexture, guidance: any MTLTexture, weights: (any MTLTexture)?, destinationCoefficientsA: any MTLTexture, destinationCoefficientsB: any MTLTexture)](mpsimageguidedfilter/encoderegression(commandbuffer:source:guidance:weights:destinationcoefficientsa:destinationcoefficientsb:).md)
+- [func encodeRegression(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, guidanceTexture: any MTLTexture, weightsTexture: (any MTLTexture)?, destinationCoefficientsTexture: any MTLTexture)](mpsimageguidedfilter/encoderegression(to:sourcetexture:guidancetexture:weightstexture:destinationcoefficientstexture:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

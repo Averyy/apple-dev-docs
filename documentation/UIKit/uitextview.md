@@ -22,11 +22,11 @@ class UITextView
 ## Mentions
 
 - [Customizing Writing Tools behavior for UIKit views](customizing-writing-tools-behavior-for-system-views.md)
+- [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
+- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
 - [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
 - [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
 - [Making a view into a drag source](making-a-view-into-a-drag-source.md)
-- [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
 
 #### Overview
 

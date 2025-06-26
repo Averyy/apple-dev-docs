@@ -18,12 +18,11 @@ final func createGroupChat(_ request: RCSService.CreateGroupChatRequest) async t
 
 #### Return Value
 
-`CreateGroupChatRequest.Result` containing the group handle for the group.
+A [`RCSService.CreateGroupChatRequest.Result`](rcsservice/creategroupchatrequest/result.md) that contains the group handle for the group.
 
 #### Discussion
 
-> **Note**: - `RCSService.Error.notSupported` when messaging service does not support group chat.
-- `RCSService.Error.maximumSizeExceeded` when group chat size exceeds the maximum allowed group size.
+> **Note**: If the messaging service doesn’t support group chat, this method throws [`RCSService.Error.notSupported`](rcsservice/error/notsupported.md). If the group chat size exceeds the maximum allowed size, this method throws [`RCSService.Error.maximumSizeExceeded`](rcsservice/error/maximumsizeexceeded.md).
 
 ## Parameters
 

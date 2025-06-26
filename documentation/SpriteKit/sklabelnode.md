@@ -17,15 +17,14 @@ A graphical element that draws text.
 ## Declaration
 
 ```swift
-@MainActor
 class SKLabelNode
 ```
 
 ## Mentions
 
-- [Getting Started with Nodes](getting-started-with-nodes.md)
-- [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
 - [Adding Text to a Scene](adding-text-to-a-scene.md)
+- [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
+- [Getting Started with Nodes](getting-started-with-nodes.md)
 
 #### Overview
 

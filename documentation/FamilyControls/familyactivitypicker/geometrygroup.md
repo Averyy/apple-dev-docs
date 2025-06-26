@@ -8,7 +8,6 @@ Isolates the geometry (e.g. position and size) of the view from its parent view.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - watchOS 10.0+

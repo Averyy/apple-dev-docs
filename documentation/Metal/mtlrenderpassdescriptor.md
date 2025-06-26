@@ -76,6 +76,8 @@ A [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) object contains a coll
 - [var sampleBufferAttachments: MTLRenderPassSampleBufferAttachmentDescriptorArray](mtlrenderpassdescriptor/samplebufferattachments.md)
   The array of sample buffers that the render pass can access.
 ### Instance Properties
+- [var supportColorAttachmentMapping: Bool](mtlrenderpassdescriptor/supportcolorattachmentmapping.md)
+  Specifies if the render pass should support color attachment mapping.
 - [var visibilityResultType: MTLVisibilityResultType](mtlrenderpassdescriptor/visibilityresulttype.md)
   Specifies if Metal accumulates visibility results between render encoders or resets them.
 

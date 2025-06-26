@@ -19,6 +19,12 @@
 case unsupportedFeature
 ```
 
+## See Also
+
+- [DataStoreError.invalidPredicate](datastoreerror/invalidpredicate.md)
+- [DataStoreError.preferInMemoryFilter](datastoreerror/preferinmemoryfilter.md)
+- [DataStoreError.preferInMemorySort](datastoreerror/preferinmemorysort.md)
+
 
 ---
 

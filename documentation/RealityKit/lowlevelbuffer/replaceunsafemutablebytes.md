@@ -8,7 +8,7 @@ Replace the buffer’s contents synchronously on the CPU.
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
 - visionOS 26.0+ (Beta)
@@ -16,7 +16,7 @@ Replace the buffer’s contents synchronously on the CPU.
 ## Declaration
 
 ```swift
-func replaceUnsafeMutableBytes(_ callback: (UnsafeMutableRawBufferPointer) -> Void)
+final func replaceUnsafeMutableBytes(_ callback: (UnsafeMutableRawBufferPointer) -> Void)
 ```
 
 #### Discussion

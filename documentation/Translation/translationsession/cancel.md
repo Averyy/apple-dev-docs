@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: method
 
-Attempt to stop all ongoing work for this session. Future requests will throw an error that the session is cancelled already.
+Attempts to stop all ongoing work for the translation session.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -16,6 +16,10 @@ Attempt to stop all ongoing work for this session. Future requests will throw an
 ```swift
 func cancel()
 ```
+
+#### Discussion
+
+Future requests will throw an error that the session is already cancelled.
 
 
 ---

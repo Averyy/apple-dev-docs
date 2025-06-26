@@ -20,11 +20,11 @@ GameSave uses iCloud Drive to synchronize your application’s save data across 
 
 ## Topics
 
-### Synced directory
-- [class GameSyncedDirectory](gamesynceddirectory.md)
-  A cloud-synced directory for game-save data.
 ### Synced directory (Objective-C)
 - [class GSSyncedDirectory](gssynceddirectory.md)
+  A cloud-synced directory for game-save data.
+### Classes
+- [class GameSaveSyncedDirectory](gamesavesynceddirectory.md)
   A cloud-synced directory for game-save data.
 ### Variables
 - [let GameSaveErrorDomain: String](gamesaveerrordomain.md)

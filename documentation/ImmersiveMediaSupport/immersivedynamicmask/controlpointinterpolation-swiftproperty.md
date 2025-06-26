@@ -17,17 +17,15 @@ var controlPointInterpolation: ImmersiveDynamicMask.ControlPointInterpolation
 
 ## See Also
 
-- [var edgeTreatment: ImmersiveDynamicMask.MaskEdgeTreatment](immersivedynamicmask/edgetreatment.md)
+- [var edgeTreatment: ImmersiveDynamicMask.EdgeTreatment](immersivedynamicmask/edgetreatment-swift.property.md)
   The edge treatment type used for the immersive media Mask.
 - [var edgeWidthInDegrees: Float](immersivedynamicmask/edgewidthindegrees.md)
-  The edge width used for the dynamic mask generation.
-- [var leftControlPoints: [simd_float3]](immersivedynamicmask/leftcontrolpoints.md)
+  The edge width in degrees used for the dynamic mask generation.
+- [var leftControlPoints: [Point3DFloat]](immersivedynamicmask/leftcontrolpoints.md)
   The left eye control points.
-- [var maskStereoRelation: ImmersiveDynamicMask.MaskStereoRelation](immersivedynamicmask/maskstereorelation-swift.property.md)
-  Represents the stereo relation of the dynamic mask (How left eye mask is related to right eye mask).
 - [var name: String](immersivedynamicmask/name.md)
   A unique name string of the dynamic mask.
-- [var rightControlPoints: [simd_float3]](immersivedynamicmask/rightcontrolpoints.md)
+- [var rightControlPoints: [Point3DFloat]](immersivedynamicmask/rightcontrolpoints.md)
   The right eye control points.
 
 

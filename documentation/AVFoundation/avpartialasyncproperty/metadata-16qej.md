@@ -22,12 +22,12 @@ static var metadata: AVAsyncProperty<Root, [AVMetadataItem]> { get }
 
 ## Mentions
 
-- [Loading media data asynchronously](loading-media-data-asynchronously.md)
 - [Retrieving media metadata](retrieving-media-metadata.md)
+- [Loading media data asynchronously](loading-media-data-asynchronously.md)
 
 #### Discussion
 
-Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
+Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
 You can filter items in the array according to language by calling [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](avmetadataitem/metadataitems(from:filteredandsortedaccordingtopreferredlanguages:).md), or by identifier by calling [`metadataItems(from:filteredByIdentifier:)`](avmetadataitem/metadataitems(from:filteredbyidentifier:).md).
 

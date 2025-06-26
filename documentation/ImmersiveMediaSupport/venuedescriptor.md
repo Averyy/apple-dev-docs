@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: class
 
-The Apple Immersive Media Venue Descriptor is a collection of static metadata necessary with every Apple Immersive Video.
+The Apple Immersive Media Venue Descriptor is a collection of static metadata necessary for every Apple Immersive Video.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -23,18 +23,16 @@ This descriptor contains information about the venue in which this movie was cap
 
 ### Creating a venue descriptor
 - [init(device: (any MTLDevice)?)](venuedescriptor/init(device:).md)
-  Creates an empty VenueDescriptor, useful when creating a new VenueDescriptor in code (other than loading from an AIME file).
-- [init(data: Data, device: (any MTLDevice)?) async throws](venuedescriptor/init(data:device:).md)
-  Initializes an VenueDescriptor instance from memory.
+  Creates an empty `VenueDescriptor`, useful when creating a new `VenueDescriptor` in code (other than loading from an AIME file).
 - [convenience init(aimeURL: URL, device: (any MTLDevice)?) async throws](venuedescriptor/init(aimeurl:device:).md)
-  Initializes an VenueDescriptor instance from an AIME file.
+  Initializes a `VenueDescriptor` instance from an AIME file.
 ### Configuring cameras
 - [var cameras: [ImmersiveCamera]](venuedescriptor/cameras.md)
-  Property contains information about all the ImmersiveCameras contained in this VenueDescriptor.
+  Property contains information about all the ImmersiveCameras contained in this `VenueDescriptor`.
 - [func addCamera(ImmersiveCamera) throws](venuedescriptor/addcamera(_:).md)
-  Adds a new ImmersiveCamera definition to this VenueDescriptor.
+  Adds a new `ImmersiveCamera` definition to this `VenueDescriptor`.
 - [func removeCamera(id: String) throws](venuedescriptor/removecamera(id:).md)
-  Removes an ImmersiveCamera definition from this VenueDescriptor.
+  Removes an `ImmersiveCamera` definition from this `VenueDescriptor`.
 - [func cameraViewModel(for: String) -> ImmersiveCameraViewModel?](venuedescriptor/cameraviewmodel(for:).md)
   Returns the camera view model for the given immersive camera identifier.
 ### Saving a venue descriptor data
@@ -45,6 +43,9 @@ This descriptor contains information about the venue in which this movie was cap
 ### Accessing the executor
 - [var unownedExecutor: UnownedSerialExecutor](venuedescriptor/unownedexecutor.md)
   Retrieve the executor for this actor as an optimized, unowned reference.
+### Initializers
+- [init(aimeData: Data, device: (any MTLDevice)?) async throws](venuedescriptor/init(aimedata:device:).md)
+  Initializes an `VenueDescriptor` instance from memory.
 ### Default Implementations
 - [Actor Implementations](venuedescriptor/actor-implementations.md)
 
@@ -61,12 +62,10 @@ This descriptor contains information about the venue in which this movie was cap
   A structure that holds the required information for an immersive media camera to process and render video frames.
 - [struct ImmersiveCameraCalibration](immersivecameracalibration.md)
   A structure that represents immersive media camera calibration data.
-- [struct ImmersiveCameraMask](immersivecameramask.md)
+- [enum ImmersiveCameraMask](immersivecameramask.md)
   A structure that holds the camera mask type information and its relevant mask name.
 - [struct ImmersiveDynamicMask](immersivedynamicmask.md)
   A type that holds the information required to dynamically generate an immersive media mask at load time.
-- [struct ImmersiveLensDefinition](immersivelensdefinition.md)
-  This type holds the ILPD Meirives lens configuration parameters using which a camera calibration type instance can be generated.
 
 
 ---

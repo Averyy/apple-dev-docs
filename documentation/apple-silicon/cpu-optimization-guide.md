@@ -9,7 +9,7 @@ Identify performance optimization strategies for Apple silicon M Series and A Se
 The Apple Silicon CPU Optimization Guide provides an overview of the architecture of Apple silicon CPUs and optimization tips to help you optimize your code’s performance. The guide contains a wide range of information that is useful for all developers:
 
 - An overview of the Instruction Set Architecture (ISA) along with a method for detecting the existence of ISA features
-- Detailed description of the Advanced SIMD and Floating Point (FP) instructions
+- Detailed description of the Advanced SIMD and Floating Point (FP) instructions as well as the Scalable Matrix Extension (SME) instructions
 - A discussion of intrinsic functions for utilizing specific instructions in high-level languages
 - An overview of CPU and cache topologies with recommendations for effective utilization of asymmetric multiprocessing
 - A high-level overview of CPU microarchitecture with sizes of key CPU structures and instruction latency and bandwidth tables

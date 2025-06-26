@@ -19,6 +19,10 @@ The constant for canoeing, kayaking, paddling an outrigger, paddling a stand-up 
 case paddleSports
 ```
 
+#### Discussion
+
+HealthKit estimates calories for this activity based on the data from Apple Watch’s sensors. This rate is never lower than the brisk walk burn rate when moving.
+
 ## See Also
 
 - [HKWorkoutActivityType.rowing](hkworkoutactivitytype/rowing.md)
@@ -29,6 +33,8 @@ case paddleSports
   The constant for a variety of surf sports, including surfing, kite surfing, and wind surfing.
 - [HKWorkoutActivityType.swimming](hkworkoutactivitytype/swimming.md)
   The constant for swimming.
+- [HKWorkoutActivityType.underwaterDiving](hkworkoutactivitytype/underwaterdiving.md)
+  The constant for underwater diving.
 - [HKWorkoutActivityType.waterFitness](hkworkoutactivitytype/waterfitness.md)
   The constant for aerobic exercise performed in shallow water.
 - [HKWorkoutActivityType.waterPolo](hkworkoutactivitytype/waterpolo.md)

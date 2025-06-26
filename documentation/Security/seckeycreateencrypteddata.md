@@ -38,7 +38,7 @@ You can decrypt this data with the corresponding private key and a call to [`Sec
 - `key`: The public key to use to perform the encryption.
 - `algorithm`: The encryption algorithm to use. Use one of the encryption algorithms listed in  . You can use the   function to test that the key is suitable for the algorithm.
 - `plaintext`: The data to be encrypted.
-- `error`: The address of a  doc://com.apple.documentation/documentation/corefoundation/cferror-ru8  object. If an error occurs, this is set to point at an error instance that describes the failure.
+- `error`: The address of a   object. If an error occurs, this is set to point at an error instance that describes the failure.
 
 
 ---

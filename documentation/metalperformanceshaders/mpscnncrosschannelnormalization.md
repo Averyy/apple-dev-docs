@@ -1,7 +1,7 @@
 # MPSCNNCrossChannelNormalization
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A normalization kernel applied across feature channels.
 
@@ -16,50 +16,60 @@ A normalization kernel applied across feature channels.
 ## Declaration
 
 ```swift
-class MPSCNNCrossChannelNormalization : MPSCNNKernel
+class MPSCNNCrossChannelNormalization
 ```
 
 #### Overview
 
 The normalization kernel applies the kernel to a local region across nearby feature channels, but with no spatial extent (i.e., they have the shape `kernel size x 1 x 1`). The normalized output is given by the function:
 
-![Y(i,j,k) = X(i,j,k) / L(i,j,k)^beta](https://docs-assets.developer.apple.com/published/866dd98e74/4a3a1f8f-bc40-4b8d-bc70-3903b56683f1.png)
+![Y(i,j,k) = X(i,j,k) / L(i,j,k)^beta](https://docs-assets.developer.apple.com/published/f66797aefdbb329df3e06f395e9e8132/media-2903526%402x.png)
 
 Where the normalizing factor is:
 
-![L(i,j,k) = delta + alpha/N * (sum_{q in Q(k)} X(i,j,q)^2](https://docs-assets.developer.apple.com/published/866dd98e74/8118671a-a9fc-4d96-840a-2165b781756f.png)
+![L(i,j,k) = delta + alpha/N * (sum_{q in Q(k)} X(i,j,q)^2](https://docs-assets.developer.apple.com/published/bad73469577ab8a5b0bf214cb956e041/media-2903524%402x.png)
 
 Where `N` is the kernel size. The window `Q(k)` itself is defined as:
 
-![Q(k) = [max(0, k-floor(N/2)), min(D-1, k+floor((N-1)/2)]](https://docs-assets.developer.apple.com/published/866dd98e74/1b5a6df5-ed45-4f14-843e-ef3d621f4979.png)
+![Q(k) = [max(0, k-floor(N/2)), min(D-1, k+floor((N-1)/2)]](https://docs-assets.developer.apple.com/published/75894c30e3ac24a2ee6081729351aba4/media-2903527%402x.png)
 
-Where `k` is the feature channel index (running from 0 to `D-1`) and `D` is the number of feature channels, and the values of [`alpha`](mpscnncrosschannelnormalization/1648896-alpha.md), [`beta`](mpscnncrosschannelnormalization/1648879-beta.md), and [`delta`](mpscnncrosschannelnormalization/1648881-delta.md) are set via properties.
+Where `k` is the feature channel index (running from 0 to `D-1`) and `D` is the number of feature channels, and the values of [`alpha`](mpscnncrosschannelnormalization/alpha.md), [`beta`](mpscnncrosschannelnormalization/beta.md), and [`delta`](mpscnncrosschannelnormalization/delta.md) are set via properties.
 
-It is your responsibility to ensure that the combination of the values of the [`delta`](mpscnncrosschannelnormalization/1648881-delta.md) and [`alpha`](mpscnncrosschannelnormalization/1648896-alpha.md) properties does not result in a situation where the denominator becomes zero - in such situations the resulting pixel-value is undefined.
+It is your responsibility to ensure that the combination of the values of the [`delta`](mpscnncrosschannelnormalization/delta.md) and [`alpha`](mpscnncrosschannelnormalization/alpha.md) properties does not result in a situation where the denominator becomes zero - in such situations the resulting pixel-value is undefined.
 
-> **Note**: The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNCrossChannelNormalization`](mpscnncrosschannelnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object.
+> **Note**:  The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNCrossChannelNormalization`](mpscnncrosschannelnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) object.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnncrosschannelnormalization/2866991-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnncrosschannelnormalization/init(coder:device:).md)
   Initializes a normalization kernel in a channel.
-- [init(device: any MTLDevice, kernelSize: Int)](mpscnncrosschannelnormalization/1648834-init.md)
+- [init(device: any MTLDevice, kernelSize: Int)](mpscnncrosschannelnormalization/init(device:kernelsize:).md)
   Initializes a normalization kernel in a channel.
 ### Instance Properties
-- [var alpha: Float](mpscnncrosschannelnormalization/1648896-alpha.md)
-  The "alpha" variable of the kernel function.
-- [var beta: Float](mpscnncrosschannelnormalization/1648879-beta.md)
-  The "beta" variable of the kernel function.
-- [var delta: Float](mpscnncrosschannelnormalization/1648881-delta.md)
-  The "delta" variable of the kernel function.
-- [var kernelSize: Int](mpscnncrosschannelnormalization/1648811-kernelsize.md)
+- [var alpha: Float](mpscnncrosschannelnormalization/alpha.md)
+  The “alpha” variable of the kernel function.
+- [var beta: Float](mpscnncrosschannelnormalization/beta.md)
+  The “beta” variable of the kernel function.
+- [var delta: Float](mpscnncrosschannelnormalization/delta.md)
+  The “delta” variable of the kernel function.
+- [var kernelSize: Int](mpscnncrosschannelnormalization/kernelsize.md)
   The size of the square kernel window.
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

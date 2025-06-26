@@ -1,6 +1,6 @@
 # subtracting(_:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: method
 
 Returns a new set containing the elements of this set that do not occur in the given set.

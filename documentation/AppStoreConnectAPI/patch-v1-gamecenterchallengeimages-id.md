@@ -8,6 +8,10 @@ Commit an uploaded image asset as a Game Center challenge image.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Mentions
+
+- [Configuring Game Center challenges](configuring-game-center-challenges.md)
+
 ## See Also
 
 - [Read image information for a challenge localization](get-v1-gamecenterchallengelocalizations-_id_-image.md)

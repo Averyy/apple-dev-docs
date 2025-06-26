@@ -20,8 +20,8 @@ struct GeneratedContent
 
 ## Mentions
 
-- [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
 - [Generating Swift data structures with guided generation](generating-swift-data-structures-with-guided-generation.md)
+- [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
 
 #### Overview
 

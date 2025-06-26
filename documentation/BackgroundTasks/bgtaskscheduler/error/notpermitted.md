@@ -11,7 +11,6 @@ A task scheduling error that indicates the app isn’t permitted to launch the t
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
-- watchOS 6.0+
 
 ## Declaration
 

@@ -22,7 +22,7 @@ static var isPlayable: AVAsyncProperty<Root, Bool> { get }
 
 #### Discussion
 
-Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
+Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
 > **Note**:  You can attempt playback when value is [`false`](https://developer.apple.com/documentation/swift/false), but this may result in a substandard playback experience.
 

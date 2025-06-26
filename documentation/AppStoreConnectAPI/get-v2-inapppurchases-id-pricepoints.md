@@ -10,10 +10,10 @@ Get a list of possible price points for an in-app purchase.
 
 ## Mentions
 
-- [Managing in-app purchases](managing-in-app-purchases.md)
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
-- [App Store Connect API 3.5 release notes](app-store-connect-api-3-5-release-notes.md)
+- [Managing in-app purchases](managing-in-app-purchases.md)
 - [App Store Connect API 2.3 release notes](app-store-connect-api-2-3-release-notes.md)
+- [App Store Connect API 3.5 release notes](app-store-connect-api-3-5-release-notes.md)
 
 ## See Also
 

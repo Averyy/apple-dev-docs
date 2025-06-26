@@ -19,7 +19,7 @@ struct VisionOSVersion
 - [static let v2: SupportedPlatform.VisionOSVersion](supportedplatform/visionosversion/v2.md)
   The value that represents visionOS 2.0.
 - [static let v26: SupportedPlatform.VisionOSVersion](supportedplatform/visionosversion/v26.md)
-  The value that represents visionOS 26.0.
+  The value that represents visionOS 3.0, which has been The value that represents visionOS 26.0.
 
 ## Relationships
 

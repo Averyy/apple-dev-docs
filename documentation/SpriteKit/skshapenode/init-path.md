@@ -17,7 +17,6 @@ Creates a shape node from a Core Graphics path.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(path: CGPath)
 ```
 

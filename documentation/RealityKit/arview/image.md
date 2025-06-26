@@ -13,7 +13,7 @@
 ## Declaration
 
 ```swift
-typealias Image = UIImage
+typealias Image = NSImage
 ```
 
 ## See Also

@@ -3,7 +3,7 @@
 **Framework**: HealthKit  
 **Kind**: case
 
-The user didn’t enter a symptom when they recorded the ECG.
+The user didn’t experience any symptoms during the duration of the electrocardiogram reading.
 
 **Availability**:
 - iOS 14.0+
@@ -24,6 +24,7 @@ case none
 - [HKElectrocardiogram.SymptomsStatus.present](hkelectrocardiogram/symptomsstatus-swift.enum/present.md)
   The user added a symptom when they recorded the ECG.
 - [HKElectrocardiogram.SymptomsStatus.notSet](hkelectrocardiogram/symptomsstatus-swift.enum/notset.md)
+  The user didn’t specify whether or not they experienced symptoms.
 
 
 ---

@@ -1,7 +1,7 @@
 # MPSNNReductionRowMaxNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 12.1+
@@ -14,13 +14,20 @@
 ## Declaration
 
 ```swift
-class MPSNNReductionRowMaxNode : MPSNNUnaryReductionNode
+class MPSNNReductionRowMaxNode
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNUnaryReductionNode](mpsnnunaryreductionnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

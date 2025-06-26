@@ -24,7 +24,7 @@ Before exploring the code, try building and running the app to familiarize yours
 
 The `ContrastStretchImageProcessorKernel` inherits from the Core Image [`CIImageProcessorKernel`](https://developer.apple.com/documentation/CoreImage/CIImageProcessorKernel) class.
 
-The sample code defines a [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure that represents a four-channel, 8-bit-per-channel interleaved image format. The image processor kernel supports [`R8`](https://developer.apple.com/documentation/coreimage/ciformat/1437695-r8), [`BGRA8`](https://developer.apple.com/documentation/coreimage/ciformat/1438064-bgra8), [`RGBAh`](https://developer.apple.com/documentation/coreimage/ciformat/1437998-rgbah), and [`RGBAf`](https://developer.apple.com/documentation/coreimage/ciformat/1437756-rgbaf) input and output formats. For this sample project, the code overrides [`outputFormat`](https://developer.apple.com/documentation/coreimage/ciimageprocessorkernel/2143065-outputformat) and [`formatForInput(at:)`](https://developer.apple.com/documentation/coreimage/ciimageprocessorkernel/2138289-formatforinput) to return a `BGRA8` that’s the same as the [`bitmapInfo`](vimage_cgimageformat/bitmapinfo.md) property of the `vImage_CGImageFormat` structure.
+The sample code defines a [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure that represents a four-channel, 8-bit-per-channel interleaved image format. The image processor kernel supports [`R8`](https://developer.apple.com/documentation/CoreImage/CIFormat/R8), [`BGRA8`](https://developer.apple.com/documentation/CoreImage/CIFormat/BGRA8), [`RGBAh`](https://developer.apple.com/documentation/CoreImage/CIFormat/RGBAh), and [`RGBAf`](https://developer.apple.com/documentation/CoreImage/CIFormat/RGBAf) input and output formats. For this sample project, the code overrides [`outputFormat`](https://developer.apple.com/documentation/CoreImage/CIImageProcessorKernel/outputFormat) and [`formatForInput(at:)`](https://developer.apple.com/documentation/CoreImage/CIImageProcessorKernel/formatForInput(at:)) to return a `BGRA8` that’s the same as the [`bitmapInfo`](vimage_cgimageformat/bitmapinfo.md) property of the `vImage_CGImageFormat` structure.
 
 ```swift
 static var cgImageFormat = vImage_CGImageFormat(
@@ -47,7 +47,7 @@ override class func formatForInput(at input: Int32) -> CIFormat {
 
 ##### Create the Source Pixel Buffer
 
-When the app applies ends-in contrast stretching, Core Image calls the processor kernel’s [`process(with:arguments:output:)`](https://developer.apple.com/documentation/coreimage/ciimageprocessorkernel/2138290-process) function. The following code ensures that the input and output [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) instances are available:
+When the app applies ends-in contrast stretching, Core Image calls the processor kernel’s [`process(with:arguments:output:)`](https://developer.apple.com/documentation/CoreImage/CIImageProcessorKernel/process(with:arguments:output:)) function. The following code ensures that the input and output [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) instances are available:
 
 ```swift
 guard

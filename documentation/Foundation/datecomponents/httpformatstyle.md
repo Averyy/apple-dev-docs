@@ -11,7 +11,7 @@ Converts `DateComponents` into RFC 9110-compatible “HTTP date” `String`, and
 - Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
-- visionOS 1.0+
+- visionOS 26.0+ (Beta)
 - watchOS 26.0+ (Beta)
 
 ## Declaration

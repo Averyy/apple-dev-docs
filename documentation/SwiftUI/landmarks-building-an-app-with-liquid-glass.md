@@ -61,7 +61,7 @@ The system applies Liquid Glass to toolbar items automatically:
 
 ![An image of the landmark detail view for Mount Fuji on an iPad, with the toolbar and a portion of the sidebar visible. The toolbar items show the Liquid Glass effect. From the leading to trailing edge, there is a back button, share button, favorite button, collections button, info button, and a search bar.](https://docs-assets.developer.apple.com/published/1c1efa4a5ba686b18392730385956a34/Landmarks-Building-an-app-with-Liquid-Glass-4%402x.png)
 
-The sample also organizes the toolbar into related groups, instead of having all the buttons in one group. For more information, see [`Landmarks: Refining the system provided glass effect in toolbars`](landmarks-refining-the-system-provided-glass-effect-in-toolbars.md).
+The sample also organizes the toolbar into related groups, instead of having all the buttons in one group. For more information, see [`Landmarks: Refining the system provided Liquid Glass effect in toolbars`](landmarks-refining-the-system-provided-glass-effect-in-toolbars.md).
 
 #### Display Badges with Liquid Glass
 
@@ -90,8 +90,8 @@ For design guidance, see Human Interface Guidelines >  [`App icons`](https://dev
   Configure an image to blur and extend under a sidebar or inspector panel.
 - [Landmarks: Extending horizontal scrolling under a sidebar or inspector](landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector.md)
   Improve your horizontal scrollbar’s appearance by extending it under a sidebar or inspector.
-- [Landmarks: Refining the system provided glass effect in toolbars](landmarks-refining-the-system-provided-glass-effect-in-toolbars.md)
-  Organize toolbars into related groups to improve their appearance and utility.
+- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](landmarks-refining-the-system-provided-glass-effect-in-toolbars.md)
+  Organize toolbars into related groupings to improve their appearance and utility.
 - [Landmarks: Displaying custom activity badges](landmarks-displaying-custom-activity-badges.md)
   Provide people with a way to mark their adventures by displaying animated custom activity badges.
 

@@ -62,6 +62,8 @@ struct CMReadySampleBuffer<Content> where Content : CMSampleBuffer.Content
 ### Instance Properties
 - [var audioStreamPacketDescriptions: [AudioStreamPacketDescription]?](cmreadysamplebuffer/audiostreampacketdescriptions.md)
   Get an array of AudioStreamPacketDescriptions describing audio samples in the buffer.
+- [var content: CMSampleDataReference](cmreadysamplebuffer/content-12bds.md)
+  Payload containing the samples.
 - [var content: CMSampleBuffer.DynamicContent](cmreadysamplebuffer/content-14qb7.md)
   Payload containing the samples.
 - [var content: CVReadOnlyPixelBuffer](cmreadysamplebuffer/content-4peot.md)

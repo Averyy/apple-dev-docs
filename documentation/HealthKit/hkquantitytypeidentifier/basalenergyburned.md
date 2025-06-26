@@ -21,8 +21,8 @@ static let basalEnergyBurned: HKQuantityTypeIdentifier
 
 ## Mentions
 
-- [Running workout sessions](running-workout-sessions.md)
 - [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
+- [Running workout sessions](running-workout-sessions.md)
 
 #### Discussion
 

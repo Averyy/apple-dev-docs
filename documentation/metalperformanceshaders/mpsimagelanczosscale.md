@@ -1,9 +1,9 @@
 # MPSImageLanczosScale
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
-A filter that resizes and changes the aspect ratio of an image using Lanczos resampling. 
+A filter that resizes and changes the aspect ratio of an image using Lanczos resampling.
 
 **Availability**:
 - iOS 9.0+
@@ -16,7 +16,7 @@ A filter that resizes and changes the aspect ratio of an image using Lanczos res
 ## Declaration
 
 ```swift
-class MPSImageLanczosScale : MPSImageScale
+class MPSImageLanczosScale
 ```
 
 #### Overview
@@ -26,8 +26,8 @@ You can use this filter to enlarge or reduce the size of an image, or to change 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagelanczosscale/2867140-init.md)
-- [init(device: any MTLDevice)](mpsimagelanczosscale/2867001-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagelanczosscale/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsimagelanczosscale/init(device:).md)
 ### Properties
 - [struct MPSScaleTransform](mpsscaletransform.md)
   A transform matrix for explicit resampling control with a Lanczos kernel.
@@ -36,6 +36,16 @@ You can use this filter to enlarge or reduce the size of an image, or to change 
 
 ### Inherits From
 - [MPSImageScale](mpsimagescale.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

@@ -21,8 +21,8 @@ protocol AVPlayerViewControllerDelegate : NSObjectProtocol
 ## Mentions
 
 - [Adopting Picture in Picture in a Standard Player](adopting-picture-in-picture-in-a-standard-player.md)
-- [Working with Interstitial Content](working-with-interstitial-content.md)
 - [Presenting Content Proposals in tvOS](presenting-content-proposals-in-tvos.md)
+- [Working with Interstitial Content](working-with-interstitial-content.md)
 
 ## Topics
 

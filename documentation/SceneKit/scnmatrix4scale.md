@@ -17,7 +17,7 @@ Returns a new matrix created by concatenating the specified matrix with a scale 
 ## Declaration
 
 ```swift
-func SCNMatrix4Scale(_ m: SCNMatrix4, _ sx: Float, _ sy: Float, _ sz: Float) -> SCNMatrix4
+func SCNMatrix4Scale(_ m: SCNMatrix4, _ sx: CGFloat, _ sy: CGFloat, _ sz: CGFloat) -> SCNMatrix4
 ```
 
 #### Return Value

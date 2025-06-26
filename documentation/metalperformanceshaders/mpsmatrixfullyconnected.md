@@ -1,7 +1,7 @@
 # MPSMatrixFullyConnected
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel for applying a fully connected neural network layer.
 
@@ -16,32 +16,42 @@ A kernel for applying a fully connected neural network layer.
 ## Declaration
 
 ```swift
-class MPSMatrixFullyConnected : MPSMatrixBinaryKernel
+class MPSMatrixFullyConnected
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixfullyconnected/2935611-init.md)
-- [init(device: any MTLDevice)](mpsmatrixfullyconnected/2935584-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixfullyconnected/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsmatrixfullyconnected/init(device:).md)
 ### Instance Properties
-- [var alpha: Double](mpsmatrixfullyconnected/2935608-alpha.md)
-- [var sourceInputFeatureChannels: Int](mpsmatrixfullyconnected/2935597-sourceinputfeaturechannels.md)
-- [var sourceNumberOfFeatureVectors: Int](mpsmatrixfullyconnected/2935609-sourcenumberoffeaturevectors.md)
-- [var sourceOutputFeatureChannels: Int](mpsmatrixfullyconnected/2935592-sourceoutputfeaturechannels.md)
+- [var alpha: Double](mpsmatrixfullyconnected/alpha.md)
+- [var sourceInputFeatureChannels: Int](mpsmatrixfullyconnected/sourceinputfeaturechannels.md)
+- [var sourceNumberOfFeatureVectors: Int](mpsmatrixfullyconnected/sourcenumberoffeaturevectors.md)
+- [var sourceOutputFeatureChannels: Int](mpsmatrixfullyconnected/sourceoutputfeaturechannels.md)
 ### Instance Methods
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsmatrixfullyconnected/2935595-copy.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, weightMatrix: MPSMatrix, biasVector: MPSVector?, resultMatrix: MPSMatrix)](mpsmatrixfullyconnected/2935596-encode.md)
-- [func neuronParameterA() -> Float](mpsmatrixfullyconnected/2935602-neuronparametera.md)
-- [func neuronParameterB() -> Float](mpsmatrixfullyconnected/2935591-neuronparameterb.md)
-- [func neuronParameterC() -> Float](mpsmatrixfullyconnected/2935594-neuronparameterc.md)
-- [func neuronType() -> MPSCNNNeuronType](mpsmatrixfullyconnected/2935588-neurontype.md)
-- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float, parameterC: Float)](mpsmatrixfullyconnected/2935593-setneurontype.md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsmatrixfullyconnected/copy(with:device:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, weightMatrix: MPSMatrix, biasVector: MPSVector?, resultMatrix: MPSMatrix)](mpsmatrixfullyconnected/encode(commandbuffer:inputmatrix:weightmatrix:biasvector:resultmatrix:).md)
+- [func neuronParameterA() -> Float](mpsmatrixfullyconnected/neuronparametera.md)
+- [func neuronParameterB() -> Float](mpsmatrixfullyconnected/neuronparameterb.md)
+- [func neuronParameterC() -> Float](mpsmatrixfullyconnected/neuronparameterc.md)
+- [func neuronType() -> MPSCNNNeuronType](mpsmatrixfullyconnected/neurontype.md)
+- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float, parameterC: Float)](mpsmatrixfullyconnected/setneurontype(_:parametera:parameterb:parameterc:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrixBinaryKernel](mpsmatrixbinarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

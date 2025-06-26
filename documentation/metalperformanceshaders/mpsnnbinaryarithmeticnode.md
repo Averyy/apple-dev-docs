@@ -1,7 +1,7 @@
 # MPSNNBinaryArithmeticNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 Virtual base class for basic arithmetic nodes.
 
@@ -16,34 +16,47 @@ Virtual base class for basic arithmetic nodes.
 ## Declaration
 
 ```swift
-class MPSNNBinaryArithmeticNode : MPSNNFilterNode
+class MPSNNBinaryArithmeticNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(leftSource: MPSNNImageNode, rightSource: MPSNNImageNode)](mpsnnbinaryarithmeticnode/2890825-init.md)
-- [init(sources: [MPSNNImageNode])](mpsnnbinaryarithmeticnode/2890820-init.md)
+- [init(leftSource: MPSNNImageNode, rightSource: MPSNNImageNode)](mpsnnbinaryarithmeticnode/init(leftsource:rightsource:).md)
+- [init(sources: [MPSNNImageNode])](mpsnnbinaryarithmeticnode/init(sources:).md)
 ### Instance Properties
-- [var bias: Float](mpsnnbinaryarithmeticnode/2952964-bias.md)
-- [var maximumValue: Float](mpsnnbinaryarithmeticnode/2952979-maximumvalue.md)
-- [var minimumValue: Float](mpsnnbinaryarithmeticnode/2952970-minimumvalue.md)
-- [var primaryScale: Float](mpsnnbinaryarithmeticnode/2952966-primaryscale.md)
-- [var primaryStrideInFeatureChannels: Int](mpsnnbinaryarithmeticnode/2952983-primarystrideinfeaturechannels.md)
-- [var primaryStrideInPixelsX: Int](mpsnnbinaryarithmeticnode/2952973-primarystrideinpixelsx.md)
-- [var primaryStrideInPixelsY: Int](mpsnnbinaryarithmeticnode/2952996-primarystrideinpixelsy.md)
-- [var secondaryScale: Float](mpsnnbinaryarithmeticnode/2952976-secondaryscale.md)
-- [var secondaryStrideInFeatureChannels: Int](mpsnnbinaryarithmeticnode/2952974-secondarystrideinfeaturechannels.md)
-- [var secondaryStrideInPixelsX: Int](mpsnnbinaryarithmeticnode/2952972-secondarystrideinpixelsx.md)
-- [var secondaryStrideInPixelsY: Int](mpsnnbinaryarithmeticnode/2952985-secondarystrideinpixelsy.md)
+- [var bias: Float](mpsnnbinaryarithmeticnode/bias.md)
+- [var maximumValue: Float](mpsnnbinaryarithmeticnode/maximumvalue.md)
+- [var minimumValue: Float](mpsnnbinaryarithmeticnode/minimumvalue.md)
+- [var primaryScale: Float](mpsnnbinaryarithmeticnode/primaryscale.md)
+- [var primaryStrideInFeatureChannels: Int](mpsnnbinaryarithmeticnode/primarystrideinfeaturechannels.md)
+- [var primaryStrideInPixelsX: Int](mpsnnbinaryarithmeticnode/primarystrideinpixelsx.md)
+- [var primaryStrideInPixelsY: Int](mpsnnbinaryarithmeticnode/primarystrideinpixelsy.md)
+- [var secondaryScale: Float](mpsnnbinaryarithmeticnode/secondaryscale.md)
+- [var secondaryStrideInFeatureChannels: Int](mpsnnbinaryarithmeticnode/secondarystrideinfeaturechannels.md)
+- [var secondaryStrideInPixelsX: Int](mpsnnbinaryarithmeticnode/secondarystrideinpixelsx.md)
+- [var secondaryStrideInPixelsY: Int](mpsnnbinaryarithmeticnode/secondarystrideinpixelsy.md)
 ### Instance Methods
-- [func gradientClass() -> AnyClass](mpsnnbinaryarithmeticnode/2952978-gradientclass.md)
-- [func gradientFilters(withSources: [MPSNNImageNode]) -> [MPSNNGradientFilterNode]](mpsnnbinaryarithmeticnode/2952967-gradientfilters.md)
+- [func gradientClass() -> AnyClass](mpsnnbinaryarithmeticnode/gradientclass.md)
+- [func gradientFilters(withSources: [MPSNNImageNode]) -> [MPSNNGradientFilterNode]](mpsnnbinaryarithmeticnode/gradientfilters(withsources:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Inherited By
+- [MPSNNAdditionNode](mpsnnadditionnode.md)
+- [MPSNNComparisonNode](mpsnncomparisonnode.md)
+- [MPSNNDivisionNode](mpsnndivisionnode.md)
+- [MPSNNMultiplicationNode](mpsnnmultiplicationnode.md)
+- [MPSNNSubtractionNode](mpsnnsubtractionnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

@@ -52,6 +52,8 @@ You run a query by calling the HealthKit store’s [`execute(_:)`](hkhealthstore
   A query interface that reads the underlying voltage measurements for an electrocardiogram sample using Swift concurrency.
 - [class HKElectrocardiogramQuery](hkelectrocardiogramquery.md)
   A query that returns the underlying voltage measurements for an electrocardiogram sample.
+- [class HKWorkoutEffortRelationship](hkworkouteffortrelationship.md)
+- [class HKWorkoutEffortRelationshipQuery](hkworkouteffortrelationshipquery.md)
 ### Long-running queries
 - [struct HKActivitySummaryQueryDescriptor](hkactivitysummaryquerydescriptor.md)
   A query interface that reads activity summaries using Swift concurrency.

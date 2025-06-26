@@ -1,7 +1,7 @@
 # MPSMatrixFindTopK
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel for computing the top-K values and their corresponding indices in a matrix.
 
@@ -16,27 +16,37 @@ A kernel for computing the top-K values and their corresponding indices in a mat
 ## Declaration
 
 ```swift
-class MPSMatrixFindTopK : MPSMatrixUnaryKernel
+class MPSMatrixFindTopK
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixfindtopk/2935582-init.md)
-- [init(device: any MTLDevice, numberOfTopKValues: Int)](mpsmatrixfindtopk/2935575-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixfindtopk/init(coder:device:).md)
+- [init(device: any MTLDevice, numberOfTopKValues: Int)](mpsmatrixfindtopk/init(device:numberoftopkvalues:).md)
 ### Instance Properties
-- [var indexOffset: Int](mpsmatrixfindtopk/2935574-indexoffset.md)
-- [var numberOfTopKValues: Int](mpsmatrixfindtopk/2935577-numberoftopkvalues.md)
-- [var sourceColumns: Int](mpsmatrixfindtopk/2935573-sourcecolumns.md)
-- [var sourceRows: Int](mpsmatrixfindtopk/2935580-sourcerows.md)
+- [var indexOffset: Int](mpsmatrixfindtopk/indexoffset.md)
+- [var numberOfTopKValues: Int](mpsmatrixfindtopk/numberoftopkvalues.md)
+- [var sourceColumns: Int](mpsmatrixfindtopk/sourcecolumns.md)
+- [var sourceRows: Int](mpsmatrixfindtopk/sourcerows.md)
 ### Instance Methods
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsmatrixfindtopk/2935581-copy.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, resultIndexMatrix: MPSMatrix, resultValueMatrix: MPSMatrix)](mpsmatrixfindtopk/2935579-encode.md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsmatrixfindtopk/copy(with:device:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, resultIndexMatrix: MPSMatrix, resultValueMatrix: MPSMatrix)](mpsmatrixfindtopk/encode(commandbuffer:inputmatrix:resultindexmatrix:resultvaluematrix:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrixUnaryKernel](mpsmatrixunarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

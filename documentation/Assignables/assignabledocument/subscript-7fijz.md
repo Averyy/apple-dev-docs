@@ -19,10 +19,10 @@ subscript(questionID: AssignableDocument.Question.ID) -> AssignableDocument.Ques
 
 ## See Also
 
-- [subscript(AssignableDocument.QuestionBox.ID) -> AssignableDocument.QuestionBox?](assignabledocument/subscript(_:)-68enn.md)
-  Access the question box that the identifier denotes, if any.
 - [subscript(AssignableDocument.Page.ID) -> AssignableDocument.Page?](assignabledocument/subscript(_:)-8ou91.md)
   Access the page that the identifier denotes, if any.
+- [subscript(AssignableDocument.QuestionBox.ID) -> AssignableDocument.QuestionBox?](assignabledocument/subscript(_:)-68enn.md)
+  Access the question box that the identifier denotes, if any.
 
 
 ---

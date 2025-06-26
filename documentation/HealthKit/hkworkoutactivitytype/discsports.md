@@ -19,6 +19,10 @@ The constant for playing disc sports such as Ultimate and Disc Golf.
 case discSports
 ```
 
+#### Discussion
+
+HealthKit estimates calories for this activity based on the data from Apple Watch’s sensors. This rate is never lower than the brisk walk burn rate when moving.
+
 ## See Also
 
 - [HKWorkoutActivityType.americanFootball](hkworkoutactivitytype/americanfootball.md)

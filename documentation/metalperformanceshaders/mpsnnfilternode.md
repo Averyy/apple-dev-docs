@@ -1,7 +1,7 @@
 # MPSNNFilterNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A placeholder node denoting a neural network filter stage.
 
@@ -16,19 +16,19 @@ A placeholder node denoting a neural network filter stage.
 ## Declaration
 
 ```swift
-class MPSNNFilterNode : NSObject
+class MPSNNFilterNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var label: String?](mpsnnfilternode/2866465-label.md)
-- [var paddingPolicy: any MPSNNPadding](mpsnnfilternode/2866496-paddingpolicy.md)
+- [var label: String?](mpsnnfilternode/label.md)
+- [var paddingPolicy: any MPSNNPadding](mpsnnfilternode/paddingpolicy.md)
 - [protocol MPSNNPadding](mpsnnpadding.md)
   The protocol that provides a description of how kernels should pad images.
-- [var resultImage: MPSNNImageNode](mpsnnfilternode/2866492-resultimage.md)
-- [var resultState: MPSNNStateNode?](mpsnnfilternode/2866503-resultstate.md)
-- [var resultStates: [MPSNNStateNode]?](mpsnnfilternode/2866486-resultstates.md)
+- [var resultImage: MPSNNImageNode](mpsnnfilternode/resultimage.md)
+- [var resultState: MPSNNStateNode?](mpsnnfilternode/resultstate.md)
+- [var resultStates: [MPSNNStateNode]?](mpsnnfilternode/resultstates.md)
 - [class MPSNNStateNode](mpsnnstatenode.md)
   A placeholder node denoting the position in the graph of a state object.
 - [class MPSNNBinaryGradientStateNode](mpsnnbinarygradientstatenode.md)
@@ -36,16 +36,49 @@ class MPSNNFilterNode : NSObject
 - [class MPSNNGradientStateNode](mpsnngradientstatenode.md)
   A representation of the state created to record the properties of a gradient kernel at the time it was encoded.
 ### Instance Methods
-- [func gradientFilter(withSource: MPSNNImageNode) -> MPSNNGradientFilterNode](mpsnnfilternode/2953941-gradientfilter.md)
-- [func gradientFilter(withSources: [MPSNNImageNode]) -> MPSNNGradientFilterNode](mpsnnfilternode/2948052-gradientfilter.md)
-- [func gradientFilters(withSource: MPSNNImageNode) -> [MPSNNGradientFilterNode]](mpsnnfilternode/2953944-gradientfilters.md)
-- [func gradientFilters(withSources: [MPSNNImageNode]) -> [MPSNNGradientFilterNode]](mpsnnfilternode/2951955-gradientfilters.md)
-- [func trainingGraph(withSourceGradient: MPSNNImageNode?, nodeHandler: MPSGradientNodeBlock?) -> [MPSNNFilterNode]?](mpsnnfilternode/3020688-traininggraph.md)
+- [func gradientFilter(withSource: MPSNNImageNode) -> MPSNNGradientFilterNode](mpsnnfilternode/gradientfilter(withsource:).md)
+- [func gradientFilter(withSources: [MPSNNImageNode]) -> MPSNNGradientFilterNode](mpsnnfilternode/gradientfilter(withsources:).md)
+- [func gradientFilters(withSource: MPSNNImageNode) -> [MPSNNGradientFilterNode]](mpsnnfilternode/gradientfilters(withsource:).md)
+- [func gradientFilters(withSources: [MPSNNImageNode]) -> [MPSNNGradientFilterNode]](mpsnnfilternode/gradientfilters(withsources:).md)
+- [func trainingGraph(withSourceGradient: MPSNNImageNode?, nodeHandler: MPSGradientNodeBlock?) -> [MPSNNFilterNode]?](mpsnnfilternode/traininggraph(withsourcegradient:nodehandler:).md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Inherited By
+- [MPSCNNBatchNormalizationNode](mpscnnbatchnormalizationnode.md)
+- [MPSCNNConvolutionNode](mpscnnconvolutionnode.md)
+- [MPSCNNDilatedPoolingMaxNode](mpscnndilatedpoolingmaxnode.md)
+- [MPSCNNDropoutNode](mpscnndropoutnode.md)
+- [MPSCNNGroupNormalizationNode](mpscnngroupnormalizationnode.md)
+- [MPSCNNInstanceNormalizationNode](mpscnninstancenormalizationnode.md)
+- [MPSCNNLogSoftMaxNode](mpscnnlogsoftmaxnode.md)
+- [MPSCNNLossNode](mpscnnlossnode.md)
+- [MPSCNNNeuronNode](mpscnnneuronnode.md)
+- [MPSCNNNormalizationNode](mpscnnnormalizationnode.md)
+- [MPSCNNPoolingNode](mpscnnpoolingnode.md)
+- [MPSCNNSoftMaxNode](mpscnnsoftmaxnode.md)
+- [MPSCNNUpsamplingBilinearNode](mpscnnupsamplingbilinearnode.md)
+- [MPSCNNUpsamplingNearestNode](mpscnnupsamplingnearestnode.md)
+- [MPSCNNYOLOLossNode](mpscnnyololossnode.md)
+- [MPSNNBinaryArithmeticNode](mpsnnbinaryarithmeticnode.md)
+- [MPSNNConcatenationNode](mpsnnconcatenationnode.md)
+- [MPSNNForwardLossNode](mpsnnforwardlossnode.md)
+- [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+- [MPSNNGramMatrixCalculationNode](mpsnngrammatrixcalculationnode.md)
+- [MPSNNInitialGradientNode](mpsnninitialgradientnode.md)
+- [MPSNNPadNode](mpsnnpadnode.md)
+- [MPSNNReshapeNode](mpsnnreshapenode.md)
+- [MPSNNScaleNode](mpsnnscalenode.md)
+- [MPSNNUnaryReductionNode](mpsnnunaryreductionnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

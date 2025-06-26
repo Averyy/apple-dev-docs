@@ -108,7 +108,7 @@ You can create more complex, compound units by mathematically combining multiple
 | --- | --- | --- | --- |
 | `count/min` | Beats per minute | Count/time | Heart rate |
 | `mg/dl` | Milligrams per deciliter | Mass/volume | Blood glucose level |
-| `ml/(kg*min)` | Milliliters per kilogram per minute | Volume/(mass * time) | VO2 Max |
+| `ml/kg/min` | Milliliters per kilogram per minute | Volume/mass/time | VO2 Max |
 | `L/min` | Liters per minute | Volume/time | Peak Expiratory Flow Rate |
 
 ## Parameters

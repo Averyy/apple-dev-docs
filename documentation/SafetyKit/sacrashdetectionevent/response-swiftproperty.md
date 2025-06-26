@@ -10,7 +10,7 @@ An indication of whether the system attempted to call an Emergency SOS provider.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- watchOS 9.0+
+- watchOS 10.1+
 
 ## Declaration
 

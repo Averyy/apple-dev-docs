@@ -8,7 +8,7 @@ Retrieve an MTLBuffer that can be used to replace the per instance transform dat
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
 - visionOS 26.0+ (Beta)
@@ -16,7 +16,7 @@ Retrieve an MTLBuffer that can be used to replace the per instance transform dat
 ## Declaration
 
 ```swift
-func replace(using commandBuffer: any MTLCommandBuffer) -> any MTLBuffer
+final func replace(using commandBuffer: any MTLCommandBuffer) -> any MTLBuffer
 ```
 
 #### Discussion

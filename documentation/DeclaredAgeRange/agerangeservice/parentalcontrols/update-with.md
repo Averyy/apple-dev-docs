@@ -1,6 +1,6 @@
 # update(with:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: method
 
 Inserts the given element into the set.

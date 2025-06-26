@@ -1,7 +1,7 @@
 # MPSCNNYOLOLossNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a YOLO loss kernel.
 
@@ -16,20 +16,27 @@ A representation of a YOLO loss kernel.
 ## Declaration
 
 ```swift
-class MPSCNNYOLOLossNode : MPSNNFilterNode
+class MPSCNNYOLOLossNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, lossDescriptor: MPSCNNYOLOLossDescriptor)](mpscnnyololossnode/2976514-init.md)
+- [init(source: MPSNNImageNode, lossDescriptor: MPSCNNYOLOLossDescriptor)](mpscnnyololossnode/init(source:lossdescriptor:).md)
 ### Instance Properties
-- [var inputLabels: MPSNNLabelsNode](mpscnnyololossnode/2976515-inputlabels.md)
+- [var inputLabels: MPSNNLabelsNode](mpscnnyololossnode/inputlabels.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

@@ -1,33 +1,34 @@
 # MPSNDArrayAllocator
 
 **Framework**: Metal Performance Shaders  
-**Kind**: intf
+**Kind**: protocol
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-protocol MPSNDArrayAllocator
+protocol MPSNDArrayAllocator : NSCopying, NSSecureCoding, NSObjectProtocol
 ```
 
 ## Topics
 
 ### Instance Methods
-- [func array(for: any MTLCommandBuffer, arrayDescriptor: MPSNDArrayDescriptor, kernel: MPSKernel) -> MPSNDArray](mpsndarrayallocator/3143490-array.md)
+- [func array(for: any MTLCommandBuffer, arrayDescriptor: MPSNDArrayDescriptor, kernel: MPSKernel) -> MPSNDArray](mpsndarrayallocator/array(for:arraydescriptor:kernel:).md)
 
 ## Relationships
 
 ### Inherits From
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

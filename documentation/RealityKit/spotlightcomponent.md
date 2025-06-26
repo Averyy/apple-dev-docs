@@ -88,6 +88,7 @@ The following table shows some real-world scenarios, to better explain how you c
 
 ### Conforms To
 - [Component](component.md)
+- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 
 ## See Also

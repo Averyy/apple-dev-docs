@@ -1,7 +1,7 @@
 # MPSCNNNeuronELU
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A parametric ELU neuron filter.
 
@@ -16,25 +16,35 @@ A parametric ELU neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronELU : MPSCNNNeuron
+class MPSCNNNeuronELU
 ```
 
 #### Overview
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = a * (exp(x) - 1) if x &lt;  0 | f(x) = [ a * (exp(x) - 1) if x &lt;  0](https://docs-assets.developer.apple.com/published/866dd98e74/7ffd25a3-9a7b-4711-9286-98693a8649b9.png)
+![f(x) = a * (exp(x) - 1) if x <  0 | f(x) = [` a * (exp(x) - 1) if x <  0`](https://developer.apple.commedia-2903539)
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, a: Float)](mpscnnneuronelu/2867048-init.md)
+- [init(device: any MTLDevice, a: Float)](mpscnnneuronelu/init(device:a:).md)
   Initializes a parametric ELU neuron filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -68,8 +78,6 @@ For each pixel in an image, the filter applies the following function:
   A logarithm neuron filter.
 - [class MPSCNNNeuronPower](mpscnnneuronpower.md)
   A power neuron filter.
-- [class MPSNNNeuronDescriptor](mpsnnneurondescriptor.md)
-  An object that specifies properties used by a neuron kernel.
 
 
 ---

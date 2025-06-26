@@ -1,7 +1,7 @@
 # MPSNNOptimizerStochasticGradientDescent
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An optimization layer that performs a gradient descent with an optional momentum update.
 
@@ -16,30 +16,40 @@ An optimization layer that performs a gradient descent with an optional momentum
 ## Declaration
 
 ```swift
-class MPSNNOptimizerStochasticGradientDescent : MPSNNOptimizer
+class MPSNNOptimizerStochasticGradientDescent
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, learningRate: Float)](mpsnnoptimizerstochasticgradientdescent/2966741-init.md)
-- [init(device: any MTLDevice, momentumScale: Float, useNesterovMomentum: Bool, optimizerDescriptor: MPSNNOptimizerDescriptor)](mpsnnoptimizerstochasticgradientdescent/3675591-init.md)
-- [init(device: any MTLDevice, momentumScale: Float, useNestrovMomentum: Bool, optimizerDescriptor: MPSNNOptimizerDescriptor)](mpsnnoptimizerstochasticgradientdescent/2966742-init.md)
+- [init(device: any MTLDevice, learningRate: Float)](mpsnnoptimizerstochasticgradientdescent/init(device:learningrate:).md)
+- [init(device: any MTLDevice, momentumScale: Float, useNesterovMomentum: Bool, optimizerDescriptor: MPSNNOptimizerDescriptor)](mpsnnoptimizerstochasticgradientdescent/init(device:momentumscale:usenesterovmomentum:optimizerdescriptor:).md)
+- [init(device: any MTLDevice, momentumScale: Float, useNestrovMomentum: Bool, optimizerDescriptor: MPSNNOptimizerDescriptor)](mpsnnoptimizerstochasticgradientdescent/init(device:momentumscale:usenestrovmomentum:optimizerdescriptor:).md)
 ### Instance Properties
-- [var momentumScale: Float](mpsnnoptimizerstochasticgradientdescent/2966743-momentumscale.md)
-- [var useNesterovMomentum: Bool](mpsnnoptimizerstochasticgradientdescent/3675592-usenesterovmomentum.md)
-- [var useNestrovMomentum: Bool](mpsnnoptimizerstochasticgradientdescent/2966744-usenestrovmomentum.md)
+- [var momentumScale: Float](mpsnnoptimizerstochasticgradientdescent/momentumscale.md)
+- [var useNesterovMomentum: Bool](mpsnnoptimizerstochasticgradientdescent/usenesterovmomentum.md)
+- [var useNestrovMomentum: Bool](mpsnnoptimizerstochasticgradientdescent/usenestrovmomentum.md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, batchNormalizationGradientState: MPSCNNBatchNormalizationState, batchNormalizationSourceState: MPSCNNBatchNormalizationState, inputMomentumVectors: [MPSVector]?, resultState: MPSCNNNormalizationGammaAndBetaState)](mpsnnoptimizerstochasticgradientdescent/3013785-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, batchNormalizationState: MPSCNNBatchNormalizationState, inputMomentumVectors: [MPSVector]?, resultState: MPSCNNNormalizationGammaAndBetaState)](mpsnnoptimizerstochasticgradientdescent/3019336-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, convolutionGradientState: MPSCNNConvolutionGradientState, convolutionSourceState: MPSCNNConvolutionWeightsAndBiasesState, inputMomentumVectors: [MPSVector]?, resultState: MPSCNNConvolutionWeightsAndBiasesState)](mpsnnoptimizerstochasticgradientdescent/3013786-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, inputGradientMatrix: MPSMatrix, inputValuesMatrix: MPSMatrix, inputMomentumMatrix: MPSMatrix?, resultValuesMatrix: MPSMatrix)](mpsnnoptimizerstochasticgradientdescent/3197828-encode.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, inputGradientVector: MPSVector, inputValuesVector: MPSVector, inputMomentumVector: MPSVector?, resultValuesVector: MPSVector)](mpsnnoptimizerstochasticgradientdescent/2966740-encode.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, batchNormalizationGradientState: MPSCNNBatchNormalizationState, batchNormalizationSourceState: MPSCNNBatchNormalizationState, inputMomentumVectors: [MPSVector]?, resultState: MPSCNNNormalizationGammaAndBetaState)](mpsnnoptimizerstochasticgradientdescent/encode(commandbuffer:batchnormalizationgradientstate:batchnormalizationsourcestate:inputmomentumvectors:resultstate:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, batchNormalizationState: MPSCNNBatchNormalizationState, inputMomentumVectors: [MPSVector]?, resultState: MPSCNNNormalizationGammaAndBetaState)](mpsnnoptimizerstochasticgradientdescent/encode(commandbuffer:batchnormalizationstate:inputmomentumvectors:resultstate:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, convolutionGradientState: MPSCNNConvolutionGradientState, convolutionSourceState: MPSCNNConvolutionWeightsAndBiasesState, inputMomentumVectors: [MPSVector]?, resultState: MPSCNNConvolutionWeightsAndBiasesState)](mpsnnoptimizerstochasticgradientdescent/encode(commandbuffer:convolutiongradientstate:convolutionsourcestate:inputmomentumvectors:resultstate:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inputGradientMatrix: MPSMatrix, inputValuesMatrix: MPSMatrix, inputMomentumMatrix: MPSMatrix?, resultValuesMatrix: MPSMatrix)](mpsnnoptimizerstochasticgradientdescent/encode(commandbuffer:inputgradientmatrix:inputvaluesmatrix:inputmomentummatrix:resultvaluesmatrix:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inputGradientVector: MPSVector, inputValuesVector: MPSVector, inputMomentumVector: MPSVector?, resultValuesVector: MPSVector)](mpsnnoptimizerstochasticgradientdescent/encode(commandbuffer:inputgradientvector:inputvaluesvector:inputmomentumvector:resultvaluesvector:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNOptimizer](mpsnnoptimizer.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

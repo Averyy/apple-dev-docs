@@ -69,7 +69,7 @@ repeat {
 
 ##### Load Video Layer Information
 
-After preparing timestamps, the app calls `loadVideoLayerIdsForTrack()` to get the layer IDs for the two tracks associated with the left and right eyes. The app calls `AVAsynchronousKeyValueLoading/load(_:)`to retrieve metadata, then filters the layer data out of the first available track’s [`tagCollections`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription/tagCollections). The filter predicate is [`value(onlyIfMatching:)`](https://developer.apple.com/documentation/CoreMedia/CMTag-swift.class/value(onlyIfMatching:)), extracting only video layer IDs.
+After preparing timestamps, the app calls `loadVideoLayerIdsForTrack()` to get the layer IDs for the two tracks associated with the left and right eyes. The app calls [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md)to retrieve metadata, then filters the layer data out of the first available track’s [`tagCollections`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription/tagCollections). The filter predicate is [`value(onlyIfMatching:)`](https://developer.apple.com/documentation/CoreMedia/CMTag-swift.class/value(onlyIfMatching:)), extracting only video layer IDs.
 
 ```swift
 private func loadVideoLayerIdsForTrack(_ videoTrack: AVAssetTrack) async throws -> [Int64]? {
@@ -110,7 +110,7 @@ guard taggedBuffers.count == 2 else {
 }
 ```
 
-The app parses each [`CMTaggedBuffer.Buffer.pixelBuffer(_:)`](https://developer.apple.com/documentation/CoreMedia/CMTaggedBuffer/Buffer-swift.enum/pixelBuffer(_:)) from the returned sample buffers into an image for display using [`init(cvPixelBuffer:)`](https://developer.apple.com/documentation/coreimage/ciimage/1438072-init). The app creates an [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) and sets it to the view content as either `leftEye` or `rightEye` depending on whether the view contains a [`stereoView(_:)`](https://developer.apple.com/documentation/CoreMedia/CMTag-swift.class/stereoView(_:)) for the left or right eye.
+The app parses each [`CMTaggedBuffer.Buffer.pixelBuffer(_:)`](https://developer.apple.com/documentation/CoreMedia/CMTaggedBuffer/Buffer-swift.enum/pixelBuffer(_:)) from the returned sample buffers into an image for display using [`init(cvPixelBuffer:)`](https://developer.apple.com/documentation/CoreImage/CIImage/init(cvPixelBuffer:)). The app creates an [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) and sets it to the view content as either `leftEye` or `rightEye` depending on whether the view contains a [`stereoView(_:)`](https://developer.apple.com/documentation/CoreMedia/CMTag-swift.class/stereoView(_:)) for the left or right eye.
 
 ```swift
 taggedBuffers.forEach { taggedBuffer in

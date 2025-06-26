@@ -80,7 +80,7 @@ You can create a maximum of 32 interfaces with a limit of 4 per guest operating 
 - [func vmnet_interface_start_with_network(vmnet_network_ref, xpc_object_t, dispatch_queue_t, vmnet_start_interface_completion_handler_t) -> interface_ref?](vmnet_interface_start_with_network(_:_:_:_:).md)
 - [func vmnet_network_configuration_add_dhcp_reservation(vmnet_network_configuration_ref, UnsafePointer<ether_addr_t>, UnsafePointer<in_addr>) -> vmnet_return_t](vmnet_network_configuration_add_dhcp_reservation(_:_:_:).md)
 - [func vmnet_network_configuration_add_port_forwarding_rule(vmnet_network_configuration_ref, UInt8, sa_family_t, UInt16, UInt16, UnsafeRawPointer) -> vmnet_return_t](vmnet_network_configuration_add_port_forwarding_rule(_:_:_:_:_:_:).md)
-- [func vmnet_network_configuration_create(operating_modes_t, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_configuration_ref?](vmnet_network_configuration_create(_:_:).md)
+- [func vmnet_network_configuration_create(vmnet_mode_t, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_configuration_ref?](vmnet_network_configuration_create(_:_:).md)
 - [func vmnet_network_configuration_disable_dhcp(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_dhcp(_:).md)
 - [func vmnet_network_configuration_disable_dns_proxy(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_dns_proxy(_:).md)
 - [func vmnet_network_configuration_disable_nat44(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_nat44(_:).md)
@@ -96,6 +96,7 @@ You can create a maximum of 32 interfaces with a limit of 4 per guest operating 
 - [func vmnet_network_get_ipv4_subnet(vmnet_network_ref, UnsafeMutablePointer<in_addr>, UnsafeMutablePointer<in_addr>)](vmnet_network_get_ipv4_subnet(_:_:_:).md)
 - [func vmnet_network_get_ipv6_prefix(vmnet_network_ref, UnsafeMutablePointer<in6_addr>, UnsafeMutablePointer<UInt8>)](vmnet_network_get_ipv6_prefix(_:_:_:).md)
 ### Type Aliases
+- [typealias vmnet_mode_t](vmnet_mode_t.md)
 - [typealias vmnet_network_configuration_ref](vmnet_network_configuration_ref.md)
 - [typealias vmnet_network_ref](vmnet_network_ref.md)
 

@@ -1,7 +1,7 @@
 # MPSCNNUpsamplingGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient filter that upsamples an existing Metal Performance Shaders image.
 
@@ -16,19 +16,32 @@ A gradient filter that upsamples an existing Metal Performance Shaders image.
 ## Declaration
 
 ```swift
-class MPSCNNUpsamplingGradient : MPSCNNGradientKernel
+class MPSCNNUpsamplingGradient
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var scaleFactorX: Double](mpscnnupsamplinggradient/2942630-scalefactorx.md)
-- [var scaleFactorY: Double](mpscnnupsamplinggradient/2942628-scalefactory.md)
+- [var scaleFactorX: Double](mpscnnupsamplinggradient/scalefactorx.md)
+- [var scaleFactorY: Double](mpscnnupsamplinggradient/scalefactory.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNGradientKernel](mpscnngradientkernel.md)
+### Inherited By
+- [MPSCNNUpsamplingBilinearGradient](mpscnnupsamplingbilineargradient.md)
+- [MPSCNNUpsamplingNearestGradient](mpscnnupsamplingnearestgradient.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

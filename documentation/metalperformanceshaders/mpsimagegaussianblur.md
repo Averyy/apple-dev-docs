@@ -1,7 +1,7 @@
 # MPSImageGaussianBlur
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that convolves an image with a Gaussian blur of a given sigma in both the x and y directions.
 
@@ -16,28 +16,42 @@ A filter that convolves an image with a Gaussian blur of a given sigma in both t
 ## Declaration
 
 ```swift
-class MPSImageGaussianBlur : MPSUnaryImageKernel
+class MPSImageGaussianBlur
 ```
+
+## Mentions
+
+- [The MPSKernel Class](the-mpskernel-class.md)
 
 #### Overview
 
-> **Note**: The Gaussian blur utilizes a very fast algorithm that typically runs at approximately half the speed of copy speeds. Notably, it is faster than either the tent or box blur except perhaps for very large filter windows. Mathematically, it is an approximate Gaussian. Some non-Gaussian behavior may be detectable with advanced analytical methods such as FFT. If an analytically clean Gaussian filter is required, use the [`MPSImageConvolution`](mpsimageconvolution.md) filter instead with an appropriate set of weights. The [`MPSImageGaussianBlur`](mpsimagegaussianblur.md) filter is intended to be suitable for all common image processing needs demanding ~10 bits of precision or less.
+> **Note**:  The Gaussian blur utilizes a very fast algorithm that typically runs at approximately half the speed of copy speeds. Notably, it is faster than either the tent or box blur except perhaps for very large filter windows. Mathematically, it is an approximate Gaussian. Some non-Gaussian behavior may be detectable with advanced analytical methods such as FFT. If an analytically clean Gaussian filter is required, use the [`MPSImageConvolution`](mpsimageconvolution.md) filter instead with an appropriate set of weights. The [`MPSImageGaussianBlur`](mpsimagegaussianblur.md) filter is intended to be suitable for all common image processing needs demanding ~10 bits of precision or less.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagegaussianblur/2866150-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagegaussianblur/init(coder:device:).md)
 ### Methods
-- [init(device: any MTLDevice, sigma: Float)](mpsimagegaussianblur/1618813-init.md)
+- [init(device: any MTLDevice, sigma: Float)](mpsimagegaussianblur/init(device:sigma:).md)
   Initializes a Gaussian blur filter.
 ### Properties
-- [var sigma: Float](mpsimagegaussianblur/1618850-sigma.md)
+- [var sigma: Float](mpsimagegaussianblur/sigma.md)
   The sigma value with which the filter was created.
 
 ## Relationships
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

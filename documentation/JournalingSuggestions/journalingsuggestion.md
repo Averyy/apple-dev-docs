@@ -35,6 +35,8 @@ When a person chooses a particular suggestion in the [`JournalingSuggestionsPick
 ### Interacting with suggestion types
 - [JournalingSuggestion.Contact](journalingsuggestion/contact.md)
   A suggestion for a connection a person makes with someone else.
+- [JournalingSuggestion.EventPoster](journalingsuggestion/eventposter.md)
+  A suggestion for a poster image of an event.
 - [JournalingSuggestion.GenericMedia](journalingsuggestion/genericmedia.md)
   A suggestion describing now playable media that a person listened to.
 - [JournalingSuggestion.LivePhoto](journalingsuggestion/livephoto.md)
@@ -61,9 +63,6 @@ When a person chooses a particular suggestion in the [`JournalingSuggestionsPick
   A suggestion that describes a workout that a person completed.
 - [JournalingSuggestion.WorkoutGroup](journalingsuggestion/workoutgroup.md)
   A suggestion that contains multiple workouts that a person chooses in the picker.
-### Structures
-- [JournalingSuggestion.EventPoster](journalingsuggestion/eventposter.md)
-  A suggestion for a poster image of an event.
 ### Instance Properties
 - [var hashValue: Int](journalingsuggestion/hashvalue.md)
   The hash value.

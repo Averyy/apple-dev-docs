@@ -42,10 +42,7 @@ DeviceDiscoveryUI uses the iCloud account of the default user on Apple TV. If Ap
   A list of service providers and the devices that they support.
 ### Classes
 - [class DDDevicePairingViewController](dddevicepairingviewcontroller.md)
-### Protocols
-- [protocol PreviewImageFrameReporting](previewimageframereporting.md)
 ### Structures
-- [struct AirDropUIButtonStyle](airdropuibuttonstyle.md)
 - [struct DDDevicePairingAccess](dddevicepairingaccess.md)
   Specifies the access level requested for device discovery.
 - [struct DevicePairingView](devicepairingview.md)

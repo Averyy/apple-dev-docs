@@ -22,8 +22,8 @@ struct AppTransaction
 ## Mentions
 
 - [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
-- [Supporting business model changes by using the app transaction](supporting-business-model-changes-by-using-the-app-transaction.md)
 - [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
+- [Supporting business model changes by using the app transaction](supporting-business-model-changes-by-using-the-app-transaction.md)
 
 #### Overview
 

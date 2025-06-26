@@ -28,8 +28,6 @@ struct Dynamics
 ### Initializers
 - [init()](manipulationcomponent/dynamics-swift.struct/init.md)
 ### Instance Properties
-- [var ignoredInputDeviceKinds: ManipulationComponent.InputDevice.Kind.Set](manipulationcomponent/dynamics-swift.struct/ignoredinputdevicekinds.md)
-  The set of input device kinds that won’t start an interaction
 - [var inertia: ManipulationComponent.Dynamics.Inertia](manipulationcomponent/dynamics-swift.struct/inertia-swift.property.md)
   How snappy the object’s movement is in response to input.
 - [var primaryRotationBehavior: ManipulationComponent.Dynamics.RotationBehavior](manipulationcomponent/dynamics-swift.struct/primaryrotationbehavior.md)

@@ -1,7 +1,7 @@
 # MPSRNNMatrixId.gruInputGateRecurrentWeights
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case gruInputGateRecurrentWeights = 20
+case gruInputGateRecurrentWeights
 ```
 
 

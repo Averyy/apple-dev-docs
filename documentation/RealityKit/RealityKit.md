@@ -17,8 +17,8 @@ Simulate and render 3D content for use in your augmented reality apps.
 
 - [Selecting an anchor for a Reality Composer scene](selecting-an-anchor-for-a-reality-composer-scene.md)
 - [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
-- [Configuring elements in a scene](configuring-elements-in-a-scene.md)
 - [Designing scene hierarchies for efficient physics simulation](designing-scene-hierarchies-for-efficient-physics-simulation.md)
+- [Configuring elements in a scene](configuring-elements-in-a-scene.md)
 
 #### Overview
 
@@ -80,8 +80,6 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
 ### Scene content
 - [Hello World](../visionOS/World.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
-  Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
 - [Generating interactive geometry with RealityKit](generating-interactive-geometry-with-realitykit.md)
@@ -90,8 +88,6 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
-- [Presenting images in RealityKit](presenting-images-in-realitykit.md)
-  Create and display spatial scenes in RealityKit.
 - [Models and meshes](scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
 - [Materials, textures, and shaders](scene-content-materials-and-shaders.md)
@@ -106,6 +102,8 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   Create personalized and realistic spatial audio experiences.
 - [Videos](scene-content-videos.md)
   Present videos in your RealityKit experiences.
+- [Images](scene-content-images.md)
+  Present images and spatial scenes in your RealityKit experiences.
 ### Game development
 - [Gaming sample code projects](game-development-sample-code.md)
   Explore a collection of projects relating to game development.
@@ -135,6 +133,13 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   Build a system that creates and passes Metal command objects to entities dispatching Metal compute shaders.
 - [protocol Resource](resource.md)
   A shared resource you use to configure a component, like a material, mesh, or texture.
+### Articles
+- [Animating entity rotation with a system](animated-rotation-with-a-system.md)
+  Rotate an entity around an axis using a Component and a System.
+- [Docking a video player in an immersive scene](docking-a-video-player-in-an-immersive-scene.md)
+  Secure a video player in an immersive scene with a docking region you can specify.
+- [Responding to gestures on an entity](responding-to-gestures-on-an-entity.md)
+  Respond to gestures performed on RealityKit entities using input target and collision components.
 
 
 ---

@@ -17,7 +17,6 @@ The blend mode used to draw the sprite into the parent’s framebuffer.
 ## Declaration
 
 ```swift
-@MainActor
 var blendMode: SKBlendMode { get set }
 ```
 

@@ -17,7 +17,6 @@ A mask that defines which lights add shadows to the sprite.
 ## Declaration
 
 ```swift
-@MainActor
 var shadowedBitMask: UInt32 { get set }
 ```
 

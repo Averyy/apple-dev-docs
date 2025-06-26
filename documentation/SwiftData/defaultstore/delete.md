@@ -19,6 +19,10 @@
 final func delete<T>(_ request: DataStoreBatchDeleteRequest<T>) throws where T : PersistentModel
 ```
 
+## See Also
+
+- [func erase() throws](defaultstore/erase.md)
+
 
 ---
 

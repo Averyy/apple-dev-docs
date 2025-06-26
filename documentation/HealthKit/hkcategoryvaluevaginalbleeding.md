@@ -21,10 +21,15 @@ enum HKCategoryValueVaginalBleeding
 
 ### Enumeration Cases
 - [HKCategoryValueVaginalBleeding.heavy](hkcategoryvaluevaginalbleeding/heavy.md)
+  Heavy vaginal bleeding.
 - [HKCategoryValueVaginalBleeding.light](hkcategoryvaluevaginalbleeding/light.md)
+  Light vaginal bleeding.
 - [HKCategoryValueVaginalBleeding.medium](hkcategoryvaluevaginalbleeding/medium.md)
+  Medium vaginal bleeding.
 - [HKCategoryValueVaginalBleeding.none](hkcategoryvaluevaginalbleeding/none.md)
+  No vaginal bleeding.
 - [HKCategoryValueVaginalBleeding.unspecified](hkcategoryvaluevaginalbleeding/unspecified.md)
+  An unspecified amount of vaginal bleeding.
 ### Initializers
 - [init?(rawValue: Int)](hkcategoryvaluevaginalbleeding/init(rawvalue:).md)
 

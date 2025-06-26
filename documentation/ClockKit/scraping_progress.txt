@@ -1,4 +1,4 @@
 Completed scraping ClockKit!
-Total pages scraped: 589
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 590
 Pages failed: 0

@@ -33,6 +33,7 @@ var isMultiPageDocument: Bool { get }
   The collection of score annotations for this work document. Treated as a multiset. i.e. The order of the elements doesn’t matter and duplicate values are allowed.
 - [var scorers: [AnyUserIdentity]](assignedworkdocument/scorers.md)
   The identities of users scoring this assigned work. Treated as a set.
+- [var pagesDebugDescription: String](assignedworkdocument/pagesdebugdescription.md)
 - [AssignedWorkDocument.Error](assignedworkdocument/error.md)
   Errors for this document type.
 

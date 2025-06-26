@@ -23,6 +23,8 @@ Your app can also use a framework-provided task to execute critical jobs in the 
 ## Topics
 
 ### Essentials
+- [Background Tasks updates](../Updates/BackgroundTasks.md)
+  Learn about important changes in Background Tasks.
 - [class BGTaskScheduler](bgtaskscheduler.md)
   A class for scheduling tasks that add background support to your app’s most critical work.
 - [class BGTask](bgtask.md)

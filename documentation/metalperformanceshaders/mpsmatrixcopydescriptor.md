@@ -1,7 +1,7 @@
 # MPSMatrixCopyDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A description of multiple matrix copy operations.
 
@@ -16,31 +16,38 @@ A description of multiple matrix copy operations.
 ## Declaration
 
 ```swift
-class MPSMatrixCopyDescriptor : NSObject
+class MPSMatrixCopyDescriptor
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, count: Int)](mpsmatrixcopydescriptor/2915324-init.md)
-- [init(sourceMatrices: [MPSMatrix], destinationMatrices: [MPSMatrix], offsetVector: MPSVector?, offset: Int)](mpsmatrixcopydescriptor/2915344-init.md)
-- [init(sourceMatrix: MPSMatrix, destinationMatrix: MPSMatrix, offsets: MPSMatrixCopyOffsets)](mpsmatrixcopydescriptor/2915333-init.md)
+- [init(device: any MTLDevice, count: Int)](mpsmatrixcopydescriptor/init(device:count:).md)
+- [init(sourceMatrices: [MPSMatrix], destinationMatrices: [MPSMatrix], offsetVector: MPSVector?, offset: Int)](mpsmatrixcopydescriptor/init(sourcematrices:destinationmatrices:offsetvector:offset:).md)
+- [convenience init(sourceMatrix: MPSMatrix, destinationMatrix: MPSMatrix, offsets: MPSMatrixCopyOffsets)](mpsmatrixcopydescriptor/init(sourcematrix:destinationmatrix:offsets:).md)
 ### Instance Methods
-- [func setCopyOperationAt(Int, sourceMatrix: MPSMatrix, destinationMatrix: MPSMatrix, offsets: MPSMatrixCopyOffsets)](mpsmatrixcopydescriptor/2915331-setcopyoperationat.md)
+- [func setCopyOperationAt(Int, sourceMatrix: MPSMatrix, destinationMatrix: MPSMatrix, offsets: MPSMatrixCopyOffsets)](mpsmatrixcopydescriptor/setcopyoperationat(_:sourcematrix:destinationmatrix:offsets:).md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
 - [class MPSMatrixCopy](mpsmatrixcopy.md)
-  A class that can perform multiple matrix copy operations. 
+  A class that can perform multiple matrix copy operations.
 - [class MPSMatrixCopyToImage](mpsmatrixcopytoimage.md)
   A kernel that copies matrix data to a Metal Performance Shaders image.
 - [class MPSImageCopyToMatrix](mpsimagecopytomatrix.md)
-  A class that copies image data to a matrix. 
+  A class that copies image data to a matrix.
 
 
 ---

@@ -1,7 +1,7 @@
 # MPSRNNMatrixId.singleGateBiasTerms
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case singleGateBiasTerms = 2
+case singleGateBiasTerms
 ```
 
 

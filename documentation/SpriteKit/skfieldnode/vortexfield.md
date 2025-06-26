@@ -17,6 +17,7 @@ Creates a field node that applies a perpendicular force to physics bodies.
 ## Declaration
 
 ```swift
+@MainActor
 class func vortexField() -> SKFieldNode
 ```
 

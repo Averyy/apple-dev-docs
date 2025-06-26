@@ -34,7 +34,7 @@ A Boolean indicating whether or not the data and signature are intact.
 - `algorithm`: The algorithm that was used to create the signature. Use one of the signing algorithms listed in  . You can use the   function to test that the key is suitable for the algorithm.
 - `signedData`: The data that was signed.
 - `signature`: The signature that was created with a call to the   function.
-- `error`: The address of a  doc://com.apple.documentation/documentation/corefoundation/cferror-ru8  object. If an error occurs, this is set to point at an error instance that describes the failure.
+- `error`: The address of a   object. If an error occurs, this is set to point at an error instance that describes the failure.
 
 
 ---

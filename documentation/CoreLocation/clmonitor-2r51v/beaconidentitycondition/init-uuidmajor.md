@@ -18,7 +18,7 @@ init(uuid: UUID, major: UInt16)
 
 ## Parameters
 
-- `uuid`: The   that identifies the beacon.
+- `uuid`: The  doc://com.apple.documentation/documentation/foundation/nsuuid/1574571-uuid  that identifies the beacon.
 - `major`: The   that represents the beacon’s major value.
 
 ## See Also

@@ -23,7 +23,7 @@ typealias ID = String
 - [var id: String](transcript/response/id-swift.property.md)
   The stable identity of the entity associated with this instance.
 - [var segments: [Transcript.Segment]](transcript/response/segments.md)
-  Ordered prompt segments, often interleaved text and images.
+  Ordered prompt segments.
 - [var assetIDs: [String]](transcript/response/assetids.md)
   Version aware identifiers for all assets used to generate this response.
 

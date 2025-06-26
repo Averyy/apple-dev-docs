@@ -28,7 +28,7 @@ Use this method to create a customized access instance from [`SecACL`](secacl.md
 - `groupId`: The group ID that owns this ACL.
 - `ownerType`: Flags that control whether the specified user ID or group ID owns the resulting ACL. See   for details.
 - `acls`: An array of ACL entries to associate with the access instance.
-- `error`: The address of an error instance. On error, the return value is  , and the variable referenced by this parameter is overwritten with a  doc://com.apple.documentation/documentation/corefoundation/cferror-ru8  instance that provides more information.
+- `error`: The address of an error instance. On error, the return value is  , and the variable referenced by this parameter is overwritten with a   instance that provides more information.
 
 
 ---

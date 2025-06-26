@@ -1,7 +1,7 @@
 # MPSRNNSequenceDirection.backward
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.0+
@@ -14,8 +14,12 @@
 ## Declaration
 
 ```swift
-case backward = 1
+case backward
 ```
+
+## See Also
+
+- [MPSRNNSequenceDirection.forward](mpsrnnsequencedirection/forward.md)
 
 
 ---

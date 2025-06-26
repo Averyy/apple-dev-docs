@@ -3,7 +3,7 @@
 **Framework**: RelevanceKit  
 **Kind**: struct
 
-A type that specifies conditions for relevance.
+Contextual clues the system uses to show relevant widgets in the Smart Stack on watchOS.
 
 **Availability**:
 - iOS 17.0+
@@ -19,6 +19,10 @@ A type that specifies conditions for relevance.
 ```swift
 struct RelevantContext
 ```
+
+#### Overview
+
+> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information about widgets in Smart Stacks, refer to [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/WidgetKit/Widget-Suggestions-In-Smart-Stacks).
 
 ## Topics
 
@@ -52,13 +56,13 @@ struct RelevantContext
 - [static func date(Date, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(_:kind:).md)
   Tells the system a widget is relevant at a specific date and provides an additional contextual hint.
 - [static func date(interval: DateInterval, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(interval:kind:).md)
-  An exact range in time: similar uses as `date()`, but with a known endpoint, such as a calendar event.
+  Tells the system a widget is relevant for a time interval and provides an additional contextual hint.
 - [static func date(range: ClosedRange<Date>, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(range:kind:).md)
-  An exact range in time: similar uses as `date()`, but with a known endpoint, such as a calendar event.
+  Tells the system a widget is relevant for a known date range and provides an additional contextual hint.
 - [RelevantContext.DateKind](relevantcontext/datekind.md)
   Values the system uses as additional context for time-based relevance clues.
 - [static func date(from: Date, to: Date) -> RelevantContext](relevantcontext/date(from:to:).md)
-  An exact range in time: similar uses as `date()`, but with a known endpoint.
+  Tells the system a widget is relevant between two dates.
 
 ## See Also
 

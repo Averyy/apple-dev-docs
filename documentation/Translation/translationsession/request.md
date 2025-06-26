@@ -19,9 +19,9 @@ struct Request
 
 #### Overview
 
-Create a translation request to translate a string of text. Create the request using the [`init(sourceText:clientIdentifier:)`](translationsession/request/init(sourcetext:clientidentifier:).md) initializer. Set the `sourceText` to the string of text you want to translate. Then pass that request in an array to one of the batch translation functions.
+Create a translation request to translate a string of text. Initialize the request using [`init(sourceText:clientIdentifier:)`](translationsession/request/init(sourcetext:clientidentifier:).md). Set the `sourceText` to the string of text you want to translate. Then pass that request in an array to one of the batch translation functions.
 
-Keep track of which responses correspond with which requests by setting the [`clientIdentifier`](translationsession/request/clientidentifier.md) on the request you send, then matching it against the [`clientIdentifier`](translationsession/response/clientidentifier.md) response you receive when the translation completes and returns.
+Keep track of the correspondence between the responses and requests by setting the [`clientIdentifier`](translationsession/request/clientidentifier.md) on the sent request, then matching it with the [`clientIdentifier`](translationsession/response/clientidentifier.md) of the recieved response when the translation completes.
 
 ## Topics
 

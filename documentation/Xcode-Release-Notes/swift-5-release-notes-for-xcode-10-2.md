@@ -86,7 +86,7 @@ func baz() -> X {
 }
 ```
 - In Swift 5 mode, `try?` with an expression of an [`Optional`](https://developer.apple.com/documentation/Swift/Optional) type flattens the resulting optional, instead of returning a nested optional. ([`SE-0230`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/master/proposals/0230-flatten-optional-try.md)) (47313584)
-- If a type `T` conforms to one of the protocols in [`Initialization with Literals`](https://developer.apple.com/documentation/Swift/initialization-with-literals)—such as [`ExpressibleByIntegerLiteral`](https://developer.apple.com/documentation/Swift/ExpressibleByIntegerLiteral)—and  is a literal expression, then `T(``)` creates a literal of type `T` using the corresponding protocol, rather than calling an initializer of `T` with a value of the protocol’s default literal type. For example, expressions like `UInt64(0xffff_ffff_ffff_ffff)` are now valid, where previously they would overflow the default integer literal type of [`Int`](https://developer.apple.com/documentation/Swift/Int). ([`SE-0213`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/master/proposals/0213-literal-init-via-coercion.md)) (17088188)
+- If a type `T` conforms to one of the protocols in doc://com.apple.documentation/documentation/swift/swift_standard_library/initialization_with_literals—such as [`ExpressibleByIntegerLiteral`](https://developer.apple.com/documentation/Swift/ExpressibleByIntegerLiteral)—and  is a literal expression, then `T(``)` creates a literal of type `T` using the corresponding protocol, rather than calling an initializer of `T` with a value of the protocol’s default literal type. For example, expressions like `UInt64(0xffff_ffff_ffff_ffff)` are now valid, where previously they would overflow the default integer literal type of [`Int`](https://developer.apple.com/documentation/Swift/Int). ([`SE-0213`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/master/proposals/0213-literal-init-via-coercion.md)) (17088188)
 - String interpolation has improved performance, clarity, and efficiency. ([`SE-0228`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/master/proposals/0228-fix-expressiblebystringinterpolation.md)) (43621912) The older `_ExpressibleByStringInterpolation` protocol is removed; if you have code that makes use of this protocol, you need to update it for the new design. You can use `#if` to conditionalize code between Swift 4.2 and Swift 5. For example: ```swift
 #if compiler(<5)
 extension MyType: _ExpressibleByStringInterpolation { /*...*/ }
@@ -167,7 +167,7 @@ extension Collection {
 
 ###### Known Issues
 
-- The `count(where:)` method on the [`Sequence`](https://developer.apple.com/documentation/Swift/Sequence) protocol available in beta versions of Xcode 10.2 is now removed. (47549309)  Use [`reduce(_:_:)`](https://developer.apple.com/documentation/Swift/AnyCollection/reduce(_:_:)) to count occurrences matching a predicate efficiently: ```swift
+- The `count(where:)` method on the [`Sequence`](https://developer.apple.com/documentation/Swift/Sequence) protocol available in beta versions of Xcode 10.2 is now removed. (47549309)  Use doc://com.apple.documentation/documentation/swift/anycollection/2906169-reduce to count occurrences matching a predicate efficiently: ```swift
 let occurrences = sequence.reduce(0) { predicate($1) ? $0 + 1 : $0 }
 ```
 

@@ -6,17 +6,17 @@
 Constants that indicate supported reduction types.
 
 **Availability**:
-- iOS 11.3+
-- iPadOS 11.3+
-- Mac Catalyst 13.0+
-- macOS 10.13.4+
-- tvOS 11.3+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-enum MPSCNNReductionType : Int32, @unchecked Sendable
+enum MPSCNNReductionType
 ```
 
 ## Topics
@@ -27,11 +27,18 @@ enum MPSCNNReductionType : Int32, @unchecked Sendable
 - [MPSCNNReductionType.none](mpscnnreductiontype/none.md)
 - [MPSCNNReductionType.sum](mpscnnreductiontype/sum.md)
 - [MPSCNNReductionType.sumByNonZeroWeights](mpscnnreductiontype/sumbynonzeroweights.md)
+### Initializers
+- [init?(rawValue: Int32)](mpscnnreductiontype/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

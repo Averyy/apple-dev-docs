@@ -8,7 +8,6 @@ Presents a system interface for allowing the user to import an existing file.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 - macOS 11.0+
 
 ## Declaration

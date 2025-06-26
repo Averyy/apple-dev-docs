@@ -16,13 +16,12 @@ class JournalingSuggestionsConfiguration
 
 ## Topics
 
-### Initializers
+### Initializing a configuration
 - [init()](journalingsuggestionsconfiguration/init.md)
   Creates an empty configuration object.
-### Instance Properties
+### Inspecting the notification schedule
 - [var notificationSchedule: JournalingSuggestionsConfiguration.NotificationSchedule?](journalingsuggestionsconfiguration/notificationschedule-swift.property.md)
   The notification schedule configured by the person using your app.
-### Enumerations
 - [JournalingSuggestionsConfiguration.NotificationSchedule](journalingsuggestionsconfiguration/notificationschedule-swift.enum.md)
   The schedule configuration of Journaling Suggestions notifications.
 

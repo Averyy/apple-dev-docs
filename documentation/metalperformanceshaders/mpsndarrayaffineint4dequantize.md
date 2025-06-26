@@ -1,7 +1,7 @@
 # MPSNDArrayAffineInt4Dequantize
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 18.0+
@@ -14,18 +14,28 @@
 ## Declaration
 
 ```swift
-class MPSNDArrayAffineInt4Dequantize : MPSNDArrayMultiaryKernel
+class MPSNDArrayAffineInt4Dequantize
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, quantizationDescriptor: MPSNDArrayAffineQuantizationDescriptor)](mpsndarrayaffineint4dequantize/4446149-init.md)
+- [init(device: any MTLDevice, quantizationDescriptor: MPSNDArrayAffineQuantizationDescriptor)](mpsndarrayaffineint4dequantize/init(device:quantizationdescriptor:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNDArrayMultiaryKernel](mpsndarraymultiarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

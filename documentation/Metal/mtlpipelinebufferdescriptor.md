@@ -49,7 +49,7 @@ To declare that a buffer is immutable, set the [`mutability`](mtlpipelinebufferd
 ## See Also
 
 - [class MTL4ComputePipelineDescriptor](mtl4computepipelinedescriptor.md)
-  Descriptor defining how a compute pipeline state would be created.
+  Describes a compute pipeline state.
 - [class MTLComputePipelineDescriptor](mtlcomputepipelinedescriptor.md)
   An instance describing the desired GPU state for a kernel call in a compute pass.
 - [protocol MTLComputePipelineState](mtlcomputepipelinestate.md)

@@ -71,12 +71,12 @@ The iOS 13 SDK provides support for developing apps for iPhone devices running i
 
 ###### New Features
 
-- The [`init(imageURL:options:)`](https://developer.apple.com/documentation/coreimage/cifilter/1438096-init) and [`init(imageData:options:)`](https://developer.apple.com/documentation/coreimage/cifilter/1437879-init) initializers no longer support RAW version 5 and earlier. Version 6 and later remain supported. (50911303)
+- The [`init(imageURL:options:)`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class/init(imageURL:options:)) and [`init(imageData:options:)`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class/init(imageData:options:)) initializers no longer support RAW version 5 and earlier. Version 6 and later remain supported. (50911303)
 - Added new APIs for instantiating and modifying the built-in Core Image filters.
 - The [`CICoreMLModel`](https://developer.apple.com/documentation/CoreImage/CICoreMLModel) filter is enhanced to support models with an input or output of type [`MLFeatureType.multiArray`](https://developer.apple.com/documentation/CoreML/MLFeatureType/multiArray).
 - Metal [`CIKernel`](https://developer.apple.com/documentation/CoreImage/CIKernel) instances support arguments with arbitrarily structured data.
 - Metal [`CIKernel`](https://developer.apple.com/documentation/CoreImage/CIKernel) instances support returning a group of 2 × 2 pixels.
-- The integer values of [`CIFormat`](https://developer.apple.com/documentation/CoreImage/CIFormat) symbols, such as [`ARGB8`](https://developer.apple.com/documentation/coreimage/ciformat/1437883-argb8), have changed to a new set of values that are consistent across platforms. The former values remain supported for backward compatibility; however, you should avoid dependancies on specific numerical values.
+- The integer values of [`CIFormat`](https://developer.apple.com/documentation/CoreImage/CIFormat) symbols, such as [`ARGB8`](https://developer.apple.com/documentation/CoreImage/CIFormat/ARGB8), have changed to a new set of values that are consistent across platforms. The former values remain supported for backward compatibility; however, you should avoid dependancies on specific numerical values.
 
 ##### Find My
 
@@ -174,7 +174,7 @@ The iOS 13 SDK provides support for developing apps for iPhone devices running i
 - Shortcuts automations are temporarily unavailable. (53182885)
 - The [`supportsOnDeviceRecognition`](https://developer.apple.com/documentation/Speech/SFSpeechRecognizer/supportsOnDeviceRecognition) property always returns `false` the first time it’s accessed. After a few seconds, accessing it again returns the correct value. (47822242)
 - Shortcuts opened on iOS 13 are automatically upgraded and can no longer be opened on iOS 12. If a device with iOS 12 and a device with iOS 13 share an iCloud account, shortcuts might become unusable on the device running iOS 12. (50873839)  Disable iCloud Sync between devices running iOS 13 and devices running iOS 12.
-- Currently, the only supported response for [`INSearchForMediaIntent`](https://developer.apple.com/documentation/Intents/INSearchForMediaIntent) is [`INSearchForMediaIntentResponseCode.continueInApp`](https://developer.apple.com/documentation/Intents/INSearchForMediaIntentResponseCode/continueInApp). (51010311)
+- Currently, the only supported response for doc://com.apple.documentation/documentation/SiriKit/INSearchForMediaIntent is doc://com.apple.documentation/documentation/SiriKit/INSearchForMediaIntentResponseCode/continueInApp. (51010311)
 
 ##### Swiftui
 

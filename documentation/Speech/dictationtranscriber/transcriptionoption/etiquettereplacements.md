@@ -18,10 +18,6 @@ Replaces certain words and phrases with a redacted form.
 case etiquetteReplacements
 ```
 
-#### Discussion
-
-If included, the spoken phrase “fuck” would be transcribed as “****”.
-
 ## See Also
 
 - [DictationTranscriber.TranscriptionOption.emoji](dictationtranscriber/transcriptionoption/emoji.md)

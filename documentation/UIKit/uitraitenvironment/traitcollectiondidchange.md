@@ -22,9 +22,9 @@ func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?)
 
 ## Mentions
 
+- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
 - [Checking the availability of 3D Touch](checking-the-availability-of-3d-touch.md)
 - [Responding to changing display modes on Apple TV](responding-to-changing-display-modes-on-apple-tv.md)
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
 
 #### Discussion
 

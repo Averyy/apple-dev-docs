@@ -17,20 +17,21 @@ The base class of all SpriteKit nodes.
 ## Declaration
 
 ```swift
+@MainActor
 class SKNode
 ```
 
 ## Mentions
 
 - [Customizing the Behavior of a Node](customizing-the-behavior-of-a-node.md)
-- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
-- [Using Base Nodes to Lay Out SpriteKit Content](using-base-nodes-to-lay-out-spritekit-content.md)
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
-- [Accessing and Modifying the Node Tree](accessing-and-modifying-the-node-tree.md)
-- [Connecting Bodies with Joints](connecting-bodies-with-joints.md)
 - [Resizing a Sprite in Nine Parts](resizing-a-sprite-in-nine-parts.md)
-- [Searching the Node Tree](searching-the-node-tree.md)
+- [Using Base Nodes to Lay Out SpriteKit Content](using-base-nodes-to-lay-out-spritekit-content.md)
 - [Detecting Changes at Each Step of an Animation](detecting-changes-at-each-step-of-an-animation.md)
+- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
+- [Connecting Bodies with Joints](connecting-bodies-with-joints.md)
+- [Searching the Node Tree](searching-the-node-tree.md)
+- [Accessing and Modifying the Node Tree](accessing-and-modifying-the-node-tree.md)
+- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
 
 #### Overview
 

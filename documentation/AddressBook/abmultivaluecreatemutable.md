@@ -14,7 +14,7 @@ Returns a newly created mutable multi-value list object.
 ## Declaration
 
 ```swift
-func ABMultiValueCreateMutable() -> Unmanaged<ABMutableMultiValueRef>!
+func ABMultiValueCreateMutable(_ type: ABPropertyType) -> Unmanaged<ABMutableMultiValue>!
 ```
 
 #### Return Value

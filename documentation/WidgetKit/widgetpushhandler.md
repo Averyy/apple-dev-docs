@@ -25,7 +25,7 @@ protocol WidgetPushHandler
 
 #### Overview
 
-Register a type conforming to this protocol to receive push information using the `WidgetConfiguration/pushHandler(_:)` modifier on your widgets’ configurations.
+Register a type conforming to this protocol to receive push information using the [`pushHandler(_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/pushHandler(_:)) modifier on your widgets’ configurations.
 
 ## Topics
 

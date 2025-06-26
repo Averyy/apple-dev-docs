@@ -26,8 +26,6 @@ static func status(forModules modules: [any SpeechModule]) async -> AssetInvento
   Returns an `AssetsInstallationRequest` object, which is used to initiate the asset download and monitor the progress.
 - [static func deallocate(locale: Locale) async -> Bool](assetinventory/deallocate(locale:).md)
   Removes the locale from `allocatedLocales`. Returns false if the locale is not in the set.
-- [static func uninstallAssets(exceptFor: [any SpeechModule]) async](assetinventory/uninstallassets(exceptfor:).md)
-  Removes the assets, except for the ones required by the specified modules. It will also deallocate unused locales. Does not remove assets still in use by other apps.
 
 
 ---

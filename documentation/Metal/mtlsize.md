@@ -22,8 +22,8 @@ struct MTLSize
 ## Mentions
 
 - [Converting Between Pixel Regions and Sparse Tile Regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
-- [Calculating Threadgroup and Grid Sizes](calculating-threadgroup-and-grid-sizes.md)
 - [Creating a Rasterization Rate Map](creating-a-rasterization-rate-map.md)
+- [Calculating Threadgroup and Grid Sizes](calculating-threadgroup-and-grid-sizes.md)
 
 #### Overview
 

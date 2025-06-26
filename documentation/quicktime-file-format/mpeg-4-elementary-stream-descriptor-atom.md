@@ -7,8 +7,8 @@ A required extension to the video sample description for MPEG-4 video.
 
 ## Mentions
 
-- [Video sample data](video_sample_data.md)
 - [QuickTime File Format change log](revision_history.md)
+- [Video sample data](video_sample_data.md)
 
 #### Overview
 

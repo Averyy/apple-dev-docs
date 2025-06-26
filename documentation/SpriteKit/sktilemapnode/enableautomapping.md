@@ -17,7 +17,6 @@ When creating a tile map node programmatically, specifies whether the tile map u
 ## Declaration
 
 ```swift
-@MainActor
 var enableAutomapping: Bool { get set }
 ```
 

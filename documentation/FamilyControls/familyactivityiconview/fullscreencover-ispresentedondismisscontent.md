@@ -8,7 +8,6 @@ Presents a modal view that covers as much of the screen as possible when binding
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 - tvOS 14.0+
 - watchOS 7.0+
 

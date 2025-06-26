@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,16 +20,19 @@ struct MPSDeviceCapsValues
 ## Topics
 
 ### Initializers
-- [init(UInt32)](mpsdevicecapsvalues/3548827-init.md)
-- [init(rawValue: UInt32)](mpsdevicecapsvalues/3548828-init.md)
+- [init(UInt32)](mpsdevicecapsvalues/init(_:).md)
+- [init(rawValue: UInt32)](mpsdevicecapsvalues/init(rawvalue:).md)
 ### Instance Properties
-- [var rawValue: UInt32](mpsdevicecapsvalues/3548829-rawvalue.md)
+- [var rawValue: UInt32](mpsdevicecapsvalues/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

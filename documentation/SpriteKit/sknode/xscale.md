@@ -17,14 +17,13 @@ A scaling factor that multiplies the width of a node and its children.
 ## Declaration
 
 ```swift
-@MainActor
 var xScale: CGFloat { get set }
 ```
 
 ## Mentions
 
-- [Getting Started with a Camera](getting-started-with-a-camera.md)
 - [Resizing a Sprite in Nine Parts](resizing-a-sprite-in-nine-parts.md)
+- [Getting Started with a Camera](getting-started-with-a-camera.md)
 - [About Node Property Propagation](about-node-property-propagation.md)
 - [Getting Started with Nodes](getting-started-with-nodes.md)
 

@@ -1,7 +1,7 @@
 # MPSDataType.floatBit
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 A common bit for all floating point data types.
 
@@ -16,8 +16,13 @@ A common bit for all floating point data types.
 ## Declaration
 
 ```swift
-case floatBit = 268435456
+case floatBit
 ```
+
+## See Also
+
+- [MPSDataType.float32](mpsdatatype/float32.md)
+  A 32-bit floating point type (single precision).
 
 
 ---

@@ -10,9 +10,9 @@ The raw type that can be used to represent all values of the conforming type.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 15.0+
 - visionOS 1.0+
 - Unknown ?+ - Deprecated
-- tvOS 15.0+
 
 ## Declaration
 

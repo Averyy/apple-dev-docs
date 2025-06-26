@@ -1,7 +1,7 @@
 # MPSCNNConvolutionNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a convolution kernel.
 
@@ -16,26 +16,36 @@ A representation of a convolution kernel.
 ## Declaration
 
 ```swift
-class MPSCNNConvolutionNode : MPSNNFilterNode
+class MPSCNNConvolutionNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource)](mpscnnconvolutionnode/2866470-init.md)
+- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource)](mpscnnconvolutionnode/init(source:weights:).md)
 - [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
 ### Instance Properties
-- [var accumulatorPrecision: MPSNNConvolutionAccumulatorPrecisionOption](mpscnnconvolutionnode/2980757-accumulatorprecision.md)
-- [var convolutionGradientState: MPSCNNConvolutionGradientStateNode?](mpscnnconvolutionnode/2942634-convolutiongradientstate.md)
-- [var trainingStyle: MPSNNTrainingStyle](mpscnnconvolutionnode/3197822-trainingstyle.md)
+- [var accumulatorPrecision: MPSNNConvolutionAccumulatorPrecisionOption](mpscnnconvolutionnode/accumulatorprecision.md)
+- [var convolutionGradientState: MPSCNNConvolutionGradientStateNode?](mpscnnconvolutionnode/convolutiongradientstate.md)
+- [var trainingStyle: MPSNNTrainingStyle](mpscnnconvolutionnode/trainingstyle.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Inherited By
+- [MPSCNNBinaryConvolutionNode](mpscnnbinaryconvolutionnode.md)
+- [MPSCNNConvolutionTransposeNode](mpscnnconvolutiontransposenode.md)
+- [MPSCNNFullyConnectedNode](mpscnnfullyconnectednode.md)
 ### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
 - [MPSNNTrainableNode](mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

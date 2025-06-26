@@ -18,21 +18,12 @@ A class that defines configuration options for use in NetworkExtension evaluatio
 @preconcurrency class NEHotspotEvaluationProviderConfiguration
 ```
 
-## Topics
-
-### Initializers
-- [init(appex: any NEHotspotEvaluationProvider)](nehotspotevaluationproviderconfiguration/init(appex:).md)
-  Creates an extension configuration for a hotspot evaluation provider.
-
 ## Relationships
 
 ### Inherits From
 - [NEAppExtensionConfiguration](neappextensionconfiguration.md)
 ### Conforms To
 - [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
-- [NEAppExtensionConfigurationProtocol](neappextensionconfigurationprotocol.md)
-- [NEAppExtensionXPCProtocol](neappextensionxpcprotocol.md)
-- [NEHotspotEvaluationProviderXPCProtocol](nehotspotevaluationproviderxpcprotocol.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

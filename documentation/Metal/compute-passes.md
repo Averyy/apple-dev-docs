@@ -80,7 +80,7 @@ For device support and other tile memory limitations, see [`Metal feature set ta
   An interface for dispatching commands to encode in a compute pass.
 ### Configuring a Compute Pipeline State
 - [class MTL4ComputePipelineDescriptor](mtl4computepipelinedescriptor.md)
-  Descriptor defining how a compute pipeline state would be created.
+  Describes a compute pipeline state.
 - [class MTLComputePipelineDescriptor](mtlcomputepipelinedescriptor.md)
   An instance describing the desired GPU state for a kernel call in a compute pass.
 - [protocol MTLComputePipelineState](mtlcomputepipelinestate.md)

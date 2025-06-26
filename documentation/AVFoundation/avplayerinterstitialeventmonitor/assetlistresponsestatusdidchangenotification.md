@@ -27,11 +27,11 @@ Notifications of this type provide a [`userInfo`](https://developer.apple.com/do
 ## Topics
 
 ### User information keys
-- [let AVPlayerInterstitialEventMonitorAssetListResponseStatusDidChangeEventKey: String](avplayerinterstitialeventmonitorassetlistresponsestatusdidchangeeventkey.md)
+- [class let assetListResponeStatusDidChangeEventKey: String](avplayerinterstitialeventmonitor/assetlistresponestatusdidchangeeventkey.md)
   A key to retrieve the interstitial event that has an asset list response status change.
-- [let AVPlayerInterstitialEventMonitorAssetListResponseStatusDidChangeStatusKey: String](avplayerinterstitialeventmonitorassetlistresponsestatusdidchangestatuskey.md)
+- [class let assetListResponeStatusDidChangeStatusKey: String](avplayerinterstitialeventmonitor/assetlistresponestatusdidchangestatuskey.md)
   A key to retrieve the asset list response status.
-- [let AVPlayerInterstitialEventMonitorAssetListResponseStatusDidChangeErrorKey: String](avplayerinterstitialeventmonitorassetlistresponsestatusdidchangeerrorkey.md)
+- [class let assetListResponeStatusDidChangeErrorKey: String](avplayerinterstitialeventmonitor/assetlistresponestatusdidchangeerrorkey.md)
   A key to retrieve the error related to a change in an interstitial event’s asset list response.
 
 ## See Also

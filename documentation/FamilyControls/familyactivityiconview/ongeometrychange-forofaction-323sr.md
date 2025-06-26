@@ -8,7 +8,6 @@ Adds an action to be performed when a value, created from a geometry proxy, chan
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - watchOS 10.0+

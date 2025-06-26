@@ -25,8 +25,6 @@ var assignableDocumentPageID: AssignableDocument.Page.ID { get }
   The stable identity of this page.
 - [AssignedWorkDocument.Page.Document](assignedworkdocument/page/document.md)
   The document type this element is for.
-- [AssignedWorkDocument.Page.Document](assignedworkdocument/page/document.md)
-  The document type this element is for.
 
 
 ---

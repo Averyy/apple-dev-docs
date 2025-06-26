@@ -18,8 +18,8 @@ var clientID: String { get }
 
 - [Processing the JSON Web Encryption (JWE) login response](processing-the-json-web-encryption-jwe-login-response.md)
 - [Creating a refresh request](creating-a-refresh-request.md)
-- [Supporting key requests and key exchange requests](supporting-key-requests-and-key-exchange-requests.md)
 - [Creating and validating a login request](creating-and-validating-a-login-request.md)
+- [Supporting key requests and key exchange requests](supporting-key-requests-and-key-exchange-requests.md)
 
 ## See Also
 

@@ -50,7 +50,6 @@ Safari 26.0 beta is available for iOS 26 beta, iPadOS 26 beta, visionOS 26 beta,
 - Added support for CSS Anchor Positioning.  (145681750)
 - Added support for the self-alignment properties `align-self` and `justify-self` in absolute positioning.  (145689547)
 - Added support for CSS `progress()` function.  (145717727)
-- Added support for `crossorigin()` and `referrerpolicy()` modifiers on CSS image loads.  (149166339)
 
 ###### Resolved Issues
 
@@ -60,7 +59,6 @@ Safari 26.0 beta is available for iOS 26 beta, iPadOS 26 beta, visionOS 26 beta,
 - Fixed an issue wrapping an SVG at the end of a line when using `text-wrap: balance`.  (141532036)
 - Fixed `@font-face font-family` descriptor to not allow a list of values.  (142009630)
 - Fixed the computed value of a float with absolute positioning to be `none` when there is no box.  (144045558)
-- Fixed: Updated `contrast-color()` to remove the `max` parameter.  (144611470)
 - Fixed buttons to not have `align-items: flex-start` by default.  (146615626)
 - Fixed `@scope` to create a style nested context.  (148101373)
 - Fixed changing `content-visibility` from `visible` to `hidden` to repaint correctly.  (148273903)

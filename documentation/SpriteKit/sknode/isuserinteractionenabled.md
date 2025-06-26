@@ -17,7 +17,6 @@ A Boolean value that indicates whether the node receives touch events.
 ## Declaration
 
 ```swift
-@MainActor
 var isUserInteractionEnabled: Bool { get set }
 ```
 

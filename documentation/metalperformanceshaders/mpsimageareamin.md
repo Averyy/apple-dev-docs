@@ -1,9 +1,9 @@
 # MPSImageAreaMin
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
-A filter that finds the minimum pixel value in a rectangular region centered around each pixel in the source image. 
+A filter that finds the minimum pixel value in a rectangular region centered around each pixel in the source image.
 
 **Availability**:
 - iOS 9.0+
@@ -16,26 +16,36 @@ A filter that finds the minimum pixel value in a rectangular region centered aro
 ## Declaration
 
 ```swift
-class MPSImageAreaMin : MPSImageAreaMax
+class MPSImageAreaMin
 ```
 
 #### Overview
 
 An [`MPSImageAreaMin`](mpsimageareamin.md) filter has the same methods and properties as the [`MPSImageAreaMax`](mpsimageareamax.md) class.
 
-If there are multiple channels in the source image, each channel is processed independently. The [`edgeMode`](mpsunaryimagekernel/1618812-edgemode.md) property value is assumed to always be [`MPSImageEdgeMode.clamp`](mpsimageedgemode/clamp.md) for this filter.
+If there are multiple channels in the source image, each channel is processed independently. The [`edgeMode`](mpsunaryimagekernel/edgemode.md) property value is assumed to always be [`MPSImageEdgeMode.clamp`](mpsimageedgemode/clamp.md) for this filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSImageAreaMax](mpsimageareamax.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
 - [class MPSImageAreaMax](mpsimageareamax.md)
-  A filter that finds the maximum pixel value in a rectangular region centered around each pixel in the source image. 
+  A filter that finds the maximum pixel value in a rectangular region centered around each pixel in the source image.
 - [class MPSImageDilate](mpsimagedilate.md)
-  A filter that finds the maximum pixel value in a rectangular region by applying a dilation function. 
+  A filter that finds the maximum pixel value in a rectangular region by applying a dilation function.
 - [class MPSImageErode](mpsimageerode.md)
   A filter that finds the minimum pixel value in a rectangular region by applying an erosion function.
 

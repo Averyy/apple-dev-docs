@@ -22,8 +22,8 @@ var errSecItemNotFound: OSStatus { get }
 
 ## Mentions
 
-- [Sharing access to keychain items among a collection of apps](sharing-access-to-keychain-items-among-a-collection-of-apps.md)
 - [Searching for keychain items](searching-for-keychain-items.md)
+- [Sharing access to keychain items among a collection of apps](sharing-access-to-keychain-items-among-a-collection-of-apps.md)
 
 
 ---

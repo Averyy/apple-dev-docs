@@ -22,8 +22,8 @@ class UITabBarController
 ## Mentions
 
 - [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
-- [Managing content in your app’s windows](managing-content-in-your-app-s-windows.md)
 - [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
+- [Managing content in your app’s windows](managing-content-in-your-app-s-windows.md)
 
 #### Overview
 

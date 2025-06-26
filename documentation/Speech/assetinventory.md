@@ -28,11 +28,9 @@ Once you have created the modules you wish to use, installation is a three-step 
 - Another app already downloaded the assets.
 - A different configuration of modules you previously used happen to use the same assets.
 
-All of these actions persist across launches of your app. Assets are shared between apps, so duplicates aren’t downloaded multiple times, and don’t take up storage space.
+All of these actions persist across launches of your app. Assets are shared between apps, so duplicates aren’t downloaded multiple times, and don’t take up storage space. However, the system may unsubscribe your app from assets that haven’t been used in a while.
 
 Note that your app is never told about what assets are required, it only deals with the module objects and how they are configured.
-
-If you revise your app to use fewer `SpeechAnalyzer` features, your app should unsubscribe from any assets you no longer use. Otherwise, the system will have no way of knowing that you don’t intend to use them again.
 
 ## Topics
 
@@ -40,7 +38,7 @@ If you revise your app to use fewer `SpeechAnalyzer` features, your app should u
 - [static var allocatedLocales: [Locale]](assetinventory/allocatedlocales.md)
   Before you can subscribe to assets supporting a module, you must allocate the locale used by that module.
 - [static var maximumAllocatedLocales: Int](assetinventory/maximumallocatedlocales.md)
-  The largest allowed count for `allocatedLocales`.
+  The number of locale allocations permitted to an application.
 ### Type Methods
 - [static func allocate(locale: Locale) async throws -> Bool](assetinventory/allocate(locale:).md)
   Adds the locale to `allocatedLocales`. Throws if the number of locales would exceed `maximumAllocatedLocales`. Returns false if the locale is already in the set.
@@ -50,8 +48,6 @@ If you revise your app to use fewer `SpeechAnalyzer` features, your app should u
   Removes the locale from `allocatedLocales`. Returns false if the locale is not in the set.
 - [static func status(forModules: [any SpeechModule]) async -> AssetInventory.Status](assetinventory/status(formodules:).md)
   Returns the status for the list of modules. If the status differs between modules, it returns the lowest status.
-- [static func uninstallAssets(exceptFor: [any SpeechModule]) async](assetinventory/uninstallassets(exceptfor:).md)
-  Removes the assets, except for the ones required by the specified modules. It will also deallocate unused locales. Does not remove assets still in use by other apps.
 ### Enumerations
 - [AssetInventory.Status](assetinventory/status.md)
 

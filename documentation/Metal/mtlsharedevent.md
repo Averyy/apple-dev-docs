@@ -22,9 +22,9 @@ protocol MTLSharedEvent : MTLEvent
 ## Mentions
 
 - [About Synchronization Events](about-synchronization-events.md)
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 - [Synchronizing Events Across Multiple Devices or Processes](synchronizing-events-across-multiple-devices-or-processes.md)
 - [Synchronizing resource accesses between multiple passes with a fence](synchronizing-resource-accesses-between-multiple-passes-with-a-fence.md)
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 
 #### Overview
 

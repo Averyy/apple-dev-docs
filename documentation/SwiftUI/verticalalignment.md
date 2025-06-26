@@ -23,8 +23,8 @@ struct VerticalAlignment
 
 ## Mentions
 
-- [Building layouts with stack views](building-layouts-with-stack-views.md)
 - [Aligning views across stacks](aligning-views-across-stacks.md)
+- [Building layouts with stack views](building-layouts-with-stack-views.md)
 - [Aligning views within a stack](aligning-views-within-a-stack.md)
 
 #### Overview

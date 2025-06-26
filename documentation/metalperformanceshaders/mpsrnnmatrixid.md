@@ -6,17 +6,17 @@
 Options that define which matrix is copied in or out of a trainable RNN layer.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.0+
-- macOS 10.14+
-- tvOS 12.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-enum MPSRNNMatrixId : UInt, @unchecked Sendable
+enum MPSRNNMatrixId
 ```
 
 ## Topics
@@ -51,11 +51,18 @@ enum MPSRNNMatrixId : UInt, @unchecked Sendable
 - [MPSRNNMatrixId.lstmOutputGateRecurrentWeights](mpsrnnmatrixid/lstmoutputgaterecurrentweights.md)
 - [MPSRNNMatrixId.singleGateBiasTerms](mpsrnnmatrixid/singlegatebiasterms.md)
 - [MPSRNNMatrixId.singleGateRecurrentWeights](mpsrnnmatrixid/singlegaterecurrentweights.md)
+### Initializers
+- [init?(rawValue: UInt)](mpsrnnmatrixid/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

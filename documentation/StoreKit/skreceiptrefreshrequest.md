@@ -22,8 +22,8 @@ class SKReceiptRefreshRequest
 
 ## Mentions
 
-- [Restoring purchased products](restoring-purchased-products.md)
 - [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
+- [Restoring purchased products](restoring-purchased-products.md)
 - [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
 
 #### Overview

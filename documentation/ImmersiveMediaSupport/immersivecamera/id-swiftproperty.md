@@ -19,9 +19,9 @@ var id: String
 
 - [var calibration: ImmersiveCameraCalibration](immersivecamera/calibration.md)
   Calibration details for this camera.
-- [var pose: ImmersiveCamera.CameraPose](immersivecamera/pose.md)
-  The pose of this immersive camera..
-- [var presentationFrameRate: Float](immersivecamera/presentationframerate.md)
+- [var pose: Pose3DFloat](immersivecamera/pose.md)
+  The pose of this immersive camera.
+- [var presentationFrameRate: Int](immersivecamera/presentationframerate.md)
   Presentation frame rate suited for this immersive camera.
 - [var type: ImmersiveCamera.CameraType](immersivecamera/type.md)
   Type of camera. Currently only the “stereoCamera” type is supported.

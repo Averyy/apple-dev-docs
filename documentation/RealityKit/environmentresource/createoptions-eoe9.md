@@ -26,7 +26,7 @@ The options provide control for balancing memory usage, quality, and processing 
 ## Topics
 
 ### Initializers
-- [init(samplingQuality:specularCubeDimension:compression:)](environmentresource/createoptions-7diu2/init(samplingquality:specularcubedimension:compression:).md)
+- [init(samplingQuality:specularCubeDimension:compression:)](environmentresource/createoptions-eoe9/init(samplingquality:specularcubedimension:compression:).md)
   Creates an environment creation options structure.
 ### Instance Properties
 - [var compression: EnvironmentResource.Compression](environmentresource/createoptions-eoe9/compression.md)

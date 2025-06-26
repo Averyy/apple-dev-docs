@@ -44,7 +44,7 @@ Search your code for any instance of `malloc` that isn’t followed by `sizeof`.
 
 If you have code that directly accesses an object’s `isa` field, that code fails when executing in the 64-bit runtime, because the `isa` field no longer holds a pointer. Instead, it includes some pointer data and uses the remaining bits to hold other runtime information.
 
-To read an object’s `isa` field, use the class property or call the [`object_getClass(_:)`](https://developer.apple.com/documentation/ObjectiveC/object_getClass(_:)) function instead. To write to an object’s `isa` field, call the [`object_setClass(_:_:)`](https://developer.apple.com/documentation/ObjectiveC/object_setClass(_:_:)) function.
+To read an object’s `isa` field, use the class property or call the doc://com.apple.documentation/documentation/objectivec/1418629-object_getclass function instead. To write to an object’s `isa` field, call the doc://com.apple.documentation/documentation/objectivec/1418905-object_setclass function.
 
 > ❗ **Important**:  The Simulator app doesn’t detect the errors described here. Always test your app on actual hardware.
 

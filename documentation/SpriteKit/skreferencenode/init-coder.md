@@ -17,6 +17,7 @@ A method that initializes a reference node from an archive.
 ## Declaration
 
 ```swift
+@MainActor
 init?(coder aDecoder: NSCoder)
 ```
 

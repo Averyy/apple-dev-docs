@@ -15,7 +15,7 @@ Returns the descriptor for all the keys that must be fetched on the contact befo
 ## Declaration
 
 ```swift
-@MainActor
+nonisolated
 class func descriptorForRequiredKeys() -> any CNKeyDescriptor
 ```
 

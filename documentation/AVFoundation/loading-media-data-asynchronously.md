@@ -12,7 +12,7 @@ AVFoundation uses the [`AVAsset`](avasset.md) class to model timed audiovisual m
 
 ##### Load Properties Asynchronously
 
-The framework builds its asynchronous property-loading capabilities around two key types: [`AVAsyncProperty`](avasyncproperty.md) and [`AVAsynchronousKeyValueLoading`](avasynchronouskeyvalueloading.md). The framework uses the [`AVAsyncProperty`](avasyncproperty.md) class to define type-safe identifiers for properties with values that require asynchronous loading, and uses the [`AVAsynchronousKeyValueLoading`](avasynchronouskeyvalueloading.md) protocol to define the interface for objects to load properties asynchronously. [`AVAsset`](avasset.md), [`AVAssetTrack`](avassettrack.md), and [`AVMetadataItem`](avmetadataitem.md) adopt this protocol, which provides them an asynchronous `AVAsynchronousKeyValueLoading/load(_:)` method with the following signature:
+The framework builds its asynchronous property-loading capabilities around two key types: [`AVAsyncProperty`](avasyncproperty.md) and [`AVAsynchronousKeyValueLoading`](avasynchronouskeyvalueloading.md). The framework uses the [`AVAsyncProperty`](avasyncproperty.md) class to define type-safe identifiers for properties with values that require asynchronous loading, and uses the [`AVAsynchronousKeyValueLoading`](avasynchronouskeyvalueloading.md) protocol to define the interface for objects to load properties asynchronously. [`AVAsset`](avasset.md), [`AVAssetTrack`](avassettrack.md), and [`AVMetadataItem`](avmetadataitem.md) adopt this protocol, which provides them an asynchronous [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method with the following signature:
 
 ```swift
 public func load<T>(_ property: AVAsyncProperty<Self, T>) async throws -> T
@@ -27,7 +27,7 @@ let duration = try await asset.load(.duration)
 let metadata = try await asset.load(.metadata)
 ```
 
-If you know in advance that you require loading several asset properties, you can use a variation of the `AVAsynchronousKeyValueLoading/load(_:)` method that takes multiple identifiers and returns its result in a tuple. Like loading a single property value, loading several properties at the same time is also a type-safe operation.
+If you know in advance that you require loading several asset properties, you can use a variation of the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method that takes multiple identifiers and returns its result in a tuple. Like loading a single property value, loading several properties at the same time is also a type-safe operation.
 
 ```swift
 // A CMTime value and an array of AVMetadataItem.

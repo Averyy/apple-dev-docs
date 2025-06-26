@@ -13,7 +13,7 @@ The achievement’s artwork that you display when the player completes the achie
 ## Declaration
 
 ```swift
-var image: NSImage? { get }
+var image: UIImage? { get }
 ```
 
 #### Discussion

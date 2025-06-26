@@ -23,9 +23,9 @@ A property wrapper that reads a value from a view’s environment.
 
 ## Mentions
 
+- [Managing search interface activation](managing-search-interface-activation.md)
 - [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
 - [Migrating to the SwiftUI life cycle](migrating-to-the-swiftui-life-cycle.md)
-- [Managing search interface activation](managing-search-interface-activation.md)
 
 #### Overview
 

@@ -40,6 +40,8 @@ The system provides an instance of this structure to your app when a person choo
 
 ## See Also
 
+- [JournalingSuggestion.EventPoster](journalingsuggestion/eventposter.md)
+  A suggestion for a poster image of an event.
 - [JournalingSuggestion.GenericMedia](journalingsuggestion/genericmedia.md)
   A suggestion describing now playable media that a person listened to.
 - [JournalingSuggestion.LivePhoto](journalingsuggestion/livephoto.md)

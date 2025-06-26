@@ -8,7 +8,7 @@ A component that performs GPU instancing on the ModelComponent on the same Entit
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
 - visionOS 26.0+ (Beta)
@@ -33,7 +33,7 @@ let instanceCount = 10
 let entity = ModelEntity(named: "robot")
 var instancesComponent = MeshInstancesComponent()
 let instanceData = try LowLevelInstanceData.init(instanceCount: instanceCount)
-instancesComponent[partIndex: 0] = instanceData
+instancesComponent[partIndex: 0] = .init(data: instanceData)
 entity.components[MeshInstancesComponent.self] = instancesComponent
 
 instances.withMutableTransforms { transforms in
@@ -54,10 +54,13 @@ entity.position = .init(x: 0, y: 1.5, z: 0)
 
 ## Topics
 
+### Structures
+- [MeshInstancesComponent.Part](meshinstancescomponent/part.md)
 ### Initializers
 - [init()](meshinstancescomponent/init.md)
+- [init(mesh: MeshResource, modelID: String?, instances: LowLevelInstanceData, bounds: BoundingBox?) throws](meshinstancescomponent/init(mesh:modelid:instances:bounds:).md)
 ### Subscripts
-- [subscript(partIndex _: Int) -> LowLevelInstanceData?](meshinstancescomponent/subscript(partindex:).md)
+- [subscript(partIndex _: Int) -> MeshInstancesComponent.Part?](meshinstancescomponent/subscript(partindex:).md)
 
 ## Relationships
 

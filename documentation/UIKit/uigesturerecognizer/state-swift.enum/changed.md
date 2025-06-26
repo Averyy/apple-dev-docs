@@ -22,9 +22,9 @@ case changed
 
 - [About the Gesture Recognizer State Machine](about-the-gesture-recognizer-state-machine.md)
 - [Handling long-press gestures](handling-long-press-gestures.md)
-- [Handling rotation gestures](handling-rotation-gestures.md)
 - [Handling pinch gestures](handling-pinch-gestures.md)
 - [Handling pan gestures](handling-pan-gestures.md)
+- [Handling rotation gestures](handling-rotation-gestures.md)
 
 #### Discussion
 

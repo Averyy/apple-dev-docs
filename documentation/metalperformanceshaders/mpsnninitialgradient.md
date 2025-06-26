@@ -1,7 +1,7 @@
 # MPSNNInitialGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,18 +14,28 @@
 ## Declaration
 
 ```swift
-class MPSNNInitialGradient : MPSCNNKernel
+class MPSNNInitialGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpsnninitialgradient/3131809-init.md)
+- [init(device: any MTLDevice)](mpsnninitialgradient/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

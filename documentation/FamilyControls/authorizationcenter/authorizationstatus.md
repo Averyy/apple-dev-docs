@@ -8,7 +8,6 @@ A publisher for the authorization status property.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 
 ## Declaration
 

@@ -20,8 +20,8 @@ case accessoryCircular
 ## Mentions
 
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
-- [Adding interactivity to widgets and Live Activities](adding-interactivity-to-widgets-and-live-activities.md)
 - [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Adding interactivity to widgets and Live Activities](adding-interactivity-to-widgets-and-live-activities.md)
 
 #### Discussion
 

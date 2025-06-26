@@ -1,6 +1,6 @@
 # Error Implementations
 
-**Framework**: DeclaredAgeRange
+**Framework**: Declared Age Range
 
 ## Topics
 

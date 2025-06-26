@@ -1,7 +1,7 @@
 # MPSCNNSpatialNormalizationGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient spatial normalization kernel.
 
@@ -16,24 +16,31 @@ A representation of a gradient spatial normalization kernel.
 ## Declaration
 
 ```swift
-class MPSCNNSpatialNormalizationGradientNode : MPSNNGradientFilterNode
+class MPSCNNSpatialNormalizationGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, kernelSize: Int)](mpscnnspatialnormalizationgradientnode/2948009-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, kernelSize: Int)](mpscnnspatialnormalizationgradientnode/init(sourcegradient:sourceimage:gradientstate:kernelsize:).md)
 ### Instance Properties
-- [var alpha: Float](mpscnnspatialnormalizationgradientnode/2948027-alpha.md)
-- [var beta: Float](mpscnnspatialnormalizationgradientnode/2948006-beta.md)
-- [var delta: Float](mpscnnspatialnormalizationgradientnode/2947968-delta.md)
-- [var kernelHeight: Int](mpscnnspatialnormalizationgradientnode/2948020-kernelheight.md)
-- [var kernelWidth: Int](mpscnnspatialnormalizationgradientnode/2948013-kernelwidth.md)
+- [var alpha: Float](mpscnnspatialnormalizationgradientnode/alpha.md)
+- [var beta: Float](mpscnnspatialnormalizationgradientnode/beta.md)
+- [var delta: Float](mpscnnspatialnormalizationgradientnode/delta.md)
+- [var kernelHeight: Int](mpscnnspatialnormalizationgradientnode/kernelheight.md)
+- [var kernelWidth: Int](mpscnnspatialnormalizationgradientnode/kernelwidth.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

@@ -22,9 +22,9 @@ func restoreCompletedTransactions(withApplicationUsername username: String?)
 
 ## Mentions
 
-- [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
 - [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 - [Restoring purchased products](restoring-purchased-products.md)
+- [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
 
 ## Parameters
 

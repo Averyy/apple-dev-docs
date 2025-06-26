@@ -45,7 +45,7 @@ let material = UnlitMaterial(program: program)
 - [UnlitMaterial.Program.Descriptor](unlitmaterial/program-9tv7i/descriptor-swift.struct.md)
   An object that specifies all parameters necessary to initialize `UnlitMaterial` programs
 ### Initializers
-- [init(descriptor:)](unlitmaterial/program-7swyg/init(descriptor:).md)
+- [init(descriptor:)](unlitmaterial/program-9tv7i/init(descriptor:).md)
 ### Instance Properties
 - [let descriptor: UnlitMaterial.Program.Descriptor](unlitmaterial/program-9tv7i/descriptor-swift.property.md)
 

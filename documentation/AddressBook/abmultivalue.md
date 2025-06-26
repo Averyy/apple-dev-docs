@@ -72,7 +72,7 @@ The `ABMultiValue` class is “toll-free bridged” with its procedural C opaque
   A mutable representation of a property that might have multiple values.
 - [protocol ABImageClient](abimageclient.md)
   Methods for responding to a request to load images associated with a contact.
-- [class ABRecord](abrecord.md)
+- [class ABRecord](abrecord-swift.class.md)
   An abstract class that defines the common properties for all Address Book records.
 
 

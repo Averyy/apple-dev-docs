@@ -1,7 +1,7 @@
 # MPSRNNMatrixId.lstmForgetGateRecurrentWeights
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case lstmForgetGateRecurrentWeights = 8
+case lstmForgetGateRecurrentWeights
 ```
 
 

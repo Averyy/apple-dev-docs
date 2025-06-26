@@ -1,7 +1,7 @@
 # MPSCNNInstanceNormalizationDataSource
 
 **Framework**: Metal Performance Shaders  
-**Kind**: intf
+**Kind**: protocol
 
 A protocol that defines methods that an instance normalization uses to initialize scale factors and bias terms.
 
@@ -16,34 +16,34 @@ A protocol that defines methods that an instance normalization uses to initializ
 ## Declaration
 
 ```swift
-protocol MPSCNNInstanceNormalizationDataSource
+protocol MPSCNNInstanceNormalizationDataSource : NSCopying, NSObjectProtocol
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](mpscnninstancenormalizationdatasource/2947957-init.md)
+- [init?(coder: NSCoder)](mpscnninstancenormalizationdatasource/init(coder:).md)
 ### Instance Properties
-- [var numberOfFeatureChannels: Int](mpscnninstancenormalizationdatasource/2947961-numberoffeaturechannels.md)
-### Type Properties
-- [static var supportsSecureCoding: Bool](mpscnninstancenormalizationdatasource/2947952-supportssecurecoding.md)
+- [var numberOfFeatureChannels: Int](mpscnninstancenormalizationdatasource/numberoffeaturechannels.md)
 ### Instance Methods
-- [func beta() -> UnsafeMutablePointer<Float>?](mpscnninstancenormalizationdatasource/2953922-beta.md)
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpscnninstancenormalizationdatasource/3013780-copy.md)
-- [func encode(with: NSCoder)](mpscnninstancenormalizationdatasource/2947953-encode.md)
-- [func epsilon() -> Float](mpscnninstancenormalizationdatasource/2953925-epsilon.md)
-- [func gamma() -> UnsafeMutablePointer<Float>?](mpscnninstancenormalizationdatasource/2953923-gamma.md)
-- [func label() -> String?](mpscnninstancenormalizationdatasource/2952998-label.md)
-- [func load() -> Bool](mpscnninstancenormalizationdatasource/3088878-load.md)
-- [func purge()](mpscnninstancenormalizationdatasource/3088879-purge.md)
-- [func updateGammaAndBeta(with: any MTLCommandBuffer, instanceNormalizationStateBatch: [MPSCNNInstanceNormalizationGradientState]) -> MPSCNNNormalizationGammaAndBetaState?](mpscnninstancenormalizationdatasource/2953926-updategammaandbeta.md)
-- [func updateGammaAndBeta(withInstanceNormalizationStateBatch: [MPSCNNInstanceNormalizationGradientState]) -> Bool](mpscnninstancenormalizationdatasource/2953931-updategammaandbeta.md)
+- [func beta() -> UnsafeMutablePointer<Float>?](mpscnninstancenormalizationdatasource/beta.md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpscnninstancenormalizationdatasource/copy(with:device:).md)
+- [func encode(with: NSCoder)](mpscnninstancenormalizationdatasource/encode(with:).md)
+- [func epsilon() -> Float](mpscnninstancenormalizationdatasource/epsilon.md)
+- [func gamma() -> UnsafeMutablePointer<Float>?](mpscnninstancenormalizationdatasource/gamma.md)
+- [func label() -> String?](mpscnninstancenormalizationdatasource/label.md)
+- [func load() -> Bool](mpscnninstancenormalizationdatasource/load.md)
+- [func purge()](mpscnninstancenormalizationdatasource/purge.md)
+- [func updateGammaAndBeta(with: any MTLCommandBuffer, instanceNormalizationStateBatch: [MPSCNNInstanceNormalizationGradientState]) -> MPSCNNNormalizationGammaAndBetaState?](mpscnninstancenormalizationdatasource/updategammaandbeta(with:instancenormalizationstatebatch:).md)
+- [func updateGammaAndBeta(withInstanceNormalizationStateBatch: [MPSCNNInstanceNormalizationGradientState]) -> Bool](mpscnninstancenormalizationdatasource/updategammaandbeta(withinstancenormalizationstatebatch:).md)
+### Type Properties
+- [static var supportsSecureCoding: Bool](mpscnninstancenormalizationdatasource/supportssecurecoding.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

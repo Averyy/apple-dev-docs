@@ -16,7 +16,7 @@ Options for the data type for an intersector ray.
 ## Declaration
 
 ```swift
-enum MPSRayDataType : UInt, @unchecked Sendable
+enum MPSRayDataType
 ```
 
 ## Topics
@@ -26,11 +26,18 @@ enum MPSRayDataType : UInt, @unchecked Sendable
 - [MPSRayDataType.originMaskDirectionMaxDistance](mpsraydatatype/originmaskdirectionmaxdistance.md)
 - [MPSRayDataType.originMinDistanceDirectionMaxDistance](mpsraydatatype/originmindistancedirectionmaxdistance.md)
 - [MPSRayDataType.packedOriginDirection](mpsraydatatype/packedorigindirection.md)
+### Initializers
+- [init?(rawValue: UInt)](mpsraydatatype/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

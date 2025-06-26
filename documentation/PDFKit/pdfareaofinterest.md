@@ -48,8 +48,6 @@ These constants are components of a bit field and may be combined arbitrarily.
 - [init(rawValue: Int)](pdfareaofinterest/init(rawvalue:).md)
 ### Type Properties
 - [static var anyArea: PDFAreaOfInterest](pdfareaofinterest/anyarea.md)
-- [static var tableArea: PDFAreaOfInterest](pdfareaofinterest/tablearea.md)
-- [static var tableResizeArea: PDFAreaOfInterest](pdfareaofinterest/tableresizearea.md)
 
 ## Relationships
 

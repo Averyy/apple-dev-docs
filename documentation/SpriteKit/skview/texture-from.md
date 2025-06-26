@@ -22,8 +22,8 @@ func texture(from node: SKNode) -> SKTexture?
 
 ## Mentions
 
-- [Loading and Using Textures](loading-and-using-textures.md)
 - [Creating a New Node By Rendering To a Texture](creating-a-new-node-by-rendering-to-a-texture.md)
+- [Loading and Using Textures](loading-and-using-textures.md)
 
 #### Return Value
 

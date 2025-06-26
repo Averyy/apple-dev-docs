@@ -1,7 +1,7 @@
 # MPSMatrixBatchNormalization
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A batch normalization kernel that operates on matrices.
 
@@ -16,32 +16,42 @@ A batch normalization kernel that operates on matrices.
 ## Declaration
 
 ```swift
-class MPSMatrixBatchNormalization : MPSMatrixUnaryKernel
+class MPSMatrixBatchNormalization
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixbatchnormalization/2980734-init.md)
-- [init(device: any MTLDevice)](mpsmatrixbatchnormalization/2980735-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixbatchnormalization/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsmatrixbatchnormalization/init(device:).md)
 ### Instance Properties
-- [var computeStatistics: Bool](mpsmatrixbatchnormalization/2980730-computestatistics.md)
-- [var epsilon: Float](mpsmatrixbatchnormalization/2980733-epsilon.md)
-- [var sourceInputFeatureChannels: Int](mpsmatrixbatchnormalization/2980741-sourceinputfeaturechannels.md)
-- [var sourceNumberOfFeatureVectors: Int](mpsmatrixbatchnormalization/2980742-sourcenumberoffeaturevectors.md)
+- [var computeStatistics: Bool](mpsmatrixbatchnormalization/computestatistics.md)
+- [var epsilon: Float](mpsmatrixbatchnormalization/epsilon.md)
+- [var sourceInputFeatureChannels: Int](mpsmatrixbatchnormalization/sourceinputfeaturechannels.md)
+- [var sourceNumberOfFeatureVectors: Int](mpsmatrixbatchnormalization/sourcenumberoffeaturevectors.md)
 ### Instance Methods
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsmatrixbatchnormalization/2980731-copy.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, meanVector: MPSVector, varianceVector: MPSVector, gammaVector: MPSVector?, betaVector: MPSVector?, resultMatrix: MPSMatrix)](mpsmatrixbatchnormalization/2980732-encode.md)
-- [func neuronParameterA() -> Float](mpsmatrixbatchnormalization/2980736-neuronparametera.md)
-- [func neuronParameterB() -> Float](mpsmatrixbatchnormalization/2980737-neuronparameterb.md)
-- [func neuronParameterC() -> Float](mpsmatrixbatchnormalization/2980738-neuronparameterc.md)
-- [func neuronType() -> MPSCNNNeuronType](mpsmatrixbatchnormalization/2980739-neurontype.md)
-- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float, parameterC: Float)](mpsmatrixbatchnormalization/2980740-setneurontype.md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsmatrixbatchnormalization/copy(with:device:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, meanVector: MPSVector, varianceVector: MPSVector, gammaVector: MPSVector?, betaVector: MPSVector?, resultMatrix: MPSMatrix)](mpsmatrixbatchnormalization/encode(commandbuffer:inputmatrix:meanvector:variancevector:gammavector:betavector:resultmatrix:).md)
+- [func neuronParameterA() -> Float](mpsmatrixbatchnormalization/neuronparametera.md)
+- [func neuronParameterB() -> Float](mpsmatrixbatchnormalization/neuronparameterb.md)
+- [func neuronParameterC() -> Float](mpsmatrixbatchnormalization/neuronparameterc.md)
+- [func neuronType() -> MPSCNNNeuronType](mpsmatrixbatchnormalization/neurontype.md)
+- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float, parameterC: Float)](mpsmatrixbatchnormalization/setneurontype(_:parametera:parameterb:parameterc:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrixUnaryKernel](mpsmatrixunarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

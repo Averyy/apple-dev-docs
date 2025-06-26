@@ -16,7 +16,7 @@ Retrieves the menu items for a given tab.
 
 ```swift
 @MainActor
-func menuItems(for tab: any WKWebExtensionTab) -> [UIMenuElement]
+func menuItems(for tab: any WKWebExtensionTab) -> [NSMenuItem]
 ```
 
 #### Discussion

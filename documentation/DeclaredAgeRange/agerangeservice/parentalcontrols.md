@@ -1,6 +1,6 @@
 # AgeRangeService.ParentalControls
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: struct
 
 An option set to define parental controls enabled and shared as a part of age range declaration.
@@ -30,7 +30,7 @@ struct ParentalControls
 ### Accessing communication limits
 - [static let communicationLimits: AgeRangeService.ParentalControls](agerangeservice/parentalcontrols/communicationlimits.md)
   The system limits communication with the person.
-### Type Aliases
+### Supporting types
 - [AgeRangeService.ParentalControls.ArrayLiteralElement](agerangeservice/parentalcontrols/arrayliteralelement.md)
   The type of the elements of an array literal.
 - [AgeRangeService.ParentalControls.Element](agerangeservice/parentalcontrols/element.md)
@@ -56,7 +56,11 @@ struct ParentalControls
 - [AgeRangeService.AgeRangeDeclaration](agerangeservice/agerangedeclaration.md)
   An enumeration that describes the declared age range.
 - [AgeRangeService.AgeRange](agerangeservice/agerange.md)
-  A person’s age range is based on the information they provided in response to the age range request.
+  A person’s age range is based on the age they provided in response to the age range request.
+- [func requestAgeRange(ageGates: Int, Int?, Int?, in: UIViewController) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)
+  Determines an age range for the person logged onto iCloud on the device.
+- [func requestAgeRange(ageGates: Int, Int?, Int?, in: NSWindow) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-4yo3r.md)
+  Determines an age range for the person logged onto iCloud on the device.
 - [AgeRangeService.Response](agerangeservice/response.md)
   A response indicating either a person shared their age range or declined to share it.
 

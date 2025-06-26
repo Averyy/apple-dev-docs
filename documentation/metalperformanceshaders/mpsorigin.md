@@ -6,12 +6,12 @@
 A position in an image used as the source origin.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -25,16 +25,22 @@ The `double` data type is used because some kernel operations require fractional
 
 ## Topics
 
-### Initializers
-- [init()](mpsorigin/1618866-init.md)
-- [init(x: Double, y: Double, z: Double)](mpsorigin/1618888-init.md)
-### Instance Properties
-- [var x: Double](mpsorigin/1618870-x.md)
+### Fields
+- [var x: Double](mpsorigin/x.md)
   The x coordinate of the position, in pixels.
-- [var y: Double](mpsorigin/1618793-y.md)
+- [var y: Double](mpsorigin/y.md)
   The y coordinate of the position, in pixels.
-- [var z: Double](mpsorigin/1618833-z.md)
+- [var z: Double](mpsorigin/z.md)
   The z coordinate of the position, in pixels.
+### Initializers
+- [init()](mpsorigin/init.md)
+- [init(x: Double, y: Double, z: Double)](mpsorigin/init(x:y:z:).md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

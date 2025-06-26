@@ -24,10 +24,10 @@ class AVCapturePhoto
 - [Saving Captured Photos](saving-captured-photos.md)
 - [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
 - [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
-- [Capturing Uncompressed Image Data](capturing-uncompressed-image-data.md)
-- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
 - [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
+- [Capturing Uncompressed Image Data](capturing-uncompressed-image-data.md)
+- [Capturing Photos with Depth](capturing-photos-with-depth.md)
+- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
 
 #### Overview
 

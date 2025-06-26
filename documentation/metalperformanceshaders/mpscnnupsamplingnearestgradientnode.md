@@ -1,7 +1,7 @@
 # MPSCNNUpsamplingNearestGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient nearest spatial upsampling filter.
 
@@ -16,21 +16,28 @@ A representation of a gradient nearest spatial upsampling filter.
 ## Declaration
 
 ```swift
-class MPSCNNUpsamplingNearestGradientNode : MPSNNGradientFilterNode
+class MPSCNNUpsamplingNearestGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, scaleFactorX: Double, scaleFactorY: Double)](mpscnnupsamplingnearestgradientnode/2947983-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, scaleFactorX: Double, scaleFactorY: Double)](mpscnnupsamplingnearestgradientnode/init(sourcegradient:sourceimage:gradientstate:scalefactorx:scalefactory:).md)
 ### Instance Properties
-- [var scaleFactorX: Double](mpscnnupsamplingnearestgradientnode/2948024-scalefactorx.md)
-- [var scaleFactorY: Double](mpscnnupsamplingnearestgradientnode/2948035-scalefactory.md)
+- [var scaleFactorX: Double](mpscnnupsamplingnearestgradientnode/scalefactorx.md)
+- [var scaleFactorY: Double](mpscnnupsamplingnearestgradientnode/scalefactory.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

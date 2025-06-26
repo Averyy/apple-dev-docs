@@ -23,14 +23,14 @@ class SKScene
 ## Mentions
 
 - [Customizing the Behavior of a Node](customizing-the-behavior-of-a-node.md)
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
 - [Getting Started with Nodes](getting-started-with-nodes.md)
+- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
 - [Subclassing Scenes Versus Assigning a Delegate](subclassing-scenes-versus-assigning-a-delegate.md)
-- [Drawing SpriteKit Content in a View](drawing-spritekit-content-in-a-view.md)
+- [Displaying 3D Content in a SpriteKit Scene](displaying-3d-content-in-a-spritekit-scene.md)
 - [Creating a Scene from a File](creating-a-scene-from-a-file.md)
+- [Drawing SpriteKit Content in a View](drawing-spritekit-content-in-a-view.md)
 - [Choosing a SpriteKit Scene Renderer](choosing-a-spritekit-scene-renderer.md)
 - [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
-- [Displaying 3D Content in a SpriteKit Scene](displaying-3d-content-in-a-spritekit-scene.md)
 
 #### Overview
 

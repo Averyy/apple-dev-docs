@@ -48,6 +48,8 @@ The system provides an instance of this structure to your app when a person choo
 
 - [JournalingSuggestion.Contact](journalingsuggestion/contact.md)
   A suggestion for a connection a person makes with someone else.
+- [JournalingSuggestion.EventPoster](journalingsuggestion/eventposter.md)
+  A suggestion for a poster image of an event.
 - [JournalingSuggestion.LivePhoto](journalingsuggestion/livephoto.md)
   A suggestion for a Live Photo from a person’s library.
 - [JournalingSuggestion.Location](journalingsuggestion/location.md)

@@ -1,7 +1,7 @@
 # MPSImageReduceColumnSum
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that returns the sum of all values for a column in an image.
 
@@ -16,18 +16,28 @@ A filter that returns the sum of all values for a column in an image.
 ## Declaration
 
 ```swift
-class MPSImageReduceColumnSum : MPSImageReduceUnary
+class MPSImageReduceColumnSum
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpsimagereducecolumnsum/2942321-init.md)
+- [init(device: any MTLDevice)](mpsimagereducecolumnsum/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSImageReduceUnary](mpsimagereduceunary.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

@@ -26,28 +26,33 @@ The current selection if valid for the given `text` or a valid fallback index ot
 
 #### Discussion
 
-Always make sure to keep selection and text synchronized. Use `AttributedString/transform(updating:body:)` or `AttributedString/replaceSelection(_:with:)` to do so automatically. Reset your selection manually to a newly initialized one after making programmatic changes to the text where they selection should not just move with the characters.
+Always make sure to keep selection and text synchronized. Use `Foundation/AttributedString/transform(updating:body:)`, `Foundation/AttributedString/transformAttributes(in:body:)` or `Foundation/AttributedString/replaceSelection(_:with:)` to do so automatically.
 
-struct ContentView: View { @State private var text = AttributedString() @State private var selection = AttributedTextSelection()
+Reset your selection manually to a newly initialized one after making programmatic changes to the text where the selection should not just move with the characters.
 
 ```swift
-var body: some View {
-    TextEditor(text: $text, selection: $selection)
+struct ContentView: View {
+    @State private var text = AttributedString()
+    @State private var selection = AttributedTextSelection()
 
-    Button("Insert Date") {
-        text.replaceSelection(
-            &selection,
-            withCharacters: Date.now.formatted())
-    }
+    var body: some View {
+        TextEditor(text: $text, selection: $selection)
 
-    Button("Reset") {
-        text = "Hello, World!"
-        selection = .init(range: text.startIndex..<text.endIndex)
+        Button("Insert Date") {
+            text.replaceSelection(
+                &selection,
+                withCharacters: Date.now.formatted())
+        }
+
+        Button("Reset") {
+            text = "Hello, World!"
+            selection = .init(range: text.startIndex..<text.endIndex)
+        }
     }
 }
 ```
 
-}
+For more details on attributed string index validity, see [`isValid(within:)`](https://developer.apple.com/documentation/Foundation/AttributedString/Index/isValid(within:)-8fw50).
 
 
 ---

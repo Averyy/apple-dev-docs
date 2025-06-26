@@ -1,7 +1,7 @@
 # MPSCNNNeuron
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that applies a neuron activation function.
 
@@ -16,7 +16,7 @@ A filter that applies a neuron activation function.
 ## Declaration
 
 ```swift
-class MPSCNNNeuron : MPSCNNKernel
+class MPSCNNNeuron
 ```
 
 #### Overview
@@ -26,19 +26,44 @@ Do not use this class directly; use one of the [`MPSCNNNeuron`](mpscnnneuron.md)
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnneuron/2867058-init.md)
-- [init(device: any MTLDevice, neuronDescriptor: MPSNNNeuronDescriptor)](mpscnnneuron/2942315-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnneuron/init(coder:device:).md)
+- [init(device: any MTLDevice, neuronDescriptor: MPSNNNeuronDescriptor)](mpscnnneuron/init(device:neurondescriptor:).md)
 ### Instance Properties
-- [var a: Float](mpscnnneuron/2942297-a.md)
-- [var b: Float](mpscnnneuron/2942306-b.md)
-- [var c: Float](mpscnnneuron/2942303-c.md)
-- [var data: Data?](mpscnnneuron/2942308-data.md)
-- [var neuronType: MPSCNNNeuronType](mpscnnneuron/2942309-neurontype.md)
+- [var a: Float](mpscnnneuron/a.md)
+- [var b: Float](mpscnnneuron/b.md)
+- [var c: Float](mpscnnneuron/c.md)
+- [var data: Data?](mpscnnneuron/data.md)
+- [var neuronType: MPSCNNNeuronType](mpscnnneuron/neurontype.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Inherited By
+- [MPSCNNNeuronAbsolute](mpscnnneuronabsolute.md)
+- [MPSCNNNeuronELU](mpscnnneuronelu.md)
+- [MPSCNNNeuronExponential](mpscnnneuronexponential.md)
+- [MPSCNNNeuronHardSigmoid](mpscnnneuronhardsigmoid.md)
+- [MPSCNNNeuronLinear](mpscnnneuronlinear.md)
+- [MPSCNNNeuronLogarithm](mpscnnneuronlogarithm.md)
+- [MPSCNNNeuronPReLU](mpscnnneuronprelu.md)
+- [MPSCNNNeuronPower](mpscnnneuronpower.md)
+- [MPSCNNNeuronReLU](mpscnnneuronrelu.md)
+- [MPSCNNNeuronReLUN](mpscnnneuronrelun.md)
+- [MPSCNNNeuronSigmoid](mpscnnneuronsigmoid.md)
+- [MPSCNNNeuronSoftPlus](mpscnnneuronsoftplus.md)
+- [MPSCNNNeuronSoftSign](mpscnnneuronsoftsign.md)
+- [MPSCNNNeuronTanH](mpscnnneurontanh.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -72,8 +97,6 @@ Do not use this class directly; use one of the [`MPSCNNNeuron`](mpscnnneuron.md)
   A logarithm neuron filter.
 - [class MPSCNNNeuronPower](mpscnnneuronpower.md)
   A power neuron filter.
-- [class MPSNNNeuronDescriptor](mpsnnneurondescriptor.md)
-  An object that specifies properties used by a neuron kernel.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: WebKit  
 **Kind**: property
 
-The source URL that originally asked to load the resource
+The source URL that originally asked to load the resource.
 
 **Availability**:
 - iOS 18.4+

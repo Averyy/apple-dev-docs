@@ -17,7 +17,6 @@ The blending mode used to blend particles into the framebuffer.
 ## Declaration
 
 ```swift
-@MainActor
 var particleBlendMode: SKBlendMode { get set }
 ```
 

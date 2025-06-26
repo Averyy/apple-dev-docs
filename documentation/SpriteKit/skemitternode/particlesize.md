@@ -17,6 +17,7 @@ The starting size of each particle.
 ## Declaration
 
 ```swift
+@MainActor
 var particleSize: CGSize { get set }
 ```
 

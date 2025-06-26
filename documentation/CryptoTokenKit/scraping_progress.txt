@@ -1,4 +1,4 @@
 Completed scraping CryptoTokenKit!
-Total pages scraped: 308
+Total pages scraped: 281
 Pages skipped (unchanged): 1
 Pages failed: 0

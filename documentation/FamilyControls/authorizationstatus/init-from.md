@@ -8,7 +8,6 @@ Creates a new instance by decoding from the given decoder, when the type’s `Ra
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 
 ## Declaration
 

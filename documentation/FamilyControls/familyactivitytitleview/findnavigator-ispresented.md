@@ -8,7 +8,6 @@ Programmatically presents the find and replace interface for text editor views.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - macOS 26.0+ (Beta)
 
 ## Declaration

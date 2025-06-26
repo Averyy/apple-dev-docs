@@ -4,6 +4,20 @@
 
 Manage Game Center challenges for your apps.
 
+#### Overview
+
+Use the challenges API to create and configure ways to link players directly to your content in your game. Once you create a challenge you can link it to a activity. To learn more about activies, see [`Configuring Game center activities`](configuring-game-center-activities.md).
+
+Challenges encourage your players to invite their friends into your game for friendly competitions in score-baseed rounds. Players will see your challenges promoted throughout the Games app and other places around the OS as suggestions for enjoying their games with friends. They can invite their Game Center friends and anyone from their contacts, see scores appear in real-time, get notified at key moments until a winner is crowned, and have a rematch. Challenges are built on top of leaderboards, turning single-player game activities into a social experience players can share with their friends. To learn more about integrating challenges into your game, see [`Creating engaging challenges from leaderboards`](https://developer.apple.comhttps://developer.apple.com/documentation/gamekit/creating-engaging-challenges-from-leaderboards).
+
+To manage challenges, be sure you have one of the following user roles:
+
+- `ADMIN`
+- `APP MANAGER`
+- `MARKETING`
+- `TECHNICAL`
+- `DEVELOPER`
+
 ## Topics
 
 ### Managing challenges
@@ -49,6 +63,8 @@ Manage Game Center challenges for your apps.
 
 ## See Also
 
+- [Configuring Game Center challenges](configuring-game-center-challenges.md)
+  Setup and configure social experiences around leaderboards for friendly competition.
 - [Game Center challenge versions](game-center-challenges-versions.md)
   Manage compatible Game Center challenge versions.
 - [Game Center challenge version releases](game-center-challenges-version-releases.md)

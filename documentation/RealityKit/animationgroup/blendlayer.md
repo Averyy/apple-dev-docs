@@ -33,8 +33,6 @@ The framework applies multiple animations on the same target in ascending order 
   A textual name that refers to a property on which to run the grouped animations.
 - [var additive: Bool](animationgroup/additive.md)
   A Boolean value that indicates whether the animation builds on the current state of the target entity or resets the state before running.
-- [var group_: [any AnimationDefinition]?](animationgroup/group_.md)
-  An optional collection of animations to run.
 
 
 ---

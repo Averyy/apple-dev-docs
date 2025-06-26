@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: enum
 
-The direction of the fade command.
+A value representing the direction of the fade command.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -19,30 +19,34 @@ enum FadeDirection
 
 ### Enumeration Cases
 - [FadeCommand.FadeDirection.in](fadecommand/fadedirection/in.md)
-  Represents fading in of the video frames from a ‘color’ requested.
+  A value representing fading in of the video frames from a ‘color’ requested.
 - [FadeCommand.FadeDirection.out](fadecommand/fadedirection/out.md)
-  Represents fading out of the video frames to a ‘color’ requested.
+  A value representing fading out of the video frames to a ‘color’ requested.
 ### Initializers
 - [init?(intValue: Int)](fadecommand/fadedirection/init(intvalue:).md)
   Creates a new instance from the specified integer.
-- [init?(rawValue: String)](fadecommand/fadedirection/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 - [init?(stringValue: String)](fadecommand/fadedirection/init(stringvalue:).md)
   Creates a new instance from the given string.
+- [init(from: any Decoder) throws](fadecommand/fadedirection/init(from:).md)
+  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var intValue: Int?](fadecommand/fadedirection/intvalue.md)
   The value to use in an integer-indexed collection (e.g. an int-keyed dictionary).
-- [var rawValue: String](fadecommand/fadedirection/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 - [var stringValue: String](fadecommand/fadedirection/stringvalue.md)
   The string to use in a named collection (e.g. a string-keyed dictionary).
-### Type Aliases
-- [FadeCommand.FadeDirection.RawValue](fadecommand/fadedirection/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
+- [var hashValue: Int](fadecommand/fadedirection/hashvalue.md)
+  The hash value.
+### Operators
+- [static func == (FadeCommand.FadeDirection, FadeCommand.FadeDirection) -> Bool](fadecommand/fadedirection/==(_:_:).md)
+  Returns a Boolean value indicating whether two values are equal.
+### Instance Methods
+- [func encode(to: any Encoder) throws](fadecommand/fadedirection/encode(to:).md)
+  Encodes this value into the given encoder.
+- [func hash(into: inout Hasher)](fadecommand/fadedirection/hash(into:).md)
+  Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
 - [CodingKey Implementations](fadecommand/fadedirection/codingkey-implementations.md)
 - [Equatable Implementations](fadecommand/fadedirection/equatable-implementations.md)
-- [RawRepresentable Implementations](fadecommand/fadedirection/rawrepresentable-implementations.md)
 
 ## Relationships
 
@@ -55,14 +59,8 @@ enum FadeDirection
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [FadeCommand.FadeType](fadecommand/fadetype-swift.enum.md)
-  An enum listing the available fade types.
 
 
 ---

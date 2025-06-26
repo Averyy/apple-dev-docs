@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: property
 
-A localized message describing what error occurred.
+A localized message describing the error.
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +16,11 @@ A localized message describing what error occurred.
 ```swift
 var errorDescription: String? { get }
 ```
+
+## See Also
+
+- [var failureReason: String?](translationerror/failurereason.md)
+  A localized message describing the reason for the failure.
 
 
 ---

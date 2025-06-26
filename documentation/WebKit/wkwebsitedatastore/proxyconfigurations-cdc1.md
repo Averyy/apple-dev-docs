@@ -8,7 +8,7 @@
 - iPadOS 17.0+
 - Mac Catalyst ?+
 - macOS 14.0+
-- visionOS ?+
+- visionOS 1.0+
 
 ## Declaration
 

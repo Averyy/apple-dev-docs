@@ -1,7 +1,7 @@
 # MPSCNNReductionType.sumByNonZeroWeights
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.3+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case sumByNonZeroWeights = 3
+case sumByNonZeroWeights
 ```
 
 

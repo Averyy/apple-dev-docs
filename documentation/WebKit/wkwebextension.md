@@ -58,7 +58,9 @@ This class reads and parses the `manifest.json` file along with the supporting r
   Constants used by [`WKWebExtensionWindow`](wkwebextensionwindow.md) to indicate the type of a window.
 ### Initializers
 - [convenience init(appExtensionBundle: Bundle) async throws](wkwebextension/init(appextensionbundle:).md)
+  Creates a web extension initialized with a specified app extension bundle.
 - [convenience init(resourceBaseURL: URL) async throws](wkwebextension/init(resourcebaseurl:).md)
+  Creates a web extension initialized with a specified resource base URL, which can point to either a directory or a ZIP archive.
 ### Instance Properties
 - [var allRequestedMatchPatterns: Set<WKWebExtension.MatchPattern>](wkwebextension/allrequestedmatchpatterns.md)
   The set of websites that the extension requires access to for injected content and for receiving messages from websites.

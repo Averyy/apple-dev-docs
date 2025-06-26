@@ -1,7 +1,7 @@
 # MPSImageBilinearScale
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that resizes and changes the aspect ratio of an image using Bilinear resampling.
 
@@ -16,19 +16,29 @@ A filter that resizes and changes the aspect ratio of an image using Bilinear re
 ## Declaration
 
 ```swift
-class MPSImageBilinearScale : MPSImageScale
+class MPSImageBilinearScale
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagebilinearscale/2881188-init.md)
-- [init(device: any MTLDevice)](mpsimagebilinearscale/2881184-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagebilinearscale/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsimagebilinearscale/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSImageScale](mpsimagescale.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -37,7 +47,7 @@ class MPSImageBilinearScale : MPSImageScale
 - [class MPSImageScale](mpsimagescale.md)
   A filter that resizes and changes the aspect ratio of an image.
 - [class MPSImageLanczosScale](mpsimagelanczosscale.md)
-  A filter that resizes and changes the aspect ratio of an image using Lanczos resampling. 
+  A filter that resizes and changes the aspect ratio of an image using Lanczos resampling.
 - [class MPSImageTranspose](mpsimagetranspose.md)
   A filter that transposes an image.
 

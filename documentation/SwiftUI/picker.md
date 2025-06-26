@@ -23,9 +23,9 @@ struct Picker<Label, SelectionValue, Content> where Label : View, SelectionValue
 ## Mentions
 
 - [Picking container views for your content](picking-container-views-for-your-content.md)
+- [Scoping a search operation](scoping-a-search-operation.md)
 - [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
 - [Performing a search operation](performing-a-search-operation.md)
-- [Scoping a search operation](scoping-a-search-operation.md)
 
 #### Overview
 

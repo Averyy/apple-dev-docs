@@ -1,7 +1,7 @@
 # MPSImageDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A description of the attributes used to create an [`MPSImage`](mpsimage.md).
 
@@ -16,7 +16,7 @@ A description of the attributes used to create an [`MPSImage`](mpsimage.md).
 ## Declaration
 
 ```swift
-class MPSImageDescriptor : NSObject
+class MPSImageDescriptor
 ```
 
 #### Overview
@@ -26,38 +26,52 @@ You use an [`MPSImageDescriptor`](mpsimagedescriptor.md) to describe and create 
 ## Topics
 
 ### Methods
-- [init(channelFormat: MPSImageFeatureChannelFormat, width: Int, height: Int, featureChannels: Int)](mpsimagedescriptor/1648819-init.md)
+- [convenience init(channelFormat: MPSImageFeatureChannelFormat, width: Int, height: Int, featureChannels: Int)](mpsimagedescriptor/init(channelformat:width:height:featurechannels:).md)
   Creates an image descriptor for a single image.
-- [init(channelFormat: MPSImageFeatureChannelFormat, width: Int, height: Int, featureChannels: Int, numberOfImages: Int, usage: MTLTextureUsage)](mpsimagedescriptor/1648893-init.md)
+- [convenience init(channelFormat: MPSImageFeatureChannelFormat, width: Int, height: Int, featureChannels: Int, numberOfImages: Int, usage: MTLTextureUsage)](mpsimagedescriptor/init(channelformat:width:height:featurechannels:numberofimages:usage:).md)
   Creates an image descriptor for an image container with options to set texture usage and batch size (number of images).
 ### Properties
-- [var width: Int](mpsimagedescriptor/1648830-width.md)
+- [var width: Int](mpsimagedescriptor/width.md)
   The width of the image.
-- [var height: Int](mpsimagedescriptor/1648947-height.md)
+- [var height: Int](mpsimagedescriptor/height.md)
   The height of the image.
-- [var featureChannels: Int](mpsimagedescriptor/1648918-featurechannels.md)
+- [var featureChannels: Int](mpsimagedescriptor/featurechannels.md)
   The number of feature channels per pixel.
-- [var numberOfImages: Int](mpsimagedescriptor/1648846-numberofimages.md)
+- [var numberOfImages: Int](mpsimagedescriptor/numberofimages.md)
   The number of images for batch processing.
-- [var pixelFormat: MTLPixelFormat](mpsimagedescriptor/1648913-pixelformat.md)
+- [var pixelFormat: MTLPixelFormat](mpsimagedescriptor/pixelformat.md)
   The pixel format for the underlying texture.
-- [var channelFormat: MPSImageFeatureChannelFormat](mpsimagedescriptor/1648818-channelformat.md)
+- [var channelFormat: MPSImageFeatureChannelFormat](mpsimagedescriptor/channelformat.md)
   The storage format to use for each channel in the image.
-- [var cpuCacheMode: MTLCPUCacheMode](mpsimagedescriptor/1648930-cpucachemode.md)
+- [var cpuCacheMode: MTLCPUCacheMode](mpsimagedescriptor/cpucachemode.md)
   The CPU cache mode of the underlying texture.
-- [var storageMode: MTLStorageMode](mpsimagedescriptor/1648955-storagemode.md)
-  The storage mode of underlying texture. 
-- [var usage: MTLTextureUsage](mpsimagedescriptor/1648937-usage.md)
+- [var storageMode: MTLStorageMode](mpsimagedescriptor/storagemode.md)
+  The storage mode of underlying texture.
+- [var usage: MTLTextureUsage](mpsimagedescriptor/usage.md)
   Options to specify the intended usage of the underlying texture.
 ### Instance Methods
-- [func copy(with: NSZone?) -> Self](mpsimagedescriptor/3020686-copy.md)
+- [func copy(with: NSZone?) -> Self](mpsimagedescriptor/copy(with:).md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
-- [NSCopying](../foundation/nscopying.md)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [convenience init(device: any MTLDevice, imageDescriptor: MPSImageDescriptor)](mpsimage/init(device:imagedescriptor:).md)
+  Initializes an empty image.
+- [convenience init(texture: any MTLTexture, featureChannels: Int)](mpsimage/init(texture:featurechannels:).md)
+  Initializes an image from a texture. The user-allocated texture has been created for a specific number of feature channels and number of images.
+- [init(parentImage: MPSImage, sliceRange: NSRange, featureChannels: Int)](mpsimage/init(parentimage:slicerange:featurechannels:).md)
 
 
 ---

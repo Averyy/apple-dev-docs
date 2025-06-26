@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-An unique command id. Ids should be unique for the whole Immersive Media file.
+A unique command id. Ids should be unique for the whole Immersive Media file.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -12,7 +12,7 @@ An unique command id. Ids should be unique for the whole Immersive Media file.
 ## Declaration
 
 ```swift
-var id: Int
+var id: Int { get }
 ```
 
 ## See Also
@@ -25,8 +25,6 @@ var id: Int
   Not used - setCamera commands don’t use offsets.
 - [var time: CMTime](setcameracommand/time.md)
   The time this command starts during playback.
-- [var type: PresentationCommandType](setcameracommand/type.md)
-  The command type (.setCamera).
 
 
 ---

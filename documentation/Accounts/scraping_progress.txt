@@ -1,4 +1,4 @@
 Completed scraping Accounts!
-Total pages scraped: 78
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 79
 Pages failed: 0

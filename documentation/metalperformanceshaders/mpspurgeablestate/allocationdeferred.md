@@ -1,9 +1,9 @@
 # MPSPurgeableState.allocationDeferred
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
-The image’s underlying texture hasn’t been allocated yet. Attempts to set another purgeable state using the [`setPurgeableState(_:)`](mpsimage/1648820-setpurgeablestate.md) method will be ignored.
+The image’s underlying texture hasn’t been allocated yet. Attempts to set another purgeable state using the [`setPurgeableState(_:)`](mpsimage/setpurgeablestate(_:).md) method will be ignored.
 
 **Availability**:
 - iOS 10.0+
@@ -16,8 +16,19 @@ The image’s underlying texture hasn’t been allocated yet. Attempts to set an
 ## Declaration
 
 ```swift
-case allocationDeferred = 0
+case allocationDeferred
 ```
+
+## See Also
+
+- [MPSPurgeableState.keepCurrent](mpspurgeablestate/keepcurrent.md)
+  The current state is queried but doesn’t change.
+- [MPSPurgeableState.nonVolatile](mpspurgeablestate/nonvolatile.md)
+  The contents of the resource aren’t allowed to be discarded.
+- [MPSPurgeableState.volatile](mpspurgeablestate/volatile.md)
+  The system is allowed to discard the resource to free up memory.
+- [MPSPurgeableState.empty](mpspurgeablestate/empty.md)
+  The contents of the resource are or will be discarded.
 
 
 ---

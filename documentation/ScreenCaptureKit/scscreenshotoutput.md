@@ -19,7 +19,6 @@ class SCScreenshotOutput
 - [var fileURL: NSURL?](scscreenshotoutput/fileurl.md)
 - [var hdrImage: CGImage?](scscreenshotoutput/hdrimage.md)
 - [var sdrImage: CGImage?](scscreenshotoutput/sdrimage.md)
-- [var testImage: CGImage?](scscreenshotoutput/testimage.md)
 
 ## Relationships
 

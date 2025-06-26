@@ -3,6 +3,8 @@
 **Framework**: WebKit  
 **Kind**: struct
 
+The behavior that determines whether a web view can display content full screen.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -20,8 +22,11 @@ struct ElementFullscreenBehavior
 
 ### Type Properties
 - [static let automatic: WebView.ElementFullscreenBehavior](webview-swift.struct/elementfullscreenbehavior/automatic.md)
+  The automatic behavior.
 - [static let disabled: WebView.ElementFullscreenBehavior](webview-swift.struct/elementfullscreenbehavior/disabled.md)
+  Element full screen is disabled.
 - [static let enabled: WebView.ElementFullscreenBehavior](webview-swift.struct/elementfullscreenbehavior/enabled.md)
+  Element full screen is enabled.
 
 ## Relationships
 

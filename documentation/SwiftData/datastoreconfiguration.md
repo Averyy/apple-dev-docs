@@ -37,6 +37,13 @@ protocol DataStoreConfiguration : Hashable
 ### Conforming Types
 - [ModelConfiguration](modelconfiguration.md)
 
+## See Also
+
+- [var configuration: Self.Configuration](datastore/configuration-swift.property.md)
+- [associatedtype Configuration : DataStoreConfiguration](datastore/configuration-swift.associatedtype.md)
+- [var identifier: String](datastore/identifier.md)
+- [var schema: Schema](datastore/schema.md)
+
 
 ---
 

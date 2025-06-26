@@ -1,7 +1,7 @@
 # MPSNNResizeBilinear
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A bilinear resizing filter.
 
@@ -16,23 +16,33 @@ A bilinear resizing filter.
 ## Declaration
 
 ```swift
-class MPSNNResizeBilinear : MPSCNNKernel
+class MPSNNResizeBilinear
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnresizebilinear/3013794-init.md)
-- [init(device: any MTLDevice, resizeWidth: Int, resizeHeight: Int, alignCorners: Bool)](mpsnnresizebilinear/3012966-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnresizebilinear/init(coder:device:).md)
+- [init(device: any MTLDevice, resizeWidth: Int, resizeHeight: Int, alignCorners: Bool)](mpsnnresizebilinear/init(device:resizewidth:resizeheight:aligncorners:).md)
 ### Instance Properties
-- [var alignCorners: Bool](mpsnnresizebilinear/3012965-aligncorners.md)
-- [var resizeHeight: Int](mpsnnresizebilinear/3012968-resizeheight.md)
-- [var resizeWidth: Int](mpsnnresizebilinear/3012969-resizewidth.md)
+- [var alignCorners: Bool](mpsnnresizebilinear/aligncorners.md)
+- [var resizeHeight: Int](mpsnnresizebilinear/resizeheight.md)
+- [var resizeWidth: Int](mpsnnresizebilinear/resizewidth.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

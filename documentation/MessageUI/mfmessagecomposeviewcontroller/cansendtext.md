@@ -14,6 +14,7 @@ Returns a Boolean value that indicates whether the current device is capable of 
 ## Declaration
 
 ```swift
+@MainActor
 class func canSendText() -> Bool
 ```
 

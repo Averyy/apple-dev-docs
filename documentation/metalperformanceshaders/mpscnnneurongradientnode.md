@@ -1,7 +1,7 @@
 # MPSCNNNeuronGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient exponential neuron filter.
 
@@ -16,20 +16,27 @@ A representation of a gradient exponential neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronGradientNode : MPSNNGradientFilterNode
+class MPSCNNNeuronGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, descriptor: MPSNNNeuronDescriptor)](mpscnnneurongradientnode/2948031-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, descriptor: MPSNNNeuronDescriptor)](mpscnnneurongradientnode/init(sourcegradient:sourceimage:gradientstate:descriptor:).md)
 ### Instance Properties
-- [var descriptor: MPSNNNeuronDescriptor](mpscnnneurongradientnode/2948040-descriptor.md)
+- [var descriptor: MPSNNNeuronDescriptor](mpscnnneurongradientnode/descriptor.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

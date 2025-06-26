@@ -23,8 +23,8 @@ var applicationUsername: String? { get set }
 ## Mentions
 
 - [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
-- [Generating a signature for promotional offers](generating-a-signature-for-promotional-offers.md)
 - [Restoring purchased products](restoring-purchased-products.md)
+- [Generating a signature for promotional offers](generating-a-signature-for-promotional-offers.md)
 
 #### Discussion
 

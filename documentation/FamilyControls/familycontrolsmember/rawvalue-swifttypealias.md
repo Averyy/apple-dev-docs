@@ -8,7 +8,6 @@ The raw type that can be used to represent all values of the conforming type.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

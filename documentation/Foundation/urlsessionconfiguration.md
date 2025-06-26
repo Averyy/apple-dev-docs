@@ -22,11 +22,11 @@ class URLSessionConfiguration
 
 ## Mentions
 
-- [Downloading files in the background](downloading-files-in-the-background.md)
 - [Accessing cached data](accessing-cached-data.md)
+- [Downloading files in the background](downloading-files-in-the-background.md)
 - [Fetching website data into memory](fetching-website-data-into-memory.md)
-- [Improving network reliability using Multipath TCP](improving-network-reliability-using-multipath-tcp.md)
 - [Uploading streams of data](uploading-streams-of-data.md)
+- [Improving network reliability using Multipath TCP](improving-network-reliability-using-multipath-tcp.md)
 
 #### Overview
 
@@ -148,6 +148,8 @@ Background sessions let you perform uploads and downloads of content in the back
 ### Deprecated methods
 - [class func backgroundSessionConfiguration(String) -> URLSessionConfiguration](urlsessionconfiguration/backgroundsessionconfiguration(_:).md)
   Returns a session configuration object that allows HTTP and HTTPS uploads or downloads to be performed in the background.
+### Instance Properties
+- [var enablesEarlyData: Bool](urlsessionconfiguration/enablesearlydata.md)
 
 ## Relationships
 

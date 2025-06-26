@@ -11,8 +11,8 @@ Add an alternative distribution domain to your account.
 ## Mentions
 
 - [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
-- [Configuring apps for web distribution](configuring-apps-for-web-distribution.md)
 - [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
+- [Configuring apps for web distribution](configuring-apps-for-web-distribution.md)
 
 #### Discussion
 

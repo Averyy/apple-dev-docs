@@ -26,7 +26,7 @@ You create an [`MKLocalPointsOfInterestRequest`](mklocalpointsofinterestrequest.
 
 To leverage the phone’s viewport to request points of interest, create a request with a rectangular bounding box using an [`MKCoordinateRegion`](mkcoordinateregion.md). The request fetches points of interest within the rectangular region.
 
-To retrieve points of interest nearby or “around the user,” create a request with a circular area defined by doc://com.apple.documentation/documentation/corelocation/cllocationcoordinate2d and a doc://com.apple.documentation/documentation/corelocation/cllocationdistance in meters. The fetch returns points of interest up to the maximum distance defined by [`maxRadius`](mklocalpointsofinterestrequest/maxradius.md).
+To retrieve points of interest nearby or “around the user,” create a request with a circular area defined by [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/CoreLocation/CLLocationCoordinate2D) and a [`CLLocationDistance`](https://developer.apple.com/documentation/CoreLocation/CLLocationDistance) in meters. The fetch returns points of interest up to the maximum distance defined by [`maxRadius`](mklocalpointsofinterestrequest/maxradius.md).
 
 You may optionally specifying an [`MKPointOfInterestFilter`](mkpointofinterestfilter.md) describing categories to include or exclude. The default behavior of the fetch returns all points of interest.
 

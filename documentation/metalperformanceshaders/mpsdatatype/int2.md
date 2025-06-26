@@ -1,7 +1,7 @@
 # MPSDataType.int2
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 18.4+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case int2 = 536870914
+case int2
 ```
 
 

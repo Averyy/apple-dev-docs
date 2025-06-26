@@ -25,7 +25,7 @@ var wifiAwareModelNameMatch: ASPropertyCompareString? { get set }
 - [ASDiscoveryDescriptor.WiFiAwareServiceRole](asdiscoverydescriptor/wifiawareservicerole-swift.enum.md)
   A type that defines the role of an accessory’s Wi-Fi Aware’s service.
 - [var wifiAwareVendorNameMatch: ASPropertyCompareString?](asdiscoverydescriptor/wifiawarevendornamematch.md)
-  The accessory’s Wi-Fi Aware vendor name  and matching options.
+  The accessory’s Wi-Fi Aware vendor name and matching options.
 - [class ASPropertyCompareString](aspropertycomparestring.md)
   A type that specifies how to filter a property against a given string and comparison options.
 

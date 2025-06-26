@@ -3,6 +3,8 @@
 **Framework**: WebKit  
 **Kind**: struct
 
+A type specifying the behavior for the presentation of link previews when pressing a link.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -20,8 +22,11 @@ struct LinkPreviewBehavior
 
 ### Type Properties
 - [static let automatic: WebView.LinkPreviewBehavior](webview-swift.struct/linkpreviewbehavior/automatic.md)
+  The automatic behavior.
 - [static let disabled: WebView.LinkPreviewBehavior](webview-swift.struct/linkpreviewbehavior/disabled.md)
+  Link previews are disabled.
 - [static let enabled: WebView.LinkPreviewBehavior](webview-swift.struct/linkpreviewbehavior/enabled.md)
+  Link previews are enabled.
 
 ## Relationships
 
@@ -32,6 +37,7 @@ struct LinkPreviewBehavior
 ## See Also
 
 - [WebView.BackForwardNavigationGesturesBehavior](webview-swift.struct/backforwardnavigationgesturesbehavior.md)
+  A type that defines the behavior of how horizontal swipe gestures trigger backward and forward page navigation.
 
 
 ---

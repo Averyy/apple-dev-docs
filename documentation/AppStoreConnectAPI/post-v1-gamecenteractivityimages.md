@@ -8,6 +8,10 @@ Reserve an image for a Game Center activity.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Mentions
+
+- [Configuring Game center activities](configuring-game-center-activities.md)
+
 ## See Also
 
 - [Read activity image information ](get-v1-gamecenteractivityimages-_id_.md)

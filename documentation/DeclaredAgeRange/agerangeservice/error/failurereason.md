@@ -1,6 +1,6 @@
 # failureReason
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: property
 
 A localized message describing the reason for the failure.

@@ -22,6 +22,8 @@ var mkCoordinateValue: CLLocationCoordinate2D { get }
 
 ## See Also
 
+- [struct CLLocationCoordinate2D](../CoreLocation/CLLocationCoordinate2D.md)
+  The latitude and longitude associated with a location, specified using the WGS 84 reference frame.
 - [init(MKCoordinate: CLLocationCoordinate2D)](nsvalue/init(mkcoordinate:).md)
   Creates a new value object containing the specified CoreLocation geographic coordinate structure.
 - [init(MKCoordinateSpan: MKCoordinateSpan)](nsvalue/init(mkcoordinatespan:).md)

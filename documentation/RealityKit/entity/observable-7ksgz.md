@@ -3,12 +3,14 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
+When properties in `Entity.Observable` are accessed, they participate in Observation. This means that when they change, any observers will be notified. Each of its properties passes through to the underlying Entity’s corresponding properties, so modifications of them will modify the underlying Entity’s corresponding property.
+
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
 - Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
-- tvOS ?+
+- tvOS 26.0+ (Beta)
 - visionOS 26.0+ (Beta)
 
 ## Declaration
@@ -27,6 +29,7 @@ struct Observable
 - [var children: Entity.ChildCollection](entity/observable-7ksgz/children.md)
 - [var components: Entity.Observable.Components](entity/observable-7ksgz/components-swift.property.md)
   A “pass through” to the underlying ComponentSet but with the added effect of marking those component keypaths as “accessed” when a property is read. Mutations to any accessed components will cause any observers to be triggered.
+- [var isEnabled: Bool](entity/observable-7ksgz/isenabled.md)
 - [var name: String](entity/observable-7ksgz/name.md)
 - [var orientation: simd_quatf](entity/observable-7ksgz/orientation.md)
 - [var position: SIMD3<Float>](entity/observable-7ksgz/position.md)

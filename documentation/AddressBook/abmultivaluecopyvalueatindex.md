@@ -14,7 +14,7 @@ Returns the value for the given index.
 ## Declaration
 
 ```swift
-func ABMultiValueCopyValueAtIndex(_ multiValue: ABMultiValueRef!, _ index: CFIndex) -> Unmanaged<CFTypeRef>!
+func ABMultiValueCopyValueAtIndex(_ multiValue: ABMultiValue!, _ index: CFIndex) -> Unmanaged<CFTypeRef>!
 ```
 
 #### Return Value

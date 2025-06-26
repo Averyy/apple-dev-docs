@@ -6,7 +6,7 @@
 A message that tells the user why the app is requesting access to the device’s main camera.
 
 **Availability**:
-- visionOS 3.0+
+- visionOS 26.0+ (Beta)
 
 #### Discussion
 

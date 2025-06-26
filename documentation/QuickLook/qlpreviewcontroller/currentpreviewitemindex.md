@@ -24,8 +24,6 @@ You can change which item the preview controller displays, among those in a navi
 
 ## See Also
 
-- [class func canPreview(any QLPreviewItem) -> Bool](qlpreviewcontroller/canpreview(_:).md)
-  Returns a Boolean value that indicates whether the preview controller can display an item.
 - [var currentPreviewItem: (any QLPreviewItem)?](qlpreviewcontroller/currentpreviewitem.md)
   The item displaying in the Quick Look preview controller.
 - [func refreshCurrentPreviewItem()](qlpreviewcontroller/refreshcurrentpreviewitem.md)

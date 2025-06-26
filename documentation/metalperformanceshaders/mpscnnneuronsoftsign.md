@@ -1,7 +1,7 @@
 # MPSCNNNeuronSoftSign
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A softsign neuron filter.
 
@@ -16,25 +16,35 @@ A softsign neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronSoftSign : MPSCNNNeuron
+class MPSCNNNeuronSoftSign
 ```
 
 #### Overview
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = x / (1 + abs(x))](https://docs-assets.developer.apple.com/published/866dd98e74/16551210-9fec-43e0-8274-f59e52851c85.png)
+![f(x) = x / (1 + abs(x))](https://docs-assets.developer.apple.com/published/de97dbe062a4f937c9617e78b48e0d33/media-2903547%402x.png)
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpscnnneuronsoftsign/2866994-init.md)
+- [init(device: any MTLDevice)](mpscnnneuronsoftsign/init(device:).md)
   Initializes a softsign neuron filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -68,8 +78,6 @@ For each pixel in an image, the filter applies the following function:
   A logarithm neuron filter.
 - [class MPSCNNNeuronPower](mpscnnneuronpower.md)
   A power neuron filter.
-- [class MPSNNNeuronDescriptor](mpsnnneurondescriptor.md)
-  An object that specifies properties used by a neuron kernel.
 
 
 ---

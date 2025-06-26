@@ -22,6 +22,8 @@ class AVPlayerItemVideoOutput
 ## Topics
 
 ### Creating a Video Output
+- [init(pixelBufferAttributes: [String : any Sendable]?)](avplayeritemvideooutput/init(pixelbufferattributes:)-7n7v8.md)
+  Creates a video output object using the specified pixel buffer attributes.
 - [init(outputSettings: [String : any Sendable]?)](avplayeritemvideooutput/init(outputsettings:).md)
   Creates a video output object initialized with the specified output settings.
 ### Configuring the Delegate
@@ -44,7 +46,6 @@ class AVPlayerItemVideoOutput
 ### Initializers
 - [convenience init(pixelBufferAttributes: CVPixelBufferAttributes)](avplayeritemvideooutput/init(pixelbufferattributes:)-18izh.md)
   Initializes an instance of AVPlayerItemVideoOutput, using the specified pixel buffer attributes, for video image output
-- [init(pixelBufferAttributes: [String : any Sendable]?)](avplayeritemvideooutput/init(pixelbufferattributes:)-7n7v8.md)
 ### Instance Methods
 - [func pixelBufferAndDisplayTime(forItemTime: CMTime) -> (pixelBuffer: CVReadOnlyPixelBuffer?, itemTimeForDisplay: CMTime)](avplayeritemvideooutput/pixelbufferanddisplaytime(foritemtime:).md)
   Retrieves an image that is appropriate for display at the specified item time, and marks the image as acquired

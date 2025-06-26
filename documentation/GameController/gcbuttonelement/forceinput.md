@@ -7,12 +7,12 @@
 Get the input containing the measured force applied to the button.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 

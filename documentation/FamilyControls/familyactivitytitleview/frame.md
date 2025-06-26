@@ -12,7 +12,6 @@ Positions this view within an invisible frame.
 - tvOS 13.0+
 - watchOS 6.0+
 - Unknown ?+ - Deprecated
-- Mac Catalyst 13.0+
 
 ## Declaration
 

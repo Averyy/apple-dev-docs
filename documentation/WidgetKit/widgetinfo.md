@@ -22,8 +22,8 @@ struct WidgetInfo
 
 ## Mentions
 
-- [Updating widgets with WidgetKit push notifications](updating-widgets-with-widgetkit-push-notifications.md)
 - [Making a configurable widget](making-a-configurable-widget.md)
+- [Updating widgets with WidgetKit push notifications](updating-widgets-with-widgetkit-push-notifications.md)
 
 ## Topics
 

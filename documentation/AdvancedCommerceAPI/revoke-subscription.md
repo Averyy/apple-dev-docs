@@ -11,8 +11,8 @@ Immediately cancel a customer’s subscription and all the items that are includ
 ## Mentions
 
 - [Advanced Commerce API changelog](changelog.md)
-- [Authorizing API requests from your server](authorizing-server-calls.md)
 - [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
+- [Authorizing API requests from your server](authorizing-server-calls.md)
 
 #### Discussion
 

@@ -17,7 +17,7 @@ class IKFilterBrowserPanel
 
 #### Overview
 
-The `IKFilterBrowserPanel` class provides a user interface that allows users to browse Core Image filters ([`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter)), to preview a filter, and to get additional information about the filter, such as its description.
+The `IKFilterBrowserPanel` class provides a user interface that allows users to browse Core Image filters ([`CIFilter`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class)), to preview a filter, and to get additional information about the filter, such as its description.
 
 An `IKFilterBrowserPanel` object can be displayed as:
 

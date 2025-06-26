@@ -52,6 +52,8 @@ When triggered, these actions are passed the URLs of the currently selected item
   A value that defines where the action can appear (in the Edit Menu, the navigation bar, or both).
 - [UIDocumentBrowserAction.Availability](uidocumentbrowseraction/availability-swift.struct.md)
   Values that determine where the action can appear in the document browser.
+### Instance Properties
+- [var imageOnlyForContextMenu: UIImage?](uidocumentbrowseraction/imageonlyforcontextmenu.md)
 
 ## Relationships
 

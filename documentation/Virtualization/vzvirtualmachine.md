@@ -16,8 +16,8 @@ class VZVirtualMachine
 
 ## Mentions
 
-- [Creating and Running a Linux Virtual Machine](creating-and-running-a-linux-virtual-machine.md)
 - [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Creating and Running a Linux Virtual Machine](creating-and-running-a-linux-virtual-machine.md)
 
 #### Overview
 

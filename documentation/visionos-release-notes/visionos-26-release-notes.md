@@ -1,4 +1,4 @@
-# visionOS 26 Beta Release Notes
+# visionOS 26 Beta 2 Release Notes
 
 **Framework**: visionOS Release Notes
 
@@ -6,19 +6,19 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 26 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 26 beta. The SDK comes bundled with Xcode 26, available from the Mac App Store. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
+The visionOS 26 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 26 beta 2. The SDK comes bundled with Xcode 26, available from the Mac App Store. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
 
 ##### Airdrop
 
-###### Known Issues
+###### Resolved Issues
 
-- Any 2D video or spatial video received via AirDrop will be saved and opened in the Files app instead of the Photos app.  (152265301)  User can use the Share button in the Files app, then select “Save Video” to save it in the Photos app.
+- Fixed: Any 2D video or spatial video received via AirDrop will be saved and opened in the Files app instead of the Photos app.  (152265301)
 
 ##### Alarmkit
 
-###### Known Issues
+###### Resolved Issues
 
-- Attempting to import AlarmKit for a visionOS Simulator project will fail as this API is not available on AlarmKit.  (152339959)
+- Fixed: Attempting to import AlarmKit for a visionOS Simulator project will fail as this API is not available on AlarmKit.  (152339959)
 
 ##### App Store
 
@@ -36,19 +36,28 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 - The Foundation Models framework provides you with direct access to the on-device large language model at the core of Apple Intelligence.  (139996377)
 
+###### Resolved Issues
+
+- Fixed: In Image Playground and Genmoji, the new modifiers to customize appearance do not work for Japanese-language users. Image creation is blocked when attempting to add modifiers to its appearance.  (151833204)
+- Fixed: Model quality output degrades after extended, repeated inferences of the same adapter.  (152468267)
+
+##### Apple Vision Pro Setup
+
 ###### Known Issues
 
-- In Image Playground and Genmoji, the new modifiers to customize appearance do not work for Japanese-language users. Generation is blocked when attempting to add modifiers to their appearance.  (151833204)  Removing any modifiers from the dropdowns in Customize Appearance options will allow generations. Users can also use the “Additional description” text field for modifications.
-- Model quality output degrades after extended, repeated inferences of the same adapter.  (152468267)
+- iCloud syncing for Apple Vision Pro Setup data is not enabled by default on Apple Vision Pro and iOS devices.  (153339405)  On both iOS and visionOS devices, manually enable the iCloud sync toggle in Settings > Apple Account > iCloud > Apple Vision Pro Setup.
 
 ##### Arkit
+
+###### Resolved Issues
+
+- Fixed: The C API is unavailable on macOS, which limits rendering spatial macOS applications to a Swift implementation.  (152269768)
+- Fixed: For Accessory Tracking, the “grip” POI (Point of Interest) for GCController is missing a rotation.  (152304770)
+- Fixed: For Accessory Tracking, in order to get the aim POI (Point of Interest) for GCStylus, use the string “tip” in place of “aim”.  (152335557)
 
 ###### Known Issues
 
 - Accessory Tracking does not work in Travel Mode. The user might not get notified of this behavior for some connected accessories.  (152264297)
-- The C API is unavailable on macOS, which limits rendering spatial macOS applications to a Swift implementation.  (152269768)  Use the Swift ARKitSession instead of the C API.
-- For Accessory Tracking, the “grip” POI (Point of Interest) for GCController is missing a rotation.  (152304770)
-- For Accessory Tracking, in order to get the aim POI (Point of Interest) for GCStylus, use the string “tip” in place of “aim”.  (152335557)
 
 ###### Deprecations
 
@@ -57,9 +66,9 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ##### Assistantschemas
 
-###### Known Issues
+###### Resolved Issues
 
-- If you have adopted any of the following email AssistantSchemas, you will experience a compilation error due to a parameter type change: `createDraft`, `updateDraft`, `replyMail`, `forwardMail`, `message`, and `draft`.  (148633307)  Revise the relevant schema implementations to accept an optional `AttributedString` instead of an optional `String` for the body parameter or property, and rebuild your app.
+- Fixed: If you have adopted any of the following email AssistantSchemas, you will experience a compilation error due to a parameter type change: `createDraft`, `updateDraft`, `replyMail`, `forwardMail`, `message`, and `draft`.  (148633307)
 
 ##### Avfoundation
 
@@ -69,41 +78,54 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ##### Avkit
 
-###### Known Issues
+###### Resolved Issues
 
-- When using the AVPlayerViewController API, Dynamic Mask is not supported in visionOS simulator.  (152602013)
+- Fixed: When using the AVPlayerViewController API, Dynamic Mask is not supported in visionOS simulator.  (152602013)
 
 ##### Background Assets
 
+###### Resolved Issues
+
+- Fixed: The system might not update downloaded asset packs as frequently as is expected for apps that internal testers install from TestFlight.  (143281558)
+- Fixed: Asset pack downloads might fail unexpectedly or stall indefinitely, including across reboots.  (151498902)
+- Fixed: The system might not deliver status updates to your app for ongoing asset pack downloads.  (151647839)
+- Fixed: Pausing and resuming an app installation or update while the system is downloading essential asset packs might cause the installation or update to stall indefinitely.  (151942388)
+
 ###### Known Issues
 
-- The system might not update downloaded asset packs as frequently as is expected for apps that internal testers install from TestFlight.   (143281558)  Call `checkForUpdates()` on the shared asset pack manager in your app’s code.
-- Asset pack downloads might fail unexpectedly or stall indefinitely, including across reboots.   (151498902)  If your app receives a download status update for a stalled asset pack with a `Progress` object, then call `cancel()` on that object before rescheduling the download. Alternatively, you can fetch and cancel the object that represents the stalled download by calling `currentDownloads` on the shared download manager, extracting the relevant download object from the returned array, and passing the object to a call to `cancel(_:)` on the shared download manager.
-- The system might not deliver status updates to your app for ongoing asset pack downloads.   (151647839)  Force Quit and restart your app while testing it.
-- Pausing and resuming an app installation or update while the system is downloading essential asset packs might cause the installation or update to stall indefinitely.  (151942388)  Delete the stalled app from the Home Screen (on iOS, iPadOS, or tvOS), from the Home View (on visionOS), or from the Finder (on macOS) and reinstall it.
+- The installation of large asset packs might fail.  (153128086)
 
 ##### Cloudkit
 
-###### Known Issues
+###### Resolved Issues
 
-- CloudKit sharing URLs do not launch third-party apps.  (151778655)
+- Fixed: CloudKit sharing URLs do not launch third-party apps.  (151778655)
 
 ##### Compositorservices
+
+###### Resolved Issues
+
+- Fixed: When turning off hover effects using the tracking areas API, spatial events might provide an incorrect location.  (151504311)
+- Fixed: Immersive Spaces using CompositorServices with the Progressive style do not display correctly on the visionOS simulator.  (151925874)
+- Fixed: CompositorServices API hover effects and tracking areas do not work in the visionOS simulator.  (152101959)
+- Fixed: When opening an immersive space, there might be a delay before the system has the correct immersion style. This might cause errors for functions that require specific immersion styles, since they may be called before the selected immersion style is propagated.  (152523347)
 
 ###### Known Issues
 
 - Partially-occluded objects might be more difficult to target with tracking areas compared to RealityKit colliders.  (149224443)
-- When turning off hover effects using the tracking areas API, spatial events might provide an incorrect location.  (151504311)  Do not toggle tracking areas while actively rendering into a `CompositorLayer`.
-- Immersive Spaces using CompositorServices with the Progressive style do not display correctly on the visionOS simulator.  (151925874)  Use a different Immersive Space style (such as Mixed or Full), or test on-device.
-- CompositorServices API hover effects and tracking areas do not work in the visionOS simulator.  (152101959)  Test the feature on Apple Vision Pro instead of the simulator.
-- When opening an immersive space, there might be a delay before the system has the correct immersion style. This might cause errors for functions that require specific immersion styles, since they may be called before the selected immersion style is propagated.  (152523347)
 
 ##### Controller Tracking
 
+###### Resolved Issues
+
+- Fixed: While using controller tracking, the Hand Tracking API via ARKit still provides updates for hand holding the controller at 1Hz. This means that if an app is using controller tracking and hand tracking at the same time, it will get sporadic hand tracking results. The intended behavior is for hand tracking to stop when controller is held.   (151882645)
+- Fixed: User might not be able to close or reposition app windows with a game controller or with hand gestures after using a game controller.  (152673502)
+
+##### Facetime
+
 ###### Known Issues
 
-- While using controller tracking, the Hand Tracking API via ARKit still provides updates for hand holding the controller at 1Hz. This means that if an app is using controller tracking and hand tracking at the same time, it will get sporadic hand tracking results. The intended behavior is for hand tracking to stop when controller is held.   (151882645)  Ignore the tracked hand when controller is held.
-- User might not be able to close or reposition app windows with a game controller or with hand gestures after using a game controller.  (152673502)  Press the Digital Crown to open the Home screen and retry.
+- Testing SharePlay experiences in the simulator using FaceTime might cause the simulator to crash.  (153776177)
 
 ##### Foundation
 
@@ -117,13 +139,20 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ##### Foundation Models Framework
 
+###### Resolved Issues
+
+- Fixed: When you pass `includeSchemaInPrompt: false` to `respond` or `streamResponse`, it is not respected.  (151926006)
+- Fixed: In an Xcode Playground, requests made to the model might receive a “rate limit exceeded” error.  (152325506)
+- Fixed: The Foundation Models framework cannot be imported when building for Mac Catalyst.  (153255533) (FB18004324)
+
 ###### Known Issues
 
-- When you pass `includeSchemaInPrompt: false` to `respond` or `streamResponse`, it is not respected.  (151926006)
 - Custom `@Generable` types named `Number` or `Boolean` might not function reliably in guided generation.  (152280144)  Use a different type name.
 - Some instructions and prompts to the model might not lead to expected responses. Use Feedback Assistant to report satisfactory or unsatisfactory cases. When applicable, you can use the `LanguageModelFeedbackAttachment` API to serialize the feedback to a file and attach it to Feedback Assistant.  (152318091)  Refine your instructions and prompts using `#Playground` in Xcode. When applying guided generation with a `@Generable` type, add `@Guide` with a custom description on properties to steer the model’s responses.
 - Tool calling might not function properly if primitive types such as `Int`, `String`, or `Bool` are used as the argument.  (152318534)  Define a custom `@Generable` type.
-- In an Xcode Playground, requests made to the model might receive a “rate limit exceeded” error.  (152325506)  Close and reopen the playground tab in the canvas.
+- Model requests in macOS command line tools might experience rate limiting.  (152681332)  When you need to make many requests to the model, use a UI app instead.
+- `Generable` types cannot be made public due to a bug in the `Generable` macro.  (153216183) (FB17990794)  When you intend to expose a `Generable` type in your library, expand the macro using Xcode, insert the macro expansion content into your code, and make the `id` property public.
+- Requests to the model might experience rate limiting, even when the device is connected to power.  (153216632)
 
 ##### Game Controller
 
@@ -133,15 +162,15 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ##### Healthkit
 
-###### Known Issues
+###### Resolved Issues
 
-- The authorization screen prompted by the Medications Authorization API cannot be dismissed if the user has no available medications needing authorization.  (152094574)  Force Quit the application that requested authorization.
+- Fixed: The authorization screen prompted by the Medications Authorization API cannot be dismissed if the user has no available medications needing authorization.  (152094574)
 
 ##### Icloud
 
-###### Known Issues
+###### Resolved Issues
 
-- Prescription assets created on visionOS might not sync to iOS.  (152119040)
+- Fixed: Prescription assets created on visionOS might not sync to iOS.  (152119040)
 
 ##### Image Playground
 
@@ -163,15 +192,21 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ##### Lists
 
-###### Known Issues
+###### Resolved Issues
 
-- For platform-compatible first-party apps like Calendar, Voice Memos, and Reminders, list rows with multi-selection buttons might fail to render those buttons.  (152510946)
+- Fixed: For platform-compatible first-party apps like Calendar, Voice Memos, and Reminders, list rows with multi-selection buttons might fail to render those buttons.  (152510946)
 
 ##### Look to Scroll
 
+###### Resolved Issues
+
+- Fixed: If Look to Scroll is disabled in Settings and the user has not encountered the feature before, a Tip notification for Look to Scroll will still appear.  (146418079)
+
+##### Mac Virtual Display
+
 ###### Known Issues
 
-- If Look to Scroll is disabled in Settings and the user has not encountered the feature before, a Tip notification for Look to Scroll will still appear.  (146418079)  Dismiss the Tip notification.
+- Users might see sharp edges around keyboards and MacBooks when viewing in passthrough.  (153668146)  Disconnect then reconnect the Mac Virtual Display, or reboot the Apple Vision Pro.
 
 ##### Maps
 
@@ -181,11 +216,15 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ##### Messages
 
+###### Resolved Issues
+
+- Fixed: Sent translated messages do not get re-translated after editing.  (149401758)
+- Fixed: In regions where Screen Unknown Senders is on by default, notifications for message categories are erroneously off by default.  (149450560)
+- Fixed: When scrolling through a conversation that contains messages that failed to send, translucent circles might appear to the right of the transcript, not connected to any message.  (149575551)
+
 ###### Known Issues
 
-- Sent translated messages do not get re-translated after editing.  (149401758)  Send the message again instead of editing the original.
-- In regions where Screen Unknown Senders is on by default, notifications for message categories are erroneously off by default.  (149450560)  In Messages settings, manually enable notifications for the categories with the Allow Notifications setting of the Unknown Senders section.
-- When scrolling through a conversation that contains messages that failed to send, translucent circles might appear to the right of the transcript, not connected to any message.  (149575551)  Scrolling up and down might remove the circles.
+- In one-to-one conversations, background changes might be attributed incorrectly after quitting and re-opening the Messages app.  (150548773)
 - When setting a photo as a background in conversations, the photo appears larger than the preview shows.  (151730462)  Set the photo background from an iPhone.
 - Transaction or Promotion messages filtered by a Message Filter App Extension might be badged as “Unknown” in the conversation list rather than “Transaction” or “Promotion”.  (151869409)
 
@@ -195,10 +234,13 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 - Metal 4 is now supported. See [`Metal`](https://developer.apple.comhttps://developer.apple.com/metal/) for additional details.  (113781091)
 
+###### Resolved Issues
+
+- Fixed: Metal Shader Validation might not work with shaders that use Metal Performance Primitives.  (149263281)
+
 ###### Known Issues
 
 - If you’re using Metal 4 command encoders, you should add render and compute pipelines that support indirect command buffers to your residency sets. The Metal device driver currently does not enforce this requirement.  (145066238)
-- Metal Shader Validation might not work with shaders that use Metal Performance Primitives.  (149263281)
 - Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367)  Selectively disable Shader Validation for pipelines using ray tracing. See [`documentation`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage/#Selectively-enable-Shader-Validation).
 
 ##### Metalfx
@@ -209,9 +251,9 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ##### Mobile Device Management
 
-###### Known Issues
+###### Resolved Issues
 
-- Apps installed via Declarative Device Management might not get preserved correctly during Rapid Return to Service flow.  (148849851)
+- Fixed: Apps installed via Declarative Device Management might not get preserved correctly during Rapid Return to Service flow.  (148849851)
 
 ##### Music
 
@@ -247,6 +289,9 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 ###### Resolved Issues
 
 - Fixed: Entities with a PortalComponent ignore any ModelSortGroupComponent and instead use a fixed rendering order. In case of sorting rendering issues with portal surface, explicitly add a ModelSortGroupComponent using a `.planarUIAlwaysBehind` sort group.  (149899345)
+- Fixed: When using RealityKit API to retrieve the transform value of an accessory-anchored entity in a shared space, the result might be offset from its true value.  (151163403)
+- Fixed: App will crash if an entity is removed while presenting an `ImagePresentationComponent.Spatial3DImage` that has not yet finished generating.  (151960494)
+- Fixed: The `animate` functions on `Entity` and `RealityViewContent` do not start animations.  (152456435)
 
 ###### Known Issues
 
@@ -266,33 +311,35 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
  }
 ```
 - Some properties and components do not update SwiftUI Views when accessed through the `.observable` property on Entity.  (147063698)
-- When using RealityKit API to retrieve the transform value of an accessory-anchored entity in a shared space, the result might be offset from its true value.  (151163403)  Force quit and restart the application.
 - When a `PresentationComponent` is created with a `Binding` from an `ObservableObject`’s published property, changes to the property might not result in the popover presenting correctly.  (151346044)
 - When using ManipulationComponent with `dynamics.translationBehavior = .none`, `releaseBehavior = .reset` does not reset rotation.  (151648417)  Apply rotation after `ManipulationEvents.WillEnd`.
-- App will crash if an entity is removed while presenting an `ImagePresentationComponent.Spatial3DImage` that has not yet finished generating.  (151960494)  Wait until the `Spatial3DImage` `generate()` function returns before removing the entity.
-- The `animate` functions on `Entity` and `RealityViewContent` do not start animations.  (152456435)
 - When using the VideoPlayerComponent API, Dynamic Mask is not supported in the visionOS simulator.  (152725380)
 
 ##### Remoteimmersivespace
+
+###### Resolved Issues
+
+- Fixed: When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro, transitioning between the Full immersion style and Progressive does not work during an active stream.  (149590532)
+- Fixed: When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro, the app on Mac will crash if an Immersive Space is already open on Apple Vision Pro.  (151897819)
+- Fixed: When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro, users might get stuck in immersion that transitions between black and passthrough, based on whether hands are visible in the field of view.  (151951590)
 
 ###### Known Issues
 
 - When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro, there might be visual artifacts around objects of high depth disparity, such as near objects overlapping far objects.  (147999474)
 - When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro, an app session might end due to poor Wi-Fi connection, if a user’s Mac freezes, or during transition from wired USB connection to Wi-Fi.   (149237275)  Restart the RemoteImmersiveSpace app.
-- When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro, transitioning between the Full immersion style and Progressive does not work during an active stream.  (149590532)  Close the RemoteImmersiveSpace, change the immersion style, and reopen the RemoteImmersiveSpace API.
+- When using the RemoteImmersiveSpace API that streams spatial content from Mac to Apple Vision Pro, visionOS 26 beta 2 and macOS 26 beta 2 are not backwards compatible with visionOS 26 beta 1 and macOS 26 beta 1.  (149579399)  Use both visionOS 26 beta 2 and macOS 26 beta 2.
 - When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro, an app session might have video stalls, blurry content, and black rendering on the sides if running on a Mac computer with Apple silicon.  (151322584)  Profile your application and leverage the -renderQuality API new to visionOS and macOS.
 - A blank Sharing UI might be shown and get stuck when trying to connect Mac to Apple Vision Pro and starting spatial content streaming using RemoteImmersiveSpace API.  (151503720)  Reboot the Apple Vision Pro and start a new session.
-- When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro, the app on Mac will crash if an Immersive Space is already open on Apple Vision Pro.  (151897819)  Close the Immersive Space on Apple Vision Pro before starting a RemoteImmersiveSpace session.
 - A blank UI window is shown and gets stuck when using the RemoteImmersiveSpace API to stream spatial content while using Mac Virtual Display.  (151899171)  Start the RemoteImmersiveSpace session without using Mac Virtual Display for the first session on every boot.
 - When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro while in a FaceTime video call, the spatial stream might stall and end.  (151936085)  End the FaceTime video call before using RemoteImmersiveSpace API-enabled apps.
 - When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro while in Travel mode, spatial stream might stall and end.  (151941176)  End Travel Mode while using RemoteImmersiveSpace API-enabled apps.
-- When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro, users might get stuck in immersion that transitions between black and passthrough, based on whether hands are visible in the field of view.  (151951590)  Quit and restart the app.
+- If you port an app using Xcode template or Metal 4 with `ProgressiveImmersionStyle` for macOS spatial rendering, the app will crash on macOS.  (153574517)  Use `FullImmersionStyle`.
 
 ##### Safari
 
-###### Known Issues
+###### Resolved Issues
 
-- The history section in the sidebar does not have the “Clear” button.  (152536922)  Swipe left on individual history items to delete them one-by-one. Use Settings > Safari to clear browsing history entirely.
+- Fixed: The history section in the sidebar does not have the “Clear” button.  (152536922)
 
 ##### Scenes and Windows
 
@@ -406,18 +453,18 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
      .presentationSizing(.page)
      .presentationCompactAdaptation(.fullScreen)
 ``` (150455117)
+- Fixed: Standard gesture precedence and failure requirements do not work with `.manipulable`. Nested gestures always take precedence even if they fail.  (150773003)
+- Fixed: When presenting a context menu from an ornament or attachment in a Volume, the context menu might not appear relative to origin.  (151803598)
+- Fixed: When using the `.hoverEffectDisabled(true)` and `.manipulable` modifiers on the same view, the hover effect glow will still be visible.  (151810879)
+- Fixed: If Default Actor Isolation is set to `MainActor`, `@Animatable` macro emits concurrency warnings in Swift 5 language mode and does not compile in Swift 6 language mode.  (152524435)
 
 ###### Known Issues
 
 - When a popover is presented from a SwiftUI view within a volume, moving around the volume might cause the popover to become detached from its source content.  (147066605)
 - When a background is set for a table view, the header does not adopt the color. This results in the table having the specified color but the header having a transparent background.  (150483611)  Refrain from setting a background on table views.
-- Standard gesture precedence and failure requirements do not work with `.manipulable`. Nested gestures always take precedence even if they fail.  (150773003)
 - When using `.manipulable` modifier on content within a `ScrollView`, if the user is looking at the manipulable item when trying to perform an indirect scroll gesture, manipulation will take precedence over scrolling.  (151659525)
-- When presenting a context menu from an ornament or attachment in a Volume, the context menu might not appear relative to origin.  (151803598)
-- When using the `.hoverEffectDisabled(true)` and `.manipulable` modifiers on the same view, the hover effect glow will still be visible.  (151810879)
 - The detailed surface information classification API might unexpectedly be “none”.  (151820408)
 - The `breakthroughEffect(_:)` and `presentationBreakthroughEffect(_:)` modifiers have no effect in the simulator.  (152112050)
-- If Default Actor Isolation is set to `MainActor`, `@Animatable` macro emits concurrency warnings in Swift 5 language mode and does not compile in Swift 6 language mode.  (152524435)  Use Swift 5 language mode or set Default Actor Isolation to `nonisolated` in project’s build settings.
 
 ###### Deprecations
 
@@ -434,16 +481,22 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 - `interactionWasUpdated` has been deprecated because only some of the provided information is reliably available for remote interactions. The preferred alternative is polling the cursors in the `onUpdate` function of the `TabletopGame.RenderDelegate`.  (150762273)
 
+##### Textkit
+
+###### New Features
+
+- iOS 26, tvOS 26, visionOS 26, watchOS 26, and macOS Tahoe 26 have two methods for resolving the natural alignment `NSTextAlignment.natural` and the last line of `NSTextAlignment.justified` into concrete alignments, `left` and `right`. The first approach utilizes the UI language, which is determined by passing nil-language to `NSParagraphStyle.defaultWritingDirection(forLanguage: )`. This behavior was employed prior to this release. The second method is new and dynamically utilizes the base writing direction for the paragraph. When the base writing direction is set to `NSWritingDirection.rightToLeft`, the text is aligned to `right`, and vice versa. The behavior is selected by API introduced in this major release: `NSTextLayoutManager.resolvesNaturalAlignmentWithBaseWritingDirection`, `NSStringDrawingOptionsResolvesNaturalAlignmentWithBaseWritingDirection`, `UITraitCollection.resolvesNaturalAlignmentWithBaseWritingDirection`, and `NSTextField.resolvesNaturalAlignmentWithBaseWritingDirection`.  (152045248)
+
 ##### Ui Frameworks
 
 ###### Resolved Issues
 
 - Fixed: Non-SF Symbol images in TabBars and TabViews default to template rendering.  (142894523)
+- Fixed: `.hoverEffectsDisabled()` does not disable highlight effects on links within `SwiftUI.Text` views.  (148559710)
 
 ###### Known Issues
 
 - Text Effect Windows might be partially cut off when triggered from SwiftUI text fields that are positioned in an ornament at `.topTrailingBack`.  (142326671)
-- `.hoverEffectsDisabled()` does not disable highlight effects on links within `SwiftUI.Text` views.  (148559710)
 - Apps might receive activation and deactivation notifications when viewing Apple Immersive Video.  (148774882)
 - Gaze hover effects might not appear on controls when occluded by another object.  (149493534)
 
@@ -460,31 +513,34 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ##### Video Toolbox
 
-###### Known Issues
+###### Resolved Issues
 
-- Decoding errors in MV-HEVC videos might crash the controlling process, causing the user-facing app to close or video playback to pause. The user can resume playback if the player supports it as the controlling process could relaunch video playback.   (152060939)  If the application allows it, try a non-spatial, two dimensional view of the content.
+- Fixed: Decoding errors in MV-HEVC videos might crash the controlling process, causing the user-facing app to close or video playback to pause. The user can resume playback if the player supports it as the controlling process could relaunch video playback.   (152060939)
 
 ##### Webkit
+
+###### Resolved Issues
+
+- Fixed: Non-2D video in Media Source Extensions (MSE) might render incorrectly or cause Safari to hang.  (149733671)
 
 ###### Known Issues
 
 - A site will crash when using a 3D model with audio in `<model>`.  (146899549)  Use a 3D model without audio.
-- Non-2D video in Media Source Extensions (MSE) might render incorrectly or cause Safari to hang.  (149733671)  Use other formats (e.g. HLS) instead of MSE to serve non-2D video.
 
 ##### Widgetkit
 
-###### Known Issues
+###### Resolved Issues
 
-- If the `.widgetTexture` modifier is set to `.paper`, the property does not take effect when rendering widgets.  (151808588)
-- The `.supportedMountingStyles` modifier does not take effect when displaying the widget configuration UI.  (151808744)
+- Fixed: If the `.widgetTexture` modifier is set to `.paper`, the property does not take effect when rendering widgets.  (151808588)
+- Fixed: The `.supportedMountingStyles` modifier does not take effect when displaying the widget configuration UI.  (151808744)
 
 ##### Widgets
 
 ###### Known Issues
 
-- Widget does not show up automatically when creating a new visionOS app project in Xcode.  (148775894)  Manually drag a widget into the environment.
-- Bincompat iOS widgets do not appear in the visionOS Widgets app on visionOS simulator.  (150067581)
+- iOS widgets do not appear in the visionOS Widgets app while using visionOS simulator.  (150067581)
 - In the Widgets app, app icons in Widget Library might appear as placeholders when running on simulator.  (150547965)
+- A visionOS app project might not auto-select the built widget, and the widget will be left in the Suggested section in the Widgets app.  (153326762)  You might need to manually select the widget in the list.
 
 
 ---

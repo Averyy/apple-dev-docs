@@ -17,6 +17,7 @@ Returns a rectangle in the parent’s coordinate system that contains the positi
 ## Declaration
 
 ```swift
+@MainActor
 func calculateAccumulatedFrame() -> CGRect
 ```
 

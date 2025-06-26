@@ -16,7 +16,7 @@ The tint color for the media playback button.
 
 ```swift
 @NSCopying
-optional var mediaPlayPauseButtonTintColor: NSColor { get }
+optional var mediaPlayPauseButtonTintColor: UIColor { get }
 ```
 
 #### Discussion

@@ -14,7 +14,7 @@ All labels other than Home or Work labels match this label.
 ## Declaration
 
 ```swift
-let kABOtherLabel: String
+let kABOtherLabel: CFString!
 ```
 
 ## See Also

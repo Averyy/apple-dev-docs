@@ -13,7 +13,7 @@
 ## Declaration
 
 ```swift
-init<C>(id: String = UUID().uuidString, _ calls: C) where C : Collection, C.Element == Transcript.ToolCall
+init<S>(id: String = UUID().uuidString, _ calls: S) where S : Sequence, S.Element == Transcript.ToolCall
 ```
 
 ## See Also

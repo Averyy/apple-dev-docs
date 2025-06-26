@@ -1,7 +1,7 @@
 # MPSMatrixDecompositionStatus.failure
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 A status indicating the decomposition was not able to be completed.
 
@@ -16,8 +16,17 @@ A status indicating the decomposition was not able to be completed.
 ## Declaration
 
 ```swift
-case failure = -1
+case failure
 ```
+
+## See Also
+
+- [MPSMatrixDecompositionStatus.nonPositiveDefinite](mpsmatrixdecompositionstatus/nonpositivedefinite.md)
+  A status indicating a non-positive-definite pivot value was calculated.
+- [MPSMatrixDecompositionStatus.singular](mpsmatrixdecompositionstatus/singular.md)
+  A status indicating the resulting decomposition is not suitable for use in a subsequent system solve.
+- [MPSMatrixDecompositionStatus.success](mpsmatrixdecompositionstatus/success.md)
+  A status indicating the decomposition was performed successfully.
 
 
 ---

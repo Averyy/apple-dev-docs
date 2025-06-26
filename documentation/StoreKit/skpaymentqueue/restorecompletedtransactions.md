@@ -23,9 +23,9 @@ func restoreCompletedTransactions()
 ## Mentions
 
 - [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
-- [Restoring purchased products](restoring-purchased-products.md)
 - [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 - [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
+- [Restoring purchased products](restoring-purchased-products.md)
 
 #### Discussion
 

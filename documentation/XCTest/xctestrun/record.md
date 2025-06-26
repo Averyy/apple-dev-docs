@@ -8,7 +8,7 @@ Records an issue during test execution for the test run.
 ## Declaration
 
 ```swift
-func record(_ issue: XCTIssueReference)
+func record(_ issue: XCTIssue)
 ```
 
 #### Discussion

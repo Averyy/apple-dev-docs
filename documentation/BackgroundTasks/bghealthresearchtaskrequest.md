@@ -11,7 +11,6 @@ A request to launch your app in the background to execute processing for a healt
 - Mac Catalyst 17.0+
 - tvOS 17.0+
 - visionOS 1.0+
-- watchOS 10.0+
 
 ## Declaration
 

@@ -63,9 +63,12 @@ if !isDragging {
 // ...
      
 // Normalize the scene space drag translation and pass it to the character movement component.
-let inputDirection = (dragPosition - dragStartPosition) / GameSettings.dragRadius
+let normalizedSceneDragDelta = sceneDragDelta == .zero ? .zero : simd_normalize(sceneDragDelta)
+let inputDirection = normalizedSceneDragDelta * (min(dragDistance, dragRadius) / dragRadius)
 appModel.character.components[CharacterMovementComponent.self]?.inputMoveDirection = inputDirection
 ```
+
+> **Note**: When running the sample project in Simulator, you can hold the Shift key on your keyboard while dragging the mouse to improve the feel of the simulated drag gesture. To learn more, see  [`Interacting with your app in the visionOS simulator`](https://developer.apple.com/documentation/Xcode/interacting-with-your-app-in-the-visionos-simulator).
 
 To improve the player’s experience using a drag gesture to move the character, update the drag start position to follow behind the current drag position if the player drags beyond a specific radius.
 
@@ -78,11 +81,12 @@ dragStartPositionInPhysicsSpace.y = dragPositionInPhysicsSpace.y
 // Get the drag translation in the XZ plane of the local space of the physics root.
 let dragDelta = (dragPositionInPhysicsSpace - dragStartPositionInPhysicsSpace)
 
-// Move the drag start position so that it follows behind the current drag position so the player doesn't have to move their hand all
-// the way back to change direction.
 let dragDistance = length(dragDelta)
 let dragRadius = GameSettings.dragRadius / GameSettings.scale
-if dragDistance > dragRadius {
+// You might prefer to set this flag to false. This sample uses relative hand input by default.
+if GameSettings.useRelativeDragInput && dragDistance > dragRadius {
+    // Move the drag start position so it follows behind the current drag position, so the player doesn't have to move their
+    // hand all the way back to change direction.
     let normalizedDragDelta = dragDelta / dragDistance
     dragStartPositionInPhysicsSpace = dragPositionInPhysicsSpace - normalizedDragDelta * dragRadius
 }
@@ -179,11 +183,9 @@ var subscriptions: [AnyCancellable] = .init()
 required init (scene: Scene ) {
     // Register the `onDidAddCompoundCollisionMarker` callback when adding a custom component to an `Entity`.
     // The callback runs on the scene load.
-    scene.subscribe(
-        to: ComponentEvents.DidAdd.self,
-        componentType: CompoundCollisionMarkerComponent.self,
-        onDidAddCompoundCollisionMarker
-    ).store(in: &subscriptions)
+    scene.subscribe(to: ComponentEvents.DidAdd.self, componentType: CompoundCollisionMarkerComponent.self) {
+        self.onDidAddCompoundCollisionMarker(event: $0)
+    }.store(in: &subscriptions)
 }
 ```
 
@@ -394,6 +396,8 @@ func setShadowShaderParameters (
 
 ## See Also
 
+- [Enhancing the audio experience for Petite Asteroids](enhancing-the-audio-experience-for-petite-asteroids.md)
+  Elevate the game’s immersive experience using RealityKit audio.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)

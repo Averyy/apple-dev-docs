@@ -16,7 +16,7 @@ Constants that indicate instance transformation types.
 ## Declaration
 
 ```swift
-enum MPSTransformType : UInt, @unchecked Sendable
+enum MPSTransformType
 ```
 
 ## Topics
@@ -24,11 +24,18 @@ enum MPSTransformType : UInt, @unchecked Sendable
 ### Enumeration Cases
 - [MPSTransformType.float4x4](mpstransformtype/float4x4.md)
 - [MPSTransformType.identity](mpstransformtype/identity.md)
+### Initializers
+- [init?(rawValue: UInt)](mpstransformtype/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

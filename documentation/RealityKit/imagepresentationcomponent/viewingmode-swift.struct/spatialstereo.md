@@ -14,6 +14,11 @@ Displays the image’s spatial stereo representation (if available) with a windo
 static let spatialStereo: ImagePresentationComponent.ViewingMode
 ```
 
+## See Also
+
+- [static let spatialStereoImmersive: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/spatialstereoimmersive.md)
+  Displays the image’s spatial stereo representation (if available) with an immersive presentation style.
+
 
 ---
 

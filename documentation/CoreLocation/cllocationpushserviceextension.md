@@ -49,7 +49,7 @@ For more information about adding the extension to your app, see [`Creating a lo
 
 ## See Also
 
-- [com.apple.developer.location.push](../BundleResources/Entitlements/com.apple.developer.location.push.md)
+- [Location Push Service Extension](../BundleResources/Entitlements/com.apple.developer.location.push.md)
   An entitlement to enable a location-sharing app to query someone’s location in response to a push notification.
 - [struct CLLocationPushServiceError](cllocationpushserviceerror-swift.struct.md)
   Error codes the location manager returns if starting to monitor for location push notifications fails.

@@ -40,8 +40,8 @@ ScrollView(.horizontal, showsIndicators: false) {
 
 - [Landmarks: Applying a background extension effect](landmarks-applying-a-background-extension-effect.md)
   Configure an image to blur and extend under a sidebar or inspector panel.
-- [Landmarks: Refining the system provided glass effect in toolbars](landmarks-refining-the-system-provided-glass-effect-in-toolbars.md)
-  Organize toolbars into related groups to improve their appearance and utility.
+- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](landmarks-refining-the-system-provided-glass-effect-in-toolbars.md)
+  Organize toolbars into related groupings to improve their appearance and utility.
 - [Landmarks: Displaying custom activity badges](landmarks-displaying-custom-activity-badges.md)
   Provide people with a way to mark their adventures by displaying animated custom activity badges.
 

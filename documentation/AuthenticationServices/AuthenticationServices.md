@@ -158,6 +158,8 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
   The activity type used in user activity objects sent to importing apps.
 - [let ASCredentialImportToken: String](ascredentialimporttoken.md)
   The key for the token in the user info dictionary of the user activity sent to importing apps.
+### Type Aliases
+- [typealias ASImage](asimage-8ysl.md)
 ### Enumerations
 - [enum ASContactIdentifier](ascontactidentifier.md)
 - [enum ASContactIdentifierRequest](ascontactidentifierrequest.md)

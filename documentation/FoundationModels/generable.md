@@ -79,6 +79,7 @@ struct SearchSuggestions {
 - [ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
 - [InstructionsRepresentable](instructionsrepresentable.md)
 - [PromptRepresentable](promptrepresentable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [GeneratedContent](generatedcontent.md)
 

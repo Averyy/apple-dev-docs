@@ -22,8 +22,8 @@ protocol MTLHeap : MTLAllocation
 ## Mentions
 
 - [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
-- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
 - [Reducing the Memory Footprint of Metal Apps](reducing-the-memory-footprint-of-metal-apps.md)
+- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
 - [Creating Sparse Heaps and Sparse Textures](creating-sparse-heaps-and-sparse-textures.md)
 
 #### Overview

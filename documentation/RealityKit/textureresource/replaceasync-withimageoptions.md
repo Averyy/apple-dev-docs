@@ -10,7 +10,6 @@ Asynchronously replaces the texture with a Core Graphics image.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -37,7 +36,7 @@ Don’t use this method for updates at frame-rate frequency. For frequent textur
   Synchronously creates a texture resource from an in-memory Core Graphics image.
 - [static func generateAsync(from: CGImage, withName: String?, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](textureresource/generateasync(from:withname:options:).md)
   Asynchronously generates a texture resource from an in-memory Core Graphics image.
-- [static generate(from:named:options:)](textureresource/generate(from:named:options:).md)
+- [static func generate(from: CGImage, named: String?, options: TextureResource.CreateOptions) async throws -> TextureResource](textureresource/generate(from:named:options:).md)
   Asynchronously generates a texture resource from an in-memory Core Graphics image.
 - [static func loadAsync(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](textureresource/loadasync(contentsof:withname:options:).md)
   Asynchronously loads a texture resource from a URL with options.

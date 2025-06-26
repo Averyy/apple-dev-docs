@@ -16,7 +16,7 @@ var toolTip: String! { get set }
 
 #### Discussion
 
-By default, the window tab’s tooltip displays its [`title`](nswindowtab/title.md) string. Once customized, setting the [`toolTip`](nswindowtab/tooltip.md) property to [`nil`](https://developer.apple.com/documentation/objectivec/nil) causes it to follow the [`title`](nswindowtab/title.md) property again.
+By default, the window tab’s tooltip displays its [`title`](nswindowtab/title.md) string. Once customized, setting the [`toolTip`](nswindowtab/tooltip.md) property to [`Nil`](https://developer.apple.com/documentation/objectivec/nil) causes it to follow the [`title`](nswindowtab/title.md) property again.
 
 
 ---

@@ -135,6 +135,8 @@ The iOS & iPadOS 18.4 SDK provides support to develop apps for iPhone and iPad r
 
 ## See Also
 
+- [iOS & iPadOS 18.6 Beta Release Notes](ios-ipados-18_6-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [iOS & iPadOS 18.5 Release Notes](ios-ipados-18_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [iOS & iPadOS 18.3 Release Notes](ios-ipados-18_3-release-notes.md)

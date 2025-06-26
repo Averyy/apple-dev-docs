@@ -22,7 +22,7 @@ func convert(_ point: CGPoint, from space: some CoordinateSpaceProtocol) -> CLLo
 
 #### Return Value
 
-Returns a doc://com.apple.documentation/documentation/corelocation/cllocationcoordinate2d; or `nil,` if the specified `point` isn’t represented by a point in the [`MapReader`](mapreader.md) associated with a [`Map`](map.md).
+Returns a [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/CoreLocation/CLLocationCoordinate2D); or `nil,` if the specified `point` isn’t represented by a point in the [`MapReader`](mapreader.md) associated with a [`Map`](map.md).
 
 ## Parameters
 

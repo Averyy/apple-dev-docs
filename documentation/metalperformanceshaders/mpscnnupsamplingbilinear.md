@@ -1,7 +1,7 @@
 # MPSCNNUpsamplingBilinear
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A bilinear spatial upsampling filter.
 
@@ -16,7 +16,7 @@ A bilinear spatial upsampling filter.
 ## Declaration
 
 ```swift
-class MPSCNNUpsamplingBilinear : MPSCNNUpsampling
+class MPSCNNUpsamplingBilinear
 ```
 
 #### Overview
@@ -30,14 +30,24 @@ The `scaleFactor` must be an integer value `>= 1`. The default value is `1`.
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingbilinear/2875160-init.md)
+- [convenience init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingbilinear/init(device:integerscalefactorx:integerscalefactory:).md)
   Initializes a bilinear spatial upsampling filter.
-- [init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int, alignCorners: Bool)](mpscnnupsamplingbilinear/2966661-init.md)
+- [init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int, alignCorners: Bool)](mpscnnupsamplingbilinear/init(device:integerscalefactorx:integerscalefactory:aligncorners:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNUpsampling](mpscnnupsampling.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

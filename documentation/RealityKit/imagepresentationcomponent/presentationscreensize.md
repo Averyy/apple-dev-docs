@@ -20,6 +20,11 @@ For immersive viewing modes (`.spatialStereoImmersive` and `.spatial3DImmersive`
 
 This property is expressed relative to the local coordinate space of the entity the `ImagePresentationComponent` is assigned to. To calculate the size of the screen in world coordinate space, multiply `presentationScreenSize` by the entity’s world scale.
 
+## See Also
+
+- [var screenHeight: Float](imagepresentationcomponent/screenheight.md)
+  The height of the screen mesh, in meters, when the image is presented in a non-immersive viewing mode.
+
 
 ---
 

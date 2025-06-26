@@ -19,18 +19,22 @@ class ParametricImmersiveAssetInfo
 
 ### Structures
 - [ParametricImmersiveAssetInfo.Error](parametricimmersiveassetinfo/error.md)
-  ParametricImmersiveAssetInfo error struct.
+  An error that occurs during the conversion process of the ParametricImmersive asset.
 ### Initializers
 - [init(asset: AVURLAsset, computeFormatDescription: Bool) async throws](parametricimmersiveassetinfo/init(asset:computeformatdescription:).md)
-  Initializes the object with AVURLAsset and compute the CMFormatDescription for converting the asset to ParametricImmersive asset. Use ParametricImmersiveAssetInfo.isParametricImmersive to check if asset is already ParametricImmersive beforehand.
+  Initializes the object with `AVURLAsset` and compute the `CMFormatDescription` for converting the asset to parametric immersive asset. Use `ParametricImmersiveAssetInfo.isParametricImmersive` to check if the asset is already parametric immersive or not beforehand.
 ### Instance Properties
 - [var isConvertible: Bool?](parametricimmersiveassetinfo/isconvertible.md)
-  Result boolean to indicate if the asset can be converted to ParametricImmersive asset or not. If opt-out computeFormatDescription in the init, this boolean shows if asset is potentially convertible.
+  A result Boolean value that indicates whether the asset can be converted to ParametricImmersive or not. If opt-out `computeFormatDescription` in the init, this boolean shows if asset is potentially convertible.
 - [var requiredFormatDescription: CMFormatDescription?](parametricimmersiveassetinfo/requiredformatdescription.md)
-  Result CMFormatDescription for overriding on AVMutableMovie video track, which will convert asset to ParametricImmersive asset. Use replaceFormatDescription to replace the format description on the AVMutableMovieTrack.
+  A result format description for overriding on AVMutableMovie video track, which will convert asset to ParametricImmersive asset. Use `replaceFormatDescription` to replace the format description on the `AVMutableMovieTrack`.
+- [var conversionResult: Result<CMFormatDescription, ParametricImmersiveAssetInfo.Error>?](parametricimmersiveassetinfo/conversionresult.md)
+  The Result object of the ParametricImmersive conversion.
+- [var isAssetConvertible: Bool](parametricimmersiveassetinfo/isassetconvertible.md)
+  A result Boolean value that indicates whether the asset can be converted to ParametricImmersive or not. If opt-out `computeFormatDescription` in the init, this boolean shows if asset is potentially convertible.
 ### Type Methods
 - [class func isParametricImmersive(asset: AVURLAsset) async -> Bool](parametricimmersiveassetinfo/isparametricimmersive(asset:).md)
-  Checks asynchronously if the asset is already in the ParametricImmersive format.
+  Checks asynchronously if the asset is already in the parametric immersive format or not.
 
 
 ---

@@ -13,9 +13,9 @@ Provides the full list of web service URLs, notification types, request limits, 
 
 - [Managing Users](managing-users.md)
 - [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
-- [Managing Assets](managing-assets.md)
 - [Getting App and Book Information (Legacy)](getting-app-and-book-information-legacy.md)
 - [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
+- [Managing Assets](managing-assets.md)
 
 #### Discussion
 

@@ -1,4 +1,4 @@
-# Xcode 16.4 Beta Release Notes
+# Xcode 16.4 Release Notes
 
 **Framework**: Xcode Release Notes
 
@@ -6,7 +6,13 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-Xcode 16.4 beta includes SDKs for iOS 18.5, iPadOS 18.5, tvOS 18.5, watchOS 11.5, macOS Sequoia 15.5, and visionOS 2.5. The Xcode 16.4 beta release supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 7 and later, and visionOS. Xcode 16.4 beta requires a Mac running macOS Sequoia 15.3 or later.
+Xcode 16.4 includes SDKs for iOS 18.5, iPadOS 18.5, tvOS 18.5, watchOS 11.5, macOS Sequoia 15.5, and visionOS 2.5. The Xcode 16.4 release supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 7 and later, and visionOS. Xcode 16.4 requires a Mac running macOS Sequoia 15.3 or later.
+
+##### General
+
+###### Resolved Issues
+
+- Fixed: Users may see excessive CPU utilization from diskimagesiod which reduces simulator performance, increasing boot time, process launch times, and test execution times.  (146716769) (FB16818022)
 
 ##### Apple Clang Compiler
 
@@ -25,6 +31,12 @@ Xcode 16.4 beta includes SDKs for iOS 18.5, iPadOS 18.5, tvOS 18.5, watchOS 11.5
 ###### Resolved Issues
 
 - Fixed: Improved error handling for the Processor Trace Instrument when targeting binary not signed with get-task-allow entitlement.   (139032322)
+
+##### Simulator
+
+###### Resolved Issues
+
+- Fixed: NSURLSession was always timing out and failing in iOS 18.3 simulator runtimes.   (147849952) (FB17006003)
 
 ##### Source Editor
 

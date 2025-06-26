@@ -147,6 +147,8 @@ sentimentPredictor.predictedLabel(for: "It was the best I've ever seen!")
 
 ## See Also
 
+- [Creating a word tagger model](../NaturalLanguage/creating-a-word-tagger-model.md)
+  Train a machine learning model to tag individual words in natural language text.
 - [struct MLTextClassifier](mltextclassifier.md)
   A model you train to classify natural language text.
 - [struct MLWordTagger](mlwordtagger.md)

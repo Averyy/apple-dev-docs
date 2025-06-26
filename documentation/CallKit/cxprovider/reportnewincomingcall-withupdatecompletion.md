@@ -20,8 +20,8 @@ func reportNewIncomingCall(with UUID: UUID, update: CXCallUpdate) async throws
 
 ## Mentions
 
-- [Sending End-to-End Encrypted VoIP Calls](sending-end-to-end-encrypted-voip-calls.md)
 - [Making and receiving VoIP calls](making-and-receiving-voip-calls.md)
+- [Sending End-to-End Encrypted VoIP Calls](sending-end-to-end-encrypted-voip-calls.md)
 
 #### Discussion
 

@@ -18,8 +18,8 @@ enum ReadError
 
 ## Mentions
 
-- [Adding support for Tap to Pay on iPhone to your app](adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 - [Accepting loyalty passes from Wallet](accepting-loyalty-passes-from-wallet.md)
+- [Adding support for Tap to Pay on iPhone to your app](adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 
 ## Topics
 

@@ -19,8 +19,8 @@ case mac
 
 ## Mentions
 
-- [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
 - [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
 
 #### Discussion
 

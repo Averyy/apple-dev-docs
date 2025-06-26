@@ -17,7 +17,7 @@ let kSecTransformPreviousErrorKey: CFString
 
 #### Discussion
 
-Use the value associated with this key to trace through a chain of doc://com.apple.documentation/documentation/corefoundation/cferror-ru8 objects when more than one error occurs during transform evaluation.
+Use the value associated with this key to trace through a chain of [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) objects when more than one error occurs during transform evaluation.
 
 
 ---

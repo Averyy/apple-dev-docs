@@ -7,11 +7,11 @@
 - iOS ?+
 - iPadOS ?+
 - Mac Catalyst ?+
-- tvOS ?+
+- macOS ?+
 - visionOS ?+
 - watchOS ?+
 - Unknown ?+ - Deprecated
-- macOS ?+
+- tvOS ?+
 
 ## Declaration
 

@@ -34,7 +34,7 @@ final class RelevantIntentManager
 - [struct RelevantIntent](relevantintent.md)
   A type that specifies an intent and its relevance to the user.
 - [struct RelevantContext](../RelevanceKit/RelevantContext.md)
-  A type that specifies conditions for relevance.
+  Contextual clues the system uses to show relevant widgets in the Smart Stack on watchOS.
 
 
 ---

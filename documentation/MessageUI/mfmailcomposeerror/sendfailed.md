@@ -20,7 +20,7 @@ static var sendFailed: MFMailComposeError.Code { get }
 ## See Also
 
 - [static var errorDomain: String](mfmailcomposeerror/errordomain.md)
-  The domain of the error.
+  The domain for errors related to mail composition.
 - [static var saveFailed: MFMailComposeError.Code](mfmailcomposeerror/savefailed.md)
   An error occurred while trying to save the email message to the drafts folder.
 - [MFMailComposeError.Code](mfmailcomposeerror/code.md)

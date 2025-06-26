@@ -69,6 +69,10 @@ For information about the language-level concurrency model that `DiscardingTaskG
 - [var isEmpty: Bool](throwingdiscardingtaskgroup/isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
 ### Instance Methods
+- [func addImmediateTask(name: String?, priority: TaskPriority?, operation: sending () async throws -> Void)](throwingdiscardingtaskgroup/addimmediatetask(name:priority:operation:).md)
+  Create and immediately start running a new child task in the context of the calling thread/task.
+- [func addImmediateTaskUnlessCancelled(name: String?, priority: TaskPriority?, operation: sending () async throws -> Void)](throwingdiscardingtaskgroup/addimmediatetaskunlesscancelled(name:priority:operation:).md)
+  Create and immediately start running a new child task in the context of the calling thread/task.
 - [func addTask(executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Void)](throwingdiscardingtaskgroup/addtask(executorpreference:priority:operation:).md)
   Adds a child task to the group.
 - [func addTask(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Void)](throwingdiscardingtaskgroup/addtask(name:executorpreference:priority:operation:).md)
@@ -83,10 +87,6 @@ For information about the language-level concurrency model that `DiscardingTaskG
   Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
 - [func cancelAll()](throwingdiscardingtaskgroup/cancelall.md)
   Cancel all of the remaining tasks in the group.
-- [func startTaskSynchronously(name: String?, priority: TaskPriority?, operation: sending () async throws -> Void)](throwingdiscardingtaskgroup/starttasksynchronously(name:priority:operation:).md)
-  Create and immediately start running a new child task in the context of the calling thread/task.
-- [func startTaskSynchronouslyUnlessCancelled(name: String?, priority: TaskPriority?, operation: sending () async throws -> Void)](throwingdiscardingtaskgroup/starttasksynchronouslyunlesscancelled(name:priority:operation:).md)
-  Create and immediately start running a new child task in the context of the calling thread/task.
 
 ## Relationships
 

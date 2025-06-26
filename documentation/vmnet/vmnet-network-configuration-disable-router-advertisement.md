@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-func vmnet_network_configuration_disable_router_advertisement(_ network: vmnet_network_configuration_ref)
+func vmnet_network_configuration_disable_router_advertisement(_ config: vmnet_network_configuration_ref)
 ```
 
 #### Discussion
@@ -19,7 +19,7 @@ Disables router advertisement on a network.
 
 ## Parameters
 
-- `network`: The network object to be modified.
+- `config`: The network configuration object to be modified.
 
 
 ---

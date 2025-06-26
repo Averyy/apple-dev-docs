@@ -17,13 +17,14 @@ The sequence used to specify the alpha value of a particle over its lifetime.
 ## Declaration
 
 ```swift
+@MainActor
 var particleAlphaSequence: SKKeyframeSequence? { get set }
 ```
 
 ## Mentions
 
-- [Using Keyframe Sequence to effect Custom Interpolation](using-keyframe-sequence-to-effect-custom-interpolation.md)
 - [Animating Particle Properties Across Disparate Values](animating-particle-properties-across-disparate-values.md)
+- [Using Keyframe Sequence to effect Custom Interpolation](using-keyframe-sequence-to-effect-custom-interpolation.md)
 
 #### Discussion
 

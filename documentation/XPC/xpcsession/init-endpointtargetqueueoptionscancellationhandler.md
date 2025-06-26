@@ -7,13 +7,13 @@ Creates a new session object representing a connection to the xpc endpoint.
 
 **Availability**:
 - Mac Catalyst 18.0+
-- macOS 26.0+ (Beta)
+- macOS 15.0+
 
 ## Declaration
 
 ```swift
 @preconcurrency
-convenience init(endpoint: XPCListener.Endpoint, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, cancellationHandler: ((XPCRichError) -> Void)? = nil) throws
+convenience init(endpoint: XPCEndpoint, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, cancellationHandler: ((XPCRichError) -> Void)? = nil) throws
 ```
 
 #### Return Value

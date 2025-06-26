@@ -82,6 +82,8 @@ struct CIFormat
   A 16-bit-per-pixel, half-width floating-point pixel format in which the sole component is luminance.
 ### Initializers
 - [init(rawValue: Int32)](ciformat/init(rawvalue:).md)
+### Type Properties
+- [static let RGBX8: CIFormat](ciformat/rgbx8.md)
 
 ## Relationships
 

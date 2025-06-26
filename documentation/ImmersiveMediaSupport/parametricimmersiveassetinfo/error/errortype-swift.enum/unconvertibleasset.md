@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: case
 
-Asset cannot be converted due to missing required metadata.
+An indication that the asset cannot be converted due to missing required metadata.
 
 **Availability**:
 - macOS 26.0+ (Beta)

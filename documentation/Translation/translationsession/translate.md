@@ -23,26 +23,26 @@ The response containing the text translation.
 
 #### Discussion
 
-This function translates a single line of text and might display different UI depending on the state of the translation. The languages the framework requires for the translation don’t have to be installed before calling this method.
+This function translates a single line of text and might display different UI depending on the state of the translation. The required languages for translation don’t have to be installed before calling this method.
 
-If the required languages for translation have already downloaded and the source language is clear, this function returns results without showing any UI to the user.
+If the required languages for translation have already downloaded and the source language is clear, this function returns results without showing any UI to the person.
 
-If the source or target language aren’t installed, the framework asks the user for permission to download the languages. During download a progress indicator displays. After the download completes, the framework performs the translation.
+If the source or target language aren’t installed, the framework asks the person for permission to download the languages. During the download a progress indicator displays. After it completes, the framework performs the translation.
 
-If the `sourceLanguage` is `nil` and the framework can’t detect the source language from the content, the framework prompts the user to choose the source language.
+If the `sourceLanguage` is `nil` and the framework can’t detect the source language from the content, the framework prompts the person to choose the source language.
 
 This function throws an `Error` if:
 
-- the user doesn’t agree to downloading the languages
-- the user dismisses the progress UI while the languages download,
-- the [`TranslationSession`](translationsession.md) fails to validate,
-- the languages aren’t installed when the session can’t request downloads,
-- the session was already cancelled, or
-- something goes wrong while performing the translation.
+- The person doesn’t agree to downloading the languages
+- The person dismisses the progress view during language downloads
+- [`TranslationSession`](translationsession.md) fails system validation
+- The session doesn’t allow requesting downloads and languages aren’t installed
+- You already cancelled the session
+- Something goes wrong during translation
 
-If someone dismisses the progress UI while the languages download, the system throws a `CocoaError/userCancelled` error, and the languages continue to download in the background.
+If a person dismisses the progress view while the languages download, the system throws a [`userCancelled`](https://developer.apple.com/documentation/Foundation/CocoaError/Code/userCancelled) error, and the languages continue to download in the background.
 
-> **Note**: Calls to this function can take several minutes while languages download.
+> **Note**: This function call can take several minutes while languages download.
 
 ## Parameters
 

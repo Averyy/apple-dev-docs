@@ -22,10 +22,10 @@ protocol MTLCounterSampleBuffer : NSObjectProtocol
 ## Mentions
 
 - [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
-- [Converting GPU Timestamps into CPU Time](converting-gpu-timestamps-into-cpu-time.md)
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 - [Creating a Counter Sample Buffer to Store a GPU’s Counter Data During a Pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
+- [Converting GPU Timestamps into CPU Time](converting-gpu-timestamps-into-cpu-time.md)
 - [Confirming which Counters and Counter Sets a GPU Supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
+- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Overview
 

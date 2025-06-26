@@ -6,17 +6,17 @@
 Options for the ray-triangle intersection test.
 
 **Availability**:
-- iOS 12.0+ - Deprecated in 17.0
-- iPadOS 12.0+ - Deprecated in 17.0
-- Mac Catalyst 13.0+ - Deprecated in 17.0
-- macOS 10.14+ - Deprecated in 14.0
-- tvOS 12.0+ - Deprecated in 17.0
-- visionOS 1.0+ - Deprecated in 1.0
+- iOS 12.0+
+- iPadOS 12.0+
+- Mac Catalyst 13.0+
+- macOS 10.14+
+- tvOS 12.0+
+- visionOS 1.0+
 
 ## Declaration
 
 ```swift
-enum MPSTriangleIntersectionTestType : UInt, @unchecked Sendable
+enum MPSTriangleIntersectionTestType
 ```
 
 ## Topics
@@ -24,11 +24,18 @@ enum MPSTriangleIntersectionTestType : UInt, @unchecked Sendable
 ### Enumeration Cases
 - [MPSTriangleIntersectionTestType.default](mpstriangleintersectiontesttype/default.md)
 - [MPSTriangleIntersectionTestType.watertight](mpstriangleintersectiontesttype/watertight.md)
+### Initializers
+- [init?(rawValue: UInt)](mpstriangleintersectiontesttype/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

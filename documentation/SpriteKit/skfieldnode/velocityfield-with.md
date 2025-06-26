@@ -17,6 +17,7 @@ Creates a field node that sets the velocity of physics bodies that enter the nod
 ## Declaration
 
 ```swift
+@MainActor
 class func velocityField(with velocityTexture: SKTexture) -> SKFieldNode
 ```
 

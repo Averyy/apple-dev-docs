@@ -801,9 +801,6 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [var utf8Span: UTF8Span](string/utf8span.md)
 ### Instance Methods
 - [func data(using: String.Encoding, allowLossyConversion: Bool) -> Data?](string/data(using:allowlossyconversion:).md)
-- [func hexData() -> Data?](string/hexdata.md)
-- [func normalizeHexstring()](string/normalizehexstring.md)
-- [func normalizedHexstring() -> String](string/normalizedhexstring.md)
 - [func withMutableCharacters<R>((inout String) -> R) -> R](string/withmutablecharacters(_:).md)
   Applies the given closure to a mutable view of the string’s characters.
 - [func withPlatformString<Result>((UnsafePointer<CInterop.PlatformChar>) throws -> Result) rethrows -> Result](string/withplatformstring(_:).md)

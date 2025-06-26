@@ -42,6 +42,9 @@ NetworkListener(for: .wifiAware( .connecting(to:service,  from:.selected(devices
 ### Allowing your paired devices to connect
 - [static let allPairedDevices: WAPublisherListener.Devices](wapublisherlistener/devices/allpaireddevices.md)
   The property that includes all paired devices that your app has access to.
+### Type Properties
+- [static let userSpecifiedDevices: WAPublisherListener.Devices](wapublisherlistener/devices/userspecifieddevices.md)
+  Includes only new devices the user pairs via DeviceDiscoveryUI’s `DevicePairingView()`.
 
 ## Relationships
 

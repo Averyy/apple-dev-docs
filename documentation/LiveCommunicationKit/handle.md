@@ -63,11 +63,6 @@ struct Handle
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
-## See Also
-
-- [struct Account](account.md)
-  A structure that represents a SIM or eSIM for dialing into a conversation.
-
 
 ---
 

@@ -16,7 +16,7 @@
 ## Declaration
 
 ```swift
-associatedtype MessageType : NotificationCenter.Message
+associatedtype MessageType
 ```
 
 

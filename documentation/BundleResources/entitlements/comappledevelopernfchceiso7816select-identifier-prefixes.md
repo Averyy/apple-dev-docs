@@ -31,6 +31,8 @@ For more information and to apply for this entitlement, visit [`HCE-based contac
   A Boolean value indicating whether your app may use Multipath protocols to seamlessly transition between Wi-Fi and cellular networks.
 - [Hotspot Configuration Entitlement](entitlements/com.apple.developer.networking.hotspotconfiguration.md)
   A Boolean value indicating whether your app can use the hotspot manager to configure Wi-Fi networks.
+- [HotSpot Helper](entitlements/com.apple.developer.networking.hotspothelper.md)
+  An entitlement that permits an app to participate in navigating Wi-Fi network hotspots.
 - [Near Field Communication Tag Reader Session Formats Entitlement](entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
 - [com.apple.developer.nfc.hce](entitlements/com.apple.developer.nfc.hce.md)

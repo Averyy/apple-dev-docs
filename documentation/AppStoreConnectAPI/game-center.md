@@ -60,6 +60,8 @@ For more information about all you can do with Game Center, see the [`Game Cente
 - [Game Center leaderboard set member localizations](game-center-leaderboard-set-member-localizations.md)
   Manage Game Center leaderboard set member localizations.
 ### Challenges
+- [Configuring Game Center challenges](configuring-game-center-challenges.md)
+  Setup and configure social experiences around leaderboards for friendly competition.
 - [Game Center challenges](game-center-challenges.md)
   Manage Game Center challenges for your apps.
 - [Game Center challenge versions](game-center-challenges-versions.md)
@@ -71,6 +73,8 @@ For more information about all you can do with Game Center, see the [`Game Cente
 - [Game Center challenge images](game-center-challenge-images.md)
   Manage image assets for your Game Center challenges.
 ### Activities
+- [Configuring Game center activities](configuring-game-center-activities.md)
+  Setup and configure a way for players to compete on a specific task or part of your game.
 - [Game Center activities](game-center-activities.md)
   Manage Game Center activities for your apps.
 - [Game Center activity versions](game-center-activity-versions.md)

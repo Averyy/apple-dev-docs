@@ -1,7 +1,7 @@
 # MPSCNNConvolutionTransposeNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a transposed convolution.
 
@@ -16,7 +16,7 @@ A representation of a transposed convolution.
 ## Declaration
 
 ```swift
-class MPSCNNConvolutionTransposeNode : MPSCNNConvolutionNode
+class MPSCNNConvolutionTransposeNode
 ```
 
 ## Topics
@@ -24,12 +24,20 @@ class MPSCNNConvolutionTransposeNode : MPSCNNConvolutionNode
 ### Initializers
 - [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
-- [init(source: MPSNNImageNode, convolutionGradientState: MPSCNNConvolutionGradientStateNode?, weights: any MPSCNNConvolutionDataSource)](mpscnnconvolutiontransposenode/2942641-init.md)
+- [init(source: MPSNNImageNode, convolutionGradientState: MPSCNNConvolutionGradientStateNode?, weights: any MPSCNNConvolutionDataSource)](mpscnnconvolutiontransposenode/init(source:convolutiongradientstate:weights:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNConvolutionNode](mpscnnconvolutionnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [MPSNNTrainableNode](mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

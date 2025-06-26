@@ -27,6 +27,8 @@ struct MutableSpan<Element> where Element : ~Copyable
 - [var count: Int](mutablespan/count.md)
 - [var indices: Range<MutableSpan<Element>.Index>](mutablespan/indices.md)
 - [var isEmpty: Bool](mutablespan/isempty.md)
+- [var mutableBytes: MutableRawSpan](mutablespan/mutablebytes.md)
+  Construct a MutableRawSpan over the memory represented by this span
 - [var span: Span<Element>](mutablespan/span.md)
 ### Instance Methods
 - [func extracting(some RangeExpression<Int>) -> MutableSpan<Element>](mutablespan/extracting(_:)-2g8w3.md)

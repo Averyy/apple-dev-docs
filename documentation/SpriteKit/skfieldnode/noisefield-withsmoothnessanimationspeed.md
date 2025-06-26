@@ -17,7 +17,6 @@ Creates a field node that applies a randomized acceleration to physics bodies.
 ## Declaration
 
 ```swift
-@MainActor
 class func noiseField(withSmoothness smoothness: CGFloat, animationSpeed speed: CGFloat) -> SKFieldNode
 ```
 

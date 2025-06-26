@@ -14,8 +14,8 @@ object ErrorResponse
 ## Mentions
 
 - [Parsing the Error Response Code](parsing-the-error-response-code.md)
-- [About the HTTP Status Code](about-the-http-status-code.md)
 - [Pinpointing the Location of Errors](pinpointing-the-location-of-errors.md)
+- [About the HTTP Status Code](about-the-http-status-code.md)
 
 ## Topics
 

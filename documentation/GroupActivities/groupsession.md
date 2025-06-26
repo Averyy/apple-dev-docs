@@ -22,8 +22,8 @@ final class GroupSession<ActivityType> where ActivityType : GroupActivity
 ## Mentions
 
 - [Joining and managing a shared activity](joining-and-managing-a-shared-activity.md)
-- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
 - [Synchronizing data during a SharePlay activity](synchronizing-data-during-a-shareplay-activity.md)
+- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
 
 #### Overview
 

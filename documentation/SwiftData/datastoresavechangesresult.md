@@ -34,6 +34,11 @@ final class DataStoreSaveChangesResult<T> where T : DataStoreSnapshot
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [func save(DataStoreSaveChangesRequest<Self.Snapshot>) throws -> DataStoreSaveChangesResult<Self.Snapshot>](datastore/save(_:).md)
+- [struct DataStoreSaveChangesRequest](datastoresavechangesrequest.md)
+
 
 ---
 

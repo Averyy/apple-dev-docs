@@ -1,7 +1,7 @@
 # MPSCNNReductionType.none
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.3+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case none = 0
+case none
 ```
 
 

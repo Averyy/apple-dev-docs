@@ -17,6 +17,7 @@ A Boolean value that determines whether the scene is playing.
 ## Declaration
 
 ```swift
+@MainActor
 var isPlaying: Bool { get set }
 ```
 

@@ -6,7 +6,7 @@ Implement single sign-on for media-streaming apps by managing a sign-in token on
 
 #### Overview
 
-The Automatic Sign-In feature offers a single sign-on experience for media-streaming apps that have the [`com.apple.smoot.subscriptionservice`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.smoot.subscriptionservice) entitlement. The first time a person signs in to your media streaming service, your app prompts them to opt in to Automatic Sign-In. If they agree, your app generates a  token. You provide the token to the framework, which stores it on the person’s Apple Account to sign the person in across all of their devices. When your app launches again, the framework provides the token if it exists on the person’s Apple Account, which your app uses to bypass the sign-in prompt and give the person quick access the media streaming features in your app.
+The Automatic Sign-In feature offers a single sign-on experience for media-streaming apps that have the [`com.apple.smoot.subscriptionservice`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.smoot.subscriptionservice) entitlement. The first time a person signs in to your media streaming service, your app prompts them to opt in to Automatic Sign-In. If they agree, your app generates a  token. You provide the token to the framework, which stores it on the person’s Apple Account to sign the person in across all of their devices. When your app launches again, the framework provides the token if it exists on the person’s Apple Account, which your app uses to bypass the sign-in prompt and give the person quick access to the media streaming features in your app.
 
 In addition, the feature creates a single sign-on experience when a person:
 
@@ -84,13 +84,13 @@ To revoke an Automatic Sign-In token, call [`deleteAutoSignInToken()`](vsuseracc
 
 The [`Automatic Sign-In API`](https://developer.apple.com/documentation/automaticsigninapi) enables you to manage tokens on your web sever. For example, you might allow the person to opt out of Automatic Sign-In from your website.
 
-To remove the current token value from your web server, call the [`Delete sign-in token`](https://developer.apple.com/documentation/automaticsigninapi/delete-this-token-for-all-associated-users) endpoint:
+To remove the current token value from your web server, call the [`Delete Sign-In Token`](https://developer.apple.com/documentation/automaticsigninapi/delete-this-token-for-all-associated-users) endpoint:
 
 ```other
 https://api.storekit.itunes.apple.com/account/v1/autoSignIn/delete
 ```
 
-In addition, you can update the current token value from your web server by calling [`Update sign-in token`](https://developer.apple.com/documentation/automaticsigninapi/update-this-token-for-all-associated-users):
+In addition, you can update the current token value from your web server by calling [`Update Sign-In Token`](https://developer.apple.com/documentation/automaticsigninapi/update-this-token-for-all-associated-users):
 
 ```other
 https://api.storekit.itunes.apple.com/account/v1/autoSignIn/update

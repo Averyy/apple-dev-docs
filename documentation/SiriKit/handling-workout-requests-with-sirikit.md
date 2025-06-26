@@ -35,7 +35,7 @@ This sample app can be run in the iOS Simulator without any special setup, but i
 
 ##### Recognize and Respond to Workout Requests
 
-In order for the Intent Extension to handle workout requests, the principal class of the extension must implement the [`handler(for:)`](https://developer.apple.com/documentation/Intents/INIntentHandlerProviding/handler(for:)) method of `INIntentHandlerProviding`. Use this method to dispatch the request to a class configured to handle it.
+In order for the Intent Extension to handle workout requests, the principal class of the extension must implement the [`handler(for:)`](https://developer.apple.com/documentation/Intents/INIntentHandlerProviding/handler(for:)) method of [`INIntentHandlerProviding`](https://developer.apple.com/documentation/Intents/INIntentHandlerProviding). Use this method to dispatch the request to a class configured to handle it.
 
 ```swift
 override func handler(for intent: INIntent) -> Any {
@@ -93,13 +93,13 @@ func resolveWorkoutName(for intent: INStartWorkoutIntent, with completion: @esca
 
 To aid Siri with recognition of parameter names like “wall climb” and “boulder climb,” add an `AppIntentVocabulary.plist` to a project. More information on this file and how it can add vocabulary to Siri can be found in [`Registering Custom Vocabulary with SiriKit`](registering-custom-vocabulary-with-sirikit.md).
 
-Once all parameters have been resolved, the system calls `confirm(intent:completion:)`. Validate the resolved parameters and pass back an [`INStartWorkoutIntentResponse`](https://developer.apple.com/documentation/Intents/INStartWorkoutIntentResponse) with an `INStartWorkoutIntentResponseCode`.
+Once all parameters have been resolved, the system calls `confirm(intent:completion:)`. Validate the resolved parameters and pass back an [`INStartWorkoutIntentResponse`](https://developer.apple.com/documentation/Intents/INStartWorkoutIntentResponse) with an [`INStartWorkoutIntentResponseCode`](https://developer.apple.com/documentation/Intents/INStartWorkoutIntentResponseCode).
 
 ##### Complete the Request
 
 Once the request to start the workout has been confirmed, the system calls `handle(intent:completion:)`. Some requests from Siri will be better handled by the main app rather than the Intent Extension; for example, the main app can better respond to requests in which long-lived system services are needed to support the workout.
 
-To transfer control to the main app, create a [`INStartWorkoutIntentResponse`](https://developer.apple.com/documentation/Intents/INStartWorkoutIntentResponse) with the `handleInApp` code and pass it to the completion block.
+To transfer control to the main app, create a [`INStartWorkoutIntentResponse`](https://developer.apple.com/documentation/Intents/INStartWorkoutIntentResponse) with the [`INStartWorkoutIntentResponseCode.handleInApp`](https://developer.apple.com/documentation/Intents/INStartWorkoutIntentResponseCode/handleInApp) code and pass it to the completion block.
 
 ```swift
 func handle(intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {

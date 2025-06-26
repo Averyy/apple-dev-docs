@@ -21,8 +21,8 @@ func descendant(matchingIdentifierPath identifierPath: [String]) async throws ->
 ## Mentions
 
 - [Recording student progress](recording-student-progress.md)
-- [Declaring your app’s context hierarchy](declaring-your-app-s-context-hierarchy.md)
 - [Building missing contexts](building-missing-contexts.md)
+- [Declaring your app’s context hierarchy](declaring-your-app-s-context-hierarchy.md)
 
 #### Discussion
 

@@ -23,17 +23,6 @@ This initializer throws an error if reading from the decoder fails, or if the da
 
 - `decoder`: The decoder to read data from.
 
-## See Also
-
-- [init(lensParameters: ImmersiveLensDefinition, mask: ImmersiveCameraMask, name: String, positionable: Bool, origin: ImmersiveCameraCalibration.CameraOrigin, textureMapping: ImmersiveCameraCalibration.CameraTextureMapping, environmentFilename: String?)](immersivecameracalibration/init(lensparameters:mask:name:positionable:origin:texturemapping:environmentfilename:).md)
-  Creates a parametric calibration from meiRives data and a image-based mask.
-- [init(lensParameters: ImmersiveLensDefinition, maskDefinition: ImmersiveDynamicMask?, name: String, positionable: Bool, origin: ImmersiveCameraCalibration.CameraOrigin, textureMapping: ImmersiveCameraCalibration.CameraTextureMapping, environmentFilename: String?)](immersivecameracalibration/init(lensparameters:maskdefinition:name:positionable:origin:texturemapping:environmentfilename:).md)
-  Creates a parametric calibration from meiRives data and a dynamic mask.
-- [init(usdzData: Data, mask: ImmersiveCameraMask, name: String, positionable: Bool, origin: ImmersiveCameraCalibration.CameraOrigin, textureMapping: ImmersiveCameraCalibration.CameraTextureMapping, environmentFilename: String?)](immersivecameracalibration/init(usdzdata:mask:name:positionable:origin:texturemapping:environmentfilename:).md)
-  Creates a mesh based calibration from USDZ data and a image-based mask.
-- [init(usdzData: Data, maskDefinition: ImmersiveDynamicMask, name: String, positionable: Bool, origin: ImmersiveCameraCalibration.CameraOrigin, textureMapping: ImmersiveCameraCalibration.CameraTextureMapping, environmentFilename: String?)](immersivecameracalibration/init(usdzdata:maskdefinition:name:positionable:origin:texturemapping:environmentfilename:).md)
-  Creates a mesh based calibration from USDZ data and a dynamic mask.
-
 
 ---
 

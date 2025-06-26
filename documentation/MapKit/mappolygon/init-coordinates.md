@@ -22,7 +22,7 @@ init(coordinates: [CLLocationCoordinate2D])
 
 ## Parameters
 
-- `coordinates`: An array of  doc://com.apple.documentation/documentation/corelocation/cllocationcoordinate2d  coordinates.
+- `coordinates`: An array of   coordinates.
 
 ## See Also
 

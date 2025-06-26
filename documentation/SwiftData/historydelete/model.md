@@ -4,6 +4,8 @@
 **Kind**: associatedtype  
 **Required**: Yes
 
+The type associated with the persistent model.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -19,6 +21,13 @@
 ```swift
 associatedtype Model : PersistentModel
 ```
+
+## See Also
+
+- [associatedtype ChangeIdentifier : Comparable, Hashable, Sendable](historydelete/changeidentifier-swift.associatedtype.md)
+  The type associated with the change identifier.
+- [associatedtype TransactionIdentifier : Comparable, Hashable, Sendable](historydelete/transactionidentifier-swift.associatedtype.md)
+  The type associated with the transaction identifier.
 
 
 ---

@@ -10,8 +10,8 @@ Provide age-related information so the App Store can determine the age rating fo
 
 ## Mentions
 
-- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
 - [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
+- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
 
 #### Discussion
 

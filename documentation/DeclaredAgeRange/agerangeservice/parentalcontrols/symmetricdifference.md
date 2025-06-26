@@ -1,6 +1,6 @@
 # symmetricDifference(_:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: method
 
 Returns a new option set with the elements contained in this set or in the given set, but not in both.

@@ -18,6 +18,7 @@ func broadcastActivityController(_ broadcastActivityController: RPBroadcastActiv
 ## Parameters
 
 - `broadcastActivityController`: The broadcast activity controller instance.
+- `broadcastController`: The broadcast controller instance used to start and stop broadcasts to a user selected service.
 - `error`: An optional error indicating a failure.
 
 

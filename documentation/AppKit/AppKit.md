@@ -103,6 +103,12 @@ AppKit also works with [`SwiftUI`](https://developer.apple.com/documentation/Swi
   Data types for use with multiple classes.
 - [Macros](macros.md)
   Macros for use with multiple classes.
+### Structures
+- [struct NSItemBadge](nsitembadge-swift.struct.md)
+  `NSItemBadge` represents a badge that can be attached to an `NSToolbarItem`.
+### Enumerations
+- [enum NSTintProminence](nstintprominence.md)
+  Controls how strongly the tint color applies in a view.
 
 
 ---

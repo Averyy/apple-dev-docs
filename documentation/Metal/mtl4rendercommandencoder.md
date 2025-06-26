@@ -63,7 +63,7 @@ protocol MTL4RenderCommandEncoder : MTL4CommandEncoder
   Associates an argument table with a set of render stages.
 - [func setBlendColor(red: Float, green: Float, blue: Float, alpha: Float)](mtl4rendercommandencoder/setblendcolor(red:green:blue:alpha:).md)
   Configures each pixel component value, including alpha, for the render pipeline’s constant blend color.
-- [func setColorAttachmentMap(MTLLogicalToPhysicalColorAttachmentMap)](mtl4rendercommandencoder/setcolorattachmentmap(_:).md)
+- [func setColorAttachmentMap(MTLLogicalToPhysicalColorAttachmentMap?)](mtl4rendercommandencoder/setcolorattachmentmap(_:).md)
   Sets the mapping from logical shader color output to physical render pass color attachments.
 - [func setColorStoreAction(MTLStoreAction, index: Int)](mtl4rendercommandencoder/setcolorstoreaction(_:index:).md)
   Configures the store action for a color attachment.

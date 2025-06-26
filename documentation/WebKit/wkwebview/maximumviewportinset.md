@@ -14,7 +14,7 @@
 
 ```swift
 @MainActor
-var maximumViewportInset: UIEdgeInsets { get }
+var maximumViewportInset: NSEdgeInsets { get }
 ```
 
 ## See Also

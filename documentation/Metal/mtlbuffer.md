@@ -24,11 +24,11 @@ protocol MTLBuffer : MTLResource
 - [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
 - [Estimating How Often a Texture Region Is Accessed](estimating-how-often-a-texture-region-is-accessed.md)
 - [Setting Resource Storage Modes](setting-resource-storage-modes.md)
-- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
 - [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
-- [Specifying Drawing and Dispatch Arguments Indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
-- [Indexing Argument Buffers](indexing-argument-buffers.md)
+- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
 - [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Indexing Argument Buffers](indexing-argument-buffers.md)
+- [Specifying Drawing and Dispatch Arguments Indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
 - [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
 
 #### Overview

@@ -17,6 +17,7 @@ Searches the children of the receiving node to perform processing for nodes that
 ## Declaration
 
 ```swift
+@MainActor
 func enumerateChildNodes(withName name: String, using block: @escaping (SKNode, UnsafeMutablePointer<ObjCBool>) -> Void)
 ```
 

@@ -18,17 +18,20 @@ class CPListImageRowItemCondensedElement
 ## Topics
 
 ### Initializers
-- [init(image: UIImage, imageShape: CPListImageRowItemCondensedElementShape, title: String, subtitle: String?, accessorySymbolName: String?)](cplistimagerowitemcondensedelement/init(image:imageshape:title:subtitle:accessorysymbolname:).md)
+- [init(image: UIImage, imageShape: CPListImageRowItemCondensedElement.Shape, title: String, subtitle: String?, accessorySymbolName: String?)](cplistimagerowitemcondensedelement/init(image:imageshape:title:subtitle:accessorysymbolname:).md)
   Initialize a list image row condensed element with an image, an image shape, a title, subtitle and a system symbol name.
 ### Instance Properties
 - [var accessorySymbolName: String?](cplistimagerowitemcondensedelement/accessorysymbolname.md)
   The name of the system symbol image to use as accessory.
-- [var imageShape: CPListImageRowItemCondensedElementShape](cplistimagerowitemcondensedelement/imageshape.md)
+- [var imageShape: CPListImageRowItemCondensedElement.Shape](cplistimagerowitemcondensedelement/imageshape.md)
   Shape used to draw the image of the element.
 - [var subtitle: String?](cplistimagerowitemcondensedelement/subtitle.md)
   The subtitle associated with this element.
 - [var title: String](cplistimagerowitemcondensedelement/title.md)
   The title associated with this element.
+### Enumerations
+- [CPListImageRowItemCondensedElement.Shape](cplistimagerowitemcondensedelement/shape.md)
+  Types of shape used to draw a condensed row element.
 
 ## Relationships
 

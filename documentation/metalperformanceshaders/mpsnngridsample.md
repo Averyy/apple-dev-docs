@@ -1,7 +1,7 @@
 # MPSNNGridSample
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,21 +14,31 @@
 ## Declaration
 
 ```swift
-class MPSNNGridSample : MPSCNNBinaryKernel
+class MPSNNGridSample
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnngridsample/3131870-init.md)
-- [init(device: any MTLDevice)](mpsnngridsample/3131871-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsnngridsample/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsnngridsample/init(device:).md)
 ### Instance Properties
-- [var useGridValueAsInputCoordinate: Bool](mpsnngridsample/3131872-usegridvalueasinputcoordinate.md)
+- [var useGridValueAsInputCoordinate: Bool](mpsnngridsample/usegridvalueasinputcoordinate.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNBinaryKernel](mpscnnbinarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

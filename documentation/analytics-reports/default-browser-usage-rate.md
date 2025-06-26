@@ -19,7 +19,7 @@ This report details the percentage of devices that have your browser application
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |
-| Territory | The user’s region code as set in Settings > General > Language & Region. This may not correspond to the user’s Apple Account or App Store storefront. | `string` |
+| Territory | App Store country or region | `string` |
 | Date | Start date of the week during which the event occurred | `string` |
 | Platform | OS version on the device on which the event occurred | `string` |
 | Device | Type of device on which the event occurred | `string` |

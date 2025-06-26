@@ -22,7 +22,7 @@ static var languageCode: AVAsyncProperty<Root, String?> { get }
 
 #### Discussion
 
-Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
+Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
 The value is an ISO 639-2/T language code, or `nil` if the track doesn’t specify a language code.
 

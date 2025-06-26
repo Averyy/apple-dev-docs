@@ -1,7 +1,7 @@
 # MPSCNNLossType.sigmoidCrossEntropy
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 11.3+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case sigmoidCrossEntropy = 3
+case sigmoidCrossEntropy
 ```
 
 

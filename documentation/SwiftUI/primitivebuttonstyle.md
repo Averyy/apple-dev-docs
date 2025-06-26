@@ -91,6 +91,8 @@ extension MyCustomType: Transition {
 ### Type Properties
 - [static var glass: GlassButtonStyle](primitivebuttonstyle/glass.md)
   A button style that applies Liquid Glass based on the button’s context.
+- [static var glassProminent: GlassProminentButtonStyle](primitivebuttonstyle/glassprominent.md)
+  A button style that applies prominent glass border artwork based on the button’s context.
 
 ## Relationships
 
@@ -103,6 +105,7 @@ extension MyCustomType: Transition {
 - [CardButtonStyle](cardbuttonstyle.md)
 - [DefaultButtonStyle](defaultbuttonstyle.md)
 - [GlassButtonStyle](glassbuttonstyle.md)
+- [GlassProminentButtonStyle](glassprominentbuttonstyle.md)
 - [LinkButtonStyle](linkbuttonstyle.md)
 - [PlainButtonStyle](plainbuttonstyle.md)
 

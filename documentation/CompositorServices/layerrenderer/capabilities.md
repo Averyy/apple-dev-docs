@@ -39,17 +39,17 @@ A [`LayerRenderer.Capabilities`](layerrenderer/capabilities.md) type provides in
   The minimum distance in meters to the layer’s near projection plane.
 ### Structures
 - [LayerRenderer.Capabilities.SupportedColorFormatsOptions](layerrenderer/capabilities/supportedcolorformatsoptions.md)
-  The options to provide when calling `LayerRenderer.Capabilities.supportedColorFormats`
+  Options you can use to filter the supported color formats for a layer textures.
 ### Instance Properties
 - [var defaultRenderQuality: LayerRenderer.RenderQuality](layerrenderer/capabilities/defaultrenderquality.md)
-  Returns default render quality allowed for drawing on this platform.
+  The default render quality used on this platform.
 - [var drawableRenderContextSupportedStencilFormats: [MTLPixelFormat]](layerrenderer/capabilities/drawablerendercontextsupportedstencilformats.md)
-  Returns the color format at the specified index in the layer capabilities.
+  An array of stencil formats that the layer supports with its drawable render context.
 - [var supportedTrackingAreasFormats: [MTLPixelFormat]](layerrenderer/capabilities/supportedtrackingareasformats.md)
-  The list of tracking areas formats that the layer renderer supports
+  An array of tracking areas formats that the layer supports for its textures.
 ### Instance Methods
 - [func supportedColorFormats(options: LayerRenderer.Capabilities.SupportedColorFormatsOptions) -> [MTLPixelFormat]](layerrenderer/capabilities/supportedcolorformats(options:).md)
-  The list of color formats that the layer renderer supports
+  Returns an array of formats that the layer supports for its color textures
 
 ## Relationships
 

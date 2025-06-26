@@ -28,7 +28,7 @@ A color conversion object, or `nil` if no conversion between the specified color
 
 The source and destination color spaces must be calibrated color spaces (that is, not device-specific or indexed color spaces).
 
-You can use a color conversion object to create [`MPSImageConversion`](https://developer.apple.com/documentation/metalperformanceshaders/mpsimageconversion) filters that perform GPU-accelerated color space conversion.
+You can use a color conversion object to create [`MPSImageConversion`](https://developer.apple.com/documentation/MetalPerformanceShaders/MPSImageConversion) filters that perform GPU-accelerated color space conversion.
 
 ## Parameters
 

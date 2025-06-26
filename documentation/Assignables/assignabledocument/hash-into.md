@@ -21,6 +21,11 @@ func hash(into hasher: inout Hasher)
 
 - `hasher`: The hasher to use when combining the components of this instance.
 
+## See Also
+
+- [var hashValue: Int](assignabledocument/hashvalue.md)
+  The hash value.
+
 
 ---
 

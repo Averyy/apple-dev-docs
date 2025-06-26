@@ -19,8 +19,8 @@ var sourceIdentifier: NSNumber { get set }
 ## Mentions
 
 - [Generating the signature to validate view-through ads](generating-the-signature-to-validate-view-through-ads.md)
-- [SKAdNetwork 4 release notes](skadnetwork-4-release-notes.md)
 - [Identifying the parameters in install-validation postbacks](identifying-the-parameters-in-install-validation-postbacks.md)
+- [SKAdNetwork 4 release notes](skadnetwork-4-release-notes.md)
 
 #### Discussion
 

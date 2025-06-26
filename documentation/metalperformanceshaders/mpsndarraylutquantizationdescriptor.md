@@ -1,7 +1,7 @@
 # MPSNDArrayLUTQuantizationDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 18.0+
@@ -14,19 +14,27 @@
 ## Declaration
 
 ```swift
-class MPSNDArrayLUTQuantizationDescriptor : MPSNDArrayQuantizationDescriptor
+class MPSNDArrayLUTQuantizationDescriptor
 ```
 
 ## Topics
 
 ### Initializers
-- [init(dataType: MPSDataType)](mpsndarraylutquantizationdescriptor/4446139-init.md)
-- [init(dataType: MPSDataType, vectorAxis: Int)](mpsndarraylutquantizationdescriptor/4446140-init.md)
+- [init(dataType: MPSDataType)](mpsndarraylutquantizationdescriptor/init(datatype:).md)
+- [init(dataType: MPSDataType, vectorAxis: Int)](mpsndarraylutquantizationdescriptor/init(datatype:vectoraxis:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNDArrayQuantizationDescriptor](mpsndarrayquantizationdescriptor.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

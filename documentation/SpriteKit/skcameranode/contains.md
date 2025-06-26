@@ -17,7 +17,6 @@ Checks to see if a node is visible in the camera’s viewport.
 ## Declaration
 
 ```swift
-@MainActor
 func contains(_ node: SKNode) -> Bool
 ```
 

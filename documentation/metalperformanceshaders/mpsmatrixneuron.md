@@ -1,7 +1,7 @@
 # MPSMatrixNeuron
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A neuron activation kernel that operates on matrices.
 
@@ -16,32 +16,42 @@ A neuron activation kernel that operates on matrices.
 ## Declaration
 
 ```swift
-class MPSMatrixNeuron : MPSMatrixUnaryKernel
+class MPSMatrixNeuron
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixneuron/2935600-init.md)
-- [init(device: any MTLDevice)](mpsmatrixneuron/2935603-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixneuron/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsmatrixneuron/init(device:).md)
 ### Instance Properties
-- [var alpha: Double](mpsmatrixneuron/2935605-alpha.md)
-- [var sourceInputFeatureChannels: Int](mpsmatrixneuron/2935599-sourceinputfeaturechannels.md)
-- [var sourceNumberOfFeatureVectors: Int](mpsmatrixneuron/2935607-sourcenumberoffeaturevectors.md)
+- [var alpha: Double](mpsmatrixneuron/alpha.md)
+- [var sourceInputFeatureChannels: Int](mpsmatrixneuron/sourceinputfeaturechannels.md)
+- [var sourceNumberOfFeatureVectors: Int](mpsmatrixneuron/sourcenumberoffeaturevectors.md)
 ### Instance Methods
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsmatrixneuron/2935604-copy.md)
-- [func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, biasVector: MPSVector?, resultMatrix: MPSMatrix)](mpsmatrixneuron/2935606-encode.md)
-- [func neuronParameterA() -> Float](mpsmatrixneuron/2935583-neuronparametera.md)
-- [func neuronParameterB() -> Float](mpsmatrixneuron/2935585-neuronparameterb.md)
-- [func neuronParameterC() -> Float](mpsmatrixneuron/2935598-neuronparameterc.md)
-- [func neuronType() -> MPSCNNNeuronType](mpsmatrixneuron/2935587-neurontype.md)
-- [func setNeuronToPReLUWithParametersA(Data)](mpsmatrixneuron/2935610-setneurontopreluwithparametersa.md)
-- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float, parameterC: Float)](mpsmatrixneuron/2935590-setneurontype.md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsmatrixneuron/copy(with:device:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, biasVector: MPSVector?, resultMatrix: MPSMatrix)](mpsmatrixneuron/encode(commandbuffer:inputmatrix:biasvector:resultmatrix:).md)
+- [func neuronParameterA() -> Float](mpsmatrixneuron/neuronparametera.md)
+- [func neuronParameterB() -> Float](mpsmatrixneuron/neuronparameterb.md)
+- [func neuronParameterC() -> Float](mpsmatrixneuron/neuronparameterc.md)
+- [func neuronType() -> MPSCNNNeuronType](mpsmatrixneuron/neurontype.md)
+- [func setNeuronToPReLUWithParametersA(Data)](mpsmatrixneuron/setneurontopreluwithparametersa(_:).md)
+- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float, parameterC: Float)](mpsmatrixneuron/setneurontype(_:parametera:parameterb:parameterc:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrixUnaryKernel](mpsmatrixunarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

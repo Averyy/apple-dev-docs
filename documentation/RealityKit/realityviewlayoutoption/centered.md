@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Centers the visual content within a flexible frame.
+The option that centers the visual content within a flexible frame.
 
 **Availability**:
 - iOS 26.0+ (Beta)

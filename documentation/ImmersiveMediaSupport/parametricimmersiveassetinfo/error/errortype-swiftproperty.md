@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-ParametricImmersiveAssetInfo error type.
+An error type describing this error.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -18,7 +18,7 @@ let errorType: ParametricImmersiveAssetInfo.Error.ErrorType
 ## See Also
 
 - [var errorDescription: String?](parametricimmersiveassetinfo/error/errordescription.md)
-  ParametricImmersiveAssetInfo error description.
+  A description of what went wrong, for debugging purposes.
 
 
 ---

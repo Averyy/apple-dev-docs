@@ -18,10 +18,6 @@ The paper data shown in this view controller.
 @preconcurrency var markup: PaperMarkup? { get set }
 ```
 
-#### Discussion
-
-Observe `markup` to watch for markup changes.
-
 
 ---
 

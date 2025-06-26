@@ -120,6 +120,10 @@ For information about the language-level concurrency model that `ThrowingTaskGro
 - [func spawn(priority: TaskPriority?, operation: () async throws -> ChildTaskResult)](throwingtaskgroup/spawn(priority:operation:).md)
 - [func spawnUnlessCancelled(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/spawnunlesscancelled(priority:operation:).md)
 ### Instance Methods
+- [func addImmediateTask(name: String?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addimmediatetask(name:priority:operation:).md)
+  Create and immediately start running a new child task in the context of the calling thread/task.
+- [func addImmediateTaskUnlessCancelled(name: String?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addimmediatetaskunlesscancelled(name:priority:operation:).md)
+  Create and immediately start running a new child task in the context of the calling thread/task.
 - [func addTask(executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addtask(executorpreference:priority:operation:).md)
   Adds a child task to the group.
 - [func addTask(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addtask(name:executorpreference:priority:operation:).md)
@@ -130,10 +134,6 @@ For information about the language-level concurrency model that `ThrowingTaskGro
   Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
 - [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](throwingtaskgroup/next(isolation:).md)
   Wait for the next child task to complete, and return the value it returned or rethrow the error it threw.
-- [func startTaskSynchronously(name: String?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/starttasksynchronously(name:priority:operation:).md)
-  Create and immediately start running a new child task in the context of the calling thread/task.
-- [func startTaskSynchronouslyUnlessCancelled(name: String?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/starttasksynchronouslyunlesscancelled(name:priority:operation:).md)
-  Create and immediately start running a new child task in the context of the calling thread/task.
 ### Default Implementations
 - [AsyncSequence Implementations](throwingtaskgroup/asyncsequence-implementations.md)
 

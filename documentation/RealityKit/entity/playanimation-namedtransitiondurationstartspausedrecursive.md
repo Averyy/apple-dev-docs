@@ -6,13 +6,11 @@
 Plays all the animations with the given name on the entity.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 26.0+ (Beta)
-- visionOS ?+
-- Unknown ?+ - Deprecated
+- iOS 13.0+ - Deprecated
+- iPadOS 13.0+ - Deprecated
+- Mac Catalyst 13.0+ - Deprecated
+- macOS 10.15+ - Deprecated
+- visionOS 1.0+ - Deprecated
 
 ## Declaration
 

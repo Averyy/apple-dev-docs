@@ -1,7 +1,7 @@
 # MPSRNNMatrixId.lstmInputGateInputWeights
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 **Availability**:
 - iOS 12.0+
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case lstmInputGateInputWeights = 3
+case lstmInputGateInputWeights
 ```
 
 

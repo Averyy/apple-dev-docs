@@ -1,7 +1,7 @@
 # MPSNNSubtractionGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient subtraction operator.
 
@@ -16,13 +16,20 @@ A representation of a gradient subtraction operator.
 ## Declaration
 
 ```swift
-class MPSNNSubtractionGradientNode : MPSNNArithmeticGradientNode
+class MPSNNSubtractionGradientNode
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNArithmeticGradientNode](mpsnnarithmeticgradientnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

@@ -24,6 +24,11 @@ init(id: AssignedWorkDocument.ID, assignableDocument: AssignableDocument, partDa
 - `assignableDocument`: The assignable document that this work document is based on.
 - `partData`: A dictionary of part ID to URLs of the data stored on disk for the requested parts.
 
+## See Also
+
+- [init(id: AssignedWorkDocument.ID, assignableDocument: AssignableDocument, partData: [AssignedWorkDocument.PartID : MergeablePartData]) async throws](assignedworkdocument/init(id:assignabledocument:partdata:)-8eh38.md)
+  Construct an instance of this object with the parts data passed in.
+
 
 ---
 

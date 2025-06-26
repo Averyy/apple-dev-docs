@@ -10,10 +10,10 @@ Identity activation function.
 - iPadOS 10.0+
 - Mac Catalyst ?+
 - macOS 10.12+
+- tvOS 10.0+
 - visionOS ?+
 - watchOS 3.0+
 - Unknown ?+ - Deprecated
-- tvOS 10.0+
 
 ## Declaration
 

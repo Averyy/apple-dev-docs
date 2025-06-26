@@ -23,8 +23,8 @@ static var openAppWhenRun: Bool { get }
 
 ## Mentions
 
-- [Creating your first app intent](creating-your-first-app-intent.md)
 - [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
+- [Creating your first app intent](creating-your-first-app-intent.md)
 
 #### Discussion
 

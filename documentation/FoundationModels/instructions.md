@@ -20,8 +20,8 @@ struct Instructions
 
 ## Mentions
 
-- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
 - [Improving safety from generative model output](improving-safety-from-generative-model-output.md)
+- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
 
 #### Overview
 
@@ -65,7 +65,7 @@ Apple trains the model to obey instructions over any commands it receives in pro
 - [struct Prompt](prompt.md)
   A prompt from a person to the model.
 - [struct Transcript](transcript.md)
-  A transcript that documents interactions with a language model.
+  A transcript that documents interactions with a language model. Transcripts contain an ordered list of entries, representing inputs to and outputs from the model.
 - [struct GenerationOptions](generationoptions.md)
   Options that control how the model generates its response to a prompt.
 

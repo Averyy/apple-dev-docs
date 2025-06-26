@@ -1,7 +1,7 @@
 # MPSCNNArithmeticGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 The base class for gradient arithmetic operators.
 
@@ -16,24 +16,38 @@ The base class for gradient arithmetic operators.
 ## Declaration
 
 ```swift
-class MPSCNNArithmeticGradient : MPSCNNGradientKernel
+class MPSCNNArithmeticGradient
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var bias: Float](mpscnnarithmeticgradient/2951855-bias.md)
-- [var isSecondarySourceFilter: Bool](mpscnnarithmeticgradient/2951852-issecondarysourcefilter.md)
-- [var maximumValue: Float](mpscnnarithmeticgradient/2951854-maximumvalue.md)
-- [var minimumValue: Float](mpscnnarithmeticgradient/2951858-minimumvalue.md)
-- [var primaryScale: Float](mpscnnarithmeticgradient/2951861-primaryscale.md)
-- [var secondaryScale: Float](mpscnnarithmeticgradient/2951856-secondaryscale.md)
-- [var secondaryStrideInFeatureChannels: Int](mpscnnarithmeticgradient/2951853-secondarystrideinfeaturechannels.md)
+- [var bias: Float](mpscnnarithmeticgradient/bias.md)
+- [var isSecondarySourceFilter: Bool](mpscnnarithmeticgradient/issecondarysourcefilter.md)
+- [var maximumValue: Float](mpscnnarithmeticgradient/maximumvalue.md)
+- [var minimumValue: Float](mpscnnarithmeticgradient/minimumvalue.md)
+- [var primaryScale: Float](mpscnnarithmeticgradient/primaryscale.md)
+- [var secondaryScale: Float](mpscnnarithmeticgradient/secondaryscale.md)
+- [var secondaryStrideInFeatureChannels: Int](mpscnnarithmeticgradient/secondarystrideinfeaturechannels.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNGradientKernel](mpscnngradientkernel.md)
+### Inherited By
+- [MPSCNNAddGradient](mpscnnaddgradient.md)
+- [MPSCNNMultiplyGradient](mpscnnmultiplygradient.md)
+- [MPSCNNSubtractGradient](mpscnnsubtractgradient.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

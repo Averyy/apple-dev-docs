@@ -15,9 +15,11 @@ For issues not mentioned in release notes, file bugs through [`Feedback Assistan
 ## Topics
 
 ### tvOS 26
-- [tvOS 26 Beta Release Notes](tvos-26-release-notes.md)
+- [tvOS 26 Beta 2 Release Notes](tvos-26-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 ### tvOS 18
+- [tvOS 18.6 Beta Release Notes](tvos-18_6-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [tvOS 18.5 Release Notes](tvos-18_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [tvOS 18.4 Release Notes](tvos-18_4-release-notes.md)

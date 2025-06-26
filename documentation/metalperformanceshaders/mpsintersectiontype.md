@@ -16,7 +16,7 @@ Options that determine an intersection type for a ray intersector.
 ## Declaration
 
 ```swift
-enum MPSIntersectionType : UInt, @unchecked Sendable
+enum MPSIntersectionType
 ```
 
 ## Topics
@@ -24,11 +24,18 @@ enum MPSIntersectionType : UInt, @unchecked Sendable
 ### Enumeration Cases
 - [MPSIntersectionType.any](mpsintersectiontype/any.md)
 - [MPSIntersectionType.nearest](mpsintersectiontype/nearest.md)
+### Initializers
+- [init?(rawValue: UInt)](mpsintersectiontype/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

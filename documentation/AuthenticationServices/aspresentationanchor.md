@@ -16,7 +16,7 @@ A platform-specific type that indicates the kind of user interface element to us
 ## Declaration
 
 ```swift
-typealias ASPresentationAnchor = NSWindow
+typealias ASPresentationAnchor = UIWindow
 ```
 
 

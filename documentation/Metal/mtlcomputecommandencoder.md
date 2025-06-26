@@ -22,11 +22,11 @@ protocol MTLComputeCommandEncoder : MTLCommandEncoder
 ## Mentions
 
 - [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
-- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
 - [Tracking the Resource Residency of Argument Buffers](tracking-the-resource-residency-of-argument-buffers.md)
+- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Overview
 

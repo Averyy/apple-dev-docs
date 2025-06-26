@@ -16,8 +16,8 @@ Define which system text formatting controls are available.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func textInputFormattingControlVisibility(_ visibility: Visibility, for placement: TextInputFormattingControlPlacement.Set) -> some View
+nonisolated
+func textInputFormattingControlVisibility(_ visibility: Visibility, for placement: TextInputFormattingControlPlacement.Set) -> some View
 ```
 
 ## Parameters

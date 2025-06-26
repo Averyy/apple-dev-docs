@@ -8,7 +8,7 @@ An asynchronous sequence of download-status updates for all asset packs.
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
 - visionOS 26.0+ (Beta)
@@ -16,8 +16,7 @@ An asynchronous sequence of download-status updates for all asset packs.
 ## Declaration
 
 ```swift
-nonisolated
-var statusUpdates: some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never> { get }
+final let statusUpdates: some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>
 ```
 
 #### Discussion

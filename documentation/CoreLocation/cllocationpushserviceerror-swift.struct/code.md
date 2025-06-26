@@ -47,7 +47,7 @@ These error codes are returned from [`startMonitoringLocationPushes(completion:)
 
 ## See Also
 
-- [com.apple.developer.location.push](../BundleResources/Entitlements/com.apple.developer.location.push.md)
+- [Location Push Service Extension](../BundleResources/Entitlements/com.apple.developer.location.push.md)
   An entitlement to enable a location-sharing app to query someone’s location in response to a push notification.
 - [protocol CLLocationPushServiceExtension](cllocationpushserviceextension.md)
   The interface you adopt in the type that acts as the main entry point for a Location Push Service Extension.

@@ -18,7 +18,7 @@ The reach constraints to apply to the node when executing a reach action.
 
 ```swift
 @NSCopying
-@MainActor var reachConstraints: SKReachConstraints? { get set }
+var reachConstraints: SKReachConstraints? { get set }
 ```
 
 #### Discussion

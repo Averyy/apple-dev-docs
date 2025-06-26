@@ -19,8 +19,8 @@ func presentCodeRedemptionSheet()
 
 ## Mentions
 
-- [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
 - [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
+- [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 
 #### Discussion

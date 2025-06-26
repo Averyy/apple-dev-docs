@@ -10,7 +10,6 @@ Whether or not this file loops during playback. This should be set for assets th
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

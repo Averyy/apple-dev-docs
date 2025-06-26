@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: init
 
 Creates a new set from a finite sequence of items.

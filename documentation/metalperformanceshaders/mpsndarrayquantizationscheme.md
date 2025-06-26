@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Mac Catalyst 18.0+
-- macOS 15.0+
-- tvOS 18.0+
-- visionOS 2.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,17 +20,23 @@ struct MPSNDArrayQuantizationScheme
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mpsndarrayquantizationscheme/4446285-init.md)
+- [init(rawValue: UInt)](mpsndarrayquantizationscheme/init(rawvalue:).md)
 ### Type Properties
-- [static var none: MPSNDArrayQuantizationScheme](mpsndarrayquantizationscheme/4446147-none.md)
-- [static var typeAffine: MPSNDArrayQuantizationScheme](mpsndarrayquantizationscheme/4446145-typeaffine.md)
-- [static var typeLUT: MPSNDArrayQuantizationScheme](mpsndarrayquantizationscheme/4446146-typelut.md)
+- [static var none: MPSNDArrayQuantizationScheme](mpsndarrayquantizationscheme/none.md)
+- [static var typeAffine: MPSNDArrayQuantizationScheme](mpsndarrayquantizationscheme/typeaffine.md)
+- [static var typeLUT: MPSNDArrayQuantizationScheme](mpsndarrayquantizationscheme/typelut.md)
 
 ## Relationships
 
 ### Conforms To
-- [OptionSet](../swift/optionset.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [OptionSet](../Swift/OptionSet.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SetAlgebra](../Swift/SetAlgebra.md)
 
 
 ---

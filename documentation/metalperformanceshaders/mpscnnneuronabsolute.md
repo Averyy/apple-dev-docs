@@ -1,7 +1,7 @@
 # MPSCNNNeuronAbsolute
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An absolute neuron filter.
 
@@ -16,25 +16,35 @@ An absolute neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronAbsolute : MPSCNNNeuron
+class MPSCNNNeuronAbsolute
 ```
 
 #### Overview
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = | x |](https://docs-assets.developer.apple.com/published/866dd98e74/6f81cd71-c47f-4a25-b1d0-98a2b05d95de.png)
+![f(x) = | x |](https://docs-assets.developer.apple.com/published/4761831cbf9e0c262f333c4545f46a23/media-2903538%402x.png)
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpscnnneuronabsolute/1648809-init.md)
+- [init(device: any MTLDevice)](mpscnnneuronabsolute/init(device:).md)
   Initializes an absolute neuron filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -68,8 +78,6 @@ For each pixel in an image, the filter applies the following function:
   A logarithm neuron filter.
 - [class MPSCNNNeuronPower](mpscnnneuronpower.md)
   A power neuron filter.
-- [class MPSNNNeuronDescriptor](mpsnnneurondescriptor.md)
-  An object that specifies properties used by a neuron kernel.
 
 
 ---

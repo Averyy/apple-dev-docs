@@ -22,6 +22,11 @@ init(id: AssignedWorkDocument.ID, assignableDocument: AssignableDocument, partDa
 - `id`: The ID of this document.
 - `partData`: A dictionary of part IDs to   objects   that contain the parts data.
 
+## See Also
+
+- [init(id: AssignedWorkDocument.ID, assignableDocument: AssignableDocument, partData: [AssignedWorkDocument.PartID : URL]) throws](assignedworkdocument/init(id:assignabledocument:partdata:)-54yg5.md)
+  Construct an instance of this object with the parts data passed in.
+
 
 ---
 

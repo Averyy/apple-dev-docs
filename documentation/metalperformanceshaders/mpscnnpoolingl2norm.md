@@ -1,7 +1,7 @@
 # MPSCNNPoolingL2Norm
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An L2-norm pooling filter.
 
@@ -16,27 +16,37 @@ An L2-norm pooling filter.
 ## Declaration
 
 ```swift
-class MPSCNNPoolingL2Norm : MPSCNNPooling
+class MPSCNNPoolingL2Norm
 ```
 
 #### Overview
 
 For each pixel, returns L2-Norm of pixels in the `kernelWidth * kernelHeight` filter region:
 
-![out[c,x,y] = sqrt ( sum_{dx,dy} in[c,x+dx,y+dy] * in[c,x+dx,y+dy] )](https://docs-assets.developer.apple.com/published/866dd98e74/54e12ca6-60ea-486a-ae23-be6b2a527ccc.png)
+![out[c,x,y] = sqrt ( sum_{dx,dy} in[c,x+dx,y+dy] * in[c,x+dx,y+dy] )](https://docs-assets.developer.apple.com/published/ad86372e61a5349468f50e9f214fd2be/media-2903549%402x.png)
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolingl2norm/2867141-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolingl2norm/init(coder:device:).md)
   Initializes an L2-norm pooling filter.
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingl2norm/2875162-init.md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingl2norm/init(device:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:).md)
   Initializes an L2-norm pooling filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNPooling](mpscnnpooling.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

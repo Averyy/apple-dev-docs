@@ -147,14 +147,12 @@ A sample buffer is a Core Foundation object that contains zero or more media sam
 - [var contentType: CMSampleBuffer.ContentType](cmsamplebuffer/contenttype-swift.property.md)
   Type of the content carried by this sample buffer.
 ### Type Aliases
-- [CMSampleBuffer.PayloadType](cmsamplebuffer/payloadtype.md)
 - [CMSampleBuffer.T](cmsamplebuffer/t.md)
 ### Enumerations
 - [CMSampleBuffer.ContentType](cmsamplebuffer/contenttype-swift.enum.md)
   Describes the type of content carried by a sample buffer instance.
 - [CMSampleBuffer.DynamicContent](cmsamplebuffer/dynamiccontent.md)
   Sample buffer content not known at compile time.
-- [CMSampleBuffer.Payload](cmsamplebuffer/payload.md)
 - [CMSampleBuffer.SizePerSample](cmsamplebuffer/sizepersample.md)
   Specifies size of each sample in a sample buffer.
 - [CMSampleBuffer.TimingPerSample](cmsamplebuffer/timingpersample.md)

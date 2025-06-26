@@ -18,8 +18,8 @@ var customInfoViewControllers: [UIViewController] { get set }
 
 ## Mentions
 
-- [Customizing the tvOS Playback Experience](customizing-the-tvos-playback-experience.md)
 - [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
+- [Customizing the tvOS Playback Experience](customizing-the-tvos-playback-experience.md)
 
 #### Discussion
 

@@ -37,6 +37,7 @@ var isMultiPageDocument: Bool { get }
   A collection of questions defined for this assignable.
 - [AssignableDocument.Element](assignabledocument/element.md)
   The type for elements of this document. An element is a component of the document such as a page or question.
+- [var pagesDebugDescription: String](assignabledocument/pagesdebugdescription.md)
 - [AssignableDocument.Error](assignabledocument/error.md)
   Errors for this document type.
 

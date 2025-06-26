@@ -8,7 +8,6 @@ Defines the destination of a drag and drop operation that handles the dropped co
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - macOS 13.0+
 
 ## Declaration

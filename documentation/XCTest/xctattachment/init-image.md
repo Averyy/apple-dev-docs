@@ -8,7 +8,7 @@ Creates an attachment containing a PNG representation of the provided image.
 ## Declaration
 
 ```swift
-convenience init(image: UIImage)
+convenience init(image: NSImage)
 ```
 
 #### Discussion

@@ -43,6 +43,22 @@ protocol HistoryTransaction : Hashable, Identifiable, Sendable
 ### Conforming Types
 - [DefaultHistoryTransaction](defaulthistorytransaction.md)
 
+## See Also
+
+- [enum HistoryChange](historychange.md)
+  Values that describe data history transactions.
+- [protocol HistoryDelete](historydelete.md)
+  An interface that enables a custom data store to delete items from the history of changes to its persisted models.
+- [protocol HistoryInsert](historyinsert.md)
+- [protocol HistoryToken](historytoken.md)
+- [protocol HistoryUpdate](historyupdate.md)
+- [struct HistoryTombstone](historytombstone.md)
+- [struct DefaultHistoryInsert](defaulthistoryinsert.md)
+- [struct DefaultHistoryUpdate](defaulthistoryupdate.md)
+- [struct DefaultHistoryDelete](defaulthistorydelete.md)
+- [struct DefaultHistoryToken](defaulthistorytoken.md)
+- [struct DefaultHistoryTransaction](defaulthistorytransaction.md)
+
 
 ---
 

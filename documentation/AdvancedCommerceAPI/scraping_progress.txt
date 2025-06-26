@@ -1,4 +1,4 @@
 Completed scraping Advanced Commerce API!
-Total pages scraped: 191
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 192
 Pages failed: 0

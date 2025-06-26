@@ -14,7 +14,7 @@ The title associated with this element.
 
 ```swift
 @MainActor
-var title: String? { get set }
+var title: String { get set }
 ```
 
 

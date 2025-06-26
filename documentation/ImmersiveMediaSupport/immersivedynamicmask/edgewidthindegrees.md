@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-The edge width used for the dynamic mask generation.
+The edge width in degrees used for the dynamic mask generation.
 
 **Availability**:
 - macOS 26.0+ (Beta)
@@ -19,15 +19,13 @@ var edgeWidthInDegrees: Float
 
 - [var controlPointInterpolation: ImmersiveDynamicMask.ControlPointInterpolation](immersivedynamicmask/controlpointinterpolation-swift.property.md)
   Type of the interpolation method used while processing control points.
-- [var edgeTreatment: ImmersiveDynamicMask.MaskEdgeTreatment](immersivedynamicmask/edgetreatment.md)
+- [var edgeTreatment: ImmersiveDynamicMask.EdgeTreatment](immersivedynamicmask/edgetreatment-swift.property.md)
   The edge treatment type used for the immersive media Mask.
-- [var leftControlPoints: [simd_float3]](immersivedynamicmask/leftcontrolpoints.md)
+- [var leftControlPoints: [Point3DFloat]](immersivedynamicmask/leftcontrolpoints.md)
   The left eye control points.
-- [var maskStereoRelation: ImmersiveDynamicMask.MaskStereoRelation](immersivedynamicmask/maskstereorelation-swift.property.md)
-  Represents the stereo relation of the dynamic mask (How left eye mask is related to right eye mask).
 - [var name: String](immersivedynamicmask/name.md)
   A unique name string of the dynamic mask.
-- [var rightControlPoints: [simd_float3]](immersivedynamicmask/rightcontrolpoints.md)
+- [var rightControlPoints: [Point3DFloat]](immersivedynamicmask/rightcontrolpoints.md)
   The right eye control points.
 
 

@@ -10,10 +10,10 @@ Creates an affine transform from the specified scale, rotate, and translate tran
 - iPadOS 16.0+
 - Mac Catalyst ?+
 - macOS 13.0+
-- tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
 - Unknown ?+ - Deprecated
+- tvOS 16.0+
 
 ## Declaration
 

@@ -14,6 +14,7 @@ Indicates whether or not the message can accept a file, with the specified UTI, 
 ## Declaration
 
 ```swift
+@MainActor
 class func isSupportedAttachmentUTI(_ uti: String) -> Bool
 ```
 

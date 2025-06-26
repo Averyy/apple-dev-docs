@@ -1,7 +1,7 @@
 # MPSNDArrayAffineQuantizationDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 18.0+
@@ -14,23 +14,31 @@
 ## Declaration
 
 ```swift
-class MPSNDArrayAffineQuantizationDescriptor : MPSNDArrayQuantizationDescriptor
+class MPSNDArrayAffineQuantizationDescriptor
 ```
 
 ## Topics
 
 ### Initializers
-- [init()](mpsndarrayaffinequantizationdescriptor/4446136-init.md)
-- [init(dataType: MPSDataType, hasZeroPoint: Bool, hasMinValue: Bool)](mpsndarrayaffinequantizationdescriptor/4446137-init.md)
+- [init()](mpsndarrayaffinequantizationdescriptor/init.md)
+- [init(dataType: MPSDataType, hasZeroPoint: Bool, hasMinValue: Bool)](mpsndarrayaffinequantizationdescriptor/init(datatype:haszeropoint:hasminvalue:).md)
 ### Instance Properties
-- [var hasMinValue: Bool](mpsndarrayaffinequantizationdescriptor/4446134-hasminvalue.md)
-- [var hasZeroPoint: Bool](mpsndarrayaffinequantizationdescriptor/4446135-haszeropoint.md)
-- [var implicitZeroPoint: Bool](mpsndarrayaffinequantizationdescriptor/4462739-implicitzeropoint.md)
+- [var hasMinValue: Bool](mpsndarrayaffinequantizationdescriptor/hasminvalue.md)
+- [var hasZeroPoint: Bool](mpsndarrayaffinequantizationdescriptor/haszeropoint.md)
+- [var implicitZeroPoint: Bool](mpsndarrayaffinequantizationdescriptor/implicitzeropoint.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNDArrayQuantizationDescriptor](mpsndarrayquantizationdescriptor.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

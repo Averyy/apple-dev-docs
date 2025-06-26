@@ -182,7 +182,7 @@ You can also use the [`VNRecognizedObjectObservation`](https://developer.apple.c
 
 ## See Also
 
-- [Understanding a Dice Roll with Vision and Object Detection](../coreml/model_integration_samples/understanding_a_dice_roll_with_vision_and_object_detection.md)
+- [Understanding a Dice Roll with Vision and Object Detection](../CoreML/understanding-a-dice-roll-with-vision-and-object-detection.md)
   Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
 - [class VNRecognizedObjectObservation](vnrecognizedobjectobservation.md)
   A detected object observation with an array of classification labels that classify the recognized object.

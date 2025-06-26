@@ -23,6 +23,8 @@ var roughness: MaterialScalarParameter { get set }
 
 - [var color: SimpleMaterial.BaseColor](simplematerial/color.md)
   The material’s color.
+- [var baseColor: MaterialColorParameter](simplematerial/basecolor-swift.property.md)
+  The base color of the material.
 - [var tintColor: UIColor](simplematerial/tintcolor-18qur.md)
   A tint color applied to the base color in macOS.
 - [var tintColor: NSColor](simplematerial/tintcolor-6aik0.md)

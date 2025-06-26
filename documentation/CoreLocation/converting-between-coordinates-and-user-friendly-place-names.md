@@ -16,7 +16,7 @@ Geocoder objects are one-shot objects—that is, you use each object to make a s
 
 ##### Convert a Coordinate Into a Placemark
 
-If you have a `CLLocation` object, call the [`reverseGeocodeLocation(_:completionHandler:)`](clgeocoder/reversegeocodelocation(_:completionhandler:).md) method of your geocoder object to retrieve a [`CLPlacemark`](clplacemark.md) object for that location. Typically, you convert coordinates into placemarks when you want to display information about the location to the user. For example, if the user selects a location on a map, you might want to show the address at that location.
+If you have a [`CLLocation`](cllocation.md) object, call the [`reverseGeocodeLocation(_:completionHandler:)`](clgeocoder/reversegeocodelocation(_:completionhandler:).md) method of your geocoder object to retrieve a [`CLPlacemark`](clplacemark.md) object for that location. Typically, you convert coordinates into placemarks when you want to display information about the location to the user. For example, if the user selects a location on a map, you might want to show the address at that location.
 
 Listing 1 shows how to obtain placemark information for the last location reported by the [`CLLocationManager`](cllocationmanager.md) object. Because calls to the geocoder object are asynchronous, the caller of this method passes in a completion handler, which is executed with the results.
 

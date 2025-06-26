@@ -3,6 +3,8 @@
 **Framework**: SwiftData  
 **Kind**: enum
 
+A type that describes a data store error.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -21,18 +23,17 @@ enum DataStoreError
 
 ## Topics
 
-### Operators
-- [static func == (DataStoreError, DataStoreError) -> Bool](datastoreerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Enumeration Cases
+### Getting error codes
 - [DataStoreError.invalidPredicate](datastoreerror/invalidpredicate.md)
 - [DataStoreError.preferInMemoryFilter](datastoreerror/preferinmemoryfilter.md)
 - [DataStoreError.preferInMemorySort](datastoreerror/preferinmemorysort.md)
 - [DataStoreError.unsupportedFeature](datastoreerror/unsupportedfeature.md)
-### Instance Properties
+### Comparing errors
+- [static func == (DataStoreError, DataStoreError) -> Bool](datastoreerror/==(_:_:).md)
+  Returns a Boolean value indicating whether two values are equal.
+### Hashing errors
 - [var hashValue: Int](datastoreerror/hashvalue.md)
   The hash value.
-### Instance Methods
 - [func hash(into: inout Hasher)](datastoreerror/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
@@ -48,6 +49,11 @@ enum DataStoreError
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [struct SwiftDataError](swiftdataerror.md)
+  A type that describes a SwiftData error.
 
 
 ---

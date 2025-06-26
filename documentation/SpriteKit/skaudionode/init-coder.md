@@ -17,6 +17,7 @@ Tells you when to initialize an audio node that has been unarchived.
 ## Declaration
 
 ```swift
+@MainActor
 init?(coder aDecoder: NSCoder)
 ```
 

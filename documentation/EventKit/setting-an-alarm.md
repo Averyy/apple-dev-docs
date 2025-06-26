@@ -34,7 +34,7 @@ While geofence-enabled alarms can be applied to events, they are more practical 
 
 > **Note**:  Geofences are supported on both macOS and iOS, but they are more effective on mobile devices.
 
-Configure a geofence for an event by creating an alarm and setting its structured location and proximity. Call the [`init(title:)`](ekstructuredlocation/init(title:).md) method to create a structured location. To set longitude and latitude coordinates, pass a doc://com.apple.documentation/documentation/corelocation/cllocation to the [`geoLocation`](ekstructuredlocation/geolocation.md) property of the structured location returned. A value of `0` for the radius property will use the system’s default radius; to choose a radius of your own, specify a value in meters.
+Configure a geofence for an event by creating an alarm and setting its structured location and proximity. Call the [`init(title:)`](ekstructuredlocation/init(title:).md) method to create a structured location. To set longitude and latitude coordinates, pass a [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) to the [`geoLocation`](ekstructuredlocation/geolocation.md) property of the structured location returned. A value of `0` for the radius property will use the system’s default radius; to choose a radius of your own, specify a value in meters.
 
 ## See Also
 

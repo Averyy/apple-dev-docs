@@ -1,7 +1,7 @@
 # MPSCNNFullyConnected
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A fully connected convolution layer, also known as an inner product layer.
 
@@ -16,7 +16,7 @@ A fully connected convolution layer, also known as an inner product layer.
 ## Declaration
 
 ```swift
-class MPSCNNFullyConnected : MPSCNNConvolution
+class MPSCNNFullyConnected
 ```
 
 #### Overview
@@ -34,20 +34,20 @@ Thus, the following conditions must be true:
 
 You can think of a fully connected layer as a matrix multiplication where the image is flattened into a vector of length `source.width*source.height*Ni`, and the weights are arranged in a matrix of dimension `No x (source.width*source.height*Ni)` to produce an output vector of length `No`.
 
-The value of the `strideInPixelsX`, [`strideInPixelsY`](mpscnnconvolutiondescriptor/1648847-strideinpixelsy.md), and [`groups`](mpscnnconvolution/1845269-groups.md) properties must be `1`. The [`offset`](mpscnnkernel/1648835-offset.md) property is not applicable and it is ignored. Because the clip rectangle is clamped to the destination image bounds, if the destination is `1 x 1`, you do not need to set the [`clipRect`](mpscnnkernel/1648911-cliprect.md) property.
+The value of the `strideInPixelsX`, [`strideInPixelsY`](mpscnnconvolutiondescriptor/strideinpixelsy.md), and [`groups`](mpscnnconvolution/groups.md) properties must be `1`. The [`offset`](mpscnnkernel/offset.md) property is not applicable and it is ignored. Because the clip rectangle is clamped to the destination image bounds, if the destination is `1 x 1`, you do not need to set the [`clipRect`](mpscnnkernel/cliprect.md) property.
 
-> **Note**: You can implement a fully connected convolution layer using an [`MPSCNNConvolution`](mpscnnconvolution.md) object by setting the following property values: `offset = (kernelWidth/2,kernelHeight/2)` `clipRect.origin = (ox,oy)` `clipRect.size = (1,1)` `strideInPixelsX = strideInPixelsY = groups = 1` However, using an [`MPSCNNFullyConnected`](mpscnnfullyconnected.md) object directly is better for performance as it lets the Metal Performance Shaders framework choose the most performant implementation method, which may not be possible when you use a general convolution. For example, the framework may internally use matrix multiplication or special reduction kernels for a specific Metal feature set.
+> **Note**:  You can implement a fully connected convolution layer using an [`MPSCNNConvolution`](mpscnnconvolution.md) object by setting the following property values: `offset = (kernelWidth/2,kernelHeight/2)` `clipRect.origin = (ox,oy)` `clipRect.size = (1,1)` `strideInPixelsX = strideInPixelsY = groups = 1` However, using an [`MPSCNNFullyConnected`](mpscnnfullyconnected.md) object directly is better for performance as it lets the Metal Performance Shaders framework choose the most performant implementation method, which may not be possible when you use a general convolution. For example, the framework may internally use matrix multiplication or special reduction kernels for a specific Metal feature set.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnfullyconnected/2867158-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnfullyconnected/init(coder:device:).md)
   Initializes a fully connected convolution layer.
-- [init(device: any MTLDevice, weights: any MPSCNNConvolutionDataSource)](mpscnnfullyconnected/2867198-init.md)
+- [init(device: any MTLDevice, weights: any MPSCNNConvolutionDataSource)](mpscnnfullyconnected/init(device:weights:).md)
   Initializes a fully connected convolution layer.
 - [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
-- [init(device: any MTLDevice, convolutionDescriptor: MPSCNNConvolutionDescriptor, kernelWeights: UnsafePointer<Float>, biasTerms: UnsafePointer<Float>?, flags: MPSCNNConvolutionFlags)](mpscnnfullyconnected/1829441-init.md)
+- [init(device: any MTLDevice, convolutionDescriptor: MPSCNNConvolutionDescriptor, kernelWeights: UnsafePointer<Float>, biasTerms: UnsafePointer<Float>?, flags: MPSCNNConvolutionFlags)](mpscnnfullyconnected/init(device:convolutiondescriptor:kernelweights:biasterms:flags:).md)
   Initializes a fully connected convolution layer.
 - [class MPSCNNConvolutionDescriptor](mpscnnconvolutiondescriptor.md)
   A description of the attributes of a convolution kernel.
@@ -58,6 +58,16 @@ The value of the `strideInPixelsX`, [`strideInPixelsY`](mpscnnconvolutiondescrip
 
 ### Inherits From
 - [MPSCNNConvolution](mpscnnconvolution.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

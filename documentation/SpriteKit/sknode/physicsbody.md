@@ -17,14 +17,13 @@ The physics body associated with the node.
 ## Declaration
 
 ```swift
-@MainActor
 var physicsBody: SKPhysicsBody? { get set }
 ```
 
 ## Mentions
 
-- [Getting Started with Physics Bodies](getting-started-with-physics-bodies.md)
 - [Configuring a Physics Body](configuring-a-physics-body.md)
+- [Getting Started with Physics Bodies](getting-started-with-physics-bodies.md)
 
 #### Discussion
 

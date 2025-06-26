@@ -1,9 +1,9 @@
 # MPSImageThresholdToZeroInverse
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
-A filter that returns 0 for each pixel with a value greater than a specified threshold or the original value otherwise. 
+A filter that returns 0 for each pixel with a value greater than a specified threshold or the original value otherwise.
 
 **Availability**:
 - iOS 9.0+
@@ -16,14 +16,16 @@ A filter that returns 0 for each pixel with a value greater than a specified thr
 ## Declaration
 
 ```swift
-class MPSImageThresholdToZeroInverse : MPSUnaryImageKernel
+class MPSImageThresholdToZeroInverse
 ```
 
 #### Overview
 
 An [`MPSImageThresholdToZeroInverse`](mpsimagethresholdtozeroinverse.md) filter converts a single channel image to a binary image. If the input image is not a single channel image, the function first converts the input image into a single channel luminance image using the linear gray color transform, and then it applies the threshold.
 
-[`Listing 1`](mpsimagethresholdtozeroinverse#2851306.md) shows the threshold to zero inverse function.
+The following listing shows the threshold to zero inverse function.
+
+Listing 1. Threshold to zero inverse function
 
 ```other
 destinationPixelValue = sourcePixelValue > thresholdValue ? 0 : sourcePixelValue
@@ -32,29 +34,39 @@ destinationPixelValue = sourcePixelValue > thresholdValue ? 0 : sourcePixelValue
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagethresholdtozeroinverse/2865667-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagethresholdtozeroinverse/init(coder:device:).md)
 ### New Methods
-- [init(device: any MTLDevice, thresholdValue: Float, linearGrayColorTransform: UnsafePointer<Float>?)](mpsimagethresholdtozeroinverse/1618911-init.md)
+- [init(device: any MTLDevice, thresholdValue: Float, linearGrayColorTransform: UnsafePointer<Float>?)](mpsimagethresholdtozeroinverse/init(device:thresholdvalue:lineargraycolortransform:).md)
   Initializes the kernel.
 ### Properties
-- [var thresholdValue: Float](mpsimagethresholdtozeroinverse/1618914-thresholdvalue.md)
+- [var thresholdValue: Float](mpsimagethresholdtozeroinverse/thresholdvalue.md)
   The threshold value used to initialize the threshold filter.
-- [var transform: UnsafePointer<Float>](mpsimagethresholdtozeroinverse/1618828-transform.md)
+- [var transform: UnsafePointer<Float>](mpsimagethresholdtozeroinverse/transform.md)
   The color transform used to initialize the threshold filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
 - [class MPSImageThresholdBinary](mpsimagethresholdbinary.md)
-  A filter that returns a specified value for each pixel with a value greater than a specified threshold or 0 otherwise. 
+  A filter that returns a specified value for each pixel with a value greater than a specified threshold or 0 otherwise.
 - [class MPSImageThresholdBinaryInverse](mpsimagethresholdbinaryinverse.md)
-  A filter that returns 0 for each pixel with a value greater than a specified threshold or a specified value otherwise. 
+  A filter that returns 0 for each pixel with a value greater than a specified threshold or a specified value otherwise.
 - [class MPSImageThresholdToZero](mpsimagethresholdtozero.md)
-  A filter that returns the original value for each pixel with a value greater than a specified threshold or 0 otherwise. 
+  A filter that returns the original value for each pixel with a value greater than a specified threshold or 0 otherwise.
 - [class MPSImageThresholdTruncate](mpsimagethresholdtruncate.md)
   A filter that clamps the return value to an upper specified value.
 

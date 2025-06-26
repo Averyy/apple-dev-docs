@@ -42,7 +42,7 @@ struct NoIndicatorLink: View {
 }
 ```
 
-> ❗ **Important**: Prior to iOS 19 and aligned releases, setting the link indicator visibility to `.visible` is only supported for navigation links contained in a `List`. iOS 19 and later supports setting the indicator visibility to `.visible` regardless of whether the link is within a list.
+> ❗ **Important**: Setting the link indicator visibility to `.visible` is only supported for navigation links contained in a `List` built with the Xcode 16 SDKs and earlier. Current releases support setting the indicator visibility to `.visible` regardless of whether the link is within a list.
 
 
 ---

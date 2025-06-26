@@ -1,7 +1,7 @@
 # MPSCNNDilatedPoolingMaxGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient dilated max pooling filter.
 
@@ -16,7 +16,7 @@ A gradient dilated max pooling filter.
 ## Declaration
 
 ```swift
-class MPSCNNDilatedPoolingMaxGradient : MPSCNNPoolingGradient
+class MPSCNNDilatedPoolingMaxGradient
 ```
 
 #### Overview
@@ -26,13 +26,23 @@ A gradient max pooling filter but the pixels selected in each “application” 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnndilatedpoolingmaxgradient/2942346-init.md)
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, dilationRateX: Int, dilationRateY: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnndilatedpoolingmaxgradient/2942349-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnndilatedpoolingmaxgradient/init(coder:device:).md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, dilationRateX: Int, dilationRateY: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnndilatedpoolingmaxgradient/init(device:kernelwidth:kernelheight:dilationratex:dilationratey:strideinpixelsx:strideinpixelsy:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNPoolingGradient](mpscnnpoolinggradient.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

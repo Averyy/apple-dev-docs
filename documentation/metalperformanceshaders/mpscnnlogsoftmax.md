@@ -1,7 +1,7 @@
 # MPSCNNLogSoftMax
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A neural transfer function that  is useful for constructing a loss function to be minimized when training neural networks.
 
@@ -16,7 +16,7 @@ A neural transfer function that  is useful for constructing a loss function to b
 ## Declaration
 
 ```swift
-class MPSCNNLogSoftMax : MPSCNNKernel
+class MPSCNNLogSoftMax
 ```
 
 #### Overview
@@ -25,7 +25,7 @@ The logarithmic softmax filter is calculated by taking the natural logarithm of 
 
 For each feature channel per pixel in an image in a feature map, the logarithmic softmax filter computes the following:
 
-![pixel = pixel(x,y,k)) - ln{sum(exp(pixel(x,y,0)) ... exp(pixel(x,y,N-1))}](https://docs-assets.developer.apple.com/published/866dd98e74/635d7e69-cec5-4062-bbe6-6085ad72b501.png)
+![pixel = pixel(x,y,k)) - ln{sum(exp(pixel(x,y,0)) … exp(pixel(x,y,N-1))}](https://docs-assets.developer.apple.com/published/dcbad99ffb71ffef8fde766ddf9b3650/media-2903560%402x.png)
 
 Where `R` is the result channel in the pixel, `N` is the number of feature channels, and `y=ln(x)` satisfies `e``ʸ``=x`.
 
@@ -33,6 +33,16 @@ Where `R` is the result channel in the pixel, `N` is the number of feature chann
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

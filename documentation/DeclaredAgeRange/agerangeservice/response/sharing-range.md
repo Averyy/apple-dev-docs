@@ -1,6 +1,6 @@
 # AgeRangeService.Response.sharing(range:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: case
 
 The person shared the age range successfully.

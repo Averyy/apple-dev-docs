@@ -22,7 +22,7 @@ struct CSSMediaType
 
 ### Initializers
 - [init(rawValue: String)](webpage/cssmediatype/init(rawvalue:).md)
-  Create a media type with an arbitrary value. Use the static type properties for the defined canonical CSS media type options.
+  Create a media type with an arbitrary value.
 ### Instance Properties
 - [let rawValue: String](webpage/cssmediatype/rawvalue.md)
   The raw value of the media type.

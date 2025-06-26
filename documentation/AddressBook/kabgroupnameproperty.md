@@ -14,7 +14,7 @@ Name of the group
 ## Declaration
 
 ```swift
-let kABGroupNameProperty: String
+let kABGroupNameProperty: Int32
 ```
 
 

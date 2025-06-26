@@ -25,12 +25,12 @@ class AVPlayerItem
 
 - [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
 - [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
-- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
 - [Selecting Subtitles and Alternative Audio Tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
 
 #### Overview
 
-A player item stores a reference to an [`AVAsset`](avasset.md) object, which represents the media to play. If you require inspecting an asset before you enqueue it for playback, call its `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the values of one or more properties. Alternatively, you can tell the player item to automatically load the required properties by passing them to its [`init(asset:automaticallyLoadedAssetKeys:)`](avplayeritem/init(asset:automaticallyloadedassetkeys:)-5czjh.md) initializer. When the player item is ready to play, the asset properties you request are ready to use.
+A player item stores a reference to an [`AVAsset`](avasset.md) object, which represents the media to play. If you require inspecting an asset before you enqueue it for playback, call its [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the values of one or more properties. Alternatively, you can tell the player item to automatically load the required properties by passing them to its [`init(asset:automaticallyLoadedAssetKeys:)`](avplayeritem/init(asset:automaticallyloadedassetkeys:)-5czjh.md) initializer. When the player item is ready to play, the asset properties you request are ready to use.
 
 ## Topics
 

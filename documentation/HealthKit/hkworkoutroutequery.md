@@ -25,7 +25,7 @@ class HKWorkoutRouteQuery
 
 #### Overview
 
-Use a workout route query to access the location data associated with an [`HKWorkoutRoute`](hkworkoutroute.md). Because a route sample can include a large number of doc://com.apple.documentation/documentation/corelocation/cllocation objects, the query asynchronously returns the locations in batches. For detailed instructions, see `Reading Route Data`.
+Use a workout route query to access the location data associated with an [`HKWorkoutRoute`](hkworkoutroute.md). Because a route sample can include a large number of [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) objects, the query asynchronously returns the locations in batches. For detailed instructions, see `Reading Route Data`.
 
 ## Topics
 
@@ -65,6 +65,8 @@ Use a workout route query to access the location data associated with an [`HKWor
   A query interface that reads the underlying voltage measurements for an electrocardiogram sample using Swift concurrency.
 - [class HKElectrocardiogramQuery](hkelectrocardiogramquery.md)
   A query that returns the underlying voltage measurements for an electrocardiogram sample.
+- [class HKWorkoutEffortRelationship](hkworkouteffortrelationship.md)
+- [class HKWorkoutEffortRelationshipQuery](hkworkouteffortrelationshipquery.md)
 
 
 ---

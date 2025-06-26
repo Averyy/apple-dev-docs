@@ -1,7 +1,7 @@
 # MPSCNNCrossChannelNormalizationNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a normalization kernel across feature channels.
 
@@ -16,21 +16,28 @@ A representation of a normalization kernel across feature channels.
 ## Declaration
 
 ```swift
-class MPSCNNCrossChannelNormalizationNode : MPSCNNNormalizationNode
+class MPSCNNCrossChannelNormalizationNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnncrosschannelnormalizationnode/2866459-init.md)
-- [init(source: MPSNNImageNode, kernelSize: Int)](mpscnncrosschannelnormalizationnode/2866456-init.md)
+- [init(source: MPSNNImageNode)](mpscnncrosschannelnormalizationnode/init(source:).md)
+- [init(source: MPSNNImageNode, kernelSize: Int)](mpscnncrosschannelnormalizationnode/init(source:kernelsize:).md)
 ### Instance Properties
-- [var kernelSizeInFeatureChannels: Int](mpscnncrosschannelnormalizationnode/2866419-kernelsizeinfeaturechannels.md)
+- [var kernelSizeInFeatureChannels: Int](mpscnncrosschannelnormalizationnode/kernelsizeinfeaturechannels.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNormalizationNode](mpscnnnormalizationnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

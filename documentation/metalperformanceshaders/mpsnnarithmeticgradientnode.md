@@ -1,7 +1,7 @@
 # MPSNNArithmeticGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of the base class for gradient arithmetic operators.
 
@@ -16,29 +16,40 @@ A representation of the base class for gradient arithmetic operators.
 ## Declaration
 
 ```swift
-class MPSNNArithmeticGradientNode : MPSNNGradientFilterNode
+class MPSNNArithmeticGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(gradientImages: [MPSNNImageNode], forwardFilter: MPSNNFilterNode, isSecondarySourceFilter: Bool)](mpsnnarithmeticgradientnode/2952980-init.md)
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNBinaryGradientStateNode, isSecondarySourceFilter: Bool)](mpsnnarithmeticgradientnode/2956166-init.md)
+- [init(gradientImages: [MPSNNImageNode], forwardFilter: MPSNNFilterNode, isSecondarySourceFilter: Bool)](mpsnnarithmeticgradientnode/init(gradientimages:forwardfilter:issecondarysourcefilter:).md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNBinaryGradientStateNode, isSecondarySourceFilter: Bool)](mpsnnarithmeticgradientnode/init(sourcegradient:sourceimage:gradientstate:issecondarysourcefilter:).md)
 ### Instance Properties
-- [var bias: Float](mpsnnarithmeticgradientnode/2952988-bias.md)
-- [var isSecondarySourceFilter: Bool](mpsnnarithmeticgradientnode/2952987-issecondarysourcefilter.md)
-- [var maximumValue: Float](mpsnnarithmeticgradientnode/2952986-maximumvalue.md)
-- [var minimumValue: Float](mpsnnarithmeticgradientnode/2952989-minimumvalue.md)
-- [var primaryScale: Float](mpsnnarithmeticgradientnode/2952993-primaryscale.md)
-- [var secondaryScale: Float](mpsnnarithmeticgradientnode/2952981-secondaryscale.md)
-- [var secondaryStrideInFeatureChannels: Int](mpsnnarithmeticgradientnode/2952984-secondarystrideinfeaturechannels.md)
-- [var secondaryStrideInPixelsX: Int](mpsnnarithmeticgradientnode/2952968-secondarystrideinpixelsx.md)
-- [var secondaryStrideInPixelsY: Int](mpsnnarithmeticgradientnode/2952994-secondarystrideinpixelsy.md)
+- [var bias: Float](mpsnnarithmeticgradientnode/bias.md)
+- [var isSecondarySourceFilter: Bool](mpsnnarithmeticgradientnode/issecondarysourcefilter.md)
+- [var maximumValue: Float](mpsnnarithmeticgradientnode/maximumvalue.md)
+- [var minimumValue: Float](mpsnnarithmeticgradientnode/minimumvalue.md)
+- [var primaryScale: Float](mpsnnarithmeticgradientnode/primaryscale.md)
+- [var secondaryScale: Float](mpsnnarithmeticgradientnode/secondaryscale.md)
+- [var secondaryStrideInFeatureChannels: Int](mpsnnarithmeticgradientnode/secondarystrideinfeaturechannels.md)
+- [var secondaryStrideInPixelsX: Int](mpsnnarithmeticgradientnode/secondarystrideinpixelsx.md)
+- [var secondaryStrideInPixelsY: Int](mpsnnarithmeticgradientnode/secondarystrideinpixelsy.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+### Inherited By
+- [MPSNNAdditionGradientNode](mpsnnadditiongradientnode.md)
+- [MPSNNMultiplicationGradientNode](mpsnnmultiplicationgradientnode.md)
+- [MPSNNSubtractionGradientNode](mpsnnsubtractiongradientnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

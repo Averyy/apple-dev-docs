@@ -25,7 +25,7 @@ This function creates a transform which decrypts data.
 ## Parameters
 
 - `keyRef`: The key for the operation
-- `error`: A pointer to a  doc://com.apple.documentation/documentation/corefoundation/cferror-ru8 . This pointer will be set if an error occurred. This value may be   if you do not want an error returned.
+- `error`: A pointer to a  . This pointer will be set if an error occurred. This value may be   if you do not want an error returned.
 
 
 ---

@@ -10,10 +10,10 @@ An operation that calculates the element-wise result of 2 raised to the power of
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
-- tvOS 14.0+
+- visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
-- visionOS ?+
+- tvOS 14.0+
 
 ## Declaration
 

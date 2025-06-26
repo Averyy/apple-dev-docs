@@ -43,6 +43,8 @@ await p;
 return p;
 ```
 
+> **Note**: An error if a problem occurred while evaluating the JabaScript.
+
 ## Parameters
 
 - `functionBody`: The JavaScript string to use as the function body. This method treats the string as an anonymous   JavaScript function body and calls it with the named arguments in the   parameter.

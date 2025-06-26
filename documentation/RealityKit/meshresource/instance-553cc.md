@@ -21,7 +21,7 @@ struct Instance
 ## Topics
 
 ### Initializers
-- [init(id:model:at:)](meshresource/instance-553cc/init(id:model:at:).md)
+- [init(id:model:at:)](meshresource/instance-9pl29/init(id:model:at:).md)
 ### Instance Properties
 - [var model: String](meshresource/instance-553cc/model.md)
   Name of the model to instance.

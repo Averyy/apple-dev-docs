@@ -6,17 +6,17 @@
 Options for the intersection test type for a ray intersector bounding box.
 
 **Availability**:
-- iOS 12.0+ - Deprecated in 17.0
-- iPadOS 12.0+ - Deprecated in 17.0
-- Mac Catalyst 13.0+ - Deprecated in 17.0
-- macOS 10.14+ - Deprecated in 14.0
-- tvOS 12.0+ - Deprecated in 17.0
-- visionOS 1.0+ - Deprecated in 1.0
+- iOS 12.0+
+- iPadOS 12.0+
+- Mac Catalyst 13.0+
+- macOS 10.14+
+- tvOS 12.0+
+- visionOS 1.0+
 
 ## Declaration
 
 ```swift
-enum MPSBoundingBoxIntersectionTestType : UInt, @unchecked Sendable
+enum MPSBoundingBoxIntersectionTestType
 ```
 
 ## Topics
@@ -25,11 +25,18 @@ enum MPSBoundingBoxIntersectionTestType : UInt, @unchecked Sendable
 - [MPSBoundingBoxIntersectionTestType.axisAligned](mpsboundingboxintersectiontesttype/axisaligned.md)
 - [MPSBoundingBoxIntersectionTestType.default](mpsboundingboxintersectiontesttype/default.md)
 - [MPSBoundingBoxIntersectionTestType.fast](mpsboundingboxintersectiontesttype/fast.md)
+### Initializers
+- [init?(rawValue: UInt)](mpsboundingboxintersectiontesttype/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

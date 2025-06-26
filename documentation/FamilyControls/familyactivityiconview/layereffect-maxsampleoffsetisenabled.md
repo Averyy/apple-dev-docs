@@ -8,7 +8,6 @@ Returns a new view that applies `shader` to `self` as a filter on the raster lay
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 

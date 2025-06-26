@@ -16,7 +16,7 @@ Provides a challenge compose view controller with preselected player identifiers
 ## Declaration
 
 ```swift
-func challengeComposeController(withMessage message: String?, players: [GKPlayer]?, completion completionHandler: GKChallengeComposeHandler? = nil) -> UIViewController
+func challengeComposeController(withMessage message: String?, players: [GKPlayer]?, completion completionHandler: GKChallengeComposeHandler? = nil) -> NSViewController
 ```
 
 #### Return Value

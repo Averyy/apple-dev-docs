@@ -18,6 +18,8 @@ case coordinates(CLLocationCoordinate2D)
 
 ## See Also
 
+- [struct CLLocationCoordinate2D](../CoreLocation/CLLocationCoordinate2D.md)
+  The latitude and longitude associated with a location, specified using the WGS 84 reference frame.
 - [RCSService.Business.ShowLocationAction.Method.query(_:)](rcsservice/business/showlocationaction/method-swift.enum/query(_:).md)
   Search for location(s) by query.
 

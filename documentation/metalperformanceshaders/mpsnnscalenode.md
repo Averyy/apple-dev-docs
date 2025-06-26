@@ -1,7 +1,7 @@
 # MPSNNScaleNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 Abstract node representing an image resampling filter.
 
@@ -16,19 +16,29 @@ Abstract node representing an image resampling filter.
 ## Declaration
 
 ```swift
-class MPSNNScaleNode : MPSNNFilterNode
+class MPSNNScaleNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, outputSize: MTLSize)](mpsnnscalenode/2915285-init.md)
-- [init(source: MPSNNImageNode, transformProvider: (any MPSImageTransformProvider)?, outputSize: MTLSize)](mpsnnscalenode/2915278-init.md)
+- [init(source: MPSNNImageNode, outputSize: MTLSize)](mpsnnscalenode/init(source:outputsize:).md)
+- [init(source: MPSNNImageNode, transformProvider: (any MPSImageTransformProvider)?, outputSize: MTLSize)](mpsnnscalenode/init(source:transformprovider:outputsize:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Inherited By
+- [MPSNNBilinearScaleNode](mpsnnbilinearscalenode.md)
+- [MPSNNLanczosScaleNode](mpsnnlanczosscalenode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
@@ -37,7 +47,7 @@ class MPSNNScaleNode : MPSNNFilterNode
 - [class MPSNNLanczosScaleNode](mpsnnlanczosscalenode.md)
   A representation of a Lanczos resampling filter.
 - [protocol MPSImageTransformProvider](mpsimagetransformprovider.md)
-  A general interface for objects that provide image resampling. 
+  A general interface for objects that provide image resampling.
 
 
 ---

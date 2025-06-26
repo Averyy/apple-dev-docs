@@ -28,6 +28,8 @@ struct DragSession
   The index of the dragged item under the cursor.
 - [var id: DragSession.ID](dragsession/id-swift.property.md)
   The identifier of the drag session.
+- [var location: CGPoint](dragsession/location.md)
+  Location of the drag session in the local coordinate space.
 - [var phase: DragSession.Phase](dragsession/phase-swift.property.md)
   The current phase of the drag session.
 ### Instance Methods

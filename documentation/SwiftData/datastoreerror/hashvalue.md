@@ -27,6 +27,11 @@ Hash values are not guaranteed to be equal across different executions of your p
 
 > ❗ **Important**: `hashValue` is deprecated as a `Hashable` requirement. To conform to `Hashable`, implement the `hash(into:)` requirement instead. The compiler provides an implementation for `hashValue` for you.
 
+## See Also
+
+- [func hash(into: inout Hasher)](datastoreerror/hash(into:).md)
+  Hashes the essential components of this value by feeding them into the given hasher.
+
 
 ---
 

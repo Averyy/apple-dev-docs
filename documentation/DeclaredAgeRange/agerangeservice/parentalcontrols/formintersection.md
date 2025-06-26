@@ -1,6 +1,6 @@
 # formIntersection(_:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: method
 
 Removes all elements of this option set that are not also present in the given set.

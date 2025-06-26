@@ -3,6 +3,8 @@
 **Framework**: WebKit  
 **Kind**: init
 
+Create a new WebPage.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -17,12 +19,22 @@
 convenience init(configuration: WebPage.Configuration = Configuration(), navigationDecider: some WebPage.NavigationDeciding, dialogPresenter: some WebPage.DialogPresenting)
 ```
 
+## Parameters
+
+- `configuration`: A   value to use when initializing the page.
+- `navigationDecider`: A navigation decider used to customize navigations that happen within the page.
+- `dialogPresenter`: A dialog presenter which controls how JS dialogs are handled.
+
 ## See Also
 
 - [WebPage.Configuration](webpage/configuration.md)
+  A configuration type that specifies the preferences and behaviors of a webpage.
 - [convenience init(configuration: WebPage.Configuration)](webpage/init(configuration:).md)
+  Create a new WebPage.
 - [convenience init(configuration: WebPage.Configuration, dialogPresenter: some WebPage.DialogPresenting)](webpage/init(configuration:dialogpresenter:).md)
+  Create a new WebPage.
 - [convenience init(configuration: WebPage.Configuration, navigationDecider: some WebPage.NavigationDeciding)](webpage/init(configuration:navigationdecider:).md)
+  Create a new WebPage.
 
 
 ---

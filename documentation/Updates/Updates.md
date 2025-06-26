@@ -163,6 +163,8 @@ View major documentation updates and highlights from WWDC, browse ongoing update
   Learn about important changes to WorkoutKit.
 - [Xcode updates](xcode.md)
   Learn about important changes to Xcode.
+- [XCUIAutomation updates](xcuiautomation.md)
+  Learn about important changes to XCUIAutomation.
 - [XPC updates](xpc.md)
   Learn about important changes to XPC.
 ### Release notes for SDKs, Xcode, and Safari

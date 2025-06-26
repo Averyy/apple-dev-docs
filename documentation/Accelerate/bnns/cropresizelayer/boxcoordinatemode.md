@@ -11,9 +11,9 @@ An enumeration that defines the convention for specifying the bounding box coord
 - Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
 - watchOS 9.0+
 - Unknown ?+ - Deprecated
+- visionOS ?+
 
 ## Declaration
 

@@ -73,7 +73,7 @@ try await analyzer.setModules([transcriber, speechDetector])
 - [class SpeechTranscriber](speechtranscriber.md)
   A module that transcribes speech to text. This transcriber is appropriate for normal conversation and general purposes.
 - [class DictationTranscriber](dictationtranscriber.md)
-  A module that transcribes speech to text. This transcriber is used by [`SFSpeechRecognizer`](sfspeechrecognizer.md) and system dictation features.
+  A module that transcribes speech to text. This transcriber is used by `SFSpeechRecognizer` and system dictation features.
 
 
 ---

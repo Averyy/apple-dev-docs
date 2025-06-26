@@ -31,7 +31,7 @@ The precise placement depends on the platform:
 
 If a sidebar isn’t available, like when you apply the searchable modifier to a view other than a navigation split view, SwiftUI uses automatic placement instead.
 
-> **Note**: The search field appears inline with the sidebar’s content when building with the Xcode 16 SDKs or earlier.
+> **Note**: The search field appears inline with the sidebar’s content when building with Xcode 16 SDKs or earlier.
 
 ## See Also
 

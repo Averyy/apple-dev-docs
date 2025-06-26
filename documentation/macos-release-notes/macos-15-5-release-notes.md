@@ -40,6 +40,8 @@ The macOS 15.5 SDK provides support to develop apps for Mac computers running Se
 
 ## See Also
 
+- [macOS Sequoia 15.6 Beta Release Notes](macos-15_6-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [macOS Sequoia 15.4 Release Notes](macos-15_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [macOS Sequoia 15.3 Release Notes](macos-15_3-release-notes.md)

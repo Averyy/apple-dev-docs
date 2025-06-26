@@ -20,10 +20,10 @@ object Pass
 
 - [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
 - [Showing a Pass on the Lock Screen](showing-a-pass-on-the-lock-screen.md)
-- [Adding a Web Service to Update Passes](adding-a-web-service-to-update-passes.md)
 - [Building a Pass](building-a-pass.md)
-- [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
+- [Adding a Web Service to Update Passes](adding-a-web-service-to-update-passes.md)
 - [Distributing and updating a pass](distributing-and-updating-a-pass.md)
+- [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
 
 ## Topics
 

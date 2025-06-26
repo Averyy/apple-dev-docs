@@ -23,11 +23,6 @@ This initializer throws an error if reading from the decoder fails, or if the da
 
 - `decoder`: The decoder to read data from.
 
-## See Also
-
-- [init?(rawValue: Int)](immersivedynamicmask/controlpointinterpolation-swift.enum/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-
 
 ---
 

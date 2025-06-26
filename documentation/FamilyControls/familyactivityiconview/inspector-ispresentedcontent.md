@@ -8,7 +8,6 @@ Inserts an inspector at the applied position in the view hierarchy.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 
 ## Declaration

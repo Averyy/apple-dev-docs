@@ -1,7 +1,7 @@
 # MPSCNNBinaryConvolutionNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a convolution kernel with binary weights and an input image using binary approximations.
 
@@ -16,25 +16,35 @@ A representation of a convolution kernel with binary weights and an input image 
 ## Declaration
 
 ```swift
-class MPSCNNBinaryConvolutionNode : MPSCNNConvolutionNode
+class MPSCNNBinaryConvolutionNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource, scaleValue: Float, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](mpscnnbinaryconvolutionnode/2866509-init.md)
+- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource, scaleValue: Float, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](mpscnnbinaryconvolutionnode/init(source:weights:scalevalue:type:flags:).md)
 - [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
 - [enum MPSCNNBinaryConvolutionType](mpscnnbinaryconvolutiontype.md)
   Options that defines what operations are used to perform binary convolution.
 - [enum MPSCNNBinaryConvolutionFlags](mpscnnbinaryconvolutionflags.md)
   Options used to control binary convolution kernels.
-- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource, outputBiasTerms: UnsafePointer<Float>?, outputScaleTerms: UnsafePointer<Float>?, inputBiasTerms: UnsafePointer<Float>?, inputScaleTerms: UnsafePointer<Float>?, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](mpscnnbinaryconvolutionnode/2942631-init.md)
+- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource, outputBiasTerms: UnsafePointer<Float>?, outputScaleTerms: UnsafePointer<Float>?, inputBiasTerms: UnsafePointer<Float>?, inputScaleTerms: UnsafePointer<Float>?, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](mpscnnbinaryconvolutionnode/init(source:weights:outputbiasterms:outputscaleterms:inputbiasterms:inputscaleterms:type:flags:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNConvolutionNode](mpscnnconvolutionnode.md)
+### Inherited By
+- [MPSCNNBinaryFullyConnectedNode](mpscnnbinaryfullyconnectednode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [MPSNNTrainableNode](mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

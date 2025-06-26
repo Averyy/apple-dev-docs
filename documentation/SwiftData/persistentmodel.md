@@ -75,22 +75,18 @@ protocol PersistentModel : AnyObject, Observable, Hashable, Identifiable
 
 ## See Also
 
-- [Adding and editing persistent data in your app](adding-and-editing-persistent-data-in-your-app.md)
-  Create a data entry form for collecting and changing data managed by SwiftData.
-- [Deleting persistent data from your app](deleting-persistent-data-from-your-app.md)
-  Explore different ways to use SwiftData to delete persistent data.
-- [Defining data relationships with enumerations and model classes](defining-data-relationships-with-enumerations-and-model-classes.md)
-  Create relationships for static and dynamic data stored in your app.
-- [Maintaining a local copy of server data](maintaining-a-local-copy-of-server-data.md)
-  Create and update a persistent store to cache read-only network data.
-- [macro Model()](model().md)
-  Converts a Swift class into a stored model that’s managed by SwiftData.
-- [macro Attribute(Schema.Attribute.Option..., originalName: String?, hashModifier: String?)](attribute(_:originalname:hashmodifier:).md)
-  Specifies the custom behavior that SwiftData applies to the annotated property when managing the owning class.
-- [macro Transient()](transient().md)
-  Tells SwiftData not to persist the annotated property when managing the owning class.
-- [macro Relationship(Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule, minimumModelCount: Int?, maximumModelCount: Int?, originalName: String?, inverse: AnyKeyPath?, hashModifier: String?)](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md)
-  Specifies the options that SwiftData needs to manage the annotated property as a relationship between two models.
+- [init(for: Schema, migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: [ModelConfiguration]) throws](modelcontainer/init(for:migrationplan:configurations:)-1czix.md)
+  Creates a model container using the specified schema, migration plan, and configurations.
+- [convenience init(for: any PersistentModel.Type..., migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: ModelConfiguration...) throws](modelcontainer/init(for:migrationplan:configurations:)-8s4ts.md)
+  Creates a model container using the specified model types, migration plan, and zero or more configurations.
+- [convenience init(for: Schema, migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: ModelConfiguration...) throws](modelcontainer/init(for:migrationplan:configurations:)-qof9.md)
+  Creates a model container using the specified schema, migration plan, and zero or more configurations.
+- [struct ModelConfiguration](modelconfiguration.md)
+  A type that describes the configuration of an app’s schema or specific group of models.
+- [class Schema](schema.md)
+  An object that maps model classes to data in the model store, and helps with the migration of that data between releases.
+- [protocol SchemaMigrationPlan](schemamigrationplan.md)
+  An interface for describing the evolution of a schema and how to migrate between specific versions.
 
 
 ---

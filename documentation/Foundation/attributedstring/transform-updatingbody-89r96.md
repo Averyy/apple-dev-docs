@@ -11,7 +11,7 @@ Tracks the location of the provided ranges throughout the mutation closure, retu
 - Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
-- visionOS 1.0+
+- visionOS 26.0+ (Beta)
 - watchOS 26.0+ (Beta)
 
 ## Declaration
@@ -22,7 +22,12 @@ mutating func transform<E>(updating ranges: [Range<AttributedString.Index>], bod
 
 #### Return Value
 
-The updated `Range`s that is valid after the mutation has been performed, or `nil` if the mutation performed does not allow for tracking to succeed (such as replacing the provided inout variable with an entirely different AttributedString). When the return value is non-nil, the returned array is guaranteed to be the same size as the provided array with updated ranges at the same Array indices as their respective original ranges in the input array.
+The updated `Range`s that are valid after the mutation has been performed or `nil` if the mutation performed does not allow for tracking to succeed (such as replacing the provided inout variable with an entirely different `AttributedString`). When the return value is non-`nil`, the returned array is guaranteed to be the same size as the provided array with updated ranges at the same indices as their respective original ranges in the input array.
+
+## Parameters
+
+- `ranges`: Ranges to track throughout the   block.
+- `body`: A mutating operation, or set of operations, to perform on this  .
 
 
 ---

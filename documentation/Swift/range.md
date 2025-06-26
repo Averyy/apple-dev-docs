@@ -142,7 +142,9 @@ Because floating-point types such as `Float` and `Double` are their own `Stride`
 - [func formatted(date: Date.IntervalFormatStyle.DateStyle, time: Date.IntervalFormatStyle.TimeStyle) -> String](range/formatted(date:time:).md)
   Formats the date range using the specified date and time format styles.
 - [func isValid(within: some AttributedStringProtocol) -> Bool](range/isvalid(within:)-2fba2.md)
+  Indicates whether the range is valid for use with the provided attributed string.
 - [func isValid(within: DiscontiguousAttributedSubstring) -> Bool](range/isvalid(within:)-8h4h8.md)
+  Indicates whether the range is valid for use with the provided discontiguous attributed string.
 ### Type Methods
 - [static func upToNextMajor(from: Version) -> Range<Bound>](range/uptonextmajor(from:).md)
   Returns a requirement for a version range, starting at the given minimum version and going up to the next major version. This is the recommended version requirement.

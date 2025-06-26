@@ -1,7 +1,7 @@
 # MPSCNNUpsamplingNearest
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A nearest spatial upsampling filter.
 
@@ -16,7 +16,7 @@ A nearest spatial upsampling filter.
 ## Declaration
 
 ```swift
-class MPSCNNUpsamplingNearest : MPSCNNUpsampling
+class MPSCNNUpsamplingNearest
 ```
 
 #### Overview
@@ -30,13 +30,23 @@ The `scaleFactor` must be an integer value `>= 1`. The default value is `1`.
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingnearest/2875223-init.md)
+- [init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingnearest/init(device:integerscalefactorx:integerscalefactory:).md)
   Initializes a nearest spatial upsampling filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNUpsampling](mpscnnupsampling.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

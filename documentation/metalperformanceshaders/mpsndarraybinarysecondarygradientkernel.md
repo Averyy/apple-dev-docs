@@ -1,7 +1,7 @@
 # MPSNDArrayBinarySecondaryGradientKernel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,22 +14,32 @@
 ## Declaration
 
 ```swift
-class MPSNDArrayBinarySecondaryGradientKernel : MPSNDArrayMultiaryGradientKernel
+class MPSNDArrayBinarySecondaryGradientKernel
 ```
 
 ## Topics
 
 ### Initializers
-- [init(coder: NSCoder, device: any MTLDevice)](mpsndarraybinarysecondarygradientkernel/3175007-init.md)
-- [init(device: any MTLDevice)](mpsndarraybinarysecondarygradientkernel/3143519-init.md)
+- [init(coder: NSCoder, device: any MTLDevice)](mpsndarraybinarysecondarygradientkernel/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsndarraybinarysecondarygradientkernel/init(device:).md)
 ### Instance Methods
-- [func encode(to: any MTLCommandBuffer, primarySourceArray: MPSNDArray, secondarySourceArray: MPSNDArray, sourceGradient: MPSNDArray, gradientState: MPSState) -> MPSNDArray](mpsndarraybinarysecondarygradientkernel/3143517-encode.md)
-- [func encode(to: any MTLCommandBuffer, primarySourceArray: MPSNDArray, secondarySourceArray: MPSNDArray, sourceGradient: MPSNDArray, gradientState: MPSState, destinationArray: MPSNDArray)](mpsndarraybinarysecondarygradientkernel/3143518-encode.md)
+- [func encode(to: any MTLCommandBuffer, primarySourceArray: MPSNDArray, secondarySourceArray: MPSNDArray, sourceGradient: MPSNDArray, gradientState: MPSState) -> MPSNDArray](mpsndarraybinarysecondarygradientkernel/encode(to:primarysourcearray:secondarysourcearray:sourcegradient:gradientstate:).md)
+- [func encode(to: any MTLCommandBuffer, primarySourceArray: MPSNDArray, secondarySourceArray: MPSNDArray, sourceGradient: MPSNDArray, gradientState: MPSState, destinationArray: MPSNDArray)](mpsndarraybinarysecondarygradientkernel/encode(to:primarysourcearray:secondarysourcearray:sourcegradient:gradientstate:destinationarray:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNDArrayMultiaryGradientKernel](mpsndarraymultiarygradientkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

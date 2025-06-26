@@ -18,6 +18,11 @@ init(imageSource: CGImageSource) async throws
 
 > **Note**: Throws an error if it is not possible to load even a monoscopic texture from the image source.
 
+## See Also
+
+- [init(contentsOf: URL) async throws](imagepresentationcomponent/init(contentsof:).md)
+  Creates a new component by loading a monoscopic texture and (if present) a pair of spatial textures from the provided image file URL.
+
 
 ---
 

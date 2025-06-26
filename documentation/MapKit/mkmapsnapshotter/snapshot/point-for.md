@@ -17,7 +17,7 @@ Converts the specified map coordinate to a point in the coordinate space of the 
 ## Declaration
 
 ```swift
-func point(for coordinate: CLLocationCoordinate2D) -> CGPoint
+func point(for coordinate: CLLocationCoordinate2D) -> NSPoint
 ```
 
 #### Return Value

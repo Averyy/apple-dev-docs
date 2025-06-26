@@ -22,7 +22,7 @@ var accuracyAuthorization: CLAccuracyAuthorization { get }
 
 #### Discussion
 
-If the value of this property is [`CLAccuracyAuthorization.fullAccuracy`](claccuracyauthorization/fullaccuracy.md), you can set the [`desiredAccuracy`](cllocationmanager/desiredaccuracy.md) property to any value. If the value is [`CLAccuracyAuthorization.reducedAccuracy`](claccuracyauthorization/reducedaccuracy.md), setting [`desiredAccuracy`](cllocationmanager/desiredaccuracy.md) to a value other than `kCLLocationAccuracyReduced` has no effect on the location information, and your app can’t use region monitoring or beacon ranging.
+If the value of this property is [`CLAccuracyAuthorization.fullAccuracy`](claccuracyauthorization/fullaccuracy.md), you can set the [`desiredAccuracy`](cllocationmanager/desiredaccuracy.md) property to any value. If the value is [`CLAccuracyAuthorization.reducedAccuracy`](claccuracyauthorization/reducedaccuracy.md), setting [`desiredAccuracy`](cllocationmanager/desiredaccuracy.md) to a value other than [`kCLLocationAccuracyReduced`](kcllocationaccuracyreduced.md) has no effect on the location information, and your app can’t use region monitoring or beacon ranging.
 
 > **Note**:  Because reduced accuracy isn’t available prior to watchOS 7, when the user chooses reduced accuracy on the paired iPhone, watch apps running with this older software don’t receive any location data. This occurs because watchOS apps must adhere to the permissions granted on the paired iPhone.
 

@@ -17,7 +17,6 @@ A Boolean value that indicates whether the results of rendering the child nodes 
 ## Declaration
 
 ```swift
-@MainActor
 var shouldRasterize: Bool { get set }
 ```
 

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-A event triggered when an entity was released.
+The event that occurs just as someone releases an entity during a manipulation gesture.
 
 **Availability**:
 - visionOS 26.0+ (Beta)
@@ -34,13 +34,13 @@ struct WillRelease
 ## See Also
 
 - [ManipulationEvents.WillBegin](manipulationevents/willbegin.md)
-  A event triggered when an interaction is about to begin on a `ManipulationComponent`’s entity.
+  The event that occurs when someone is about to start an entity manipulation gesture.
 - [ManipulationEvents.DidUpdateTransform](manipulationevents/didupdatetransform.md)
-  An event triggered when an entity’s transform was updated during a `ManipulationComponent`.
+  The event that occurs repeatedly when the entity’s transform updates during a manipulation gesture.
 - [ManipulationEvents.DidHandOff](manipulationevents/didhandoff.md)
-  An event triggered when the object is directly handed off from one hand to another
+  The event that occurs during a manipulation gesture when someone passes an entity from one hand to the other.
 - [ManipulationEvents.WillEnd](manipulationevents/willend.md)
-  An event triggered when the object has reached its destination and will no longer be updated.
+  The event that occurs at the end of a manipulation gesture, when the entity has reached its resting position, destination and the system no longer updates it.
 
 
 ---

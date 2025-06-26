@@ -1,9 +1,9 @@
 # MPSNNDefaultPadding
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
-A class that provides predefined padding policies for common tasks.    
+A class that provides predefined padding policies for common tasks.
 
 **Availability**:
 - iOS 11.0+
@@ -16,27 +16,35 @@ A class that provides predefined padding policies for common tasks.
 ## Declaration
 
 ```swift
-class MPSNNDefaultPadding : NSObject
+class MPSNNDefaultPadding
 ```
 
 ## Topics
 
 ### Initializers
-- [init(method: MPSNNPaddingMethod)](mpsnndefaultpadding/2867160-init.md)
+- [convenience init(method: MPSNNPaddingMethod)](mpsnndefaultpadding/init(method:).md)
 - [struct MPSNNPaddingMethod](mpsnnpaddingmethod.md)
-  Options that define a graph's padding. 
+  Options that define a graph’s padding.
 ### Instance Methods
-- [func label() -> String](mpsnndefaultpadding/2889871-label.md)
+- [func label() -> String](mpsnndefaultpadding/label.md)
 ### Type Methods
-- [class func forTensorflowAveragePooling() -> Self](mpsnndefaultpadding/2867164-fortensorflowaveragepooling.md)
-- [class func forTensorflowAveragePoolingValidOnly() -> Self](mpsnndefaultpadding/2947962-fortensorflowaveragepoolingvalid.md)
+- [class func forTensorflowAveragePooling() -> Self](mpsnndefaultpadding/fortensorflowaveragepooling.md)
+- [class func forTensorflowAveragePoolingValidOnly() -> Self](mpsnndefaultpadding/fortensorflowaveragepoolingvalidonly.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
 - [MPSNNPadding](mpsnnpadding.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

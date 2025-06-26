@@ -8,6 +8,10 @@ Add a version for a specific Game Center challenge.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Mentions
+
+- [Configuring Game Center challenges](configuring-game-center-challenges.md)
+
 ## See Also
 
 - [Read the challenges for a Game Center group](get-v1-gamecenterchallenges-_id_-relationships-versions.md)

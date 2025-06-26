@@ -10,8 +10,10 @@ Create a review submission for a specific app.
 
 ## Mentions
 
-- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
 - [Uploading and versioning Apple hosted background assets](managing-apple-hosted-background-assets.md)
+- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
+- [Configuring Game center activities](configuring-game-center-activities.md)
+- [Configuring Game Center challenges](configuring-game-center-challenges.md)
 
 ## See Also
 

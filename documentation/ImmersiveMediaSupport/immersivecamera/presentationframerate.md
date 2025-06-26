@@ -12,7 +12,7 @@ Presentation frame rate suited for this immersive camera.
 ## Declaration
 
 ```swift
-var presentationFrameRate: Float
+var presentationFrameRate: Int
 ```
 
 ## See Also
@@ -21,8 +21,8 @@ var presentationFrameRate: Float
   Calibration details for this camera.
 - [var id: String](immersivecamera/id-swift.property.md)
   An identifier string for this immersive camera. Must be unique for each immersive camera and cannot be blank.
-- [var pose: ImmersiveCamera.CameraPose](immersivecamera/pose.md)
-  The pose of this immersive camera..
+- [var pose: Pose3DFloat](immersivecamera/pose.md)
+  The pose of this immersive camera.
 - [var type: ImmersiveCamera.CameraType](immersivecamera/type.md)
   Type of camera. Currently only the “stereoCamera” type is supported.
 

@@ -17,7 +17,6 @@ Initializes a textured sprite using an existing texture object.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(texture: SKTexture?)
 ```
 

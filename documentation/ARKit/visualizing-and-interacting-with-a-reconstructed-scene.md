@@ -205,7 +205,7 @@ With scene meshes, virtual content can interact with the physical environment re
 arView.environment.sceneUnderstanding.options.insert(.physics)
 ```
 
-To detect when virtual content comes in contact with a meshed, real-world object, the sample defines the text’s proportions using a collision shape in the `addAnchor(_:,removeAfter:)` [`Scene`](https://developer.apple.com/documentation/RealityKit/Scene) extension.
+To detect when virtual content comes in contact with a meshed, real-world object, the sample defines the text’s proportions using a collision shape in the `addAnchor(_:,removeAfter:)` [`scene`](https://developer.apple.com/documentation/RealityKit/scene) extension.
 
 ```swift
 if model.collision == nil {

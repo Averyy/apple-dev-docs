@@ -16,7 +16,7 @@ The modifier keys that were pressed at the time of the navigation request.
 
 ```swift
 @MainActor
-var modifierFlags: NSEvent.ModifierFlags { get }
+var modifierFlags: UIKeyModifierFlags { get }
 ```
 
 ## See Also

@@ -26,7 +26,7 @@ This specifies the face size of the cube texture.
 ## Topics
 
 ### Type Methods
-- [static dimensions(faceSize:)](textureresource/dimensionscube-687xa/dimensions(facesize:).md)
+- [static dimensions(faceSize:)](textureresource/dimensionscube-5h2sm/dimensions(facesize:).md)
   Specifies the dimensions of the cube texture.
 
 ## Relationships

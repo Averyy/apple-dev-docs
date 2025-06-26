@@ -26,7 +26,7 @@ class HKCategorySample
 
 #### Overview
 
-You can use category samples to record sleep data using the [`HKCategoryValueSleepAnalysis`](hkcategoryvaluesleepanalysis.md) enumeration. Individual samples represent time periods when the user is in bed or asleep. Samples with different values may have overlapping time intervals. For example, when the user is both in bed and asleep, create an in-bed sample and an asleep sample with overlapping times.
+You can use category samples to record data associated with a [`HKCategoryType`](hkcategorytype.md). The value for the sample must come from the appropriate category value enumeration. Each category type uses its own enumeration. Individual samples represent a value and time period. Samples with different values may have overlapping time intervals.
 
 The [`HKCategorySample`](hkcategorysample.md) class is a concrete subclass of the [`HKSample`](hksample.md) class. Category samples are immutable: You set the sample’s properties when you create it, and they can’t change.
 

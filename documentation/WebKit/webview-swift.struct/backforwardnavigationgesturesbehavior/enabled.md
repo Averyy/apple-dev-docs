@@ -3,6 +3,8 @@
 **Framework**: WebKit  
 **Kind**: property
 
+Backward and forward navigation gestures are enabled.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -15,6 +17,10 @@
 ```swift
 static let enabled: WebView.BackForwardNavigationGesturesBehavior
 ```
+
+#### Discussion
+
+The web view allows horizontal swipe gestures to trigger backward and forward page navigation.
 
 
 ---

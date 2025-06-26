@@ -17,15 +17,14 @@ The point in the view’s frame that corresponds to the scene’s origin.
 ## Declaration
 
 ```swift
-@MainActor
 var anchorPoint: CGPoint { get set }
 ```
 
 ## Mentions
 
 - [Positioning a Scene’s Origin Within its View](positioning-a-scene-s-origin-within-its-view.md)
-- [Getting Started with a Camera](getting-started-with-a-camera.md)
 - [Drawing SpriteKit Content in a View](drawing-spritekit-content-in-a-view.md)
+- [Getting Started with a Camera](getting-started-with-a-camera.md)
 
 #### Discussion
 

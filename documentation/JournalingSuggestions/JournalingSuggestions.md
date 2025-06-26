@@ -7,6 +7,7 @@ Display a set of recent, personal events that inspire someone to contribute to y
 
 **Availability**:
 - iOS 17.2+
+- iPadOS 26.0+ (Beta)
 
 #### Overview
 

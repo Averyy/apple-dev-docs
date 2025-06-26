@@ -16,7 +16,7 @@ Returns the bounds of the selection on the specified page.
 ## Declaration
 
 ```swift
-func bounds(for page: PDFPage) -> NSRect
+func bounds(for page: PDFPage) -> CGRect
 ```
 
 #### Discussion

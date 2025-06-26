@@ -20,19 +20,17 @@ Immersive Media Support enables you to create custom workflows for processing Ap
   Prepare and package immersive video content for delivery.
 ### Camera metadata
 - [actor VenueDescriptor](venuedescriptor.md)
-  The Apple Immersive Media Venue Descriptor is a collection of static metadata necessary with every Apple Immersive Video.
+  The Apple Immersive Media Venue Descriptor is a collection of static metadata necessary for every Apple Immersive Video.
 - [struct ImmersiveCamera](immersivecamera.md)
   A structure that holds the required information for an immersive media camera to process and render video frames.
 - [struct ImmersiveCameraCalibration](immersivecameracalibration.md)
   A structure that represents immersive media camera calibration data.
-- [struct ImmersiveCameraMask](immersivecameramask.md)
+- [enum ImmersiveCameraMask](immersivecameramask.md)
   A structure that holds the camera mask type information and its relevant mask name.
 - [struct ImmersiveDynamicMask](immersivedynamicmask.md)
   A type that holds the information required to dynamically generate an immersive media mask at load time.
-- [struct ImmersiveLensDefinition](immersivelensdefinition.md)
-  This type holds the ILPD Meirives lens configuration parameters using which a camera calibration type instance can be generated.
 ### Presentation commands
-- [protocol PresentationCommand](presentationcommand.md)
+- [enum PresentationCommand](presentationcommand.md)
   A set of properties that define the interface for a presentation command.
 - [struct FadeCommand](fadecommand.md)
   A command type for color fading during immersive media playback.
@@ -42,8 +40,6 @@ Immersive Media Support enables you to create custom workflows for processing Ap
   A command type for immersive camera switching during playback.
 - [struct ShotFlopCommand](shotflopcommand.md)
   A command type to flip the video frames horizontally (mirrored horizontally) during playback for the duration of the command.
-- [enum PresentationCommandType](presentationcommandtype.md)
-  Values that represent the type of presentation command.
 - [struct PresentationDescriptor](presentationdescriptor.md)
   A structure that represents dynamic metadata used during playback or when outputting the metadata track for an immersive video file.
 - [class PresentationDescriptorReader](presentationdescriptorreader.md)
@@ -62,6 +58,20 @@ Immersive Media Support enables you to create custom workflows for processing Ap
 ### Validation
 - [struct AIVUValidator](aivuvalidator.md)
   A type to validate existing AIVU files to ensure that they meet the minimum requirements for AIV.
+### Classes
+- [class ImmersiveCameraMeshCalibration](immersivecamerameshcalibration.md)
+  Calibration mesh geometry based on USDZ data.
+- [class ImmersiveImageMask](immersiveimagemask.md)
+  Immersive media image masks are generated using an image file containing the alpha values for the mask.
+- [class ImmersiveMediaRemotePreviewReceiver](immersivemediaremotepreviewreceiver.md)
+  An observable object that helps application to handle receiving of the commands and data sent from the immersive media remote preview sender object.
+- [class ImmersiveMediaRemotePreviewSender](immersivemediaremotepreviewsender.md)
+  An observable object that can help the application to send all the required data to all the connected receiver applications to help facilitate the complete preview of the immersive media playback.
+### Structures
+- [struct ImmersiveCameraLensDefinition](immersivecameralensdefinition.md)
+  This type holds the ILPD Meirives lens configuration parameters using which a camera calibration type instance can be generated.
+- [struct ImmersiveVideoFrame](immersivevideoframe.md)
+  A type that represents an immersive video frame. An immersive video frame contains: - layout (SideBySide, OverUnder, Separate, Mono) - presentationTime: frame presentation time - pixelBuffers: an array with one or more images representing the frame.
 
 
 ---

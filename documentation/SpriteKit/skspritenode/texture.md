@@ -17,7 +17,6 @@ The texture used to draw the sprite.
 ## Declaration
 
 ```swift
-@MainActor
 var texture: SKTexture? { get set }
 ```
 

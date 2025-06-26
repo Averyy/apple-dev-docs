@@ -15,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func tileDefinition(atColumn column: Int, row: Int) -> SKTileDefinition?
 ```
 

@@ -1,7 +1,7 @@
 # MPSRNNMatrixTrainingState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A class that holds data from a forward pass to be used in a backward pass.
 
@@ -16,13 +16,20 @@ A class that holds data from a forward pass to be used in a backward pass.
 ## Declaration
 
 ```swift
-class MPSRNNMatrixTrainingState : MPSState
+class MPSRNNMatrixTrainingState
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSState](mpsstate.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

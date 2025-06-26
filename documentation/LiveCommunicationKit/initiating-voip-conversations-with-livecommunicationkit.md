@@ -60,7 +60,7 @@ In your `ConversationManagerDelegate` implementation, you can handle conversatio
 
 If starting a VoIP conversation fails, you may wish to have the conversation fall back to the system to handle it. While optional, providing a fallback gives people another opportunity to have the conversation. When you let the conversation fall back to the system, the system passes it to the configured default calling app. If a person didn’t configure a default calling app or the default calling app hands the conversation back to the system, the system handles the conversation as a cellular network conversation.
 
-If your app supports being the default dialer app, use [`DialRequest`](dialrequest.md) and [`TelephonyManager`](telephonymanager.md). For more information, see [`Request the system to start a conversation`](preparing-your-app-to-be-the-default-dialer-app#Request-the-system-to-start-a-conversation.md).
+If your app supports being the default dialer app, use `DialRequest` and `TelephonyManager`. For more information, see [`Request the system to start a conversation`](preparing-your-app-to-be-the-default-dialer-app#Request-the-system-to-start-a-conversation.md).
 
 If your app doesn’t support being the default dialer app, use a `telephony://` URL scheme for your fallback. For more information, see [`Preparing your app to be the default calling app`](https://developer.apple.com/documentation/CallKit/Preparing-your-app-to-be-the-default-calling-app).
 

@@ -22,9 +22,9 @@ class SKAction
 
 ## Mentions
 
-- [Working with Inverse Kinematics](working-with-inverse-kinematics.md)
-- [Getting Started with Spring Joints](getting-started-with-spring-joints.md)
 - [Getting Started with Actions](getting-started-with-actions.md)
+- [Getting Started with Spring Joints](getting-started-with-spring-joints.md)
+- [Working with Inverse Kinematics](working-with-inverse-kinematics.md)
 
 #### Overview
 

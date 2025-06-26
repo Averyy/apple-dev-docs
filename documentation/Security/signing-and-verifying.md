@@ -25,7 +25,7 @@ This function might return [`false`](https://developer.apple.com/documentation/s
 
 Finally, you can create the signature with a call to the [`SecKeyCreateSignature(_:_:_:_:)`](seckeycreatesignature(_:_:_:_:).md) function:
 
-If something goes wrong, the function returns a `nil` signature and populates the error reference with a doc://com.apple.documentation/documentation/corefoundation/cferror-ru8 object that explains the failure. In Objective-C, you transfer management of the error object, if it exists, to Automatic Reference Counting (ARC). In Swift, you transfer control of this unmanaged object’s memory to the system with a call to [`takeRetainedValue()`](https://developer.apple.com/documentation/Swift/Unmanaged/takeRetainedValue()) and recast as an [`Error`](https://developer.apple.com/documentation/Swift/Error).
+If something goes wrong, the function returns a `nil` signature and populates the error reference with a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) object that explains the failure. In Objective-C, you transfer management of the error object, if it exists, to Automatic Reference Counting (ARC). In Swift, you transfer control of this unmanaged object’s memory to the system with a call to [`takeRetainedValue()`](https://developer.apple.com/documentation/Swift/Unmanaged/takeRetainedValue()) and recast as an [`Error`](https://developer.apple.com/documentation/Swift/Error).
 
 ##### Transmit the Data
 

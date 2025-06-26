@@ -19,6 +19,10 @@ Creates a view from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+## Mentions
+
+- [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
+
 ## See Also
 
 - [init(frame: CGRect)](uiview/init(frame:).md)

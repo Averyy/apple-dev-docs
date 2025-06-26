@@ -28,10 +28,15 @@ protocol AVAsynchronousKeyValueLoading
 
 Loading media data takes an amount of time that depends on factors including the media’s size, location, device capabilities, network conditions, and so on. To optimize performance, [`AVAsset`](avasset.md) defers loading its media data until you query its properties or perform an operation that requires it. This means that performing these actions from a synchronous context would block the calling thread for an unknown amount of time, which would result in a poor user experience, and may even cause your app to crash. For this reason, you must load media data asynchronously.
 
-Call the asynchronous `load(_:)` method to retrieve the values of media properties, or determine the loaded status of a property by calling the [`status(of:)`](avasynchronouskeyvalueloading/status(of:).md) method. See [`Loading media data asynchronously`](loading-media-data-asynchronously.md) for more information.
+Call the asynchronous [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the values of media properties, or determine the loaded status of a property by calling the [`status(of:)`](avasynchronouskeyvalueloading/status(of:).md) method. See [`Loading media data asynchronously`](loading-media-data-asynchronously.md) for more information.
 
 ## Topics
 
+### Loading Property Values
+- [func load<T>(AVAsyncProperty<Self, T>, isolation: isolated (any Actor)?) async throws -> T](avasynchronouskeyvalueloading/load(_:isolation:).md)
+  Loads a property asynchronously and returns the value.
+- [func load<A, B, each C>(AVAsyncProperty<Self, A>, AVAsyncProperty<Self, B>, repeat AVAsyncProperty<Self, each C>, isolation: isolated (any Actor)?) async throws -> (A, B, repeat each C)](avasynchronouskeyvalueloading/load(_:_:_:isolation:).md)
+  Loads two or more properties asynchronously and returns the values.
 ### Determining the Loaded Status
 - [func status<T>(of: AVAsyncProperty<Self, T>) -> AVAsyncProperty<Self, T>.Status](avasynchronouskeyvalueloading/status(of:).md)
   Returns a value that indicates the loaded status of a property.
@@ -44,9 +49,6 @@ Call the asynchronous `load(_:)` method to retrieve the values of media properti
   Returns a status that indicates whether a property value is immediately available without blocking the calling thread.
 - [enum AVKeyValueStatus](avkeyvaluestatus.md)
   Values that indicate the loaded status of a property.
-### Instance Methods
-- [func load<A, B, each C>(AVAsyncProperty<Self, A>, AVAsyncProperty<Self, B>, repeat AVAsyncProperty<Self, each C>, isolation: isolated (any Actor)?) async throws -> (A, B, repeat each C)](avasynchronouskeyvalueloading/load(_:_:_:isolation:).md)
-- [func load<T>(AVAsyncProperty<Self, T>, isolation: isolated (any Actor)?) async throws -> T](avasynchronouskeyvalueloading/load(_:isolation:).md)
 
 ## Relationships
 

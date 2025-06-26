@@ -22,7 +22,7 @@ class CKLocationSortDescriptor
 
 #### Overview
 
-You can add a location sort descriptor to your queries when searching for records. At creation time, you must provide the sort descriptor with a key that has a doc://com.apple.documentation/documentation/corelocation/cllocation object as its value. The sort descriptor uses the value of that key to perform the sort.
+You can add a location sort descriptor to your queries when searching for records. At creation time, you must provide the sort descriptor with a key that has a [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) object as its value. The sort descriptor uses the value of that key to perform the sort.
 
 CloudKit computes distance by drawing a direct line between the two locations that follows the curvature of the Earth. Distances don’t account for altitude changes between the two locations.
 

@@ -25,7 +25,7 @@ The `options` argument to the [`RoomBuilder`](roombuilder.md) initializer [`init
 
 ### Creating a configuration option
 - [init(rawValue: Int)](roombuilder/configurationoptions/init(rawvalue:).md)
-  Creates a configuration option with the specified raw value.
+  Creates a new option set from the given raw value.
 - [let rawValue: Int](roombuilder/configurationoptions/rawvalue-swift.property.md)
   A raw value for a configuration option.
 ### Choosing a configuration option

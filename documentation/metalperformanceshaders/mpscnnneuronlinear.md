@@ -1,7 +1,7 @@
 # MPSCNNNeuronLinear
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A linear neuron filter.
 
@@ -16,25 +16,35 @@ A linear neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronLinear : MPSCNNNeuron
+class MPSCNNNeuronLinear
 ```
 
 #### Overview
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = a * x + b](https://docs-assets.developer.apple.com/published/866dd98e74/c4391486-4b0a-43fe-bcf4-a8b07454d073.png)
+![f(x) = a * x + b](https://docs-assets.developer.apple.com/published/b44cee07d047df5bb5c706c0a9e0a6a4/media-2903542%402x.png)
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, a: Float, b: Float)](mpscnnneuronlinear/1648888-init.md)
+- [init(device: any MTLDevice, a: Float, b: Float)](mpscnnneuronlinear/init(device:a:b:).md)
   Initializes a linear neuron filter.
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -68,8 +78,6 @@ For each pixel in an image, the filter applies the following function:
   A logarithm neuron filter.
 - [class MPSCNNNeuronPower](mpscnnneuronpower.md)
   A power neuron filter.
-- [class MPSNNNeuronDescriptor](mpsnnneurondescriptor.md)
-  An object that specifies properties used by a neuron kernel.
 
 
 ---

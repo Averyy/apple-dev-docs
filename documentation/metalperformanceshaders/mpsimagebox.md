@@ -1,7 +1,7 @@
 # MPSImageBox
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that convolves an image with a given kernel of odd width and height.
 
@@ -16,7 +16,7 @@ A filter that convolves an image with a given kernel of odd width and height.
 ## Declaration
 
 ```swift
-class MPSImageBox : MPSUnaryImageKernel
+class MPSImageBox
 ```
 
 #### Overview
@@ -28,20 +28,32 @@ The box blur is a separable filter and the Metal Performance Shaders framework w
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagebox/2866153-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagebox/init(coder:device:).md)
 ### Methods
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpsimagebox/1618789-init.md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpsimagebox/init(device:kernelwidth:kernelheight:).md)
   Initializes a box filter.
 ### Properties
-- [var kernelHeight: Int](mpsimagebox/1618739-kernelheight.md)
+- [var kernelHeight: Int](mpsimagebox/kernelheight.md)
   The height of the filter window. Must be an odd number.
-- [var kernelWidth: Int](mpsimagebox/1618834-kernelwidth.md)
+- [var kernelWidth: Int](mpsimagebox/kernelwidth.md)
   The width of the filter window. Must be an odd number.
 
 ## Relationships
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Inherited By
+- [MPSImageTent](mpsimagetent.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

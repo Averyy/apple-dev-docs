@@ -19,7 +19,7 @@ var videoMinFrameDuration: CMTime { get set }
 
 When [`isVideoMinFrameDurationSupported`](avcaptureconnection/isvideominframedurationsupported.md) is [`true`](https://developer.apple.com/documentation/swift/true), the value of the property configures the lower bound for the amount of time a video connection separates consecutive frames. The value is equivalent to the reciprocal of the minimum frame rate.
 
-You can set an unlimited frame rate with [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero) or [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid) (which is the default).
+You can set an unlimited frame rate with [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero) or [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid) (which is the default).
 
 ## See Also
 

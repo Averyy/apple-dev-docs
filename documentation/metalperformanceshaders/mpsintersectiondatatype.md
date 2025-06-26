@@ -16,7 +16,7 @@ Options that determine the data contained in an intersection result.
 ## Declaration
 
 ```swift
-enum MPSIntersectionDataType : UInt, @unchecked Sendable
+enum MPSIntersectionDataType
 ```
 
 ## Topics
@@ -31,11 +31,18 @@ enum MPSIntersectionDataType : UInt, @unchecked Sendable
 - [MPSIntersectionDataType.distancePrimitiveIndexCoordinates](mpsintersectiondatatype/distanceprimitiveindexcoordinates.md)
 - [MPSIntersectionDataType.distancePrimitiveIndexInstanceIndex](mpsintersectiondatatype/distanceprimitiveindexinstanceindex.md)
 - [MPSIntersectionDataType.distancePrimitiveIndexInstanceIndexCoordinates](mpsintersectiondatatype/distanceprimitiveindexinstanceindexcoordinates.md)
+### Initializers
+- [init?(rawValue: UInt)](mpsintersectiondatatype/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

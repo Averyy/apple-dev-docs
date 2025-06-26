@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The viewing mode the image presentation component transitioned to.
+
 **Availability**:
 - visionOS 26.0+ (Beta)
 

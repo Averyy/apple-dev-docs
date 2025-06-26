@@ -132,23 +132,95 @@ def check_orphans(framework: str = None, clean: bool = False, dry_run: bool = Tr
     return total_orphans
 
 
-def cleanup_framework_orphans(framework_name: str) -> int:
-    """Automatically clean up orphaned files for a specific framework.
+def cleanup_framework_orphans(framework_name: str, manual_approval: bool = False) -> int:
+    """Clean up orphaned files for a specific framework.
     
     This is designed to be called from the main scraping workflow.
-    It performs non-interactive cleanup with minimal output.
     
     Args:
         framework_name: Name of the framework to clean up
+        manual_approval: If True, prompt user for approval before deleting
         
     Returns:
         Number of orphaned files that were deleted
     """
     try:
-        orphan_count = check_orphans(framework=framework_name, clean=True, dry_run=False)
-        if orphan_count > 0:
-            logger.info(f"Auto-cleaned {orphan_count} orphaned files from {framework_name}")
-        return orphan_count
+        # First, get the list of orphaned files
+        hash_dir = Path(".hashes")
+        doc_dir = Path("documentation")
+        hash_file = hash_dir / f"{framework_name}_hashes.json"
+        
+        if not hash_file.exists():
+            return 0
+            
+        hash_manager = HashManager(hash_file)
+        framework_dir = doc_dir / framework_name
+        
+        # Handle case sensitivity
+        if not framework_dir.exists():
+            possible_dirs = [d for d in doc_dir.iterdir() if d.is_dir() and d.name.lower() == framework_name.lower()]
+            if possible_dirs:
+                framework_dir = possible_dirs[0]
+            else:
+                return 0
+        
+        orphaned_files = hash_manager.get_orphaned_files(framework_dir)
+        
+        if not orphaned_files:
+            return 0
+        
+        # Safety check
+        all_files = list(framework_dir.rglob("*.md"))
+        if all_files and len(orphaned_files) > len(all_files) * 0.5:
+            print(f"\n⚠️  WARNING: {framework_name} has {len(orphaned_files)}/{len(all_files)} files marked as orphaned!")
+            print("This seems excessive and may indicate a session tracking issue.")
+            print("Skipping deletion for safety.")
+            return 0
+        
+        if manual_approval:
+            print(f"\n🗑️  Detected that Apple has removed {len(orphaned_files)} pages from {framework_name}:")
+            print("─" * 70)
+            for orphan in orphaned_files[:20]:  # Show first 20
+                print(f"  • {orphan.relative_to(doc_dir)}")
+            if len(orphaned_files) > 20:
+                print(f"  ... and {len(orphaned_files) - 20} more files")
+            print("─" * 70)
+            
+            response = input("\n⚠️  These markdown files will be removed if you approve. Continue? (y/N): ")
+            if response.lower() not in ['y', 'yes']:
+                print("❌ Deletion cancelled by user")
+                return 0
+        
+        # Perform deletion
+        deleted_count = 0
+        for orphan in orphaned_files:
+            try:
+                orphan.unlink()
+                logger.info(f"Deleted orphaned file: {orphan}")
+                deleted_count += 1
+                
+                # Remove empty parent directories
+                parent = orphan.parent
+                while parent != framework_dir and parent != doc_dir:
+                    try:
+                        if not any(parent.iterdir()):
+                            parent.rmdir()
+                            logger.info(f"Removed empty directory: {parent}")
+                        parent = parent.parent
+                    except OSError:
+                        break
+                        
+            except Exception as e:
+                logger.error(f"Failed to delete {orphan}: {e}")
+        
+        if deleted_count > 0:
+            if manual_approval:
+                print(f"✅ Deleted {deleted_count} orphaned files from {framework_name}")
+            else:
+                logger.info(f"Auto-cleaned {deleted_count} orphaned files from {framework_name}")
+        
+        return deleted_count
+        
     except Exception as e:
         logger.error(f"Failed to clean orphans for {framework_name}: {e}")
         return 0

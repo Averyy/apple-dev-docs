@@ -19,6 +19,10 @@ The constant for a wheelchair workout at walking pace.
 case wheelchairWalkPace
 ```
 
+#### Discussion
+
+HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
+
 ## See Also
 
 - [HKWorkoutActivityType.preparationAndRecovery](hkworkoutactivitytype/preparationandrecovery.md)

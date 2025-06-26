@@ -19,11 +19,9 @@ struct Configuration
 
 #### Overview
 
-Specify the source and target languages to use in a translation session with this object. Create an instance of this type using the [`init(source:target:)`](translationsession/configuration/init(source:target:).md) initializer passing in the `source` and `target` languages to use for the translation.
+Specify the source and target languages to use in a translation session with this object. Initialize an instance of this type using the [`init(source:target:)`](translationsession/configuration/init(source:target:).md) and passing in the `source` and `target` languages. When you pass this configuration into the [`translationTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(_:action:))  function, the framework uses the languages you specify for translation.
 
-When you pass this configuration into the `View/translationTask(_:action:)` function, the framework uses the languages you specify for the translation.
-
-To re-run a translation, store the configuration object as state in your SwiftUI view by using the `State` property wrapper. Then change one of the configuration properties (such as the source or target language) to re-run the translation on a new pair of languages. Or call [`invalidate()`](translationsession/configuration/invalidate().md) on the configuration instance to re-run the translation using the same languages but with new content to translate. When you do, the action closure of `View/translationTask(_:action:)` triggers and the framework translates the text.
+To re-run a translation, store the configuration object as state in your SwiftUI view by using the `State` property wrapper. Then change one of the configuration properties (such as the source or target language) to re-run the translation on a new pair of languages. You can also call [`invalidate()`](translationsession/configuration/invalidate().md) on the configuration instance to re-run the translation using the same languages with new content to translate. When you do, the action closure of [`translationTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(_:action:)) triggers and the framework translates the text.
 
 The following example demonstrates how to trigger a new translation from a button press:
 
@@ -78,7 +76,7 @@ struct TranslationExample: View {
   A value the equals function uses to represent change in the configuration instance.
 ### Instance Methods
 - [func invalidate()](translationsession/configuration/invalidate.md)
-  Invalidate the current translation session to re-run it again with new content.
+  Invalidate the current translation session and re-run it with new content.
 ### Default Implementations
 - [Equatable Implementations](translationsession/configuration/equatable-implementations.md)
 
@@ -90,7 +88,7 @@ struct TranslationExample: View {
 ## See Also
 
 - [func prepareTranslation() async throws](translationsession/preparetranslation.md)
-  Asks the user for permission to download translation languages without doing any translations.
+  Asks for permission to download translation languages without doing any translations.
 
 
 ---

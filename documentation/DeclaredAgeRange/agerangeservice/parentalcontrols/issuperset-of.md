@@ -1,6 +1,6 @@
 # isSuperset(of:)
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: method
 
 Returns a Boolean value that indicates whether the set is a superset of the given set.

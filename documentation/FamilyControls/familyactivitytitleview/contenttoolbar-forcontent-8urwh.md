@@ -8,7 +8,6 @@ Populates the toolbar of the specified content view type with the views you prov
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 - macOS 15.4+
 - tvOS 18.4+
 - visionOS 2.4+

@@ -1,7 +1,7 @@
 # MPSMatrixVectorMultiplication
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A matrix-vector multiplication kernel
 
@@ -16,21 +16,31 @@ A matrix-vector multiplication kernel
 ## Declaration
 
 ```swift
-class MPSMatrixVectorMultiplication : MPSMatrixBinaryKernel
+class MPSMatrixVectorMultiplication
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, transpose: Bool, rows: Int, columns: Int, alpha: Double, beta: Double)](mpsmatrixvectormultiplication/2873083-init.md)
-- [init(device: any MTLDevice, rows: Int, columns: Int)](mpsmatrixvectormultiplication/2909035-init.md)
+- [init(device: any MTLDevice, transpose: Bool, rows: Int, columns: Int, alpha: Double, beta: Double)](mpsmatrixvectormultiplication/init(device:transpose:rows:columns:alpha:beta:).md)
+- [init(device: any MTLDevice, rows: Int, columns: Int)](mpsmatrixvectormultiplication/init(device:rows:columns:).md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, inputVector: MPSVector, resultVector: MPSVector)](mpsmatrixvectormultiplication/2873084-encode.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, inputVector: MPSVector, resultVector: MPSVector)](mpsmatrixvectormultiplication/encode(commandbuffer:inputmatrix:inputvector:resultvector:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrixBinaryKernel](mpsmatrixbinarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

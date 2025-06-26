@@ -1,7 +1,7 @@
 # MPSCNNBinaryConvolutionType.binaryWeights
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enumelt
+**Kind**: case
 
 A convolution type that operates as a normal convolution, except that the weights are binary values.
 
@@ -16,8 +16,15 @@ A convolution type that operates as a normal convolution, except that the weight
 ## Declaration
 
 ```swift
-case binaryWeights = 0
+case binaryWeights
 ```
+
+## See Also
+
+- [MPSCNNBinaryConvolutionType.AND](mpscnnbinaryconvolutiontype/and.md)
+  A convolution type that uses input image binarization and the AND-operation.
+- [MPSCNNBinaryConvolutionType.XNOR](mpscnnbinaryconvolutiontype/xnor.md)
+  A convolution type that uses input image binarization and the XNOR-operation.
 
 
 ---

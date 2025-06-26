@@ -71,7 +71,7 @@ init(connection: NSXPCConnection = .init(serviceName: "com.example.MyService")) 
 
 This sets up a connection to the XPC service’s listener by default, but allows you to override that by passing in a value to the `connection` parameter.
 
-Finally, in your test program, use [`init(listenerEndpoint:)`](https://developer.apple.com/documentation/Foundation/NSXPCConnection/init(listenerEndpoint:)) to create a connection to your anonymous listener:
+Finally, in your test program, use `init(listenerEndpoint:)` to create a connection to your anonymous listener:
 
 ```swift
 let connection = NSXPCConnection(listenerEndpoint: myListener.listener.endpoint)

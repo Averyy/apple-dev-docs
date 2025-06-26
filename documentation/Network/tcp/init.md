@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-init(@ProtocolStackBuilder<TCP> _ builder: () -> IP)
+init(@ProtocolStackBuilder<IP> _ builder: () -> IP)
 ```
 
 

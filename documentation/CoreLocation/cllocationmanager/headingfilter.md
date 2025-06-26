@@ -32,6 +32,8 @@ The angular distance is measured relative to the last delivered heading event. U
   Dismisses the heading calibration view from the screen immediately.
 - [let kCLHeadingFilterNone: CLLocationDegrees](kclheadingfilternone.md)
   A constant indicating that all header values should be reported.
+- [typealias CLLocationDegrees](cllocationdegrees.md)
+  A latitude or longitude value specified in degrees.
 - [var headingOrientation: CLDeviceOrientation](cllocationmanager/headingorientation.md)
   The device orientation to use when computing heading values.
 - [enum CLDeviceOrientation](cldeviceorientation.md)

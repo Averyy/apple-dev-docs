@@ -1,7 +1,7 @@
 # MPSNNPadNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 12.1+
@@ -14,20 +14,27 @@
 ## Declaration
 
 ```swift
-class MPSNNPadNode : MPSNNFilterNode
+class MPSNNPadNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate, edgeMode: MPSImageEdgeMode)](mpsnnpadnode/3037395-init.md)
+- [init(source: MPSNNImageNode, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate, edgeMode: MPSImageEdgeMode)](mpsnnpadnode/init(source:paddingsizebefore:paddingsizeafter:edgemode:).md)
 ### Instance Properties
-- [var fillValue: Float](mpsnnpadnode/3037394-fillvalue.md)
+- [var fillValue: Float](mpsnnpadnode/fillvalue.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

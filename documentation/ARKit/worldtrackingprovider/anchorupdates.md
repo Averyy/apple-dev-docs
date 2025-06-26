@@ -14,6 +14,14 @@ A sequence of updates to anchors a provider tracks.
 final var anchorUpdates: AnchorUpdateSequence<WorldAnchor> { get }
 ```
 
+#### Discussion
+
+An async sequence providing all anchor updates. The provider vends new or updated world anchors via the sequence as they become available.
+
+Identify the anchors you want to react to by calling [`id`](anchor/id.md).
+
+> **Note**: The provider also vends updates for persisted world anchors from previous runs of the app onto the sequence as soon as the world tracking provider is running. World anchors persist across device restarts until you explicitly remove them.
+
 ## See Also
 
 - [init()](worldtrackingprovider/init.md)

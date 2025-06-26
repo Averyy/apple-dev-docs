@@ -1,7 +1,7 @@
 # MPSCNNSpatialNormalization
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A spatial normalization kernel.
 
@@ -16,7 +16,7 @@ A spatial normalization kernel.
 ## Declaration
 
 ```swift
-class MPSCNNSpatialNormalization : MPSCNNKernel
+class MPSCNNSpatialNormalization
 ```
 
 #### Overview
@@ -25,31 +25,44 @@ The spatial normalization for a feature channel applies the kernel over local re
 
 For each feature channel, the function computes the sum of squares of `X` inside each rectangle, `N2(i,j)`. It then divides each element of `X` as follows:
 
-![Y(i,j) = X(i,j) / (delta + alpha/(kw*kh) * N2(i,j))^beta](https://docs-assets.developer.apple.com/published/866dd98e74/887eebc5-2a18-404d-b9e9-83e1c2dda78f.png)
+![Y(i,j) = X(i,j) / (delta + alpha/(kw*kh) * N2(i,j))^beta](https://docs-assets.developer.apple.com/published/ac698d749cc4e24dd6eac74538c7a877/media-2903551%402x.png)
 
-Where `kw` and `kh` are the values of the `kernelWidth` and `kernelHeight` properties, respectively. It is your responsibility to ensure that the combination of the values of the [`delta`](mpscnnspatialnormalization/1648933-delta.md) and [`alpha`](mpscnnspatialnormalization/1648825-alpha.md)`kernelWidth``kernelHeight` properties does not result in a situation where the denominator becomes zero (in such situations the resulting pixel-value is undefined).
+Where `kw` and `kh` are the values of the `kernelWidth` and `kernelHeight` properties, respectively. It is your responsibility to ensure that the combination of the values of the [`delta`](mpscnnspatialnormalization/delta.md) and [`alpha`](mpscnnspatialnormalization/alpha.md) `kernelWidth` `kernelHeight` properties does not result in a situation where the denominator becomes zero (in such situations the resulting pixel-value is undefined).
 
-> **Note**: The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNSpatialNormalization`](mpscnnspatialnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object.
+> **Note**:  The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNSpatialNormalization`](mpscnnspatialnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) object.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnspatialnormalization/2867021-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnspatialnormalization/init(coder:device:).md)
   Initializes a spatial normalization kernel.
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnspatialnormalization/1648831-init.md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnspatialnormalization/init(device:kernelwidth:kernelheight:).md)
   Initializes a spatial normalization kernel.
 ### Instance Properties
-- [var alpha: Float](mpscnnspatialnormalization/1648825-alpha.md)
-  The "alpha" variable of the kernel function.
-- [var beta: Float](mpscnnspatialnormalization/1648936-beta.md)
-  The "beta" variable of the kernel function.
-- [var delta: Float](mpscnnspatialnormalization/1648933-delta.md)
-  The "delta" variable of the kernel function.
+- [var alpha: Float](mpscnnspatialnormalization/alpha.md)
+  The “alpha” variable of the kernel function.
+- [var beta: Float](mpscnnspatialnormalization/beta.md)
+  The “beta” variable of the kernel function.
+- [var delta: Float](mpscnnspatialnormalization/delta.md)
+  The “delta” variable of the kernel function.
+### Instance Methods
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnspatialnormalization/init(device:kernelwidth:kernelheight:).md)
+  Initializes a spatial normalization kernel.
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

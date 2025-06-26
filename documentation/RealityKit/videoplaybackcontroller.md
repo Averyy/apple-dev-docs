@@ -36,8 +36,7 @@ An object that controls the playback of video for a video material.
   Do we want to play stereo video in mono or stereo? Default is to play in stereo.
 - [var preferredViewingMode: VideoPlaybackController.ViewingMode](videoplaybackcontroller/preferredviewingmode-9sstw.md)
   Do we want to play stereo video in mono or stereo? Default is to play in stereo.
-- [var reverbSendLevel: AudioPlaybackController.Decibel](videoplaybackcontroller/reverbsendlevel-5hl8k.md)
-- [var reverbSendLevel: AudioPlaybackController.Decibel](videoplaybackcontroller/reverbsendlevel-6gh8x.md)
+- [var reverbSendLevel: AudioPlaybackController.Decibel](videoplaybackcontroller/reverbsendlevel.md)
 ### Enumerations
 - [VideoPlaybackController.ViewingMode](videoplaybackcontroller/viewingmode-38c52.md)
   Options for viewing video playback.

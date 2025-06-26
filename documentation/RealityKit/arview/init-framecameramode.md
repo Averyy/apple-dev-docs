@@ -6,12 +6,9 @@
 Creates an AR view with the specified dimensions and camera mode.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 14.0+
-- macOS 10.15+
-- tvOS 26.0+ (Beta)
-- Unknown ?+ - Deprecated
+- iOS 13.0+ - Deprecated
+- iPadOS 13.0+ - Deprecated
+- Mac Catalyst 14.0+ - Deprecated
 
 ## Declaration
 

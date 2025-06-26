@@ -1,7 +1,7 @@
 # MPSNNNeuronDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An object that specifies properties used by a neuron kernel.
 
@@ -16,31 +16,38 @@ An object that specifies properties used by a neuron kernel.
 ## Declaration
 
 ```swift
-class MPSNNNeuronDescriptor : NSObject
+class MPSNNNeuronDescriptor
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var a: Float](mpsnnneurondescriptor/2942316-a.md)
-- [var b: Float](mpsnnneurondescriptor/2942302-b.md)
-- [var c: Float](mpsnnneurondescriptor/2942305-c.md)
-- [var data: Data?](mpsnnneurondescriptor/2942299-data.md)
-- [var neuronType: MPSCNNNeuronType](mpsnnneurondescriptor/2942292-neurontype.md)
+- [var a: Float](mpsnnneurondescriptor/a.md)
+- [var b: Float](mpsnnneurondescriptor/b.md)
+- [var c: Float](mpsnnneurondescriptor/c.md)
+- [var data: Data?](mpsnnneurondescriptor/data.md)
+- [var neuronType: MPSCNNNeuronType](mpsnnneurondescriptor/neurontype.md)
 ### Type Methods
-- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/2942307-cnnneurondescriptor.md)
-- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType, a: Float) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/2942301-cnnneurondescriptor.md)
-- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType, a: Float, b: Float) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/2942295-cnnneurondescriptor.md)
-- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType, a: Float, b: Float, c: Float) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/2942296-cnnneurondescriptor.md)
-- [class func cnnNeuronPReLUDescriptor(with: Data, noCopy: Bool) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/2942317-cnnneuronpreludescriptor.md)
+- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/cnnneurondescriptor(with:).md)
+- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType, a: Float) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/cnnneurondescriptor(with:a:).md)
+- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType, a: Float, b: Float) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/cnnneurondescriptor(with:a:b:).md)
+- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType, a: Float, b: Float, c: Float) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/cnnneurondescriptor(with:a:b:c:).md)
+- [class func cnnNeuronPReLUDescriptor(with: Data, noCopy: Bool) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/cnnneuronpreludescriptor(with:nocopy:).md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
-- [NSCopying](../foundation/nscopying.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -74,8 +81,6 @@ class MPSNNNeuronDescriptor : NSObject
   A gradient neuron filter.
 - [class MPSCNNNeuronLogarithm](mpscnnneuronlogarithm.md)
   A logarithm neuron filter.
-- [class MPSCNNNeuronPower](mpscnnneuronpower.md)
-  A power neuron filter.
 
 
 ---

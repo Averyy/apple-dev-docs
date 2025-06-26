@@ -1,4 +1,4 @@
-# iOS & iPadOS 26 Beta Release Notes
+# iOS & iPadOS 26 Beta 2 Release Notes
 
 **Framework**: iOS & iPadOS Release Notes
 
@@ -6,7 +6,18 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26 beta. The SDK comes bundled with Xcode 26, available from the Mac App Store. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
+The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26 beta 2. The SDK comes bundled with Xcode 26, available from the Mac App Store. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
+
+- Recovery Assistant is a new way to recover your device if it doesn’t start up normally. It can look for problems and attempt to resolve them if found.  (151856202)
+
+###### Resolved Issues
+
+- Fixed: Some iPhone 15 and iPhone 16 models might show a low battery symbol and be unable to start up after updating to iOS 26 beta 1. Follow the steps below to restore the affected iPhone using the updated version of iOS 26 beta 1, or to downgrade to the currently-released version of iOS. 1. Disconnect the iPhone from all USB-C cables.
+2. Connect a USB-C cable to a computer, then open Finder if using Mac, or the Apple Devices app if using Windows.
+3. When the iPhone’s screen is black, connect the USB-C cable to the iPhone while simultaneously pressing and holding both the side button and volume down button.
+4. After 3 seconds, release the side button and continue holding the volume down button until you see the iPhone in Finder or Apple Devices (this may take up to 15 seconds).
+5. Restore the iPhone using the updated version of iOS 26 beta 1 or the version of iOS that is currently available.
+6. Restore the iPhone from your backup.  (153071880)
 
 ##### Adattributionkit
 
@@ -46,10 +57,10 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 - The Foundation Models framework provides you with direct access to the on-device large language model at the core of Apple Intelligence.  (139996377)
 
-###### Known Issues
+###### Resolved Issues
 
-- In Image Playground and Genmoji, the new modifiers to customize appearance do not work for Japanese-language users. Generation is blocked when attempting to add modifiers to their appearance.  (151833204)  Removing any modifiers from the dropdowns in Customize Appearance options will allow generations. Users can also use the “Additional description” text field for modifications.
-- Model quality output degrades after extended, repeated inferences of the same adapter.  (152468267)
+- Fixed: In Image Playground and Genmoji, the new modifiers to customize appearance do not work for Japanese-language users. Generation is blocked when attempting to add modifiers to their appearance.  (151833204)
+- Fixed: Model quality output degrades after extended, repeated inferences of the same adapter.  (152468267)
 
 ##### Apple Music
 
@@ -59,11 +70,11 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Apple Tv App
 
-###### Known Issues
+###### Resolved Issues
 
-- Certain text on Apple TV app content cards might be hard to read.  (149376362)
-- Certain line items in Apple TV app settings appear twice or disappear unexpectedly.  (152248009)  After changing the desired setting, back out of the root page then navigate back to the the applicable settings page. Alternatively, scroll to the bottom of the app settings.
-- Certain text and images in the “Key Plays” content tab in live sports playback might not display correctly.  (152516659)
+- Fixed: Certain text on Apple TV app content cards might be hard to read.  (149376362)
+- Fixed: Certain line items in Apple TV app settings appear twice or disappear unexpectedly.  (152248009)
+- Fixed: Certain text and images in the “Key Plays” content tab in live sports playback might not display correctly.  (152516659)
 
 ##### Apps
 
@@ -79,9 +90,15 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Assistantschemas
 
-###### Known Issues
+###### Resolved Issues
 
-- If you have adopted any of the following email AssistantSchemas, you will experience a compilation error due to a parameter type change: `createDraft`, `updateDraft`, `replyMail`, `forwardMail`, `message`, and `draft`.  (148633307)  Revise the relevant schema implementations to accept an optional `AttributedString` instead of an optional `String` for the body parameter or property, and rebuild your app.
+- Fixed: If you have adopted any of the following email AssistantSchemas, you will experience a compilation error due to a parameter type change: `createDraft`, `updateDraft`, `replyMail`, `forwardMail`, `message`, and `draft`.  (148633307)
+
+##### Authenticationservices
+
+###### New Features
+
+- `ASAuthorizationControllerRequestOptions.preferImmediatelyAvailableCredentials` now works for passkey registration requests. This request only shows UI when the device is immediately able to create a passkey; otherwise, no UI is shown.  (150688929)
 
 ##### Avfoundation
 
@@ -91,12 +108,16 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Background Assets
 
+###### Resolved Issues
+
+- Fixed: The system might not update downloaded asset packs as frequently as is expected for apps that internal testers install from TestFlight.  (143281558)
+- Fixed: Asset pack downloads might fail unexpectedly or stall indefinitely, including across reboots.  (151498902)
+- Fixed: The system might not deliver status updates to your app for ongoing asset pack downloads.  (151647839)
+- Fixed: Pausing and resuming an app installation or update while the system is downloading essential asset packs might cause the installation or update to stall indefinitely.  (151942388)
+
 ###### Known Issues
 
-- The system might not update downloaded asset packs as frequently as is expected for apps that internal testers install from TestFlight.   (143281558)  Call `checkForUpdates()` on the shared asset pack manager in your app’s code.
-- Asset pack downloads might fail unexpectedly or stall indefinitely, including across reboots.   (151498902)  If your app receives a download status update for a stalled asset pack with a `Progress` object, then call `cancel()` on that object before rescheduling the download. Alternatively, you can fetch and cancel the object that represents the stalled download by calling `currentDownloads` on the shared download manager, extracting the relevant download object from the returned array, and passing the object to a call to `cancel(_:)` on the shared download manager.
-- The system might not deliver status updates to your app for ongoing asset pack downloads.   (151647839)  Force Quit and restart your app while testing it.
-- Pausing and resuming an app installation or update while the system is downloading essential asset packs might cause the installation or update to stall indefinitely.  (151942388)  Delete the stalled app from the Home Screen (on iOS, iPadOS, or tvOS), from the Home View (on visionOS), or from the Finder (on macOS) and reinstall it.
+- The installation of large asset packs might fail.  (153128086)
 
 ##### Books
 
@@ -106,9 +127,9 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Carplay
 
-###### Known Issues
+###### Resolved Issues
 
-- CarPlay template apps that use the Now Playing screen might occasionally not load artwork on full-screen Now Playing.   (151807323)  Change the track or chapter.
+- Fixed: CarPlay template apps that use the Now Playing screen might occasionally not load artwork on full-screen Now Playing.   (151807323)
 
 ##### Cellular Data Usage
 
@@ -118,9 +139,12 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Cloudkit
 
+###### Resolved Issues
+
+- Fixed: CloudKit sharing URLs do not launch third-party apps.  (151778655)
+
 ###### Known Issues
 
-- CloudKit sharing URLs do not launch third-party apps.  (151778655)
 - The request access APIs, such as CKShareRequestAccessOperation, are available in the SDK but are currently nonfunctional.  (151878020)
 
 ##### Communication Safety
@@ -139,9 +163,9 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Find My App
 
-###### Known Issues
+###### Resolved Issues
 
-- Play Sound fails when invoked from Share Item Location links, and “Not Reachable” is displayed.  (152029301)
+- Fixed: Play Sound fails when invoked from Share Item Location links, and “Not Reachable” is displayed.  (152029301)
 
 ##### Foundation
 
@@ -156,13 +180,20 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Foundation Models Framework
 
+###### Resolved Issues
+
+- Fixed: When you pass `includeSchemaInPrompt: false` to `respond` or `streamResponse`, it is not respected.  (151926006)
+- Fixed: In an Xcode Playground, requests made to the model might receive a “rate limit exceeded” error.  (152325506)
+- Fixed: The Foundation Models framework cannot be imported when building for Mac Catalyst.  (153255533) (FB18004324)
+
 ###### Known Issues
 
-- When you pass `includeSchemaInPrompt: false` to `respond` or `streamResponse`, it is not respected.  (151926006)
 - Custom `@Generable` types named `Number` or `Boolean` might not function reliably in guided generation.  (152280144)  Use a different type name.
 - Some instructions and prompts to the model might not lead to expected responses. Use Feedback Assistant to report satisfactory or unsatisfactory cases. When applicable, you can use the `LanguageModelFeedbackAttachment` API to serialize the feedback to a file and attach it to Feedback Assistant.  (152318091)  Refine your instructions and prompts using `#Playground` in Xcode. When applying guided generation with a `@Generable` type, add `@Guide` with a custom description on properties to steer the model’s responses.
 - Tool calling might not function properly if primitive types such as `Int`, `String`, or `Bool` are used as the argument.  (152318534)  Define a custom `@Generable` type.
-- In an Xcode Playground, requests made to the model might receive a “rate limit exceeded” error.  (152325506)  Close and reopen the playground tab in the canvas.
+- Model requests in macOS command line tools might experience rate limiting.  (152681332)  When you need to make many requests to the model, use a UI app instead.
+- `Generable` types cannot be made public due to a bug in the `Generable` macro.  (153216183) (FB17990794)  When you intend to expose a `Generable` type in your library, expand the macro using Xcode, insert the macro expansion content into your code, and make the `id` property public.
+- Requests to the model might experience rate limiting, even when the device is connected to power.  (153216632)
 
 ##### Game Center
 
@@ -178,9 +209,9 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Game Mode
 
-###### Known Issues
+###### Resolved Issues
 
-- The LSSupportsGameMode `Info.plist` key is currently ignored.  (151814151)  Use GCSupportsGameMode for iOS games.
+- Fixed: The LSSupportsGameMode `Info.plist` key is currently ignored.  (151814151)
 
 ##### Healthkit
 
@@ -189,9 +220,16 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 - A user’s medications and their dose events in the Health app are now available for reading via a new API. Use `HKUserAnnotatedMedicationQuery` to get a list of `HKUserAnnotatedMedication` objects that encapsulate the users medications. A new `HKSample` subclass, `HKMedicationDoseEvent`, tracks the medication doses logged by the user.  (114279172)
 - Workout session APIs are now available on iOS and iPadOS. This includes `HKWorkoutSession` and `HKLiveWorkoutBuilder`, which can be used in your app to track workouts.  (125746390)
 
+###### Resolved Issues
+
+- Fixed: An app that was granted Read-only authorization for certain data types (e.g. workout routes) might lose its ability to read the data type without the user explicitly turning it off in Settings > Health.  (149024236)
+- Fixed: The authorization screen prompted by the Medications Authorization API cannot be dismissed if the user has no available medications needing authorization.  (152094574)
+
+##### Image Playground
+
 ###### Known Issues
 
-- The authorization screen prompted by the Medications Authorization API cannot be dismissed if the user has no available medications needing authorization.  (152094574)  Force Quit the application that requested authorization.
+- The Create Image action fails to appear in Shortcuts app and Spotlight.  (153235442)
 
 ##### Ios Simulator
 
@@ -215,9 +253,12 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 - Smart notifications now let users know when it’s the best time to journal, based on their routine and location. You can also adopt smart notifications in your journaling app.  (152469176)
 - Suggestions have been revamped to show scene classification and inferences such as Holidays and Celebrations, new groupings based on patterns, and more.  (152469363)
 
+###### Resolved Issues
+
+- Fixed: Journaling suggestions might not download.  (151995727)
+
 ###### Known Issues
 
-- Journaling suggestions might not download.  (151995727)  On iPhone, reboot device. On iPad, toggle OFF/ON “Sync to this iPad” in Settings > Privacy & Security > Journaling suggestions. Wait at least 24 hours for suggestions to download. Workaround might not work for some journaling apps.
 - iCloud Storage for Journaling Suggestions returns after “Delete Data From iCloud”.  (152102605)  Disable Journaling Suggestions, in Settings > Apple Account > iCloud > Saved to iCloud > Journaling Suggestions, before invoking “Delete Data From iCloud”.
 
 ##### Kernel
@@ -249,6 +290,7 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 - If you create a wallpaper using the first-row circles at the top of the Wallpaper Gallery, you might not be able to place widgets directly below the time.  (151709613)  Select a suggestion from another row.
 - Clock, notifications, and other elements might not display.  (152192129)  Swipe down from the status bar to re-present the Lock Screen, or reboot the device.
 - Devices might not auto sleep while the passcode UI is visible on the Lock Screen.  (152604427)  Dismiss passcode UI or manually lock the device.
+- Wallpapers and posters with adaptive clock lose depth if you upgrade from iOS 26 beta 1 to iOS 26 beta 2.  (153005914)
 
 ##### Mail
 
@@ -278,12 +320,16 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Messages
 
+###### Resolved Issues
+
+- Fixed: Sent translated messages do not get re-translated after editing.  (149401758)
+- Fixed: In regions where Screen Unknown Senders is on by default, notifications for message categories are erroneously off by default.  (149450560)
+
 ###### Known Issues
 
 - Users on older devices won’t see compatibility messages for polls, so they might be unaware a poll was sent.  (148545742)
-- Sent translated messages do not get re-translated after editing.  (149401758)  Send the message again instead of editing the original.
 - Expanding Conversation Details causes the list of conversations to collapse.  (149436051)  Closing Conversation Details will bring back the list.
-- In regions where Screen Unknown Senders is on by default, notifications for message categories are erroneously off by default.  (149450560)  In Messages settings, manually enable notifications for the categories with the Allow Notifications setting of the Unknown Senders section.
+- In one-to-one conversations, background changes might be attributed incorrectly after quitting and re-opening the Messages app.  (150548773)
 - Deleting and reporting as spam a message that was filtered by a Message Filter App extension does not send the spam report to the extension.  (150832702)
 - Devices with “Filter Unknown Senders” on before update might have “Time Sensitive” on by default under the Allow Notifications setting in the Unknown Senders section of Messages Settings.  (150856051)  Enable “Time Sensitive” manually.
 - Transaction or Promotion messages filtered by a Message Filter App Extension might be badged as “Unknown” in the conversation list rather than “Transaction” or “Promotion”.  (151869409)
@@ -294,10 +340,13 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 - Metal 4 is now supported. See [`Metal`](https://developer.apple.comhttps://developer.apple.com/metal/) for additional details.  (113781091)
 
+###### Resolved Issues
+
+- Fixed: Metal Shader Validation might not work with shaders that use Metal Performance Primitives.  (149263281)
+
 ###### Known Issues
 
 - If you’re using Metal 4 command encoders, you should add render and compute pipelines that support indirect command buffers to your residency sets. The Metal device driver currently does not enforce this requirement.  (145066238)
-- Metal Shader Validation might not work with shaders that use Metal Performance Primitives.  (149263281)
 - Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367)  Selectively disable Shader Validation for pipelines using ray tracing. See [`documentation`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage/#Selectively-enable-Shader-Validation).
 
 ##### Metalfx
@@ -359,23 +408,23 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 - The legacy Push to Talk Entitlement `com.apple.developer.pushkit.unrestricted-voip.ptt` is no longer supported on apps built with the iOS 26 SDK or later. Push to Talk apps must be updated to use the Push to Talk framework introduced in iOS 16.  (147700313)
 
-##### Realitycomposer
+##### Reality Composer
 
-###### Known Issues
+###### Resolved Issues
 
-- When you create or open a project in RealityComposer on devices with LiDAR, the screen freezes and shakes after entering AR mode and pressing the Play button.  (152324341)  Press the `…` button, then enable Real-World Occlusion setting. Close and re-open RealityComposer.
+- Fixed: When you create or open a project in RealityComposer on devices with LiDAR, the screen freezes and shakes after entering AR mode and pressing the Play button.  (152324341)
 
 ##### Realitykit
 
 ###### Resolved Issues
 
 - Fixed: Entities with a PortalComponent ignore any ModelSortGroupComponent and instead use a fixed rendering order. In case of sorting rendering issues with portal surface, explicitly add a ModelSortGroupComponent using a `.planarUIAlwaysBehind` sort group.  (149899345)
+- Fixed: `ParticleEmitterComponent` does not render properly on iOS, macOS, and tvOS.  (152201501)
+- Fixed: The `animate` functions on `Entity` and `RealityViewContent` do not start animations.  (152456435)
 
 ###### Known Issues
 
 - Some properties and components do not update SwiftUI Views when accessed through the `.observable` property on Entity.  (147063698)
-- `ParticleEmitterComponent` does not render properly on iOS, macOS, and tvOS.  (152201501)
-- The `animate` functions on `Entity` and `RealityViewContent` do not start animations.  (152456435)
 
 ##### Security
 
@@ -389,11 +438,27 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 - The cursive Welcome text might be missing at the end of Setup Assistant.  (152601626)  Swipe up or tap Get Started to complete setup.
 
+##### Shortcuts
+
+###### Known Issues
+
+- Titles for some Messages actions and filter properties display incorrectly.  (153740390)
+
+##### Simulator
+
+###### Known Issues
+
+- Messages app crashes when launched.  (153672262)
+
 ##### Software Update
 
 ###### New Features
 
 - Depending on the amount of free space available, iOS might dynamically reserve update space for Automatic Updates to download and install successfully.  (137003545)
+
+###### Known Issues
+
+- Software Updates might reserve more space than necessary.  (151413019)
 
 ##### Storekit
 
@@ -409,6 +474,7 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Price of offers is not displayed in the payment sheet when making a purchase to a subscription with a higher level of service in StoreKit Testing in Xcode.  (140635780) (FB15980635)
 - Fixed: Renewal transactions might be created regardless of the Ask to Buy status of the purchase request in StoreKit Testing in Xcode.  (145242611)
 - Resolved an issue with the `Identifiable` conformance of the `PurchaseIntent` API. Conformance to this protocol now begins starting with iOS 18.0 and macOS 15.0.  (148751460) (FB17151889)
+- Resolved an issue where the `id` member of the PurchaseIntent API was only available starting with iOS 18.0 and macOS 15.0, and no longer available for Mac Catalyst. It is now available starting with iOS 16.4, macOS 14.4, and Mac Catalyst 16.4. The `PurchaseIntent` conformance to `Identifiable` remains unchanged.  (152858281) (FB17829716)
 
 ##### Swift Compiler
 
@@ -483,6 +549,7 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 - In iOS and iPadOS apps that adopt the new design, a picker of `.segmented` style now supports `.large` and `.extraLarge` control sizes.  (144417732)
 - In apps that adopt the new design, the `buttonBorderShape(_:)` view modifier can be used to customize the shape of bordered buttons. Previously this modifier only affected buttons in Widgets in macOS.  (145773436)
 - The `buttonSizing(_:)` view modifier specifies the sizing behavior of `Button`, `Picker`, `Menu`, and other button-producing controls. If you are using `Spacer` views or an infinite-width frame in your `Button` label to create a flexible button, apply `buttonSizing(.flexible)` to the `Button` instead.  (146327046)
+- On iPadOS, sidebars and inspector titles now default to inline in the regular size class. You can use `navigationTitleDisplayMode(:_)` to specify a different title display mode.  (150891824)
 
 ###### Resolved Issues
 
@@ -503,20 +570,27 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
      .presentationSizing(.page)
      .presentationCompactAdaptation(.fullScreen)
 ``` (150455117)
+- Fixed: On iOS and iPadOS, sheets applied to toolbar items sometimes do not display if the sheet is presented at the same time a popover is dismissed.  (150764801)
+- Fixed: If Default Actor Isolation is set to `MainActor`, `@Animatable` macro emits concurrency warnings in Swift 5 language mode and does not compile in Swift 6 language mode.  (152524435)
 
 ###### Known Issues
 
 - On iOS and iPadOS, inspector does not respect the width applied with `inspectorColumnWidth`.  (145162377)
 - On iOS and iPadOS, inspector columns do not present if the hierarchy does not contain a `NavigationSplitView`.  (145686228)
-- On iOS and iPadOS, sheets applied to toolbar items sometimes do not display if the sheet is presented at the same time a popover is dismissed.  (150764801)
 - `toolbarForegroundStyle` no longer tints toolbar button labels on watchOS.  (151487439)  Tint the button label directly, using `Text("foo").foregroundStyle(...)`.
 - On iOS and iPadOS, bordered prominent buttons in toolbars do not have the correct default padding or symbol metrics.  (151792861)
+- On iOS and iPadOS, toolbar items in the navigation bar might become non-centered after a state change.  (152168945)
 - `.toolbarVisibility(_:for:)` does not hide the navigation bar on watchOS.  (152326250)
-- If Default Actor Isolation is set to `MainActor`, `@Animatable` macro emits concurrency warnings in Swift 5 language mode and does not compile in Swift 6 language mode.  (152524435)  Use Swift 5 language mode or set Default Actor Isolation to `nonisolated` in project’s build settings.
 
 ###### Deprecations
 
 - `Text` concatenation using the `+` operator is deprecated because it makes it hard to create localized strings that are correct across all languages. Use `Text` interpolation instead. See documentation on `Text` for more info on how to produce localized strings.  (128144043)
+
+##### Textkit
+
+###### New Features
+
+- iOS 26, tvOS 26, visionOS 26, watchOS 26, and macOS Tahoe 26 have two methods for resolving the natural alignment `NSTextAlignment.natural` and the last line of `NSTextAlignment.justified` into concrete alignments, `left` and `right`. The first approach utilizes the UI language, which is determined by passing nil-language to `NSParagraphStyle.defaultWritingDirection(forLanguage: )`. This behavior was employed in releases prior to OS 26. The second method is new and dynamically utilizes the base writing direction for the paragraph. When the base writing direction is set to `NSWritingDirection.rightToLeft`, the text is aligned to `right`, and vice versa. The behavior is selected by API introduced in OS 26: `NSTextLayoutManager.resolvesNaturalAlignmentWithBaseWritingDirection`, `NSStringDrawingOptionsResolvesNaturalAlignmentWithBaseWritingDirection`, `UITraitCollection.resolvesNaturalAlignmentWithBaseWritingDirection`, and `NSTextField.resolvesNaturalAlignmentWithBaseWritingDirection`.  (152045248)
 
 ##### Textkit 2
 
@@ -539,6 +613,7 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 ###### Known Issues
 
 - In apps using `UIToolbar`, the Search bar sometimes does not respond to taps and displays without the magnifying glass, dictation button, or placeholder text.  (151126350)  Quit the app then re-launch it.
+- On iPhone only, the `searchTextField` property of a `UISearchBar` belonging to a `UISearchController` (i.e. `searchController.searchBar.searchTextField`) might not return the same instance when called at different times.   (153550157)  Look for `UISearchBar` or `UISearchController` API equivalent to the `UISearchTextField` API you’re using. If none can be found, you can prevent the issue by setting the `UINavigationItem.searchBarPlacementAllowsToolbarIntegration` property to `false` on the navigation item the search controller has been assigned to.
 
 ##### Wallpapers
 
@@ -548,6 +623,12 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 - After install or reboot, the default wallpaper might show as pink when the display dims or is on rotation.  (152119543)
 - Some wallpapers specific to certain devices might be missing.  (152284310)
 
+##### Watch App
+
+###### Known Issues
+
+- Apple Watch apps with a `MinimumOSVersion` of watchOS 26 that have an iOS counterpart fail to install to the watch via the Watch app on iPhone.  (153195856)  Use Xcode to install the app directly to the watch.
+
 ##### Watch Faces
 
 ###### Known Issues
@@ -556,9 +637,9 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Weather
 
-###### Known Issues
+###### Resolved Issues
 
-- Users might see a blank white button on some tips for Weather features. The button will be operable.  (152088799)
+- Fixed: Users might see a blank white button on some tips for Weather features. The button will be operable.  (152088799)
 
 ##### Webkit Api
 
@@ -568,11 +649,14 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Wi Fi Aware
 
+###### Resolved Issues
+
+- Fixed: Connections might be terminated unexpectedly after 120 seconds.  (152279075)
+
 ###### Known Issues
 
 - `transmitLatency` property of WAPerformanceReport might not report latency values.  (151628308)
 - Network connection to a paired device with an already-established connection might not succeed.  (151873702)  Remove existing connection to a paired device before attempting a new one.
-- Connections might be terminated unexpectedly after 120 seconds.  (152279075)
 - Connections attempted while browser is not running might fail.  (152336071)  Make connections while browser is running.
 
 ##### Widgets

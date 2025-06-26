@@ -25,7 +25,7 @@ case swimming
 
 #### Discussion
 
-If your app uses the [`HKWorkoutActivityType.swimming`](hkworkoutactivitytype/swimming.md) or [`HKWorkoutActivityType.other`](hkworkoutactivitytype/other.md) activity type, you must explain how your app calculates workout data when sensor information is not available. For more information, see the [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/watchos/interaction/workout/).
+If your app uses the [`HKWorkoutActivityType.swimming`](hkworkoutactivitytype/swimming.md) or [`HKWorkoutActivityType.other`](hkworkoutactivitytype/other.md) activity type, you must explain how your app calculates workout data when sensor information is not available. For more information, see the [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/watchos/interaction/workout/). HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
 
 ## See Also
 
@@ -37,6 +37,8 @@ If your app uses the [`HKWorkoutActivityType.swimming`](hkworkoutactivitytype/sw
   The constant for sailing.
 - [HKWorkoutActivityType.surfingSports](hkworkoutactivitytype/surfingsports.md)
   The constant for a variety of surf sports, including surfing, kite surfing, and wind surfing.
+- [HKWorkoutActivityType.underwaterDiving](hkworkoutactivitytype/underwaterdiving.md)
+  The constant for underwater diving.
 - [HKWorkoutActivityType.waterFitness](hkworkoutactivitytype/waterfitness.md)
   The constant for aerobic exercise performed in shallow water.
 - [HKWorkoutActivityType.waterPolo](hkworkoutactivitytype/waterpolo.md)

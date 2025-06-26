@@ -1,7 +1,7 @@
 # MPSCNNGroupNormalizationGradientState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 **Availability**:
 - iOS 13.0+
@@ -14,22 +14,29 @@
 ## Declaration
 
 ```swift
-class MPSCNNGroupNormalizationGradientState : MPSNNGradientState
+class MPSCNNGroupNormalizationGradientState
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var beta: (any MTLBuffer)?](mpscnngroupnormalizationgradientstate/3152557-beta.md)
-- [var gamma: (any MTLBuffer)?](mpscnngroupnormalizationgradientstate/3152558-gamma.md)
-- [var gradientForBeta: any MTLBuffer](mpscnngroupnormalizationgradientstate/3152559-gradientforbeta.md)
-- [var gradientForGamma: any MTLBuffer](mpscnngroupnormalizationgradientstate/3152560-gradientforgamma.md)
-- [var groupNormalization: MPSCNNGroupNormalization](mpscnngroupnormalizationgradientstate/3152561-groupnormalization.md)
+- [var beta: (any MTLBuffer)?](mpscnngroupnormalizationgradientstate/beta.md)
+- [var gamma: (any MTLBuffer)?](mpscnngroupnormalizationgradientstate/gamma.md)
+- [var gradientForBeta: any MTLBuffer](mpscnngroupnormalizationgradientstate/gradientforbeta.md)
+- [var gradientForGamma: any MTLBuffer](mpscnngroupnormalizationgradientstate/gradientforgamma.md)
+- [var groupNormalization: MPSCNNGroupNormalization](mpscnngroupnormalizationgradientstate/groupnormalization.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientState](mpsnngradientstate.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Creates a new instance of a `ManipulationComponent`.
+Creates a manipulation component.
 
 **Availability**:
 - visionOS 26.0+ (Beta)

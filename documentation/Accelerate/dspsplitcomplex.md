@@ -24,8 +24,8 @@ struct DSPSplitComplex
 
 - [Finding the component frequencies in a composite sine wave](finding-the-component-frequencies-in-a-composite-sine-wave.md)
 - [Controlling vDSP operations with stride](controlling-vdsp-operations-with-stride.md)
-- [Performing Fourier transforms on interleaved-complex data](performing-fourier-transforms-on-interleaved-complex-data.md)
 - [Performing Fourier Transforms on Multiple Signals](performing-fourier-transforms-on-multiple-signals.md)
+- [Performing Fourier transforms on interleaved-complex data](performing-fourier-transforms-on-interleaved-complex-data.md)
 
 ## Topics
 

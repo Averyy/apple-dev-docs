@@ -16,7 +16,7 @@ Loads the image to display when the player completes the achievement.
 ## Declaration
 
 ```swift
-func loadImage() async throws -> NSImage
+func loadImage() async throws -> UIImage
 ```
 
 ## Mentions

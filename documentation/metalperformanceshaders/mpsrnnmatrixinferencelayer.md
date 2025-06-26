@@ -1,7 +1,7 @@
 # MPSRNNMatrixInferenceLayer
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A recurrent neural network layer for inference on Metal Performance Shaders matrices.
 
@@ -16,12 +16,12 @@ A recurrent neural network layer for inference on Metal Performance Shaders matr
 ## Declaration
 
 ```swift
-class MPSRNNMatrixInferenceLayer : MPSKernel
+class MPSRNNMatrixInferenceLayer
 ```
 
 #### Overview
 
-The [`MPSRNNMatrixInferenceLayer`](mpsrnnmatrixinferencelayer.md) specifies a recurrent neural network layer for inference on [`MPSMatrix`](mpsmatrix.md) objects. Two types of recurrent layers are supported: 
+The [`MPSRNNMatrixInferenceLayer`](mpsrnnmatrixinferencelayer.md) specifies a recurrent neural network layer for inference on [`MPSMatrix`](mpsmatrix.md) objects. Two types of recurrent layers are supported:
 
 - [`MPSRNNImageInferenceLayer`](mpsrnnimageinferencelayer.md)—Operates with convolutions on images.
 - [`MPSRNNMatrixInferenceLayer`](mpsrnnmatrixinferencelayer.md)—Operates on matrices.
@@ -33,37 +33,47 @@ You can use [`MPSRNNImageInferenceLayer`](mpsrnnimageinferencelayer.md) to imple
 - A single [`MPSRNNDescriptor`](mpsrnndescriptor.md) instance, which further specifies the recurrent network layer.
 - An array of [`MPSRNNDescriptor`](mpsrnndescriptor.md) instances, which specifies a stack of recurrent layers that can operate in parallel a subset of the inputs in a sequence of inputs and recurrent outputs.
 
-Stacks with bidirectionally traversing encode functions don't support starting from a previous set of recurrent states. However, you can achieve this effect by defining two separate unidirectional stacks of layers, running the same input sequence on them separately (one forward and one backward), and ultimately combining the two result sequences.
+Stacks with bidirectionally traversing encode functions don’t support starting from a previous set of recurrent states. However, you can achieve this effect by defining two separate unidirectional stacks of layers, running the same input sequence on them separately (one forward and one backward), and ultimately combining the two result sequences.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsrnnmatrixinferencelayer/2865745-init.md)
-- [init(device: any MTLDevice, rnnDescriptor: MPSRNNDescriptor)](mpsrnnmatrixinferencelayer/2865704-init.md)
-- [init(device: any MTLDevice, rnnDescriptors: [MPSRNNDescriptor])](mpsrnnmatrixinferencelayer/2865751-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsrnnmatrixinferencelayer/init(coder:device:).md)
+- [init(device: any MTLDevice, rnnDescriptor: MPSRNNDescriptor)](mpsrnnmatrixinferencelayer/init(device:rnndescriptor:).md)
+- [init(device: any MTLDevice, rnnDescriptors: [MPSRNNDescriptor])](mpsrnnmatrixinferencelayer/init(device:rnndescriptors:).md)
 - [class MPSRNNDescriptor](mpsrnndescriptor.md)
   A description of a recursive neural network block or layer.
 ### Instance Properties
-- [var bidirectionalCombineMode: MPSRNNBidirectionalCombineMode](mpsrnnmatrixinferencelayer/2865739-bidirectionalcombinemode.md)
+- [var bidirectionalCombineMode: MPSRNNBidirectionalCombineMode](mpsrnnmatrixinferencelayer/bidirectionalcombinemode.md)
 - [enum MPSRNNBidirectionalCombineMode](mpsrnnbidirectionalcombinemode.md)
-  Modes that define how two images or matrices are combined. 
-- [var inputFeatureChannels: Int](mpsrnnmatrixinferencelayer/2890143-inputfeaturechannels.md)
-- [var numberOfLayers: Int](mpsrnnmatrixinferencelayer/2873347-numberoflayers.md)
-- [var outputFeatureChannels: Int](mpsrnnmatrixinferencelayer/2890142-outputfeaturechannels.md)
-- [var recurrentOutputIsTemporary: Bool](mpsrnnmatrixinferencelayer/2865714-recurrentoutputistemporary.md)
-- [var storeAllIntermediateStates: Bool](mpsrnnmatrixinferencelayer/2865729-storeallintermediatestates.md)
+  Modes that define how two images or matrices are combined.
+- [var inputFeatureChannels: Int](mpsrnnmatrixinferencelayer/inputfeaturechannels.md)
+- [var numberOfLayers: Int](mpsrnnmatrixinferencelayer/numberoflayers.md)
+- [var outputFeatureChannels: Int](mpsrnnmatrixinferencelayer/outputfeaturechannels.md)
+- [var recurrentOutputIsTemporary: Bool](mpsrnnmatrixinferencelayer/recurrentoutputistemporary.md)
+- [var storeAllIntermediateStates: Bool](mpsrnnmatrixinferencelayer/storeallintermediatestates.md)
 ### Instance Methods
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsrnnmatrixinferencelayer/2865746-copy.md)
-- [func encodeBidirectionalSequence(commandBuffer: any MTLCommandBuffer, sourceSequence: [MPSMatrix], destinationForwardMatrices: [MPSMatrix], destinationBackwardMatrices: [MPSMatrix]?)](mpsrnnmatrixinferencelayer/2865698-encodebidirectionalsequence.md)
-- [func encodeSequence(commandBuffer: any MTLCommandBuffer, sourceMatrices: [MPSMatrix], destinationMatrices: [MPSMatrix], recurrentInputState: MPSRNNRecurrentMatrixState?, recurrentOutputStates: NSMutableArray?)](mpsrnnmatrixinferencelayer/2865705-encodesequence.md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsrnnmatrixinferencelayer/copy(with:device:).md)
+- [func encodeBidirectionalSequence(commandBuffer: any MTLCommandBuffer, sourceSequence: [MPSMatrix], destinationForwardMatrices: [MPSMatrix], destinationBackwardMatrices: [MPSMatrix]?)](mpsrnnmatrixinferencelayer/encodebidirectionalsequence(commandbuffer:sourcesequence:destinationforwardmatrices:destinationbackwardmatrices:).md)
+- [func encodeSequence(commandBuffer: any MTLCommandBuffer, sourceMatrices: [MPSMatrix], destinationMatrices: [MPSMatrix], recurrentInputState: MPSRNNRecurrentMatrixState?, recurrentOutputStates: NSMutableArray?)](mpsrnnmatrixinferencelayer/encodesequence(commandbuffer:sourcematrices:destinationmatrices:recurrentinputstate:recurrentoutputstates:).md)
 - [class MPSRNNRecurrentMatrixState](mpsrnnrecurrentmatrixstate.md)
-  A class holds all the data that's passed from one sequence iteration of the matrix-based recurrent neural network layer to the next.
-- [func encodeSequence(commandBuffer: any MTLCommandBuffer, sourceMatrices: [MPSMatrix], sourceOffsets: UnsafeMutablePointer<Int>?, destinationMatrices: [MPSMatrix], destinationOffsets: UnsafeMutablePointer<Int>?, recurrentInputState: MPSRNNRecurrentMatrixState?, recurrentOutputStates: NSMutableArray?)](mpsrnnmatrixinferencelayer/2966781-encodesequence.md)
+  A class holds all the data that’s passed from one sequence iteration of the matrix-based recurrent neural network layer to the next.
+- [func encodeSequence(commandBuffer: any MTLCommandBuffer, sourceMatrices: [MPSMatrix], sourceOffsets: UnsafeMutablePointer<Int>?, destinationMatrices: [MPSMatrix], destinationOffsets: UnsafeMutablePointer<Int>?, recurrentInputState: MPSRNNRecurrentMatrixState?, recurrentOutputStates: NSMutableArray?)](mpsrnnmatrixinferencelayer/encodesequence(commandbuffer:sourcematrices:sourceoffsets:destinationmatrices:destinationoffsets:recurrentinputstate:recurrentoutputstates:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSKernel](mpskernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

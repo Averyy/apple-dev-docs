@@ -1,7 +1,7 @@
 # PresentationCommand
 
 **Framework**: Immersive Media Support  
-**Kind**: protocol
+**Kind**: enum
 
 A set of properties that define the interface for a presentation command.
 
@@ -12,7 +12,7 @@ A set of properties that define the interface for a presentation command.
 ## Declaration
 
 ```swift
-protocol PresentationCommand : Decodable, Encodable, Sendable
+enum PresentationCommand
 ```
 
 #### Overview
@@ -23,28 +23,32 @@ These are commands that dictate part of the presentation of the video frames dur
 
 ### Instance Properties
 - [var duration: CMTime](presentationcommand/duration.md)
-  The duration of the command - this can be .zero if the command has no duration
 - [var id: Int](presentationcommand/id.md)
-  An unique command id. Ids should be unique for the whole Immersive Media file.
 - [var offset: CMTime?](presentationcommand/offset.md)
-  Some commands control animations by repeating the command for the whole duration, and specifying the offset of the animation from the start time of this presentation command.
 - [var time: CMTime](presentationcommand/time.md)
-  The time this command starts during playback.
-- [var type: PresentationCommandType](presentationcommand/type.md)
-  The command type. See [`PresentationCommandType`](presentationcommandtype.md) for the current set of valid command types.
+### Enumeration Cases
+- [PresentationCommand.fade(_:)](presentationcommand/fade(_:).md)
+  A value representing a command that is used during scene transitions. This command adds a fade in / fade out during playback.
+- [case fadeEnvironment(FadeEnvironmentCommand)](presentationcommand/fadeenvironment(_:).md)
+  A value representing a command that is used during backdrop transitions. This command adds a fade in / fade out for the backdrop during playback.
+- [PresentationCommand.setCamera(_:)](presentationcommand/setcamera(_:).md)
+  A value representing a command that specifies the camera ID to be used for a specific frame during playback.
+- [PresentationCommand.shotFlop(_:)](presentationcommand/shotflop(_:).md)
+  A value representing a command that causes the whole frame to be mirrored horizontally for the duration of the command.
+### Initializers
+- [init(from: any Decoder) throws](presentationcommand/init(from:).md)
+  Creates a new instance by decoding from the given decoder.
+### Instance Methods
+- [func encode(to: any Encoder) throws](presentationcommand/encode(to:).md)
+  Encodes this value into the given encoder.
 
 ## Relationships
 
-### Inherits From
+### Conforms To
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-### Conforming Types
-- [FadeCommand](fadecommand.md)
-- [FadeEnvironmentCommand](fadeenvironmentcommand.md)
-- [SetCameraCommand](setcameracommand.md)
-- [ShotFlopCommand](shotflopcommand.md)
 
 ## See Also
 
@@ -56,8 +60,6 @@ These are commands that dictate part of the presentation of the video frames dur
   A command type for immersive camera switching during playback.
 - [struct ShotFlopCommand](shotflopcommand.md)
   A command type to flip the video frames horizontally (mirrored horizontally) during playback for the duration of the command.
-- [enum PresentationCommandType](presentationcommandtype.md)
-  Values that represent the type of presentation command.
 - [struct PresentationDescriptor](presentationdescriptor.md)
   A structure that represents dynamic metadata used during playback or when outputting the metadata track for an immersive video file.
 - [class PresentationDescriptorReader](presentationdescriptorreader.md)

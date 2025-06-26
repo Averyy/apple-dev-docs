@@ -20,7 +20,7 @@ init(coordinate: CLLocationCoordinate2D)
 
 ## Parameters
 
-- `coordinate`: A  doc://com.apple.documentation/documentation/corelocation/cllocationcoordinate2d  coordinate that indicates the location for the LookAround scene.
+- `coordinate`: A   coordinate that indicates the location for the LookAround scene.
 
 ## See Also
 

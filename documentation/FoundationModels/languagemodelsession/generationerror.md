@@ -43,6 +43,8 @@ enum GenerationError
 - [var recoverySuggestion: String?](languagemodelsession/generationerror/recoverysuggestion.md)
   A string representation of the recovery suggestion.
 ### Enumeration Cases
+- [case rateLimited(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/ratelimited(_:).md)
+  An error that indicates your session has been rate limited.
 - [case unsupportedLanguageOrLocale(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/unsupportedlanguageorlocale(_:).md)
   An error that indicates an error that occurs if the model is prompted to respond in a language that it does not support.
 ### Default Implementations

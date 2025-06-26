@@ -17,7 +17,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 class SK3DNode
 ```
 

@@ -1,7 +1,7 @@
 # MPSGRUDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A description of a gated recurrent unit block or layer.
 
@@ -16,16 +16,16 @@ A description of a gated recurrent unit block or layer.
 ## Declaration
 
 ```swift
-class MPSGRUDescriptor : MPSRNNDescriptor
+class MPSGRUDescriptor
 ```
 
 #### Overview
 
-The recurrent neural network (RNN) layer initialized with a [`MPSGRUDescriptor`](mpsgrudescriptor.md) transforms the input data (image or matrix) and previous output with a set of filters. Each produces one feature map in the output data according to the gated recurrent unit (GRU) unit formula detailed below. 
+The recurrent neural network (RNN) layer initialized with a [`MPSGRUDescriptor`](mpsgrudescriptor.md) transforms the input data (image or matrix) and previous output with a set of filters. Each produces one feature map in the output data according to the gated recurrent unit (GRU) unit formula detailed below.
 
 You may provide the GRU unit with a single input or a sequence of inputs. The layer also supports p-norm gating.
 
-##### 2888086
+##### Description of Operation
 
 1. Let `x_j` be the input data (at time index `t` of sequence, `j` index containing quadruplet: batch index, `x,y` and feature index (`x = y = 0` for matrices)).
 2. Let `h0_`j be the recurrent input (previous output) data from previous time step (at time index `t-1` of sequence).
@@ -53,31 +53,38 @@ h1_i = ( 1 - z_i ^ p)^(1/p) h0_i + z_i h_i
 
 The `*` stands for convolution (see [`MPSRNNImageInferenceLayer`](mpsrnnimageinferencelayer.md)) or matrix-vector/matrix multiplication (see [`MPSRNNMatrixInferenceLayer`](mpsrnnmatrixinferencelayer.md)).
 
-Summation is over index `j` (except for the batch index), but there's no summation over repeated index `i`,` `the output index.
+Summation is over index `j` (except for the batch index), but there’s no summation over repeated index `i`,` `the output index.
 
-Note that for validity, all intermediate images must be of same size, and all `U` and `V` matrices must be square (that is, [`outputFeatureChannels`](mpsrnndescriptor/2865702-outputfeaturechannels.md)` ==` [`inputFeatureChannels`](mpsrnndescriptor/2865707-inputfeaturechannels.md)). Also, the bias terms are scalars with regard to spatial dimensions. The conventional GRU block is achieved by setting `Vh = 0` (nil), and the Minimal Gated Unit is achieved with `Uh = 0`.
+Note that for validity, all intermediate images must be of same size, and all `U` and `V` matrices must be square (that is, [`outputFeatureChannels`](mpsrnndescriptor/outputfeaturechannels.md) `==` [`inputFeatureChannels`](mpsrnndescriptor/inputfeaturechannels.md)). Also, the bias terms are scalars with regard to spatial dimensions. The conventional GRU block is achieved by setting `Vh = 0` (nil), and the Minimal Gated Unit is achieved with `Uh = 0`.
 
 ## Topics
 
 ### Instance Properties
-- [var flipOutputGates: Bool](mpsgrudescriptor/2878271-flipoutputgates.md)
-- [var gatePnormValue: Float](mpsgrudescriptor/2873332-gatepnormvalue.md)
-- [var inputGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/2865690-inputgateinputweights.md)
-- [var inputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/2865724-inputgaterecurrentweights.md)
-- [var outputGateInputGateWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/2878270-outputgateinputgateweights.md)
-- [var outputGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/2865722-outputgateinputweights.md)
-- [var outputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/2865699-outputgaterecurrentweights.md)
-- [var recurrentGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/2865719-recurrentgateinputweights.md)
-- [var recurrentGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/2865695-recurrentgaterecurrentweights.md)
+- [var flipOutputGates: Bool](mpsgrudescriptor/flipoutputgates.md)
+- [var gatePnormValue: Float](mpsgrudescriptor/gatepnormvalue.md)
+- [var inputGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/inputgateinputweights.md)
+- [var inputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/inputgaterecurrentweights.md)
+- [var outputGateInputGateWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/outputgateinputgateweights.md)
+- [var outputGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/outputgateinputweights.md)
+- [var outputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/outputgaterecurrentweights.md)
+- [var recurrentGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/recurrentgateinputweights.md)
+- [var recurrentGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/recurrentgaterecurrentweights.md)
 - [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
 ### Type Methods
-- [class func createGRUDescriptor(withInputFeatureChannels: Int, outputFeatureChannels: Int) -> Self](mpsgrudescriptor/2865715-creategrudescriptor.md)
+- [class func createGRUDescriptor(withInputFeatureChannels: Int, outputFeatureChannels: Int) -> Self](mpsgrudescriptor/creategrudescriptor(withinputfeaturechannels:outputfeaturechannels:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSRNNDescriptor](mpsrnndescriptor.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

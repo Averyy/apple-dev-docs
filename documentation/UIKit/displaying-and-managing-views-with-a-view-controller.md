@@ -48,13 +48,13 @@ For information about the target-action design pattern and how to handle control
 
 ##### Prepare Your Views to Appear Onscreen
 
-UIKit gives you several opportunities to configure your view controller and views before displaying them onscreen. When you instantiate your view controller from a storyboard, UIKit creates that object using its doc://com.apple.documentation/documentation/oslog/oslogentry/init(coder:) method.
+UIKit gives you several opportunities to configure your view controller and views before displaying them onscreen. When you instantiate your view controller from a storyboard, UIKit creates that object using its [`init(coder:)`](uiviewcontroller/init(coder:).md) method.
 
 > **Note**:  If your view controller requires custom initialization beyond what a coder object can provide, you can instantiate it programmatically using the [`instantiateInitialViewController(creator:)`](uistoryboard/instantiateinitialviewcontroller(creator:).md) method of [`UIStoryboard`](uistoryboard.md). That method lets you create the view controller yourself using a block and a UIKit-provided coder object. This option lets you initialize the view controller with any custom data your view controller requires, and still restore the configuration of views and other objects in the storyboard.
 
 When you present a view controller onscreen, UIKit needs to first load and configure the corresponding views, which it does using the following sequence of steps:
 
-1. Creates each view using the view’s doc://com.apple.documentation/documentation/oslog/oslogentry/init(coder:) method
+1. Creates each view using the view’s [`init(coder:)`](uiview/init(coder:).md) method
 2. Connects views to the corresponding actions and outlets in the view controller
 3. Calls the [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()) method of each view and the view controller
 4. Assigns the view hierarchy to the view controller’s [`view`](uiviewcontroller/view.md) property

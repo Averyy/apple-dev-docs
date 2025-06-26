@@ -21,8 +21,8 @@ func stop(_ query: HKQuery)
 
 ## Mentions
 
-- [Reading route data](reading-route-data.md)
 - [Executing Observer Queries](executing-observer-queries.md)
+- [Reading route data](reading-route-data.md)
 
 #### Discussion
 

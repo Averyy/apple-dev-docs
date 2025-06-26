@@ -22,7 +22,7 @@ class CGColorConversionInfo
 
 #### Overview
 
-A [`CGColorConversionInfo`](cgcolorconversioninfo.md) object specifies a conversion between two or more color spaces, including information about the intent of the conversion. You use color conversion objects to specify the work to be done by an [`MPSImageConversion`](https://developer.apple.com/documentation/metalperformanceshaders/mpsimageconversion) filter, which can then perform GPU-accelerated image conversion.
+A [`CGColorConversionInfo`](cgcolorconversioninfo.md) object specifies a conversion between two or more color spaces, including information about the intent of the conversion. You use color conversion objects to specify the work to be done by an [`MPSImageConversion`](https://developer.apple.com/documentation/MetalPerformanceShaders/MPSImageConversion) filter, which can then perform GPU-accelerated image conversion.
 
 ## Topics
 

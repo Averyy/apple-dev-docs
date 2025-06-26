@@ -8,7 +8,7 @@
 - iPadOS 26.0+ (Beta)
 - Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
-- tvOS ?+
+- tvOS 26.0+ (Beta)
 - visionOS 26.0+ (Beta)
 
 ## Declaration

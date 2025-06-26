@@ -32,11 +32,13 @@ struct DeviceSensorAuthorization
 ## See Also
 
 - [WebPage.Configuration](webpage/configuration.md)
+  A configuration type that specifies the preferences and behaviors of a webpage.
 - [struct URLScheme](urlscheme.md)
   A type representing a valid URL scheme.
 - [protocol URLSchemeHandler](urlschemehandler.md)
   A protocol for loading resources with URL schemes that WebKit doesn’t handle.
 - [enum URLSchemeTaskResult](urlschemetaskresult.md)
+  A value used as part of a sequence of results from a [`URLSchemeHandler`](urlschemehandler.md), which can either be a `Data` or a `URLResponse`.
 
 
 ---

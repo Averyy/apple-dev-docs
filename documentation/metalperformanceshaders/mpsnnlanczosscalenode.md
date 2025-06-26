@@ -1,7 +1,7 @@
 # MPSNNLanczosScaleNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a Lanczos resampling filter.
 
@@ -16,13 +16,20 @@ A representation of a Lanczos resampling filter.
 ## Declaration
 
 ```swift
-class MPSNNLanczosScaleNode : MPSNNScaleNode
+class MPSNNLanczosScaleNode
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNScaleNode](mpsnnscalenode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
@@ -31,7 +38,7 @@ class MPSNNLanczosScaleNode : MPSNNScaleNode
 - [class MPSNNScaleNode](mpsnnscalenode.md)
   Abstract node representing an image resampling filter.
 - [protocol MPSImageTransformProvider](mpsimagetransformprovider.md)
-  A general interface for objects that provide image resampling. 
+  A general interface for objects that provide image resampling.
 
 
 ---

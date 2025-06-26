@@ -16,7 +16,7 @@ Returns the point, in page space, that the destination refers to.
 ## Declaration
 
 ```swift
-var point: NSPoint { get }
+var point: CGPoint { get }
 ```
 
 #### Return Value

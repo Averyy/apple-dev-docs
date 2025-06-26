@@ -1,7 +1,7 @@
 # MPSNNImageNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A placeholder node denoting the position of a neural network image in a graph.
 
@@ -16,24 +16,24 @@ A placeholder node denoting the position of a neural network image in a graph.
 ## Declaration
 
 ```swift
-class MPSNNImageNode : NSObject
+class MPSNNImageNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(handle: (any MPSHandle)?)](mpsnnimagenode/2866483-init.md)
+- [init(handle: (any MPSHandle)?)](mpsnnimagenode/init(handle:).md)
 ### Instance Properties
-- [var exportFromGraph: Bool](mpsnnimagenode/2866478-exportfromgraph.md)
-- [var format: MPSImageFeatureChannelFormat](mpsnnimagenode/2866498-format.md)
+- [var exportFromGraph: Bool](mpsnnimagenode/exportfromgraph.md)
+- [var format: MPSImageFeatureChannelFormat](mpsnnimagenode/format.md)
 - [enum MPSImageFeatureChannelFormat](mpsimagefeaturechannelformat.md)
   Encodes the representation of a single channel within an image.
-- [var handle: (any MPSHandle)?](mpsnnimagenode/2866406-handle.md)
-- [var imageAllocator: any MPSImageAllocator](mpsnnimagenode/2866490-imageallocator.md)
-- [var stopGradient: Bool](mpsnnimagenode/3020689-stopgradient.md)
-- [var synchronizeResource: Bool](mpsnnimagenode/2942638-synchronizeresource.md)
+- [var handle: (any MPSHandle)?](mpsnnimagenode/handle.md)
+- [var imageAllocator: any MPSImageAllocator](mpsnnimagenode/imageallocator.md)
+- [var stopGradient: Bool](mpsnnimagenode/stopgradient.md)
+- [var synchronizeResource: Bool](mpsnnimagenode/synchronizeresource.md)
 ### Type Methods
-- [class func exportedNode(with: (any MPSHandle)?) -> Self](mpsnnimagenode/2866440-exportednode.md)
+- [class func exportedNode(with: (any MPSHandle)?) -> Self](mpsnnimagenode/exportednode(with:).md)
 ### Supporting Types
 - [protocol MPSHandle](mpshandle.md)
   The protocol that provides resource identification.
@@ -44,7 +44,14 @@ class MPSNNImageNode : NSObject
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

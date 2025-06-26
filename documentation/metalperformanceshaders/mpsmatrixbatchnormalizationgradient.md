@@ -1,7 +1,7 @@
 # MPSMatrixBatchNormalizationGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A batch normalization gradient kernel that operates on matrices.
 
@@ -16,31 +16,41 @@ A batch normalization gradient kernel that operates on matrices.
 ## Declaration
 
 ```swift
-class MPSMatrixBatchNormalizationGradient : MPSMatrixBinaryKernel
+class MPSMatrixBatchNormalizationGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixbatchnormalizationgradient/2980747-init.md)
-- [init(device: any MTLDevice)](mpsmatrixbatchnormalizationgradient/2980748-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixbatchnormalizationgradient/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsmatrixbatchnormalizationgradient/init(device:).md)
 ### Instance Properties
-- [var epsilon: Float](mpsmatrixbatchnormalizationgradient/2980746-epsilon.md)
-- [var sourceInputFeatureChannels: Int](mpsmatrixbatchnormalizationgradient/2980754-sourceinputfeaturechannels.md)
-- [var sourceNumberOfFeatureVectors: Int](mpsmatrixbatchnormalizationgradient/2980755-sourcenumberoffeaturevectors.md)
+- [var epsilon: Float](mpsmatrixbatchnormalizationgradient/epsilon.md)
+- [var sourceInputFeatureChannels: Int](mpsmatrixbatchnormalizationgradient/sourceinputfeaturechannels.md)
+- [var sourceNumberOfFeatureVectors: Int](mpsmatrixbatchnormalizationgradient/sourcenumberoffeaturevectors.md)
 ### Instance Methods
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsmatrixbatchnormalizationgradient/2980744-copy.md)
-- [func encode(to: any MTLCommandBuffer, gradientMatrix: MPSMatrix, inputMatrix: MPSMatrix, mean: MPSVector, varianceVector: MPSVector, gammaVector: MPSVector?, betaVector: MPSVector?, resultGradientForDataMatrix: MPSMatrix, resultGradientForGammaVector: MPSVector?, resultGradientForBetaVector: MPSVector?)](mpsmatrixbatchnormalizationgradient/2980745-encode.md)
-- [func neuronParameterA() -> Float](mpsmatrixbatchnormalizationgradient/2980749-neuronparametera.md)
-- [func neuronParameterB() -> Float](mpsmatrixbatchnormalizationgradient/2980750-neuronparameterb.md)
-- [func neuronParameterC() -> Float](mpsmatrixbatchnormalizationgradient/2980751-neuronparameterc.md)
-- [func neuronType() -> MPSCNNNeuronType](mpsmatrixbatchnormalizationgradient/2980752-neurontype.md)
-- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float, parameterC: Float)](mpsmatrixbatchnormalizationgradient/2980753-setneurontype.md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsmatrixbatchnormalizationgradient/copy(with:device:).md)
+- [func encode(to: any MTLCommandBuffer, gradientMatrix: MPSMatrix, inputMatrix: MPSMatrix, mean: MPSVector, varianceVector: MPSVector, gammaVector: MPSVector?, betaVector: MPSVector?, resultGradientForDataMatrix: MPSMatrix, resultGradientForGammaVector: MPSVector?, resultGradientForBetaVector: MPSVector?)](mpsmatrixbatchnormalizationgradient/encode(to:gradientmatrix:inputmatrix:mean:variancevector:gammavector:betavector:resultgradientfordatamatrix:resultgradientforgammavector:resultgradientforbetavector:).md)
+- [func neuronParameterA() -> Float](mpsmatrixbatchnormalizationgradient/neuronparametera.md)
+- [func neuronParameterB() -> Float](mpsmatrixbatchnormalizationgradient/neuronparameterb.md)
+- [func neuronParameterC() -> Float](mpsmatrixbatchnormalizationgradient/neuronparameterc.md)
+- [func neuronType() -> MPSCNNNeuronType](mpsmatrixbatchnormalizationgradient/neurontype.md)
+- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float, parameterC: Float)](mpsmatrixbatchnormalizationgradient/setneurontype(_:parametera:parameterb:parameterc:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSMatrixBinaryKernel](mpsmatrixbinarykernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

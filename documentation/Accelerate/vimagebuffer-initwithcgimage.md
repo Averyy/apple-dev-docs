@@ -22,8 +22,8 @@ func vImageBuffer_InitWithCGImage(_ buf: UnsafeMutablePointer<vImage_Buffer>, _ 
 
 ## Mentions
 
-- [Optimizing image-processing performance](optimizing-image-processing-performance.md)
 - [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
+- [Optimizing image-processing performance](optimizing-image-processing-performance.md)
 
 #### Return Value
 

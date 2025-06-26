@@ -43,23 +43,22 @@ class HKWorkoutEffortRelationship
 
 ## See Also
 
-- [class HKAudiogramSensitivityPointClampingRange](hkaudiogramsensitivitypointclampingrange.md)
-  Defines the range within which an ear’s sensitivity point may have been clamped, if any.
-- [class HKAudiogramSensitivityTest](hkaudiogramsensitivitytest.md)
-- [class HKBiologicalSexObject](hkbiologicalsexobject.md)
-  This class acts as a wrapper for the [`HKBiologicalSex`](hkbiologicalsex.md) enumeration.
-- [class HKBloodTypeObject](hkbloodtypeobject.md)
-  This class acts as a wrapper for the [`HKBloodType`](hkbloodtype.md) enumeration.
-- [class HKFitzpatrickSkinTypeObject](hkfitzpatrickskintypeobject.md)
-  This class acts as a wrapper for the [`HKFitzpatrickSkinType`](hkfitzpatrickskintype.md) enumeration.
-- [class HKGAD7Assessment](hkgad7assessment.md)
-- [class HKPHQ9Assessment](hkphq9assessment.md)
-- [class HKScoredAssessment](hkscoredassessment.md)
-- [class HKScoredAssessmentType](hkscoredassessmenttype.md)
-- [class HKStateOfMind](hkstateofmind.md)
-- [class HKStateOfMindType](hkstateofmindtype.md)
-- [class HKWheelchairUseObject](hkwheelchairuseobject.md)
-  This class acts as a wrapper for the wheelchair use enumeration.
+- [struct HKQuantitySeriesSampleQueryDescriptor](hkquantityseriessamplequerydescriptor.md)
+  A query interface that reads the series data associated with quantity samples using Swift concurrency.
+- [class HKQuantitySeriesSampleQuery](hkquantityseriessamplequery.md)
+  A query that accesses the series data associated with a quantity sample.
+- [struct HKWorkoutRouteQueryDescriptor](hkworkoutroutequerydescriptor.md)
+  A query interface that reads the location data stored in a workout route using Swift concurrency.
+- [class HKWorkoutRouteQuery](hkworkoutroutequery.md)
+  A query to access the location data stored in a workout route.
+- [struct HKHeartbeatSeriesQueryDescriptor](hkheartbeatseriesquerydescriptor.md)
+  A query interface that reads the heartbeat series data stored in a heartbeat sample using Swift concurrency.
+- [class HKHeartbeatSeriesQuery](hkheartbeatseriesquery.md)
+  A query that returns the heartbeat data contained in a heartbeat series sample.
+- [struct HKElectrocardiogramQueryDescriptor](hkelectrocardiogramquerydescriptor.md)
+  A query interface that reads the underlying voltage measurements for an electrocardiogram sample using Swift concurrency.
+- [class HKElectrocardiogramQuery](hkelectrocardiogramquery.md)
+  A query that returns the underlying voltage measurements for an electrocardiogram sample.
 - [class HKWorkoutEffortRelationshipQuery](hkworkouteffortrelationshipquery.md)
 
 

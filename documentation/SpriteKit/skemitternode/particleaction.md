@@ -18,7 +18,7 @@ An action executed by new particles.
 
 ```swift
 @NSCopying
-@MainActor var particleAction: SKAction? { get set }
+var particleAction: SKAction? { get set }
 ```
 
 #### Discussion

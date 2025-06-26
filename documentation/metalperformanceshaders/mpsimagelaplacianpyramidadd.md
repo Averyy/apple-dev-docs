@@ -1,7 +1,7 @@
 # MPSImageLaplacianPyramidAdd
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that convolves an image with an additive Laplacian pyramid.
 
@@ -16,13 +16,23 @@ A filter that convolves an image with an additive Laplacian pyramid.
 ## Declaration
 
 ```swift
-class MPSImageLaplacianPyramidAdd : MPSImageLaplacianPyramid
+class MPSImageLaplacianPyramidAdd
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSImageLaplacianPyramid](mpsimagelaplacianpyramid.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

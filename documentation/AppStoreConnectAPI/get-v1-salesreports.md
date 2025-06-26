@@ -10,10 +10,10 @@ Download sales and trends reports filtered by your specified criteria.
 
 ## Mentions
 
-- [Downloading Analytics Reports](downloading-analytics-reports.md)
 - [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
-- [App Store Connect API 3.4 release notes](app-store-connect-api-3-4-release-notes.md)
+- [Downloading Analytics Reports](downloading-analytics-reports.md)
 - [App Store Connect API 1.8 release notes](app-store-connect-api-1-8-release-notes.md)
+- [App Store Connect API 3.4 release notes](app-store-connect-api-3-4-release-notes.md)
 - [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
 - [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
 

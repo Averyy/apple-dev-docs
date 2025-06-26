@@ -74,7 +74,7 @@ You also need to create a `CMakePresets.json` file for `lldb-dap` debugger integ
 
 Add the following contents to the `CMakePresets.json` file you created:
 
-```swift
+```json
 {
   "version": 3,
   "configurePresets": [

@@ -3,7 +3,7 @@
 **Framework**: RelevanceKit  
 **Kind**: property
 
-Informative content that can be passively consumed.
+A hint that tells the system to treat a widget with slightly lower priority because it displays content and doesn’t require an action.
 
 **Availability**:
 - iOS 26.0+ (Beta)

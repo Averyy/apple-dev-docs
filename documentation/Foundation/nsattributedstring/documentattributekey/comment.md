@@ -26,6 +26,8 @@ The value of this attribute is an [`NSString`](nsstring.md) object containing do
   The document’s category.
 - [static let characterEncoding: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/characterencoding.md)
   The string encoding for the document.
+- [static let cocoaVersionDocumentAttribute: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/cocoaversiondocumentattribute.md)
+  The version of Cocoa that created the file.
 - [static let company: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/company.md)
   The company or organization name associated with the document.
 - [static let converted: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/converted.md)

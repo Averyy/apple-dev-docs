@@ -1,7 +1,7 @@
 # MPSCNNCrossChannelNormalizationGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient normalization kernel applied across feature channels.
 
@@ -16,20 +16,27 @@ A representation of a gradient normalization kernel applied across feature chann
 ## Declaration
 
 ```swift
-class MPSCNNCrossChannelNormalizationGradientNode : MPSNNGradientFilterNode
+class MPSCNNCrossChannelNormalizationGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, kernelSize: Int)](mpscnncrosschannelnormalizationgradientnode/2948043-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, kernelSize: Int)](mpscnncrosschannelnormalizationgradientnode/init(sourcegradient:sourceimage:gradientstate:kernelsize:).md)
 ### Instance Properties
-- [var kernelSize: Int](mpscnncrosschannelnormalizationgradientnode/2948049-kernelsize.md)
+- [var kernelSize: Int](mpscnncrosschannelnormalizationgradientnode/kernelsize.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

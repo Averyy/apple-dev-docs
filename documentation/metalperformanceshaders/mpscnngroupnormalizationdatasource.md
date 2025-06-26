@@ -1,7 +1,7 @@
 # MPSCNNGroupNormalizationDataSource
 
 **Framework**: Metal Performance Shaders  
-**Kind**: intf
+**Kind**: protocol
 
 **Availability**:
 - iOS 13.0+
@@ -14,33 +14,33 @@
 ## Declaration
 
 ```swift
-protocol MPSCNNGroupNormalizationDataSource
+protocol MPSCNNGroupNormalizationDataSource : NSCopying, NSObjectProtocol
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](mpscnngroupnormalizationdatasource/3152548-init.md)
+- [init?(coder: NSCoder)](mpscnngroupnormalizationdatasource/init(coder:).md)
 ### Instance Properties
-- [var numberOfFeatureChannels: Int](mpscnngroupnormalizationdatasource/3152550-numberoffeaturechannels.md)
-- [var numberOfGroups: Int](mpscnngroupnormalizationdatasource/3152551-numberofgroups.md)
-### Type Properties
-- [static var supportsSecureCoding: Bool](mpscnngroupnormalizationdatasource/3152552-supportssecurecoding.md)
+- [var numberOfFeatureChannels: Int](mpscnngroupnormalizationdatasource/numberoffeaturechannels.md)
+- [var numberOfGroups: Int](mpscnngroupnormalizationdatasource/numberofgroups.md)
 ### Instance Methods
-- [func beta() -> UnsafeMutablePointer<Float>?](mpscnngroupnormalizationdatasource/3152543-beta.md)
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpscnngroupnormalizationdatasource/3152544-copy.md)
-- [func encode(with: NSCoder)](mpscnngroupnormalizationdatasource/3152545-encode.md)
-- [func epsilon() -> Float](mpscnngroupnormalizationdatasource/3152546-epsilon.md)
-- [func gamma() -> UnsafeMutablePointer<Float>?](mpscnngroupnormalizationdatasource/3152547-gamma.md)
-- [func label() -> String?](mpscnngroupnormalizationdatasource/3152549-label.md)
-- [func updateGammaAndBeta(with: any MTLCommandBuffer, groupNormalizationStateBatch: [MPSCNNGroupNormalizationGradientState]) -> MPSCNNNormalizationGammaAndBetaState?](mpscnngroupnormalizationdatasource/3152553-updategammaandbeta.md)
-- [func updateGammaAndBeta(withGroupNormalizationStateBatch: [MPSCNNGroupNormalizationGradientState]) -> Bool](mpscnngroupnormalizationdatasource/3152554-updategammaandbeta.md)
+- [func beta() -> UnsafeMutablePointer<Float>?](mpscnngroupnormalizationdatasource/beta.md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpscnngroupnormalizationdatasource/copy(with:device:).md)
+- [func encode(with: NSCoder)](mpscnngroupnormalizationdatasource/encode(with:).md)
+- [func epsilon() -> Float](mpscnngroupnormalizationdatasource/epsilon.md)
+- [func gamma() -> UnsafeMutablePointer<Float>?](mpscnngroupnormalizationdatasource/gamma.md)
+- [func label() -> String?](mpscnngroupnormalizationdatasource/label.md)
+- [func updateGammaAndBeta(with: any MTLCommandBuffer, groupNormalizationStateBatch: [MPSCNNGroupNormalizationGradientState]) -> MPSCNNNormalizationGammaAndBetaState?](mpscnngroupnormalizationdatasource/updategammaandbeta(with:groupnormalizationstatebatch:).md)
+- [func updateGammaAndBeta(withGroupNormalizationStateBatch: [MPSCNNGroupNormalizationGradientState]) -> Bool](mpscnngroupnormalizationdatasource/updategammaandbeta(withgroupnormalizationstatebatch:).md)
+### Type Properties
+- [static var supportsSecureCoding: Bool](mpscnngroupnormalizationdatasource/supportssecurecoding.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 
 ---

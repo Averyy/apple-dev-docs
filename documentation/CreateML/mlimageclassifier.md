@@ -20,8 +20,8 @@ struct MLImageClassifier
 
 ## Mentions
 
-- [Creating an Image Classifier Model](creating-an-image-classifier-model.md)
 - [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
+- [Creating an Image Classifier Model](creating-an-image-classifier-model.md)
 
 #### Overview
 

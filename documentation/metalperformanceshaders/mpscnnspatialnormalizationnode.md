@@ -1,7 +1,7 @@
 # MPSCNNSpatialNormalizationNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a spatial normalization kernel.
 
@@ -16,22 +16,29 @@ A representation of a spatial normalization kernel.
 ## Declaration
 
 ```swift
-class MPSCNNSpatialNormalizationNode : MPSCNNNormalizationNode
+class MPSCNNSpatialNormalizationNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnnspatialnormalizationnode/2866502-init.md)
-- [init(source: MPSNNImageNode, kernelSize: Int)](mpscnnspatialnormalizationnode/2866438-init.md)
+- [init(source: MPSNNImageNode)](mpscnnspatialnormalizationnode/init(source:).md)
+- [init(source: MPSNNImageNode, kernelSize: Int)](mpscnnspatialnormalizationnode/init(source:kernelsize:).md)
 ### Instance Properties
-- [var kernelHeight: Int](mpscnnspatialnormalizationnode/2866424-kernelheight.md)
-- [var kernelWidth: Int](mpscnnspatialnormalizationnode/2866402-kernelwidth.md)
+- [var kernelHeight: Int](mpscnnspatialnormalizationnode/kernelheight.md)
+- [var kernelWidth: Int](mpscnnspatialnormalizationnode/kernelwidth.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNormalizationNode](mpscnnnormalizationnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

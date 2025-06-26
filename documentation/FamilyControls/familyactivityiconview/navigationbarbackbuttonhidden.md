@@ -8,7 +8,6 @@ Hides the navigation bar back button for the view.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 13.0+
 - tvOS 13.0+
 - watchOS 6.0+

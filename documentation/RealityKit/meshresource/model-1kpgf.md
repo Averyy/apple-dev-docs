@@ -21,8 +21,8 @@ struct Model
 ## Topics
 
 ### Initializers
-- [init(id:descriptors:)](meshresource/model-2zswr/init(id:descriptors:).md)
-- [init(id:parts:)](meshresource/model-2zswr/init(id:parts:).md)
+- [init(id:descriptors:)](meshresource/model-1kpgf/init(id:descriptors:).md)
+- [init(id:parts:)](meshresource/model-1kpgf/init(id:parts:).md)
 ### Instance Properties
 - [var parts: MeshPartCollection](meshresource/model-1kpgf/parts.md)
   Table of parts composing this mesh.

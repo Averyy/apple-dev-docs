@@ -29,6 +29,11 @@ You can create as many of these objects as you have memory for. This type assume
 
 ## Topics
 
+### Creating an assigned work document
+- [init(id: AssignedWorkDocument.ID, assignableDocument: AssignableDocument, partData: [AssignedWorkDocument.PartID : MergeablePartData]) async throws](assignedworkdocument/init(id:assignabledocument:partdata:)-8eh38.md)
+  Construct an instance of this object with the parts data passed in.
+- [init(id: AssignedWorkDocument.ID, assignableDocument: AssignableDocument, partData: [AssignedWorkDocument.PartID : URL]) throws](assignedworkdocument/init(id:assignabledocument:partdata:)-54yg5.md)
+  Construct an instance of this object with the parts data passed in.
 ### Inspecting a work document
 - [AssignedWorkDocument.ID](assignedworkdocument/id-swift.typealias.md)
   A type representing the stable identity of this document.
@@ -46,6 +51,7 @@ You can create as many of these objects as you have memory for. This type assume
   The collection of score annotations for this work document. Treated as a multiset. i.e. The order of the elements doesn’t matter and duplicate values are allowed.
 - [var scorers: [AnyUserIdentity]](assignedworkdocument/scorers.md)
   The identities of users scoring this assigned work. Treated as a set.
+- [var pagesDebugDescription: String](assignedworkdocument/pagesdebugdescription.md)
 - [AssignedWorkDocument.Error](assignedworkdocument/error.md)
   Errors for this document type.
 ### Getting the assignable document
@@ -60,8 +66,14 @@ You can create as many of these objects as you have memory for. This type assume
 - [var configuration: any AssignedWorkDocumentConfiguration](assignedworkdocument/configuration-swift.property.md)
   The configuration for a taker work which contains an optional manual score for the document.
 ### Merging the parts
+- [func merge(AssignedWorkDocument) async throws -> Bool](assignedworkdocument/merge(_:).md)
+  Merge another object of this type into this object.
+- [func merge(partData: MergeablePartData, into: AssignedWorkDocument.PartID) async throws -> Bool](assignedworkdocument/merge(partdata:into:).md)
+  Merges an individual part into the specified part of this object.
 - [func merge(other: AssignedWorkDocument) throws -> Bool](assignedworkdocument/merge(other:).md)
   Merge another object of this type into this object.
+- [func merge(partID: AssignedWorkDocument.PartID, partDataURL: URL) throws -> Bool](assignedworkdocument/merge(partid:partdataurl:).md)
+  Merges an individual part’s data into the specified part of this object.
 ### Producing thumbnails
 - [func questionThumbnails(visibleParts: [AssignedWorkDocument.PartID]) async -> [AssignableDocument.Question.ID : [AssignableDocument.Question.Thumbnail]]](assignedworkdocument/questionthumbnails(visibleparts:).md)
   Produces thumbnails of question regions within the document.
@@ -70,13 +82,20 @@ You can create as many of these objects as you have memory for. This type assume
   Gathers all of the points based on all the `AssignedWorkDocument.ScoreAnnotation`s in the document and its `kind` property.
 - [AssignedWorkDocument.ScoreAnnotation](assignedworkdocument/scoreannotation.md)
   A score mark on page of the work document.
+### Making the parts
+- [func makePart(for: AssignedWorkDocument.PartID) throws -> MergeablePartData?](assignedworkdocument/makepart(for:).md)
+  Creates data for the part with the given identifier.
 ### Exporting the parts
+- [func exportParts(identifiedBy: [AssignedWorkDocument.PartID]) async throws -> [AssignedWorkDocument.PartID : MergeablePartData]](assignedworkdocument/exportparts(identifiedby:).md)
+  Given a set of part identifiers, return a dictionary of part ID to part data.
 - [func export(partIDs: [AssignedWorkDocument.PartID]) async throws -> [AssignedWorkDocument.PartID : URL]](assignedworkdocument/export(partids:).md)
   Given a set of part identifiers, return a dictionary of part ID to data objects for the requested parts.
 ### Comparing work documents
 - [static func == (AssignedWorkDocument, AssignedWorkDocument) -> Bool](assignedworkdocument/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
 ### Hashing the work document
+- [var hashValue: Int](assignedworkdocument/hashvalue.md)
+  The hash value.
 - [func hash(into: inout Hasher)](assignedworkdocument/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Accessing work documents
@@ -84,26 +103,6 @@ You can create as many of these objects as you have memory for. This type assume
   Access the page that the ID points to, if any.
 - [subscript(AssignedWorkDocument.ScoreAnnotation.ID) -> AssignedWorkDocument.ScoreAnnotation?](assignedworkdocument/subscript(_:)-5h89c.md)
   Access the score annotation that the identifier refers to, if any.
-### Initializers
-- [init(id: AssignedWorkDocument.ID, assignableDocument: AssignableDocument, partData: [AssignedWorkDocument.PartID : URL]) throws](assignedworkdocument/init(id:assignabledocument:partdata:)-54yg5.md)
-  Construct an instance of this object with the parts data passed in.
-- [init(id: AssignedWorkDocument.ID, assignableDocument: AssignableDocument, partData: [AssignedWorkDocument.PartID : MergeablePartData]) async throws](assignedworkdocument/init(id:assignabledocument:partdata:)-8eh38.md)
-  Construct an instance of this object with the parts data passed in.
-### Instance Properties
-- [var hashValue: Int](assignedworkdocument/hashvalue.md)
-  The hash value.
-- [var pagesDebugDescription: String](assignedworkdocument/pagesdebugdescription.md)
-### Instance Methods
-- [func exportParts(identifiedBy: [AssignedWorkDocument.PartID]) async throws -> [AssignedWorkDocument.PartID : MergeablePartData]](assignedworkdocument/exportparts(identifiedby:).md)
-  Given a set of part identifiers, return a dictionary of part ID to part data.
-- [func makePart(for: AssignedWorkDocument.PartID) throws -> MergeablePartData?](assignedworkdocument/makepart(for:).md)
-  Creates data for the part with the given identifier.
-- [func merge(AssignedWorkDocument) async throws -> Bool](assignedworkdocument/merge(_:).md)
-  Merge another object of this type into this object.
-- [func merge(partData: MergeablePartData, into: AssignedWorkDocument.PartID) async throws -> Bool](assignedworkdocument/merge(partdata:into:).md)
-  Merges an individual part into the specified part of this object.
-- [func merge(partID: AssignedWorkDocument.PartID, partDataURL: URL) throws -> Bool](assignedworkdocument/merge(partid:partdataurl:).md)
-  Merges an individual part’s data into the specified part of this object.
 ### Default Implementations
 - [Equatable Implementations](assignedworkdocument/equatable-implementations.md)
 - [MergeableDocument Implementations](assignedworkdocument/mergeabledocument-implementations.md)

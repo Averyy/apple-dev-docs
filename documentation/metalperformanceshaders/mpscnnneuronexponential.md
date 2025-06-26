@@ -1,7 +1,7 @@
 # MPSCNNNeuronExponential
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 An exponential neuron filter.
 
@@ -16,18 +16,28 @@ An exponential neuron filter.
 ## Declaration
 
 ```swift
-class MPSCNNNeuronExponential : MPSCNNNeuron
+class MPSCNNNeuronExponential
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, a: Float, b: Float, c: Float)](mpscnnneuronexponential/2951870-init.md)
+- [init(device: any MTLDevice, a: Float, b: Float, c: Float)](mpscnnneuronexponential/init(device:a:b:c:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
@@ -61,8 +71,6 @@ class MPSCNNNeuronExponential : MPSCNNNeuron
   A logarithm neuron filter.
 - [class MPSCNNNeuronPower](mpscnnneuronpower.md)
   A power neuron filter.
-- [class MPSNNNeuronDescriptor](mpsnnneurondescriptor.md)
-  An object that specifies properties used by a neuron kernel.
 
 
 ---

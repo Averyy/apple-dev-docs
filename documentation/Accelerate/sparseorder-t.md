@@ -39,6 +39,8 @@ AMD and METIS provide good orderings for symmetric matrices. You can use them fo
   Approximate minimum degree (AMD) ordering.
 - [var SparseOrderMetis: SparseOrder_t](sparseordermetis.md)
   METIS nested dissection ordering.
+- [var SparseOrderMTMetis: SparseOrder_t](sparseordermtmetis.md)
+  Specifies type of fill-reducing ordering.
 - [var SparseOrderCOLAMD: SparseOrder_t](sparseordercolamd.md)
   The column AMD ordering for .
 ### Raw Values

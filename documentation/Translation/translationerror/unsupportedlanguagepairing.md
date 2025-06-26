@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: property
 
-The framework doesn’t support the the specified source and target language pairing.
+The framework doesn’t support the specified source and target language pairing.
 
 **Availability**:
 - iOS 18.0+
@@ -19,7 +19,7 @@ static let unsupportedLanguagePairing: TranslationError
 
 #### Discussion
 
-The framework doesn’t support translating from and to the same language. For example you can’t translate from English (US) to English (UK) or from French to French.
+The framework doesn’t support translating from and to the same language. For example, you can’t translate from English (US) to English (UK) or from French to French.
 
 ## See Also
 

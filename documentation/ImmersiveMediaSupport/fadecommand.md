@@ -25,47 +25,36 @@ Fade commands can be absolute time based or offset based. If fade commands are a
 
 ### Initializers
 - [init(from: any Decoder) throws](fadecommand/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [init(time: CMTime, duration: CMTime, direction: FadeCommand.FadeDirection, color: simd_float3, offset: CMTime?)](fadecommand/init(time:duration:direction:color:offset:).md)
+- [init(id: Int, time: CMTime, duration: CMTime, direction: FadeCommand.FadeDirection, color: simd_float3, offset: CMTime?)](fadecommand/init(id:time:duration:direction:color:offset:).md)
   Initializes a color fade command.
 ### Instance Properties
 - [var color: simd_float3?](fadecommand/color.md)
-  Represents the fade color value between 0.0 to 1.0 for each color channel, if the fade type is ‘color’. If color set to ‘black’, and the direction is ‘in’, then it fades from black color to the video frame.
+  The fade color value between 0.0 to 1.0 for each color channel. If color is set to black, and the direction is `in`, then it fades from black color to the video frame.
 - [var direction: FadeCommand.FadeDirection](fadecommand/direction.md)
   Fade direction for this command instance.
 - [var duration: CMTime](fadecommand/duration.md)
   The duration of the command - this can be .zero if the command has no duration
-- [var fadeType: FadeCommand.FadeType](fadecommand/fadetype-swift.property.md)
-  Fade type for this command instance.
 - [var id: Int](fadecommand/id.md)
-  An unique command id. Ids should be unique for the whole Immersive Media file.
+  A unique command id. Ids should be unique for the whole Immersive Media file.
 - [var offset: CMTime?](fadecommand/offset.md)
   Some commands control animations by repeating the command for the whole duration, and specifying the offset of the animation from the start time of this presentation command.
 - [var time: CMTime](fadecommand/time.md)
   The time this command starts during playback.
-- [var type: PresentationCommandType](fadecommand/type.md)
-  The command type (.fade).
 ### Instance Methods
 - [func encode(to: any Encoder) throws](fadecommand/encode(to:).md)
-  Encodes this value into the given encoder.
 ### Enumerations
 - [FadeCommand.FadeDirection](fadecommand/fadedirection.md)
-  The direction of the fade command.
-- [FadeCommand.FadeType](fadecommand/fadetype-swift.enum.md)
-  An enum listing the available fade types.
+  A value representing the direction of the fade command.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [PresentationCommand](presentationcommand.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [protocol PresentationCommand](presentationcommand.md)
+- [enum PresentationCommand](presentationcommand.md)
   A set of properties that define the interface for a presentation command.
 - [struct FadeEnvironmentCommand](fadeenvironmentcommand.md)
   A command type for opacity fading environment backdrops during immersive media playback.
@@ -73,8 +62,6 @@ Fade commands can be absolute time based or offset based. If fade commands are a
   A command type for immersive camera switching during playback.
 - [struct ShotFlopCommand](shotflopcommand.md)
   A command type to flip the video frames horizontally (mirrored horizontally) during playback for the duration of the command.
-- [enum PresentationCommandType](presentationcommandtype.md)
-  Values that represent the type of presentation command.
 - [struct PresentationDescriptor](presentationdescriptor.md)
   A structure that represents dynamic metadata used during playback or when outputting the metadata track for an immersive video file.
 - [class PresentationDescriptorReader](presentationdescriptorreader.md)

@@ -1,4 +1,4 @@
 Completed scraping AudioDriverKit!
-Total pages scraped: 533
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 534
 Pages failed: 0

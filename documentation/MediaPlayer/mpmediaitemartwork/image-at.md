@@ -17,7 +17,7 @@ Returns the artwork image for an item at the given size.
 ## Declaration
 
 ```swift
-func image(at size: CGSize) -> UIImage?
+func image(at size: CGSize) -> NSImage?
 ```
 
 #### Return Value

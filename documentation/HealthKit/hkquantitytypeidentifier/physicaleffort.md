@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+A quantity sample type that measures the estimated amount of energy being used to perform a task excluding other factors such as temperature, altitude, or heart rate.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -17,10 +19,18 @@
 static let physicalEffort: HKQuantityTypeIdentifier
 ```
 
+#### Discussion
+
+These samples use power in Metabolic Equivalent of Task (METs) units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)). Physical effort is estimated and recorded automatically by Apple Watch.
+
 ## See Also
 
+- [let HKMetadataKeyAverageMETs: String](hkmetadatakeyaveragemets.md)
+  A key that indicates the average Metabolic Equivalent of Task (METs) during a workout.
 - [static let bleedingAfterPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingafterpregnancy.md)
+  A category type that records bleeding after pregnancy as a symptom.
 - [static let bleedingDuringPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingduringpregnancy.md)
+  A category type that records bleeding during pregnancy as a symptom.
 - [static let sleepApneaEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/sleepapneaevent.md)
 - [let HKDevicePropertyKeyFirmwareVersion: String](hkdevicepropertykeyfirmwareversion.md)
   The device’s firmware version.
@@ -43,6 +53,7 @@ static let physicalEffort: HKQuantityTypeIdentifier
 - [static let appleSleepingBreathingDisturbances: HKQuantityTypeIdentifier](hkquantitytypeidentifier/applesleepingbreathingdisturbances.md)
 - [static let crossCountrySkiingSpeed: HKQuantityTypeIdentifier](hkquantitytypeidentifier/crosscountryskiingspeed.md)
 - [static let cyclingCadence: HKQuantityTypeIdentifier](hkquantitytypeidentifier/cyclingcadence.md)
+  A quantity sample type that represents the rate at which the user is pedaling.
 
 
 ---

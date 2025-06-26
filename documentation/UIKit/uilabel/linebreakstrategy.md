@@ -23,7 +23,7 @@ var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy { get set }
 
 The default value is [`standard`](nsparagraphstyle/linebreakstrategy-swift.struct/standard.md).
 
-> **Note**:  When the label has an attributed string value, the system ignores the [`textColor`](uilabel/textcolor.md), [`font`](uilabel/font.md), [`textAlignment`](uilabel/textalignment.md), [`lineBreakMode`](uilabel/linebreakmode.md), and [`lineBreakStrategy`](uilabel/linebreakstrategy.md) properties. Set the [`foregroundColor`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/foregroundColor) (Swift)/[`NSForegroundColorAttributeName`](nsforegroundcolorattributename.md) (Objective-C), [`font`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/font) (Swift)/[`NSFontAttributeName`](nsfontattributename.md) (Objective-C), [`alignment`](nsmutableparagraphstyle/alignment.md), [`lineBreakMode`](nsparagraphstyle/linebreakmode.md), and [`lineBreakStrategy`](nsparagraphstyle/linebreakstrategy-swift.property.md) properties in the attributed string instead.
+> **Note**:  When the label has an attributed string value, the system ignores the [`textColor`](uilabel/textcolor.md), [`font`](uilabel/font.md), [`textAlignment`](uilabel/textalignment.md), [`lineBreakMode`](uilabel/linebreakmode.md), and [`lineBreakStrategy`](uilabel/linebreakstrategy.md) properties. Set the [`NSForegroundColorAttributeName`](nsforegroundcolorattributename.md), [`NSFontAttributeName`](nsfontattributename.md), [`alignment`](nsmutableparagraphstyle/alignment.md), [`lineBreakMode`](nsparagraphstyle/linebreakmode.md), and [`lineBreakStrategy`](nsparagraphstyle/linebreakstrategy-swift.property.md) properties in the attributed string instead.
 
 ## See Also
 

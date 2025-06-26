@@ -40,8 +40,6 @@ Binary archives are precompiled static libraries for specific GPU architectures 
   Base interface for other function-derived interfaces.
 - [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
   Options for configuring the creation of binary functions.
-- [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
-  Options for configuring the creation of binary functions.
 - [class MTL4BinaryFunctionReflection](mtl4binaryfunctionreflection.md)
   Represents reflection information for a binary function.
 - [class MTL4PipelineStageDynamicLinkingDescriptor](mtl4pipelinestagedynamiclinkingdescriptor.md)
@@ -83,8 +81,6 @@ Binary archives are precompiled static libraries for specific GPU architectures 
 ### Pipeline Harvesting
 - [protocol MTL4PipelineDataSetSerializer](mtl4pipelinedatasetserializer.md)
   A fast-addition container for collecting data during pipeline state creation.
-- [struct MTL4PipelineDataSetSerializerConfiguration](mtl4pipelinedatasetserializerconfiguration.md)
-  Configuration options for pipeline dataset serializer objects.
 - [struct MTL4PipelineDataSetSerializerConfiguration](mtl4pipelinedatasetserializerconfiguration.md)
   Configuration options for pipeline dataset serializer objects.
 - [class MTL4PipelineDataSetSerializerDescriptor](mtl4pipelinedatasetserializerdescriptor.md)

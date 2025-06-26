@@ -17,7 +17,6 @@ Initializes a reference node from a file in the app’s main bundle.
 ## Declaration
 
 ```swift
-@MainActor
 init(fileNamed fileName: String?)
 ```
 

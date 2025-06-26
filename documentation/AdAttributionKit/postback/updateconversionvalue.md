@@ -19,8 +19,8 @@ static func updateConversionValue(_ postbackUpdate: PostbackUpdate) async throws
 ## Mentions
 
 - [Creating postbacks in developer settings](creating-postbacks-in-developer-settings.md)
-- [Receiving ad attributions and postbacks](receiving-ad-attributions-and-postbacks.md)
 - [Identifying conversion values with conversion tags](conversion-tags.md)
+- [Receiving ad attributions and postbacks](receiving-ad-attributions-and-postbacks.md)
 - [Configuring an advertised app](configuring-an-advertised-app.md)
 
 ## Parameters

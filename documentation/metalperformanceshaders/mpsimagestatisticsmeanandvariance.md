@@ -1,7 +1,7 @@
 # MPSImageStatisticsMeanAndVariance
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel that computes the mean and variance for a given region of an image.
 
@@ -16,28 +16,38 @@ A kernel that computes the mean and variance for a given region of an image.
 ## Declaration
 
 ```swift
-class MPSImageStatisticsMeanAndVariance : MPSUnaryImageKernel
+class MPSImageStatisticsMeanAndVariance
 ```
 
 #### Overview
 
 The mean and variance values are written to the destination image at the following pixel locations:
 
-- Mean value is written at pixel location` (0, 0)`
+- Mean value is written at pixel location `(0, 0)`
 - Variance value is written at pixel location `(1, 0)`
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagestatisticsmeanandvariance/2867044-init.md)
-- [init(device: any MTLDevice)](mpsimagestatisticsmeanandvariance/2867165-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagestatisticsmeanandvariance/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsimagestatisticsmeanandvariance/init(device:).md)
 ### Instance Properties
-- [var clipRectSource: MTLRegion](mpsimagestatisticsmeanandvariance/2867131-cliprectsource.md)
+- [var clipRectSource: MTLRegion](mpsimagestatisticsmeanandvariance/cliprectsource.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

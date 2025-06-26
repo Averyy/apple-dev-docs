@@ -1,7 +1,7 @@
 # MPSCNNDilatedPoolingMax
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A dilated max pooling filter.
 
@@ -16,7 +16,7 @@ A dilated max pooling filter.
 ## Declaration
 
 ```swift
-class MPSCNNDilatedPoolingMax : MPSCNNPooling
+class MPSCNNDilatedPoolingMax
 ```
 
 #### Overview
@@ -26,18 +26,28 @@ For each pixel, returns the maximum value of pixels in the `kernelWidth * kernel
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnndilatedpoolingmax/2873025-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnndilatedpoolingmax/init(coder:device:).md)
   Initializes a dilated max pooling filter.
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, dilationRateX: Int, dilationRateY: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnndilatedpoolingmax/2881192-init.md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, dilationRateX: Int, dilationRateY: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnndilatedpoolingmax/init(device:kernelwidth:kernelheight:dilationratex:dilationratey:strideinpixelsx:strideinpixelsy:).md)
   Initializes a dilated max pooling filter.
 ### Instance Properties
-- [var dilationRateX: Int](mpscnndilatedpoolingmax/2881194-dilationratex.md)
-- [var dilationRateY: Int](mpscnndilatedpoolingmax/2881193-dilationratey.md)
+- [var dilationRateX: Int](mpscnndilatedpoolingmax/dilationratex.md)
+- [var dilationRateY: Int](mpscnndilatedpoolingmax/dilationratey.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNPooling](mpscnnpooling.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

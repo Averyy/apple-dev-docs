@@ -1,6 +1,6 @@
 # activeParentalControls
 
-**Framework**: DeclaredAgeRange  
+**Framework**: Declared Age Range  
 **Kind**: property
 
 The parental controls turned on as a part of the response.
@@ -19,7 +19,7 @@ var activeParentalControls: AgeRangeService.ParentalControls
 
 #### Discussion
 
-If empty, upper bound of age range is not below 18 or the person is under 18 with no parental controls enabled.
+If empty, the person doesn’t have parental controls turned on as part of the response. For example, if a person has no parental controls enabled on their device, this would be empty.
 
 ## See Also
 

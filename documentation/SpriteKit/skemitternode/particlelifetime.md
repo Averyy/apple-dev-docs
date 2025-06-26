@@ -17,6 +17,7 @@ The average lifetime of a particle, in seconds.
 ## Declaration
 
 ```swift
+@MainActor
 var particleLifetime: CGFloat { get set }
 ```
 

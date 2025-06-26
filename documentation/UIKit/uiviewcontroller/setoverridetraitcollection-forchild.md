@@ -21,8 +21,8 @@ func setOverrideTraitCollection(_ collection: UITraitCollection?, forChild child
 
 ## Mentions
 
-- [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
 - [Choosing a specific interface style for your iOS app](choosing-a-specific-interface-style-for-your-ios-app.md)
+- [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
 
 #### Discussion
 

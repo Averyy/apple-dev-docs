@@ -25,7 +25,7 @@ case swimBikeRun
 
 #### Discussion
 
-Use this constant to create workouts that contain the [`HKWorkoutActivityType.swimming`](hkworkoutactivitytype/swimming.md), [`HKWorkoutActivityType.cycling`](hkworkoutactivitytype/cycling.md), and [`HKWorkoutActivityType.running`](hkworkoutactivitytype/running.md) activities. For more information, see [`HKWorkoutActivity`](hkworkoutactivity.md).
+Use this constant to create workouts that contain the [`HKWorkoutActivityType.swimming`](hkworkoutactivitytype/swimming.md), [`HKWorkoutActivityType.cycling`](hkworkoutactivitytype/cycling.md), and [`HKWorkoutActivityType.running`](hkworkoutactivitytype/running.md) activities. These activities can happen in any order. For more information, see [`HKWorkoutActivity`](hkworkoutactivity.md). HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
 
 ## See Also
 

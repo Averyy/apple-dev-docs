@@ -22,9 +22,9 @@ protocol MTLTexture : MTLResource
 ## Mentions
 
 - [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
 - [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
 - [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
 - [Creating a Mipmapped Texture](creating-a-mipmapped-texture.md)
 - [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
 - [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)

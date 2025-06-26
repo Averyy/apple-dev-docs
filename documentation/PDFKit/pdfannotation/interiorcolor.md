@@ -17,7 +17,7 @@ The fill color for drawing a circle, line, or square annotation.
 
 ```swift
 @NSCopying
-var interiorColor: NSColor? { get set }
+var interiorColor: UIColor? { get set }
 ```
 
 

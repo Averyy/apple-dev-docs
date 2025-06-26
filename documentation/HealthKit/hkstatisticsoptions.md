@@ -26,28 +26,25 @@ You cannot combine a discrete option with a cumulative option. You can, however,
 #### Swift
 
 ```swift
-let cumulativeActiveEnergyBurned =
-    HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierActiveEnergyBurned)
+let cumulativeActiveEnergyBurned = HKQuantityType(.activeEnergyBurned)
  
-let discreteHeartRate =
-    HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)
+let discreteHeartRate = HKQuantityType(.heartRate)
  
 // Cannot combine cumulative options with discrete options.
-// However, you can combine a cumulative option and seperated by source
+// However, you can combine a cumulative option and separated by source
 let cumulativeQuery = HKStatisticsQuery(quantityType:cumulativeActiveEnergyBurned,
                                         quantitySamplePredicate:nil,
-                                        options: .CumulativeSum | .SeparateBySource) {
+                                        options: [.cumulativeSum, .separateBySource]) {
                                             query, statistics, error in
                                             
                                             // ... process the results here
 }
  
 // You can also combine any number of discrete options
-// and the seperated by source option.
+// and the separated by source option.
 let discreteQuery = HKStatisticsQuery(quantityType: discreteHeartRate,
                                       quantitySamplePredicate: nil,
-                                      options: .DiscreteAverage | .DiscreteMin |
-                                        .DiscreteMax | .SeparateBySource) {
+                                      options: [.discreteAverage, .discreteMin, .discreteMax, .separateBySource]) {
                                             query, statistics, error in
                                             
                                             // ... process the results here

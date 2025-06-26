@@ -16,7 +16,7 @@ Encodes a command that instructs the GPU to update a fence, which signals passes
 ## Declaration
 
 ```swift
-func update(_ fence: any MTLFence)
+optional func update(_ fence: any MTLFence)
 ```
 
 #### Discussion

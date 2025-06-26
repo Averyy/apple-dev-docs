@@ -8,10 +8,10 @@
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
-- tvOS ?+
+- visionOS ?+
 - watchOS ?+
 - Unknown ?+ - Deprecated
-- visionOS ?+
+- tvOS ?+
 
 ## Declaration
 

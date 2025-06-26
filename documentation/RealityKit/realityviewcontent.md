@@ -51,7 +51,7 @@ You can use `RealityViewContent` to add and remove entities, subscribe to Realit
 - [struct RealityViewEntityCollection](realityviewentitycollection.md)
   A collection of entities in a RealityView.
 - [struct RealityViewLayoutOption](realityviewlayoutoption.md)
-  Specifies the frame sizing and content alignment option for`RealityView`.
+  Options that specify the frame sizing and content alignment option for `RealityView`.
 - [protocol EntityCollection](entitycollection.md)
   An ordered, mutable collection of entities.
 

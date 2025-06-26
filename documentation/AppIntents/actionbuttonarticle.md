@@ -6,7 +6,7 @@ Use App Intents to register actions for your app.
 
 #### Overview
 
-On Apple Watch Ultra, people can specify the action that the system triggers when they press the Action button. By default, the watch provides actions for starting workouts, starting dives, starting a backtrack navigation session, setting a waypoint, turning on the flashlight, and running a shortcut from the Shortcuts app. To add your dive or workout app to the list of apps that appear when someone chooses Settings > Action Button, use App Intents to register actions for your app.
+On Apple Watch Ultra, people can specify the action that the system performs when they press the Action button. By default, the watch provides actions for starting workouts, starting dives, starting a backtrack navigation session, setting a waypoint, turning on the flashlight, and running a shortcut from the Shortcuts app. To add your dive or workout app to the list of apps that appear when someone chooses Settings > Action Button, use App Intents to register actions for your app.
 
 For workout apps, you can implement the following protocols:
 
@@ -70,10 +70,10 @@ var displayRepresentation: DisplayRepresentation {
 }
 ```
 
-Then, implement your intent’s [`perform()`](appintent/perform().md) method. The system calls this method when anything triggers the intent. In your implementation, you have 30 seconds to start a workout session and return a successful value. If you don’t start a workout session in that time, the system displays an error message, but the app remains in the foreground. People can start a workout session directly from the app, but without a session, the app goes to the background the next time they drop their wrist.
+Then, implement your intent’s [`perform()`](appintent/perform().md) method. The system calls this method when anything starts the intent. In your implementation, you have 30 seconds to start a workout session and return a successful value. If you don’t start a workout session in that time, the system displays an error message, but the app remains in the foreground. People can start a workout session directly from the app, but without a session, the app goes to the background the next time they drop their wrist.
 
 ```swift
-// Define the method that the system calls when it triggers the intent.
+// Define the method that the system calls when it performs the intent.
 func perform() async throws -> some IntentResult {
     logger.debug("*** Performing a Start Intent. ***")
     
@@ -322,7 +322,7 @@ And pressing the Action button launches the selected type of workout.
 
 ##### Donate the Next Action
 
-Apple Watch Ultra runs the next action when someone presses the Action button while a workout or dive session is already running. This means the first time someone presses the Action button, the system starts your session. If they press the Action button any other time during the session, it triggers the next action.
+Apple Watch Ultra runs the next action when someone presses the Action button while a workout or dive session is already running. This means the first time someone presses the Action button, the system starts your session. If they press the Action button any other time during the session, it performs the next action.
 
 To set the next action, implement a structure that adopts the [`AppIntent`](appintent.md) protocol.
 
@@ -338,7 +338,7 @@ struct MarkLapIntent: AppIntent {
 }
 ```
 
-This intent needs a [`title`](appintent/title.md) property that provides a localized description of the action, and a [`perform()`](appintent/perform().md) method, which the system calls when it triggers the intent.
+This intent needs a [`title`](appintent/title.md) property that provides a localized description of the action, and a [`perform()`](appintent/perform().md) method, which the system calls when it performs the intent.
 
 Next, donate the app intent as the current session’s next action. For example, in your start workout intent’s `perform()` method, you can donate the next action for the new session by returning [`result(actionButtonIntent:)`](intentresult/result(actionbuttonintent:).md).
 
@@ -371,7 +371,7 @@ struct MyPauseWorkoutIntent: PauseWorkoutIntent {
 }
 ```
 
-This intent needs a [`title`](appintent/title.md) property that provides a localized description of the action, and a [`perform()`](appintent/perform().md) method, which the system calls when it triggers the intent.
+This intent needs a [`title`](appintent/title.md) property that provides a localized description of the action, and a [`perform()`](appintent/perform().md) method, which the system calls when it performs the intent.
 
 Similarly, to implement the resume action, create a structure that adopts the [`ResumeWorkoutIntent`](resumeworkoutintent.md) protocol.
 
@@ -407,7 +407,7 @@ struct MyStartDiveSessionIntent: StartDiveIntent {
 }
 ```
 
-This intent needs a [`title`](appintent/title.md) property that provides a localized description of the action, and a [`perform()`](appintent/perform().md) method, which the system calls when it triggers the intent.
+This intent needs a [`title`](appintent/title.md) property that provides a localized description of the action, and a [`perform()`](appintent/perform().md) method, which the system calls when it performs the intent.
 
 To read live depth, water pressure, and water temperature data, see [`Accessing submersion data`](https://developer.apple.com/documentation/CoreMotion/accessing-submersion-data).
 

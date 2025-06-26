@@ -21,8 +21,8 @@ struct SubscriptionInfo
 
 ## Mentions
 
-- [Choosing a StoreKit API for In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
+- [Choosing a StoreKit API for In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
 
 ## Topics
 

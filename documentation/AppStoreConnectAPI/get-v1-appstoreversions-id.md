@@ -10,8 +10,8 @@ Get information for a specific app store version.
 
 ## Mentions
 
-- [Configuring and parsing App Store Connect webhook notifications](configuring-webhook-notifications.md)
 - [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
+- [Configuring and parsing App Store Connect webhook notifications](configuring-webhook-notifications.md)
 
 ## See Also
 

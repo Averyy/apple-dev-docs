@@ -23,8 +23,8 @@ struct ForEach<Data, ID, Content> where Data : RandomAccessCollection, ID : Hash
 ## Mentions
 
 - [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
-- [Displaying data in lists](displaying-data-in-lists.md)
 - [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
+- [Displaying data in lists](displaying-data-in-lists.md)
 - [Picking container views for your content](picking-container-views-for-your-content.md)
 
 #### Overview

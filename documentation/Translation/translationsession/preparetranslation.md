@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: method
 
-Asks the user for permission to download translation languages without doing any translations.
+Asks for permission to download translation languages without doing any translations.
 
 **Availability**:
 - iOS 18.0+
@@ -19,11 +19,11 @@ func prepareTranslation() async throws
 
 #### Discussion
 
-If you know ahead of time which languages the user needs to translate, you can prompt them to download those languages in advance by calling this method.
+If you know ahead of time which languages the person needs to translate, you can prompt them to download those languages in advance by calling this method.
 
-When you call this method the framework asks the user for permission to download the [`sourceLanguage`](translationsession/sourcelanguage.md) and [`targetLanguage`](translationsession/targetlanguage.md). If the languages are already installed or are in the middle of downloading, the function returns without prompting the user.
+When you call this method, the framework asks the person for permission to download the [`sourceLanguage`](translationsession/sourcelanguage.md) and [`targetLanguage`](translationsession/targetlanguage.md). If the languages are already installed or in the middle of downloading, the function returns without prompting them.
 
-If you call this function when the `sourceLanguage` is `nil`, it throws [`unableToIdentifyLanguage`](translationerror/unabletoidentifylanguage.md) since there’s no sample text to identify which source language to use for translation.
+If you call this function when the `sourceLanguage` is `nil`, it throws [`unableToIdentifyLanguage`](translationerror/unabletoidentifylanguage.md) error, since there’s no sample text to identify which source language to use for translation.
 
 ## See Also
 

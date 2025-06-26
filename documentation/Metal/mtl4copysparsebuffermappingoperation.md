@@ -6,11 +6,11 @@
 Groups together arguments for an operation to copy a sparse buffer mapping.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

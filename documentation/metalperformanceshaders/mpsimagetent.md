@@ -1,7 +1,7 @@
 # MPSImageTent
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A filter that convolves an image with a tent filter.
 
@@ -16,25 +16,35 @@ A filter that convolves an image with a tent filter.
 ## Declaration
 
 ```swift
-class MPSImageTent : MPSImageBox
+class MPSImageTent
 ```
 
 #### Overview
 
 The kernel elements of the filter form a tent shape with increasing sides, for example:
 
-![](https://docs-assets.developer.apple.com/published/36b0ec2524/VectorMatrix03_2x_dc03bf84-a906-4e38-b1a4-8a5173d1e446.png)
+![None](https://docs-assets.developer.apple.com/published/bd0e20af4a43a00dcc34a4da5e09ddfe/media-2556918%402x.png)
 
 Like a box filter, this arrangement allows for much faster algorithms, especially for larger blur radii but with a more pleasing appearance.
 
 The tent blur is a separable filter and the Metal Performance Shaders framework will act accordingly to give the best performance for multi-dimensional blurs.
 
-> **Note**: The box filter, while fast, may yield square-ish looking blur effects. However, multiple passes of the box filter tend to smooth out with each additional pass. For example, two 3-wide box blurs produces the same effective convolution as a 5-wide tent blur. In effect, addition passes tend to approximate a Gaussian line shape.
+> **Note**:  The box filter, while fast, may yield square-ish looking blur effects. However, multiple passes of the box filter tend to smooth out with each additional pass. For example, two 3-wide box blurs produces the same effective convolution as a 5-wide tent blur. In effect, addition passes tend to approximate a Gaussian line shape.
 
 ## Relationships
 
 ### Inherits From
 - [MPSImageBox](mpsimagebox.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

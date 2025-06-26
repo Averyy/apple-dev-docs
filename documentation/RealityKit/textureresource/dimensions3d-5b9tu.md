@@ -26,7 +26,7 @@ This specifies the width, height, and depth of the 3D texture
 ## Topics
 
 ### Type Methods
-- [static dimensions(width:height:depth:)](textureresource/dimensions3d-5b9tu/dimensions(width:height:depth:).md)
+- [static dimensions(width:height:depth:)](textureresource/dimensions3d-6iyyp/dimensions(width:height:depth:).md)
   Specifies the dimensions of the 3D texture.
 
 ## Relationships

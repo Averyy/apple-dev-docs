@@ -22,8 +22,8 @@ class AVSampleBufferAudioRenderer
 
 ## Mentions
 
-- [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
 - [Implementing flexible enhanced buffering for your content](implementing-flexible-enhanced-buffering-for-your-content.md)
+- [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
 
 #### Overview
 

@@ -22,7 +22,7 @@ func setCookingParametersWith(_ params: MTRMicrowaveOvenControlClusterSetCooking
 
 #### Discussion
 
-Set Cooking Parameters
+This command is used to set the cooking parameters associated with the operation of the device.
 
 
 ---

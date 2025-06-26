@@ -8,7 +8,6 @@ Sets the style for buttons within this view to a button style with a custom appe
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+

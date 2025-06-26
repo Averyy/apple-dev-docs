@@ -1,4 +1,4 @@
 Completed scraping AdAttributionKit!
-Total pages scraped: 95
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 96
 Pages failed: 0

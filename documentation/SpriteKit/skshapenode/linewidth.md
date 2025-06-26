@@ -17,6 +17,7 @@ The width used to stroke the path.
 ## Declaration
 
 ```swift
+@MainActor
 var lineWidth: CGFloat { get set }
 ```
 

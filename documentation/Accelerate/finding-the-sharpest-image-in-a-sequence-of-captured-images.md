@@ -33,7 +33,7 @@ To learn more about configuring a capture session, see [`Setting Up a Capture Se
 
 The sample defines the [`AVCapturePhotoBracketSettings`](https://developer.apple.com/documentation/AVFoundation/AVCapturePhotoBracketSettings) object, which specifies the capture features and settings, in the `BlurDetector.takePhoto()` function.
 
-The sharpness detection algorithm in this sample works on a grayscale image. The camera’s YpCbCr pixel formats, either `kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange` or `kCVPixelFormatType_420YpCbCr8BiPlanarFullRange`, represent the luminance of the image using one plane and represent color information on separate planes. The code converts the luminance plane to a grayscale image.
+The sharpness detection algorithm in this sample works on a grayscale image. The camera’s YpCbCr pixel formats, either [`kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange) or [`kCVPixelFormatType_420YpCbCr8BiPlanarFullRange`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_420YpCbCr8BiPlanarFullRange), represent the luminance of the image using one plane and represent color information on separate planes. The code converts the luminance plane to a grayscale image.
 
 The following code checks that the current device supports one or both of these formats:
 
@@ -80,7 +80,7 @@ photoOutput.capturePhoto(with: photoSettings,
 
 For each captured image, AVFoundation calls the [`photoOutput(_:didFinishProcessingPhoto:error:)`](https://developer.apple.com/documentation/AVFoundation/AVCapturePhotoCaptureDelegate/photoOutput(_:didFinishProcessingPhoto:error:)) method.
 
-The sample uses the [`pixelBuffer`](https://developer.apple.com/documentation/AVFoundation/AVCapturePhoto/pixelBuffer) property of the [`AVCapturePhoto`](https://developer.apple.com/documentation/AVFoundation/AVCapturePhoto) instance that AVFoundation supplies to acquire the uncompressed [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) that contains the captured photograph. While the code is accessing the pixel data of the pixel buffer, it calls `CVPixelBufferLockBaseAddress` to lock the base address:
+The sample uses the [`pixelBuffer`](https://developer.apple.com/documentation/AVFoundation/AVCapturePhoto/pixelBuffer) property of the [`AVCapturePhoto`](https://developer.apple.com/documentation/AVFoundation/AVCapturePhoto) instance that AVFoundation supplies to acquire the uncompressed [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) that contains the captured photograph. While the code is accessing the pixel data of the pixel buffer, it calls [`CVPixelBufferLockBaseAddress(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferLockBaseAddress(_:_:)) to lock the base address:
 
 ```swift
 guard let pixelBuffer = photo.pixelBuffer else {

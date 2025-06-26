@@ -6,17 +6,17 @@
 Directions that a sequence of inputs can be processed by a recurrent neural network layer.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-enum MPSRNNSequenceDirection : UInt, @unchecked Sendable
+enum MPSRNNSequenceDirection
 ```
 
 ## Topics
@@ -24,11 +24,18 @@ enum MPSRNNSequenceDirection : UInt, @unchecked Sendable
 ### Enumeration Cases
 - [MPSRNNSequenceDirection.backward](mpsrnnsequencedirection/backward.md)
 - [MPSRNNSequenceDirection.forward](mpsrnnsequencedirection/forward.md)
+### Initializers
+- [init?(rawValue: UInt)](mpsrnnsequencedirection/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

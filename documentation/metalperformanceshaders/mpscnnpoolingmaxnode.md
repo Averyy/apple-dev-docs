@@ -1,7 +1,7 @@
 # MPSCNNPoolingMaxNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a max pooling filter.
 
@@ -16,13 +16,20 @@ A representation of a max pooling filter.
 ## Declaration
 
 ```swift
-class MPSCNNPoolingMaxNode : MPSCNNPoolingNode
+class MPSCNNPoolingMaxNode
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNPoolingNode](mpscnnpoolingnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

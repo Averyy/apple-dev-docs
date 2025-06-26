@@ -3,6 +3,8 @@
 **Framework**: WebKit  
 **Kind**: property
 
+Element full screen is disabled.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -15,6 +17,10 @@
 ```swift
 static let disabled: WebView.ElementFullscreenBehavior
 ```
+
+#### Discussion
+
+The web view prevents content from being displayed in full screen.
 
 
 ---

@@ -1,7 +1,7 @@
 # MPSCNNPoolingAverageGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient average pooling filter.
 
@@ -16,13 +16,20 @@ A representation of a gradient average pooling filter.
 ## Declaration
 
 ```swift
-class MPSCNNPoolingAverageGradientNode : MPSCNNPoolingGradientNode
+class MPSCNNPoolingAverageGradientNode
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNPoolingGradientNode](mpscnnpoolinggradientnode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

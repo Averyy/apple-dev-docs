@@ -198,7 +198,7 @@ self.currentlyAnalyzedPixelBuffer = nil
 
 ## See Also
 
-- [Classifying Images with Vision and Core ML](../coreml/model_integration_samples/classifying_images_with_vision_and_core_ml.md)
+- [Classifying Images with Vision and Core ML](../CoreML/classifying-images-with-vision-and-core-ml.md)
   Crop and scale photos using the Vision framework and classify them with a Core ML model.
 - [class VNCoreMLRequest](vncoremlrequest.md)
   An image-analysis request that uses a Core ML model to process images.

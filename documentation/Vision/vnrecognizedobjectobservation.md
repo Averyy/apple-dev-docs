@@ -51,7 +51,7 @@ The confidence of the classifications sum up to `1.0.` Multiply the classificati
 
 - [Recognizing Objects in Live Capture](recognizing-objects-in-live-capture.md)
   Apply Vision algorithms to identify objects in real-time video.
-- [Understanding a Dice Roll with Vision and Object Detection](../coreml/model_integration_samples/understanding_a_dice_roll_with_vision_and_object_detection.md)
+- [Understanding a Dice Roll with Vision and Object Detection](../CoreML/understanding-a-dice-roll-with-vision-and-object-detection.md)
   Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
 
 

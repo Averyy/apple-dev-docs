@@ -1,7 +1,7 @@
 # MPSNNSlice
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A kernel that extracts a slice from an image.
 
@@ -16,19 +16,29 @@ A kernel that extracts a slice from an image.
 ## Declaration
 
 ```swift
-class MPSNNSlice : MPSCNNKernel
+class MPSNNSlice
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnslice/2942403-init.md)
-- [init(device: any MTLDevice)](mpsnnslice/2942401-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnslice/init(coder:device:).md)
+- [init(device: any MTLDevice)](mpsnnslice/init(device:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

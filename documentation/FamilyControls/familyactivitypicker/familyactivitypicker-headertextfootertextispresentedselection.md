@@ -8,7 +8,6 @@ Presents an activity picker view as a sheet.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

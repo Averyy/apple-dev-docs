@@ -22,9 +22,9 @@ struct MaterialAssignment
 ## Topics
 
 ### Initializers
-- [init(assignAll:)](meshresource/shapeextrusionoptions-84mf2/materialassignment-swift.struct/init(assignall:).md)
+- [init(assignAll:)](meshresource/shapeextrusionoptions-3sc8p/materialassignment-swift.struct/init(assignall:).md)
   Creates a material assignment structure that assigns the same material to all faces.
-- [init(front:back:extrusion:frontChamfer:backChamfer:)](meshresource/shapeextrusionoptions-84mf2/materialassignment-swift.struct/init(front:back:extrusion:frontchamfer:backchamfer:).md)
+- [init(front:back:extrusion:frontChamfer:backChamfer:)](meshresource/shapeextrusionoptions-3sc8p/materialassignment-swift.struct/init(front:back:extrusion:frontchamfer:backchamfer:).md)
   Creates a material assignment structure with options for each side of an extruded shape.
 
 ## Relationships

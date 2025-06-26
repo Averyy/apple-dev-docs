@@ -23,8 +23,8 @@ case purchasing
 ## Mentions
 
 - [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
-- [Testing an interrupted purchase](testing-an-interrupted-purchase.md)
 - [Processing a transaction](processing-a-transaction.md)
+- [Testing an interrupted purchase](testing-an-interrupted-purchase.md)
 
 ## See Also
 

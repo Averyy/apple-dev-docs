@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-init(size: Int? = nil, timing: CMSampleTimingInfo, attachments: CMSampleBuffer.SampleAttachments)
+init(size: Int? = nil, timing: CMSampleTimingInfo, attachments: CMSampleBuffer.SampleAttachments = .init())
 ```
 
 

@@ -23,8 +23,8 @@ var particleColorBlendFactorSequence: SKKeyframeSequence? { get set }
 
 ## Mentions
 
-- [Using Keyframe Sequence to effect Custom Interpolation](using-keyframe-sequence-to-effect-custom-interpolation.md)
 - [Animating Particle Properties Across Disparate Values](animating-particle-properties-across-disparate-values.md)
+- [Using Keyframe Sequence to effect Custom Interpolation](using-keyframe-sequence-to-effect-custom-interpolation.md)
 
 #### Discussion
 

@@ -43,22 +43,36 @@ class DeployedServerTest:
     
     async def send_request(self, session: aiohttp.ClientSession, payload: Dict[str, Any], 
                           headers: Dict[str, str]) -> Tuple[Optional[Dict[str, Any]], Optional[str]]:
-        """Send request and parse SSE response"""
-        async with session.post(self.server_url, json=payload, headers=headers) as response:
+        """Send request and parse response (handles both JSON and SSE)"""
+        # Fix URL - remove trailing slash if present
+        url = self.server_url.rstrip('/')
+        
+        async with session.post(url, json=payload, headers=headers) as response:
             if response.status != 200:
                 return {"error": f"HTTP {response.status}"}, None
             
             # Get session ID if present
             session_id = response.headers.get('mcp-session-id')
             
-            # Parse SSE response
-            text = await response.text()
-            for line in text.split('\n'):
-                if line.startswith('data: '):
-                    try:
-                        return json.loads(line[6:]), session_id
-                    except:
-                        pass
+            # Check content type
+            content_type = response.headers.get('content-type', '')
+            
+            if 'application/json' in content_type:
+                # Regular JSON response
+                try:
+                    data = await response.json()
+                    return data, session_id
+                except:
+                    return None, session_id
+            else:
+                # SSE response
+                text = await response.text()
+                for line in text.split('\n'):
+                    if line.startswith('data: '):
+                        try:
+                            return json.loads(line[6:]), session_id
+                        except:
+                            pass
             return None, session_id
     
     async def test_server_health(self):
@@ -66,10 +80,16 @@ class DeployedServerTest:
         print("\n🧪 Test 1: Server Health Check")
         async with aiohttp.ClientSession() as session:
             try:
-                async with session.get(f"http://192.168.2.5:8080/health") as response:
+                # Extract base URL from MCP server URL
+                base_url = self.server_url.rstrip('/')
+                if base_url.endswith('/mcp'):
+                    base_url = base_url[:-4]  # Remove '/mcp'
+                health_url = f"{base_url}/health"
+                
+                async with session.get(health_url) as response:
                     if response.status == 200:
                         data = await response.json()
-                        print(f"✅ Server healthy: {data['vectorstore']['documents']:,} documents")
+                        print(f"✅ Server healthy: {data}")
                         return True
                     else:
                         print(f"❌ Health check failed: HTTP {response.status}")
@@ -112,20 +132,13 @@ class DeployedServerTest:
                 return False
                 
             self.session_id = session_id
-            headers['MCP-Session-Id'] = self.session_id
+            if self.session_id:
+                headers['MCP-Session-Id'] = self.session_id
             server_info = result['result']['serverInfo']
             print(f"  ✅ Initialized: {server_info['name']} v{server_info['version']}")
             
-            # Step 2: Send initialized notification (required by some servers)
-            init_notif = {
-                "jsonrpc": "2.0",
-                "method": "notifications/initialized"
-            }
-            
-            # Send notification (no response expected)
-            async with session.post(self.server_url, json=init_notif, headers=headers) as response:
-                if response.status not in [200, 202]:
-                    print(f"  ⚠️  Initialized notification failed: HTTP {response.status}")
+            # Step 2: Skip notification - the HTTP wrapper doesn't handle notifications
+            # The STDIO server handles notifications internally
             
             # Step 3: List tools
             print("\n  2️⃣ Listing tools...")

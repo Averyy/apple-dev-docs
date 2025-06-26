@@ -1,4 +1,4 @@
 Completed scraping ClassKit Catalog API!
-Total pages scraped: 20
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 21
 Pages failed: 0

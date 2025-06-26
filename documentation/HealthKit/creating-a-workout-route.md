@@ -34,11 +34,13 @@ locationManager.desiredAccuracy = kCLLocationAccuracyBest
 locationManager.startUpdatingLocation()
 ```
 
-Next, create and store a route builder for the workout. During the workout, you incrementally add locations from the Core Location updates to the route builder, which then creates the route from the accumulated data.
+Next, use [`seriesBuilder(for:)`](hkworkoutbuilder/seriesbuilder(for:).md) to create and store a route builder for the workout. During the workout, you incrementally add locations from the Core Location updates to the route builder, which then creates the route from the accumulated data.
 
 ```swift
-// Create the route builder.
-routeBuilder = HKWorkoutRouteBuilder(healthStore: store, device: nil)
+// Create the route builder using a HKWorkoutBuilder
+guard let routeBuilder = workoutBuilder.seriesBuilder(for: HKSeriesType.workoutRoute()) as? HKWorkoutRouteBuilder else {
+    fatalError("*** Unexpected HKSeriesBuilder Type ***")
+}
 ```
 
 ##### Add Locations to the Builder

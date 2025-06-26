@@ -23,7 +23,7 @@ Make your app’s content and actions discoverable with system experiences like 
 
 The App Intents framework provides functionality to deeply integrate your app’s actions and content with system experiences across platforms, including Siri, Spotlight, widgets, controls and more. With Apple Intelligence and enhancements to App Intents, Siri will suggest your app’s actions to help people discover your app’s features and gains the ability to take actions in and across apps.
 
-![A hero image of an App Intents framework icon.](https://docs-assets.developer.apple.com/published/ac15ae4c94b2461ac2f70b184512193d/app-intents-hero%402x.png)
+![A hero image of an App Intents framework icon.](https://docs-assets.developer.apple.com/published/4c11e7619eec4482c4c0d9fdb7676e38/app-intents-hero%402x.png)
 
 By adopting the App Intents framework, you allow people to personalize their devices by instantly using your app’s functionality with:
 

@@ -64,8 +64,6 @@ The pipeline states can have intermediate representation (IR) binaries, GPU- and
   Base interface for other function-derived interfaces.
 - [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
   Options for configuring the creation of binary functions.
-- [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
-  Options for configuring the creation of binary functions.
 - [class MTL4BinaryFunctionReflection](mtl4binaryfunctionreflection.md)
   Represents reflection information for a binary function.
 - [class MTL4PipelineStageDynamicLinkingDescriptor](mtl4pipelinestagedynamiclinkingdescriptor.md)

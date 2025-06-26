@@ -33,6 +33,7 @@ var scorers: [AnyUserIdentity] { get }
   Returns a collection of identifiers reflecting the manifest of parts available in the document.
 - [var scoreAnnotations: [AssignedWorkDocument.ScoreAnnotation]](assignedworkdocument/scoreannotations.md)
   The collection of score annotations for this work document. Treated as a multiset. i.e. The order of the elements doesn’t matter and duplicate values are allowed.
+- [var pagesDebugDescription: String](assignedworkdocument/pagesdebugdescription.md)
 - [AssignedWorkDocument.Error](assignedworkdocument/error.md)
   Errors for this document type.
 

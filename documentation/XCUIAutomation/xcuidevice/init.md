@@ -6,15 +6,15 @@
 Creates an instance that represents the current device.
 
 **Availability**:
-- iOS ?+
 - iPadOS ?+
 - Mac Catalyst ?+
+- macOS ?+
 - tvOS ?+
 - visionOS ?+
 - watchOS ?+
 - Xcode 16.3+
 - Unknown ?+ - Deprecated
-- macOS ?+
+- iOS ?+
 
 ## Declaration
 

@@ -1,7 +1,7 @@
 # MPSCNNSubtractGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient subtraction operator.
 
@@ -16,18 +16,28 @@ A gradient subtraction operator.
 ## Declaration
 
 ```swift
-class MPSCNNSubtractGradient : MPSCNNArithmeticGradient
+class MPSCNNSubtractGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, isSecondarySourceFilter: Bool)](mpscnnsubtractgradient/2956165-init.md)
+- [init(device: any MTLDevice, isSecondarySourceFilter: Bool)](mpscnnsubtractgradient/init(device:issecondarysourcefilter:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNArithmeticGradient](mpscnnarithmeticgradient.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

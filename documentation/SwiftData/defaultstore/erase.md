@@ -19,6 +19,10 @@
 final func erase() throws
 ```
 
+## See Also
+
+- [func delete<T>(DataStoreBatchDeleteRequest<T>) throws](defaultstore/delete(_:).md)
+
 
 ---
 

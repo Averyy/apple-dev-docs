@@ -1,9 +1,12 @@
-# Update sign-in token
+# Update Sign-In Token
 
 **Framework**: Automatic Sign-In API  
 **Kind**: httpRequest
 
 Updates a specific sign-in token to a new value.
+
+**Availability**:
+- Automatic Sign-In API 1.0+
 
 ## Mentions
 

@@ -11,7 +11,6 @@ Submit a previously registered background task for execution.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
-- watchOS 6.0+
 
 ## Declaration
 
@@ -21,8 +20,8 @@ func submit(_ taskRequest: BGTaskRequest) throws
 
 ## Mentions
 
-- [Performing long-running tasks on iOS and iPadOS](performing-long-running-tasks-on-ios-and-ipados.md)
 - [Starting and Terminating Tasks During Development](starting-and-terminating-tasks-during-development.md)
+- [Performing long-running tasks on iOS and iPadOS](performing-long-running-tasks-on-ios-and-ipados.md)
 
 #### Discussion
 

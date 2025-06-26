@@ -3,6 +3,8 @@
 **Framework**: SwiftData  
 **Kind**: case
 
+A value that represents a persistent identifier.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

@@ -11,7 +11,6 @@ An abstract class for the framework’s tasks.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
-- watchOS 6.0+
 
 ## Declaration
 
@@ -56,6 +55,8 @@ With the exception of [`BGContinuedProcessingTask`](bgcontinuedprocessingtask.md
 
 ## See Also
 
+- [Background Tasks updates](../Updates/BackgroundTasks.md)
+  Learn about important changes in Background Tasks.
 - [class BGTaskScheduler](bgtaskscheduler.md)
   A class for scheduling tasks that add background support to your app’s most critical work.
 

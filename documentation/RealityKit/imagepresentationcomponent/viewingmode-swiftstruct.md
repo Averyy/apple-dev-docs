@@ -16,17 +16,19 @@ struct ViewingMode
 
 ## Topics
 
-### Type Properties
+### Monoscopic presentation
 - [static let mono: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/mono.md)
   Displays the image with a monoscopic presentation.
-- [static let spatial3D: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/spatial3d.md)
-  Displays the image’s spatial 3D representation (if generated) with a windowed presentation style.
-- [static let spatial3DImmersive: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/spatial3dimmersive.md)
-  Displays the image’s spatial 3D representation (if generated) with an immersive presentation style.
+### Stereoscopic presentation of spatial photos
 - [static let spatialStereo: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/spatialstereo.md)
   Displays the image’s spatial stereo representation (if available) with a windowed presentation style.
 - [static let spatialStereoImmersive: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/spatialstereoimmersive.md)
   Displays the image’s spatial stereo representation (if available) with an immersive presentation style.
+### 3D presentation of generated spatial scenes
+- [static let spatial3D: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/spatial3d.md)
+  Displays the image’s spatial 3D representation (if generated) with a windowed presentation style.
+- [static let spatial3DImmersive: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/spatial3dimmersive.md)
+  Displays the image’s spatial 3D representation (if generated) with an immersive presentation style.
 
 ## Relationships
 

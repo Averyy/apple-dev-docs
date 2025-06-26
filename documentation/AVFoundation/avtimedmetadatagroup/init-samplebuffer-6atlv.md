@@ -3,7 +3,7 @@
 **Framework**: AVFoundation  
 **Kind**: init
 
-Initializes an instance of AVTimedMetadataGroup with a ready sample buffer.
+Creates a timed metadata group with a sample buffer.
 
 **Availability**:
 - iOS 26.0+ (Beta)
@@ -22,11 +22,16 @@ convenience init?(sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicConten
 
 #### Return Value
 
-An instance of AVTimedMetadataGroup.
+An instance of `AVTimedMetadataGroup`.
 
 ## Parameters
 
-- `sampleBuffer`: A CMReadySampleBuffer with media type kCMMediaType_Metadata.
+- `sampleBuffer`: A   with media type  .
+
+## See Also
+
+- [init(items: [AVMetadataItem], timeRange: CMTimeRange)](avtimedmetadatagroup/init(items:timerange:).md)
+  Creates a timed metadata group initialized with the given metadata items.
 
 
 ---

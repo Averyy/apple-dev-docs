@@ -3,6 +3,8 @@
 **Framework**: XCTest  
 **Kind**: init
 
+Initializes a metric that measures hitches metric in the specified app.
+
 **Availability**:
 - iOS 26.0+ (Beta)
 - iPadOS 26.0+ (Beta)
@@ -17,17 +19,9 @@
 init(application: XCUIApplication)
 ```
 
-#### Return Value
-
-An initialized metric.
-
-#### Discussion
-
-Creates a metric which will target the process described by the XCUIApplication instance.
-
 ## Parameters
 
-- `application`: An instance of XCUIApplication which will be targeted to gather measurements.
+- `application`: The app to test.
 
 
 ---

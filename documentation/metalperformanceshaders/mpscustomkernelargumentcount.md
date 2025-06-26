@@ -6,12 +6,12 @@
 A structure that contains the number of destination, source, and broadcaset textures used by a custom kernel.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.0+
-- macOS 10.14+
-- tvOS 12.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -22,12 +22,18 @@ struct MPSCustomKernelArgumentCount
 ## Topics
 
 ### Initializers
-- [init()](mpscustomkernelargumentcount/2990510-init.md)
-- [init(destinationTextureCount: UInt, sourceTextureCount: UInt, broadcastTextureCount: UInt)](mpscustomkernelargumentcount/2990511-init.md)
+- [init()](mpscustomkernelargumentcount/init.md)
+- [init(destinationTextureCount: UInt, sourceTextureCount: UInt, broadcastTextureCount: UInt)](mpscustomkernelargumentcount/init(destinationtexturecount:sourcetexturecount:broadcasttexturecount:).md)
 ### Instance Properties
-- [var broadcastTextureCount: UInt](mpscustomkernelargumentcount/2990473-broadcasttexturecount.md)
-- [var destinationTextureCount: UInt](mpscustomkernelargumentcount/2990474-destinationtexturecount.md)
-- [var sourceTextureCount: UInt](mpscustomkernelargumentcount/2990475-sourcetexturecount.md)
+- [var broadcastTextureCount: UInt](mpscustomkernelargumentcount/broadcasttexturecount.md)
+- [var destinationTextureCount: UInt](mpscustomkernelargumentcount/destinationtexturecount.md)
+- [var sourceTextureCount: UInt](mpscustomkernelargumentcount/sourcetexturecount.md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

@@ -1,7 +1,7 @@
 # MPSCNNLocalContrastNormalizationGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A gradient local-contrast normalization kernel.
 
@@ -16,26 +16,36 @@ A gradient local-contrast normalization kernel.
 ## Declaration
 
 ```swift
-class MPSCNNLocalContrastNormalizationGradient : MPSCNNGradientKernel
+class MPSCNNLocalContrastNormalizationGradient
 ```
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnlocalcontrastnormalizationgradient/2942467-init.md)
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnlocalcontrastnormalizationgradient/2942462-init.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnlocalcontrastnormalizationgradient/init(coder:device:).md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnlocalcontrastnormalizationgradient/init(device:kernelwidth:kernelheight:).md)
 ### Instance Properties
-- [var alpha: Float](mpscnnlocalcontrastnormalizationgradient/2942471-alpha.md)
-- [var beta: Float](mpscnnlocalcontrastnormalizationgradient/2942484-beta.md)
-- [var delta: Float](mpscnnlocalcontrastnormalizationgradient/2942482-delta.md)
-- [var p0: Float](mpscnnlocalcontrastnormalizationgradient/2942472-p0.md)
-- [var pm: Float](mpscnnlocalcontrastnormalizationgradient/2942485-pm.md)
-- [var ps: Float](mpscnnlocalcontrastnormalizationgradient/2942466-ps.md)
+- [var alpha: Float](mpscnnlocalcontrastnormalizationgradient/alpha.md)
+- [var beta: Float](mpscnnlocalcontrastnormalizationgradient/beta.md)
+- [var delta: Float](mpscnnlocalcontrastnormalizationgradient/delta.md)
+- [var p0: Float](mpscnnlocalcontrastnormalizationgradient/p0.md)
+- [var pm: Float](mpscnnlocalcontrastnormalizationgradient/pm.md)
+- [var ps: Float](mpscnnlocalcontrastnormalizationgradient/ps.md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSCNNGradientKernel](mpscnngradientkernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

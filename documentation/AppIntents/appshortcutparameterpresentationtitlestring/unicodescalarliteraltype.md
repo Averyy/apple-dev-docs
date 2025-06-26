@@ -11,9 +11,9 @@ A type that represents a Unicode scalar literal.
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
 - watchOS 10.0+
 - Unknown ?+ - Deprecated
+- visionOS ?+
 
 ## Declaration
 

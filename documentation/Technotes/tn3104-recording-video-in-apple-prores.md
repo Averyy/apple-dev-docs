@@ -27,7 +27,7 @@ As described in [`About Apple ProRes`](https://developer.apple.comhttps://suppor
 
 Notice that there are no supported capture formats that capture at higher than 10-bits-per-channel, also notice that none of the supported capture formats use a 4:4:4 pixel format. Therefore, none of the capture formats output video data that is suitable as a video source for Apple ProRes 4444 codecs.
 
-To find a capture format that is suitable as a video source for an Apple ProRes 422 codec, you should iterate through the capture [`formats`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/formats) of the [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice), and return a capture format whose [`mediaSubType`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription/mediaSubType-swift.property) is kCVPixelFormatType_422YpCbCr10BiPlanarVideoRange:
+To find a capture format that is suitable as a video source for an Apple ProRes 422 codec, you should iterate through the capture [`formats`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/formats) of the [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice), and return a capture format whose [`mediaSubType`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription/mediaSubType-swift.property) is [`kCVPixelFormatType_422YpCbCr10BiPlanarVideoRange`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_422YpCbCr10BiPlanarVideoRange):
 
 ```swift
 extension AVCaptureDevice {

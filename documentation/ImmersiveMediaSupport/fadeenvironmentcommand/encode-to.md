@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: method
 
-Encodes an instance of FadeEnvironmentCommand.
+Encodes an instance of `FadeEnvironmentCommand`.
 
 **Availability**:
 - macOS 26.0+ (Beta)

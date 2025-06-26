@@ -17,6 +17,7 @@ Creates a shape node from a series of points.
 ## Declaration
 
 ```swift
+@MainActor
 convenience init(points: UnsafeMutablePointer<CGPoint>, count numPoints: Int)
 ```
 

@@ -1,7 +1,7 @@
 # MPSNNStateNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A placeholder node denoting the position in the graph of a state object.
 
@@ -16,20 +16,46 @@ A placeholder node denoting the position in the graph of a state object.
 ## Declaration
 
 ```swift
-class MPSNNStateNode : NSObject
+class MPSNNStateNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [var handle: (any MPSHandle)?](mpsnnstatenode/2866426-handle.md)
-- [var exportFromGraph: Bool](mpsnnstatenode/2942640-exportfromgraph.md)
-- [var synchronizeResource: Bool](mpsnnstatenode/2942639-synchronizeresource.md)
+- [var handle: (any MPSHandle)?](mpsnnstatenode/handle.md)
+- [var exportFromGraph: Bool](mpsnnstatenode/exportfromgraph.md)
+- [var synchronizeResource: Bool](mpsnnstatenode/synchronizeresource.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Inherited By
+- [MPSNNBinaryGradientStateNode](mpsnnbinarygradientstatenode.md)
+- [MPSNNGradientStateNode](mpsnngradientstatenode.md)
+- [MPSNNLabelsNode](mpsnnlabelsnode.md)
+- [MPSNNMultiaryGradientStateNode](mpsnnmultiarygradientstatenode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [var label: String?](mpsnnfilternode/label.md)
+- [var paddingPolicy: any MPSNNPadding](mpsnnfilternode/paddingpolicy.md)
+- [protocol MPSNNPadding](mpsnnpadding.md)
+  The protocol that provides a description of how kernels should pad images.
+- [var resultImage: MPSNNImageNode](mpsnnfilternode/resultimage.md)
+- [var resultState: MPSNNStateNode?](mpsnnfilternode/resultstate.md)
+- [var resultStates: [MPSNNStateNode]?](mpsnnfilternode/resultstates.md)
+- [class MPSNNBinaryGradientStateNode](mpsnnbinarygradientstatenode.md)
+  A representation of the state created to record the properties of a binary gradient kernel.
+- [class MPSNNGradientStateNode](mpsnngradientstatenode.md)
+  A representation of the state created to record the properties of a gradient kernel at the time it was encoded.
 
 
 ---

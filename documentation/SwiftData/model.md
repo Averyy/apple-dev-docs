@@ -47,22 +47,20 @@ For more information about defining models, see [`Preserving your app’s model 
 
 ## See Also
 
-- [Adding and editing persistent data in your app](adding-and-editing-persistent-data-in-your-app.md)
-  Create a data entry form for collecting and changing data managed by SwiftData.
-- [Deleting persistent data from your app](deleting-persistent-data-from-your-app.md)
-  Explore different ways to use SwiftData to delete persistent data.
-- [Defining data relationships with enumerations and model classes](defining-data-relationships-with-enumerations-and-model-classes.md)
-  Create relationships for static and dynamic data stored in your app.
-- [Maintaining a local copy of server data](maintaining-a-local-copy-of-server-data.md)
-  Create and update a persistent store to cache read-only network data.
 - [macro Attribute(Schema.Attribute.Option..., originalName: String?, hashModifier: String?)](attribute(_:originalname:hashmodifier:).md)
   Specifies the custom behavior that SwiftData applies to the annotated property when managing the owning class.
-- [macro Transient()](transient().md)
-  Tells SwiftData not to persist the annotated property when managing the owning class.
+- [macro Unique<T>([PartialKeyPath<T>]...)](unique(_:).md)
+  Specifies the key-paths that SwiftData uses to enforce the uniqueness of model instances.
+- [macro Index<T>([PartialKeyPath<T>]...)](index(_:)-74ia2.md)
+  Specifies the key-paths that SwiftData uses to create one or more binary indices for the associated model.
+- [macro Index<T>(Schema.Index<T>.Types<T>...)](index(_:)-7d4z0.md)
+  Specifies the key-paths that SwiftData uses to create one or more indicies for the associated model, where each index is either binary or R-tree.
+- [Defining data relationships with enumerations and model classes](defining-data-relationships-with-enumerations-and-model-classes.md)
+  Create relationships for static and dynamic data stored in your app.
 - [macro Relationship(Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule, minimumModelCount: Int?, maximumModelCount: Int?, originalName: String?, inverse: AnyKeyPath?, hashModifier: String?)](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md)
   Specifies the options that SwiftData needs to manage the annotated property as a relationship between two models.
-- [protocol PersistentModel](persistentmodel.md)
-  An interface that enables SwiftData to manage a Swift class as a stored model.
+- [macro Transient()](transient().md)
+  Tells SwiftData not to persist the annotated property when managing the owning class.
 
 
 ---

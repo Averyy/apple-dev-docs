@@ -22,8 +22,8 @@ class SKVideoNode
 
 ## Mentions
 
-- [Adding a Video to a Scene](adding-a-video-to-a-scene.md)
 - [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
+- [Adding a Video to a Scene](adding-a-video-to-a-scene.md)
 
 #### Overview
 

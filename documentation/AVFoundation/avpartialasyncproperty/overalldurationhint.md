@@ -22,9 +22,9 @@ static var overallDurationHint: AVAsyncProperty<Root, CMTime> { get }
 
 #### Discussion
 
-Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
+Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
-For QuickTime movie files and MPEG-4 files, the system obtains the value of this property from the `mehd` box of the `mvex` box, if present. If no total fragment duration hint is available, the value of this property is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid).
+For QuickTime movie files and MPEG-4 files, the system obtains the value of this property from the `mehd` box of the `mvex` box, if present. If no total fragment duration hint is available, the value of this property is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid).
 
 ## See Also
 

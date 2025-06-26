@@ -11,9 +11,9 @@ A partial set of pixel buffer creation attributes. This struct is useful for con
 - Mac Catalyst 26.0+ (Beta)
 - macOS 26.0+ (Beta)
 - tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 - watchOS 26.0+ (Beta)
 - Unknown ?+ - Deprecated
-- visionOS 26.0+ (Beta)
 
 ## Declaration
 

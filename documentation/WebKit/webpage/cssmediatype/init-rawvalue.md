@@ -3,7 +3,7 @@
 **Framework**: WebKit  
 **Kind**: init
 
-Create a media type with an arbitrary value. Use the static type properties for the defined canonical CSS media type options.
+Create a media type with an arbitrary value.
 
 **Availability**:
 - iOS 18.4+
@@ -17,6 +17,10 @@ Create a media type with an arbitrary value. Use the static type properties for 
 ```swift
 init(rawValue: String)
 ```
+
+#### Discussion
+
+Use the static type properties for the defined canonical CSS media type options.
 
 ## Parameters
 

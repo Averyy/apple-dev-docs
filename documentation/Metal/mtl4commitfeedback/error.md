@@ -17,7 +17,7 @@ A description of an error when the GPU encounters an issue as it runs the commit
 ## Declaration
 
 ```swift
-var error: (any Error)! { get }
+var error: (any Error)? { get }
 ```
 
 

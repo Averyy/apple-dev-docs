@@ -21,11 +21,13 @@ class HKWorkoutRouteBuilder
 
 #### Overview
 
-To create a workout route, instantiate a [`HKWorkoutRouteBuilder`](hkworkoutroutebuilder.md), and provide it with location data throughout the workout. After the workout ends, call the builder’s [`finishRoute(with:metadata:completion:)`](hkworkoutroutebuilder/finishroute(with:metadata:completion:).md) method to construct the route. For detailed instructions, see `Creating a Workout Route`.
+To create a workout route, use [`seriesBuilder(for:)`](hkworkoutbuilder/seriesbuilder(for:).md) to instantiate a [`HKWorkoutRouteBuilder`](hkworkoutroutebuilder.md), and provide it with location data throughout the workout. After the workout ends, call the builder’s [`finishRoute(with:metadata:completion:)`](hkworkoutroutebuilder/finishroute(with:metadata:completion:).md) method to construct the route. Instantiating a [`HKWorkoutRouteBuilder`](hkworkoutroutebuilder.md) directly is discouraged. For detailed instructions, see [`Creating a workout route`](creating-a-workout-route.md).
 
 ## Topics
 
 ### Creating the builder
+- [func seriesBuilder(for: HKSeriesType) -> HKSeriesBuilder?](hkworkoutbuilder/seriesbuilder(for:).md)
+  Returns the series builder for the specified type, creating a new builder, if necessary.
 - [init(healthStore: HKHealthStore, device: HKDevice?)](hkworkoutroutebuilder/init(healthstore:device:).md)
   Creates and returns a new workout route builder.
 ### Building the route

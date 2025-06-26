@@ -39,13 +39,13 @@ Let the system know that a widget is most relevant to a person on a specific dat
 - [static func date(Date, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(_:kind:).md)
   Tells the system a widget is relevant at a specific date and provides an additional contextual hint.
 - [static func date(interval: DateInterval, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(interval:kind:).md)
-  An exact range in time: similar uses as `date()`, but with a known endpoint, such as a calendar event.
+  Tells the system a widget is relevant for a time interval and provides an additional contextual hint.
 - [static func date(range: ClosedRange<Date>, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(range:kind:).md)
-  An exact range in time: similar uses as `date()`, but with a known endpoint, such as a calendar event.
+  Tells the system a widget is relevant for a known date range and provides an additional contextual hint.
 - [RelevantContext.DateKind](relevantcontext/datekind.md)
   Values the system uses as additional context for time-based relevance clues.
 - [static func date(from: Date, to: Date) -> RelevantContext](relevantcontext/date(from:to:).md)
-  An exact range in time: similar uses as `date()`, but with a known endpoint.
+  Tells the system a widget is relevant between two dates.
 
 
 ---

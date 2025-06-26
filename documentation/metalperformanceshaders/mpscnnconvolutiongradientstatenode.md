@@ -1,7 +1,7 @@
 # MPSCNNConvolutionGradientStateNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of a gradient convolution state.
 
@@ -16,13 +16,22 @@ A representation of a gradient convolution state.
 ## Declaration
 
 ```swift
-class MPSCNNConvolutionGradientStateNode : MPSNNGradientStateNode
+class MPSCNNConvolutionGradientStateNode
 ```
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientStateNode](mpsnngradientstatenode.md)
+### Inherited By
+- [MPSCNNConvolutionTransposeGradientStateNode](mpscnnconvolutiontransposegradientstatenode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

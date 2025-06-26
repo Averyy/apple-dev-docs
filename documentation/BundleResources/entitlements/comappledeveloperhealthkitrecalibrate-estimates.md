@@ -23,6 +23,8 @@ To check whether a sample type supports recalibration, see [`allowsRecalibration
   Health data types that require additional permission.
 - [com.apple.developer.healthkit.background-delivery](entitlements/com.apple.developer.healthkit.background-delivery.md)
   A Boolean value that indicates whether observer queries receive updates while running in the background.
+- [Fall Detection Notifications](entitlements/com.apple.developer.health.fall-detection.md)
+  An entitlement that permits an app to receive fall-detection notifications from Apple Watch.
 
 
 ---

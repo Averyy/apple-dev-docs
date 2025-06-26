@@ -11,7 +11,7 @@ In addition to adding VoIP calling to your app and preparing it to be the defaul
 - Default  apps handle incoming and outgoing VoIP conversations, requiring VoIP conversation functionality.
 - Default  apps focus on presenting a dialer interface as the default way for initiating VoIP and cellular network conversations.
 
-> ❗ **Important**: To use the [`DialRequest`](dialrequest.md) and [`TelephonyManager`](telephonymanager.md) API in LiveCommunicationKit, you must add the [`Default Dialer App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.dialing-app) entitlement to your app. To test your app’s behavior as a default dialer app, your Apple Developer account needs to be registered in the European Union (EU), and the test device must be located within the EU.
+> ❗ **Important**: To use the `DialRequest` and `TelephonyManager` API in LiveCommunicationKit, you must add the [`Default Dialer App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.dialing-app) entitlement to your app. To test your app’s behavior as a default dialer app, your Apple Developer account needs to be registered in the European Union (EU), and the test device must be located within the EU.
 
 As the default dialer app, your app can initiate a conversation immediately without a system prompt that asks them to confirm their intent. This behavior is different from apps that use [`CallKit`](https://developer.apple.com/documentation/CallKit), or an app that forwards a conversation to the system using a `telephony:` URL scheme. Additionally, your app can access the device’s conversation history, from the moment your app became the default dialer app, and allow people to quickly start a follow-up conversation from a past conversation.
 
@@ -31,8 +31,8 @@ To prepare your app to be the default dialer app, add the `com.apple.developer.d
 After adding the default dialer app entitlement, use LiveCommunicationKit to initiate a conversation. If your app doesn’t include VoIP conversation functionality, ask the system to start a conversation using the default calling app:
 
 1. Create a [`Handle`](handle.md) for the conversation’s recipient.
-2. Create a [`DialRequest`](dialrequest.md) using the `Handle` and the [`Account`](account.md) to initiate the conversation.
-3. Use the [`TelephonyManager`](telephonymanager.md) and its [`dial(request:)`](telephonymanager/dial(request:).md) method to initiate a conversation.
+2. Create a `DialRequest` using the `Handle` and the `Account` to initiate the conversation.
+3. Use the `TelephonyManager` and its `TelephonyManager/dial(request:)` method to initiate a conversation.
 
 By creating a `DialRequest` and initiating a conversation using the `TelephonyManager`, you let the system route it to the right app. If a person configures their device to use a default calling app, the system launches that app to either handle a VoIP conversation or pass a cellular network conversation back to the system. If a person hasn’t configured a default calling app, the system handles the conversation as a cellular network conversation.
 

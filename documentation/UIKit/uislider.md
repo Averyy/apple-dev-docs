@@ -21,8 +21,8 @@ class UISlider
 ## Mentions
 
 - [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
-- [Attaching gesture recognizers to UIKit controls](attaching-gesture-recognizers-to-uikit-controls.md)
 - [Responding to control-based events using target-action](responding-to-control-based-events-using-target-action.md)
+- [Attaching gesture recognizers to UIKit controls](attaching-gesture-recognizers-to-uikit-controls.md)
 
 #### Overview
 

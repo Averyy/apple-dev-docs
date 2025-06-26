@@ -79,7 +79,7 @@ try await GKLeaderboard.submitScore(points,
                                     leaderboardIDs: ["com.example.leaderboard.bubbles_popped"]) 
 ```
 
-For more information on enabling Game Center, see doc:enabling-and-configuring-game-center. To learn more about configuring leaderboard, see [`Encourage progress and competition with leaderboards`](encourage-progress-and-competition-with-leaderboards.md).
+For more information on enabling Game Center, see [`Initializing and configuring Game Center`](initializing-and-configuring-game-center.md). To learn more about configuring leaderboard, see [`Encourage progress and competition with leaderboards`](encourage-progress-and-competition-with-leaderboards.md).
 
 ## See Also
 

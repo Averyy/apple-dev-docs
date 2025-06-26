@@ -22,7 +22,7 @@ protocol MTL4CommitFeedback : NSObjectProtocol
 ## Topics
 
 ### Instance Properties
-- [var error: (any Error)!](mtl4commitfeedback/error.md)
+- [var error: (any Error)?](mtl4commitfeedback/error.md)
   A description of an error when the GPU encounters an issue as it runs the committed command buffers.
 - [var gpuEndTime: CFTimeInterval](mtl4commitfeedback/gpuendtime.md)
   The host time, in seconds, when the GPU finishes execution of the committed command buffers.

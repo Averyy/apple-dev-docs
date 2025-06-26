@@ -21,8 +21,8 @@ struct EntityQuery
 
 ## Mentions
 
-- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
 - [Implementing systems for entities in a scene](implementing-systems-for-entities-in-a-scene.md)
+- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
 
 #### Overview
 

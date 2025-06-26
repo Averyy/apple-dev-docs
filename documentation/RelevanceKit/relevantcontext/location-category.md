@@ -25,7 +25,7 @@ A contextual clue that the system uses to determine the relevance of a widget in
 
 #### Discussion
 
-To indicate relevance at points of interest of a specific category, import doc://com.developer.documentation/documentation/mapkit and request a person’s permission to access their location with the When in Use or Always access level. For more information on creating a widget that can access location information, refer to [`Accessing location information in widgets`](https://developer.apple.com/documentation/WidgetKit/Accessing-Location-Information-in-Widgets).
+To indicate relevance at points of interest of a specific category, import [`MapKit`](https://developer.apple.com/documentation/MapKit) and request a person’s permission to access their location with the When in Use or Always access level. For more information on creating a widget that can access location information, refer to [`Accessing location information in widgets`](https://developer.apple.com/documentation/WidgetKit/Accessing-Location-Information-in-Widgets).
 
 > **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/WidgetKit/Widget-Suggestions-In-Smart-Stacks).
 

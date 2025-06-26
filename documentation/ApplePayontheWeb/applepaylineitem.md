@@ -68,6 +68,8 @@ For examples of line items within an [`ApplePayPaymentRequest`](applepaypaymentr
   A required value that’s the monetary amount of the line item.
 - [type](applepaylineitem/type.md)
   A value that indicates whether the line item is final or pending.
+- [ApplePayLineItemType](applepaylineitemtype.md)
+  A type that indicates whether a line item is final or pending.
 ### Configuring payment timing
 - [paymentTiming](applepaylineitem/paymenttiming.md)
   The time that the payment occurs as part of a successful transaction.

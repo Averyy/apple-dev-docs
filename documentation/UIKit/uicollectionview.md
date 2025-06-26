@@ -21,8 +21,8 @@ class UICollectionView
 
 ## Mentions
 
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
 - [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
+- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
 
 #### Overview
 

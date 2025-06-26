@@ -22,9 +22,9 @@ func addCompletedHandler(_ block: @escaping MTLCommandBufferHandler)
 
 ## Mentions
 
+- [Preparing Your Metal App to Run in the Background](preparing-your-metal-app-to-run-in-the-background.md)
 - [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
 - [Setting Up a Command Structure](setting-up-a-command-structure.md)
-- [Preparing Your Metal App to Run in the Background](preparing-your-metal-app-to-run-in-the-background.md)
 
 #### Discussion
 

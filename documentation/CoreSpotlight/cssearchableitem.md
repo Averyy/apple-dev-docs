@@ -65,9 +65,9 @@ After creating a searchable item, index it using a [`CSSearchableIndex`](cssearc
   The set of options that contain metadata-associated summarization and prioritization of a searchable item.
 ### Initializers
 - [convenience init(appEntity: some IndexedEntity)](cssearchableitem/init(appentity:).md)
-  Intializes a new searchable item with the relevant fields populated from the provided app entity.
+  Initializes a new searchable item with the relevant fields populated from the provided app entity.
 - [convenience init<Entity>(appEntity: Entity, priority: Int)](cssearchableitem/init(appentity:priority:).md)
-  Intializes a new searchable item with the relevant fields populated from the provided app entity.
+  Initializes a new searchable item with the relevant fields populated from the provided app entity.
 ### Instance Properties
 - [var updateListenerOptions: CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.property.md)
 ### Instance Methods

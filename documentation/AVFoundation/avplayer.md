@@ -26,10 +26,10 @@ class AVPlayer
 - [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
 - [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
 - [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
+- [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
+- [Monitoring playback progress in your app](monitoring-playback-progress-in-your-app.md)
 - [Presenting Chapter Markers](presenting-chapter-markers.md)
 - [Selecting Subtitles and Alternative Audio Tracks](selecting-subtitles-and-alternative-audio-tracks.md)
-- [Monitoring playback progress in your app](monitoring-playback-progress-in-your-app.md)
-- [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
 
 #### Overview
 

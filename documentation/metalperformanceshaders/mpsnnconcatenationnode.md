@@ -1,9 +1,9 @@
 # MPSNNConcatenationNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
-A representation of the results from one or more kernels. 
+A representation of the results from one or more kernels.
 
 **Availability**:
 - iOS 11.0+
@@ -16,18 +16,25 @@ A representation of the results from one or more kernels.
 ## Declaration
 
 ```swift
-class MPSNNConcatenationNode : MPSNNFilterNode
+class MPSNNConcatenationNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sources: [MPSNNImageNode])](mpsnnconcatenationnode/2866423-init.md)
+- [init(sources: [MPSNNImageNode])](mpsnnconcatenationnode/init(sources:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNFilterNode](mpsnnfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

@@ -21,7 +21,7 @@ subscript<T>(index: Int) -> T? where T : SignedInteger { get set }
 
 #### Return Value
 
-The value at the specified index in the array, otherwise [`nil`](https://developer.apple.com/documentation/objectivec/nil).
+The value at the specified index in the array, otherwise [`Nil`](https://developer.apple.com/documentation/objectivec/nil).
 
 ## Parameters
 

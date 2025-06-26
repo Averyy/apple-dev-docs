@@ -17,7 +17,6 @@ The texture used to fill the shape.
 ## Declaration
 
 ```swift
-@MainActor
 var fillTexture: SKTexture? { get set }
 ```
 

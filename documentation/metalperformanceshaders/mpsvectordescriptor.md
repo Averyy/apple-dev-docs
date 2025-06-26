@@ -1,7 +1,7 @@
 # MPSVectorDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A description of the length and data type of a vector.
 
@@ -16,31 +16,38 @@ A description of the length and data type of a vector.
 ## Declaration
 
 ```swift
-class MPSVectorDescriptor : NSObject
+class MPSVectorDescriptor
 ```
 
 ## Topics
 
 ### Initializers
-- [init(length: Int, dataType: MPSDataType)](mpsvectordescriptor/2873328-init.md)
-- [init(length: Int, vectors: Int, vectorBytes: Int, dataType: MPSDataType)](mpsvectordescriptor/2873348-init.md)
+- [convenience init(length: Int, dataType: MPSDataType)](mpsvectordescriptor/init(length:datatype:).md)
+- [convenience init(length: Int, vectors: Int, vectorBytes: Int, dataType: MPSDataType)](mpsvectordescriptor/init(length:vectors:vectorbytes:datatype:).md)
 ### Instance Properties
-- [var dataType: MPSDataType](mpsvectordescriptor/2873362-datatype.md)
-- [var length: Int](mpsvectordescriptor/2873345-length.md)
-- [var vectorBytes: Int](mpsvectordescriptor/2873335-vectorbytes.md)
-- [var vectors: Int](mpsvectordescriptor/2873333-vectors.md)
+- [var dataType: MPSDataType](mpsvectordescriptor/datatype.md)
+- [var length: Int](mpsvectordescriptor/length.md)
+- [var vectorBytes: Int](mpsvectordescriptor/vectorbytes.md)
+- [var vectors: Int](mpsvectordescriptor/vectors.md)
 ### Type Methods
-- [class func vectorBytes(forLength: Int, dataType: MPSDataType) -> Int](mpsvectordescriptor/2873337-vectorbytes.md)
+- [class func vectorBytes(forLength: Int, dataType: MPSDataType) -> Int](mpsvectordescriptor/vectorbytes(forlength:datatype:).md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
 - [class MPSVector](mpsvector.md)
-  A 1D array of data that stores the data's values.
+  A 1D array of data that stores the data’s values.
 - [class MPSTemporaryVector](mpstemporaryvector.md)
   A vector allocated on GPU private memory.
 

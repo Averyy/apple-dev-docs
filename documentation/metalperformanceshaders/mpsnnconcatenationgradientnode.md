@@ -1,7 +1,7 @@
 # MPSNNConcatenationGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: cl
+**Kind**: class
 
 A representation of the results from one or more gradient kernels.
 
@@ -16,23 +16,30 @@ A representation of the results from one or more gradient kernels.
 ## Declaration
 
 ```swift
-class MPSNNConcatenationGradientNode : MPSNNGradientFilterNode
+class MPSNNConcatenationGradientNode
 ```
 
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](mpsnnconcatenationgradientnode/2951934-init.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](mpsnnconcatenationgradientnode/init(sourcegradient:sourceimage:gradientstate:).md)
 
 ## Relationships
 
 ### Inherits From
 - [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
 - [class MPSNNConcatenationNode](mpsnnconcatenationnode.md)
-  A representation of the results from one or more kernels. 
+  A representation of the results from one or more kernels.
 
 
 ---

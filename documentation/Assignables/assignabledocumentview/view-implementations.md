@@ -1378,6 +1378,8 @@
   Configures the search scopes for this view with the specified activation strategy.
 - [func searchScopes<V, S>(Binding<V>, scopes: () -> S) -> some View](assignabledocumentview/searchscopes(_:scopes:).md)
   Configures the search scopes for this view.
+- [func searchSelection(Binding<TextSelection?>) -> some View](assignabledocumentview/searchselection(_:).md)
+  Binds the selection of the search field associated with the nearest searchable modifier to the given `TextSelection` value.
 - [func searchSuggestions<S>(() -> S) -> some View](assignabledocumentview/searchsuggestions(_:).md)
   Configures the search suggestions for this view.
 - [func searchSuggestions(Visibility, for: SearchSuggestionsPlacement.Set) -> some View](assignabledocumentview/searchsuggestions(_:for:).md)

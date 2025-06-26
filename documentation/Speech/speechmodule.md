@@ -47,7 +47,7 @@ protocol SpeechModule : AnyObject, Sendable
 - [class SpeechTranscriber](speechtranscriber.md)
   A module that transcribes speech to text. This transcriber is appropriate for normal conversation and general purposes.
 - [class DictationTranscriber](dictationtranscriber.md)
-  A module that transcribes speech to text. This transcriber is used by [`SFSpeechRecognizer`](sfspeechrecognizer.md) and system dictation features.
+  A module that transcribes speech to text. This transcriber is used by `SFSpeechRecognizer` and system dictation features.
 - [class SpeechDetector](speechdetector.md)
   A module that performs a voice activity detection (VAD) analysis.
 
