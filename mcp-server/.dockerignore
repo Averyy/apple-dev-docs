@@ -57,3 +57,7 @@ README.md
 # Scripts not needed in container
 tests/
 deploy/
+test_*.py
+*_test.py
+build-full-image.sh
+docker-compose.override.yml

@@ -7,11 +7,11 @@ asyncio-throttle==1.0.2
 # Data handling
 jsonschema==4.21.1
 
-# Vector store and embeddings
-chromadb>=0.4.0
+# Data processing
 openai>=1.0.0
 tiktoken>=0.5.0
 python-dotenv>=1.0.0
+meilisearch>=0.31.0
 
 # Development tools
 mypy==1.8.0

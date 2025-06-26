@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  meilisearch:
+    image: meilisearch/meilisearch:v1.6
+    container_name: apple-docs-meilisearch
+    ports:
+      - "7700:7700"
+    environment:
+      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY:-local_test_key}
+      - MEILI_ENV=development
+      - MEILI_HTTP_ADDR=0.0.0.0:7700
+      - MEILI_NO_ANALYTICS=true
+      - MEILI_LOG_LEVEL=INFO
+      - MEILI_MAX_INDEXING_MEMORY=2Gb
+      - MEILI_HTTP_PAYLOAD_SIZE_LIMIT=200MB
+    volumes:
+      - meilisearch_data:/meili_data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+
+volumes:
+  meilisearch_data:
+    driver: local

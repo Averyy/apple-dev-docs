@@ -1,0 +1,33 @@
+# Full image with pre-scraped documentation
+FROM apple-docs-mcp:latest
+
+# Install compression tools
+RUN apt-get update && apt-get install -y xz-utils && rm -rf /var/lib/apt/lists/*
+
+# Copy compressed documentation (created with: tar -cJf docs.tar.xz documentation/)
+COPY documentation.tar.xz /tmp/
+
+# Extract documentation
+RUN mkdir -p /data/documentation /data/hashes && \
+    echo "Extracting documentation (this may take a minute)..." && \
+    tar -xJf /tmp/documentation.tar.xz -C /data/ && \
+    rm /tmp/documentation.tar.xz && \
+    echo "Extracted $(find /data/documentation -name '*.md' | wc -l) documentation files"
+
+# Copy hash files for change tracking
+COPY .hashes/* /data/hashes/
+
+# Pre-build the Meilisearch index
+RUN echo "Pre-indexing documentation..." && \
+    cd /app/scripts && \
+    python index_to_meilisearch.py --docs-path /data/documentation && \
+    echo "$(date): Documentation pre-indexed" > /data/.indexed
+
+# Set environment to skip initial indexing prompt
+ENV DOCS_PREPOPULATED=true
+ENV DOCUMENTATION_COUNT=$(find /data/documentation -name "*.md" | wc -l)
+
+# Update healthcheck to verify pre-indexed data
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+    CMD curl -f http://localhost:7700/health && \
+        [ -f /data/.indexed ] || exit 1

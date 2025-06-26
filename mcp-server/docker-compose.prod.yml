@@ -5,17 +5,23 @@ services:
     image: ghcr.io/averyy/apple-dev-docs-mcp:latest
     container_name: apple-docs-mcp
     restart: unless-stopped
-    ports:
-      - "127.0.0.1:8080:8080"  # Only expose locally for security
+    # STDIO MCP server doesn't use HTTP ports
+    # Communication happens via stdio when launched by Claude
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - MCP_API_KEY=${MCP_API_KEY}
-      - MCP_PORT=8080
+      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}
+      - MEILI_SEARCH_KEY=${MEILI_SEARCH_KEY}
+      - MEILI_ADMIN_KEY=${MEILI_ADMIN_KEY:-}
+      # MCP_PORT not needed for STDIO
+      # MCP_SERVER_URL not needed for STDIO
+      - MEILI_HTTP_ADDR=${MEILI_HTTP_ADDR:-http://localhost:7700}
       - KEEP_MARKDOWN_FILES=${KEEP_MARKDOWN_FILES:-true}
+      - ENABLE_AUTO_RESCRAPE=${ENABLE_AUTO_RESCRAPE:-false}
       - PYTHONUNBUFFERED=1
     volumes:
       # Named volumes for persistence
-      - vectorstore:/data/vectorstore
+      - meilisearch:/data/meilisearch
       - hashes:/data/hashes
       - documentation:/data/documentation
       - logs:/data/logs
@@ -32,7 +38,7 @@ services:
         max-file: "3"
 
 volumes:
-  vectorstore:
+  meilisearch:
     driver: local
   hashes:
     driver: local

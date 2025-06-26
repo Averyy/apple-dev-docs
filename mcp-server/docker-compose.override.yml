@@ -1,0 +1,24 @@
+# Docker Compose Override - Easy Documentation Access
+# 
+# This file automatically extends docker-compose.yml
+# It exports the documentation to a local folder for easy browsing
+
+version: '3.8'
+
+services:
+  apple-docs-mcp:
+    # Export documentation to local folder on first run
+    command: >
+      sh -c '
+        # Check if local docs folder exists
+        if [ ! -d "/export/documentation" ]; then
+          echo "📁 First run detected - exporting documentation for easy access..."
+          cp -r /data/documentation /export/
+          echo "✅ Documentation exported to ./exported-docs/"
+        fi
+        # Continue with normal startup
+        exec /app/startup.sh
+      '
+    volumes:
+      # Add export volume for easy access
+      - ./exported-docs:/export

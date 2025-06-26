@@ -7,7 +7,7 @@ The deployed server requires:
 1. Initialize with protocol version "2024-11-05"
 2. Session management via MCP-Session-Id header
 3. SSE (Server-Sent Events) response parsing
-4. include_full_content: True to get link transformations
+4. summary_mode: False to get full content with link transformations
 """
 
 import asyncio
@@ -177,7 +177,7 @@ class DeployedServerTest:
                     "arguments": {
                         "query": query,
                         "platform": "ios",
-                        "include_full_content": True,  # CRITICAL: Must be True to get links
+                        "summary_mode": False,  # CRITICAL: Must be False to get full content with links
                         "limit": 2
                     }
                 }

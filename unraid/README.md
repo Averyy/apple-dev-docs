@@ -1,15 +1,15 @@
 # Apple Docs MCP Server - Unraid Template
 
-This template allows you to run the Apple Developer Documentation MCP Server on your Unraid server.
+This template allows you to run the Apple Developer Documentation MCP Server V2 on your Unraid server.
 
 ## Features
 
-- 🔍 **Search 323,096 Apple documentation pages** with AI-powered semantic search
-- 🚀 **Sub-500ms response times** with ChromaDB vector database
+- 🔍 **Search 340,740+ Apple documentation pages** with ultra-fast Meilisearch
+- 🚀 **Sub-3ms response times** (95x faster than V1)
 - 🤖 **MCP Integration** for AI assistants like Claude
-- 📱 **Platform filtering** for iOS, macOS, tvOS, watchOS, visionOS
-- 🔄 **Automatic weekly updates** (Sundays at 1 AM)
-- 🔐 **Bearer token authentication** for secure access
+- 📱 **360 frameworks** with platform filtering (iOS, macOS, tvOS, watchOS, visionOS)
+- 🔄 **Optional automatic updates** (disabled by default)
+- 🔐 **Bearer token authentication** for secure remote access
 
 ## Installation
 
@@ -33,7 +33,7 @@ This template allows you to run the Apple Developer Documentation MCP Server on 
 1. In Unraid Docker tab, scroll to bottom
 2. Add this repository URL to "Template repositories":
    ```
-   https://github.com/Averyy/apple-dev-docs/tree/main/unraid
+   https://github.com/averyy/apple-developer-docs/tree/main/unraid
    ```
 3. Click Save
 4. The template will appear in "Add Container" dropdown
@@ -42,82 +42,97 @@ This template allows you to run the Apple Developer Documentation MCP Server on 
 
 ### Required Settings
 
-1. **OpenAI API Key**: 
-   - Get from https://platform.openai.com/api-keys
-   - Only used for text-embedding-3-small model
-   - Cost: ~$4 initial, <$0.10 per update
+**MEILI_MASTER_KEY**: 
+- Generate with: `openssl rand -hex 32`
+- Required for Meilisearch to start
+- Controls access to the search engine
 
-2. **MCP API Key**:
-   - Generate with: `openssl rand -hex 32`
-   - Used for API authentication
-   - Save this for client configuration!
+### Recommended Settings
+
+**MCP_API_KEY** (for remote access):
+- Generate with: `openssl rand -hex 32`
+- Used for HTTP API authentication
+- Save this for Claude configuration!
 
 ### Optional Settings
 
-- **Keep Markdown Files**: 
-  - `true`: Keeps documentation files (~2GB)
-  - `false`: Saves disk space (recommended)
-
-- **Timezone**: Set for weekly update schedule
+- **ENABLE_AUTO_RESCRAPE**: 
+  - `false` (default): Manual updates only
+  - `true`: Weekly automatic updates
+  
+- **Timezone**: Set for update schedule (if enabled)
 
 ### Storage Paths
 
 Default paths (can be changed):
-- `/mnt/cache/appdata/apple-docs-mcp/vectorstore` - Vector database
+- `/mnt/cache/appdata/apple-docs-mcp/meilisearch` - Search database
 - `/mnt/cache/appdata/apple-docs-mcp/hashes` - Update tracking
-- `/mnt/cache/appdata/apple-docs-mcp/documentation` - Markdown files
+- `/mnt/cache/appdata/apple-docs-mcp/documentation` - Pre-indexed docs
 - `/mnt/cache/appdata/apple-docs-mcp/logs` - Container logs
 
 ## First Run
 
-On first start, the container will:
-1. Check for existing data
-2. If no data found, offer to build the index (~4-6 hours)
-3. Run self-tests to verify setup
+The container includes pre-scraped documentation and will automatically:
+1. Start Meilisearch search engine
+2. Check if indexing is needed
+3. Auto-index if needed (~4 minutes)
 4. Start the MCP server on port 8080
 
-### Pre-built Data (Optional)
-
-To skip the initial 4-6 hour build:
-
-1. Copy your existing data to Unraid:
-   ```bash
-   # From your local machine
-   scp -r mcp-server/vectorstore/ root@unraid:/mnt/cache/appdata/apple-docs-mcp/
-   scp -r .hashes/ root@unraid:/mnt/cache/appdata/apple-docs-mcp/
-   ```
-
-2. Start the container - it will detect and use existing data
+**No manual setup required!**
 
 ## Client Configuration
 
-### Claude Desktop
+### For Claude Desktop/Code on Your Computer
 
-Edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
+1. Clone the repo to get the bridge script:
+   ```bash
+   git clone https://github.com/averyy/apple-developer-docs.git
+   ```
 
-```json
-{
-  "mcpServers": {
-    "apple-docs": {
-      "type": "sse",
-      "url": "http://YOUR_UNRAID_IP:8080/mcp",
-      "headers": {
-        "Authorization": "Bearer YOUR_MCP_API_KEY"
-      }
-    }
-  }
-}
-```
+2. Configure Claude to use the bridge:
+
+   **Claude Desktop** (`~/Library/Application Support/Claude/claude_desktop_config.json`):
+   ```json
+   {
+     "mcpServers": {
+       "apple-docs-unraid": {
+         "command": "python3",
+         "args": [
+           "/path/to/apple-developer-docs/mcp-server/apple_docs_stdio_http_bridge.py",
+           "--server-url", "http://YOUR_UNRAID_IP:8080/mcp"
+         ],
+         "env": {
+           "MCP_API_KEY": "your-mcp-api-key"
+         }
+       }
+     }
+   }
+   ```
+
+   **Claude Code** (`.claude/mcp_servers.json`):
+   ```json
+   {
+     "apple-docs-unraid": {
+       "command": "python3",
+       "args": [
+         "/path/to/apple-developer-docs/mcp-server/apple_docs_stdio_http_bridge.py",
+         "--server-url", "http://YOUR_UNRAID_IP:8080/mcp"
+       ],
+       "env": {
+         "MCP_API_KEY": "your-mcp-api-key"
+       }
+     }
+   }
+   ```
 
 ### Testing
 
 ```bash
-# Health check
+# Health check (no auth required)
 curl http://YOUR_UNRAID_IP:8080/health
 
-# Test search (requires auth)
-curl -H "Authorization: Bearer YOUR_MCP_API_KEY" \
-  http://YOUR_UNRAID_IP:8080/health
+# Test with Claude
+# In Claude: @apple-docs-unraid search_apple_docs("SwiftUI Button")
 ```
 
 ## Monitoring
@@ -128,7 +143,7 @@ curl -H "Authorization: Bearer YOUR_MCP_API_KEY" \
 docker logs apple-docs-mcp
 
 # Or view specific logs
-docker exec apple-docs-mcp tail -f /data/logs/mcp-server.log
+docker exec apple-docs-mcp tail -f /data/logs/meilisearch.log
 ```
 
 ### Check Status
@@ -140,34 +155,33 @@ docker exec apple-docs-mcp supervisorctl status
 
 ### Container won't start
 - Check logs: Click container icon → Logs
-- Verify API keys are set correctly
+- Verify MEILI_MASTER_KEY is set
 - Ensure port 8080 is not in use
 
-### No search results
-- Wait for initial index build (4-6 hours)
-- Check vectorstore path has data
-- Verify OpenAI API key is valid
+### Claude can't connect
+- Verify MCP_API_KEY matches in both Unraid and Claude config
+- Check firewall allows port 8080
+- Test with curl command above
 
 ### High CPU/Memory usage
-- Normal during initial indexing
+- Normal during initial indexing (4 minutes)
 - After indexing: ~200MB RAM, minimal CPU
 
 ## Updates
 
-The container automatically updates documentation weekly. To force an update:
-
+To manually update documentation:
 ```bash
-docker exec apple-docs-mcp python /app/scraper/auto_scrape_and_embed.py --embed --yes
+docker exec apple-docs-mcp python /app/scripts/schedule_rescrape_v2.py --run-once
 ```
 
 ## Support
 
-- GitHub Issues: https://github.com/Averyy/apple-dev-docs/issues
-- Unraid Forum Thread: [Link to your thread]
+- GitHub Issues: https://github.com/averyy/apple-developer-docs/issues
+- Unraid Forum Thread: [Coming soon]
 
 ## Resource Requirements
 
 - **CPU**: 1-2 cores (4+ during indexing)
-- **RAM**: 2GB minimum (4GB recommended)
-- **Disk**: 3-5GB for full installation
-- **Network**: Required for API access and updates
+- **RAM**: 1.5GB minimum
+- **Disk**: 1GB for database + logs
+- **Network**: Required for remote access

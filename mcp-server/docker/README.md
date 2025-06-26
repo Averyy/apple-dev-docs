@@ -1,15 +1,8 @@
-# Docker Files
+# Docker Configuration Files
 
-This directory contains Docker configuration files for the MCP server.
+This directory contains Docker-specific configuration:
 
-## Documentation
+- `supervisord.conf` - Process management configuration
+- Other Docker runtime configs
 
-The main Docker documentation has been moved to:
-- [Docker Deployment Guide](../../docs/DOCKER_DEPLOYMENT.md)
-- [Environment Variables](../../docs/ENV_VARIABLES.md)
-- [Upload Guide](../../docs/UPLOAD_GUIDE.md)
-
-## Files in this Directory
-
-- `supervisord.conf` - Supervisor configuration for managing processes
-- `startup.sh` - Container startup script
+For deployment instructions, see [Docker Deployment Guide](../../docs/DOCKER_DEPLOYMENT_V2.md)

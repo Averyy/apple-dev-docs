@@ -1,6 +1,5 @@
 # Core dependencies only
-chromadb>=0.4.0       # Vector database (REQUIRED for RAG)
-openai                # OpenAI API for embeddings (REQUIRED)
+meilisearch>=0.31.0   # Search engine (REQUIRED for search)
 python-dotenv         # Environment management
 httpx==0.27.0         # Async HTTP client
 tqdm                  # Progress bars for indexing
@@ -10,11 +9,10 @@ mcp[fastmcp]>=1.3.0   # Model Context Protocol SDK with FastMCP framework
 uvicorn[standard]     # ASGI server for FastMCP
 pydantic>=2.0         # Data validation for FastMCP
 
-# Scraper dependencies (for scheduled rescraping)
+# Additional dependencies
 beautifulsoup4==4.12.3
 markdownify==0.12.1
 asyncio-throttle==1.0.2
 jsonschema==4.21.1
-tiktoken>=0.5.0
 structlog==24.1.0
 rich==13.7.0

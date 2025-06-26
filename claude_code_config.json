@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "apple-docs-local": {
+      "command": "python3",
+      "args": [
+        "/Users/avery/Code/apple-developer-docs/mcp-server/apple_docs_stdio_mcp.py"
+      ],
+      "env": {
+        "MEILI_HTTP_ADDR": "http://localhost:7700",
+        "MEILI_MASTER_KEY": "local_test_key"
+      }
+    },
+    "apple-docs-remote": {
+      "command": "python3",
+      "args": [
+        "/Users/avery/Code/apple-developer-docs/mcp-server/apple_docs_remote_mcp.py"
+      ],
+      "env": {
+        "MEILI_HTTP_ADDR": "http://192.168.2.5:7700",
+        "MEILI_MASTER_KEY": "local_test_key"
+      }
+    }
+  }
+}

@@ -120,7 +120,7 @@ class SearchQualityTester:
                 "arguments": {
                     "query": query,
                     "platform": platform,
-                    "include_full_content": False,  # Don't need full content for quality test
+                    "summary_mode": True,  # Use summary mode for quality test
                     "limit": limit
                 }
             }

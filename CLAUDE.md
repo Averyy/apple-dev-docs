@@ -33,9 +33,9 @@ Common mistakes to avoid:
 
 ## Project Overview
 
-A comprehensive Python tool that scrapes Apple's entire developer documentation ecosystem, converts it into searchable vector embeddings, and provides an MCP (Model Context Protocol) server for AI-powered documentation search with platform-aware filtering.
+A comprehensive Python tool that scrapes Apple's entire developer documentation ecosystem, indexes it with Meilisearch for ultra-fast search, and provides an MCP (Model Context Protocol) server for AI-powered documentation search with platform-aware filtering.
 
-**Main Problem**: Mirror Apple's complete developer documentation for offline semantic search via MCP server integration.
+**Main Problem**: Mirror Apple's complete developer documentation for fast, accurate search via MCP server with Meilisearch backend.
 
 ## Critical Rules - DO NOT VIOLATE
 
@@ -96,17 +96,18 @@ A comprehensive Python tool that scrapes Apple's entire developer documentation 
 ### Core Technologies
 
 - **Apple JSON API**: Direct access to structured documentation data
-- **Embeddings**: OpenAI text-embedding-3-small (1536 dimensions)
-- **Vector Database**: ChromaDB (local storage)
-- **MCP Server**: FastAPI with Bearer token authentication
+- **Search Engine**: Meilisearch for ultra-fast full-text search
+- **MCP Server**: STDIO-based with optional HTTP wrapper for remote access
 - **Processing**: httpx async client, built-in JSON processing
+- **Indexing**: ~4 minutes for 340,000+ documents
 
 ## MCP Server Features
 
 - **Platform Filtering**: Required parameter (ios, macos, tvos, watchos, visionos, catalyst, all)
 - **Framework Discovery**: `list_frameworks` tool with summaries and availability
-- **Sub-500ms Search**: Optimized ChromaDB queries with metadata filtering
-- **Bearer Authentication**: API key required for all endpoints
+- **Sub-3ms Search**: Meilisearch with smart relevance scoring
+- **Token Management**: 1K-25K token budgets for responses
+- **STDIO Transport**: Direct process communication (HTTP optional)
 
 ## Core Commands
 
@@ -117,14 +118,14 @@ cp .env.example .env  # Edit to add API keys
 # Run scraper
 python scrape.py --all --yes
 
-# Rebuild vectorstore with metadata
-cd mcp-server && python scripts/build_index.py --force
+# Index to Meilisearch (~4 minutes)
+cd scripts && python index_to_meilisearch.py
 
-# Run MCP server  
-cd mcp-server && make server
+# Run MCP server (STDIO mode)
+cd mcp-server && python apple_docs_stdio_mcp.py
 
-# Health check
-cd mcp-server && python tests/test_mcp_server.py
+# Docker deployment (all-in-one)
+cd mcp-server && docker-compose up -d --build
 ```
 
 ## Project Structure
@@ -134,13 +135,13 @@ apple-developer-docs/
 ├── .env                           # Environment variables (API keys)
 ├── scrape.py                      # Main documentation scraper
 ├── documentation/                 # Scraped markdown files
-├── vectorstore/                   # ChromaDB storage (main)
-├── tests/                         # Top-level test suite
+├── meilisearch/                   # Meilisearch data (Docker volume)
 ├── scripts/                       # Utility scripts
+│   └── index_to_meilisearch.py   # Index documents to Meilisearch
 └── mcp-server/                    # MCP server implementation
-    ├── scripts/build_index.py     # Embedding generation with metadata
-    ├── server/mcp_server.py       # FastAPI MCP server
-    ├── server/rag.py              # Search engine with platform filtering
-    ├── vectorstore/               # ChromaDB storage (MCP server)
+    ├── apple_docs_stdio_mcp.py    # STDIO MCP server
+    ├── meilisearch_adapter.py     # Meilisearch integration
+    ├── http_stdio_wrapper.py      # HTTP wrapper for remote access
+    ├── docker-compose.yml         # All-in-one Docker deployment
     └── tests/                     # MCP server tests
 ```
