@@ -53,8 +53,8 @@ def check_index_status(client: meilisearch.Client, index_name: str = "apple-docs
         # Index exists, now get document count
         index = client.index(index_name)
         stats = index.get_stats()
-        # Stats is a dict with camelCase keys
-        doc_count = stats.get('numberOfDocuments', 0)
+        # Stats is an object with camelCase attributes
+        doc_count = getattr(stats, 'numberOfDocuments', 0)
         return True, doc_count
     except Exception as e:
         # Log the error for debugging
