@@ -12,7 +12,7 @@ Apple's developer documentation website poses significant challenges for AI assi
 
 To bridge this gap and enhance the developer experience, this project provides a complete, searchable mirror of Apple's documentation in a clean, AI-friendly format. All content remains unchanged from the original source - we've simply made it accessible for modern AI-powered development workflows.
 
-**Documentation last scraped:** Thursday, June 26, 2025 (after the WWDC updates)
+**Documentation last scraped:** Thursday, June 27, 2025 (after WWDC 2025 updates)
 
 ## ✨ Key Features
 
@@ -37,7 +37,7 @@ To bridge this gap and enhance the developer experience, this project provides a
 |----------|-------------|---------|
 | `MCP_API_KEY` | Authentication for remote HTTP access (recommended) | None |
 | `ENABLE_HTTP_WRAPPER` | Enable HTTP endpoint for remote access | `true` (Docker) |
-| `ENABLE_AUTO_RESCRAPE` | Enable weekly documentation updates | `false` |
+| `ENABLE_AUTO_RESCRAPE` | (Deprecated - Docker images include static documentation) | `false` |
 | `HTTP_PORT` | Port for HTTP wrapper | `8080` |
 | `MEILI_SEARCH_KEY` | Read-only search key (auto-generated from `MEILI_MASTER_KEY`) | None |
 | `MEILI_ADMIN_KEY` | Admin operations key (auto-generated from `MEILI_MASTER_KEY`) | None |
@@ -48,8 +48,8 @@ To bridge this gap and enhance the developer experience, this project provides a
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/averyy/apple-developer-docs.git
-cd apple-developer-docs
+git clone https://github.com/Averyy/apple-dev-docs.git
+cd apple-dev-docs
 
 # 2. Set up environment
 cp .env.example .env
@@ -66,7 +66,7 @@ docker-compose up -d --build
 
 # Container automatically indexes on first run (~4 minutes)
 # Check progress: docker logs -f apple-docs-mcp
-# (All documentation is already included and up to date)
+# (All documentation is pre-included from June 27, 2025)
 
 # ⚠️ INITIAL INDEXING: The first run will use significant CPU and memory
 # for 5-10 minutes while indexing 340,000+ documents. This is normal!
@@ -77,14 +77,14 @@ docker-compose up -d --build
 
 **Default Access:** The container enables HTTP access by default on port 8080. Set `MCP_API_KEY` for authentication.
 
-**Data Persistence:** Docker uses named volumes (`meilisearch`, `documentation`, `hashes`, `logs`). Your data persists across container restarts.
+**Data Persistence:** Docker uses named volumes (`meilisearch`, `logs`). Your search index persists across container restarts. Documentation is baked into the Docker image.
 
 ### Option 2: Local Development Setup
 
 ```bash
 # 1. Clone and setup
-git clone https://github.com/averyy/apple-developer-docs.git
-cd apple-developer-docs
+git clone https://github.com/Averyy/apple-dev-docs.git
+cd apple-dev-docs
 
 # 2. Start Meilisearch
 docker run -d -p 7700:7700 \
@@ -109,7 +109,7 @@ cd ../mcp-server && python3 apple_docs_stdio_mcp.py
   "mcpServers": {
     "apple-docs": {
       "command": "python3",
-      "args": ["/path/to/apple-developer-docs/mcp-server/apple_docs_stdio_mcp.py"]
+      "args": ["/path/to/apple-dev-docs/mcp-server/apple_docs_stdio_mcp.py"]
     }
   }
 }
@@ -123,7 +123,7 @@ cd ../mcp-server && python3 apple_docs_stdio_mcp.py
       "type": "stdio",
       "command": "python3",
       "args": [
-        "/path/to/apple-developer-docs/mcp-server/apple_docs_stdio_http_bridge.py",
+        "/path/to/apple-dev-docs/apple_docs_remote_client.py",
         "--server-url",
         "http://192.168.2.5:8080/mcp",
         "--api-key",
@@ -135,7 +135,7 @@ cd ../mcp-server && python3 apple_docs_stdio_mcp.py
 ```
 
 **Note:** 
-- Claude Code only supports STDIO transport. The bridge script enables communication with remote HTTP servers while maintaining STDIO compatibility.
+- Claude Code only supports STDIO transport. The remote client script enables communication with remote HTTP servers while maintaining STDIO compatibility.
 - For remote connections, the API key is passed as a command-line argument, not as an environment variable.
 - The "type": "stdio" field is required for Claude Code compatibility.
 - Initial connection to remote servers may take 10-30 seconds - this is normal.
@@ -145,9 +145,13 @@ cd ../mcp-server && python3 apple_docs_stdio_mcp.py
 
 ### Updating Documentation
 
-The Docker container automatically indexes pre-scraped documentation. To manually update:
+**⚠️ Note for Docker users:** The Docker image includes pre-scraped documentation from June 27, 2025. The scraping functionality is not available within the container to keep the image lightweight. To update documentation, you'll need to:
 
-**Update all frameworks:**
+1. Run the scraper locally (see commands below)
+2. Build a new Docker image with updated documentation
+3. Deploy the new image
+
+**For local development - Update all frameworks:**
 ```bash
 python3 scrape.py --all --yes
 ```
@@ -200,7 +204,7 @@ After updating documentation, re-index to Meilisearch:
 cd scripts && python3 index_to_meilisearch.py
 ```
 
-**Note:** The Docker container handles indexing automatically during scheduled updates.
+**Note:** The Docker container handles indexing automatically on first run. Re-indexing is only needed after manual documentation updates.
 
 ## 🛠 Available Tools
 
@@ -243,14 +247,13 @@ Browse all 360 available frameworks with document counts.
 
 ## 🔧 Advanced Configuration
 
-### STDIO-to-HTTP Bridge
+### Remote Client Configuration
 
-The bridge script enables Claude Code (STDIO-only) to connect to remote HTTP servers:
+The remote client script enables Claude Code (STDIO-only) to connect to remote HTTP servers:
 
 ```bash
-# Test bridge manually
-cd mcp-server
-python3 apple_docs_stdio_http_bridge.py --server-url http://192.168.2.5:8080/mcp --api-key your-key --debug
+# Test remote connection manually
+python3 apple_docs_remote_client.py --server-url http://192.168.2.5:8080/mcp --api-key your-key --test
 ```
 
 ### Unraid Installation

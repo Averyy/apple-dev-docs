@@ -7,19 +7,19 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/averyy/apple-developer-docs/issues</Support>
-  <Project>https://github.com/averyy/apple-developer-docs</Project>
+  <Support>https://github.com/averyy/apple-dev-docs/issues</Support>
+  <Project>https://github.com/averyy/apple-dev-docs</Project>
   <Overview>Apple Developer Documentation MCP Server V2 - Ultra-fast search across 340,740+ Apple developer documentation pages. Features 95x faster search (sub-3ms), 360 frameworks with platform filtering, and MCP integration for AI assistants like Claude. Includes pre-indexed documentation for instant use.</Overview>
   <Category>Tools: Network:Web Productivity: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8080]/health</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/averyy/apple-developer-docs/main/unraid/apple-docs-mcp.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/averyy/apple-developer-docs/main/unraid/assets/icon.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/averyy/apple-dev-docs/main/unraid/apple-docs-mcp.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/averyy/apple-dev-docs/main/unraid/assets/icon.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled></DateInstalled>
   <DonateText>If you find this useful, consider starring the GitHub repo!</DonateText>
-  <DonateLink>https://github.com/averyy/apple-developer-docs</DonateLink>
+  <DonateLink>https://github.com/averyy/apple-dev-docs</DonateLink>
   <Description>Apple Developer Documentation MCP Server V2 provides ultra-fast search capabilities across all Apple frameworks and platforms (iOS, macOS, tvOS, watchOS, visionOS). Features Meilisearch for 95x faster searches, 360 frameworks, smart relevance scoring, and automatic indexing on first run.</Description>
   
   <!-- Port Configuration -->
@@ -28,9 +28,8 @@
   <!-- Volume Mappings -->
   <Config Name="Meilisearch Database" Target="/data/meilisearch" Default="/mnt/cache/appdata/apple-docs-mcp/meilisearch" Mode="rw" Description="Meilisearch search database (auto-indexed on first run)" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/apple-docs-mcp/meilisearch</Config>
   
-  <Config Name="Hash Storage" Target="/data/hashes" Default="/mnt/cache/appdata/apple-docs-mcp/hashes" Mode="rw" Description="Document hashes for incremental updates" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/apple-docs-mcp/hashes</Config>
   
-  <Config Name="Documentation Storage" Target="/data/documentation" Default="/mnt/cache/appdata/apple-docs-mcp/documentation" Mode="rw" Description="Pre-scraped Apple documentation (included in image)" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/cache/appdata/apple-docs-mcp/documentation</Config>
+  <Config Name="Documentation Storage" Target="/data/documentation" Default="/mnt/cache/appdata/apple-docs-mcp/documentation" Mode="ro" Description="Pre-scraped Apple documentation (baked into image - read-only)" Type="Path" Display="never" Required="false" Mask="false">/mnt/cache/appdata/apple-docs-mcp/documentation</Config>
   
   <Config Name="Logs Directory" Target="/data/logs" Default="/mnt/cache/appdata/apple-docs-mcp/logs" Mode="rw" Description="Container logs for all services" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/apple-docs-mcp/logs</Config>
   
@@ -40,7 +39,7 @@
   
   <Config Name="MCP API Key" Target="MCP_API_KEY" Default="" Mode="" Description="RECOMMENDED - Bearer token for remote access (generate with: openssl rand -hex 32)" Type="Variable" Display="always" Required="false" Mask="true"></Config>
   
-  <Config Name="Enable Auto Rescrape" Target="ENABLE_AUTO_RESCRAPE" Default="false" Mode="" Description="Enable weekly automatic documentation updates (Sunday 1 AM)" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="Enable Auto Rescrape" Target="ENABLE_AUTO_RESCRAPE" Default="false" Mode="" Description="DEPRECATED - Docker images include static documentation and cannot scrape" Type="Variable" Display="never" Required="false" Mask="false">false</Config>
   
   <Config Name="Enable HTTP Wrapper" Target="ENABLE_HTTP_WRAPPER" Default="true" Mode="" Description="Enable HTTP endpoint for remote access (required for Claude)" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
   
@@ -53,7 +52,6 @@
   
   <Config Name="Documentation Path" Target="DOCUMENTATION_PATH" Default="/data/documentation" Mode="" Description="Internal documentation path" Type="Variable" Display="never" Required="false" Mask="false">/data/documentation</Config>
   
-  <Config Name="Hashes Path" Target="HASHES_PATH" Default="/data/hashes" Mode="" Description="Internal hashes path" Type="Variable" Display="never" Required="false" Mask="false">/data/hashes</Config>
   
   <Config Name="Meilisearch Path" Target="MEILISEARCH_PATH" Default="/data/meilisearch" Mode="" Description="Internal Meilisearch path" Type="Variable" Display="never" Required="false" Mask="false">/data/meilisearch</Config>
   
