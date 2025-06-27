@@ -275,7 +275,8 @@ async def scrape_everything():
                 
                 if os.path.exists(index_script):
                     import subprocess
-                    cmd = [sys.executable, index_script, "--docs-path", docs_path]
+                    # Force full rebuild after scraping to ensure orphans are removed
+                    cmd = [sys.executable, index_script, "--docs-path", docs_path, "--force"]
                     print(f"Running: {' '.join(cmd)}")
                     
                     result = subprocess.run(cmd, capture_output=True, text=True)

@@ -134,9 +134,9 @@ def run_weekly_rescrape() -> bool:
             
         os.chdir(scripts_path)
         
-        # Run indexer with correct documentation path
+        # Force full rebuild to ensure orphaned documents are removed from search index
         docs_path = "/data/documentation" if Path("/data/documentation").exists() else "../documentation"
-        cmd = [sys.executable, "index_to_meilisearch.py", "--docs-path", docs_path]
+        cmd = [sys.executable, "index_to_meilisearch.py", "--docs-path", docs_path, "--force"]
         
         result = subprocess.run(cmd, env=env, capture_output=True, text=True)
         

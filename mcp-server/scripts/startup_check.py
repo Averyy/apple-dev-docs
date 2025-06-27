@@ -42,7 +42,7 @@ def check_index_status(client: meilisearch.Client, index_name: str = "apple-docs
         index_exists = False
         
         for idx in indexes.get('results', []):
-            if idx.uid == index_name:
+            if idx['uid'] == index_name:
                 index_exists = True
                 break
         
@@ -52,7 +52,8 @@ def check_index_status(client: meilisearch.Client, index_name: str = "apple-docs
         # Index exists, now get document count
         index = client.index(index_name)
         stats = index.get_stats()
-        doc_count = stats.get('numberOfDocuments', 0)
+        # Meilisearch stats use camelCase attributes
+        doc_count = stats.get('numberOfDocuments', 0) if isinstance(stats, dict) else getattr(stats, 'numberOfDocuments', 0)
         return True, doc_count
     except Exception as e:
         # Log the error for debugging
@@ -120,7 +121,9 @@ def needs_reindexing() -> tuple[bool, str]:
 
 def run_indexing(force_rebuild=False):
     """Run the indexing script."""
-    console.print("🔨 Starting indexing process...", style="blue")
+    msg = "🔨 Starting indexing process..."
+    console.print(msg, style="blue")
+    print(msg)  # Also to stdout for Docker logs
     
     # Build command
     cmd = [
@@ -132,7 +135,9 @@ def run_indexing(force_rebuild=False):
     # Add force flag if documentation has changed
     if force_rebuild:
         cmd.append("--force")
-        console.print("[yellow]🔄 Full rebuild due to documentation changes[/yellow]")
+        msg = "🔄 Full rebuild due to documentation changes"
+        console.print(f"[yellow]{msg}[/yellow]")
+        print(msg)  # Also to stdout for Docker logs
     
     # Run the indexing script
     import subprocess
@@ -162,7 +167,10 @@ def run_indexing(force_rebuild=False):
 
 def main():
     """Main startup check."""
-    console.print("\n🚀 Apple Docs MCP Server - Enhanced Startup Check", style="bold blue")
+    # Always print to both console and stdout for Docker logs
+    print("\n🚀 Apple Docs MCP Server - Startup Check")
+    print("=" * 50)
+    console.print("\n🚀 Apple Docs MCP Server - Startup Check", style="bold blue")
     console.print("=" * 50)
     
     # Get environment variables
@@ -180,17 +188,26 @@ def main():
     # Check if we need to re-index based on hash timestamps
     needs_index, reason = needs_reindexing()
     
-    # Debug logging
-    console.print(f"[dim]Index exists: {index_exists}, Doc count: {doc_count:,}, Needs reindex: {needs_index}[/dim]")
-    console.print(f"[dim]Reason: {reason}[/dim]")
+    # Important status logging (always visible in Docker logs)
+    if index_exists:
+        msg = f"📦 Index status: {doc_count:,} documents indexed"
+        console.print(msg)
+        print(msg)  # Also to stdout for Docker logs
+    if needs_index:
+        msg = f"⚠️  Re-indexing needed: {reason}"
+        console.print(msg)
+        print(msg)  # Also to stdout for Docker logs
+    elif index_exists:
+        msg = f"✅ {reason}"
+        console.print(msg)
+        print(msg)  # Also to stdout for Docker logs
     
     if not index_exists or doc_count < 300000 or needs_index:
         if not index_exists:
             console.print("⚠️  Index does not exist", style="yellow")
         elif doc_count < 300000:
             console.print(f"⚠️  Index has insufficient documents ({doc_count:,})", style="yellow")
-        else:
-            console.print(f"⚠️  {reason}", style="yellow")
+        # else case removed - reason already shown above
         
         # Check if documentation exists
         docs_path = Path("/data/documentation")
@@ -203,26 +220,33 @@ def main():
         if run_indexing(force_rebuild=needs_index):
             # Wait a bit for Meilisearch to update stats
             time.sleep(2)
-            # Force save the index timestamp immediately after indexing
-            save_index_time()
-            console.print(f"💾 Saved index timestamp", style="dim")
             
             # Verify indexing worked with retries
+            new_count = 0  # Initialize in case loop doesn't run properly
             for retry in range(10):  # More retries
                 index_exists, new_count = check_index_status(client)
                 if index_exists and new_count >= 300000:
-                    console.print(f"✅ Index ready with {new_count:,} documents!", style="green")
+                    msg = f"✅ Index ready with {new_count:,} documents!"
+                    console.print(msg, style="green")
+                    print(msg)  # Also to stdout
                     break
                 elif retry < 9:
+                    if retry == 0:
+                        console.print("⏳ Waiting for Meilisearch to finish indexing...", style="dim")
                     time.sleep(3)  # Longer wait between retries
+            
+            # Only show error messages if we didn't succeed
+            if not (index_exists and new_count >= 300000):
+                if not index_exists:
+                    console.print(f"❌ Index creation may have failed", style="red")
+                elif new_count == 0:
+                    msg = f"⚠️  Index created but stats not updated yet (Meilisearch may still be processing)"
+                    console.print(msg, style="yellow")
+                    print(msg)  # Also to stdout
                 else:
-                    # After all retries
-                    if not index_exists:
-                        console.print(f"❌ Index creation may have failed", style="red")
-                    elif new_count == 0:
-                        console.print(f"⚠️  Index created but stats not updated yet (Meilisearch may still be processing)", style="yellow")
-                    else:
-                        console.print(f"✅ Index ready with {new_count:,} documents!", style="green")
+                    msg = f"✅ Index ready with {new_count:,} documents!"
+                    console.print(msg, style="green")
+                    print(msg)  # Also to stdout
         else:
             console.print("❌ Failed to index documents!", style="red")
             sys.exit(1)
