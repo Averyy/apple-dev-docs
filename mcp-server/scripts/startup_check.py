@@ -65,7 +65,7 @@ def check_index_status(client: meilisearch.Client, index_name: str = "apple-docs
 
 def get_last_index_time() -> datetime | None:
     """Get the last time we indexed to Meilisearch."""
-    index_time_file = Path("/data/hashes/last_meilisearch_index.txt")
+    index_time_file = Path("/data/meilisearch/last_meilisearch_index.txt")
     if index_time_file.exists():
         try:
             timestamp_str = index_time_file.read_text().strip()
@@ -76,7 +76,7 @@ def get_last_index_time() -> datetime | None:
 
 def save_index_time():
     """Save the current time as the last index time."""
-    index_time_file = Path("/data/hashes/last_meilisearch_index.txt")
+    index_time_file = Path("/data/meilisearch/last_meilisearch_index.txt")
     index_time_file.parent.mkdir(parents=True, exist_ok=True)
     index_time_file.write_text(datetime.now().isoformat())
 

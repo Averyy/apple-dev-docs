@@ -78,9 +78,9 @@ def run_weekly_rescrape() -> bool:
     logger.info("🔄 Starting weekly rescrape process (with orphan cleanup and full reindex)...")
     start_time = datetime.now()
     
-    # Ensure hash directory exists
-    hashes_path = Path("/data/hashes") if Path("/data/hashes").exists() else Path(".hashes")
-    hashes_path.mkdir(parents=True, exist_ok=True)
+    # Use meilisearch directory for state files
+    state_path = Path("/data/meilisearch")
+    state_path.mkdir(parents=True, exist_ok=True)
     
     try:
         # Step 1: Run the scraper
@@ -155,8 +155,8 @@ def run_weekly_rescrape() -> bool:
                     logger.info(f"Indexer: {line}")
         
         # Record successful update
-        (hashes_path / "last_weekly_update.txt").write_text(start_time.isoformat())
-        (hashes_path / "last_update.txt").write_text(start_time.strftime("%Y-%m-%d %H:%M:%S"))
+        (state_path / "last_weekly_update.txt").write_text(start_time.isoformat())
+        (state_path / "last_update.txt").write_text(start_time.strftime("%Y-%m-%d %H:%M:%S"))
         
         elapsed = datetime.now() - start_time
         logger.info(f"✅ Weekly rescrape and reindex completed in {elapsed}")
@@ -197,8 +197,8 @@ def main():
     logger.info(f"🌍 Timezone: {tz}")
     
     # Get last run file path
-    hashes_path = Path("/data/hashes") if Path("/data/hashes").exists() else Path(".hashes")
-    last_run_file = hashes_path / "last_weekly_update.txt"
+    state_path = Path("/data/meilisearch")
+    last_run_file = state_path / "last_weekly_update.txt"
     
     # Show next scheduled run
     next_run = get_next_scheduled_time()

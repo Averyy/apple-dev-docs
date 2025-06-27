@@ -17,21 +17,10 @@ if [ -z "$MCP_API_KEY" ] && [ "${ENABLE_HTTP_WRAPPER}" = "true" ]; then
     echo "   Generate one with: openssl rand -hex 32"
 fi
 
-# Create necessary directories
-mkdir -p /data/meilisearch /data/hashes /data/documentation /data/logs
+# Create necessary directories (documentation comes from image)
+mkdir -p /data/meilisearch /data/logs
 
-# Check if documentation volume is empty (mounted volume overrides image files)
-DOC_COUNT=$(find /data/documentation -name "*.md" 2>/dev/null | wc -l)
-if [ "$DOC_COUNT" -eq 0 ]; then
-    echo "📚 Documentation volume is empty. Copying pre-packaged files..."
-    # Check if we have documentation in the image
-    if [ -d "/app/documentation_backup" ]; then
-        cp -r /app/documentation_backup/* /data/documentation/
-        echo "✅ Copied documentation files to volume"
-    else
-        echo "⚠️  No backup documentation found in image!"
-    fi
-fi
+# Documentation and hashes now come directly from the image (no volumes)
 
 # Check if pre-indexed data exists
 if [ -f "/data/.indexed" ]; then
@@ -54,16 +43,15 @@ else
     fi
 fi
 
-# Check last update time
-if [ -f "/data/hashes/last_update.txt" ]; then
-    echo "📅 Last update: $(cat /data/hashes/last_update.txt)"
+# Check last update time (now stored in meilisearch volume)
+if [ -f "/data/meilisearch/last_update.txt" ]; then
+    echo "📅 Last update: $(cat /data/meilisearch/last_update.txt)"
 else
     echo "📅 No previous updates recorded"
 fi
 
 # Set up environment
 export MEILISEARCH_PATH=/data/meilisearch
-export HASHES_PATH=/data/hashes
 export DOCUMENTATION_PATH=/data/documentation
 export LOG_PATH=/data/logs
 export MEILI_DB_PATH=/data/meilisearch
@@ -78,20 +66,17 @@ if [ "${ENABLE_HTTP_WRAPPER}" = "true" ]; then
     echo "  - Remote Access: Enabled at http://<server-ip>:${HTTP_PORT:-8080}/mcp"
 fi
 echo "  - Meilisearch URL: ${MEILI_HTTP_ADDR:-http://localhost:7700}"
-echo "  - Auto-Rescrape Enabled: ${ENABLE_AUTO_RESCRAPE:-false}"
-if [ "${ENABLE_AUTO_RESCRAPE}" = "true" ]; then
-    echo "  - Rescrape Schedule: Weekly on Sundays at 1:00 AM"
-fi
+# Auto-rescrape removed - requires persistent documentation storage
 echo ""
 
-# Create a marker file for first run
-if [ ! -f "/data/hashes/.initialized" ]; then
+# Create a marker file for first run (store in meilisearch volume)
+if [ ! -f "/data/meilisearch/.initialized" ]; then
     echo "📝 Initial container setup completed."
-    touch /data/hashes/.initialized
+    touch /data/meilisearch/.initialized
     
     # Record initial setup time if not already present
-    if [ ! -f "/data/hashes/last_update.txt" ]; then
-        date '+%Y-%m-%d %H:%M:%S' > /data/hashes/last_update.txt
+    if [ ! -f "/data/meilisearch/last_update.txt" ]; then
+        date '+%Y-%m-%d %H:%M:%S' > /data/meilisearch/last_update.txt
     fi
 fi
 

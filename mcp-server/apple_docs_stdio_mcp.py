@@ -757,13 +757,11 @@ def extract_section(content: str, section_name: str) -> str:
 def list_frameworks(args):
     """List available frameworks."""
     try:
-        # Get facet distribution with higher limit
+        # Get facet distribution
+        # Note: maxValuesPerFacet is configured in index settings, not search params
         results = meili_index.search("", {
             "facets": ["framework"],
-            "limit": 0,  # Don't return document hits, just facets
-            "faceting": {
-                "maxValuesPerFacet": 500  # Get all frameworks (we have 360+)
-            }
+            "limit": 0  # Don't return document hits, just facets
         })
         framework_counts = results.get("facetDistribution", {}).get("framework", {})
         

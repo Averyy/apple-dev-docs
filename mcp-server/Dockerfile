@@ -43,24 +43,18 @@ ENV PATH=/root/.local/bin:$PATH
 
 # Create app directory and data directories
 WORKDIR /app
-RUN mkdir -p /data/meilisearch /data/hashes /data/documentation /data/logs \
+RUN mkdir -p /data/meilisearch /data/logs \
     /var/log/supervisor
 
 # Copy application code
 COPY mcp-server/ /app/mcp-server/
 COPY scripts/ /app/scripts/
 
-# Copy scraper code
-COPY scraper/ /app/scraper/
-COPY scrape.py /app/
-COPY requirements.txt /app/
+# Scraper not included - scraping requires persistent storage
 
 # Copy pre-scraped documentation and hashes
 COPY documentation/ /data/documentation/
 COPY .hashes/ /data/hashes/
-
-# Keep a backup copy for volume mounting scenarios
-COPY documentation/ /app/documentation_backup/
 
 # Copy supervisor configuration
 COPY mcp-server/docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
@@ -79,7 +73,6 @@ ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV HTTP_PORT=8080
 ENV MEILISEARCH_PATH=/data/meilisearch
-ENV HASHES_PATH=/data/hashes
 ENV DOCUMENTATION_PATH=/data/documentation
 ENV LOG_PATH=/data/logs
 # Meilisearch configuration

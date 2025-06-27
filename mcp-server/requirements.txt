@@ -1,5 +1,5 @@
 # Core dependencies only
-meilisearch>=0.31.0   # Search engine (REQUIRED for search)
+meilisearch==0.36.0   # Search engine - pinned to working version that doesn't transform facets->faceting
 python-dotenv         # Environment management
 httpx==0.27.0         # Async HTTP client
 tqdm                  # Progress bars for indexing
