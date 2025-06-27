@@ -55,9 +55,9 @@ else
     fi
 fi
 
-# Check last update time (now stored in meilisearch volume)
-if [ -f "/data/meilisearch/last_update.txt" ]; then
-    echo "📅 Last update: $(cat /data/meilisearch/last_update.txt)"
+# Check last update time (stored in logs volume to avoid Meilisearch issues)
+if [ -f "/data/logs/last_update.txt" ]; then
+    echo "📅 Last update: $(cat /data/logs/last_update.txt)"
 else
     echo "📅 No previous updates recorded"
 fi
@@ -81,14 +81,14 @@ echo "  - Meilisearch URL: ${MEILI_HTTP_ADDR:-http://localhost:7700}"
 # Auto-rescrape removed - requires persistent documentation storage
 echo ""
 
-# Create a marker file for first run (store in meilisearch volume)
-if [ ! -f "/data/meilisearch/.initialized" ]; then
+# Create a marker file for first run (store in logs volume to avoid Meilisearch issues)
+if [ ! -f "/data/logs/.initialized" ]; then
     echo "📝 Initial container setup completed."
-    touch /data/meilisearch/.initialized
+    touch /data/logs/.initialized
     
     # Record initial setup time if not already present
-    if [ ! -f "/data/meilisearch/last_update.txt" ]; then
-        date '+%Y-%m-%d %H:%M:%S' > /data/meilisearch/last_update.txt
+    if [ ! -f "/data/logs/last_update.txt" ]; then
+        date '+%Y-%m-%d %H:%M:%S' > /data/logs/last_update.txt
     fi
 fi
 
