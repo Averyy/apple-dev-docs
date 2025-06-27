@@ -18,12 +18,10 @@ services:
       - ENABLE_AUTO_RESCRAPE=${ENABLE_AUTO_RESCRAPE:-false}
       - PYTHONUNBUFFERED=1
       - DOCUMENTATION_PATH=/data/documentation
-      - HASHES_PATH=/data/hashes
       - MEILISEARCH_PATH=/data/meilisearch
     volumes:
       # Named volumes for persistence
       - meilisearch:/data/meilisearch
-      - hashes:/data/hashes
       - documentation:/data/documentation
       - logs:/data/logs
     healthcheck:
@@ -40,8 +38,6 @@ services:
 
 volumes:
   meilisearch:
-    driver: local
-  hashes:
     driver: local
   documentation:
     driver: local

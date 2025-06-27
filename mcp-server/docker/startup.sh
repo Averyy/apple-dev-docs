@@ -20,6 +20,18 @@ fi
 # Create necessary directories (documentation comes from image)
 mkdir -p /data/meilisearch /data/logs
 
+# Ensure proper permissions for Meilisearch directory
+chmod 755 /data/meilisearch
+chown root:root /data/meilisearch
+
+# Test if Meilisearch binary works
+echo "🔍 Testing Meilisearch binary..."
+if ! /usr/bin/meilisearch --help > /dev/null 2>&1; then
+    echo "❌ Meilisearch binary is not working properly"
+    exit 1
+fi
+echo "✅ Meilisearch binary is functional"
+
 # Documentation and hashes now come directly from the image (no volumes)
 
 # Check if pre-indexed data exists

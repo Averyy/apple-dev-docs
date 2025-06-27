@@ -82,6 +82,11 @@ def save_index_time():
 
 def get_most_recent_hash_update() -> datetime | None:
     """Find the most recent update time across all hash files."""
+    # In Docker, we don't use hash files anymore - everything is in meilisearch volume
+    # This function is kept for compatibility but returns None in Docker
+    return None
+    
+    # Legacy code for local/non-Docker usage
     hashes_dir = Path("/data/hashes")
     if not hashes_dir.exists():
         return None

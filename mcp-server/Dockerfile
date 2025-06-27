@@ -52,9 +52,8 @@ COPY scripts/ /app/scripts/
 
 # Scraper not included - scraping requires persistent storage
 
-# Copy pre-scraped documentation and hashes
+# Copy pre-scraped documentation only (hashes not needed in Docker)
 COPY documentation/ /data/documentation/
-COPY .hashes/ /data/hashes/
 
 # Copy supervisor configuration
 COPY mcp-server/docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
