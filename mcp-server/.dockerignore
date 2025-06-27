@@ -46,6 +46,16 @@ logs/
 temp/
 *.tmp
 
+# Meilisearch database files (should not be copied to container)
+data.ms/
+/data.ms/
+meilisearch/data.ms/
+
+# Meilisearch database files (should not be copied to container)
+data.ms/
+*.mdb
+meilisearch/
+
 # Git
 .git/
 .gitignore
