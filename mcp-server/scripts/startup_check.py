@@ -42,9 +42,8 @@ def check_index_status(client: meilisearch.Client, index_name: str = "apple-docs
         index_exists = False
         
         for idx in indexes.get('results', []):
-            # idx is an Index object or dict depending on Meilisearch version
-            uid = idx.uid if hasattr(idx, 'uid') else idx.get('uid')
-            if uid == index_name:
+            # idx is an Index object
+            if idx.uid == index_name:
                 index_exists = True
                 break
         
@@ -54,8 +53,8 @@ def check_index_status(client: meilisearch.Client, index_name: str = "apple-docs
         # Index exists, now get document count
         index = client.index(index_name)
         stats = index.get_stats()
-        # Meilisearch stats use camelCase attributes
-        doc_count = stats.get('numberOfDocuments', 0) if isinstance(stats, dict) else getattr(stats, 'numberOfDocuments', 0)
+        # Stats is a dict with camelCase keys
+        doc_count = stats.get('numberOfDocuments', 0)
         return True, doc_count
     except Exception as e:
         # Log the error for debugging

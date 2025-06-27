@@ -760,7 +760,10 @@ def list_frameworks(args):
         # Get facet distribution with higher limit
         results = meili_index.search("", {
             "facets": ["framework"],
-            "limit": 0  # Don't return document hits, just facets
+            "limit": 0,  # Don't return document hits, just facets
+            "faceting": {
+                "maxValuesPerFacet": 500  # Get all frameworks (we have 360+)
+            }
         })
         framework_counts = results.get("facetDistribution", {}).get("framework", {})
         
