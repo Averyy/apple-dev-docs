@@ -42,7 +42,9 @@ def check_index_status(client: meilisearch.Client, index_name: str = "apple-docs
         index_exists = False
         
         for idx in indexes.get('results', []):
-            if idx['uid'] == index_name:
+            # idx is an Index object or dict depending on Meilisearch version
+            uid = idx.uid if hasattr(idx, 'uid') else idx.get('uid')
+            if uid == index_name:
                 index_exists = True
                 break
         
