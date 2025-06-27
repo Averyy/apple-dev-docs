@@ -118,6 +118,11 @@ class MeilisearchIndexer:
                 # Create fresh index
                 task = self.client.create_index(self.index_name, {'primaryKey': 'id'})
                 console.print(f"[green]Created fresh index '{self.index_name}'[/green]")
+                # Wait for creation to complete
+                self.client.wait_for_task(task.task_uid)
+                # Get the new index and configure it
+                index = self.client.index(self.index_name)
+                self.configure_index_settings(index)
             else:
                 console.print(f"[green]Using existing index '{self.index_name}'[/green]")
                 # Configure index settings in case they were lost
@@ -127,7 +132,7 @@ class MeilisearchIndexer:
             task = self.client.create_index(self.index_name, {'primaryKey': 'id'})
             console.print(f"[green]Created new index '{self.index_name}'[/green]")
             # Wait for task to complete
-            self.client.wait_for_task(task.task_uid, timeout_in_ms=30000)  # 30 second timeout
+            self.client.wait_for_task(task.task_uid)
             # Configure the new index
             index = self.client.index(self.index_name)
             self.configure_index_settings(index)
@@ -146,14 +151,14 @@ class MeilisearchIndexer:
             'api_name',
             'is_chunk'
         ])
-        self.client.wait_for_task(task.task_uid, timeout_in_ms=30000)  # 30 second timeout
+        self.client.wait_for_task(task.task_uid)
         
         # Configure sortable attributes
         task = index.update_sortable_attributes([
             'last_modified',
             'file_size'
         ])
-        self.client.wait_for_task(task.task_uid, timeout_in_ms=30000)  # 30 second timeout
+        self.client.wait_for_task(task.task_uid)
         
         # Configure searchable attributes with priority
         task = index.update_searchable_attributes([
@@ -163,7 +168,7 @@ class MeilisearchIndexer:
             'content',
             'content_cleaned'
         ])
-        self.client.wait_for_task(task.task_uid, timeout_in_ms=30000)  # 30 second timeout
+        self.client.wait_for_task(task.task_uid)
         
         # Configure faceting settings to show all frameworks
         task = index.update_settings({
@@ -171,7 +176,7 @@ class MeilisearchIndexer:
                 'maxValuesPerFacet': 500  # Allow up to 500 framework values
             }
         })
-        self.client.wait_for_task(task.task_uid, timeout_in_ms=30000)  # 30 second timeout
+        self.client.wait_for_task(task.task_uid)
         
         console.print("✅ Index settings configured")
     
