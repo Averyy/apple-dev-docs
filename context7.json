@@ -1,7 +1,7 @@
 {
   "$schema": "https://context7.com/schema/context7.json",
   "projectTitle": "Apple Developer Documentation",
-  "description": "Complete Apple developer documentation - 360+ frameworks, 340K+ pages including SwiftUI, UIKit, ARKit, Core ML and more",
+  "description": "Complete Apple developer documentation - 370+ frameworks, 334K+ pages including SwiftUI, UIKit, ARKit, Core ML and more",
   "folders": [
     "documentation"
   ],

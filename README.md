@@ -1,9 +1,9 @@
 # 🍎 Apple Developer Documentation MCP Server
 
- An MCP (Model Context Protocol) server that gives Claude and other AI assistants access to Apple's complete developer documentation. Search across Apple's entire developer documentation - 360 frameworks, 340,000+ pages, <500ms latency.
+ An MCP (Model Context Protocol) server that gives Claude and other AI assistants access to Apple's complete developer documentation. Search across Apple's entire developer documentation - 370+ frameworks, 334,000+ pages, <500ms latency.
 
-[![Frameworks](https://img.shields.io/badge/frameworks-360-blue)](docs/MCP_COMPLETE_GUIDE.md)
-[![Documents](https://img.shields.io/badge/documents-340K%2B-green)](docs/TECHNICAL_OPERATIONS_GUIDE.md)
+[![Frameworks](https://img.shields.io/badge/frameworks-370%2B-blue)](docs/MCP_COMPLETE_GUIDE.md)
+[![Documents](https://img.shields.io/badge/documents-334K%2B-green)](docs/TECHNICAL_OPERATIONS_GUIDE.md)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE)
 
 ## 🤔 Why?
@@ -12,11 +12,11 @@ Apple's developer documentation website poses significant challenges for AI assi
 
 To bridge this gap and enhance the developer experience, this project provides a complete, searchable mirror of Apple's documentation in a clean, AI-friendly format. All content remains unchanged from the original source - we've simply made it accessible for modern AI-powered development workflows.
 
-**Documentation last scraped:** Thursday, June 27, 2025 (after WWDC 2025 updates)
+**Documentation last scraped:** December 21, 2025 (includes WWDC 2025 updates)
 
 ## ✨ Key Features
 
-- 📚 **360+ Apple frameworks** - SwiftUI, UIKit, Metal, ARKit, Core ML, and more
+- 📚 **370+ Apple frameworks** - SwiftUI, UIKit, Metal, ARKit, Core ML, and more
 - 🔍 **Smart semantic search** - Improved relevance scoring with framework awareness
 - 🎯 **Platform & framework filtering** - iOS, macOS, tvOS, watchOS, visionOS + strict framework mode
 - ⚡ **Fast responses** - Sub-500ms search powered by Meilisearch
@@ -68,10 +68,10 @@ docker-compose up -d --build
 
 # Container automatically indexes on first run (~4 minutes)
 # Check progress: docker logs -f apple-docs-mcp
-# (All documentation is pre-included from June 27, 2025)
+# (All documentation is pre-included from December 21, 2025)
 
 # ⚠️ INITIAL INDEXING: The first run will use significant CPU and memory
-# for 5-10 minutes while indexing 340,000+ documents. This is normal!
+# for 5-10 minutes while indexing 334,000+ documents. This is normal!
 # After indexing completes, resource usage drops to minimal levels.
 
 # Server is now accessible at http://YOUR_SERVER_IP:8080/mcp
@@ -147,7 +147,7 @@ cd ../mcp-server && python3 apple_docs_stdio_mcp.py
 
 ### Updating Documentation
 
-**⚠️ Note for Docker users:** The Docker image includes pre-scraped documentation from June 27, 2025. The scraping functionality is not available within the container to keep the image lightweight. To update documentation, you'll need to:
+**⚠️ Note for Docker users:** The Docker image includes pre-scraped documentation from December 21, 2025. The scraping functionality is not available within the container to keep the image lightweight. To update documentation, you'll need to:
 
 1. Run the scraper locally (see commands below)
 2. Build a new Docker image with updated documentation
@@ -241,7 +241,7 @@ Get the full content of a specific documentation file or symbol.
 - `expand_result { "file_path": "documentation/SwiftUI/View.md" }` - Full file path
 
 ### `list_frameworks`
-Browse all 360 available frameworks with document counts.
+Browse all 370+ available frameworks with document counts.
 
 **Parameters:**
 - `query` - Optional filter to search framework names (e.g., "UI", "Core", "Kit")

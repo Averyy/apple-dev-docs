@@ -4,10 +4,10 @@ This template allows you to run the Apple Developer Documentation MCP Server V2 
 
 ## Features
 
-- 🔍 **Search 340,740+ Apple documentation pages** with ultra-fast Meilisearch
+- 🔍 **Search 334,000+ Apple documentation pages** with ultra-fast Meilisearch
 - 🚀 **Sub-3ms response times** (95x faster than V1)
 - 🤖 **MCP Integration** for AI assistants like Claude
-- 📱 **360 frameworks** with platform filtering (iOS, macOS, tvOS, watchOS, visionOS)
+- 📱 **370+ frameworks** with platform filtering (iOS, macOS, tvOS, watchOS, visionOS)
 - 🔄 **Optional automatic updates** (disabled by default)
 - 🔐 **Bearer token authentication** for secure remote access
 
@@ -33,7 +33,7 @@ This template allows you to run the Apple Developer Documentation MCP Server V2 
 1. In Unraid Docker tab, scroll to bottom
 2. Add this repository URL to "Template repositories":
    ```
-   https://github.com/averyy/apple-developer-docs/tree/main/unraid
+   https://github.com/Averyy/apple-dev-docs/tree/main/unraid
    ```
 3. Click Save
 4. The template will appear in "Add Container" dropdown
@@ -86,8 +86,8 @@ The container includes pre-scraped documentation and will automatically:
 
 1. Clone the repo to get the remote client:
    ```bash
-   git clone https://github.com/averyy/apple-developer-docs.git
-   cd apple-developer-docs
+   git clone https://github.com/Averyy/apple-dev-docs.git
+   cd apple-dev-docs
    pip install aiohttp  # Required dependency
    ```
 
@@ -101,7 +101,7 @@ The container includes pre-scraped documentation and will automatically:
          "type": "stdio",
          "command": "python3",
          "args": [
-           "/path/to/apple-developer-docs/apple_docs_remote_client.py",
+           "/path/to/apple-dev-docs/apple_docs_remote_client.py",
            "--server-url",
            "http://YOUR_UNRAID_IP:8080/mcp",
            "--api-key",
@@ -120,7 +120,7 @@ The container includes pre-scraped documentation and will automatically:
          "type": "stdio",
          "command": "python3",
          "args": [
-           "/path/to/apple-developer-docs/apple_docs_remote_client.py",
+           "/path/to/apple-dev-docs/apple_docs_remote_client.py",
            "--server-url",
            "http://YOUR_UNRAID_IP:8080/mcp",
            "--api-key",
@@ -185,7 +185,7 @@ docker exec apple-docs-mcp python /app/scripts/schedule_rescrape_v2.py --run-onc
 
 ## Support
 
-- GitHub Issues: https://github.com/averyy/apple-developer-docs/issues
+- GitHub Issues: https://github.com/Averyy/apple-dev-docs/issues
 - Unraid Forum Thread: [Coming soon]
 
 ## Resource Requirements

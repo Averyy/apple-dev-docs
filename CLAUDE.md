@@ -55,7 +55,7 @@ A comprehensive Python tool that scrapes Apple's entire developer documentation 
 - One time use files for debugging should be put in a temp folder or labelled temp_ so we know later that they are safe to delete
 - **ALWAYS use relative paths in scripts** - never use absolute paths, use proper relative path resolution
 - MCP server setup should **always** follow the latest spec from https://modelcontextprotocol.io/specification/
-- **NEVER SUGGEST SPECIAL HANDLING FOR SPECIFIC PATTERNS** - The codebase has 360+ frameworks. Do not suggest adding special cases for individual APIs, common patterns, or specific query types. This approach does not scale.
+- **NEVER SUGGEST SPECIAL HANDLING FOR SPECIFIC PATTERNS** - The codebase has 370+ frameworks. Do not suggest adding special cases for individual APIs, common patterns, or specific query types. This approach does not scale.
 
 ### Python Development Standards
 

@@ -229,29 +229,25 @@ When making technical decisions, prioritize in this order:
 
 Remember: Your primary goal is to create a reliable, efficient system that accurately captures Apple's developer documentation while respecting ethical scraping practices and maintaining code quality standards.
 
-## Current Priority: Meilisearch Migration
+## Current Status: Production Ready
 
-### Active Project
-You are currently executing the migration from ChromaDB to Meilisearch. This is your top priority.
+### Project Completed
+The MCP server is fully deployed and operational with Meilisearch.
 
-### Migration Instructions
-1. **Primary Guide**: `.claude/agent/meilisearch-migration-instructions.md`
-2. **Quick Start**: `.claude/agent/QUICK_START.md`
-3. **Task Tracking**: `.claude/agent/task-status.md`
-4. **Task List**: `tasks/09_ordered_task_list.md`
+### Key Stats (December 2025)
+- **373 frameworks** indexed
+- **334,468 documents** searchable
+- **MCP Server v1.1.0** with wildcard search and stateful framework selection
+- **Production URL**: http://192.168.2.5:8080/mcp/
 
-### Key Migration Principles
-- Build and test everything locally first (tasks 01-14)
-- Docker is only for production deployment (tasks 15+)
-- Maintain 100% API compatibility
-- Keep ChromaDB intact for rollback
-- Document all decisions in memory.md
+### Ongoing Maintenance Tasks
+1. Monitor for Apple documentation updates
+2. Re-scrape after major Apple events (WWDC, etc.)
+3. Update Context7 integration if needed
+4. Address any reported issues
 
-### Daily Workflow
-1. Check task-status.md for current progress
-2. Execute next task from 09_ordered_task_list.md
-3. Update status after each task
-4. Report completion summary
-5. Commit with message: "Task XX: [description]"
-
-Start with the next incomplete task in the sequence.
+### Key Documentation
+- `README.md` - User documentation
+- `CLAUDE.md` - Development guidelines
+- `.claude/shared/project-context.md` - Technical overview
+- `mcp-server/README.md` - Server implementation details
